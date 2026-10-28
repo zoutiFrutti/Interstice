@@ -22,3 +22,11 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--faille-ivory);outli
 .manifesto-preview::before{content:"";position:absolute;left:20px;top:22px;width:clamp(70px,10vw,116px);height:clamp(70px,10vw,116px);background:url("assets/logo-faille-noire.svg") center/contain no-repeat}
 @media(max-width:600px){header strong::before{width:40px;height:40px}.brand-identity img{width:88px;height:88px}.manifesto-preview{padding-left:22px;padding-top:120px}.manifesto-preview::before{top:12px}}
 @media print{header strong::before{print-color-adjust:exact;-webkit-print-color-adjust:exact}.brand-identity img{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+/* Socle d'accessibilité commun, sans effet sur les scripts ni les formulaires. */
+:root{color-scheme:dark;--faille-focus:#e9e5db;--faille-line:#52606a;--faille-surface:#1a2228}
+:where(a,button,input,textarea,select,summary):focus-visible{outline:3px solid var(--faille-focus);outline-offset:3px}
+:where(input,textarea,select){accent-color:var(--faille-red)}
+:where(.proposal,.manifesto-preview,.resource-card){border-color:var(--faille-line)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{background:#fff!important;color:#111!important}a{color:#111!important}section{break-inside:avoid}}
