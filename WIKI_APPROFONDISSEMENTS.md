@@ -115,8 +115,20 @@
 | EDU-08 | Éducation, enfance et protection | Développer fiches d'ateliers d'éducation populaire et supports accessibles, avec variantes selon l'âge | À faire | Moyenne | UNESCO, associations pédagogiques |
 | EDU-09 | Éducation, enfance et protection | Ajouter bibliographies par fiche, contrôle des liens et licences, relectures spécialisées et traduction anglaise complète | À faire | Haute | Universitaires et associations |
 
+| NUM-01 | Libertés numériques, IA et surveillance | Documenter surveillance algorithmique française, JOP, prolongation 2030 et décisions de justice actualisées | En cours | Haute | CNIL, Légifrance, Conseil constitutionnel |
+| NUM-02 | Libertés numériques, IA et surveillance | Étudier fichiers de police, reconnaissance faciale, drones, traçage et recours avec preuves et dates | À faire | Haute | Sénat, CNIL, documents officiels, enquêtes |
+| NUM-03 | Libertés numériques, IA et surveillance | Comparer les régimes de surveillance dans d'autres pays sans confondre leurs lois et dispositifs | À faire | Haute | Institutions nationales, droits fondamentaux |
+| NUM-04 | Libertés numériques, IA et surveillance | Construire bibliographie contradictoire sur IA, travail, création, gouvernance et modèles ouverts | À faire | Haute | Études académiques, OIT, UNESCO |
+| NUM-05 | Libertés numériques, IA et surveillance | Évaluer prototypes d'IA distribuée : énergie réellement consommée, réseau, efficacité, fiabilité et sécurité | À faire | Haute | Petals, Parallax, mesures expérimentales |
+| NUM-06 | Libertés numériques, IA et surveillance | Évaluer chaleur fatale : température, saisonnalité, chauffage substitué, investissement, bilan net | À faire | Haute | ADEME, RGESN, analyses de cycle de vie |
+| NUM-07 | Libertés numériques, IA et surveillance | Construire comparateur objectif petite IA locale, cloud, fédération volontaire et sobriété sans greenwashing | À faire | Haute | AIE, Arcep, ADEME, expérimentations |
+| NUM-08 | Libertés numériques, IA et surveillance | Développer guides pratiques protection des données, chiffrement, hygiène numérique et auto-hébergement | À faire | Moyenne | CNIL, Cybermalveillance, CHATONS |
+| NUM-09 | Libertés numériques, IA et surveillance | Créer méthode d'audit citoyen des outils publics : légalité, impact, faux positifs, contrôle humain, recours | À faire | Haute | CNIL, AI Act, recours |
+| NUM-10 | Libertés numériques, IA et surveillance | Vérifier chaque lien, droit de réutilisation et source, organiser relecture technique et juridique | À faire | Haute | Juristes, ingénieurs, associations |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Libertés numériques, IA et surveillance](wiki-liberte-numerique-ia-surveillance.html).
 - [Éducation, enfance et protection](wiki-education-enfance-protection.html).
 - [Logement, habitat et droit à la ville](wiki-logement-habitat-droit-ville.html).
 - [Écologie sociale et environnement](wiki-ecologie-sociale-environnement.html).
