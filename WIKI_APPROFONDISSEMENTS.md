@@ -40,8 +40,18 @@
 | WIKI-03 | Méthode du Wiki des communs | Prévoir contribution simplifiée, modération et relecture par des personnes concernées et spécialistes | À faire | Moyenne | Gouvernance ouverte, accessibilité, confidentialité |
 | WIKI-04 | Méthode du Wiki des communs | Faire des liens réciproques entre antiracisme, antifascisme, égalité, police et droits, sans confondre les domaines | À faire | Moyenne | Taxonomie interne |
 
+| FEM-01 | Féminismes | Approfondir chaque fiche avec sources primaires, ouvrages, articles et datation des affirmations | En cours | Haute | BnF, HCE, Insee, études scientifiques |
+| FEM-02 | Féminismes | Construire une chronologie mondiale des luttes, voix et organisations féministes | À faire | Haute | Archives, bibliothèques, recherche historique |
+| FEM-03 | Féminismes | Documenter les différents courants féministes, leurs débats et leurs désaccords | À faire | Haute | Textes historiques et études comparées |
+| FEM-04 | Féminismes | Créer des fiches droits et recours à jour : violences, travail, santé, autonomie | À faire | Haute | Service-Public, OMS, associations spécialisées |
+| FEM-05 | Féminismes | Étudier salaires, emploi, parentalité, travail domestique, retraite, culture et pouvoir à partir de données datées | À faire | Haute | Insee, Dares, HCE |
+| FEM-06 | Féminismes | Développer des portraits et archives féministes en vérifiant les licences et les droits de publication | À faire | Moyenne | Gallica, Archives nationales, musées |
+| FEM-07 | Féminismes | Développer un kit pédagogique et des outils pour les collectifs avec évaluation de l'accessibilité | À faire | Moyenne | ONU, acteurs associatifs, W3C |
+| FEM-08 | Féminismes | Faire relire le corpus par des associations et personnes concernées, en expliquant les divergences | À faire | Moyenne | Relectures documentées |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Féminismes, histoire et égalité](wiki-feminismes-histoire-egalite.html).
 - [Égalité, genres et inclusivité](wiki-egalite-genres-inclusivite.html) et [27 fiches](wiki-egalite-fiches.html).
 - [Histoire de l'antifascisme](wiki-antifascisme-histoire-et-mecanismes.html).
 - [Antiracisme, histoire et droits](wiki-antiracisme-histoires-droits.html).
