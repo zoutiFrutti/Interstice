@@ -162,7 +162,22 @@
 | MIG-09 | Frontières, migrations et colonialisme | Créer biographies, archives et mémoires documentées des résistances coloniales et mouvements migratoires | À faire | Moyenne | Archives, musées, témoignages consentis |
 | MIG-10 | Frontières, migrations et colonialisme | Vérifier chaque affirmation et source, les liens, les licences, les divergences et faire relire par personnes concernées et historiens | À faire | Haute | Recherches académiques, institutions, collectifs |
 
+| ART-01 | Culture, création et accès à l’art | Développer chronologies des droits culturels et politiques publiques, avec sources datées et débats | En cours | Haute | UNESCO, ministère de la Culture, chercheurs |
+| ART-02 | Culture, création et accès à l’art | Approfondir contre-cultures, arts de rue, cirque, créations populaires et transmissions locales | À faire | Haute | Archives, ARTCENA, historiens, personnes concernées |
+| ART-03 | Culture, création et accès à l’art | Créer guide vérifié des métiers artistiques et techniques avec conventions, rémunérations et conditions de travail | À faire | Haute | France Travail, Unédic, conventions collectives |
+| ART-04 | Culture, création et accès à l’art | Documenter les régimes intermittent et artiste-auteur sans confondre annexes, seuils et droits sociaux | À faire | Haute | France Travail, Ameli, Urssaf, Unédic |
+| ART-05 | Culture, création et accès à l’art | Étudier structures indépendantes, chapiteaux, friches culturelles, ERP et responsabilités de sécurité | À faire | Haute | Ministère de la Culture, ARTCENA, réglementation ERP |
+| ART-06 | Culture, création et accès à l’art | Comparer financement public, production, coproduction, résidences et gouvernance coopérative | À faire | Haute | Ministère de la Culture, collectivités, associations |
+| ART-07 | Culture, création et accès à l’art | Développer fiches pratiques droits d'auteur, droits voisins, licences CC et archives ouvertes | À faire | Haute | INPI, Creative Commons, organismes de gestion |
+| ART-08 | Culture, création et accès à l’art | Auditer accessibilité, participation des publics, pratiques amateurs et obstacles socio-économiques | À faire | Moyenne | UNESCO, enquêtes culturelles, associations |
+| ART-09 | Culture, création et accès à l’art | Étudier écologie des tournées, réemploi et mutualisation avec bilans et mesures comparables | À faire | Haute | ADEME, recherche sur impact des événements |
+| ART-10 | Culture, création et accès à l’art | Approfondir IA et création : droits, rémunération, provenance, emploi et impacts environnementaux | À faire | Haute | UNESCO, juristes, recherches empiriques |
+| ART-11 | Culture, création et accès à l’art | Construire des modèles de fiches d'événements collectifs, budget, rôles, accueil et sécurité, avec revue professionnelle | À faire | Moyenne | Professionnels spectacle vivant, associations |
+| ART-12 | Culture, création et accès à l’art | Vérifier sources exactes, liens, licences et relectures des 31 notices de première version | À faire | Haute | Chercheurs, artistes, techniciens et juristes |
+
 ## Liens vers les rubriques déjà publiées
+
+- [Culture, création et accès à l'art](wiki-culture-creation-acces-art.html).
 
 - [Frontières, migrations et colonialisme](wiki-frontieres-migrations-colonialisme.html).
 
