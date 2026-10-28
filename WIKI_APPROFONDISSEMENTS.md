@@ -140,7 +140,20 @@
 | JUS-09 | Justice, prisons et abolitionnisme | Relier police, mémoire, prisons, justice et fichiers numériques avec sources et distinctions juridiques | À faire | Moyenne | CNIL, CGLPL, justice et archives |
 | JUS-10 | Justice, prisons et abolitionnisme | Vérifier citations, licences, actualité des textes et faire relire par juristes et personnes concernées | À faire | Haute | Juristes, chercheurs et associations |
 
+| SAN-01 | Santé, psychiatrie et autonomie | Créer bibliographies exactes pour droits des patients, accès aux soins et consentement, et actualiser les textes | En cours | Haute | HAS, Service-Public, Légifrance |
+| SAN-02 | Santé, psychiatrie et autonomie | Retracer histoire de la psychiatrie, asiles, réformes et mouvements des personnes concernées | À faire | Haute | Archives, études historiques |
+| SAN-03 | Santé, psychiatrie et autonomie | Documenter soins psychiatriques sans consentement, contrôle des mesures d'isolement et recours | À faire | Haute | CGLPL, loi, justice, OMS |
+| SAN-04 | Santé, psychiatrie et autonomie | Développer dossiers addictions, CSAPA, CAARUD et réduction des risques avec données récentes | À faire | Haute | MILDECA, Santé publique France, HAS |
+| SAN-05 | Santé, psychiatrie et autonomie | Analyser santé communautaire, autonomie, handicap et accès aux soins selon les territoires | À faire | Moyenne | OMS, DREES, associations et patients |
+| SAN-06 | Santé, psychiatrie et autonomie | Construire dossier de psychiatrie transculturelle : notions, expressions de détresse, interprétariat et entretien de formulation culturelle | En cours | Haute | OMS, DSM-5 CFI, revues de psychiatrie transculturelle |
+| SAN-07 | Santé, psychiatrie et autonomie | Étudier histoire coloniale et diversité des visions de la maladie mentale sans essentialiser les cultures | À faire | Haute | OMS/HCDH, historiens, recherches situées |
+| SAN-08 | Santé, psychiatrie et autonomie | Comparer pratiques communautaires, traditionnelles et biomédicales en distinguant droits, efficacité prouvée et risques | À faire | Haute | OMS, recherches cliniques et anthropologiques |
+| SAN-09 | Santé, psychiatrie et autonomie | Créer ressources accessibles pour préparer une consultation et s'informer sur les recours, sans conseil médical individuel | À faire | Moyenne | HAS, associations, patients |
+| SAN-10 | Santé, psychiatrie et autonomie | Faire relire contenus par professionnels, personnes concernées et spécialistes transculturels, contrôler liens, licences et clarté | À faire | Haute | Relectures multidisciplinaires |
+
 ## Liens vers les rubriques déjà publiées
+
+- [Santé, psychiatrie et autonomie des soins](wiki-sante-psychiatrie-autonomie-soins.html).
 
 - [Institutions et régimes politiques](wiki-politique-institutions-regimes.html).
 
