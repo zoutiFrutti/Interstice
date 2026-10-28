@@ -256,3 +256,24 @@
 4. Rendre compte des changements réellement effectués. Ne jamais confondre article commencé, sourcé, relu et validé.
 
 > Ce fichier est le registre des choses à approfondir, non un outil de suivi automatique : aucune surveillance ni mise à jour en arrière-plan n'est active.
+
+## Campagne de relecture critique, lancée le 28 octobre 2026
+
+Objectif : relire successivement les douze chantiers introductifs selon [la méthode éditoriale](METHODE_EDITORIALE_SOURCES.md), sans assimiler Wikipédia ou une source institutionnelle à une preuve incontestable. Pour chaque page : vérifier les affirmations et liens, séparer faits/interprétations/hypothèses, identifier les récits marginalisés, signaler les lacunes, corriger les passages vérifiés, puis noter l'état réel. Une relecture ciblée ne vaut pas validation exhaustive.
+
+| Ordre | Chantier | État au 28/10/2026 |
+|---|---|---|
+| 1 | Mémoires des luttes, antifascisme, antiracisme et résistances | En cours : première relecture critique de la page antifascisme enregistrée ; autres pages et contrôle exhaustif restent à faire |
+| 2 | Socialismes, communismes, anarchismes et autogestion | À relire |
+| 3 | Capitalisme, classes et travail | À relire |
+| 4 | Écologie sociale et environnement | À relire |
+| 5 | Logement et droit à la ville | À relire |
+| 6 | Éducation et enfance | À relire |
+| 7 | Libertés numériques, IA et surveillance | À relire |
+| 8 | Justice et prisons | À relire |
+| 9 | Santé, psychiatrie et soins | À relire avec vigilance médicale |
+| 10 | Frontières, migrations et colonialisme | À relire avec décentrement des sources |
+| 11 | Culture, création et accès à l’art | À relire |
+| 12 | Autonomie matérielle et savoir-faire | À relire avec vigilance de sécurité |
+
+Cette campagne ne s'exécute pas automatiquement hors session : poursuivre dans cet ordre à chaque reprise et n'inscrire « vérifié » qu'avec des contrôles traçables.
