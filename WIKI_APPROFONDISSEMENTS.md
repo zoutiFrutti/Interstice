@@ -175,6 +175,8 @@
 | ART-11 | Culture, création et accès à l’art | Construire des modèles de fiches d'événements collectifs, budget, rôles, accueil et sécurité, avec revue professionnelle | À faire | Moyenne | Professionnels spectacle vivant, associations |
 | ART-12 | Culture, création et accès à l’art | Vérifier sources exactes, liens, licences et relectures des 31 notices de première version | À faire | Haute | Chercheurs, artistes, techniciens et juristes |
 
+| ART-13 | Culture, création et accès à l’art | Maintenir l'annuaire des associations et organismes d'aide aux artistes et intermittents : éligibilité, adresses, contacts, permanences, liens régionaux et dates de vérification | En cours | Haute | France Travail, Audiens, Afdas, ARTCENA, syndicats, réseaux régionaux |
+
 ## Liens vers les rubriques déjà publiées
 
 - [Culture, création et accès à l'art](wiki-culture-creation-acces-art.html).
