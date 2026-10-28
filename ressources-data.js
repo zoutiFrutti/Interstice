@@ -67,7 +67,7 @@ const INTERSTICE_RESOURCES = [
     "id": 9,
     "category": "S'organiser",
     "title": "Movilab",
-    "description": "Wiki libre de documentation des tiers-lieux et pratiques collectives.",
+    "description": "Wiki de documentation des tiers-lieux et pratiques collectives.",
     "url": "https://movilab.org/wiki/Accueil",
     "license": "Licences à vérifier par page"
   },
@@ -158,5 +158,85 @@ const INTERSTICE_RESOURCES = [
     "description": "Base ouverte d'informations sur les produits alimentaires.",
     "url": "https://fr.openfoodfacts.org/",
     "license": "Données sous ODbL"
+  },
+  {
+    "id": 21,
+    "category": "Bibliothèque",
+    "title": "CIRA Marseille",
+    "description": "Centre international de recherches sur l'anarchisme : documentation, histoire et archives.",
+    "url": "https://www.cira-marseille.info/",
+    "license": "Documents soumis à des droits variables ; lien uniquement"
+  },
+  {
+    "id": 22,
+    "category": "Bibliothèque",
+    "title": "Bibliothèque anarchiste",
+    "description": "Collection de textes et d'essais sur les courants anarchistes.",
+    "url": "https://bibliotheque-anarchiste.com/",
+    "license": "Droits à vérifier texte par texte"
+  },
+  {
+    "id": 23,
+    "category": "Bibliothèque",
+    "title": "Anarchist Libraries (français)",
+    "description": "Catalogue de textes historiques et contemporains sur l'autogestion et les mouvements libertaires.",
+    "url": "https://fr.anarchistlibraries.net/library",
+    "license": "Droits à vérifier texte par texte"
+  },
+  {
+    "id": 24,
+    "category": "Bibliothèque",
+    "title": "Éditions du Monde Libertaire",
+    "description": "Catalogue de livres et brochures sur l'histoire et les idées libertaires.",
+    "url": "https://editionsmondelibertaire.org/",
+    "license": "Ouvrages protégés ; notices et liens uniquement"
+  },
+  {
+    "id": 25,
+    "category": "Bibliothèque",
+    "title": "Éditions Libertaires",
+    "description": "Maison d'édition publiant des travaux sur les idées et pratiques libertaires.",
+    "url": "https://editions-libertaires.org/",
+    "license": "Ouvrages protégés ; notices et liens uniquement"
+  },
+  {
+    "id": 26,
+    "category": "S'organiser",
+    "title": "Service-Public : créer une association",
+    "description": "Informations officielles sur les démarches de création et de déclaration d'une association en France.",
+    "url": "https://www.service-public.fr/associations",
+    "license": "Informations administratives ; vérifier les règles en vigueur"
+  },
+  {
+    "id": 27,
+    "category": "S'organiser",
+    "title": "Associations.gouv.fr",
+    "description": "Guides, ressources et informations sur la vie associative.",
+    "url": "https://associations.gouv.fr/",
+    "license": "Conditions selon les contenus"
+  },
+  {
+    "id": 28,
+    "category": "Bibliothèque",
+    "title": "La Contemporaine",
+    "description": "Bibliothèque et archives sur les mouvements sociaux et l'histoire contemporaine.",
+    "url": "https://www.lacontemporaine.fr/",
+    "license": "Droits selon les collections"
+  },
+  {
+    "id": 29,
+    "category": "S'organiser",
+    "title": "CoopCycle",
+    "description": "Projet de fédération de coopératives de livraison à vélo et outils numériques associés.",
+    "url": "https://coopcycle.org/",
+    "license": "Licences et conditions propres aux outils"
+  },
+  {
+    "id": 30,
+    "category": "S'entraider",
+    "title": "Emmaüs Connect",
+    "description": "Ressources et actions contre l'exclusion numérique.",
+    "url": "https://emmaus-connect.org/",
+    "license": "Conditions selon les ressources"
   }
 ];
