@@ -126,8 +126,20 @@
 | NUM-09 | Libertés numériques, IA et surveillance | Créer méthode d'audit citoyen des outils publics : légalité, impact, faux positifs, contrôle humain, recours | À faire | Haute | CNIL, AI Act, recours |
 | NUM-10 | Libertés numériques, IA et surveillance | Vérifier chaque lien, droit de réutilisation et source, organiser relecture technique et juridique | À faire | Haute | Juristes, ingénieurs, associations |
 
+| JUS-01 | Justice, prisons et abolitionnisme | Construire chronologie historique des peines, prisons, justice et abolitionnisme en France et à l'international | À faire | Haute | Archives historiques et ouvrages universitaires |
+| JUS-02 | Justice, prisons et abolitionnisme | Produire dossier annuel vérifié population pénitentiaire, capacités, détention provisoire et méthode des chiffres | En cours | Haute | Ministère de la Justice, CGLPL |
+| JUS-03 | Justice, prisons et abolitionnisme | Documenter santé, conditions matérielles, violences, mortalité et surpopulation sans données personnelles abusives | À faire | Haute | CGLPL, études publiques et associatives |
+| JUS-04 | Justice, prisons et abolitionnisme | Comparer droits et recours des personnes prévenues, condamnées et privées de liberté dans d'autres lieux | À faire | Haute | Service-Public, Justice.fr, CGLPL |
+| JUS-05 | Justice, prisons et abolitionnisme | Étudier théories de la peine et abolitionnisme avec traditions, désaccords et critiques documentées | À faire | Haute | Philosophie du droit, histoire sociale |
+| JUS-06 | Justice, prisons et abolitionnisme | Évaluer justice restaurative et alternatives : sécurité, consentement, effets et limites selon les infractions | À faire | Haute | Justice.fr, recherche scientifique |
+| JUS-07 | Justice, prisons et abolitionnisme | Documenter soutien aux victimes, prévention des violences, réinsertion et accès aux droits | À faire | Haute | France Victimes, ministère, recherche |
+| JUS-08 | Justice, prisons et abolitionnisme | Approfondir intersectionnalité : genre, racisme, classe, handicap, jeunesse et santé mentale dans le système pénal | À faire | Moyenne | Défenseur des droits, études publiques |
+| JUS-09 | Justice, prisons et abolitionnisme | Relier police, mémoire, prisons, justice et fichiers numériques avec sources et distinctions juridiques | À faire | Moyenne | CNIL, CGLPL, justice et archives |
+| JUS-10 | Justice, prisons et abolitionnisme | Vérifier citations, licences, actualité des textes et faire relire par juristes et personnes concernées | À faire | Haute | Juristes, chercheurs et associations |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Justice, prisons et abolitionnisme pénal](wiki-justice-prisons-abolitionnisme.html).
 - [Libertés numériques, IA et surveillance](wiki-liberte-numerique-ia-surveillance.html).
 - [Éducation, enfance et protection](wiki-education-enfance-protection.html).
 - [Logement, habitat et droit à la ville](wiki-logement-habitat-droit-ville.html).
