@@ -188,7 +188,22 @@
 | FIN-09 | Financements culturels | Construire filtres de recherche par bénéficiaire, territoire, discipline, dépense, budget et calendrier ; suivi d'ouverture | À faire | Haute | Retours d'utilisateurs, contrôles techniques |
 | FIN-10 | Financements culturels | Vérifier toutes les fiches d'aides, liens, dépenses éligibles et dates avant d'indiquer une opportunité ouverte | En cours | Haute | Pages de candidature et règlements officiels |
 
+| AUT-01 | Autonomie matérielle et savoir-faire | Documenter et faire relire des tutoriels de réparation avec dangers, références, licences et coûts | En cours | Haute | Repair Café, ADEME, réparateurs |
+| AUT-02 | Autonomie matérielle et savoir-faire | Créer fiches de diagnostic, maintenance et suivi pour outils partagés et ressourceries | À faire | Haute | Ressourceries, ateliers, assureurs |
+| AUT-03 | Autonomie matérielle et savoir-faire | Détailler ateliers de fabrication partagés : responsabilité, formation, machines et accessibilité | À faire | Haute | Fab Labs, INRS, artisans |
+| AUT-04 | Autonomie matérielle et savoir-faire | Développer protocoles de sécurité sur électricité, lithium, combustion et installations de spectacle | À faire | Haute | INRS, normes, professionnels qualifiés |
+| AUT-05 | Autonomie matérielle et savoir-faire | Documenter les usages autorisés de récupération d'eau de pluie, assainissement et sécurité sanitaire | À faire | Haute | Service-Public, ANSES, ARS |
+| AUT-06 | Autonomie matérielle et savoir-faire | Comparer stockage énergétique, solaire, isolation et récupération de chaleur avec mesures et limites | À faire | Haute | ADEME, mesures empiriques, ingénieurs |
+| AUT-07 | Autonomie matérielle et savoir-faire | Créer dossiers agriculture, semences, sols, conservation alimentaire et cuisine collective | À faire | Moyenne | INRAE, ANSES, réseaux locaux |
+| AUT-08 | Autonomie matérielle et savoir-faire | Décrire reconversion de friches, habitat léger, bâtiments collectifs et contraintes réglementaires | À faire | Haute | Urbanisme, bureaux d'études, SDIS |
+| AUT-09 | Autonomie matérielle et savoir-faire | Concevoir modèle versionné de fiches pratiques avec matériel, plans, licences, coûts et vérifications | En cours | Haute | Low-tech Lab, documentation libre |
+| AUT-10 | Autonomie matérielle et savoir-faire | Enrichir réseaux locaux en Occitanie : repair cafés, ateliers, fablabs, ressourceries et prêts d'outillage | À faire | Moyenne | Associations et réseaux territoriaux |
+| AUT-11 | Autonomie matérielle et savoir-faire | Comparer impacts du neuf, réemploi et fabrication ; ne pas supposer d'avantage écologique sans bilan | À faire | Moyenne | ADEME, études de cycle de vie |
+| AUT-12 | Autonomie matérielle et savoir-faire | Organiser relecture professionnelle des fiches à risque et retour collectif avant publication | À faire | Haute | Professionnels habilités, modérateurs, pairs |
+
 ## Liens vers les rubriques déjà publiées
+
+- [Autonomie matérielle et savoir-faire](wiki-autonomie-materielle-savoir-faire.html).
 
 - [Financements culturels : création, diffusion, transport, Europe](wiki-financements-culture-spectacle.html).
 
