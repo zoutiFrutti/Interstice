@@ -95,8 +95,19 @@
 | ECOLOG-07 | Écologie sociale et environnement | Proposer modèles d'atelier et pratiques collectives avec indicateurs, coûts et évaluations | À faire | Moyenne | Collectifs et retours d'expérience |
 | ECOLOG-08 | Écologie sociale et environnement | Référencer chaque affirmation et vérifier liens, licences, relecture scientifique et accessibilité | À faire | Haute | Références primaires et experts |
 
+| LOG-01 | Logement et habitat | Construire des fiches statistiques sur mal-logement, sans-domicile, hébergement contraint, pauvreté énergétique et vacance | En cours | Haute | Fondation pour le Logement, Insee |
+| LOG-02 | Logement et habitat | Documenter droits des locataires, DALO, prévention des expulsions, occupations et règles récentes | À faire | Haute | Service-Public, ANIL, textes légaux |
+| LOG-03 | Logement et habitat | Établir l'histoire des squats, habitats autonomes, coopératives et luttes du logement avec archives | À faire | Haute | Archives, recherches historiques |
+| LOG-04 | Logement et habitat | Comparer habitat participatif, coopératives d'habitants, organismes fonciers solidaires et logements sociaux | À faire | Moyenne | ANIL, lois, cas documentés |
+| LOG-05 | Logement et habitat | Créer guide de reconversion de friches, diagnostics, pollution, incendie, urbanisme et accessibilité | À faire | Haute | Géorisques, Service-Public, experts |
+| LOG-06 | Logement et habitat | Étudier changements urbains : loyers, gentrification, transports, services et spéculation foncière | À faire | Moyenne | Insee, observatoires des loyers |
+| LOG-07 | Logement et habitat | Approfondir justice climatique et adaptation du bâti : chaleur, eau, inondation, incendie | À faire | Haute | ADEME, Géorisques |
+| LOG-08 | Logement et habitat | Rédiger des fiches de soutien, démarches et recours avec mises à jour juridiques | À faire | Haute | ADIL, organismes officiels |
+| LOG-09 | Logement et habitat | Créer bibliographies propres à chaque notion et vérifier licences, liens et relectures | À faire | Haute | Institutions, archives, associations |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Logement, habitat et droit à la ville](wiki-logement-habitat-droit-ville.html).
 - [Écologie sociale et environnement](wiki-ecologie-sociale-environnement.html).
 - [Capitalisme, classes sociales et travail](wiki-capitalisme-classes-travail.html).
 - [Socialismes, communismes, anarchismes et autogestion](wiki-socialismes-communismes-anarchismes-autogestion.html).
