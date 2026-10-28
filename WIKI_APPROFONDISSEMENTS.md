@@ -67,8 +67,19 @@
 | HAND-06 | Handicap, validisme et neurodiversité | Proposer fiches d'accessibilité pour événements, spectacles, collectifs et lieux de vie | À faire | Moyenne | Acteurs culturels et associations |
 | HAND-07 | Handicap, validisme et neurodiversité | Créer des versions en langage clair et faire tester les contenus par des personnes concernées | À faire | Moyenne | FALC, W3C et retours terrain |
 
+| SOC-01 | Socialismes, communismes, anarchismes | Établir chronologie internationale 1800 à aujourd'hui avec archives et contexte précis | À faire | Haute | Archives, Larousse, recherches historiques |
+| SOC-02 | Socialismes, communismes, anarchismes | Comparer socialismes, communismes, anarchismes et leurs sous-courants sans les confondre | En cours | Haute | Stanford Encyclopedia, bibliographies académiques |
+| SOC-03 | Socialismes, communismes, anarchismes | Documenter sources primaires Marx, Engels, Proudhon, Bakounine, Kropotkine, Goldman et autres courants | À faire | Haute | Gallica, archives libres et édition critique |
+| SOC-04 | Socialismes, communismes, anarchismes | Étudier Commune de Paris, révolutions russes, Espagne des années 1930, coopératives et autres expériences | À faire | Haute | Archives et recherches contradictoires |
+| SOC-05 | Socialismes, communismes, anarchismes | Documenter bilan des régimes historiques : institutions, réalisations, répression et libertés | À faire | Haute | Travaux historiques, mémoriaux, archives |
+| SOC-06 | Socialismes, communismes, anarchismes | Produire fiches pratiques d'assemblée, consensus, mandat révocable et fédéralisme, avec simulations | À faire | Haute | Expérimentations, gouvernance associative |
+| SOC-07 | Socialismes, communismes, anarchismes | Construire annuaire de coopératives et pratiques de l'autogestion sans présumer de leurs valeurs | À faire | Moyenne | Alliance coopérative internationale, coop FR |
+| SOC-08 | Socialismes, communismes, anarchismes | Étudier les questions controversées : marché, planification, pouvoir, droits et limites de la démocratie directe | À faire | Haute | Études économiques et philosophie politique |
+| SOC-09 | Socialismes, communismes, anarchismes | Relecture spécialisée, vérification citation par citation, droits d'auteur et accessibilité | À faire | Haute | Bibliothécaires, historiens, associations |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Socialismes, communismes, anarchismes et autogestion](wiki-socialismes-communismes-anarchismes-autogestion.html).
 - [Handicap, validisme et neurodiversité](wiki-handicap-validisme-neurodiversite.html).
 - [Patriarcat, histoire et mécanismes](wiki-patriarcat-histoire-mecanismes.html).
 - [Féminismes, histoire et égalité](wiki-feminismes-histoire-egalite.html).
