@@ -177,7 +177,20 @@
 
 | ART-13 | Culture, création et accès à l’art | Maintenir l'annuaire des associations et organismes d'aide aux artistes et intermittents : éligibilité, adresses, contacts, permanences, liens régionaux et dates de vérification | En cours | Haute | France Travail, Audiens, Afdas, ARTCENA, syndicats, réseaux régionaux |
 
+| FIN-01 | Financements culturels | Vérifier annuellement les aides DRAC et la disponibilité réelle des appels par région et discipline | En cours | Haute | Ministère de la Culture, DRAC |
+| FIN-02 | Financements culturels | Élargir aux 13 régions, départements, métropoles et communes : catalogue géographique d'aides | À faire | Haute | Collectivités, portails officiels |
+| FIN-03 | Financements culturels | Rechercher financements exacts transport, fret, chapiteaux, véhicules, matériel et mutualisation | À faire | Haute | DGCA, Région, collectivités, fondations |
+| FIN-04 | Financements culturels | Documenter toute la chaîne traduction, adaptation, surtitrage, audiodescription et accessibilité artistique | À faire | Haute | Régions, Institut français, SACD, organismes dédiés |
+| FIN-05 | Financements culturels | Ajouter ADAMI, SPEDIDAM, SACD, SACEM et autres fonds de sociétés de gestion collective avec règlements | À faire | Haute | Sites institutionnels, règlements |
+| FIN-06 | Financements culturels | Approfondir mobilités et diffusion internationales : IF Export, Europe créative, Culture Moves Europe et résidences | En cours | Haute | Institut français, Commission européenne |
+| FIN-07 | Financements culturels | Identifier fonds INTERREG POCTEFA/SUDOE et autres programmes européens transfrontaliers et éligibilité culturelle | À faire | Haute | Interreg, programmes régionaux |
+| FIN-08 | Financements culturels | Ajouter les soutiens et réseaux de diffusion régionaux, notamment Occitanie en scène, avec conditions de cofinancement | À faire | Moyenne | Agences régionales, réseaux professionnels |
+| FIN-09 | Financements culturels | Construire filtres de recherche par bénéficiaire, territoire, discipline, dépense, budget et calendrier ; suivi d'ouverture | À faire | Haute | Retours d'utilisateurs, contrôles techniques |
+| FIN-10 | Financements culturels | Vérifier toutes les fiches d'aides, liens, dépenses éligibles et dates avant d'indiquer une opportunité ouverte | En cours | Haute | Pages de candidature et règlements officiels |
+
 ## Liens vers les rubriques déjà publiées
+
+- [Financements culturels : création, diffusion, transport, Europe](wiki-financements-culture-spectacle.html).
 
 - [Culture, création et accès à l'art](wiki-culture-creation-acces-art.html).
 
