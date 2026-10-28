@@ -151,7 +151,20 @@
 | SAN-09 | Santé, psychiatrie et autonomie | Créer ressources accessibles pour préparer une consultation et s'informer sur les recours, sans conseil médical individuel | À faire | Moyenne | HAS, associations, patients |
 | SAN-10 | Santé, psychiatrie et autonomie | Faire relire contenus par professionnels, personnes concernées et spécialistes transculturels, contrôler liens, licences et clarté | À faire | Haute | Relectures multidisciplinaires |
 
+| MIG-01 | Frontières, migrations et colonialisme | Construire des chronologies historiques des frontières, empires et migrations sur plusieurs continents | En cours | Haute | Archives, ONU, historiens |
+| MIG-02 | Frontières, migrations et colonialisme | Approfondir colonialisme français, traite, travail forcé, résistances et décolonisations avec recherches contextualisées | À faire | Haute | Musée de l'histoire de l'immigration, archives, recherche |
+| MIG-03 | Frontières, migrations et colonialisme | Étudier mouvements migratoires et données historiques sans confondre stocks, flux, asile et déplacements internes | À faire | Haute | OIM, ONU DESA, HCR, Insee |
+| MIG-04 | Frontières, migrations et colonialisme | Documenter le droit d'asile français, OFPRA, CNDA, garanties et recours avec délais datés | À faire | Haute | Service-Public, OFPRA, CNDA |
+| MIG-05 | Frontières, migrations et colonialisme | Analyser droit européen des frontières, contrôles, rétention et protections internationales à jour | À faire | Haute | Commission européenne, HCR, juristes |
+| MIG-06 | Frontières, migrations et colonialisme | Documenter surveillance, fichiers et biométrie aux frontières, leurs effets et leurs contrôles | À faire | Haute | CNIL, institutions, analyses juridiques |
+| MIG-07 | Frontières, migrations et colonialisme | Étudier liens entre climat, économie, conflits, travail, migrations et représentations médiatiques | À faire | Moyenne | OIM, OIT, GIEC, travaux académiques |
+| MIG-08 | Frontières, migrations et colonialisme | Développer fiches pratiques d'orientation vers les droits, interprétariat et soutiens associatifs sans exposer les personnes | À faire | Moyenne | HCR, Service-Public, associations |
+| MIG-09 | Frontières, migrations et colonialisme | Créer biographies, archives et mémoires documentées des résistances coloniales et mouvements migratoires | À faire | Moyenne | Archives, musées, témoignages consentis |
+| MIG-10 | Frontières, migrations et colonialisme | Vérifier chaque affirmation et source, les liens, les licences, les divergences et faire relire par personnes concernées et historiens | À faire | Haute | Recherches académiques, institutions, collectifs |
+
 ## Liens vers les rubriques déjà publiées
+
+- [Frontières, migrations et colonialisme](wiki-frontieres-migrations-colonialisme.html).
 
 - [Santé, psychiatrie et autonomie des soins](wiki-sante-psychiatrie-autonomie-soins.html).
 
