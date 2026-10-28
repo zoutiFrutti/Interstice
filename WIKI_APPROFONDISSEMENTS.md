@@ -2,6 +2,23 @@
 
 **Version : 28 octobre 2026.** Fichier de référence pour les chantiers éditoriaux d'Interstice. Il ne s'agit pas d'une liste de travaux déjà réalisés. Le statut « En cours » signifie que la rubrique possède une première version, mais que l'approfondissement décrit n'est pas terminé.
 
+## Relecture transversale : sources, Wikipédia et décentrement des savoirs
+
+**Règle commune :** [Méthode éditoriale et critique des sources](METHODE_EDITORIALE_SOURCES.md). Wikipédia est une porte d'entrée à interroger, pas une vérité garantie. Aucune source n'est infaillible ; toutes les affirmations importantes doivent être qualifiées et étayées. Le cadre doit également évaluer les savoirs situés et les sources historiquement marginalisées sans ériger de nouveau dogme.
+
+| ID | Domaine | Action à conduire | Statut | Priorité | Sources |
+| --- | --- | --- | --- | --- | --- |
+| SOUR-01 | 12 chantiers | Relecture factuelle phrase par phrase, rapprochement des références exactes et degré d'incertitude | À faire | Haute | Sources primaires, synthèses, enquêtes |
+| SOUR-02 | 12 chantiers | Identifier erreurs, liens obsolètes, généralisations et affirmations non étayées | À faire | Haute | Sources indépendantes et relectures |
+| SOUR-03 | Tous dossiers | Faire apparaître l'apport propre d'Interstice pour éviter les doublons Wikipédia | À faire | Haute | Wikipédia, ressources locales, sources spécialisées |
+| SOUR-04 | Histoire, colonisation, migrations | Auditer eurocentrisme, mots hérités du colonialisme, traditions orales et chercheurs des sociétés concernées | À faire | Haute | Historiens, archives, travaux autochtones |
+| SOUR-05 | Histoire et société | Documenter les désaccords pertinents sans fausse équivalence ni idéologie imposée | À faire | Haute | Historiographie et travaux contradictoires |
+| SOUR-06 | Site Wiki | Tester l'affichage Wikipédia et rendre clairs résumé externe, limites et auteur de la source | En cours | Moyenne | API Wikipédia, tests utilisateurs |
+| SOUR-07 | Gouvernance du wiki | Faire relire collectivement la méthode et définir recours, attribution et journal des corrections | À faire | Haute | Charte, contributeurs |
+| SOUR-08 | Revue automatique | Inclure la méthode dans l'examen des propositions et éviter de traiter Wikipédia comme arbitre | À faire | Haute | Automatisation existante, prompts de revue |
+
+**Bilan de cette première passe :** méthode centrale publiée et notice liée aux douze chantiers ; **aucune certification de véracité exhaustive** ne peut être revendiquée. La vérification détaillée du contenu reste à faire.
+
 ## Règles de maintenance
 
 - Dès qu'une rubrique naît, inscrire ici les recherches et vérifications restantes, sans annoncer « terminé » à la seule publication d'une première page.
