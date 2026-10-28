@@ -257,6 +257,17 @@
 
 > Ce fichier est le registre des choses à approfondir, non un outil de suivi automatique : aucune surveillance ni mise à jour en arrière-plan n'est active.
 
+## Contrôles factuels et corrections — thématique 1, 28 octobre 2026
+
+**Périmètre contrôlé :** trois pages du premier chantier : `wiki-antifascisme-histoire-et-mecanismes.html`, `wiki-antiracisme-histoires-droits.html`, `wiki-police-deces-memoire.html`.
+
+- **Statistique des actes racistes 2024 :** 9 350 crimes et délits (SSMSI repris dans le rapport CNCDH), arrondis à 9 400 dans le communiqué ministériel. Périmètre des infractions enregistré et sous-déclaration précisés. Sources : [CNCDH](https://www.cncdh.fr/publications/rapport-2024-sur-la-lutte-contre-le-racisme-lantisemitisme-et-la-xenophobie), [Ministère de l'Intérieur](https://www.interieur.gouv.fr/actualites/communiques-de-presse/atteintes-a-caractere-raciste-xenophobe-ou-antireligieux-en-2024). Commit : [d3de2e7](https://github.com/zoutiFrutti/Interstice/commit/d3de2e71032a3e576335fa4ba9fac84d6cd841d4).
+- **Décès au contact des forces de l'ordre :** différence explicitée entre recensement [Basta! 1977–2022](https://basta.media/webdocs/police/) (861 cas selon la base) et [IGPN 2025](https://www.interieur.gouv.fr/documentation/rapports/rapport-annuel-de-ligpn-2025.html) (39 décès à l'occasion de missions de police). Pas d'imputation automatique d'une responsabilité. Commit : [4d930f1](https://github.com/zoutiFrutti/Interstice/commit/4d930f1be3d7380d8ba93cc743fd32c7d8e800d7).
+- **Référence historienne ciblée :** date et lieu de fondation clandestine du CDJC en 1943, renvoi à la [source documentaire du Mémorial de la Shoah](https://www.memorialdelashoah.org/archives-et-documentation/le-centre-de-documentation/histoire-du-cdjc.html). Commit : [abef84a](https://github.com/zoutiFrutti/Interstice/commit/abef84a41b81383c002360e62b1dc33af12495ab).
+- **Lien mal attribué :** l'URL figurant sous la Fondation pour la mémoire de l'esclavage ne menait pas à son site officiel ; remplacée par [memoire-esclavage.org](https://memoire-esclavage.org/). Commit : [82ea949](https://github.com/zoutiFrutti/Interstice/commit/82ea9496f529e84ccce585d551d79bfc766d047d).
+
+**Statut : EN COURS, NON VALIDÉ EN TOTALITÉ.** Les liens et affirmations non mentionnés ci-dessus n'ont pas été tous vérifiés. Avant d'annoncer le chantier 1 terminé : contrôle complet des références et licences, relecture des représentations historiographiques, des récits concernés et de l'accessibilité ; distinguer sites de départ des sources portant réellement sur une assertion.
+
 ## Campagne de relecture critique, lancée le 28 octobre 2026
 
 Objectif : relire successivement les douze chantiers introductifs selon [la méthode éditoriale](METHODE_EDITORIALE_SOURCES.md), sans assimiler Wikipédia ou une source institutionnelle à une preuve incontestable. Pour chaque page : vérifier les affirmations et liens, séparer faits/interprétations/hypothèses, identifier les récits marginalisés, signaler les lacunes, corriger les passages vérifiés, puis noter l'état réel. Une relecture ciblée ne vaut pas validation exhaustive.
