@@ -49,8 +49,19 @@
 | FEM-07 | Féminismes | Développer un kit pédagogique et des outils pour les collectifs avec évaluation de l'accessibilité | À faire | Moyenne | ONU, acteurs associatifs, W3C |
 | FEM-08 | Féminismes | Faire relire le corpus par des associations et personnes concernées, en expliquant les divergences | À faire | Moyenne | Relectures documentées |
 
+| PAT-01 | Patriarcat | Définitions et débats anthropologiques sur les origines et les variations du patriarcat | En cours | Haute | Anthropologie, histoire, travaux scientifiques |
+| PAT-02 | Patriarcat | Chronologie juridique de la famille, du mariage, de la propriété et des droits des femmes | À faire | Haute | Légifrance, Vie-publique, archives |
+| PAT-03 | Patriarcat | Dossiers travail salarié, domestique, soin, charge mentale, retraites et patrimoine | À faire | Haute | Insee, Dares, ONU Femmes |
+| PAT-04 | Patriarcat | Santé, autonomie des corps, consentement et violences : données et recours | À faire | Haute | OMS, Service-Public, études |
+| PAT-05 | Patriarcat | Masculinités, normes de genre, socialisation scolaire et rôle des institutions | À faire | Moyenne | HCE, études sociologiques |
+| PAT-06 | Patriarcat | Comparer courants féministes et débats historiques avec références contradictoires | À faire | Haute | Ouvrages, recherche, archives |
+| PAT-07 | Patriarcat | Élaborer outils pratiques pour partager parole, budget et travail invisible en collectif | À faire | Moyenne | Expériences associatives, évaluations |
+| PAT-08 | Patriarcat | Construire références précises par fiche, tester liens et vérifier droits de reproduction | À faire | Haute | Bibliothèques, licences |
+| PAT-09 | Patriarcat | Organiser relectures spécialisées et corrections documentées | À faire | Moyenne | Chercheurs, associations, personnes concernées |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Patriarcat, histoire et mécanismes](wiki-patriarcat-histoire-mecanismes.html).
 - [Féminismes, histoire et égalité](wiki-feminismes-histoire-egalite.html).
 - [Égalité, genres et inclusivité](wiki-egalite-genres-inclusivite.html) et [27 fiches](wiki-egalite-fiches.html).
 - [Histoire de l'antifascisme](wiki-antifascisme-histoire-et-mecanismes.html).
