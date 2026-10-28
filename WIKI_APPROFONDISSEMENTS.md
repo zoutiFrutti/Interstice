@@ -105,8 +105,19 @@
 | LOG-08 | Logement et habitat | Rédiger des fiches de soutien, démarches et recours avec mises à jour juridiques | À faire | Haute | ADIL, organismes officiels |
 | LOG-09 | Logement et habitat | Créer bibliographies propres à chaque notion et vérifier licences, liens et relectures | À faire | Haute | Institutions, archives, associations |
 
+| EDU-01 | Éducation, enfance et protection | Chronologie de l'éducation, des droits des enfants et des mouvements pédagogiques en France et à l'international | À faire | Haute | UNICEF, Éducation nationale, historiens |
+| EDU-02 | Éducation, enfance et protection | Comparer Freinet, Montessori, pédagogies libertaires et critiques à l'aide d'études évaluatives et de sources primaires | En cours | Haute | ICEM, recherche académique, rapports |
+| EDU-03 | Éducation, enfance et protection | Développer droits, participation des enfants, obligation scolaire et inclusion en actualisant le droit | À faire | Haute | UNICEF, Service-Public, Éduscol |
+| EDU-04 | Éducation, enfance et protection | Créer fiches sourcées sur agressions sexuelles, inceste, emprise, pédophilie clinique et pédocriminalité : distinctions, droit, protection | À faire | Haute | CIIVISE, OMS, Justice, travaux spécialisés |
+| EDU-05 | Éducation, enfance et protection | Développer prévention adaptée aux âges, écoute non suggestive, signalement et soutien des victimes sans exposer de mineurs | À faire | Haute | CIIVISE, 119, professionnels de protection |
+| EDU-06 | Éducation, enfance et protection | Étudier risques numériques, images d'abus, chantage et prévention en milieu scolaire ou associatif | À faire | Haute | CIIVISE, organismes publics |
+| EDU-07 | Éducation, enfance et protection | Créer kit de protection des mineurs pour collectifs et lieux culturels, avec revue juridique et professionnelle | À faire | Haute | Protection de l'enfance, juristes |
+| EDU-08 | Éducation, enfance et protection | Développer fiches d'ateliers d'éducation populaire et supports accessibles, avec variantes selon l'âge | À faire | Moyenne | UNESCO, associations pédagogiques |
+| EDU-09 | Éducation, enfance et protection | Ajouter bibliographies par fiche, contrôle des liens et licences, relectures spécialisées et traduction anglaise complète | À faire | Haute | Universitaires et associations |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Éducation, enfance et protection](wiki-education-enfance-protection.html).
 - [Logement, habitat et droit à la ville](wiki-logement-habitat-droit-ville.html).
 - [Écologie sociale et environnement](wiki-ecologie-sociale-environnement.html).
 - [Capitalisme, classes sociales et travail](wiki-capitalisme-classes-travail.html).
