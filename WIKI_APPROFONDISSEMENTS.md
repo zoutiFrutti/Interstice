@@ -17,6 +17,9 @@
 |---|---|---|---|---|---|
 | POL-01 | Politique et institutions | Comparer programmes et votes publics avec sources, dates, périmètres et sans notation électorale | À faire | Haute | Sources primaires des institutions et programmes archivés |
 | POL-02 | Politique et institutions | Expliquer les pouvoirs réels des élus et institutions, les procédures parlementaires et la vérification des engagements | À faire | Moyenne | Assemblée nationale, Sénat, Vie-publique |
+| POL-03 | Politique et institutions | Approfondir organigramme interactif des pouvoirs français et contrôles réciproques, y compris collectivités et justice | En cours | Haute | Constitution, Assemblée nationale, Sénat, Vie-publique |
+| POL-04 | Politique et institutions | Créer fiches comparatives datées des régimes parlementaires, présidentiels, hybrides et autocraties avec limites de classification | À faire | Haute | V-Dem, travaux de science politique, sources constitutionnelles |
+| POL-05 | Politique et institutions | Expliquer l'écart possible entre constitution officielle et pouvoir réel, et les garanties de droits et contre-pouvoirs | À faire | Haute | Travaux universitaires et enquêtes sourcées |
 | MEM-01 | Police et mémoire | Vérifier licences et conditions de réutilisation des bases externes ; demander autorisation pour import structuré | En cours | Haute | Basta!, conditions d’utilisation et réponse écrite |
 | MEM-02 | Police et mémoire | Définir méthodologie de comptage et catégories (interventions, garde à vue, poursuites, hors service, autres) | À faire | Haute | Basta!, rapports IGPN, travaux académiques |
 | MEM-03 | Police et mémoire | Construire fiches individuelles sourcées, chronologie et procédure de correction respectueuse des proches | À faire | Haute | Archives, enquêtes contradictoires, justice |
@@ -138,6 +141,8 @@
 | JUS-10 | Justice, prisons et abolitionnisme | Vérifier citations, licences, actualité des textes et faire relire par juristes et personnes concernées | À faire | Haute | Juristes, chercheurs et associations |
 
 ## Liens vers les rubriques déjà publiées
+
+- [Institutions et régimes politiques](wiki-politique-institutions-regimes.html).
 
 - [Justice, prisons et abolitionnisme pénal](wiki-justice-prisons-abolitionnisme.html).
 - [Libertés numériques, IA et surveillance](wiki-liberte-numerique-ia-surveillance.html).
