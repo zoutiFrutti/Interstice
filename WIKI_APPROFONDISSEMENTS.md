@@ -77,8 +77,18 @@
 | SOC-08 | Socialismes, communismes, anarchismes | Étudier les questions controversées : marché, planification, pouvoir, droits et limites de la démocratie directe | À faire | Haute | Études économiques et philosophie politique |
 | SOC-09 | Socialismes, communismes, anarchismes | Relecture spécialisée, vérification citation par citation, droits d'auteur et accessibilité | À faire | Haute | Bibliothécaires, historiens, associations |
 
+| ECO-01 | Capitalisme, classes et travail | Vérifier définitions et histoire des capitalismes, propriété, marchés et classes avec des écoles économiques diverses | En cours | Haute | Histoire économique, sciences sociales |
+| ECO-02 | Capitalisme, classes et travail | Construire chronologie des mouvements ouvriers, syndicats, grèves et protections sociales France et monde | À faire | Haute | OIT, archives syndicales et historiques |
+| ECO-03 | Capitalisme, classes et travail | Documenter données datées sur pauvreté, revenus, patrimoine, salaires et précarité avec limites statistiques | À faire | Haute | Insee, OCDE, Drees |
+| ECO-04 | Capitalisme, classes et travail | Établir guides fiables sur contrats, rémunérations, santé au travail, grève, représentation, chômage et intermittence | À faire | Haute | Code du travail, Service-Public, branches professionnelles |
+| ECO-05 | Capitalisme, classes et travail | Comparer les modèles coopératifs, ESS, services publics, communs et différentes formes d'autogestion | À faire | Moyenne | ACI, Avise, travaux académiques |
+| ECO-06 | Capitalisme, classes et travail | Créer ateliers lire fiche de paie, comptes d'entreprise, données d'inégalités et budgets collectifs | À faire | Moyenne | Insee, ressources éducatives libres |
+| ECO-07 | Capitalisme, classes et travail | Ajouter sources primaires par notion, licences, date de contrôle, relectures contradictoires et vérification des liens | À faire | Haute | Bibliothèques, institutions et associations |
+| ECO-08 | Capitalisme, classes et travail | Relier capitalisme, écologie sociale, genre, antiracisme et handicap à travers des enquêtes sectorielles | À faire | Moyenne | Recherche et sources publiques |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Capitalisme, classes sociales et travail](wiki-capitalisme-classes-travail.html).
 - [Socialismes, communismes, anarchismes et autogestion](wiki-socialismes-communismes-anarchismes-autogestion.html).
 - [Handicap, validisme et neurodiversité](wiki-handicap-validisme-neurodiversite.html).
 - [Patriarcat, histoire et mécanismes](wiki-patriarcat-histoire-mecanismes.html).
