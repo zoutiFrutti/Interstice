@@ -59,8 +59,17 @@
 | PAT-08 | Patriarcat | Construire références précises par fiche, tester liens et vérifier droits de reproduction | À faire | Haute | Bibliothèques, licences |
 | PAT-09 | Patriarcat | Organiser relectures spécialisées et corrections documentées | À faire | Moyenne | Chercheurs, associations, personnes concernées |
 
+| HAND-01 | Handicap, validisme et neurodiversité | Retracer histoire des mouvements du handicap, de la vie autonome et de la désinstitutionnalisation | À faire | Haute | ONU, archives et travaux historiques |
+| HAND-02 | Handicap, validisme et neurodiversité | Enrichir les 22 fiches avec bibliographies précises et relectures des personnes concernées | En cours | Haute | OMS, HAS, DDD, associations |
+| HAND-03 | Handicap, validisme et neurodiversité | Documenter neurodiversité, autisme, TDAH, troubles dys et handicap psychique sans confondre clinique et identité | À faire | Haute | HAS, recherche, voix concernées |
+| HAND-04 | Handicap, validisme et neurodiversité | Auditer réellement l'accessibilité d'Interstice : clavier, lecteur d'écran, contrastes, formulaires | À faire | Haute | WCAG, tests utilisateurs |
+| HAND-05 | Handicap, validisme et neurodiversité | Construire guide pratique des droits : MDPH, RQTH, AAH, PCH, scolarité, emploi et recours | À faire | Haute | Service-Public, Mon Parcours Handicap |
+| HAND-06 | Handicap, validisme et neurodiversité | Proposer fiches d'accessibilité pour événements, spectacles, collectifs et lieux de vie | À faire | Moyenne | Acteurs culturels et associations |
+| HAND-07 | Handicap, validisme et neurodiversité | Créer des versions en langage clair et faire tester les contenus par des personnes concernées | À faire | Moyenne | FALC, W3C et retours terrain |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Handicap, validisme et neurodiversité](wiki-handicap-validisme-neurodiversite.html).
 - [Patriarcat, histoire et mécanismes](wiki-patriarcat-histoire-mecanismes.html).
 - [Féminismes, histoire et égalité](wiki-feminismes-histoire-egalite.html).
 - [Égalité, genres et inclusivité](wiki-egalite-genres-inclusivite.html) et [27 fiches](wiki-egalite-fiches.html).
