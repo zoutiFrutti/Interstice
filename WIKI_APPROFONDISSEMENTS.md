@@ -86,8 +86,18 @@
 | ECO-07 | Capitalisme, classes et travail | Ajouter sources primaires par notion, licences, date de contrôle, relectures contradictoires et vérification des liens | À faire | Haute | Bibliothèques, institutions et associations |
 | ECO-08 | Capitalisme, classes et travail | Relier capitalisme, écologie sociale, genre, antiracisme et handicap à travers des enquêtes sectorielles | À faire | Moyenne | Recherche et sources publiques |
 
+| ECOLOG-01 | Écologie sociale et environnement | Approfondir GIEC, scénarios, atténuation, adaptation et limites des projections | En cours | Haute | GIEC AR6 et recherches scientifiques |
+| ECOLOG-02 | Écologie sociale et environnement | Construire fiches biodiversité, eau, sols, forêts, incendies avec données vérifiables | À faire | Haute | IPBES, FAO, Eaufrance, Géorisques |
+| ECOLOG-03 | Écologie sociale et environnement | Documenter écologie sociale, justice environnementale, écoféminismes et histoire des mouvements | À faire | Haute | Ouvrages historiques et études académiques |
+| ECOLOG-04 | Écologie sociale et environnement | Comparer énergie, matériaux, extraction et sobriété sans masquer les compromis techniques | À faire | Haute | ADEME, AIE, analyses de cycle de vie |
+| ECOLOG-05 | Écologie sociale et environnement | Créer guides habitat, agriculture, alimentation, mobilité et low-tech avec précautions techniques | À faire | Moyenne | ADEME, Low-tech Lab, FAO |
+| ECOLOG-06 | Écologie sociale et environnement | Développer cartes de risques et diagnostics territoriaux adaptés à l'échelle locale | À faire | Haute | Géorisques, collectivités, PNACC-3 |
+| ECOLOG-07 | Écologie sociale et environnement | Proposer modèles d'atelier et pratiques collectives avec indicateurs, coûts et évaluations | À faire | Moyenne | Collectifs et retours d'expérience |
+| ECOLOG-08 | Écologie sociale et environnement | Référencer chaque affirmation et vérifier liens, licences, relecture scientifique et accessibilité | À faire | Haute | Références primaires et experts |
+
 ## Liens vers les rubriques déjà publiées
 
+- [Écologie sociale et environnement](wiki-ecologie-sociale-environnement.html).
 - [Capitalisme, classes sociales et travail](wiki-capitalisme-classes-travail.html).
 - [Socialismes, communismes, anarchismes et autogestion](wiki-socialismes-communismes-anarchismes-autogestion.html).
 - [Handicap, validisme et neurodiversité](wiki-handicap-validisme-neurodiversite.html).
