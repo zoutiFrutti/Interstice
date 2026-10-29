@@ -37,3 +37,15 @@ Ce journal recueille des **contributions documentaires à examiner**. Une entré
 **Travaux restant à accomplir :** terminer les lectures rapprochées avant de les déclarer exhaustives ; vérifier les sources et les droits des œuvres récentes ; consulter les articles existants du Wiki ; documenter les femmes et collectifs de la Commune ; élaborer une confrontation sourcée Federici–Davis ; distinguer projets d'expérimentation et décisions collectives ; poursuivre le journal après chaque étape significative.
 
 **Modifications GitHub de cette entrée :** création du présent fichier sur branche de travail `atelier-lecture/journal-commun-2026-10-29` ; sous réserve de vérification après écriture. Aucune modification directe de `main`.
+
+## 2026-10-29 — Atelier de lecture : Davis et Federici, travail domestique
+
+Sujet : lecture croisée du chapitre XIII de *Women, Race & Class* (Angela Davis, 1981) et de la thèse de Silvia Federici dans *Caliban and the Witch*.
+
+Connaissances vérifiées : Davis ne s'arrête pas à une répartition égale des corvées ; elle propose une transformation sociale et technique du travail domestique et des services collectifs accessibles. Elle critique les limites d'une rémunération du travail ménager qui pourrait en stabiliser l'assignation aux femmes. L'étude critique de Safiyyah Esat (2024) conteste certains rapprochements historiques et certaines causalités chez Federici, particulièrement les généralisations sur les femmes colonisées et les sources lacunaires. Ces critiques sont celles d'Esat, non un consensus historien établi ici.
+
+Sources : https://www.marxists.org/subject/women/authors/davis-angela/housework.htm ; https://uwaterloo.ca/equity-diversity-inclusion-anti-racism/catalogs/educational-catalogue-resources/1981-approaching-obsolescence-housework-angela-davis ; https://doi.org/10.5526/esj.347 ; https://lawcat.berkeley.edu/record/1253261 .
+
+Articles Wiki potentiels (existence non vérifiée) : autogestion, travail invisible, égalité matérielle, économie du soin, féminismes. Contradictions : mutualisation peut réduire les corvées ou déplacer leur poids vers des travailleurs précaires ; différence entre valeur sociale et travail rémunéré ; critique d'une grande théorie historique sans dénigrer l'objectif émancipateur.
+
+Modification effectivement réalisée : ajout de cette entrée au journal sur branche d'atelier, sans modifier Wiki ni manifeste. Travail restant : confrontation primaire complète avec Federici, vérification d'autres critiques historiques, examen d'expériences de services collectifs, avis humain sur toute application pratique. Le chapitre XIII de Davis a été consulté sous forme de texte en ligne, pas l'intégralité de son livre.
