@@ -398,3 +398,12 @@ Suite : validation des textes, descriptions alternatives, contrôle des médias 
 **Vérifications :** fichiers relus sur GitHub après création ; dérivation transparente exacte calculée avant migration ; existence des liens attendus dans la planche et du composant de style ; comparaison de la branche avec `main` (7 commits d'avance, 0 de retard avant inscription au journal). Aucun test navigateur ou validation visuelle multi-écrans n'a encore été effectué.
 
 **Contradictions et travaux restants :** décider séparément de la prolongation du réseau en dehors du disque sans réinventer les logos approuvés ; tester effectivement les rendus sur fonds clairs/sombres, à 32 px, et le téléchargement PNG/WebP ; documenter les variations compactes et métadonnées ; vérifier les PR graphiques concurrentes #5, #14, #18 et #19 avant fusion ; renseigner les journaux Drive avec les résultats contrôlés ; ne pas considérer la charte proposée comme une adoption collective.
+
+
+### Complément de contrôle graphique — 29 octobre 2026 (atelier Graphiste et Intégrateur)
+
+**Vérifications ajoutées :** empreintes Git dupliquées à l'identique pour les deux SVG transparents et le script d'exportation ; tests de rendu Chromium dans un banc de contrôle en mémoire, avec les SVG identiques injectés comme données, le navigateur refusant ici l'accès direct à localhost/`file://`. Les 16 exports prévus (2 logos × 4 tailles × PNG/WebP) ont bien été créés, ouverts et vérifiés (dimensions exactes et pixel d'angle transparent) ; archive ZIP locale vérifiée. Aucun de ces formats raster n'a été commité sur GitHub, et la page complète du site n'a pas été chargée dans le navigateur.
+
+**Constat visuel confirmé :** sur fond ivoire, le disque blanc cassé perd presque toute sa silhouette. Ne pas utiliser le SVG transparent directement sur ivoire sans traitement graphique adapté et validé. Les ramifications restent rognées au cercle.
+
+**Fichier réellement modifié sur la branche :** `assets/IDENTITE-GRAPHIQUE.md` enrichi des résultats techniques. PR #20 toujours en brouillon, non fusionnée, pas de publication.
