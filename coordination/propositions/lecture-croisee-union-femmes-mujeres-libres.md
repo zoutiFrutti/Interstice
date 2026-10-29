@@ -18,3 +18,12 @@ Examiner la disponibilité réelle pour les réunions et l'apprentissage, la ré
 
 ## Limites
 Sources actuellement consultées : notices archivistiques et transcription de l'affiche ; les revues et statuts complets ne sont pas lus intégralement. Sources contradictoires et droits des reproductions à contrôler.
+
+
+## Approfondissement : lecture du numéro 1, mai 1936
+Source du commentaire historique : Laura Vicente, « Recordando que hace 80 años nació la revista Mujeres Libres » (CGT, 2016), https://cgt.es/recordando-que-hace-80-anos-nacio-la-revista-mujeres-libres-mayo-de-1936/ . C'est une analyse de l'éditorial, non une transcription complète étudiée ici.
+L'éditorial se distingue par une revendication de transformation sociale et de liberté propre aux femmes. **Contradiction** : il attribue aussi des qualités supposées intrinsèques aux sexes, pouvant reproduire une vision binaire et essentialiste.
+Le premier numéro comporte, d'après le commentaire, des textes sur l'éducation (Antonia Maymón), les soins et la maternité (Amparo Poch), le logement (Luisa Pérez) et le cinéma (Mercedes Comaposada).
+Le deuxième numéro, juin 1936, propose notamment « Algo sobre coeducación » de Julia M. Carrillo et une contribution de Lucía Sánchez Saornil sur son expérience professionnelle, éléments identifiés via https://leer.es/proyectos/las-sinsombrero/materiales-audiovisuales/mujeres-libres/ .
+Notice officielle numéro 1 : https://www.mcu.es/ccbae/es/publicaciones/verNumero.do?anyo=1936&idPublicacion=226013 (marqueur « Public Domain Mark » affiché pour cette numérisation ; droits éditoriaux ou tiers à examiner au cas par cas).
+**Statut de lecture** : étude secondaire et notices consultées ; les numéros complets et les passages visuels primaires n'ont pas été lus intégralement. Ne pas présenter les articles simplement repérés comme des textes effectivement lus.
