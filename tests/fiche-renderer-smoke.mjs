@@ -72,3 +72,6 @@ try {
 await writeFile("visual-qa/renderer-report.json",JSON.stringify({checks},null,2));
 for(const c of checks)console.log((c.ok?"PASS ":"FAIL ")+c.name+(c.ok?"":": "+JSON.stringify(c.detail).slice(0,500)));
 if(checks.some(c=>!c.ok))process.exitCode=1;
+
+// Test supplémentaire de la revue privée, sur données exclusivement fictives.
+await import('./moderation-preview-smoke.mjs');
