@@ -12,14 +12,32 @@ const testRow={
  status:"pending",created_at:"2026-10-29T18:00:00Z",review_note:null
 };
 const shim=`window.__previewStats={moderator:true,reads:0,decisions:0,signOuts:0};
-window.supabase={createClient:()=>({
- rpc:async(name)=>{if(name==="is_moderator")return {data:window.__previewStats.moderator,error:null};if(name==="review_wiki_article"){window.__previewStats.decisions++;return {data:false,error:{message:"stub"}}}throw new Error("RPC non prévue: "+name)},
- from:(name)=>{if(name!=="wiki_article_submissions")throw new Error("Table interdite dans ce test");return {select:()=>({in:()=>({order:()=>({limit:async()=>{window.__previewStats.reads++;return{data:[${JSON.stringify(testRow)}],error:null}}})})})}},
- auth:{getSession:async()=>({data:{session:{access_token:"test-only"}}}),signInWithPassword:async()=>({error:null}),
- signOut:async()=>{window.__previewStats.signOuts++;window.__previewStats.moderator=false;window.__triggerSignOut?.();return {error:null}},
- onAuthStateChange:(fn)=>{window.__triggerSignOut=()=>fn("SIGNED_OUT");return{data:{subscription:{unsubscribe(){}}}}}
- }
-})};`;
+window.supabase={createClient:()=>{
+  const record=${JSON.stringify(testRow)};
+  const auth={
+    getSession:async()=>({data:{session:{access_token:"test-only"}}}),
+    signInWithPassword:async()=>({error:null}),
+    signOut:async()=>{window.__previewStats.signOuts++;window.__previewStats.moderator=false;window.__triggerSignOut?.();return {error:null}},
+    onAuthStateChange:(fn)=>{window.__triggerSignOut=()=>fn("SIGNED_OUT");return {data:{subscription:{unsubscribe(){}}}}}
+  };
+  return {
+    auth,
+    rpc:async(name)=>{
+      if(name==="is_moderator")return {data:window.__previewStats.moderator,error:null};
+      if(name==="review_wiki_article"){window.__previewStats.decisions++;return {data:false,error:{message:"stub"}}}
+      throw new Error("Unexpected RPC in fixture")
+    },
+    from:(name)=>{
+      if(name!=="wiki_article_submissions")throw new Error("Unexpected table");
+      return {
+        select(){return this},
+        in(){return this},
+        order(){return this},
+        async limit(){window.__previewStats.reads++;return {data:[record],error:null}}
+      };
+    }
+  };
+}};`;
 const browser=await chromium.launch({headless:true});
 const checks=[];
 try {
