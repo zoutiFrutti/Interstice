@@ -54,3 +54,24 @@ Les SVG existants contiennent aussi certaines variantes de rouge (`#b91520`, `#d
 - Les **16 exports** (2 logos × PNG/WebP × 64/256/512/1024 px) ont été générés et rouverts par Pillow ; dimensions exactes, pixel supérieur gauche transparent pour les 16, archives ZIP vérifiée sans erreur. Le ZIP a été créé localement, **pas ajouté à GitHub**.
 - Un rendu de contrôle des SVG à 32, 64 et 144 px sur fond noir/ivoire a été examiné : sur ivoire, la circonférence blanche se confond avec le fond, ce qui rend ce modèle **inadapté aux fonds clairs sans accompagnement**.
 - Les tests réels de la page `identite-preview.html` servie par GitHub Pages, les interactions Safari/Firefox, le responsive du site complet et les audits d'accessibilité ne sont **pas** couverts par ce test.
+
+
+## Variantes avec disque de soutien pour fond clair (29 octobre 2026)
+
+- `logo-faille-noire-fond-clair.svg` et `logo-interstice-fond-clair.svg` : **propositions dérivées**, non des nouveaux logos maîtres.
+- Construction vérifiée : le SVG transparent de chaque projet est conservé intégralement ; un seul cercle noir `<circle cx="150" cy="148" r="141" fill="#101014"/>` est ajouté **avant** ses tracés. Les symboles, fissures, points, détails et couleurs originaux restent inchangés.
+- Cette plaque sombre résout le manque de silhouette de l'original blanc cassé sur fond ivoire. Elle n'est pas destinée à remplacer les logos transparents destinés aux surfaces sombres.
+- `identite-preview.html` ajoute un contrôle de cette variante à 32, 64 et 144 px et `identite-export.js` permet désormais l'export local des **quatre** déclinaisons (deux transparentes, deux sur fond clair), en PNG/WebP à 64/256/512/1024 px.
+- Le Wiki expérimental utilise ce SVG fond clair dans un `brand-lockup--clair` inséré en haut de la page. Il s'agit d'une mise en page proposée sur branche, non déployée.
+
+### Vérifications exécutées
+
+- Les deux nouveaux SVG ainsi que la version modifiée de l'exporteur JavaScript ont été comparés par empreintes de blobs Git aux fichiers reconstitués localement, avec résultat identique.
+- Chromium a rendu le composant isolé à **390 × 844** et **1280 × 800** : image chargée, aucun débordement horizontal dans ce composant, texte sombre sur ivoire.
+- La récupération des téléchargements par l'événement du navigateur était bloquée dans ce banc d'essai ; les sorties de `canvas.toBlob` ont été interceptées **sans modifier le code de l'exporteur** pour inspecter les octets. Les **16 nouveaux PNG/WebP** (deux logos × quatre tailles × deux formats) ont été ouverts : dimensions conformes et coin alpha transparent.
+- Un ZIP local de travail contient les quatre SVG et les 32 PNG/WebP, dont les 16 formats transparents testés précédemment. **Le ZIP et les rasters ne sont pas ajoutés à GitHub.**
+- Le rendu du **site public complet**, les lecteurs d'écran, Firefox et Safari restent non testés. Le problème du réseau rouge tronqué par le `clipPath` d'Interstice reste ouvert.
+
+### Coordination avant publication
+
+Les PR graphiques #5 (typographie), #14 (manifeste), #18 (accueil), #19 (bibliothèque/Wiki), #20 (ancien kit) sont conservées comme références à réconcilier. Ne pas fusionner directement des versions divergentes de `style.css`, `wiki.html` et `coordination/JOURNAL_COMMUN.md`.
