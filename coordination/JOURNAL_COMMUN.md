@@ -694,3 +694,14 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Test préparé :** `tests/wiki-handoff-idempotency.test.mjs` vérifie création, nouvelle exécution sans mutation, unicité, absence d'approbation et refus en cas de changement de source (commit `0c1055878cbf17587ae44d0abef7907026ae6332`). Workflow étendu à ce test (commit `299ac1cd1f2ed1ee050d28c1b93c1097a733fee0`). L'exécution CI n'est pas encore confirmée.
 
 **Limites :** registre local non transactionnel en cas d'exécutions concurrentes ; pas encore de vrai raccordement Supabase, ni d'authentification de service, ni de contrôle des droits de republication ; aucune fiche publiée. Suite : tester le script, organiser un mécanisme atomique sur stockage autorisé, définir la transition de statut via une procédure auditée puis déployer seulement après revue.
+
+
+## 2026-10-29 — Anarchitecte — Schéma candidat pour ingestion documentaire FN069
+
+**Audit réel :** PR #26 sur `fix/wiki-review-handoff-fn069-2026-10-29` était 11 commits devant `main`, aucun retard au contrôle. La table `wiki_article_submissions` conserve une politique SELECT `wiki_article_own_read` pour `authenticated` et ne représente pas une file anonyme des ateliers. Ne pas détourner la table ni simuler un auteur ou des confirmations de droits.
+
+**Modification réellement enregistrée :** nouveau fichier `docs/proposals/wiki-document-handoffs-schema.sql`, commit `7c8e8ceab35a94f44330eba02c26d069c4ad7094`. Il propose une table séparée avec clef documentaire unique, empreintes de source, provenance, atelier et état limité à `awaiting_human_review`, RLS activée et absence de droits de lecture/écriture public. Ce fichier est une proposition SQL en dépôt, pas une migration appliquée.
+
+**Limites :** aucune écriture dans Supabase ; pas encore d'identité autorisée de service, de procédure atomique de révision ou d'historique exhaustif. Une seule ligne par identifiant protège les insertions concurrentes contre les doublons, mais il faudra définir la transaction d'upsert et l'audit des changements de SHA avant mise en service. Aucune publication ni validation automatique autorisée.
+
+**Suite :** exécuter les tests de la file et faire relire la stratégie de rôles/provenance ; implémenter une ingestion transactionnelle auditée sur environnement non productif avant de proposer une migration sur le projet réel.
