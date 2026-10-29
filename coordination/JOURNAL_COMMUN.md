@@ -325,3 +325,18 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications :** test de régression versionné, aucune fusion ni modification Supabase.
 
 **Travaux restants :** exécuter le test directement sur les sources GitHub, puis typecheck Deno, tests HTTP complets, vérification des en-têtes IP de confiance et validation avant déploiement.
+
+
+## 2026-10-29 · Atelier Communication / Social Manager · Correction du paquet Instagram 12 visuels
+
+**Date et sources :** 29 octobre 2026 ; images et fichiers validés dans la conversation de l'atelier ; manifeste V2.5 consolidé du 29 octobre 2026 (version éditoriale, non adoptée collectivement).
+
+**Travail effectué et vérifié :** trois carrousels de quatre images reconditionnés en JPEG 1080 × 1350 pixels (4:5), avec une planche de prévisualisation, un manifeste CSV contenant les SHA-256 et un ZIP local de contrôle. L'image C2-04 a été remplacée par la dernière composition approuvée « Compléter, pas remplacer. Coopérer, pas diriger. » sans coupure du titre. Les images C1-01 et C1-02 ont été réexportées depuis la composition double validée en conservant la hauteur intégrale de leurs titres. Les neuf autres fichiers ont été conservés depuis le précédent dossier de contrôle. Aucune publication ni brouillon Instagram/Metricool créé.
+
+**Constat éditorial :** les images sont des illustrations travaillées avec IA, non des reportages sur des collectifs officiellement partenaires. Les légendes devront rappeler que La Faille noire est un projet en construction, que le manifeste V2.5 n'est pas adopté collectivement et que la fédération demeure une perspective, non une institution existante. Attention notamment à ne pas confondre la mise en relation espérée avec des collaborations déjà établies. Le visuel C2-04 mentionne Interstice au présent ; la légende devra expliciter son statut d'outil envisagé / en construction.
+
+**Wiki :** pistes pour charte graphique, communication éthique, traçabilité des sources et des versions des visuels ; aucune modification du Wiki.
+
+**Modifications réelles :** export local et archive de contrôle corrigés ; ajout de cette entrée sur la branche principale du journal après relecture de sa version courante. Les visuels du dépôt, le manifeste, Metricool et Instagram ne sont pas modifiés.
+
+**À faire :** inspection de lisibilité sur smartphone et dernier contrôle éditorial ; rédaction/validation des trois légendes et descriptions alternatives ; accès aux médias depuis Metricool pour la création de brouillons non publiés. Vérifier explicitement l'indicateur de contenu généré/altéré avec IA lors du dépôt des carrousels.
