@@ -248,3 +248,14 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Contradictions/risques :** origin HTTP n'est pas un mécanisme d'authentification, en-têtes IP non garantis de source fiable ; les protections anti-abus restent à consolider. Aucun test Deno, HTTP intégré ni CI confirmé pour ces nouveaux commits. La documentation et le journal de cette branche sont en retard sur `main` : réconciliation nécessaire avant fusion.
 
 **Suites :** tests Node/Deno et bout en bout, contrôle provenance IP auprès de la passerelle Supabase, résolution de la divergence Git, revue des formulaires, validation explicite avant déploiement. **État : CODE ET JOURNAL SUR BRANCHE, TESTS COMPLETS NON VALIDÉS, PAS DE FUSION NI DÉPLOIEMENT.**
+
+
+## 2026-10-29 — Anarchitecte — Tests CI préparés sur PR #13
+
+**Constat :** Node.js 22 disponible dans l'environnement de contrôle ; Deno indisponible. Tentative de clonage HTTPS direct du dépôt depuis cet environnement impossible (résolution DNS GitHub indisponible). Aucun résultat de test local présenté comme réussi.
+
+**Modification vérifiée :** ajout de `.github/workflows/edge-request-bounds.yml` sur `fix/edge-request-bounds-2026-10-29`, commit `4a83486365a93176c22e54a16c87c7689fe630d8`. Le workflow prévoit l'exécution des tests Node à partir des sources Edge et le contrôle Deno des deux fichiers sur les PR modifiant ces chemins ; déclenchement manuel également possible. Le fichier a été relu après création.
+
+**Résultat :** GitHub n'a retourné ni exécution de workflow ni statut CI pour le commit au contrôle. **Aucune réussite de tests confirmée**, aucune fusion ou modification de Supabase de production.
+
+**Risque et suite :** vérifier les exécutions Actions et corriger d'éventuels échecs, examiner les droits de provenance des IP (cf-connecting-ip / x-forwarded-for), réaliser des tests HTTP en environnement isolé, puis seulement réconcilier avec main et revoir la possibilité de fusion. Les tests Deno de type ne remplacent pas les tests d'intégration ni les essais fonctionnels.
