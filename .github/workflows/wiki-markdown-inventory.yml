@@ -33,7 +33,7 @@ jobs:
           GITHUB_REF_NAME: main
         run: node scripts/inventory-wiki-markdown.mjs
       - name: Synchronize private editorial staging on main
-        if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/fix/wiki-review-handoff-rebased-2026-10-30') && github.event_name == 'push'
+        if: (github.ref == 'refs/heads/main' && github.event_name == 'push') || (github.event_name == 'pull_request' && github.event.pull_request.number == 29 && github.event.pull_request.head.repo.full_name == 'zoutiFrutti/Interstice')
         run: node scripts/submit-wiki-inventory.mjs
       - name: Store inventory for editorial ingest
         uses: actions/upload-artifact@v4
