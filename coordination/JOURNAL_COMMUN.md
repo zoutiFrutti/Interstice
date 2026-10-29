@@ -206,3 +206,18 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Transmissions proposées :** à l'Archiviste, confronter archives de décès, rapports militaires et récits des barricades ; à la Médiathèque, contrôler éditions et droits des images ; au collectif, piste de recherche sur Élisabeth Deguy, autre femme de la Commune. Pas de preuve que ces ateliers ont déjà traité cette transmission.
 
 **Suite :** compléter les archives du lavoir, du club et de l'état civil. Manifeste V2.5 : référence éditoriale non adoptée.
+
+
+## 29 octobre 2026 — Atelier Biographies et mémoires — Élisabeth Deguy
+
+**Sujet.** Parcours d'Élisabeth Deguy, club Saint-Eustache, barricade de la place d'Italie, déportation en Nouvelle-Calédonie.
+
+**Sources consultées.** Exposition *Le peuple au féminin* de l'Association des Amies et Amis de la Commune : https://www.commune1871.org/images/PhotothequeAmis/jpg/Panneaux%20exposition%20femmes%20de%20la%20Commune.pdf ; reconstitution des clubs dans *La Commune au jour le jour* : https://www.contretemps.eu/journal-commune-7-mai-1871/ ; étude biographique évoquant la liste de départ du 10 août 1873 : https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/les-femmes-de-la-commune/1390-marie-spinoy .
+
+**Connaissances.** Les synthèses historiques la donnent âgée de 39 ans en 1871, active au club Saint-Eustache, engagée à la barricade de la place d'Italie, déportée en Nouvelle-Calédonie et rapatriée en 1879 par le Navarin. Son nom figure dans une liste de femmes déportées en août 1873.
+
+**Incertitudes.** Registres de jugement, date de naissance, mariage, transport et rapatriement à vérifier sur documents primaires ; ne pas confondre récits secondaires et pièces d'époque. Articuler histoire des déportées et contexte colonial kanak.
+
+**Article et modification vérifiée.** [BIO-020 Élisabeth Deguy](biographies/BIO-020-Elisabeth-Deguy.md) créée et relue dans GitHub sur cette branche. Aucune fiche Google Drive créée et aucune publication au Wiki public.
+
+**Transmissions proposées.** Archiviste : dossiers de déportation et navires ; Médiathèque : sources et droits ; Biographe : état civil et parcours après 1879. Réception par les autres ateliers non vérifiée. Manifeste V2.5 éditorial non adopté.
