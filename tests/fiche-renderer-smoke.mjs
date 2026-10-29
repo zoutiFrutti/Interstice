@@ -73,5 +73,5 @@ await writeFile("visual-qa/renderer-report.json",JSON.stringify({checks},null,2)
 for(const c of checks)console.log((c.ok?"PASS ":"FAIL ")+c.name+(c.ok?"":": "+JSON.stringify(c.detail).slice(0,500)));
 if(checks.some(c=>!c.ok))process.exitCode=1;
 
-// Revue privée testée avec un client Supabase simulé (aucune donnée réelle, diagnostic asynchrone de modal).
+// Revue privée testée avec un client Supabase simulé (aucune donnée réelle, diagnostic isolé du moteur de modal).
 await import('./moderation-preview-smoke.mjs');
