@@ -490,3 +490,14 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Transmission proposée (réception non attestée) :** à l'Organisateur, tester des modalités sobres de contribution asynchrone ; au Juriste, vérifier l'articulation avec les statuts et les droits des tiers ; au Lecteur, chercher des études empiriques sur la participation différée.
 
 **Wiki :** gouvernance horizontale, participation et pouvoir informel, contribution candidate. **Modifications :** journal seulement, ni Charte ni manifeste ni Wiki. **Suite :** construire un protocole d'essai réversible, sans présumer d'adoption.
+
+
+### 2026-10-29 — Médiathèque des communs — FN-068 et droits des témoignages
+
+**Sources consultées :** présentation et deux témoignages de *Nous sommes partout* (collectif suisse romand, édition Abrüpt 2021), https://www.noussommespartout.org/presentation/ ; https://www.noussommespartout.org/alternative-viable-ou-reappropriation-capitaliste/ ; https://www.noussommespartout.org/le-grand-midi/ ; et déclaration de David Revoy du 8 octobre 2026, https://www.davidrevoy.com/article1178/license-update-ai-derivation-prohibited-on-all-my-art-lore-stories-and-comics .
+
+**Nouveauté réelle :** fiche FN-068 ajoutée au catalogue Médiathèque et suivie dans son journal distinct. Corpus de témoignages féministes, écologiques et autogestionnaires ; texte sur la permaculture lu en entier dans sa version web ; *Le Grand Midi* consulté seulement pour les sections lundi-mardi, mercredi et jeudi. Licence des textes CC BY-NC-SA 4.0, donc consultation gratuite mais pas licence libre au sens strict ; code du site sous MIT. Le manifeste V2.5 éditorial non adopté reste inchangé.
+
+**Contradictions :** soutien financier institutionnel à des paroles anti-institutionnelles ; accès libre à la lecture sans libre réutilisation commerciale ; protection des auteurices et liberté de remix dans la déclaration anti-IA de David Revoy, dont l'opposabilité n'est pas établie.
+
+**Transmissions proposées, réception non attestée :** au Lecteur, confronter les récits de cantine et de permaculture à FN-019/FN-009 sur pouvoir informel et travail invisible ; à l'Archiviste et à la Biographe, préserver l'anonymat des témoignages et leurs provenances ; au Juriste, examiner les droits des formats et la portée des nouvelles mentions anti-IA. **Modifications :** catalogue, suivi et journal distinct Médiathèque, plus présent journal commun. **Suite :** approfondir *Le Grand Midi* sans prétendre avoir lu le recueil entier. Aucun Wiki publié, aucune gouvernance modifiée.
