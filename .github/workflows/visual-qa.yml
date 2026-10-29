@@ -1,0 +1,53 @@
+name: Contrôle visuel Interstice
+
+on:
+  push:
+    branches:
+      - design/kit-graphique-consolide-2026-10-29
+    paths:
+      - '**.html'
+      - '**.css'
+      - 'assets/**'
+      - 'tests/visual-smoke.mjs'
+      - '.github/workflows/visual-qa.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - '**.html'
+      - '**.css'
+      - 'assets/**'
+      - 'tests/visual-smoke.mjs'
+      - '.github/workflows/visual-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  visual-smoke:
+    name: Chromium — 390px et 1280px
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Servir le site statique et exécuter les tests
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/interstice-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          node tests/visual-smoke.mjs
+      - name: Conserver les captures et résultats même en cas d'échec
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: interstice-visual-qa
+          path: visual-qa/
+          if-no-files-found: warn
+          retention-days: 7
