@@ -385,3 +385,11 @@ Suite : validation des textes, descriptions alternatives, contrôle des médias 
 
 ## 2026-10-29 — Médiathèque : Maria Mies, Ivan Illich et Silvia Federici
 Lecture : autonomie, subsistance et travail invisible. Sources : https://transversal.at/transversal/0805/mies/en ; https://theanarchistlibrary.org/library/ivan-illich-shadow-work ; https://files.libcom.org/files/Federici-Silvia-Wages-Against-Housework.pdf . Contradiction : une autonomie collective peut aggraver les charges des personnes assumant le soin. Fiche réellement ajoutée : coordination/propositions/lecture-mies-illich-federici-20261029.md (commit fab3cfab). Texte V2.5 de référence éditoriale non adoptée. Suite : critique historique, droits et intégration dans les pages existantes.
+
+
+## 2026-10-29 — Médiathèque : Arendt, Goldman, Federici
+Sujet : liberté politique et dépendance matérielle ; lecture ciblée de Goldman et analyse universitaire d'Arendt, rapprochement avec Federici.
+Sources : https://theanarchistlibrary.org/library/emma-goldman-the-individual-society-and-the-state ; https://plato.stanford.edu/entries/arendt/ .
+Contradiction : un droit formel à la participation ne suffit pas si le logement ou les moyens de subsistance dépendent de ceux qui prennent les décisions. Vigilance : liberté de contestation, sécurité matérielle, vie privée.
+Modifications : fiche de lecture candidate enregistrée sur branche atelier/lecture-femmes-1871-1936-20261029, chemin coordination/propositions/lecture-arendt-goldman-federici-liberte-reelle.md (commit 4a6f53bf). Journal principal enrichi. Aucun ajout au catalogue Drive ni publication sur Wiki public. Manifeste V2.5 référence non adoptée.
+Restant : approfondir sources féministes et critiques d'Arendt, comparer avec pages Wiki existantes avant intégration.
