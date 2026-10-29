@@ -29,3 +29,10 @@ Pour chaque fiche : verifier les sources et le niveau de lecture, retrouver la p
 - Rancière et Balibar : ajout proposé dans `wiki-socialismes-communismes-anarchismes-autogestion.html`.
 - Fricker, Dotson et Alcoff : ajout proposé dans `wiki-decision-collective.html`, sur l'écoute, les préjugés de crédibilité et le droit de ne pas témoigner.
 - Toutes ces mises à jour sont sur une branche de revue, pas encore publiées sur le Wiki public. Il reste à examiner Mouffe/Habermas, Allen/Forst, Pettit/Lukes/Lovett et les autres croisements avant clôture.
+
+## Rattrapage des trois confrontations restantes — 29 octobre 2026
+
+- Mouffe et Habermas : consensus et dissensus, ajout candidat dans `wiki-decision-collective.html`.
+- Amy Allen et Rainer Forst : justification du pouvoir et domination, même page.
+- Pettit, Lukes et Lovett : pouvoir arbitraire et dépendance, ajout candidat dans `wiki-socialismes-communismes-anarchismes-autogestion.html`.
+- Les deux pages ont été modifiées dans la branche de la PR 23 ; sources bibliographiques données, textes non prétendus lus intégralement. Fusion et publication encore à vérifier.
