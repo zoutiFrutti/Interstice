@@ -381,3 +381,22 @@ Wiki concerné : présentation du projet, communication éthique, mutualisation,
 Modifications : légendes proposées dans la conversation ; mise à jour du journal uniquement. Aucun brouillon ni publication Instagram effectué.
 
 Suite : validation des textes, descriptions alternatives, contrôle des médias et création de brouillons Metricool si les images sont accessibles.
+
+
+## 2026-10-29 — Atelier Graphiste — Illustrations claires pour la bibliothèque et le Wiki
+
+**Sujet :** poursuivre la direction artistique noir/rouge/ivoire avec des illustrations des savoir-faire et de la recherche, plutôt que des foules ou des visages identifiables.
+
+**Sources consultées :** `bibliotheque.html`, `wiki.html`, `style.css`, `index.html` et `coordination/JOURNAL_COMMUN.md` sur `main` de `zoutiFrutti/Interstice` ; direction graphique décidée dans l'atelier ; référence éditoriale Manifeste V2.5 consolidé, document de travail non adopté. PR #18 (accueil illustré) ouverte et distincte.
+
+**Connaissances et décisions de D.A. :** le site en production dans le dépôt reste majoritairement sombre et textuel. La transition par panneaux ivoire conserve l'identité des logos sans imposer une esthétique d'affiche sur tous les écrans. La bibliothèque évoque la transmission des connaissances par des livres et un crayon ; le Wiki, les liens entre fiches et sources documentaires. Les deux illustrations sont des dessins originaux vectoriels sans personnages. Elles ne sont ni des photographies, ni des preuves d'activités déjà réalisées.
+
+**Wiki / pages concernées :** accueil (branche PR #18), `bibliotheque.html`, `wiki.html`, charte D.A. / accessibilité si des articles de documentation existent.
+
+**Écarts repérés :** le lien de navigation « Lire le manifeste » de `bibliotheque.html` pointait vers l'archive V2.1, alors que la V2.5 est désormais la référence éditoriale. Cette incohérence de navigation a été corrigée sans supprimer l'archive. Les CSS `style.css` (main) et la refonte typographique (PR #5) restent distincts : cette passe ne prétend pas avoir publié les nouvelles polices.
+
+**Modifications réellement effectuées (branche `atelier-da-bibliotheque-wiki-illustrations-2026-10-29`) :** deux SVG originaux dans `assets/` ; feuille `editorial-illustrations.css` limitée aux pages concernées ; panneaux ivoire avec titres, textes alternatifs et liens d'action intégrés dans `bibliotheque.html` et `wiki.html` ; correction du lien du manifeste vers `manifeste-v2-5.html`. Les textes politiques du manifeste restent inchangés. Aucune fusion sur `main`.
+
+**Vérifications effectuées :** relecture GitHub sur la branche (présence des 5 fichiers, images et CSS liés, cibles d'ancre existantes, absence de doublons d'ID visibles, balises SVG équilibrées par contrôle statique). Contrastes calculés entre les couleurs de la nouvelle zone : texte brun sur ivoire ~10,37:1 ; titre presque noir sur ivoire ~15,09:1 ; texte blanc sur bouton rouge sombre ~8,69:1. Il ne s'agit pas d'un audit WCAG complet.
+
+**Travaux restants :** test du rendu navigateur réel mobile et desktop, vérification du contraste en situation, contrôle lecteur d'écran et chargement effectif des SVG, puis revue et fusion indépendante des PR #18 et de la présente proposition. Conserver la V2.5 explicitement non adoptée et l'anonymisation des futurs médias photographiques.
