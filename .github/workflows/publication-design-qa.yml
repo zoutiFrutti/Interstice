@@ -1,0 +1,45 @@
+name: Prototype de publication graphique
+
+on:
+  push:
+    branches: [design/publication-graphique-unifiee-v01-2026-10-29]
+    paths:
+      - 'assets/fiche-design-system.css'
+      - 'wiki-lecture-croisee-travail-soin-pouvoir.html'
+      - 'design-system/**'
+      - 'tests/publication-design-smoke.mjs'
+      - '.github/workflows/publication-design-qa.yml'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fiche-lecture:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer les outils de test
+        run: |
+          npm install --no-save playwright@1.58.2 ajv@8 ajv-formats@3
+          npx playwright install --with-deps chromium
+      - name: Contrôler une fiche existante sans soumission de données
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/interstice-web.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          node tests/publication-design-smoke.mjs
+      - name: Captures et rapport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prototype-fiche-publication
+          path: visual-qa/
+          if-no-files-found: warn
+          retention-days: 7
