@@ -539,3 +539,21 @@ Sources consultées : journal commun et Charte V0.4, articles 11, 12 et 21 à 25
 Constat : les dispositions candidates traitent déjà des privilèges, des mandats, des conflits d'intérêts et du contrôle des accès. Contribution critique nouvelle : analyser les dépendances fonctionnelles plutôt que profiler les intentions individuelles. Test fictif : absence de quinze jours d'une personne centralisant accès, finances et relations. Questions : continuité, transmission, remplaçabilité, confidentialité et charge de travail.
 
 Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de compétence ; responsabilité sans culpabilisation. Transmission proposée au Juriste et à l'Organisateur, réception non attestée. Wiki : candidat seulement. Modifications : journal uniquement ; aucune règle ni publication Wiki. Suite : tester les contre-pouvoirs informels.
+
+---
+
+## 2026-10-29 — Atelier central — Publication graphique unifiée (cadrage documentaire)
+
+**Directive reçue :** coopération Graphiste / Anarchitecte pour une mise en forme homogène des connaissances, sans automatiser la validation du contenu. Responsabilités complémentaires, sans autorité éditoriale automatique.
+
+**Existence vérifiée sur main :** `style.css` définit déjà une base typographique, des couleurs, des espacements et des styles de formulaires ; `proposer-article.html` recueille titre, thème, intention, corps, sources et confirmations relatives aux droits et à la confidentialité ; le formulaire utilise `submit_wiki_article` et un suivi de statuts de propositions. `charte-contributions-wiki.html` et `METHODE_EDITORIALE_SOURCES.md` établissent déjà la distinction entre fait, interprétation, témoignage, attribution, revue et publication. Le mécanisme technique complet de génération de pages n'a pas été démontré dans cette passe.
+
+**Règles de cohérence proposées, non adoptées :** conserver des champs structurés pour type de fiche (biographie, lecture, archive, notion, bibliographie), titre, résumé, sections, références précises, degré de vérification, contradictions, liens entre fiches, auteur ou atelier, date, droits/licence et historique. Séparer strictement le `statut_editorial` du `statut_technique` ; la prévisualisation et le rendu automatique ne changent jamais le statut éditorial. Ne pas exporter de données personnelles sensibles dans le dépôt public.
+
+**Points à trancher par les ateliers compétents :** schéma minimal commun ; correspondance avec les champs Supabase existants ; composants graphiques et accessibilité ; prototype sur une fiche déjà publiée ; circuit de revue et publication ; conservation des identifiants, URL, sources et anciennes versions. Ne pas recréer de pipeline en parallèle sans audit des dispositifs existants.
+
+**Sources internes :** `style.css`, `proposer-article.html`, `charte-contributions-wiki.html`, `METHODE_EDITORIALE_SOURCES.md` et le présent journal sur `main` consultés le 29 octobre 2026.
+
+**Travail effectué :** audit ciblé des fichiers cités, création de la présente entrée sur branche séparée. Aucun design system, composant ou pipeline de publication déclaré développé ou testé par l'atelier central.
+
+**État : CADRAGE RÉDIGÉ ET ENREGISTRÉ SUR BRANCHE ; VALIDATION ET INTÉGRATION À MAIN À FAIRE.**
