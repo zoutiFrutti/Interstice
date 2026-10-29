@@ -34,3 +34,8 @@ alter table wiki_ingest_private.github_document_revisions enable row level secur
 revoke all on wiki_ingest_private.github_document_drafts from public, anon, authenticated;
 revoke all on wiki_ingest_private.github_document_revisions from public, anon, authenticated;
 -- Les droits de service sont poses dans wiki-github-production-rpc.sql.
+
+-- Contrainte ajoutee apres le premier test d'import : identifiant derive du chemin.
+alter table wiki_ingest_private.github_document_drafts
+ add constraint github_document_id_matches_path
+ check (document_id = ('gh-' || substr(encode(sha256(convert_to(source_path,'UTF8')),'hex'),1,24)));
