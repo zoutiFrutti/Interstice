@@ -151,3 +151,35 @@
   .fiche-page > header { justify-content: flex-start; row-gap: .5rem; }
   .fiche-page > header strong { flex-basis: 100%; }
 }
+
+/* Rendu JSON v0.1 : distinctions documentaires lisibles sans couleur seule. */
+.fiche-page main#fiche-preview {max-width:980px;min-width:0;}
+.fiche-rendue .fiche-hero{margin-bottom:1.3rem;padding:1.5rem 0 1rem;}
+.fiche-rendue .fiche-hero h1{max-width:20ch;font-size:clamp(2.4rem,6vw,4rem);line-height:1.15;}
+.fiche-rendue .fiche-resume{font-size:1.1rem;color:#d7d4d1;}
+.fiche-rendue .fiche-section{margin-bottom:clamp(1.5rem,4vw,3rem);}
+.fiche-rendue .fiche-bloc{max-width:78ch;margin:0 0 1.1rem;}
+.fiche-rendue .fiche-bloc__texte{margin:0 0 .25rem;line-height:1.7;white-space:pre-line;}
+.fiche-rendue .fiche-qualification{display:block;color:#d7c6c1;font-size:.82rem;font-weight:650;line-height:1.5;}
+.fiche-rendue .fiche-references{display:block;font-size:.82rem;line-height:1.6;}
+.fiche-rendue .fiche-section--sources .fiche-qualification{color:#453b38;}
+.fiche-rendue .fiche-section--sources .fiche-references{color:#453b38;}
+.fiche-rendue .fiche-section--sources p.fiche-source-limites{color:#423b40;font-size:.88rem;margin:.25rem 0 .7rem;}
+.fiche-rendue .fiche-bloc--citation{border-left:4px solid #c5212c;margin-left:0;padding:.5rem 1rem;background:#242025;}
+.fiche-rendue .fiche-liste{padding-left:1.35rem;margin:0 0 1rem;}
+.fiche-rendue .fiche-liste li{padding-left:.2rem;}
+.fiche-rendue .fiche-revision{border-top:1px solid #7c7474;margin-top:3rem;padding:1rem 0 2rem;color:#dad4d1;}
+.fiche-rendue .fiche-revision p{margin:.1rem 0;line-height:1.5;}
+.fiche-rendue .fiche-section--discussion .fiche-references a{color:#f4c3bd;}
+.fiche-rendue .fiche-section--sources li{overflow-wrap:anywhere;}
+@media(max-width:600px){
+  .fiche-rendue .fiche-hero h1{font-size:clamp(2.1rem,10vw,3.2rem);}
+  .fiche-rendue .fiche-hero{padding-top:1.5rem;}
+}
+@media print{
+  .fiche-rendue .fiche-bloc--citation,
+  .fiche-rendue .fiche-section--discussion{background:white;color:black}
+  .fiche-rendue .fiche-revision{color:black}
+  .fiche-rendue .fiche-qualification{color:#222}
+  .fiche-rendue .fiche-section--sources .fiche-qualification{color:#222}
+}
