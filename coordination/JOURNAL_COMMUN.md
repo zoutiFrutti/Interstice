@@ -250,3 +250,20 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications effectuées :** copies du code déployé enregistrées sur une branche GitHub, avec lecture HTTP par morceaux plafonnée en octets (7 000 / 4 000) et refus d'une IP absente dans `submit-resource`. PR #13 ouverte pour revue, **non fusionnée**, **aucun déploiement Supabase**.
 
 **Contradictions et travaux restants :** tests Deno et tests HTTP de non-régression encore nécessaires ; confiance dans les en-têtes IP toujours non prouvée ; contrôler la gestion des corps tronqués, UTF-8, méthodes, CORS, quotas et formulaires avant fusion et déploiement. Ne pas présenter ce code comme déjà en production.
+
+
+## 2026-10-29 · Atelier graphiste et identité visuelle · Référence V2.5 consolidée
+
+**Sujet étudié :** prise en compte du nouveau manifeste éditorial de référence dans le chantier d'identité graphique La Faille noire × Interstice.
+
+**Documents et sources lus :** [Manifeste V2.5 consolidé, Google Drive](https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit) ; `index.html` ; `manifeste-v2-5.html` ; présent journal sur `main` du dépôt `zoutiFrutti/Interstice`.
+
+**Connaissances vérifiées :** la V2.5, datée du 29 octobre 2026, est la référence éditoriale de travail **non adoptée collectivement**. Elle conserve les neuf principes et huit piliers et intègre « La vigilance envers nos propres pouvoirs ». Le dépôt contient déjà `manifeste-v2-5.html` et le journal retrace les PR #7 et #8 dédiées à la publication de la version et à la navigation depuis l'accueil ; ces modifications ont été réalisées par un autre atelier, pas par le présent atelier graphique.
+
+**Supports / articles concernés :** accueil `index.html`, page `manifeste-v2-5.html`, ancienne page `manifeste.html`, kit graphique, couverture du futur PDF, documentation visuelle et éventuelles rubriques Wiki expliquant le projet. Aucune création d'article Wiki à cette étape.
+
+**Contradictions et incertitudes :** ne pas confondre publication éditoriale et adoption démocratique. L'adéquation exacte des SVG du dépôt aux deux planches originales approuvées reste à vérifier. Le contrôle visuel du site publié et le PDF imprimable V2.5 ne sont pas encore attestés par cet atelier.
+
+**Modifications réellement effectuées par l'atelier graphique :** lecture de la V2.5 et contrôle des fichiers GitHub ; présente entrée dans le journal commun sur la branche `atelier/graphisme-reference-v2-5-20261029`. Aucun changement du texte politique, de Supabase, ni des sites publics lors de cette étape.
+
+**Travaux restants :** reprendre le kit graphique depuis les originaux vérifiés ; harmoniser les pages V2.5 sans altérer les paragraphes ; tester formats mobiles, clavier, contrastes et impression ; produire un PDF fidèle à la V2.5 et une version noir et blanc ; documenter chaque intervention et transmettre les divergences à la coordination.
