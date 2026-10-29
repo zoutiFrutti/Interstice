@@ -84,3 +84,14 @@ Sur la branche `design/publication-graphique-unifiee-v01-2026-10-29` : CSS de fi
 **À l'Anarchitecte :** ce composant de rendu est un démonstrateur, pas un outil de prévisualisation privée. Pour des propositions issues de `wiki_article_submissions`, il faut une page protégée par authentification, RLS et contrôles de rôle côté serveur, sans URL publique et sans déduire la permission des champs envoyés par un navigateur. Le moteur de rendu pourra être utilisé dans cette interface après revue, mais les contraintes de confidentialité sont propres à la couche applicative.
 
 **Limites actuelles :** le moteur DOM vérifie certains champs essentiels mais ne remplace pas la validation exhaustive du JSON Schema par Ajv. Il ne gère pas encore les notes de bas de page, les liens internes enrichis, le versionnement consultable, les droits multimédias ni les différents modules spécialisés des six types. Aucune publication automatique n'est créée.
+
+
+## 10. Sécurité d'interface et reprise consolidée (30 octobre 2026)
+
+La revue de modération continue d'utiliser l'authentification et les politiques RLS déjà présentes : l'aperçu n'accorde aucun droit. Le composant de présentation n'a aucune fonction d'écriture.
+
+Un marqueur local de génération de requêtes, `accessEpoch`, invalide les réponses du serveur terminant **après** une déconnexion ou un retrait de rôle constaté. La file et l'aperçu déjà affichés sont effacés et le panneau masqué ; le rôle reste contrôlé par `is_moderator()` et la RLS. C'est une mesure d'hygiène de l'interface et non une preuve d'autorisation côté serveur.
+
+Le run GitHub Actions https://github.com/zoutiFrutti/Interstice/actions/runs/40971309802 a validé **24 scénarios** sur l'ancienne branche, avec uniquement des identités et fiches fictives : accès refusé, révocation de rôle au clic, réponse retardée après déconnexion, focus dans la fenêtre, fermeture Échap, XSS et absence de publication. La nouvelle branche `design/publication-graphique-consolidee-2026-10-30` transfère les fichiers à l'identique sur le `main` récent et conserve le journal commun des ateliers. Un résultat CI propre à cette branche doit être vérifié avant fusion.
+
+À réaliser : vérifier une véritable session modérateur avec consentement et environnement approprié, les interactions clavier de bout en bout, puis coordonner avec la PR graphique #22 et l'Anarchitecte. Publication et validation humaine restent distinctes.
