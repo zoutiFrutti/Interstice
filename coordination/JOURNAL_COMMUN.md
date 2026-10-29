@@ -657,3 +657,18 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Contradictions :** prescriptions démocratiques versus témoignage de mauvaise activité ; possible biais anti-autogestion de l'interlocuteur et des citations reprises ; ne pas inférer échec structurel généralisé.
 **À poursuivre :** obtenir le fac-similé MP 159 (2 avril), l'affiche du 3 mai, l'édition originale des mémoires de Rossel, et ouvrir au moins un tract Combahee pour relever son contenu précis et ses métadonnées.
 **Modifications :** entrée au journal uniquement ; FN et ARCH-005 non modifiés, Wiki public non modifié, manifeste V2.5 éditorial non adopté intact.
+
+
+## 2026-10-29 — Anarchitecte — Transmission FN069 GitHub / Drive vers file Wiki
+
+**Source contrôlée :** `coordination/PENSEUR_FN069_ARCHIVES_CROISEES_2026-10-29.md` sur `main`, SHA de contenu `31a4d3ce04da75a9ef9f6e42608e6cf0198011f0`. Le suivi Drive « Suivi des recherches et contributions — Médiathèque des communs » mentionne explicitement la liaison entre cette source, FN069 et FN009. Ces documents ne valent pas validation de leurs affirmations historiques.
+
+**État Supabase interrogé :** `public.wiki_article_submissions` = 0 enregistrement ; `public.wiki_article_review_log` = 0. Le formulaire existant requiert un auteur authentifié, une confirmation des droits et une confirmation de confidentialité. Aucun compte d'auteur ni approbation ne sont simulés ; aucun INSERT Supabase n'a été exécuté.
+
+**Modification enregistrée :** file structurée `coordination/wiki-review-queue/fn069-penseur-archives-croisees-2026-10-29.json`, identifiant stable `fn069-penseur-archives-croisees-2026-10-29`, statut `needs_review` **limité à la file GitHub**, approbation éditoriale `false`, publication `not_published`, référence Supabase `null`. Liens GitHub et Drive, quatre sources externes, tâches de vérification, historique et précaution droits inclus. Commit `42a13fb6db3fb47431614fcbc42755f3fb67484c` ; relecture JSON réussie.
+
+**Contrôles techniques :** script `scripts/validate-wiki-review-queue.mjs` pour unicité des identifiants, statut, sources, provenance, existence du document GitHub et interdiction d'un statut publié ; commit `fc6d773d0edf003553a71b80da15c8dcd540c6fd`. Workflow `.github/workflows/wiki-review-queue.yml` créé pour contrôle Node sur push/PR ; commit `0ed04124b092421a67a323c4c7cbf1b0725ea3cb`. Relecture des fichiers et contrôle des valeurs de la fiche via connecteur effectués ; exécution effective du script Node et CI non encore attestées.
+
+**Blocage / prochaine dépendance :** une entrée dans la file documentaire GitHub n'est pas une contribution Supabase. Avant synchronisation automatique, définir une procédure autorisée pour associer une identité authentifiée, les droits et l'archivage des états ; assurer idempotence par identifiant stable et revue humaine. Ne pas insérer directement dans `wiki_article_submissions` via droits administrateur pour contourner RLS ou les validations.
+
+**Statut : FILE GITHUB CRÉÉE, EN ATTENTE DE RELECTURE DOCUMENTAIRE ; SUPABASE NON INSÉRÉ, WIKI NON PUBLIÉ.**
