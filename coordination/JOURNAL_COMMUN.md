@@ -24,3 +24,15 @@
 7. **Contradictions et précautions :** utiliser Instagram (service propriétaire) pour faire connaître un projet attaché à l'autonomie numérique ; ne pas présenter une fédération envisagée comme déjà constituée ; ne pas confondre solidarité et remplacement permanent des services publics ; distinguer une illustration inspirée d'images réelles d'une preuve documentaire ; respecter l'autonomie et le consentement des collectifs représentés.
 8. **Modifications réellement effectuées :** une branche dédiée `atelier/communication-journal-2026-10-29` créée ; cette entrée de journal ajoutée sur cette branche. Aucun fichier Wiki, manifeste, compte Instagram ou publication Metricool modifié par cette contribution.
 9. **Suites :** validation des images 1 à 3 du carrousel 3 ; contrôle final des 12 visuels et du logo source ; vérification des licences et crédits si sources photographiques effectivement réutilisées ; préparation des publications en brouillon, sans mise en ligne automatique ; examen des pistes Wiki par l'atelier central.
+
+## 2026-10-29 — Atelier communication — Assemblage et contrôle des visuels
+
+1. **Date :** 2026-10-29.
+2. **Atelier :** Communication et identité graphique.
+3. **Sujet :** Assemblage technique des trois carrousels de lancement.
+4. **Constat :** Douze fichiers JPG au format 1080 × 1350 ont été produits localement à partir des fichiers disponibles. Certains ont été extraits de planches et ne peuvent être certifiés comme les derniers exports validés. Aucun contenu n'a été publié.
+5. **Sources :** fichiers visuels de la conversation ; manifeste v2.1 pour le cadrage éditorial.
+6. **Wiki :** éléments utiles pour la charte graphique et la communication documentaire ; pas de nouvelle page créée.
+7. **Contradictions :** validation conversationnelle ≠ identification technique garantie du bon fichier final ; nécessité de garder traçabilité des versions.
+8. **Modifications vérifiées :** création locale de 12 JPG et d'un ZIP de contrôle ; ajout de cette entrée au journal sur la branche de travail. Pas de modification de `main`, ni d'Instagram ou Metricool.
+9. **À faire :** identifier les exports exacts des images anonymisées et des planches révisées, contrôler la lisibilité et l'orthographe, puis créer les brouillons Metricool lorsque les médias sont disponibles via des liens accessibles à la plateforme.
