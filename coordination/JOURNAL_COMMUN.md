@@ -139,3 +139,18 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Articles connexes et transmissions proposées.** Travaux du Penseur et du Lecteur sur A Voice from the South ; Médiathèque (œuvre et éditions) ; Archiviste (établissements, Sorbonne et réseaux). La transmission par le journal ne prouve pas leur traitement.
 
 **Modifications vérifiées.** BIO-016 remplie, relue, classée dans Drive. Aucune publication Wiki public, aucune modification du manifeste V2.5 éditorial non adopté. **Suite :** recherche biographique distincte sur Louise Talbot et les réseaux scolaires de Cooper.
+
+
+## 2026-10-29 — Biographies et mémoires — Louise Talbot (BIO-017)
+
+**Sujet.** Parcours autonome de Louise Talbot, lingère et militante de l'AIT, associée à la Commune de Paris.
+
+**Sources consultées.** Délibération de la Ville de Paris sur le jardin Louise Talbot-Augustin Avrial : https://a06-v7.apps.paris.fr/a06/jsp/site/plugins/odjcp/DoDownload.jsp?id_entite=53375&id_type_entite=6 ; conférence de John Sutton, Association des Amies et Amis de la Commune : https://commune1871.org/images/PhotothequeAmis/jpg/4-Avrial%2018%20mars.pdf .
+
+**Faits rapportés.** Mariage en 1866 avec Augustin Avrial ; appartenance à l'AIT ; signature signalée d'un manifeste contre la guerre en juillet 1870 ; participation à la Commune ; arrestation le 13 juin 1871 et détention à Laon puis Versailles ; décès en 1923.
+
+**Incertitudes.** Acte de naissance, détails du manifeste, dossiers de détention et engagements ultérieurs restent à vérifier sur sources primaires ; ne pas transférer ses activités à son mari. Sources consultées principalement secondaires.
+
+**Articles concernés.** BIO-017 https://docs.google.com/document/d/1PfOVetaH23dkywTG2sbsOfYng8BqVkZjNI9PXfop-yQ/edit ; BIO-015 Augustin Avrial. Pistes à transmettre à l'Archiviste : manifeste de 1870, dossiers de répression ; à la Médiathèque : référence à John Sutton. Transmissions proposées via journal, réception non attestée.
+
+**Modifications vérifiées.** BIO-017 créée, court contenu écrit et vérifié, déplacée dans Biographies. Tentative d'enrichissement détaillé bloquée : ne pas présenter la fiche comme complète. Aucune publication du Wiki public. **Suite :** compléter sources primaires, carrière propre et famille ; maintenir la V2.5 comme référence éditoriale non adoptée.
