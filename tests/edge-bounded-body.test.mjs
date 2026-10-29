@@ -25,6 +25,10 @@ for (const slug of ['submit-proposal', 'submit-resource']) {
   await check('taille dépassée', 'abcde', 4, 'BODY_TOO_LARGE');
   await check('UTF-8 en octets', 'éé', 3, 'BODY_TOO_LARGE');
   await check('UTF-8 taille exacte', 'éé', 4, 'éé');
+  test(`${slug}: UTF-8 invalide refusé`, async () => {
+    const stream = new ReadableStream({ start(c) { c.enqueue(new Uint8Array([0xc3, 0x28])); c.close(); } });
+    await assert.rejects(read({ body: stream }, 4), { name: 'TypeError' });
+  });
   test(`${slug}: flux segmenté`, async () => {
     const stream = new ReadableStream({ start(c) {
       c.enqueue(new TextEncoder().encode('ab'));
