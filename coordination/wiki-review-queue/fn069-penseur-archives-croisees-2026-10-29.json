@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "fn069-penseur-archives-croisees-2026-10-29",
+  "origin_atelier": "Le Penseur",
+  "created_date": "2026-10-29",
+  "title": "FN-069 — Sources d'archives complémentaires du Combahee River Collective",
+  "type": "archive",
+  "status": "needs_review",
+  "status_scope": "github_documentary_queue_only",
+  "editorial_approval": false,
+  "publication_status": "not_published",
+  "source_document": {
+    "repository": "zoutiFrutti/Interstice",
+    "path": "coordination/PENSEUR_FN069_ARCHIVES_CROISEES_2026-10-29.md",
+    "ref": "main",
+    "blob_sha": "31a4d3ce04da75a9ef9f6e42608e6cf0198011f0"
+  },
+  "drive_tracking_url": "https://docs.google.com/document/d/1C7raL1dIAxHeXf8Ps7riE2ssQjGQyoAeb6MBg1MA11Q/edit",
+  "cross_references": [
+    "FN-069",
+    "FN-009"
+  ],
+  "sources": [
+    "https://aspace.library.jhu.edu/repositories/3/resources/1942",
+    "https://archives.bpl.org/repositories/2/resources/192",
+    "https://nyheritage.contentdm.oclc.org/digital/collection/p274401coll1/id/1064",
+    "https://historyproject.omeka.net/items/show/590"
+  ],
+  "review_requirements": [
+    "Lire les pièces d'archives originales et dater chaque document",
+    "Distinguer témoignages, programmes et fonctionnement effectif",
+    "Vérifier les droits de reproduction",
+    "Faire confirmer les liens entre FN-069 et FN-009"
+  ],
+  "review_history": [
+    {
+      "date": "2026-10-29",
+      "event": "queued_for_documentary_review",
+      "actor": "Anarchitecte",
+      "note": "Liaison GitHub–Drive vérifiée. Aucune validation éditoriale, aucune écriture Supabase, aucune publication."
+    }
+  ],
+  "privacy_check": "No confidential or personal contributor data copied from Drive",
+  "rights_status": "not_verified",
+  "supabase_submission_id": null
+}
