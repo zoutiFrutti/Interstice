@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" role="img" aria-labelledby="titre description">
+<title id="titre">Réparer, apprendre, relier</title>
+<desc id="description">Illustration vectorielle originale : roue de vélo, livre ouvert et outil de réparation reliés par des lignes et points rouges.</desc>
+<defs>
+  <pattern id="grain" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r="0.7" fill="#101014" opacity=".14"/></pattern>
+  <pattern id="rayons" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M0 30L30 0" stroke="#101014" opacity=".12" stroke-width=".7"/></pattern>
+</defs>
+<rect x="0" y="0" width="920" height="560" fill="#E9E5DB"/>
+<rect x="0" y="0" width="920" height="560" fill="url(#grain)"/>
+<g stroke="#101014" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="242" cy="317" r="151" stroke-width="15"/>
+ <circle cx="242" cy="317" r="133" stroke-width="2.6"/>
+ <circle cx="242" cy="317" r="24" stroke-width="9"/>
+ <path d="M242 166V468 M91 317H393 M135 210L349 424 M349 210L135 424 M185 178L299 456 M103 259L381 374 M381 259L103 374 M185 456L299 178" stroke-width="3.2" opacity=".78"/>
+ <path d="M242 317L295 207 360 245 289 356 242 317 203 397 151 353 205 260Z" stroke-width="6" opacity=".26"/>
+</g>
+<circle cx="242" cy="317" r="11" fill="#C5212C"/>
+<path d="M233 316L216 306 197 311 182 297M250 328l18 17 10 19" stroke="#C5212C" stroke-width="5" fill="none" stroke-linecap="round"/>
+<g transform="translate(485 263)" fill="none" stroke="#101014" stroke-linejoin="round">
+ <path d="M0 42C61 19 118 27 168 61V226C116 192 50 193 0 216Z" fill="#F9F5ED" stroke-width="8"/>
+ <path d="M0 42C-60 19-118 27-168 61V226C-114 190-52 195 0 216Z" fill="#F9F5ED" stroke-width="8"/>
+ <path d="M0 42V216" stroke-width="8"/>
+ <path d="M-137 96c34-7 69-3 108 12M-137 126c34-7 69-3 108 12M-137 157c34-7 69-3 108 12M36 105c36-12 74-13 116-2M36 136c36-12 74-13 116-2M36 168c36-12 74-13 116-2" stroke-width="3.5" opacity=".7"/>
+</g>
+<g transform="translate(724 82) rotate(32)" stroke="#101014" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M-24 5C-57 20-54 63-27 75L-19 53L7 53L15 76C45 58 40 14 10 6L8 28H-17Z" fill="#E9E5DB" stroke-width="9"/>
+ <path d="M-10 77V189A19 19 0 0 0 28 189V77" fill="#101014" stroke-width="7"/>
+ <circle cx="9" cy="188" r="8" fill="#C5212C" stroke="none"/>
+</g>
+<g fill="none" stroke="#C5212C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M242 317L410 178L572 204L715 127"/>
+ <path d="M410 178L486 100L590 124"/>
+ <path d="M572 204L684 262L791 254"/>
+ <path d="M410 178L422 322L492 356"/>
+</g>
+<g fill="#C5212C">
+ <circle cx="410" cy="178" r="11"/><circle cx="572" cy="204" r="9"/><circle cx="715" cy="127" r="10"/>
+ <circle cx="486" cy="100" r="8"/><circle cx="590" cy="124" r="6"/>
+ <circle cx="684" cy="262" r="7"/><circle cx="791" cy="254" r="9"/>
+ <circle cx="422" cy="322" r="7"/><circle cx="492" cy="356" r="9"/>
+</g>
+<g fill="none" stroke="#101014" stroke-width="2" opacity=".35">
+ <path d="M50 91h200M50 102h90M691 483h168M768 494h91M76 507h151"/>
+</g>
+<path d="M10 15h48M10 15v45M910 545h-48M910 545v-45" stroke="#C5212C" stroke-width="5" fill="none"/>
+</svg>
