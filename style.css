@@ -13,7 +13,7 @@ header strong span,.tag,h1 em{color:#e53b42}
 nav a,button,.manifesto-link{background:#a91f2c}
 nav a:hover,button:hover,.manifesto-link:hover{background:#c52a37}
 a{color:#f0b3b3}
-a:focus-visible,button:focus-visible{outline:3px solid var(--faille-ivory);outline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--faille-ivory);outline-offset:3px}
 .brand-identity{display:flex;align-items:center;gap:20px;margin:0 0 26px}
 .brand-identity img{width:132px;height:132px;object-fit:contain}
 .brand-identity .brand-caption{font-size:12px;font-weight:750;letter-spacing:2px;text-transform:uppercase;color:#e9e5db}
