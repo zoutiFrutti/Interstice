@@ -75,3 +75,20 @@ Les SVG existants contiennent aussi certaines variantes de rouge (`#b91520`, `#d
 ### Coordination avant publication
 
 Les PR graphiques #5 (typographie), #14 (manifeste), #18 (accueil), #19 (bibliothèque/Wiki), #20 (ancien kit) sont conservées comme références à réconcilier. Ne pas fusionner directement des versions divergentes de `style.css`, `wiki.html` et `coordination/JOURNAL_COMMUN.md`.
+
+
+## Panneaux éditoriaux illustrés : première consolidation des pages (29 octobre 2026)
+
+Les illustrations existantes des PR #18 et #19 ont été reprises **à l'identique** sur la branche du kit consolidé. Elles sont affichées sous les bandeaux d'introduction de trois pages :
+
+- `index.html` : « Réparer. Apprendre. Construire ensemble. » avec `illustration-reparer-transmettre.svg`.
+- `bibliotheque.html` : « Lire. Essayer. Transmettre. » avec `illustration-bibliotheque-savoirs.svg`.
+- `wiki.html` : « Une idée. Plusieurs sources. Des liens à vérifier. » avec `illustration-wiki-sources.svg`.
+
+Les trois pages chargent `editorial-illustrations.css`, feuille CSS commune utilisant fond ivoire, texte sombre, boutons rouges contrastés et deux colonnes transformées en une colonne sous 660 px. Aucun visage n'apparaît dans les SVG. Les images ont des attributs alt pertinents ; elles ne sont pas des reportages sur des personnes réelles.
+
+**Vérifications statiques :** les 3 SVG sont strictement les mêmes fichiers que ceux des branches sources ; liens d'images et CSS présents ; aucune duplication d'identifiant HTML ni ancre locale cassée ; même nombre de formulaires et scripts sur les 3 pages avant/après. Contrastes couleur des panneaux calculés : 15,09:1 (titre), 10,37:1 (texte courant), 8,69:1 (bouton), 6,91:1 (accent).
+
+**Non vérifiés :** rendu réel des pages complètes, interactions des formulaires, lecteur d'écran, Chrome/Safari/Firefox multiécrans, publication GitHub Pages. Les PR #18 et #19 n'ont pas à être fusionnées parallèlement à cette branche : leur apport illustratif est consolidé ici. Les ajustements de cartes non essentiels de la PR #19 ne sont pas repris ; ils restent à discuter dans une passe UI.
+
+**Suivants :** harmoniser la typographie (repartir de la PR #5 et de `main`), contrôler la maquette en navigateur, vérifier le manifeste V2.5 sans en changer les principes.
