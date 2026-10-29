@@ -235,3 +235,18 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications réellement effectuées :** publication du rapport d'audit sur `main` ; aucune configuration, donnée ou fonction Supabase modifiée.
 
 **Travaux restants :** corriger et tester le bornage du corps des requêtes, valider l'origine fiable des IP, vérifier `SECURITY DEFINER` et le parcours de modération avant toute modification de production.
+
+
+## 2026-10-29 · Atelier technique · Préparation du correctif des fonctions Edge
+
+**Sujet :** limiter la taille réelle des requêtes envoyées aux fonctions publiques Supabase, sans déploiement prématuré.
+
+**Sources :** versions déployées lues via Supabase `get_edge_function` ; branche GitHub `fix/edge-request-bounds-2026-10-29` ; PR #13 https://github.com/zoutiFrutti/Interstice/pull/13.
+
+**Constats :** `submit-proposal` dépendait de `Content-Length` pour son plafond de taille ; `submit-resource` chargeait tout le corps avant vérification et utilisait `unknown` quand aucune IP n'était présente.
+
+**Pages et composants concernés :** `supabase/functions/submit-proposal/index.ts`, `supabase/functions/submit-resource/index.ts` ; formulaires de contributions.
+
+**Modifications effectuées :** copies du code déployé enregistrées sur une branche GitHub, avec lecture HTTP par morceaux plafonnée en octets (7 000 / 4 000) et refus d'une IP absente dans `submit-resource`. PR #13 ouverte pour revue, **non fusionnée**, **aucun déploiement Supabase**.
+
+**Contradictions et travaux restants :** tests Deno et tests HTTP de non-régression encore nécessaires ; confiance dans les en-têtes IP toujours non prouvée ; contrôler la gestion des corps tronqués, UTF-8, méthodes, CORS, quotas et formulaires avant fusion et déploiement. Ne pas présenter ce code comme déjà en production.
