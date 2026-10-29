@@ -235,3 +235,16 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications réellement effectuées :** publication du rapport d'audit sur `main` ; aucune configuration, donnée ou fonction Supabase modifiée.
 
 **Travaux restants :** corriger et tester le bornage du corps des requêtes, valider l'origine fiable des IP, vérifier `SECURITY DEFINER` et le parcours de modération avant toute modification de production.
+
+
+## 2026-10-29 — L'Anarchitecte — Reprise technique, audit de production et PR #13
+
+**État réel :** consultation directe de Supabase `rpqiwxkaiyokmxbhxfvh` ; fonctions actives `submit-proposal` v2 et `submit-resource` v1, `verify_jwt=false`. Le code déployé n'intègre pas les nouveaux plafonds de lecture en octets. Aucun déploiement effectué lors de cette passe.
+
+**GitHub :** PR #13 (`fix/edge-request-bounds-2026-10-29`) divergente de main au contrôle initial (6 commits d'avance et 28 de retard). Référence Manifeste V2.5 éditoriale, non adoptée ; aucun changement politique.
+
+**Corrections enregistrées :** `submit-resource` rejette les corps JSON non objets, vérifie la configuration Supabase avant initialisation, refuse l'absence d'IP, élimine les espaces autour d'un en-tête IP, traite explicitement les erreurs de requête de doublons et évite une session Supabase persistante. Commits `8a723c6341853a1f81e6b797475efdb29cf4e178`, `5293a2d4397b2b7ff4eec15f477c000a344519b4`. Test UTF-8 invalide ajouté au fichier Node, commit `b17331674f218876431fd4db7097aa7193b909d7`. Documentation complétée : `e69e2bcf905827cc240db2525e443b69c2671714`.
+
+**Contradictions/risques :** origin HTTP n'est pas un mécanisme d'authentification, en-têtes IP non garantis de source fiable ; les protections anti-abus restent à consolider. Aucun test Deno, HTTP intégré ni CI confirmé pour ces nouveaux commits. La documentation et le journal de cette branche sont en retard sur `main` : réconciliation nécessaire avant fusion.
+
+**Suites :** tests Node/Deno et bout en bout, contrôle provenance IP auprès de la passerelle Supabase, résolution de la divergence Git, revue des formulaires, validation explicite avant déploiement. **État : CODE ET JOURNAL SUR BRANCHE, TESTS COMPLETS NON VALIDÉS, PAS DE FUSION NI DÉPLOIEMENT.**
