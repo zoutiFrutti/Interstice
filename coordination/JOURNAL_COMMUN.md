@@ -381,3 +381,16 @@ Wiki concerné : présentation du projet, communication éthique, mutualisation,
 Modifications : légendes proposées dans la conversation ; mise à jour du journal uniquement. Aucun brouillon ni publication Instagram effectué.
 
 Suite : validation des textes, descriptions alternatives, contrôle des médias et création de brouillons Metricool si les images sont accessibles.
+
+
+## 2026-10-29 — Atelier Graphiste — Vers une interface plus claire et illustrée
+
+1. **Date :** 29 octobre 2026.
+2. **Atelier :** Graphiste / direction artistique.
+3. **Sujet :** première proposition d'équilibre entre les couleurs de l'identité La Faille noire / Interstice et illustrations concrètes des communs.
+4. **Connaissances :** le site `main` présente déjà les logos SVG, mais ses pages sont essentiellement textuelles et sombres. La charte validée (noir, rouge, ivoire, disque fissuré et réseau de points) permet des déclinaisons claires. Le choix éditorial exprimé est de privilégier les gestes (réparer, apprendre, construire, créer), avec des visages non identifiables dans les futures photos publiques. Une illustration d'objets n'exige pas d'anonymisation.
+5. **Sources :** pages `index.html`, `style.css`, `bibliotheque.html`, `wiki.html` et manifeste V2.5 du dépôt `zoutiFrutti/Interstice` ; échanges de validation de l'atelier Graphiste. La V2.5 reste une version éditoriale de travail non collectivement adoptée.
+6. **Pages du Wiki concernées :** accueil, bibliothèque des communs, futur guide de présentation des savoir-faire ; titres exacts et existence d'articles internes à vérifier.
+7. **Tension / contradiction :** le noir/rouge radical des affiches risque de rendre l'interface trop sombre et peu accueillante ; un meilleur équilibre nécessite des zones claires et des illustrations pratiques. Le site utilise encore une police système sur `main`, tandis que la refonte typographique est proposée sur une PR distincte : ne pas confondre travail en branche et déploiement.
+8. **Modifications réellement effectuées :** sur la branche `atelier-da-illustrations-ivoire-2026-10-29`, ajout d'un SVG original sans visage (`assets/illustration-reparer-transmettre.svg`), d'une feuille de styles ciblée (`illustrations.css`) et d'une nouvelle section sur l'accueil (`index.html`) : « Réparer. Apprendre. Construire ensemble. » sur fond ivoire, lien vers la bibliothèque. Les changements ne sont pas sur `main`.
+9. **Travaux restants :** contrôle du rendu sur navigateur mobile/ordinateur et du contraste calculé, ajustement éventuel de la composition, accord éditorial sur les images, déclinaisons bibliothèque et Wiki ; préparation de photos correctement licenciées et anonymisées pour les supports publics. Ne pas fusionner avant ces contrôles.
