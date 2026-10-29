@@ -11,6 +11,7 @@
 
 - **V0.1 :** architecture générale, article 0 et articles 1 à 8, fondés sur la V2.3 du manifeste ; document préservé comme archive.
 - **V0.2 :** lecture intégrale de la V2.5 consolidée ; correction de la référence éditoriale ; renforcement des articles 0, 3, 4, 6 et 8 ; rédaction de propositions complètes pour les articles 9 à 20 ; préparation de garanties pour les futurs articles 21 à 43.
+- **Complément V0.4 du 29 octobre 2026 (Atelier du Juriste, branche de proposition) :** rédaction proposée des articles 26 à 30, ressources, propriété, finances, travail et restitution ; sources officielles vérifiées, aucun article adopté, aucune modification du manifeste, des statuts ou du site. Le paragraphe historique V0.4 ci-dessous décrit l'état antérieur à ce complément.
 - **V0.4 :** transmission de l'Atelier Le Penseur, étude critique n° 14. Rédaction des articles 31 à 35 sur prévention, mise en sûreté, signalement, examen impartial, droits et recours. Les articles 26 à 30 restent **non rédigés** ; la numérotation du plan est maintenue. Note juridique et trois cas fictifs enregistrés séparément. Aucune procédure adoptée, aucun organe créé. Archive V0.3 conservée : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.3_2026-10-29.md .
 - **V0.3 :** rédaction complète des articles 21 à 25 (mandats, limitation, révocation, représentation juridique, contrôles), sur la base de la V2.5 et des sources officielles. La V0.2 est conservée comme archive : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md .
 - **Distinction indispensable :** aucun article n'est adopté collectivement. La charte ne crée pas de comité, de « Commune », de représentant ou de procédure de médiation existante. Les organes cités sont des options à délibérer.
@@ -285,9 +286,82 @@ Les dispositions ci-dessous ne désignent **aucun titulaire réel**. Elles devro
 - Service-Public, **Dommage causé par un dirigeant d'association : qui est responsable ?**, vérifié le 26 août 2025 : https://www.service-public.gouv.fr/particuliers/vosdroits/F1130 . La responsabilité de la personne morale n'exclut pas une responsabilité personnelle selon les faits.
 - Associations.gouv.fr, **Foire aux questions (représentation en justice)** : https://associations.gouv.fr/faq . Les statuts ou une habilitation expresse peuvent déterminer la capacité d'une personne à représenter l'association devant le juge.
 
-### Titre V — Ressources communes (articles 26–30)
+### Titre V — Ressources communes (articles 26–30, PROPOSITIONS NON ADOPTÉES)
 
-**Réservé :** les articles 26 à 30 restent au stade de l'architecture et des orientations ; ils ne sont pas rédigés dans la présente V0.4. Le travail sur la protection des personnes ne doit pas interrompre le futur audit des pouvoirs liés à la propriété, à la trésorerie et aux moyens matériels.
+**Portée.** Les cinq articles ci-dessous sont des propositions à débattre, non des habilitations à détenir, déplacer ou distribuer des biens ou de l'argent. Le projet ne possède pas, par cette charte, de personnalité morale ni de patrimoine collectif juridiquement constitué. Les titres de propriété, contrats, statuts, obligations envers les tiers et régimes particuliers priment sur toute formulation politique de « commun ».
+
+### Article 26 — Inventaire, propriété et pouvoirs d'usage distincts
+
+**26.1.** Avant de qualifier une ressource de « commune », documenter, à une granularité proportionnée, sa nature, son propriétaire juridique, son éventuel financeur, les contrats ou licences qui l'encadrent, les personnes autorisées à l'utiliser, à l'administrer et à en assurer l'entretien, ainsi que les restrictions de sécurité. Le propriétaire, le financeur, l'utilisateur et le gestionnaire ne sont pas nécessairement la même personne.
+
+**26.2.** Un prêt, une mise à disposition, un dépôt, un apport, un don, une subvention, une licence d'œuvre ou de logiciel et une acquisition ne transfèrent pas les mêmes droits. La destination, la durée, les conditions de retrait, les risques, les assurances et les obligations de restitution devront être établis par des actes adaptés avant l'usage. Aucune charte ne peut convertir à elle seule un bien privé en propriété collective ni supprimer un droit de tiers.
+
+**26.3.** La détention d'un local, d'une marque, d'un nom de domaine, d'un compte bancaire, d'une infrastructure numérique ou d'une clé d'accès ne confère aucun privilège politique. Toutefois, le droit du propriétaire et la responsabilité effective du titulaire ne disparaissent pas par proclamation : prévoir une convention de coopération et des moyens de continuité, sans imposer une cession ni promettre une révocation technique juridiquement impossible.
+
+**26.4.** L'inventaire accessible aux personnes légitimement concernées doit distinguer informations nécessaires au contrôle et données protégées : adresses personnelles, identités de bénéficiaires, secrets d'accès, pièces contractuelles sensibles. Les personnes concernées peuvent demander correction d'une erreur selon une procédure à définir ; les droits de propriété et les contestations contractuelles suivent leurs voies propres.
+
+**Notice de contrôle.** Risque : un financeur ou administrateur devient dirigeant de fait par dépendance matérielle ; risque inverse : un vote prétend disposer d'un bien qui n'appartient pas au collectif. Recours proposé : examen contradictoire du titre ou contrat, inventaire corrigé et voie externe ouverte. À décider : responsable d'inventaire, périodicité, droits d'accès, contrats-types et assurance.
+
+### Article 27 — Affectation, entretien et accès équitable aux biens
+
+**27.1.** Les règles d'utilisation des espaces, équipements, outils, œuvres et services partagés devront être explicites, accessibles et compatibles avec leurs contrats, licences, règles de sécurité et obligations légales. Elles préciseront les priorités d'usage, les conditions d'accès, les coûts éventuels, l'entretien et les responsabilités en cas de dommage.
+
+**27.2.** Les décisions d'affectation devront rendre visibles les besoins des personnes moins disponibles, éloignées, handicapées ou chargées du soin, et ne pas récompenser mécaniquement la présence constante aux réunions. L'accès à une ressource rare doit pouvoir être contesté sans exposer publiquement la situation intime des personnes.
+
+**27.3.** Une urgence de sécurité permet seulement aux personnes effectivement responsables de prendre les mesures nécessaires dans le périmètre de leur compétence, pour une durée limitée et avec réexamen. Elle ne permet pas de réaffecter durablement les biens, d'exclure politiquement une personne ou d'imposer une médiation.
+
+**27.4.** Toute réaffectation substantielle ou cession proposée doit être préparée avec les propriétaires et cocontractants concernés, ses conséquences sur les activités, la maintenance et les personnes dépendantes de la ressource. Le pouvoir de décider collectivement n'est pas un pouvoir de disposer des biens d'autrui.
+
+**Notice de contrôle.** Risque : la personne qui gère le calendrier, les clés ou la maintenance sélectionne en pratique les participants ; risque inverse : la transparence dévoile des situations personnelles. À décider : critères d'accès, aménagements raisonnables, assurances, maintenance et voie de recours.
+
+### Article 28 — Comptes, dépenses, financements et contrôles proportionnés
+
+**28.1.** Toute structure qui gérerait des fonds devra tenir des comptes et justificatifs adaptés à son activité, sa taille, ses engagements et ses obligations légales ou contractuelles ; présenter aux personnes ayant qualité pour en connaître une information intelligible sur recettes, dépenses, engagements, dettes et affectations, sans rendre publics les détails personnels non nécessaires. Une comptabilité en partie simple peut convenir à certaines petites associations ; les règles renforcées dépendent des seuils, financements et activités réellement applicables.
+
+**28.2.** Les personnes autorisées à engager, payer, rapprocher et vérifier les dépenses doivent être identifiées selon des mandats et habilitations effectifs. Prévoir, selon les montants et les risques, des justificatifs, plafonds, vérifications croisées, gestion des conflits d'intérêts, traçabilité des décisions et possibilité de révocation ou de retrait des accès par les personnes juridiquement compétentes. Aucune double signature universelle n'est présumée obligatoire.
+
+**28.3.** Une subvention affectée, un don assorti de conditions valides ou un financement contractuel ne devient pas une caisse librement réaffectable. Vérifier les conventions, l'objet financé, les obligations de compte rendu et de restitution. Ne pas annoncer d'avantage fiscal au donateur sans vérification de l'éligibilité. Les dons manuels et les donations/legs obéissent à des règles différentes.
+
+**28.4.** La recherche de transparence ne doit pas produire une surveillance générale : pièces financières et accès aux données personnelles sont limités aux personnes autorisées et aux obligations applicables. Les signalements d'irrégularités relèvent des garanties des articles 31 à 35, sans accusation publique préalable ni organe disciplinaire créé par cet article.
+
+**Notice de contrôle.** Risques : contrôle concentré dans le même cercle ; financeur dictant la ligne politique ; bénéficiaires exposés par une publication détaillée ; blocage de trésorerie lors d'une révocation. À décider : seuils d'autorisation, modalités de présentation des comptes, conservation, contrôle externe éventuel et plan de continuité bancaire. Les obligations de commissariat aux comptes ou de publicité ne sont pas présumées applicables au projet actuel.
+
+### Article 29 — Bénévolat libre, rémunérations et travail invisible
+
+**29.1.** Le bénévolat est librement consenti et ne doit pas masquer une relation de travail salarié ou une prestation rémunérée. L'engagement ne confère ni titre politique supérieur ni obligation de disponibilité permanente ; les contributions de soin, traduction, accueil, ménage, coordination et maintenance doivent être reconnues sans imposer une comptabilisation intrusive.
+
+**29.2.** Une éventuelle rémunération de salarié, prestataire, membre ou dirigeant doit correspondre à une activité réelle, à une décision prise par une autorité effectivement compétente, à des documents appropriés et aux obligations sociales, fiscales et de droit du travail. La gestion désintéressée et la rémunération de dirigeants relèvent de conditions particulières : l'égalité politique n'autorise ni salaire fictif ni interdiction absolue de toute rémunération.
+
+**29.3.** Les remboursements de frais nécessaires à l'activité devront être justifiés selon les règles applicables et décidés sans favoriser les personnes qui peuvent avancer de l'argent. Les modalités d'avance, de remboursement, d'accessibilité et de prévention des conflits d'intérêts restent à définir ; un remboursement n'est pas automatiquement un salaire, mais son intitulé ne suffit pas à déterminer son régime.
+
+**29.4.** Une personne rémunérée ne doit pas perdre sa liberté de critique ni ses protections légales. Les obligations et pouvoirs d'un employeur ne se dissolvent pas dans l'horizontalité ; les décisions relatives à la sécurité, à la paie et aux contrats ne peuvent être confiées à une assemblée dépourvue de compétence juridique.
+
+**Notice de contrôle.** Contradiction : gratuité militante pouvant exclure les personnes précaires ; rémunération pouvant créer une hiérarchie matérielle. À décider : critères publics des missions, décisions sans conflits d'intérêts, protections sociales, avances de frais et limites du travail invisible.
+
+### Article 30 — Ressources confiées, retrait, restitution et séparation des patrimoines
+
+**30.1.** Les fonds, matériels, données, œuvres et accès confiés doivent rester traçables selon leur statut juridique. Distinguer les biens propres d'une personne, les prêts et dépôts à restituer, les apports avec éventuel droit de reprise, les dons transférant la propriété, les biens de l'association éventuelle et les financements affectés. Les patrimoines personnels, associatifs et ceux des collectifs partenaires ne doivent pas être confondus.
+
+**30.2.** À la fin d'un mandat, d'une coopération ou d'une mise à disposition, organiser une passation documentée : clés, inventaires, accès techniques, contrats, justificatifs et restitutions exigibles. La restitution suit les titres et accords applicables, sans confiscation, rétention punitive ou publication de secrets. Prévoir des sauvegardes et accès de secours licites pour éviter la dépendance à une seule personne.
+
+**30.3.** Le retrait d'un collectif ou d'une personne n'emporte pas automatiquement partage des actifs ni remboursement de cotisations. Les droits de reprise d'apports et le sort du patrimoine en cas de dissolution dépendent des statuts, contrats et règles applicables ; les dettes, droits des tiers et obligations envers les financeurs doivent être traités avant toute dévolution.
+
+**30.4.** Un désaccord sur la propriété ou la restitution doit pouvoir être documenté, discuté et porté devant les voies de recours compétentes. La médiation reste volontaire et ne remplace ni le droit de propriété, ni l'accès à la justice, ni les protections immédiates en cas de danger.
+
+**Notice de contrôle.** Risques : départ d'un administrateur paralysant l'outil ; transfert informel de biens privés ; confusion entre retrait politique et dissolution juridique ; restitution refusée à titre de sanction. À décider : contrats de prêt/apport, sauvegardes, contrôle des inventaires et articulation future avec les articles 44 à 47.
+
+#### Sources officielles et limites propres au Titre V (consultées le 29 octobre 2026)
+
+- Légifrance, loi du 1er juillet 1901, article 6, version en vigueur depuis le 2 août 2014 : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029321832/2020-01-01 (capacité patrimoniale d'une association déclarée ; conditions spécifiques des libéralités).
+- Service-Public, *Dons, donations et legs au bénéfice d'une association* : https://www.service-public.gouv.fr/particuliers/vosdroits/F2722 (ne pas confondre dons manuels, donations et legs).
+- Associations.gouv.fr, *La comptabilité associative* : https://associations.gouv.fr/la-comptabilite-associative (obligations variables ; la loi de 1901 ne prescrit pas à elle seule une comptabilité uniforme).
+- Service-Public, *Subventions versées aux associations* : https://www.service-public.gouv.fr/particuliers/vosdroits/F3180 (conditions et compte rendu des financements affectés).
+- Service-Public, *Dans quels cas une association doit recourir à un commissaire aux comptes ?*, vérifié le 7 août 2026 : https://www.service-public.gouv.fr/particuliers/vosdroits/F2907 (seuils et conditions, non présumés atteints).
+- Service-Public, *Rémunération du dirigeant d'une association*, vérifié le 1er juin 2026 : https://www.service-public.gouv.fr/particuliers/vosdroits/F1927 ; *Gestion désintéressée*, vérifié le 3 avril 2025 : https://www.service-public.gouv.fr/particuliers/vosdroits/F31839 .
+- Service-Public, *Véhicule personnel et frais des bénévoles* : https://www.service-public.gouv.fr/particuliers/vosdroits/F1125 (exemple documenté de remboursement de frais).
+- Service-Public, *Dissolution d'une association*, vérifié le 5 novembre 2024 : https://www.service-public.gouv.fr/particuliers/vosdroits/F1122 (distinguer régime général et Alsace-Moselle, apports et dévolution).
+- Service-Public, *Conservation des documents d'une association*, vérifié le 12 mai 2026 : https://www.service-public.gouv.fr/particuliers/vosdroits/F32081 (durées dépendant de la nature des pièces).
+- Les règles exactes de propriété intellectuelle, assurance, emploi, fiscalité, financement public, banque et sécurité des locaux devront être vérifiées selon les activités et la forme juridique effectivement choisies. Aucune licence, subvention ou convention n'est ici présumée acquise.
 
 ### Titre VI — Prévention, protection, signalements et recours (proposition NON ADOPTÉE)
 
