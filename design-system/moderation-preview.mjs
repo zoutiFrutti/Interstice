@@ -36,7 +36,7 @@ export function renderModeratorPreview(item,target){
     resume:intention,
     rubrique:stringValue(item.theme,120)||"Non précisée",
     langue:"fr",
-    blocs,
+    blocs:blocks,
     sources:[],
     contradictions:[],
     incertitudes:[{texte:"Les affirmations, les références et les droits de cette contribution n'ont pas été vérifiés par ce dispositif."}],
