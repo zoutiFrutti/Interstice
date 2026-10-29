@@ -547,3 +547,28 @@ Documents relus : catalogue https://docs.google.com/document/d/1YYXcY6x4GoJU924k
 État réel vérifié : FN-001 à FN-068 ; FN-069 Combahee River Collective Statement absent du catalogue à cette lecture ; analyse FN-068 Le Grand Midi déjà enregistrée dans les trois documents Médiathèque ; ne pas dupliquer.
 Prochaine étude complémentaire : FN-068 (cantine autogérée) × FN-009 (Jo Freeman) × FN-019 (Seeds for Change) ; analyser comment se distribuent tâches, pouvoir informel, accueil, liberté de refus, charge et fatigue, sans présumer l'application réelle des expériences rapportées.
 Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attestée. Modifications : cette entrée du journal commun seulement, aucune modification du catalogue, du manifeste ou du Wiki. Poursuivre archivage ARCH/BIO/ASSO et médiathèque FN avec niveaux de preuve distincts.
+
+
+## 2026-10-29 — Audit transversal Archiviste/Médiathèque — raisonnements ouverts
+
+**Objet :** reprise après fusion des ateliers et identification des raisonnements interrompus, sans création de doublons. Référence : manifeste V2.5 éditorial, non adopté collectivement.
+
+**Sources réellement consultées :** catalogue Médiathèque, suivi, journal distinct (Drive), fiche FN-009 Jo Freeman, analyse FN-009 × FN-019, journal critique FN-019 (Drive), journal commun GitHub main ; vérification de `wiki-decision-collective.html` et de fiches existantes sur main.
+
+**État :** catalogue numéroté FN-001 à FN-070 ; FN-069 Combahee et FN-070 Anna Julia Cooper présentes, contrairement à l'entrée de transfert antérieure du journal qui reflétait un état plus ancien. FN-022 et FN-048 renvoient au même livre de Louise Michel, *La Commune* (1898), doublon à marquer sans supprimer les identifiants. Travaux sur Cooper déjà reliés au Lecteur ; pas de nouvelle fiche à créer. Les notices numérotées ne doivent pas être comptées comme autant d'œuvres distinctes sans déduplication.
+
+**Chantiers ouverts prioritaires :**
+1. FN-069 × FN-009 : difficultés d'organisation du Combahee River Collective face aux mécanismes de pouvoir informel décrits par Freeman ; distinguer témoignage et preuves externes.
+2. ARCH ateliers d'armes du Louvre 1871 : comparer règlements, dates, éditions et preuves d'application effective ; ne pas déduire des pratiques réelles du seul texte d'un règlement.
+3. FN-068 × FN-009 × FN-019 : observations proposées autour d'une cantine autogérée, sans surveillance nominative ni adoption présumée.
+4. FN-070 : compléter vérification des droits en France, critiques des passages orientalistes et coordination avec Lecteur.
+5. Entraide/dette/communs : Kropotkine, Mauss, Graeber, Ostrom ; distinguer participation libre et obligations révisables.
+6. Travail/autonomie : Federici, Mies, Illich, Gorz ; distinguer autonomie collective et transfert des tâches invisibles.
+7. Consentement/justice : Arendt, Goldman, Pateman, Mills, Rawls ; faire place aux objections et passer de la théorie à la documentation des inégalités.
+8. Audit des licences, liens vers les fiches candidates et réelle intégration Wiki.
+
+**Contradictions de méthode :** une ressource gratuite n'est pas nécessairement libre ; une source primaire militante n'est pas une vérification indépendante ; une proposition GitHub n'est pas automatiquement un article Wiki validé ; un accès à une édition américaine du domaine public ne garantit pas les droits français.
+
+**Modifications réellement effectuées :** présente entrée de coordination seulement. Aucune modification du catalogue, du Wiki, des fiches, du manifeste ni d'une décision de gouvernance. **Transmissions proposées** au Lecteur, au Penseur, au Juriste, à la Biographe et à l'Organisateur : réception non vérifiée.
+
+**Suite :** commencer par des rapprochements sourcés FN-069 × FN-009 et ARCH Louvre ; supprimer les doublons de travail, pas les archives historiques ; suivre chaque question jusqu'à validation ou rejet documenté.
