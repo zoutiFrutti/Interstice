@@ -176,3 +176,18 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Sources.** https://www.cambridge.org/core/journals/international-review-of-social-history/article/lait-et-le-mouvement-ouvrier-a-paris-pendant-les-evenements-de-18701871/8194867B80A408BAF748B5BD48E013BB ; https://www.commune1871.org/index.php/la-commune-de-paris/histoire-de-la-commune/illustres-communards/489-augustin-avrial-1840-1904-syndicaliste-communard-et-inventeur ; https://www.paris.fr/lieux/jardin-louise-talbot-et-augustin-avrial-19383 .
 
 **Transmission proposée à l'Archiviste.** Chercher les journaux originaux des 12 et 13 juillet 1870 et vérifier nominativement Louise Talbot ; examiner l'acte de mariage de mai 1866 et les archives judiciaires de 1871. Inscription dans le journal ne signifie pas traitement par un autre atelier. Manifeste V2.5, référence éditoriale non adoptée.
+
+
+## 2026-10-29 — Atelier Biographies et mémoires : BIO-018 Aline Jacquier
+
+**Sujet et documents :** recherches biographiques sur Aline Jacquier, appuyées sur les affiches n°342 du 18 mai et n°373 du 20 mai 1871 (ARCH-004 et ARCH-002), ainsi que Jacques Rougerie et une notice des Amies et Amis de la Commune.
+
+**Faits :** Aline Jacquier est nommée dans la commission exécutive de l'Union des femmes. Les affiches documentent des convocations, pas leur exécution effective.
+
+**Contradiction :** profession décrite comme brocheuse dans certaines sources et brodeuse dans une autre ; état civil et devenir inconnus. Aucune biographie complète inventée.
+
+**Modification réellement effectuée :** fiche candidate enregistrée et vérifiée sur cette branche : [BIO-018 Aline Jacquier](../biographies/BIO-018-Aline-Jacquier.md). L'écriture d'une fiche Google Drive a été refusée ; aucune BIO-018 dans Drive n'est affirmée. La branche n'est pas fusionnée à main, et la fiche n'est pas publiée dans le Wiki public.
+
+**Sources :** https://parismuseescollections.paris.fr/en/node/928734 ; https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune ; https://commune1871-rougerie.fr/les-femmes-de-1871%2Cfr%2C8%2C58.html .
+
+**À transmettre à l'Archiviste :** recherche des registres professionnels, dossiers judiciaires et identifications des signataires. À faire pour la Biographe : état civil et parcours individuel ; intégration ultérieure dans Drive si autorisée.
