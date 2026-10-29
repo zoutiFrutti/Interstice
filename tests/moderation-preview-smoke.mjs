@@ -97,6 +97,7 @@ try {
       modalWidth:Math.round(modal.getBoundingClientRect().width),
       viewportWidth:innerWidth,
       overflow:document.documentElement.scrollWidth>innerWidth+1,
+      overflowElements:[...document.querySelectorAll("body *")].filter(el=>el.getBoundingClientRect().right>innerWidth+1).slice(0,8).map(el=>({tag:el.tagName,className:typeof el.className==="string"?el.className:"",right:Math.round(el.getBoundingClientRect().right)})),
       decisions:window.__previewStats.decisions,
       reads:window.__previewStats.reads,
       nativeDialogOpen:modal.open,
@@ -129,5 +130,5 @@ try {
  }
 }finally{await browser.close()}
 await writeFile("visual-qa/moderation-report.json",JSON.stringify({checks},null,2));
-for(const check of checks)console.log((check.ok?"PASS ":"FAIL ")+check.name+(check.ok?"":": "+JSON.stringify(check.detail).slice(0,600)));
+for(const check of checks)console.log((check.ok?"PASS ":"FAIL ")+check.name+(check.ok?"":": "+JSON.stringify(check.detail||{}).slice(0,800)));
 if(checks.some(x=>!x.ok))process.exitCode=1;
