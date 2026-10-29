@@ -728,3 +728,8 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 ## 2026-10-30 — Anarchitecte — Tests PostgreSQL candidats
 
 État : PR #26 était 19 commits devant et 9 derrière main au début de la passe. PostgreSQL local, psql et Docker indisponibles dans l'environnement ; pas de test SQL exécuté et aucun test sur Supabase de production. Fichier tests/sql/wiki-handoff-integration.sql créé (commit 220d2b3be51a263c196977463ffe18bbe50fc3af) : scénarios création, répétition sans doublon, changement de source, journal d'événements et maintien du statut non publié, sous transaction rollbackable. Les tests de concurrence nécessitent deux connexions distinctes. Reste : exécution sur une instance jetable, vérification des rôles, revue des changements sur main et conception de l'ingestion authentifiée. Aucune migration, insertion de production, fusion ou publication.
+
+
+## 2026-10-30 — Anarchitecte — Intégration PostgreSQL isolée dans la CI
+
+Audit GitHub : branche PR #26 divergente (21 commits en avance, 9 en retard au début de cette passe). Environnement local sans PostgreSQL, psql ni Docker. La CI a été enrichie d'un job PostgreSQL 16 jetable avec création des rôles minimaux simulant Supabase, application du schéma candidat, exécution de `tests/sql/wiki-handoff-integration.sql` avec `ON_ERROR_STOP=1` et vérification du rollback. Commit `88ad1d271ab4c1e59c451d743c4cf266f99eda8e`. Ceci est une configuration de test et non une preuve d'exécution réussie. Aucune migration Supabase ni fusion. Contrôler les exécutions GitHub Actions et corriger les erreurs éventuelles avant de poursuivre.
