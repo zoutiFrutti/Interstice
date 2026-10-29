@@ -365,3 +365,19 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Travaux restant à accomplir :** valider juridiquement les dispositions selon la forme réelle d'organisation, vérifier les règles contractuelles et régimes sectoriels ; rédiger titres V, VII–IX et articles manquants ; proposer séparément statuts, règlement et protocoles si décidés collectivement ; tester indépendance, confidentialité et faisabilité des recours sur des cas réels anonymisés sans traiter de dossiers personnels dans le Wiki ; synchroniser la mission quotidienne avec la dernière charte V0.4.
 
+
+## 2026-10-29 — Atelier Social Manager — Légendes de lancement
+
+Sujet : trois propositions de légendes Instagram pour les carrousels « Les failles », « Compléter, pas remplacer » et « Relier sans centraliser ».
+
+Source : manifeste V2.5 consolidé du 29 octobre 2026, document éditorial non adopté collectivement, et visuels validés dans l'atelier.
+
+Points retenus : initiatives existantes, entraide sans remplacement des services publics, reconnaissance du travail invisible, coopération volontaire, horizon fédératif non constitué, Interstice comme outil documentaire en construction.
+
+Contradictions : ne pas présenter les illustrations comme reportages ni les partenaires hypothétiques comme partenaires acquis ; éviter de transférer un pouvoir politique à des plateformes ou administrateurs.
+
+Wiki concerné : présentation du projet, communication éthique, mutualisation, Interstice (pistes non vérifiées).
+
+Modifications : légendes proposées dans la conversation ; mise à jour du journal uniquement. Aucun brouillon ni publication Instagram effectué.
+
+Suite : validation des textes, descriptions alternatives, contrôle des médias et création de brouillons Metricool si les images sont accessibles.
