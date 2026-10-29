@@ -381,3 +381,7 @@ Wiki concerné : présentation du projet, communication éthique, mutualisation,
 Modifications : légendes proposées dans la conversation ; mise à jour du journal uniquement. Aucun brouillon ni publication Instagram effectué.
 
 Suite : validation des textes, descriptions alternatives, contrôle des médias et création de brouillons Metricool si les images sont accessibles.
+
+
+## 2026-10-29 — Médiathèque : Maria Mies, Ivan Illich et Silvia Federici
+Lecture : autonomie, subsistance et travail invisible. Sources : https://transversal.at/transversal/0805/mies/en ; https://theanarchistlibrary.org/library/ivan-illich-shadow-work ; https://files.libcom.org/files/Federici-Silvia-Wages-Against-Housework.pdf . Contradiction : une autonomie collective peut aggraver les charges des personnes assumant le soin. Fiche réellement ajoutée : coordination/propositions/lecture-mies-illich-federici-20261029.md (commit fab3cfab). Texte V2.5 de référence éditoriale non adoptée. Suite : critique historique, droits et intégration dans les pages existantes.
