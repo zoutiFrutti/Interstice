@@ -32,3 +32,11 @@
 - **Contrôles statiques vérifiés après écriture :** 2 déclarations `@font-face`, aucune URL Google Fonts, ancien socle CSS avant les surcharges de refonte, nouvelles règles mobile/focus/impression présentes.
 - **Limites :** le CSS pèse environ 306 Ko en texte, dont les fontes TTF encodées. Aucun rendu de navigateur ni audit automatisé WCAG ne s'est exécuté. L'ancien `font:17px/1.6 system-ui` demeure dans les styles historiques mais est surchargé ensuite. `manifeste.html` et `bibliotheque.html` ont des styles internes pouvant modifier le rendu. Il est incorrect d'affirmer que toutes les pages ont été validées visuellement.
 - **Suite conseillée :** tester la branche via capture d'écran desktop/mobile des trois pages cibles, contrôler les contrastes réellement calculés, puis réduire le poids des fontes (WOFF2 auto-hébergé) avant fusion. Aucun changement sur `main`.
+
+
+### Passe complémentaire : cohérence des pages (29 octobre 2026)
+- **Analyse réelle :** lecture des styles HTML intégrés de `manifeste.html` et `bibliotheque.html`, et du CSS commun de la branche.
+- **Modification effective :** nouvelles règles pour `article`, sommaire, notice du manifeste et cartes de bibliothèque ; mise en cohérence des fonds, bordures, rayons ; adaptation `prefers-reduced-motion` pour limiter le défilement animé.
+- **Vérification :** commit de modification enregistré sur la branche, mais pas de test visuel navigateur et pas de mesure des contrastes après rendu.
+- **Optimisation WOFF2 :** recherches effectuées de fichiers WOFF2 en sources libres ; pas de remplacement dans cette passe. Les deux TTF intégrées au CSS restent en place. Ne pas présenter l'optimisation comme réalisée.
+- **Suite :** obtenir des fichiers WOFF2 vérifiés (accents français inclus), les déposer comme binaires dans GitHub et adapter les `@font-face`, puis exécuter des tests réels mobile et ordinateur. Ne pas fusionner la PR en l'absence de contrôles de rendu.
