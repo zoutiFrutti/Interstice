@@ -58,3 +58,29 @@ Les illustrations représentent des gestes de construction, réparation, transmi
 Sur la branche `design/publication-graphique-unifiee-v01-2026-10-29` : CSS de fiche spécifique + mise en forme d'une **page existante** ; conservation intégrale de ses mots, liens, sources et positions politiques ; aucun script ni formule Supabase modifié. Schéma et contrat proposés, non branchés à la base. Les sorties `approved` et `published` ne sont pas activées par ce travail.
 
 **Suite à vérifier** : tests navigateur mobile/clavier, contraste, revue de l'Anarchitecte, coordination avec PR #22, puis création d'un moteur de preview sans accès public aux candidats.
+
+
+## 9. Prototype V0.2 de rendu sur données structurées (29 octobre 2026)
+
+**Ce qui existe réellement sur la branche :**
+
+- `design-system/fiche-renderer.mjs` : composant navigateur sans dépendance au backend, qui reconstruit les balises HTML à l'aide de `document.createElement` et `textContent`. Il **n'interprète jamais** le texte d'une fiche comme HTML et ignore les URL de bibliographie qui ne sont pas `http:` ou `https:`.
+- `design-system/exemples/lecture-travail-soin-pouvoir.json` : une conversion *de démonstration* de la lecture croisée déjà accessible publiquement. Les paragraphes et listes ont été repris sous forme de texte simple, sans reproduire leur mise en emphase HTML originale ; certaines qualifications sont **provisoires**, elles ne constituent pas une vérification scientifique ou une attribution définitive.
+- `design-system/apercu-exemple-public.html` : page de démonstration **non indexée**, lisant uniquement ce fichier JSON statique. Aucun formulaire, aucun identifiant personnel, aucune requête à Supabase ni à un service d'IA. `noindex` n'est pas une mesure de confidentialité : **cette page et son JSON seraient publics si fusionnés et déployés**. Ne jamais y brancher une contribution candidate privée.
+- `assets/fiche-design-system.css` : styles réutilisables pour les blocs, qualifications, sources, contradictions, incertitudes et révisions. Le fichier reste compatible avec le site actuel (CSS de la PR #22 non requis pour le prototype).
+- `tests/fiche-renderer-smoke.mjs` : test schéma Ajv + captures 390 px / 1280 px + tentative d'injection HTML et de lien `javascript:` + essai de faux état « publié ». CI intégrée au workflow graphique existant.
+
+**Séparation impérative des niveaux de contrôle :**
+
+| Étape | Responsable | Autorité |
+|---|---|---|
+| JSON conforme au schéma | Outil de structuration | Décrit uniquement une forme de données |
+| Aperçu graphique | Rendu DOM | Affiche toujours un avis *non validé* |
+| Vérification documentaire | Ateliers et relectures | Documente faits, limites, contradictions et droits |
+| Décision éditoriale | Procédure humaine habilitée | Motive une décision et son historique |
+| Autorisation de publication | Système serveur habilité | Contrôle les permissions **indépendamment des champs du JSON client** |
+| Intégration publique | Chaîne technique autorisée | Trace un acte explicite distinct et réversible |
+
+**À l'Anarchitecte :** ce composant de rendu est un démonstrateur, pas un outil de prévisualisation privée. Pour des propositions issues de `wiki_article_submissions`, il faut une page protégée par authentification, RLS et contrôles de rôle côté serveur, sans URL publique et sans déduire la permission des champs envoyés par un navigateur. Le moteur de rendu pourra être utilisé dans cette interface après revue, mais les contraintes de confidentialité sont propres à la couche applicative.
+
+**Limites actuelles :** le moteur DOM vérifie certains champs essentiels mais ne remplace pas la validation exhaustive du JSON Schema par Ajv. Il ne gère pas encore les notes de bas de page, les liens internes enrichis, le versionnement consultable, les droits multimédias ni les différents modules spécialisés des six types. Aucune publication automatique n'est créée.
