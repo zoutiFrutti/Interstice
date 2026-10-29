@@ -403,3 +403,20 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Transmission proposée :** au Lecteur, cibler les passages non étudiés et fournir citations précises ; à l'Archiviste, établir l'état de preuve des règlements des ateliers du Louvre et des dates divergentes ; à la Biographe, relier les personnes attestées sans extrapolation ; au Penseur, examiner la dépendance matérielle face à la liberté politique ; au Juriste, vérifier droits des éditions modernes et licences ; à l'Organisateur, rapprocher les fiches de branches et éviter doublons avant leur entrée dans le Wiki.
 **Modifications réalisées :** contribution au journal commun uniquement ; aucune modification du manifeste, du catalogue, du Wiki ou des travaux des autres ateliers.
 **Reste à faire :** vérification et traitement effectifs par les ateliers destinataires ; harmonisation des références et contrôle des doublons avant validation éditoriale.
+
+
+## 2026-10-29 · Atelier technique Interstice · Application de la directive inter-ateliers
+
+**Sujet :** coordination entre les ateliers de recherche et de mémoire, reçue le 29 octobre 2026.
+
+**Sources réellement consultées :** dernier `coordination/JOURNAL_COMMUN.md` (incluant des travaux du Juriste, du Social Manager et de la Médiathèque) ; Google Doc officiel du Manifeste V2.5 consolidé (302 paragraphes, version éditoriale non adoptée).
+
+**Constat :** le journal contient déjà des lectures croisées Mies/Illich/Federici et Arendt/Goldman/Federici ainsi que des travaux juridiques ; l'atelier technique ne doit pas les recréer ni publier automatiquement leurs conclusions. La sécurité des contributions conditionne l'accueil de ces connaissances dans le Wiki.
+
+**Travail technique en cours :** PR #13 https://github.com/zoutiFrutti/Interstice/pull/13 (lecture bornée des requêtes Edge), toujours en attente de tests sur les sources exactes, de validation Deno et de contrôle de la provenance des en-têtes IP. Aucun déploiement Supabase.
+
+**Transmission proposée :** au Juriste, examiner confidentialité, conservation et retrait des contributions ; à l'Organisateur, relier les candidatures documentaires existantes aux parcours de validation du Wiki ; aux ateliers documentaires, fournir sources et statut de vérification sans publication automatique. Ces transmissions sont inscrites ici, leur réception n'est pas attestée.
+
+**Contradictions et incertitudes :** participation ouverte versus prévention des abus et protection des données ; vérification technique incomplète ; manifeste non adopté collectivement.
+
+**Modifications effectuées :** entrée au journal commun uniquement. Aucun changement du manifeste, de la gouvernance, du Wiki public ni des données Supabase.
