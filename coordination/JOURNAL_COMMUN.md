@@ -203,3 +203,18 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications réellement effectuées :** ajout d'un `h1` sémantique au manifeste V2.5 ; PR #10 fusionnée ; lecture de contrôle sur `main` confirmant le titre et la conclusion du texte. Aucune modification des principes politiques.
 
 **À poursuivre :** test public GitHub Pages depuis un réseau accessible ; audit clavier/contraste/labels/formulaires ; sécurité des contributions et protection des données.
+
+
+## 2026-10-29 · Atelier technique · Accessibilité des formulaires au clavier
+
+**Sujet :** première revue statique des formulaires de l'accueil, du Wiki et de proposition d'article.
+
+**Sources :** `index.html`, `wiki.html`, `proposer-article.html`, `style.css` sur GitHub ; PR #11 https://github.com/zoutiFrutti/Interstice/pull/11 ; commit fusionné `8c1db472c43fb9b15930c7ce650010c2126b5517`.
+
+**Constats :** les champs inspectés sont enveloppés par des labels ou reliés via `for` ; des zones de statut utilisent `aria-live`. La règle `:focus-visible` initiale couvrait liens et boutons, pas les champs de saisie, sélecteurs et résumés dépliables. Contrôle statique uniquement, pas de test manuel clavier ou lecteur d'écran.
+
+**Pages concernées :** accueil, Wiki, proposition d'article et feuille de style commune.
+
+**Modification vérifiée :** ajout de `input:focus-visible`, `textarea:focus-visible`, `select:focus-visible`, `summary:focus-visible` dans `style.css` ; PR #11 fusionnée ; vérification du fichier sur `main`. Aucune modification de traitement des contributions.
+
+**Contradictions et travaux restants :** accessibilité déclarative ne prouve pas l'accessibilité réelle ; tests navigation clavier, contrastes, mobile, et sécurité/confidentialité des soumissions restent nécessaires. Vérifier également le déploiement public.
