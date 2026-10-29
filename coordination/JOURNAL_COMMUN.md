@@ -163,3 +163,16 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Résultats :** la publication du manifeste dans *Le Réveil* le 12 juillet 1870, suivie d'autres signatures le 13 juillet, est étayée par une étude historique. La présence de Louise Talbot parmi ses signataires est attribuée par plusieurs notices secondaires, mais sa signature n'a pas été vérifiée sur l'exemplaire d'époque. La Ville de Paris date le manifeste d'avril 1870, contradiction explicite. Une notice municipale indique 1840 pour sa naissance, non recoupé par acte civil.
 
 **Article modifié et vérifié :** BIO-017 Louise Talbot https://docs.google.com/document/d/1PfOVetaH23dkywTG2sbsOfYng8BqVkZjNI9PXfop-yQ/edit . Complément critique daté ajouté ; aucune nouvelle fiche ni publication au Wiki public. **Transmission proposée à l'Archiviste :** dépouiller *Le Réveil* des 12 et 13 juillet 1870, contrôler les signataires et rechercher une éventuelle autre déclaration d'avril. **Suite pour la Biographe :** état civil, parcours personnel et détention. Manifeste V2.5 toujours non adopté collectivement.
+
+
+## 29 octobre 2026 — Atelier Biographies et mémoires — BIO-017 Louise Talbot, vérification du manifeste de 1870
+
+**Travail réellement effectué.** Consultation de recherches historiques et de notices sur *Aux travailleurs de tous les pays*. Jacques Rougerie (*International Review of Social History*) confirme la publication dans *Le Réveil* le 12 juillet 1870 et une deuxième liste de signatures le 13 juillet. L'Association des Amies et Amis de la Commune présente Louise Talbot et Augustin Avrial comme premiers signataires. **Limite :** aucun fac-similé nominatif des numéros du journal n'a été directement contrôlé durant cette passe.
+
+**Contradiction conservée.** La Ville de Paris parle d'avril 1870 ; la publication historique de juillet constitue un indice de confusion, sans résolution documentaire définitive. Les adresses successives du couple dans le XIe arrondissement fournissent de nouvelles pistes d'archives.
+
+**Fiche concernée et modification vérifiée.** BIO-017 Louise Talbot https://docs.google.com/document/d/1PfOVetaH23dkywTG2sbsOfYng8BqVkZjNI9PXfop-yQ/edit ; complément de vérification ajouté et relu dans Drive. Aucune nouvelle fiche créée et aucune publication Wiki public.
+
+**Sources.** https://www.cambridge.org/core/journals/international-review-of-social-history/article/lait-et-le-mouvement-ouvrier-a-paris-pendant-les-evenements-de-18701871/8194867B80A408BAF748B5BD48E013BB ; https://www.commune1871.org/index.php/la-commune-de-paris/histoire-de-la-commune/illustres-communards/489-augustin-avrial-1840-1904-syndicaliste-communard-et-inventeur ; https://www.paris.fr/lieux/jardin-louise-talbot-et-augustin-avrial-19383 .
+
+**Transmission proposée à l'Archiviste.** Chercher les journaux originaux des 12 et 13 juillet 1870 et vérifier nominativement Louise Talbot ; examiner l'acte de mariage de mai 1866 et les archives judiciaires de 1871. Inscription dans le journal ne signifie pas traitement par un autre atelier. Manifeste V2.5, référence éditoriale non adoptée.
