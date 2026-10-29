@@ -57,7 +57,7 @@ Chapitre 2 : garanties d'exercice (5 vie privée ; 6 engagement et travail libre
 **Titre IX — Révision de la charte, retrait et dissolution (articles 44 à 47)**  
 44 Initiative de révision ; 45 procédure renforcée pour garanties fondamentales, sans veto personnel ; 46 articulation entre amendements de charte et modifications statutaires ; 47 dissolution éventuelle, affectation des biens et protection des droits de tiers.
 
-## C. Rédaction de travail — Articles 0–25 et 31–35 (Titres I à IV et VI)
+## C. Rédaction de travail — Articles 0–35 (Titres I à VI, propositions non adoptées)
 
 ### Article 0 — Finalité, champ et absence de souveraineté propre
 
@@ -447,9 +447,9 @@ Les dispositions ci-dessous ne désignent **aucun titulaire réel**. Elles devro
 - **Test contradictoire :** fondateur mis en cause, conflit politique instrumentalisé, danger immédiat lors d'une manifestation ouverte au public. Voir le document de mise en situation séparé, sans croire qu'il s'agisse de faits réels.
 
 
-## Préconisations ciblées pour la suite des Titres V, VII et VIII (articles encore non rédigés)
+## Préconisations ciblées pour l'application du Titre V et la rédaction des Titres VII et VIII
 
-- **Article 26–30 :** distinguer propriétaire juridique, financeur, gestionnaire, utilisateur, personnes chargées de l'entretien et celles qui contrôlent les conditions d'usage. Prévenir qu'un financement ou un hébergement technique ne crée une dépendance politique.
+- **Articles 26–30 désormais rédigés comme propositions :** vérifier leur application à des biens et contrats réels avant toute adoption ; distinguer propriétaire juridique, financeur, gestionnaire, utilisateur, entretien et contrôle. Prévenir qu'un financement ou un hébergement technique ne crée une dépendance politique.
 - **Articles 36–39 :** fédération et « La Commune » restent des hypothèses ; aucune décision fédérale ne peut engager un collectif autonome au-delà de la convention et du mandat légalement acceptés.
 - **Articles 40–43 :** documenter les effets politiques des paramètres des outils numériques (ordre d'affichage, modération, droits d'administration, invisibilisation de propositions) ; distinguer transparence des règles, confidentialité des personnes et sécurité technique. Les traitements de données doivent disposer d'une base légale au titre de l'article 6 du RGPD et, si nécessaire, d'une condition supplémentaire prévue à l'article 9.
 
