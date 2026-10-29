@@ -615,3 +615,14 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Transmissions proposées, réception non vérifiée :** Médiathèque (indexer les trois études), Lecteur (contrôler méthodologies), Juriste (droits des non-sociétaires), Penseur (périmètre réel de la démocratie coopérative), Organisateur (liaison EXP-004 sans doublon).
 
 **Modification vérifiée :** EXP-004 enrichie dans Drive ; aucune nouvelle fiche, aucune publication ni changement du manifeste. À poursuivre : statuts et mécanismes de recours par coopérative.
+
+
+## 2026-10-29 · Enrichissement Wiki · Presse communarde
+
+**Réalisé et vérifié dans Drive :** création de la fiche candidate ARCH-006 — Le Prolétaire (Paris, 1871), https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit ; enrichissement d'ARCH-005 (règlements du Louvre) et de COL-003 (Club des prolétaires) ; ajout d'une notice au catalogue et d'un suivi à la Médiathèque ; entrée détaillée au journal des changements majeurs Interstice dans Drive.
+
+**Sources :** BnF https://catalogue.bnf.fr/ark:/12148/cb328445424 ; RetroNews https://www.retronews.fr/journaux/proletaire ; Michèle Audin https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/ et https://macommunedeparis.com/2023/05/27/3-mai-1871-cent-six-ouvriers-redigent-un-reglement-de-leur-atelier/ .
+
+**Contrôle :** 37 fiches candidates uniques dans les quatre dossiers Wiki inspectés : BIO 17, ASSO 8, EXP 4, COL 2, ARCH 6. Ce n'est pas un total exhaustif du Wiki entier. Pas de publication publique ni de modification du manifeste.
+
+**Suites :** lire les quatre fac-similés ; contrôler les procès-verbaux du Club des prolétaires ; comparer les règlements du Louvre avec le Journal officiel et les archives de paie. Transmissions proposées aux ateliers, réception non attestée.
