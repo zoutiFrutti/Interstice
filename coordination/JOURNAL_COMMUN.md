@@ -259,3 +259,14 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Résultat :** GitHub n'a retourné ni exécution de workflow ni statut CI pour le commit au contrôle. **Aucune réussite de tests confirmée**, aucune fusion ou modification de Supabase de production.
 
 **Risque et suite :** vérifier les exécutions Actions et corriger d'éventuels échecs, examiner les droits de provenance des IP (cf-connecting-ip / x-forwarded-for), réaliser des tests HTTP en environnement isolé, puis seulement réconcilier avec main et revoir la possibilité de fusion. Les tests Deno de type ne remplacent pas les tests d'intégration ni les essais fonctionnels.
+
+
+## 2026-10-29 — Anarchitecte — Déclenchement CI de la PR #13
+
+**Constat :** comparaison avec main : 12 commits en avance, 31 en retard au début du contrôle. Aucune exécution de workflow ni statut CI retournés par les contrôles associés aux commits interrogés. Ces réponses ne prouvent pas que les tests se sont exécutés.
+
+**Modification :** workflow `.github/workflows/edge-request-bounds.yml` étendu aux événements `push` sur `fix/edge-request-bounds-2026-10-29`, en complément de `pull_request` et `workflow_dispatch` ; commit `2a907850b43f43b3037e479871c12e6194a4116b`. Objectif : permettre de déclencher les tests Node et Deno sur les commits de la branche. Un contrôle immédiat du nouveau commit ne retourne toujours pas d'exécution ou statut CI. Déclenchement réel et résultat à vérifier.
+
+**Blocages :** origine fiable des en-têtes IP non démontrée ; divergence de branche ; tests Node, Deno et HTTP non confirmés. Aucun déploiement Supabase, aucune fusion.
+
+**État : WORKFLOW MODIFIÉ SUR BRANCHE ; EXÉCUTION NON CONFIRMÉE.**
