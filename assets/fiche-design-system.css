@@ -183,3 +183,22 @@
   .fiche-rendue .fiche-qualification{color:#222}
   .fiche-rendue .fiche-section--sources .fiche-qualification{color:#222}
 }
+
+/* Le CSS historique applique display:flex à TOUS les header.
+   Ici l'en-tête interne de l'article est vertical, quelle que soit la largeur. */
+.fiche-rendue > header.fiche-hero {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  max-width: none;
+  padding: clamp(1.5rem, 4vw, 2.5rem) 0 1.25rem;
+}
+.fiche-rendue > header.fiche-hero h1 {
+  display: block;
+  width: auto;
+  max-width: 20ch;
+  margin: .6rem 0 1rem;
+}
+.fiche-rendue > header.fiche-hero .fiche-resume {
+  max-width: 70ch;
+}
