@@ -1,5 +1,7 @@
 # La Faille noire / Interstice · Charte des communs, Titre IX
-## Proposition V0.6, articles 44 à 47 · 29 octobre 2026
+## Proposition V0.6, articles 44 et 45 · 29 octobre 2026
+
+**Suite des articles 46 et 47 :** https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_IX_SUITE_2026-10-29.md
 
 **Travail non adopté.** Référence : Manifeste V2.5, validé éditorialement mais non adopté collectivement. Ce complément n'institue aucune assemblée, aucun seuil de vote, aucune fédération et aucune règle statutaire.
 
