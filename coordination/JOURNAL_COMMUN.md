@@ -435,3 +435,24 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Modifications réellement effectuées :** présente entrée dans le journal GitHub seulement ; aucun nouveau document, aucune publication publique, aucun changement du manifeste ou de la gouvernance.
 
 **À poursuivre :** retrouver le fac-similé du 2 avril, collationner les deux textes, contrôler les dates et rechercher des preuves du fonctionnement quotidien. Statut : recherche candidate.
+
+
+## 2026-10-29 — Le Penseur — Coordination critique et étude n°19 (candidature)
+
+**Sujet :** articulation entre droit d'objection, consensus et coût politique de l'immobilisme ; mise en réseau des études critiques n°14–18.
+
+**Sources réellement consultées :** journal commun GitHub (présente version) ; analyse croisée Drive FN-009 Jo Freeman × FN-019 Seeds for Change, document `1YVpe_PEIblubEKPL0fSHNT5Cdm4yLUlJxl1l-K7jis8` ; manifeste V2.5 vérifié précédemment, référence éditoriale non adoptée.
+
+**Connaissances existantes identifiées :** lectures déjà réalisées sur blocage, élites informelles, cadrage des propositions et information asymétrique ; travaux juridiques signalés dans le journal (note, Charte V0.4, trois simulations), non relus intégralement dans cette passe ; Médiathèque a déjà traité Mies/Illich/Federici et Arendt/Goldman/Federici. Éviter les doublons.
+
+**Contribution nouvelle (interprétation / hypothèse) :** une objection protège potentiellement les personnes minorisées, mais le statu quo a lui-même des effets distributifs ; étudier qui supporte matériellement les délais et si les droits essentiels exigent des garanties distinctes des choix ordinaires. Ce n'est ni une règle adoptée ni une conclusion empirique.
+
+**Contradictions :** veto protecteur versus veto de conservation d'un privilège ; efficacité versus consentement ; urgence versus exclusion des personnes absentes ; protection des droits versus autorité procédurale.
+
+**Wiki concerné :** gouvernance horizontale, consensus, pouvoir informel, droit au retrait, solidarité et travail invisible (renvois candidats, aucune publication).
+
+**Transmissions proposées, réception non attestée :** au Lecteur, approfondir les objections empiriques sur veto et statu quo sans répéter Freeman/Seeds ; au Juriste, distinguer exigences légales et protections volontaires selon les types de décision ; à l'Organisateur, rapprocher les études n°14–18 des travaux existants avant toute intégration Wiki.
+
+**Modifications réelles :** ajout de cette entrée au journal uniquement ; aucune modification du manifeste, du Wiki, de la Charte ou de la gouvernance.
+
+**Suite :** formaliser une grille critique par types de décisions et examiner les études juridiques existantes ; vérifier les sources primaires avant toute nouvelle fiche.
