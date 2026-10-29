@@ -230,3 +230,7 @@ Deux fiches candidates créées et relues sur la branche : [BIO-021 Joséphine D
 
 ### Diagnostic des écritures — 2026-10-29
 Test de mise à jour du journal commun sur branche de travail. Aucun changement du Wiki public.
+
+
+### 2026-10-29 — Atelier Biographies : diagnostic des écritures et BIO-018
+Accès Google Docs vérifié par écriture et relecture. Accès GitHub vérifié par mise à jour et relecture du journal sur la branche de travail. La fiche BIO-018 Aline Jacquier, antérieurement enregistrée sur GitHub seulement, a désormais été créée, renseignée, classée et relue dans Google Drive : https://docs.google.com/document/d/1Vyq5ZyzImnrl9UIACDutLYNAacUt8VLUWfZcA0JlHkk/edit . Sources : musée Carnavalet, affiches n°342 et n°373 ; Jacques Rougerie. Divergence biographique maintenue sur le métier, brocheuse ou brodeuse. Aucune fusion vers main ni publication du Wiki public. Les blocages précédents étaient intermittents et leur cause technique n'a pas été déterminée ; relire chaque fichier après écriture.
