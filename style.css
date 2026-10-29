@@ -106,3 +106,20 @@ article p {overflow-wrap:break-word}
  section {break-inside:auto}
  h1,h2,h3 {break-after:avoid}
 }
+
+
+/* Corrections ciblées après audit des styles des pages */
+article p, article li {line-height:1.75}
+article h2, article h3 {scroll-margin-top:24px}
+.sommaire, .manifesto-notice, .resource-card {
+ background:var(--surface-color);
+ border-color:var(--border-color);
+ border-radius:4px;
+}
+.manifesto-notice {border-left-color:var(--faille-red)}
+.resource-card h3 {font-family:var(--font-display);line-height:1.14}
+.resource-card a {overflow-wrap:anywhere}
+@media (prefers-reduced-motion: reduce) {
+ html {scroll-behavior:auto}
+ *, *::before, *::after {animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
