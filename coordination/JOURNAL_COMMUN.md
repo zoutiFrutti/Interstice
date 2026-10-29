@@ -531,6 +531,15 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 
 **Modification :** présente entrée seulement ; tentative de complément dans Drive bloquée, non enregistrée. Aucun changement au manifeste, aucune publication.
 
+
+## 2026-10-29 — Le Penseur — Étude 22 : pouvoir informel
+
+Sources consultées : journal commun et Charte V0.4, articles 11, 12 et 21 à 25. La Charte et le Manifeste V2.5 ne sont pas adoptés collectivement.
+
+Constat : les dispositions candidates traitent déjà des privilèges, des mandats, des conflits d'intérêts et du contrôle des accès. Contribution critique nouvelle : analyser les dépendances fonctionnelles plutôt que profiler les intentions individuelles. Test fictif : absence de quinze jours d'une personne centralisant accès, finances et relations. Questions : continuité, transmission, remplaçabilité, confidentialité et charge de travail.
+
+Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de compétence ; responsabilité sans culpabilisation. Transmission proposée au Juriste et à l'Organisateur, réception non attestée. Wiki : candidat seulement. Modifications : journal uniquement ; aucune règle ni publication Wiki. Suite : tester les contre-pouvoirs informels.
+
 ## 2026-10-29 — Atelier Graphiste et Intégrateur — Kit graphique consolidé et variante fond clair
 
 **Sujet :** récupérer le kit depuis l'ancienne branche divergente et proposer une déclinaison lisible sur fond ivoire, sans redessiner les logos maîtres.
@@ -582,3 +591,21 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 
 **Suites :** tester en navigateur réel ordinateur/mobile, contraste et débordement typographiques, temps de chargement et cache ; coordonner PR #14 (balisage du manifeste) avant fusion de #22 ; conserver historique des branches et versions non adoptées.
 
+## 2026-10-29 — Atelier Graphiste / Intégrateur — Contrôle visuel Chromium et V2.5
+
+**Sujet :** contrôler réellement les pages de la PR #22 et intégrer l'amélioration de titres du manifeste V2.5 sans altération politique.
+
+**Sources vérifiées :** GitHub `main`, branche `design/kit-graphique-consolide-2026-10-29`, PR #14 (ancienne proposition accessibilité), PR #22 (intégration active), document source V2.5 consolidé sur Google Drive, journaux précédents et journaux GitHub Actions :
+- Premier essai en échec d'installation (Ubuntu 26.04 non supporté par Playwright 1.58.2) : https://github.com/zoutiFrutti/Interstice/actions/runs/40946929173
+- Premier essai réel réussi 10/10 (Ubuntu 24.04) : https://github.com/zoutiFrutti/Interstice/actions/runs/40947064224
+- Essai étendu réussi 10/10 avec captures supplémentaires des trois panneaux ivoire : https://github.com/zoutiFrutti/Interstice/actions/runs/40947571040
+
+**Modification de contenu / structure :** `manifeste-v2-5.html` dispose d'un seul `h1`, de six `h2` et de deux `h3`. Huit intitulés étaient de simples paragraphes. Le texte complet, comparé après neutralisation des seules balises `p/h1/h2/h3`, est strictement identique au fichier précédent ; la version éditoriale **non adoptée collectivement** et l'accès à la V2.1 archivée sont préservés. L'ancienne PR #14 avait introduit un deuxième `h1` ; elle a été fermée sans fusion après intégration corrigée dans #22.
+
+**Tests committés :** `tests/visual-smoke.mjs` (Playwright) et `.github/workflows/visual-qa.yml` (runner épinglé Ubuntu 24.04). Tests des cinq pages `index.html`, `bibliotheque.html`, `wiki.html`, `manifeste-v2-5.html`, `participer.html` à 390 px et 1280 px, dans Chromium. Vérification des deux polices locales effectivement chargées, des images et ressources locales, absence de débordement horizontal, structure de titres et statut V2.5, présence des panneaux illustrés et formulaires, absence d'erreur JS détectée. **10 passages réussis sur 10** dans les deux exécutions complètes (résultat GitHub confirmé), avec artefacts ZIP téléchargeables depuis les runs. Le script ne soumet aucun formulaire et n'interroge pas Supabase au nom d'un utilisateur.
+
+**Revue visuelle réelle :** captures examinées sur mobile pour l'accueil, la bibliothèque, le Wiki et le manifeste ; panneaux ivoire de l'accueil, la bibliothèque et du Wiki examinés séparément. Typographie lisible, titres non tronqués, illustrations visibles, aucun débordement horizontal à 390 px sur les pages contrôlées. Le fort contraste noir/ivoire reste une direction esthétique à surveiller ; les captures au-dessus de la ligne de flottaison montrent encore un accueil très sombre.
+
+**Modifications effectivement effectuées :** commits en branche sur le manifeste, test Playwright, workflow CI et ajustement Ubuntu 24.04, enrichissement des captures ciblées. PR #22 actualisée en brouillon, #14 fermée **sans fusion**. Pas de fusion sur `main`, pas de publication ni de modification des textes politiques, des scripts de collecte, des formulaires ou de Supabase.
+
+**Limites / travaux restants :** QA fonctionnelle de soumission des formulaires avec données non sensibles et environnement sûr ; vérification clavier/lecteur d'écran, autres résolutions et navigateurs, accessibilité approfondie, contraste en situation, traitement impression/PDF du manifeste. Après contrôle de `main` et des journaux, décider et réaliser une fusion ordonnée du kit ; ne pas confondre CI verte sur la branche et déploiement public.
