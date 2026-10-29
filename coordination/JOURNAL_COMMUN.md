@@ -234,3 +234,16 @@ Test de mise à jour du journal commun sur branche de travail. Aucun changement 
 
 ### 2026-10-29 — Atelier Biographies : diagnostic des écritures et BIO-018
 Accès Google Docs vérifié par écriture et relecture. Accès GitHub vérifié par mise à jour et relecture du journal sur la branche de travail. La fiche BIO-018 Aline Jacquier, antérieurement enregistrée sur GitHub seulement, a désormais été créée, renseignée, classée et relue dans Google Drive : https://docs.google.com/document/d/1Vyq5ZyzImnrl9UIACDutLYNAacUt8VLUWfZcA0JlHkk/edit . Sources : musée Carnavalet, affiches n°342 et n°373 ; Jacques Rougerie. Divergence biographique maintenue sur le métier, brocheuse ou brodeuse. Aucune fusion vers main ni publication du Wiki public. Les blocages précédents étaient intermittents et leur cause technique n'a pas été déterminée ; relire chaque fichier après écriture.
+
+
+## 2026-10-30 — Atelier Biographies et mémoires — Consolidation GitHub vers Google Drive
+
+**Sujet et vérifications :** récupération des contenus existants de BIO-019 à BIO-022 sur la branche de travail, recherche de doublons dans Google Drive, création et relecture des quatre fiches candidates dans le dossier Biographies.
+
+**Documents créés et contrôlés :** [BIO-019 Blanche Lefèvre](https://docs.google.com/document/d/1H60l5jx5fMLKoo9uWwin1VydMRwIYcIjzvkjvyrcNCQ/edit) ; [BIO-020 Élisabeth Deguy](https://docs.google.com/document/d/1SgnFLfx3G683zTjEPPKoM96VPyai2_lj6ArvJqhsLZY/edit) ; [BIO-021 Joséphine Dulimbert](https://docs.google.com/document/d/1CxOVlejRzZYzI0GsxP4n0zFDasq7CEyuC2OH_xQkk70/edit) ; [BIO-022 Anne-Marie Ménand](https://docs.google.com/document/d/12z000Dgcq0FY3UFRIf79tluNvo5cmMv01oolwDogMaQ/edit). Les quatre contenus ont été vérifiés après écriture ; aucune nouvelle recherche historique ne leur est attribuée par ce transfert.
+
+**Sources et renvois :** références historiographiques et archives déjà portées dans les quatre fichiers candidats GitHub sous coordination/biographies ; ARCH-002 et ARCH-004 sur l'Union des femmes ; études de Michèle Audin et de l'Association des Amies et Amis de la Commune. Ces sources n'ont pas toutes été relues pendant le transfert.
+
+**Contradictions conservées :** Lefèvre/Lefebvre et localisation de son décès ; Dulimbert/Dulembert, ses écrits non vérifiés dans *Le Moniteur des citoyennes* ; Ménand/Ménan, accusations à distinguer des faits établis ; pour Deguy, précisions d'état civil et de déportation à confirmer. Aucune incertitude n'a été résolue par la seule migration technique.
+
+**Modifications réellement effectuées :** quatre créations Google Docs, quatre insertions du contenu existant, classement dans Biographies et relectures de contrôle. GitHub original conservé ; aucun manifeste, Wiki public ni branche main modifié. **Travail restant :** vérification archivistique et éventuelle fusion après relecture humaine ; éviter les doublons entre Drive et GitHub.
