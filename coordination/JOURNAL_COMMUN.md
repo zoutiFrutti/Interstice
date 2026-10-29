@@ -276,3 +276,25 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Travaux restants :** (1) contrôle contradictoire des 21 articles proposés avec scénarios d'abus ; (2) rédaction des articles 21–47 ; (3) revue par juristes avant création d'une structure ou exploitation de lieux ; (4) élaboration séparée des statuts et protocoles après définition des activités ; (5) coordination sur les différences V2.5 et archivage des versions ; (6) s'assurer que les passes automatiques prennent V2.5 comme référence, sans l'assimiler à une adoption.
 
+
+---
+
+## 2026-10-29 — Atelier central — Recoupement des journaux et branches
+
+**Objet :** reprise de la coordination depuis l'état actuel de main, sans imposer l'ancienne branche de coordination.
+
+**Constats vérifiés :** le journal commun existe maintenant sur main. L'ancienne branche `coordination/atelier-central-audit-2026-10-29` a divergé de main (12 commits en avance, 21 en retard à la comparaison). Le journal ancien contient des contributions provenant du manifeste, des biographies, des lectures critiques, de la communication et de l'identité graphique ; ces intitulés n'apparaissent pas comme entrées autonomes dans le journal actuellement présent sur main. Cela demande un rapprochement détaillé, non une copie aveugle.
+
+**Navigation :** quatre chemins HTML restent absents de main : `wiki-hebergement-numerique.html`, `wiki-accueil-conflits.html`, `wiki-bibliotheque-militante.html`, `wiki-mutualiser-materiel.html`. L'index `wiki.html` a été modifié par ailleurs depuis l'ancien audit : revoir les ancres actuelles avant toute nouvelle correction.
+
+**Autres dossiers présents dans le journal actuel :** publication de la V2.5, accessibilité, audit de sécurité Supabase, corrections de navigation, travail juridique et histoire de la Commune. Ces interventions doivent être respectées, non remplacées par le journal historique de l'atelier central.
+
+**Références :** `coordination/JOURNAL_COMMUN.md` sur main ; même chemin sur `coordination/atelier-central-audit-2026-10-29` ; `wiki.html` sur main ; vérification GitHub des quatre chemins absents ; comparaison des branches main / coordination.
+
+**Contradictions et limites :** un journal peut contenir un compte rendu sans que le contenu ait été intégré au Wiki. La présence d'un nom de chantier dans un historique ne garantit pas sa reprise dans le journal principal. Les quatre pages manquantes ne sont pas forcément des liens encore cassés, car l'index a évolué.
+
+**Action réelle :** cette entrée est proposée sur la nouvelle branche `coordination/recoupement-ateliers-2026-10-29` fondée sur main. Aucune ancienne branche fusionnée ; aucune publication ou adoption du manifeste ; aucune modification d'article.
+
+**À traiter :** (1) comparer les contributions des ateliers manquants et les intégrer sans doublons ; (2) vérifier les liens présents aujourd'hui dans l'index ; (3) préparer la clôture ou révision de la PR #4 seulement après contrôle de son contenu ; (4) reprendre les enrichissements historiques et critiques qui ne figurent pas sur main.
+
+**Statut : ENREGISTRÉ SUR BRANCHE, NON INTÉGRÉ À MAIN.**
