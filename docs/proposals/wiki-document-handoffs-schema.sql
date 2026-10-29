@@ -66,13 +66,15 @@ begin
    values(p_document_id,'created',p_sha);
    return 'CREATED';
  end if;
- select source_repository, source_path, source_sha, source_fingerprint
+ select source_repository, source_path, source_sha, source_fingerprint, atelier, source_links
  into v_original from wiki_ingest_private.document_handoffs
  where document_id=p_document_id for update;
  if v_original.source_sha <> p_sha
     or v_original.source_fingerprint <> p_fingerprint
     or v_original.source_repository <> p_repository
-    or v_original.source_path <> p_path then
+    or v_original.source_path <> p_path
+    or v_original.atelier <> p_atelier
+    or v_original.source_links <> p_links then
    insert into wiki_ingest_private.handoff_events(document_id,event_type,previous_sha,new_sha)
    values(p_document_id,'source_changed',v_original.source_sha,p_sha)
    on conflict(document_id,event_type,new_sha) do nothing;
