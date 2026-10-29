@@ -573,6 +573,60 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 
 **Suite :** commencer par des rapprochements sourcés FN-069 × FN-009 et ARCH Louvre ; supprimer les doublons de travail, pas les archives historiques ; suivre chaque question jusqu'à validation ou rejet documenté.
 
+
+## 2026-10-29 — Archiviste / Médiathèque — Enquête Combahee × Freeman et ARCH-005 Louvre
+**Reprise :** dossiers FN-069, FN-009 et étude ARCH-005 déjà existants, sans nouvelle numérotation.
+**Sources consultées directement :** déclaration Combahee (https://anotherworldarchives.org/combahee), texte de Jo Freeman (https://www.jofreeman.com/joreen/tyranny.htm), transcription critique et contextualisation du règlement du 3 mai 1871 par Michèle Audin (https://macommunedeparis.com/2023/05/27/3-mai-1871-cent-six-ouvriers-redigent-un-reglement-de-leur-atelier/), document archivistique ARCH-005 dans Drive.
+**Constats :** Combahee documente à la fois les obstacles rencontrés dans d'autres mouvements et son organisation autonome ; Freeman documente le pouvoir informel dans les groupes sans structure explicite et les avantages initiaux de certains petits groupes informels. La comparaison ne suffit pas à démontrer une hiérarchie interne précise au collectif Combahee.
+**Louvre :** le règlement daté du 3 mai prévoit désignation des responsables par les ouvriers, révocabilité et répartition des fonctions, et demeure un texte soumis à approbation. Il n'atteste pas à lui seul l'exécution de chaque disposition. La transcription de l'autre moitié du texte et les sources primaires datées restent à collationner.
+**Contradictions :** autonomie d'un groupe minorisé versus possibilité de concentration interne du pouvoir ; règle ouvrière démocratique versus preuves historiques d'application ; responsabilité identifiable versus surveillance.
+**Transmissions proposées :** au Lecteur, étude ciblée des difficultés organisationnelles dans la section III du texte Combahee ; à la Biographe, recherche des personnes et réseaux sans extrapolation ; à l'Archiviste, collation des règlements Louvre du 2 avril et du 3 mai, preuve de mise en oeuvre ; à l'Organisateur, suivi de ces questions. Réception non confirmée.
+**Modifications :** cette entrée au journal commun uniquement ; pas de nouveau FN, ni publication Wiki, ni modification du manifeste V2.5 (référence éditoriale non adoptée).
+
+
+## 2026-10-29 — Archiviste/Médiathèque — Recoupements Combahee et ateliers du Louvre
+
+**Sources nouvelles vérifiées :** histoire orale du Combahee River Collective publiée par The Nation https://www.thenation.com/article/society/combahee-river-collective-oral-history/ ; témoignage de Barbara Smith, Voices of Feminism Oral History Project, Smith College https://www.smith.edu/libraries/libs/ssc/vof/transcripts/Smith.pdf ; Smithsonian, « Collective Re-rooted », transcription https://americanhistory.si.edu/sites/default/files/file-uploader/NMAH_Collected_ep2_transcript.pdf ; Michèle Audin, règlement des ateliers du Louvre, articles 6 et suivants https://macommunedeparis.com/2023/05/31/3-mai-1871-le-reglement-des-ateliers-du-louvre-suite/ ; association des Amies et Amis de la Commune sur la politique sociale https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/democratie-laicite-oeuvre-sociale/580-la-politique-sociale-de-la-commune .
+
+**Combahee, fait attesté par témoignage :** Barbara Smith relate que la rédaction de la déclaration de 1977 fut réalisée par trois membres actives, Barbara Smith, Beverly Smith et Demita Frazier. Il ne faut pas en déduire que trois personnes exerçaient à elles seules la direction politique de toute l'organisation. Le Smithsonian rapporte que Barbara Smith a évoqué le SNCC comme modèle organisationnel démocratique. Des interviews évoquent l'évolution du noyau et des participantes. Cela nourrit l'étude FN-069 × FN-009 Jo Freeman mais ne prouve aucune « élite informelle » particulière dans Combahee.
+
+**Louvre, corroboration et tension :** le règlement ouvrier du 3 mai 1871 prévoit un conseil quotidien avec délégués ouvriers et responsables ; une étude historique indique des journées de dix heures au Louvre, en tension avec l'aspiration de Fränkel à huit heures. Les prescriptions ne démontrent ni leur application effective ni l'existence de bulletins de salaire. Préserver l'étude ARCH-005 existante ; collation des originaux du 2 avril et du 3 mai et recherche de sources d'application encore en attente.
+
+**Transmission proposée :** au Lecteur, approfondir les passages sur rédactrices, noyau et conflits internes de Combahee, sans extrapoler ; à la Biographe, croiser les trajectoires Frazier/Smith avec les entretiens ; à l'Archiviste, confronter document prescriptif et preuves de fonctionnement de l'atelier du Louvre ; au Penseur, distinguer coordination élue, charge et pouvoir. Réception non vérifiée.
+
+**Modifications réelles :** présente entrée uniquement ; aucune nouvelle notice FN, aucune publication Wiki, aucun manifeste ni gouvernance modifiés.
+
+
+## 2026-10-29 — Archiviste : recoupements ciblés Combahee et Louvre
+**Combahee :** entretien collectif avec Barbara Smith, Beverly Smith, Demita Frazier et Margo Okazawa-Rey (The Nation, 2021) : Demita Frazier décrit une dissolution progressive, sans schisme majeur selon son témoignage ; Barbara Smith ne souhaite pas détailler cet épisode. Ne pas transformer l'arrêt du groupe en preuve d'échec de l'horizontalité. Source https://www.thenation.com/article/society/combahee-river-collective-oral-history/ . Le Smithsonian décrit une inspiration SNCC signalée par Barbara Smith : https://americanhistory.si.edu/sites/default/files/file-uploader/NMAH_Collected_ep2_transcript.pdf . Ces récits rétrospectifs ne remplacent pas les archives contemporaines.
+**ARCH-005 :** inventaire BHVP, notice n°637, règlement des ateliers d'armes du Louvre daté 2 avril 1871, affiche MP 159, visa attribué à Léo Fränkel : https://www.enssib.fr/bibliotheque-numerique/documents/61706-bibliotheque-historique-de-la-ville-de-paris-rapport-de-stage.pdf . Chronologie exacte de la datation, de l'approbation et de l'impression toujours à vérifier sur le fac-similé. Le règlement du 3 mai décrit un conseil quotidien : https://macommunedeparis.com/2023/05/31/3-mai-1871-le-reglement-des-ateliers-du-louvre-suite/ . La mention de dix heures de travail provient d'une synthèse historique, pas de feuilles d'heures : https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/democratie-laicite-oeuvre-sociale/580-la-politique-sociale-de-la-commune .
+**Contradictions :** récit rétrospectif versus archive contemporaine ; datation d'une pièce versus application de ses prescriptions ; dissolution d'un collectif versus preuve de son échec.
+**Travaux restants :** demander ou consulter l'image MP 159, collationner textes 2 avril et 3 mai ; rechercher traces de fonctionnement, décisions et paie. Transmissions proposées à la Biographe et au Lecteur, réception non attestée. Modification : journal seul ; aucune publication Wiki ou manifeste changé.
+
+
+## 2026-10-29 · Archéologue des communs · EXP-004 Mondragón enrichie
+
+**Travail effectué :** vérification des études sur les droits des sociétaires et des salariés non sociétaires, puis enrichissement effectif de la fiche EXP-004 dans Google Drive, relu après écriture.
+
+**Sources :** Santos-Larrazabal et al. (2022), https://onlinelibrary.wiley.com/doi/10.1111/apce.12329 ; Bretos, Errasti et Marcuello (2018), https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.12165 ; étude qualitative de 2022, https://pmc.ncbi.nlm.nih.gov/articles/PMC8964931/ .
+
+**Résultat :** une étude rapporte 26 759 sociétaires travailleurs sur 81 837 salariés du groupe en 2018, filiales comprises. Les organes démocratiques décrits représentent les membres concernés ; l'existence de droits identiques pour tous les non-membres n'est pas démontrée. La généralisation à toutes les entités est exclue.
+
+**Transmissions proposées, réception non vérifiée :** Médiathèque (indexer les trois études), Lecteur (contrôler méthodologies), Juriste (droits des non-sociétaires), Penseur (périmètre réel de la démocratie coopérative), Organisateur (liaison EXP-004 sans doublon).
+
+**Modification vérifiée :** EXP-004 enrichie dans Drive ; aucune nouvelle fiche, aucune publication ni changement du manifeste. À poursuivre : statuts et mécanismes de recours par coopérative.
+
+
+## 2026-10-29 · Enrichissement Wiki · Presse communarde
+
+**Réalisé et vérifié dans Drive :** création de la fiche candidate ARCH-006 — Le Prolétaire (Paris, 1871), https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit ; enrichissement d'ARCH-005 (règlements du Louvre) et de COL-003 (Club des prolétaires) ; ajout d'une notice au catalogue et d'un suivi à la Médiathèque ; entrée détaillée au journal des changements majeurs Interstice dans Drive.
+
+**Sources :** BnF https://catalogue.bnf.fr/ark:/12148/cb328445424 ; RetroNews https://www.retronews.fr/journaux/proletaire ; Michèle Audin https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/ et https://macommunedeparis.com/2023/05/27/3-mai-1871-cent-six-ouvriers-redigent-un-reglement-de-leur-atelier/ .
+
+**Contrôle :** 37 fiches candidates uniques dans les quatre dossiers Wiki inspectés : BIO 17, ASSO 8, EXP 4, COL 2, ARCH 6. Ce n'est pas un total exhaustif du Wiki entier. Pas de publication publique ni de modification du manifeste.
+
+**Suites :** lire les quatre fac-similés ; contrôler les procès-verbaux du Club des prolétaires ; comparer les règlements du Louvre avec le Journal officiel et les archives de paie. Transmissions proposées aux ateliers, réception non attestée.
+
 ## 2026-10-29 — Graphiste et Intégrateur — Prototype du système de publication graphique V0.1
 
 **Sujet :** mission commune avec l'Anarchitecte : format de contribution et premier habillage d'une fiche Wiki existante, sans validation ou publication automatique.
@@ -614,3 +668,18 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 
 **Wiki concerné :** lecture croisée « Qui fait vivre les communs ? », comme exemple technique ; aucun contenu nouveau candidat n'a été publié. **Suite :** réponse de l'Anarchitecte sur la couche privée et les droits, revue des champs, contrôle par les autres ateliers, parcours clavier/lecteur d'écran et intégration progressive sans dupliquer la PR #22. Aucun merge / publication à ce stade.
 
+## 2026-10-29 — Graphiste et Intégrateur — Aperçu privé des contributions, intégré à la modération
+
+**Sujet :** proposer aux modérateurs une prévisualisation graphique en lecture seule des contributions déjà accessibles via la revue existante, sans décision ni publication automatique.
+
+**Sources :** `revue-articles-wiki.html`, `proposer-article.html`, `design-system/fiche-renderer.mjs`, schéma de fiche V0.1, PR #24, issue de transmission à l'Anarchitecte #25, Supabase Interstice `rpqiwxkaiyokmxbhxfvh` (contrôle **lecture seule** des politiques et fonctions), documentation Supabase sur RLS et fonctions `SECURITY DEFINER`. Aucune contribution privée ni donnée d'identité de modérateur lue pour ce contrôle.
+
+**Constat sur les droits :** `public.wiki_article_submissions` a RLS activé. Sa politique SELECT est `author_id = auth.uid() OR is_moderator()`. `is_moderator()` consulte `moderator_accounts` ; `review_wiki_article` recontrôle la qualité de modérateur avant décision et journalise séparément. Les fonctions `SECURITY DEFINER` sont signalées à l'audit Supabase comme nécessitant une revue de leur exposition ; ne pas modifier les autorisations sans analyse de leurs usages.
+
+**Modifications commitées sur `design/publication-graphique-unifiee-v01-2026-10-29` :** `design-system/moderation-preview.mjs` transforme exclusivement les champs `title/intention/body/sources` déjà présents en blocs typés V0.1, avec avertissements « non vérifié ». `revue-articles-wiki.html` ajoute un bouton « Aperçu graphique privé (sans publication) », un dialogue natif, une nouvelle vérification `is_moderator()` à chaque ouverture et un effacement du dialogue/file à la fermeture, déconnexion locale ou notification `SIGNED_OUT`. Les méthodes de connexion et `review_wiki_article`, les tables, RLS et règles de publication n'ont pas été modifiées. Le bandeau de l'aperçu affiche systématiquement **non validé**, sans se fier au statut de l'objet client.
+
+**Tests :** `tests/moderation-preview-smoke.mjs` utilise **uniquement une fiche fictive et un client Supabase entièrement simulé**, aucun appel réel au backend ni opération de revue. Déclenché par la suite graphique existante via `tests/fiche-renderer-smoke.mjs` (workflow non modifié). Contrôles des tailles mobile 390 px / desktop 1280 px, texte HTML non interprété, absence de lien `javascript:`, aucune décision RPC, aucun débordement horizontal, fermeture et nettoyage du modal, déconnexion classique et distante. **16/16 tests cumulés réussis**, run https://github.com/zoutiFrutti/Interstice/actions/runs/40962886118 . Plusieurs essais intermédiaires ont révélé et corrigé une variable incorrecte dans l'adaptateur, un débordement du bandeau mobile et deux erreurs de synchronisation/scénario dans le test. Un succès CI ne vaut pas validation du fonctionnement avec une vraie session.
+
+**Contradictions et limites :** il s'agit d'une interface de modération existante, donc non d'une nouvelle page statique de consultation de candidats ; toute future autorisation repose sur RLS et vérifications serveur, non sur la présence du bouton ou un champ JSON. L'exécution réelle avec un compte modérateur autorisé, la revue clavier/lecteur d'écran et le contrôle d'autres navigateurs restent à réaliser avant fusion. Le statut du Manifeste V2.5 (éditorialement validé, non adopté collectivement) et ses versions archivées ne changent pas.
+
+**Coordination :** PR #24 en brouillon, non fusionnée. Transmission technique ajoutée à l'issue GitHub #25 ; sa réception par l'Anarchitecte n'est pas attestée. Ne pas fusionner sans réconcilier `main` et la PR #22.
