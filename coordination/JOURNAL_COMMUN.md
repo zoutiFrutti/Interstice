@@ -325,3 +325,20 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications vérifiées :** ajout de `assets/identite-preview.css` (commit `4051e8967180acc32db1cd5eec9aeed39e5631e8`) et `assets/identite-preview.html` (commit `12a42ce8f56498c435f2200f8ab8ba5ffd9da9a2`) sur la branche `design/kit-transparent-2026-10-29`. Les deux fichiers ont été relus après écriture, avec contenu identique. Aucun changement de `main`, du manifeste, de Supabase ou des scripts applicatifs.
 
 **Suite :** effectuer le contrôle visuel effectif, valider la fidélité aux sources graphiques originales, exporter les PNG/WebP à partir des SVG approuvés, intégrer progressivement sans casser les formulaires ni la navigation.
+
+
+## 2026-10-29 · Atelier graphique · Outil d'export PNG/WebP dans la planche de contrôle
+
+**Sujet :** progresser dans la phase B du kit en permettant une conversion raster locale depuis les deux SVG transparents existants, sans redessiner les logos.
+
+**Sources :** `assets/logo-interstice-transparent.svg`, `assets/logo-faille-noire-transparent.svg`, `assets/identite-preview.html` et `assets/identite-preview.css` sur la branche `design/kit-transparent-2026-10-29` ; manifeste V2.5 consolidé (non adopté) dans Google Drive.
+
+**Connaissances :** un navigateur peut convertir les SVG existants vers PNG ou WebP au moyen de Canvas ; le fichier n'est téléchargé que si son MIME réel correspond au format demandé. Le rendu des filtres organiques SVG peut varier selon les moteurs et doit être inspecté.
+
+**Articles Wiki et supports concernés :** kit graphique, futurs favicons et supports imprimés ; aucun article Wiki modifié.
+
+**Contradictions / incertitudes :** absence de validation visuelle définitive par navigateur et téléphone ; aucune preuve que les planches graphiques originales approuvées sont identiques aux SVG actuels. Le navigateur doit exécuter l'export ; aucun PNG/WebP binaire n'a été commité ni testé sur mobile. Les images ainsi téléchargées ne remplacent pas les vecteurs.
+
+**Modifications réellement effectuées :** nouveau `assets/identite-export.js` (commit `e7d403bf16b12cfedf98c322a59dff4e523fce1e`), mise à jour de `assets/identite-preview.html` avec choix PNG/WebP en 64, 256, 512, 1024 pixels (commit `3a34cbb8ae19005314ad88f905b20c1a08ee8eff`), styles accessibles dans `assets/identite-preview.css` (commit `be67e186e35aad907c37534210b4522f86ac0add`). Trois relectures GitHub ont confirmé les contenus écrits. Aucun changement de `main`, aucun déploiement public ni aucune modification politique ou Supabase.
+
+**Travaux restants :** tester physiquement le rendu et les exports (PNG/WebP et vraie transparence) sur navigateurs et téléphone ; comparer avec les planches initiales ; contrôler la lisibilité en 32 px ; publier seulement après validation et intégration atomique.
