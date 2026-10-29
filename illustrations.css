@@ -1,0 +1,78 @@
+/* Atelier Graphiste : zone de respiration visuelle sur la page d'accueil.
+   Première proposition non fusionnée, indépendante de la refonte typographique. */
+#pratiques.pratiques {
+  background: #E9E5DB;
+  color: #101014;
+  border: 0;
+  border-radius: 5px;
+  margin: 8px 0 52px;
+  padding: clamp(22px, 5vw, 50px);
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: clamp(16px, 3vw, 38px);
+}
+#pratiques.pratiques h2 {
+  color: #101014;
+  line-height: 1.12;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  letter-spacing: -.025em;
+  margin: 10px 0 20px;
+}
+#pratiques.pratiques p {
+  color: #30302F;
+  margin: 0 0 24px;
+}
+#pratiques.pratiques .pratiques__surtitle {
+  color: #9B1B27;
+  font-weight: 800;
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pratiques__visuel {
+  margin: 0;
+  min-width: 0;
+}
+.pratiques__visuel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #8F8980;
+}
+#pratiques .pratiques__lien {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: .5rem;
+  padding: 10px 17px;
+  background: #9B1B27;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: 700;
+}
+#pratiques .pratiques__lien:hover { background: #72131C }
+#pratiques .pratiques__lien:focus-visible {
+  outline: 3px solid #101014;
+  outline-offset: 4px;
+}
+@media (max-width: 660px) {
+  #pratiques.pratiques {
+    grid-template-columns: 1fr;
+    margin-bottom: 38px;
+    padding: 24px 20px;
+  }
+  #pratiques.pratiques h2 { font-size: clamp(2rem, 9vw, 3rem) }
+  .pratiques__visuel { max-width: 500px }
+}
+@media print {
+  #pratiques.pratiques {
+    background: white;
+    color: black;
+    border: 1px solid #444;
+    break-inside: avoid;
+  }
+  #pratiques.pratiques h2, #pratiques.pratiques p { color: black }
+}
