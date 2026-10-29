@@ -250,3 +250,16 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications effectuées :** copies du code déployé enregistrées sur une branche GitHub, avec lecture HTTP par morceaux plafonnée en octets (7 000 / 4 000) et refus d'une IP absente dans `submit-resource`. PR #13 ouverte pour revue, **non fusionnée**, **aucun déploiement Supabase**.
 
 **Contradictions et travaux restants :** tests Deno et tests HTTP de non-régression encore nécessaires ; confiance dans les en-têtes IP toujours non prouvée ; contrôler la gestion des corps tronqués, UTF-8, méthodes, CORS, quotas et formulaires avant fusion et déploiement. Ne pas présenter ce code comme déjà en production.
+
+
+## 2026-10-29 — Atelier Graphiste / D.A. — V2.5 et structure de lecture
+
+1. **Date :** 29 octobre 2026.
+2. **Atelier :** Graphiste / identité graphique et accessibilité.
+3. **Sujet :** réception de la V2.5 consolidée et vérification des supports web.
+4. **Connaissances :** texte intégral du document Drive V2.5 consulté (33 875 caractères environ), version éditoriale non adoptée. Le site sur `main` dispose déjà d'une page `manifeste-v2-5.html` et l'accueil oriente vers cette version, avec archive V2.1 préservée. Cette mise à jour préexistait à l'intervention du présent atelier. Le titre « LA VIGILANCE ENVERS NOS PROPRES POUVOIRS » est bien inclus dans la page.
+5. **Sources :** Google Docs https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit ; dépôt `zoutiFrutti/Interstice`, fichiers `index.html`, `manifeste.html`, `manifeste-v2-5.html`, version de `main` lue ce jour.
+6. **Wiki / pages concernées :** page manifeste V2.5 et accueil ; potentiellement guide d'accessibilité et charte graphique.
+7. **Contradiction / difficulté :** la page V2.5 utilisait de simples balises `<p>` pour de nombreux titres majeurs, ce qui affaiblit l'accessibilité et la hiérarchie éditoriale. Ne pas confondre correction de balisage et validation ou adoption politique.
+8. **Modifications réellement effectuées :** sur la branche `atelier-da-accessibilite-manifeste-v25-2026-10-29`, conversion du titre du manifeste en `<h1>` et de huit intitulés de sections existants en `<h2>` dans `manifeste-v2-5.html`. **Aucun changement des mots du manifeste** ; aucun changement dans `main`.
+9. **Restant :** faire une relecture de la hiérarchie des sous-sections, tester le rendu sur navigateur et lecteurs d'écran, améliorer les styles spécifiques à cette page si nécessaire et soumettre cette branche à revue. Poursuivre séparément l'optimisation de la PR typographique n° 5.
