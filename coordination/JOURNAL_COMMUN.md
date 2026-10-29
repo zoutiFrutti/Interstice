@@ -75,3 +75,18 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Modifications réellement effectuées.** Création, classement et relecture de BIO-013 dans le dossier Google Drive Biographies. Aucune publication dans le Wiki public, ni modification du manifeste.
 
 **Travaux restant à accomplir.** Vérifier les archives de l'école, les actes de la Société fraternelle de l'ouvrière et la presse des clubs ; identifier les autres femmes impliquées.
+
+
+## 2026-10-29 — Atelier Biographies et mémoires — Alignement éditorial V2.5
+
+**Sujet et document étudié.** Lecture directe du [Manifeste V2.5 consolidé](https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit), version de travail du 29 octobre 2026. Son titre et son contenu indiquent explicitement « version éditoriale de travail, non adoptée par une assemblée constitutive ».
+
+**Connaissances et conséquences pour l'atelier.** La section « La vigilance envers nos propres pouvoirs » demande de ne soustraire aucune figure historique à l'examen critique. Dans les biographies, maintenir la distinction entre contribution individuelle et travail des collectifs, rechercher les personnes invisibilisées, signaler les inégalités de participation et les contradictions entre positions revendiquées et pratiques.
+
+**Articles concernés.** BIO-008 Louise Michel (notamment histoire coloniale et mémoire critique), BIO-009 Nathalie Le Mel, BIO-010 Élisabeth Dmitrieff, BIO-011 André Léo, BIO-012 Eugène Varlin, BIO-013 Paule Minck, ASSO-007 Union des femmes, ASSO-008 La Marmite. Liens vers les notices existantes et le journal de cet atelier dans les entrées précédentes.
+
+**Contradictions ou risques à signaler.** Les notices historiques antérieures pouvaient renvoyer aux huit piliers sans mentionner le statut du manifeste ; ne pas confondre classement éditorial selon des principes proposés et adhésion collective officielle. Les récits héroïsants peuvent masquer le travail collectif, les controverses et l'histoire coloniale. La référence V2.5 ne doit pas effacer les anciennes versions archivées.
+
+**Modifications réellement effectuées.** Lecture du document source et vérification de son statut. Cette entrée est enregistrée uniquement dans le journal de coordination sur la présente branche ; aucune modification des fiches Google Drive, du manifeste ou du Wiki public n'est affirmée.
+
+**Travaux à poursuivre.** Lors des prochaines révisions biographiques, corriger les mentions « manifeste adopté » s'il en existe et préciser « V2.5, référence éditoriale non adoptée ». Rechercher les voix marginalisées et préserver les désaccords documentés. Les modifications aux fiches doivent être vérifiées individuellement avant d'être déclarées effectuées.
