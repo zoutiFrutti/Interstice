@@ -15,7 +15,7 @@ const url='https://rpqiwxkaiyokmxbhxfvh.supabase.co/functions/v1/github-wiki-ing
 const stats={CREATED:0,UNCHANGED:0,UPDATED_REVIEW_REQUIRED:0};
 for(let i=0;i<data.items.length;i+=10){
  const res=await fetch(url,{method:'POST',headers:{Authorization:'Bearer '+jwt,'Content-Type':'application/json'},body:JSON.stringify({items:data.items.slice(i,i+10)})});
- if(!res.ok)throw Error('Ingest rejected '+res.status+' '+(await res.text()).slice(0,400));
+ if(!res.ok){if(res.status===403){const claims=JSON.parse(Buffer.from(jwt.split('.')[1],'base64url').toString('utf8'));console.error('OIDC verified? edge rejected claims',{repository:claims.repository,ref:claims.ref,workflow_ref:claims.workflow_ref,event_name:claims.event_name});}throw Error('Ingest rejected '+res.status+' '+(await res.text()).slice(0,400));}
  const response=await res.json();
  for(const item of response.results||[]){if(!(item.status in stats))throw Error('Unexpected result '+item.status);stats[item.status]++;}
 }
