@@ -112,3 +112,13 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 4. Comparer les modèles juridiques possibles : association loi 1901, conventions intercollectives et autres supports selon le projet concret.
 5. Préparer une table de correspondance manifeste / charte / protocoles pour l'atelier central, puis une éventuelle mise à jour V2.4 du manifeste **uniquement sur autorisation explicite**.
 
+
+
+## 2026-10-29 — Médiathèque des communs — Nouvelle référence éditoriale V2.5
+**Sujet :** réception et vérification du Manifeste V2.5 consolidé comme référence éditoriale de travail (non adoptée).
+**Document lu :** https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit (33 875 caractères environ, version du 29 octobre 2026).
+**Connaissances :** la V2.5 conserve les neuf principes et huit piliers, renforce l'examen des pouvoirs informels, de l'éducation émancipatrice, du travail invisible, de l'autonomie, du droit au retrait et de la critique de nos propres références. Clause « La vigilance envers nos propres pouvoirs ». Document explicitement non adopté collectivement.
+**Répercussions :** maintenir les lectures croisées contradictoires ; distinguer source primaire, étude secondaire, interprétation et proposition ; conserver les versions archivées. La médiathèque n'est pas une autorité chargée de modifier le manifeste.
+**Contradiction documentaire :** des fiches rédigées sur la branche `atelier/lecture-femmes-1871-1936-20261029` ont leur propre journal de branche, divergent du journal commun `main` et ne sont pas publiées dans le Wiki. Nécessité de faire réexaminer leur intégration par coordination, sans écraser les contributions concurrentes.
+**Modifications réellement effectuées :** lecture Drive vérifiée ; cette entrée ajoutée au journal `main` ; aucune modification du manifeste, des huit piliers, des anciennes versions ni des pages Wiki publiques.
+**Travaux restants :** relire et référencer les fiches sous V2.5 ; auditer les doublons et les liens des lectures de l'atelier ; proposer une intégration par revue documentaire.
