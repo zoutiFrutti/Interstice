@@ -402,3 +402,21 @@ Ces intitulés désignent des thèmes de rapprochement : l'existence de pages pa
 **Suites :** examen documentaire approfondi, éventuelle liaison au dossier économie et au registre des approfondissements, vérification du rendu et revue avant fusion.
 
 **État : ENREGISTRÉ sur branche, non fusionné, non publié.**
+
+---
+
+## 2026-10-29 — Atelier central — Union des femmes pendant la Commune
+
+**Sujet :** participation des ouvrières, organisation collective et accès au travail pendant la Commune de Paris.
+
+**Connaissances :** l'Union des femmes organise des comités d'arrondissement et un comité central en avril 1871. L'affiche numéro 373 du 20 mai 1871, conservée au musée Carnavalet, invite à constituer des chambres syndicales et fédérales de travailleuses. Plusieurs signataires sont nommées. Ne pas confondre existence des organes et égalité effective des membres.
+
+**Sources :** https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune ; https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/1643-lunion-des-femmes-pour-la-defense-de-paris-et-les-soins-aux-blesses .
+
+**Article concerné :** `wiki-lecture-croisee-travail-soin-pouvoir.html`.
+
+**Modification vérifiée :** ajout d'une section sur l'Union des femmes, commit `040aa0072b46ce8e6b3a682ec23dcbaa412bad59`. Lecture GitHub après écriture effectuée. Aucun changement sur `main`.
+
+**Limites :** approfondir les conflits internes, le fonctionnement des chambres syndicales et les parcours des participantes moins connues ; aucune comparaison contemporaine présentée comme filiation historique.
+
+**Statut : ENREGISTRÉ sur branche, non fusionné, non publié.**
