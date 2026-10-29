@@ -143,3 +143,11 @@
   .interstice-fiche .fiche-section h2 { break-after: avoid; }
   .interstice-fiche .fiche-contents a { min-height: auto; }
 }
+
+/* Sur les petites largeurs, la navigation historique est mise en lignes sans couper les liens. */
+.fiche-page > header { flex-wrap: wrap; min-width: 0; }
+.fiche-page > header a { display: inline-flex; align-items: center; min-height: 44px; }
+@media(max-width:600px){
+  .fiche-page > header { justify-content: flex-start; row-gap: .5rem; }
+  .fiche-page > header strong { flex-basis: 100%; }
+}
