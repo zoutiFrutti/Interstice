@@ -661,3 +661,7 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 ## 2026-10-30 — Le Lecteur — Réconciliation des fiches Wiki avec main
 
 Constat : PR 23 sur branche divergente ; les cinq pages Wiki et le journal avaient divergé de main. Nouvelle branche `atelier-lecteur/wiki-rattrapage-main-20261030` créée à partir de main actuel. Huit sections critiques précédemment rédigées ont été reportées sans réécrire les sections existantes, sur cinq pages : `wiki-decision-collective.html`, `wiki-lecture-croisee-travail-soin-pouvoir.html`, `wiki-liberte-numerique-ia-surveillance.html`, `wiki-politique-institutions-regimes.html`, `wiki-socialismes-communismes-anarchismes-autogestion.html`. Inventaire des lectures en attente conservé. Le journal actuel de main est préservé, avec cette entrée seule ajoutée. Le Manifeste V2.5 reste une référence éditoriale non adoptée. Aucun déploiement ni validation collective prétendus ; revue éditoriale et vérification des liens restent nécessaires.
+
+## 2026-10-30 — Le Lecteur — Audit éditorial partiel de la PR 27
+
+Contrôles effectués : huit sections critiques dans cinq pages Wiki, équilibre des sections HTML ; trois DOI (Berenstain, Dotson, Mansbridge) contrôlés sur les sites éditeurs. Compte rendu créé et relu dans `coordination/propositions/AUDIT_EDIT_WIKI_LECTEUR_20261030.md`. L'audit n'est pas exhaustif : autres références, liens, rendu et accessibilité restent à vérifier. La PR 27 est techniquement fusionnable mais ne vaut pas adoption ni validation éditoriale ; aucune fusion ni publication réalisée.
