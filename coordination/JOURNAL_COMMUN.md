@@ -58,3 +58,20 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 5. Faire examiner les croisements proposés par l'atelier central avant intégration au Wiki public.
 
 **État :** contribution documentaire candidate à relecture croisée, sans décision éditoriale collective.
+
+
+## 2026-10-29 — Atelier Biographies et mémoires — Paule Minck (BIO-013)
+
+**Sujet étudié.** Biographie de Paulina Mekarska dite Paule Minck (1839–1901), clubs de la Commune et éducation des filles.
+
+**Connaissances découvertes.** Militante socialiste et féministe, oratrice des clubs, impliquée dans les réseaux de revendication des droits des femmes et active pendant la Commune. Attribution courante de l'organisation d'une école de filles à Saint-Pierre de Montmartre.
+
+**Sources.** [Association des Amies et Amis de la Commune](https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/illustres-communards/1081-paule-minck-communarde-et-feministe) ; [étude historique Persée](https://www.persee.fr/doc/r1848_0765-0191_1950_num_42_185_1467) ; [recherche biographique prudente](https://macommunedeparis.com/2020/04/25/paule-minck-deux-ou-trois-choses-que-lon-sait-delle-1/).
+
+**Wiki concerné.** [BIO-013 Paule Minck](https://docs.google.com/document/d/15oqfixi0c6IoEH5BDqLePfWp7DADVd_L_Cumiyrml_Q/edit), BIO-008 Louise Michel, BIO-011 André Léo ; écoles et clubs des femmes sous la Commune.
+
+**Contradictions.** L'école gratuite de Saint-Pierre est présentée comme certaine dans certaines notices et comme hypothétique dans une enquête biographique ; vérification dans les archives d'époque requise. Proximité des militantes n'implique pas collaboration directe sur toutes les actions.
+
+**Modifications réellement effectuées.** Création, classement et relecture de BIO-013 dans le dossier Google Drive Biographies. Aucune publication dans le Wiki public, ni modification du manifeste.
+
+**Travaux restant à accomplir.** Vérifier les archives de l'école, les actes de la Société fraternelle de l'ouvrière et la presse des clubs ; identifier les autres femmes impliquées.
