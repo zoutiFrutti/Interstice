@@ -250,3 +250,26 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications effectuées :** copies du code déployé enregistrées sur une branche GitHub, avec lecture HTTP par morceaux plafonnée en octets (7 000 / 4 000) et refus d'une IP absente dans `submit-resource`. PR #13 ouverte pour revue, **non fusionnée**, **aucun déploiement Supabase**.
 
 **Contradictions et travaux restants :** tests Deno et tests HTTP de non-régression encore nécessaires ; confiance dans les en-têtes IP toujours non prouvée ; contrôler la gestion des corps tronqués, UTF-8, méthodes, CORS, quotas et formulaires avant fusion et déploiement. Ne pas présenter ce code comme déjà en production.
+
+
+## 2026-10-29 · Atelier Social Manager / Graphisme · Audit de lancement Instagram sous manifeste V2.5
+
+**Sujet :** mise à niveau de la référence éditoriale des trois carrousels de lancement de La Faille noire, déjà travaillés et approuvés visuellement en conversation.
+
+**Source primaire étudiée :** Google Doc officiel « La Faille noire — Manifeste V2.5 consolidé — 29 octobre 2026 — version éditoriale non adoptée », https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit ; références visuelles et textes des trois carrousels dans l'atelier Communication. Les V2.1/V2.4 restent des archives, non des références courantes.
+
+**Connaissances et vérifications :** la V2.5 garde neuf principes et huit piliers, ajoute la clause « La vigilance envers nos propres pouvoirs », réaffirme le consentement, l'accessibilité, la reconnaissance du travail invisible et le droit au retrait. Le texte est validé éditorialement mais **non adopté collectivement** ; La Faille noire n'est pas une fédération constituée. Interstice est envisagé comme outil de connaissance, documentation, coopération et transmission, et non comme direction politique.
+
+**Audit éditorial préliminaire des 3 carrousels :**
+- C1 « Les failles » : compatible sur le constat des besoins sans réponse et la mise en valeur des solidarités ; veiller à ne pas généraliser des situations illustrées en faits universels ni faire croire à des affiliations documentaires.
+- C2 « Compléter, pas remplacer » : compatible avec la priorité aux initiatives existantes ; sa formulation « écouter, rencontrer, comprendre, relier » doit rester une intention de démarche, non un bilan d'activités déjà accomplies.
+- C3 « Relier sans centraliser » : compatible avec le pilier fédéraliste mais les formulations sur les « collectifs reliés » et « renforcer nos luttes » peuvent suggérer une fédération ou des partenariats déjà existants ; les présenter explicitement comme perspectives. Présenter Interstice comme outil en construction, pas comme infrastructure aboutie.
+- Pour toutes les images : vérifier les exports exacts approuvés, l'anonymisation, les droits photographiques et l'absence d'attribution d'un soutien politique aux personnes illustrées ; contrôler l'accessibilité (contrastes, sous-titres, textes alternatifs, taille des caractères). Ne pas confondre graphique stylisé et reportage.
+
+**Contradictions et vigilance :** l'usage d'Instagram / Metricool, services propriétaires, doit rester un canal de communication et non un mécanisme de gouvernance ou de consentement. L'équipe de communication et les administrateurs d'outils ne doivent pas s'attribuer une autorité politique de fait. Ne pas transformer les mises en forme précédemment « validées » en décisions d'assemblée.
+
+**Wiki concernés :** présentation du projet, Interstice / outils communs, principes de gouvernance, mutualisation, communication éthique et accessibilité (titres indicatifs, existence des pages non vérifiée dans cette passe).
+
+**Modifications réellement effectuées :** lecture du document V2.5 par le connecteur Drive ; relecture des validations de l'atelier ; ajout de cette entrée au journal de la branche `atelier/social-manager-v25-2026-10-29` uniquement. Aucun changement au manifeste, au Wiki, aux visuels ou au compte Instagram/Metricool. Aucune fusion de branche.
+
+**Travaux restant à faire :** audit textuel et graphique des 12 exports exacts ; retouches ciblées de légendes/visuels en cohérence V2.5 ; assemblage vérifiable et création de brouillons Metricool seulement après disponibilité de médias autorisés. Revue et intégration de cette branche dans la coordination commune.
