@@ -563,3 +563,7 @@ Connaissances et contradictions : demander une explication peut contribuer à l'
 Modifications réelles : deux pages HTML du Wiki **modifiées sur la branche**, inventaire `coordination/propositions/LECTURES_CRITIQUES_A_INTEGRER.md` actualisé. Aucune fusion sur main, aucun déploiement public et aucune publication Supabase effectués.
 
 À faire : relecture éditoriale et bibliographique, validation de la PR 23, intégration progressive des autres études en évitant les doublons avec les pages déjà existantes.
+
+## 2026-10-29 — Le Lecteur : rattrapage de la représentation
+
+Contrôle des pages existantes effectué. Deux enrichissements vérifiés sur la branche de la PR 23 : `wiki-politique-institutions-regimes.html` (Pitkin, Mansbridge, Urbinati, Goodin, Owen : mandat et personnes affectées) et `wiki-socialismes-communismes-anarchismes-autogestion.html` (Rancière, Balibar : frontières contestables du collectif). Sources bibliographiques mentionnées dans chaque article, ouvrages non prétendus lus intégralement. Objections : révocabilité ne garantit pas la voix des non-membres ; contestation perpétuelle peut paralyser une responsabilité. Aucune décision collective adoptée ; ni fusion ni publication. Registre des fiches non actualisé : tentative d'écriture bloquée. Prochaine étape : relecture des sources et revue éditoriale.
