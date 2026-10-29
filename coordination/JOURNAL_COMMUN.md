@@ -541,6 +541,38 @@ Constat : les dispositions candidates traitent déjà des privilèges, des manda
 Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de compétence ; responsabilité sans culpabilisation. Transmission proposée au Juriste et à l'Organisateur, réception non attestée. Wiki : candidat seulement. Modifications : journal uniquement ; aucune règle ni publication Wiki. Suite : tester les contre-pouvoirs informels.
 
 
+## 2026-10-29 — Archiviste / Médiathèque : fusion documentaire
+Directive de transfert reçue : l'Archiviste reprend les missions de la Médiathèque, sans autorité politique nouvelle et sans supprimer les archives.
+Documents relus : catalogue https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit ; suivi https://docs.google.com/document/d/1C7raL1dIAxHeXf8Ps7riE2ssQjGQyoAeb6MBg1MA11Q/edit ; journal Médiathèque https://docs.google.com/document/d/1wNK-JcDJsMQ6KbsyJ2IgSXHbcW_hQ8B96Vze73SWHS4/edit ; manifeste V2.5 non adopté https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit .
+État réel vérifié : FN-001 à FN-068 ; FN-069 Combahee River Collective Statement absent du catalogue à cette lecture ; analyse FN-068 Le Grand Midi déjà enregistrée dans les trois documents Médiathèque ; ne pas dupliquer.
+Prochaine étude complémentaire : FN-068 (cantine autogérée) × FN-009 (Jo Freeman) × FN-019 (Seeds for Change) ; analyser comment se distribuent tâches, pouvoir informel, accueil, liberté de refus, charge et fatigue, sans présumer l'application réelle des expériences rapportées.
+Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attestée. Modifications : cette entrée du journal commun seulement, aucune modification du catalogue, du manifeste ou du Wiki. Poursuivre archivage ARCH/BIO/ASSO et médiathèque FN avec niveaux de preuve distincts.
+
+
+## 2026-10-29 — Audit transversal Archiviste/Médiathèque — raisonnements ouverts
+
+**Objet :** reprise après fusion des ateliers et identification des raisonnements interrompus, sans création de doublons. Référence : manifeste V2.5 éditorial, non adopté collectivement.
+
+**Sources réellement consultées :** catalogue Médiathèque, suivi, journal distinct (Drive), fiche FN-009 Jo Freeman, analyse FN-009 × FN-019, journal critique FN-019 (Drive), journal commun GitHub main ; vérification de `wiki-decision-collective.html` et de fiches existantes sur main.
+
+**État :** catalogue numéroté FN-001 à FN-070 ; FN-069 Combahee et FN-070 Anna Julia Cooper présentes, contrairement à l'entrée de transfert antérieure du journal qui reflétait un état plus ancien. FN-022 et FN-048 renvoient au même livre de Louise Michel, *La Commune* (1898), doublon à marquer sans supprimer les identifiants. Travaux sur Cooper déjà reliés au Lecteur ; pas de nouvelle fiche à créer. Les notices numérotées ne doivent pas être comptées comme autant d'œuvres distinctes sans déduplication.
+
+**Chantiers ouverts prioritaires :**
+1. FN-069 × FN-009 : difficultés d'organisation du Combahee River Collective face aux mécanismes de pouvoir informel décrits par Freeman ; distinguer témoignage et preuves externes.
+2. ARCH ateliers d'armes du Louvre 1871 : comparer règlements, dates, éditions et preuves d'application effective ; ne pas déduire des pratiques réelles du seul texte d'un règlement.
+3. FN-068 × FN-009 × FN-019 : observations proposées autour d'une cantine autogérée, sans surveillance nominative ni adoption présumée.
+4. FN-070 : compléter vérification des droits en France, critiques des passages orientalistes et coordination avec Lecteur.
+5. Entraide/dette/communs : Kropotkine, Mauss, Graeber, Ostrom ; distinguer participation libre et obligations révisables.
+6. Travail/autonomie : Federici, Mies, Illich, Gorz ; distinguer autonomie collective et transfert des tâches invisibles.
+7. Consentement/justice : Arendt, Goldman, Pateman, Mills, Rawls ; faire place aux objections et passer de la théorie à la documentation des inégalités.
+8. Audit des licences, liens vers les fiches candidates et réelle intégration Wiki.
+
+**Contradictions de méthode :** une ressource gratuite n'est pas nécessairement libre ; une source primaire militante n'est pas une vérification indépendante ; une proposition GitHub n'est pas automatiquement un article Wiki validé ; un accès à une édition américaine du domaine public ne garantit pas les droits français.
+
+**Modifications réellement effectuées :** présente entrée de coordination seulement. Aucune modification du catalogue, du Wiki, des fiches, du manifeste ni d'une décision de gouvernance. **Transmissions proposées** au Lecteur, au Penseur, au Juriste, à la Biographe et à l'Organisateur : réception non vérifiée.
+
+**Suite :** commencer par des rapprochements sourcés FN-069 × FN-009 et ARCH Louvre ; supprimer les doublons de travail, pas les archives historiques ; suivre chaque question jusqu'à validation ou rejet documenté.
+
 ## 2026-10-29 — Graphiste et Intégrateur — Prototype du système de publication graphique V0.1
 
 **Sujet :** mission commune avec l'Anarchitecte : format de contribution et premier habillage d'une fiche Wiki existante, sans validation ou publication automatique.
@@ -558,3 +590,27 @@ Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de
 **Wiki concerné :** `wiki-lecture-croisee-travail-soin-pouvoir.html` et documentation commune de publication ; aucune page encyclopédique supplémentaire créée.
 
 **Restant :** retour de l'Anarchitecte sur schéma et permissions, tests avec lecteurs d'écran et autres navigateurs, comparaison des rendus avec la PR #22, modèle de preview privé et contrôles de version ; revue collective éventuelle avant adoption, fusion et diffusion.
+
+
+## 2026-10-29 — Graphiste et Intégrateur graphique — Moteur de rendu JSON de la fiche pilote
+
+**Sujet :** réaliser la première conversion de données structurées en page graphique réutilisable, sans confondre prévisualisation et approbation, pour le système de publication graphique unifié.
+
+**Sources :** dépôt `zoutiFrutti/Interstice`, fiche existante `wiki-lecture-croisee-travail-soin-pouvoir.html` et ses sources, `design-system/fiche.schema.json`, méthode éditoriale, charte des contributions, PR #24 (https://github.com/zoutiFrutti/Interstice/pull/24), issue de collaboration Anarchitecte #25 (https://github.com/zoutiFrutti/Interstice/issues/25). Le contenu ne provient pas de propositions privées de Supabase.
+
+**Décisions et distinctions :** l'exemple JSON transcrit les paragraphes d'une fiche déjà publique et ses cinq références. Les qualifications de contenus sont provisoires ; les extraits n'ont pas été revérifiés comme publications scientifiques. L'aperçu affiche **toujours** un statut non validé, même si le JSON client annonce `approved` ou `published`. Ce n'est pas un serveur de décision ni une prévisualisation privée. Une page `noindex` reste accessible publiquement : ne pas lui transmettre de données privées.
+
+**Modifications réellement commitées (branche `design/publication-graphique-unifiee-v01-2026-10-29`) :**
+- `design-system/fiche-renderer.mjs` : rendu avec `createElement`/`textContent`, lien externe limité à HTTP(S), sans `innerHTML` ni capacité d'écriture.
+- `design-system/exemples/lecture-travail-soin-pouvoir.json` : 19 blocs, 5 références, contradictions, incertitudes, droits à vérifier, statut de données `pending/not_published`.
+- `design-system/apercu-exemple-public.html` : démonstration statique non indexée n'affichant que cette fiche déjà publique.
+- `assets/fiche-design-system.css` : ajout de qualification par bloc, bibliographie, provenance, avertissements, mise en page mobile, CSS d'en-tête corrigé.
+- `tests/fiche-renderer-smoke.mjs` : scénario de schéma, rendus mobile 390px / ordinateur 1280px, protection XSS et refus des liens `javascript:`, faux statut de publication ignoré, contrôle géométrique du titre ; `.github/workflows/publication-design-qa.yml` étendu.
+- `design-system/CONTRAT_PUBLICATION_V0_1.md` complété pour le passage de relais à l'Anarchitecte ; commentaire de transmission ajouté à l'issue #25.
+
+**Contrôles :** CI GitHub Actions run https://github.com/zoutiFrutti/Interstice/actions/runs/40958771173, réussie (10/10 validations et tests cumulés) sur branche ; capture HTML d'abord incorrecte malgré le succès d'un test précédent (titre brisé par `header { display:flex }` hérité), défaut corrigé puis contrôle `heroDisplay=block`, largeur du titre et hauteur contrôlés ; captures mobile et ordinateur du rendu corrigé examinées. Le moteur ne modifie ni les statuts de Supabase, ni les pages du Wiki publiées sur `main`.
+
+**Contradictions :** un schéma valide peut toujours contenir des informations fausses ou des identifiants d'approbation forgés. Seules des autorisations côté serveur, couplées aux droits et à une décision humaine authentifiée, peuvent gouverner une publication. Ni le JSON ni la page demo ne constituent un système privé.
+
+**Wiki concerné :** lecture croisée « Qui fait vivre les communs ? », comme exemple technique ; aucun contenu nouveau candidat n'a été publié. **Suite :** réponse de l'Anarchitecte sur la couche privée et les droits, revue des champs, contrôle par les autres ateliers, parcours clavier/lecteur d'écran et intégration progressive sans dupliquer la PR #22. Aucun merge / publication à ce stade.
+
