@@ -475,3 +475,18 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Modifications :** entrée dans le journal uniquement. Ni manifeste, ni Charte, ni Wiki modifiés.
 
 **Suite :** construire des scénarios contradictoires sur coûts du statu quo et protection des minorités, sans présumer de règle de vote adoptée.
+
+
+## 2026-10-29 — Le Penseur — Étude critique n°20 : démocratie des absents
+
+**Sources consultées :** Charte des communs V0.4, articles 14 à 20, sur GitHub ; dernière version du journal commun. Manifeste V2.5 : référence éditoriale non adoptée.
+
+**Constat documentaire :** la Charte candidate prévoit déjà identification des personnes affectées, participation différée, information préalable, silence non assimilé à accord et réexamen. Ne pas créer de doublon.
+
+**Interprétation / hypothèse :** l'ouverture formelle d'une assemblée ne garantit pas l'accès effectif à l'élaboration des options. Distinguer vote, proposition, consultation et contestation. Trois tests fictifs : personne durablement indisponible ; usager refusant l'engagement militant ; voisin affecté sans qualité de membre.
+
+**Contradictions :** délai participatif contre paralysie ; consultation des tiers contre confusion avec droits statutaires ; accessibilité contre surcharge de réunions et d'administration.
+
+**Transmission proposée (réception non attestée) :** à l'Organisateur, tester des modalités sobres de contribution asynchrone ; au Juriste, vérifier l'articulation avec les statuts et les droits des tiers ; au Lecteur, chercher des études empiriques sur la participation différée.
+
+**Wiki :** gouvernance horizontale, participation et pouvoir informel, contribution candidate. **Modifications :** journal seulement, ni Charte ni manifeste ni Wiki. **Suite :** construire un protocole d'essai réversible, sans présumer d'adoption.
