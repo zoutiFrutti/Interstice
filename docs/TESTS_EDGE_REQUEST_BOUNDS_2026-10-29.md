@@ -26,3 +26,14 @@ Une reproduction isolée du helper `readBoundedBody` a été exécutée localeme
 - Valider les parcours des formulaires avant bascule.
 
 **Décision :** ne pas déployer à ce stade.
+
+
+## Revue Anarchitecte — 29 octobre 2026 (passe complète)
+
+- État de production interrogé directement dans Supabase `rpqiwxkaiyokmxbhxfvh` : `submit-proposal` ACTIVE v2 et `submit-resource` ACTIVE v1, toutes deux avec `verify_jwt=false`. Leur code en production conserve respectivement `req.json()` et `req.text()` non bornés pendant la lecture. Les correctifs de cette branche **ne sont pas déployés**.
+- Revue GitHub : branche divergente de `main` (6 commits devant, 28 derrière au premier contrôle) ; la PR #13 ne doit pas être fusionnée aveuglément.
+- Corrections enregistrées sur cette branche : contrôle des variables d'environnement avant création du client Supabase ; refus des valeurs JSON nulles, tableaux et primitives avant lecture de leurs champs ; gestion des erreurs de vérification des doublons ; nettoyage des espaces sur les en-têtes IP ; options de client sans persistance de session. Référence de la dernière correction : `5293a2d4397b2b7ff4eec15f477c000a344519b4`.
+- **Risque résiduel bloquant :** `cf-connecting-ip` et `x-forwarded-for` sont lisibles depuis la requête ; leur origine fiable ou leur éventuelle réécriture par la passerelle Supabase n'est pas démontrée. Ne pas présenter le quota par IP comme une garantie de sécurité. L'en-tête `Origin` limite des clients navigateurs ordinaires mais n'authentifie pas les requêtes non navigateur.
+- Contrôles à faire : exécuter `node --test tests/edge-bounded-body.test.mjs` et les tests Deno, tests HTTP de bout en bout avec environnement isolé, vérifier les paramètres `verify_jwt` et protections amont, comparer la branche à `main`, tests de formulaires puis revue humaine avant déploiement. L'existence du fichier de tests n'est **pas** une exécution réussie.
+
+**Conclusion : RELECTURE DU CODE EFFECTUÉE ; CORRECTIONS ENREGISTRÉES ; TESTS COMPLETS NON CONFIRMÉS ; AUCUNE FUSION, AUCUN DÉPLOIEMENT.**
