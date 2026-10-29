@@ -250,3 +250,29 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications effectuées :** copies du code déployé enregistrées sur une branche GitHub, avec lecture HTTP par morceaux plafonnée en octets (7 000 / 4 000) et refus d'une IP absente dans `submit-resource`. PR #13 ouverte pour revue, **non fusionnée**, **aucun déploiement Supabase**.
 
 **Contradictions et travaux restants :** tests Deno et tests HTTP de non-régression encore nécessaires ; confiance dans les en-têtes IP toujours non prouvée ; contrôler la gestion des corps tronqués, UTF-8, méthodes, CORS, quotas et formulaires avant fusion et déploiement. Ne pas présenter ce code comme déjà en production.
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Manifeste V2.5, charte V0.2 non adoptée
+
+**Date et atelier :** 29 octobre 2026, Atelier du Juriste.
+
+**Documents réellement étudiés :** manifeste V2.5 consolidé, édition de travail du 29 octobre 2026, lu intégralement depuis Google Drive (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit) ; charte V0.1 du dépôt ; journal commun GitHub `main` avant écriture ; sources juridiques officielles citées ci-dessous.
+
+**Connaissances et interprétations :** la V2.5 est la nouvelle référence éditoriale **non adoptée collectivement**, avec neuf principes et huit piliers, distinction entre valeurs, construction actuelle et futurs possibles, et clause « La vigilance envers nos propres pouvoirs ». Elle renforce les exigences sur l'accès effectif à la participation, la sélection des options et l'ordre du jour, la charge de travail invisible, la limitation des mandats, les responsabilités en situation d'urgence et les pouvoirs techniques. Interprétation de l'atelier : ces axes justifient des garanties explicites dans le brouillon de charte plutôt qu'une modification du manifeste.
+
+**Sources juridiques vérifiées :** loi du 1er juillet 1901, article 4 (retrait) : https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000025577368 ; Service-Public, instances dirigeantes (fiche F1121, mise à jour d'août 2026) : https://www.service-public.gouv.fr/particuliers/vosdroits/F1121 ; exclusion (fiche F71, mise à jour d'août 2026) : https://www.service-public.gouv.fr/particuliers/vosdroits/F71 ; Code pénal, article 225-1 : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045391831 ; CNIL, bases légales des traitements et données sensibles : https://www.cnil.fr/fr/les-bases-legales/liceite-essentiel-sur-les-bases-legales . Distinguer le droit commun des règles particulières d'Alsace-Moselle et des activités réglementées.
+
+**Proposition élaborée :** charte V0.2, document **non adopté**, conservant 48 articles au plan (0–47). Les **21 articles 0–20** sont désormais rédigés : article 0 renforcé contre les titres politiques implicites ; articles 3, 4, 6 et 8 précisés ; articles 9–13 (égalité et pouvoirs informels) et 14–20 (initiation, information, participation différée, débats, vote, urgence, traçabilité) nouvellement rédigés. Des préconisations non normatives sont ajoutées pour les articles 21–43 encore à rédiger.
+
+**Contradictions et questions ouvertes :** liberté de critique / confidentialité ; droit de participation / absence de pouvoir automatique des non-membres ; protection immédiate / contradictoire ; absence de veto fondateur / blocage de fait par certaines procédures de vote ; propriété et habilitations techniques / exercice démocratique du contrôle ; engagements contractuels / retrait libre. Aucune procédure d'urgence, assemblée, fédération, « Commune » ou instance d'appel n'est déclarée déjà existante.
+
+**Documents concernés :**
+- Nouveau brouillon : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md
+- Archive V0.1 conservée : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md
+- Manifeste V2.5 lu mais jamais modifié : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit
+
+**Modifications réellement effectuées et vérifiées :** création du fichier de proposition V0.2 sur `main` (commit `b4b902de441a8a3436d8b435a9c9517578aef899`), puis relecture GitHub confirmant les articles 0–20 et la référence V2.5. L'entrée présente est ajoutée au journal commun. Aucune modification des manifestes, statuts, chartes adoptées, pages du site, protocole d'assemblée ou base Supabase.
+
+**Travaux restants :** (1) contrôle contradictoire des 21 articles proposés avec scénarios d'abus ; (2) rédaction des articles 21–47 ; (3) revue par juristes avant création d'une structure ou exploitation de lieux ; (4) élaboration séparée des statuts et protocoles après définition des activités ; (5) coordination sur les différences V2.5 et archivage des versions ; (6) s'assurer que les passes automatiques prennent V2.5 comme référence, sans l'assimiler à une adoption.
+
