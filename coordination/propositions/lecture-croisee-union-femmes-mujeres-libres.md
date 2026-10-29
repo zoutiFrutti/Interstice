@@ -27,3 +27,15 @@ Le premier numéro comporte, d'après le commentaire, des textes sur l'éducatio
 Le deuxième numéro, juin 1936, propose notamment « Algo sobre coeducación » de Julia M. Carrillo et une contribution de Lucía Sánchez Saornil sur son expérience professionnelle, éléments identifiés via https://leer.es/proyectos/las-sinsombrero/materiales-audiovisuales/mujeres-libres/ .
 Notice officielle numéro 1 : https://www.mcu.es/ccbae/es/publicaciones/verNumero.do?anyo=1936&idPublicacion=226013 (marqueur « Public Domain Mark » affiché pour cette numérisation ; droits éditoriaux ou tiers à examiner au cas par cas).
 **Statut de lecture** : étude secondaire et notices consultées ; les numéros complets et les passages visuels primaires n'ont pas été lus intégralement. Ne pas présenter les articles simplement repérés comme des textes effectivement lus.
+
+
+## Numéro 2 de juin 1936 — repérage précis et correction
+Sources : [Leer.es](https://leer.es/proyectos/las-sinsombrero/materiales-audiovisuales/mujeres-libres/) et [sommaire reproduit de la revue](https://www.solidaridadobrera.org/ateneo_nacho/peri%C3%B3dicos/m_libres_02.pdf).
+- Julia M. Carrillo, « Algo sobre coeducación ».
+- **Luisa Pérez Berganzo**, « Problemas sanitarios y maternidad consciente ». Le sommaire d'époque donne *Berganzo* ; rectifier l'orthographe *Beganzo* donnée antérieurement.
+- Lucía Sánchez Saornil, « Veinte años de psicología femenina a través de una profesión ».
+- Amparo Poch y Gascón signe un autre texte : « El niño sano ».
+
+**Comparaison proposée** : liens entre autonomie éducative, maîtrise du corps et indépendance professionnelle. Cette convergence est une interprétation à éprouver par une lecture directe ; ne pas attribuer sans preuve une position unifiée aux quatre autrices. L'évolution de la revue de projet culturel à journal de mobilisation en guerre constitue un autre point à examiner.
+
+**Statut de lecture** : sommaire original consulté via résultats documentaires et notices ; les articles ne sont pas réputés lus dans leur intégralité. Les droits d'une reproduction numérique et de ses ajouts ne se déduisent pas de l'ancienneté du numéro.
