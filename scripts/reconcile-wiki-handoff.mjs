@@ -13,8 +13,8 @@ const fingerprint=createHash('sha256').update([doc.id,doc.source_document.blob_s
 const ledger=existsSync(ledgerPath)?JSON.parse(readFileSync(ledgerPath,'utf8')):{schema_version:1,entries:{}};
 if(ledger.schema_version!==1||!ledger.entries||Array.isArray(ledger.entries))throw Error('Registre incompatible');
 const existing=ledger.entries[id];
-if(existing&&existing.fingerprint===fingerprint){console.log('UNCHANGED '+id);process.exit(0)}
 if(existing&&existing.source_sha!==doc.source_document.blob_sha)throw Error('SOURCE_CHANGED: revue de provenance requise avant reprise');
+if(existing&&existing.fingerprint===fingerprint){console.log('UNCHANGED '+id);process.exit(0)}
 ledger.entries[id]={id,source_sha:doc.source_document.blob_sha,fingerprint,stage:'awaiting_human_review',editorial_approval:false,supabase_submission_id:null};
 mkdirSync(resolve(ledgerPath,'..'),{recursive:true});
 writeFileSync(ledgerPath,JSON.stringify(ledger,null,2)+'\n',{flag:'w'});
