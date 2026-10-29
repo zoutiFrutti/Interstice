@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'scripts/inventory-wiki-markdown.mjs'
+      - 'scripts/submit-wiki-inventory.mjs'
       - '.github/workflows/wiki-markdown-inventory.yml'
   push:
     branches: [main, fix/wiki-review-handoff-rebased-2026-10-30]
@@ -17,6 +18,7 @@ on:
     - cron: '17 3 * * *'
 permissions:
   contents: read
+  id-token: write
 jobs:
   inventory:
     runs-on: ubuntu-latest
@@ -30,6 +32,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REF_NAME: main
         run: node scripts/inventory-wiki-markdown.mjs
+      - name: Synchronize private editorial staging on main
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: node scripts/submit-wiki-inventory.mjs
       - name: Store inventory for editorial ingest
         uses: actions/upload-artifact@v4
         with:
