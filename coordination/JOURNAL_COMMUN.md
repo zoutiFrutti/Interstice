@@ -28,3 +28,13 @@ Fait : article Julia M. Carrillo, « Algo sobre coeducación », numéro 2 (juin
 Sources : https://anarkobiblioteka3.wordpress.com/wp-content/uploads/2016/08/la_educacic3b3n_femenina_en_la_revista_mujeres_libres_-_laura_sc3a1nchez_blanco_y_josc3a9_luis_hernc3a1ndez_huerta.pdf ; https://www.unirio.br/cchs/ppgh/producao-academica/teses-de-doutorado-e-egressos-pasta/arquivos/Tese_Aline_do_Carmo_Costa_Barbosa_PPGH_UNIRIO.pdf
 Contradiction : former à l'émancipation sans imposer une doctrine. Limite : article original non lu intégralement.
 Modification : note ajoutée à la proposition documentaire sur branche de travail uniquement ; pas de publication Wiki public.
+
+
+## 2026-10-29 — Atelier médiathèque, lecture croisée n° 4
+Sujet : anti-dogmatisme pédagogique, *Mujeres Libres* n° 7 (1937), Paulo Freire et bell hooks.
+Constat : le passage « Enseñanza nueva » refuse l'imposition universelle d'une doctrine rationaliste ; Freire critique la pédagogie « bancaire » ; hooks insiste sur pédagogie engagée et expérience vécue.
+Sources : https://mirror.anarhija.net/es.theanarchistlibrary.org/mirror/m/mn/mary-nash-mujeres-libres.a4.pdf ; https://hccc.edu/abouthccc/resources/documents/freire-pedagogy-of-the-oppressed.pdf ; https://www.routledge.com/Teaching-to-Transgress-Education-As-The-Practice-of-Freedom/hooks/p/book/9780415908085 .
+Articles concernés : éducation populaire, pédagogie critique, féminismes, anarchismes, biographies.
+Contradiction : transmettre des savoirs et exercer une responsabilité pédagogique sans endoctrinement ni autorité morale.
+Modifications : enrichissement de la fiche candidate et du journal sur la branche atelier/lecture-femmes-1871-1936-20261029, non publié dans le Wiki public.
+Suites : vérifier édition précise du numéro 7, attribution et pages ; confronter des études critiques, intégrer après examen éditorial.
