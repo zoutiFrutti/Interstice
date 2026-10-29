@@ -10,10 +10,11 @@ on:
       - 'tests/wiki-handoff-sql-contract.test.mjs'
       - 'docs/proposals/wiki-document-handoffs-schema.sql'
       - 'tests/sql/wiki-handoff-integration.sql'
+      - 'tests/sql/wiki-handoff-concurrency.sh'
       - '.github/workflows/wiki-review-queue.yml'
   push:
     branches:
-      - 'fix/wiki-review-handoff-fn069-2026-10-29'
+      - 'fix/wiki-review-handoff-rebased-2026-10-30'
   workflow_dispatch:
 
 permissions:
@@ -72,6 +73,8 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f docs/proposals/wiki-document-handoffs-schema.sql
       - name: Run transactional tests with rollback
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/wiki-handoff-integration.sql
+      - name: Test two concurrent submissions
+        run: bash tests/sql/wiki-handoff-concurrency.sh
       - name: Confirm test data was rolled back
         run: |
           test "$(psql -Atqc 'select count(*) from wiki_ingest_private.document_handoffs')" = 0
