@@ -672,3 +672,14 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Blocage / prochaine dépendance :** une entrée dans la file documentaire GitHub n'est pas une contribution Supabase. Avant synchronisation automatique, définir une procédure autorisée pour associer une identité authentifiée, les droits et l'archivage des états ; assurer idempotence par identifiant stable et revue humaine. Ne pas insérer directement dans `wiki_article_submissions` via droits administrateur pour contourner RLS ou les validations.
 
 **Statut : FILE GITHUB CRÉÉE, EN ATTENTE DE RELECTURE DOCUMENTAIRE ; SUPABASE NON INSÉRÉ, WIKI NON PUBLIÉ.**
+
+
+## 2026-10-29 — Anarchitecte — Préparation contrôlée de la transition FN069
+
+**Vérifications :** PR #26 encore en branche (4 commits devant main et aucun retard au début de la passe). Supabase confirme deux RPC `SECURITY DEFINER` : `submit_wiki_article` et `review_wiki_article`, autorisées à `authenticated` et `service_role` ; ces procédures n'acceptent pas d'identifiant documentaire stable comme paramètre. Ne pas contourner leurs exigences d'identité et de consentements.
+
+**Développement réel :** `scripts/prepare-wiki-review-draft.mjs` (commit `9537ac45cfccf9c5cb2ecdc3373d618c2035c336`) génère localement, pour FN069, un brouillon correspondant aux champs existants du formulaire, avec auteur absent, confirmations de droits/confidentialité à `false`, approbation à `false`, et `ready_to_submit=false`. Aucune communication réseau ni insertion en base.
+
+**Contrôle CI ajouté :** le workflow contrôle ces drapeaux et empêche de qualifier le brouillon comme prêt à soumettre (commit `70e4b7b13af01c3dc5b095d42e4b14397bbbfb0d`). Exécution du workflow et conformité HTTP non encore confirmées. Il ne faut pas confondre vérification d'un brouillon avec validation de sources ou de droits.
+
+**Blocage suivant :** concevoir puis faire autoriser une vraie ingestion idempotente avec origine GitHub, audit, identité et mécanisme de reprise sans publication automatique ; recouper les sources et les licences. Pas de mutation Supabase ni de fusion dans main.
