@@ -365,3 +365,17 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Travaux restant à accomplir :** valider juridiquement les dispositions selon la forme réelle d'organisation, vérifier les règles contractuelles et régimes sectoriels ; rédiger titres V, VII–IX et articles manquants ; proposer séparément statuts, règlement et protocoles si décidés collectivement ; tester indépendance, confidentialité et faisabilité des recours sur des cas réels anonymisés sans traiter de dossiers personnels dans le Wiki ; synchroniser la mission quotidienne avec la dernière charte V0.4.
 
+
+## 2026-10-29 — Atelier lecture critique : Angela Davis, éducation et libération
+
+**Lecture :** Angela Davis, *Women, Race & Class* (1981), chapitre VI, « Education and Liberation: Black Women's Perspective ». Consultation ciblée, pas de lecture intégrale de l'ouvrage. Confrontation à Paulo Freire (*Pedagogy of the Oppressed*) et à l'histoire de Prudence Crandall et Mary Ann Shadd Cary.
+
+**Faits et sources :** catalogue bibliographique Davis https://lawcat.berkeley.edu/record/1253261 ; chapitre consultable sur https://blackwomenintheblackfreedomstruggle.voices.wooster.edu/wp-content/uploads/sites/210/2019/01/Angela-Y.-Davis-Women-Race-and-Class.pdf ; musée du Connecticut sur l'école Crandall en 1833-1834 https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/prudence-crandall-museum ; gouvernement canadien sur Mary Ann Shadd Cary https://www.canada.ca/fr/femmes-egalite-genres/commemorations-celebrations/femmes-influence/droits-personne/mary-ann-shadd-cary.html ; contextualisation Freire https://iep.utm.edu/freire/ .
+
+**Interprétations critiques :** distinguer accès physique et légal au savoir, capacité de critiquer l'enseignement et capacité de prendre part au pouvoir. Ne pas présenter les élèves noires comme passives dans le récit de Crandall ; relier écoles, réseaux militants noirs et production autonome de journaux. L'instruction ne garantit pas mécaniquement la libération.
+
+**Wiki / médiathèque :** pistes d'enrichissement sur l'éducation émancipatrice et l'histoire des femmes noires. Transmettre les sujets biographiques Crandall et Shadd Cary à l'atelier Biographies à l'occasion de sa prochaine coordination ; aucun article Wiki publié ni fiche de catalogue modifiée dans cette passe. Texte de Davis protégé : pas de reproduction intégrale.
+
+**Modifications réelles :** ajout de cette note au journal sur une branche issue de main ; pas d'amendement du manifeste V2.5, qui reste éditorial et non adopté.
+
+**Suite :** lecture plus serrée de l'argument de Davis, confrontation avec les sources primaires des écoles et des réseaux noirs, vérification du Wiki avant toute publication, éviter une biographie héroïsante.
