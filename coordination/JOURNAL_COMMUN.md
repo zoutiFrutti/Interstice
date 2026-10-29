@@ -67,3 +67,13 @@ Modification effectivement réalisée : ajout de cette entrée au journal sur br
 **Modifications effectivement réalisées :** recherche de sources et ajout de cette entrée au journal sur branche de travail. Aucun article publié, aucun changement du manifeste, aucune fiche du catalogue Drive ajoutée lors de cette passe.
 
 **Travaux restants :** lire les études complètes, rechercher contre-enquêtes et expériences françaises, consulter les articles actuels du Wiki avant de proposer des contributions, continuer l'étude croisée.
+
+## 2026-10-29 — Atelier lecture : SCOP et SCIC
+
+Sujet : comparaison du pouvoir des salariés et des autres parties prenantes dans les coopératives françaises.
+Constats : SCOP, salariés associés à 51 % du capital et 65 % des droits de vote minimum ; SCIC, trois catégories de sociétaires au minimum et 57,5 % des résultats en réserves. Exemples documentés : Petit Bain (culture, Paris), Le Champ Commun (tiers-lieu rural, Augan), L'Éprouvette (café, épicerie et vie associative, Saint-André-des-Eaux).
+Sources : https://www.les-scop.coop/system/files/inline-files/Dossier%20de%20presse%202025.pdf ; https://petitbain.org/projet/la-cooperative/ ; https://leprouvette.com/index.php/projet/ ; https://www.assemblee-nationale.fr/dyn/16/rapports/cec/l16b1073_rapport-information.pdf .
+Articles Wiki à examiner : autogestion, économie des communs, culture coopérative (titres hypothétiques, non vérifiés).
+Contradictions : membre associé versus travailleur non associé ; poids des collèges ; voix des bénévoles, usagers et intermittents ; coexistence d'activités commerciales et associatives.
+Modifications réelles : analyse sourcée et entrée de journal sur branche ; aucune modification au Wiki, au manifeste ou au catalogue Drive.
+À faire : consulter les statuts, chercher les conflits et expériences contradictoires, comparer les droits de veto et les mécanismes de révocation.
