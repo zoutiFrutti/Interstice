@@ -3,7 +3,7 @@
 import {createHash} from 'node:crypto';
 import {writeFileSync,mkdirSync} from 'node:fs';
 const owner='zoutiFrutti', repo='Interstice';
-const ref=process.env.GITHUB_REF_NAME || 'main';
+const ref=process.env.WIKI_SOURCE_REF || 'main';
 const token=process.env.GITHUB_TOKEN;
 if(!token) throw Error('GITHUB_TOKEN manquant');
 const api='https://api.github.com/repos/'+owner+'/'+repo;
