@@ -381,3 +381,20 @@ Wiki concerné : présentation du projet, communication éthique, mutualisation,
 Modifications : légendes proposées dans la conversation ; mise à jour du journal uniquement. Aucun brouillon ni publication Instagram effectué.
 
 Suite : validation des textes, descriptions alternatives, contrôle des médias et création de brouillons Metricool si les images sont accessibles.
+
+
+## 2026-10-29 — Atelier Graphiste et Intégrateur graphique — Reprise du kit transparent
+
+**Sujet :** audit et récupération sans réécriture du chantier de l'ancien atelier d'intégration graphique.
+
+**Sources :** dépôts et fichiers GitHub (branche source `design/kit-transparent-2026-10-29`, branche courante `main`), commits vérifiés `a5cee302`, `54061ce9`, `e7d403bf`, `58547beb`; direction artistique approuvée dans les échanges graphiques, Manifeste V2.5 consolidé sur Google Drive, référence éditoriale non adoptée.
+
+**Connaissances vérifiées :** la branche ancienne était divergente de `main` de 13 commits d'avance et 9 de retard lors de la revue. Les deux variantes transparentes sont rigoureusement égales aux SVG maîtres dont seul le rectangle noir de fond a été retiré. La planche de contrôle présente 32, 64 et 144 px sur fond noir/ivoire/rouge. L'exporteur navigateur utilise un canvas pour proposer PNG/WebP en téléchargement local, mais son exécution et les exports n'ont pas encore été testés. Le réseau du logo Interstice est encore rogné à l'intérieur du disque par le clip-path du SVG maître : la fidélité aux maquettes illustrées n'est pas totalement assurée.
+
+**Pages et Wiki concernés :** `wiki.html`, kit d'identité, future documentation d'accessibilité des illustrations. Aucune fiche encyclopédique supplémentaire nécessaire.
+
+**Modifications réellement effectuées :** nouvelle branche propre `design/reprise-kit-graphique-2026-10-29` depuis `main`; reprise exacte des cinq fichiers du kit d'assets (2 SVG, HTML, CSS, export JS), réintégration isolée du composant `brand-lockup` dans `style.css`, bandeau de `wiki.html` utilisant le symbole Interstice transparent ; PR #20 : https://github.com/zoutiFrutti/Interstice/pull/20 . Les SVG maîtres, les textes du manifeste, les formulaires, la configuration Supabase et les autres pages sont intacts. Aucune fusion ni publication du kit n'est affirmée.
+
+**Vérifications :** fichiers relus sur GitHub après création ; dérivation transparente exacte calculée avant migration ; existence des liens attendus dans la planche et du composant de style ; comparaison de la branche avec `main` (7 commits d'avance, 0 de retard avant inscription au journal). Aucun test navigateur ou validation visuelle multi-écrans n'a encore été effectué.
+
+**Contradictions et travaux restants :** décider séparément de la prolongation du réseau en dehors du disque sans réinventer les logos approuvés ; tester effectivement les rendus sur fonds clairs/sombres, à 32 px, et le téléchargement PNG/WebP ; documenter les variations compactes et métadonnées ; vérifier les PR graphiques concurrentes #5, #14, #18 et #19 avant fusion ; renseigner les journaux Drive avec les résultats contrôlés ; ne pas considérer la charte proposée comme une adoption collective.
