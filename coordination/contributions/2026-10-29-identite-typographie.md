@@ -18,3 +18,10 @@
 - **Licences conservées :** `assets/fonts/BarlowCondensed-OFL.txt` et `assets/fonts/AtkinsonHyperlegibleNext-OFL.txt`, issus de `google/fonts`.
 - **Limites :** feuille CSS d'environ 305 Ko, polices uniquement en style droit et Barlow uniquement en graisse 700 (les graisses intermédiaires peuvent être simulées). Optimisation recommandée en fichiers WOFF2 séparés, puis sous-ensemble latin avec accents. Tests navigateur, rendu, accessibilité et impression non encore effectués.
 - **Rectification :** l'avertissement précédent sur les requêtes externes est résolu dans la branche à cette date ; il ne justifie plus à lui seul de bloquer la fusion. La décision de fusion dépend désormais des vérifications de rendu et de performance.
+
+
+### Contrôle supplémentaire : cascade CSS (29 octobre 2026)
+- **Anomalie réelle trouvée :** l'ancien `body{font:17px/1.6 system-ui,sans-serif}` figurait *après* la première passe de refonte, et pouvait donc annuler la police de lecture. Les anciens styles de titres et boutons pouvaient également écraser la proposition.
+- **Correction effectuée :** déplacer tout le bloc de surcharge de refonte à la fin de `style.css`, en conservant les déclarations `@font-face` au début.
+- **Vérification effectuée sur la version GitHub mise à jour :** deux `@font-face`, aucun import Google Fonts, règles `body` de la refonte après celles de l'ancienne feuille, licences des deux polices présentes. Pas de contrôle graphique dans un navigateur : les détails de rendu restent à confirmer.
+- **Limite restante :** CSS environ 305 Ko à cause des TTF intégrées ; future extraction en fichiers WOFF2 souhaitable. Vérifier aussi les surcharges inline de chaque page, notamment le manifeste, et l'affichage imprimé.
