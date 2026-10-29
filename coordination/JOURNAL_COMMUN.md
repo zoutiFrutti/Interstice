@@ -420,3 +420,19 @@ Ces intitulés désignent des thèmes de rapprochement : l'existence de pages pa
 **Limites :** approfondir les conflits internes, le fonctionnement des chambres syndicales et les parcours des participantes moins connues ; aucune comparaison contemporaine présentée comme filiation historique.
 
 **Statut : ENREGISTRÉ sur branche, non fusionné, non publié.**
+
+---
+
+## 2026-10-29 — Atelier central — Revue documentaire et CI de la PR #4
+
+**Objet :** contrôle indépendant de deux sources historiques citées et état des tests.
+
+**Sources vérifiées :** transcription des statuts de La Marmite publiée par Michèle Audin (https://macommunedeparis.com/2018/08/01/statuts-de-la-marmite-19-janvier-1868/) : adoption en assemblée du 19 janvier 1868, nourriture au prix de revient pour les sociétaires. Catalogue du musée Carnavalet (https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune) : affiche n° 373 du 20 mai 1871, inventaire AFF5721, appel à réunion le 21 mai pour constituer des chambres syndicales et fédérales de travailleuses ; signataires indiquées sur l'affiche.
+
+**Précaution critique :** l'annonce d'une réunion ne prouve pas sa tenue, ni le fonctionnement ultérieur des chambres. Le contenu du Wiki actuellement rédigé la présente comme une invitation, sans affirmer qu'elle a eu lieu. Certaines données biographiques secondaires figurant dans les métadonnées du catalogue doivent être recoupées avant toute reprise.
+
+**État GitHub :** comparaison de `main` avec la branche de coordination : 10 commits d'avance, 0 de retard, quatre fichiers concernés au moment du contrôle ; aucune exécution GitHub Actions ni statut de commit signalés pour `c0372e72aeccfca514af3ca9066e72a3cd6ca145`. Ne pas en déduire que les tests sont réussis. PR #4 ouverte en brouillon, non fusionnée.
+
+**Modifications réelles :** ajout de cette entrée documentaire au journal, sans modification des faits dans les pages Wiki. Rendu HTML, accessibilité et revue humaine encore nécessaires.
+
+**État : SOURCES PRIMAIRES PARTIELLEMENT VÉRIFIÉES ; CI NON CONSTATÉE ; JOURNAL ENREGISTRÉ SUR BRANCHE.**
