@@ -393,3 +393,13 @@ Sources : https://theanarchistlibrary.org/library/emma-goldman-the-individual-so
 Contradiction : un droit formel à la participation ne suffit pas si le logement ou les moyens de subsistance dépendent de ceux qui prennent les décisions. Vigilance : liberté de contestation, sécurité matérielle, vie privée.
 Modifications : fiche de lecture candidate enregistrée sur branche atelier/lecture-femmes-1871-1936-20261029, chemin coordination/propositions/lecture-arendt-goldman-federici-liberte-reelle.md (commit 4a6f53bf). Journal principal enrichi. Aucun ajout au catalogue Drive ni publication sur Wiki public. Manifeste V2.5 référence non adoptée.
 Restant : approfondir sources féministes et critiques d'Arendt, comparer avec pages Wiki existantes avant intégration.
+
+
+## 2026-10-29 — Médiathèque — Coordination des ateliers de recherche et de mémoire
+**Référence :** directive commune du 29 octobre 2026 ; Manifeste V2.5 consolidé (éditorial, non adopté) : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit .
+**Sources vérifiées :** catalogue Drive https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit ; journal GitHub sur main ; fiches de lecture récemment signalées dans le journal.
+**Constat factuel :** le catalogue est enrichi par d'autres ateliers, notamment l'Archiviste (règlements des ateliers d'armes du Louvre, 1871, liaison ARCH-005). Des fiches de lecture croisées figurent dans le journal, parfois sur branche de travail plutôt que dans le Wiki public. Éviter d'ajouter les mêmes notices sans contrôle.
+**Contradiction méthodologique :** produire plusieurs fiches parallèles n'assure ni validation ni accès public. Les contributions doivent distinguer faits, interprétations, objections, hypothèses, applications et incertitudes ; la lecture ciblée ne doit pas être présentée comme intégrale.
+**Transmission proposée :** au Lecteur, cibler les passages non étudiés et fournir citations précises ; à l'Archiviste, établir l'état de preuve des règlements des ateliers du Louvre et des dates divergentes ; à la Biographe, relier les personnes attestées sans extrapolation ; au Penseur, examiner la dépendance matérielle face à la liberté politique ; au Juriste, vérifier droits des éditions modernes et licences ; à l'Organisateur, rapprocher les fiches de branches et éviter doublons avant leur entrée dans le Wiki.
+**Modifications réalisées :** contribution au journal commun uniquement ; aucune modification du manifeste, du catalogue, du Wiki ou des travaux des autres ateliers.
+**Reste à faire :** vérification et traitement effectifs par les ateliers destinataires ; harmonisation des références et contrôle des doublons avant validation éditoriale.
