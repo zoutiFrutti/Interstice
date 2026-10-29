@@ -1,0 +1,86 @@
+/* D.A. consolidée — accueil, bibliothèque, Wiki.
+   Une zone ivoire pour montrer les gestes, sans imposer le noir partout.
+   Le CSS est isolé pour ne pas écraser les styles JS et formulaires. */
+:root{--atelier-ivoire:#E9E5DB;--atelier-noir:#101014;--atelier-rouge:#941825}
+section.editorial-illustration{
+  display:grid;
+  grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  align-items:center;
+  gap:clamp(18px,4vw,42px);
+  padding:clamp(22px,4.5vw,44px);
+  margin:0 0 48px;
+  background:var(--atelier-ivoire);
+  color:var(--atelier-noir);
+  border:0;
+  border-radius:4px;
+}
+.editorial-illustration__content,.editorial-illustration__picture{min-width:0}
+.editorial-illustration__eyebrow{
+  color:var(--atelier-rouge)!important;
+  margin:0 0 12px!important;
+  font-size:.82rem;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+section.editorial-illustration h2{
+  margin:0 0 18px;
+  color:var(--atelier-noir);
+  line-height:1.14;
+  font-size:clamp(2rem,4.1vw,3.1rem);
+  letter-spacing:-.025em;
+  text-wrap:balance;
+}
+section.editorial-illustration p:not(.editorial-illustration__eyebrow){
+  margin:0 0 22px;
+  color:#34302f;
+  line-height:1.55;
+}
+.editorial-illustration__picture{margin:0}
+.editorial-illustration__picture img{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid #b5aea4;
+}
+.editorial-illustration__link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:10px 17px;
+  background:var(--atelier-rouge);
+  color:white;
+  border-radius:3px;
+  text-decoration:none;
+  font-weight:700;
+}
+.editorial-illustration__link:hover{background:#71121c;color:white}
+.editorial-illustration__link:focus-visible{
+  outline:3px solid var(--atelier-noir);
+  outline-offset:4px;
+}
+@media(max-width:660px){
+  section.editorial-illustration{
+    grid-template-columns:1fr;
+    margin-bottom:32px;
+    padding:22px 18px;
+    gap:16px;
+  }
+  section.editorial-illustration h2{font-size:clamp(1.9rem,9vw,3rem)}
+  .editorial-illustration__picture{max-width:500px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  section.editorial-illustration{
+    background:white;
+    color:black;
+    border:1px solid #888;
+    break-inside:avoid;
+  }
+  .editorial-illustration__link{
+    background:white;
+    color:black;
+    border:1px solid black;
+  }
+}
