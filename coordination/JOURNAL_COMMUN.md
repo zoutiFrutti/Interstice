@@ -156,3 +156,18 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications réellement effectuées :** PR #7 fusionnée par GitHub (`merged: true`) ; lecture post-fusion des deux fichiers sur `main`, confirmant la conclusion V2.5 et le bandeau V2.1. Aucun changement des principes par cet atelier.
 
 **À poursuivre :** vérifier le déploiement GitHub Pages, les liens depuis l'accueil et l'accessibilité ; compléter l'index des archives ; terminer l'audit des liens Wiki.
+
+
+## 2026-10-29 · Atelier technique · Correction de la navigation du manifeste sur l'accueil
+
+**Sujet :** cohérence éditoriale de la page d'accueil avec le manifeste V2.5.
+
+**Sources :** `index.html` sur GitHub `main` ; manifeste V2.5 consolidé sur Google Drive ; PR #8 https://github.com/zoutiFrutti/Interstice/pull/8 ; commit fusionné `0e91394cfec7b42ae9e0ead8adbcb49ce088d3e0`.
+
+**Connaissance et contradiction :** l'accueil affichait encore V2.1 comme version principale après la publication de V2.5. Le texte reste une version éditoriale de travail non adoptée collectivement.
+
+**Articles/pages concernés :** `index.html`, `manifeste-v2-5.html`, `manifeste.html`.
+
+**Modifications vérifiées :** mise à jour de la carte de l'accueil sur branche dédiée, PR #8 fusionnée dans `main` (`merged: true`). Lien principal vers V2.5, lien archive vers V2.1 et statut de non-adoption explicite. Aucun changement des textes des manifestes.
+
+**Travaux restants :** contrôler le déploiement public GitHub Pages ; vérifier les autres liens du Wiki, l'accessibilité et les permissions de contribution.
