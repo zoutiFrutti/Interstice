@@ -1,3 +1,54 @@
+
+/* Refonte typographique V1 — proposition de l'atelier DA, 2026-10-29.
+   Chargement distant temporaire : remplacer par fichiers WOFF2 auto-heberges avant fusion en production. */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap');
+
+:root {
+  --font-display: 'Barlow Condensed', Impact, 'Arial Narrow', sans-serif;
+  --font-reading: 'Atkinson Hyperlegible Next', system-ui, sans-serif;
+  --reading-color: #dad7d0;
+  --surface-color: #1b1b20;
+  --border-color: #4a4345;
+}
+body {
+  font-family: var(--font-reading);
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--faille-ivory);
+}
+h1,h2,h3,h4,.brand-caption,header strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.13;
+}
+h1 {font-size:clamp(2.8rem,8vw,5.4rem);letter-spacing:.005em;text-wrap:balance}
+h2 {font-size:clamp(2rem,4.4vw,3rem);letter-spacing:.005em;text-wrap:balance}
+h3 {font-size:clamp(1.5rem,3vw,2rem);letter-spacing:.005em}
+header strong {font-size:1.65rem;letter-spacing:.035em}
+.tag {font-family:var(--font-display);font-size:.95rem;letter-spacing:.11em}
+section p,.hero>p:not(.tag),article p {color:var(--reading-color)}
+article {max-width:72ch}
+article p {line-height:1.75}
+nav a,button,.manifesto-link {
+  border-radius:3px;
+  font-weight:700;
+}
+textarea,input,select {
+  font:inherit;
+  border-color:var(--border-color);
+  background:var(--surface-color);
+}
+.proposal,.manifesto-preview {background:var(--surface-color);border-color:var(--border-color);border-radius:4px}
+section:not(.hero),footer {border-color:var(--border-color)}
+@media(max-width:600px) {
+  body {font-size:17px}
+  header strong {font-size:1.35rem}
+  h1 {font-size:clamp(2.5rem,12vw,4rem)}
+}
+@media print {
+  body {font-family:var(--font-reading);font-size:11pt;line-height:1.5}
+}
+
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#101418;color:#f1f2f3;font:17px/1.6 system-ui,sans-serif}header,main,footer{max-width:900px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;gap:12px;align-items:center}header strong{letter-spacing:2px;font-size:20px}header strong span,.tag,h1 em{color:#f15a5a}header small{color:#adb6bd;font-size:12px}.hero{padding:65px 0 85px}.tag{font-size:12px;font-weight:800;letter-spacing:2px}h1{font-size:clamp(36px,7vw,70px);line-height:1.12;letter-spacing:-1px}h1 em{font-style:normal}.hero>p:not(.tag){font-size:20px;max-width:670px;color:#c3cbd0}nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}nav a,button{background:#db4242;color:#fff;border:0;border-radius:8px;padding:12px 19px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}section:not(.hero){padding:38px 0 60px;border-top:1px solid #354047}section p{color:#c3cbd0}label{display:block;margin:22px 0 8px;font-weight:650}label small{font-weight:400;color:#adb6bd}textarea,input,select{width:100%;background:#1c242b;color:#fff;border:1px solid #64707a;border-radius:8px;padding:13px;font:inherit}textarea{height:110px;resize:vertical}.warning{font-size:14px;color:#f3c8aa}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:20px;background:#1c242b;border-radius:8px}.proposal{border:1px solid #52606a;border-radius:12px;background:#1a2228;padding:22px;margin:22px 0}.proposal h3{margin:4px 0 8px}.proposal small,.note{color:#aeb9c0}footer{color:#a5abb0;font-size:13px;border-top:1px solid #354047}@media(max-width:600px){header small{max-width:130px;text-align:right}.hero{padding-top:45px}}
 .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}button:disabled{opacity:.55;cursor:wait}
 
