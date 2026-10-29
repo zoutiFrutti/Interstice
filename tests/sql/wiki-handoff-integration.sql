@@ -24,10 +24,13 @@ begin
   result := wiki_ingest_private.ingest_document(ident,'zoutiFrutti/Interstice',
     'coordination/PENSEUR_FN069_ARCHIVES_CROISEES_2026-10-29.md',sha1,fp,'Le Penseur','["https://example.org"]'::jsonb);
   if result <> 'SOURCE_CHANGED_REVIEW_REQUIRED' then raise exception 'Changed references: %',result; end if;
+  result := wiki_ingest_private.ingest_document(ident,'zoutiFrutti/Interstice',
+    'coordination/PENSEUR_FN069_ARCHIVES_CROISEES_2026-10-29.md',sha1,fp,'Le Penseur','["https://example.net"]'::jsonb);
+  if result <> 'SOURCE_CHANGED_REVIEW_REQUIRED' then raise exception 'Second changed reference: %',result; end if;
   select count(*) into n from wiki_ingest_private.document_handoffs where document_id=ident;
   if n <> 1 then raise exception 'Expected one handoff, found %',n; end if;
   select count(*) into n from wiki_ingest_private.handoff_events where document_id=ident;
-  if n <> 3 then raise exception 'Expected three audit events, found %',n; end if;
+  if n <> 4 then raise exception 'Expected four audit events, found %',n; end if;
   if exists(select 1 from wiki_ingest_private.document_handoffs
     where document_id=ident and (editorial_approval or published or stage <> 'awaiting_human_review'
     or source_sha <> sha1)) then raise exception 'Unexpected mutation or approval'; end if;
