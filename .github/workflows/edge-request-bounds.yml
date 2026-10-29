@@ -1,0 +1,36 @@
+name: Edge request bounds checks
+on:
+  pull_request:
+    paths:
+      - 'supabase/functions/submit-proposal/**'
+      - 'supabase/functions/submit-resource/**'
+      - 'tests/edge-bounded-body.test.mjs'
+      - '.github/workflows/edge-request-bounds.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  node-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test actual Edge helper sources
+        run: node --test tests/edge-bounded-body.test.mjs
+  deno-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Typecheck submit-proposal
+        run: deno check supabase/functions/submit-proposal/index.ts
+      - name: Typecheck submit-resource
+        run: deno check supabase/functions/submit-resource/index.ts
