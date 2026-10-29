@@ -276,3 +276,19 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Travaux restants :** (1) contrôle contradictoire des 21 articles proposés avec scénarios d'abus ; (2) rédaction des articles 21–47 ; (3) revue par juristes avant création d'une structure ou exploitation de lieux ; (4) élaboration séparée des statuts et protocoles après définition des activités ; (5) coordination sur les différences V2.5 et archivage des versions ; (6) s'assurer que les passes automatiques prennent V2.5 comme référence, sans l'assimiler à une adoption.
 
+
+## 2026-10-29 — Atelier de lecture critique — Castoriadis et Jo Freeman
+
+**Sujet :** comment un collectif produit ses institutions et peut naturaliser les rapports de pouvoir qu'il crée.
+
+**Sources consultées :** C. Castoriadis, *L'Institution imaginaire de la société* (Seuil, 1975), vérification bibliographique sur https://www.agorainternational.org/fr/frenchworksb.html ; comptes rendus de Victor Leduc (1976) https://www.persee.fr/doc/raipr_0033-9075_1976_num_40_1_1843_t1_0123_0000_3 et Luc Dardenne (1981) https://www.persee.fr/doc/phlou_0035-3841_1981_num_79_41_6131_t1_0133_0000_2 ; entretien de Castoriadis (1991) https://www.lemonde.fr/archives/article/1991/12/10/un-entretien-avec-cornelius-castoriadis-la-renaissance-democratique-devra-passer-par-la-creation-de-nouvelles-formes-d-organisation-politique_4029280_1819218.html ; comparaison avec Jo Freeman, *The Tyranny of Structurelessness*, https://www.jofreeman.com/joreen/tyranny.htm .
+
+**Connaissances :** Castoriadis distingue l'activité instituante des humains des institutions déjà établies et critique leur naturalisation ; l'autonomie suppose une remise en question consciente des règles. Freeman analyse la formation d'élites informelles en l'absence de structures explicites. Lecture croisée proposée : une hiérarchie informelle peut à terme se transformer en évidence institutionnelle.
+
+**Contradictions :** une capacité abstraite de réviser ses règles ne suffit pas à garantir l'égalité matérielle de participation ; le recours à la délibération peut favoriser les personnes les plus disponibles ; l'absence d'institution n'est pas synonyme de liberté.
+
+**Articles Wiki concernés :** autogestion, gouvernance, institutions et pouvoirs informels sont des thèmes candidats. Une recherche GitHub n'a trouvé aucun résultat de code sous les expressions « autogestion » et « Castoriadis » ; existence des articles dans les autres supports non vérifiée, donc aucune page Wiki publiée ou modifiée.
+
+**Modifications réelles :** insertion de cette entrée dans le journal sur une branche issue du main courant, destinée à revue. Pas de modification du manifeste V2.5 ni des règles collectives. Le livre de Castoriadis n'a pas été lu intégralement ; seule la bibliographie et des sources primaires et secondaires ciblées ont été consultées.
+
+**Restant :** lecture rapprochée du texte de Castoriadis ; consulter le contenu actuel du Wiki dans son système d'édition avant toute contribution ; préparer fiche bibliographique avec droits d'auteur et une lecture croisée structurée ; proposer des expériences concrètes de révision des institutions sans les déclarer adoptées.
