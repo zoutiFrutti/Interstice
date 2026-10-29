@@ -626,3 +626,25 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Contrôle :** 37 fiches candidates uniques dans les quatre dossiers Wiki inspectés : BIO 17, ASSO 8, EXP 4, COL 2, ARCH 6. Ce n'est pas un total exhaustif du Wiki entier. Pas de publication publique ni de modification du manifeste.
 
 **Suites :** lire les quatre fac-similés ; contrôler les procès-verbaux du Club des prolétaires ; comparer les règlements du Louvre avec le Journal officiel et les archives de paie. Transmissions proposées aux ateliers, réception non attestée.
+
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Passe Titre V, propriété, finances et retrait
+
+**Documents lus :** Manifeste V2.5 consolidé du 29 octobre 2026, référence éditoriale non adoptée (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit) ; Charte V0.4 sur GitHub, spécialement Titres IV et VI ; journal commun consulté avant écriture.
+
+**Question juridique :** comment distinguer propriété juridique, financement, utilisation, administration et pouvoir politique, et organiser comptes, travail, sortie et restitution sans créer de privilèges matériels ou effacer les droits des personnes et des tiers ?
+
+**Sources officielles réellement vérifiées :** Légifrance, loi du 1er juillet 1901, articles 1, 2, 4, 6 et 9 (https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570) ; Service-Public, dons F2722, dissolution F1122, commissariat aux comptes F2907, subventions F3180, travail bénévole/salarié N22150, rémunération des dirigeants F1927, gestion désintéressée F31839 ; Associations.gouv.fr, réglementation et comptabilité associative. Les références figurent dans le document produit.
+
+**Constats :** une association régulièrement déclarée peut détenir des biens dans les limites légales ; les dons manuels ne sont pas identiques à toutes les donations/legs ; les règles de comptabilité, certification et publication des comptes diffèrent suivant financements et activités ; au départ d'un membre, les contrats demeurent et le patrimoine associatif ne se partage pas comme des bénéfices. **Interprétation :** aucun financement ou contrôle d'outils ne devrait produire un privilège politique automatique, mais la charte ne peut abolir des droits réels ou contrats valides.
+
+**Modifications réellement effectuées :** création sur GitHub `main` du **complément non adopté** « Charte des communs V0.5, Titre V, articles 26–30 » : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.5_TITRE_V_2026-10-29.md ; commit `18fa1df200f4a8673ec546768ec2d625ddaf439b`. Relecture après écriture : les articles 26, 27, 28, 29 et 30 sont tous présents. La V0.4 complète est conservée intacte : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md . Les deux textes sont à lire ensemble, et **aucune V0.5 intégrale consolidée n'est encore publiée**.
+
+**Articles rédigés cumulés :** 36 sur 48 prévus, de 0 à 35, répartis entre la charte intégrale V0.4 (0–25 et 31–35) et son complément de Titre V (26–30). Le nombre d'articles non rédigés est de 12 : 36–47.
+
+**Contradictions et limites :** donation/prêt/apport/achat à qualifier individuellement ; trésorerie ouverte au contrôle mais pas publication de données sensibles ; gestionnaire des clés ou du compte et contrôle politique à dissocier ; bénévolat libre et responsabilité réelle de sécurité ; fédération hypothétique ne peut absorber les biens des collectifs ; droit au retrait ne supprime pas dettes et contrats ; régime spécifique d'Alsace-Moselle et obligations sectorielles restent à vérifier si pertinents. **Anomalie documentaire secondaire :** l'architecture du Titre VI de la V0.4 inverse le résumé des articles 32 et 33, tandis que la rédaction réelle est correcte (32 = mesures conservatoires, 33 = signalements) ; à rectifier lors d'une consolidation sans réécrire l'histoire.
+
+**Travaux restants :** rédiger articles 36–39 (autonomie fédérative), 40–43 (documentation, RGPD et pouvoir technique) et 44–47 (révision, retrait et dissolution) ; envisager ensuite une version complète rassemblant V0.4 et complément V0.5, avec contrôle des numéros et des renvois. Ne pas changer le manifeste ni produire des règles adoptées.
+
