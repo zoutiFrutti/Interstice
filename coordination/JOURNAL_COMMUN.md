@@ -539,3 +539,22 @@ Sources consultées : journal commun et Charte V0.4, articles 11, 12 et 21 à 25
 Constat : les dispositions candidates traitent déjà des privilèges, des mandats, des conflits d'intérêts et du contrôle des accès. Contribution critique nouvelle : analyser les dépendances fonctionnelles plutôt que profiler les intentions individuelles. Test fictif : absence de quinze jours d'une personne centralisant accès, finances et relations. Questions : continuité, transmission, remplaçabilité, confidentialité et charge de travail.
 
 Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de compétence ; responsabilité sans culpabilisation. Transmission proposée au Juriste et à l'Organisateur, réception non attestée. Wiki : candidat seulement. Modifications : journal uniquement ; aucune règle ni publication Wiki. Suite : tester les contre-pouvoirs informels.
+
+
+## 2026-10-29 — Graphiste et Intégrateur — Prototype du système de publication graphique V0.1
+
+**Sujet :** mission commune avec l'Anarchitecte : format de contribution et premier habillage d'une fiche Wiki existante, sans validation ou publication automatique.
+
+**Sources :** `METHODE_EDITORIALE_SOURCES.md`, `charte-contributions-wiki.html`, `proposer-article.html`, `revue-articles-wiki.html`, `wiki-lecture-croisee-travail-soin-pouvoir.html`, `style.css`, état `main` ; ancienne PR graphique #22 (encore non fusionnée), contrat v0.1 établi en atelier.
+
+**Connaissances :** le flux existant de `wiki_article_submissions` est privé à la réception et expose déjà les statuts `pending`, `needs_review`, `approved`, `rejected` ; la revue humaine n'intègre pas automatiquement un article au Wiki. Une mise en page et un contrôle JSON ne doivent jamais changer les permissions, l'état éditorial ou la visibilité. Les six profils à traiter sont biographie, lecture, archive, article, bibliographie et tutoriel ; le premier exemple retenu est la lecture croisée existante sur travail, soin et pouvoir.
+
+**Modifications réellement effectuées sur la branche `design/publication-graphique-unifiee-v01-2026-10-29` :** ajout de `assets/fiche-design-system.css`, de `design-system/CONTRAT_PUBLICATION_V0_1.md`, `design-system/fiche.schema.json`, `design-system/PROFILS_DE_FICHES_V0_1.md` ; adaptation purement graphique de `wiki-lecture-croisee-travail-soin-pouvoir.html` : statut de travail, sommaire d'ancres, zones contradictions et sources. Transformation inverse contrôlée et texte original identique ; aucun script, formulaire ou connexion Supabase modifié. Test Playwright/Ajv `tests/publication-design-smoke.mjs` et workflow `.github/workflows/publication-design-qa.yml` ajoutés, avec Chromium Ubuntu 24.04. PR #24 ouverte **en brouillon**, sans fusion ni publication. Issue de transmission #25 ouverte pour la revue par l'Anarchitecte ; réception et approbation par cet atelier non attestées.
+
+**Contradictions / garde-fous :** le modèle sépare `editorial_status` et `publication_status`. Les tests du schéma refusent un état publié sans statut approuvé, décision traçable, autorisation distincte et droits vérifiés, mais un JSON fourni par un client n'est pas une preuve d'autorisation : la vérification décisive doit être faite côté serveur. Le prototype emploie une fiche déjà publique en version de travail ; il ne rend publique aucune contribution privée.
+
+**Tests réels :** premiers essais du schéma réussis ; premier rendu mobile Chromium à 390 px a détecté un débordement horizontal, corrigé en rendant l'en-tête flexible sur mobile. Nouveau test réussi **6/6** : quatre cas JSON et la page pilote à 390 et 1 280 px ; source, statut, ancres, image de présentation, absence de débordement et d'erreurs JS vérifiés. Log : https://github.com/zoutiFrutti/Interstice/actions/runs/40950122979 . Captures et rapport JSON conservés dans un artefact GitHub, sans publication du prototype sur `main`.
+
+**Wiki concerné :** `wiki-lecture-croisee-travail-soin-pouvoir.html` et documentation commune de publication ; aucune page encyclopédique supplémentaire créée.
+
+**Restant :** retour de l'Anarchitecte sur schéma et permissions, tests avec lecteurs d'écran et autres navigateurs, comparaison des rendus avec la PR #22, modèle de preview privé et contrôles de version ; revue collective éventuelle avant adoption, fusion et diffusion.
