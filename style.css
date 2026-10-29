@@ -76,3 +76,33 @@ section:not(.hero),footer {border-color:var(--border-color)}
   body {font-family:var(--font-reading);font-size:11pt;line-height:1.5}
 }
 
+
+
+/* Passe accessibilite et lisibilite : navigation, mobile, impression */
+body {overflow-wrap:break-word}
+main {min-width:0}
+a {text-underline-offset:.18em}
+a:hover {text-decoration-thickness:2px}
+button,nav a,.manifesto-link {min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+button,input,select,textarea {font-family:var(--font-reading)}
+input:focus-visible,textarea:focus-visible,select:focus-visible,
+summary:focus-visible {outline:3px solid var(--faille-ivory);outline-offset:3px}
+.brand-identity {min-width:0}
+.brand-caption {overflow-wrap:anywhere}
+article,article p {max-width:100%}
+article p {overflow-wrap:break-word}
+@media(max-width:600px) {
+ header,main,footer {padding-inline:18px}
+ .brand-identity {gap:12px}
+ .brand-identity .brand-caption {letter-spacing:.06em}
+ nav {gap:10px}
+ nav a {padding:10px 12px}
+}
+@media print {
+ body,article,section p,article p,.hero>p:not(.tag) {background:white!important;color:#111!important}
+ a {color:#111!important}
+ header,footer,nav,button {display:none!important}
+ main,article {max-width:none!important;padding:0!important}
+ section {break-inside:auto}
+ h1,h2,h3 {break-after:avoid}
+}
