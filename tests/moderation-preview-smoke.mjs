@@ -106,6 +106,18 @@ try {
   });
   checks.push({name:"Aperçu privé simulé "+view.name,ok:res.status()===200&&snap.title===testRow.title&&snap.typedBody&&!snap.imageCount&&!snap.jsLinks&&snap.state?.includes("non validé")&&snap.width>200&&!snap.overflow&&snap.decisions===0&&snap.reads===1&&!snap.codeExecuted&&snap.modalWidth<=view.width&&errors.length===0&&otherApi.length===0,detail:{...snap,errors,otherApi}});
   await page.screenshot({path:"visual-qa/moderation-apercu-"+view.name+".png",fullPage:false});
+  const focusTrapped=await page.evaluate(()=>{
+    const modal=document.querySelector("#private-preview-dialog");
+    return modal.open&&modal.contains(document.activeElement);
+  });
+  checks.push({name:"Focus clavier dans la fenêtre "+view.name,ok:focusTrapped});
+  await page.keyboard.press("Escape");
+  await page.waitForFunction(()=>!document.querySelector("#private-preview-dialog").open&&!document.querySelector("#private-preview-content").children.length);
+  checks.push({name:"Échap ferme et efface la fenêtre "+view.name,ok:await page.evaluate(()=>
+    !document.querySelector("#private-preview-dialog").open&&
+    !document.querySelector("#private-preview-content").children.length)});
+  await btn.click();
+  await page.locator("#private-preview-dialog[open]").waitFor({state:"visible"});
   await page.locator("#private-preview-close").click();
   await page.waitForFunction(()=>!document.querySelector("#private-preview-dialog").open&&!document.querySelector("#private-preview-content").children.length,{timeout:5000});
   checks.push({name:"Effacement à la fermeture "+view.name,ok:await page.evaluate(()=>!document.querySelector("#private-preview-dialog").open&&!document.querySelector("#private-preview-content").children.length)});
@@ -126,6 +138,68 @@ try {
       !document.querySelector("#private-preview-content").children.length&&
       !document.querySelector("#queue").children.length&&
       window.__previewStats.signOuts===1)});
+  }
+  // Refus d'accès : la file doit être absente dès l'ouverture pour un faux non-modérateur.
+  const denied=await context.newPage();
+  await denied.route("**/supabase.min.js",route=>route.fulfill({
+    status:200,contentType:"application/javascript",
+    body:shim.replace("moderator:true,reads:0","moderator:false,reads:0")
+  }));
+  await denied.goto(base+"/revue-articles-wiki.html",{waitUntil:"networkidle"});
+  const deniedState=await denied.evaluate(()=>({
+    panelHidden:document.querySelector("#panel").classList.contains("hidden"),
+    queueCount:document.querySelector("#queue").children.length,
+    triggers:document.querySelectorAll(".private-preview-trigger").length,
+    reads:window.__previewStats.reads
+  }));
+  checks.push({name:"Sans rôle : file et aperçu interdits "+view.name,
+    ok:deniedState.panelHidden&&deniedState.queueCount===0&&deniedState.triggers===0&&deniedState.reads===0,
+    detail:deniedState});
+  await denied.close();
+
+  if(view.name==="desktop"){
+    // Une autorisation révoquée avant le clic doit effacer la file déjà présente.
+    const revoked=await context.newPage();
+    await revoked.route("**/supabase.min.js",route=>route.fulfill({
+      status:200,contentType:"application/javascript",body:shim
+    }));
+    await revoked.goto(base+"/revue-articles-wiki.html",{waitUntil:"networkidle"});
+    const revocationBtn=revoked.locator(".private-preview-trigger");
+    await revocationBtn.waitFor({state:"visible"});
+    await revoked.evaluate(()=>{window.__previewStats.moderator=false});
+    await revocationBtn.click();
+    await revoked.waitForFunction(()=>document.querySelector("#message").textContent.includes("Accès modération requis"));
+    const revokedState=await revoked.evaluate(()=>({
+      queueCount:document.querySelector("#queue").children.length,
+      panelHidden:document.querySelector("#panel").classList.contains("hidden"),
+      dialogOpen:document.querySelector("#private-preview-dialog").open
+    }));
+    checks.push({name:"Rôle révoqué au clic : aucune donnée conservée",
+      ok:revokedState.queueCount===0&&revokedState.panelHidden&&!revokedState.dialogOpen,
+      detail:revokedState});
+    await revoked.close();
+
+    // Une lecture asynchrone déclenchée avant une déconnexion ne doit jamais repeupler la file.
+    const delayed=await context.newPage();
+    const slowShim=shim.replace("moderator:true,reads:0","moderator:true,holdRead:true,reads:0")
+      .replace("window.__previewStats.reads++;return {data:[record],error:null}",
+        "window.__previewStats.reads++;if(window.__previewStats.holdRead)await new Promise(resolve=>window.__releaseRead=resolve);return {data:[record],error:null}");
+    await delayed.route("**/supabase.min.js",route=>route.fulfill({
+      status:200,contentType:"application/javascript",body:slowShim
+    }));
+    await delayed.goto(base+"/revue-articles-wiki.html",{waitUntil:"networkidle"});
+    await delayed.waitForFunction(()=>typeof window.__releaseRead==="function");
+    await delayed.evaluate(()=>{window.__triggerSignOut?.();window.__releaseRead()});
+    await delayed.waitForTimeout(100);
+    const afterExit=await delayed.evaluate(()=>({
+      queueCount:document.querySelector("#queue").children.length,
+      panelHidden:document.querySelector("#panel").classList.contains("hidden"),
+      previewPresent:!!document.querySelector(".private-preview-trigger")
+    }));
+    checks.push({name:"Déconnexion pendant chargement : aucune résurrection de la file",
+      ok:afterExit.queueCount===0&&afterExit.panelHidden&&!afterExit.previewPresent,
+      detail:afterExit});
+    await delayed.close();
   }
   await context.close();
  }
