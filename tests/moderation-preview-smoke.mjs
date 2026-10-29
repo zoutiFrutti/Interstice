@@ -107,6 +107,7 @@ try {
   checks.push({name:"Aperçu privé simulé "+view.name,ok:res.status()===200&&snap.title===testRow.title&&snap.typedBody&&!snap.imageCount&&!snap.jsLinks&&snap.state?.includes("non validé")&&snap.width>200&&!snap.overflow&&snap.decisions===0&&snap.reads===1&&!snap.codeExecuted&&snap.modalWidth<=view.width&&errors.length===0&&otherApi.length===0,detail:{...snap,errors,otherApi}});
   await page.screenshot({path:"visual-qa/moderation-apercu-"+view.name+".png",fullPage:false});
   await page.locator("#private-preview-close").click();
+  await page.waitForFunction(()=>!document.querySelector("#private-preview-dialog").open&&!document.querySelector("#private-preview-content").children.length,{timeout:5000});
   checks.push({name:"Effacement à la fermeture "+view.name,ok:await page.evaluate(()=>!document.querySelector("#private-preview-dialog").open&&!document.querySelector("#private-preview-content").children.length)});
   if(view.name==="mobile"){
     await btn.click();
