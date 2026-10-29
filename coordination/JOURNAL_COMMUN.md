@@ -572,3 +572,13 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Modifications réellement effectuées :** présente entrée de coordination seulement. Aucune modification du catalogue, du Wiki, des fiches, du manifeste ni d'une décision de gouvernance. **Transmissions proposées** au Lecteur, au Penseur, au Juriste, à la Biographe et à l'Organisateur : réception non vérifiée.
 
 **Suite :** commencer par des rapprochements sourcés FN-069 × FN-009 et ARCH Louvre ; supprimer les doublons de travail, pas les archives historiques ; suivre chaque question jusqu'à validation ou rejet documenté.
+
+
+## 2026-10-29 — Archiviste / Médiathèque — Enquête Combahee × Freeman et ARCH-005 Louvre
+**Reprise :** dossiers FN-069, FN-009 et étude ARCH-005 déjà existants, sans nouvelle numérotation.
+**Sources consultées directement :** déclaration Combahee (https://anotherworldarchives.org/combahee), texte de Jo Freeman (https://www.jofreeman.com/joreen/tyranny.htm), transcription critique et contextualisation du règlement du 3 mai 1871 par Michèle Audin (https://macommunedeparis.com/2023/05/27/3-mai-1871-cent-six-ouvriers-redigent-un-reglement-de-leur-atelier/), document archivistique ARCH-005 dans Drive.
+**Constats :** Combahee documente à la fois les obstacles rencontrés dans d'autres mouvements et son organisation autonome ; Freeman documente le pouvoir informel dans les groupes sans structure explicite et les avantages initiaux de certains petits groupes informels. La comparaison ne suffit pas à démontrer une hiérarchie interne précise au collectif Combahee.
+**Louvre :** le règlement daté du 3 mai prévoit désignation des responsables par les ouvriers, révocabilité et répartition des fonctions, et demeure un texte soumis à approbation. Il n'atteste pas à lui seul l'exécution de chaque disposition. La transcription de l'autre moitié du texte et les sources primaires datées restent à collationner.
+**Contradictions :** autonomie d'un groupe minorisé versus possibilité de concentration interne du pouvoir ; règle ouvrière démocratique versus preuves historiques d'application ; responsabilité identifiable versus surveillance.
+**Transmissions proposées :** au Lecteur, étude ciblée des difficultés organisationnelles dans la section III du texte Combahee ; à la Biographe, recherche des personnes et réseaux sans extrapolation ; à l'Archiviste, collation des règlements Louvre du 2 avril et du 3 mai, preuve de mise en oeuvre ; à l'Organisateur, suivi de ces questions. Réception non confirmée.
+**Modifications :** cette entrée au journal commun uniquement ; pas de nouveau FN, ni publication Wiki, ni modification du manifeste V2.5 (référence éditoriale non adoptée).
