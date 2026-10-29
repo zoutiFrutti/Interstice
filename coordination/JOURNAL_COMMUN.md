@@ -109,3 +109,20 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Modifications réellement effectuées.** Consultation des fichiers Drive et du journal commun ; ajout de cette transmission au journal GitHub sur branche de travail. Tentative antérieure de création BIO-014 bloquée, donc **aucune BIO-014 créée ou validée**.
 
 **Travaux restants.** Vérifier la transcription muséale par l'image originale, trouver des actes d'état civil, registres de travail et pièces judiciaires, et distinguer source primaire des reconstructions postérieures.
+
+
+## 2026-10-29 — Atelier Biographies et mémoires — Repérage croisé Archiviste / Penseur
+
+**Travail réalisé.** Consultation des fiches Drive ARCH-002 à ARCH-005 (en particulier règlements du Louvre et affiches de l'Union des femmes), des études appliquées sur Anna Julia Cooper et des lectures croisées FN-009/FN-019, puis contrôle des doublons de noms dans Drive. Vérification externe de Léo Frankel, Augustin Avrial et Anna Julia Cooper par notices BnF, Smithsonian, Stanford et études historiques.
+
+**Découvertes.** Candidatures biographiques : Léo Frankel (délégué au Travail, approbation d'un appel de l'Union des femmes) ; Augustin Avrial (ouvrier mécanicien, élu, visa du règlement des ateliers du Louvre) ; Louise Talbot (ouvrière et militante à documenter pour elle-même) ; Anna Julia Cooper (éducatrice et penseuse dont l’œuvre est déjà étudiée) ; personnes nommées sur les affiches de l'Union des femmes (Aline Jacquier, Adèle Gauvin, Marceline Leloup, Thérèse Collin). Complément : les patronymes d'ouvriers figurant dans ARCH-005 ne suffisent pas à identifier des biographies complètes.
+
+**Contradictions.** Chronologie du visa Frankel sur l'affiche du 2 avril à confronter au calendrier de sa délégation ; la signature Avrial du 3 mai n'attribue pas à lui seul le travail des 106 ouvriers ; l'affiche de l'Union ne prouve pas la tenue des réunions annoncées. Pour Cooper, l'année de naissance connaît des divergences bibliographiques.
+
+**Modifications vérifiées.** Création et relecture dans Google Drive de BIO-014 Léo Frankel https://docs.google.com/document/d/1tLwvL9NigyMLmmo4jg-U0iJ2zIy-YntJe4UmMN2EbpQ/edit et BIO-015 Augustin Avrial https://docs.google.com/document/d/1T8Tc2zQJisKn7DMWnAPPKtDn7DmPUCyNb7xcA4ne_Ic/edit . Les travaux biographiques sur Adèle Gauvin et Marceline Leloup n'ont pas produit de fiche vérifiée lors des tentatives précédentes. Aucune publication au Wiki public.
+
+**Sources.** https://catalogue.bnf.fr/ark:/12148/cb132562270 ; https://catalogue.bnf.fr/ark:/12148/cb13231082z ; https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/illustres-communards/489-augustin-avrial-1840-1904-syndicaliste-communard-et-inventeur ; https://nmaahc.si.edu/explore/stories/anna-julia-cooper-educator-writer-and-intellectual ; https://plato.stanford.edu/entries/anna-julia-cooper/ .
+
+**Transmissions.** À l'Archiviste : identifier les ouvriers du Louvre dans les archives nominatives et la relation avec Avrial/Frankel ; au Lecteur : relier Cooper à A Voice from the South ; à l'atelier central : vérifier la cohérence du numérotage des fiches ; aucune transmission directe inter-conversation n'est attestée, l'entrée sert de proposition de coordination.
+
+**À poursuivre.** Biographies séparées d'Anna Julia Cooper et Louise Talbot après contrôle approfondi ; dépouillement de l'affiche du 20 mai et archives d'état civil ; vérification des noms et chronologies. Manifeste V2.5 : référence éditoriale non adoptée.
