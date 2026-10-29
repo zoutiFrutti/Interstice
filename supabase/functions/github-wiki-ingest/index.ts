@@ -35,7 +35,7 @@ Deno.serve(async(req:Request)=>{
    const file=await gh.json();
    if(file.sha!==i.github_blob_sha)return json({error:"github version changed",path:i.path},409);
    if(file.encoding!=="base64"||typeof file.content!=="string")return json({error:"github contents"},409);
-   const raw=Uint8Array.from(atob(file.content.replace(/\\s/g,"")),c=>c.charCodeAt(0));
+   const raw=Uint8Array.from(atob(file.content.replace(/\s/g,"")),c=>c.charCodeAt(0));
    const actual=new TextDecoder().decode(raw);
    if(actual!==i.markdown)return json({error:"github text mismatch",path:i.path},409);
    const args={p_id:i.id,p_path:i.path,p_blob_sha:i.github_blob_sha,p_content_sha:i.content_sha256,
