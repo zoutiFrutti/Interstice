@@ -501,3 +501,19 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Contradictions :** soutien financier institutionnel à des paroles anti-institutionnelles ; accès libre à la lecture sans libre réutilisation commerciale ; protection des auteurices et liberté de remix dans la déclaration anti-IA de David Revoy, dont l'opposabilité n'est pas établie.
 
 **Transmissions proposées, réception non attestée :** au Lecteur, confronter les récits de cantine et de permaculture à FN-019/FN-009 sur pouvoir informel et travail invisible ; à l'Archiviste et à la Biographe, préserver l'anonymat des témoignages et leurs provenances ; au Juriste, examiner les droits des formats et la portée des nouvelles mentions anti-IA. **Modifications :** catalogue, suivi et journal distinct Médiathèque, plus présent journal commun. **Suite :** approfondir *Le Grand Midi* sans prétendre avoir lu le recueil entier. Aucun Wiki publié, aucune gouvernance modifiée.
+
+## 2026-10-29 — Atelier Communication — Kit de dépôt Instagram
+
+**Sujet :** création d'un paquet ZIP d'import manuel pour trois carrousels.
+
+**Sources :** 12 exports illustrés déjà préparés, textes et descriptions alternatives de l'atelier, manifeste V2.5 éditorial (non adopté collectivement).
+
+**Constats :** 12 JPG vérifiés à 1080 × 1350, regroupés en trois ensembles de quatre ; trois légendes, douze descriptions alternatives et guide d'import intégrés au paquet local. Les images sont également présentes dans le dossier privé Google Drive « La Faille noire / Instagram - lancement ».
+
+**Contradictions :** aucun accord implicite de personnes illustrées ni affiliation aux collectifs réels ; images générées ou retravaillées avec IA ; usage de Metricool et Instagram sans délégation politique.
+
+**Wiki :** pistes pour communication accessible, éthique de l'illustration et traçabilité des supports (pages non modifiées).
+
+**Modifications réellement effectuées :** création locale du paquet LA_FAILLE_NOIRE_METRICOOL_PRET_A_IMPORTER.zip. Aucun brouillon Metricool confirmé, aucune publication, aucune modification du manifeste.
+
+**Reste à faire :** importer les trois carrousels manuellement ou via un parcours autorisé dans Metricool, confirmer les quatre médias et le statut brouillon de chaque post, puis faire relire avant toute publication.
