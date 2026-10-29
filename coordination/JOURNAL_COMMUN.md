@@ -657,3 +657,18 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Contradictions :** prescriptions démocratiques versus témoignage de mauvaise activité ; possible biais anti-autogestion de l'interlocuteur et des citations reprises ; ne pas inférer échec structurel généralisé.
 **À poursuivre :** obtenir le fac-similé MP 159 (2 avril), l'affiche du 3 mai, l'édition originale des mémoires de Rossel, et ouvrir au moins un tract Combahee pour relever son contenu précis et ses métadonnées.
 **Modifications :** entrée au journal uniquement ; FN et ARCH-005 non modifiés, Wiki public non modifié, manifeste V2.5 éditorial non adopté intact.
+
+
+## 2026-10-29 · Atelier du Juriste — Compilation documentaire V0.7, non adoptée
+
+**Objet et périmètre :** consolidation technique des 48 articles proposés (0 à 47), auparavant répartis sur six fichiers V0.4/V0.5/V0.6, sans adoption ni modification politique. Cette opération complète la revue juridique du 29 octobre déjà consignée ; elle n'est pas présentée comme une seconde revue quotidienne.
+
+**Sources réellement relues :** les six fichiers de propositions, `propositions/ETAT_V06_JURISTE_20261029.md`, `coordination/JURISTE_PASSE_20261029_V06.md`, le journal commun (SHA de départ 66383334e632dbfee547a796df9ee5e7ce0f878b), `docs/NOTE_JURIDIQUE_PROTECTION_RECOURS_2026-10-29.md`, `docs/CAS_PRATIQUES_PROTECTION_RECOURS_2026-10-29.md` et le Manifeste V2.5 sur Drive (éditorial, non adopté). Textes officiels revus : loi du 1er juillet 1901 https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570 ; Service-Public F1123 https://www.service-public.gouv.fr/particuliers/vosdroits/F1123 ; CNIL https://www.cnil.fr/fr/comprendre-le-rgpd/les-six-grands-principes-du-rgpd . Ces références ne constituent pas un audit juridique complet des 48 articles.
+
+**Écriture réelle :** nouveau fichier `propositions/CHARTE_DES_COMMUNS_V0.7_COMPILATION_NON_ADOPTEE_2026-10-29.md`, sur branche réversible `agent/juriste-consolidation-2026-10-29` ; commit https://github.com/zoutiFrutti/Interstice/commit/c3a56895064eaca5552fb8600034b9c11be5dd3c . Les six sources et les archives V0.1–V0.3 restent intactes. Aucun manifeste, statut, charte adoptée ou site public modifié.
+
+**Contrôles automatisés après écriture :** relecture GitHub du fichier ; 48 titres d'articles, 0 à 47, exactement une fois et dans l'ordre ; présence textuelle à l'identique des 48 blocs d'articles extraits des six sources ; correction du sommaire seulement : en V0.4, 32 et 33 étaient inversés dans l'architecture, alors que l'article 32 porte sur les mesures conservatoires et l'article 33 sur les signalements/confidentialité. Taille du fichier vérifié : 100 296 caractères. L'annexe conserve les références et les réserves, y compris les anciennes formulations historiques obsolètes, signalées comme telles.
+
+**Contradictions et limites :** la compilation n'est ni une adoption ni une validation juridique ; le texte doit encore subir une revue de fond des renvois, droits des personnes absentes, travail invisible, responsabilités légales, protection sans médiation imposée, ressources, RGPD et recours. Pas de tests du site, Supabase ou accessibilité puisque seuls des documents Markdown ont été créés. Les différences avec le manifeste V2.5 n'ont pas été votées. Aucune fusion ni publication sur `main`.
+
+**Suite :** confronter les articles consolidés au manifeste et aux études du Penseur, vérifier les renvois et cas contradictoires, solliciter une validation juridique contextualisée avant toute proposition d'adoption ; coordonner une éventuelle PR avec les autres ateliers pour éviter les conflits.
