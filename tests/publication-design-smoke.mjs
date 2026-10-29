@@ -61,7 +61,7 @@ try {
   });
   const ok=response.status()===200&&actual.h1===1&&actual.headingCount===7&&!actual.horizontalOverflow&&
    !actual.missingAnchors.length&&actual.anchors.length===4&&actual.sourceLinkCount>=1&&actual.sourcesVisible&&
-   actual.discussionVisible&&actual.status?.includes("Version de travail")&&actual.status?.includes("pas une validation")&&
+   actual.discussionVisible&&actual.status?.includes("Version de travail")&&actual.status?.includes("ne constitue pas une validation")&&
    actual.appliedBackground==="rgb(233, 229, 219)"&&errors.length===0&&badAssets.length===0;
   checks.push({test:"Reading fiche "+view.label,ok,actual,errors,badAssets});
   await page.screenshot({path:"visual-qa/fiche-lecture-"+view.label+".png",fullPage:true});
