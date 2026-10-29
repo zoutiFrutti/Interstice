@@ -51,6 +51,7 @@ try {
     headingCount:document.querySelectorAll(".fiche-section h2").length,
     anchors,missingAnchors:anchors.filter(id=>!ids.includes(id)),
     horizontalOverflow:document.documentElement.scrollWidth>innerWidth+1,
+    overflowCandidates:[...document.querySelectorAll('body *')].filter(el=>el.getBoundingClientRect().right>innerWidth+1).slice(0,8).map(el=>({tag:el.tagName,cls:el.className,text:el.textContent.slice(0,45),right:Math.round(el.getBoundingClientRect().right)})),
     status:document.querySelector(".fiche-state")?.innerText,
     documentStatus:document.querySelector(".fiche-state strong")?.textContent,
     sourcesVisible:!!document.querySelector("#fiche-sources"),
