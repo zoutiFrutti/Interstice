@@ -551,3 +551,15 @@ Sources : Jo Freeman https://www.jofreeman.com/joreen/tyranny.htm ; Iris Marion 
 Contradictions : plus de transparence peut créer de la surveillance ; plus d'écoute ne prouve pas automatiquement chaque affirmation ; plus de consultation ne règle pas à elle seule qui doit avoir un droit de décision.
 
 Reste : revue éditoriale et des liens, fusion de la PR si approuvée, récupération des autres fiches en attente une par une par enrichissement des articles existants ; éviter d'affirmer une publication avant le déploiement effectif.
+
+## 2026-10-29 — Le Lecteur — Deux enrichissements supplémentaires du Wiki candidat
+
+Référentiel : Manifeste V2.5 consolidé, référence éditoriale de travail non adoptée. Relecture préalable des pages `wiki-lecture-croisee-travail-soin-pouvoir.html` et `wiki-liberte-numerique-ia-surveillance.html` sur la branche existante de la PR 23.
+
+Sources : Nora Berenstain, « Epistemic Exploitation » (2016), https://doi.org/10.3998/ergo.12405314.0003.022 ; Sara Ahmed, *On Being Included* (2012) ; Michel Foucault, *Surveiller et punir* (1975) ; Elinor Ostrom, *Governing the Commons* (1990) ; David Lyon, *Surveillance Studies* (2007). Les lectures antérieures sont ciblées, aucun livre intégralement lu n'est revendiqué dans cette passe.
+
+Connaissances et contradictions : demander une explication peut contribuer à l'inclusion ou imposer une charge éducative disproportionnée ; contrôler une ressource commune n'impose pas de profiler les personnes ; un contrôle insuffisant peut permettre des abus. Synthèses de l'atelier, non règles collectives.
+
+Modifications réelles : deux pages HTML du Wiki **modifiées sur la branche**, inventaire `coordination/propositions/LECTURES_CRITIQUES_A_INTEGRER.md` actualisé. Aucune fusion sur main, aucun déploiement public et aucune publication Supabase effectués.
+
+À faire : relecture éditoriale et bibliographique, validation de la PR 23, intégration progressive des autres études en évitant les doublons avec les pages déjà existantes.
