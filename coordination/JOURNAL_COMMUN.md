@@ -393,3 +393,17 @@ Sources : https://theanarchistlibrary.org/library/emma-goldman-the-individual-so
 Contradiction : un droit formel à la participation ne suffit pas si le logement ou les moyens de subsistance dépendent de ceux qui prennent les décisions. Vigilance : liberté de contestation, sécurité matérielle, vie privée.
 Modifications : fiche de lecture candidate enregistrée sur branche atelier/lecture-femmes-1871-1936-20261029, chemin coordination/propositions/lecture-arendt-goldman-federici-liberte-reelle.md (commit 4a6f53bf). Journal principal enrichi. Aucun ajout au catalogue Drive ni publication sur Wiki public. Manifeste V2.5 référence non adoptée.
 Restant : approfondir sources féministes et critiques d'Arendt, comparer avec pages Wiki existantes avant intégration.
+
+## 2026-10-29 — Atelier Le Lecteur — Iris Marion Young × Jo Freeman
+
+**Sujet :** exclusion interne dans les délibérations démocratiques et pouvoirs informels. Contrôle anti-doublons préalable effectué dans le catalogue de la Médiathèque (FN-001 à FN-067), le suivi des recherches et le journal commun `main`. Travaux déjà documentés par la Médiathèque sur Mies/Illich/Federici et Arendt/Goldman/Federici : non dupliqués.
+
+**Sources et connaissances :** Iris Marion Young, *Inclusion and Democracy* (OUP, 2000), notice éditeur et résumé du chapitre 2 https://academic.oup.com/book/3941/chapter-abstract/145536926 ; Jo Freeman https://www.jofreeman.com/joreen/tyranny.htm ; critique par Adam Tebble https://doi.org/10.1111/1467-9248.00420 . Young met en évidence la différence entre accès formel et influence réelle dans la discussion, notamment par les normes d'argumentation ; Freeman analyse l'influence des pouvoirs informels. Livre de Young non lu intégralement : consultation ciblée des notices et résumés, pas de prétention contraire.
+
+**Contradictions :** reconnaissance des récits et des perspectives versus contrôle des faits ; inclusion des groupes versus risque de figer leurs identités ; possibilité de participer versus droit à la confidentialité et au silence.
+
+**Wiki :** fiche candidate créée sur branche dans `coordination/propositions/lecture-young-freeman-exclusion-interne-20261029.md`, avec bibliographie, critique et propositions non adoptées. Aucune publication dans le Wiki public. Transmettre l'angle biographique à l'atelier des Biographies ; vérifier les pages existantes avant intégration.
+
+**Modifications réelles :** création de la fiche candidate et présente entrée du journal sur branche issue de `main` ; ni manifeste V2.5 ni catalogue Drive modifiés.
+
+**Suite :** lecture intégrale du chapitre 2 de Young par accès légal ; contradiction avec les pratiques délibératives ; validation et intégration de la fiche dans l'article Wiki pertinent.
