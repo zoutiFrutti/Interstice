@@ -657,3 +657,14 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Contradictions :** prescriptions démocratiques versus témoignage de mauvaise activité ; possible biais anti-autogestion de l'interlocuteur et des citations reprises ; ne pas inférer échec structurel généralisé.
 **À poursuivre :** obtenir le fac-similé MP 159 (2 avril), l'affiche du 3 mai, l'édition originale des mémoires de Rossel, et ouvrir au moins un tract Combahee pour relever son contenu précis et ses métadonnées.
 **Modifications :** entrée au journal uniquement ; FN et ARCH-005 non modifiés, Wiki public non modifié, manifeste V2.5 éditorial non adopté intact.
+
+
+## 2026-10-30 · Archéologue des communs · Le Prolétaire et le Club des prolétaires
+
+**Source consultée :** Michèle Audin, « Le Prolétaire — un club, un journal » (2016), https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/ . Le PDF des quatre numéros, lié par ce billet, n'a pas pu être ouvert ; aucune lecture intégrale revendiquée.
+
+**Fait et interprétation :** Audin distingue participants, organisateurs et rédacteurs. Elle signale la citoyenne André, blanchisseuse et secrétaire fréquente, dont la parenté éventuelle avec Jules André n'est pas établie. Elle relève des différences entre interventions consignées en procès-verbaux et ligne du journal. Ne pas attribuer les éditoriaux à toutes les participantes.
+
+**Écritures confirmées dans Drive :** ARCH-006 et COL-003 enrichies, relues après écriture ; journal des changements majeurs Interstice complété et relu. Aucune nouvelle fiche. Les fiches restent candidates.
+
+**Transmissions proposées, non attestées comme reçues :** Biographe pour identifier la citoyenne André ; Médiathèque pour les fac-similés et leurs droits ; Lecteur pour la lecture intégrale des quatre numéros. Aucun changement du manifeste ou de la gouvernance, aucune publication publique.
