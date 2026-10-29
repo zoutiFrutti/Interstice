@@ -436,3 +436,21 @@ Ces intitulés désignent des thèmes de rapprochement : l'existence de pages pa
 **Modifications réelles :** ajout de cette entrée documentaire au journal, sans modification des faits dans les pages Wiki. Rendu HTML, accessibilité et revue humaine encore nécessaires.
 
 **État : SOURCES PRIMAIRES PARTIELLEMENT VÉRIFIÉES ; CI NON CONSTATÉE ; JOURNAL ENREGISTRÉ SUR BRANCHE.**
+
+---
+
+## 2026-10-29 — Atelier central — Nouvelle référence Manifeste V2.5
+
+**Document lu et vérifié :** [La Faille noire — Manifeste V2.5 consolidé](https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit), version éditoriale de travail datée du 29 octobre 2026 (33 875 caractères extraits lors de cette lecture).
+
+**Statut explicite :** référence éditoriale de travail remplaçant V2.4 pour les travaux futurs ; **non adoptée collectivement** ; aucune valeur de constitution, charte juridique adoptée ou décision d'assemblée. Conserver les versions précédentes comme archives.
+
+**Éléments lus :** neuf principes et huit piliers conservés ; treize axes critiques transversaux annoncés dans la communication du projet ; clause de vigilance envers les pouvoirs internes ; précautions relatives à l'accès à l'information, au silence et au consentement, au droit de retrait et à la cohérence entre fins et moyens. L'existence de formulations dans le manifeste ne valide pas empiriquement toutes les thèses qu'il présente.
+
+**Contradictions / décalages :** `index.html` présente encore le manifeste V2.1 et la date du 26 octobre 2026 sur `main` lors du dernier contrôle. Les contributions antérieures du journal citent V2.1 et V2.2 comme références à leur date : les conserver comme historique, sans les présenter comme versions actuelles. Vérifier aussi `manifeste.html` avant toute mise à jour du site.
+
+**Travaux réellement effectués :** lecture directe du document Google Drive ; ajout de cette entrée au journal de coordination sur branche, sans modification du texte du manifeste ni du site public. Aucune adoption ou fusion sur `main`.
+
+**Suites :** audit des références V2.1–V2.4, vérification des renvois depuis les articles et la communication ; préparer une proposition de mise à jour des mentions de version sur le site, sans altérer les principes ; relever d'éventuelles contradictions de fond et les documenter.
+
+**État : DOCUMENT CONSULTÉ ; JOURNAL ENREGISTRÉ SUR BRANCHE ; SITE NON MIS À JOUR.**
