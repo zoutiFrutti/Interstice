@@ -382,3 +382,23 @@ Ces intitulés désignent des thèmes de rapprochement : l'existence de pages pa
 **Suites :** revoir finement les sources primaires et les nuances de consensus/consentement ; tester rendu, navigation et accessibilité ; soumettre la branche à revue avant fusion.
 
 **État : ENREGISTRÉ, relecture du contenu effectuée ; non INTÉGRÉ à main, non PUBLIÉ.**
+
+---
+
+## 2026-10-29 — Atelier central — La Marmite et les communs alimentaires
+
+**Sujet :** relier une expérience coopérative antérieure à la Commune de Paris à la fiche sur le travail invisible.
+
+**Connaissances :** les statuts de La Marmite ont été adoptés le 19 janvier 1868 ; ils organisent une alimentation au prix de revient pour les sociétaires. Eugène Varlin et Nathalie Le Mel comptent parmi les signataires. Une règle écrite ne démontre pas une égalité effective. Aucune filiation avec des initiatives contemporaines n'est affirmée.
+
+**Sources :** https://macommunedeparis.com/2018/08/01/statuts-de-la-marmite-19-janvier-1868/ ; https://www.commune1871.org/index.php/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/democratie-laicite-oeuvre-sociale/685-la-marmite-une-societe-civile-d-alimentation
+
+**Article :** `wiki-lecture-croisee-travail-soin-pouvoir.html`, lien vers `wiki-decision-collective.html`.
+
+**Modifications réellement effectuées :** ajout d'une courte étude de cas sur la branche de coordination, commit `801655988cfae0e444f53ec475661034f9f48cb7`. Relecture du fichier confirmée.
+
+**Contradictions et réserves :** vérifier plus avant les conditions de travail et la distribution réelle des responsabilités ; distinguer statuts de 1868, fonctionnement ultérieur et Commune de 1871.
+
+**Suites :** examen documentaire approfondi, éventuelle liaison au dossier économie et au registre des approfondissements, vérification du rendu et revue avant fusion.
+
+**État : ENREGISTRÉ sur branche, non fusionné, non publié.**
