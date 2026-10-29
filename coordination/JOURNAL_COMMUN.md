@@ -16,3 +16,9 @@ Découvertes : formation, maternité/soins, logement, cinéma dans le premier nu
 Sources : https://cgt.es/recordando-que-hace-80-anos-nacio-la-revista-mujeres-libres-mayo-de-1936/ ; https://leer.es/proyectos/las-sinsombrero/materiales-audiovisuales/mujeres-libres/ ; https://www.mcu.es/ccbae/es/publicaciones/verNumero.do?anyo=1936&idPublicacion=226013 .
 Limite : il s'agit d'une lecture de l'analyse critique et de notices, non de la lecture intégrale des articles originaux ; le statut PDM de la notice institutionnelle n'autorise pas à assimiler les éléments éditoriaux tiers à des œuvres libres.
 Modification : enrichissement de la proposition de lecture croisée sur la même branche ; aucune publication sur main.
+
+
+## 2026-10-29 — Numéro 2 (juin 1936), vérification complémentaire
+Sources : catalogue éducatif espagnol https://leer.es/proyectos/las-sinsombrero/materiales-audiovisuales/mujeres-libres/ et sommaire de la reproduction historique https://www.solidaridadobrera.org/ateneo_nacho/peri%C3%B3dicos/m_libres_02.pdf . Le second précise le nom « Luisa Pérez Berganzo » (et non « Beganzo ») pour « Problemas sanitarios y maternidad consciente ». Julia M. Carrillo : « Algo sobre coeducación » ; Lucía Sánchez Saornil : « Veinte años de psicología femenina a través de una profesión ». « El niño sano » est un article distinct d'Amparo Poch y Gascón. À ne pas mélanger.
+Analyse : l'éducation, la santé reproductive et l'expérience professionnelle forment un ensemble de questions d'autonomie ; cela ne prouve pas la convergence des positions ni des politiques appliquées. Vérifier les pages d'origine et les arguments avant citation.
+Actions : note de correction et piste de lecture enregistrées sur la branche ; aucune publication ni changement du manifeste.
