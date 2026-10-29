@@ -188,3 +188,18 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications vérifiées :** remplacement des quatre liens 404 par mentions « fiche en préparation » ; PR #9 fusionnée ; relecture post-fusion de `wiki.html` confirmant l'absence de ces quatre href. Aucun faux article créé.
 
 **Travaux restants :** tester l'affichage GitHub Pages et les liens externes ; préparer des fiches documentées lorsque le corpus est prêt ; tester clavier, contraste et lecteurs d'écran ; auditer les permissions et la confidentialité.
+
+
+## 2026-10-29 · Atelier technique · Accessibilité et déploiement
+
+**Sujet :** première passe de contrôle technique après correction des liens Wiki.
+
+**Sources :** `index.html`, `wiki.html`, `manifeste-v2-5.html`, `participer.html` sur GitHub ; PR #10 https://github.com/zoutiFrutti/Interstice/pull/10 ; commit fusionné `79c482fb176a4ad8603002dd202dd6a9d85d3eec`.
+
+**Constats :** les quatre pages inspectées ont un attribut `lang` et une balise viewport. La page V2.5 ne contenait aucun `h1` ; la correction lui donne un titre de niveau 1 explicite. Contrôle de l'accessibilité limité à la structure HTML, sans test lecteur d'écran ni navigation clavier. Les URL GitHub Pages n'ont pas pu être consultées depuis les outils réseau disponibles ; aucun statut de déploiement public n'est affirmé.
+
+**Pages concernées :** `manifeste-v2-5.html`, `index.html`, `wiki.html`, `participer.html`.
+
+**Modifications réellement effectuées :** ajout d'un `h1` sémantique au manifeste V2.5 ; PR #10 fusionnée ; lecture de contrôle sur `main` confirmant le titre et la conclusion du texte. Aucune modification des principes politiques.
+
+**À poursuivre :** test public GitHub Pages depuis un réseau accessible ; audit clavier/contraste/labels/formulaires ; sécurité des contributions et protection des données.
