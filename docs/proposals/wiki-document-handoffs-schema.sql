@@ -27,8 +27,9 @@ create table if not exists wiki_ingest_private.handoff_events (
  event_type text not null check (event_type in ('created','source_changed')),
  previous_sha text,
  new_sha text not null,
+ proposed_metadata jsonb not null,
  event_at timestamptz not null default now(),
- unique(document_id,event_type,new_sha)
+ unique(document_id,event_type,proposed_metadata)
 );
 alter table wiki_ingest_private.handoff_events enable row level security;
 revoke all on wiki_ingest_private.handoff_events from public, anon, authenticated;
@@ -62,8 +63,8 @@ begin
  values (p_document_id,p_repository,p_path,p_sha,p_fingerprint,p_atelier,p_links)
  on conflict(document_id) do nothing;
  if found then
-   insert into wiki_ingest_private.handoff_events(document_id,event_type,new_sha)
-   values(p_document_id,'created',p_sha);
+   insert into wiki_ingest_private.handoff_events(document_id,event_type,new_sha,proposed_metadata)
+   values(p_document_id,'created',p_sha,jsonb_build_object('sha',p_sha,'fingerprint',p_fingerprint,'repository',p_repository,'path',p_path,'atelier',p_atelier,'links',p_links));
    return 'CREATED';
  end if;
  select source_repository, source_path, source_sha, source_fingerprint, atelier, source_links
@@ -75,9 +76,9 @@ begin
     or v_original.source_path <> p_path
     or v_original.atelier <> p_atelier
     or v_original.source_links <> p_links then
-   insert into wiki_ingest_private.handoff_events(document_id,event_type,previous_sha,new_sha)
-   values(p_document_id,'source_changed',v_original.source_sha,p_sha)
-   on conflict(document_id,event_type,new_sha) do nothing;
+   insert into wiki_ingest_private.handoff_events(document_id,event_type,previous_sha,new_sha,proposed_metadata)
+   values(p_document_id,'source_changed',v_original.source_sha,p_sha,jsonb_build_object('sha',p_sha,'fingerprint',p_fingerprint,'repository',p_repository,'path',p_path,'atelier',p_atelier,'links',p_links))
+   on conflict(document_id,event_type,proposed_metadata) do nothing;
    return 'SOURCE_CHANGED_REVIEW_REQUIRED';
  end if;
  return 'UNCHANGED';
