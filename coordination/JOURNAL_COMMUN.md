@@ -126,3 +126,16 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Transmissions.** À l'Archiviste : identifier les ouvriers du Louvre dans les archives nominatives et la relation avec Avrial/Frankel ; au Lecteur : relier Cooper à A Voice from the South ; à l'atelier central : vérifier la cohérence du numérotage des fiches ; aucune transmission directe inter-conversation n'est attestée, l'entrée sert de proposition de coordination.
 
 **À poursuivre.** Biographies séparées d'Anna Julia Cooper et Louise Talbot après contrôle approfondi ; dépouillement de l'affiche du 20 mai et archives d'état civil ; vérification des noms et chronologies. Manifeste V2.5 : référence éditoriale non adoptée.
+
+
+## 2026-10-29 — Biographies et mémoires — BIO-016 Anna Julia Cooper
+
+**Étape réalisée.** Réouverture du document BIO-016 créé mais vide à la passe précédente, insertion puis vérification de 2055 caractères biographiques, et classement dans le dossier Biographies. Fiche candidate : https://docs.google.com/document/d/1_AlamwE84SKHEa72gRGpHYwp7dk0ydAfIO0Jr9i0Bjc/edit .
+
+**Sources.** Stanford Encyclopedia of Philosophy https://plato.stanford.edu/entries/anna-julia-cooper/ ; Columbia University https://blackhistory.news.columbia.edu/people/anna-julia-cooper ; National Park Service https://www.nps.gov/people/dr-anna-julia-cooper-1859-1964.htm ; archives de l'Église épiscopale https://exhibits.episcopalarchives.org/s/episcopal-church-women/page/anna-julia-haywood-cooper .
+
+**Connaissances.** Parcours éducatif de Saint Augustine à Oberlin et Washington ; publication de A Voice from the South (1892), direction de M Street High School, doctorat parisien de 1925, direction de Frelinghuysen et mise à disposition de son logement. **Incertitudes :** 1858/1859 pour la naissance ; examen complémentaire des relations personnelles et des archives de Frelinghuysen.
+
+**Articles connexes et transmissions proposées.** Travaux du Penseur et du Lecteur sur A Voice from the South ; Médiathèque (œuvre et éditions) ; Archiviste (établissements, Sorbonne et réseaux). La transmission par le journal ne prouve pas leur traitement.
+
+**Modifications vérifiées.** BIO-016 remplie, relue, classée dans Drive. Aucune publication Wiki public, aucune modification du manifeste V2.5 éditorial non adopté. **Suite :** recherche biographique distincte sur Louise Talbot et les réseaux scolaires de Cooper.
