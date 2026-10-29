@@ -292,3 +292,15 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications réelles :** insertion de cette entrée dans le journal sur une branche issue du main courant, destinée à revue. Pas de modification du manifeste V2.5 ni des règles collectives. Le livre de Castoriadis n'a pas été lu intégralement ; seule la bibliographie et des sources primaires et secondaires ciblées ont été consultées.
 
 **Restant :** lecture rapprochée du texte de Castoriadis ; consulter le contenu actuel du Wiki dans son système d'édition avant toute contribution ; préparer fiche bibliographique avec droits d'auteur et une lecture croisée structurée ; proposer des expériences concrètes de révision des institutions sans les déclarer adoptées.
+
+## 2026-10-29 — Atelier lecture : Castoriadis, Freeman et autolimitation
+
+Documents consultés : Castoriadis, « Democracy as Procedure and Democracy as Regime », *Constellations* 4(1), 1997, DOI 10.1111/1467-8675.00032 ; entretien de Castoriadis au *Monde*, 10 décembre 1991 ; Jo Freeman, « The Tyranny of Structurelessness » (1972), texte original https://www.jofreeman.com/joreen/tyranny.htm . La lecture intégrale de *L'Institution imaginaire de la société* n'est pas attestée.
+
+Idées : la démocratie n'est pas réductible à des procédures de vote ; l'autolimitation rend possible la critique des institutions. Chez Freeman, règles informelles et rapports sociaux produisent des pouvoirs non contrôlés. Hypothèse de l'atelier : protéger le droit de contester une règle même après son adoption et prévoir des recours qui ne dépendent pas seulement de la majorité en cause.
+
+Contradictions : une procédure démocratique peut restreindre les futures capacités de contestation ; contrôle du pouvoir contre confidentialité ; délibération égale en droit contre inégalités de temps et de ressources. Ce sont des problèmes à travailler, pas des règles adoptées.
+
+Wiki concerné : articles sur autogestion, autonomie, pouvoirs informels et démocratie ; la recherche de propositions Supabase par titres contenant « autonom », « institut », « castoriadis » ou « pouvoir » n'a pas trouvé de résultat. Cela ne prouve pas l'absence d'articles dans d'autres systèmes. Aucune proposition insérée dans Supabase faute d'identité d'auteur autorisée ; tentative de création d'une fiche candidate Drive bloquée par contrôle d'accès.
+
+Modifications effectives : cette entrée est proposée pour ajout au journal sur branche de travail ; ni manifeste, ni Wiki publié modifiés. Restant : retrouver le circuit de publication autorisé, comparer les approches avec une critique de l'autonomie abstraite, poursuivre la lecture primaire.
