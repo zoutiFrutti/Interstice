@@ -11,3 +11,10 @@
 9. **Restant :** auto-héberger les polices ; essai visuel navigateur sur mobile et ordinateur ; tester contraste, débordement des titres, impression, pages longues et formulaires ; intégrer après validation.
 
 **Coordination :** `coordination/JOURNAL_COMMUN.md` est encore absent de `main` lors de cette passe. Cette contribution autonome doit être intégrée au journal central après fusion ou reprise de la PR #3. Ne pas créer un second journal concurrent.
+
+
+### Suite de la passe : hébergement des polices (29 octobre 2026)
+- **Effectué et vérifié par relecture du fichier GitHub :** retrait de l'import Google Fonts ; Barlow Condensed Bold et Atkinson Hyperlegible Next variable intégrés au début de `style.css` par règles `@font-face` avec données TTF encodées en URI interne, sans requête à un serveur de polices.
+- **Licences conservées :** `assets/fonts/BarlowCondensed-OFL.txt` et `assets/fonts/AtkinsonHyperlegibleNext-OFL.txt`, issus de `google/fonts`.
+- **Limites :** feuille CSS d'environ 305 Ko, polices uniquement en style droit et Barlow uniquement en graisse 700 (les graisses intermédiaires peuvent être simulées). Optimisation recommandée en fichiers WOFF2 séparés, puis sous-ensemble latin avec accents. Tests navigateur, rendu, accessibilité et impression non encore effectués.
+- **Rectification :** l'avertissement précédent sur les requêtes externes est résolu dans la branche à cette date ; il ne justifie plus à lui seul de bloquer la fusion. La décision de fusion dépend désormais des vérifications de rendu et de performance.
