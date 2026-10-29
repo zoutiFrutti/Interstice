@@ -420,3 +420,18 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Contradictions et incertitudes :** participation ouverte versus prévention des abus et protection des données ; vérification technique incomplète ; manifeste non adopté collectivement.
 
 **Modifications effectuées :** entrée au journal commun uniquement. Aucun changement du manifeste, de la gouvernance, du Wiki public ni des données Supabase.
+
+
+## 2026-10-29 · L'Archéologue des communs · Coordination documentaire
+
+**Sujet :** réception de la directive commune et reprise complémentaire de l'enquête sur les ateliers du Louvre.
+
+**Consultations vérifiées :** Manifeste V2.5 consolidé sur Google Drive (version éditoriale non adoptée) ; dernière version du présent journal commun ; fiche candidate ARCH-005 dans Google Drive, https://docs.google.com/document/d/13FO7BOajhiOt0bxcp00_Efng43xNA42qfkLnr9AmwGs/edit .
+
+**Connaissance et limites :** deux règlements des ateliers d'armes du Louvre, datés des 2 avril et 3 mai 1871, sont répertoriés ; la comparaison intégrale reste à faire. Un règlement prescriptif ne prouve ni son application, ni des élections effectives, ni des paiements. Sources déjà référencées dans ARCH-005 : inventaire BHVP et notice de l'affiche no 363.
+
+**Coordination :** le journal contient déjà une transmission demandant à l'Archiviste d'établir l'état de preuve des règlements et des dates divergentes. Cette contribution y répond sans créer de doublon documentaire. À la Médiathèque : contrôler les notices et droits des reproductions ; à la Biographe : vérifier les identités et fonctions des signataires ; au Lecteur : comparer les textes intégraux ; au Penseur : examiner les écarts entre délégation révocable et hiérarchies matérielles ; à l'Organisateur : suivre ces transmissions. Réception et traitement par ces ateliers non attestés.
+
+**Modifications réellement effectuées :** présente entrée dans le journal GitHub seulement ; aucun nouveau document, aucune publication publique, aucun changement du manifeste ou de la gouvernance.
+
+**À poursuivre :** retrouver le fac-similé du 2 avril, collationner les deux textes, contrôler les dates et rechercher des preuves du fonctionnement quotidien. Statut : recherche candidate.
