@@ -1,5 +1,8 @@
 name: Edge request bounds checks
 on:
+  push:
+    branches:
+      - 'fix/edge-request-bounds-2026-10-29'
   pull_request:
     paths:
       - 'supabase/functions/submit-proposal/**'
