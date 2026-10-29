@@ -92,3 +92,26 @@ Les trois pages chargent `editorial-illustrations.css`, feuille CSS commune util
 **Non vérifiés :** rendu réel des pages complètes, interactions des formulaires, lecteur d'écran, Chrome/Safari/Firefox multiécrans, publication GitHub Pages. Les PR #18 et #19 n'ont pas à être fusionnées parallèlement à cette branche : leur apport illustratif est consolidé ici. Les ajustements de cartes non essentiels de la PR #19 ne sont pas repris ; ils restent à discuter dans une passe UI.
 
 **Suivants :** harmoniser la typographie (repartir de la PR #5 et de `main`), contrôler la maquette en navigateur, vérifier le manifeste V2.5 sans en changer les principes.
+
+## Tests réels des pages dans Chromium — 29 octobre 2026
+
+Une étape supplémentaire a permis de tester les **vraies pages de la branche GitHub** sur un serveur local statique exécuté dans GitHub Actions, et non plus seulement un composant isolé.
+
+- Test reproductible : `tests/visual-smoke.mjs`, dépendance Playwright 1.58.2, workflow `.github/workflows/visual-qa.yml` en Ubuntu **24.04**.
+- Pages : `index.html`, `bibliotheque.html`, `wiki.html`, `manifeste-v2-5.html`, `participer.html`.
+- Tailles : 390 × 844 px (mobile), 1280 × 800 px (ordinateur).
+- Contrôles : WOFF2 Atkinson et Barlow réellement chargées, polices calculées conformes, images et actifs accessibles, pas de ressources locales HTTP 4xx, aucun débordement horizontal, h1 unique sur chaque page, huit niveaux de titres cohérents sur la V2.5, statut non adopté, panneaux illustrés sur les trois pages et présence inchangée des formulaires, absence d'erreurs JS détectées par le navigateur.
+- **Résultat confirmé : 10 cas sur 10 réussis**.
+- Les captures premières vues de toutes les pages sont jointes comme artefacts à chaque exécution réussie ; un second run ajoute les captures ciblées des trois panneaux ivoire.
+
+**Preuves :**
+- https://github.com/zoutiFrutti/Interstice/actions/runs/40947064224 (10/10)
+- https://github.com/zoutiFrutti/Interstice/actions/runs/40947571040 (10/10, panneaux)
+- Archive `interstice-visual-qa` attachée aux runs, avec `report.json` et captures PNG.
+
+Le premier essai, https://github.com/zoutiFrutti/Interstice/actions/runs/40946929173, a échoué avant les tests à cause d'Ubuntu 26.04 non pris en charge par la version de Playwright utilisée. Le passage à `ubuntu-24.04` a corrigé cette erreur d'environnement.
+
+**Revue esthétique des captures :** trois panneaux ivoire nets et lisibles sur mobile, sans troncature. Ils allègent l'ambiance des parties documentaires ; le haut de l'accueil reste volontairement sombre et sera évalué lors de la revue globale. Ces tests ne couvrent pas les lecteurs d'écran, la soumission effective à Supabase, Safari, Firefox, ni la qualité de l'impression.
+
+**Balisage manifeste :** le fichier V2.5 comporte un seul `h1`, six `h2` et deux `h3` ; aucun mot du contenu ne change. La proposition antérieure PR #14, avec double `h1`, a été archivée sans fusion après correction et reprise dans la PR #22.
+
