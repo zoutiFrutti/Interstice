@@ -32,12 +32,15 @@ try {
     anchorsMissing:toc.filter(a=>!ids.has(a.hash.slice(1))).map(a=>a.hash),
     overflow:document.documentElement.scrollWidth>innerWidth+1,
     stateLabel:document.querySelector(".fiche-state")?.textContent||"",
-    fontFace:getComputedStyle(document.querySelector("h1")).fontFamily
+    fontFace:getComputedStyle(document.querySelector("h1")).fontFamily,
+    heroDisplay:getComputedStyle(document.querySelector(".fiche-rendue > header.fiche-hero")).display,
+    titleWidth:Math.round(document.querySelector(".fiche-rendue h1").getBoundingClientRect().width),
+    titleHeight:Math.round(document.querySelector(".fiche-rendue h1").getBoundingClientRect().height)
    };
   });
   checks.push({name:"Rendu de la fiche publique "+view.name,ok:res.status()===200&&output.isRendered&&output.h1===1&&
    output.chapters>=5&&output.sources===5&&!output.overflow&&output.anchorsMissing.length===0&&
-   output.stateLabel.includes("non validé")&&output.bodyText.includes("Qui fait vivre les communs ?")&&pageErrors.length===0&&assetErrors.length===0,
+   output.stateLabel.includes("non validé")&&output.heroDisplay==="block"&&output.titleWidth>=200&&output.titleHeight<240&&output.bodyText.includes("Qui fait vivre les communs ?")&&pageErrors.length===0&&assetErrors.length===0,
    detail:{...output,bodyText:undefined,pageErrors,assetErrors}});
   await page.screenshot({path:"visual-qa/fiche-json-"+view.name+".png",fullPage:true});
   if(view.name==="mobile"){
