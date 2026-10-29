@@ -1,0 +1,204 @@
+/* Interstice × La Faille noire — composant de lecture de fiche v0.1.
+   Style visuel, jamais preuve de validation ni source de droits d'accès.
+   Conserve les styles et formulaires existants. */
+:root {
+  --fiche-noir: #101014;
+  --fiche-ivoire: #E9E5DB;
+  --fiche-rouge: #C5212C;
+  --fiche-texte-clair: #f4f1eb;
+  --fiche-texte-sombre: #25232a;
+  --fiche-bordure: #877e7c;
+  --fiche-espace-1: .5rem;
+  --fiche-espace-2: 1rem;
+  --fiche-espace-3: 1.5rem;
+  --fiche-espace-4: 2.5rem;
+}
+.interstice-fiche {
+  max-width: 980px;
+  min-width: 0;
+}
+.interstice-fiche .fiche-hero {
+  padding-bottom: clamp(1.6rem, 3vw, 2.8rem);
+}
+.interstice-fiche .fiche-hero h1 {
+  max-width: 18ch;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+.interstice-fiche .fiche-hero p {
+  max-width: 74ch;
+}
+.interstice-fiche .fiche-state {
+  margin: 0 0 var(--fiche-espace-4);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  background: var(--fiche-ivoire);
+  color: var(--fiche-texte-sombre);
+  border-left: 6px solid #941825;
+}
+.interstice-fiche .fiche-state strong,
+.interstice-fiche .fiche-state p,
+.interstice-fiche .fiche-state small { color: var(--fiche-texte-sombre); }
+.interstice-fiche .fiche-state p { margin: .5rem 0 0; }
+.interstice-fiche .fiche-state__eyebrow {
+  display: block;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.interstice-fiche .fiche-contents {
+  margin: 0 0 var(--fiche-espace-4);
+  padding: var(--fiche-espace-2) 0;
+  border-top: 1px solid var(--fiche-bordure);
+  border-bottom: 1px solid var(--fiche-bordure);
+}
+.interstice-fiche .fiche-contents > strong { display: block; margin-bottom: .65rem; }
+.interstice-fiche .fiche-contents ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem 1.1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.interstice-fiche .fiche-contents a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  text-underline-offset: .18em;
+}
+.interstice-fiche .fiche-section {
+  margin: 0 0 var(--fiche-espace-4);
+  min-width: 0;
+  scroll-margin-top: 1.5rem;
+}
+.interstice-fiche .fiche-section h2 {
+  max-width: 29ch;
+  line-height: 1.15;
+  margin-bottom: var(--fiche-espace-2);
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.interstice-fiche .fiche-section p,
+.interstice-fiche .fiche-section li {
+  max-width: 78ch;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.interstice-fiche .fiche-section li { margin-bottom: .6rem; }
+.interstice-fiche .fiche-section--discussion {
+  background: #211e22;
+  padding: clamp(1rem, 3vw, 1.8rem);
+  border: 1px solid #74676b;
+}
+.interstice-fiche .fiche-section--discussion h2::before {
+  display: block;
+  content: "INTERPRÉTATIONS · TENSIONS";
+  font-family: inherit;
+  font-size: .72rem;
+  letter-spacing: .1em;
+  color: #ffc3c4;
+  margin-bottom: .5rem;
+}
+.interstice-fiche .fiche-section--sources {
+  padding: clamp(1rem, 3vw, 1.8rem);
+  background: var(--fiche-ivoire);
+  color: var(--fiche-texte-sombre);
+}
+.interstice-fiche .fiche-section--sources h2,
+.interstice-fiche .fiche-section--sources p,
+.interstice-fiche .fiche-section--sources li { color: var(--fiche-texte-sombre); }
+.interstice-fiche .fiche-section--sources a { color: #811420; text-decoration: underline; }
+.interstice-fiche .fiche-section--sources a:hover { color: #591017; }
+.interstice-fiche a:focus-visible {
+  outline: 3px solid var(--fiche-ivoire);
+  outline-offset: 3px;
+}
+.interstice-fiche .fiche-section--sources a:focus-visible,
+.interstice-fiche .fiche-state a:focus-visible {
+  outline-color: var(--fiche-noir);
+}
+.interstice-fiche .fiche-section--sources ul { padding-left: 1.4rem; }
+.interstice-fiche .fiche-state a { color: #811420; }
+@media (max-width: 600px) {
+  .interstice-fiche .fiche-hero { padding-top: 2rem; }
+  .interstice-fiche .fiche-contents ul { display: block; }
+  .interstice-fiche .fiche-contents a { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .interstice-fiche { scroll-behavior: auto; }
+}
+@media print {
+  .interstice-fiche .fiche-state,
+  .interstice-fiche .fiche-section--sources,
+  .interstice-fiche .fiche-section--discussion {
+    background: #fff;
+    color: #111;
+    border: 1px solid #555;
+    print-color-adjust: economy;
+  }
+  .interstice-fiche .fiche-section--discussion h2::before { color: #111; }
+  .interstice-fiche .fiche-contents,
+  .interstice-fiche .fiche-state { break-inside: avoid; }
+  .interstice-fiche .fiche-section h2 { break-after: avoid; }
+  .interstice-fiche .fiche-contents a { min-height: auto; }
+}
+
+/* Sur les petites largeurs, la navigation historique est mise en lignes sans couper les liens. */
+.fiche-page > header { flex-wrap: wrap; min-width: 0; }
+.fiche-page > header a { display: inline-flex; align-items: center; min-height: 44px; }
+@media(max-width:600px){
+  .fiche-page > header { justify-content: flex-start; row-gap: .5rem; }
+  .fiche-page > header strong { flex-basis: 100%; }
+}
+
+/* Rendu JSON v0.1 : distinctions documentaires lisibles sans couleur seule. */
+.fiche-page main#fiche-preview {max-width:980px;min-width:0;}
+.fiche-rendue .fiche-hero{margin-bottom:1.3rem;padding:1.5rem 0 1rem;}
+.fiche-rendue .fiche-hero h1{max-width:20ch;font-size:clamp(2.4rem,6vw,4rem);line-height:1.15;}
+.fiche-rendue .fiche-resume{font-size:1.1rem;color:#d7d4d1;}
+.fiche-rendue .fiche-section{margin-bottom:clamp(1.5rem,4vw,3rem);}
+.fiche-rendue .fiche-bloc{max-width:78ch;margin:0 0 1.1rem;}
+.fiche-rendue .fiche-bloc__texte{margin:0 0 .25rem;line-height:1.7;white-space:pre-line;}
+.fiche-rendue .fiche-qualification{display:block;color:#d7c6c1;font-size:.82rem;font-weight:650;line-height:1.5;}
+.fiche-rendue .fiche-references{display:block;font-size:.82rem;line-height:1.6;}
+.fiche-rendue .fiche-section--sources .fiche-qualification{color:#453b38;}
+.fiche-rendue .fiche-section--sources .fiche-references{color:#453b38;}
+.fiche-rendue .fiche-section--sources p.fiche-source-limites{color:#423b40;font-size:.88rem;margin:.25rem 0 .7rem;}
+.fiche-rendue .fiche-bloc--citation{border-left:4px solid #c5212c;margin-left:0;padding:.5rem 1rem;background:#242025;}
+.fiche-rendue .fiche-liste{padding-left:1.35rem;margin:0 0 1rem;}
+.fiche-rendue .fiche-liste li{padding-left:.2rem;}
+.fiche-rendue .fiche-revision{border-top:1px solid #7c7474;margin-top:3rem;padding:1rem 0 2rem;color:#dad4d1;}
+.fiche-rendue .fiche-revision p{margin:.1rem 0;line-height:1.5;}
+.fiche-rendue .fiche-section--discussion .fiche-references a{color:#f4c3bd;}
+.fiche-rendue .fiche-section--sources li{overflow-wrap:anywhere;}
+@media(max-width:600px){
+  .fiche-rendue .fiche-hero h1{font-size:clamp(2.1rem,10vw,3.2rem);}
+  .fiche-rendue .fiche-hero{padding-top:1.5rem;}
+}
+@media print{
+  .fiche-rendue .fiche-bloc--citation,
+  .fiche-rendue .fiche-section--discussion{background:white;color:black}
+  .fiche-rendue .fiche-revision{color:black}
+  .fiche-rendue .fiche-qualification{color:#222}
+  .fiche-rendue .fiche-section--sources .fiche-qualification{color:#222}
+}
+
+/* Le CSS historique applique display:flex à TOUS les header.
+   Ici l'en-tête interne de l'article est vertical, quelle que soit la largeur. */
+.fiche-rendue > header.fiche-hero {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  max-width: none;
+  padding: clamp(1.5rem, 4vw, 2.5rem) 0 1.25rem;
+}
+.fiche-rendue > header.fiche-hero h1 {
+  display: block;
+  width: auto;
+  max-width: 20ch;
+  margin: .6rem 0 1rem;
+}
+.fiche-rendue > header.fiche-hero .fiche-resume {
+  max-width: 70ch;
+}

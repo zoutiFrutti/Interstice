@@ -1,0 +1,229 @@
+{
+  "schema_version": "0.1",
+  "id": "lecture-travail-soin-pouvoir-v01",
+  "type": "lecture",
+  "titre": "Qui fait vivre les communs ?",
+  "resume": "Travail domestique, soin, pouvoir et liberté : lire ensemble Silvia Federici, Pierre Kropotkine, bell hooks et Paulo Freire.",
+  "rubrique": "Savoir et comprendre",
+  "langue": "fr",
+  "blocs": [
+    {
+      "id": "chapitre-1",
+      "kind": "heading",
+      "texte": "Le problème",
+      "qualification": "a_verifier"
+    },
+    {
+      "id": "texte-1-1",
+      "kind": "paragraph",
+      "texte": "Une organisation peut partager les décisions officiellement, tout en laissant les repas, le ménage, l’éducation et le soin aux mêmes personnes. Le temps inégalement disponible peut alors devenir une inégalité d’influence politique.",
+      "qualification": "a_verifier",
+      "sources_ids": []
+    },
+    {
+      "id": "chapitre-2",
+      "kind": "heading",
+      "texte": "Quatre perspectives",
+      "qualification": "a_verifier"
+    },
+    {
+      "id": "texte-2-1",
+      "kind": "paragraph",
+      "texte": "Pierre Kropotkine, La Conquête du pain (1892). Critique de la propriété et de l’économie fondée sur le profit ; réflexion sur l’entraide, le partage selon les besoins et la réorganisation des travaux pénibles, y compris domestiques. Il ne suffit toutefois pas de supposer que techniques et services collectifs régleront la distribution des tâches.",
+      "qualification": "a_verifier",
+      "sources_ids": [
+        "s-kropotkine"
+      ]
+    },
+    {
+      "id": "texte-2-2",
+      "kind": "paragraph",
+      "texte": "Silvia Federici, Révolution au point zéro (2012). Met au centre le travail reproductif : nourrir, soigner, entretenir et rendre possible la vie quotidienne. Son invisibilisation, en particulier lorsqu’il est assigné aux femmes, constitue un rapport de pouvoir économique et social.",
+      "qualification": "a_verifier",
+      "sources_ids": [
+        "s-federici"
+      ]
+    },
+    {
+      "id": "texte-2-3",
+      "kind": "paragraph",
+      "texte": "bell hooks, Apprendre à transgresser (1994). Défend une éducation comme pratique de liberté, attentive à la parole, à l’expérience et aux dominations présentes même dans les espaces émancipateurs. Application au collectif : apprendre et décider nécessitent une participation effectivement accessible.",
+      "qualification": "a_verifier",
+      "sources_ids": [
+        "s-hooks"
+      ]
+    },
+    {
+      "id": "texte-2-4",
+      "kind": "paragraph",
+      "texte": "Paulo Freire, Pédagogie des opprimés (édition originale en portugais, 1968 ; diffusion internationale en 1970). Critique l’éducation « bancaire » et développe une pédagogie dialogique. Une transformation émancipatrice doit éviter de reconduire, sous de nouveaux noms, les relations entre oppresseurs et opprimés.",
+      "qualification": "a_verifier",
+      "sources_ids": [
+        "s-freire"
+      ]
+    },
+    {
+      "id": "chapitre-3",
+      "kind": "heading",
+      "texte": "Convergences et désaccords",
+      "qualification": "a_verifier"
+    },
+    {
+      "id": "texte-3-1",
+      "kind": "paragraph",
+      "texte": "Convergence proposée : changer les institutions sans transformer les relations quotidiennes peut reproduire les dominations. La liberté suppose des ressources, du temps, des capacités d’agir et des possibilités de critique.",
+      "qualification": "analyse",
+      "sources_ids": []
+    },
+    {
+      "id": "texte-3-2",
+      "kind": "paragraph",
+      "texte": "Tension : la mutualisation souhaitée par Kropotkine ne garantit pas à elle seule une répartition équitable des soins et corvées ; les travaux de Federici obligent à examiner qui assure effectivement ces tâches. L’accent mis par Freire et hooks sur la conscience critique ne remplace pas le changement matériel des conditions de vie.",
+      "qualification": "analyse",
+      "sources_ids": [
+        "s-kropotkine",
+        "s-federici",
+        "s-hooks",
+        "s-freire"
+      ]
+    },
+    {
+      "id": "texte-3-3",
+      "kind": "paragraph",
+      "texte": "Point de vigilance : rendre le travail invisible visible ne doit pas devenir une surveillance individuelle ou une obligation de performance. Les contributions ne peuvent être jugées hors des situations de handicap, de santé, de soin, de repos et de capacité.",
+      "qualification": "analyse",
+      "sources_ids": []
+    },
+    {
+      "id": "chapitre-4",
+      "kind": "heading",
+      "texte": "Questions ouvertes pour La Faille noire",
+      "qualification": "a_verifier"
+    },
+    {
+      "id": "texte-4-1",
+      "kind": "list_item",
+      "texte": "Comment partager les tâches nécessaires sans imposer une égalité mécanique des heures ?",
+      "qualification": "proposition",
+      "sources_ids": []
+    },
+    {
+      "id": "texte-4-2",
+      "kind": "list_item",
+      "texte": "Comment donner aux personnes qui assurent le soin et l’entretien un accès réel aux débats et aux décisions ?",
+      "qualification": "proposition",
+      "sources_ids": []
+    },
+    {
+      "id": "texte-4-3",
+      "kind": "list_item",
+      "texte": "Comment prévenir les hiérarchies informelles sans mesurer la « valeur » des personnes ?",
+      "qualification": "proposition",
+      "sources_ids": []
+    },
+    {
+      "id": "texte-4-4",
+      "kind": "list_item",
+      "texte": "Quels dispositifs peuvent réduire les travaux pénibles plutôt que seulement les répartir ?",
+      "qualification": "proposition",
+      "sources_ids": []
+    },
+    {
+      "id": "texte-4-5",
+      "kind": "paragraph",
+      "texte": "Proposition à discuter, non adoptée : « Nul ne devrait perdre sa capacité à participer aux décisions communes parce qu’il assume de façon disproportionnée les tâches indispensables à la vie collective. »",
+      "qualification": "proposition",
+      "sources_ids": []
+    },
+    {
+      "id": "chapitre-5",
+      "kind": "heading",
+      "texte": "Repères historiques à documenter",
+      "qualification": "a_verifier"
+    },
+    {
+      "id": "texte-5-1",
+      "kind": "paragraph",
+      "texte": "À confronter aux archives de l’Union des femmes pour la défense de Paris et les soins aux blessés (Commune de 1871), puis aux pratiques et débats de Mujeres Libres dans l’Espagne de 1936. Ne pas traiter ces expériences comme des preuves automatiques d’un modèle idéal.",
+      "qualification": "a_verifier",
+      "sources_ids": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-kropotkine",
+      "titre": "La Conquête du pain",
+      "provenance": "Pierre Kropotkine",
+      "date": "1892",
+      "url": "https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain",
+      "limites": "Vérifier les citations et les variations entre éditions."
+    },
+    {
+      "id": "s-federici",
+      "titre": "Revolution at Point Zero: Housework, Reproduction, and Feminist Struggle",
+      "provenance": "Silvia Federici",
+      "date": "2012",
+      "edition": "PM Press",
+      "limites": "Édition et passages exacts à documenter."
+    },
+    {
+      "id": "s-hooks",
+      "titre": "Teaching to Transgress: Education as the Practice of Freedom",
+      "provenance": "bell hooks",
+      "date": "1994",
+      "edition": "Routledge",
+      "limites": "Édition et passages exacts à documenter."
+    },
+    {
+      "id": "s-freire",
+      "titre": "Pedagogy of the Oppressed",
+      "provenance": "Paulo Freire",
+      "date": "1970",
+      "edition": "Continuum, édition anglaise",
+      "limites": "Vérifier l'édition et la traduction utilisées."
+    },
+    {
+      "id": "s-freeman",
+      "titre": "The Tyranny of Structurelessness",
+      "provenance": "Jo Freeman",
+      "date": "1972",
+      "limites": "Vérifier les références et éditions consultées."
+    }
+  ],
+  "contradictions": [
+    {
+      "texte": "La mutualisation souhaitée par Kropotkine ne garantit pas à elle seule une répartition équitable des soins et corvées.",
+      "sources_ids": [
+        "s-kropotkine",
+        "s-federici"
+      ],
+      "attribution": "Tension formulée dans la fiche de lecture existante"
+    }
+  ],
+  "incertitudes": [
+    {
+      "texte": "Cette lecture croisée doit encore être enrichie avec les passages et pages vérifiables dans des éditions identifiées.",
+      "sources_ids": [
+        "s-federici",
+        "s-hooks",
+        "s-freire"
+      ],
+      "attribution": "Limite explicitement reconnue dans la fiche existante"
+    }
+  ],
+  "workflow": {
+    "editorial_status": "pending",
+    "publication_status": "not_published"
+  },
+  "droits": {
+    "etat": "to_verify",
+    "restrictions": "Fiche publique antérieure utilisée comme exemple de rendu ; la restructuration n'approuve ni les textes ni les droits."
+  },
+  "revision": {
+    "numero": 1,
+    "source_document": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+    "changements": [
+      "Transcription de démonstration à partir d'une fiche déjà publique, sans décision éditoriale."
+    ]
+  }
+}

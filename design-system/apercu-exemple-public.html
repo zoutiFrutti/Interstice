@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Démonstration graphique d'une fiche Interstice déjà publique. Aucun processus de validation ni de publication.">
+  <title>Démonstration de fiche structurée V0.1 · Interstice</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/fiche-design-system.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo-interstice.svg">
+</head>
+<body class="fiche-page">
+  <header>
+    <strong>INTERSTICE<span>.</span></strong>
+    <a href="../wiki.html">Wiki des communs</a>
+    <a href="../wiki-lecture-croisee-travail-soin-pouvoir.html">Fiche existante</a>
+  </header>
+  <main id="fiche-preview" aria-busy="true">
+    <p role="status">Chargement de la démonstration publique…</p>
+  </main>
+  <noscript><p>JavaScript est nécessaire pour afficher cette démonstration. La fiche originale reste disponible depuis le lien en haut de page.</p></noscript>
+  <script type="module">
+    import { renderFiche } from "./fiche-renderer.mjs";
+    const target=document.getElementById("fiche-preview");
+    try {
+      // Jeu de données local et public : jamais une soumission privée de Supabase.
+      const response=await fetch("./exemples/lecture-travail-soin-pouvoir.json",{cache:"no-store"});
+      if(!response.ok)throw new Error("Données indisponibles");
+      const input=await response.json();
+      const result=renderFiche(input,target);
+      if(!result.ok)throw new Error("Schéma de démonstration incompatible");
+    }catch(err){
+      target.replaceChildren();
+      const msg=document.createElement("p");
+      msg.setAttribute("role","alert");
+      msg.textContent="Impossible de charger cet exemple public. La fiche originale reste accessible depuis le lien ci-dessus.";
+      target.append(msg);
+      console.error("Échec du rendu de démonstration",err);
+    }finally{target.removeAttribute("aria-busy")}
+  </script>
+</body>
+</html>
