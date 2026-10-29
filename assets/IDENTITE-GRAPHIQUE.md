@@ -45,3 +45,12 @@ Les SVG existants contiennent aussi certaines variantes de rouge (`#b91520`, `#d
 3. Exécuter réellement l'exporteur PNG/WebP et inspecter le fond alpha, la netteté et la taille des fichiers.
 4. Préparer seulement ensuite les variantes claires/sombres/compactes effectivement nécessaires.
 5. Harmoniser les autres pages sur des PR distinctes sans écraser les modifications des autres ateliers.
+
+
+## Contrôle local complémentaire (Chromium, 29 octobre 2026)
+
+- Deux SVG transparents et le script `identite-export.js` ont été reconstitués à l'identique dans un environnement de contrôle local ; les empreintes Git des trois fichiers ont été comparées aux fichiers source du dépôt.
+- Le navigateur Chromium n'a pas pu ouvrir l'URL localhost ou `file://` (restrictions de cet environnement). La validation a donc utilisé une page d'essai intégrée et une substitution **uniquement dans le banc de test** des chemins d'images par les mêmes SVG en data URI. Le code de l'exporteur exécuté était byte-identique au fichier du dépôt.
+- Les **16 exports** (2 logos × PNG/WebP × 64/256/512/1024 px) ont été générés et rouverts par Pillow ; dimensions exactes, pixel supérieur gauche transparent pour les 16, archives ZIP vérifiée sans erreur. Le ZIP a été créé localement, **pas ajouté à GitHub**.
+- Un rendu de contrôle des SVG à 32, 64 et 144 px sur fond noir/ivoire a été examiné : sur ivoire, la circonférence blanche se confond avec le fond, ce qui rend ce modèle **inadapté aux fonds clairs sans accompagnement**.
+- Les tests réels de la page `identite-preview.html` servie par GitHub Pages, les interactions Safari/Firefox, le responsive du site complet et les audits d'accessibilité ne sont **pas** couverts par ce test.
