@@ -69,7 +69,7 @@ begin
  end if;
  select source_repository, source_path, source_sha, source_fingerprint, atelier, source_links
  into v_original from wiki_ingest_private.document_handoffs
- where document_id=p_document_id for update;
+ where document_id=p_document_id; -- conflit UNIQUE de l'INSERT précédent sérialise les créations concurrentes
  if v_original.source_sha <> p_sha
     or v_original.source_fingerprint <> p_fingerprint
     or v_original.source_repository <> p_repository
