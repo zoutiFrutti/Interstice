@@ -5,6 +5,8 @@ on:
       - 'coordination/wiki-review-queue/**'
       - 'scripts/validate-wiki-review-queue.mjs'
       - 'scripts/prepare-wiki-review-draft.mjs'
+      - 'scripts/reconcile-wiki-handoff.mjs'
+      - 'tests/wiki-handoff-idempotency.test.mjs'
       - '.github/workflows/wiki-review-queue.yml'
   push:
     branches:
@@ -23,6 +25,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Test idempotent handoff and source revision protection
+        run: node --test tests/wiki-handoff-idempotency.test.mjs
       - name: Validate identities, provenance, and non-publication
         run: node scripts/validate-wiki-review-queue.mjs
       - name: Verify draft stays unapproved without printing its content
