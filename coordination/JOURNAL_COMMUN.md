@@ -340,3 +340,28 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications réelles :** export local et archive de contrôle corrigés ; ajout de cette entrée sur la branche principale du journal après relecture de sa version courante. Les visuels du dépôt, le manifeste, Metricool et Instagram ne sont pas modifiés.
 
 **À faire :** inspection de lisibilité sur smartphone et dernier contrôle éditorial ; rédaction/validation des trois légendes et descriptions alternatives ; accès aux médias depuis Metricool pour la création de brouillons non publiés. Vérifier explicitement l'indicateur de contenu généré/altéré avec IA lors du dépôt des carrousels.
+
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Étude 14 protections, autorité et recours
+
+**Date et rôle :** 29 octobre 2026, Atelier du Juriste. Transmission reçue de l'Atelier Le Penseur, « Protéger les personnes sans créer une autorité disciplinaire arbitraire », étude critique n° 14 du manifeste V2.5.
+
+**Sources et documents étudiés :** Manifeste V2.5 consolidé sur Google Drive (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit), référence éditoriale non adoptée ; Charte V0.3 (article 8, 13, 19, 20, 23–25) ; dernier journal GitHub ; Service-Public F71 exclusion associative, F3109 statuts/règlement, F31613 organisation d'événement, F781 enfance en danger ; Légifrance Code du travail L4121-1, L1152-4, L1153-5 ; Code pénal 223-6, 434-1, 434-3, 226-14 ; CPP article 40 ; CASF L227-1 et L227-4 ; CNIL référentiel alertes professionnelles et RGPD articles 6, 9, 10. URL et limites détaillées dans la note juridique.
+
+**Conclusions juridiques vérifiées :** association loi 1901 et statuts doivent encadrer compétences et exclusion ; le contradictoire et la possibilité de présenter ses explications sont essentiels avant sanction ; un employeur est tenu à des obligations spécifiques de santé et sécurité ; des événements et accueils de mineurs peuvent déclencher des normes sectorielles ; les obligations légales de signalement ou d'assistance dépendent de faits précis ; les dossiers de signalement impliquent des enjeux RGPD renforcés. Une association n'est pas une juridiction pénale. Une mesure conservatoire de sûreté ne doit pas être confondue avec une suspension statutaire automatique ni une décision de culpabilité.
+
+**Interprétation et propositions, non adoptées :** quatre phases séparées : mise en sécurité, recueil/vérification, décision compétente et recours ; médiation toujours libre, jamais condition de protection ; récusation et renfort externe possible si conflit d'intérêts ; mesure conservatoire proportionnée, limitée et réexaminée ; aucun privilège fondateur ; distinction critique politique / manquement disciplinaire ; priorité à la sécurité immédiate en événement.
+
+**Contradictions relevées :** protection rapide et droits de la défense ; confidentialité et droit à l'information utile ; pouvoir technique des fondateurs ; fédération et autonomie juridique de chaque collectif ; transparence / protection des données ; impossibilité pratique de garantir un recours interne indépendant dans un petit groupe ; activités futures encore insuffisamment définies pour fixer les règles d'emploi, ERP et mineurs.
+
+**Trois livrables réellement créés et relus sur GitHub `main` :**
+1. **A, note juridique sourcée** : https://github.com/zoutiFrutti/Interstice/blob/main/docs/NOTE_JURIDIQUE_PROTECTION_RECOURS_2026-10-29.md (commit `a18c3c760fc1738a5345dbf857eebed3b6411981`).
+2. **B, proposition pour la Charte V0.4** : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md (commit `f89ae7aba89f13efad6664cc3a30e1dbf014cc49`). Articles 31–35 rédigés et contrôlés ; articles 0–25 hérités et conservés ; articles 26–30 encore **non rédigés**. Références et archives V0.1–V0.3 préservées.
+3. **C, simulations critiques** : https://github.com/zoutiFrutti/Interstice/blob/main/docs/CAS_PRATIQUES_PROTECTION_RECOURS_2026-10-29.md (commit `30a31b89a0815182c09c61c86e3c1e8461f9f755`), trois cas fictifs : personne fondatrice signalée ; accusation en contexte de désaccord politique ; urgence lors d'un événement public.
+
+**Modifications exclues :** aucune modification du Manifeste V2.5, des statuts, du règlement intérieur, des textes adoptés, du site, de Supabase ou des documents d'autres ateliers ; aucune création d'organe disciplinaire, aucun signalement réel, aucune décision sur une personne.
+
+**Travaux restant à accomplir :** valider juridiquement les dispositions selon la forme réelle d'organisation, vérifier les règles contractuelles et régimes sectoriels ; rédiger titres V, VII–IX et articles manquants ; proposer séparément statuts, règlement et protocoles si décidés collectivement ; tester indépendance, confidentialité et faisabilité des recours sur des cas réels anonymisés sans traiter de dossiers personnels dans le Wiki ; synchroniser la mission quotidienne avec la dernière charte V0.4.
+
