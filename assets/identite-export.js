@@ -4,7 +4,9 @@
   const outputs = document.getElementById("export-status");
   const options = {
     "faille": "logo-faille-noire-transparent.svg",
-    "interstice": "logo-interstice-transparent.svg"
+    "interstice": "logo-interstice-transparent.svg",
+    "faille-clair": "logo-faille-noire-fond-clair.svg",
+    "interstice-clair": "logo-interstice-fond-clair.svg"
   };
   const status = (message) => { if (outputs) outputs.textContent = message; };
   const loadImage = (src) => new Promise((resolve, reject) => {
@@ -36,7 +38,7 @@
       const link = document.createElement("a");
       const extension = mime === "image/webp" ? "webp" : "png";
       link.href = url;
-      link.download = "logo-" + name + "-transparent-" + size + "." + extension;
+      link.download = "logo-" + name + (name.endsWith("-clair") ? "-" : "-transparent-") + size + "." + extension;
       document.body.append(link);
       link.click();
       link.remove();
