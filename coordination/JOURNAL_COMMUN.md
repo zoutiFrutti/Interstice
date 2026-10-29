@@ -8,3 +8,11 @@ Articles concernés : féminismes, Commune, autogestion, éducation populaire, �
 Contradiction : organisation centralisée versus autonomie ; égalité proclamée versus exclusions internes ; projet versus réalisation.
 Modifications : proposition et ce journal sur branche de travail uniquement ; manifeste et Wiki public inchangés.
 Suites : dépouiller sources primaires, historiographie contradictoire, droits de reproduction, validation collective.
+
+
+## 2026-10-29 — Approfondissement n° 1 de la revue Mujeres Libres
+Consulté : notice d'archives espagnoles sur le numéro 1, description et étude de Laura Vicente de l'éditorial du premier numéro (mai 1936), repérage des articles du numéro 2 via Leer.es.
+Découvertes : formation, maternité/soins, logement, cinéma dans le premier numéro ; coéducation et profession dans le deuxième. Contradiction : émancipation féminine défendue avec un essentialisme féminin/masculin perceptible dans l'éditorial.
+Sources : https://cgt.es/recordando-que-hace-80-anos-nacio-la-revista-mujeres-libres-mayo-de-1936/ ; https://leer.es/proyectos/las-sinsombrero/materiales-audiovisuales/mujeres-libres/ ; https://www.mcu.es/ccbae/es/publicaciones/verNumero.do?anyo=1936&idPublicacion=226013 .
+Limite : il s'agit d'une lecture de l'analyse critique et de notices, non de la lecture intégrale des articles originaux ; le statut PDM de la notice institutionnelle n'autorise pas à assimiler les éléments éditoriaux tiers à des œuvres libres.
+Modification : enrichissement de la proposition de lecture croisée sur la même branche ; aucune publication sur main.
