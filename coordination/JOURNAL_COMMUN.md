@@ -226,3 +226,7 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 ## 2026-10-29 — Biographies : Dulimbert et Ménand
 
 Deux fiches candidates créées et relues sur la branche : [BIO-021 Joséphine Dulimbert](biographies/BIO-021-Josephine-Dulimbert.md) et [BIO-022 Anne-Marie Ménand](biographies/BIO-022-Anne-Marie-Menand.md). Sources : Michèle Audin, https://www.contretemps.eu/journal-commune-7-mai-1871/ et https://macommunedeparis.com/2024/01/10/communardes-et-bagnardes-3-huit-femmes/ ; musée Carnavalet, photo de Ménand PH19727-43 ; Amies et Amis de la Commune sur les clubs et l'Union des femmes. Éléments : les deux prennent la parole au club Saint-Eustache ; Dulimbert/Dulembert est aussi citée comme rédactrice du Moniteur des Citoyennes ; Ménand/Ménan meurt à la prison d'Auberive le 14 novembre 1872, sans déportation effective en Guyane. Incertitudes : graphies, état civil, sources des accusations judiciaires ; album photographique anti-communard non neutre. Transmission proposée à l'Archiviste et à la Médiathèque pour pièces judiciaires et presse. Aucune fiche Drive ni publication Wiki public.
+
+
+### Diagnostic des écritures — 2026-10-29
+Test de mise à jour du journal commun sur branche de travail. Aucun changement du Wiki public.
