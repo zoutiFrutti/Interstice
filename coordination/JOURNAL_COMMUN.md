@@ -48,3 +48,12 @@ Articles concernés : éducation populaire, médiathèque des communs, autonomie
 Contradictions : accès égal aux ressources versus inégalités matérielles ; refus du diplôme comme privilège versus exigences de sécurité ; réseau ouvert versus prestige et surveillance.
 Modifications : fiche candidate créée sur la branche atelier/lecture-femmes-1871-1936-20261029, journal augmenté ; ni manifeste ni Wiki public changés.
 Travaux restants : approfondir Freire et hooks sur textes primaires et pages vérifiées ; discuter une éventuelle insertion éditoriale après audit des pages existantes.
+
+## 2026-10-29 — Atelier de la médiathèque : Dewey et pédagogie démocratique
+**Sujet** : *Democracy and Education* (1916), chapitres VII et XI, rapproché d'Illich, Freire et bell hooks.
+**Connaissances** : Dewey évalue la démocratie via les intérêts partagés et les interactions libres entre groupes ; l'expérience est éducative lorsqu'on peut relier action et conséquence.
+**Sources** : https://www.gutenberg.org/files/852/852-h/852-h.htm ; https://nagoya.repo.nii.ac.jp/record/2002376/files/nueduca6802_02.pdf .
+**Articles concernés** : pédagogie, éducation populaire, démocratie, autogestion, médiathèque des communs.
+**Contradictions** : école comme institution démocratisable (Dewey) versus critique de son monopole (Illich) ; atelier participatif versus inégalités de temps, maîtrise et matériel.
+**Modifications réelles** : nouvelle fiche candidate sur branche atelier/lecture-femmes-1871-1936-20261029 ; ajout au journal, pas au site public ni au manifeste.
+**Restant** : comparer éditions, lire des critiques, vérifier méthodologies et examiner une intégration sans doublon avec la page Wiki Éducation.
