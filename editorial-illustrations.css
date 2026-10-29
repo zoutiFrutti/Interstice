@@ -1,0 +1,72 @@
+/* Atelier Graphiste · Déclinaisons claires des illustrations Bibliothèque / Wiki.
+   Styles limités à ces deux pages pour éviter les conflits avec la PR n° 18. */
+.editorial-illustration {
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+  gap: clamp(18px, 4vw, 44px);
+  align-items: center;
+  margin: 0 0 45px;
+  padding: clamp(22px, 4.5vw, 44px);
+  background: #E9E5DB;
+  color: #101014;
+  border: none !important;
+  border-radius: 4px;
+}
+.editorial-illustration__content {min-width: 0}
+.editorial-illustration__eyebrow {
+  color: #941825 !important;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.editorial-illustration h2 {
+  color: #101014;
+  font-size: clamp(2rem, 4.3vw, 3rem);
+  letter-spacing: -.025em;
+  line-height: 1.14;
+  margin: 0 0 16px;
+  text-wrap: balance;
+}
+.editorial-illustration p:not(.editorial-illustration__eyebrow) {
+  color: #34302f;
+  margin: 0 0 22px;
+  line-height: 1.55;
+}
+.editorial-illustration__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 11px 16px;
+  border-radius: 3px;
+  background: #941825;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.editorial-illustration__link:hover {background: #6e111b;color:#fff}
+.editorial-illustration__link:focus-visible {outline: 3px solid #101014;outline-offset: 4px}
+.editorial-illustration__picture {margin: 0;min-width: 0}
+.editorial-illustration__picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #a39b90;
+}
+.resource-card, .wiki-card {
+  border-radius: 4px !important;
+  background: #211f22 !important;
+  border-color: #5c5353 !important;
+}
+@media(max-width: 660px) {
+  .editorial-illustration {grid-template-columns: 1fr;margin-bottom: 32px;padding: 22px 18px}
+  .editorial-illustration__picture {max-width: 500px}
+}
+@media(prefers-reduced-motion: reduce) {
+  html {scroll-behavior: auto}
+}
+@media print {
+  .editorial-illustration {background: #fff;color:#101014;border: 1px solid #999 !important;break-inside: avoid}
+  .editorial-illustration__link {background:#fff;color:#101014;border:1px solid #101014}
+}
