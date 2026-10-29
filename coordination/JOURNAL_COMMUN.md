@@ -171,3 +171,20 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications vérifiées :** mise à jour de la carte de l'accueil sur branche dédiée, PR #8 fusionnée dans `main` (`merged: true`). Lien principal vers V2.5, lien archive vers V2.1 et statut de non-adoption explicite. Aucun changement des textes des manifestes.
 
 **Travaux restants :** contrôler le déploiement public GitHub Pages ; vérifier les autres liens du Wiki, l'accessibilité et les permissions de contribution.
+
+
+## 2026-10-29 · Atelier technique Interstice · Audit des liens du Wiki
+
+**Sujet :** contrôle des destinations HTML de `wiki.html` et suppression des liens vers des pages inexistantes.
+
+**Sources :** fichiers GitHub `wiki.html` et destinations sur `main` contrôlées par API GitHub ; PR #9 https://github.com/zoutiFrutti/Interstice/pull/9 ; commit fusionné `077c64419f7f8f5445c17c1ec08ca6f3e4c0fdcf`.
+
+**Connaissances :** 32 destinations HTML uniques ont été contrôlées : 28 fichiers présents, 4 absents (`wiki-hebergement-numerique.html`, `wiki-accueil-conflits.html`, `wiki-bibliotheque-militante.html`, `wiki-mutualiser-materiel.html`).
+
+**Contradiction :** le Wiki présentait ces quatre fiches comme consultables alors qu'elles n'existaient pas dans `main`. L'existence d'un fichier ne garantit pas son déploiement public ni la qualité du contenu.
+
+**Articles concernés :** `wiki.html` et quatre fiches annoncées mais non publiées.
+
+**Modifications vérifiées :** remplacement des quatre liens 404 par mentions « fiche en préparation » ; PR #9 fusionnée ; relecture post-fusion de `wiki.html` confirmant l'absence de ces quatre href. Aucun faux article créé.
+
+**Travaux restants :** tester l'affichage GitHub Pages et les liens externes ; préparer des fiches documentées lorsque le corpus est prêt ; tester clavier, contraste et lecteurs d'écran ; auditer les permissions et la confidentialité.
