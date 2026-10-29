@@ -1,0 +1,42 @@
+# Contribution au journal commun — 2026-10-29 — Atelier Identité graphique
+
+1. **Date :** 29 octobre 2026.
+2. **Atelier :** Identité graphique / ergonomie de lecture.
+3. **Sujet :** Refonte typographique et légère harmonisation des composants du site Interstice.
+4. **Connaissances :** le site utilisait `system-ui` comme police générale. Proposition : Barlow Condensed (titres) et Atkinson Hyperlegible Next (textes courants), contraste ivoire/noir/rouge, marges de lecture et niveaux de titres explicités.
+5. **Sources :** `style.css` du dépôt GitHub `zoutiFrutti/Interstice` sur `main`, spécimens des familles de police Google Fonts, maquettes validées dans la conversation des 28-29 octobre. L'audit est statique, sans test navigateur.
+6. **Articles Wiki concernés :** charte graphique, accessibilité, interface et rédaction Wiki, si des pages correspondantes existent (non vérifié).
+7. **Contradictions :** la proposition CSS charge temporairement les fontes à partir d'un service tiers, ce qui contredit l'objectif d'autonomie et de réduction de requêtes externes. **Ne pas fusionner en production avant auto-hébergement des WOFF2 sous licence compatible et vérification de l'accessibilité**.
+8. **Modification réelle :** fichier `style.css` modifié dans une branche indépendante ; aucun contenu rédactionnel, logo, ni fichier de production `main` changé.
+9. **Restant :** auto-héberger les polices ; essai visuel navigateur sur mobile et ordinateur ; tester contraste, débordement des titres, impression, pages longues et formulaires ; intégrer après validation.
+
+**Coordination :** `coordination/JOURNAL_COMMUN.md` est encore absent de `main` lors de cette passe. Cette contribution autonome doit être intégrée au journal central après fusion ou reprise de la PR #3. Ne pas créer un second journal concurrent.
+
+
+### Suite de la passe : hébergement des polices (29 octobre 2026)
+- **Effectué et vérifié par relecture du fichier GitHub :** retrait de l'import Google Fonts ; Barlow Condensed Bold et Atkinson Hyperlegible Next variable intégrés au début de `style.css` par règles `@font-face` avec données TTF encodées en URI interne, sans requête à un serveur de polices.
+- **Licences conservées :** `assets/fonts/BarlowCondensed-OFL.txt` et `assets/fonts/AtkinsonHyperlegibleNext-OFL.txt`, issus de `google/fonts`.
+- **Limites :** feuille CSS d'environ 305 Ko, polices uniquement en style droit et Barlow uniquement en graisse 700 (les graisses intermédiaires peuvent être simulées). Optimisation recommandée en fichiers WOFF2 séparés, puis sous-ensemble latin avec accents. Tests navigateur, rendu, accessibilité et impression non encore effectués.
+- **Rectification :** l'avertissement précédent sur les requêtes externes est résolu dans la branche à cette date ; il ne justifie plus à lui seul de bloquer la fusion. La décision de fusion dépend désormais des vérifications de rendu et de performance.
+
+
+### Contrôle supplémentaire : cascade CSS (29 octobre 2026)
+- **Anomalie réelle trouvée :** l'ancien `body{font:17px/1.6 system-ui,sans-serif}` figurait *après* la première passe de refonte, et pouvait donc annuler la police de lecture. Les anciens styles de titres et boutons pouvaient également écraser la proposition.
+- **Correction effectuée :** déplacer tout le bloc de surcharge de refonte à la fin de `style.css`, en conservant les déclarations `@font-face` au début.
+- **Vérification effectuée sur la version GitHub mise à jour :** deux `@font-face`, aucun import Google Fonts, règles `body` de la refonte après celles de l'ancienne feuille, licences des deux polices présentes. Pas de contrôle graphique dans un navigateur : les détails de rendu restent à confirmer.
+- **Limite restante :** CSS environ 305 Ko à cause des TTF intégrées ; future extraction en fichiers WOFF2 souhaitable. Vérifier aussi les surcharges inline de chaque page, notamment le manifeste, et l'affichage imprimé.
+
+
+### Passe suivante — ergonomie du site (29 octobre 2026)
+- **Travail réellement commité :** améliorations de `style.css` pour les liens et contrôles (hauteur de cible 44px sur boutons/navigation), focus clavier visible sur formulaires, gestion des retours à la ligne, marges mobiles à 18px, grille de navigation plus compacte, impression lisible en noir sur blanc.
+- **Contrôles statiques vérifiés après écriture :** 2 déclarations `@font-face`, aucune URL Google Fonts, ancien socle CSS avant les surcharges de refonte, nouvelles règles mobile/focus/impression présentes.
+- **Limites :** le CSS pèse environ 306 Ko en texte, dont les fontes TTF encodées. Aucun rendu de navigateur ni audit automatisé WCAG ne s'est exécuté. L'ancien `font:17px/1.6 system-ui` demeure dans les styles historiques mais est surchargé ensuite. `manifeste.html` et `bibliotheque.html` ont des styles internes pouvant modifier le rendu. Il est incorrect d'affirmer que toutes les pages ont été validées visuellement.
+- **Suite conseillée :** tester la branche via capture d'écran desktop/mobile des trois pages cibles, contrôler les contrastes réellement calculés, puis réduire le poids des fontes (WOFF2 auto-hébergé) avant fusion. Aucun changement sur `main`.
+
+
+### Passe complémentaire : cohérence des pages (29 octobre 2026)
+- **Analyse réelle :** lecture des styles HTML intégrés de `manifeste.html` et `bibliotheque.html`, et du CSS commun de la branche.
+- **Modification effective :** nouvelles règles pour `article`, sommaire, notice du manifeste et cartes de bibliothèque ; mise en cohérence des fonds, bordures, rayons ; adaptation `prefers-reduced-motion` pour limiter le défilement animé.
+- **Vérification :** commit de modification enregistré sur la branche, mais pas de test visuel navigateur et pas de mesure des contrastes après rendu.
+- **Optimisation WOFF2 :** recherches effectuées de fichiers WOFF2 en sources libres ; pas de remplacement dans cette passe. Les deux TTF intégrées au CSS restent en place. Ne pas présenter l'optimisation comme réalisée.
+- **Suite :** obtenir des fichiers WOFF2 vérifiés (accents français inclus), les déposer comme binaires dans GitHub et adapter les `@font-face`, puis exécuter des tests réels mobile et ordinateur. Ne pas fusionner la PR en l'absence de contrôles de rendu.
