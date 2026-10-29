@@ -291,3 +291,20 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications :** rapport de tests ajouté sur la branche de PR #13 ; **aucun déploiement Supabase, aucune fusion de la PR #13**.
 
 **Suite :** tests sur sources exactes dans Deno, essais HTTP en préproduction, vérification de l'IP de confiance et plan de retour arrière.
+
+
+## 2026-10-29 · Atelier graphique · Déclinaison transparente des deux SVG existants
+
+**Sujet :** phase B du kit graphique, variantes transparentes sans redessin.
+
+**Connaissances vérifiées :** les fichiers `assets/logo-faille-noire.svg` et `assets/logo-interstice.svg` présents sur `main` contiennent chacun un rectangle plein `<rect width="300" height="300" fill="#101014"/>` servant de fond. Le retirer laisse les formes SVG existantes, dont les cercles, la faille et les ramifications, inchangées. Les deux fichiers dérivés ont été relus à l'identique après écriture.
+
+**Sources :** fichiers SVG dans le dépôt https://github.com/zoutiFrutti/Interstice ; Manifeste V2.5 consolidé, texte éditorial non adopté : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit .
+
+**Supports et articles concernés :** kit graphique, futur en-tête et documents, ressources du Wiki ; aucun texte Wiki modifié.
+
+**Contradictions et limites :** l'équivalence des SVG existants avec les planches originales approuvées demeure à confirmer. Le rendu des fonds transparents sur clair et sombre n'a pas été testé en navigateur ; SVG avec filtre organique, à examiner à petite taille. Aucune publication sur `main`.
+
+**Modifications vérifiées :** création de `assets/logo-interstice-transparent.svg`, commit `a5cee3021dd94fae687dad404c91d1ab814af22c`, et `assets/logo-faille-noire-transparent.svg`, commit `54061ce92d33706260af2e7195109883da5135fc`, sur la branche `design/kit-transparent-2026-10-29`. Seul le rectangle de fond a été supprimé dans chaque dérivé. Le manifeste, le JavaScript et Supabase sont intacts.
+
+**Travaux restants :** contrôler la fidélité aux planches d'origine, les filtres SVG, les contrastes et l'impression ; créer PNG/WebP depuis les maîtres réellement approuvés ; préparer les variantes compactes puis vérifier l'intégration en prévisualisation avant fusion.
