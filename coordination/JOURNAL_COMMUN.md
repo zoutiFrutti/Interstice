@@ -714,3 +714,12 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Modification :** fichier `docs/proposals/wiki-document-handoffs-schema.sql` enrichi avec journal d'événements non public et fonction SQL candidate d'ingestion idempotente, commit `588f42fb1d64f0f35d14cbd6ef8af5406118ed63`. La fonction propose trois résultats : `CREATED`, `UNCHANGED` et `SOURCE_CHANGED_REVIEW_REQUIRED`. La contrainte primaire protège l'unicité de l'identifiant, et le verrouillage ligne protège la vérification de SHA existant. En cas de changement, aucun remplacement automatique du document n'est autorisé.
 
 **Limites de sécurité :** proposition uniquement. Avant exécution, déplacer de préférence la fonction dans un schéma privé, définir le rôle serveur et le circuit d'authentification, vérifier les droits effectifs et tester les opérations concurrentes sur une base isolée. Aucun schéma Supabase n'a été modifié, aucune ingestion SQL réelle ni validation des sources. La relecture du SQL dans GitHub est confirmée, pas son exécution PostgreSQL.
+
+
+## 2026-10-29 — Anarchitecte — Isolation de l'ingestion documentaire
+
+**Audit du SQL candidat :** la version précédente créait une fonction dans `public`, malgré les restrictions prévues. C'était une surface d'exposition inutile. Le schéma a été remplacé par une proposition confinée à `wiki_ingest_private` avec permissions réservées au rôle serveur, sans politique publique, et avec statut technique exclusivement `awaiting_human_review`.
+
+**Changements réels :** SQL candidat modifié sur branche (commit `30d18455c38a64b5ed81bd23d89ec2b5e78f605b`), contrat statique ajouté (commit `d7384467005763cd88e1e14fa974e30ca1fcbc7b`), workflow étendu (commit `070e571a1912d5103ea97c8ff31fc3bf349bee8f`). Unicité documentaire, contrôle de changement de SHA et journal d'événement conservés. Le rôle de service n'a aucune capacité métier d'approbation ou de publication dans ce schéma proposé.
+
+**Limites :** tests PostgreSQL et tests de concurrence non exécutés ; tests Node/CI à confirmer. Le rôle `service_role` doit rester exclusivement côté serveur et l'accès à la fonction privée doit être revu et testé dans un environnement isolé avant migration. Aucune migration ni écriture Supabase, aucune fiche publique.
