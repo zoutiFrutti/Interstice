@@ -291,3 +291,24 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications :** rapport de tests ajouté sur la branche de PR #13 ; **aucun déploiement Supabase, aucune fusion de la PR #13**.
 
 **Suite :** tests sur sources exactes dans Deno, essais HTTP en préproduction, vérification de l'IP de confiance et plan de retour arrière.
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Mandats révocables et responsabilité V0.3
+
+**Sujet étudié.** Suite de la Charte des communs V0.2 : traduction en garanties concrètes du principe V2.5 « La vigilance envers nos propres pouvoirs », particulièrement pour les personnes investies d'une délégation, d'un accès technique ou d'un pouvoir de représentation.
+
+**Documents consultés.** Manifeste V2.5 consolidé (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit, référence éditoriale de travail non adoptée) ; `propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md` ; dernier état du présent journal ; sources officielles ci-dessous. V0.2 conservée comme archive, sans modification.
+
+**Sources juridiques vérifiées.** Service-Public, *Instances dirigeantes d'une association* (vérifié le 14 août 2026), https://www.service-public.gouv.fr/particuliers/vosdroits/F1121 ; Associations.gouv.fr, *Les dirigeants élus de l'association*, https://associations.gouv.fr/les-dirigeants-elus-de-lassociation ; loi du 1er juillet 1901, article 5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030930137 ; Service-Public, *Dommage causé par un dirigeant d'association*, https://www.service-public.gouv.fr/particuliers/vosdroits/F1130 ; Associations.gouv.fr, FAQ sur la représentation en justice, https://associations.gouv.fr/faq . Conditions particulières possibles selon région, régime, agrément ou activité.
+
+**Conclusions et propositions.** Rédaction complète des articles 21 à 25 du Titre IV : 21 mandat explicite et accepté, 22 durée/rotation/non-cumul, 23 révocation et passation, 24 représentation juridique et responsabilités effectives, 25 contrôle indépendant et proportionné. Un mandat interne ne dispense pas des statuts, formalités légales ou obligations contractuelles. Révocation d'une fonction, exclusion disciplinaire et rupture d'un contrat de travail ne sont pas équivalentes. Un administrateur technique ne devient pas dirigeant politique par défaut. Les secrets de sécurité ne doivent pas être publiés au nom de la transparence.
+
+**Contradictions relevées.** La rotation peut compromettre la continuité d'une activité si aucune transmission n'a été préparée ; une révocation peut laisser des accès et pouvoirs envers les tiers en place si les formalités ne suivent pas ; une suspension de sécurité peut être détournée en sanction politique ; la collégialité ne supprime pas la responsabilité réelle ; le contrôle pourrait devenir surveillance abusive. L'articulation avec une personnalité morale et les statuts demeure à construire.
+
+**Articles concernés.** Articles 21–25 rédigés ; cohérence à poursuivre avec 8, 12, 19, 20 et futurs 26–43.
+
+**Modifications réellement effectuées et vérifiées.** Création de la charte de travail V0.3, **non adoptée**, dans `propositions/CHARTE_DES_COMMUNS_V0.3_2026-10-29.md` : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.3_2026-10-29.md . Commit `f37942c37148800471e4a78b5401e9fce0a6a280`, lecture après écriture vérifiant 26 articles intégralement rédigés (numéros 0–25). V0.2, V0.1 et tous les manifestes conservés. Aucun statut, organe, décision collective, déploiement, modification du site ou de Supabase créé par cet atelier.
+
+**Suite.** Tester sur scénarios réels la révocation du détenteur d'un compte bancaire, l'arrêt d'une délégation technique et les conflits d'intérêts. Rédiger articles 26–30 sur propriété, biens, finances, rémunérations, restitution des ressources. Faire relire les modalités de représentation et de responsabilité par un juriste avant toute constitution ou engagement économique. Mettre à jour la référence quotidienne sur V0.3, sans confondre proposition et adoption.
+
