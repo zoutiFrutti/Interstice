@@ -165,3 +165,38 @@ Décision collective/autogestion (pouvoir informel, accès à l'ordre du jour, r
 - Vérifier les détails historiques et chiffres dans les sources primaires des expériences documentées avant insertion d'affirmations datées dans le Wiki.
 - Examiner la ligne de partage entre publication politique du manifeste, dossier de preuves et annexes techniques ; prévoir accès hors ligne et protection des personnes.
 - Soumettre cette contribution à l'atelier central ; fusion dans `main` seulement après contrôle de l'état courant du dépôt et des autres contributions.
+
+---
+
+## Entrée 003 — 2026-10-29 — Atelier manifeste : création de la V2.3 unifiée
+
+### 1–3. Date, atelier et objet
+29 octobre 2026 ; Atelier du manifeste La Faille noire ; reprise éditoriale après audit V2.2, médiathèque et fiches critiques du Wiki Interstice.
+
+### 4. Connaissances retenues et modifications conceptuelles proposées
+- L'égalité de décision ne se réduit pas à la possibilité de voter : il faut vérifier l'accès à l'ordre du jour, aux documents, aux propositions, aux objections et à la révision. L'absence de réaction ne vaut pas consentement automatique.
+- Le droit à un espace personnel et au retrait doit coexister avec la mutualisation et les projets d'habitat partagé (croisement critique FN-049 Woolf, FN-050 Veblen).
+- Le droit à l'alimentation et l'accès effectif aux besoins fondamentaux sont reliés aux piliers 2 et 3, sans créer de neuvième pilier ; les exemples de cantines, caisses alimentaires et coopératives ne sont pas des preuves de supériorité d'un modèle.
+- Les choix techniques précis doivent demeurer révisables ; la maîtrise du serveur ne confère pas un mandat politique.
+
+### 5. Sources consultées au cours du chantier
+- V2.2 : https://docs.google.com/document/d/1Z0ZcFSWunV_u-uOgiZlRUmQXrmO_eZfeXoMzoO7kRjI/edit
+- Médiathèque : https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit
+- Recherches sur la décision collective, l'entraide, la propriété et l'accès réel, détaillées dans les entrées 001 et 002 du présent journal.
+- Texte V2.1 de référence : https://github.com/zoutiFrutti/Interstice/blob/main/manifeste.html
+
+### 6. Wiki concerné (aucune modification)
+Articles et dossiers sur l'autogestion, la décision collective, les droits sociaux, l'alimentation, l'habitat, les communs, le travail, les savoirs et les discriminations.
+
+### 7. Contradictions et limites
+Les désaccords sur autonomie/interdépendance, consensus/pouvoir informel, espace personnel/biens communs, entraide/services publics demeurent ouverts. Les références documentaires ne sont pas toutes des lectures intégrales. Les formulations politiques proposées ne constituent ni démonstrations scientifiques ni décisions adoptées.
+
+### 8. Réalisations vérifiées
+- **Nouveau Google Docs intégral créé** : https://docs.google.com/document/d/1GtqpLRiK9-dDwYja5yP0D2GOvuPiv2r3WZ_uAGSltig/edit
+- V2.3 rédigée comme texte continu, neuf principes et huit piliers conservés. Piliers 1–8 réécrits pour intégrer les approfondissements ; pilier 5 élargi sur intimité et retrait ; IV et partie financière clarifiées en séparant choix politiques et spécifications techniques.
+- Contrôle de relecture par fetch : présence des huit piliers dans l'ordre, nouveau passage sur l'intimité, formule finale V2.3, absence de l'ancienne formule finale V2.1. **Le rendu mobile complet, la comparaison phrase à phrase et l'harmonisation typographique restent à contrôler.**
+- V2.1 publiée sur `main` inchangée ; V2.2 Google Docs inchangée ; V2.3 **document de travail non adopté**. Aucun article Wiki modifié.
+- Présente entrée 003 ajoutée au journal sur la branche `agent/journal-commun-atelier-manifeste-2026-10-29`, non fusionnée à `main`.
+
+### 9. Suite
+Relecture contradictoire complète de la V2.3 ; comparaison détaillée avec V2.1/V2.2 pour vérifier qu'aucun engagement utile n'a été perdu ; améliorer la mise en page et l'accès mobile ; soumettre les choix de fond au débat collectif lorsqu'il existe ; préparer les annexes techniques et les dossiers de sources sans faire passer une proposition pour une norme adoptée.
