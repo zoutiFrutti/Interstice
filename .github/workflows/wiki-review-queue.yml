@@ -1,0 +1,26 @@
+name: Wiki documentary handoff validation
+on:
+  pull_request:
+    paths:
+      - 'coordination/wiki-review-queue/**'
+      - 'scripts/validate-wiki-review-queue.mjs'
+      - '.github/workflows/wiki-review-queue.yml'
+  push:
+    branches:
+      - 'fix/wiki-review-handoff-fn069-2026-10-29'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-documentary-queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate identities, provenance, and non-publication
+        run: node scripts/validate-wiki-review-queue.mjs
