@@ -14,6 +14,7 @@ const testRow={
 const shim=`window.__previewStats={moderator:true,reads:0,decisions:0,signOuts:0};
 window.supabase={createClient:()=>{
   const record=${JSON.stringify(testRow)};
+  window.__moderationTestRow=record;
   const auth={
     getSession:async()=>({data:{session:{access_token:"test-only"}}}),
     signInWithPassword:async()=>({error:null}),
@@ -68,7 +69,18 @@ try {
       open:document.querySelector("#private-preview-dialog")?.open,
       stats:window.__previewStats
     }));
-    console.log("MODERATION_AFTER_WAIT "+JSON.stringify({after,errors}));
+    const direct=await page.evaluate(async()=>{
+      try{
+        const module=await import("/design-system/moderation-preview.mjs");
+        const host=document.createElement("div");
+        document.body.append(host);
+        const result=module.renderModeratorPreview(window.__moderationTestRow,host);
+        const view={result,hasFiche:!!host.querySelector(".fiche-rendue")};
+        host.remove();
+        return view;
+      }catch(e){return {error:String(e.message),stack:String(e.stack).slice(0,750)}}
+    });
+    console.log("MODERATION_AFTER_WAIT "+JSON.stringify({after,errors,direct}));
     throw error;
   }
   const snap=await page.evaluate(()=>{
