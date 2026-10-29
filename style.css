@@ -1,3 +1,8 @@
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/barlow-condensed-latin-ext-700.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/barlow-condensed-latin-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Atkinson Hyperlegible Next";font-style:normal;font-weight:200 800;font-display:swap;src:url("assets/fonts/atkinson-next-latin-ext-variable.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Atkinson Hyperlegible Next";font-style:normal;font-weight:200 800;font-display:swap;src:url("assets/fonts/atkinson-next-latin-variable.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#101418;color:#f1f2f3;font:17px/1.6 system-ui,sans-serif}header,main,footer{max-width:900px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;gap:12px;align-items:center}header strong{letter-spacing:2px;font-size:20px}header strong span,.tag,h1 em{color:#f15a5a}header small{color:#adb6bd;font-size:12px}.hero{padding:65px 0 85px}.tag{font-size:12px;font-weight:800;letter-spacing:2px}h1{font-size:clamp(36px,7vw,70px);line-height:1.12;letter-spacing:-1px}h1 em{font-style:normal}.hero>p:not(.tag){font-size:20px;max-width:670px;color:#c3cbd0}nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}nav a,button{background:#db4242;color:#fff;border:0;border-radius:8px;padding:12px 19px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}section:not(.hero){padding:38px 0 60px;border-top:1px solid #354047}section p{color:#c3cbd0}label{display:block;margin:22px 0 8px;font-weight:650}label small{font-weight:400;color:#adb6bd}textarea,input,select{width:100%;background:#1c242b;color:#fff;border:1px solid #64707a;border-radius:8px;padding:13px;font:inherit}textarea{height:110px;resize:vertical}.warning{font-size:14px;color:#f3c8aa}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:20px;background:#1c242b;border-radius:8px}.proposal{border:1px solid #52606a;border-radius:12px;background:#1a2228;padding:22px;margin:22px 0}.proposal h3{margin:4px 0 8px}.proposal small,.note{color:#aeb9c0}footer{color:#a5abb0;font-size:13px;border-top:1px solid #354047}@media(max-width:600px){header small{max-width:130px;text-align:right}.hero{padding-top:45px}}
 .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}button:disabled{opacity:.55;cursor:wait}
 
@@ -34,3 +39,25 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .brand-lockup--clair .brand-lockup__detail{color:#393437}
 @media(max-width:420px){.brand-lockup{gap:12px}.brand-lockup__mark{width:66px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Direction éditoriale Interstice : lecture d'abord, titres de caractère.
+   Fontes WOFF2 auto-hébergées sous SIL OFL 1.1. Pas de CDN, ni TTF embarqué. */
+:root{--font-reading:"Atkinson Hyperlegible Next",system-ui,sans-serif;--font-display:"Barlow Condensed","Arial Narrow",Impact,sans-serif}
+body{font-family:var(--font-reading);font-size:18px;line-height:1.65}
+h1,h2,h3,h4,header strong,.brand-lockup__name,.brand-caption{
+  font-family:var(--font-display);font-weight:700;line-height:1.15
+}
+h1{font-size:clamp(2.7rem,7vw,5rem);letter-spacing:-.005em;text-wrap:balance}
+h2{font-size:clamp(2rem,4.2vw,3rem);letter-spacing:-.005em;text-wrap:balance}
+h3{font-size:clamp(1.45rem,2.8vw,2rem);letter-spacing:0}
+header strong{font-size:1.6rem;letter-spacing:.065em}
+.brand-lockup__name{font-size:clamp(1.4rem,3vw,2rem)}
+.tag{font-family:var(--font-display);font-weight:700;font-size:.88rem;letter-spacing:.09em}
+nav a,button,.manifesto-link{font-family:var(--font-reading);border-radius:4px;min-height:44px}
+input,textarea,select{font-family:var(--font-reading)}
+article p,article li{line-height:1.75}
+a{text-underline-offset:.18em}
+body,main,section,article{min-width:0}
+@media(max-width:600px){body{font-size:17px}header strong{font-size:1.3rem}h1{font-size:clamp(2.4rem,10vw,4rem)}}
+@media print{body{font-size:11pt;line-height:1.5}article p,article li{line-height:1.5}}
