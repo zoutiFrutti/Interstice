@@ -1,0 +1,346 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/zoutiFrutti/Interstice/blob/main/design-system/fiche.schema.json",
+  "title": "Interstice — fiche structurée V0.1 (proposition, non adoptée)",
+  "description": "Valide la forme du brouillon, jamais la véracité, le consentement, la décision éditoriale ni la permission de publier.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "type",
+    "titre",
+    "resume",
+    "rubrique",
+    "langue",
+    "blocs",
+    "sources",
+    "workflow",
+    "droits",
+    "revision"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]{4,120}$"
+    },
+    "type": {
+      "enum": [
+        "biographie",
+        "lecture",
+        "archive",
+        "article",
+        "bibliographie",
+        "tutoriel"
+      ]
+    },
+    "titre": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 200
+    },
+    "resume": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 3000
+    },
+    "rubrique": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 120
+    },
+    "langue": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 12
+    },
+    "blocs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/bloc"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/notice"
+      },
+      "default": []
+    },
+    "incertitudes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/notice"
+      },
+      "default": []
+    },
+    "workflow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "editorial_status",
+        "publication_status"
+      ],
+      "properties": {
+        "editorial_status": {
+          "enum": [
+            "draft",
+            "pending",
+            "needs_review",
+            "approved",
+            "rejected"
+          ]
+        },
+        "publication_status": {
+          "enum": [
+            "not_published",
+            "published",
+            "archived"
+          ]
+        },
+        "editorial_decision_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publication_authorization_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "published_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "droits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "etat"
+      ],
+      "properties": {
+        "etat": {
+          "enum": [
+            "to_verify",
+            "verified",
+            "restricted"
+          ]
+        },
+        "licence": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "attribution": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "restrictions": {
+          "type": "string",
+          "maxLength": 3000
+        }
+      }
+    },
+    "revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "numero"
+      ],
+      "properties": {
+        "numero": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source_document": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "changements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "bloc": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "texte",
+        "qualification"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 90
+        },
+        "kind": {
+          "enum": [
+            "paragraph",
+            "heading",
+            "list_item",
+            "quote"
+          ]
+        },
+        "texte": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 25000
+        },
+        "qualification": {
+          "enum": [
+            "fait_documente",
+            "analyse",
+            "hypothese",
+            "temoignage",
+            "proposition",
+            "a_verifier"
+          ]
+        },
+        "sources_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "titre",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 90
+        },
+        "titre": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 300
+        },
+        "provenance": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 400
+        },
+        "date": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "edition": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "limites": {
+          "type": "string",
+          "maxLength": 3000
+        }
+      }
+    },
+    "notice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "texte"
+      ],
+      "properties": {
+        "texte": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 3000
+        },
+        "sources_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "attribution": {
+          "type": "string",
+          "maxLength": 300
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "workflow": {
+            "properties": {
+              "publication_status": {
+                "enum": [
+                  "published",
+                  "archived"
+                ]
+              }
+            },
+            "required": [
+              "publication_status"
+            ]
+          }
+        },
+        "required": [
+          "workflow"
+        ]
+      },
+      "then": {
+        "properties": {
+          "workflow": {
+            "required": [
+              "editorial_decision_id",
+              "publication_authorization_id",
+              "published_at"
+            ],
+            "properties": {
+              "editorial_status": {
+                "const": "approved"
+              }
+            }
+          },
+          "droits": {
+            "properties": {
+              "etat": {
+                "const": "verified"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
