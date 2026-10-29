@@ -23,7 +23,7 @@ Deno.serve(async(req:Request)=>{
   const isTestPr=payload.ref===testPr && payload.workflow_ref===REPO+"/.github/workflows/wiki-markdown-inventory.yml@"+testPr && payload.event_name==="pull_request";
   const isTestBranch=payload.ref===testRef && payload.workflow_ref===REPO+"/.github/workflows/wiki-markdown-inventory.yml@"+testRef && payload.event_name==="push";
   if(payload.repository!==REPO||!(payload.ref==="refs/heads/main"&&payload.workflow_ref===workflow || isTestBranch || isTestPr)
-   ||!["push","schedule","workflow_dispatch"].includes(String(payload.event_name)))
+   ||!((["push","schedule","workflow_dispatch"].includes(String(payload.event_name))) || isTestPr))
    return json({error:"claim mismatch"},403);
   const data=await bounded(req);
   if(!Array.isArray(data.items)||data.items.length>20)return json({error:"batch size"},400);
