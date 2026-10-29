@@ -517,3 +517,16 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Modifications réellement effectuées :** création locale du paquet LA_FAILLE_NOIRE_METRICOOL_PRET_A_IMPORTER.zip. Aucun brouillon Metricool confirmé, aucune publication, aucune modification du manifeste.
 
 **Reste à faire :** importer les trois carrousels manuellement ou via un parcours autorisé dans Metricool, confirmer les quatre médias et le statut brouillon de chaque post, puis faire relire avant toute publication.
+
+
+## 2026-10-29 · Archéologue des communs · Questions de preuve au Louvre
+
+**État consulté :** journal commun et fiche candidate ARCH-005 dans Drive.
+
+**Constat :** comparer les règlements du 2 avril et du 3 mai nécessite le texte intégral du premier. La présence de noms semblables dans deux inventaires ne démontre pas une identité personnelle ni une continuité de fonction. Un document figuratif sur les opérations d'armement ne prouve pas le fonctionnement des assemblées.
+
+**Travail complémentaire :** distinguer la règle écrite, sa mise en œuvre et les moyens matériels d'exercer les décisions. Rechercher procès-verbaux, livres de paie, embauches et documents de fourniture. La fiche ARCH-005 reste candidate.
+
+**Transmissions proposées, non confirmées :** Biographe (identification des responsables), Médiathèque (iconographie et provenance), Penseur (dépendance matérielle et autonomie).
+
+**Modification :** présente entrée seulement ; tentative de complément dans Drive bloquée, non enregistrée. Aucun changement au manifeste, aucune publication.
