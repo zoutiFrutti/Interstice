@@ -107,10 +107,24 @@ try {
   await page.screenshot({path:"visual-qa/moderation-apercu-"+view.name+".png",fullPage:false});
   await page.locator("#private-preview-close").click();
   checks.push({name:"Effacement à la fermeture "+view.name,ok:await page.evaluate(()=>!document.querySelector("#private-preview-dialog").open&&!document.querySelector("#private-preview-content").children.length)});
-  await btn.click();
-  await page.locator("#private-preview-dialog[open]").waitFor({state:"visible"});
-  await page.locator("#logout").click();
-  checks.push({name:"Déconnexion nettoie l'aperçu "+view.name,ok:await page.evaluate(()=>!document.querySelector("#private-preview-dialog").open&&!document.querySelector("#private-preview-content").children.length&&!document.querySelector("#queue").children.length&&window.__previewStats.signOuts===1)});
+  if(view.name==="mobile"){
+    await btn.click();
+    await page.locator("#private-preview-dialog[open]").waitFor({state:"visible"});
+    // Une modale native interdit, correctement, de cliquer le bouton en arrière-plan.
+    // Tester la révocation de session dans un autre onglet via l'événement Auth.
+    await page.evaluate(()=>window.__triggerSignOut?.());
+    checks.push({name:"Déconnexion distante efface l'aperçu ouvert",ok:await page.evaluate(()=>
+      !document.querySelector("#private-preview-dialog").open&&
+      !document.querySelector("#private-preview-content").children.length&&
+      !document.querySelector("#queue").children.length)});
+  }else{
+    await page.locator("#logout").click();
+    checks.push({name:"Déconnexion classique efface la file",ok:await page.evaluate(()=>
+      !document.querySelector("#private-preview-dialog").open&&
+      !document.querySelector("#private-preview-content").children.length&&
+      !document.querySelector("#queue").children.length&&
+      window.__previewStats.signOuts===1)});
+  }
   await context.close();
  }
 }finally{await browser.close()}
