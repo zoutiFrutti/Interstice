@@ -101,3 +101,67 @@ Ces intitulés désignent des thèmes de rapprochement : l'existence de pages pa
 6. Demander aux organes collectifs compétents, lorsqu'ils seront constitués, l'examen des modifications des principes et des piliers ; pas de privilège fondateur.
 7. Conserver les prochaines étapes significatives dans ce journal, avec liens, contradictions, statut réel et travail restant.
 
+
+---
+
+## Entrée 002 — 2026-10-29 — Atelier du manifeste : audit contradictoire V2.2, Wiki et médiathèque (passe de 13 h environ)
+
+### 1. Date
+29 octobre 2026.
+
+### 2. Atelier
+La Faille noire — atelier du manifeste, lecture transversale des dossiers du Wiki, médiathèque et travaux des biographies.
+
+### 3. Sujet
+Nouvel audit de fond de la V2.2 après consultation de documents évolutifs postérieurs au premier audit : catalogue FN-049 à FN-052, études de cas de coopération et démocratie, documentation GitHub Wiki, état de la base Supabase et journaux Drive.
+
+### 4. Connaissances effectivement retrouvées
+- Le document Google Docs V2.2 propose une introduction « Pourquoi La Faille noire ? » et les ajouts aux huit piliers, mais présente des redondances par empilement des textes et conserve la mention finale « Fin de la version 2.1 » malgré le titre V2.2 ; anomalie éditoriale vérifiée dans le texte extrait.
+- La Médiathèque compte **au moins des notices numérotées jusqu'à FN-052** au 29 octobre 2026. L'existence d'une notice n'établit ni lecture intégrale ni vérification du film ; le catalogue explicite les niveaux de preuve.
+- FN-049 Virginia Woolf (*A Room of One's Own*, lecture ciblée des chapitres I et VI) : espace personnel et ressources matérielles peuvent conditionner l'autonomie intellectuelle. FN-050 Thorstein Veblen (*The Theory of the Leisure Class*, lectures ciblées II et IV) : concurrence de prestige et consommation ostentatoire. **Tension analytique** : ne pas confondre besoin d'intimité, confort matériel et accumulation de statut ; aucune procédure objective de répartition de logement déduite de ces textes.
+- EXP-001 Freegan Pony, EXP-002 Caisse alimentaire commune Montpellier, EXP-004 Mondragón : distinguer solidarité, gouvernance réelle, dépendances financières et conditions de travail. La fiche de Montpellier cite une évaluation 2025 (période 2022-2024) où 29 % des répondants ne connaissent pas le comité citoyen et 48 % n'ont jamais participé à un événement ; valeurs situées, ni généralisation à toute la population ni preuve causale.
+- EXP-005 Barcelona en Comú / Decidim : fiche candidate rapportant une étude qualitative publiée en 2026 (15 entretiens) sur la tension entre consultation numérique, participation et professionnalisation ; prudence sur la portée.
+- BIO-012 Eugène Varlin / BIO-009 Nathalie Le Mel / ASSO-008 La Marmite / COL-003 Club des prolétaires : coopérations ouvrières, politique des subsistances, participation des femmes et conflits sur la concentration du pouvoir ; fiches candidates, pas démonstration que toute la Commune fut uniformément démocratique.
+- FN-051 *Jamais sans ma visseuse* : film repéré mais non visionné, accès du lecteur en échec, licence CC BY-NC-ND non libre. FN-052 *Sintel* : fiche du fichier CC BY 3.0 contrôlée, film non visionné intégralement. Ces deux exemples renforcent les distinctions accès, réutilisation, droits culturels et expérience de terrain.
+- Le Wiki GitHub `wiki-decision-collective.html` est une introduction provisoire ; méthodes et sources restent à approfondir. La page `wiki-antiracisme-histoires-droits.html` est substantielle mais toujours document de travail, pas validation exhaustive.
+- La méthode `METHODE_EDITORIALE_SOURCES.md` et le registre `WIKI_APPROFONDISSEMENTS.md` indiquent douze chantiers à approfondir et imposent distinction entre faits, témoignages, analyses et hypothèses. Contrôle SQL en lecture sur Supabase projet Interstice `rpqiwxkaiyokmxbhxfvh` : 0 lignes dans `public.wiki_article_submissions` et 0 dans `public.wiki_article_review_log` au moment du contrôle. Ceci ne signifie pas que le Wiki HTML n'a pas de pages.
+- Nouvelle vigilance pour V2.2 : la liberté collective suppose aussi des espaces personnels et le droit au retrait ; la coopération alimentaire engage droits, subsistances et rémunération ; les outils de participation ne doivent pas être confondus avec la délibération.
+
+### 5. Sources et documents réellement consultés
+- V2.2 : https://docs.google.com/document/d/1Z0ZcFSWunV_u-uOgiZlRUmQXrmO_eZfeXoMzoO7kRjI/edit
+- Catalogue Médiathèque : https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit
+- Suivi médiathèque : https://docs.google.com/document/d/1C7raL1dIAxHeXf8Ps7riE2ssQjGQyoAeb6MBg1MA11Q/edit
+- EXP-001 : https://docs.google.com/document/d/1JgNnqon3EqMfDrE1NueCIfm9ECjkYouG9KQReXosqxo/edit
+- EXP-002 : https://docs.google.com/document/d/1jCWq-1OWW3y8GSViWSM26zClzsIhuCr16hDaf1FVxH4/edit
+- EXP-004 : https://docs.google.com/document/d/1qIwYtVa4Sj5xWQTExW4xhI5x7565tin8-G48CoTz834/edit
+- EXP-005 : https://docs.google.com/document/d/1lNF43lEs25htaZZgBpX21Llpz3urbXiI6TalBCPu6yY/edit
+- COL-003 : https://docs.google.com/document/d/1dCYjWceGFmzbR7GSAoK_r5z5OvwmT4j-ZI-NS7R4_LI/edit
+- BIO-012 : https://docs.google.com/document/d/1fAQtq9S9Kfhis9RLwnY5R43t9sacLjo2SRe8-llP72w/edit
+- Atelier biographies, journal : https://docs.google.com/document/d/1IMaA875eGm4am3X-fVBRO8nZaM5KZGeE6o-B-ji3GXo/edit
+- Interstice, journal : https://docs.google.com/document/d/1u69BsgW7qZ7IdI7CZ1dIOgvDISwlIOCgCChDm2slg8Y/edit
+- Wiki, méthode : https://github.com/zoutiFrutti/Interstice/blob/main/METHODE_EDITORIALE_SOURCES.md
+- Wiki, registre des 12 chantiers : https://github.com/zoutiFrutti/Interstice/blob/main/WIKI_APPROFONDISSEMENTS.md
+- Wiki, décider ensemble : https://github.com/zoutiFrutti/Interstice/blob/main/wiki-decision-collective.html
+- Wiki, antiracisme : https://github.com/zoutiFrutti/Interstice/blob/main/wiki-antiracisme-histoires-droits.html
+
+### 6. Dossiers Wiki concernés (propositions de lien, sans écriture dans ces pages)
+Décision collective/autogestion (pouvoir informel, accès à l'ordre du jour, représentation et fonctions techniques) ; capitalisme, classes et travail (propriété et salariat coopératif) ; logement et droit à la ville (espace personnel, protection et partage) ; accès à l'alimentation et solidarités (La Marmite, Freegan Pony, Montpellier) ; histoire des luttes (communes et assemblées) ; création culturelle/licences ; accessibilité et discriminations ; libertés numériques et données.
+
+### 7. Contradictions importantes
+- Un logement ou espace personnel peut être un besoin vital ; ne pas qualifier indistinctement toute demande de confort de consommation statutaire.
+- Le statut démocratique d'une structure ne garantit pas participation réelle : temps, soin, connaissance des règles et décision sur l'ordre du jour.
+- L'autonomie coopérative peut coexister avec direction hiérarchique, salariat non sociétaire ou dépendance aux institutions.
+- L'entraide ne se substitue pas au droit universel à l'alimentation ni aux responsabilités publiques ; le bénévolat n'autorise pas l'épuisement.
+- L'accès gratuit à une œuvre, le droit de la projeter et la possibilité de réutiliser son contenu sont des situations différentes.
+- Manifeste engagé et Wiki descriptif/critiquement sourcé doivent rester distincts : une valeur politique n'est pas une affirmation scientifique.
+- Le statut V2.2 est incohérent avec la formule finale V2.1 ; une harmonisation éditoriale est requise.
+
+### 8. Modifications réellement effectuées
+**Audit documentaire et vérifications de lecture uniquement.** Aucune modification au manifeste V2.1 publié, à la V2.2 Google Docs, aux articles du Wiki, aux tables Supabase ou à la gouvernance. **Seule écriture de cette passe :** ajout de cette entrée 002 au journal `coordination/JOURNAL_COMMUN.md` sur la branche `agent/journal-commun-atelier-manifeste-2026-10-29`. Ne pas prétendre qu'elle a été fusionnée sur `main`.
+
+### 9. À poursuivre
+- Faire une V2.3 éditoriale unifiée, sans doublons, statut cohérent et comparaison traçable ; préserver 9 principes/8 piliers jusqu'à une éventuelle délibération collective.
+- Examiner ajout sur alimentation et droits sociaux (piliers 2/3/5), espace personnel et droit au retrait (pilier 5), gouvernance concrète des coopératives et pouvoirs informels (pilier 6).
+- Vérifier les détails historiques et chiffres dans les sources primaires des expériences documentées avant insertion d'affirmations datées dans le Wiki.
+- Examiner la ligne de partage entre publication politique du manifeste, dossier de preuves et annexes techniques ; prévoir accès hors ligne et protection des personnes.
+- Soumettre cette contribution à l'atelier central ; fusion dans `main` seulement après contrôle de l'état courant du dépôt et des autres contributions.
