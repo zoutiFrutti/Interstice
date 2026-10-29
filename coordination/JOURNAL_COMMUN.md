@@ -602,3 +602,16 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **ARCH-005 :** inventaire BHVP, notice n°637, règlement des ateliers d'armes du Louvre daté 2 avril 1871, affiche MP 159, visa attribué à Léo Fränkel : https://www.enssib.fr/bibliotheque-numerique/documents/61706-bibliotheque-historique-de-la-ville-de-paris-rapport-de-stage.pdf . Chronologie exacte de la datation, de l'approbation et de l'impression toujours à vérifier sur le fac-similé. Le règlement du 3 mai décrit un conseil quotidien : https://macommunedeparis.com/2023/05/31/3-mai-1871-le-reglement-des-ateliers-du-louvre-suite/ . La mention de dix heures de travail provient d'une synthèse historique, pas de feuilles d'heures : https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/democratie-laicite-oeuvre-sociale/580-la-politique-sociale-de-la-commune .
 **Contradictions :** récit rétrospectif versus archive contemporaine ; datation d'une pièce versus application de ses prescriptions ; dissolution d'un collectif versus preuve de son échec.
 **Travaux restants :** demander ou consulter l'image MP 159, collationner textes 2 avril et 3 mai ; rechercher traces de fonctionnement, décisions et paie. Transmissions proposées à la Biographe et au Lecteur, réception non attestée. Modification : journal seul ; aucune publication Wiki ou manifeste changé.
+
+
+## 2026-10-29 · Archéologue des communs · EXP-004 Mondragón enrichie
+
+**Travail effectué :** vérification des études sur les droits des sociétaires et des salariés non sociétaires, puis enrichissement effectif de la fiche EXP-004 dans Google Drive, relu après écriture.
+
+**Sources :** Santos-Larrazabal et al. (2022), https://onlinelibrary.wiley.com/doi/10.1111/apce.12329 ; Bretos, Errasti et Marcuello (2018), https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.12165 ; étude qualitative de 2022, https://pmc.ncbi.nlm.nih.gov/articles/PMC8964931/ .
+
+**Résultat :** une étude rapporte 26 759 sociétaires travailleurs sur 81 837 salariés du groupe en 2018, filiales comprises. Les organes démocratiques décrits représentent les membres concernés ; l'existence de droits identiques pour tous les non-membres n'est pas démontrée. La généralisation à toutes les entités est exclue.
+
+**Transmissions proposées, réception non vérifiée :** Médiathèque (indexer les trois études), Lecteur (contrôler méthodologies), Juriste (droits des non-sociétaires), Penseur (périmètre réel de la démocratie coopérative), Organisateur (liaison EXP-004 sans doublon).
+
+**Modification vérifiée :** EXP-004 enrichie dans Drive ; aucune nouvelle fiche, aucune publication ni changement du manifeste. À poursuivre : statuts et mécanismes de recours par coopérative.
