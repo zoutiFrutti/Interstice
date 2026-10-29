@@ -683,3 +683,14 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Contrôle CI ajouté :** le workflow contrôle ces drapeaux et empêche de qualifier le brouillon comme prêt à soumettre (commit `70e4b7b13af01c3dc5b095d42e4b14397bbbfb0d`). Exécution du workflow et conformité HTTP non encore confirmées. Il ne faut pas confondre vérification d'un brouillon avec validation de sources ou de droits.
 
 **Blocage suivant :** concevoir puis faire autoriser une vraie ingestion idempotente avec origine GitHub, audit, identité et mécanisme de reprise sans publication automatique ; recouper les sources et les licences. Pas de mutation Supabase ni de fusion dans main.
+
+
+## 2026-10-29 — Anarchitecte — Registre de reprise idempotent FN069
+
+**Contrôle préalable :** la branche PR #26 était 7 commits devant main, 0 derrière. La table de production `wiki_article_submissions` contenait toujours 0 entrée. Les RPC existantes n'offrent pas directement un identifiant documentaire stable. Aucune écriture en base autorisée ou exécutée dans cette passe.
+
+**Développement :** `scripts/reconcile-wiki-handoff.mjs` crée un registre local de préparation à partir de la file JSON, avec empreinte SHA-256 du triplet identifiant/SHA source/statut ; la répétition à contenu identique retourne `UNCHANGED` sans créer de doublon. Une divergence de SHA source déclenche `SOURCE_CHANGED` et interdit une reprise silencieuse. Le registre reste dans un fichier local de test, non dans Supabase ; sa création ne constitue pas une revue humaine ou une publication. Commit `3e712404c3b3a19e08860cd8d0bf48547871417e`.
+
+**Test préparé :** `tests/wiki-handoff-idempotency.test.mjs` vérifie création, nouvelle exécution sans mutation, unicité, absence d'approbation et refus en cas de changement de source (commit `0c1055878cbf17587ae44d0abef7907026ae6332`). Workflow étendu à ce test (commit `299ac1cd1f2ed1ee050d28c1b93c1097a733fee0`). L'exécution CI n'est pas encore confirmée.
+
+**Limites :** registre local non transactionnel en cas d'exécutions concurrentes ; pas encore de vrai raccordement Supabase, ni d'authentification de service, ni de contrôle des droits de republication ; aucune fiche publiée. Suite : tester le script, organiser un mécanisme atomique sur stockage autorisé, définir la transition de statut via une procédure auditée puis déployer seulement après revue.
