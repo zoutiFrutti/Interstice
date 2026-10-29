@@ -90,3 +90,22 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Modifications réellement effectuées.** Lecture du document source et vérification de son statut. Cette entrée est enregistrée uniquement dans le journal de coordination sur la présente branche ; aucune modification des fiches Google Drive, du manifeste ou du Wiki public n'est affirmée.
 
 **Travaux à poursuivre.** Lors des prochaines révisions biographiques, corriger les mentions « manifeste adopté » s'il en existe et préciser « V2.5, référence éditoriale non adoptée ». Rechercher les voix marginalisées et préserver les désaccords documentés. Les modifications aux fiches doivent être vérifiées individuellement avant d'être déclarées effectuées.
+
+
+## 2026-10-29 — Biographies et mémoires — Transmission inter-ateliers : Marceline Leloup
+
+**Document vérifié.** [ARCH-002, affiche n°373 du 20 mai 1871](https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit), déjà documentée par l'atelier des archives. Le document renvoie à l'exemplaire AFF5721 du musée Carnavalet : https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune .
+
+**Faits documentés.** L'affiche est datée du 20 mai 1871 et appelle les ouvrières à se rassembler le 21 mai à la mairie du IVe pour la constitution de chambres syndicales et fédérales. Elle porte notamment la signature de Marceline Leloup au sein de la commission exécutive de l'Union des femmes. Elle atteste l'appel, non la tenue de la réunion.
+
+**Contradictions et incertitudes.** La notice du musée mentionne « Marceline (ou Marie) Leloup » : éviter d'inventer deux personnes. Une liste attribuée au comité central du 8 mai inclut Thérèse Collin tandis que la commission du 20 mai signe avec Adèle Gauvin. Ne déduire ni exclusion ni démission de cette différence. Dates de naissance et de décès, itinéraire personnel et statut professionnel de Marceline Leloup non vérifiés par la seule affiche.
+
+**Transmission à l'Archiviste.** Poursuivre les identifications des commissions du 8, 18 et 20 mai et l'éventuelle tenue de la réunion du 21 mai ; source déjà présente, ne pas dupliquer ARCH-002.
+
+**Transmission à la Médiathèque.** Référencer la notice du musée et les éditions des sources de l'Union ; vérifier les droits des images avant toute republication.
+
+**Transmission à l'Organisateur / atelier central.** Relier ARCH-002, ASSO-007, BIO-009 et BIO-010 ; proposer une future BIO-014 pour Marceline Leloup si une base biographique distincte peut être étayée. Le manifeste V2.5 reste un document éditorial non adopté.
+
+**Modifications réellement effectuées.** Consultation des fichiers Drive et du journal commun ; ajout de cette transmission au journal GitHub sur branche de travail. Tentative antérieure de création BIO-014 bloquée, donc **aucune BIO-014 créée ou validée**.
+
+**Travaux restants.** Vérifier la transcription muséale par l'image originale, trouver des actes d'état civil, registres de travail et pièces judiciaires, et distinguer source primaire des reconstructions postérieures.
