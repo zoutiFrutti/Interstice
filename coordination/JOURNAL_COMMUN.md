@@ -340,3 +340,25 @@ Ces intitulés désignent des thèmes de rapprochement : l'existence de pages pa
 **Modifications GitHub de cette entrée :** création du présent fichier sur branche de travail `atelier-lecture/journal-commun-2026-10-29` ; sous réserve de vérification après écriture. Aucune modification directe de `main`.
 
 **Suivi atelier central : contribution retrouvée sur `atelier-lecture/journal-commun-2026-10-29` ; assertions et fichiers Drive non tous revérifiés indépendamment, intégration Wiki non décidée.**
+
+---
+
+## 2026-10-29 · Atelier central · Passe 2 : consolidation et contrôle ciblé de navigation
+
+**Sujet :** recensement des contributions concurrentes et audit des fichiers pointés par `wiki.html`.
+
+**Découvertes :** quatre branches nouvelles contenaient des journaux autonomes (manifeste, biographies, lecture critique, communication), ajoutés en intégralité au présent journal. Les contributions sont des travaux documentaires, non une validation indépendante de toutes les sources ou des pièces Google Drive. `coordination/JOURNAL_COMMUN.md` demeure absent sur `main` lors de cette passe.
+
+**Audit :** 28 liens de `wiki.html` ont été vérifiés côté dépôt (12 dans un premier lot, 16 dans un second). Quatre fichiers manquent sur `main` : `wiki-hebergement-numerique.html`, `wiki-accueil-conflits.html`, `wiki-bibliotheque-militante.html`, `wiki-mutualiser-materiel.html`. Les autres chemins du périmètre contrôlé existent. Ceci n'est ni un test du site déployé, ni une vérification exhaustive des autres pages, ni un audit des liens externes.
+
+**Sources :** fichiers sur `main` consultés via GitHub ; branches `agent/journal-commun-atelier-manifeste-2026-10-29`, `agent/journal-commun-biographies-2026-10-29`, `atelier/communication-journal-2026-10-29`, `atelier-lecture/journal-commun-2026-10-29`.
+
+**Articles concernés :** index `wiki.html` et quatre dossiers annoncés sans fichier ; croisements futurs vers gouvernance, histoire, égalité, culture et communs.
+
+**Contradictions :** les liens de navigation présentaient des fiches comme consultables alors qu'elles n'existaient pas. L'absence de `JOURNAL_COMMUN.md` sur `main` provoque plusieurs versions concurrentes du même fichier.
+
+**Modifications réellement effectuées :** quatre ancres vers des pages absentes remplacées par des intitulés non cliquables « fiche en préparation » dans `wiki.html` sur la branche centrale. Commit `c9fc2ed5550ef39bcdaa25a5e435b8da5bb9a8f4`. Vérification par relecture GitHub : aucune des quatre destinations n'est encore présente comme `href` sur cette branche. Aucune fusion ou publication sur `main`.
+
+**Suites :** reconstituer les quatre fiches avec sources et revue éditoriale ; vérifier le reste du site, les liens externes et l'accessibilité ; proposer une PR de consolidation sans écraser une contribution récente. Vérifier indépendamment les documents sources signalés par les ateliers.
+
+**État : ENREGISTRÉ sur branche, TESTÉ par relecture du fichier ; non intégré à `main`, non testé sur le site public.**
