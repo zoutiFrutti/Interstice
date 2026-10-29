@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Lire, apprendre et transmettre</title><desc id="desc">Illustration originale sans visage : un livre ouvert, des livres reliés, un crayon et un réseau de points rouges.</desc>
+<defs><pattern id="grain" width="29" height="29" patternUnits="userSpaceOnUse"><circle cx="3" cy="7" r=".85" fill="#101014" opacity=".19"/><path d="M18 25h3" stroke="#101014" opacity=".13"/></pattern></defs>
+<rect width="960" height="560" fill="#E9E5DB"/><rect width="960" height="560" fill="url(#grain)"/>
+<path d="M26 76V26h55M879 534h55v-54" fill="none" stroke="#C5212C" stroke-width="5"/><g stroke="#101014" stroke-linejoin="round" stroke-linecap="round">
+  <g transform="translate(96 304)">
+    <rect x="0" y="80" width="270" height="49" rx="7" fill="#C5212C" stroke-width="8"/>
+    <path d="M28 91h206M28 119h206" stroke="#E9E5DB" stroke-width="3"/>
+    <rect x="22" y="25" width="270" height="49" rx="6" fill="#FBF8EF" stroke-width="8"/>
+    <path d="M40 33V67M254 33V67" stroke-width="3"/>
+    <rect x="69" y="-27" width="228" height="46" rx="5" fill="#101014" stroke-width="6"/>
+    <path d="M95 -6h158" stroke="#E9E5DB" stroke-width="3"/>
+  </g>
+  <g transform="translate(347 141)">
+    <path d="M0 68c62-25 129-20 193 17v242c-66-41-132-43-193-17z" fill="#F9F6EE" stroke-width="10"/>
+    <path d="M193 85c61-37 130-42 193-17v242c-65-26-127-24-193 17z" fill="#F9F6EE" stroke-width="10"/>
+    <path d="M193 84v241" fill="none" stroke="#C5212C" stroke-width="8"/>
+    <path d="M32 111c38-10 82-4 128 12M32 145c42-8 85-2 128 13M32 179c42-8 85-2 128 12M32 213c37-8 77-2 128 14M225 124c44-19 90-23 127-14M225 158c43-17 88-21 127-13M225 192c43-17 88-21 127-13M225 227c39-18 84-19 127-12" fill="none" stroke-width="4" opacity=".58"/>
+    <path d="M35 273c40-6 77 0 126 16M222 286c44-16 90-19 132-14" fill="none" stroke-width="3" opacity=".4"/>
+  </g>
+  <g transform="translate(746 154) rotate(-24)">
+    <path d="M-19 4h38v167l-19 38-19-38z" fill="#C5212C" stroke-width="8"/>
+    <path d="M-19 165h38M-6 13v140" stroke="#E9E5DB" stroke-width="3"/>
+    <path d="M-19 4v-22c0-12 38-12 38 0V4" fill="#101014" stroke-width="7"/>
+  </g>
+</g>
+<g stroke="#C5212C" fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M207 243L293 158L383 177L502 116L626 129L747 84"/>
+ <path d="M383 177L405 275M626 129L690 231L819 260M502 116L532 65"/>
+ <path d="M611 476L738 445L836 483"/>
+</g>
+<g fill="#C5212C">
+ <circle cx="207" cy="243" r="10"/><circle cx="293" cy="158" r="8"/><circle cx="383" cy="177" r="12"/><circle cx="502" cy="116" r="10"/>
+ <circle cx="626" cy="129" r="9"/><circle cx="747" cy="84" r="8"/><circle cx="405" cy="275" r="7"/><circle cx="690" cy="231" r="9"/><circle cx="819" cy="260" r="11"/><circle cx="532" cy="65" r="7"/><circle cx="611" cy="476" r="8"/><circle cx="738" cy="445" r="11"/><circle cx="836" cy="483" r="7"/>
+</g></svg>
