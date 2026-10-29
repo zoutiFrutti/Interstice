@@ -28,7 +28,8 @@ Deno.serve(async req=>{
   let parsed;try{parsed=new URL(url);if(!["https:","http:"].includes(parsed.protocol)||parsed.username||parsed.password)throw Error();}catch{return answer(400,{error:"Adresse web invalide."});}
   if(/(?:@|(?:\+33|0)[ .-]?[1-9](?:[ .-]?[0-9]{2}){4})/.test(title+" "+description))return answer(400,{error:"Ne transmets pas de coordonnées personnelles."});
   const db=createClient(Deno.env.get("SUPABASE_URL")!,Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
-  const ip=req.headers.get("cf-connecting-ip")||req.headers.get("x-forwarded-for")?.split(",")[0];\n  if(!ip)return answer(503,{error:"Vérification anti-abus indisponible."});
+  const ip=req.headers.get("cf-connecting-ip")||req.headers.get("x-forwarded-for")?.split(",")[0];
+  if(!ip)return answer(503,{error:"Vérification anti-abus indisponible."});
   const secret=Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
   const bytes=new TextEncoder().encode(secret+":resource:"+ip);
   const digest=await crypto.subtle.digest("SHA-256",bytes);
