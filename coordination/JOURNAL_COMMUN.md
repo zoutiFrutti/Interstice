@@ -519,6 +519,18 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Reste à faire :** importer les trois carrousels manuellement ou via un parcours autorisé dans Metricool, confirmer les quatre médias et le statut brouillon de chaque post, puis faire relire avant toute publication.
 
 
+## 2026-10-29 · Archéologue des communs · Questions de preuve au Louvre
+
+**État consulté :** journal commun et fiche candidate ARCH-005 dans Drive.
+
+**Constat :** comparer les règlements du 2 avril et du 3 mai nécessite le texte intégral du premier. La présence de noms semblables dans deux inventaires ne démontre pas une identité personnelle ni une continuité de fonction. Un document figuratif sur les opérations d'armement ne prouve pas le fonctionnement des assemblées.
+
+**Travail complémentaire :** distinguer la règle écrite, sa mise en œuvre et les moyens matériels d'exercer les décisions. Rechercher procès-verbaux, livres de paie, embauches et documents de fourniture. La fiche ARCH-005 reste candidate.
+
+**Transmissions proposées, non confirmées :** Biographe (identification des responsables), Médiathèque (iconographie et provenance), Penseur (dépendance matérielle et autonomie).
+
+**Modification :** présente entrée seulement ; tentative de complément dans Drive bloquée, non enregistrée. Aucun changement au manifeste, aucune publication.
+
 ## 2026-10-29 — Atelier Graphiste et Intégrateur — Kit graphique consolidé et variante fond clair
 
 **Sujet :** récupérer le kit depuis l'ancienne branche divergente et proposer une déclinaison lisible sur fond ivoire, sans redessiner les logos maîtres.
@@ -551,3 +563,22 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Contrôles effectués :** chaque fichier créé ou modifié relu depuis GitHub ; trois images SVG conservées à l'identique ; chaque page contient une occurrence du composant, un lien CSS valide et un SVG existant dans la branche ; vérification statique des identifiants uniques et des cibles d'ancres locales, absence d'ancres cassées ; nombre de balises `<script>` et de formulaires inchangé sur chaque page. Palette CSS calculée : noir/ivoire 15,09:1 ; texte courant/ivoire 10,37:1 ; texte blanc/bouton rouge sombre 8,69:1 ; accent/ivoire 6,91:1. Pas de contrôle visuel des pages complètes dans un navigateur, ni de test E2E JavaScript, ni de test avec lecteur d'écran.
 
 **Contradictions et suites :** conserver une interface accessible et accueillante sans saturer les écrans de rouge/noir ; le réseau du logo Interstice reste limité par son clip SVG d'origine. Éviter de fusionner les PR #18/#19 en plus de #22 : elles sont désormais des références historiques à rapprocher de cette consolidation. Vérifier le rendu réel mobile/desktop, tester les parcours formulaires et navigation, intégrer ensuite la typographie optimisée de #5 sur `main` récent et coordonner l'accessibilité de la V2.5 (PR #14). Ne pas assimiler la création d'une branche à une publication.
+
+## 2026-10-29 — Atelier Graphiste / Intégrateur — Typographie libre optimisée
+
+**Sujet :** reprendre la PR #5 dans la branche consolidée #22, sans transporter son CSS TTF de 307 Ko ni ses commits anciens.
+
+**Sources :** `main` et `design/kit-graphique-consolide-2026-10-29` (GitHub), CSS de la branche `atelier-typo-site-2026-10-29`, polices WOFF2 de `fontsource/font-files`, notices OFL 1.1, Manifeste V2.5 (référence éditoriale non adoptée).
+
+**Constats et décisions graphiques :** Barlow Condensed Bold pour les titres et la marque ; Atkinson Hyperlegible Next (variable 200–800) pour les textes, formulaires et boutons. Garder des alternatives système si les polices ne chargent pas. Le site doit être lisible sans utiliser de serveur de fontes tiers.
+
+**Modifications réellement effectuées :** quatre WOFF2 locaux déposés comme objets Git binaires (Latin et Latin étendu pour chacune des familles), deux notices de licence dans `assets/fonts/`, documentation de provenance `assets/fonts/README.md` ; `style.css` complété de quatre règles `@font-face`, priorité de fonte corrigée par surcharge **après** l'ancienne règle `system-ui`, titres hiérarchisés, corps 18 px (17 px mobile), contrôles et texte long conservés. Les logos, illustrations, scripts JavaScript, formulaires et Supabase n'ont pas été touchés dans cette passe.
+
+**Vérifications :** identités SHA Git des quatre WOFF2 confirmées entre source Fontsource et destination ; en-têtes `wOF2` et tailles internes égales aux tailles des fichiers : 22 444 + 14 640 + 33 996 + 19 092 = **90 172 octets**. Feuille CSS principale ~7,7 Ko au lieu de l'ancienne proposition ~307 Ko ; quatre URLs de police présentes, aucun appel `fonts.googleapis.com`, `fonts.gstatic.com` ou CDN. Cinq pages inspectées (accueil, bibliothèque, Wiki, manifeste V2.5, participation) chargent `style.css`, sans surcharges locales des familles. Contrôle statique, **pas de test de rendu de fontes dans un vrai navigateur**.
+
+**Contradictions :** ancienne PR #5 contient encore son prototype TTF/inline et doit rester une archive de travail tant que la nouvelle version n'est pas fusionnée. Le site public sur `main` conserve encore sa police système.
+
+**Wiki concerné :** documentation de l'identité visuelle et de l'accessibilité, sans créer d'article encyclopédique.
+
+**Suites :** tester en navigateur réel ordinateur/mobile, contraste et débordement typographiques, temps de chargement et cache ; coordonner PR #14 (balisage du manifeste) avant fusion de #22 ; conserver historique des branches et versions non adoptées.
+
