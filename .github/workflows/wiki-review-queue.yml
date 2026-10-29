@@ -7,6 +7,8 @@ on:
       - 'scripts/prepare-wiki-review-draft.mjs'
       - 'scripts/reconcile-wiki-handoff.mjs'
       - 'tests/wiki-handoff-idempotency.test.mjs'
+      - 'tests/wiki-handoff-sql-contract.test.mjs'
+      - 'docs/proposals/wiki-document-handoffs-schema.sql'
       - '.github/workflows/wiki-review-queue.yml'
   push:
     branches:
@@ -25,6 +27,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Check proposed SQL privacy contract
+        run: node --test tests/wiki-handoff-sql-contract.test.mjs
       - name: Test idempotent handoff and source revision protection
         run: node --test tests/wiki-handoff-idempotency.test.mjs
       - name: Validate identities, provenance, and non-publication
