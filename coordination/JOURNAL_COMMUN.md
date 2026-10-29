@@ -342,3 +342,18 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications réellement effectuées :** nouveau `assets/identite-export.js` (commit `e7d403bf16b12cfedf98c322a59dff4e523fce1e`), mise à jour de `assets/identite-preview.html` avec choix PNG/WebP en 64, 256, 512, 1024 pixels (commit `3a34cbb8ae19005314ad88f905b20c1a08ee8eff`), styles accessibles dans `assets/identite-preview.css` (commit `be67e186e35aad907c37534210b4522f86ac0add`). Trois relectures GitHub ont confirmé les contenus écrits. Aucun changement de `main`, aucun déploiement public ni aucune modification politique ou Supabase.
 
 **Travaux restants :** tester physiquement le rendu et les exports (PNG/WebP et vraie transparence) sur navigateurs et téléphone ; comparer avec les planches initiales ; contrôler la lisibilité en 32 px ; publier seulement après validation et intégration atomique.
+
+
+## 2026-10-29 · Atelier graphique · Première intégration Wiki sur branche isolée
+
+**Sujet et sources :** identité graphique réutilisable dans le Wiki ; fichiers réels `style.css`, `wiki.html`, `assets/logo-interstice.svg`, journal commun sur la branche `design/kit-transparent-2026-10-29`. Référence éditoriale du manifeste : V2.5 consolidée, non adoptée.
+
+**Connaissances :** le Wiki utilisait déjà le logo en pseudo-élément d'en-tête via CSS partagé et un favicon SVG. Une image SVG explicite dans le bandeau du Wiki permet de fournir un texte alternatif et une mise en page modulaire. Les classes CSS `brand-lockup` évitent la duplication stylistique sur les autres pages.
+
+**Articles/supports concernés :** `wiki.html` (bandeau uniquement) et `style.css` ; les fiches Wiki et leurs contenus ne changent pas.
+
+**Contradictions/incertitudes :** le bandeau ajoute une deuxième occurrence visible du logo (le premier est déjà en en-tête) : vérifier la hiérarchie visuelle et l'encombrement mobile avant fusion. Rendu navigateur, contraste et technologies d'assistance non testés dans cette passe. Correspondance des SVG avec planches maîtresses originales toujours à confirmer.
+
+**Modifications réellement effectuées :** `style.css` enrichi d'un composant `brand-lockup` et d'une règle de réduction du mouvement, commit `9b1144228f4a6e57c90c76f386755bcd8f0aa18f`; `wiki.html` enrichi d'un bloc visuel avec logo existant et texte alternatif, commit `58547bebcf68ec92487b1217f10abf5db41abd91`. Contenus relus après écriture et correspondance textuelle confirmée. Aucun script, formulaire, texte politique ou permission changé. Aucun déploiement sur `main`.
+
+**Reste :** tester le rendu mobile et clavier, confronter aux maîtres approuvés, décider si la double apparition du symbole est souhaitable, puis étendre aux autres supports seulement après validation technique.
