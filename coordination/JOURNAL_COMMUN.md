@@ -517,3 +517,37 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Modifications réellement effectuées :** création locale du paquet LA_FAILLE_NOIRE_METRICOOL_PRET_A_IMPORTER.zip. Aucun brouillon Metricool confirmé, aucune publication, aucune modification du manifeste.
 
 **Reste à faire :** importer les trois carrousels manuellement ou via un parcours autorisé dans Metricool, confirmer les quatre médias et le statut brouillon de chaque post, puis faire relire avant toute publication.
+
+
+## 2026-10-29 — Atelier Graphiste et Intégrateur — Kit graphique consolidé et variante fond clair
+
+**Sujet :** récupérer le kit depuis l'ancienne branche divergente et proposer une déclinaison lisible sur fond ivoire, sans redessiner les logos maîtres.
+
+**Sources :** dépôt `zoutiFrutti/Interstice`, `main` vérifiée, branche `design/reprise-kit-graphique-2026-10-29`, PR #20, SVG maîtres, fichiers `assets/identite-preview.html`, `assets/identite-export.js`, `style.css`, `wiki.html`, Manifeste V2.5 consolidé (référence éditoriale non adoptée), planche de direction artistique validée en conversation.
+
+**Constats :** la PR #20 accusait 13 commits de retard sur `main` au début de la passe. Les SVG transparents existants gardent les dessins d'origine, mais le blanc cassé se détache mal sur un fond ivoire. Le réseau d'Interstice est toujours contenu dans le cercle par `clipPath` : écart déjà relevé avec les maquettes, pas de correction improvisée.
+
+**Modifications réellement enregistrées :** nouvelle branche `design/kit-graphique-consolide-2026-10-29` issue du `main` vérifié ; reprise des cinq assets de la PR #20 et de sa notice ; création des deux variantes `assets/logo-faille-noire-fond-clair.svg` et `assets/logo-interstice-fond-clair.svg` par insertion d'un seul cercle noir de soutien, sans modification des éléments originaux ; extension de la planche d'aperçu et de l'exporteur PNG/WebP à ces variantes ; nouveau composant `brand-lockup--clair` dans `style.css`, bandeau du Wiki rendu sur fond ivoire avec logo adapté. Les articles, formulaires, scripts de données, Supabase et le texte politique du manifeste sont inchangés.
+
+**Contrôles réels :** relecture des fichiers modifiés sur GitHub ; empreintes de blobs Git des deux variantes et de l'exporteur comparées à leur copie locale, toutes identiques. Test Chromium d'un **composant isolé**, pas du site publié, à 390 × 844 et 1280 × 800 : image chargée, pas de débordement horizontal. Les 16 sorties raster supplémentaires (PNG/WebP, quatre tailles) ont été extraites de `canvas.toBlob` sous Chromium et ouvertes, dimensions et transparence conformes. Archive ZIP de travail locale produite et testée, non commitée. L'événement de téléchargement et la navigation sur une URL locale étaient bloqués dans le banc d'essai ; aucun test bout-en-bout de la page GitHub Pages n'est donc revendiqué.
+
+**Contradictions :** la variante sombre sur fond ivoire améliore le contraste mais est une **proposition de déclinaison**, pas une modification officielle des logos. La répartition visuelle des surfaces claires doit être coordonnée avec la PR #19 (Wiki illustré) afin d'éviter de multiplier les blocs ivoire sans nécessité. Conserver les archives et le statut non adopté du manifeste V2.5.
+
+**Articles Wiki concernés :** guide de l'identité graphique et documentation d'accessibilité, si ces contenus existent ; pas de création d'article encyclopédique automatique.
+
+**Restant :** revue esthétique de la variante ; tests visuels du **site complet** en navigation réelle, tests clavier et lecteur d'écran, vérification Safari/Firefox, réconciliation des PR #5, #14, #18, #19 et #20 avant fusion/publication. Aucun merge ni déploiement public n'est effectué par cet atelier à ce stade.
+
+
+## 2026-10-29 — Graphiste / Intégrateur graphique — Consolidation des illustrations de l'accueil, de la bibliothèque et du Wiki
+
+**Sujet :** réutiliser les illustrations et la direction ivoire des PR #18 et #19 sur la branche de kit consolidé `design/kit-graphique-consolide-2026-10-29` (PR #22), sans répéter les CSS ni modifier le contenu éditorial.
+
+**Sources :** `main` actuel de `zoutiFrutti/Interstice`, PR #18 `atelier-da-illustrations-ivoire-2026-10-29`, PR #19 `atelier-da-bibliotheque-wiki-illustrations-2026-10-29`, kit graphique de la PR #22, Manifeste V2.5 consolidé (référence éditoriale, **non adopté collectivement**).
+
+**Constats :** les trois illustrations d'origine sont des SVG autonomes, avec titre et description, sans visage. L'accueil, la bibliothèque et le Wiki manquent encore sur `main` de blocs éditoriaux clairs. Les feuilles originales des PR #18 et #19 recouvrent largement le même style et sont réunies en un seul composant CSS `editorial-illustration`. La police système reste sur `main` ; le chantier typographique PR #5 demeure distinct.
+
+**Modifications réellement commitées :** copies **exactes** des trois SVG `assets/illustration-reparer-transmettre.svg`, `assets/illustration-bibliotheque-savoirs.svg`, `assets/illustration-wiki-sources.svg` (SHA de blob identiques à la source). Ajout de `editorial-illustrations.css` pour une mise en page ivoire commune et accessible. Mise à jour ciblée de `index.html`, `bibliotheque.html`, `wiki.html` avec un panneau illustré par page et une feuille CSS liée ; le lien « Lire le manifeste » dans la bibliothèque pointe désormais vers `manifeste-v2-5.html` sans supprimer l'archive V2.1. `style.css` et le manifeste n'ont pas été modifiés pendant cette passe, ni les JS ou la base Supabase. **Tout reste en branche, aucune publication.**
+
+**Contrôles effectués :** chaque fichier créé ou modifié relu depuis GitHub ; trois images SVG conservées à l'identique ; chaque page contient une occurrence du composant, un lien CSS valide et un SVG existant dans la branche ; vérification statique des identifiants uniques et des cibles d'ancres locales, absence d'ancres cassées ; nombre de balises `<script>` et de formulaires inchangé sur chaque page. Palette CSS calculée : noir/ivoire 15,09:1 ; texte courant/ivoire 10,37:1 ; texte blanc/bouton rouge sombre 8,69:1 ; accent/ivoire 6,91:1. Pas de contrôle visuel des pages complètes dans un navigateur, ni de test E2E JavaScript, ni de test avec lecteur d'écran.
+
+**Contradictions et suites :** conserver une interface accessible et accueillante sans saturer les écrans de rouge/noir ; le réseau du logo Interstice reste limité par son clip SVG d'origine. Éviter de fusionner les PR #18/#19 en plus de #22 : elles sont désormais des références historiques à rapprocher de cette consolidation. Vérifier le rendu réel mobile/desktop, tester les parcours formulaires et navigation, intégrer ensuite la typographie optimisée de #5 sur `main` récent et coordonner l'accessibilité de la V2.5 (PR #14). Ne pas assimiler la création d'une branche à une publication.
