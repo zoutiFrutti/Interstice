@@ -22,3 +22,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .manifesto-preview::before{content:"";position:absolute;left:20px;top:22px;width:clamp(70px,10vw,116px);height:clamp(70px,10vw,116px);background:url("assets/logo-faille-noire.svg") center/contain no-repeat}
 @media(max-width:600px){header strong::before{width:40px;height:40px}.brand-identity img{width:88px;height:88px}.manifesto-preview{padding-left:22px;padding-top:120px}.manifesto-preview::before{top:12px}}
 @media print{header strong::before{print-color-adjust:exact;-webkit-print-color-adjust:exact}.brand-identity img{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+/* Identité réutilisable : image réelle et texte accessible, sans masquer la navigation. */
+.brand-lockup{display:flex;align-items:center;gap:clamp(12px,3vw,22px);margin:0 0 24px}
+.brand-lockup__mark{display:block;width:clamp(66px,14vw,116px);height:auto;aspect-ratio:1;flex:none;object-fit:contain}
+.brand-lockup__name{font-weight:800;letter-spacing:.12em;line-height:1.25;text-transform:uppercase}
+.brand-lockup__detail{display:block;font-size:.78rem;font-weight:600;letter-spacing:.06em;color:var(--faille-ivory)}
+@media(max-width:420px){.brand-lockup{gap:12px}.brand-lockup__mark{width:66px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
