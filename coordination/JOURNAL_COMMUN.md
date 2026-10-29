@@ -308,3 +308,20 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications vérifiées :** création de `assets/logo-interstice-transparent.svg`, commit `a5cee3021dd94fae687dad404c91d1ab814af22c`, et `assets/logo-faille-noire-transparent.svg`, commit `54061ce92d33706260af2e7195109883da5135fc`, sur la branche `design/kit-transparent-2026-10-29`. Seul le rectangle de fond a été supprimé dans chaque dérivé. Le manifeste, le JavaScript et Supabase sont intacts.
 
 **Travaux restants :** contrôler la fidélité aux planches d'origine, les filtres SVG, les contrastes et l'impression ; créer PNG/WebP depuis les maîtres réellement approuvés ; préparer les variantes compactes puis vérifier l'intégration en prévisualisation avant fusion.
+
+
+## 2026-10-29 · Atelier graphique · Planche technique de vérification des SVG
+
+**Sujet :** préparer une vérification visuelle reproductible des deux logos transparents dérivés, sans toucher au site public.
+
+**Connaissances :** les sources disponibles sur la branche sont les deux SVG transparents déjà créés depuis les SVG présents sur `main`. Une page de contrôle permet de comparer chacun sur noir profond, blanc cassé et rouge, aux tailles 144, 64 et 32 px. Il s'agit d'un outil de contrôle, non d'une validation de rendu effective.
+
+**Sources :** `assets/logo-faille-noire.svg`, `assets/logo-interstice.svg`, `assets/logo-faille-noire-transparent.svg`, `assets/logo-interstice-transparent.svg` du dépôt GitHub ; manifeste éditorial V2.5 consolidé sur Google Drive (non adopté).
+
+**Supports / Wiki :** kit graphique commun, futurs en-têtes, favicons, documents et présentation du manifeste ; aucun article Wiki modifié.
+
+**Incertitudes / contradictions :** les planches maîtresses initialement approuvées restent à confronter aux SVG du dépôt. Le téléchargement direct de sources GitHub vers l'environnement de génération binaire a échoué pour raison de résolution réseau ; aucun PNG ni WebP nouveau n'a donc été généré ou déposé. Le rendu navigateur/mobile de la planche de contrôle reste à vérifier.
+
+**Modifications vérifiées :** ajout de `assets/identite-preview.css` (commit `4051e8967180acc32db1cd5eec9aeed39e5631e8`) et `assets/identite-preview.html` (commit `12a42ce8f56498c435f2200f8ab8ba5ffd9da9a2`) sur la branche `design/kit-transparent-2026-10-29`. Les deux fichiers ont été relus après écriture, avec contenu identique. Aucun changement de `main`, du manifeste, de Supabase ou des scripts applicatifs.
+
+**Suite :** effectuer le contrôle visuel effectif, valider la fidélité aux sources graphiques originales, exporter les PNG/WebP à partir des SVG approuvés, intégrer progressivement sans casser les formulaires ni la navigation.
