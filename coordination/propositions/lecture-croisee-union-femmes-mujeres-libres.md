@@ -45,3 +45,18 @@ Julia M. Carrillo, « Algo sobre coeducación », *Mujeres Libres*, n° 2, juin 
 Une recherche doctorale sur l'éducation dans la revue relève, dans le numéro 7 (mars 1937), un texte « Enseñanza Nueva » rejetant l'imposition d'une doctrine rationaliste comme vérité pédagogique absolue : https://www.unirio.br/cchs/ppgh/producao-academica/teses-de-doutorado-e-egressos-pasta/arquivos/Tese_Aline_do_Carmo_Costa_Barbosa_PPGH_UNIRIO.pdf .
 Analyse interprétative : attention à ne pas reproduire l'autoritarisme au nom d'une école libertaire. Rapprochement avec Freire et bell hooks, sans prétendre à une influence historique directe.
 Limite : l'article original de Carrillo n'a pas été lu intégralement ; ne pas confondre conclusions d'études secondaires et phrases de l'autrice.
+
+
+## Lecture croisée n° 4 — Enseigner la liberté sans endoctriner (29 octobre 2026)
+
+**Source historique** : « Enseñanza nueva », *Mujeres Libres*, n° 7 (mars 1937) ; reproduction de la revue conservée dans le recueil historique [Mary Nash, *Mujeres Libres*](https://mirror.anarhija.net/es.theanarchistlibrary.org/mirror/m/mn/mary-nash-mujeres-libres.a4.pdf). Le texte rejette l'imposition d'une doctrine rationaliste comme vérité supérieure à tous les enfants et souligne l'attention à chaque enfant. Il s'agit d'une analyse d'un passage identifié, pas d'une lecture exhaustive du numéro.
+
+**Freire**, *Pédagogie des opprimés*, chap. 2 : critique du modèle « bancaire » de transmission du savoir et défense d'une éducation problématisante et dialogique. Source textuelle accessible pour vérification : https://hccc.edu/abouthccc/resources/documents/freire-pedagogy-of-the-oppressed.pdf (édition/traduction à identifier).
+
+**bell hooks**, *Teaching to Transgress* (1994), notamment « Engaged Pedagogy », « Paulo Freire » et l'introduction : l'enseignement engagé confronte classe, genre, race, histoires vécues ; il n'est pas toujours accueilli sans résistance. Source éditeur : https://www.routledge.com/Teaching-to-Transgress-Education-As-The-Practice-of-Freedom/hooks/p/book/9780415908085 ; introduction consultable : https://academictrap.wordpress.com/wp-content/uploads/2015/03/bell-hooks-teaching-to-transgress.pdf .
+
+**Tension intellectuelle** : former à la critique exige des savoirs et une responsabilité pédagogique, mais transmettre une doctrine comme vérité obligatoire reconduit un rapport d'assujettissement. L'égalité des personnes n'efface pas les différences de compétence.
+
+**Limites** : ce rapprochement est interprétatif. Il n'établit pas que Mujeres Libres ait directement influencé Freire ou hooks. Ne pas étendre l'anti-dogmatisme d'un texte particulier à toutes les militantes sans examen des désaccords internes.
+
+**Piste non adoptée pour Interstice** : organiser des ateliers où les méthodes et sources sont transparentes, où le droit de contestation est réel, et où un désaccord argumenté avec l'auteur étudié ne disqualifie personne.
