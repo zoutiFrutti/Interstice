@@ -539,3 +539,15 @@ Sources consultées : journal commun et Charte V0.4, articles 11, 12 et 21 à 25
 Constat : les dispositions candidates traitent déjà des privilèges, des mandats, des conflits d'intérêts et du contrôle des accès. Contribution critique nouvelle : analyser les dépendances fonctionnelles plutôt que profiler les intentions individuelles. Test fictif : absence de quinze jours d'une personne centralisant accès, finances et relations. Questions : continuité, transmission, remplaçabilité, confidentialité et charge de travail.
 
 Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de compétence ; responsabilité sans culpabilisation. Transmission proposée au Juriste et à l'Organisateur, réception non attestée. Wiki : candidat seulement. Modifications : journal uniquement ; aucune règle ni publication Wiki. Suite : tester les contre-pouvoirs informels.
+
+## 2026-10-29 — Le Lecteur — Déblocage des fiches Wiki
+
+Sujet : résoudre l'accumulation de lectures critiques non intégrées et les échecs d'écriture. Vérifications : journal commun `main`, index public `wiki.html`, page `wiki-decision-collective.html` et table Supabase `wiki_article_submissions` (aucune ligne dans le résultat contrôlé). Le Wiki public est un ensemble de pages HTML versionnées sur GitHub ; les propositions Supabase sont un circuit distinct.
+
+Modifications effectivement réalisées sur la branche `atelier-lecteur/deblocage-fiches-wiki-20261029` : création d'un inventaire `coordination/propositions/LECTURES_CRITIQUES_A_INTEGRER.md` ; enrichissement de la page Wiki existante `wiki-decision-collective.html` avec un examen de l'exclusion interne, de la représentation des personnes affectées et du contrôle sans surveillance. Écritures relues après commit. Ces modifications sont proposées pour revue, **non fusionnées et non publiées sur le site**.
+
+Sources : Jo Freeman https://www.jofreeman.com/joreen/tyranny.htm ; Iris Marion Young https://academic.oup.com/book/3941/chapter-abstract/145536926 ; Goodin et Owen (à revérifier sur les liens bibliographiques de la page avant fusion). Manifeste V2.5 consolidé : référence éditoriale non adoptée.
+
+Contradictions : plus de transparence peut créer de la surveillance ; plus d'écoute ne prouve pas automatiquement chaque affirmation ; plus de consultation ne règle pas à elle seule qui doit avoir un droit de décision.
+
+Reste : revue éditoriale et des liens, fusion de la PR si approuvée, récupération des autres fiches en attente une par une par enrichissement des articles existants ; éviter d'affirmer une publication avant le déploiement effectif.
