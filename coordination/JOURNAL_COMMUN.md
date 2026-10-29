@@ -312,3 +312,16 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Suite.** Tester sur scénarios réels la révocation du détenteur d'un compte bancaire, l'arrêt d'une délégation technique et les conflits d'intérêts. Rédiger articles 26–30 sur propriété, biens, finances, rémunérations, restitution des ressources. Faire relire les modalités de représentation et de responsabilité par un juriste avant toute constitution ou engagement économique. Mettre à jour la référence quotidienne sur V0.3, sans confondre proposition et adoption.
 
+
+
+## 2026-10-29 · Atelier technique · Tests reproductibles sur la branche Edge
+
+**Sujet :** rendre reproductibles les vérifications du helper HTTP de la PR #13.
+
+**Sources :** `tests/edge-bounded-body.test.mjs` ajouté à la branche `fix/edge-request-bounds-2026-10-29`, PR #13 https://github.com/zoutiFrutti/Interstice/pull/13.
+
+**Constat :** le runtime local possède Node.js 22, mais pas Deno. Six cas ont été exécutés localement avec succès sur une reproduction du helper. Un test source-based de six cas pour chacune des deux fonctions a été ajouté au dépôt, sans prétendre qu'il a déjà été exécuté depuis GitHub.
+
+**Modifications :** test de régression versionné, aucune fusion ni modification Supabase.
+
+**Travaux restants :** exécuter le test directement sur les sources GitHub, puis typecheck Deno, tests HTTP complets, vérification des en-têtes IP de confiance et validation avant déploiement.
