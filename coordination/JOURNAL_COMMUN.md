@@ -723,3 +723,8 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Changements réels :** SQL candidat modifié sur branche (commit `30d18455c38a64b5ed81bd23d89ec2b5e78f605b`), contrat statique ajouté (commit `d7384467005763cd88e1e14fa974e30ca1fcbc7b`), workflow étendu (commit `070e571a1912d5103ea97c8ff31fc3bf349bee8f`). Unicité documentaire, contrôle de changement de SHA et journal d'événement conservés. Le rôle de service n'a aucune capacité métier d'approbation ou de publication dans ce schéma proposé.
 
 **Limites :** tests PostgreSQL et tests de concurrence non exécutés ; tests Node/CI à confirmer. Le rôle `service_role` doit rester exclusivement côté serveur et l'accès à la fonction privée doit être revu et testé dans un environnement isolé avant migration. Aucune migration ni écriture Supabase, aucune fiche publique.
+
+
+## 2026-10-30 — Anarchitecte — Tests PostgreSQL candidats
+
+État : PR #26 était 19 commits devant et 9 derrière main au début de la passe. PostgreSQL local, psql et Docker indisponibles dans l'environnement ; pas de test SQL exécuté et aucun test sur Supabase de production. Fichier tests/sql/wiki-handoff-integration.sql créé (commit 220d2b3be51a263c196977463ffe18bbe50fc3af) : scénarios création, répétition sans doublon, changement de source, journal d'événements et maintien du statut non publié, sous transaction rollbackable. Les tests de concurrence nécessitent deux connexions distinctes. Reste : exécution sur une instance jetable, vérification des rôles, revue des changements sur main et conception de l'ingestion authentifiée. Aucune migration, insertion de production, fusion ou publication.
