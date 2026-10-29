@@ -52,7 +52,15 @@ try {
   const btn=page.locator(".private-preview-trigger");
   await btn.waitFor({state:"visible",timeout:10000});
   await btn.click();
-  await page.locator("#private-preview-dialog[open]").waitFor({state:"visible",timeout:10000});
+  const diagnostic=await page.evaluate(()=>({
+    open:document.querySelector("#private-preview-dialog")?.open,
+    message:document.querySelector("#message")?.textContent,
+    content:document.querySelector("#private-preview-content")?.textContent?.slice(0,350),
+    hasModule:!!document.querySelector(".fiche-rendue"),
+    stats:window.__previewStats
+  }));
+  console.log("MODERATION_TEST_DIAGNOSTIC "+JSON.stringify({diagnostic,errors}));
+  await page.locator("#private-preview-dialog[open]").waitFor({state:"visible",timeout:3500});
   const snap=await page.evaluate(()=>{
     const modal=document.querySelector("#private-preview-dialog");
     const title=modal.querySelector("h1");
