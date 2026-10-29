@@ -4,6 +4,7 @@ on:
     paths:
       - 'coordination/wiki-review-queue/**'
       - 'scripts/validate-wiki-review-queue.mjs'
+      - 'scripts/prepare-wiki-review-draft.mjs'
       - '.github/workflows/wiki-review-queue.yml'
   push:
     branches:
@@ -24,3 +25,7 @@ jobs:
           node-version: '22'
       - name: Validate identities, provenance, and non-publication
         run: node scripts/validate-wiki-review-queue.mjs
+      - name: Verify draft stays unapproved without printing its content
+        run: |
+          node scripts/prepare-wiki-review-draft.mjs fn069-penseur-archives-croisees-2026-10-29 > "$RUNNER_TEMP/wiki-draft.json"
+          node -e 'const d=require(process.env.RUNNER_TEMP+"/wiki-draft.json");if(d.ready_to_submit!==false||d.license_confirmed!==false||d.privacy_confirmed!==false||d.author_id!==null||d.publication_status!=="not_published")process.exit(1);console.log("Draft remains blocked pending human review")'
