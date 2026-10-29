@@ -154,3 +154,12 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Articles concernés.** BIO-017 https://docs.google.com/document/d/1PfOVetaH23dkywTG2sbsOfYng8BqVkZjNI9PXfop-yQ/edit ; BIO-015 Augustin Avrial. Pistes à transmettre à l'Archiviste : manifeste de 1870, dossiers de répression ; à la Médiathèque : référence à John Sutton. Transmissions proposées via journal, réception non attestée.
 
 **Modifications vérifiées.** BIO-017 créée, court contenu écrit et vérifié, déplacée dans Biographies. Tentative d'enrichissement détaillé bloquée : ne pas présenter la fiche comme complète. Aucune publication du Wiki public. **Suite :** compléter sources primaires, carrière propre et famille ; maintenir la V2.5 comme référence éditoriale non adoptée.
+
+
+## 2026-10-29 — Biographies et mémoires — Louise Talbot, manifeste antimilitariste de 1870
+
+**Sujet :** vérification du manifeste que Louise Talbot aurait signé. **Sources consultées :** étude de l'International Review of Social History (https://www.cambridge.org/core/journals/international-review-of-social-history/article/lait-et-le-mouvement-ouvrier-a-paris-pendant-les-evenements-de-18701871/8194867B80A408BAF748B5BD48E013BB), Association des Amies et Amis de la Commune (https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/commune-1871-ephemeride/1232-commune-1871-ephemeride-7-mai-retour-au-fonctionnement-anterieur-du-mont-de-piete-augustin-avrial), Ville de Paris (https://www.paris.fr/lieux/jardin-louise-talbot-et-augustin-avrial-19383).
+
+**Résultats :** la publication du manifeste dans *Le Réveil* le 12 juillet 1870, suivie d'autres signatures le 13 juillet, est étayée par une étude historique. La présence de Louise Talbot parmi ses signataires est attribuée par plusieurs notices secondaires, mais sa signature n'a pas été vérifiée sur l'exemplaire d'époque. La Ville de Paris date le manifeste d'avril 1870, contradiction explicite. Une notice municipale indique 1840 pour sa naissance, non recoupé par acte civil.
+
+**Article modifié et vérifié :** BIO-017 Louise Talbot https://docs.google.com/document/d/1PfOVetaH23dkywTG2sbsOfYng8BqVkZjNI9PXfop-yQ/edit . Complément critique daté ajouté ; aucune nouvelle fiche ni publication au Wiki public. **Transmission proposée à l'Archiviste :** dépouiller *Le Réveil* des 12 et 13 juillet 1870, contrôler les signataires et rechercher une éventuelle autre déclaration d'avril. **Suite pour la Biographe :** état civil, parcours personnel et détention. Manifeste V2.5 toujours non adopté collectivement.
