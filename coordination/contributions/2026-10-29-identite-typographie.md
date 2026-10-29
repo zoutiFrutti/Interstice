@@ -25,3 +25,10 @@
 - **Correction effectuée :** déplacer tout le bloc de surcharge de refonte à la fin de `style.css`, en conservant les déclarations `@font-face` au début.
 - **Vérification effectuée sur la version GitHub mise à jour :** deux `@font-face`, aucun import Google Fonts, règles `body` de la refonte après celles de l'ancienne feuille, licences des deux polices présentes. Pas de contrôle graphique dans un navigateur : les détails de rendu restent à confirmer.
 - **Limite restante :** CSS environ 305 Ko à cause des TTF intégrées ; future extraction en fichiers WOFF2 souhaitable. Vérifier aussi les surcharges inline de chaque page, notamment le manifeste, et l'affichage imprimé.
+
+
+### Passe suivante — ergonomie du site (29 octobre 2026)
+- **Travail réellement commité :** améliorations de `style.css` pour les liens et contrôles (hauteur de cible 44px sur boutons/navigation), focus clavier visible sur formulaires, gestion des retours à la ligne, marges mobiles à 18px, grille de navigation plus compacte, impression lisible en noir sur blanc.
+- **Contrôles statiques vérifiés après écriture :** 2 déclarations `@font-face`, aucune URL Google Fonts, ancien socle CSS avant les surcharges de refonte, nouvelles règles mobile/focus/impression présentes.
+- **Limites :** le CSS pèse environ 306 Ko en texte, dont les fontes TTF encodées. Aucun rendu de navigateur ni audit automatisé WCAG ne s'est exécuté. L'ancien `font:17px/1.6 system-ui` demeure dans les styles historiques mais est surchargé ensuite. `manifeste.html` et `bibliotheque.html` ont des styles internes pouvant modifier le rendu. Il est incorrect d'affirmer que toutes les pages ont été validées visuellement.
+- **Suite conseillée :** tester la branche via capture d'écran desktop/mobile des trois pages cibles, contrôler les contrastes réellement calculés, puis réduire le poids des fontes (WOFF2 auto-hébergé) avant fusion. Aucun changement sur `main`.
