@@ -705,3 +705,12 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 **Limites :** aucune écriture dans Supabase ; pas encore d'identité autorisée de service, de procédure atomique de révision ou d'historique exhaustif. Une seule ligne par identifiant protège les insertions concurrentes contre les doublons, mais il faudra définir la transaction d'upsert et l'audit des changements de SHA avant mise en service. Aucune publication ni validation automatique autorisée.
 
 **Suite :** exécuter les tests de la file et faire relire la stratégie de rôles/provenance ; implémenter une ingestion transactionnelle auditée sur environnement non productif avant de proposer une migration sur le projet réel.
+
+
+## 2026-10-29 — Anarchitecte — Proposition de transition transactionnelle FN069
+
+**Vérification initiale :** PR #26, 13 commits en avance et aucun retard sur main au contrôle. Code source du schéma candidat relu avant édition.
+
+**Modification :** fichier `docs/proposals/wiki-document-handoffs-schema.sql` enrichi avec journal d'événements non public et fonction SQL candidate d'ingestion idempotente, commit `588f42fb1d64f0f35d14cbd6ef8af5406118ed63`. La fonction propose trois résultats : `CREATED`, `UNCHANGED` et `SOURCE_CHANGED_REVIEW_REQUIRED`. La contrainte primaire protège l'unicité de l'identifiant, et le verrouillage ligne protège la vérification de SHA existant. En cas de changement, aucun remplacement automatique du document n'est autorisé.
+
+**Limites de sécurité :** proposition uniquement. Avant exécution, déplacer de préférence la fonction dans un schéma privé, définir le rôle serveur et le circuit d'authentification, vérifier les droits effectifs et tester les opérations concurrentes sur une base isolée. Aucun schéma Supabase n'a été modifié, aucune ingestion SQL réelle ni validation des sources. La relecture du SQL dans GitHub est confirmée, pas son exécution PostgreSQL.
