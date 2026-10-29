@@ -218,3 +218,20 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modification vérifiée :** ajout de `input:focus-visible`, `textarea:focus-visible`, `select:focus-visible`, `summary:focus-visible` dans `style.css` ; PR #11 fusionnée ; vérification du fichier sur `main`. Aucune modification de traitement des contributions.
 
 **Contradictions et travaux restants :** accessibilité déclarative ne prouve pas l'accessibilité réelle ; tests navigation clavier, contrastes, mobile, et sécurité/confidentialité des soumissions restent nécessaires. Vérifier également le déploiement public.
+
+
+## 2026-10-29 · Atelier technique · Audit de sécurité des contributions Supabase
+
+**Sujet :** contrôle en lecture seule des permissions et des deux fonctions de soumission du projet Supabase Interstice.
+
+**Connaissances :** sept tables avec RLS active ; lecture publique des propositions publiées et ressources approuvées ; articles soumis accessibles à leur auteur ou à la modération. Deux fonctions Edge publiques `verify_jwt=false`, avec validations et limitation de fréquence. `claim_submission_slot` n'est pas exécutable directement par les rôles `anon` ou `authenticated`.
+
+**Sources :** interrogation directe de Supabase (`list_tables`, `list_edge_functions`, `get_edge_function`, `pg_policies`, `pg_proc`) ; rapport `docs/AUDIT_CONTRIBUTIONS_SUPABASE_2026-10-29.md` ; PR #12 https://github.com/zoutiFrutti/Interstice/pull/12 (fusionnée, SHA `28e82e04cf4fc2a9042eae3a230d7d65f0be29f0`).
+
+**Wiki/pages concernés :** accueil et formulaire de contributions, proposition de ressources, proposition d'articles Wiki.
+
+**Contradictions :** contrôle `Origin` ne garantit pas l'identité d'un client ; confiance dans les en-têtes IP non vérifiée ; `Content-Length` ne borne pas la taille effective du corps ; filtres de coordonnées partiels.
+
+**Modifications réellement effectuées :** publication du rapport d'audit sur `main` ; aucune configuration, donnée ou fonction Supabase modifiée.
+
+**Travaux restants :** corriger et tester le bornage du corps des requêtes, valider l'origine fiable des IP, vérifier `SECURITY DEFINER` et le parcours de modération avant toute modification de production.
