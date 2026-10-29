@@ -22,3 +22,9 @@ Modification : enrichissement de la proposition de lecture croisée sur la même
 Sources : catalogue éducatif espagnol https://leer.es/proyectos/las-sinsombrero/materiales-audiovisuales/mujeres-libres/ et sommaire de la reproduction historique https://www.solidaridadobrera.org/ateneo_nacho/peri%C3%B3dicos/m_libres_02.pdf . Le second précise le nom « Luisa Pérez Berganzo » (et non « Beganzo ») pour « Problemas sanitarios y maternidad consciente ». Julia M. Carrillo : « Algo sobre coeducación » ; Lucía Sánchez Saornil : « Veinte años de psicología femenina a través de una profesión ». « El niño sano » est un article distinct d'Amparo Poch y Gascón. À ne pas mélanger.
 Analyse : l'éducation, la santé reproductive et l'expérience professionnelle forment un ensemble de questions d'autonomie ; cela ne prouve pas la convergence des positions ni des politiques appliquées. Vérifier les pages d'origine et les arguments avant citation.
 Actions : note de correction et piste de lecture enregistrées sur la branche ; aucune publication ni changement du manifeste.
+
+## 2026-10-29 — Lecture croisée : coéducation Mujeres Libres
+Fait : article Julia M. Carrillo, « Algo sobre coeducación », numéro 2 (juin 1936), p. 7. Études critiques sur l'École moderne et sur la critique du dogmatisme pédagogique dans le numéro 7 (1937).
+Sources : https://anarkobiblioteka3.wordpress.com/wp-content/uploads/2016/08/la_educacic3b3n_femenina_en_la_revista_mujeres_libres_-_laura_sc3a1nchez_blanco_y_josc3a9_luis_hernc3a1ndez_huerta.pdf ; https://www.unirio.br/cchs/ppgh/producao-academica/teses-de-doutorado-e-egressos-pasta/arquivos/Tese_Aline_do_Carmo_Costa_Barbosa_PPGH_UNIRIO.pdf
+Contradiction : former à l'émancipation sans imposer une doctrine. Limite : article original non lu intégralement.
+Modification : note ajoutée à la proposition documentaire sur branche de travail uniquement ; pas de publication Wiki public.
