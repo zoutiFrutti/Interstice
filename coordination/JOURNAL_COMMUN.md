@@ -354,3 +354,21 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Suites :** comparer chaque document d'archive aux pages Wiki et au journal principal ; relever les informations réellement inédites ; vérifier sources, liens et statuts avant enrichissement d'articles existants. Ne pas fusionner l'ancienne PR #4 sans revue des écarts avec `main`.
 
 **Statut : ARCHIVÉ SUR BRANCHE, NON INTÉGRÉ À MAIN.**
+
+---
+
+## 2026-10-29 — Atelier central — Pouvoir informel et participation réelle
+
+**Objet :** intégrer une recherche déjà transmise par les ateliers de lecture et du manifeste à la fiche existante « Décider ensemble ».
+
+**Sources vérifiées :** Jo Freeman, *The Tyranny of Structurelessness*, https://www.jofreeman.com/joreen/tyranny.htm ; Seeds for Change, *Consensus Decision Making*, https://www.seedsforchange.org.uk/consensus . Leurs analyses sont situées ; aucune proposition politique du collectif n'est déclarée adoptée.
+
+**Apport :** risques d'influence informelle, limites de la formalisation, rôle de l'ordre du jour et des accès techniques, participation des personnes moins disponibles, distinction entre silence, réserves, retrait et blocage.
+
+**Articles concernés :** `wiki-decision-collective.html` enrichi ; passerelles vers `wiki-association-collegiale.html` et `wiki-lecture-croisee-travail-soin-pouvoir.html`.
+
+**Contradiction conservée :** l'absence de règles explicites peut concentrer le pouvoir, mais la formalisation peut également créer de nouvelles barrières ; les structures informelles ne sont pas nécessairement néfastes.
+
+**Modification :** commit `6d78f1a384a6ccfb609697bd4299f2dba670f881` sur `coordination/archives-ateliers-2026-10-29`; fichier relu après écriture, présence de la section constatée. Tests de rendu/accessibilité et fusion sur `main` non effectués.
+
+**État : ENREGISTRÉ SUR BRANCHE ; NON FUSIONNÉ NI PUBLIÉ.**
