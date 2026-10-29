@@ -571,3 +571,7 @@ Contrôle des pages existantes effectué. Deux enrichissements vérifiés sur la
 ## 2026-10-29 — Le Lecteur — rattrapage justice épistémique
 
 Contrôle de la page Wiki existante « Décider ensemble » sur la branche de revue de la PR 23. Ajout vérifié d'une synthèse Fricker, Dotson et Alcoff sur les préjugés de crédibilité, la silenciation et le droit de ne pas témoigner. Sources : Fricker, *Epistemic Injustice* (2007) ; Dotson, *Hypatia* (2011), https://doi.org/10.1111/j.1527-2001.2011.01177.x ; Alcoff, *Cultural Critique* (1991-1992). Textes non déclarés intégralement lus. Contradiction : écouter sans imposer l'exposition de soi et vérifier les faits sans préjugés. Registre des fiches également mis à jour. Aucune fusion dans main, aucune publication publique, aucun changement du manifeste V2.5 non adopté. Reste : validation éditoriale et poursuite des fiches non intégrées.
+
+## 2026-10-29 — Le Lecteur — Rattrapage des confrontations sur conflit et domination
+
+Travaux : ajouts dans deux pages Wiki HTML sur la branche `atelier-lecteur/deblocage-fiches-wiki-20261029` (PR 23) : Mouffe/Habermas sur le dissensus et le consensus, Allen/Forst sur le pouvoir et sa justification, Pettit/Lukes/Lovett sur la dépendance et l'arbitraire. Références dans chaque page, sans prétendre avoir lu les ouvrages intégralement. Interprétations critiques et objections explicites ; aucune doctrine collectivement adoptée. Les fichiers sur la branche doivent être relus avant fusion. Aucune publication publique déclarée.
