@@ -1,8 +1,12 @@
 name: Wiki Markdown inventory (archive stage)
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/inventory-wiki-markdown.mjs'
+      - '.github/workflows/wiki-markdown-inventory.yml'
   push:
-    branches: [main]
+    branches: [main, fix/wiki-review-handoff-rebased-2026-10-30]
     paths:
       - 'coordination/**/*.md'
       - 'wiki/**/*.md'
