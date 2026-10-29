@@ -340,3 +340,17 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Modifications réelles :** export local et archive de contrôle corrigés ; ajout de cette entrée sur la branche principale du journal après relecture de sa version courante. Les visuels du dépôt, le manifeste, Metricool et Instagram ne sont pas modifiés.
 
 **À faire :** inspection de lisibilité sur smartphone et dernier contrôle éditorial ; rédaction/validation des trois légendes et descriptions alternatives ; accès aux médias depuis Metricool pour la création de brouillons non publiés. Vérifier explicitement l'indicateur de contenu généré/altéré avec IA lors du dépôt des carrousels.
+
+---
+
+## 2026-10-29 — Atelier central — Sauvegarde des contributions dispersées
+
+**Sujet :** réconciliation des contributions d'ateliers qui n'apparaissent pas sous leur forme complète dans le journal actuel de `main`.
+
+**Constat :** le journal principal a continué d'évoluer (17 entrées recensées au contrôle). L'ancien journal de coordination conserve notamment cinq contributions distinctes : identité graphique, manifeste, biographies/mémoires, communication et lectures critiques. Une simple recherche d'intitulés ne prouve pas que tout leur contenu est absent des autres documents ; il faut éviter d'affirmer un manque absolu ou de dupliquer les travaux déjà repris.
+
+**Action vérifiable :** copie intégrale des cinq contributions dans [ARCHIVE_CONTRIBUTIONS_2026-10-29.md](ARCHIVE_CONTRIBUTIONS_2026-10-29.md) sur la branche `coordination/archives-ateliers-2026-10-29` (commit `2ac3ca722e93fb026d9d6d114c4160782fed01c2`). Les textes restent des déclarations d'ateliers, non une vérification indépendante des sources ou des pièces Drive. Le manifeste V2.5 est la référence éditoriale de travail, non adoptée ; les versions antérieures mentionnées sont historiques.
+
+**Suites :** comparer chaque document d'archive aux pages Wiki et au journal principal ; relever les informations réellement inédites ; vérifier sources, liens et statuts avant enrichissement d'articles existants. Ne pas fusionner l'ancienne PR #4 sans revue des écarts avec `main`.
+
+**Statut : ARCHIVÉ SUR BRANCHE, NON INTÉGRÉ À MAIN.**
