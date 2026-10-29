@@ -60,7 +60,17 @@ try {
     stats:window.__previewStats
   }));
   console.log("MODERATION_TEST_DIAGNOSTIC "+JSON.stringify({diagnostic,errors}));
-  await page.locator("#private-preview-dialog[open]").waitFor({state:"visible",timeout:3500});
+  try {await page.locator("#private-preview-dialog[open]").waitFor({state:"visible",timeout:5500})}
+  catch(error){
+    const after=await page.evaluate(()=>({
+      message:document.querySelector("#message")?.textContent,
+      content:document.querySelector("#private-preview-content")?.textContent?.slice(0,500),
+      open:document.querySelector("#private-preview-dialog")?.open,
+      stats:window.__previewStats
+    }));
+    console.log("MODERATION_AFTER_WAIT "+JSON.stringify({after,errors}));
+    throw error;
+  }
   const snap=await page.evaluate(()=>{
     const modal=document.querySelector("#private-preview-dialog");
     const title=modal.querySelector("h1");
