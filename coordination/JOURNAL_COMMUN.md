@@ -276,3 +276,18 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Travaux restants :** (1) contrôle contradictoire des 21 articles proposés avec scénarios d'abus ; (2) rédaction des articles 21–47 ; (3) revue par juristes avant création d'une structure ou exploitation de lieux ; (4) élaboration séparée des statuts et protocoles après définition des activités ; (5) coordination sur les différences V2.5 et archivage des versions ; (6) s'assurer que les passes automatiques prennent V2.5 comme référence, sans l'assimiler à une adoption.
 
+
+
+## 2026-10-29 · Atelier technique · Tests locaux du correctif Edge
+
+**Sujet :** vérifier la lecture bornée des requêtes HTTP avant tout déploiement Supabase.
+
+**Sources :** tests locaux Node.js 22 ; branche `fix/edge-request-bounds-2026-10-29` ; `docs/TESTS_EDGE_REQUEST_BOUNDS_2026-10-29.md` sur cette branche ; PR #13 https://github.com/zoutiFrutti/Interstice/pull/13.
+
+**Résultat :** six tests unitaires du mécanisme de lecture bornée reproduit ont réussi (vide, plafond exact, dépassement, UTF-8 refusé/accepté, flux segmenté).
+
+**Limite et contradiction :** la réussite du helper isolé ne prouve pas la compatibilité Deno des sources Edge ni leur bon fonctionnement en production. L'origine des en-têtes IP n'est toujours pas établie.
+
+**Modifications :** rapport de tests ajouté sur la branche de PR #13 ; **aucun déploiement Supabase, aucune fusion de la PR #13**.
+
+**Suite :** tests sur sources exactes dans Deno, essais HTTP en préproduction, vérification de l'IP de confiance et plan de retour arrière.
