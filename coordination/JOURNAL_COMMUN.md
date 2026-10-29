@@ -38,3 +38,13 @@ Articles concernés : éducation populaire, pédagogie critique, féminismes, an
 Contradiction : transmettre des savoirs et exercer une responsabilité pédagogique sans endoctrinement ni autorité morale.
 Modifications : enrichissement de la fiche candidate et du journal sur la branche atelier/lecture-femmes-1871-1936-20261029, non publié dans le Wiki public.
 Suites : vérifier édition précise du numéro 7, attribution et pages ; confronter des études critiques, intégrer après examen éditorial.
+
+
+## 2026-10-29 — Atelier médiathèque : Illich × Freire × bell hooks
+Sujet : réseaux d'apprentissage, pédagogie dialogique et hiérarchies de compétence.
+Découverte : chapitre 6 de *Deschooling Society* (1971), quatre réseaux d'accès aux ressources, compétences, pairs, éducateurs. Comparaison avec la critique freirienne de l'éducation « bancaire » et la pédagogie engagée de hooks.
+Sources : https://www.nybooks.com/articles/1971/01/07/a-special-supplement-education-without-school-how/ ; https://www.theanarchistlibrary.org/library/ivan-illich-deschooling-society ; https://www.routledge.com/Teaching-to-Transgress-Education-As-The-Practice-of-Freedom/hooks/p/book/9780415908085 ; https://eric.ed.gov/?id=ED453342
+Articles concernés : éducation populaire, médiathèque des communs, autonomie technique, organisation collective.
+Contradictions : accès égal aux ressources versus inégalités matérielles ; refus du diplôme comme privilège versus exigences de sécurité ; réseau ouvert versus prestige et surveillance.
+Modifications : fiche candidate créée sur la branche atelier/lecture-femmes-1871-1936-20261029, journal augmenté ; ni manifeste ni Wiki public changés.
+Travaux restants : approfondir Freire et hooks sur textes primaires et pages vérifiées ; discuter une éventuelle insertion éditoriale après audit des pages existantes.
