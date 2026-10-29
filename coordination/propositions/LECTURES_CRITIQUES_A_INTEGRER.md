@@ -22,3 +22,10 @@ Pour chaque fiche : verifier les sources et le niveau de lecture, retrouver la p
 - Berenstain et Ahmed : travail éducatif invisible intégré en proposition dans `wiki-lecture-croisee-travail-soin-pouvoir.html`, non fusionnée. Dotson reste à traiter dans la fiche spécialisée sur la justice épistémique.
 - Foucault, Ostrom et David Lyon : contrôle des communs et surveillance intégrés en proposition dans `wiki-liberte-numerique-ia-surveillance.html`, non fusionnée.
 - Les autres sujets de la liste initiale restent en attente de reprise et de vérification des sources. Les fiches provisoires ne doivent pas être comptées comme pages Wiki publiques.
+
+## Rattrapage complémentaire vérifié
+
+- Pitkin, Mansbridge, Urbinati, Goodin et Owen : ajout proposé dans `wiki-politique-institutions-regimes.html`.
+- Rancière et Balibar : ajout proposé dans `wiki-socialismes-communismes-anarchismes-autogestion.html`.
+- Fricker, Dotson et Alcoff : ajout proposé dans `wiki-decision-collective.html`, sur l'écoute, les préjugés de crédibilité et le droit de ne pas témoigner.
+- Toutes ces mises à jour sont sur une branche de revue, pas encore publiées sur le Wiki public. Il reste à examiner Mouffe/Habermas, Allen/Forst, Pettit/Lukes/Lovett et les autres croisements avant clôture.
