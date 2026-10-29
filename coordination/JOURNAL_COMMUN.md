@@ -362,3 +362,23 @@ Ces intitulés désignent des thèmes de rapprochement : l'existence de pages pa
 **Suites :** reconstituer les quatre fiches avec sources et revue éditoriale ; vérifier le reste du site, les liens externes et l'accessibilité ; proposer une PR de consolidation sans écraser une contribution récente. Vérifier indépendamment les documents sources signalés par les ateliers.
 
 **État : ENREGISTRÉ sur branche, TESTÉ par relecture du fichier ; non intégré à `main`, non testé sur le site public.**
+
+---
+
+## 2026-10-29 · Atelier central · Passe 3 : décisions collectives et pouvoir informel
+
+**Sujet :** enrichissement ciblé de la fiche existante `wiki-decision-collective.html`.
+
+**Connaissances :** l'analyse de Jo Freeman invite à examiner les mécanismes de pouvoir informel (ordre du jour, circulation des informations et responsabilités). Le guide de Seeds for Change permet de distinguer élaboration de propositions, objections et accord explicite. Il s'agit de sources situées, non d'une preuve universelle ni d'une orientation politique adoptée.
+
+**Sources :** https://www.jofreeman.com/joreen/tyranny.htm ; https://www.seedsforchange.org.uk/consensus ; lecture des fichiers `wiki-decision-collective.html`, `wiki-association-collegiale.html` et `wiki-lecture-croisee-travail-soin-pouvoir.html`.
+
+**Article modifié :** `wiki-decision-collective.html`. Deux liens internes ont été ajoutés vers les fiches associées.
+
+**Contradictions :** l'absence de hiérarchie formelle ne garantit pas une absence de pouvoir ; la formalisation des règles ne garantit pas non plus l'égalité de participation.
+
+**Modification effectuée :** section « Pouvoir informel et décisions » enregistrée sur la branche `coordination/atelier-central-audit-2026-10-29`, commit `b6ae9d19f3bfd5ef178b5e4790eefcca3d523465`. Lecture après écriture confirmée ; aucun test de rendu ni publication sur `main`.
+
+**Suites :** revoir finement les sources primaires et les nuances de consensus/consentement ; tester rendu, navigation et accessibilité ; soumettre la branche à revue avant fusion.
+
+**État : ENREGISTRÉ, relecture du contenu effectuée ; non INTÉGRÉ à main, non PUBLIÉ.**
