@@ -21,6 +21,7 @@ Deno.serve(async req=>{
  try{
   const raw=await readBoundedBody(req,4000);
   const b=JSON.parse(raw);
+  if(!b||typeof b!=="object"||Array.isArray(b))return answer(400,{error:"Format invalide."});
   if(typeof b.website==="string"&&b.website.trim())return answer(202,{message:"Proposition reçue pour examen."});
   const title=String(b.title||"").trim(),description=String(b.description||"").trim(),url=String(b.url||"").trim(),category=String(b.category||"").trim(),license=String(b.license||"").trim();
   const cats=["Comprendre","Faire","S'organiser","Trouver","S'entraider","Bibliothèque"];
@@ -29,9 +30,9 @@ Deno.serve(async req=>{
   if(/(?:@|(?:\+33|0)[ .-]?[1-9](?:[ .-]?[0-9]{2}){4})/.test(title+" "+description))return answer(400,{error:"Ne transmets pas de coordonnées personnelles."});
   const supabaseUrl=Deno.env.get("SUPABASE_URL"),serviceKey=Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
   if(!supabaseUrl||!serviceKey)return answer(503,{error:"Service temporairement indisponible."});
-  const db=createClient(supabaseUrl,serviceKey);
-  const ip=req.headers.get("cf-connecting-ip")||req.headers.get("x-forwarded-for")?.split(",")[0];
+  const ip=req.headers.get("cf-connecting-ip")?.trim()||req.headers.get("x-forwarded-for")?.split(",")[0]?.trim();
   if(!ip)return answer(503,{error:"Vérification anti-abus indisponible."});
+  const db=createClient(supabaseUrl,serviceKey,{auth:{persistSession:false,autoRefreshToken:false}});
   const secret=serviceKey;
   const bytes=new TextEncoder().encode(secret+":resource:"+ip);
   const digest=await crypto.subtle.digest("SHA-256",bytes);
@@ -39,7 +40,8 @@ Deno.serve(async req=>{
   const {data:allowed,error:rateError}=await db.rpc("claim_submission_slot",{p_fingerprint:fingerprint});
   if(rateError)return answer(503,{error:"Service momentanément indisponible."});
   if(!allowed)return answer(429,{error:"Attends dix minutes avant un nouvel envoi."});
-  const {data:duplicate}=await db.from("resource_submissions").select("id").eq("url",parsed.toString()).in("status",["pending","approved"]).limit(1);
+  const {data:duplicate,error:duplicateError}=await db.from("resource_submissions").select("id").eq("url",parsed.toString()).in("status",["pending","approved"]).limit(1);
+  if(duplicateError)return answer(503,{error:"Vérification des doublons indisponible."});
   if(duplicate?.length)return answer(409,{error:"Cette adresse a déjà été proposée."});
   const reasons=[];if(parsed.protocol!=="https:")reasons.push("lien_non_chiffre");if(license.length===0)reasons.push("licence_inconnue");
   const {error}=await db.from("resource_submissions").insert({title,url:parsed.toString(),description,category,license_note:license||null,moderation_reasons:reasons});
