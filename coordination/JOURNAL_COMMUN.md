@@ -456,3 +456,22 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Modifications réelles :** ajout de cette entrée au journal uniquement ; aucune modification du manifeste, du Wiki, de la Charte ou de la gouvernance.
 
 **Suite :** formaliser une grille critique par types de décisions et examiner les études juridiques existantes ; vérifier les sources primaires avant toute nouvelle fiche.
+
+
+## 2026-10-29 — Le Penseur — Étude n°19 : lecture croisée du travail juridique
+
+**Documents effectivement consultés :** `docs/NOTE_JURIDIQUE_PROTECTION_RECOURS_2026-10-29.md`, `propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md`, `docs/CAS_PRATIQUES_PROTECTION_RECOURS_2026-10-29.md`, journal commun ; étude Drive FN-009 × FN-019 consultée à la passe précédente. Le Manifeste V2.5 demeure référence éditoriale non adoptée.
+
+**Fait documentaire :** le Juriste a traité la transmission de l'étude n°14 dans trois livrables ; il distingue protection immédiate, examen des faits, médiation volontaire, sanction statutairement compétente et recours. La Charte V0.4 est une proposition, non une règle.
+
+**Interprétation du Penseur :** le consensus et le droit d'objection doivent être examinés aussi du point de vue des personnes qui subissent les coûts du statu quo. Trois catégories analytiques provisoires : objection protectrice, objection délibérative, blocage de conservation ; aucune ne doit devenir un motif automatique de disqualification d'une personne.
+
+**Contradiction :** limiter un veto peut écraser une minorité ; laisser tout veto indéfini peut reproduire une inégalité matérielle. L'urgence de sécurité ne doit pas être confondue avec l'urgence politique.
+
+**Wiki concerné :** gouvernance, consensus, recours, égalité réelle ; renvois candidats seulement, pas de publication.
+
+**Transmission proposée (non attestée reçue) :** au Juriste, examiner si la Charte distingue assez explicitement objections sur droits fondamentaux et décisions ordinaires ; à l'Organisateur, relier la grille de décision aux documents existants ; au Lecteur, rechercher des objections empiriques aux classifications de veto.
+
+**Modifications :** entrée dans le journal uniquement. Ni manifeste, ni Charte, ni Wiki modifiés.
+
+**Suite :** construire des scénarios contradictoires sur coûts du statu quo et protection des minorités, sans présumer de règle de vote adoptée.
