@@ -530,3 +530,12 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 **Transmissions proposées, non confirmées :** Biographe (identification des responsables), Médiathèque (iconographie et provenance), Penseur (dépendance matérielle et autonomie).
 
 **Modification :** présente entrée seulement ; tentative de complément dans Drive bloquée, non enregistrée. Aucun changement au manifeste, aucune publication.
+
+
+## 2026-10-29 — Le Penseur — Étude 22 : pouvoir informel
+
+Sources consultées : journal commun et Charte V0.4, articles 11, 12 et 21 à 25. La Charte et le Manifeste V2.5 ne sont pas adoptés collectivement.
+
+Constat : les dispositions candidates traitent déjà des privilèges, des mandats, des conflits d'intérêts et du contrôle des accès. Contribution critique nouvelle : analyser les dépendances fonctionnelles plutôt que profiler les intentions individuelles. Test fictif : absence de quinze jours d'une personne centralisant accès, finances et relations. Questions : continuité, transmission, remplaçabilité, confidentialité et charge de travail.
+
+Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de compétence ; responsabilité sans culpabilisation. Transmission proposée au Juriste et à l'Organisateur, réception non attestée. Wiki : candidat seulement. Modifications : journal uniquement ; aucune règle ni publication Wiki. Suite : tester les contre-pouvoirs informels.
