@@ -191,3 +191,18 @@ Ce fichier rassemble les contributions documentaires des ateliers. Une entrée d
 **Sources :** https://parismuseescollections.paris.fr/en/node/928734 ; https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune ; https://commune1871-rougerie.fr/les-femmes-de-1871%2Cfr%2C8%2C58.html .
 
 **À transmettre à l'Archiviste :** recherche des registres professionnels, dossiers judiciaires et identifications des signataires. À faire pour la Biographe : état civil et parcours individuel ; intégration ultérieure dans Drive si autorisée.
+
+
+## 29 octobre 2026 — Atelier Biographies et mémoires — Blanche Lefèvre (BIO-019)
+
+**Sujet :** parcours de Blanche Lefèvre/Lefebvre, blanchisseuse des Batignolles, membre du Club de la Révolution sociale et de la commission exécutive de l'Union des femmes (affiches des 18 et 20 mai 1871, ARCH-004/ARCH-002).
+
+**Connaissances et sources :** l'Association des Amies et Amis de la Commune et son exposition sur les femmes de la Commune identifient sa profession, ses engagements et une mort au combat le 23 mai 1871 : https://www.commune1871.org/images/PhotothequeAmis/jpg/Panneaux%20exposition%20femmes%20de%20la%20Commune.pdf ; https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/1488-la-barricade-des-femmes .
+
+**Contradictions :** lieu de mort place Blanche ou rue des Dames ; âge et année de naissance à vérifier en état civil ; variantes Lefèvre/Lefebvre. Ne pas affirmer un détail incertain comme un fait.
+
+**Article candidat et modification réellement effectuée :** [BIO-019 Blanche Lefèvre](biographies/BIO-019-Blanche-Lefevre.md), créée et vérifiée sur cette branche. Aucun document Google Drive ni Wiki public modifié lors de cette passe.
+
+**Transmissions proposées :** à l'Archiviste, confronter archives de décès, rapports militaires et récits des barricades ; à la Médiathèque, contrôler éditions et droits des images ; au collectif, piste de recherche sur Élisabeth Deguy, autre femme de la Commune. Pas de preuve que ces ateliers ont déjà traité cette transmission.
+
+**Suite :** compléter les archives du lavoir, du club et de l'état civil. Manifeste V2.5 : référence éditoriale non adoptée.
