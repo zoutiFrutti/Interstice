@@ -49,3 +49,21 @@ Sources : https://www.marxists.org/subject/women/authors/davis-angela/housework.
 Articles Wiki potentiels (existence non vérifiée) : autogestion, travail invisible, égalité matérielle, économie du soin, féminismes. Contradictions : mutualisation peut réduire les corvées ou déplacer leur poids vers des travailleurs précaires ; différence entre valeur sociale et travail rémunéré ; critique d'une grande théorie historique sans dénigrer l'objectif émancipateur.
 
 Modification effectivement réalisée : ajout de cette entrée au journal sur branche d'atelier, sans modifier Wiki ni manifeste. Travail restant : confrontation primaire complète avec Federici, vérification d'autres critiques historiques, examen d'expériences de services collectifs, avis humain sur toute application pratique. Le chapitre XIII de Davis a été consulté sous forme de texte en ligne, pas l'intégralité de son livre.
+
+## 2026-10-29 — Atelier de lecture critique : trois expériences de mutualisation du soin
+
+**Sujet :** confrontation de Davis et Federici à des expériences historiques de restauration collective, garde d'enfants et coopératives de soin.
+
+**Connaissances documentées :** le programme Free Breakfast for School Children du Black Panther Party démarre en 1969 à Oakland, mobilise des dons et des bénévoles ; des archives documentent aussi les mobilisations de mères. Le réseau québécois des Centres de la petite enfance se développe à partir de 1997 avec financement public et participation des parents ; des sources syndicales rappellent la fragilité salariale de certaines garderies précédentes. Cooperative Home Care Associates (Bronx) créée en 1985, avec gouvernance majoritaire par les travailleurs du soin ; étude qualitative publiée en 2025 sur 32 personnes dans cinq coopératives : autonomie, respect, soutien et rémunération perçus comme facteurs favorables. Cette étude ne prouve pas une supériorité causale universelle.
+
+**Sources :** https://scholarworks.wmich.edu/jssw/vol44/iss4/2 ; https://www.nmaahc.chnm.org/s/hcacdigitalarchive/item/7763 ; https://academic.oup.com/book/44933/chapter/384860656 ; https://fsss.qc.ca/historique-cpe/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC11976488/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC11909589/ .
+
+**Articles du Wiki à rapprocher, sous réserve d'en vérifier l'existence :** autogestion, entraide, travail reproductif, économie des communs, éducation populaire, histoire du Black Panther Party. Pas de nouvelle page créée.
+
+**Contradictions :** gratuité pour les bénéficiaires versus justes conditions de travail ; bénévolat versus épuisement ; institutionnalisation publique versus autonomie ; bénéfices déclarés par une étude qualitative versus portée statistique et causalité limitées.
+
+**Application proposée, non adoptée :** grille volontaire d'évaluation des communs (accessibilité, conditions de production, décision des travailleurs, soutenabilité financière, charge invisible, droit de refuser), sans collecte de données personnelles sensibles.
+
+**Modifications effectivement réalisées :** recherche de sources et ajout de cette entrée au journal sur branche de travail. Aucun article publié, aucun changement du manifeste, aucune fiche du catalogue Drive ajoutée lors de cette passe.
+
+**Travaux restants :** lire les études complètes, rechercher contre-enquêtes et expériences françaises, consulter les articles actuels du Wiki avant de proposer des contributions, continuer l'étude croisée.
