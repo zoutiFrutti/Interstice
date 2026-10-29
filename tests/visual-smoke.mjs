@@ -71,6 +71,10 @@ try {
       if (networkErrors.length) failures.push("HTTP assets: " + networkErrors.join(" | "));
       const filename = file.replace(".html", "") + "-" + screen.name + ".png";
       await page.screenshot({ path: "visual-qa/" + filename, fullPage: false });
+      if (dom.editorialPanels === 1) {
+        const panel = page.locator(".editorial-illustration");
+        await panel.screenshot({ path: "visual-qa/" + file.replace(".html", "") + "-panneau-" + screen.name + ".png" });
+      }
       results.push({ file, screen: screen.name, fonts, dom, failures, pageErrors, networkErrors, screenshot: filename });
       if (failures.length) errors++;
       console.log((failures.length ? "FAIL " : "PASS ") + file + " @" + screen.name + (failures.length ? " :: " + failures.join(" ; ") : ""));
