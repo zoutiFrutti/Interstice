@@ -444,3 +444,61 @@ test("015: les 11 liens profonds de la démonstration ouvrent leurs fiches exact
   }
  }finally{await page.close();await browser.close();}
 });
+
+test("016: region SVG accessible et defilable au clavier, sans debordement externe",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ try{
+  for(const width of [320,390,1280]){
+   const page=await browser.newPage({viewport:{width,height:844},reducedMotion:"reduce"});
+   try{
+    await page.goto(PAGE,{waitUntil:"networkidle"});
+    for(const reading of ["communs","possibles"]){
+     await page.locator("#reading-"+reading).click();
+     await page.locator("#display-map").click();
+     const region=page.locator("#map-scroll-region");
+     assert.equal(await region.getAttribute("role"),"region");
+     assert.equal(await region.getAttribute("tabindex"),"0");
+     assert.equal(await region.getAttribute("aria-describedby"),"map-scroll-hint");
+     assert.match(await page.locator("#map-scroll-hint").innerText(),/flèches gauche et droite/);
+     assert.equal(await page.locator("#municipality-map .map-marker").count(),reading==="communs"?4:3);
+     if(width<=390){
+      const size=await region.evaluate(el=>({client:el.clientWidth,scroll:el.scrollWidth}));
+      assert.ok(size.scroll>size.client,"Le panneau doit defiler sur "+width+"px : "+JSON.stringify(size));
+      await region.focus();
+      await page.keyboard.press("ArrowRight");
+      assert.ok(await region.evaluate(el=>el.scrollLeft)>=100,"La fleche droite doit deplacer le schema");
+      await page.keyboard.press("ArrowLeft");
+      assert.equal(await region.evaluate(el=>el.scrollLeft),0,"La fleche gauche doit ramener le schema");
+      const sizeLabel=await page.locator("#municipality-map .map-marker-label").first().evaluate(el=>parseFloat(getComputedStyle(el).fontSize));
+      assert.ok(sizeLabel>=23,"Label SVG non reduit a "+width+" px");
+     }
+     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),
+      "Pas de defilement horizontal de la page a "+width+"px");
+    }
+   }finally{await page.close();}
+  }
+ }finally{await browser.close();}
+});
+
+test("016: apres le panneau de defilement, Tab puis Espace active le repere et la liste filtree",async()=>{
+ const {DEMO_MAP_ENTRIES}=await import("../cartes-data.mjs");
+ const {filterMapEntries}=await import("../cartes-core.mjs");
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:320,height:844},reducedMotion:"reduce"});
+ try{
+  await page.goto(PAGE,{waitUntil:"networkidle"});
+  await page.locator("#display-map").click();
+  await page.locator("#map-scroll-region").focus();
+  await page.keyboard.press("Tab");
+  const first=await page.evaluate(()=>document.activeElement?.getAttribute("data-commune"));
+  assert.equal(first,"Rabastens");
+  await page.keyboard.press("Space");
+  assert.equal(await page.locator("#commune").inputValue(),"Rabastens");
+  assert.equal(await page.locator("#display-list").getAttribute("aria-pressed"),"true");
+  assert.equal(await page.locator("#list-panel").isVisible(),true);
+  assert.ok(await page.locator("#count").evaluate(el=>document.activeElement===el));
+  const visible=await page.locator("#results a[data-id]").evaluateAll(es=>es.map(x=>x.dataset.id));
+  const expected=filterMapEntries(DEMO_MAP_ENTRIES,{reading:"communs",commune:"Rabastens"}).map(x=>x.id);
+  assert.deepEqual(visible,expected);
+ }finally{await page.close();await browser.close();}
+});
