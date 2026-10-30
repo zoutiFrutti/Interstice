@@ -1186,3 +1186,16 @@ Dix passes sur la PR #41 existante, sans reprise de PR #36 : HEAD main et diverg
 **Retour au Relieur :** préparation disponible dans la fiche de lancement existante ; aucune réception dans sa conversation présumée. Trois arbitrages : correction graphique 03_04 ; validation des versions publiques/liens des deux articles ; moyens volontaires de suivi. Prochaine action utile côté Metricool : session authentifiée et contrôle des brouillons, avec vérification d'absence de doublon avant import. Le Relieur coordonne, aucun Organisateur distinct.
 
 **État :** paquet prêt à examiner ; Metricool et parcours public restant à vérifier ; publication en attente de décision humaine. Aucun post, programmation, collecte de données réelles, fusion ou déploiement effectué.
+
+
+## 2026-10-30 — Relieur — transmission 014 et recheck des priorités en vingt passes
+
+**Demande reçue dans la conversation Relieur :** réévaluer les avancées et organiser un nouveau cycle de **20 passes par atelier** pour les cinq priorités (Wiki deux articles, accueil mobile, découverte, communications, deux cartes). **Transmission 014 écrite, relue et vérifiable** : [document de coordination](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/RELIEUR_TRANSMISSION_014_REPRISE_20_PASSES_2026-10-30.md), commit `6c3d62c5bd1112ae6e00e1602f51582b19bb70d0`.
+
+**Recheck :** PR #41 contient déjà les deux cartes **SVG fictives** (11 objets) et une vue liste, tests Node et Chromium verts sur HEAD contrôlé ; PR #35 propose accueil mobile et styles cartes ainsi que tests croisés verts, sans intégration réelle du CSS dans PR #41 ; PR #44 héberge les deux articles relus, encore avec points de droit, correction et qualité de source. Penseur a **déjà** produit études 60–79 : lui demander des tests critiques et décisions à préparer, pas vingt nouvelles études. Juriste 013 et Médiathèque 013, Anarchitecte 013 et communications 013 ont réellement déposé dossiers documentaires ; vérifier leurs corrections ciblées plutôt que repartir de zéro.
+
+**CI :** GitHub Pages réussite sur HEAD `832a1ffce` contrôlé ; workflow `Wiki Markdown inventory (archive stage)` en échec sur ce HEAD. Ce résultat exige diagnostic, non affirmation d'une défaillance du site. PR ouvertes 27 à ce contrôle ; aucune fusion/déploiement demandée.
+
+**Ordre prévu :** vague A Anarchitecte, Juriste, Médiathèque, Penseur en parallèle ; vague B Développeuse et Lecteur ; vague C Graphiste ; vague D Archiviste et Biographe, travaux indépendants ; vague E Communications ; Relieur coordonne en continu et prépare arbitrages humains.
+
+**Important :** les vingt passes sont **demandées, non effectuées par le Relieur à la place des ateliers**. La présence de la transmission GitHub ne vaut pas réception de leurs conversations. Pas de nouvel Organisateur, pas de publication de données sensibles, pas de promesse de fonctionnalité réelle ou de validation collective.
