@@ -871,3 +871,18 @@ Sources vérifiées : Open Library, édition 1908 de Louis Rossel, identifiant I
 Combahee : Boston Public Library, collection Barbara Smith MS.SC.0028, déclarée ouverte à la recherche, https://archives.bpl.org/repositories/2/archival_objects/76732 . Harvard Radcliffe, collection Barbara Smith acquise en 2026 : plan manuscrit annoté de la déclaration photographié, mais fonds volumineux en cours de traitement avant accès complet, https://www.radcliffe.harvard.edu/news-and-ideas/schlesinger-library-acquires-the-papers-of-groundbreaking-black-feminist-barbara-smith et https://www.radcliffe.harvard.edu/events-and-exhibitions/press-information-for-barbara-smith-collection . Ni l'ensemble des manuscrits ni les documents internes du fonds Boston n'ont été dépouillés dans cette passe.
 Bilan probatoire : progrès sur identifiants et conditions d'accès, mais aucune nouvelle transcription primaire de Rossel ou de la lettre du Louvre ; pas de preuve supplémentaire de pratiques électorales, de paie ou de décision. Poursuivre obtention des originaux et accès aux fonds.
 Modification réelle : entrée au journal commun uniquement, catalogue FN, dossier ARCH-005, Wiki public et manifeste V2.5 non adopté inchangés.
+
+
+## 2026-10-30 — Le Relieur — retour de test mobile sur l'accueil
+
+**Provenance :** test manuel de la page d'accueil Interstice sur téléphone, rapporté directement par l'utilisateur. **Statut : remarques observées, non corrections validées.**
+
+Constats : slogan « Des idées publiques. Des personnes protégées. » jugé peu accrocheur ; introduction, boutons et titres trop petits ; le titre déjà existant « Et si on essayait autre chose ? » devrait être proposé comme accroche principale plus haute sur la page. Le ressenti porte sur l'ensemble de la typographie mobile, pas seulement la section de découverte.
+
+**Code observé sur `main` :** le H1 actuel est « Des idées publiques. Des personnes protégées. » ; « Et si on essayait autre chose ? » est le H2 de la deuxième section. Dans `style.css` : texte de base 17px, certains libellés de 12px ; la taille des liens CTA est héritée et leur disposition est dense.
+
+**Transmission technique réellement effectuée :** commentaire sur la PR [#35](https://github.com/zoutiFrutti/Interstice/pull/35#issuecomment-6518191665), qui est une réponse **existante et vérifiable** du Graphiste à la transmission 007. Elle contient déjà des tests de lancement V0. La PR #22 porte le kit graphique et la PR #28 la modération ; ne pas doubler leurs modifications. **Rectification du registre précédent :** 007 est **« réponse reçue / travail V0 en PR #35 »**, et non plus « en attente sans retour ».
+
+**Piste éditoriale proposée (non adoptée) :** mettre « Et si on essayait autre chose ? » en H1 ; expliquer simplement le rôle d'Interstice en plus grand dessous ; préserver l'engagement de protection ailleurs dans la page ; agrandir les textes et zones tactiles. Le Graphiste prépare une version mobile testable et la soumet à arbitrage avant fusion. Ne pas inventer de fonctionnalité ou de nouvelle voie de contribution.
+
+**Aucune modification de `index.html`, `style.css`, aucune fusion de PR ni nouvelle publication résultant de ce rapport.** Le Manifeste V2.5 reste éditorial non adopté collectivement.
