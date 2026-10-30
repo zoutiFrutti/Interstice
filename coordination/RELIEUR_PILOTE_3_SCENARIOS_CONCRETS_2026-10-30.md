@@ -54,6 +54,31 @@ Ce kit **réemploie**, sans le recopier, [l'étude 59 du Penseur](PENSEUR_ETUDE_
 
 **À ne pas prétendre :** ni le Relieur ni l'application ne disposent des clés ou d'un pouvoir d'arbitrage matériel.
 
+
+
+### Complément La Marmite — accès, comptes, droit de sortie (ASSO-008)
+**Transmission de l'Assistant de l'Archiviste, 30 octobre 2026 ; coordination du Relieur.** Complément au scénario S2 et à l'étude 59, **sans modifier la fiche historique ASSO-008** et sans transformer des statuts de 1868 en règle actuelle.
+
+**Pièces effectivement relues :** [ASSO-008, La Marmite (candidate non publiée)](https://docs.google.com/document/d/1q9b6Ofk7rWSxMaltddYVkG3bGPrcWHtV4UI1gyHQ9YM/edit) ; [ASSO-007, Union des femmes (organisation distincte)](https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit) ; [transcription par Michèle Audin des statuts du 19 janvier 1868](https://macommunedeparis.com/2018/08/01/statuts-de-la-marmite-19-janvier-1868/). Le registre ASSO-008 contenait **déjà** un complément sur les articles 12, 23–28 et 38 ; le présent travail porte sur **leur mise à l'épreuve**, non sur la création d'une nouvelle fiche.
+
+**Trois faits statutaires vérifiés dans la transcription :**
+1. **Accès et crédit :** art. 8–9, apport total de 50 francs **versable par fractions** ; art. 12, consommations réglées comptant, avec crédit de 25 francs seulement pour un sociétaire dont l'apport total est versé. **Ne pas confondre admission, droit de consommer et crédit.**
+2. **Contre-pouvoirs :** art. 22–24, tenue de comptes et commission de neuf membres prévue pour leur contrôle ; art. 25, assemblée extraordinaire convoquable par vingt sociétaires ; art. 28, proposition de cinq membres déposée huit jours avant à inscrire à l'ordre du jour. **Ces obligations écrites ne prouvent pas la tenue des réunions ou la vérification réelle des livres.**
+3. **Retrait :** art. 35 et 38, retrait déclaré par écrit ; apport à rembourser après ajustement des pertes/excédents, dans les six mois suivant l'assemblée trimestrielle concernée ; art. 14, fonds de réserve exclu du partage aux sortants. **Ne pas transposer ces modalités comme une règle juridique pour Interstice aujourd'hui.**
+
+**Cartes-tests supplémentaires pour S2 (entièrement fictives) :**
+- **M1 — Accès :** un groupe peut payer une contribution importante d'avance ; un second n'a que de petites sommes ; un troisième apporte des heures de travail. Quels accès peuvent être ouverts **sans** confondre contribution financière, besoins et droit de parole ? L'accord doit expliciter qui supporte le coût, sans exiger du travail gratuit.
+- **M2 — Contrôle des comptes :** une équipe gère les clés et les dépenses ; une autre veut obtenir le détail des coûts et faire ajouter une question à la réunion. Le groupe fictif invente un **mécanisme contestable de contrôle** (consultation des dépenses, demande d'ordre du jour, réponse motivée), **sans copier automatiquement les seuils historiques**.
+- **M3 — Sortie :** une personne se retire après avoir contribué financièrement et assuré des permanences. Quelles obligations restent réellement dues, quels remboursements ou pertes étaient convenus à l'avance, et qui récupère l'entretien ? Aucun automatisme punitif.
+
+**Travail invisible, question non résolue :** l'importance de Nathalie Le Mel dans la tenue de la caisse est rapportée ; les rémunérations, heures de cuisine, vaisselle, service, nettoyage et conditions d'emploi **ne sont pas établies par les seuls statuts**. Les récits attribués à Charles Keller et aux brocheuses restent transmis par des sources intermédiaires et demandent collation. Ne pas généraliser un récit de travail non rétribué à toutes les personnes.
+
+**Article pratique proposé, sans publication :** « Cantines coopératives : partager les ressources sans invisibiliser le travail ». Angle : *ce que prescrivaient les statuts* / *ce qui est attesté dans le fonctionnement* / *ce qu'une initiative contemporaine pourrait discuter*. Rubriques : accès financier et cuisine à prix de revient, frais et trésorerie, qui prépare et entretient, temps rémunéré ou volontaire, comptes et droit de regard, réunions et contestations, sortie et pertes. **Aucune adaptation juridique ni doctrine adoptée.**
+
+**Suite archivistique ciblée :** rechercher livres de comptes/inventaires de 1868–1871, registres d'adhésion et procès-verbaux, décisions de la commission de contrôle, originaux ou édition critique des témoignages de Charles Keller et des travailleuses. Si ces pièces restent introuvables, consigner explicitement cette absence de preuve. L'Archiviste poursuit l'enquête historique ; le Relieur utilise les questions pratiques dans S2, sans se substituer à lui.
+
+**Statut :** 3 cartes-tests ajoutées ; 0 exercice humain ; 0 validation juridique ; 0 publication Wiki, 0 règle du collectif adoptée.
+
 ## S3 — Jardin partagé et concerts : deux usages légitimes mais incompatibles
 **Études 44–48, 50, 52, 56–58 · Tests candidats A06, A07, A09, A10, A12, A15.**
 
