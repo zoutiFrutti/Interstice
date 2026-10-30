@@ -25,3 +25,12 @@ Les travaux politiques du Penseur ne sont pas adoptés automatiquement par ce co
 - Complément technique : `docs/PROTOTYPE_INITIATIVES_MOBILE_2026-10-30.md`
 
 **Cette transmission est un dépôt documentaire. Elle ne prouve pas qu'une autre conversation l'a lue.**
+
+ 
+## Complément — transmission générale 012 et bilan final de dix passes
+**Correction d'organisation :** le Relieur est l'unique destinataire des questions de coordination ET d'organisation pratique ; aucune conversation « L'Organisateur » n'existe. Les mentions antérieures sont conservées pour mémoire, mais les tâches de rencontres, contribution hors ligne et choix de contacts publics sont remises au Relieur.
+**Travail réellement accompli :** après contrôle de `main` et de la PR, dix passes concrètes ont fait évoluer le prototype : (1) reprise réelle et clarification, (2) recherche besoin/ressource, (3) ordre alphabétique choisi, (4) explication des résultats, (5) export filtré fictif, (6) impression, (7) URL inconnue gérée, (8) alternative sans JavaScript, (9) tests Node renforcés, (10) validation Chromium mobile et captures. Détails et critères dans `docs/PROTOTYPE_INITIATIVES_MOBILE_2026-10-30.md`.
+**Résultat vérifié :** GitHub Actions https://github.com/zoutiFrutti/Interstice/actions/runs/41050764505 réussie : **20/20 tests Node, 3/3 tests Chromium, 0 échec**. Premier test navigateur échoué sur Playwright non compatible Ubuntu 26.04, corrigé vers Ubuntu 24.04 ; captures disponibles en artefact éphémère.
+**Blocages :** aucun vrai contact ou initiative publiés ; permissions API et chaîne de modération non prêtes ; tests sur Android physique/lecteur d'écran et revue Graphiste non réalisés. Aucun déploiement ni fusion.
+**Arbitrages pour le Relieur :** organiser relecture terrain sans app obligatoire, sélectionner première initiative volontaire et vérifiable, fixer la publication publique et les recours en lien avec le Juriste, demander adaptateur public en lecture seule à l'Anarchitecte, prioriser un accès simple sans carte imposée. Manifeste V2.5 et études 39–58 non adoptés collectivement.
+**Prochaine action :** revue humaine de la PR #41 (fonctionnel, juridique, graphique, mobile), puis seulement raccordement à des fiches publiques autorisées.
