@@ -160,3 +160,50 @@ Pour reproduire les tests navigateur sur Ubuntu 24.04/Node 22 : `npm install --n
 **Coordination :** Anarchitecte (contrat API/données), Juriste (garanties et licences), Graphiste (lecture mobile), Penseur (lecture critique), Relieur (scénarios humains/recours/coordination). « L'Organisateur » reste un nom historique sans atelier actif. Les études 39–58 et Manifeste V2.5 ne sont pas adoptés.
 
 **Prochaine action à demander au Relieur :** revue conjointe UX sur Android réel + lecture clavier/lecteur d'écran ; une fois les garanties vérifiées, choix d'une seule initiative volontaire et sourcée avant de brancher l'API publique. Aucun déploiement ni collecte maintenant.
+
+
+## Transmission 014 — Stabilisation des cartes, 20 passes · 30 octobre 2026
+**Mission :** maintenir et durcir la PR brouillon #41, sans refaire la carte ni l'audit #36. HEAD initial `a59268357812d730f95b4cbad75275e4ac4d9e57`; `main` initial `3fc268c5978307332dca2473e0a690444b15d24b`. Le CSS graphique provient de la PR #35, HEAD lu `f9558d0c112f65b2ba22bcee4d9355034edc98b8`.
+
+**Légende du tableau :** « vérifié avant modifications » = CI verte sur le SHA initial ; « code poussé » = contrôlé par lecture GitHub mais nouvelle CI en attente ; « régression écrite » = test présent dans le dépôt, **pas** un test réussi tant que GitHub ne l'a pas exécuté.
+
+| Passe | Action concrète et résultat | Preuve / état |
+|---|---|---|
+| 01 | Vérification du HEAD de `main`, du HEAD de la PR #41 et des branches pertinentes | Consultation réelle de l'API GitHub |
+| 02 | Examen des tests Node et Chromium du dernier HEAD pré-cycle : **38 Node / 38, 8 Chromium / 8, zéro échec** | CI https://github.com/zoutiFrutti/Interstice/actions/runs/41099508020 — **vérifié avant modifications** |
+| 03 | Lecture du moteur, du SVG, de la page, du CSS et des derniers tests ; identification du problème de fiche sans repère et des petits libellés SVG sur mobile | Sources de la branche, corrections ci-dessous |
+| 04 | Contrôle des 11 fiches fictives, IDs stables et quatre types (`initiative`, `besoin`, `ressource`, `projet`) | Tests Node historiques réussis ; cas de régression conservés |
+| 05 | Contrôle du filtre « communs » (7 fiches initiales) et de ses 4 communes de démonstration | Tests existants dans la CI de référence |
+| 06 | Contrôle du filtre « possibles » (4 fiches initiales) et des marqueurs correspondants | Tests existants dans la CI de référence |
+| 07 | Vérification des deux sélecteurs et du passage entre lectures, sans changer d'application | Tests préexistants et nouveaux contrôles UI |
+| 08 | Contrôle des filtres cumulés commune + domaine + recherche besoin/ressource | Nouveau scénario Chromium « Réparation + Outils » **écrit, CI en attente** |
+| 09 | Vérification de la parité : même source filtrée pour SVG et liste, et conservation des fiches sans repère | `filterMapEntries`, `communeGroups`, `withoutPublicMapLocation` |
+| 10 | Correction : section « Fiches sans localisation publique » dans la vue carte, sans coordonnées inventées ; sécurisation de l'absence de `territories` pour les fonctions et les libellés | `cartes-core.mjs`, `initiatives-app.mjs`, tests synthétiques Node/Chromium **écrits** |
+| 11 | Correction de la sélection de commune : clic, Entrée ou bouton tactile filtrent et ouvrent la vue liste, puis focus sur le compteur ; retour de fiche vers l'élément d'origine | Code poussé, cas de test navigateur ajouté |
+| 12 | Lien profond invalide : restauration de la liste, nettoyage de l'URL et focus direct sur le message d'alerte | Code poussé, contrôle navigateur ajouté |
+| 13 | Vérification de l'alternative si le module de carte échoue : boutons désactivés, liste complète maintenue, avertissement | Test Chromium préexistant réussi sur le SHA de référence ; revalidation à venir |
+| 14 | Inspection des exports et des injections de champs privés : liste blanche et exclusion d'un item réel conservées | Tests canari antérieurs verts ; nouveau traitement de `territories` absent couvert par un test écrit |
+| 15 | Copie **bit à bit identique** de `cartes-design.css` de la PR #35 dans #41 et ajout du lien CSS **après** `cartes.css`, sans modifier la source du Graphiste | Blob SHA identique `07e8c54fff6cc4dfc66f42ba19cf364962e400c5` |
+| 16 | Création de `cartes-compat.css` séparé, réglage des repères SVG et ajout de grands boutons communaux accessibles sous le schéma (sans augmenter les chevauchements d'étiquettes) | Code poussé ; contrôle tactile et clavier ajouté |
+| 17 | Ajout d'une suite de captures et de vérifications de typographie, contrôles et débordement à **390 et 1280 px**, pour les deux lectures en liste et carte | Suite navigateur **écrite**, CI en attente |
+| 18 | Contrôle du retour clavier, de la navigation sans JS, du lien de repli et du focus d'erreur ; aucun essai avec lecteur d'écran réel ni Android physique | Base CI verte ; nouveaux cas de non-régression à exécuter |
+| 19 | Ajout de tests spécifiques à la localisation absente, CSS du Graphiste, erreur d'URL, filtres cumulés, boutons communaux, et correction des exceptions possibles sur `territories` manquant | **41 tests Node et 12 Chromium présents**, exécution récente encore en attente |
+| 20 | Commits poussés sur la branche existante ; mise à jour du Journal et de la transmission au Relieur, avec limites explicitement distinguées | PR #41 et lien CI ci-dessous ; pas de fusion ni déploiement |
+
+### Interface harmonisée
+- `cartes-design.css` : **copie strictement identique** de la proposition du Graphiste sur PR #35, chargée après les styles existants.
+- `cartes-compat.css` : adaptations propres à PR #41, sans modifier le fichier fourni par le Graphiste.
+- Carte : SVG schématique avec **repères de communes**, pas une carte de rues, de bâtiments ou de domiciles ; les boutons textuels sous le schéma évitent de dépendre des minuscules étiquettes SVG.
+- La vue liste couvre les résultats filtrés complets. Les éléments sans localisation sont aussi récapitulés dans la carte, sans marqueur fictivement précis.
+- La carte peut être désactivée sans perte de la liste ; aucune donnée réelle, GPS, adresse ou contact exposé.
+
+### Tests, captures et statut exact
+**CI de référence exécutée :** https://github.com/zoutiFrutti/Interstice/actions/runs/41099508020, SHA `a592683`, 38 tests Node réussis et 8 Chromium réussis, zéro échec.
+
+**CI sur nouvelles corrections :** https://github.com/zoutiFrutti/Interstice/actions/runs/41101545237 sur SHA `1bfde0e`, **encore en file d'attente au moment du bilan**. Le dépôt connaît une file d'attente GitHub Actions générale, y compris pour des workflows de `main` et de la PR du Graphiste. Ne pas confondre « test écrit » avec « test exécuté ». Les screenshots des quatre combinaisons en 390 et 1280 px sont configurés comme artefacts `interstice-apercu-mobile-fictif` après une exécution Chromium aboutie ; les captures nouvelles ne sont **pas encore confirmées**. Les captures antérieures sont dans l'exécution verte de référence.
+
+**Limites à faire vérifier :** voix de lecteur d'écran (TalkBack, VoiceOver), navigation sur Android physique, revue de captures après CI, revue CSS des derniers ajustements par Graphiste, et conflits de `coordination/JOURNAL_COMMUN.md` entre cette branche et `main`. Ne pas forcer la fusion.
+
+**Blocages avant données réelles :** consentement explicite, provenances vérifiées, droit de correction/masquage, autorisations des contacts publics, sécurité des accès et capacités de modération, revue Anarchitecte/Juriste. Pas de Supabase, de géocodage, de messagerie, de réservation ou de déploiement dans ce cycle. Les fiches restent intégralement fictives ; les mentions « documenté » ne valent que **dans le scénario inventé**.
+
+**Pour le Relieur :** demander validation Graphiste de `cartes-compat.css` vis-à-vis de PR #35 ; organiser un test humain mobile/lecteur d'écran ; reprendre la CI quand la file se vide ; préparer une résolution conservatrice des conflits du Journal, sans supprimer les apports des ateliers. Les études critiques 39–58 et le manifeste V2.5 ne sont pas collectivement adoptés.
