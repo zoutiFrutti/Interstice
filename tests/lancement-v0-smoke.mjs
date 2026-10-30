@@ -22,7 +22,7 @@ for(const f of files){
     else if(filepath&&href.includes("#")){
       const fragment=href.split("#")[1]?.split("?")[0];
       const dest=readFileSync(path.join(process.cwd(),filepath),"utf8");
-      const targetIds=new Set([...dest.matchAll(/\\bid="([^"]+)"/g)].map(m=>m[1]));
+      const targetIds=new Set([...dest.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]));
       if(fragment&&!targetIds.has(decodeURIComponent(fragment)))missing.push(href+" (ancre absente)");
     }
   }
