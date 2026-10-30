@@ -63,3 +63,47 @@
 ### Traçabilité et limite de coordination
 
 Cette transmission sert de message **à récupérer ou relier** par les autres ateliers. Elle ne prouve pas qu'une conversation séparée l'a reçue. Aucun changement produit sur Supabase, le site public, les pages de la charte constitutive, les statuts ou le manifeste. Les propositions sont réversibles et attendent une décision collective appropriée.
+
+---
+
+## Transmission 013 — Bilan des dix passes ciblées au Relieur · 30 octobre 2026
+
+**Rôle :** le Relieur centralise coordination et organisation pratique, **sans pouvoir politique ni responsabilité RGPD automatique**. Pas d'atelier Organisateur. Transmissions anciennes conservées comme archives. **Statut : recommandations non adoptées**, pas d'autorisation de déploiement.
+
+### Sources et preuves effectivement vérifiées
+
+- Transmission 013 : `coordination/RELIEUR_TRANSMISSION_013_CARTES_COMMUNS_POSSIBLES_PRIORITES_2026-10-30.md`.
+- Dossiers du Juriste **réutilisés et enrichis** (aucune création de dossier concurrent) :
+  - [Risques et licence des fonds, niveaux L0–L3](https://github.com/zoutiFrutti/Interstice/blob/main/docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md), ajout du 30 octobre, commit `8ae055d168b23c310e88cd1e12cd3e8cc6c68088`.
+  - [Droits des fiches, recours, cahier de garanties F1–F10 / R1–R10](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md), compléments commits `11a3aeb130883e8db353651ab3d88b84f9de8a16` et `b8f0d390354cfea4734d87cc1cd0c4c54bfe6095`.
+- [PR #41](https://github.com/zoutiFrutti/Interstice/pull/41) : branche `feat/initiatives-decouverte-mobile-2026-10-30`, HEAD relevé `d45d2cba40ba0f1e89000888820e3ac2f490b21e` ; ouverte en brouillon, non fusionnée. **15 assertions statiques ciblées / 15 observées** dans les fichiers de démo, **aucun test navigateur/Android exécuté par le Juriste**. Les six fiches, lieux de recherche, besoins et offres sont fictifs ; les communes de Tarn citées sont géographiquement réelles, pas les initiatives.
+- [PR #44](https://github.com/zoutiFrutti/Interstice/pull/44) : branche `atelier-lecteur/correction-deux-pages-20261030`, HEAD `bec3db6ff462963ae7c85faa0055ad9a1f92c54b` ; non fusionnée. Correction d'ordre des sections constatée, mais réserves juridiques encore ouvertes (lignes 46 et 16). [Avis Wiki mis à jour](https://github.com/zoutiFrutti/Interstice/blob/main/docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md), commit `91b0558a24315cea0af65ca86016a67246912b42`.
+- Licences et politiques réexaminées directement : [OSM ODbL](https://www.openstreetmap.org/copyright), [OSMF Tile Usage](https://operations.osmfoundation.org/policies/tiles/), [Nominatim](https://operations.osmfoundation.org/policies/nominatim/), [OSM France](https://www.openstreetmap.fr/usage/), [Etalab 2.0](https://www.data.gouv.fr/pages/legal/licences/etalab-2-0), [CNIL annuaires](https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes).
+
+### Tableau de dix passes : action et livrable vérifiable
+
+| # | Action effective | Critères / résultat |
+|---|---|---|
+| 1 | Contrôle du code de démo et garanties actuelles | 15 assertions statiques ciblées, 15 propriétés observées ; fictif, pas de contact réel détecté ; limites de preuve documentées |
+| 2 | Partition public/privé/jamais collecté | Tableau de données avec test négatif `J013-02` |
+| 3 | Définition des quatre niveaux de localisation | L0 aucun point ; L1 commune/zone indicative ; L2 lieu public de rendez-vous ; L3 adresse publique justifiée, tests `J013-03` à `J013-06` |
+| 4 | Analyse des lieux sensibles et risque de recoupement | Tests `J013-07` à `J013-10`, bascule vers L0 si nécessaire |
+| 5 | Référencement indépendant de la Charte | Trois critères séparés : admissibilité, degré documentaire, pratiques volontaires ; `J013-12` |
+| 6 | Matrice de pouvoir sur une fiche | Contributeur, initiative habilitée, auteur, personne identifiable, modérateur, Relieur ; `J013-13` |
+| 7 | Circuit de correction/masquage/recours | Cinq scénarios `J013-14` à `J013-18` ; pas de canal RGPD fictif |
+| 8 | Contrôle séparé licences des données et service de tuiles | ODbL, Etalab, OSMF tuiles, OSM France et Nominatim ; matrice fournisseur `J013-11` |
+| 9 | Différence entre annuaire et activité organisée | Tableau de responsabilités + deux cas fictifs `J013-19` et `J013-20` |
+| 10 | Critères opérationnels de livraison | **F1–F10 pour fiction** et **R1–R10 avant données réelles**, avec fonctions reportables explicites |
+
+**Ces dix passes sont dix vérifications, distinctions et ajouts documentaires ciblés, non dix exécutions de tests de production.** Les tests `J013-xx` sont **spécifiés**, pas tous exécutés : l'Anarchitecte et la Développeuse les implémenteront/vérifieront sur leurs branches.
+
+### Décision recommandée au Relieur
+
+**Démo fictive :** le développement peut être préparé sans personne responsable de traitement de fiches réelles puisque la version demandée ne doit pas collecter de données personnelles réelles ; ne rien ajouter qui collecte effectivement des contacts, adresses, positions GPS ou témoignages réels. Contrôler toujours les traitements techniques, journaux, prestataires ou traceurs introduits par un éventuel fond de carte réel.
+
+**Ouverture réelle :** blocages **R1–R5** avant toute publication d'initiatives et de coordonnées personnelles réelles : responsable RGPD et bases légales, contrôle technique des accès API/RLS, localisations L0–L3 et lieux sensibles, vérification des droits de référencement, canal de correction/recours. R6–R8 conditionnels selon les services choisis ; R9–R10 à arbitrer collectivement.
+
+**Dépendances :** Anarchitecte définit le contrat affichage/public/privé ; Développeuse conserve PR #41 et teste liste/carte/export/absence de fuite sur fixtures ; Graphiste contrôle lisibilité mobile ; Relieur organise scenarios humains, moyens de contact et arbitrages ; Lecteur/Médiathèque poursuivent les deux pages Wiki #44. Aucun des ateliers n'est présumé avoir reçu la transmission dans une autre conversation.
+
+**Aucune modification de permissions Supabase, migration, code du prototype, HTML Wiki, fusion, publication, ni adoption du Manifeste V2.5.** Le dépôt de ce bilan est une transmission documentaire.
+
