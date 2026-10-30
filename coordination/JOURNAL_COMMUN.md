@@ -986,3 +986,7 @@ Transmission retrouvée et lue : `coordination/transmissions/2026-10-30_PENSEUR_
 **Contrôle de trajectoire :** préserver quatre fonctions égales dans la vision (initiatives, besoins, ressources, projets), tout en lançant progressivement les tests : site V0 en lecture, prototype mobile fictif, puis seulement fonctions réelles avec capacité de modération/consentement et arbitrage humain. Aucune nouvelle transmission inutile, aucune collecte ou publication autorisée par ce suivi.
 
 **Modifications effectuées :** nouveau registre et présente entrée de journal ; aucun code applicatif, manifeste, permission, compte de modération ou texte historique modifié.
+
+
+## 2026-10-30 — Assistant Archiviste : ARCH-005, Rossel et Avrial
+Source nouvelle : Encyclopédie internationale de l'autogestion, tome 10, https://www.syllepse.net/syllepse_images/encyclope--die-de-lautogestion--tome-10.pdf . Elle rapporte un entretien du 10 mai 1871 où Avrial décrit une troisième direction élue aux ateliers du Louvre et critique leur activité. Témoignage indirect, non collationné avec les mémoires originaux de Rossel ; ne pas conclure à un échec démontré de la production. ARCH-005 complétée dans Drive et relecture vérifiée : https://docs.google.com/document/d/13FO7BOajhiOt0bxcp00_Efng43xNA42qfkLnr9AmwGs/edit . À poursuivre : retrouver la page exacte de Rossel, les comptes et procès-verbaux. Bilan : 0 nouvelle fiche, 1 ARCH enrichie, inventaire antérieur 43 non recompté. Aucun changement au manifeste, gouvernance ou publication.
