@@ -1,0 +1,15 @@
+/* Graphiste 014 : correction minimale des libellés SVG mobile.
+ À charger APRÈS cartes-compat.css; pas de nouveau design system. */
+@media(max-width:600px){
+ .initiative-main #map-panel{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:auto}
+ .initiative-main #municipality-map{
+   display:block;width:760px;max-width:none;height:420px;max-height:none;
+   aspect-ratio:760/420;flex:none;margin-right:14px
+ }
+ .initiative-main .map-marker-label{font-size:23px;font-weight:800;letter-spacing:0}
+ .initiative-main .map-region-label{font-size:23px}
+ .initiative-main .map-axis-label{font-size:18px}
+ .initiative-main .map-marker-halo{r:36px}
+ .initiative-main #map-panel .map-controls>span{font-size:18px}
+}
+@media(prefers-reduced-motion:reduce){.initiative-main #map-panel{scroll-behavior:auto}}

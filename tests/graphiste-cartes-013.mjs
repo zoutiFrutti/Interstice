@@ -5,7 +5,7 @@ import {readFileSync,mkdirSync,writeFileSync} from "node:fs";
 import path from "node:path";
 import {chromium} from "playwright";
 const base=process.env.INTERSTICE_CARTE_TEST_URL||"http://127.0.0.1:8766";
-const css=readFileSync("cartes-design.css","utf8");
+const css=readFileSync("cartes-integration-014.css","utf8");
 const target=base+"/decouvrir-initiatives.html";
 const folder="visual-qa/cartes";
 mkdirSync(folder,{recursive:true});
