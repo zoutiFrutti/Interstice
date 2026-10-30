@@ -1137,3 +1137,20 @@ Contrôle documentaire ciblé des références `refs/pull/27/head` et `refs/pull
 **Ordre de transmission préparé :** Penseur, Juriste, Médiathèque, Anarchitecte, Développeuse, Lecteur, Graphiste, Archiviste, Biographe, Communications ; Relieur assure coordination pratique et suit les vraies réceptions, sans « Organisateur » séparé.
 
 **Aucune fonctionnalité cartographique réelle ou carte publique n'est prétendue créée par ce document.** Aucun déploiement, fusion, permission ou texte politique modifié dans cette passe de coordination. Les dix passes de chaque atelier sont **demandées**, non réalisées par le Relieur à leur place.
+
+---
+
+## 2026-10-30 · Juriste — transmission 013, garanties des deux cartes
+
+**Mission reprise :** deux dossiers juridiques déjà existants sur cartographie et fiches ; transmission 013 du Relieur consultée, PR #41 Développeuse actuelle et PR #44 Lecteur relues. **Statut : propositions non adoptées, sans fusion/déploiement et sans permission Supabase modifiée.**
+
+**Dix passes effectuées et tracées :** (1) 15 vérifications statiques ciblées du prototype fictif PR #41, propriétés ciblées observées, **aucun test dynamique revendiqué** ; (2) données publiques/privées/jamais collectées ; (3) quatre niveaux d'exposition géographique L0–L3 ; (4) scénarios de réidentification des lieux sensibles, suppression depuis API/exports/caches ; (5) admission au référencement sans adhésion ou notation morale ; (6) proposition/revendication/correction avec mandat proportionné ; (7) demandes de retrait, urgence, conflit d'intérêts et réexamen ; (8) distinction ODbL des données OSM / conditions OSMF de tuiles / politique Nominatim / serveur OSM France / Etalab ; (9) distinction annuaire informatif et véritable organisation de rencontres ; (10) cahier de critères **F1–F10 fictif** versus **R1–R10 ouverture réelle** et tests `J013-01` à `J013-20` proposés.
+
+**Sources externes réexaminées :** https://www.openstreetmap.org/copyright ; https://operations.osmfoundation.org/policies/tiles/ ; https://operations.osmfoundation.org/policies/nominatim/ ; https://www.openstreetmap.fr/usage/ ; https://www.data.gouv.fr/pages/legal/licences/etalab-2-0 ; https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles ; https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes .
+
+**Livrables édités et vérifiables :** `docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md` (commit `8ae055d1`) ; `propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md` (commits `11a3aeb1`, `b8f0d390`) ; `coordination/JURISTE_TRANSMISSION_CARTOGRAPHIE_2026-10-30.md` (commit `1b4be710`). Les anciens dossiers sont conservés, aucun dossier général supplémentaire créé.
+
+**Suivi parallèle Wiki :** PR #44 ouverte en brouillon ; ordre des sections corrigé, mais formulations de droit des non-membres (`wiki-decision-collective.html:46`) et voie de rectification via simple proposition Wiki (`wiki-lecture-croisee-travail-soin-pouvoir.html:16`) encore à traiter ; avis juridique existant actualisé `docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md` (commit `91b0558a`). **Aucune page HTML modifiée par le Juriste.**
+
+**Décision suivante au Relieur :** coordonner Anarchitecte et Développeuse autour du cahier F1–F10 pour un prototype fictif sans collecte, puis faire instruire R1–R5 avant tout passage à de vraies fiches. Les droits sur les données, la qualité de modérateur, les fonds de carte et les moyens de retrait/recours restent des conditions non vérifiées du futur système réel. Le Relieur coordonne, sans autorité politique ni responsabilité de traitement automatique. **Écriture GitHub ≠ réception par les autres conversations**.
+
