@@ -1,0 +1,18 @@
+{
+  "id": "015-relieuse-developpeuse-001",
+  "from": "relieuse",
+  "to": [
+    "developpeuse"
+  ],
+  "subject": "Corriger 3 échecs navigateur PR41 sans recréer les cartes",
+  "source_refs": [
+    "https://github.com/zoutiFrutti/Interstice/actions/runs/41101912014"
+  ],
+  "requires": [],
+  "mission_ref": "coordination/RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATION_2026-10-30.md",
+  "status": "PREPAREE",
+  "created_at": "2026-10-30",
+  "ack_at": null,
+  "result_ref": null,
+  "notes": "Exemple de dispatch documentaire. GitHub ne remet pas cette mission à la conversation."
+}
