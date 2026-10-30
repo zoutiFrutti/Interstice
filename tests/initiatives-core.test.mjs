@@ -307,3 +307,16 @@ test("015 TIS: aucun import de fiches réelles et aucun champ privé injecté",a
   assert.equal(inspectFictionalTis({...evil,...change}),null);
  }
 });
+
+test("015: aucun enregistrement sans provenance fictive ne rejoint carte ou export",async()=>{
+ const {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS}=await import("../cartes-data.mjs");
+ const {filterMapEntries,communeGroups,exportFictionalMapEntries}=await import("../cartes-core.mjs");
+ const fake={...DEMO_MAP_ENTRIES[0],id:"fixture-provenance-absente",source:{type:"unknown"}};
+ const rows=[...DEMO_MAP_ENTRIES,fake];
+ for(const reading of ["communs","possibles"]){
+  const visible=filterMapEntries(rows,{reading});
+  assert.equal(visible.some(x=>x.id===fake.id),false);
+  assert.equal(communeGroups(visible,COMMUNE_ANCHORS).flatMap(g=>g.items).some(x=>x.id===fake.id),false);
+ }
+ assert.equal(exportFictionalMapEntries(rows).entries.some(x=>x.id===fake.id),false);
+});
