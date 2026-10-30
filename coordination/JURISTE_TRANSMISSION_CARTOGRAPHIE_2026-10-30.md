@@ -202,3 +202,43 @@ Saisine : `coordination/RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATI
 
 **N'a pas été fait :** recherche réelle de partenaires, contact, lecture de réponses privées, création de serveur de signalement, changement de licences/permissions Supabase, rédaction d'une Charte, correction de code PR #41, modification des deux HTML Wiki, fusion ou publication. Manifeste V2.5 toujours non adopté.
 
+---
+
+## Transmission 015 bis — Reprise complémentaire demandée à La Juriste · 30 octobre 2026
+
+**Destinataires documentaires :** La Relieuse, La Tisseuse et La Développeuse ; la présence sur GitHub **n'atteste pas** de lecture par une autre conversation. **Le premier cycle 015 de 30 passes était déjà achevé** (section précédente). Il n'a pas été recompté : cette nouvelle saisine a donné lieu à **30 contrôles et exercices complémentaires**, consignés séparément sans créer un troisième audit.
+
+### Point de reprise vérifié
+
+- Les deux fichiers officiels TIS `coordination/TISSEUSE_CADRAGE_COOPERATIONS_ANNUAIRE_2026-10-30.md` (blob `81bacb34`) et `coordination/TIS_001_PREPARATION_BILAN_PARTIEL_2026-10-30.md` (blob `c448c8ac`) sont inchangés au contrôle. **La pièce de bilan toujours disponible sur `main` n'atteste que 0/10–12 structures vérifiées**, 3 cas imaginés et 2 modèles de message non envoyés. Ne pas prétendre qu'aucun progrès n'existe dans une conversation non consultée.
+- Le dépôt GitHub a été contrôlé **public**. Le dossier TIS ne présente pas de courriel/numéro aux formats usuels dans les champs contrôlés, mais des lieux rares et sources publiques peuvent rester identifiants.
+- [PR #41](https://github.com/zoutiFrutti/Interstice/pull/41) actuelle au contrôle : HEAD `25b19e0390c18b67068b5fbc7789ac351f7eb466`, ouverte, démo toujours fictive. [PR #44](https://github.com/zoutiFrutti/Interstice/pull/44) : HEAD `b08ee0b915a162faa2d870debc6580b08ca29935`, ouverte, les deux textes éditoriaux candidats sont contrôlés.
+- Sources externes réexaminées : [CNIL, réutilisation de données d'annuaires](https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes) et [CNIL, prospection électronique, juin 2026](https://www.cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique). Elles distinguent consentement, intérêt légitime, opposition selon la catégorie de donnée, le canal et la nature de la sollicitation. **L'accord préalable de fiche TIS est une règle interne de prudence proposée, non une obligation RGPD universelle**.
+
+### Résultats supplémentaires effectivement enregistrés
+
+**Matrice 30 nouvelles passes, six lots de cinq :** [dossier juridique existant, « Transmission 015 — Reprise complémentaire »](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md), commit `a8c40734dbe2d0e5d6ba1dac46f3cc899f8e2211`.
+
+- Lot A **01–05** : sources actuelles, canevas inchangés et état réel #41.
+- Lot B **06–10** : quatre permissions juridiquement séparées (premier contact, fiche publique, coopération, annonce publique de coopération), mandat et droits d'auteur distincts.
+- Lot C **11–15** : L0/zone rare, conditions d'accueil inconnues, sortie d'une coopération et refus non stigmatisé.
+- Lot D **16–20** : dépôt public, champs restreints, opposition et absence de données personnelles dans les documents ouverts.
+- Lot E **21–25** : dernière PR #44, distinction des droits, avertissements, statut provisoire et citations.
+- Lot F **26–30** : **15/15 cas fictifs sur modèle candidat** et **12/12 contrôles de sources/pages**, suivis de grilles décisionnelles prêtes pour relecture humaine. Ces tests ont été **réellement exécutés dans un bac JavaScript autonome**, mais **ne testent pas le système de gestion de partenaires, la PR #41, une API réelle ni des autorisations Supabase**.
+
+**Avis Wiki initial complété à son emplacement :** [`docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md`](https://github.com/zoutiFrutti/Interstice/blob/main/docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md), suivi `015 bis`, commit `5c4be12c03d1c944a2dcc3741d5d3f255492aeb9`. Au nouveau HEAD #44, la phrase « recours » dans `wiki-decision-collective.html:37` n'annonce plus de recours déjà opérationnel ; `:46` distingue droits des non-membres ; `:57–58` et `wiki-lecture-croisee-travail-soin-pouvoir.html:16` annoncent honnêtement l'absence de canal confidentiel. **Aucun HTML modifié par La Juriste**.
+
+### Trois fiches d'arbitrage directement utilisables
+
+1. **Avant premier contact :** source lue et datée ; canal officiel ; expéditeur mandaté ; texte spécifique non trompeur ; temps de suivi et validation **humaine** d'envoi. **Aucun message envoyé**.
+2. **Avant référencement public réel :** identité et sources, version approuvée, base légale/personnes informées, source et droits des médias, géographie consentie ou non révélatrice, moyen effectif de retrait/correction, contrôle API côté serveur, validation humaine. **Aucune fiche réelle créée**.
+3. **Avant coopération :** objet et apports bornés ; mandats de deux parties ; responsabilités et moyens d'accueil ; durée et sortie ; **accord séparé pour communiquer publiquement** la coopération. Une convention peut rester privée même sans fiche publique.
+
+**Exemple fictif JSON fourni** au dossier, avec `research_state`, `publication_state`, `cooperation_state` indépendants et `permissionToDisplay:false`. À la Développeuse : surtout ne pas injecter de données TIS réelles dans PR #41, ni exposer états de contact/refus dans les filtres ou fichiers publics.
+
+### État des décisions
+
+**FAIT :** 30 contrôles/analyses nouveaux répertoriés, trois grilles et tests fictifs, suivi Wiki, bilan consigné. **BLOQUÉ :** premier courrier vers une structure non identifiée/mandatée ; publication réelle sans responsable et canal de droits ; traitement de plainte sensible sans dispositif privé, tout engagement humain sans parties habilitées. **RECOMMANDÉ :** modes d'accès hors application, non-adhésion, refus sans relance, conditions d'accueil datées et contestables. **REPORTABLE :** système de gestion réelle de partenaires, portabilité, assurance d'événements, nouvelles interfaces de carte et automatisations.
+
+**Aucun changement de droits Supabase, import réel, collecte de données privées, contact, fusion, déploiement, charte générale ou adoption politique dans cette reprise.** Le manifeste V2.5 reste une référence éditoriale non adoptée.
+
