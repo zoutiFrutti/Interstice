@@ -164,7 +164,7 @@ body.wiki-reading {font-family:var(--font-reading);font-size:19px;line-height:1.
 .wiki-reading .reading-toc summary {cursor:pointer;min-height:54px;padding:16px 3px;font-size:19px;font-weight:750;color:#f0e5da}
 .wiki-reading .reading-toc ol {margin:4px 0 20px;padding-left:27px;columns:2}
 .wiki-reading .reading-toc li {break-inside:avoid;margin:7px 0;font-size:17px}
-.wiki-reading .reading-toc a {color:#f4c2b7;text-decoration:underline;text-underline-offset:3px}
+.wiki-reading .reading-toc a {display:inline;min-height:0;padding:0;background:transparent;border-radius:0;color:#f4c2b7;text-decoration:underline;text-underline-offset:3px;font-weight:600;text-align:left}
 .wiki-reading .reading-actions {max-width:70ch;margin:24px auto 46px;display:grid;grid-template-columns:1fr 1fr;gap:13px}
 .wiki-reading .reading-actions a {display:flex;min-height:56px;align-items:center;justify-content:center;padding:13px 17px;border:1px solid #b88b86;border-radius:8px;font-size:19px;line-height:1.35;font-weight:750;text-align:center;text-decoration:none;background:#922532;color:#fff}
 .wiki-reading .reading-actions .reading-back {background:#252124;color:#f8e5df}
