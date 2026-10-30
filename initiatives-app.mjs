@@ -1,8 +1,8 @@
 import {DEMO_INITIATIVES} from "./initiatives-data.mjs";
 import {createDemoRepository,explainSearchMatch,buildPublicDemoExport} from "./initiatives-core.mjs";
 import {findCompatibleExamples} from "./initiatives-simulation.mjs";
-import {DEMO_MAP_ENTRIES} from "./cartes-data.mjs";
-import {filterMapEntries,exportFictionalMapEntries} from "./cartes-core.mjs";
+import {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS} from "./cartes-data.mjs";
+import {filterMapEntries,exportFictionalMapEntries,withoutPublicMapLocation} from "./cartes-core.mjs";
 // Carte chargée séparément : la liste doit fonctionner même si ce module échoue.
 const repo=createDemoRepository(DEMO_INITIATIVES),$=id=>document.getElementById(id);
 const form=$("filters"),commune=$("commune"),category=$("category"),objet=$("objet"),scope=$("scope"),order=$("order"),list=$("results"),count=$("count"),empty=$("no-results"),explorer=$("explorer"),detail=$("detail"),content=$("detail-content");
@@ -30,6 +30,9 @@ async function drawList(){
  if(ticket!==sequence)return;
  visibleEntries=rows;
  list.replaceChildren(...rows.map(makeCard));
+ const noLocation=withoutPublicMapLocation(rows,COMMUNE_ANCHORS);
+ $("map-unlocated").hidden=noLocation.length===0;
+ $("map-unlocated-results").replaceChildren(...noLocation.map(makeCard));
  count.textContent=rows.length+" fiche"+(rows.length>1?"s":"")+" fictive"+(rows.length>1?"s":"")+" trouvée"+(rows.length>1?"s":"");
  empty.hidden=rows.length>0;$("export-demo").disabled=rows.length===0;
  $("entry-list-title").textContent=reading==="communs"?"Fiches fictives des communs":"Fiches fictives des possibles";
@@ -52,9 +55,10 @@ async function showDetail(id,focus=false){
  if(item?.reading!==reading&&item?.reading)setReading(item.reading);
  if(!item){
   const url=new URL(location.href);url.searchParams.delete("initiative");
+  returnOrigin=null;
   history.replaceState(null,"",url.pathname+url.search+url.hash);
   $("invalid-route").hidden=false;
-  showList(true);return;
+  await showList();$("invalid-route").focus();return;
  }
  $("invalid-route").hidden=true;
  content.replaceChildren();content.append(node("p","EXEMPLE FICTIF · NON RÉFÉRENCÉ","tag"));
@@ -140,7 +144,7 @@ $("display-map").disabled=true;
 import("./cartes-map.mjs").then(({createMunicipalityMap})=>{
  cartography=createMunicipalityMap({
   svg:$("municipality-map"),emptyNote:$("map-caption"),
-  onCommune:name=>{commune.value=name;drawList();count.focus();}
+  onCommune:name=>{commune.value=name;drawList();setDisplay("list");count.focus();}
  });
  $("display-map").disabled=false;
  cartography.render(visibleEntries,commune.value);

@@ -14,6 +14,12 @@ export function filterMapEntries(entries,{reading="communs",commune="",category=
   (!q||explainResourceMatch(x,objet,scope).length>0));
  return order==="titre"?[...found].sort((a,b)=>a.title.localeCompare(b.title,"fr")):found;
 }
+// Une fiche sans commune publique doit rester visible même si aucun repère SVG n'existe.
+export function withoutPublicMapLocation(entries,anchors){
+ const available=new Set(anchors.map(anchor=>anchor.id));
+ return entries.filter(entry=>!Array.isArray(entry.territories)||
+  !entry.territories.some(name=>available.has(name)));
+}
 export function communeGroups(entries,anchors){
  return anchors.map(anchor=>({anchor,items:entries.filter(x=>x.territories.includes(anchor.id))})).filter(g=>g.items.length);
 }

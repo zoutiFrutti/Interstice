@@ -4,7 +4,7 @@
 <meta name="description" content="Démonstration fictive de découverte d'initiatives locales Interstice.">
 <title>Découvrir les initiatives · Interstice (démo fictive)</title>
 <link rel="icon" type="image/svg+xml" href="assets/logo-interstice.svg">
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="initiatives.css"><link rel="stylesheet" href="cartes.css"><link rel="stylesheet" href="cartes-design.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="initiatives.css"><link rel="stylesheet" href="cartes.css"><link rel="stylesheet" href="cartes-design.css"><link rel="stylesheet" href="cartes-compat.css">
 </head><body>
 <header class="initiative-header"><a href="index.html" class="identity">INTERSTICE<span>.</span></a><a href="participer.html">Participer</a></header>
 <main class="initiative-main">
@@ -48,12 +48,17 @@
 <button type="button" id="map-zoom-reset" class="button-muted">Vue entière</button></div></div>
 <svg id="municipality-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="group" aria-label="Carte interactive schématique de quatre communes du Tarn. Utiliser Tab et Entrée pour sélectionner une commune."></svg>
 <p id="map-caption" class="map-caption">Repères communaux fictifs.</p>
+<div id="map-unlocated" class="map-unlocated" hidden aria-labelledby="map-unlocated-title">
+<h3 id="map-unlocated-title">Fiches sans localisation publique</h3>
+<p>Ces exemples restent consultables, sans point sur la carte. Aucune localisation ne peut être déduite de leur absence de repère.</p>
+<div id="map-unlocated-results" class="initiative-grid"></div>
+</div>
 <button type="button" id="map-clear-commune" class="button-muted">Afficher toutes les communes</button>
 </div>
 <div class="results-heading"><h3 id="entry-list-title">Fiches fictives des communs</h3><p id="count" role="status" aria-live="polite">Chargement…</p></div>
 <button id="export-demo" type="button" class="button-muted">Exporter les résultats fictifs affichés (JSON)</button>
 <p class="export-note" id="export-status" role="status" aria-live="polite"></p>
-<div id="invalid-route" hidden role="alert" class="empty">La fiche demandée n’existe pas dans cette démonstration. Voici les exemples disponibles.</div>
+<div id="invalid-route" hidden role="alert" tabindex="-1" class="empty">La fiche demandée n’existe pas dans cette démonstration. Voici les exemples disponibles.</div>
 <div id="list-panel"><div id="results" class="initiative-grid" aria-label="Liste intégrale des fiches fictives affichables sur la carte"></div></div>
 <div id="no-results" hidden class="empty"><h3>Aucun exemple correspondant</h3><p>La démonstration n'est pas un annuaire réel. Essaie une autre commune ou un autre domaine.</p><button class="button-muted" type="button" id="clear-empty">Voir tous les exemples</button></div>
 <p class="map-legend"><strong>Fictif :</strong> toute la démonstration. <strong>Documenté dans le scénario :</strong> existence imaginée, non vérifiée. <strong>En projet :</strong> idée ou besoin imaginaire sans engagement.</p>
