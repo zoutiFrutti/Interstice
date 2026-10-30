@@ -1,0 +1,16 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+import {DEMO_INITIATIVES} from "../initiatives-data.mjs";
+import {normalizeSearch,filterInitiatives,getInitiativeById,createDemoRepository} from "../initiatives-core.mjs";
+const repo=createDemoRepository(DEMO_INITIATIVES);
+test("accents, casse et tirets ne bloquent pas la recherche",()=>{assert.equal(normalizeSearch("  LISLE-sur-Tarn "),"lisle sur tarn");assert.equal(normalizeSearch("ÉCOLOGIE"),"ecologie");});
+test("commune peut être recherchée sans GPS",()=>{const r=filterInitiatives(DEMO_INITIATIVES,{commune:"lisle sur tarn"});assert.ok(r.length>=2);assert.ok(r.every(x=>x.territories.includes("Lisle-sur-Tarn")));});
+test("une initiative mobile apparaît sur plusieurs territoires",()=>{assert.ok(filterInitiatives(DEMO_INITIATIVES,{commune:"Albi"}).some(x=>x.id==="demo-outils"));assert.ok(filterInitiatives(DEMO_INITIATIVES,{commune:"Gaillac"}).some(x=>x.id==="demo-outils"));});
+test("catégories et communes sont combinées",()=>{assert.equal(filterInitiatives(DEMO_INITIATIVES,{commune:"Lisle-sur-Tarn",category:"Réparation"}).length,0);assert.ok(filterInitiatives(DEMO_INITIATIVES,{category:"Réparation"}).every(x=>x.category==="Réparation"));});
+test("une commune inconnue reste un résultat vide",()=>assert.deepEqual(filterInitiatives(DEMO_INITIATIVES,{commune:"Nullepart"}),[]));
+test("liste publique fictive consultable sans compte",async()=>{assert.equal((await repo.list()).length,DEMO_INITIATIVES.length);assert.equal(repo.mode,"demo");});
+test("fiche par identifiant et identifiant absent",async()=>{assert.equal((await repo.getById("demo-jardin")).title,"Le jardin qu'on imagine");assert.equal(await repo.getById("inconnu"),null);assert.equal(getInitiativeById(DEMO_INITIATIVES,"inconnu"),null);});
+test("toutes les fiches sont fictives sans contact ni GPS",()=>{for(const x of DEMO_INITIATIVES){assert.equal(x.isDemo,true);assert.equal(x.publicContact,null);assert.equal(x.source.type,"simulation");assert.ok(!("address" in x)&&!("latitude" in x)&&!("longitude" in x));}});
+test("repository en lecture seule",async()=>{assert.equal(repo.create,undefined);const item=await repo.getById("demo-jardin");assert.throws(()=>item.territories.push("Adresse privée"),TypeError);});
+test("la page est dans le site et n'accède à aucune donnée personnelle",()=>{const html=readFileSync(new URL("../decouvrir-initiatives.html",import.meta.url),"utf8"),app=readFileSync(new URL("../initiatives-app.mjs",import.meta.url),"utf8");assert.match(html,/style\.css/);assert.match(html,/initiatives\.css/);assert.match(html,/PROTOTYPE FICTIF/);assert.doesNotMatch(app,/fetch\(|geolocation|createClient\(|localStorage|innerHTML/);});

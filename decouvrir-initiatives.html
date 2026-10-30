@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Démonstration fictive de découverte d'initiatives locales Interstice.">
+<title>Découvrir les initiatives · Interstice (démo fictive)</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo-interstice.svg">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="initiatives.css">
+</head><body>
+<header class="initiative-header"><a href="index.html" class="identity">INTERSTICE<span>.</span></a><a href="participer.html">Participer</a></header>
+<main class="initiative-main">
+<aside class="demo-notice"><strong>PROTOTYPE FICTIF · AUCUNE INITIATIVE RÉELLE</strong><p>Tous les noms, besoins et ressources sont inventés. Pas de compte, de GPS ni de collecte de données.</p></aside>
+<section id="explorer" aria-labelledby="explorer-title">
+<p class="tag">EXPLORER LES COMMUNS · DÉMONSTRATION</p>
+<h1 id="explorer-title">Et si on cherchait <em>près de chez soi ?</em></h1>
+<p class="lead">Cherche une commune, découvre des projets imaginés et vois comment une fiche pourrait aider à se rencontrer.</p>
+<form id="filters" role="search">
+<div><label for="commune">Commune ou territoire</label><input type="search" id="commune" list="communes" placeholder="Ex. Lisle-sur-Tarn" autocomplete="off">
+<datalist id="communes"><option value="Lisle-sur-Tarn"></option><option value="Gaillac"></option><option value="Rabastens"></option><option value="Albi"></option></datalist></div>
+<div><label for="category">Domaine</label><select id="category"><option value="">Tous les domaines</option><option>Écologie</option><option>Réparation</option><option>Entraide</option><option>Culture</option><option>Mutualisation</option><option>Savoirs</option></select></div>
+<button type="button" class="button-muted" id="clear">Effacer les filtres</button>
+</form>
+<div class="results-heading"><h2>Les initiatives imaginées</h2><p id="count" role="status" aria-live="polite">Chargement…</p></div>
+<div id="results" class="initiative-grid"></div>
+<div id="no-results" hidden class="empty"><h3>Aucun exemple correspondant</h3><p>Cela ne dit rien des initiatives réelles. Essaie Gaillac, Rabastens, Lisle-sur-Tarn ou Albi.</p><button class="button-muted" type="button" id="clear-empty">Voir tous les exemples</button></div>
+</section>
+<section id="detail" hidden aria-labelledby="detail-title">
+<button type="button" class="button-muted" id="back">← Retour aux initiatives</button><article id="detail-content"></article>
+</section>
+<noscript>JavaScript est nécessaire pour cette démonstration sans collecte.</noscript>
+</main>
+<footer>Interstice · Prototype mobile, exemples entièrement fictifs · Aucune participation réelle enregistrée</footer>
+<script type="module" src="initiatives-app.mjs"></script>
+</body></html>

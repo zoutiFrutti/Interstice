@@ -1,0 +1,23 @@
+name: Découverte initiatives fictives
+on:
+  push:
+    branches: [feat/initiatives-decouverte-mobile-2026-10-30]
+  pull_request:
+    paths:
+      - 'initiatives*'
+      - 'decouvrir-initiatives.html'
+      - 'tests/initiatives-core.test.mjs'
+      - '.github/workflows/initiatives-prototype.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/initiatives-core.test.mjs
