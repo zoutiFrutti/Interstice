@@ -18,7 +18,7 @@ function makeCard(item){
  const card=node("article","","initiative-card");
  card.append(node("p","EXEMPLE FICTIF · "+item.stage,"demo-tag"),
    node("p",item.kind==="initiative"?"Initiative":item.kind==="ressource"?"Ressource":item.kind==="besoin"?"Besoin":"Projet","entry-kind"),
-   node("span",item.category,"category-chip"),node("h3",item.title),node("p",item.summary),node("p","Commune(s) : "+item.territories.join(" · ")));
+   node("span",item.category,"category-chip"),node("h3",item.title),node("p",item.summary),node("p",Array.isArray(item.territories)&&item.territories.length?"Commune(s) : "+item.territories.join(" · "):"Sans localisation publique"));
  const a=node("a","Consulter la fiche →");a.href=urlFor(item.id);a.dataset.id=item.id;a.setAttribute("aria-label","Consulter la fiche fictive : "+item.title);card.append(a);
  const reasons=explainSearchMatch(item,currentFilters());
  if(reasons.length)card.append(node("p","Pourquoi cette fiche ? "+reasons.join(" · "),"match-reasons"));
@@ -64,7 +64,7 @@ async function showDetail(id,focus=false){
  content.replaceChildren();content.append(node("p","EXEMPLE FICTIF · NON RÉFÉRENCÉ","tag"));
  content.append(node("p",item.kind==="initiative"?"Initiative":item.kind==="ressource"?"Ressource":item.kind==="besoin"?"Besoin":"Projet","entry-kind"));
  content.append(node("p",item.statusDetail||"Statut de simulation uniquement","map-state"));
- const heading=node("h2",item.title);heading.id="detail-title";heading.tabIndex=-1;content.append(heading,node("span",item.category,"category-chip"),node("p","Zone approximative : "+item.territories.join(", ")),node("p",item.description,"description"));
+ const heading=node("h2",item.title);heading.id="detail-title";heading.tabIndex=-1;content.append(heading,node("span",item.category,"category-chip"),node("p",Array.isArray(item.territories)&&item.territories.length?"Communes approximatives : "+item.territories.join(", "):"Aucune localisation publique"),node("p",item.description,"description"));
  addList("Besoins imaginés",item.needs);addList("Ressources imaginées",item.offers);
  const participation=node("section","","detail-section");participation.append(node("h3","Comment participer ?"),node("p",item.join),node("p","Aucun contact réel ni adresse n'est communiqué."));
  const a=node("a","Découvrir comment contribuer à Interstice");a.href="participer.html";participation.append(a);content.append(participation);

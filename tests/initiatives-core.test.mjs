@@ -280,3 +280,10 @@ test("014: le CSS d'intégration respecte le CSS propre au Graphiste et le charg
  assert.ok(html.indexOf('href="cartes-design.css"')<html.indexOf('href="cartes-compat.css"'));
  assert.match(integration,/map-unlocated/);
 });
+
+test("014: texte lisible de fiche sans localisation, sans adresse fabriquée",()=>{
+ const app=readFileSync(new URL("../initiatives-app.mjs",import.meta.url),"utf8");
+ assert.ok(app.includes("Sans localisation publique"));
+ assert.ok(app.includes("Aucune localisation publique"));
+ assert.ok(!app.includes("Zone approximative : "+'"+item.territories.join'));
+});
