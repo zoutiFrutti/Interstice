@@ -287,3 +287,23 @@ test("014: texte lisible de fiche sans localisation, sans adresse fabriquée",()
  assert.ok(app.includes("Aucune localisation publique"));
  assert.ok(!app.includes("Zone approximative : "+'"+item.territories.join'));
 });
+
+test("015 TIS: repere, référencement accepté et coopération convenue sont distincts du kind",async()=>{
+ const {DEMO_TIS_STATES,inspectFictionalTis}=await import("../cartes-tis-documentation.mjs");
+ assert.equal(DEMO_TIS_STATES.length,3);
+ assert.deepEqual(DEMO_TIS_STATES.map(x=>x.relation),["repere","referencement_accepte","cooperation_convenue"]);
+ const previews=DEMO_TIS_STATES.map(inspectFictionalTis);
+ assert.ok(previews.every(x=>x.kind==="initiative"&&x.reading==="communs"&&x.publicReady===false&&x.isDemo));
+ assert.deepEqual(previews.map(x=>x.publication),["interdite","a_examiner","interdite"]);
+});
+test("015 TIS: aucun import de fiches réelles et aucun champ privé injecté",async()=>{
+ const {DEMO_TIS_STATES,inspectFictionalTis}=await import("../cartes-tis-documentation.mjs");
+ const canary="PRIVATE_015_CANARY";
+ const evil={...DEMO_TIS_STATES[0],name:canary,phone:canary,email:canary,location:canary,secret:canary,url:canary};
+ const preview=inspectFictionalTis(evil);
+ assert.ok(preview);
+ assert.ok(!JSON.stringify(preview).includes(canary));
+ for(const change of [{isDemo:false},{source:{type:"official"}},{relation:"partenaire"},{territory:"rue privée"},{id:"real-org"}]){
+  assert.equal(inspectFictionalTis({...evil,...change}),null);
+ }
+});
