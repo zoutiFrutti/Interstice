@@ -295,3 +295,23 @@ Accès Google Docs vérifié par écriture et relecture. Accès GitHub vérifié
 **Sources :** Jacques Rougerie, https://commune1871-rougerie.fr/les-femmes-de-1871%2Cfr%2C8%2C58.html ; Michèle Audin, https://macommunedeparis.com/2021/05/04/4-mai-1871-au-club-de-la-revolution-sociale/ ; musée Carnavalet, AFF5721, https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune ; sur La Marmite https://www.commune1871.org/index.php/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/democratie-laicite-oeuvre-sociale/685-la-marmite-une-societe-civile-d-alimentation .
 
 **Demandes au Relieur/Archiviste :** faire retrouver les notes originales utilisées par Édith Thomas sur Victorine Gorget/Lefèvre ; consulter actes d'état civil pour Blanche, archives du club et éventuels dossiers de répression ; vérifier la datation et le lieu exact du décès. Décisions humaines : éventuelle publication seulement après relecture. Manifeste V2.5 non adopté.
+
+
+## 30 octobre 2026 — Biographe, Transmission 014 (20 contrôles ciblés)
+
+1. Vérification des fiches Drive BIO-009, BIO-010, BIO-019 et des dossiers ASSO-007/008 ; dernière correction BIO-019 conservée.
+2. Distinction maintenue entre Blanche Lefebvre modiste et la femme Lefèvre blanchisseuse ; attribution de l'identité Victorine Gorget rapportée par Michèle Audin/Édith Thomas, pièces d'état civil manquantes.
+3. Nouvelle trace matérielle : musée Carnavalet, portrait de Victorine Gorget en détention, PH4142-129, https://parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/portrait-de-gorget-victorine-pris-a-la-prison-des-chantiers-a-versailles-0 . La notice la dit blanchisseuse, oratrice et condamnée à la déportation simple ; légende manuscrite partiellement illisible. Cette notice ne démontre pas qu'elle utilisait le nom Lefèvre.
+4. AFF5721 : signatures imprimées de Blanche LEFEVRE, Nathalie LE MEL et Élisabeth DMITRIEFF datées du 20 mai 1871 ; aucune preuve de présence à la réunion annoncée le 21. https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune .
+5. Contrôle des variantes Lefebvre/Lefèvre/Lefèbvre, Gorget/Garget (mention manuscrite), Le Mel/Lemel, Dmitrieff/Dmitriev ; variantes non suffisantes pour prouver l'identité.
+6. BIO-009 : décès 1921 préférable à l'index muséal erroné 1871 ; naissance les 24 ou 26 août 1826, acte de Brest encore à collationner ; l'année 1827 apparaît aussi dans certaines notices.
+7. BIO-009 et ASSO-008 : statuts La Marmite de janvier 1868 nomment Lemel ; activité de caisse rapportée par des historiens, livres de comptes non examinés ; absence de preuve directe des versements et rémunérations.
+8. BIO-010 : Dmitrieff signataire en mai 1871 ; dates de naissance 1850/1851 et de décès 1910/1918 non arrêtées ; ne pas lui attribuer les textes de l'Union individuellement.
+9. ASSO-007 et ASSO-008 sont deux organisations distinctes ; Le Mel est un lien biographique, pas preuve d'une continuité juridique ou comptable. BIO-018 contient déjà ses rectifications brocheuse/brodeuse.
+10. BIO-019 ancien texte conservé en historique ; aucune nouvelle fiche, géolocalisation ou publication. Contrôles ponctuels BIO-020/021/022 préexistants sans nouvelle correction démontrée.
+11. Écriture réussie et relue dans Drive BIO-009. Écritures de compléments BIO-019 et BIO-010 refusées à deux reprises par contrôle de sécurité ; ces documents n'ont pas été mis à jour dans cette passe. Aucun contournement effectué.
+12. Relecture éditoriale possible sous réserves : BIO-009 prioritaire pour dates, BIO-019 pour séparation des personnes, BIO-010 pour chronologie et attributions ; aucune n'est validée pour publication.
+
+**Sources supplémentaires :** Jacques Rougerie https://commune1871-rougerie.fr/les-femmes-de-1871%2Cfr%2C8%2C58.html ; Michèle Audin https://macommunedeparis.com/2021/05/04/4-mai-1871-au-club-de-la-revolution-sociale/ ; statuts La Marmite https://macommunedeparis.com/2018/08/01/statuts-de-la-marmite-19-janvier-1868/ .
+
+**Au Relieur :** demander à l'Archiviste une identification sur pièce de Victorine Gorget/Femme Lefèvre, les registres d'état civil pour Blanche et Nathalie Le Mel, dossiers du jugement Gorget, et livres de caisse de La Marmite. Statut : corrections partielles vérifiées, publication en attente de relecture humaine. Cette entrée GitHub ne prouve pas sa réception par les autres ateliers.
