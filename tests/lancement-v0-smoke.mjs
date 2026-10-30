@@ -1,9 +1,9 @@
 /* QA de lancement V0 : aucune soumission, aucune modification de données.
-   Le serveur HTTP est local à GitHub Actions ; deux tailles et onze pages, sans écriture. */
+   Le serveur HTTP est local à GitHub Actions ; deux tailles et dix-huit pages, sans écriture. */
 import { chromium } from "playwright";
 import { existsSync, readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
-const files=["index.html","manifeste-v2-5.html","bibliotheque.html","wiki.html","participer.html","proposer-article.html","wiki-lecture-croisee-travail-soin-pouvoir.html","wiki-decision-collective.html","manifeste.html","squats-et-lieux-autonomes.html","charte-contributions-wiki.html"];
+const files=["index.html","manifeste-v2-5.html","bibliotheque.html","wiki.html","participer.html","proposer-article.html","wiki-lecture-croisee-travail-soin-pouvoir.html","wiki-decision-collective.html","manifeste.html","squats-et-lieux-autonomes.html","charte-contributions-wiki.html","wiki-logement-habitat-droit-ville.html","habitat-dossier-participatif.html","habitat-dossier-friches.html","habitat-dossier-gouvernance.html","habitat-dossier-dalo.html","habitat-dossier-foncier-solidaire.html","habitat-dossier-lieux-collectifs.html"];
 const widths=[{label:"mobile",width:390,height:844},{label:"desktop",width:1280,height:800}];
 const base=process.env.QA_BASE_URL||"http://127.0.0.1:8765";
 const checks=[];
@@ -19,6 +19,12 @@ for(const f of files){
     if(href.startsWith("#")){if(!ids.has(href.slice(1)))missing.push(href);continue}
     const filepath=href.split("#")[0].split("?")[0];
     if(filepath&&!existsSync(path.join(process.cwd(),filepath)))missing.push(href);
+    else if(filepath&&href.includes("#")){
+      const fragment=href.split("#")[1]?.split("?")[0];
+      const dest=readFileSync(path.join(process.cwd(),filepath),"utf8");
+      const targetIds=new Set([...dest.matchAll(/\\bid="([^"]+)"/g)].map(m=>m[1]));
+      if(fragment&&!targetIds.has(decodeURIComponent(fragment)))missing.push(href+" (ancre absente)");
+    }
   }
   checks.push({name:"Chemins et ancres locales : "+f,ok:missing.length===0,detail:{missing}});
 }
@@ -86,6 +92,19 @@ try{
      if(!dom.title?.includes("Et si on essayait autre chose ?"))failed.push("Accroche principale absente");
      if((dom.type.intro===null)||parseFloat(dom.type.intro)<21)failed.push("Introduction trop petite");
      if(dom.buttons.length<5)failed.push("Parcours d'accueil incomplet");
+   }
+   if(filename==="wiki-logement-habitat-droit-ville.html"){
+     const num=await page.locator(".topic-full").count();
+     const dossiers=await page.locator(".dossier-tile").count();
+     const anchorCount=await page.locator('a[href^="#notion-"]').count();
+     if(num!==22||dossiers!==6||anchorCount<22)failed.push("Index Habitat : "+num+" notions, "+dossiers+" dossiers, "+anchorCount+" ancres");
+   }
+   if(filename.startsWith("habitat-dossier-")){
+     const status=await page.locator(".status").innerText();
+     const breadcrumbs=await page.locator(".story-breadcrumb a").count();
+     const navigation=await page.locator(".story-sequence a").count();
+     if(!status.includes("À relire par un être humain")||breadcrumbs!==2||navigation!==2)
+       failed.push("Dossier : relecture, fil d'Ariane ou navigation incomplète");
    }
    if(errors.length)failed.push("JS "+errors.join(" ; "));
    if(failedResources.length)failed.push("Ressources "+failedResources.join(" ; "));
