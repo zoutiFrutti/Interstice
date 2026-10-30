@@ -752,3 +752,18 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 **Incertitude conservée :** naissance 26 août 1826 à Ivry-sur-Seine selon la BnF, 26 août 1826 à Brest selon une notice associative, 24 août 1826 à Brest selon un bulletin associatif évoquant l'acte. Aucun acte original collationné ; pas de correction arbitraire. https://commune1871.org/images/PhotothequeAmis/pdf/Bulletin_91.pdf .
 
 **Bilan corrigé de la passe :** 1 ARCH nouvelle, 2 BIO et 2 ARCH enrichies. Inventaire des quatre dossiers : 43 candidates uniques. Aucune publication ni modification de gouvernance.
+
+
+## 2026-10-30 · Archéologue des communs · Union des femmes et économie coopérative
+
+**Périmètre contrôlé :** quatre dossiers Drive Wiki (Histoire et mémoires, Biographies, Associations et organisations, Collectifs et réseaux), catalogue et suivi Médiathèque, journal des changements majeurs. Inventaire direct : 43 fiches candidates uniques (22 BIO, 8 ASSO, 4 EXP, 2 COL, 7 ARCH) ; journal de l'atelier des biographies exclu.
+
+**Écritures confirmées et relues :** trois fiches existantes enrichies, sans doublon ni nouvelle fiche : [ASSO-007 Union des femmes](https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit), [BIO-018 Aline Jacquier](https://docs.google.com/document/d/1Vyq5ZyzImnrl9UIACDutLYNAacUt8VLUWfZcA0JlHkk/edit), [ARCH-007 décret du 16 avril](https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit). Catalogue et suivi de la Médiathèque, ainsi que journal des changements majeurs, enrichis et relus après écriture.
+
+**Sources :** Carolyn J. Eichner, « To Assure the Reign of Work and Justice » (1998), PDF consulté avec passages ciblés, https://journals.univie.ac.at/index.php/oezg/article/view/5799/5730 ; affiches Carnavalet n°342 (AFF3543) et n°373 (AFF5721) ; Fondation Gabriel Péri, transcription du décret et renvoi au JO du 25 avril ; deux notices de l'Association des Amies et Amis de la Commune pour les dates divergentes 15 et 18 mai.
+
+**Faits et limites :** Eichner distingue comité provisoire, comité central et commission exécutive ; le projet de fédération prévoit cinq commissions et cent déléguées théoriques, pas un effectif réalisé prouvé. Le rapport Desprez/Ringard (cité par Eichner, fonds LY 22) concerne au moins quatre locaux inspectés, pas quatre ateliers réquisitionnés. Aline Jacquier est qualifiée de *bookstitcher* (brocheuse) par Eichner ; la variante « brodeuse » reste sans preuve équivalente. Les dates de constitution/réunion de la commission générale restent à confronter.
+
+**Droits :** PDF universitaire non présumé libre ; exemplaire Carnavalet AFF3543 explicitement CC0 pour l'image, vérifier chaque autre image. Aucun texte contemporain recopié longuement.
+
+**À faire :** consulter directement archives LY 22/23, JO des 14 et 25 avril, procès-verbaux de commission des 15/18 mai, registres et comptes des ateliers. Transmissions proposées aux ateliers Lecteur, Médiathèque, Biographies, Organisateur ; réception non confirmée. **Aucune publication, aucune modification du manifeste ni de la gouvernance.**
