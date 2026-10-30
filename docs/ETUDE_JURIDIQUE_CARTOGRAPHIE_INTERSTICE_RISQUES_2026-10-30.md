@@ -59,3 +59,58 @@
 - OpenStreetMap, conditions ODbL : https://www.openstreetmap.org/copyright
 
 **Travaux nécessaires :** choisir le responsable de traitement réel, finalités et catégories de fiches, schéma public/privé, cartographie de données, politique de conservation, contrôle de sécurité, qualification DSA, responsabilités des rencontres et sources de licences. Aucun développement ni configuration de production modifiés par cette note.
+
+---
+
+## Transmission 013 — Cahier minimal, passes 1 à 4 et 8 — 30 octobre 2026
+
+**Portée :** additif opérationnel au dossier existant, **non adopté**. Source : `coordination/RELIEUR_TRANSMISSION_013_CARTES_COMMUNS_POSSIBLES_PRIORITES_2026-10-30.md`. Prototype actuel : [PR #41](https://github.com/zoutiFrutti/Interstice/pull/41), ouverte **en brouillon, non fusionnée** au HEAD observé `d45d2cba40ba0f1e89000888820e3ac2f490b21e`. N'intervenir ni sur Supabase ni sur la branche du prototype.
+
+### Passe 1 — Garanties réelles des fiches et vérification de la démo
+
+**Actions :** relecture des données et fonctions sur `feat/initiatives-decouverte-mobile-2026-10-30` : `initiatives-data.mjs`, `initiatives-core.mjs`, `initiatives-app.mjs`, `initiatives-simulation.mjs`, `decouvrir-initiatives.html`, tests Node et Playwright. **15 assertions statiques sur ces fichiers** ont toutes observé les propriétés ciblées : six fiches de démonstration, bannière fictive, contacts nuls, absence de latitude/longitude dans les fiches, aucun appel GPS ni API dans le module examiné, pas de persistance locale de recherche, simulation à choix fermés, export de démonstration à liste blanche, pas de fond cartographique externe, présence de tests de navigateur 390px.
+
+**Limite des preuves :** tests statiques de présence/absence de chaînes, **pas** test d'exécution, audit complet du réseau, essai Android ou validation d'un backend géographique. Une « recherche » par texte existe ; la simulation de besoin/offre n'enregistre aucune identité. Les villes citées sont réelles, les structures et actions sont inventées. **J013-01** : afficher partout « fictif », interdire tout texte laissant penser que des rencontres, initiatives ou prêts sont actuellement disponibles. Vérification attendue : captures liste, fiche, simulation et export.
+
+### Passe 2 — Public, privé, jamais collecté dans le prototype
+
+| Objet | **Public pour la démonstration** | **Restreint seulement si future activité réelle et base légale** | **Jamais dans le prototype fictif** |
+|---|---|---|---|
+| Initiative, besoin, offre, projet | `id_demo`, titre fictif, catégorie, commune, statut `simulation`, description et sources de démonstration, besoins et ressources inventés | Mandat revendication, contacts officiels vérifiés, historique détaillé non public, signalements | Nom d'une personne réelle, email/téléphone, pseudonyme de test réidentifiant, date de naissance |
+| Localisation | Nom de commune / zone de démonstration, sans position attribuée à une initiative réelle | Adresse professionnelle publique licite uniquement dans futur modèle avec droits et sécurité démontrés | Adresse privée, coordonnées exactes de domicile/refuge, points des mineurs, géolocalisation de l'utilisateur |
+| Interaction | Filtre manuel, résultat de correspondance fictif, export fictif à liste blanche | Consentements de mise en relation et demandes de retrait dans un service réel, sous accès limité | Messages réels, carnet de contacts, traces nominatives de présence et historique de déplacement |
+| Administration | Sources de test et version de démonstration | Dossier de modération strictement restreint, minimisé et limité dans le temps | Fiche d'alerte réelle dans GitHub, Analytics individuel ou clés privées dans le navigateur |
+
+**J013-02 (test négatif à ajouter)** : construire une fixture **purement inventée** avec champs `privateEmail`, `exactLocation`, `moderationNote`, puis vérifier que la fonction d'export et **la réponse publique** n'exposent aucun de ces champs. La liste blanche du démo-export est déjà présente ; ce résultat ne vaut pas test d'une API future.
+
+### Passe 3 — Quatre niveaux de localisation (proposition de politique)
+
+| Niveau | Sens | Information exposée | Garde-fou / critère de test |
+|---|---|---|---|
+| **L0 — non localisé** | Présence descriptive sans position sur carte | Aucune paire lat/lon ; territoire facultatif non déductible de la fiche | **J013-03** : aucune épingle ni centre renvoyé par l'API ; fiche accessible en liste hors carte |
+| **L1 — commune ou zone large** | Zone choisie pour rendre un projet découvrable, **pas emplacement du projet** | Libellé de commune/zone ; si la carte dessine un symbole, légende « zone indicative, emplacement inconnu » ; pas de précision cachée | **J013-04** : impossible de reconstruire l'adresse exacte depuis JSON, GeoJSON, export, deep-link, images, recherche ou cache |
+| **L2 — lieu public de rendez-vous** | Point de rencontre réellement public, **distinct d'une habitation** | Coordonnée du lieu public seulement si source et intérêt licites vérifiés, sans pointer un lieu sensible | **J013-05** : point lié au rendez-vous autorisé, non à une résidence ; aucune rencontre réelle dans la V0 fictive |
+| **L3 — adresse d'activité ouverte au public** | Établissement/lieu public réellement exploité et volontairement affichable | Adresse ou point strictement justifié, base légale et source documentées, rectification/opposition possible | **J013-06** : contrôle humain avant affichage, droits, provenance, exactitude et risques de préjudice ; **niveau interdit à la V0 fictive** |
+
+**Précision :** un niveau L1 peut toujours réidentifier un refuge isolé ou petit collectif. **Si risque de déduction, basculer L0, sans point.** Les quatre niveaux ne sont pas quatre cases de consentement : ce sont quatre **options d'exposition proposées**, chacune devant être légalement justifiée en production. La commune représentée par son centre géométrique n'est **jamais l'adresse d'une initiative**.
+
+### Passe 4 — Tests de révélation indirecte de lieux sensibles
+
+- **J013-07 : déduction par rareté.** Fixture inventée « lieu de soutien sensible dans une unique commune » : pas d'épingle, ni zone réduite, ni combinaison de filtres permettant de déduire l'adresse ; éventuellement L0 ou fiche non publique.
+- **J013-08 : recoupement.** Combiner catégorie rare + événement/heure + territoire + photo, ne pas exposer le lieu réel par résultat de filtre, EXIF ou document lié. Aucune vraie personne ne doit servir de sujet au test.
+- **J013-09 : suppression effective.** Une demande simulée de masquage doit retirer toute coordonnée sensible **de chaque représentation** (API/GeoJSON, cache, export, URL et mémoire d'événements) ; ne pas garder l'ancienne valeur dans un Git public.
+- **J013-10 : fond cartographique.** Le fait qu'une source OSM affiche un bâtiment ou une adresse n'autorise pas Interstice à lui associer une catégorie vulnérable ou un point de contact. La provenance cartographique ne justifie pas la publication de liens entre personnes et lieux.
+
+### Passe 8 — Droits des données, fonds de carte et fournisseurs
+
+**Constat sur la PR #41 à ce HEAD :** inspection statique de la page et du module : pas d'intégration de `tile.openstreetmap.org`, MapLibre, Leaflet, Mapbox ni Nominatim. **Aucun fournisseur de fonds de carte n'est donc retenu par ce prototype au stade inspecté.**
+
+- **Données OpenStreetMap :** [ODbL](https://www.openstreetmap.org/copyright), attribution `© OpenStreetMap contributors` et indication de licence ; dérivation d'une base peut engager les clauses de partage à l'identique. Une carte produite, une base dérivée et une base collective requièrent des analyses différentes.
+- **Service de tuiles OSMF :** [Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles/) distincte de la licence de données. Attribution visible, identification du client, respect cache HTTP, HTTPS et **interdiction de précharger massivement les tuiles ou de proposer un mode hors-ligne avec les serveurs publics**. Ce n'est ni un hébergement garanti ni une offre illimitée.
+- **Nominatim public :** [politique de géocodage](https://operations.osmfoundation.org/policies/nominatim/) : usage léger, plafond absolu d'**une requête/seconde** pour l'ensemble du service utilisateur, identification, attribution, cache et interdictions concernant usages systémiques/autocomplétion ; **inutile pour la V0 à communes choisies**. Si une recherche libre de lieux était envisagée, choisir un service et faire un contrôle spécifique avant intégration.
+- **OpenStreetMap France :** [conditions des serveurs français](https://www.openstreetmap.fr/usage/) propres au fournisseur (non lucratif, public, trafic modéré et exigences mobiles spécifiques). **Ne pas présumer** que les serveurs français et OSMF ont des conditions identiques.
+- **Etalab Licence Ouverte 2.0 :** [texte officiel](https://www.data.gouv.fr/pages/legal/licences/etalab-2-0) : source/producteur et date de dernière mise à jour, absence de caution implicite du fournisseur et respect du RGPD.
+- **Fonds de carte commerciaux ou données cadastrales :** pas de droit d'emploi sans vérifier **leur** contrat, la conservation, les quotas et les droits sur les images ; fond et fiches ont des régimes distincts.
+
+**J013-11 :** avant tout fond réel, consigner fournisseur choisi, licence **des données**, licence/CGU **des tuiles ou images**, attribution visible sur mobile et écran large, cache, hors-ligne, quotas, éventuelle télémétrie/transfert de requêtes, URL vers politique d'usage et option de repli. Aucun choix technique ou commercial n'est adopté ici.
+
