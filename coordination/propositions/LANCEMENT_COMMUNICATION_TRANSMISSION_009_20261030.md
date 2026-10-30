@@ -333,3 +333,175 @@ Consigne de validation : ne pas annoncer les enrichissements Young/Tebble ou Ber
 
 
 Paquet existant conservé sous la même identité, version 1 : originaux et VALIDATION_013 archivés, VALIDATION_014 ajouté. Le nom historique 013 est conservé pour éviter une série concurrente ; LIRE_VALIDATION_014.txt indique la version de travail courante. 36 entrées, archive intègre et 12 originaux vérifiés après empaquetage. Génération de la candidate : édition image intégrée, contrainte de conservation de l'identité et remplacement du seul petit paragraphe ; légères variations de rendu et dimensions non finales signalées. Aucun export final ou approbation revendiqué.
+
+
+## Consolidation 015 — dernière version candidate
+
+# Communications — Transmission 015
+30 octobre 2026. Même paquet et trois carrousels, aucune campagne supplémentaire.
+
+**26 actions FAIT ; 4 BLOQUE.** Trente lignes suivies ne signifient pas trente passes achevées. L'export final 1080×1350 de la variante reste A_FAIRE ; la correction graphique de 014 est réutilisée, pas régénérée.
+
+| N° | État | Action | Preuve/résultat |
+|---|---|---|---|
+| 01 | FAIT | Relire paquet 013/014 | Version 1 relue, intégrité locale confirmée ; historique conservé. |
+| 02 | FAIT | Contrôler douze visuels | Douze fichiers retrouvés, décodés RGB 1080×1350 et empreintes conformes. |
+| 03 | FAIT | Relire trois légendes | Trois légendes conservées ; 1234/1101/1245 caractères hors espaces terminaux. |
+| 04 | FAIT | Vérifier 03_04 | Original et variante 014 distingués ; PNG candidat 1122×1402. |
+| 05 | FAIT | Préparer formulation de remplacement | Correction conservée dans la candidate : projet en construction et prototypes fictifs. Aucun service réel promis ; export final A_FAIRE. |
+| 06 | FAIT | Contrôler alternatives | Douze correspondances fichier/alternative reconfirmées ; alternative distincte pour la variante. |
+| 07 | FAIT | Contrôler mentions IA | Note explicite présente ; activation Metricool NON_VÉRIFIÉE. |
+| 08 | FAIT | Contrôler V2.5 | Page publique contient non-adoption collective et lien vers document source. |
+| 09 | FAIT | Contrôler deux articles | Deux pages de base HTTP 200, derniers enrichissements candidats absents dans réponses contrôlées. |
+| 10 | FAIT | Contrôler deux cartes | Page PR #41 lue : deux lectures, liste et notice fictive. Déploiement non déduit. |
+| 11 | FAIT | Vérifier site public | Six URL principales HTTP 200 ; erreurs ciblées conservées sans conclure à une panne générale. |
+| 12 | FAIT | Distinguer branche/public | decouvrir-initiatives.html existe dans PR #41 mais répond 404 au contrôle public. |
+| 13 | FAIT | Vérifier liens | Titres et réponses HTTP conservés en JSON ; aucun lien démo offert comme fonctionnel. |
+| 14 | FAIT | Ne pas annoncer partenaire | Texte de campagne et FAQ corrigés : aucun partenaire confirmé, pas d'affiliation présumée. |
+| 15 | FAIT | Vérifier onze fiches | Six fixtures initiatives + cinq autres objets, marquage isDemo:true, source simulation, publicContact:null. |
+| 16 | FAIT | Examiner capacité de réponse | Aucun volontaire ni délai confirmé dans les preuves ; condition explicite avant sollicitation. |
+| 17 | FAIT | Ne pas inventer signalement | FAQ : pas de permanence ni canal confidentiel garanti, pas de renvoi trompeur vers DM. |
+| 18 | BLOQUE | Valider droits des visuels | Provenance complète et références de génération non disponibles ; contrôle des fichiers ne suffit pas. |
+| 19 | BLOQUE | Valider licences des images | Aucune licence explicite établie ; absence de métadonnée n'est pas autorisation. |
+| 20 | FAIT | Préparer FAQ critique | Huit réponses proposées, non envoyées, dans FAQ_ET_HORS_LIGNE_015.md. |
+| 21 | BLOQUE | Vérifier brouillons Metricool | Marque retrouvée ; outils ne révèlent pas les brouillons, dernière authentification non aboutie/refusée, pas de nouvelle tentative. |
+| 22 | BLOQUE | Vérifier absence de doublons | Impossible sans lecture des brouillons. Aucun import réalisé ; pas de doublon créé par l'atelier. |
+| 23 | FAIT | Ne rien programmer | Aucune mutation Metricool. Lecture programmations : data=[] sur plage 01/10/2026–31/01/2027 Europe/Paris seulement. |
+| 24 | FAIT | Séquence sobre | Même campagne, trois carrousels ; étapes conditionnées au suivi et à la décision humaine. |
+| 25 | FAIT | Communication hors ligne | Lecture/impression/discussion possibles, pas d'accueil physique ou de permanence annoncé. |
+| 26 | FAIT | Paquet prêt à examiner | Jeux CANDIDATS_015 séparés des archives, pas approuvés ; documents de validation explicites. |
+| 27 | FAIT | Distinguer correction appliquée | Variante corrigée dans jeu candidat, original conservé dans archives ; aucune substitution Metricool. |
+| 28 | FAIT | Noter blocages éditoriaux | Droits, export final, version Wiki publique, suivi humain et accès Metricool. |
+| 29 | FAIT | Contrôler archive | Intégrité et empreintes des douze sources contrôlées après assemblage ; candidate séparée. |
+| 30 | FAIT | Bilan adressé à La Relieuse | Bilan et documents déposés, réception en conversation non présumée ; aucune publication. |
+
+## Preuves
+- Page PR #41 decouvrir-initiatives.html : blob e010550f765653f3adc1eaf303fc2d8992585912.
+- cartes-data.mjs : blob 290b920a761223c41c06b9254be01ba55df0260f.
+- initiatives-data.mjs : blob a62e44c0550efbea1414470002e43cbfb8211fe3.
+- Contrôles HTTP, tailles et SHA-256 : CONTROLE_PUBLIC_015.json et CONTROLE_PUBLIC_CARTES_015.json.
+- Contrôles des médias : CONTROLE_SOURCES_015.json.
+- Les tests de branche des autres ateliers ne sont pas revendiqués exécutés ici.
+
+## Décisions requises
+1. Variante 03_04 : choix humain, export final puis contrôle visuel.
+2. Droits/provenance : pièces à rapprocher avec Graphiste/Juriste ; aucune licence déduite de l'IA.
+3. Metricool : session authentifiée avant recherche et éventuel import sans doublon.
+4. Suivi des retours : une participation volontaire confirmée, sans délai garanti ni canal sensible inventé.
+5. Articles/cartes : ne pas annoncer comme publiques les versions de branche, même si une CI est verte.
+
+**Aucune publication, programmation, prise de contact, fusion ou collecte réelle.** Manifeste V2.5 non adopté collectivement. La Tisseuse n'a aucun partenaire confirmé. Bilan disponible pour La Relieuse ; dépôt ≠ réception en conversation.
+
+
+### Décision et textes courants
+#### DECISION_VALIDATION_015.md
+# Paquet 015 — à examiner, pas approuvé
+Même campagne : trois carrousels, aucune quatrième publication.
+Lire ce dossier avant les archives de 013/014.
+
+## Variante active proposée
+CANDIDATS_015/03_Relier_sans_centraliser/03_04_interstice_CORRECTION_CANDIDATE.png reprend la correction graphique produite en 014. Le paragraphe ne présente plus une carte réelle opérationnelle. L'original JPG n'est pas remplacé dans l'archive historique.
+Texte retenu pour cette candidate : « Interstice se construit pour documenter les initiatives, partager les ressources et transmettre les savoirs. Les deux cartes sont des prototypes fictifs, pas un annuaire réel. »
+La variante n'est PAS approuvée. PNG 1122×1402 : export final 1080×1350 encore à produire par le Graphiste après validation. Ne pas importer automatiquement ce jeu candidat.
+Les 11 autres visuels restent strictement identiques aux sources.
+
+## États distincts
+- Validé graphiquement auparavant : les douze sources, avant correction du présent trompeur de 03_04.
+- Prêt à examiner : les trois jeux candidats et les textes 015.
+- Approuvé pour lancement : NON ATTESTÉ.
+- Effectivement publié sur Instagram : NON VÉRIFIÉ.
+- Publié ou programmé par Communications dans cette session : NON.
+- Brouillons Metricool : NON VÉRIFIÉS, pas déclarés absents.
+- Posts programmés retournés entre 01/10/2026 et 31/01/2027 : aucun.
+- Derniers enrichissements Wiki : candidats, non retrouvés sur pages publiques contrôlées.
+- Démo des deux cartes : page de branche existante, chemin public contrôlé en 404.
+- La Tisseuse : aucun partenaire confirmé, aucun accord à annoncer.
+
+## Conditions avant décision
+[ ] Approuver ou refuser la variante 03_04.
+[ ] Produire et vérifier l'export final sans réduire la lisibilité.
+[ ] Confirmer la provenance complète et les conditions de réutilisation des visuels.
+[ ] Session Metricool, recherche de doublons et réouverture des trois brouillons.
+[ ] Contrôler alternatives et déclaration IA dans le service.
+[ ] Refaire le contrôle des pages publiques et des versions annoncées.
+[ ] Confirmer un suivi volontaire si un appel aux commentaires est proposé.
+[ ] Valider explicitement le premier lancement.
+Aucune case n'est cochée par défaut. Décision humaine ≠ adoption collective du manifeste.
+
+
+#### COMMUNICATION_EXACTE_015.txt
+Et si on essayait autre chose ?
+
+La Faille noire est une initiative politique, sociale et culturelle en construction. Interstice est le chantier documentaire et numérique associé à cette démarche.
+
+Le site propose notamment un manifeste de travail et des fiches du Wiki. « Décider ensemble » et « Qui fait vivre les communs ? » ouvrent deux questions : comment partager les décisions, et qui assure le travail nécessaire à la vie collective ?
+
+Ces textes restent ouverts à la critique. Des enrichissements sont encore en relecture ; les dernières versions candidates ne sont pas toutes publiées.
+
+Deux cartes sont développées dans un prototype : la carte des communs, pour documenter les initiatives et ressources existantes ; la carte des possibles, pour explorer les besoins, offres, idées et projets. Les onze exemples actuels sont entièrement fictifs. Ce prototype n'est pas un annuaire réel, et nous n'annonçons aucun partenaire confirmé.
+
+Le manifeste V2.5 est une référence éditoriale de travail, non adoptée collectivement.
+
+TEXTE À VALIDER, non envoyé. Ce texte est un complément de présentation pour la même campagne, pas une légende substituée aux trois textes validés. Ne pas annoncer de démonstration publique accessible tant que son lien n'est pas vérifié.
+
+
+#### FAQ_ET_HORS_LIGNE_015.md
+# FAQ proposée, non envoyée
+**Pourquoi ces textes maintenant ?**
+Pour rendre la proposition discutable avant de prétendre qu'une organisation ou un outil est abouti.
+
+**Est-ce qu'un collectif ou une fédération existe déjà ?**
+La Faille noire est une initiative en construction. Aucune fédération constituée ni réseau de partenaires n'est annoncé.
+
+**Où sont les vraies initiatives des cartes ?**
+Les onze exemples actuels sont inventés. Un nom et une commune dans la démo ne désignent ni une structure réelle ni un accord.
+
+**La Tisseuse a-t-elle des partenaires ?**
+Aucun partenaire confirmé ne peut être annoncé à ce stade. Une piste documentaire ou un lieu repéré ne vaut ni référencement accepté ni coopération.
+
+**Vous voulez des critiques ou seulement du soutien ?**
+Les contradictions et critiques précises ont leur place. Un désaccord ne sera pas présenté comme un manque d'engagement. Un commentaire n'est pas une adhésion.
+
+**Comment participer sans application ?**
+L'application n'a pas vocation à être obligatoire. On peut lire ou imprimer les textes disponibles et en discuter. Les modalités concrètes d'accueil hors ligne restent à organiser : nous n'annonçons ni permanence, ni adresse de rencontre, ni numéro de contact non confirmé.
+
+**Je veux raconter une situation sensible.**
+Évite de la détailler en commentaire public. Aucun dispositif confidentiel de signalement n'est ici garanti. Ne pas demander à la personne d'envoyer son récit en message privé comme si un traitement sûr était déjà assuré.
+
+**Les images représentent-elles vos lieux ou vos membres ?**
+Non. Ce sont des illustrations générées ou fortement transformées par IA, pas un reportage sur des adhérents ou partenaires.
+
+## Organisation proposée à La Relieuse
+Confirmer une personne volontaire, sans lui attribuer d'office une fonction de modération. Aucun délai de réponse garanti. Si le suivi manque, suspendre l'appel aux retours.
+Pour une critique : examiner le fond et les sources, sans réponse défensive automatique.
+Pour une erreur : noter la correction proposée et sa preuve.
+Pour une donnée sensible : ne pas la recopier dans GitHub ou la synthèse publique ; traitement éventuel par personne habilitée, sans promesse non tenue.
+Une synthèse éventuelle ne conserve que sujets et objections dépersonnalisés.
+
+
+#### PROVENANCE_ET_DROITS_015.md
+# Provenance et droits — vérifications limitées
+Les fichiers existent dans les paquets validés et leur intégrité est contrôlée. L'historique de travail les décrit comme générés ou fortement modifiés par IA ; la candidate 03_04 a effectivement été éditée avec l'outil image intégré lors de 014.
+Ces constats ne forment pas une chaîne complète de droits : aucun dossier source complet, contrat, inventaire des références visuelles ou licence explicite de tous les éléments n'a été fourni pour les douze sources.
+Les métadonnées inspectées n'indiquent pas de champ licence ou copyright. Cette absence ne signifie ni domaine public, ni défaut de droits, ni autorisation.
+Passes 18/19 : BLOQUÉES pour la validation des droits/licences, faute de pièces suffisantes. Aucun avis juridique définitif ni conformité garantie.
+Prochaine action : rapprocher l'historique de génération et les références utilisées avec le Graphiste, puis faire examiner les éventuelles limites par la Juriste. Ne pas réclamer une nouvelle création graphique par défaut.
+La déclaration IA sur Instagram/Metricool reste à contrôler séparément : elle ne remplace pas la provenance, les droits ni l'alternative.
+
+
+#### SEQUENCE_015.md
+# Séquence limitée à la campagne existante
+1. Faire examiner ce paquet et décider du traitement de la variante 03_04.
+2. Après validation explicite : carrousel 1, légende d'origine.
+3. Carrousel 2 seulement selon capacité de suivi, sans calendrier automatique.
+4. Carrousel 3 seulement après validation et export final de la variante ou autre arbitrage explicite.
+5. Une présentation du site peut accompagner cette séquence ; vérifier les URL au moment du lancement.
+6. Les fiches Wiki de base sont consultables ; ne pas annoncer comme publiés leurs enrichissements candidats.
+7. Les cartes sont codées sur une branche mais le chemin public testé n'est pas disponible : ne pas ajouter de bouton « tester la carte » ou de lien démo non fonctionnel.
+8. Aucun appel massif, partenaire, permanence, événement, accueil hors ligne ou canal confidentiel non confirmé.
+Un intervalle de deux à trois jours n'est qu'une possibilité, sans réservation. Suspendre si le suivi ou la correction ne peuvent être assurés.
+États machine et humains : PRET_A_EXAMINER / APPROUVE_POUR_LANCEMENT / EFFECTIVEMENT_PUBLIE ne sont jamais déduits les uns des autres.
+
+
+### Paquet enregistré
+Même identité que 013/014, version 2. Les 65 entrées distinguent ARCHIVES_013_014, CANDIDATS_015 et VALIDATION_015. Douze médias candidats (11 JPG intacts + 1 variante PNG corrigée), douze sources historiques vérifiées ; original 03_04 trompeur retiré du jeu candidat mais conservé dans les archives. Aucun export final ni approbation inventés.
