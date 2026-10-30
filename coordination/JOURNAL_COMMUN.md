@@ -939,3 +939,12 @@ Modifications : entrée de journal uniquement, pas de mise à jour de FN-069, AR
 
 **Coordination et suites :** préserver et rapprocher les contenus graphiques de PR #22, dont certaines illustrations restent optionnelles pour une V0 publique, et l'aperçu de modération de PR #28 demeure hors périmètre. Revoir l'Anarchitecte avant fusion ; tester l'accueil sur un vrai Android puis publier seulement après validation. Les anciens contenus de La Faille noire restent éditorialement non adoptés collectivement. Ne pas ralentir la sortie pour de simples détails décoratifs.
 
+
+
+## 2026-10-30 — Graphiste — Validation Chromium de la Transmission 010
+
+**Résultat vérifié après correction et revue visuelle :** workflow GitHub Actions `Verifications lancement public V0`, run https://github.com/zoutiFrutti/Interstice/actions/runs/41026231076 **33/33 contrôles réussis**, sur les 11 pages représentatives à 390 et 1280 px, avec examen de la capture réelle du nouvel accueil mobile. H1 à **41,73 px**, intro à **21 px**, corps à 18 px et CTA à 56 px ou davantage sur l'accueil. Le double logo du premier écran mobile a été supprimé sans retirer le symbole officiel de l'en-tête. Les deux WOFF2 (titres/lecture) sont chargées, les liens et ancres des pages couvertes, leurs images, le contraste des CTA et les débordements sont contrôlés. Aucun envoi de formulaire.
+
+**Révisions et livrables :** bilan détaillé `coordination/GRAPHISTE_TRANSMISSION_010_LISIBILITE_2026-10-30.md` ajouté à la PR #35 ; captures et rapport de tests dans l'artefact `interstice-v0-captures` du run, dont `accueil-premier-ecran-mobile.png` et `accueil-premier-ecran-desktop.png`. La branche PR #35 a été réconciliée avec `main` sans réécriture forcée, puis ses modifications ont été vérifiées. La PR reste brouillon, non fusionnée/non publiée.
+
+**Limites :** 11 gabarits vérifiés en Chromium CI, pas tous les écrans ni tous les navigateurs, et pas de test tactile sur Android physique. Manifeste V2.5 toujours non adopté collectivement. La PR #22 contient des polices désormais réutilisées à l'identique : la coordination doit éviter une double réintégration conflictuelle ; ses illustrations supplémentaires peuvent attendre. Validation humaine et contrôle du site déployé après fusion restent indispensables.
