@@ -356,8 +356,9 @@ test("014: boutons de communes sous les repères SVG, accessibles au toucher et 
   assert.equal(await page.locator("#results .initiative-card").count(),3);
   await page.locator("#reading-possibles").click();
   await page.locator("#display-map").click();
-  assert.equal(await page.locator("#map-commune-buttons button").count(),3);
+  assert.equal(await page.locator("#map-commune-buttons button").count(),2,"Filtre Gaillac conservé entre les deux lectures");
   await page.locator("#map-clear-commune").click();
+  assert.equal(await page.locator("#map-commune-buttons button").count(),3,"Sans filtre, trois communes dans les possibles");
   assert.equal(await page.locator("#commune").inputValue(),"");
  }finally{await page.close();await browser.close();}
 });
