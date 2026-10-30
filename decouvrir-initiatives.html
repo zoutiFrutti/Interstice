@@ -4,7 +4,7 @@
 <meta name="description" content="Démonstration fictive de découverte d'initiatives locales Interstice.">
 <title>Découvrir les initiatives · Interstice (démo fictive)</title>
 <link rel="icon" type="image/svg+xml" href="assets/logo-interstice.svg">
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="initiatives.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="initiatives.css"><link rel="stylesheet" href="cartes.css">
 </head><body>
 <header class="initiative-header"><a href="index.html" class="identity">INTERSTICE<span>.</span></a><a href="participer.html">Participer</a></header>
 <main class="initiative-main">
@@ -27,12 +27,36 @@
 <button type="button" class="button-muted" id="clear">Effacer les filtres</button>
 </form>
 <p class="matching-note">Recherche manuelle, sans popularité ni classement automatique. Les exemples restent dans leur ordre d’origine sauf si tu choisis le tri alphabétique. Aucun texte recherché n'est transmis ou conservé.</p>
-<div class="results-heading"><h2>Les initiatives imaginées</h2><p id="count" role="status" aria-live="polite">Chargement…</p></div>
+<section id="cartes" class="cartes" aria-labelledby="cartes-title">
+<p class="tag">UNE CARTE · DEUX LECTURES</p>
+<h2 id="cartes-title">La carte des communs et des possibles</h2>
+<p>Les points représentent des communes, jamais l'adresse d'une initiative. <strong>Toutes les fiches sont fictives.</strong></p>
+<div class="map-readings" role="group" aria-label="Lecture de la cartographie">
+<button type="button" id="reading-communs" aria-pressed="true">Carte des communs</button>
+<button type="button" id="reading-possibles" aria-pressed="false" class="button-muted">Carte des possibles</button>
+</div>
+<p id="reading-description">Initiatives et ressources existantes uniquement dans des scénarios inventés.</p>
+<div class="map-display" role="group" aria-label="Mode d'affichage des mêmes fiches">
+<button id="display-list" type="button" aria-pressed="true">Liste complète</button>
+<button id="display-map" type="button" class="button-muted" aria-pressed="false">Carte interactive</button>
+</div>
+<div id="map-panel" hidden>
+<div class="map-controls"><span>Schéma du Tarn · sans tuiles ni adresses</span>
+<div><button type="button" id="map-zoom-in" class="button-muted" aria-label="Agrandir la carte">+</button>
+<button type="button" id="map-zoom-out" class="button-muted" aria-label="Réduire la carte">−</button>
+<button type="button" id="map-zoom-reset" class="button-muted">Vue entière</button></div></div>
+<svg id="municipality-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="group" aria-label="Carte interactive schématique de quatre communes du Tarn. Utiliser Tab et Entrée pour sélectionner une commune."></svg>
+<p id="map-caption" class="map-caption">Repères communaux fictifs.</p>
+<button type="button" id="map-clear-commune" class="button-muted">Afficher toutes les communes</button>
+</div>
+<div class="results-heading"><h3 id="entry-list-title">Fiches fictives des communs</h3><p id="count" role="status" aria-live="polite">Chargement…</p></div>
 <button id="export-demo" type="button" class="button-muted">Exporter les résultats fictifs affichés (JSON)</button>
 <p class="export-note" id="export-status" role="status" aria-live="polite"></p>
 <div id="invalid-route" hidden role="alert" class="empty">La fiche demandée n’existe pas dans cette démonstration. Voici les exemples disponibles.</div>
-<div id="results" class="initiative-grid"></div>
-<div id="no-results" hidden class="empty"><h3>Aucun exemple correspondant</h3><p>Cela ne dit rien des initiatives réelles. Essaie Gaillac, Rabastens, Lisle-sur-Tarn ou Albi.</p><button class="button-muted" type="button" id="clear-empty">Voir tous les exemples</button></div>
+<div id="list-panel"><div id="results" class="initiative-grid" aria-label="Liste intégrale des fiches fictives affichables sur la carte"></div></div>
+<div id="no-results" hidden class="empty"><h3>Aucun exemple correspondant</h3><p>La démonstration n'est pas un annuaire réel. Essaie une autre commune ou un autre domaine.</p><button class="button-muted" type="button" id="clear-empty">Voir tous les exemples</button></div>
+<p class="map-legend"><strong>Fictif :</strong> toute la démonstration. <strong>Documenté dans le scénario :</strong> existence imaginée, non vérifiée. <strong>En projet :</strong> idée ou besoin imaginaire sans engagement.</p>
+</section>
 <section id="experiment" class="simulator" aria-labelledby="experiment-title">
 <p class="tag">FAIRE UN ESSAI · SANS ENVOYER</p>
 <h2 id="experiment-title">Et si on essayait de partager ?</h2>
