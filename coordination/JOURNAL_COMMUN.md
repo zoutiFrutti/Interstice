@@ -797,3 +797,36 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 **V0 minimale recommandée :** maintenir accueil, manifeste V2.5 avec avertissement, bibliothèque, Wiki des articles déjà publics et parcours participation ; vérifier les formulaires en vrai, la navigation et la lisibilité mobile, les liens 404 et les messages d'erreur avant annonce publique. Ne pas attendre la modération des 15 imports GitHub pour donner accès au contenu déjà disponible, mais ne pas exposer ces brouillons. Conserver les PR #22 et #28 en revue séparée selon les problèmes de raccordement signalés dans PR #31. Aucun compte modérateur inventé, aucun statut changé, aucune publication automatique.
 
 **Blocages courts à lever :** (1) contrôle HTTP/navigateur réel et liens/pages 404 ; (2) essais fonctionnels des formulaires Edge et des messages d'erreur, sans spammer les tables ; (3) test mobile et accessibilité clavier, contrastes et libellés ; (4) vérification de la configuration GitHub Pages et de la cohérence de navigation V0. **Peut attendre :** intégration graphique complète des PR #22/#28, interface de modération des 15 brouillons, recherche encyclopédique avancée, nouvelles fiches et automatisations secondaires. Cette entrée documente un audit partiel et non une certification de disponibilité.
+
+
+
+## 2026-10-30 · Atelier des Communications · Transmission 009 du Relieur
+
+**Opérations vérifiées :** lecture du Journal commun courant et du code de `participer.html` sur la branche par défaut. Contrôle navigateur de https://app.metricool.com : écran de connexion, aucun accès aux brouillons. Recherche dans le dossier Drive fourni (1EYMBEO9JZDvyNQrnyfqU1hOjKKkkwyc5) : aucun résultat retourné ; cela ne démontre pas que les fichiers sont absents. Les trois carrousels et légendes déjà fournis dans la conversation sont conservés sans recréation ni modification.
+
+**État Metricool :** Les failles / Compléter, pas remplacer / Relier sans centraliser : présence, quatre images, ordre, légende, textes alternatifs et déclaration IA NON VÉRIFIÉS pour chacun. Aucun brouillon créé ou modifié durant cette passe ; aucune publication ni programmation.
+
+**Participation :** le code de participer.html propose index.html#proposer, proposer-article.html et GitHub ; il indique qu'un canal privé reste à définir. Présence dans le code seulement, réception et traitement de bout en bout non testés ici. Le journal rapporte une absence de compte modérateur lors d'un audit antérieur : recontrôle requis par l'Anarchitecte avant appel public à contributions.
+
+**Proposition de lancement, non validée :**
+1. Avant lancement : connexion Metricool puis contrôle des trois brouillons, quatre images et ordre exact, légendes existantes, accessibilité et marquage IA si disponible. Anarchitecte : fournir URL publique exacte, parcours mobile et test réception/relecture/réponse, responsables et capacité de traitement. Graphiste : confirmer exports validés, lisibilité mobile, textes alternatifs et cohérence de la présentation ; aucune nouvelle création nécessaire.
+2. Après validation explicite : carrousel 1 « Les failles », présentation et demande limitée de critiques en commentaires seulement si commentaires activés et suivi humain organisé.
+3. Deux à trois jours plus tard, selon capacité réelle à répondre : carrousel 2 « Compléter, pas remplacer ».
+4. Puis carrousel 3 « Relier sans centraliser », avec lien de lecture vérifié. Appel aux contributions documentaires uniquement après validation du circuit de réception et de traitement. Pas de calendrier automatique ; possibilité de suspendre entre chaque étape.
+
+**Premier message proposé (complément, ne remplace pas les légendes validées) :**
+
+La Faille noire est une initiative politique, sociale et culturelle en construction : comprendre les manques, rencontrer les solidarités qui existent déjà et explorer comment coopérer sans prendre leur place.
+
+Interstice est l'outil en construction associé à cette démarche : documenter, partager des savoirs et faciliter les liens.
+
+Nous ne présentons ni un collectif déjà constitué ni une fédération existante. Le manifeste V2.5 est notre référence éditoriale de travail ; il n'est pas adopté collectivement.
+
+Cette proposition est ouverte à la discussion, aux désaccords et aux transformations.
+
+**Appel limité proposé, utilisable uniquement après vérification des commentaires et de leur suivi :**
+Qu'est-ce qui vous paraît utile, flou ou contestable dans cette proposition ? Vous pouvez laisser une remarque sur ce compte, sans raconter de situation personnelle sensible. Nous lirons les retours au rythme des moyens disponibles. Les modalités de contribution plus larges seront précisées après vérification des outils d'accueil.
+
+**Coordination :** besoins Graphiste et Anarchitecte consignés ici pour transmission et suivi ; aucune réception par ces ateliers n'est présumée. Aucun message envoyé à un tiers. Responsable de suivi des retours, canal privé et procédure de traitement à désigner avant appel large.
+
+**Restant :** récupérer les exports existants ; vérifier réellement les brouillons après authentification ; valider moyens de participation et lien public ; faire approuver le message et le lancement. Aucun manifeste, visuel ou légende existante modifié.
