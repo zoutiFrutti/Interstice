@@ -236,4 +236,117 @@ OSM et ODbL : https://www.openstreetmap.org/copyright
 **ULTÉRIEUR / BLOQUANT SEULEMENT POUR INITIATIVES RÉELLES :** responsables des traitements, bases légales, droit de revendication, accès privés, consentement/contacts, protocole de signalement/recours, prévention de réidentification, délais de conservation, licence d'imports, responsabilité des rencontres, DSA selon qualification et éventuelle AIPD. **Aucun article de Charte ou proposition philosophique n'est réputé adopté.**
 
 **Références juridiques :** [OpenStreetMap, licence données ODbL](https://www.openstreetmap.org/copyright) ; [Tile Usage Policy OSMF](https://operations.osmfoundation.org/policies/tiles/) ; [CNIL rectification](https://www.cnil.fr/fr/comprendre-mes-droits/le-droit-de-rectification-corriger-vos-informations) ; [README du projet, statut de licence](https://github.com/zoutiFrutti/Interstice/blob/main/README.md). Aucun droit privé ou permission Supabase n'a été modifié par cette matrice.
+---
+
+## Transmission 015 — Avis ciblé TIS-001 et matrice de 30 passes · 30 octobre 2026
+
+**Objet précis :** sécuriser les recherches et futures relations de La Tisseuse, sans changer la Charte, la base Supabase, les permissions, ni créer une autorité de contrôle. Avis de **méthode proposé et non adopté** ; aucun contrat ou consentement réel n'est obtenu par ce document. Correspond à la section « Atelier : La Juriste » de `coordination/RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATION_2026-10-30.md`.
+
+**Sources de projet effectivement lues et datées :** cadrage `coordination/TISSEUSE_CADRAGE_COOPERATIONS_ANNUAIRE_2026-10-30.md` (blob `81bacb34f216d45c20a27dd37953cccda52e93e7`), bilan partiel `coordination/TIS_001_PREPARATION_BILAN_PARTIEL_2026-10-30.md` (blob `c448c8ac48d177e686b9d475ae568f918021ab12`), contrat technique `coordination/ANARCHITECTE_CONTRAT_CARTES_013_2026-10-30.md`, dossier juridique F1–F10/R1–R10 déjà présent, avis sur les deux articles du Wiki et les deux pages HTML de PR #44. **Aucune recherche de structure supplémentaire, invitation, consultation de données privées ou import réel ne relève de cet avis.**
+
+### Faits reconnus avant les recommandations
+
+- TIS-001 au bilan lu : **0/10–12 structures réellement vérifiées**, 3 cas de coopération hypothétiques (vélo, mutualisation, lieu culturel), 2 canevas **non personnalisés et non envoyés**. « Motor à Toulouse » mentionné comme piste incertaine par l'atelier n'est **pas une identité vérifiée**. Aucun mandat, accord de référencement, partenaire, condition d'accueil vérifiée ou droit d'utilisation d'un lieu n'est attesté.
+- Le cadrage sépare REPÉRÉ, RÉFÉRENCEMENT ACCEPTÉ et COOPÉRATION CONVENUE. **Attention : ce ne sont pas les marches obligatoires d'un escalier**. Une structure peut coopérer sur un document privé sans accepter un annuaire public ; inversement elle peut accepter une fiche sans vouloir coopérer. Conserver trois dimensions indépendantes : `research_state`, `publication_state` et `cooperation_state`.
+- La PR #41 de la Développeuse inspectée au HEAD `696dbe6ca55e76d00e7afa9c40181caee586593d` : objets fictifs `kind=initiative|besoin|ressource|projet`, `reading=communs|possibles`, provenance de simulation et aucun contact réel dans les fixtures ; le statut relationnel TIS **ne devient pas** un cinquième `kind`. Aucun schéma réel ou RLS de partenaires n'a été audité.
+- Deux fichiers TIS consultés : contrôle automatique limité de présence d'adresses électroniques et numéros de téléphone au format courant : **0 adresse courriel et 0 numéro détectés dans chaque fichier**. C'est un contrôle lexical ciblé, pas une garantie exhaustive contre identification indirecte.
+
+### Lot I — Passes 01 à 05 : cadrage et preuves
+
+| Passe | Vérification/action effectivement réalisée | Résultat et limite | État |
+|---|---|---|---|
+| **01** | Lire cadrage TIS-001, son territoire, ses états et son modèle de fiche | Fiche de recherche minimale, 3 états de relation et interdit de contact non autorisé identifiés ; aucun nouveau rôle créé | **FAIT** |
+| **02** | Lire bilan partiel TIS-001 et vérifier les pièces réellement disponibles | **0 structure vérifiée**, 3 rapprochements hypothétiques, 2 canevas non envoyés ; impossible de personnaliser légalement un courrier sur cette base | **FAIT ; prospection BLOQUÉE** |
+| **03** | Recouper les critères F1–F10/R1–R10 et le dossier de fiches existant | Les règles proposées couvrent déjà confidentialité, lieux sensibles, correction et recours. Pas de nouvel audit RGPD général nécessaire | **FAIT** |
+| **04** | Contrôler mandat prétendu de La Tisseuse, de La Relieuse et des futurs interlocuteurs | Aucun mandat juridique pour signer ou représenter une association partenaire établi ; la coordination ne vaut pas représentation. Pour une association, ce sont statuts/délégation qui fixent les pouvoirs | **FAIT ; signature BLOQUÉE** |
+| **05** | Distinguer recherche et inscription dans une carte publique | Une citation en carnet de recherche ≠ permission de rendre la fiche publique, et n'est ni « contacté » ni « partenaire » ; trois dimensions indépendantes proposées ci-dessus | **FAIT** |
+
+### Lot II — Passes 06 à 10 : bases, contact, référencement et coopération
+
+| Passe | Vérification/action effectivement réalisée | Résultat et limite | État |
+|---|---|---|---|
+| **06** | Comparer le modèle d'accord proposé avec les règles CNIL des annuaires | Une réutilisation de données professionnelles déjà publiques **peut** relever de l'intérêt légitime avec information/opposition et bilan de risque ; elle n'exige pas **toujours** le consentement RGPD. **La validation préalable d'une fiche est un choix prudent d'Interstice**, non une règle légale universelle. Autres données, commentaires et déductions peuvent exiger davantage | **FAIT** |
+| **07** | Contrôler différence contact générique officiel / contact de personne | Une URL d'association ou une boîte générique publique diffère d'un courriel nominatif, téléphone privé, messagerie personnelle ou contact déduit ; **ne stocker aucun de ces derniers sur GitHub** | **FAIT** |
+| **08** | Relire les deux canevas d'approche de La Tisseuse | Messages A/B distincts, précisant projet en construction, démo fictive, absence d'adhésion, refus et retrait ; les expressions « je suis à l'origine » et « nous pourrions préparer » requièrent validation de l'identité/mandat d'envoi et des moyens réels. **Aucun envoi effectué** | **FAIT ; envoi BLOQUÉ** |
+| **09** | Tester la preuve de référencement public dans le bilan TIS | Aucun accord précis sur **version de fiche, champs, périmètre, date, éventuel affichage du lieu et rectifications** ; pas de passage à `publication=public`. Même avec accord, compléter base légale et sûreté | **FAIT ; publication BLOQUÉE** |
+| **10** | Tester les composantes d'une coopération effective | Aucun objet/durée/apport/limite, assurance, pouvoir d'engager et retrait confirmés par deux parties habilitées ; aucune coopération convenu(e) | **FAIT ; partenariat BLOQUÉ** |
+
+### Lot III — Passes 11 à 15 : accueil, sûreté, retrait et recours
+
+| Passe | Vérification/action effectivement réalisée | Résultat et limite | État |
+|---|---|---|---|
+| **11** | Vérifier conditions d'accueil publiées et réalité des activités dans TIS | Aucune source officielle de lieu vérifiée ; **horaires, tarifs, accessibilité, capacité, accueil sans adhésion et contact sont INCONNUS**. Une future fiche doit préciser « déclaré par la structure », date/source, limites de confirmation | **FAIT ; certification BLOQUÉE** |
+| **12** | Appliquer les quatre niveaux L0/L1/L2/L3 du dossier aux lieux d'accueil | L0 si le lieu ne souhaite aucune localisation ; L1 zone large seulement si non réidentifiante ; L2 lieu public de rendez-vous avec autorisation ; L3 adresse publique d'activité justifiée. Refuge/lieu rare : le libellé de commune peut suffire à identifier, choisir L0 | **FAIT** |
+| **13** | Différencier retrait d'accord de coopération, de fiche et droits RGPD | Trois retraits distincts ; un refus d'être partenaire n'oblige pas à effacer tous faits publics licites ; choix du projet : suspendre la fiche acceptée et réexaminer l'opposition, licences, cache et copies ; impossible de garantir effacement d'Internet entier | **FAIT** |
+| **14** | Examiner désaccord idéologique ou contestation d'un fait | Ne pas transformer « refuse notre invitation », « n'adhère pas » ou « conteste notre analyse » en statut public défavorable ; protéger critiques licites et droit de réponse ; distinguer erreur, risque et désaccord | **FAIT** |
+| **15** | Vérifier existence effective d'un canal confidentiel TIS/Interstice | Cadrage et bilan demandent un canal à définir ; aucun **récepteur privé opérationnel habilité** ni procédure d'urgence n'y est prouvé. Ne pas promettre d'accepter des dossiers sensibles ou un soutien de protection | **FAIT ; signalement sensible BLOQUÉ** |
+
+### Lot IV — Passes 16 à 20 : frontière GitHub public
+
+| Passe | Vérification/action effectivement réalisée | Résultat et limite | État |
+|---|---|---|---|
+| **16** | Contrôle lexical des deux fichiers TIS présents sur GitHub public | Pas de courriels ni numéros usuels détectés ; les noms d'organismes rares, fonctions, URLs de pages personnelles, comptes sociaux, lieux et citations peuvent néanmoins identifier par recoupement | **FAIT, contrôle borné** |
+| **17** | Définir les champs autorisés pour un rapport TIS public **avant référencement réel** | `id_recherche_fictif`, territoire **large non sensible**, catégorie générique, source de méthode, statut de recherche, nombre agrégé, incertitudes et prochaines vérifications. Pas de liste « partenaires », pas de coordonnée ni origine nominative non nécessaire | **FAIT, contrat candidat** |
+| **18** | Définir les champs exigeant un support à accès restreint futur | Contacts et réponses reçues, mandats/habilitations, preuve d'accord, refus individuels, conflits, signalements, version des fiches revue, délai de conservation ; **support restreint non créé ni vérifié**. GitHub public et ses anciens commits ne doivent pas servir de coffre-fort | **FAIT ; stockage réel BLOQUÉ** |
+| **19** | Examiner refus et droit de ne pas être relancé | Conserver si nécessaire un identifiant minimal dans un registre d'opposition **privé**, sans commentaire dépréciatif ni campagne automatique ; limiter accès et durée selon finalité, pas de blacklist GitHub ; une désinscription de contact ne devient pas refus du référencement factuel par défaut | **FAIT** |
+| **20** | Contrôler étiquettes « safe », « allié », « inclusif » et classement politique | Le dossier TIS interdit déjà la certification absolue ; remplacer par pratiques **déclarées, datées, sourcées et contestables** ; ne pas attribuer au partenaire une opinion politique, appartenance ou qualité générale de protection | **FAIT** |
+
+### Lot V — Passes 21 à 25 : suivi juridique Wiki actuel
+
+| Passe | Vérification/action effectivement réalisée | Résultat et limite | État |
+|---|---|---|---|
+| **21** | Contrôler la PR #44 actuelle et les deux HTML de la branche | PR #44 ouverte en brouillon, HEAD `393bfbd8bbacc543bf32f38447fe9f610009294e` au contrôle, pages candidates ; pas de fusion ni publication | **FAIT** |
+| **22** | Lire `wiki-decision-collective.html:44,46,48` | Distinction **consultation / information / contestation / participation** explicitement écrite, pas de vote ni accès généralisé aux documents internes pour personnes extérieures ; non-exposition d'un témoignage qualifiée comme proposition, pas droit universel | **FAIT, réserve 014 corrigée** |
+| **23** | Lire les parcours de correction `wiki-decision-collective.html:57–58` et `wiki-lecture-croisee-travail-soin-pouvoir.html:16` ; relire `proposer-article.html` | Liens vers formulaire d'article à connexion, avertissements **pas de canal privé**, aucune promesse d'exercice effectif de droits ; un contact confidentiel reste **non disponible** | **FAIT ; accueil sensible BLOQUÉ** |
+| **24** | Contrôler les notices, attributions et nature des citations des deux pages | Ouvrages distingués des notices et des extraits ; Berenstain présenté comme article lu par passages avec correction de note, Ahmed en notice ; les paraphrases ne valent pas licences de reproduction/traduction, et les droits des images restent indépendants | **FAIT ; vérification exhaustive des liens/éditions hors mission** |
+| **25** | Séparer le blocage du service de signalement et celui d'une publication analytique | Les deux articles peuvent rester candidats éditoriaux **sans demander témoignages ni données privées** ; impossible d'annoncer une voie de recours confidentielle réelle. Revue des sources, accessibilité et arbitrage de publication restent humains | **FAIT** |
+
+### Lot VI — Passes 26 à 30 : livrable concret et décision humaine
+
+| Passe | Vérification/action effectivement réalisée | Résultat et limite | État |
+|---|---|---|---|
+| **26** | Confronter format TIS au contrat `kind` / `reading` / `location` de PR #41 | Rechercher une association ≠ ajouter un `kind` ; `kind=initiative` uniquement après validation, pas d'import automatique ; projet en cours ≠ partenariat. Trois états de relation restent **internes** | **FAIT, mapping ci-dessous** |
+| **27** | Définir les garde-fous d'une première sollicitation | Source officielle réellement lue, adresse/canal officiel, motif pertinent, expéditeur mandaté, capacité de réponse, texte personnalisé, information et opposition, accord humain d'envoi. **Pas de consentement préalable universel au premier contact non commercial**, mais contexte, RGPD et anti-spam à vérifier | **FAIT ; premier contact BLOQUÉ faute de preuves TIS** |
+| **28** | Définir le seuil d'un référencement public réel | Identité et provenance confirmées ; version de fiche présentée à la structure selon méthode TIS ; acceptation précise, base juridique, droits des personnes, permissions API et canal de correction/retrait, localisation prudente, décision humaine de publier | **FAIT ; ouverture réelle BLOQUÉE** |
+| **29** | Définir le seuil d'une coopération réelle | Objet, apports de chaque partie, mandat, moyens réels, coûts/assurances/sécurité lorsque pertinents, limites et droit de sortie ; permission séparée pour rendre cette relation **publique**. Pas d'adhésion obligatoire au manifeste ou au projet | **FAIT ; partenariat BLOQUÉ** |
+| **30** | Exécuter simulation de contrôle du **contrat proposé**, puis tracer les résultats | **15/15 assertions fictives réussies** sur modèle de décision indépendant (REPÉRÉ ≠ public, accord de fiche ≠ partenariat, refus, mandat, partage public et canaris privés, L0, lieu sensible). **Ce n'est ni un test de PR #41, ni un test RGPD du service réel**, seulement une démonstration logique du contrat proposé. Transmission et Journal à vérifier après écriture | **FAIT, test candidat** |
+
+### Contrat de passage : trois axes à ne pas fusionner
+
+```text
+research_state      = A_VERIFIER | REPERE | SUSPENDU
+publication_state   = NON_PROPOSE | PROPOSEE | ACCEPTEE_NON_PUBLIEE | PUBLIQUE | MASQUEE | RETIREE
+cooperation_state   = AUCUNE | DISCUSSION_POSSIBLE | NEGOCIATION | CONVENUE_NON_PUBLIQUE | TERMINEE
+
+kind (carte)          = initiative | besoin | ressource | projet
+reading (carte)       = communs | possibles
+```
+
+Les valeurs ci-dessus sont un **contrat documentaire candidat**, pas une migration ni des droits attribués. `REPERE` ne déclenche aucune publication ; `ACCEPTEE_NON_PUBLIEE` exige encore revue légale/technique ; `CONVENUE_NON_PUBLIQUE` peut exister **sans consentement au référencement**. La vraie publication de la coopération exige une autorisation spécifique ; l'accord pour une fiche n'est pas une signature de Charte.
+
+**Projection publique future soumise à décision humaine :** uniquement `id_public` opaque, `kind`, `reading`, nom public validé, description factuelle autorisée, catégorie, degré de documentation, source/date/licence, territoire selon L0–L3 et **conditions d'accueil publiables** si leur contenu est autorisé. Aucune preuve de mandat, aucun contact nominatif, courriel privé, refus, discussion, montant proposé, témoignage, plainte, indice de vulnérabilité ou champ de décision interne dans API, JSON, GeoJSON, HTML, URLs, exports, caches ou commit public.
+
+**Cas de repli :** une structure peut demander `location=none`, sans épingle et si nécessaire sans commune ; une fiche publique n'indique pas la liste des lieux refusés ou de ceux qui se déclarent « sensibles ». Le refus de prise de contact peut être tracé dans un registre privé minimal, sans étiquette publique de défiance.
+
+### Avis demandé par La Tisseuse : phrases à ajouter aux canevas, sans envoyer
+
+**A — prise de contact initiale (si l'envoi devient légitime) :** préciser « Nous avons trouvé vos activités sur la source publique citée, mais nous n'avons pas encore votre accord pour vous référencer, relayer vos contacts ou annoncer une collaboration. Cette demande porte seulement sur la possibilité de relire volontairement un exemple de fiche. Vous pouvez répondre par votre canal habituel, refuser ou demander à ne plus être sollicités. »
+
+**B — fiche candidate, après réponse positive éventuelle :** proposer une validation champ par champ de **l'identité publique, texte, source/date, degré de documentation, territoire choisi, horaires et conditions d'accueil déclarées**, puis demander séparément si cette version peut être rendue publique. Ne pas demander automatiquement une signature de Charte ; ne pas attribuer l'accord d'un membre à toute l'association.
+
+**C — coopération distincte :** décrire objectivement une tâche réciproque et bornée, qui en a réellement le pouvoir, durée, coûts, limites, responsabilités, retrait et si l'annonce publique du partenariat est souhaitée. Le travail associatif gratuit ne se présume pas ; aucun accueil ou prêt ne se déduit d'un intérêt de principe.
+
+**Précaution juridique :** la première sollicitation non commerciale d'une association n'est pas automatiquement interdite sans consentement préalable ; les règles de la CNIL varient selon objet, destinataire et canal, mais identité de l'émetteur, information, droit de refus et opposition restent nécessaires selon les cas. Le projet choisit **une validation humaine préalable** de toute prise de contact, même lorsqu'une sollicitation isolée pourrait être juridiquement possible.
+
+### Liste classée — décision de La Relieuse et de l'équipe, non de la Juriste
+
+**BLOQUANT pour les actions réelles :** (B1) aucune source officielle et identité vérifiées ; (B2) aucun mandat approuvé pour écrire au nom du projet ; (B3) aucune autorisation de fiche publique ou méthode opérationnelle de correction/retrait ; (B4) aucun canal privé effectif pour droits/signalements ; (B5) aucune capacité/assurance ou objet contractuel établi pour une rencontre ; (B6) aucune assurance que de vraies données resteraient hors de la PR #41 fictive.
+
+**RECOMMANDÉ immédiatement dans la recherche :** utiliser un carnet séparé de l'annuaire public ; sources officielles avec date de consultation ; provenance et informations d'accueil « inconnues » tant que non confirmées ; vérification non intrusive des mandats ; notices neutres sans score ; liste de refus uniquement restreinte, si nécessaire et justifiée.
+
+**REPORTABLE :** contrat final de coopération détaillé, import API, automate de publication/retour, affichage L2/L3, téléchargement de logos/photos, questionnaires sensibles, plateforme de signalement élaborée et système de fédération formalisé. Ne rien déployer sur la seule base de ce document.
+
+**Sources de droit vérifiées (sélection) :** [CNIL, annuaires professionnels](https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes) ; [CNIL, prospection électronique, mise à jour 10 juin 2026](https://www.cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique) ; [CNIL, droit d'opposition](https://www.cnil.fr/fr/comment-utiliser-une-liste-repoussoir-pour-respecter-lopposition-la-prospection-commerciale) ; [CNIL, RGPD art. 14](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3) ; [Service-Public, instances et représentation des associations, vérification 14 août 2026](https://www.service-public.gouv.fr/particuliers/vosdroits/F1121).
+
+**Zéro prise de contact, zéro fiche réelle publiée, zéro permission Supabase changée, zéro Charte adoptée.** Ce travail est un examen juridique spécialisé et un test de logique candidate ; aucune transmission GitHub ne prouve réception par la conversation de La Tisseuse ou de La Relieuse.
 
