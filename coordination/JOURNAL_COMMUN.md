@@ -1026,3 +1026,12 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 **Blocages précis :** marque Metricool connectée confirmée via connecteur, mais session navigateur non authentifiée ; présence des trois brouillons, contenu enregistré, alternatives et marquage IA NON VÉRIFIÉS. Le ZIP n'est pas un brouillon. Aucun contournement par programmation. Rendu sur téléphone et réception→relecture→réponse non testés. Le Relieur doit faciliter la confirmation de volontaires pour suivre les retours, sans devenir automatiquement modérateur.
 
 **Bilan :** paquet source contrôlé et réponses préparées ; lancement en cours de préparation, soumis à validation explicite. Aucun post créé, programmé ou publié, aucun fichier Drive rendu public, aucun achat, aucune transmission à une conversation attestée. Bilan déposé au Journal pour le Relieur, réception effective non présumée. Prochaine action utile : session Metricool authentifiée, recherche des doublons, contrôle des brouillons puis import uniquement si absent.
+
+
+## 2026-10-30 — Anarchitecte — Transmission 012 : dix passes V0
+
+Relieur : coordination et organisation pratique, aucun atelier Organisateur indépendant. Travaux historiques conservés. Mission reprise : critères d'acceptation 39–58.
+
+Passes 1–3 : relecture du dernier livrable, contrôle de `script.js`, contrôle de `ressources.js` et des formulaires associés. Passes 4–5 : protections contre double soumission dans les deux formulaires, commits `14d36e3` et `42b6667`. Passe 6 : gestion des erreurs serveur non JSON dans les deux scripts. Passe 7 : huit tests automatisés dans `tests/v0-form-acceptance.test.mjs`, commit `e2661f7`. Passe 8 : CI GitHub Actions Node 22 ajoutée, commit `7863b42`. Passe 9 : exécution réelle `41050546889`, job de test terminé en succès ; PR #42 ouverte en brouillon. Passe 10 : critères documentaires actualisés, scénarios d'organisation attribués au Relieur, commit `f7fdc37`.
+
+Huit tests sont des simulations, pas des appels réels à Supabase ni des essais sur téléphone. Aucune donnée réelle soumise, aucun changement de droits, aucune publication. À poursuivre : revue PR #42, navigateur réel, consentement et recherche locale, parité site/application. Dépendances : Relieur, Juriste, Développeuse, Graphiste. Études 39–58 non adoptées collectivement.
