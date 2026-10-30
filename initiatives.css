@@ -22,3 +22,16 @@
  #detail h2{font-size:24pt}#detail .provenance{border:1px solid #666}
  @page{margin:18mm}
 }
+/* Deuxième parcours fictif : un besoin ou une offre sans saisie personnelle. */
+.discovery-jumps{margin:18px 0;gap:12px}
+.simulator{margin-top:48px!important;padding:30px 0!important;border-top:1px solid #64717a!important}
+.simulator h2{font-size:clamp(1.5rem,5vw,2.2rem);margin:.4rem 0}
+#simulation-form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;background:#22282c;border:1px solid #68747b;border-radius:14px;padding:18px}
+#simulation-form label{margin:0 0 6px}
+#simulation-form select{min-height:52px;background:#141a1e;width:100%}
+.simulation-actions{display:flex;grid-column:1/-1;gap:12px;flex-wrap:wrap}
+.simulation-actions button{min-height:50px}
+.simulation-privacy{color:#f3ddbc;font-size:.95rem}
+#simulation-message{min-height:1.5em;color:#e8e4db}
+@media(max-width:760px){#simulation-form{grid-template-columns:1fr}.simulation-actions{flex-direction:column}}
+@media print{.simulator{display:none!important}}

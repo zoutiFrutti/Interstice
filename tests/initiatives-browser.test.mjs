@@ -102,3 +102,37 @@ test("adresse invalide récupérable, lien profond correct et page sans JavaScri
   await noJsContext.close();
  }finally{await browser.close();}
 });
+
+test("simulation mobile : besoin, offre, territoire, correspondances explicables et aucun envoi",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ const errors=[],requests=[];
+ page.on("pageerror",e=>errors.push(e.message));
+ page.on("request",r=>requests.push(r.url()));
+ try{
+  await mkdir("artifacts",{recursive:true});
+  await page.goto(PAGE,{waitUntil:"networkidle"});
+  await page.locator("#simulation-go").click();
+  assert.equal(await page.locator("#simulation-results .initiative-card").count(),1);
+  assert.match(await page.locator("#simulation-results .match-reasons").innerText(),/Ressource imaginée : Perceuse/);
+  assert.ok((await page.locator("#simulation-message").innerText()).includes("fictive"));
+  await page.screenshot({path:"artifacts/initiatives-mobile-simulation.png",fullPage:true});
+  await page.locator("#simulation-kind").selectOption("offre");
+  assert.equal(await page.locator("#simulation-results .initiative-card").count(),0);
+  await page.locator("#simulation-object").selectOption("stockage");
+  await page.locator("#simulation-territory").selectOption("Gaillac");
+  await page.locator("#simulation-go").click();
+  assert.equal(await page.locator("#simulation-results .initiative-card").count(),1);
+  assert.match(await page.locator("#simulation-results .match-reasons").innerText(),/Besoin imaginé : Stockage/);
+  await page.locator("#simulation-territory").selectOption("Rabastens");
+  await page.locator("#simulation-go").click();
+  assert.equal(await page.locator("#simulation-results .initiative-card").count(),0);
+  assert.match(await page.locator("#simulation-message").innerText(),/Aucun exemple/);
+  await page.locator("#simulation-reset").click();
+  assert.equal(await page.locator("#simulation-kind").inputValue(),"besoin");
+  assert.equal(await page.locator("#simulation-object").inputValue(),"perceuse");
+  assert.equal(await page.locator("#simulation-message").innerText(),"");
+  assert.deepEqual(requests.filter(url=>!url.startsWith(BASE+"/")&&!url.startsWith("data:")),[]);
+  assert.deepEqual(errors,[]);
+ }finally{await page.close();await browser.close();}
+});

@@ -13,6 +13,10 @@
 <p class="tag">EXPLORER LES COMMUNS · DÉMONSTRATION</p>
 <h1 id="explorer-title">Et si on cherchait <em>près de chez soi ?</em></h1>
 <p class="lead">Cherche une commune, découvre des projets imaginés et vois comment une fiche pourrait aider à se rencontrer.</p>
+<nav class="discovery-jumps" aria-label="Parcours disponibles">
+<a href="#experiment">Tester un besoin ou une offre</a>
+<a href="participer.html">Contribuer sans application</a>
+</nav>
 <form id="filters" role="search">
 <div><label for="commune">Commune ou territoire</label><input type="search" id="commune" list="communes" placeholder="Ex. Lisle-sur-Tarn" autocomplete="off">
 <datalist id="communes"><option value="Lisle-sur-Tarn"></option><option value="Gaillac"></option><option value="Rabastens"></option><option value="Albi"></option></datalist></div>
@@ -26,9 +30,33 @@
 <div class="results-heading"><h2>Les initiatives imaginées</h2><p id="count" role="status" aria-live="polite">Chargement…</p></div>
 <button id="export-demo" type="button" class="button-muted">Exporter les résultats fictifs affichés (JSON)</button>
 <p class="export-note" id="export-status" role="status" aria-live="polite"></p>
-<div id="results" class="initiative-grid"></div>
 <div id="invalid-route" hidden role="alert" class="empty">La fiche demandée n’existe pas dans cette démonstration. Voici les exemples disponibles.</div>
+<div id="results" class="initiative-grid"></div>
 <div id="no-results" hidden class="empty"><h3>Aucun exemple correspondant</h3><p>Cela ne dit rien des initiatives réelles. Essaie Gaillac, Rabastens, Lisle-sur-Tarn ou Albi.</p><button class="button-muted" type="button" id="clear-empty">Voir tous les exemples</button></div>
+<section id="experiment" class="simulator" aria-labelledby="experiment-title">
+<p class="tag">FAIRE UN ESSAI · SANS ENVOYER</p>
+<h2 id="experiment-title">Et si on essayait de partager ?</h2>
+<p>Choisis une situation imaginaire. Interstice montre alors quelles fiches fictives pourraient correspondre. Rien n'est publié ni conservé, aucun contact réel n'est créé.</p>
+<form id="simulation-form">
+<div><label for="simulation-kind">Je voudrais</label>
+<select id="simulation-kind"><option value="besoin">Trouver une ressource</option><option value="offre">Proposer une ressource</option></select></div>
+<div><label for="simulation-object">Pour quel objet ou besoin ?</label>
+<select id="simulation-object">
+<option value="perceuse">Une perceuse</option><option value="stockage">Un lieu de stockage</option>
+<option value="transport">Une aide au transport</option><option value="machine a coudre">Une machine à coudre</option>
+<option value="outils">Des outils</option><option value="temps">Du temps disponible</option>
+<option value="cuisine">Du matériel de cuisine</option>
+</select></div>
+<div><label for="simulation-territory">Commune fictive (facultatif)</label>
+<select id="simulation-territory"><option value="">Toutes les communes des exemples</option>
+<option>Lisle-sur-Tarn</option><option>Gaillac</option><option>Rabastens</option><option>Albi</option></select></div>
+<div class="simulation-actions"><button id="simulation-go" type="submit">Comparer les exemples fictifs</button>
+<button id="simulation-reset" type="button" class="button-muted">Recommencer</button></div>
+</form>
+<p class="simulation-privacy">Aucune zone de saisie libre, aucun compte, aucune géolocalisation. Ces rapprochements ne sollicitent aucune personne.</p>
+<p id="simulation-message" role="status" aria-live="polite" aria-atomic="true"></p>
+<div id="simulation-results" class="initiative-grid" aria-label="Exemples de correspondances fictives"></div>
+</section>
 </section>
 <section id="detail" hidden aria-labelledby="detail-title">
 <div class="detail-controls"><button type="button" class="button-muted" id="back">← Retour aux initiatives</button><button type="button" class="button-muted" id="print-fiche">Imprimer la fiche fictive</button></div><article id="detail-content"></article>

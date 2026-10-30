@@ -94,3 +94,38 @@ test("état inconnu, fiche imprimable, lien sans JS présents dans l'interface",
  assert.match(app,/history\.replaceState/);
  assert.match(css,/@media print/);
 });
+
+test("simulation : besoins dirigés vers offres et inversement, sans score",async()=>{
+ const {findCompatibleExamples}=await import("../initiatives-simulation.mjs");
+ const need=findCompatibleExamples(DEMO_INITIATIVES,{kind:"besoin",object:"perceuse"});
+ assert.deepEqual(need.map(x=>x.item.id),["demo-outils"]);
+ assert.equal(need[0].reason,"Ressource imaginée : Perceuse");
+ const offer=findCompatibleExamples(DEMO_INITIATIVES,{kind:"offre",object:"stockage"});
+ assert.deepEqual(offer.map(x=>x.item.id),["demo-outils"]);
+ assert.equal(offer[0].reason,"Besoin imaginé : Stockage");
+ assert.ok(!("score" in offer[0]));
+});
+test("simulation : aucun rapprochement hors du territoire choisi",async()=>{
+ const {findCompatibleExamples}=await import("../initiatives-simulation.mjs");
+ assert.deepEqual(findCompatibleExamples(DEMO_INITIATIVES,{kind:"besoin",object:"perceuse",territory:"Gaillac"}).map(x=>x.item.id),["demo-outils"]);
+ assert.deepEqual(findCompatibleExamples(DEMO_INITIATIVES,{kind:"besoin",object:"perceuse",territory:"Rabastens"}),[]);
+});
+test("simulation : seules catégories prédéfinies, pas de texte libre ni contact",async()=>{
+ const {findCompatibleExamples,SIMULATION_OBJECTS,SIMULATION_TERRITORIES}=await import("../initiatives-simulation.mjs");
+ for(const args of [{kind:"need",object:"perceuse"},{kind:"besoin",object:"adresse privée"},{kind:"besoin",object:"perceuse",territory:"chez moi"}]){
+  assert.deepEqual(findCompatibleExamples(DEMO_INITIATIVES,args),[]);
+ }
+ assert.ok(Object.isFrozen(SIMULATION_OBJECTS));
+ assert.ok(!SIMULATION_TERRITORIES.includes("1 rue Exemple"));
+ assert.deepEqual(findCompatibleExamples([...DEMO_INITIATIVES,{...DEMO_INITIATIVES[0],id:"non-demonstration",isDemo:false}],{kind:"besoin",object:"perceuse"}).map(x=>x.item.id),["demo-outils"]);
+});
+test("simulation : sections de saisie fermée et absence de collecte",()=>{
+ const html=readFileSync(new URL("../decouvrir-initiatives.html",import.meta.url),"utf8");
+ const app=readFileSync(new URL("../initiatives-app.mjs",import.meta.url),"utf8");
+ assert.match(html,/id="simulation-form"/);
+ assert.match(html,/id="simulation-results"/);
+ const form=html.slice(html.indexOf('<form id="simulation-form">'),html.indexOf("</form>",html.indexOf('<form id="simulation-form">')));
+ assert.doesNotMatch(form,/<input|<textarea/);
+ assert.match(app,/findCompatibleExamples/);
+ assert.doesNotMatch(app,/\bfetch\(|localStorage|sessionStorage|sendBeacon|geolocation/);
+});

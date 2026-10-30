@@ -1,5 +1,6 @@
 import {DEMO_INITIATIVES} from "./initiatives-data.mjs";
 import {createDemoRepository,explainSearchMatch,buildPublicDemoExport} from "./initiatives-core.mjs";
+import {findCompatibleExamples} from "./initiatives-simulation.mjs";
 const repo=createDemoRepository(DEMO_INITIATIVES),$=id=>document.getElementById(id);
 const form=$("filters"),commune=$("commune"),category=$("category"),objet=$("objet"),scope=$("scope"),order=$("order"),list=$("results"),count=$("count"),empty=$("no-results"),explorer=$("explorer"),detail=$("detail"),content=$("detail-content");
 let sequence=0;
@@ -45,8 +46,32 @@ commune.addEventListener("input",drawList);objet.addEventListener("input",drawLi
 $("clear").addEventListener("click",reset);$("clear-empty").addEventListener("click",reset);
 $("print-fiche").addEventListener("click",()=>window.print());
 $("back").addEventListener("click",()=>{const url=new URL(location.href);url.searchParams.delete("initiative");history.pushState(null,"",url.pathname+url.search+url.hash);showList(true);});
-list.addEventListener("click",event=>{const a=event.target instanceof Element?event.target.closest("a[data-id]"):null;if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();history.pushState(null,"",a.href);showDetail(a.dataset.id,true);});
+for(const clickableList of [list,$("simulation-results")])clickableList.addEventListener("click",event=>{const a=event.target instanceof Element?event.target.closest("a[data-id]"):null;if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();history.pushState(null,"",a.href);showDetail(a.dataset.id,true);});
 addEventListener("popstate",navigate);
+// La simulation ne lit que des choix prédéfinis, jamais de données d'une personne.
+const simulationForm=$("simulation-form"),simulationMessage=$("simulation-message"),simulationResults=$("simulation-results");
+const simulationKind=$("simulation-kind"),simulationObject=$("simulation-object"),simulationTerritory=$("simulation-territory");
+function resetSimulation({focus=false}={}){
+ simulationKind.value="besoin";simulationObject.value="perceuse";simulationTerritory.value="";
+ simulationMessage.textContent="";simulationResults.replaceChildren();
+ if(focus)simulationKind.focus();
+}
+for(const control of [simulationKind,simulationObject,simulationTerritory]){
+ control.addEventListener("change",()=>{simulationMessage.textContent="Choix modifié. Relance la comparaison pour actualiser les exemples.";simulationResults.replaceChildren();});
+}
+simulationForm.addEventListener("submit",event=>{
+ event.preventDefault();
+ const matches=findCompatibleExamples(DEMO_INITIATIVES,{kind:simulationKind.value,object:simulationObject.value,territory:simulationTerritory.value});
+ simulationResults.replaceChildren(...matches.map(({item,reason})=>{
+  const card=node("article","","initiative-card");
+  card.append(node("p","CORRESPONDANCE FICTIVE · AUCUN CONTACT","demo-tag"),node("h3",item.title),
+    node("p",reason,"match-reasons"),node("p","Territoires : "+item.territories.join(", ")));
+  const anchor=node("a","Lire cette fiche fictive →");anchor.href=urlFor(item.id);anchor.dataset.id=item.id;card.append(anchor);
+  return card;
+ }));
+ simulationMessage.textContent=matches.length?matches.length+" correspondance(s) fictive(s) expliquée(s), sans classement ni envoi.":"Aucun exemple correspondant. Cela ne prouve pas qu'il n'existe pas d'entraide réelle.";
+});
+$("simulation-reset").addEventListener("click",()=>resetSimulation({focus:true}));
 $("export-demo").addEventListener("click",async()=>{
  const visible=await repo.list(currentFilters());
  if(!visible.length)return;
