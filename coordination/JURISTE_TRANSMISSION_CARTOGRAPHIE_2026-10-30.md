@@ -152,3 +152,53 @@ Cette transmission sert de message **à récupérer ou relier** par les autres a
 
 **Preuve de transmission :** présente note GitHub, à relier au `coordination/JOURNAL_COMMUN.md`. Son dépôt ne prouve pas la réception dans la conversation du Relieur. Le manifeste V2.5 reste une référence éditoriale non adoptée.
 
+---
+
+## Transmission 015 — Juriste vers La Relieuse / La Tisseuse / Développeuse · 30 octobre 2026
+
+**Statut : bilan documentaire de trente passes, propositions juridiques non adoptées.** La Relieuse coordonne les validations sans droit d'engager les personnes. Le dépôt ne prouve **aucune réception par les conversations destinataires**.
+
+### A. Travail repris et preuves sources
+
+Saisine : `coordination/RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATION_2026-10-30.md` ; cadrage La Tisseuse `coordination/TISSEUSE_CADRAGE_COOPERATIONS_ANNUAIRE_2026-10-30.md` (blob `81bacb34`), bilan partiel `coordination/TIS_001_PREPARATION_BILAN_PARTIEL_2026-10-30.md` (blob `c448c8ac`). **État confirmé : 0/10–12 structures vérifiées, trois scénarios non attribués à des lieux, deux canevas non personnalisés, aucun contact/accord.**
+
+**Dossier juridique effectivement complété** : [règles de fiches / additif 015](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md), commit `20287467b41d361b4c92fc7da9c99decbbda8925`. **Six lots, 30 lignes numérotées, états FAIT/BLOQUÉ et preuves**. Les 15 simulations booléennes du contrat candidat ont réussi **dans une exécution JavaScript indépendante**, sans accéder au code de gestion de partenaires (qui n'existe pas encore) ; ne pas les annoncer comme des tests d'intégration.
+
+### B. Répartition des 30 passes, résultats
+
+| Lot | Passes | Action réelle / résultat |
+|---|---:|---|
+| I — preuves | 01–05 | Cadrage et bilan TIS lus, F/R recoupés, mandat non présumé, repérage séparé de référencement |
+| II — relations | 06–10 | CNIL annuaires/prospection recoupée, canaux officiels versus privés, 2 messages lus, absence d'accord de fiche et de coopération constatée |
+| III — personnes | 11–15 | Accueil « inconnu », localisation L0–L3 et risque de recoupement, retraits distincts, dissidence, absence de canal de signalement opérationnel |
+| IV — Git public | 16–20 | Contrôle lexical des 2 documents TIS (0 mail/numéro format usuel), liste blanche publique/restreinte, refus non stigmatisants, absence de label « safe » |
+| V — Wiki | 21–25 | PR #44 HEAD `393bfbd8bbacc543bf32f38447fe9f610009294e` relue, droits non-membres clarifiés, mises en garde formulaire présentes ; citations source/notices correctement distinguées ; canal privé toujours absent |
+| VI — sortie | 26–30 | Mapping non intrusif vers `kind/reading` PR #41, conditions de contact/référencement/coopération, **15/15 tests logiques du contrat fictif** et bilan |
+
+### C. Indications directement exploitables
+
+**À La Tisseuse :**
+1. Continuer la recherche documentaire : **aucune structure non vérifiée ne devient « REPÉRÉ »**. Conserver source officielle effectivement lue, date, activité paraphrasée et « conditions d'accueil inconnues » sans données de personnes ni engagement attribué.
+2. Ne pas envoyer les canevas A/B, même polis, sans identité vérifiée, canal officiel, objectif pertinent, validation d'un expéditeur **ayant qualité**, temps humain réellement disponible et validation humaine d'envoi. Une sollicitation non commerciale isolée ne nécessite pas **toujours** un consentement préalable, mais doit respecter règles du canal, transparence et opposition.
+3. Une fiche publique **acceptée** n'est ni consentement à une coopération ni adhésion à la Charte. Une coopération privée peut exister sans référencement public. Tout refus reste privé et n'est pas un indice de défiance politique.
+
+**À la Développeuse / Anarchitecte :** conserver `kind=initiative|besoin|ressource|projet` et `reading=communs|possibles` ; ne créer **aucun nouveau type de fiche** pour les statuts de relation. Séparer `research_state`, `publication_state`, `cooperation_state` si l'existence d'une fonction réelle est un jour décidée ; **pas de migration maintenant**. Un `id_recherche` interne n'est pas un identifiant public. Tester avec fixtures fictives les trois états, refus, absence d'adresse et projection publique à **liste blanche serveur**, sans jamais importer le carnet TIS dans PR #41.
+
+**À La Relieuse :** trouver qui peut réellement représenter le projet, vérifier les moyens humains de réponse et faire choisir un canal restreint ainsi que la personne responsable du traitement de données s'il y en a ; ne présumer ni mandat du Relieur ni compétence juridique d'une personne sous prétexte qu'elle tient le Journal. Suivre la correction/retrait et les accords comme quatre décisions distinctes : **contact, publication de fiche, coopération, annonce publique de coopération**.
+
+### D. Blocants versus recommandations versus à reporter
+
+**BLOQUANT pour contact réel aujourd'hui :** aucune source officielle vérifiée pour personnaliser une demande, mandat/capacité d'envoi non attestés, absence d'accord humain d'envoi. **BLOQUANT pour référencement réel :** pas d'accord sur une version de fiche selon méthode TIS, rôle RGPD, bases légales, droits et canal privé opérationnel ; aucune autorisation d'import PR #41. **BLOQUANT pour coopération :** absence de mandat, objet confirmé, obligations/assurances éventuellement applicables et droit de sortie. **BLOQUANT pour gestion de signalements sensibles :** pas de canal privé ni d'équipe habilitée réelle.
+
+**RECOMMANDÉ** : utiliser des modèles fictifs, fiches papier à relire, source et date, suivi privé de refus minimal si nécessaire, qualification « accueil déclaré » sans « safe », commune facultative non réidentifiante, formulaires sans donnée privée dans le dépôt public.
+
+**REPORTABLE** : contrats sectoriels d'événements réels, automatismes de messagerie, import d'annuaire, carte réelle, certification et système complet de droits d'accès. En attendant, les cartes restent fictives.
+
+### E. Wiki et traçabilité
+
+**Avis Wiki existant complété**, suivi 015 : [`docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md`](https://github.com/zoutiFrutti/Interstice/blob/main/docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md), commit `2d51e9bd56d079ea265ff49cfa5ab633c9ad40bb`. Le texte actuel de PR #44 ne crée pas un droit général de vote pour les personnes extérieures et ne présente pas le formulaire Wiki comme canal confidentiel ; **ce canal n'est pas créé**. Les sources et tests d'accessibilité restent une vérification éditoriale distincte.
+
+**Sources légales vérifiées :** [CNIL annuaires](https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes), [CNIL prospection non commerciale / B2B, juin 2026](https://www.cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique), [associations.gouv.fr dirigeants/mandats](https://associations.gouv.fr/les-dirigeants-elus-de-lassociation), [Service-Public instances dirigeantes 14/08/2026](https://www.service-public.gouv.fr/particuliers/vosdroits/F1121).
+
+**N'a pas été fait :** recherche réelle de partenaires, contact, lecture de réponses privées, création de serveur de signalement, changement de licences/permissions Supabase, rédaction d'une Charte, correction de code PR #41, modification des deux HTML Wiki, fusion ou publication. Manifeste V2.5 toujours non adopté.
+
