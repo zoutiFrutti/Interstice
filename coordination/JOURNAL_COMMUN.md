@@ -262,3 +262,18 @@ Accès Google Docs vérifié par écriture et relecture. Accès GitHub vérifié
 **Articles concernés :** ARCH-006, COL-003 ; dossier biographique individuel éventuel uniquement après une nouvelle preuve nominative. **Modifications réellement effectuées :** ajout de cette transmission au Journal commun sur la branche de l'atelier, sans modifier ARCH-006, COL-003 ou le Wiki public.
 
 **Transmission proposée à l'Archiviste :** rechercher les procès-verbaux originaux du Club des prolétaires (notamment autour du 16 mai), relever signatures et fonctions, puis confronter état civil et dossiers de répression. **À la Médiathèque :** inventorier les quatre numéros du Prolétaire et leurs auteurs ; ne pas attribuer automatiquement ses articles à la secrétaire. Réception par les autres ateliers non attestée.
+
+
+## 2026-10-30 — Atelier Biographies — nouvelle passe « citoyenne André »
+
+**Sujet.** Recherche sur les fonctions et l'identité de la citoyenne André, blanchisseuse et secrétaire du Club des prolétaires, déjà documentée dans ARCH-006 et COL-003. Aucun nouveau BIO créé.
+
+**Sources réellement consultées.** Michèle Audin, *Le Prolétaire — un club, un journal* (2016), https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/ ; reconstitution historique du 16 mai 1871, https://www.contretemps.eu/journal-commune-16-mai-1871/ ; Association des Amies et Amis de la Commune, *Les clubs sous la Commune*, https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/448-les-clubs-sous-la-commune ; Michèle Audin, *15 mai 1871, que se passe-t-il dans le onzième arrondissement ?*, https://macommunedeparis.com/2021/05/15/15-mai-1871-que-se-passe-t-il-dans-le-onzieme-arrondissement/ .
+
+**Connaissances et limites.** La reconstitution de la séance du 16 mai désigne « la femme André » comme secrétaire ; Audin la décrit comme blanchisseuse et souvent secrétaire. Le texte ne donne pas son prénom. Audin présente « peut-être épouse de Jules André » comme une hypothèse, aucune parenté prouvée. Les quatre numéros du journal *Le Prolétaire* et les procès-verbaux sont deux ensembles différents : la rédaction d'un article n'est pas attribuable à la secrétaire sans signature ou preuve spécifique. Aucune image du procès-verbal nominatif, ni un acte d'état civil ni une signature autographe n'a été retrouvé et vérifié dans cette passe.
+
+**Autre élément prosopographique.** Le compte rendu du 15 mai analysé par Audin nomme un secrétaire « De May » dans une réunion des personnels des fourneaux du XIe arrondissement : rien ne permet de l'assimiler à la citoyenne André ; ne pas fusionner les personnes sur la seule proximité géographique et chronologique.
+
+**Modifications réellement effectuées.** Cette entrée au journal commun sur la branche de travail, sans modification de ARCH-006, COL-003, des biographies ni du Wiki public. **Transmission proposée à l'Archiviste :** retrouver l'emplacement archivistique et la reproduction des procès-verbaux du Club des prolétaires, rechercher les listes de procès-verbaux portant la mention « femme André » ; à la Médiathèque : vérifier les noms des auteurs des quatre numéros. Réception non attestée.
+
+**Suite.** Prénom et état civil, identité du conjoint éventuel, interventions textuelles, éventuelles signatures ; poursuivre sans supposer de parenté avec Jules André. Manifeste V2.5, référence éditoriale non adoptée.
