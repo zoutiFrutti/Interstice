@@ -1026,3 +1026,19 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 **Blocages précis :** marque Metricool connectée confirmée via connecteur, mais session navigateur non authentifiée ; présence des trois brouillons, contenu enregistré, alternatives et marquage IA NON VÉRIFIÉS. Le ZIP n'est pas un brouillon. Aucun contournement par programmation. Rendu sur téléphone et réception→relecture→réponse non testés. Le Relieur doit faciliter la confirmation de volontaires pour suivre les retours, sans devenir automatiquement modérateur.
 
 **Bilan :** paquet source contrôlé et réponses préparées ; lancement en cours de préparation, soumis à validation explicite. Aucun post créé, programmé ou publié, aucun fichier Drive rendu public, aucun achat, aucune transmission à une conversation attestée. Bilan déposé au Journal pour le Relieur, réception effective non présumée. Prochaine action utile : session Metricool authentifiée, recherche des doublons, contrôle des brouillons puis import uniquement si absent.
+
+
+---
+
+## 2026-10-30 · Juriste — transmission 012 et dix passes ciblées
+
+**Contexte :** relu `coordination/RELIEUR_CLARIFICATION_ORGANISATION_2026-10-30.md` et les derniers travaux. **L'Organisateur n'est pas un atelier actif** : le Relieur assure coordination et organisation pratique sans pouvoir politique. Les anciennes mentions restent en archives.
+
+**Dix passes vérifiables :** (1) clarification et dernier journal lus ; (2) rectificatifs non destructifs insérés dans deux transmissions du Juriste, commits `39ca5ae3` et `462e8083` ; (3) PR #41 examinée, ouverte en brouillon, HEAD `beb832d...` ; (4) interrogation SQL en lecture seule de `pg_policies` Supabase : RLS sur sept tables `public`, aucune table de carte dans ce schéma ; (5) recoupement CNIL/RGPD/DSA et distinctions des responsabilités réelles ; (6) 12 assertions statiques sur cinq fichiers de PR #41 : 10 propriétés de démonstration observées, absence attendue de recours et vrai backend ; tests Node **non exécutés** ici ; (7) tri CNIL de l'éventuelle AIPD selon risques ; (8) obligations de violation de données et délais conditionnels explicités ; (9) matrice publique/privée pour huit objets, trois cas de droit des personnes et revue des pages publiques ; (10) présent bilan et transmission au Relieur.
+
+**Résultat documentaire réellement écrit :** sections VII–IX ajoutées à `docs/AVIS_JURISTE_CYCLE_39_58_GARANTIES_BLOCAGES_2026-10-30.md`, commits `c626bf82`, `dae87dfa`, `d6cc1953` ; bilan détaillé ajouté à `coordination/transmissions/2026-10-30_JURISTE_VERS_RELIEUR_ETUDES_39_58.md`, commit `0b918a09`. Transmission GitHub accessible au Relieur, **réception dans sa conversation non attestée**.
+
+**Sources juridiques :** CNIL, AIPD et critères de risque ; RGPD art. 26, 33, 34, droits d'accès/opposition ; CNIL réutilisation des annuaires ; EUR-Lex DSA 2022/2065. Les URL et limites sont dans l'avis. **Constats distincts des propositions :** PR fictive non fusionnée et aucun signalement réel ; futur pilote nécessite identification du responsable de traitement, contrôle des localisations, canal effectif de droits et tests des permissions d'API.
+
+**Limites et suite :** pas de test de navigateur/Android ou de CI actuelle exécuté ; pas de validation de schéma géographique, pas d'adoption collective. Le Relieur doit reprendre les missions d'organisation pratique anciennement attribuées à l'Organisateur, coordonner les tests A01–A15 avec Développeuse/Anarchitecte et préparer les arbitrages humains B1–B7. Aucun code, site, Supabase, manifeste ou statut modifié.
+
