@@ -394,3 +394,53 @@ test("015: aucun secret fictif injecté dans URL, DOM, erreurs, exports ni méta
   assert.equal(exported.includes(secret),false,"Secret found in public export");
  }finally{await page.close();await browser.close();}
 });
+
+test("015: diagnostic débordement réel des deux lectures à 320/390/1280 px",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ try{
+  for(const width of [320,390,1280]){
+   const page=await browser.newPage({viewport:{width,height:844}});
+   try{
+    await mkdir("artifacts",{recursive:true});
+    await page.goto(PAGE,{waitUntil:"networkidle"});
+    await page.locator("#display-map").waitFor({state:"visible"});
+    await page.locator("#display-map").waitFor({state:"attached"});
+    for(const kind of ["communs","possibles"]){
+     await page.locator("#reading-"+kind).click();
+     for(const mode of ["list","map"]){
+      await page.locator("#display-"+mode).click();
+      const dimensions=await page.evaluate(()=>{
+       const outer=document.documentElement.scrollWidth,inner=window.innerWidth;
+       const offenders=[...document.querySelectorAll("body *")]
+        .filter(el=>el.getClientRects().length && el.getBoundingClientRect().width>0)
+        .map(el=>({el,rect:el.getBoundingClientRect()}))
+        .filter(({rect})=>rect.right>inner+1 || rect.left< -1)
+        .slice(0,6).map(({el,rect})=>({selector:el.tagName.toLowerCase()+"#"+(el.id||""),
+          right:Math.round(rect.right),left:Math.round(rect.left),width:Math.round(rect.width)}));
+       return {outer,inner,offenders};
+      });
+      assert.ok(dimensions.outer<=dimensions.inner+1,"Débordement "+width+" "+kind+" "+mode+" : "+JSON.stringify(dimensions));
+      if(width===320 && mode==="map") await page.screenshot({path:"artifacts/015-"+kind+"-320.png",fullPage:true});
+     }
+    }
+   }finally{await page.close();}
+  }
+ }finally{await browser.close();}
+});
+test("015: les 11 liens profonds de la démonstration ouvrent leurs fiches exactes",async()=>{
+ const {DEMO_MAP_ENTRIES}=await import("../cartes-data.mjs");
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ try{
+  assert.equal(DEMO_MAP_ENTRIES.length,11);
+  for(const entry of DEMO_MAP_ENTRIES){
+   await page.goto(PAGE+"?initiative="+encodeURIComponent(entry.id));
+   await page.locator("#detail h2").waitFor();
+   assert.equal(await page.locator("#detail h2").innerText(),entry.title);
+   assert.equal(await page.locator("#detail .provenance").count(),1);
+   assert.ok((await page.locator("#detail").innerText()).includes("Aucun contact réel"));
+   await page.locator("#back").click();
+   assert.equal(new URL(page.url()).searchParams.has("initiative"),false);
+  }
+ }finally{await page.close();await browser.close();}
+});
