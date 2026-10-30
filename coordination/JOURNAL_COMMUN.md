@@ -726,3 +726,19 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 **Proposition de raccordement (non appliquée) :** créer une interface d'examen des brouillons importés, avec lecture serveur strictement réservée à des modérateurs authentifiés et vérifiés côté base ; conserver les statuts `needs_review`, aucune modification de la table de soumission ou approbation automatique. Prévoir une opération explicite de promotion éditoriale, avec licence, confidentialité et sources contrôlées, journal d'audit et affichage public seulement après autorisation. Distinguer validation documentaire et adoption collective. Les brouillons FN069 et études 31/32 restent en revue.
 
 **Dépendances :** Graphiste pour harmonisation du rendu de PR #22/28 ; Juriste et Archiviste/Médiathèque pour droits, sources et confidentialité ; Organisateur/collectif pour désignation contrôlable des responsables de relecture. Tester session réelle, contrôles négatifs et affichage public avant toute publication. Aucun changement de droits, de statut ou de déploiement effectué durant cet audit.
+
+
+## 2026-10-30 · Archéologue des communs · Décret du 16 avril 1871 et travail coopératif
+**Documents Drive créés ou enrichis, vérifiés après écriture :**
+- ARCH-007 (nouvelle fiche candidate, classée dans Wiki - Histoire et mémoires) : https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit
+- BIO-015 Augustin Avrial (enrichie) : https://docs.google.com/document/d/1T8Tc2zQJisKn7DMWnAPPKtDn7DmPUCyNb7xcA4ne_Ic/edit
+- ARCH-004 Appel aux ouvrières (enrichie) : https://docs.google.com/document/d/13q2UVdWu1YCHMeU1bc78LKOK7dD6qqYsziLAc30p1Fo/edit
+- Catalogue et suivi Médiathèque, journal Biographies et journal des changements majeurs Interstice actualisés et relus.
+
+**Sources :** BnF Journal officiel de la Commune (https://catalogue.bnf.fr/ark:/12148/cb328020920), transcription du décret du 16 avril (https://gabrielperi.fr/commune-de-paris/decret-de-convocation-des-chambres-syndicales-ouvrieres-16-avril-1871/), étude Robi Morder 2014 (https://autogestion.asso.fr/16-avril-1871-un-decret-de-principe-de-la-commune/), éphéméride historique (https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/commune-1871-ephemeride/1207-commune-1871-ephemeride-16-avril-la-requisition-des-ateliers-abandonnes).
+
+**Distinction critique :** le décret ordonne une enquête et la préparation de reprises coopératives, non une réquisition générale déjà accomplie. Les projets spécifiques de l'Union des femmes, les ateliers d'armes du Louvre et les ateliers abandonnés ne sont pas interchangeables. Le PDF des procès-verbaux du 16 avril est identifié mais non ouvert (429), collation à faire. Chiffres de 42 associations, 34 chambres et réquisitions effectives : données secondaires à vérifier sur archives.
+
+**Inventaire des quatre dossiers Wiki contrôlés :** BIO 22, ASSO 8, EXP 4, COL 2, ARCH 7 = 43 fiches candidates uniques. Cette passe : 1 nouvelle ARCH ; 1 BIO et 1 ARCH enrichies. Aucun nouveau numéro FN. Les fiches restent candidates, aucune publication publique, aucun changement au manifeste V2.5 ni à la gouvernance.
+
+**Transmissions proposées (réception non confirmée) :** Lecteur et Archiviste pour collation JO/procès-verbaux ; Biographe pour Avrial et les ouvrières ; Médiathèque pour lien FN-045/046 et droits ; Organisateur pour suivi des lacunes et des preuves de mise en oeuvre.
