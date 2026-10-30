@@ -742,3 +742,13 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 **Inventaire des quatre dossiers Wiki contrôlés :** BIO 22, ASSO 8, EXP 4, COL 2, ARCH 7 = 43 fiches candidates uniques. Cette passe : 1 nouvelle ARCH ; 1 BIO et 1 ARCH enrichies. Aucun nouveau numéro FN. Les fiches restent candidates, aucune publication publique, aucun changement au manifeste V2.5 ni à la gouvernance.
 
 **Transmissions proposées (réception non confirmée) :** Lecteur et Archiviste pour collation JO/procès-verbaux ; Biographe pour Avrial et les ouvrières ; Médiathèque pour lien FN-045/046 et droits ; Organisateur pour suivi des lacunes et des preuves de mise en oeuvre.
+
+
+### Complément du 30 octobre 2026 · Correction des métadonnées de Nathalie Le Mel
+**Écritures Drive supplémentaires :** BIO-009 (https://docs.google.com/document/d/1UF54kCo7mwSIze66uNbo1ViEzRhAO4ptUjylBaJR5-o/edit) et ARCH-002 (https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit), plus catalogue et suivi Médiathèque et journaux Drive.
+
+**Anomalie vérifiée :** l'indexation de l'affiche Carnavalet AFF5721 donne « Nathalie Le Mel (1826-1871) », alors que la notice d'autorité BnF donne un décès en 1921. Le nom reste bien présent dans la transcription de l'affiche du 20 mai 1871. Sources : https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune ; https://data.bnf.fr/fr/ark:/12148/cb13169483s.pdf .
+
+**Incertitude conservée :** naissance 26 août 1826 à Ivry-sur-Seine selon la BnF, 26 août 1826 à Brest selon une notice associative, 24 août 1826 à Brest selon un bulletin associatif évoquant l'acte. Aucun acte original collationné ; pas de correction arbitraire. https://commune1871.org/images/PhotothequeAmis/pdf/Bulletin_91.pdf .
+
+**Bilan corrigé de la passe :** 1 ARCH nouvelle, 2 BIO et 2 ARCH enrichies. Inventaire des quatre dossiers : 43 candidates uniques. Aucune publication ni modification de gouvernance.
