@@ -153,3 +153,96 @@ Test JS isolé : trois fiches ; IDs uniques ; types reconnus ; toutes simulées 
 3. **Technique :** vérification HTTP des 22 liens externes non exhaustive, absence de test mobile/lecteur d'écran ; les scripts éventuels, CSS et parcours de correction relèvent de tests spécialisés.
 4. **Cartes réelles :** aucun import, aucun contact, aucune donnée géographique sensible ; avant toute publication de vrais organismes, vérifier source/mandat, protection d'identité, licence/attribution, retrait/rectification, contrôle des sorties publiques serveur, audit RLS et décision collective.
 5. **Coordination :** cette entrée s'ajoute à la transmission 013 et au journal commun, **pas de nouvelle PR créée**. Le Relieur pourra voir l'écriture GitHub, mais sa conversation séparée n'a pas nécessairement été avisée.
+
+
+---
+
+# Transmission 015 — Médiathèque, cycle de 30 passes
+**Date : 30 octobre 2026 ; source : Relieuse transmission 015 ; 30 contrôles dont 28 FAIT et 2 BLOQUE.** Reprise des 013/014 sans en changer le sens. Le tableau et les références distinguent sources primaires lues, extraits, notices, interprétations. Aucune publication ni fusion.
+
+| # | État | Action distincte et résultat vérifié | Référence / preuve |
+|---|---|---|---|
+| 01 | FAIT | PR #44 lue à HEAD initial 393bfbd8 ; branche atelier-lecteur/correction-deux-pages-20261030 toujours ouverte en brouillon | GitHub PR #44 |
+| 02 | FAIT | Deux HTML comparés au rapport 014 : présence des corrections Young, Freeman, Tebble, Berenstain, Ahmed, Kropotkine, hooks, Freire et Mouffe ; deux fichiers conservés | Rapport 014 et HEAD #44 |
+| 03 | FAIT | Young : livre imprimé 2000 et édition Oxford en ligne 18 avril 2002 ; chapitre 2 pp. 52–80, DOI 10.1093/0198297556.003.0003. Notice / résumé uniquement, aucun chapitre intégral revendiqué | https://academic.oup.com/book/3941/chapter-abstract/145536926 |
+| 04 | FAIT | Tebble : Political Studies 51(1), 197–214 (2003). Notice éditoriale + résumé KCL + extraits du post-print (intro, représentation, conclusion). Post-print marqué non destiné à la citation ; citer la référence publiée, pas la pagination du post-print | https://kclpure.kcl.ac.uk/portal/en/publications/does-inclusion-require-democracy/ ; https://kclpure.kcl.ac.uk/portal/files/61288670/Does_Inclusion_Require_Democracy_Academia.edu_upload.pdf |
+| 05 | FAIT | Freeman : texte primaire HTML lu sur site de l'autrice, version assemblant trois états issus de Second Wave 1972, Berkeley Journal of Sociology 1972–73, Ms. 1973. Pas de licence libre présumée | https://www.jofreeman.com/joreen/tyranny.htm |
+| 06 | FAIT | Berenstain : PDF primaire de Ergo pp. 569–590 lu par passages, page 584 et note 20 indiquant retrait en février 2024. Ne pas présenter cette rectification localisée comme une rétractation de l'article | https://quod.lib.umich.edu/cgi/p/pod/dod-idx/epistemic-exploitation.pdf?c=ergo%3Bidno%3D12405314.0003.022%3Bformat%3Dpdf |
+| 07 | BLOQUE | Régime exact de la version source Berenstain : précédente note juridique indique CC BY-NC-ND 3.0 ; licence sur exemplaire PDF révisé non prouvée indépendamment dans cette passe. Accès ouvert ≠ droit de traduction / copie ; avis de correction DOI 10.3998/ergo.5640 non consultable malgré tentative | https://doi.org/10.3998/ergo.5640 ; https://creativecommons.org/licenses/by-nc-nd/3.0/fr/ |
+| 08 | FAIT | Sara Ahmed On Being Included (Duke 2012) : notice éditeur / JSTOR (entretiens de praticiens et expérience de l'autrice), pas d'ouvrage complet ni de pages internes lues | https://www.dukeupress.edu/On-Being-Included ; https://www.jstor.org/stable/j.ctv1131d2g |
+| 09 | FAIT | Federici : fiche éditeur PM Press/Common Notions/Autonomedia, première édition septembre 2012, ISBN 9781604863338 et 208 pages ; résumé éditorial, non texte original lu | https://pmpress.org.uk/product/revolution-at-point-zero-housework-reproduction-and-feminist-struggle/ |
+| 10 | FAIT | Kropotkine : chapitre primaire Le travail agréable de La Conquête du pain, 2e éd. Tresse & Stock 1892 pp. 153–164. Lu directement : critique des corvées féminines, cuisines communes ; predictions techniques non preuves d'efficacité | https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain/Le_travail_agr%C3%A9able |
+| 11 | FAIT | bell hooks : Teaching to Transgress: Education as the Practice of Freedom, édition originale anglaise Routledge 1994. Notice éditeur et présentation seulement ; pas de livre intégral ni traduction française 1994 présumée | https://www.routledge.com/Teaching-to-Transgress-Education-As-The-Practice-of-Freedom/hooks/p/book/9780415908085 |
+| 12 | FAIT | Freire : WorldCat distingue Herder and Herder, livre numérique 1970, et imprimé Seabury Press [1973, ©1970]. Correction HTML appliquée pour ne pas traiter copyright 1970 comme publication 1970, original portugais 1968 signalé par Institut Freire | https://search.worldcat.org/title/Pedagogy-of-the-oppressed/oclc/1455216303 ; https://search.worldcat.org/title/Pedagogy-of-the-oppressed/oclc/688140 |
+| 13 | FAIT | Mouffe : fiche éditeur Verso consultée pour The Democratic Paradox, réédition juin 2009 ISBN 9781844673551 ; première édition 2000 reste distincte. Pas de livre intégral lu | https://www.versobooks.com/products/1696-the-democratic-paradox |
+| 14 | FAIT | Extraction statique des liens après correction : 15 URL externes uniques article Décider et 8 article Travail, zéro href vide ; existence de 3 liens internes distincts par article contrôlée sur branche GitHub. HTTP des 23 URL externes non testé exhaustivement | GitHub fichiers PR #44 ; sélection de sites institutionnels consultés via web |
+| 15 | FAIT | Grille révisée : primaire texte ciblé Freeman/Kropotkine/Berenstain ; post-print Tebble par extraits avec avertissement ; notices/résumés Young/Ahmed/Federici/hooks/Freire/Mouffe ; interprétations du Lecteur distinctes de citation directe | Sources pp. 3–13 ci-dessus ; transmission 014 |
+| 16 | FAIT | Cadrage TIS-001 consulté : état REPERE ≠ référencement accepté ≠ coopération convenue, et aucun accord n'est dérivé d'une URL ; aucun annuaire réel importé | coordination/TISSEUSE_CADRAGE_COOPERATIONS_ANNUAIRE_2026-10-30.md |
+| 17 | FAIT | Typologie future : source institutionnelle officielle / déclaration directe / source associative / annuaire secondaire / archive / simulation. Pour chaque affirmation, garder l'origine et la portée, sans promotion automatique du statut | Cadrage TIS-001 et contrat 013 |
+| 18 | FAIT | Proposition d'obligation source.consultedAt en date ISO et source.updatedAt nullable ; date de modification de la fiche séparée de date de mise à jour de la source ; prochaine révision documentée et non inventée | Schéma documentaire proposé ci-dessous |
+| 19 | FAIT | Incertitude proposée : evidenceLevel=primary_excerpt/publisher_notice/institutional_notice/secondary/self_declaration/simulation ; source.reference=null indique absence de preuve vérifiable et interdit le statut documenté | Schéma documentaire proposé ci-dessous |
+| 20 | FAIT | Fiche contestée : bloquer mise en avant/exports publics en attendant analyse humaine, conserver historique minimal non sensible hors GitHub, distinguer contestation factuelle / droit d'opposition / retrait demandé ; aucune sanction par score | Cadrage TIS-001, avis de la Juriste à solliciter |
+| 21 | FAIT | Trois fiches entièrement fictives testées (initiative repérée, ressource de démo, projet contesté sans source), 14 assertions JS isolées réussies, projection publique listée ci-dessous ; ne sont pas des tests de PR #41 ni d'API réelle | 14/14 assertions, simulation locale de cette session |
+| 22 | FAIT | Preuve d'existence et autorisation de publier séparées : verifiedAt ne vaut ni mandat de représentation, ni consentement, ni coopération ; la simulation prouve la barrière entre relation REPERE et publication public | TIS-001 et 3 fixtures inventées |
+| 23 | FAIT | Données OSM sous ODbL, reconnaissance des contributeurs ; Licence Ouverte Etalab 2.0 source + date mise à jour ; ne pas extrapoler la licence d'un portail à chaque jeu de données ; obligations de partage des bases dérivées à faire contrôler | https://www.openstreetmap.org/copyright ; https://www.data.gouv.fr/pages/legal/licences/etalab-2-0 |
+| 24 | FAIT | Conditions de tuiles OSM différentes de l'ODbL : attribution visible, identification, cache, pas de préchargement massif ; CNIL rappelle que coordonnées professionnelles personnelles restent RGPD même si publiques | https://operations.osmfoundation.org/policies/tiles/ ; https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes |
+| 25 | FAIT | Protocole de conservation : GitHub public ne stocke que fiches fictives / documentation non personnelle ; accords, preuves d'identité, signalements, anciennes coordonnées ne sont pas publiés dans commits/exports ; durée de conservation et circuit privé à arbitrer | TIS-001, contrat des cartes 013, voir recommandations |
+| 26 | FAIT | Trois corrections bibliographiques limitées sur PR #44 : Tebble post-print non citable, Freire Seabury 1973 ©1970, Berenstain correction non ouverte. Commits 8e54a589 et ef6a8000, SHA fichiers relus et identiques aux écritures | GitHub PR #44, wiki-decision-collective.html et wiki-lecture-croisee-travail-soin-pouvoir.html |
+| 27 | FAIT | Comparaison des deux HTML candidats à refs/pull/35/head : contenus distincts (PR #35 contient version visuelle/structure différente) ; mêmes sujets et URL de sources, intégration ligne à ligne requise. Aucun écrasement/fusion de branches | PR #35 HTML blobs 28d3fe4f et 5a0adbbe ; PR #44 cf10379b et fb937059 |
+| 28 | FAIT | Transmissions : sections 015 et preuves ajoutées à la transmission Médiathèque existante, lien GitHub contrôlé après écriture ; réception de la Relieuse en conversation non présumée | présent document, commit de cette session |
+| 29 | BLOQUE | Validation de redistribution/traduction de Berenstain et de chaque version tierce non close ; post-print Tebble not for citation ; aucune licence générale prouvée pour les livres et textes en ligne. Risque d'absence de droit de publication d'une fiche réelle sans examen juridique/humain | avis de la Juriste et documents contractuels à obtenir |
+| 30 | FAIT | Journal commun actualisé par entrée courte avec commit et lien ; dossier Drive Médiathèque suivi en complément ; aucun manifeste, PR merge, campagne, donnée réelle ou compte modifié | GitHub Journal commun + lecture de retour Drive |
+
+
+## Faits documentaires nouveaux au cycle 015
+- Tebble : manuscrit post-print accessible par KCL et **explicitement non destiné à la citation**, utilisé pour lire des passages d'introduction et conclusion. On conserve DOI, pagination et référence de la version publiée comme référence.
+- Berenstain : sur le PDF Ergo, la note 20 révisée précise le retrait de cette seule note depuis février 2024 ; le texte de l'avis de correction n'a pas été récupéré. Pas de rétractation globale de l'article.
+- Freire : notices WorldCat départagent réellement Seabury Press **imprimé 1973 avec copyright 1970** de Herder and Herder **1970**. Deux dates distinctes ; correction intégrée.
+- La carte de La Tisseuse a besoin d'une **preuve de provenance par affirmation** et d'une **autorisation de publication indépendante**, sans créer un cinquième type d'objet.
+
+## Deux bibliographies candidates consolidées
+- **Décider ensemble** : Young (Inclusion and Democracy, chap. 2, Oxford 2000, pp. 52–80, DOI 10.1093/0198297556.003.0003 ; notice en ligne 2002) [notice/résumé] ; Freeman (The Tyranny of Structurelessness, site autrice, texte composite) [primaire HTML] ; Tebble (Political Studies 51(1), 2003, pp. 197–214, DOI 10.1111/1467-9248.00420) [résumé institutionnel + extraits post-print non citable] ; Goodin (2007), Owen (2012), Fricker (2007), Dotson (2011), Alcoff (1991–92), Habermas (1981), Mouffe (2000, réédition Verso 2009), Allen (1998), Forst (traduction anglaise Columbia UP décembre 2011) [notices et bibliographies, pas textes complets revendiqués].
+- **Qui fait vivre les communs ?** : Kropotkine (La Conquête du pain, « Le travail agréable », 2e éd. 1892, pp. 153–164) [texte primaire ciblé] ; Federici (Revolution at Point Zero, PM Press/Common Notions/Autonomedia, septembre 2012, 208 p.) [notice] ; hooks (Teaching to Transgress, Routledge 1994) [notice] ; Freire (Pedagogy of the Oppressed, anglais Herder and Herder 1970 ; imprimé Seabury décrit WorldCat [1973 ©1970], traduction Myra Bergman Ramos) [catalogues] ; Berenstain (Ergo 3(22), 2016, pp. 569–590, note 20 retirée février 2024) [PDF primaire par passages] ; Ahmed (On Being Included, Duke 2012) [notice].
+- Les synthèses françaises d'Interstice restent des **interprétations éditoriales**, ni citations littérales nouvelles ni œuvres intégrales lues.
+
+## Provenance future : extension de contrat 013, NON implémentée
+Conserver les objets existants avec id, kind parmi initiative/besoin/ressource/projet, status, publication, source et location (pas de cinquième kind). Pour les dossiers documentaires candidats et futurs seulement, proposer :
+```yaml
+source:
+  type: institutional_notice | official_site | independent_secondary | self_declaration | archive | simulation
+  reference: null
+  publisher: null
+  sourcePublishedAt: null
+  sourceUpdatedAt: null
+  consultedAt: 2026-10-30
+  verifiedAt: null
+  evidenceLevel: institutional_notice | primary_excerpt | secondary | self_declaration | simulation
+  license: unknown
+  attribution: null
+  licenseVerifiedAt: null
+claimProvenance: [] # par affirmation cruciale ; ne rien valider automatiquement
+relationStatus: REPERE | REFERENCEMENT_ACCEPTE | COOPERATION_CONVENUE | CONTESTE # processus distinct de kind/status
+mandateVerified: false
+publicationAuthorization: not_established # ne vaut pas base légale RGPD
+review:
+  contested: false
+  withdrawalRequested: false
+  humanReview: pending
+```
+La relation et l'autorisation ne doivent pas être exposées à une carte sans décision humaine ni sécurisation des pièces. Aucun champ privé dans publicItem, documents GitHub publics, cache, export ou objet HTML.
+
+### Trois fiches inventées de validation
+| ID fictif | Objet et statut | Source | Résultat d'une projection de démonstration |
+| --- | --- | --- | --- |
+| tis-demo-015-a | initiative / REPERE / private_draft | simulation « scenario-A » | Exclue du public ; aucun mandat supposé |
+| tis-demo-015-b | ressource / demo / public | simulation « scenario-B » | Seule fiche visible de la démonstration, localisée dans « commune fictive B » |
+| tis-demo-015-c | projet / contested / review | simulation sans référence réelle | Exclue du public ; pas de lieu ni coordonnées |
+**14 assertions / 14 réussies** dans une simulation JS autonome : unicité, types, dates, source absente non promue, REPERE privé, contesté non diffusé, une seule fiche publique simulée, source distincte mandat, absence d'e-mail privé, de latitude cachée, de notes internes et d'adresse privée, aucune licence inconnue promue. **Aucun test CI, navigateur, API Supabase, vraie donnée ni insertion dans PR #41 revendiqué.**
+
+## Droits et limites bloquantes pour la Relieuse
+- Open access ≠ domaine public ≠ droit de traduction et adaptation. Berenstain (version/avis) demande preuve de licence de l'exemplaire avant republication. Aucun fac-similé ou texte tiers recopié.
+- Tebble post-print est consultable, mais le document indique qu'il n'est pas destiné à être cité : garder la bibliographie de la version publiée.
+- Licence ODbL applicable aux données OSM, règles techniques distinctes aux tuiles OSM ; Licence Ouverte Etalab 2.0 impose source et date de mise à jour. Pour les annuaires enrichis, l'avis CNIL montre que données pro publiques peuvent rester données personnelles.
+- PR #35 / #44 contiennent deux versions divergentes des mêmes HTML : **pas de fusion automatique**, demande de revue du Lecteur et Graphiste pour intégration. Parcours correction, tests clavier/320px/lecteur d'écran et vérification HTTP globale sont encore à faire.
+- Toute publication d'une fiche réellement repérée par La Tisseuse attend revue Juriste, mandat, droits, processus de contestation/retrait, localisation protectrice, décision humaine ; aucune approbation morale ou « safe » absolu.
+- Statut : deux bibliographies **candidates**, aucune décision politique, juridique ou éditoriale collective, et aucun partenaire réel représenté ici.
