@@ -198,3 +198,7 @@ body.wiki-reading {font-family:var(--font-reading);font-size:19px;line-height:1.
  .home-page .home-hero .hero-actions{margin-top:22px}
  .home-page .home-hero .hero-actions a{font-size:19px;line-height:1.35;min-height:58px}
 }
+
+/* Graphiste 014 : avertissement sous les actions éditoriales, sans lien privé trompeur. */
+.wiki-reading .reading-privacy-note{max-width:70ch;margin:0 auto 48px;padding:12px 16px;border-left:3px solid #debca7;background:#272123;color:#f2e7dd;font-size:17px;line-height:1.6}
+@media(max-width:600px){.wiki-reading .reading-privacy-note{font-size:17px;margin-top:-15px}}
