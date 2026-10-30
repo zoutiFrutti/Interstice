@@ -125,3 +125,13 @@ article .notice{max-width:100%}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{body{font-size:11.5pt;line-height:1.55;color:#111;background:#fff}article p,article li{line-height:1.55}nav a,button,.manifesto-link{min-height:auto}}
+
+/* Dernier réglage après examen de la capture Chromium à 390px :
+   un seul logo dans le premier écran mobile, titre et actions remontés. */
+@media(max-width:480px){
+  body.home-page>header{justify-content:space-between;gap:9px}
+  body.home-page>header strong{flex:0 1 auto;flex-basis:auto;font-size:23px;letter-spacing:.07em}
+  body.home-page>header small{flex:0 1 125px;max-width:125px;text-align:right;font-size:14px}
+  .home-hero .brand-identity{display:none}
+  .home-hero{padding-top:22px}
+}
