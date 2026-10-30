@@ -277,3 +277,21 @@ Accès Google Docs vérifié par écriture et relecture. Accès GitHub vérifié
 **Modifications réellement effectuées.** Cette entrée au journal commun sur la branche de travail, sans modification de ARCH-006, COL-003, des biographies ni du Wiki public. **Transmission proposée à l'Archiviste :** retrouver l'emplacement archivistique et la reproduction des procès-verbaux du Club des prolétaires, rechercher les listes de procès-verbaux portant la mention « femme André » ; à la Médiathèque : vérifier les noms des auteurs des quatre numéros. Réception non attestée.
 
 **Suite.** Prénom et état civil, identité du conjoint éventuel, interventions textuelles, éventuelles signatures ; poursuivre sans supposer de parenté avec Jules André. Manifeste V2.5, référence éditoriale non adoptée.
+
+
+## 2026-10-30 — Biographe — Transmission 013, dix passes sur les identités de 1871
+
+**P1 État réel :** BIO-019 existait dans Drive et GitHub (branche de travail) avec rectificatif de premier niveau ; ARCH-002, ARCH-004, ASSO-007 et autres fiches BIO-009, BIO-018, BIO-020, BIO-021, BIO-022 repérés et contrôlés. Pas de nouveau BIO créé.
+**P2 Correction :** BIO-019 dans Google Drive modifié et vérifié, https://docs.google.com/document/d/1H60l5jx5fMLKoo9uWwin1VydMRwIYcIjzvkjvyrcNCQ/edit .
+**P3 Distinction :** Blanche Lefebvre, modiste de l'Union des femmes, distincte de la femme Lefèvre, blanchisseuse du lavoir Sainte-Marie, oratrice du Club de la Révolution, selon Jacques Rougerie.
+**P4 Variantes :** Lefebvre/Lefèvre/Lefèbvre ; l'orthographe de l'affiche n°373 est « BLANCHE LEFEVRE ». Une variante de nom ne suffit pas à réunir deux personnes.
+**P5 Dates et fonctions :** document primaire AFF5721 du 20 mai 1871 atteste la cosignature de Blanche à une convocation ; ni naissance ni décès n'y figurent. 1847-1871 provient de l'indexation muséale, non d'un acte consulté. Délégation du Xe arrondissement et métier de modiste : attribution à Rougerie.
+**P6 Recoupement :** Michèle Audin, d'après Édith Thomas, distingue Blanche Lefebvre de Victorine Gorget, aussi appelée Lefèvre, blanchisseuse ; identification secondaire, archives originales non collationnées.
+**P7 Contrôle des fusions :** erreur majeure confirmée dans BIO-019 initiale ; BIO-018 Jacquier contient déjà une mise en garde brocheuse/brodeuse ; BIO-009 Le Mel distingue les erreurs de métadonnées et l'écart avec les actes. BIO-020, 021 et 022 gardent leurs incertitudes, mais aucune nouvelle fusion prouvée lors de cette passe.
+**P8 Traçabilité :** versions anciennes conservées dans la fiche, rectificatif ajouté au début sur Drive et en complément sur GitHub ; commit daa19906ded9a72097df6758d8ca0f0a8c0e5124, sans suppression.
+**P9 Renvois :** ASSO-007 Union des femmes et ARCH-002/ARCH-004 pour signatures ; BIO-009 Le Mel et BIO-018 Jacquier ; ASSO-008 La Marmite renvoie aux pratiques coopératives de Le Mel et Varlin mais ne prouve aucune participation de Blanche ou Victorine.
+**P10 Journal :** présente entrée, à relire après écriture. Aucune publication ni carte ; aucune transmission considérée comme effectivement lue par un autre atelier.
+
+**Sources :** Jacques Rougerie, https://commune1871-rougerie.fr/les-femmes-de-1871%2Cfr%2C8%2C58.html ; Michèle Audin, https://macommunedeparis.com/2021/05/04/4-mai-1871-au-club-de-la-revolution-sociale/ ; musée Carnavalet, AFF5721, https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune ; sur La Marmite https://www.commune1871.org/index.php/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/democratie-laicite-oeuvre-sociale/685-la-marmite-une-societe-civile-d-alimentation .
+
+**Demandes au Relieur/Archiviste :** faire retrouver les notes originales utilisées par Édith Thomas sur Victorine Gorget/Lefèvre ; consulter actes d'état civil pour Blanche, archives du club et éventuels dossiers de répression ; vérifier la datation et le lieu exact du décès. Décisions humaines : éventuelle publication seulement après relecture. Manifeste V2.5 non adopté.
