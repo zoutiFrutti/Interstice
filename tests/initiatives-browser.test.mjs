@@ -361,3 +361,35 @@ test("014: boutons de communes sous les repères SVG, accessibles au toucher et 
   assert.equal(await page.locator("#commune").inputValue(),"");
  }finally{await page.close();await browser.close();}
 });
+
+test("015: aucun secret fictif injecté dans URL, DOM, erreurs, exports ni métadonnées",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:390,height:844},acceptDownloads:true});
+ const secret="CANARY_SECRET_015";
+ const errors=[];
+ page.on("pageerror",error=>errors.push(error.message));
+ try{
+  await page.route("**/cartes-data.mjs",async route=>{
+   const response=await route.fetch();
+   const text=await response.text();
+   const marker="...item,isDemo:true,publicContact:null,locationLevel:";
+   assert.ok(text.includes(marker));
+   await route.fulfill({contentType:"text/javascript",body:text.replace(marker,'...item,privateEmail:"'+secret+'",privateLocation:"'+secret+'",internalNotes:"'+secret+'",isDemo:true,publicContact:null,locationLevel:')});
+  });
+  await page.goto(PAGE,{waitUntil:"networkidle"});
+  await page.locator("#results .initiative-card").first().waitFor();
+  await page.locator("#display-map").click();
+  await page.locator("#display-list").click();
+  await page.locator("#results a[data-id]").first().click();
+  const rendered=await page.evaluate(()=>document.documentElement.outerHTML);
+  assert.equal(rendered.includes(secret),false,"Secret found in DOM/metadata");
+  assert.equal(page.url().includes(secret),false,"Secret found in URL");
+  assert.equal(errors.join(" ").includes(secret),false,"Secret found in JavaScript errors");
+  await page.locator("#back").click();
+  const downloaded=page.waitForEvent("download");
+  await page.locator("#export-demo").click();
+  const file=await downloaded;
+  const exported=await readFile(await file.path(),"utf8");
+  assert.equal(exported.includes(secret),false,"Secret found in public export");
+ }finally{await page.close();await browser.close();}
+});
