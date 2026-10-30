@@ -1,0 +1,34 @@
+name: Interstice coordination - controle lecture seule
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "coordination/ateliers/**"
+      - "scripts/coordination-check.mjs"
+      - ".github/workflows/coordination-readonly-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lire la branche candidate
+        uses: actions/checkout@v4
+      - name: Installer Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verifier le registre et les transmissions fictives
+        run: node scripts/coordination-check.mjs
+      - name: Joindre le rapport sans commit ni modification du depot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: interstice-coordination-lecture-seule
+          path: |
+            artifacts/coordination-015-status.md
+            artifacts/coordination-015-status.json
+          if-no-files-found: warn
+          retention-days: 14
