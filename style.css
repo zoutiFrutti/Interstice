@@ -22,3 +22,209 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .manifesto-preview::before{content:"";position:absolute;left:20px;top:22px;width:clamp(70px,10vw,116px);height:clamp(70px,10vw,116px);background:url("assets/logo-faille-noire.svg") center/contain no-repeat}
 @media(max-width:600px){header strong::before{width:40px;height:40px}.brand-identity img{width:88px;height:88px}.manifesto-preview{padding-left:22px;padding-top:120px}.manifesto-preview::before{top:12px}}
 @media print{header strong::before{print-color-adjust:exact;-webkit-print-color-adjust:exact}.brand-identity img{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+/* Navigation mobile : conserver les liens accessibles sans débordement. */
+@media(max-width:600px){header{flex-wrap:wrap;justify-content:flex-start;row-gap:8px}header strong{flex-basis:100%}header a{overflow-wrap:anywhere}}
+
+/* Transmission 010 · lisibilité générale, 30 octobre 2026.
+   Les polices ci-dessous reprennent les quatre WOFF2 et licences de la PR #22.
+   Aucun changement des formulaires, des textes éditoriaux ou des logos. */
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/barlow-condensed-latin-ext-700.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/barlow-condensed-latin-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Atkinson Hyperlegible Next";font-style:normal;font-weight:200 800;font-display:swap;src:url("assets/fonts/atkinson-next-latin-ext-variable.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Atkinson Hyperlegible Next";font-style:normal;font-weight:200 800;font-display:swap;src:url("assets/fonts/atkinson-next-latin-variable.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--font-reading:"Atkinson Hyperlegible Next",system-ui,sans-serif;--font-heading:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--reading-width:74ch}
+html{scroll-padding-top:1rem}
+body{font-family:var(--font-reading);font-size:19px;line-height:1.68}
+main{max-width:1040px;min-width:0}
+section,article,.proposal,.resource-card,.wiki-card{min-width:0}
+p,li{overflow-wrap:break-word}
+h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700;line-height:1.15;letter-spacing:.005em;text-wrap:balance;overflow-wrap:break-word}
+h1{font-size:clamp(44px,6vw,74px);margin:0 0 .45em}
+h2{font-size:clamp(32px,3.9vw,47px);margin:0 0 .5em}
+h3{font-size:clamp(24px,2.6vw,31px);margin:0 0 .45em}
+h4{font-size:clamp(21px,2.1vw,26px)}
+p,li{font-size:inherit}
+small,.note,.proposal small,.manifesto-preview small,header small{font-size:14px;line-height:1.6}
+.tag{font-size:14px;line-height:1.5;letter-spacing:.075em}
+header strong{font-family:var(--font-heading);font-size:clamp(23px,2.7vw,30px)}
+header{gap:clamp(12px,2vw,24px)}
+header a{display:inline-flex;min-height:52px;align-items:center;font-size:18px}
+.hero{padding:clamp(30px,5vw,72px) 0 clamp(48px,7vw,90px)}
+.hero>p:not(.tag){font-size:clamp(21px,2.4vw,24px);line-height:1.5;max-width:var(--reading-width)}
+section:not(.hero){padding:clamp(35px,5vw,64px) 0}
+section p{line-height:1.7}
+nav{gap:14px;margin-top:28px}
+nav a,button,.manifesto-link,.discovery-card a{font-family:var(--font-reading);font-size:18px;line-height:1.28;min-height:52px;display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:7px;text-align:center}
+nav a,button,.manifesto-link{background:#a91f2c;color:#fff}
+nav a:hover,button:hover,.manifesto-link:hover{background:#c52a37;color:#fff}
+a{text-underline-offset:.19em}
+label{font-size:19px;line-height:1.4}
+label small{font-size:14px}
+input,textarea,select{font-family:var(--font-reading);font-size:18px;line-height:1.45;min-height:52px;padding:13px 15px}
+textarea{min-height:132px;height:auto}
+button{font-weight:750}
+summary{cursor:pointer;font-size:18px;line-height:1.4;min-height:44px;padding:9px 0}
+footer{font-size:15px}
+.manifesto-preview{padding-top:clamp(22px,3.5vw,36px);padding-bottom:clamp(22px,3.5vw,36px)}
+.manifesto-preview p{max-width:68ch}
+.manifesto-preview h3{max-width:26ch}
+.home-hero{padding-top:clamp(20px,4vw,54px)}
+.home-hero .brand-identity{margin-bottom:18px}
+.home-hero .brand-caption{font-size:15px;line-height:1.5}
+.home-hero h1{font-size:clamp(42px,6vw,76px);max-width:18ch;line-height:1.08}
+.home-hero .hero-intro{display:grid;gap:12px;max-width:730px;margin-top:20px}
+.home-hero .hero-intro p{margin:0;font-size:clamp(21px,2.4vw,24px);line-height:1.5;color:#ece6dc}
+.home-hero .hero-actions{margin-top:28px;gap:14px}
+.home-hero .hero-actions a{flex:0 1 auto;min-height:56px;padding:16px 25px}
+.hero-actions .cta-secondary{background:transparent;border:2px solid var(--faille-ivory);color:var(--faille-ivory)}
+.hero-actions .cta-secondary:hover{background:#333034;color:#fff}
+.home-section>p{max-width:75ch}
+.discovery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
+.discovery-card{padding:clamp(20px,2.8vw,30px);border:1px solid #716a68;border-radius:8px;background:#201d20}
+.discovery-card .tag{color:#f6a4a8;font-weight:800;margin:0 0 12px}
+.discovery-card h3{font-size:clamp(24px,2.4vw,30px);margin:0 0 13px}
+.discovery-card p:not(.tag){margin:0 0 19px;color:#e0dad5}
+.discovery-card a{background:#a91f2c;color:#fff;text-decoration:none;overflow-wrap:anywhere;width:100%;padding:13px 15px}
+.discovery-card a:hover{background:#c52a37;color:#fff}
+.home-faille{background:linear-gradient(135deg,#1b191b 0%,#101014 85%);padding-left:clamp(15px,3vw,36px)!important;padding-right:clamp(15px,3vw,36px)!important;border-radius:9px}
+.home-faille .manifesto-preview{margin-top:30px}
+.home-faille .manifesto-preview a:not(.manifesto-link){display:inline-flex;align-items:center;min-height:44px}
+article p,article li{line-height:1.78}
+article{max-width:var(--reading-width);margin-inline:auto}
+article h2,article h3{max-width:29ch}
+article .notice{max-width:100%}
+.resource-card p,.wiki-card p{line-height:1.65}
+.resource-card small{font-size:14px}
+@media(max-width:720px){
+  .discovery-grid{grid-template-columns:1fr}
+  .home-hero .hero-actions{display:grid;grid-template-columns:1fr 1fr}
+  .home-hero .hero-actions a{min-width:0}
+  header{flex-wrap:wrap;align-items:center;justify-content:flex-start}
+  header strong{flex-basis:100%}
+  header a{overflow-wrap:anywhere}
+  .brand-identity img{width:84px;height:84px}
+}
+@media(max-width:480px){
+  body{font-size:18px;line-height:1.66}
+  main,header,footer{padding-left:18px;padding-right:18px}
+  h1{font-size:clamp(40px,10vw,44px)}
+  h2{font-size:clamp(30px,8vw,34px)}
+  h3{font-size:clamp(23px,6vw,26px)}
+  .home-hero h1{font-size:clamp(40px,10.7vw,44px)}
+  .hero>p:not(.tag),.home-hero .hero-intro p{font-size:21px}
+  .hero{padding-top:25px;padding-bottom:48px}
+  .home-hero .hero-actions{grid-template-columns:1fr;gap:12px}
+  nav a,button,.manifesto-link,.discovery-card a{font-size:18px;min-height:52px}
+  .brand-identity{gap:14px}
+  .manifesto-preview{padding-left:20px}
+  .home-faille .manifesto-preview{padding-top:112px}
+  .manifesto-preview::before{top:10px}
+  .resource-grid,.wiki-grid{grid-template-columns:1fr}
+  .library-tools input,.library-tools select,.wiki-search input{min-width:0;width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{font-size:11.5pt;line-height:1.55;color:#111;background:#fff}article p,article li{line-height:1.55}nav a,button,.manifesto-link{min-height:auto}}
+
+/* Dernier réglage après examen de la capture Chromium à 390px :
+   un seul logo dans le premier écran mobile, titre et actions remontés. */
+@media(max-width:480px){
+  body.home-page>header{justify-content:space-between;gap:9px}
+  body.home-page>header strong{flex:0 1 auto;flex-basis:auto;font-size:23px;letter-spacing:.07em}
+  body.home-page>header small{flex:0 1 125px;max-width:125px;text-align:right;font-size:14px}
+  .home-hero .brand-identity{display:none}
+  .home-hero{padding-top:22px}
+}
+
+
+/* Wiki • lecture éditoriale : pages du Lecteur, identité existante de la PR #35.
+   Portée volontairement limitée à body.wiki-reading. */
+body.wiki-reading {font-family:var(--font-reading);font-size:19px;line-height:1.75}
+.wiki-reading main {max-width:850px;padding-inline:clamp(18px,4vw,36px)}
+.wiki-reading header {max-width:920px}
+.wiki-reading main > section {max-width:70ch;margin-inline:auto}
+.wiki-reading .hero {padding-block:clamp(28px,5vw,48px) clamp(20px,3vw,32px)}
+.wiki-reading .hero h1 {max-width:20ch;font-size:clamp(40px,6vw,64px);line-height:1.1}
+.wiki-reading .hero > p:not(.tag) {max-width:62ch;font-size:clamp(20px,2.1vw,23px);line-height:1.55;color:#ece2db}
+.wiki-reading .tag {font-size:14px;color:#f0aaa8;letter-spacing:.065em;overflow-wrap:anywhere}
+.wiki-reading main > section:not(.hero) {padding-block:clamp(28px,4vw,43px);border-top:1px solid #4a4548}
+.wiki-reading main > section h2 {max-width:31ch;font-size:clamp(31px,4vw,42px);line-height:1.14;margin:0 0 .85em;scroll-margin-top:22px}
+.wiki-reading main > section h3 {max-width:34ch;font-size:clamp(24px,3vw,29px);margin:1.4em 0 .55em}
+.wiki-reading main > section p {line-height:1.79;margin:0 0 1.15em;color:#e0d9d4}
+.wiki-reading main > section p + p {margin-top:.45em}
+.wiki-reading main > section ul {padding-left:1.5em}
+.wiki-reading main > section li {line-height:1.74;margin-bottom:.62em}
+.wiki-reading main > section a {color:#f6beb8;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.19em;overflow-wrap:anywhere}
+.wiki-reading main > section a:hover {color:#fff0e3}
+.wiki-reading .reading-status {margin-top:24px;padding:16px 19px;border-left:3px solid #e6b7a7;background:#242022;max-width:68ch}
+.wiki-reading .reading-status strong {font-size:18px;color:#fff0df}
+.wiki-reading .reading-status p {font-size:17px!important;line-height:1.6!important;margin:6px 0 0!important;color:#e3d7cd!important}
+.wiki-reading .reading-toc {display:block;max-width:70ch;margin:0 auto 18px;border:1px solid #776d69;border-radius:10px;background:#211e21;padding:0 18px}
+.wiki-reading .reading-toc details {width:100%}
+.wiki-reading .reading-toc summary {cursor:pointer;min-height:54px;padding:16px 3px;font-size:19px;font-weight:750;color:#f0e5da}
+.wiki-reading .reading-toc ol {margin:4px 0 20px;padding-left:27px;columns:2}
+.wiki-reading .reading-toc li {break-inside:avoid;margin:7px 0;font-size:17px}
+.wiki-reading .reading-toc a {display:flex;align-items:center;min-height:52px;padding:10px 12px;background:transparent;border-radius:6px;color:#f4c2b7;text-decoration:underline;text-underline-offset:3px;font-weight:600;text-align:left;line-height:1.45}
+.wiki-reading .reading-actions {max-width:70ch;margin:24px auto 46px;display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.wiki-reading .reading-actions a {display:flex;min-height:56px;align-items:center;justify-content:center;padding:13px 17px;border:1px solid #b88b86;border-radius:8px;font-size:19px;line-height:1.35;font-weight:750;text-align:center;text-decoration:none;background:#922532;color:#fff}
+.wiki-reading .reading-actions .reading-back {background:#252124;color:#f8e5df}
+.wiki-reading .reading-actions a:hover {background:#b93645}
+.wiki-reading .reading-actions a:focus-visible,.wiki-reading .reading-toc a:focus-visible,.wiki-reading .reading-toc a:focus {outline:3px solid #fff1d7;outline-offset:3px}
+@media(max-width:600px) {
+ .wiki-reading main {padding-inline:20px}
+ .wiki-reading .hero {padding-block:22px 24px}
+ .wiki-reading .hero h1 {font-size:clamp(40px,10vw,45px)}
+ .wiki-reading main > section p,.wiki-reading main > section li {font-size:18px;line-height:1.74}
+ .wiki-reading main > section:not(.hero) {padding-block:28px}
+ .wiki-reading .reading-toc ol {columns:1}
+ .wiki-reading .reading-actions {grid-template-columns:1fr}
+ .wiki-reading .reading-toc a {display:flex;padding-block:11px}
+}
+@media print {
+ .wiki-reading main {max-width:100%}
+ .wiki-reading .reading-toc,.wiki-reading .reading-actions {display:none}
+ .wiki-reading main > section {max-width:100%}
+}
+
+
+/* Transmission 013 : hiérarchie de l'accueil. Pas de nouvelle marque. */
+.home-page .home-hero{max-width:780px}
+.home-page .home-hero .hero-intro{max-width:690px}
+.home-page .home-hero .hero-actions{gap:14px}
+.home-page .home-hero .hero-actions a{min-height:58px}
+@media(max-width:480px){
+ .home-page .home-hero{padding-top:24px;padding-bottom:42px}
+ .home-page .home-hero .hero-intro{gap:10px;margin-top:16px}
+ .home-page .home-hero .hero-actions{margin-top:22px}
+ .home-page .home-hero .hero-actions a{font-size:19px;line-height:1.35;min-height:58px}
+}
+
+/* Graphiste 014 : avertissement sous les actions éditoriales, sans lien privé trompeur. */
+.wiki-reading .reading-privacy-note{max-width:70ch;margin:0 auto 48px;padding:12px 16px;border-left:3px solid #debca7;background:#272123;color:#f2e7dd;font-size:17px;line-height:1.6}
+@media(max-width:600px){.wiki-reading .reading-privacy-note{font-size:17px;margin-top:-15px}}
+
+/* Transmission 015 : lecture à 320 px, repères de focus et agrandissement du texte.
+   Uniquement les pages graphiques déjà existantes. */
+.wiki-reading .reading-privacy-note{overflow-wrap:anywhere}
+.wiki-reading .reading-toc summary:focus-visible,.home-page .hero-actions a:focus-visible{
+ outline:3px solid #fff0ca;outline-offset:4px
+}
+@media(max-width:360px){
+ .home-page main,.home-page header,.home-page footer{padding-inline:14px}
+ .home-page .home-hero h1{font-size:40px;line-height:1.12;overflow-wrap:anywhere}
+ .home-page .home-hero .hero-intro p{font-size:21px;line-height:1.58}
+ .home-page .home-hero .hero-actions a{padding-inline:12px;overflow-wrap:anywhere}
+ .wiki-reading main,.wiki-reading header,.wiki-reading footer{padding-inline:14px}
+ .wiki-reading .hero h1{font-size:40px;overflow-wrap:anywhere}
+ .wiki-reading .reading-status{padding:14px 15px}
+ .wiki-reading .reading-toc{padding-inline:12px}
+ .wiki-reading .reading-actions a{padding:13px 12px}
+ .wiki-reading main > section:not(.hero) h2{overflow-wrap:anywhere}
+}
+
+/* Assemblage V0 018-A : état explicite, sans deuxième identité graphique. */
+.candidate-states{border:2px solid #d5b18e;border-radius:12px;padding:18px 22px;background:#292421;color:#f9e6d2;margin:0 0 22px}
+.candidate-states strong{color:#fff1dd}
+.candidate-states li{margin:9px 0}
+.candidate-states a{color:#ffe1a6;text-decoration:underline;text-underline-offset:3px}
+.candidate-states a:focus-visible{outline:3px solid #fff0ca;outline-offset:4px}

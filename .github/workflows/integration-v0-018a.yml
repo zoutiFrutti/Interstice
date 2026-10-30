@@ -1,0 +1,46 @@
+name: Interstice V0 018-A candidate local
+on:
+  push:
+    branches: [integration/v0-018a-candidate-2026-10-30]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  node:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test syntaxe des formulaires
+        run: |
+          node --check script.js
+          node --check ressources.js
+      - name: Tests Node des trois composants et intégration
+        run: node --test tests/initiatives-core.test.mjs tests/v0-form-acceptance.test.mjs tests/integration-v0-018a.test.mjs
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer Playwright Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Parcours V0 et régressions cartes en Chromium
+        run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/interstice-v0.log 2>&1 &
+          node --test tests/initiatives-browser.test.mjs tests/integration-v0-018a.browser.test.mjs
+      - name: Captures et traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: interstice-v0-018a-candidate-captures
+          path: artifacts/*.png
+          retention-days: 7
+          if-no-files-found: warn

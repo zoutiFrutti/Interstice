@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Démonstration fictive de découverte d'initiatives locales Interstice.">
+<title>Découvrir les initiatives · Interstice (démo fictive)</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo-interstice.svg">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="initiatives.css"><link rel="stylesheet" href="cartes.css"><link rel="stylesheet" href="cartes-design.css"><link rel="stylesheet" href="cartes-compat.css">
+</head><body>
+<header class="initiative-header"><a href="index.html" class="identity">INTERSTICE<span>.</span></a><a href="participer.html">Participer</a><a href="wiki.html">Wiki</a></header>
+<main class="initiative-main">
+<aside class="demo-notice"><strong>PROTOTYPE FICTIF · AUCUNE INITIATIVE RÉELLE</strong><p>Tous les noms, besoins et ressources sont inventés. Pas de compte, de GPS ni de collecte de données. Les propositions réelles relèvent d’un circuit distinct soumis à validation : aucun envoi ni contact dans cette candidate. La messagerie et la coopération réelle ne sont pas disponibles.</p></aside>
+<section id="explorer" aria-labelledby="explorer-title">
+<p class="tag">EXPLORER LES COMMUNS · DÉMONSTRATION</p>
+<h1 id="explorer-title">Et si on cherchait <em>près de chez soi ?</em></h1>
+<p class="lead">Cherche une commune, découvre des projets imaginés et vois comment une fiche pourrait aider à se rencontrer.</p>
+<nav class="discovery-jumps" aria-label="Parcours disponibles">
+<a href="#experiment">Tester un besoin ou une offre</a>
+<a href="participer.html">Contribuer sans application</a>
+</nav>
+<form id="filters" role="search">
+<div><label for="commune">Commune ou territoire</label><input type="search" id="commune" list="communes" placeholder="Ex. Lisle-sur-Tarn" autocomplete="off">
+<datalist id="communes"><option value="Lisle-sur-Tarn"></option><option value="Gaillac"></option><option value="Rabastens"></option><option value="Albi"></option></datalist></div>
+<div><label for="objet">Besoin ou ressource</label><input type="search" id="objet" maxlength="100" placeholder="Ex. outils, transport" autocomplete="off"></div>
+<div><label for="scope">Je cherche</label><select id="scope"><option value="tous">Besoin ou ressource</option><option value="besoin">Un besoin exprimé</option><option value="ressource">Une ressource proposée</option></select></div>
+<div><label for="category">Domaine</label><select id="category"><option value="">Tous les domaines</option><option>Écologie</option><option>Réparation</option><option>Entraide</option><option>Culture</option><option>Mutualisation</option><option>Savoirs</option></select></div>
+<div><label for="order">Ordre de la liste</label><select id="order"><option value="source">Ordre des exemples</option><option value="titre">Par nom (A à Z)</option></select></div>
+<button type="button" class="button-muted" id="clear">Effacer les filtres</button>
+</form>
+<p class="matching-note">Recherche manuelle, sans popularité ni classement automatique. Les exemples restent dans leur ordre d’origine sauf si tu choisis le tri alphabétique. Aucun texte recherché n'est transmis ou conservé.</p>
+<section id="cartes" class="cartes" aria-labelledby="cartes-title">
+<p class="tag">UNE CARTE · DEUX LECTURES</p>
+<h2 id="cartes-title">La carte des communs et des possibles</h2>
+<p>Les points représentent des communes, jamais l'adresse d'une initiative. <strong>Toutes les fiches sont fictives.</strong></p>
+<div class="map-readings" role="group" aria-label="Lecture de la cartographie">
+<button type="button" id="reading-communs" aria-pressed="true">Carte des communs</button>
+<button type="button" id="reading-possibles" aria-pressed="false" class="button-muted">Carte des possibles</button>
+</div>
+<p id="reading-description">Initiatives et ressources existantes uniquement dans des scénarios inventés.</p>
+<div class="map-display" role="group" aria-label="Mode d'affichage des mêmes fiches">
+<button id="display-list" type="button" aria-pressed="true">Liste complète</button>
+<button id="display-map" type="button" class="button-muted" aria-pressed="false">Carte interactive</button>
+</div>
+<p id="map-fallback" hidden role="status" aria-live="polite"></p>
+<div id="map-panel" hidden>
+<div class="map-controls"><span>Schéma du Tarn · sans tuiles ni adresses</span>
+<div><button type="button" id="map-zoom-in" class="button-muted" aria-label="Agrandir la carte">+</button>
+<button type="button" id="map-zoom-out" class="button-muted" aria-label="Réduire la carte">−</button>
+<button type="button" id="map-zoom-reset" class="button-muted">Vue entière</button></div></div>
+<p id="map-scroll-hint" class="map-scroll-hint">Sur petit écran, fais défiler le schéma horizontalement. Au clavier, sélectionne la zone de carte puis utilise les flèches gauche et droite. La liste complète et les boutons de commune restent disponibles.</p>
+<div id="map-scroll-region" role="region" tabindex="0" aria-label="Schéma cartographique défilant" aria-describedby="map-scroll-hint">
+<svg id="municipality-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="group" aria-label="Carte interactive schématique de quatre communes du Tarn. Utiliser Tab et Entrée pour sélectionner une commune."></svg>
+</div>
+<p id="map-caption" class="map-caption">Repères communaux fictifs.</p>
+<div id="map-commune-buttons" class="map-commune-buttons" role="group" aria-label="Choisir une commune au clavier ou au toucher"></div>
+<div id="map-unlocated" class="map-unlocated" hidden aria-labelledby="map-unlocated-title">
+<h3 id="map-unlocated-title">Fiches sans localisation publique</h3>
+<p>Ces exemples restent consultables, sans point sur la carte. Aucune localisation ne peut être déduite de leur absence de repère.</p>
+<div id="map-unlocated-results" class="initiative-grid"></div>
+</div>
+<button type="button" id="map-clear-commune" class="button-muted">Afficher toutes les communes</button>
+</div>
+<div class="results-heading"><h3 id="entry-list-title">Fiches fictives des communs</h3><p id="count" role="status" aria-live="polite">Chargement…</p></div>
+<button id="export-demo" type="button" class="button-muted">Exporter les résultats fictifs affichés (JSON)</button>
+<p class="export-note" id="export-status" role="status" aria-live="polite"></p>
+<div id="invalid-route" hidden role="alert" tabindex="-1" class="empty">La fiche demandée n’existe pas dans cette démonstration. Voici les exemples disponibles.</div>
+<div id="list-panel"><div id="results" class="initiative-grid" aria-label="Liste intégrale des fiches fictives affichables sur la carte"></div></div>
+<div id="no-results" hidden class="empty"><h3>Aucun exemple correspondant</h3><p>La démonstration n'est pas un annuaire réel. Essaie une autre commune ou un autre domaine.</p><button class="button-muted" type="button" id="clear-empty">Voir tous les exemples</button></div>
+<p class="map-legend"><strong>Fictif :</strong> toute la démonstration. <strong>Documenté dans le scénario :</strong> existence imaginée, non vérifiée. <strong>En projet :</strong> idée ou besoin imaginaire sans engagement.</p>
+</section>
+<section id="experiment" class="simulator" aria-labelledby="experiment-title">
+<p class="tag">FAIRE UN ESSAI · SANS ENVOYER</p>
+<h2 id="experiment-title">Et si on essayait de partager ?</h2>
+<p>Choisis une situation imaginaire. Interstice montre alors quelles fiches fictives pourraient correspondre. Rien n'est publié ni conservé, aucun contact réel n'est créé.</p>
+<form id="simulation-form">
+<div><label for="simulation-kind">Je voudrais</label>
+<select id="simulation-kind"><option value="besoin">Trouver une ressource</option><option value="offre">Proposer une ressource</option></select></div>
+<div><label for="simulation-object">Pour quel objet ou besoin ?</label>
+<select id="simulation-object">
+<option value="perceuse">Une perceuse</option><option value="stockage">Un lieu de stockage</option>
+<option value="transport">Une aide au transport</option><option value="machine a coudre">Une machine à coudre</option>
+<option value="outils">Des outils</option><option value="temps">Du temps disponible</option>
+<option value="cuisine">Du matériel de cuisine</option>
+</select></div>
+<div><label for="simulation-territory">Commune fictive (facultatif)</label>
+<select id="simulation-territory"><option value="">Toutes les communes des exemples</option>
+<option>Lisle-sur-Tarn</option><option>Gaillac</option><option>Rabastens</option><option>Albi</option></select></div>
+<div class="simulation-actions"><button id="simulation-go" type="submit">Comparer les exemples fictifs</button>
+<button id="simulation-reset" type="button" class="button-muted">Recommencer</button></div>
+</form>
+<p class="simulation-privacy">Aucune zone de saisie libre, aucun compte, aucune géolocalisation. Ces rapprochements ne sollicitent aucune personne.</p>
+<p id="simulation-message" role="status" aria-live="polite" aria-atomic="true"></p>
+<div id="simulation-results" class="initiative-grid" aria-label="Exemples de correspondances fictives"></div>
+</section>
+</section>
+<section id="detail" hidden aria-labelledby="detail-title">
+<div class="detail-controls"><button type="button" class="button-muted" id="back">← Retour aux initiatives</button><button type="button" class="button-muted" id="print-fiche">Imprimer la fiche fictive</button></div><article id="detail-content"></article>
+</section>
+<noscript><section class="empty"><h2>Sans JavaScript</h2><p>La recherche interactive nécessite JavaScript. Les informations générales et la participation au projet restent accessibles sans application : <a href="participer.html">participer à Interstice</a>.</p></section></noscript>
+</main>
+<footer>Interstice · Prototype mobile, exemples entièrement fictifs · Aucune participation réelle enregistrée</footer>
+<script type="module" src="initiatives-app.mjs"></script>
+</body></html>
