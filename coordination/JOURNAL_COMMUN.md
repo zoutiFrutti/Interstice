@@ -1367,3 +1367,18 @@ Plan détaillé 015 lu. Même campagne, même paquet de lancement, aucune quatri
 **Metricool :** marque faille.noire retrouvée ; consultation programmations 01/10/2026–31/01/2027 Europe/Paris : data=[]. Passes 21–22 BLOQUE (brouillons/doublons), pas de relance après authentification non aboutie/refusée. Passes 18–19 BLOQUE (droits/licences des visuels), faute de dossier de provenance suffisant ; absence de métadonnées licence ne prouve rien sur les droits.
 
 **Livrable réel :** paquet existant mis à jour sous la même identité, version 2, 65 entrées ; archive vérifiée et sources intactes. FAQ critique, accès hors ligne sans permanence inventée, séquence conditionnée au suivi et matrice prêt/approuvé/publié actualisés. Fiche de lancement enrichie ; bilan disponible pour La Relieuse, réception en conversation non présumée. Décisions : candidate et export final, provenance/licences, session Metricool et moyens volontaires de suivi. Aucune publication, programmation, prise de contact, collecte réelle, fusion ou déploiement.
+
+
+
+## 2026-10-30 — Juriste — transmission 015 bis, trente nouvelles vérifications TIS-001
+
+**Reprise sans duplicata :** la première transmission 015 du Juriste (30 passes) existait déjà. Une seconde consigne identique a conduit à 30 **passes complémentaires** dans le même dossier, pas à réécrire l'audit ni créer une autre Charte.
+
+**État documentaire recontrôlé :** cadrage Tisseuse blob `81bacb34` et bilan TIS-001 blob `c448c8ac` inchangés sur `main`, **0 des 10–12 structures vérifiées dans le dernier bilan disponible**, 3 scénarios hypothétiques et 2 canevas non envoyés. PR #41 HEAD `25b19e03` fictive ; PR #44 HEAD `b08ee0b9` candidate. Dépôt Interstice public ; aucun courriel/numéro au format courant décelé dans les deux pièces TIS par contrôles lexicaux ciblés, sans exclure toute réidentification.
+
+**Résultats nouveaux :** 30 lignes 01–30 réparties en six lots, trois grilles **pré-contact / fiche publique / coopération**, mapping fictif des trois axes `research_state`, `publication_state`, `cooperation_state`, **15/15 tests logiques fictifs indépendants** et **12/12 assertions statiques** sur les pièces et HTML. Pas de test API ni de revendication de droits réels. Consentement à publication selon méthode TIS ≠ base légale RGPD universelle ; accord fiche ≠ coopération ≠ accord d'annonce publique. Pas de label « safe », pas d'adhésion exigée, pas de refus public.
+
+**Écritures prouvables :** [dossier juridique existant, section « Transmission 015 — Reprise complémentaire »](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md) commit `a8c40734dbe2d0e5d6ba1dac46f3cc899f8e2211` ; [avis Wiki, suivi 015 bis](https://github.com/zoutiFrutti/Interstice/blob/main/docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md) commit `5c4be12c03d1c944a2dcc3741d5d3f255492aeb9` ; [transmission à La Relieuse et La Tisseuse](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/JURISTE_TRANSMISSION_CARTOGRAPHIE_2026-10-30.md) commit `6d16123cc749643aeb99067845943e8e0274783f`.
+
+**Statut :** première prise de contact, publication de fiches réelles, stockage de réponses/mandats privés et accord de partenariat **non autorisés par ce bilan** ; obtenir sources, mandats, personne responsable du suivi, canal protégé et validation humaine avant ces opérations. Aucune donnée personnelle privée collectée, aucune permission Supabase modifiée, aucune PR fusionnée, aucune publication ou Charte adoptée. **Transmission déposée ≠ accusé de réception par une autre conversation.**
+
