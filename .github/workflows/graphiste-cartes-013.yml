@@ -1,4 +1,4 @@
-name: Graphiste 014 - integration cartes et liste (PR35 x PR41)
+name: Graphiste 015 - 320/390/1280 (PR35 x PR41)
 on:
   push:
     branches: [design/lancement-v0-verifications-2026-10-30]
@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zoutiFrutti/Interstice
-          ref: 898c9e80ecd6d3a9be02800c3cff7659fd0845ed
+          ref: ba2de98fd37ce5997e0eee8e2d432433398c6283
           path: prototype-pr41
           persist-credentials: false
       - uses: actions/setup-node@v4
@@ -47,7 +47,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: graphiste014-cartes-390-1280
+          name: graphiste015-cartes-320-390-1280
           path: visual-qa/cartes/
           retention-days: 7
           if-no-files-found: warn

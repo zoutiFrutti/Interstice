@@ -17,7 +17,7 @@ const luminance=s=>{
     .reduce((sum,x,i)=>sum+x*[.2126,.7152,.0722][i],0);
 };
 const ratio=(a,b)=>{let x=luminance(a),y=luminance(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05)};
-const viewports=[{id:"mobile",width:390,height:844},{id:"ordinateur",width:1280,height:800}];
+const viewports=[{id:"compact",width:320,height:760},{id:"mobile",width:390,height:844},{id:"ordinateur",width:1280,height:800}];
 try{
  for(const screen of viewports){
   const context=await browser.newContext({viewport:{width:screen.width,height:screen.height},reducedMotion:"reduce"});
@@ -85,7 +85,7 @@ try{
     return {labelSize:parseFloat(getComputedStyle(label).fontSize),overflowX:getComputedStyle(panel).overflowX,
       scrollWidth:panel.scrollWidth,clientWidth:panel.clientWidth,svgWidth:Math.round(svg.getBoundingClientRect().width)};
   });
-  if(screen.id==="mobile"){
+  if(screen.id==="mobile"||screen.id==="compact"){
     assert.ok(svgQA.labelSize>=22,"SVG label font too small "+JSON.stringify(svgQA));
     assert.ok(svgQA.scrollWidth>svgQA.clientWidth+100,"SVG mobile not swipeable "+JSON.stringify(svgQA));
     await page.locator("#map-panel").evaluate(e=>e.scrollLeft=250);
@@ -106,6 +106,14 @@ try{
   assert.equal(await page.locator("#results .initiative-card").count(),7);
   await page.locator("#reading-possibles").click();
   await check("possibles-liste");
+  if(screen.id==="compact"){
+    await page.evaluate(()=>document.body.style.zoom="125%");
+    const z=await page.evaluate(()=>({page:document.documentElement.scrollWidth,viewport:innerWidth}));
+    assert.ok(z.page<=z.viewport+1,"Zoom 125% overflow "+JSON.stringify(z));
+    await page.screenshot({path:path.join(folder,"possibles-liste-zoom125-compact.png"),fullPage:false});
+    await page.evaluate(()=>document.body.style.zoom="");
+  }
+
   assert.equal(await page.locator("#results .initiative-card").count(),4);
   const types=await page.locator("#results .initiative-card .entry-kind").allTextContents();
   assert.ok(types.includes("Besoin")&&types.includes("Projet")&&types.includes("Ressource"));
@@ -164,4 +172,4 @@ try{
  }
 } finally {await browser.close();}
 writeFileSync(path.join(folder,"report.json"),JSON.stringify({testedAt:new Date().toISOString(),prototype:"PR41 / snapshot fixe",graphic:"PR35 / CSS injecté, non publié",results},null,2));
-console.log("PASS "+results.length+" séquences du prototype Interstice à 390 et 1280 px");
+console.log("PASS "+results.length+" séquences du prototype Interstice à 320, 390 et 1280 px");

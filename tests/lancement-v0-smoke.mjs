@@ -3,8 +3,9 @@
 import { chromium } from "playwright";
 import { existsSync, readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
-const files=["index.html","manifeste-v2-5.html","bibliotheque.html","wiki.html","participer.html","proposer-article.html","wiki-lecture-croisee-travail-soin-pouvoir.html","wiki-decision-collective.html","manifeste.html","squats-et-lieux-autonomes.html","charte-contributions-wiki.html","wiki-logement-habitat-droit-ville.html","habitat-dossier-participatif.html","habitat-dossier-friches.html","habitat-dossier-gouvernance.html","habitat-dossier-dalo.html","habitat-dossier-foncier-solidaire.html","habitat-dossier-lieux-collectifs.html","wiki-decision-collective.html","wiki-lecture-croisee-travail-soin-pouvoir.html"];
-const widths=[{label:"mobile",width:390,height:844},{label:"desktop",width:1280,height:800}];
+const files=["index.html","manifeste-v2-5.html","bibliotheque.html","wiki.html","participer.html","proposer-article.html","wiki-lecture-croisee-travail-soin-pouvoir.html","wiki-decision-collective.html","manifeste.html","squats-et-lieux-autonomes.html","charte-contributions-wiki.html","wiki-logement-habitat-droit-ville.html","habitat-dossier-participatif.html","habitat-dossier-friches.html","habitat-dossier-gouvernance.html","habitat-dossier-dalo.html","habitat-dossier-foncier-solidaire.html","habitat-dossier-lieux-collectifs.html"];
+const widths=[{label:"compact",width:320,height:760},{label:"mobile",width:390,height:844},{label:"desktop",width:1280,height:800}];
+const critical=["index.html","wiki-decision-collective.html","wiki-lecture-croisee-travail-soin-pouvoir.html"];
 const base=process.env.QA_BASE_URL||"http://127.0.0.1:8765";
 const checks=[];
 mkdirSync("visual-qa",{recursive:true});
@@ -35,7 +36,7 @@ const contrast=(a,b)=>{const A=luminance(rgb(a)),B=luminance(rgb(b));return (Mat
 try{
  for(const viewport of widths){
   const context=await browser.newContext({viewport:{width:viewport.width,height:viewport.height},reducedMotion:"reduce"});
-  for(const filename of files){
+  for(const filename of (viewport.label==="compact"?critical:files)){
    const page=await context.newPage();
    const errors=[],failedResources=[];
    page.on("pageerror",e=>errors.push(e.message));
@@ -84,8 +85,8 @@ try{
    if(!dom.type.bodyFamily.includes("Atkinson Hyperlegible Next")||!dom.type.h1Family?.includes("Barlow Condensed"))
      failed.push("Familles typographiques non appliquées");
    if(!dom.uniqueIds)failed.push("ID HTML dupliqué");
-   if(viewport.label==="mobile" && parseFloat(dom.type.body)<18)failed.push("Corps <18px");
-   if(viewport.label==="mobile" && parseFloat(dom.type.h1)<38)failed.push("Titre h1 <38px");
+   if(viewport.label!=="desktop" && parseFloat(dom.type.body)<18)failed.push("Corps <18px");
+   if(viewport.label!=="desktop" && parseFloat(dom.type.h1)<38)failed.push("Titre h1 <38px");
    const tiny=dom.buttons.filter(x=>x.font<18||x.h<52);
    if(tiny.length)failed.push("Actions trop petites "+JSON.stringify(tiny).slice(0,280));
    if(filename==="index.html"){
@@ -129,6 +130,34 @@ try{
      if(read.buttons.length!==2||read.buttons.some(b=>b.height<52||b.font<18)||!read.linksValid)
        failed.push("Actions retour/correction ou liens de sources : "+JSON.stringify(read));
      await page.screenshot({path:"visual-qa/"+filename.replace(".html","")+"-premier-ecran-"+viewport.label+".png",fullPage:false});
+   }
+   if(critical.includes(filename)){
+     const first=await page.evaluate(()=>{
+       const heading=document.querySelector("h1");
+       const actions=[...document.querySelectorAll(".hero-actions a")];
+       return {h1Left:heading.getBoundingClientRect().left,h1Width:heading.getBoundingClientRect().width,
+         actions:actions.map(a=>({height:a.getBoundingClientRect().height,font:parseFloat(getComputedStyle(a).fontSize)})),
+         sourceCount:document.querySelectorAll('main section a[href^="https://"]').length};
+     });
+     if(first.h1Left<-1||first.h1Width>viewport.width)failed.push("H1 débordement");
+     if(filename==="index.html"&&(first.actions.length!==2||first.actions.some(x=>x.height<56||x.font<18)))
+       failed.push("Actions accueil trop petites");
+     if(filename!=="index.html"){
+       if(first.sourceCount<2)failed.push("Sources externes non visibles");
+       await page.locator(".reading-toc summary").click();
+       const sizes=await page.locator(".reading-toc a").evaluateAll(els=>els.map(e=>e.getBoundingClientRect().height));
+       if(sizes.length<6||sizes.some(n=>n<52))failed.push("Sommaire non tactile");
+       await page.locator(".reading-toc a").first().focus();
+       const style=await page.locator(".reading-toc a").first().evaluate(e=>getComputedStyle(e).outlineStyle);
+       if(style==="none")failed.push("Focus sommaire absent");
+       await page.screenshot({path:"visual-qa/"+filename.replace(".html","")+"-sommaire-"+viewport.label+".png",fullPage:false});
+     }
+     if(viewport.label==="compact"){
+       await page.evaluate(()=>document.body.style.zoom="125%");
+       const zoom=await page.evaluate(()=>({page:document.documentElement.scrollWidth,viewport:innerWidth}));
+       if(zoom.page>zoom.viewport+1)failed.push("Agrandissement 125% débordement "+JSON.stringify(zoom));
+       await page.screenshot({path:"visual-qa/"+filename.replace(".html","")+"-zoom125-compact.png",fullPage:false});
+     }
    }
    if(errors.length)failed.push("JS "+errors.join(" ; "));
    if(failedResources.length)failed.push("Ressources "+failedResources.join(" ; "));
