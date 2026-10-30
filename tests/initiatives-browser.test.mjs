@@ -17,7 +17,7 @@ test("parcours mobile : commune, besoin, fiche, retour, absence de fuite réseau
   await mkdir("artifacts",{recursive:true});
   await page.goto(PAGE,{waitUntil:"networkidle"});
   await page.locator(".initiative-card").first().waitFor();
-  assert.equal(await page.locator(".initiative-card").count(),6);
+  assert.equal(await page.locator(".initiative-card").count(),7);
   assert.ok((await page.locator(".demo-notice").innerText()).includes("FICTIF"));
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),"Aucun défilement horizontal à 390px");
   await page.screenshot({path:"artifacts/initiatives-mobile-liste.png",fullPage:true});
@@ -47,13 +47,13 @@ test("parcours mobile : commune, besoin, fiche, retour, absence de fuite réseau
   assert.equal(await page.locator("#commune").inputValue(),"Gaillac");
 
   await page.locator("#clear").click();
-  assert.equal(await page.locator(".initiative-card").count(),6);
+  assert.equal(await page.locator(".initiative-card").count(),7);
   await page.locator("#commune").fill("Nullepart");
   assert.equal(await page.locator(".initiative-card").count(),0);
   assert.equal(await page.locator("#no-results").isVisible(),true);
   assert.equal(await page.locator("#export-demo").isDisabled(),true);
   await page.locator("#clear-empty").click();
-  assert.equal(await page.locator(".initiative-card").count(),6);
+  assert.equal(await page.locator(".initiative-card").count(),7);
 
   const otherOrigins=requests.filter(u=>!u.startsWith(BASE+"/")&&!u.startsWith("data:"));
   assert.deepEqual(otherOrigins,[],"Aucune requête vers des sites tiers");
@@ -76,8 +76,8 @@ test("export JSON contient seulement la liste filtrée, sans contact",async()=>{
   assert.equal(downloaded.suggestedFilename(),"interstice-exemples-fictifs.json");
   const filename=await downloaded.path();
   const json=JSON.parse(await readFile(filename,"utf8"));
-  assert.equal(json.demo,true);
-  assert.deepEqual(json.initiatives.map(x=>x.id),["demo-couture"]);
+  assert.equal(json.fictional,true);
+  assert.deepEqual(json.entries.map(x=>x.id),["demo-couture"]);
   assert.ok(!/address|phone|publicContact|privateEmail|longitude|latitude/.test(JSON.stringify(json)));
  }finally{await page.close();await browser.close();}
 });
@@ -176,4 +176,55 @@ test("tailles d'écran : aucune colonne débordante de 320px à 1024px",async()=
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),"Débordement simulation à "+width);
   }
  }finally{await page.close();await browser.close();}
+});
+
+test("Carte des communs / possibles : listes et points synchronisés sur mobile et ordinateur",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ try{
+  for(const width of [390,1280]){
+   const page=await browser.newPage({viewport:{width,height:850}});
+   const requests=[],errors=[];
+   page.on("request",r=>requests.push(r.url()));
+   page.on("pageerror",e=>errors.push(e.message));
+   try{
+    await mkdir("artifacts",{recursive:true});
+    await page.goto(PAGE,{waitUntil:"networkidle"});
+    await page.locator("#results .initiative-card").first().waitFor();
+    assert.equal(await page.locator("#results .initiative-card").count(),7);
+    await page.locator("#display-map").click();
+    assert.equal(await page.locator("#map-panel").isVisible(),true);
+    assert.equal(await page.locator("#municipality-map .map-marker").count(),4);
+    await page.screenshot({path:"artifacts/cartes-communs-"+width+".png",fullPage:true});
+    await page.locator('#municipality-map [data-commune="Gaillac"]').focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await page.locator("#commune").inputValue(),"Gaillac");
+    await page.locator("#display-list").click();
+    assert.equal(await page.locator("#results .initiative-card").count(),3);
+    await page.locator("#clear").click();
+    await page.locator("#reading-possibles").click();
+    assert.equal(await page.locator("#results .initiative-card").count(),4);
+    await page.locator("#display-map").click();
+    assert.equal(await page.locator("#municipality-map .map-marker").count(),3);
+    await page.screenshot({path:"artifacts/cartes-possibles-"+width+".png",fullPage:true});
+    await page.locator('#municipality-map [data-commune="Gaillac"]').click();
+    await page.locator("#display-list").click();
+    assert.equal(await page.locator("#results .initiative-card").count(),2);
+    await page.locator('#results a[data-id="demo-projet-gaillac"]').click();
+    assert.equal(await page.locator("#detail h2").innerText(),"Une rencontre de réparation à inventer");
+    await page.goBack();
+    assert.equal(await page.locator("#results .initiative-card").count(),2);
+    await page.locator("#display-map").click();
+    await page.locator("#map-zoom-in").click();
+    assert.notEqual(await page.locator("#municipality-map").getAttribute("viewBox"),"0 0 760 420");
+    await page.locator("#map-zoom-reset").click();
+    assert.equal(await page.locator("#municipality-map").getAttribute("viewBox"),"0 0 760 420");
+    await page.locator("#commune").fill("commune-inconnue");
+    assert.equal(await page.locator("#municipality-map .map-marker").count(),0);
+    assert.equal(await page.locator("#count").innerText(),"0 fiche fictive trouvée");
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),"Débordement "+width);
+    assert.deepEqual(requests.filter(u=>!u.startsWith(BASE+"/")&&!u.startsWith("data:")),[]);
+    assert.deepEqual(errors,[]);
+   }finally{await page.close();}
+  }
+ }finally{await browser.close();}
 });

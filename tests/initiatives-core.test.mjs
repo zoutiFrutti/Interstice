@@ -166,3 +166,42 @@ test("carte V0: le dépôt démo reste lisible sans filtrage de popularité",asy
  assert.deepEqual(all.map(i=>i.id),DEMO_INITIATIVES.map(i=>i.id));
  assert.ok(all.every(i=>!("popularity" in i)&&!("score" in i)&&!("votes" in i)));
 });
+
+test("cartes : quatre familles, deux lectures et provenances de démonstration",async()=>{
+ const {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS}=await import("../cartes-data.mjs");
+ const {filterMapEntries}=await import("../cartes-core.mjs");
+ assert.deepEqual(new Set(DEMO_MAP_ENTRIES.map(x=>x.kind)),new Set(["initiative","ressource","besoin","projet"]));
+ assert.ok(DEMO_MAP_ENTRIES.every(x=>x.isDemo&&x.source.type==="simulation"&&x.publicContact===null));
+ assert.equal(filterMapEntries(DEMO_MAP_ENTRIES,{reading:"communs"}).length,7);
+ assert.equal(filterMapEntries(DEMO_MAP_ENTRIES,{reading:"possibles"}).length,4);
+ assert.deepEqual(filterMapEntries(DEMO_MAP_ENTRIES,{reading:"inconnu"}),[]);
+ assert.equal(COMMUNE_ANCHORS.length,4);
+});
+test("cartes : liste et groupes communaux partagent strictement les mêmes fiches filtrées",async()=>{
+ const {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS}=await import("../cartes-data.mjs");
+ const {filterMapEntries,communeGroups}=await import("../cartes-core.mjs");
+ const filtered=filterMapEntries(DEMO_MAP_ENTRIES,{reading:"possibles",commune:"Gaillac",category:"Mutualisation"});
+ assert.deepEqual(filtered.map(x=>x.id),["demo-offre-gaillac"]);
+ const groups=communeGroups(filtered,COMMUNE_ANCHORS);
+ assert.deepEqual(groups.map(g=>g.anchor.id),["Gaillac"]);
+ assert.deepEqual(groups[0].items.map(x=>x.id),filtered.map(x=>x.id));
+});
+test("cartes : positions communales séparées des fiches, sans lieu privé",async()=>{
+ const {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS}=await import("../cartes-data.mjs");
+ const {projectCommune}=await import("../cartes-core.mjs");
+ const cities=new Set(COMMUNE_ANCHORS.map(x=>x.id));
+ for(const item of DEMO_MAP_ENTRIES){
+  assert.ok(item.territories.every(t=>cities.has(t)));
+  for(const field of ["lat","lon","latitude","longitude","address","email","phone","privateLocation"])assert.ok(!Object.hasOwn(item,field));
+ }
+ for(const city of COMMUNE_ANCHORS){const point=projectCommune(city);assert.ok(point.x>0&&point.x<760&&point.y>0&&point.y<420);}
+ assert.equal(projectCommune(null),null);
+});
+test("cartes : export public fictif liste blanche sans fuite après injection",async()=>{
+ const {DEMO_MAP_ENTRIES}=await import("../cartes-data.mjs");
+ const {exportFictionalMapEntries}=await import("../cartes-core.mjs");
+ const evil={...DEMO_MAP_ENTRIES[0],privateEmail:"secret@invalid.local",latitude:43.88,address:"domicile prive",internalNotes:"secret"};
+ const result=exportFictionalMapEntries([evil,{...DEMO_MAP_ENTRIES[1],isDemo:false}]);
+ assert.equal(result.entries.length,1);assert.equal(result.entries[0].provenance,"simulation");
+ for(const forbidden of ["privateEmail","secret@invalid.local","latitude","domicile","internalNotes","address"])assert.ok(!JSON.stringify(result).includes(forbidden));
+});

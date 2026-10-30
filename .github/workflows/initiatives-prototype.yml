@@ -5,6 +5,7 @@ on:
   pull_request:
     paths:
       - 'initiatives*'
+      - 'cartes*'
       - 'decouvrir-initiatives.html'
       - 'tests/initiatives-core.test.mjs'
       - '.github/workflows/initiatives-prototype.yml'
