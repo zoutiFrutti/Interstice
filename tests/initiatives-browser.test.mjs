@@ -228,3 +228,19 @@ test("Carte des communs / possibles : listes et points synchronisés sur mobile 
   }
  }finally{await browser.close();}
 });
+
+test("si le module cartographique ne charge pas, la liste complète reste consultable",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ try{
+  await page.route("**/cartes-map.mjs",route=>route.abort());
+  await page.goto(PAGE);
+  await page.locator("#results .initiative-card").first().waitFor();
+  await page.locator("#map-fallback").waitFor({state:"visible"});
+  assert.equal(await page.locator("#results .initiative-card").count(),7);
+  assert.equal(await page.locator("#display-map").isDisabled(),true);
+  assert.equal(await page.locator("#list-panel").isVisible(),true);
+  await page.locator("#reading-possibles").click();
+  assert.equal(await page.locator("#results .initiative-card").count(),4);
+ }finally{await page.close();await browser.close();}
+});

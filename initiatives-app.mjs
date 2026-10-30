@@ -3,7 +3,7 @@ import {createDemoRepository,explainSearchMatch,buildPublicDemoExport} from "./i
 import {findCompatibleExamples} from "./initiatives-simulation.mjs";
 import {DEMO_MAP_ENTRIES} from "./cartes-data.mjs";
 import {filterMapEntries,exportFictionalMapEntries} from "./cartes-core.mjs";
-import {createMunicipalityMap} from "./cartes-map.mjs";
+// Carte chargée séparément : la liste doit fonctionner même si ce module échoue.
 const repo=createDemoRepository(DEMO_INITIATIVES),$=id=>document.getElementById(id);
 const form=$("filters"),commune=$("commune"),category=$("category"),objet=$("objet"),scope=$("scope"),order=$("order"),list=$("results"),count=$("count"),empty=$("no-results"),explorer=$("explorer"),detail=$("detail"),content=$("detail-content");
 let reading="communs";
@@ -136,9 +136,19 @@ function setDisplay(next){
  }
  cartography?.render(visibleEntries,commune.value);
 }
-cartography=createMunicipalityMap({
- svg:$("municipality-map"),emptyNote:$("map-caption"),
- onCommune:name=>{commune.value=name;drawList();count.focus();}
+$("display-map").disabled=true;
+import("./cartes-map.mjs").then(({createMunicipalityMap})=>{
+ cartography=createMunicipalityMap({
+  svg:$("municipality-map"),emptyNote:$("map-caption"),
+  onCommune:name=>{commune.value=name;drawList();count.focus();}
+ });
+ $("display-map").disabled=false;
+ cartography.render(visibleEntries,commune.value);
+}).catch(()=>{
+ $("display-map").disabled=true;
+ $("map-fallback").hidden=false;
+ $("map-fallback").textContent="Carte indisponible : la liste contient toutes les fiches fictives et reste consultable.";
+ setDisplay("list");
 });
 count.tabIndex=-1;
 $("reading-communs").addEventListener("click",()=>setReading("communs"));
