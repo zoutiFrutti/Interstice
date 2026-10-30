@@ -202,3 +202,22 @@ body.wiki-reading {font-family:var(--font-reading);font-size:19px;line-height:1.
 /* Graphiste 014 : avertissement sous les actions éditoriales, sans lien privé trompeur. */
 .wiki-reading .reading-privacy-note{max-width:70ch;margin:0 auto 48px;padding:12px 16px;border-left:3px solid #debca7;background:#272123;color:#f2e7dd;font-size:17px;line-height:1.6}
 @media(max-width:600px){.wiki-reading .reading-privacy-note{font-size:17px;margin-top:-15px}}
+
+/* Transmission 015 : lecture à 320 px, repères de focus et agrandissement du texte.
+   Uniquement les pages graphiques déjà existantes. */
+.wiki-reading .reading-privacy-note{overflow-wrap:anywhere}
+.wiki-reading .reading-toc summary:focus-visible,.home-page .hero-actions a:focus-visible{
+ outline:3px solid #fff0ca;outline-offset:4px
+}
+@media(max-width:360px){
+ .home-page main,.home-page header,.home-page footer{padding-inline:14px}
+ .home-page .home-hero h1{font-size:40px;line-height:1.12;overflow-wrap:anywhere}
+ .home-page .home-hero .hero-intro p{font-size:21px;line-height:1.58}
+ .home-page .home-hero .hero-actions a{padding-inline:12px;overflow-wrap:anywhere}
+ .wiki-reading main,.wiki-reading header,.wiki-reading footer{padding-inline:14px}
+ .wiki-reading .hero h1{font-size:40px;overflow-wrap:anywhere}
+ .wiki-reading .reading-status{padding:14px 15px}
+ .wiki-reading .reading-toc{padding-inline:12px}
+ .wiki-reading .reading-actions a{padding:13px 12px}
+ .wiki-reading main > section:not(.hero) h2{overflow-wrap:anywhere}
+}
