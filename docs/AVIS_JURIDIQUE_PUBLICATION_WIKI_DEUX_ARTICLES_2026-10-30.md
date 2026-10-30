@@ -117,3 +117,24 @@
 
 **Dépendance La Tisseuse :** les mêmes limites s'appliquent à un futur annuaire : un formulaire éditorial à connexion n'est pas une voie sûre pour une demande de retrait d'adresse, un signalement de discrimination ou une plainte sur l'accueil. La mise en place d'un destinataire réellement habilité et d'un canal privé opérationnel précède toute invitation à communiquer de telles données. **Aucun partenariat, droit de vote, adhésion au Manifeste V2.5 ni validation collective déduit du Wiki.**
 
+---
+
+## Suivi 015 bis — Contrôle des versions actuelles sans nouvel audit · 30 octobre 2026
+
+**Déclencheur :** nouvelle demande portant le même numéro de transmission 015, **après** l'exécution du premier bilan 30 passes. Contrôle limité aux deux fichiers sur [PR #44](https://github.com/zoutiFrutti/Interstice/pull/44), ouverte en brouillon, HEAD examiné `b08ee0b915a162faa2d870debc6580b08ca29935`. Aucune modification HTML par le Juriste lors de cette reprise.
+
+| Emplacement de la branche de PR #44 | Résultat juridique actuel | Suite |
+|---|---|---|
+| `wiki-decision-collective.html:35–37` | « Prévoir une procédure de recours » a été changé en **« Discuter de la façon dont une décision pourrait être critiquée, réexaminée ou contestée, sans promettre une procédure de recours qui n'existerait pas encore »**. La réserve portant sur la procédure fictive est levée | **Corrigé**, pas de nouvelle écriture nécessaire |
+| `wiki-decision-collective.html:44,46,48` | Non-exposition d'expérience personnelle présentée comme proposition ; distinction consultation/information/contestation/vote explicitement juridique ; délégation contestable qualifiée de proposition non adoptée | **Corrigé** |
+| `wiki-decision-collective.html:49–52` | Young/Goodin/Owen documentés par notices ou résumés, Jo Freeman en texte primaire web composite ; Tebble en résumé et extraits de post-print non destiné à la citation ; références de recherche, pas lecture complète présumée | **Recommandation :** vérifier chez l'éditeur avant citation directe, ne pas reproduire le post-print par défaut |
+| `wiki-decision-collective.html:57–58` | Lien nommé « Soumettre une proposition de correction documentaire » ; déclare explicitement qu'il **n'est pas un formulaire court de rectification ni un canal confidentiel** | **Réserve textuelle levée ; canal sensible réel toujours manquant** |
+| `wiki-lecture-croisee-travail-soin-pouvoir.html:7–8` | Pas de fichiers personnels de santé/handicap, proposition présentée « non adoptée » | **Corrigé** |
+| `wiki-lecture-croisee-travail-soin-pouvoir.html:14–16` | Berenstain : lecture par passages et référence à la correction de note 2024 avec limitation de consultation ; notices de hooks/Federici/Ahmed distinguées des lectures intégrales ; lien de contribution déclaré inadapté aux demandes privées | **Réserve textuelle levée ; revue éditoriale des éditions, liens et droits de citation restant au Lecteur/Médiathèque** |
+
+**Risque transversal TIS-001 :** réutiliser cette logique sur une future fiche d'association : un lien de contribution Wiki à connexion ne remplace pas un canal opérationnel pour opposer la publication d'un numéro, retirer une adresse, ou signaler une menace. **Ne pas promettre aux futurs partenaires une assistance juridique, un accueil sécurisé ou un recours inexistant.** Une publication purement analytique, sans collecte de témoignages nouveaux, est distincte de l'ouverture d'un service de signalement.
+
+**Contrôles statiques réellement exécutés** sur fichiers de `main` et les deux pages de branche, vérifications `C01–C12` du complément Juriste TIS : **12/12 critères présents au moment de la lecture**, dont 6 concernant spécifiquement le statut et les liens du Wiki. Ces tests sont des contrôles ciblés de contenu, **pas une certification HTML, de licence ou d'accessibilité**.
+
+**Bilan :** pas de nouveau blocage juridique de formulation identifié dans le texte relu ; publier les contenus, les fusionner ou activer une voie confidentielle relève toujours de personnes et moyens réels. La Charte et le Manifeste V2.5 ne sont pas réputés adoptés.
+
