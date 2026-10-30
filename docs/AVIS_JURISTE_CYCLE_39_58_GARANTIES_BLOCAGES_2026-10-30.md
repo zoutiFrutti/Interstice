@@ -147,4 +147,41 @@ Selon le [RGPD, articles 33 et 34](https://www.cnil.fr/fr/reglement-europeen-pro
 **Recommandation technique :** concevoir une fiche d'incident accessible uniquement aux personnes habilitées : date de constat, exposition probable, périmètre, mesures de confinement, risque, preuve de la notification ou motif documenté de non-notification. Ne jamais placer un incident réel avec identités dans le journal public GitHub. Aucun incident de sécurité réel n'est déclaré dans cette étude.
 
 **Blocage opérationnel restant :** aucun responsable de traitement effectif, destinataire opérationnel des demandes ni capacité d'astreinte de protection n'est prouvé par les documents consultés ; le Relieur doit préparer la coordination humaine, non se déclarer d'office responsable juridique de la base.
+---
+
+## IX. Contrat minimal des données et des droits — mise à disposition de la Développeuse et du Relieur
+
+Cette matrice n'est **pas** le schéma SQL déjà déployé. Elle identifie les décisions devant précéder l'ajout de tables et de vues publiques.
+
+| Objet de donnée | Exposition au public proposée | Accès restreint | Enregistrement / sortie à définir |
+|---|---|---|---|
+| **Initiative** | Nom public, domaine, territoire large, source, statut documentaire, date de vérification | Contestations et identité de la personne ayant revendiqué la fiche | Correction historisée de données non sensibles, retrait si nécessaire, provenance et licence |
+| **Besoin / offre** | Texte expurgé de données identifiantes, catégorie et zone choisie | Contact volontaire privé, éventuel lien entre demandeur et initiative | Retrait à la demande selon droits applicables et conventions ; éviter indexation cachée |
+| **Localisation** | Aucun point, ou commune/zone, ou adresse de lieu d'activité public avec base légale | Adresse exacte privée **non collectée par défaut** ; exceptionnellement stockage justifié sans API publique | Effacement et suppression des copies/caches, prévention de réidentification par territoire rare |
+| **Pratique volontaire** | Déclaration et source, date, caractère non certifié | Échanges de preuve et contestations non publiques | Pas de score moral ni déduction d'opinions politiques sur des individus |
+| **Contribution / révision** | Auteur sous attribution licite si choisie ; historique factuel sans données personnelles cachées | Documents justificatifs et coordonnées d'auteur | Revue, droit de correction, purge de l'ancienne donnée privée ; aucune immutabilité publique des adresses |
+| **Signalement / recours** | Éventuellement « fiche retirée » sans identité ni allégation publiée | Données du signalant, éléments sensibles, droits de défense adaptés | Limitation d'accès, conservation motivée, destruction/archivage sécurisé et incidents tracés |
+| **Rencontre / projet** | Description factuelle, organisateur réel, contacts *publics* vérifiés | Consentements individuels à la mise en relation, si cette fonction est un jour retenue | Participation hors app ; aucune conservation automatique d'une présence nominative |
+| **Export** | Uniquement champs réellement diffusables, licences et attribution embarquées | Copie de données personnelles à la personne ayant qualité pour l'obtenir selon RGPD | Export collectif ≠ droit de portabilité du RGPD et ≠ export des contacts de tiers |
+
+**Rôles à fixer, non présumés :** le responsable du traitement détermine les finalités et moyens essentiels ; un prestataire peut être sous-traitant selon son rôle réel ; l'initiative qui modifie son profil n'est pas automatiquement coresponsable ; une détermination commune des finalités et moyens déclenche l'examen du [RGPD art. 26](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4). Ne pas transformer le Relieur en représentant légal, ni le propriétaire de l'hébergement en responsable de traitement par simple défaut documentaire.
+
+**Base juridique à déterminer *par traitement*, pas « consentement universel » :** contribution volontaire, référencement de données professionnelles déjà publiques, correction, audit sécurité et éventuelle mise en relation n'impliquent pas nécessairement la même base légale. Pour la réutilisation de données de professionnels accessibles publiquement, la [CNIL](https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes) souligne que l'intérêt légitime peut être possible selon les attentes et garanties des personnes, mais que les données dérivées, intrusives, la notation et l'opposition demandent une analyse spécifique. **Droit de s'opposer réellement accessible** ; ne pas conclure que « public » signifie « libre de tout droit ».
+
+### Audit de la page publique actuelle (contrôle ciblé, non audit global)
+
+Lecture statique de `index.html`, `participer.html`, `proposer-article.html` et `moderation.js` sur `main` :
+- `index.html` affiche un avertissement de ne saisir ni nom complet, ni adresse précise, ni téléphone ; le formulaire concerne besoins/ressources et ne comporte pas de champ de téléphone déclaré.
+- `participer.html` donne un parcours sans adhésion ni application et distingue la proposition publique du canal privé **encore à définir**.
+- `proposer-article.html` prévoit une connexion e-mail pour la contribution Wiki, dispositif différent du formulaire public de besoins.
+- La page `moderation.html` et le script `moderation.js` donnent un accès privé aux personnes autorisées ; cette page de modération **ne constitue pas un canal public de retrait de fiche géographique**.
+- Aucune balise `mailto:` n'a été identifiée sur les deux pages publiques `index.html` et `participer.html` inspectées. Cela ne prouve pas l'absence de tout moyen de contact dans l'ensemble de l'écosystème ; **l'absence d'un canal de droits concret dans le futur parcours géographique reste un blocage B3**.
+
+### Trois simulations de droit des fiches à tester *avant* données réelles
+
+1. **Un artisan demande le retrait de son numéro professionnel public.** Enregistrement d'une demande, identification du champ, analyse de la base légale et du droit d'opposition, décision motivée. Pour un annuaire comprenant des commentaires, la CNIL attire l'attention sur une opposition potentiellement renforcée. Pas de suppression de toute la fiche uniquement par automatisme sans examen, ni refus simplement parce que le numéro figurait sur Internet.
+2. **Un lieu d'entraide refuse son point géographique.** Vérifier la réidentification possible même par quartier, prévenir le téléchargement du point exact et envisager une fiche sans carte ou son retrait. Le refus d'une fiche géolocalisée ne doit pas être interprété comme opposition politique.
+3. **Un financeur exige un affichage prioritaire et un droit de suppression des critiques.** Rejeter le pouvoir politique automatique et documenter la gouvernance des contenus ; les engagements contractuels licites restent à analyser, tout comme les règles sur la présentation d'une éventuelle promotion. La divergence politique ne constitue pas une infraction.
+
+**Notice publique candidate (à valider, PAS à mettre en ligne en l'état) :** « Interstice présente des initiatives et besoins locaux, sans certifier les personnes ou activités. Des informations peuvent provenir d'initiatives ou de sources publiques identifiées. Certaines fiches utilisent une localisation approximative ou ne sont pas localisées pour protéger les personnes. Vous pouvez demander une correction, faire valoir vos droits sur vos données ou signaler un risque par le canal de contact qui sera indiqué ici avant tout lancement. L'application est facultative ; les parcours essentiels doivent rester disponibles sur le site. » Cette mention **n'est pas une notice RGPD complète** : y ajouter impérativement identité du responsable, finalités, bases légales, durées ou critères, droits, contact et informations art. 13–14 applicables.
 
