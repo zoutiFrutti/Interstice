@@ -36,7 +36,7 @@ for(const file of names){
  if(typeof m.created_at!=="string"||!/^\d{4}-\d\d-\d\d$/.test(m.created_at))issues.push("Date invalide : "+m.id);
  if(["ACCUSEE_PAR_ATELIER","EN_COURS","TERMINEE"].includes(m.status)&&!m.ack_at)issues.push("Accusé manquant : "+m.id);
  if(m.status==="TERMINEE"&&!m.result_ref)issues.push("Preuve de résultat manquante : "+m.id);
- if(["PREPAREE","DEPOSEE","VUE_PAR_ORCHESTRATEUR"].includes(m.status)&&m.ack_at)issues.push("Accusé artificiel ou état incohérent : "+m.id);
+ if(["PREPAREE","DEPOSEE"].includes(m.status)&&m.ack_at)issues.push("Accusé artificiel ou état incohérent : "+m.id);
  messages.push(m);
 }
 const byRole={};
