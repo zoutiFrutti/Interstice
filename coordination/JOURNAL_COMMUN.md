@@ -1343,3 +1343,15 @@ Reprise du paquet 013 sans quatrième campagne. **Résultats nouveaux :** varian
 
 **Aucune donnée personnelle recueillie, permission Supabase modifiée, prise de contact, nouveau partenariat déclaré, fusion, publication ou Charte adoptée.** Dépôt sur GitHub ne signifie pas réception par une autre conversation.
 
+
+
+---
+
+## 2026-10-30 — Médiathèque — Transmission 015, sources Wiki et provenance TIS-001
+**Mission reçue** dans la conversation Médiathèque : transmission 015 de La Relieuse, 30 actions documentées (28 FAIT, 2 BLOQUE), six lots ; état candidat, pas de fusion ni publication.
+**PR #44 corrigée et relue sur branche existante** : article « Décider ensemble » (Tebble post-print universitaire accessible en extraits, mais averti non destiné à la citation) commit `8e54a589f813f194401504ab3b590f76af555ee7` ; article « Qui fait vivre les communs ? » (Freire Seabury 1973 ©1970, Berenstain note 20 de 2024 et accès incomplet à l'avis) commit `ef6a80009329fffd17280d5b4c195292f7d16386`. Pas de réécriture des thèses du Lecteur. Young 2000 imprimé / notice en ligne 2002 ; Freeman texte primaire web composite ; Kropotkine chapitre primaire 1892 ; Ahmed/Federici/hooks/Mouffe notices uniquement.
+**Contrôles statiques** : liens externes 15 + 8, trois liens internes vérifiés par article, sections équilibrées (7/7, 9/9) ; aucune vérification HTTP exhaustive, ni test clavier/Android revendiqué. PR #35 a des versions divergentes des mêmes HTML : intégration humaine fichier par fichier.
+**TIS-001** : modèle de provenance complémentaire au contrat 013, sans nouvelle table ni type ; distinguer REPERE, référencement accepté, coopération convenue et contesté ; source/consultation/licence/mandat/publication distincts. Trois fiches **inventées**, 14/14 assertions JS isolées réussies contre publication automatique, coordonnées et notes privées. Zéro organisme réel, zéro contact et aucun import cartographique.
+**Droits en attente** : licence précise de Berenstain à confirmer sur l'exemplaire et avis de correction complet inaccessible ; accès libre n'autorise pas adaptation. OSM ODbL (données) ≠ politique d'utilisation des tuiles ; Etalab 2.0 impose attribution et date ; CNIL rappelle le statut potentiellement personnel des données professionnelles ouvertes.
+**Preuve complète** : [transmission Médiathèque 013/014 enrichie par le cycle 015](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md) commit `5cf60466a8d348c98de894359841244ad6795df0`.
+**Décisions** : bibliographies candidates à revue Lecteur/Juriste ; conditions de licence et publication de fiches réelles à validation humaine ; aucune transmission automatiquement reçue dans la conversation distincte de La Relieuse.
