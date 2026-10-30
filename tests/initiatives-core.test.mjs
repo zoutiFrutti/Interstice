@@ -255,3 +255,28 @@ test("014: les objets non fictifs sont exclus des exports",async()=>{
  const out=exportFictionalMapEntries([...DEMO_MAP_ENTRIES,row]);
  assert.ok(out.entries.every(x=>x.id!=="real-canary"));
 });
+
+test("014: une fiche sans localisation ou sans champ territories reste lisible, hors repères et exportable",async()=>{
+ const {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS}=await import("../cartes-data.mjs");
+ const {filterMapEntries,communeGroups,withoutPublicMapLocation,exportFictionalMapEntries}=await import("../cartes-core.mjs");
+ const a={...DEMO_MAP_ENTRIES[0],id:"test-absente",territories:[]};
+ const b={...DEMO_MAP_ENTRIES[0],id:"test-non-renseignee"};
+ delete b.territories;
+ const rows=filterMapEntries([...DEMO_MAP_ENTRIES,a,b],{reading:"communs"});
+ assert.equal(rows.length,9);
+ assert.deepEqual(withoutPublicMapLocation(rows,COMMUNE_ANCHORS).map(x=>x.id),["test-absente","test-non-renseignee"]);
+ assert.equal(communeGroups(rows,COMMUNE_ANCHORS).flatMap(g=>g.items).some(x=>x.id==="test-absente"),false);
+ assert.deepEqual(filterMapEntries([b],{reading:"communs",commune:"Gaillac"}),[]);
+ assert.deepEqual(exportFictionalMapEntries([a,b]).entries.map(x=>x.territoryNames),[[],[]]);
+});
+test("014: le CSS d'intégration respecte le CSS propre au Graphiste et le charge après les styles existants",()=>{
+ const html=readFileSync(new URL("../decouvrir-initiatives.html",import.meta.url),"utf8");
+ const own=readFileSync(new URL("../cartes-design.css",import.meta.url),"utf8");
+ const integration=readFileSync(new URL("../cartes-compat.css",import.meta.url),"utf8");
+ assert.ok(own.includes("Candidat d'intégration graphique 013"));
+ assert.ok(own.includes(".initiative-main .map-marker-label"));
+ assert.ok(html.indexOf('href="initiatives.css"')<html.indexOf('href="cartes.css"'));
+ assert.ok(html.indexOf('href="cartes.css"')<html.indexOf('href="cartes-design.css"'));
+ assert.ok(html.indexOf('href="cartes-design.css"')<html.indexOf('href="cartes-compat.css"'));
+ assert.match(integration,/map-unlocated/);
+});

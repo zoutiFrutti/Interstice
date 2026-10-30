@@ -244,3 +244,99 @@ test("si le module cartographique ne charge pas, la liste complète reste consul
   assert.equal(await page.locator("#results .initiative-card").count(),4);
  }finally{await page.close();await browser.close();}
 });
+
+test("014: tests graphiques intégrés PR35 en 390px / 1280px, quatre modes et repères lisibles",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ try{
+  for(const width of [390,1280]){
+   const page=await browser.newPage({viewport:{width,height:844},reducedMotion:"reduce"});
+   const errors=[];page.on("pageerror",e=>errors.push(e.message));
+   try{
+    await mkdir("artifacts",{recursive:true});
+    await page.goto(PAGE,{waitUntil:"networkidle"});
+    await page.locator(".initiative-card").first().waitFor();
+    for(const reading of ["communs","possibles"]){
+     await page.locator("#reading-"+reading).click();
+     const total=reading==="communs"?7:4;
+     await page.locator("#display-list").click();
+     assert.equal(await page.locator("#results .initiative-card").count(),total);
+     await page.locator("#display-map").click();
+     const metrics=await page.evaluate(()=>{
+      const selectors=["#filters input","#filters select","#filters button",".map-readings button",".map-display button","#map-panel button"];
+      const controls=selectors.flatMap(s=>[...document.querySelectorAll(s)]).filter(e=>e.getClientRects().length).map(e=>({
+       height:e.getBoundingClientRect().height,font:parseFloat(getComputedStyle(e).fontSize)
+      }));
+      const texts=[...document.querySelectorAll("#municipality-map .map-marker-label")].map(x=>x.textContent);
+      return {width:document.documentElement.scrollWidth,viewport:innerWidth,controls,
+       markers:document.querySelectorAll("#municipality-map .map-marker").length,texts,
+       design:!![...document.styleSheets].some(s=>s.href?.endsWith("/cartes-design.css"))};
+     });
+     assert.ok(metrics.design,"Fichier Graphiste non chargé");
+     assert.ok(metrics.width<=metrics.viewport+1,"Débordement "+width+" "+reading);
+     assert.ok(metrics.controls.every(c=>c.height>=52&&c.font>=18),"Contrôle trop petit "+JSON.stringify(metrics.controls.filter(c=>c.height<52||c.font<18)));
+     assert.ok(metrics.markers>=2);
+     assert.ok(metrics.texts.every(s=>s.length>1));
+     assert.equal(await page.locator('.map-readings button[aria-pressed="true"]').count(),1);
+     assert.equal(await page.locator('.map-display button[aria-pressed="true"]').count(),1);
+     await page.screenshot({path:"artifacts/014-"+reading+"-carte-"+width+".png",fullPage:true});
+     await page.locator("#display-list").click();
+     await page.screenshot({path:"artifacts/014-"+reading+"-liste-"+width+".png",fullPage:true});
+    }
+    assert.deepEqual(errors,[]);
+   }finally{await page.close();}
+  }
+ }finally{await browser.close();}
+});
+test("014: fiche sans localisation dans la vue carte, navigation clavier et retour",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ try{
+  await page.route("**/cartes-data.mjs",async route=>{
+   const response=await route.fetch();
+   const body=await response.text();
+   const anchor="...others].map(item=>Object.freeze({";
+   assert.ok(body.includes(anchor));
+   await route.fulfill({body:body.replace(anchor,
+    '...others,{...others[0],id:"demo-sans-localisation",title:"Exemple sans commune",territories:[],locationLevel:"none"}].map(item=>Object.freeze({'),contentType:"text/javascript"});
+  });
+  await page.goto(PAGE,{waitUntil:"networkidle"});
+  await page.locator("#results .initiative-card").first().waitFor();
+  assert.equal(await page.locator("#results .initiative-card").count(),8);
+  await page.locator("#display-map").click();
+  assert.equal(await page.locator("#map-unlocated").isVisible(),true);
+  assert.equal(await page.locator("#map-unlocated-results .initiative-card").count(),1);
+  assert.equal(await page.locator("#municipality-map .map-marker").count(),4);
+  await page.locator('#map-unlocated-results a[data-id="demo-sans-localisation"]').focus();
+  await page.keyboard.press("Enter");
+  assert.equal(await page.locator("#detail h2").innerText(),"Exemple sans commune");
+  assert.ok(await page.locator("#detail h2").evaluate(e=>document.activeElement===e));
+  await page.locator("#back").click();
+  assert.ok(await page.locator("#map-unlocated-results a").evaluate(e=>document.activeElement===e));
+ }finally{await page.close();await browser.close();}
+});
+test("014: filtres cumulés puis commune sur SVG, liste, état vide et URL invalide",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ try{
+  await page.goto(PAGE,{waitUntil:"networkidle"});
+  await page.locator("#reading-possibles").click();
+  await page.locator("#category").selectOption("Réparation");
+  await page.locator("#objet").fill("Outils");
+  await page.locator("#scope").selectOption("besoin");
+  assert.deepEqual(await page.locator("#results a[data-id]").evaluateAll(es=>es.map(x=>x.dataset.id)),["demo-projet-gaillac"]);
+  await page.locator("#display-map").click();
+  assert.equal(await page.locator("#municipality-map .map-marker").count(),2);
+  await page.locator('#municipality-map [data-commune="Gaillac"]').focus();
+  await page.keyboard.press("Enter");
+  assert.equal(await page.locator("#display-list").getAttribute("aria-pressed"),"true");
+  assert.equal(await page.locator("#results .initiative-card").count(),1);
+  await page.locator("#commune").fill("Nullepart");
+  assert.equal(await page.locator("#results .initiative-card").count(),0);
+  await page.locator("#display-map").click();
+  assert.equal(await page.locator("#municipality-map .map-marker").count(),0);
+  await page.locator("#clear").click();
+  await page.goto(PAGE+"?initiative=introuvable");
+  await page.locator("#invalid-route").waitFor({state:"visible"});
+  assert.ok(await page.locator("#invalid-route").evaluate(e=>document.activeElement===e));
+ }finally{await page.close();await browser.close();}
+});

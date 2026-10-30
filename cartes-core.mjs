@@ -9,7 +9,7 @@ export function filterMapEntries(entries,{reading="communs",commune="",category=
  if(!["communs","possibles"].includes(reading))return [];
  const area=normalizeSearch(commune),cat=normalizeSearch(category),q=normalizeSearch(objet);
  const found=entries.filter(x=>x.isDemo===true&&x.source?.type==="simulation"&&x.reading===reading&&
-  (!area||x.territories.some(t=>normalizeSearch(t).includes(area)))&&
+  (!area||(Array.isArray(x.territories)&&x.territories.some(t=>normalizeSearch(t).includes(area))))&&
   (!cat||normalizeSearch(x.category)===cat)&&
   (!q||explainResourceMatch(x,objet,scope).length>0));
  return order==="titre"?[...found].sort((a,b)=>a.title.localeCompare(b.title,"fr")):found;
@@ -21,13 +21,13 @@ export function withoutPublicMapLocation(entries,anchors){
   !entry.territories.some(name=>available.has(name)));
 }
 export function communeGroups(entries,anchors){
- return anchors.map(anchor=>({anchor,items:entries.filter(x=>x.territories.includes(anchor.id))})).filter(g=>g.items.length);
+ return anchors.map(anchor=>({anchor,items:entries.filter(x=>Array.isArray(x.territories)&&x.territories.includes(anchor.id))})).filter(g=>g.items.length);
 }
 export function exportFictionalMapEntries(entries){
  return {version:"interstice-cartes-demo-v1",fictional:true,
   entries:entries.filter(x=>x.isDemo===true&&x.source?.type==="simulation").map(x=>({
    id:x.id,type:x.kind,reading:x.reading,title:x.title,category:x.category,
-   territoryNames:[...x.territories],summary:x.summary,needs:[...x.needs],offers:[...x.offers],
+   territoryNames:[...(x.territories||[])],summary:x.summary,needs:[...x.needs],offers:[...x.offers],
    status:"fictif",provenance:"simulation"
   }))};
 }

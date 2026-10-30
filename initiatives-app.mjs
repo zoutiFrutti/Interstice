@@ -78,7 +78,7 @@ commune.addEventListener("input",drawList);objet.addEventListener("input",drawLi
 $("clear").addEventListener("click",reset);$("clear-empty").addEventListener("click",reset);
 $("print-fiche").addEventListener("click",()=>window.print());
 $("back").addEventListener("click",()=>{const url=new URL(location.href);url.searchParams.delete("initiative");history.pushState(null,"",url.pathname+url.search+url.hash);showList(true);});
-for(const clickableList of [list,$("simulation-results")])clickableList.addEventListener("click",event=>{const a=event.target instanceof Element?event.target.closest("a[data-id]"):null;if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();
+for(const clickableList of [list,$("simulation-results"),$("map-unlocated-results")])clickableList.addEventListener("click",event=>{const a=event.target instanceof Element?event.target.closest("a[data-id]"):null;if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();
 returnOrigin={id:a.dataset.id,container:clickableList.id};
 history.pushState(null,"",a.href);showDetail(a.dataset.id,true);});
 addEventListener("popstate",navigate);
