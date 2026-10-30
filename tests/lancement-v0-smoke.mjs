@@ -58,6 +58,7 @@ try{
       manifest,
       nonAdopted:document.body.innerText.includes("non adoptée collectivement"),
       overflow:document.documentElement.scrollWidth>innerWidth+1,
+      reducedMotionScroll:getComputedStyle(document.documentElement).scrollBehavior,
       width:document.documentElement.scrollWidth,
       missingImages:[...document.images].filter(x=>!x.complete||!x.naturalWidth).map(x=>x.getAttribute("src")),
       controls:links.map(x=>({text:(x.innerText||x.getAttribute("aria-label")||"").slice(0,40),fg:getComputedStyle(x).color,bg:getComputedStyle(x).backgroundColor})),
@@ -79,6 +80,7 @@ try{
    if(dom.h1!==1)failed.push("h1 "+dom.h1);
    if(dom.manifest&&(dom.h2!==6||dom.h3!==2||!dom.nonAdopted))failed.push("Structure ou statut du manifeste");
    if(dom.overflow)failed.push("Débordement "+dom.width);
+   if(dom.reducedMotionScroll!=="auto")failed.push("Réduction des animations non respectée : "+dom.reducedMotionScroll);
    if(dom.missingImages.length)failed.push("Images "+dom.missingImages.join(","));
    if(!dom.logo)failed.push("Favicon manquant");
    if(!fontStates.reading||!fontStates.heading)failed.push("WOFF2 non chargées : "+JSON.stringify(fontStates));
@@ -150,6 +152,8 @@ try{
        await page.locator(".reading-toc a").first().focus();
        const style=await page.locator(".reading-toc a").first().evaluate(e=>getComputedStyle(e).outlineStyle);
        if(style==="none")failed.push("Focus sommaire absent");
+       const focusWidth=await page.locator(".reading-toc a").first().evaluate(e=>getComputedStyle(e).outlineWidth);
+       if(parseFloat(focusWidth)<3)failed.push("Focus sommaire trop discret : "+focusWidth);
        await page.screenshot({path:"visual-qa/"+filename.replace(".html","")+"-sommaire-"+viewport.label+".png",fullPage:false});
      }
      if(viewport.label==="compact"){
