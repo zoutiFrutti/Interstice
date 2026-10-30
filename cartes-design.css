@@ -73,6 +73,7 @@
 .initiative-main #map-panel .map-controls{gap:12px}
 .initiative-main #map-panel .map-controls span{font-size:18px;line-height:1.5;color:#f1e3d7}
 .initiative-main #map-panel button{min-height:54px;min-width:54px}
+.initiative-main #map-panel button:focus{outline:3px solid #fff0ca;outline-offset:3px}
 .initiative-main .map-marker-halo{r:54px;fill:#f2c0b1;fill-opacity:.10}
 .initiative-main .map-marker-label{font-size:19px}
 .initiative-main .map-axis-label{font-size:17px}
