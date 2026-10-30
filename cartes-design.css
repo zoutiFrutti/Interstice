@@ -1,0 +1,112 @@
+/* Candidat d'intégration graphique 013. Destiné uniquement au prototype fictif PR #41.
+   Design system Interstice/Faille noire réutilisé : aucune identité supplémentaire.
+   Chargement APRES initiatives.css et cartes.css. Ne contient ni données ni JS. */
+.initiative-main,.initiative-header{
+ --carte-ink:var(--faille-ivory,#e9e5db);
+ --carte-red:var(--faille-red,#c5212c);
+ --carte-line:#817777;
+ --carte-sheet:#211e22;
+ --carte-muted:#e7dcd5;
+ font-family:var(--font-reading,"Atkinson Hyperlegible Next",system-ui,sans-serif);
+}
+.initiative-main{max-width:1050px}
+.initiative-header .identity{font-family:var(--font-heading,"Barlow Condensed",sans-serif);font-size:clamp(25px,3vw,32px)}
+.initiative-main h1{font-size:clamp(42px,6vw,67px);line-height:1.1;max-width:18ch;margin:16px 0}
+.initiative-main h2{font-size:clamp(33px,4vw,44px);line-height:1.17}
+.initiative-main h3{font-size:clamp(25px,2.6vw,31px);line-height:1.22}
+.initiative-main p,.initiative-main li{font-size:19px;line-height:1.65;color:var(--carte-muted);overflow-wrap:anywhere}
+.initiative-main .lead{font-size:clamp(21px,2.4vw,24px);line-height:1.55;max-width:62ch}
+.initiative-main .tag{font-size:15px;line-height:1.5;letter-spacing:.055em}
+.initiative-main .demo-notice{background:#34291f;border:2px solid #e4bf88;padding:18px 22px}
+.initiative-main .demo-notice strong{font-size:19px;line-height:1.48;display:block;color:#fff2db}
+.initiative-main .demo-notice p{font-size:19px;color:#ffedd5}
+.initiative-main .discovery-jumps{margin-top:18px}
+.initiative-main .discovery-jumps a{min-height:54px;font-size:19px}
+.initiative-main #filters,.initiative-main #simulation-form{background:var(--carte-sheet);border:1px solid var(--carte-line);gap:16px;padding:22px}
+.initiative-main #filters label,.initiative-main #simulation-form label{font-size:19px;line-height:1.4;margin-bottom:8px;color:#f4e8dc}
+.initiative-main #filters input,.initiative-main #filters select,.initiative-main #filters button,
+.initiative-main #simulation-form select,.initiative-main #simulation-form button{
+ font-family:var(--font-reading,"Atkinson Hyperlegible Next",system-ui,sans-serif);
+ font-size:19px;line-height:1.35;min-height:56px;padding:12px 16px;
+}
+.initiative-main #filters input,.initiative-main #filters select,.initiative-main #simulation-form select{color:#fff3e9;background:#191c20;border:1px solid #a19c9a}
+.initiative-main button{min-height:54px;font-size:19px;line-height:1.35}
+.initiative-main button:focus-visible,.initiative-main a:focus-visible,
+.initiative-main input:focus-visible,.initiative-main select:focus-visible,
+.initiative-header a:focus-visible{outline:3px solid #fff0ca;outline-offset:3px}
+.initiative-main button:disabled{opacity:.65}
+.initiative-main .matching-note,.initiative-main .simulation-privacy{font-size:18px;line-height:1.6}
+.initiative-main .cartes{border-top:1px solid var(--carte-line)!important}
+.initiative-main .cartes h2{font-size:clamp(33px,4vw,44px);max-width:27ch}
+.initiative-main .cartes h3{font-size:clamp(25px,3vw,31px)}
+.initiative-main .map-readings,.initiative-main .map-display{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:20px 0}
+.initiative-main .map-readings button,.initiative-main .map-display button{
+ font-size:19px;line-height:1.38;min-height:60px;padding:14px 16px;
+ background:#2d272b;border:2px solid #928b87;color:#f7eee7;white-space:normal;
+}
+.initiative-main .map-readings button[aria-pressed="true"],
+.initiative-main .map-display button[aria-pressed="true"]{background:#a92535;border-color:#edc7c4;color:#fff;font-weight:800}
+.initiative-main .map-readings button[aria-pressed="false"],
+.initiative-main .map-display button[aria-pressed="false"]{text-decoration:underline;text-underline-offset:3px}
+.initiative-main #reading-description{padding:14px 17px;background:#2d2528;border-left:4px solid #e1b4ac;font-size:19px;color:#f1e3d6}
+.initiative-main .initiative-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.initiative-main .initiative-card{max-width:none;padding:24px;border:1px solid #918282;background:#241f24;border-radius:12px;gap:12px}
+.initiative-main .initiative-card .demo-tag{font-size:18px;font-weight:800;color:#ffdfb8;letter-spacing:.025em}
+.initiative-main .initiative-card .entry-kind{align-self:flex-start;display:inline-block;font-size:18px;font-weight:850;letter-spacing:.015em;line-height:1.4;padding:8px 13px;color:#fff0e9;background:#783040;border:2px solid #d69a9e;border-radius:7px}
+.initiative-main .initiative-card h3{font-size:clamp(27px,3vw,34px);margin:4px 0 0}
+.initiative-main .initiative-card p{font-size:19px;line-height:1.65}
+.initiative-main .initiative-card .category-chip,
+.initiative-main #detail .category-chip{font-size:18px;font-weight:700;padding:9px 14px;line-height:1.4;border-radius:7px}
+.initiative-main .initiative-card a{
+ display:inline-flex;align-self:stretch;justify-content:center;min-height:56px;
+ margin-top:auto;padding:13px 16px;border-radius:7px;background:#a92535;
+ color:#fff;text-decoration:none;font-size:19px;font-weight:800;text-align:center;line-height:1.4;
+}
+.initiative-main .initiative-card a:hover{background:#c63949}
+.initiative-main .match-reasons{font-size:18px;line-height:1.6;background:#302b28;border-left:4px solid #e2b889;padding:12px 16px}
+.initiative-main .results-heading{gap:13px}
+.initiative-main #count{font-size:19px;font-weight:650}
+.initiative-main .map-legend{margin-top:24px;padding:17px 20px;border:1px solid #a28d79;border-radius:8px;background:#2c2727;font-size:18px;line-height:1.75;color:#f2e4db}
+.initiative-main .map-legend strong{color:#ffe3b9}
+.initiative-main .map-caption{font-size:18px}
+.initiative-main #map-panel{background:#1d2428;border:1px solid #978f8d;padding:16px;border-radius:12px}
+.initiative-main #map-panel .map-controls{gap:12px}
+.initiative-main #map-panel .map-controls span{font-size:18px;line-height:1.5;color:#f1e3d7}
+.initiative-main #map-panel button{min-height:54px;min-width:54px}
+.initiative-main .map-marker-halo{r:54px;fill:#f2c0b1;fill-opacity:.10}
+.initiative-main .map-marker-label{font-size:19px}
+.initiative-main .map-axis-label{font-size:17px}
+.initiative-main .map-marker:focus-visible .map-marker-halo{stroke:#fff2d2;stroke-width:4px}
+.initiative-main .map-marker.is-selected .map-marker-circle{fill:#df9a47}
+.initiative-main .map-state{font-size:19px;line-height:1.6;border-color:#e4b78c;background:#312c2c}
+.initiative-main .provenance{font-size:18px;line-height:1.6}
+.initiative-main .provenance p{font-size:18px}
+.initiative-main .detail-controls button{font-size:19px;min-height:56px}
+.initiative-main #detail .description{font-size:21px;line-height:1.6}
+.initiative-main #detail .detail-section a{display:inline-flex;min-height:52px;align-items:center;font-size:19px}
+.initiative-main .empty,.initiative-main #no-results{padding:22px}
+.initiative-main .export-note{font-size:18px}
+@media(max-width:760px){
+ .initiative-main .initiative-grid{grid-template-columns:minmax(0,1fr)}
+ .initiative-main #filters,.initiative-main #simulation-form{grid-template-columns:minmax(0,1fr)}
+ .initiative-main .initiative-card{padding:20px}
+}
+@media(max-width:480px){
+ .initiative-main{padding:18px}
+ .initiative-main h1{font-size:clamp(41px,10.7vw,46px)}
+ .initiative-main .lead{font-size:21px}
+ .initiative-main p,.initiative-main li{font-size:18px}
+ .initiative-main .map-readings,.initiative-main .map-display{grid-template-columns:1fr;gap:10px}
+ .initiative-main .map-readings button,.initiative-main .map-display button{min-height:58px}
+ .initiative-main #filters,.initiative-main #simulation-form{padding:16px}
+ .initiative-main .initiative-card{padding:19px}
+ .initiative-main .initiative-card p{font-size:18px}
+ .initiative-main .initiative-card h3{font-size:28px}
+ .initiative-main .map-legend{font-size:18px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+ .initiative-main #list-panel[hidden]{display:block!important}
+ .initiative-main #map-panel{display:none!important}
+ .initiative-main .map-readings,.initiative-main .map-display{display:none!important}
+}

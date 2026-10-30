@@ -1,0 +1,52 @@
+name: Graphiste 013 - integration cartes fictives (PR35 x PR41)
+on:
+  push:
+    branches: [design/lancement-v0-verifications-2026-10-30]
+    paths:
+      - 'cartes-design.css'
+      - 'tests/graphiste-cartes-013.mjs'
+      - '.github/workflows/graphiste-cartes-013.yml'
+      - 'style.css'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prototypes-graphiques:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - name: Checkout graphiste PR35
+        uses: actions/checkout@v4
+      - name: Checkout du prototype PR41 fige et non modifie
+        uses: actions/checkout@v4
+        with:
+          repository: zoutiFrutti/Interstice
+          ref: 332a5105a01d1bc2fafb2aca77c06cdb38ea37ae
+          path: prototype-pr41
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Chromium - outils
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Preparer les polices communes sans toucher au projet PR41
+        run: |
+          cp style.css prototype-pr41/style.css
+          mkdir -p prototype-pr41/assets/fonts
+          cp assets/fonts/*.woff2 prototype-pr41/assets/fonts/
+      - name: Tester et photographier les deux lectures en local
+        run: |
+          python3 -m http.server 8766 --bind 127.0.0.1 --directory prototype-pr41 >/tmp/cartes-qa.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          node tests/graphiste-cartes-013.mjs
+      - name: Archiver les captures et le rapport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: graphiste013-cartes-390-1280
+          path: visual-qa/cartes/
+          retention-days: 7
+          if-no-files-found: warn
