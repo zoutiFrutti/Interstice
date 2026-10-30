@@ -4,6 +4,7 @@ import {findCompatibleExamples} from "./initiatives-simulation.mjs";
 const repo=createDemoRepository(DEMO_INITIATIVES),$=id=>document.getElementById(id);
 const form=$("filters"),commune=$("commune"),category=$("category"),objet=$("objet"),scope=$("scope"),order=$("order"),list=$("results"),count=$("count"),empty=$("no-results"),explorer=$("explorer"),detail=$("detail"),content=$("detail-content");
 let sequence=0;
+let returnOrigin=null; // lien activé avant la fiche : restauration du focus clavier.
 function node(tag,content,cls=""){const el=document.createElement(tag);el.textContent=content;if(cls)el.className=cls;return el;}
 function urlFor(id){const url=new URL(location.href);url.searchParams.set("initiative",id);return url.pathname+url.search+url.hash;}
 function makeCard(item){
@@ -21,7 +22,17 @@ async function drawList(){
  list.replaceChildren(...rows.map(makeCard));count.textContent=rows.length+" initiative"+(rows.length>1?"s":"")+" fictive"+(rows.length>1?"s":"")+" trouvée"+(rows.length>1?"s":"");empty.hidden=rows.length>0;$("export-demo").disabled=rows.length===0;
 }
 function addList(title,entries){const section=node("section","","detail-section");section.append(node("h3",title));const ul=document.createElement("ul");for(const entry of entries)ul.append(node("li",entry));section.append(ul);content.append(section);}
-function showList(focus=false){detail.hidden=true;explorer.hidden=false;drawList();if(focus){const h=$("explorer-title");h.tabIndex=-1;h.focus();}}
+async function showList(focus=false){
+ detail.hidden=true;explorer.hidden=false;
+ await drawList();
+ if(focus){
+   const target=returnOrigin&&[...document.querySelectorAll("#results a[data-id],#simulation-results a[data-id]")]
+     .find(a=>a.dataset.id===returnOrigin.id&&a.closest("#"+returnOrigin.container));
+   const destination=target||$("explorer-title");
+   destination.tabIndex=destination===target?0:-1;
+   destination.focus();
+ }
+}
 async function showDetail(id,focus=false){
  const item=await repo.getById(id);
  if(!item){
@@ -46,7 +57,9 @@ commune.addEventListener("input",drawList);objet.addEventListener("input",drawLi
 $("clear").addEventListener("click",reset);$("clear-empty").addEventListener("click",reset);
 $("print-fiche").addEventListener("click",()=>window.print());
 $("back").addEventListener("click",()=>{const url=new URL(location.href);url.searchParams.delete("initiative");history.pushState(null,"",url.pathname+url.search+url.hash);showList(true);});
-for(const clickableList of [list,$("simulation-results")])clickableList.addEventListener("click",event=>{const a=event.target instanceof Element?event.target.closest("a[data-id]"):null;if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();history.pushState(null,"",a.href);showDetail(a.dataset.id,true);});
+for(const clickableList of [list,$("simulation-results")])clickableList.addEventListener("click",event=>{const a=event.target instanceof Element?event.target.closest("a[data-id]"):null;if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();
+returnOrigin={id:a.dataset.id,container:clickableList.id};
+history.pushState(null,"",a.href);showDetail(a.dataset.id,true);});
 addEventListener("popstate",navigate);
 // La simulation ne lit que des choix prédéfinis, jamais de données d'une personne.
 const simulationForm=$("simulation-form"),simulationMessage=$("simulation-message"),simulationResults=$("simulation-results");

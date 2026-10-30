@@ -35,3 +35,7 @@
 #simulation-message{min-height:1.5em;color:#e8e4db}
 @media(max-width:760px){#simulation-form{grid-template-columns:1fr}.simulation-actions{flex-direction:column}}
 @media print{.simulator{display:none!important}}
+
+/* Mise au point tactile et focus : conserver une taille minimale cliquable. */
+.discovery-jumps a,.initiative-card a,.initiative-header a{min-height:44px;display:inline-flex;align-items:center}
+@media(max-width:360px){#filters,#simulation-form{padding:12px}.initiative-card{padding:16px}.initiative-main{padding:12px}}

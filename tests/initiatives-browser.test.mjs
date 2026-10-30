@@ -136,3 +136,44 @@ test("simulation mobile : besoin, offre, territoire, correspondances explicables
   assert.deepEqual(errors,[]);
  }finally{await page.close();await browser.close();}
 });
+
+test("retour au lien d'origine : clavier, simulation, navigateur précédent",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:360,height:740}});
+ try{
+  await page.goto(PAGE);
+  await page.locator("#results a[data-id]").first().waitFor();
+  await page.locator("#results a[data-id]").first().focus();
+  await page.keyboard.press("Enter");
+  await page.locator("#detail h2").waitFor();
+  assert.equal(await page.locator("#detail h2").evaluate(x=>document.activeElement===x),true);
+  await page.locator("#back").click();
+  assert.equal(await page.locator('#results a[data-id="demo-jardin"]').evaluate(x=>document.activeElement===x),true);
+  await page.locator("#simulation-go").click();
+  await page.locator("#simulation-results a[data-id]").first().focus();
+  await page.keyboard.press("Enter");
+  await page.locator("#detail h2").waitFor();
+  await page.goBack();
+  await page.locator("#explorer").waitFor({state:"visible"});
+  assert.equal(await page.locator('#simulation-results a[data-id="demo-outils"]').evaluate(x=>document.activeElement===x),true);
+ }finally{await page.close();await browser.close();}
+});
+
+test("tailles d'écran : aucune colonne débordante de 320px à 1024px",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage();
+ try{
+  await page.goto(PAGE);
+  await page.locator(".initiative-card").first().waitFor();
+  for(const width of [320,360,390,768,1024]){
+   await page.setViewportSize({width,height:780});
+   const state=await page.evaluate(()=>({outer:document.documentElement.scrollWidth,inner:window.innerWidth}));
+   assert.ok(state.outer<=state.inner,"Débordement horizontal à "+width+"px : "+JSON.stringify(state));
+  }
+  await page.locator("#simulation-go").click();
+  for(const width of [320,390,768]){
+   await page.setViewportSize({width,height:780});
+   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),"Débordement simulation à "+width);
+  }
+ }finally{await page.close();await browser.close();}
+});
