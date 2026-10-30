@@ -207,3 +207,49 @@ Pour reproduire les tests navigateur sur Ubuntu 24.04/Node 22 : `npm install --n
 **Blocages avant données réelles :** consentement explicite, provenances vérifiées, droit de correction/masquage, autorisations des contacts publics, sécurité des accès et capacités de modération, revue Anarchitecte/Juriste. Pas de Supabase, de géocodage, de messagerie, de réservation ou de déploiement dans ce cycle. Les fiches restent intégralement fictives ; les mentions « documenté » ne valent que **dans le scénario inventé**.
 
 **Pour le Relieur :** demander validation Graphiste de `cartes-compat.css` vis-à-vis de PR #35 ; organiser un test humain mobile/lecteur d'écran ; reprendre la CI quand la file se vide ; préparer une résolution conservatrice des conflits du Journal, sans supprimer les apports des ateliers. Les études critiques 39–58 et le manifeste V2.5 ne sont pas collectivement adoptés.
+
+
+## Transmission 015 — contrôle Anarchitecte, six lots de cinq
+
+Les actions sont numérotées selon `coordination/RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATION_2026-10-30.md`. `FAIT` signifie une action de lecture, comparaison, code ou diagnostic effectivement réalisée ; **BLOQUÉ** ne signifie pas que le test a échoué sur le HEAD actuel, mais que sa validation manque.
+
+| Passe | État | Résultat vérifiable |
+|---|---|---|
+| 01 | FAIT | `main` contrôlé à `225a4bff0c98c2d605f5fd4382b5811dae36447f`, puis évolution constatée ; ne pas figer main pour l'assemblage |
+| 02 | FAIT | PR #41 comparée à main : 26 devant / 110 derrière au contrôle |
+| 03 | FAIT | Run GitHub Actions `41101912014` lu : Node réussi, navigateur en échec |
+| 04 | FAIT | Chromium à 320 px : débordement mesuré 339 px pour 320 px, soit +19 px ; confinement CSS ciblé dans `cartes-compat.css`, commit `206020b` ; correction **non encore prouvée** en navigateur |
+| 05 | FAIT | Cause code du focus : sélecteur de restauration excluait `#map-unlocated-results a[data-id]`; corrigé dans `initiatives-app.mjs`, commit `0ecd371` |
+| 06 | FAIT | Après filtre Gaillac puis lecture « possibles », deux communes observées et non trois : conservation du filtre ; attente test corrigée, retour à trois vérifié après reset **dans test ajouté**, commit `015d392` |
+| 07 | FAIT | Comparaison Node / Chromium du run : job `test-core` success, `browser-mobile` failure |
+| 08 | FAIT | Contrôle des fichiers Graphiste : `cartes-design.css` et `cartes-compat.css` déjà présents sur #41, pas de recopie de l'application |
+| 09 | FAIT | Le module SVG est chargé par `import("./cartes-map.mjs")` avec repli sur la liste en cas de rejet |
+| 10 | FAIT | Chemin sans commune inspecté, lien de fiche corrigé pour restaurer focus |
+| 11 | FAIT | Contrat réutilise `filterMapEntries`, `communeGroups` et un même tableau public fictif |
+| 12 | FAIT | `exportFictionalMapEntries` utilise une liste blanche et refuse les objets non simulés |
+| 13 | FAIT | Test canari DOM/URL/erreurs/export `015` présent dans le test navigateur |
+| 14 | BLOQUÉ | Test canari de confidentialité pas encore validé par le nouveau run Chromium |
+| 15 | FAIT | Fixtures marquées `isDemo:true`, `source.type=simulation` ; aucune validation d'initiative réelle |
+| 16 | FAIT | Contrat documentaire #43 examiné : fichier message JSON avec ID stable, auteur, destinataires, source, état, date et résultat |
+| 17 | FAIT | États `PREPAREE` / `DEPOSEE` distincts des `ACCUSEE_PAR_ATELIER`, `EN_COURS`, `TERMINEE` |
+| 18 | FAIT | JSON de `015-relieuse-developpeuse-001` relu : `PREPAREE`, `ack_at:null`, aucune preuve de réception |
+| 19 | FAIT | Validateur `scripts/coordination-check.mjs` inspecté : calcul des erreurs structurelles et rapport lecture seule, sans appel à une API IA |
+| 20 | FAIT | Prévention logique : unicité ID, preuve d'accusé distincte, aucun rebouclage déclenché par dépôt Git seul ; proposition, pas exécution d'agents |
+| 21 | FAIT | #35 modifie CSS partagé ; #41 comporte CSS graphique et correctifs scoped : ne pas copier `style.css` entier |
+| 22 | FAIT | #35 et #44 touchent les deux HTML Wiki : fusion de sections manuelle après validation éditoriale |
+| 23 | FAIT | Risque `coordination/JOURNAL_COMMUN.md` récurrent : append au HEAD uniquement, préserver historique |
+| 24 | BLOQUÉ | Pas de preuve d'exécution des correctifs sur dernier SHA au moment de ce rapport |
+| 25 | FAIT | Permissions du workflow #41 : `contents:read`, test Node et Chromium, captures en artefacts, aucune écriture Supabase |
+| 26 | FAIT | Trois corrections ciblées sur branche #41 existante : focus, test filtre communal, confinement CSS |
+| 27 | BLOQUÉ | CI du dernier HEAD doit montrer **deux jobs réussis** et absence des 3 échecs précédents |
+| 28 | FAIT | Essai sur Android physique non réalisé ; le Chromium CI, même vert, ne remplace pas cette vérification |
+| 29 | FAIT | Ordre prudent : corriger/tester #41, assembler CSS #35, garder #42 isolée, réconcilier #44 et #35 après relecture |
+| 30 | FAIT | Présente synthèse au Relieur / Relieuse ; GitHub n'accuse pas réception à la place d'une conversation |
+
+### Verdict et validation restante
+
+**Corrections techniques déposées, non certifiées en navigateur au dernier SHA.** Trois anomalies du run 41101912014 diagnostiquées ; deux corrections directement fondées sur le code et une protection CSS mobile ciblée. Vérifier le job Chromium, le focus réel et débordement à 320/390/1280 sur le commit final avant avis « prêt ». Aucun déploiement ni ouverture de données réelles.
+
+### Contrat documentaire candidat #43
+
+Réutiliser les champs `id/from/to/subject/source_refs/requires/mission_ref/status/created_at/ack_at/result_ref`. Valider les références et états sans jamais faire d'une écriture Git un accusé ou un déclenchement d'agent. Toute éventuelle automatisation doit être conçue séparément avec contrôle des permissions, anti-boucles, exclusivité des identifiants et décision humaine, pas ajoutée au validateur lecture seule.
