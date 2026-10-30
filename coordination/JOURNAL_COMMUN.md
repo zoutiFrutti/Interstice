@@ -1166,3 +1166,23 @@ Contrôle documentaire ciblé des références `refs/pull/27/head` et `refs/pull
 ## 2026-10-30 — Anarchitecte — Transmission 013, cartes des communs et des possibles
 
 Dix passes sur la PR #41 existante, sans reprise de PR #36 : HEAD main et divergence contrôlés ; contrat existant `initiatives-core.mjs` et six exemples fictifs examinés ; modèle unifié des quatre objets, identifiants/relations/états/provenance, localisation protectrice, données publiques/privées séparées, liste et carte cohérentes, scénarios anti-fuite API/export/métadonnées, comparaisons PR #35/#41/#42/#44 et blocages Wiki ; document d'architecture directement exploitable `coordination/ANARCHITECTE_CONTRAT_CARTES_013_2026-10-30.md`, commit `2af565f5c3e604de9cc7c54b8ee733c306f79b9d`. Quatre tests complémentaires ajoutés à `tests/initiatives-core.test.mjs` sur la branche de la Développeuse PR #41, commit `c0f4344d8f10b102d78d96cacf3add6f438fa1c7`. Succès CI à vérifier ; aucune migration Supabase, seconde application, fusion, donnée réelle ou publication. Études non adoptées. Relieur : coordonner le pilote fictif et les décisions humaines avant données réelles.
+
+
+## 2026-10-30 · Communications · Transmission 013 — paquet de lancement soumis à validation
+**Mission reprise :** trois carrousels de 009/012, sans nouvelle campagne. Référence 013 et derniers résultats relus. Dix volets traités, dont le contrôle Metricool BLOQUÉ et non déclaré terminé :
+1. Trois dossiers graphiques : douze JPG vérifiés contre le manifeste TSV, RGB 1080×1350, tailles et SHA-256 conformes.
+2. Légendes et référence : référence V2.5 du dépôt lue, trois légendes conservées ; pas de nouvelle lecture intégrale des auteurs revendiquée.
+3. Brouillons : non vérifiés ; après la dernière connexion non aboutie/refusée, aucune nouvelle demande d'identifiants ni tentative de contournement. Aucun import, donc aucun doublon créé.
+4. Douze noms de fichiers associés aux alternatives dans l'ordre ; nature IA documentée dans le kit, mais champs Metricool non contrôlés.
+5. Remplacement proposé du présent « Interstice sert à cartographier » par une formulation « se construit pour… cartographie en développement » ; aucune image source retouchée, décision humaine requise. Correction du visuel préférée à une simple note susceptible d'être séparée de l'image.
+6. Texte de présentation des deux cartes rédigé : existant documenté/déclaré visé versus besoins/offres/projets proposés ; exemples fictifs actuels, pas d'annuaire réel.
+7. Matrice existant/candidat/prototype/objectif préparée à partir de refs/pull/41/head, de refs/pull/44/head et de la référence 013 ; aucun déploiement ni test Android attesté par cette lecture.
+8. Texte de présentation du chantier site et texte conditionnel d'annonce des deux articles rédigés séparément. Annonce « publiés » interdite avant vérification publique et validation.
+9. Traitement proposé des critiques, erreurs, contributions et données sensibles précisé : pas de recopie dans GitHub, pas de délai garanti ni de canal privé présumé.
+10. Paquet final créé et contrôlé : LA_FAILLE_NOIRE_LANCEMENT_VALIDATION_013.zip, 28 entrées, sources originales et dossier VALIDATION_013 séparés ; 12 empreintes des images recomparées après compression. Fichier enregistré pour la personne utilisatrice. Fiche existante enrichie, commit 0024138b179a030ac129e37c5fc9b241c379782a, puis relue.
+
+**Preuves source :** manifeste-v2-5.html blob 56724f54bf6d05434d02ad7fd905509f92402a5d ; candidats PR #44 Décider blob 45a0f246d7cb88d837d1d6ec268cc562bf2fc0f4 et Travail blob e478811c6c5b4108621ca90033f601b7fca76ebd ; initiatives-core.mjs PR #41 blob 0f4b31a2baf5b55f0980b7a937e4a92105d241e7. Blobs de fichiers, pas SHA de HEAD ni preuve de publication. Les versions de branche peuvent continuer d'évoluer.
+
+**Retour au Relieur :** préparation disponible dans la fiche de lancement existante ; aucune réception dans sa conversation présumée. Trois arbitrages : correction graphique 03_04 ; validation des versions publiques/liens des deux articles ; moyens volontaires de suivi. Prochaine action utile côté Metricool : session authentifiée et contrôle des brouillons, avec vérification d'absence de doublon avant import. Le Relieur coordonne, aucun Organisateur distinct.
+
+**État :** paquet prêt à examiner ; Metricool et parcours public restant à vérifier ; publication en attente de décision humaine. Aucun post, programmation, collecte de données réelles, fusion ou déploiement effectué.
