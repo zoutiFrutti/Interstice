@@ -185,3 +185,16 @@ body.wiki-reading {font-family:var(--font-reading);font-size:19px;line-height:1.
  .wiki-reading .reading-toc,.wiki-reading .reading-actions {display:none}
  .wiki-reading main > section {max-width:100%}
 }
+
+
+/* Transmission 013 : hiérarchie de l'accueil. Pas de nouvelle marque. */
+.home-page .home-hero{max-width:780px}
+.home-page .home-hero .hero-intro{max-width:690px}
+.home-page .home-hero .hero-actions{gap:14px}
+.home-page .home-hero .hero-actions a{min-height:58px}
+@media(max-width:480px){
+ .home-page .home-hero{padding-top:24px;padding-bottom:42px}
+ .home-page .home-hero .hero-intro{gap:10px;margin-top:16px}
+ .home-page .home-hero .hero-actions{margin-top:22px}
+ .home-page .home-hero .hero-actions a{font-size:19px;line-height:1.35;min-height:58px}
+}
