@@ -830,3 +830,14 @@ Qu'est-ce qui vous paraît utile, flou ou contestable dans cette proposition ? V
 **Coordination :** besoins Graphiste et Anarchitecte consignés ici pour transmission et suivi ; aucune réception par ces ateliers n'est présumée. Aucun message envoyé à un tiers. Responsable de suivi des retours, canal privé et procédure de traitement à désigner avant appel large.
 
 **Restant :** récupérer les exports existants ; vérifier réellement les brouillons après authentification ; valider moyens de participation et lien public ; faire approuver le message et le lancement. Aucun manifeste, visuel ou légende existante modifié.
+
+## 2026-10-30 · Atelier du Juriste — participation citoyenne et cartographie
+
+**Saisine :** transmission du Penseur, garanties juridiques de la carte et future application Interstice. **Source politique :** Manifeste V2.5 consolidé, référence éditoriale non adoptée. **Faits étudiés :** formulaires et modération `main`, audit technique du 29-10 et métadonnées des sept tables `public` Supabase lues le 30-10 (RLS active ; aucune table cartographique dédiée visible dans ce schéma). Il ne s'agit pas d'un test de sécurité complet ni d'une preuve d'application mobile déployée.
+
+**Sources externes :** CNIL (géolocalisation, annuaires, bases légales, droits), EUR-Lex DSA 2022/2065, Etalab Licence ouverte 2.0, OpenStreetMap ODbL. **Risques :** publication de domiciles/lieux sensibles, données politiques ou de mineurs, captation de fiches, confusion référencement/approbation, modération arbitraire, licences et responsabilités lors de rencontres. **Choix proposé :** localisation approximative par défaut ; séparation référencement/faits/pratiques ; gestion vérifiée des fiches sans propriété des faits ; recours et modération motivés ; aucun label moral ni localisation personnelle continue.
+
+**Fichiers réellement créés et relus :** `docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md` (commit `decec5b`) ; `propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md` (commit `4083f93`) ; `coordination/JURISTE_TRANSMISSION_CARTOGRAPHIE_2026-10-30.md` (commit `a731678`). Ce sont **des propositions non adoptées**. La transmission est disponible dans GitHub pour Développeur, Anarchitecte, Organisateur, Penseur et Relieur ; leur lecture n'est pas attestée. Aucun changement du manifeste, de la charte constitutive, du site ou de Supabase.
+
+**Suite :** décisions collectives sur référencement et critères de pratiques ; identification responsable RGPD, licences et conditions de traitement ; analyse DSA selon service réel ; audit API/RLS, tests de localisation, parcours de correction et moyens hors application avant lancement.
+
