@@ -73,6 +73,27 @@ try{
   await page.locator("#display-map").click();
   await page.locator("#municipality-map .map-marker").first().waitFor();
   await check("communs-carte");
+  const svgQA=await page.evaluate(()=>{
+    const panel=document.querySelector("#map-panel"),svg=document.querySelector("#municipality-map");
+    const label=svg.querySelector(".map-marker-label");
+    return {labelSize:parseFloat(getComputedStyle(label).fontSize),overflowX:getComputedStyle(panel).overflowX,
+      scrollWidth:panel.scrollWidth,clientWidth:panel.clientWidth,svgWidth:Math.round(svg.getBoundingClientRect().width)};
+  });
+  if(screen.id==="mobile"){
+    assert.ok(svgQA.labelSize>=22,"SVG label font too small "+JSON.stringify(svgQA));
+    assert.ok(svgQA.scrollWidth>svgQA.clientWidth+100,"SVG mobile not swipeable "+JSON.stringify(svgQA));
+    await page.locator("#map-panel").evaluate(e=>e.scrollLeft=250);
+    assert.ok(await page.locator("#map-panel").evaluate(e=>e.scrollLeft>100),"SVG panel cannot scroll");
+    await page.locator("#map-panel").evaluate(e=>e.scrollLeft=0);
+  }
+  const view0=await page.locator("#municipality-map").getAttribute("viewBox");
+  await page.locator("#map-zoom-in").click();
+  const view1=await page.locator("#municipality-map").getAttribute("viewBox");
+  assert.notEqual(view1,view0,"SVG zoom not working");
+  await page.locator("#map-zoom-reset").click();
+  assert.equal(await page.locator("#municipality-map").getAttribute("viewBox"),view0,"SVG reset not working");
+  results.push({screen:screen.id,step:"svgsizes-swipe-zoom",ok:true,svgQA});
+
   assert.equal(await page.locator("#list-panel").isVisible(),false);
   await grab("communs-carte");
   await page.locator("#display-list").click();
@@ -116,6 +137,22 @@ try{
   assert.deepEqual(external,[],"Réseau externe interdit en démonstration");
   results.push({screen:screen.id,step:"filtres-retour-focus-confidentialite",ok:true,filtered,details,focusStyle});
   console.log("PASS "+screen.id+" filtres-retour-focus-confidentialite");
+  const withoutMap=await context.newPage();
+  const fallbackErrors=[];
+  withoutMap.on("pageerror",e=>fallbackErrors.push(e.message));
+  await withoutMap.route("**/cartes-map.mjs",route=>route.abort());
+  await withoutMap.goto(target,{waitUntil:"networkidle"});
+  await withoutMap.locator("#results .initiative-card").first().waitFor();
+  assert.equal(await withoutMap.locator("#results .initiative-card").count(),7,"Fallback list incomplete");
+  assert.ok(await withoutMap.locator("#display-map").isDisabled(),"Map should be disabled");
+  assert.ok(await withoutMap.locator("#map-fallback").isVisible(),"Fallback explanation missing");
+  await withoutMap.locator("#reading-possibles").click();
+  assert.equal(await withoutMap.locator("#results .initiative-card").count(),4,"Fallback possibles list");
+  assert.deepEqual(fallbackErrors,[],"Unhandled map loading error");
+  await withoutMap.screenshot({path:path.join(folder,"sans-moteur-carte-"+screen.id+".png"),fullPage:true});
+  results.push({screen:screen.id,step:"list-without-mapping-engine",ok:true});
+  console.log("PASS "+screen.id+" list-without-mapping-engine");
+  await withoutMap.close();
   await page.close();
   await context.close();
  }
