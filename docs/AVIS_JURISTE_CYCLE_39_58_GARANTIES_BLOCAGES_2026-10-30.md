@@ -120,4 +120,31 @@ Ces clauses sont des **propositions de gouvernance** ; elles ne modifient ni les
 - **Test de droit complémentaire à ajouter lors de la future intégration** : vérifier par comptes fictifs que l'initiative revendiquant une fiche ne peut pas lire les commentaires privés ou les coordonnées d'une autre personne, ni effacer des objections légalement conservables.
 
 **Conclusion de cette passe :** **aucune objection juridique à conserver la PR comme démonstration fictive en brouillon** sur la seule base des fichiers inspectés. **Aucune autorisation** de fusion, de publication de fiches réelles ou de mise en relation n'en découle. Le futur adaptateur HTTP doit satisfaire B1–B4.
+---
+
+## VIII. Décision de tri AIPD et obligations d'incident — vérification juridique supplémentaire
+
+### AIPD : critère légal, application concrète et non-extrapolation
+
+La [CNIL](https://www.cnil.fr/fr/RGPD-analyse-impact-protection-des-donnees-aipd) rappelle qu'une analyse d'impact (AIPD) est requise pour les traitements **susceptibles d'engendrer un risque élevé**. Sa [grille de tri](https://www.cnil.fr/sites/default/files/atoms/files/infographie_aipd.pdf) met notamment en avant géolocalisation ou informations sensibles, personnes vulnérables, rapprochements de sources, grande échelle, scoring et surveillance systématique. Le seuil indicatif de **deux critères** appelle normalement une AIPD ; l'examen des listes réglementaires et des circonstances demeure nécessaire.
+
+| Périmètre réel | Constat | Décision de conformité à prendre |
+|---|---|---|
+| **PR #41, six exemples inventés** | Les seules fiches démo ne représentent pas d'individus réels ; ni GPS ni collecte côté module inspecté | Ne pas déclarer une AIPD obligatoire pour cette **démo isolée** ; maintenir séparation avec toute donnée réelle |
+| **Annuaire d'initiatives publiques et communes larges** | Des personnes physiques peuvent devenir identifiables par nom, association, localisation, historique | Réaliser au minimum la grille CNIL documentée et définir la base légale par finalité ; décider au vu du risque si l'AIPD complète est nécessaire |
+| **Lieux d'habitation, refuges, minorités vulnérables, données politiques individuelles, croisement cartographique ou mise en relation** | Plusieurs critères de risque élevé sont susceptibles d'être cumulés | **Ne pas activer ces fonctions sans examen formel de l'obligation d'AIPD et, si nécessaire, sa réalisation préalable** ; privilégier leur exclusion du MVP |
+
+Ce tableau est un **tri préliminaire**, non une AIPD réalisée et validée. Le contexte, les champs exacts et l'organisme responsable n'étant pas arrêtés, l'obligation ne peut être tranchée globalement une fois pour toutes.
+
+### Violations de données : troisième délai à ne pas confondre avec les recours
+
+Selon le [RGPD, articles 33 et 34](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4) et les [explications de la CNIL](https://www.cnil.fr/fr/violations-de-donnees-personnelles-les-regles-suivre) :
+- Toute violation de données personnelles doit être **documentée** selon l'article 33.5, même en l'absence de risque nécessitant notification à l'autorité.
+- Lorsque la violation est susceptible d'entraîner un risque pour les droits et libertés, le responsable du traitement doit notifier la CNIL **dans les meilleurs délais et si possible sous 72 heures** après en avoir pris connaissance ; justifier tout retard.
+- Lorsque le risque pour les personnes est **élevé**, leur information est également requise sans retard injustifié, sauf exceptions applicables ; l'évaluation du risque doit être consignée.
+- Le délai RGPD de réponse aux **demandes de droits** est en principe **un mois** ([CNIL](https://www.cnil.fr/fr/passer-laction/les-droits-des-personnes-sur-leurs-donnees)). Les objectifs volontaires de modération et de réponse aux signalements doivent être distingués des deux régimes.
+
+**Recommandation technique :** concevoir une fiche d'incident accessible uniquement aux personnes habilitées : date de constat, exposition probable, périmètre, mesures de confinement, risque, preuve de la notification ou motif documenté de non-notification. Ne jamais placer un incident réel avec identités dans le journal public GitHub. Aucun incident de sécurité réel n'est déclaré dans cette étude.
+
+**Blocage opérationnel restant :** aucun responsable de traitement effectif, destinataire opérationnel des demandes ni capacité d'astreinte de protection n'est prouvé par les documents consultés ; le Relieur doit préparer la coordination humaine, non se déclarer d'office responsable juridique de la base.
 
