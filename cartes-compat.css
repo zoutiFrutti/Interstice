@@ -34,3 +34,19 @@
  .initiative-main #filters,.initiative-main #simulation-form{padding:12px}
  .initiative-main .map-legend,.initiative-main #map-panel{padding:10px}
 }
+
+/* Carte existante conservée : lecture SVG à taille réelle dans une région défilante,
+   avec accès au clavier, sans modifier cartes-design.css (atelier Graphiste). */
+.initiative-main #map-scroll-region{max-width:100%;min-width:0}
+.initiative-main #map-scroll-region:focus-visible{outline:3px solid #fff0ca;outline-offset:3px}
+.initiative-main .map-scroll-hint{font-size:18px;line-height:1.6;margin:14px 0 8px}
+@media(max-width:600px){
+ .initiative-main #map-scroll-region{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:auto}
+ .initiative-main #municipality-map{display:block;width:760px;max-width:none;height:420px;max-height:none;
+  aspect-ratio:760/420;margin-right:14px}
+ .initiative-main .map-marker-label{font-size:23px;font-weight:800;letter-spacing:0}
+ .initiative-main .map-region-label{font-size:23px}
+ .initiative-main .map-axis-label{font-size:18px}
+ .initiative-main .map-marker-halo{r:36px}
+}
+@media(prefers-reduced-motion:reduce){.initiative-main #map-scroll-region{scroll-behavior:auto}}
