@@ -1079,3 +1079,18 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 **Dépendances sans nouvel atelier :** Assistant de l'Archiviste/Archiviste = recherche des comptes originaux, registres et Charles Keller ; Lecteur/Médiathèque = relecture des sources et droits avant éventuel article ; Juriste = garanties contemporaines si un protocole réel est envisagé ; Relieur = lien avec travail invisible, scénarios S1–S3 et préparation d'essais volontaires. ASSO-007 (Union des femmes, 1871) et ASSO-008 (La Marmite, 1868) sont **deux organisations distinctes** ; leurs liens biographiques ne prouvent pas une identité institutionnelle.
 
 **Résultats vérifiables :** compléments dans une PR documentaire existante + cette entrée de journal. **0 test terrain, 0 publication, 0 approbation collective, 0 modification des droits ou des formulaires.**
+
+
+## 2026-10-30 — Relieur — feuille de route de publication Wiki V0, réception du Lecteur
+
+**Transmission reçue du Lecteur :** dix passes de consolidation de la [PR #34](https://github.com/zoutiFrutti/Interstice/pull/34), deux articles prioritaires à relire et un troisième conditionnel. Les PR #23, #27 et #30 ont été recoupées avec le `main` courant : privilégier [PR #27](https://github.com/zoutiFrutti/Interstice/pull/27) pour les enrichissements, sans fusionner à nouveau #23 ni confondre #30 avec un article.
+
+**Travail réellement effectué par le Relieur :** [feuille de route V0 créée et relue](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/RELIEUR_FEUILLE_DE_ROUTE_PUBLICATION_WIKI_V0_2026-10-30.md) (commit `495007ea1049d384e1727b039eb994c063973846`) ; [retour concret déposé sur PR #34](https://github.com/zoutiFrutti/Interstice/pull/34#issuecomment-6526955592) ; lecture des deux versions HTML `main` / PR #27 et des états antérieurs.
+
+**Résultat d'état :** `wiki-decision-collective.html` existe sur `main`, sa section Young/Freeman uniquement sur PR #27 ; `wiki-lecture-croisee-travail-soin-pouvoir.html` existe sur `main` avec Federici/hooks/Freire/Kropotkine, mais l'ajout Berenstain/Ahmed est seulement sur PR #27. Le troisième contenu Foucault/Ostrom/Lyon est en réserve et nécessite la nuance **contrôle des usagers ET de la ressource**.
+
+**Corrections identifiées :** liens de fin de parcours « Retour au Wiki » et « Contribuer » actuellement placés **avant** des nouvelles sections sur la PR #27 ; bibliographies Young (chapitre 2 consulté en notice, pas intégralement), Tebble (objection à documenter), Berenstain (conditions de licence à confirmer), Ahmed et autres auteurs (éditions/passages/lectures à confirmer) ; test réel clavier/lecteur d'écran et rendu smartphone non accomplis. Tentatives de consultation GitHub Pages par lecteur web **non concluantes**. Les sources externes ont été rapprochées de leurs notices éditeurs mais **aucune lecture intégrale supplémentaire** n'a été accomplie.
+
+**Dépendances :** Penseur pour solidité des arguments/objections, Médiathèque pour sources/éditions/licences, Juriste pour confidentialité/droit et voies de correction, Graphiste/Anarchitecte pour mise en forme et tests. Aucun envoi à leurs conversations ni réception n'est présumé ; ce journal conserve les instructions documentaires sans réattribuer les fonctions. Le Relieur coordonne, aucun atelier « Organisateur » indépendant.
+
+**Décision :** proposer une relecture croisée ciblée et un arbitrage humain explicite sur les deux enrichissements. **Aucun contenu Wiki modifié, aucune PR fusionnée, aucun déploiement, aucune adoption collective et aucune publication automatique.** Le Manifeste V2.5 reste une référence éditoriale non adoptée.
