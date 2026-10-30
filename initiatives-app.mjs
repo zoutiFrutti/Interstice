@@ -52,7 +52,7 @@ async function showList(focus=false){
  detail.hidden=true;explorer.hidden=false;
  await drawList();
  if(focus){
-   const target=returnOrigin&&[...document.querySelectorAll("#results a[data-id],#simulation-results a[data-id]")]
+   const target=returnOrigin&&[...document.querySelectorAll("#results a[data-id],#simulation-results a[data-id],#map-unlocated-results a[data-id]")]
      .find(a=>a.dataset.id===returnOrigin.id&&a.closest("#"+returnOrigin.container));
    const destination=target||$("explorer-title");
    destination.tabIndex=destination===target?0:-1;
