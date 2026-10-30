@@ -82,3 +82,46 @@ Etalab 2.0 : https://www.data.gouv.fr/pages/legal/licences/etalab-2-0
 OSM et ODbL : https://www.openstreetmap.org/copyright
 
 **Statut final :** aucune règle de modération n'est adoptée par la création de ce fichier ; compétences, ressources, seuils et procédures à décider collectivement après vérification juridique.
+
+---
+
+## Transmission 013 — Passes 5 à 7 — admission, droits sur les fiches et voies de recours
+**30 octobre 2026 · propositions à discuter, aucune règle politique adoptée.** Complète les sections 1 à 4 sans les remplacer. La future « carte des communs » désigne des **pratiques et ressources existantes déclarées/documentées**, la « carte des possibles » désigne des **besoins et projets encore hypothétiques**. Une fiche peut figurer dans la liste sans point géographique public.
+
+### Passe 5 — Être référencé n'est pas adhérer
+
+**Contrôle des garanties existantes :** section 1 de ce dossier interdit déjà l'adhésion obligatoire et la notation morale. La transmission 013 ajoute deux vues complémentaires. Pour des fiches réelles, appliquer ce tri **proposé** :
+
+1. **Admissibilité au référencement :** objet relevant des communs ou initiatives locales, données provenant de sources réutilisables ou de déclarations licites, risque de préjudice évalué, existence distinguée des projets souhaités. Cette évaluation n'exige pas l'adhésion à la Charte constitutive.
+2. **Degré de documentation :** `simulation fictive` dans la V0, puis `déclaré`, `documenté`, `à vérifier`, `contesté`, `en projet` pour de futures fiches réelles selon une politique adoptée. Un statut n'est pas une sanction, un certificat de sûreté, ni une garantie de résultat.
+3. **Pratiques volontaires :** filtres uniquement facultatifs et fondés sur des déclarations et preuves précises, non sur une inférence d'opinion ou une notation globale des personnes. Les projets non adhérents restent trouvables si admissibles.
+
+**J013-12 :** avec trois fiches *fictives* de caractéristiques identiques mais étiquettes « sans adhésion », « affinité inconnue » et « affinité autodéclarée », vérifier qu'elles restent toutes retrouvables sans filtre politique. Interdire score caché de popularité/vertu, classement défavorable par absence d'adhésion et texte public « reconnu ou certifié » sans fondement. **Choix collectif** : critères pertinents, droits de réponse et méthode de vérification. **Droit positif** : RGPD dès qu'une fiche identifie une personne, et obligations du service selon sa qualification.
+
+### Passe 6 — Qui peut proposer, revendiquer ou corriger ?
+
+| Rôle futur, **non créé par ce texte** | Droit de proposer | Limites à documenter avant fonctions réelles |
+|---|---|---|
+| Contributeur tiers | Soumettre une référence sourcée ou rectification, sans prétendre représenter l'initiative | Pas de publication d'un nom/contact privé d'autrui ; droit d'auteur et données personnelles à respecter |
+| Initiative / représentant réellement habilité | Demander gestion de ses champs descriptifs et de son contact **officiel vérifié** | Mandat vérifié par méthode proportionnée ; pas de contrôle automatique des critiques documentées ou dossiers privés |
+| Auteur original | Corriger sa propre formulation et faire valoir ses droits sur l'œuvre créée selon les conditions de licence | Pas de propriété privative sur un fait ou un renseignement librement réutilisable |
+| Personne identifiable ou affectée | Exercer ses droits RGPD applicables, signaler une erreur, demander restriction / retrait selon circonstances | Ni adhésion ni compte GitHub obligatoires pour signaler une donnée personnelle ; pas de veto universel sur toutes les analyses publiables |
+| Modération avec habilitation réelle | Décider d'un masquage proportionné et motivé selon des critères publiés et le droit applicable | Traçabilité limitée et confidentielle, récusation si conflit, relecture et recours ; aucune juridiction interne fictive |
+| Relieur (coordination) | Préparer les scénarios et faire circuler les demandes vers les responsables réels | **Ne devient pas** par défaut responsable RGPD, propriétaire des fiches, modérateur ou représentant légal |
+
+**J013-13 :** simuler (a) un contributeur tiers soumet une fiche, (b) une initiative revendique ses horaires et son lieu public, (c) une personne exige le retrait de son numéro. Vérifier que (a) n'écrit pas sans revue dans les champs d'administration, (b) ne consulte pas les plaintes ni les contacts privés et (c) peut exercer ses droits sans compte ; toutes ces personnes sont **inventées** dans les essais. **L'identification du responsable de traitement réel demeure bloquante** pour des dossiers personnels.
+
+### Passe 7 — Correction, retrait, urgence et contestation
+
+**Contrôle des garanties existantes :** la section 4 conserve les cinq étapes réception → tri du risque → examen contradictoire adapté → décision motivée → réexamen. À rendre testable, sans inventer une compétence collective déjà reconnue :
+
+- **J013-14 — demande ordinaire :** recevoir un lien de fiche et le champ incriminé, sans imposer un récit intime ou une pièce d'identité, référencer la demande de manière privée, confirmer réception ; conserver source et rectification proportionnées.
+- **J013-15 — risque grave :** retirer/masquer provisoirement une localisation ou une donnée identifiante exposant quelqu'un à un préjudice, **puis** revoir les éléments ; ne pas révéler l'identité du signalant pour un contradictoire factice ; conserver les recours externes.
+- **J013-16 — désaccord politique :** la seule critique du manifeste, d'un financeur ou d'un autre collectif ne vaut ni motif automatique de dépublication ni contenu illégal. Motiver par faits et règles réellement applicables.
+- **J013-17 — droit à la rectification des données :** canal privé réel, responsable réellement identifié, réponse dans les délais RGPD applicables (en principe un mois, prolongation possible si conditions) ; différencier rectification de données de désaccord avec une opinion éditoriale.
+- **J013-18 — historique :** les pages publiques peuvent conserver une trace non sensible de la rectification, **jamais** l'adresse ou le témoignage privé retiré dans un historique Git, un export, des caches accessibles ou une issue publique. Tester les copies en utilisant seulement des valeurs fictives.
+
+**Blocage de production :** aucun de ces cinq scénarios n'est assuré par la seule PR #41, qui est une démonstration de découverte ; ne pas faire de bouton de signalement trompeur ni une boîte privée fictive. Le Relieur coordonne les moyens humains, mais ne doit pas être nommé responsable des droits par défaut.
+
+**Sources de ces passes :** CNIL, [réutilisation et droits des professionnels référencés](https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes) ; [rectification et limites](https://www.cnil.fr/fr/comprendre-mes-droits/le-droit-de-rectification-corriger-vos-informations) ; [Service-Public, protection des données](https://www.service-public.gouv.fr/particuliers/vosdroits/F2024).
+
