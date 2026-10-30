@@ -958,3 +958,18 @@ Fiche Google Drive ARCH-005 enrichie et relue : https://docs.google.com/document
 ## 2026-10-30 — Anarchitecte — Réponse à la transmission du Penseur, études 39–58
 
 Transmission retrouvée et lue : `coordination/transmissions/2026-10-30_PENSEUR_VERS_DEVELOPPEUR.md` (destinataires : Développeur **et** Anarchitecte) ; feuille de route `coordination/PENSEUR_FEUILLE_DE_ROUTE_ETUDES_39_58_2026-10-30.md` consultée. Audit limité aux pages existantes `index.html`, `participer.html`, `bibliotheque.html`, `wiki.html` et au script `script.js`, sans répéter les audits de V0 antérieurs : besoin/ressource et recherche documentaire existent, mais pas de parcours de rencontre consenti, de carte d'initiatives ni de parité mobile vérifiée dans ces fichiers. Création de `coordination/ANARCHITECTE_CRITERES_ACCEPTATION_39_58_2026-10-30.md` avec quinze scénarios de test (besoin sans vote, recherche transparente, consentement, localisation protectrice, export, accessibilité, liste sans carte, hors ligne, correction et site/application), limites et dépendances. Commit vérifiable : `c73dedbda104203327ef762bb63dcf0af7ea894e`. Aucune modification des protections, de Supabase, de la publication ou du fonctionnement du site. Les études 39–58 sont des propositions et non des décisions collectives. Retour transmis au Relieur par cette entrée de journal.
+
+## 2026-10-30 · Atelier du Juriste — cycle 39–58, garanties et blocages
+
+**Transmission et sources consultées :** `coordination/transmissions/2026-10-30_PENSEUR_VERS_JURISTE.md`, feuille de route `coordination/PENSEUR_FEUILLE_DE_ROUTE_ETUDES_39_58_2026-10-30.md`, cycle des vingt hypothèses `coordination/PENSEUR_ETUDES_39_58_CYCLE_AUTONOMIE_COMMUNS_2026-10-30.md`, précédents travaux du Juriste (cartographie, droits sur fiches et modération), CNIL (RGPD art. 26, géolocalisation, portabilité), EUR-Lex DSA art. 16–20 et Service-Public financement des associations.
+
+**Résultat nouveau, non adopté :** avis hiérarchisé sur les études 46–50, 54–55 ; B1–B4 bloquants proposés avant toute cartographie traitant des données personnelles (responsables RGPD et bases légales, protection réelle des localisations sensibles, signalement/correction, tests API/RLS) ; B5–B7 conditionnels selon les fonctions retenues (qualification DSA, licences/export, responsabilités d'événements). Dix tests d'acceptation proposés, non exécutés ; trois clauses politiques à débattre (gouvernance des données, indépendance financière, droit de sortie).
+
+**Écrits et vérifiés sur GitHub :**
+- `docs/AVIS_JURISTE_CYCLE_39_58_GARANTIES_BLOCAGES_2026-10-30.md` (commit `804fed5b41d3c6b494aa0e2aa195dec74c1006f4`).
+- `coordination/transmissions/2026-10-30_JURISTE_VERS_RELIEUR_ETUDES_39_58.md` (commit `49c97eddf5a7aff0db5ac9192faa9c7f2f2633ef`).
+
+**Contradictions :** consultation ≠ droit de veto ; fiche gérée par initiative ≠ responsabilité RGPD automatique ; droit de portabilité ≠ export de contacts privés ; modération nécessaire ≠ sanction d'une dissidence ; besoin de financement ≠ droit de contrôle politique du financeur ; coopération fédérale ≠ transfert de patrimoine ou de responsabilité.
+
+**Modifications exclues :** aucun code, base Supabase, site, charte constitutive, statut ni manifeste modifié. La transmission est déposée pour le Relieur, réception effective non attestée. Les études demeurent des hypothèses non adoptées. **Suite :** retour des ateliers sur B1–B7, preuves de tests et arbitrage collectif sur un pilote sans données privées exposées.
+
