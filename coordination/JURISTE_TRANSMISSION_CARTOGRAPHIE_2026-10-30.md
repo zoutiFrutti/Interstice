@@ -1,5 +1,7 @@
 # Interstice · Transmission juridique inter-ateliers
-## Cartographie des communs et participation citoyenne · 30 octobre 2026
+
+
+> **RECTIFICATIF ORGANISATION 012 (30 octobre 2026)** : la mention historique « L'Organisateur » dans ce document **ne désigne aucun atelier actif**. Les questions de scénarios de coopération, organisation pratique, participation hors ligne, moyens humains et expérimentation sont désormais **à adresser au Relieur**, qui coordonne sans pouvoir politique. Les mentions d'origine ci-dessous restent en place pour la traçabilité. Référence : `coordination/RELIEUR_CLARIFICATION_ORGANISATION_2026-10-30.md`. Cette rectification n'adopte aucune règle collective.## Cartographie des communs et participation citoyenne · 30 octobre 2026
 
 **Émetteur :** Atelier du Juriste.
 **Destinataires pour relecture :** Développeur, Anarchitecte, Organisateur, Penseur, Relieur. **La présente transmission est déposée sur GitHub ; sa lecture par les autres ateliers n'est pas attestée.**
