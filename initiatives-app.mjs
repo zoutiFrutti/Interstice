@@ -2,7 +2,7 @@ import {DEMO_INITIATIVES} from "./initiatives-data.mjs";
 import {createDemoRepository,explainSearchMatch,buildPublicDemoExport} from "./initiatives-core.mjs";
 import {findCompatibleExamples} from "./initiatives-simulation.mjs";
 import {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS} from "./cartes-data.mjs";
-import {filterMapEntries,exportFictionalMapEntries,withoutPublicMapLocation} from "./cartes-core.mjs";
+import {filterMapEntries,exportFictionalMapEntries,withoutPublicMapLocation,communeGroups} from "./cartes-core.mjs";
 // Carte chargée séparément : la liste doit fonctionner même si ce module échoue.
 const repo=createDemoRepository(DEMO_INITIATIVES),$=id=>document.getElementById(id);
 const form=$("filters"),commune=$("commune"),category=$("category"),objet=$("objet"),scope=$("scope"),order=$("order"),list=$("results"),count=$("count"),empty=$("no-results"),explorer=$("explorer"),detail=$("detail"),content=$("detail-content");
@@ -33,6 +33,15 @@ async function drawList(){
  const noLocation=withoutPublicMapLocation(rows,COMMUNE_ANCHORS);
  $("map-unlocated").hidden=noLocation.length===0;
  $("map-unlocated-results").replaceChildren(...noLocation.map(makeCard));
+ const communeButtons=communeGroups(rows,COMMUNE_ANCHORS).map(group=>{
+  const btn=node("button",group.anchor.id+" · "+group.items.length+" fiche(s)");
+  btn.type="button";btn.className="button-muted";
+  btn.dataset.commune=group.anchor.id;
+  btn.setAttribute("aria-label","Afficher les fiches fictives de "+group.anchor.id);
+  btn.addEventListener("click",()=>chooseCommune(group.anchor.id));
+  return btn;
+ });
+ $("map-commune-buttons").replaceChildren(...communeButtons);
  count.textContent=rows.length+" fiche"+(rows.length>1?"s":"")+" fictive"+(rows.length>1?"s":"")+" trouvée"+(rows.length>1?"s":"");
  empty.hidden=rows.length>0;$("export-demo").disabled=rows.length===0;
  $("entry-list-title").textContent=reading==="communs"?"Fiches fictives des communs":"Fiches fictives des possibles";
@@ -116,6 +125,12 @@ $("export-demo").addEventListener("click",async()=>{
  document.body.append(anchor);anchor.click();anchor.remove();URL.revokeObjectURL(url);
  $("export-status").textContent=visible.length+" exemple(s) fictif(s) exporté(s), aucun contact ni adresse.";
 });
+function chooseCommune(name){
+ commune.value=name;
+ drawList();
+ setDisplay("list");
+ count.focus();
+}
 // Carte SVG embarquée et liste complète utilisent le même tableau et les mêmes filtres.
 function setReading(next){
  if(!["communs","possibles"].includes(next))return;
@@ -144,7 +159,7 @@ $("display-map").disabled=true;
 import("./cartes-map.mjs").then(({createMunicipalityMap})=>{
  cartography=createMunicipalityMap({
   svg:$("municipality-map"),emptyNote:$("map-caption"),
-  onCommune:name=>{commune.value=name;drawList();setDisplay("list");count.focus();}
+  onCommune:chooseCommune
  });
  $("display-map").disabled=false;
  cartography.render(visibleEntries,commune.value);

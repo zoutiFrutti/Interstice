@@ -4,7 +4,7 @@
 #map-unlocated{margin-top:20px;padding:16px;border:1px solid #aa9e8d;border-radius:10px}
 #map-unlocated h3{margin-top:0}
 #map-unlocated-results{margin-top:12px}
-.initiative-main .map-marker-halo{r:34px}
+.initiative-main .map-marker-halo{r:50px}
 .initiative-main .map-marker-label{font-size:17px;letter-spacing:-.01em}
 .initiative-main .map-region-label{font-size:20px}
 .initiative-main .map-axis-label{font-size:15px}
@@ -16,3 +16,9 @@
   .initiative-main #map-panel .map-controls button{min-height:54px}
 }
 @media print{#map-unlocated{display:block!important}}
+
+/* Alternative tactile accessible aux petits repères SVG. */
+.map-commune-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.initiative-main .map-commune-buttons button{min-height:56px;padding:12px 14px;text-align:left;
+ white-space:normal;overflow-wrap:anywhere;border:2px solid #b7a5a2}
+@media(max-width:480px){.map-commune-buttons{grid-template-columns:minmax(0,1fr)}}

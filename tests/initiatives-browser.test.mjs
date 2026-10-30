@@ -340,3 +340,24 @@ test("014: filtres cumulés puis commune sur SVG, liste, état vide et URL inval
   assert.ok(await page.locator("#invalid-route").evaluate(e=>document.activeElement===e));
  }finally{await page.close();await browser.close();}
 });
+
+test("014: boutons de communes sous les repères SVG, accessibles au toucher et synchronisés",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ try{
+  await page.goto(PAGE,{waitUntil:"networkidle"});
+  await page.locator("#display-map").click();
+  assert.equal(await page.locator("#map-commune-buttons button").count(),4);
+  const gaillac=page.locator('#map-commune-buttons [data-commune="Gaillac"]');
+  assert.ok(await gaillac.evaluate(e=>e.getBoundingClientRect().height>=54));
+  await gaillac.focus();await page.keyboard.press("Enter");
+  assert.equal(await page.locator("#commune").inputValue(),"Gaillac");
+  assert.equal(await page.locator("#display-list").getAttribute("aria-pressed"),"true");
+  assert.equal(await page.locator("#results .initiative-card").count(),3);
+  await page.locator("#reading-possibles").click();
+  await page.locator("#display-map").click();
+  assert.equal(await page.locator("#map-commune-buttons button").count(),3);
+  await page.locator("#map-clear-commune").click();
+  assert.equal(await page.locator("#commune").inputValue(),"");
+ }finally{await page.close();await browser.close();}
+});
