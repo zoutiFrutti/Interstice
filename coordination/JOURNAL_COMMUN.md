@@ -907,3 +907,18 @@ Sources croisées : Boston Public Library, https://www.leventhalmap.org/articles
 Résultat : activités publiques et orientation concrète vers des ressources de soutien étayées par documents/présentation de collections. Pas de preuve nouvelle concernant délibérations internes, finance ou distribution du travail. Ne pas déduire d'une liste imprimée que chaque service annoncé fonctionnait effectivement.
 Louvre : édition 1908 des mémoires de Rossel disponible en ebook gratuit https://play.google.com/store/books/details/Louis_Rossel_M%C3%A9moires_et_correspondance?id=jW6dOv5n8Z8C et bibliographie Open Library https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; passage sur Avrial non lu lors de cette passe. Référence Ly 108 toujours issue d'une citation universitaire et dépôt conservateur non confirmé.
 Modifications : entrée de journal uniquement, pas de mise à jour de FN-069, ARCH-005 ou Wiki ; manifeste V2.5 de travail non adopté inchangé. Suites : accès au texte original, recherche de procès-verbaux/registre d'atelier et pièces d'organisation du collectif.
+
+
+## 2026-10-30 — Archéologue des communs — Françoise André et Ly 22
+
+**Périmètre :** inventaire direct de quatre dossiers Drive : 43 fiches candidates distinctes (22 BIO, 8 ASSO, 4 EXP, 2 COL, 7 ARCH). Consultation des fiches COL-003 et ARCH-006, du catalogue et suivi Médiathèque, du journal de modifications, et de l'historique récent de ce journal pour éviter les doublons.
+
+**Source nouvelle :** Musée Carnavalet / Paris Musées, photographie de 1871 attribuée à Ernest-Charles Appert, PH22310, « Portrait de Françoise André, épouse Humbert ». Sa notice présente cette femme comme secrétaire du Club des prolétaires de Saint-Ambroise, photographiée à la prison des Chantiers à Versailles, et cite les procès-verbaux « archives de la guerre AG. Ly 22 ». https://parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/portrait-de-francoise-andre-epouse-humbert-membre-de-la-commune-1871 . La notice affiche CC0 pour le visuel.
+
+**Recoupements :** Michèle Audin (2021) situe Ly 22 au Service historique de la défense et distingue les citations sélectionnées par Dalotel et Édith Thomas : https://macommunedeparis.com/2021/05/12/12-mai-1871-elles-prennent-la-parole-certes-mais-que-disent-elles/ . Jacques Rougerie cite également Ly 22 pour des comptes rendus de clubs : https://commune1871-rougerie.fr/la-premiere-internationale_2,fr,8,75.html . La cote est documentée, pas consultée directement.
+
+**Hypothèse, non fait établi :** la citoyenne André, blanchisseuse et secrétaire selon Audin (2016), pourrait correspondre à Françoise André épouse Humbert de la notice Carnavalet. La fonction et le patronyme concordent, mais aucune pièce nominative ou inscription au verso n'a été collationnée. Aucune parenté avec Jules André démontrée. La photographie originale et son catalogage moderne ne sont pas une même couche de preuve.
+
+**Écritures vérifiées par relecture Drive :** enrichissement de COL-003 et ARCH-006 ; compléments au catalogue et au suivi de la Médiathèque ; journal des changements majeurs Interstice mis à jour. Bilan : 0 nouvelle fiche, 1 COL et 1 ARCH enrichies, total inchangé de 43. Pas de nouvelle BIO prématurée, aucune publication ni changement du manifeste ou de la gouvernance.
+
+**Suites :** vérifier l'inscription au verso de PH22310, demander consultation de Ly 22 et procès-verbaux du club, comparer les quatre numéros du Prolétaire aux séances, clarifier les chiffres d'assistance et les prises de parole. Transmissions utiles à la Biographe, au Lecteur et à la Médiathèque ; réception non confirmée.
