@@ -46,7 +46,10 @@
 <div><button type="button" id="map-zoom-in" class="button-muted" aria-label="Agrandir la carte">+</button>
 <button type="button" id="map-zoom-out" class="button-muted" aria-label="Réduire la carte">−</button>
 <button type="button" id="map-zoom-reset" class="button-muted">Vue entière</button></div></div>
+<p id="map-scroll-hint" class="map-scroll-hint">Sur petit écran, fais défiler le schéma horizontalement. Au clavier, sélectionne la zone de carte puis utilise les flèches gauche et droite. La liste complète et les boutons de commune restent disponibles.</p>
+<div id="map-scroll-region" role="region" tabindex="0" aria-label="Schéma cartographique défilant" aria-describedby="map-scroll-hint">
 <svg id="municipality-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="group" aria-label="Carte interactive schématique de quatre communes du Tarn. Utiliser Tab et Entrée pour sélectionner une commune."></svg>
+</div>
 <p id="map-caption" class="map-caption">Repères communaux fictifs.</p>
 <div id="map-commune-buttons" class="map-commune-buttons" role="group" aria-label="Choisir une commune au clavier ou au toucher"></div>
 <div id="map-unlocated" class="map-unlocated" hidden aria-labelledby="map-unlocated-title">
