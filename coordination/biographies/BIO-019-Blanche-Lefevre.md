@@ -21,3 +21,6 @@ Union des femmes ; Nathalie Le Mel (BIO-009) ; Élisabeth Dmitrieff (BIO-010) ; 
 Retrouver état civil, archives professionnelles du lavoir, presse et listes du club, dossier de décès ; confronter récits de la place Blanche et de la rue des Dames. Vérifier l'hypothèse de naissance en 1847. Transmettre les contradictions à l'Archiviste pour examen des sources primaires.
 
 Manifeste V2.5 : référence éditoriale non adoptée collectivement. Aucun changement du Wiki public ni du manifeste.
+
+## Rectificatif critique du 30 octobre 2026
+Attention, la fiche initiale fusionnait peut-être deux femmes. Jacques Rougerie distingue Blanche Lefebvre, modiste et organisatrice de l'Union des femmes, d'une « femme Lefèvre », blanchisseuse au lavoir Sainte-Marie, du Club de la Révolution. L'attribution « blanchisseuse » à Blanche ne doit pas être utilisée. Leur identité respective et le lieu de la mort de Blanche demandent une vérification primaire. Source : https://commune1871-rougerie.fr/les-femmes-de-1871%2Cfr%2C8%2C58.html . Le texte historique initial est conservé ci-dessus pour la traçabilité.
