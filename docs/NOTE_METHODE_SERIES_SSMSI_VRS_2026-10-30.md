@@ -29,3 +29,20 @@ Calcul sur deux valeurs exactes précédemment citées dans le chantier : (9 737
 4. Soumettre le résultat à la relecture éditoriale de la PR #32 ; ne pas corriger le Wiki sur une branche concurrente. Vérifier les liens et l'accessibilité avant fusion.
 
 **Décision de cette passe :** ajouter une note de méthode traçable, sans remplacer arbitrairement les chiffres, sans toucher au Wiki, au manifeste, à la charte, aux visuels, à Supabase ou aux formulaires. Aucun test navigateur, aucune fusion ni publication.
+
+
+## Addendum critique — 30 octobre 2026 : deux taux de non-plainte non interchangeables
+
+**Question nouvelle :** peut-on utiliser comme confirmation indépendante les « 97 % sans plainte » cités dans le communiqué CNCDH de juin 2026, alors que la publication SSMSI de mars 2026 annonçait « 3,5 % de plaintes » ? **Non, pas sans rapprocher leurs champs et leurs millésimes.**
+
+- [CNCDH, communiqué publié le 24 juin 2026](https://www.cncdh.fr/communique-de-presse/racisme-antisemitisme-et-xenophobie-la-tolerance-resiste-mais-les-actes) : mentionne environ **1,2 million de personnes de plus de 14 ans** déclarant chaque année une atteinte raciste et **97 %** ne portant pas plainte, en renvoyant à une **enquête VRS publiée en décembre 2023**. La CNCDH est une source primaire pour sa propre analyse, mais **relaie ici une statistique de victimation** : ce n'est pas une mesure indépendante.
+- [SSMSI, Info rapide n°61 du 25 mars 2026](https://statistiques.interieur.gouv.fr/ssmsi/publications/les-atteintes-caractere-raciste-xenophobe-ou-antireligieux-en-2025) : annonce **plus de 1,7 million de personnes de 18 ans ou plus** déclarant une atteinte raciste **subie en 2023**, et **3,5 %** ayant porté plainte. Le champ géographique et le logement ordinaire sont explicités dans cette publication.
+- [SSMSI, rapport VRS du 29 octobre 2026](https://statistiques.interieur.gouv.fr/ssmsi/publications/vecu-et-ressenti-en-matiere-de-securite-victimation-delinquance-et-sentiment-0) : annonce la **révision méthodologique** des taux de plainte et la rétropolation des séries depuis 2021.
+
+**Contradiction apparente, pas erreur démontrée :** 97 % de non-plainte et 3,5 % de plainte pourraient sembler complémentaires (96,5 %), mais **les populations d'âge, dates de référence, publications et méthodes ne sont pas établies comme identiques**. Ne pas écrire que l'une des estimations confirme ou réfute l'autre. Ne pas utiliser 97 % comme taux actualisé après la révision d'octobre. La page CNCDH de juin n'affiche pas à elle seule une révision de cette statistique.
+
+**Avant une modification du Wiki :** retrouver la publication VRS citée par la CNCDH en décembre 2023, comparer les questionnaires, champs et années de victimation, puis extraire la série de plainte révisée correspondante. En attendant, conserver une attribution datée et l'avertissement méthodologique existant dans la PR #32.
+
+**Contrôle statique complémentaire de la PR #32, sans prétendre à un test navigateur :** sur le HTML de la branche, 5 références locales (style, emblème et trois pages) ont été trouvées sur `main` ; les 3 ancres internes ont un identifiant correspondant ; un seul `h1` ; 19 URL externes distinctes, **sans test HTTP exhaustif**. Aucune ressource externe ni témoignage n'a été copié. Ce contrôle ne valide ni l'accessibilité réelle ni les formulaires.
+
+**Statut :** addendum documentaire, non publié sur le Wiki ; aucun taux corrigé sans série homogène, aucune fusion, aucune adoption collective.
