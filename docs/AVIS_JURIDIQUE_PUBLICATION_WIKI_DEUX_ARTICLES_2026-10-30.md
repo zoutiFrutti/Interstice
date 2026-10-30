@@ -69,3 +69,30 @@
 
 **Aucune modification HTML, validation, fusion ni publication effectuée par le Juriste.**
 
+---
+
+## Suivi 014 — réserves juridiques corrigées sur PR #44 (30 octobre 2026)
+
+**État revérifié :** [PR #44](https://github.com/zoutiFrutti/Interstice/pull/44) `atelier-lecteur/correction-deux-pages-20261030`, HEAD après corrections du Juriste `6be7842f368484165c5baf052f7ecd18e0f52fc4`, **ouverte en brouillon, non fusionnée**.
+
+### Vérifications et corrections effectuées, non simples recommandations
+
+| Page / emplacement sur la branche | Ancienne réserve | Correction réellement écrite et relue |
+|---|---|---|
+| `wiki-decision-collective.html:46` | « Leur droit à être informées, à contester et à participer… » pouvait inventer un droit de vote des non-membres | Phrase remplacée : information, contestation et participation distinguées ; la portée juridique dépend de la situation, des statuts et des contrats ; pas de droit général de vote créé par le Wiki. Commit `db65145cc77d69272fb6b3d1d92c70e452412a21` |
+| `wiki-decision-collective.html:44` | « droit de ne pas témoigner » présenté sans champ | Proposition de ne pas exposer publiquement une expérience personnelle, sans se donner valeur procédurale universelle |
+| `wiki-decision-collective.html:57–58` | « Proposer une correction » renvoyait indistinctement vers le formulaire éditorial | Nouveau libellé **« Proposer une correction documentaire non sensible »** et avertissement explicite : ne pas envoyer de témoignages intimes ou données privées sur le formulaire/GitHub ; **aucun canal RGPD fictivement promis** |
+| `wiki-lecture-croisee-travail-soin-pouvoir.html:7` | Formule générale « Les contributions ne peuvent être jugées hors… » | Requalifiée en **analyse proposée**, sans collecte de dossiers individuels sur la santé ou le handicap. Commit `6be7842f368484165c5baf052f7ecd18e0f52fc4` |
+| `wiki-lecture-croisee-travail-soin-pouvoir.html:16` | Lien de correction inadapté aux demandes confidentielles | Même libellé limité aux corrections documentaires et avertissement sur l'absence de canal privé, sans inventer de personne responsable ou de contact. |
+
+**Tests statiques effectivement réalisés après écriture :** les deux anciens libellés sont absents, les nouveaux présents, les balises de paragraphes examinées en nombre égal d'ouverture/fermeture (22/22 pour la première page, 19/19 pour la seconde). Cette vérification **ne remplace pas un parseur HTML, un test navigateur ni une validation accessibilité**. Les travaux de contrôle des sources et les essais mobiles restent nécessaires aux ateliers compétents.
+
+### Avis hiérarchisé après correction
+
+- **Réserves ciblées 014 levées sur le texte de la branche** : formulation des non-membres et clarification honnête du formulaire Wiki. **Il n'existe toujours pas de canal privé effectif** ; ne pas solliciter de données sensibles ni annoncer un recours opérationnel.
+- **Recommandé avant décision éditoriale** : contrôle des sources et éditions, lecture sur Android et clavier, vérification des liens, cohérence avec la charte des contributions existante ; confirmer que les contributions publiques ne contiennent pas de témoignages de personnes identifiables non instruits.
+- **Bloquant si le service veut recevoir des plaintes ou demandes de droits** : identifier un destinataire réel, créer et tester un **canal privé** qui ne publie ni pièce intime ni signalement dans GitHub, définir traitement et délais applicables.
+- **En attente de décision humaine** : quelle version fusionner ou publier et sous quel statut. Le Juriste n'approuve ni ne fusionne la PR par cette correction, et la V2.5 du Manifeste reste non adoptée.
+
+**Source opérationnelle :** la matrice juridique complète des vingt passes sur les cartes figure dans `propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md`, section **Transmission 014** ; les changements d'articles ci-dessus sont sur la branche PR #44, pas sur `main`.
+
