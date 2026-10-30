@@ -129,3 +129,40 @@ test("simulation : sections de saisie fermée et absence de collecte",()=>{
  assert.match(app,/findCompatibleExamples/);
  assert.doesNotMatch(app,/\bfetch\(|localStorage|sessionStorage|sendBeacon|geolocation/);
 });
+
+test("carte V0: les six fiches fictives ont une provenance et aucun contact",()=>{
+ for(const item of DEMO_INITIATIVES){
+  assert.equal(item.isDemo,true);
+  assert.equal(item.source.type,"simulation");
+  assert.equal(item.locationLevel,"commune");
+  assert.equal(item.publicContact,null);
+  assert.ok(Array.isArray(item.territories)&&item.territories.length>0);
+  for(const forbidden of ["latitude","longitude","lat","lng","email","phone","address","privateLocation"]){
+   assert.equal(Object.hasOwn(item,forbidden),false,"champ privé "+forbidden+" de "+item.id);
+  }
+ }
+});
+test("carte V0: export en liste blanche, sans champs privés injectés",async()=>{
+ const {buildPublicDemoExport}=await import("../initiatives-core.mjs");
+ const rows=DEMO_INITIATIVES.map(i=>({...i,secretContact:"secret@example.org",latitude:43.8,privateLocation:"domicile",internalNotes:"jamais public"}));
+ const exported=buildPublicDemoExport(rows);
+ assert.equal(exported.demo,true);assert.equal(exported.initiatives.length,DEMO_INITIATIVES.length);
+ for(const row of exported.initiatives){
+  for(const field of ["secretContact","latitude","privateLocation","internalNotes","join","description","publicContact"]){
+   assert.equal(Object.hasOwn(row,field),false,"fuite export "+field);
+  }
+ }
+});
+test("carte V0: un objet réel injecté n'entre pas dans l'export démo",async()=>{
+ const {buildPublicDemoExport}=await import("../initiatives-core.mjs");
+ const records=[...DEMO_INITIATIVES,{...DEMO_INITIATIVES[0],id:"initiative-reelle",isDemo:false,source:{type:"declaration"}}];
+ const out=buildPublicDemoExport(records);
+ assert.equal(out.initiatives.some(i=>i.id==="initiative-reelle"),false);
+});
+test("carte V0: le dépôt démo reste lisible sans filtrage de popularité",async()=>{
+ const {createDemoRepository}=await import("../initiatives-core.mjs");
+ const repo=createDemoRepository(DEMO_INITIATIVES);
+ const all=await repo.list();
+ assert.deepEqual(all.map(i=>i.id),DEMO_INITIATIVES.map(i=>i.id));
+ assert.ok(all.every(i=>!("popularity" in i)&&!("score" in i)&&!("votes" in i)));
+});
