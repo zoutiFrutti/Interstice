@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zoutiFrutti/Interstice
-          ref: 6cd55bfd6a4cfacedc5cedaf07151c80668cf394
+          ref: 898c9e80ecd6d3a9be02800c3cff7659fd0845ed
           path: prototype-pr41
           persist-credentials: false
       - uses: actions/setup-node@v4

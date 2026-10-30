@@ -34,7 +34,7 @@ try{
     const qs=s=>[...document.querySelectorAll(s)].filter(e=>e.getClientRects().length);
     const font=e=>parseFloat(getComputedStyle(e).fontSize);
     const height=e=>Math.round(e.getBoundingClientRect().height);
-    const controls=qs("#filters button,#filters select,#filters input,.map-readings button,.map-display button,.initiative-card a,#map-panel button")
+    const controls=qs("#filters button,#filters select,#filters input,.map-readings button,.map-display button,.initiative-card a,#map-panel button,.map-commune-buttons button")
       .map(e=>({tag:e.tagName,text:e.textContent.slice(0,30),font:font(e),height:height(e)}));
     const labels=qs("#filters label,.initiative-card .demo-tag,.initiative-card .entry-kind,#count");
     const cardTexts=qs("#results .initiative-card").map(x=>x.textContent);
@@ -73,6 +73,12 @@ try{
   await page.locator("#display-map").click();
   await page.locator("#municipality-map .map-marker").first().waitFor();
   await check("communs-carte");
+  const communeButtons=await page.locator("#map-commune-buttons button").count();
+  assert.ok(communeButtons>=3,"Accessible commune buttons absent: "+communeButtons);
+  const communeButtonStyles=await page.locator("#map-commune-buttons button").evaluateAll(nodes=>
+    nodes.map(n=>({height:n.getBoundingClientRect().height,font:parseFloat(getComputedStyle(n).fontSize)})));
+  assert.ok(communeButtonStyles.every(x=>x.height>=52&&x.font>=18),
+    "Commune buttons too small: "+JSON.stringify(communeButtonStyles));
   const svgQA=await page.evaluate(()=>{
     const panel=document.querySelector("#map-panel"),svg=document.querySelector("#municipality-map");
     const label=svg.querySelector(".map-marker-label");
