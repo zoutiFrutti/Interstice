@@ -98,3 +98,45 @@ Les objectifs priment. Chaque prompt est autonome et doit être lu avec les règ
 
 ## Synthèse à remettre à l'utilisateur après les ateliers
 La Relieuse présentera **un parcours d'essai unique**, accompagné des URLs et versions de branche, tests réalisés et non réalisés, problèmes bloquants et décisions humaines nécessaires. Une démonstration fictive ne devient pas un service citoyen réel par simple changement de vocabulaire.
+
+
+---
+
+## Addendum Transmission 018 — Médiathèque vivante
+**30 octobre 2026 — La Relieuse — coordination candidate, sans fusion ni publication.**
+
+### Preuves consultées
+- Catalogue Drive \`1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs\` : huit portails déjà ajoutés à la rubrique médias (Commons, Openverse, Gallica, Internet Archive, LOC National Screening Room, European Film Gateway, Musopen, Freesound). Des notices d'œuvres spécifiques préexistent ; ne pas refaire le référencement.
+- Journal Médiathèque Drive \`1C7raL1dIAxHeXf8Ps7riE2ssQjGQyoAeb6MBg1MA11Q\` : ajout du 30/10 confirmé ; zéro œuvre supplémentaire FN publiée du fait de cette passe.
+- Proposition technique sur main : \`coordination/PROPOSITION_MEDIATHEQUE_VIVANTE_SELECTION_HEBDOMADAIRE_2026-10-30.md\`, commit \`8b5238fdd656625955e6bf19e2a6967854c5871d\` ; conception uniquement, aucun outil en marche.
+- \`bibliotheque.html\` sur main reste le point d'entrée actuel ; la PR #38 développe des guides pratiques et doit être préservée. Aucun module « La sélection des communs » branché ou déployé.
+
+### Priorité et cible bornée
+**La V0 participation / cartes déjà engagée reste prioritaire.** Le pilote Médiathèque se construit en parallèle seulement côté sélection documentaire, puis se raccorde à une branche candidate après la stabilisation du parcours V0, sans écrire sur PR #35, #38, #41 ou #44 pendant leurs travaux.
+
+**MV-0 — première démonstration statique de dix œuvres réelles** : dix notices choisies dans l'existant avec titre, auteur·rice/crédit, format, durée si connue, langue si connue, territoire/époque si étayés, lien canonique, source, date de contrôle, niveau de lecture/visionnage, statut de droit et incertitudes. Ne pas prétendre à un domaine public ou à une licence libre sans preuve liée à l'exemplaire. La V0 ne recopie ni média tiers ni vignette non autorisée. Elle lie les œuvres sur leurs plateformes d'origine. Présentation sur \`bibliotheque.html\` ou composant complémentaire raccordé, sans casser catalogue, guides et formulaires existants.
+
+### Dépendances par objectif
+| Dépendance | Atelier | Résultat attendu | État au contrôle |
+| --- | --- | --- | --- |
+| MV-0A : 10 notices vérifiées et diversifiées à partir du catalogue existant | Médiathèque | Jeu de dix métadonnées sourcées, liens et droits qualifiés, pas de doublon | PARTIEL : portails et notices existent, sélection finalisée non attestée |
+| MV-0B : affichage statique et navigation | Développeuse | 10 cartes reliées aux sources, éventuel « Surprends-moi » local sans suivi, filtre minimal si utile, tests sur SHA exact | NON COMMENCÉ, dépend de MV-0A et de la stabilité de V0 |
+| MV-0C : examen des risques de réutilisation et de retrait | Juriste | Avis ciblé sur les dix notices concrètes / droits litigieux, uniquement si nécessaire avant exposition | EN ATTENTE des dix notices |
+| MV-0D : accessibilité et cohérence visuelle | Graphiste + Anarchitecte | Revue sur branche candidate existante, clavier/mobile, absence de rupture de parcours | EN ATTENTE de MV-0B, ne pas interrompre le travail courant |
+| MV-1 : une ou deux API officielles | Développeuse avec Médiathèque | Étude bornée des conditions d'API, cache, identifiants, dédoublonnage ; aucune aspiration large | REPORTÉ après MV-0 |
+| MV-2 : sélection hebdomadaire | Médiathèque + validation humaine | Rotation documentée, sources, contrôle avant mise en avant | REPORTÉ |
+| MV-3 : filtres riches / découverte interactive | Développeuse + Graphiste | Interface exploratoire vérifiée, sans notation par popularité ni profilage | REPORTÉ |
+
+### Critères d'acceptation MV-0
+1. Un jeu fixe **de dix œuvres réelles sourcées** dont l'état de droits est explicite et non trompeur, validé humainement avant mise en avant publique.
+2. Une URL ou commande locale reproductible, et un SHA GitHub précis pour la démonstration ; aucune annonce de diffusion publique tant que non autorisée.
+3. Parcours \`bibliotheque.html\` → sélection → œuvre → site source, avec retour, clavier, petit écran, état sans vignette, lien cassé traité ; les accès externes doivent être clairement identifiés.
+4. Pas de téléchargement automatique, de copie d'images/audio/vidéo, d'API non autorisée, de collecte ni d'algorithme commercial de popularité.
+5. Preuve : jeu de fiches et sources + tests navigateur sur SHA exact + avis ciblés éventuels. Si un blocage existe, le qualifier sans inventer dix œuvres validées.
+
+### Coordination et protections
+- Les messages GitHub restent documentaires ; aucune conversation ChatGPT n'est réveillée automatiquement.
+- Ne pas renvoyer la Transmission 015, ni demander un quota de passes.
+- Les portails ont des conditions de réutilisation distinctes des œuvres individuelles.
+- Aucun changement de droits, fusion, déploiement, publication ou adoption politique automatiquement décidé. Le Manifeste V2.5 reste une référence éditoriale non adoptée.
+
