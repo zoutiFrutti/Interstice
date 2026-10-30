@@ -22,3 +22,15 @@
 .initiative-main .map-commune-buttons button{min-height:56px;padding:12px 14px;text-align:left;
  white-space:normal;overflow-wrap:anywhere;border:2px solid #b7a5a2}
 @media(max-width:480px){.map-commune-buttons{grid-template-columns:minmax(0,1fr)}}
+
+/* Transmission 015 : containment conservateur au viewport 320px. */
+.initiative-header,.initiative-main,.initiative-main *{min-width:0}
+.initiative-main input,.initiative-main select,.initiative-main textarea{max-width:100%;box-sizing:border-box}
+.initiative-header .identity{overflow-wrap:anywhere}
+.initiative-main h1,.initiative-main h2,.initiative-main h3,.initiative-main p,.initiative-main a{overflow-wrap:anywhere}
+@media(max-width:350px){
+ .initiative-header{flex-wrap:wrap}
+ .initiative-main{padding-inline:12px}
+ .initiative-main #filters,.initiative-main #simulation-form{padding:12px}
+ .initiative-main .map-legend,.initiative-main #map-panel{padding:10px}
+}
