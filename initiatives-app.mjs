@@ -170,6 +170,15 @@ import("./cartes-map.mjs").then(({createMunicipalityMap})=>{
  setDisplay("list");
 });
 count.tabIndex=-1;
+// Le schéma conserve sa taille lisible sur mobile : le conteneur est activable au
+// clavier, et ses flèches ne déplacent pas la page entière.
+const mapScrollRegion=$("map-scroll-region");
+mapScrollRegion.addEventListener("keydown",event=>{
+ if(event.target!==mapScrollRegion||!["ArrowLeft","ArrowRight"].includes(event.key)||
+    mapScrollRegion.scrollWidth<=mapScrollRegion.clientWidth)return;
+ event.preventDefault();
+ mapScrollRegion.scrollLeft+=event.key==="ArrowRight"?120:-120;
+});
 $("reading-communs").addEventListener("click",()=>setReading("communs"));
 $("reading-possibles").addEventListener("click",()=>setReading("possibles"));
 $("display-list").addEventListener("click",()=>setDisplay("list"));
