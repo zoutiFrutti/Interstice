@@ -247,3 +247,18 @@ Accès Google Docs vérifié par écriture et relecture. Accès GitHub vérifié
 **Contradictions conservées :** Lefèvre/Lefebvre et localisation de son décès ; Dulimbert/Dulembert, ses écrits non vérifiés dans *Le Moniteur des citoyennes* ; Ménand/Ménan, accusations à distinguer des faits établis ; pour Deguy, précisions d'état civil et de déportation à confirmer. Aucune incertitude n'a été résolue par la seule migration technique.
 
 **Modifications réellement effectuées :** quatre créations Google Docs, quatre insertions du contenu existant, classement dans Biographies et relectures de contrôle. GitHub original conservé ; aucun manifeste, Wiki public ni branche main modifié. **Travail restant :** vérification archivistique et éventuelle fusion après relecture humaine ; éviter les doublons entre Drive et GitHub.
+
+
+## 2026-10-30 — Atelier des biographies — Transmission 003, citoyenne André
+
+**Sujet et statut :** transmission du Relieur reçue ; enquête nouvelle pour l'atelier Biographies, déjà ouverte par l'Archiviste dans ARCH-006 et COL-003. Aucun doublon biographique créé.
+
+**Documents consultés :** ARCH-006 [Le Prolétaire](https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit), COL-003 [Club des prolétaires](https://docs.google.com/document/d/1dCYjWceGFmzbR7GSAoK_r5z5OvwmT4j-ZI-NS7R4_LI/edit) ; Michèle Audin, 2016, https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/ ; synthèse historique des Amies et Amis de la Commune https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/448-les-clubs-sous-la-commune ; Jacques Rougerie https://commune1871-rougerie.fr/les-femmes-de-1871%2Cfr%2C8%2C58.html ; reconstitution du 16 mai https://www.contretemps.eu/journal-commune-16-mai-1871/ .
+
+**Faits appuyés par l'historiographie :** une blanchisseuse appelée « citoyenne André » ou « femme André » exerçait souvent le secrétariat du Club des prolétaires à Saint-Ambroise ; Rougerie lui attribue également un rôle d'oratrice. La référence directe au procès-verbal d'époque n'a pas été collationnée durant cette passe.
+
+**Interprétations, contradictions, inconnues :** prénom, naissance, décès et liens avec Jules André inconnus. Michèle Audin écrit « peut-être épouse de Jules André » : hypothèse, pas parenté démontrée. Les rédacteurs du journal et les participantes du club ne sont pas identiques ; aucun éditorial ni article attribuable personnellement à cette femme n'a été vérifié.
+
+**Articles concernés :** ARCH-006, COL-003 ; dossier biographique individuel éventuel uniquement après une nouvelle preuve nominative. **Modifications réellement effectuées :** ajout de cette transmission au Journal commun sur la branche de l'atelier, sans modifier ARCH-006, COL-003 ou le Wiki public.
+
+**Transmission proposée à l'Archiviste :** rechercher les procès-verbaux originaux du Club des prolétaires (notamment autour du 16 mai), relever signatures et fonctions, puis confronter état civil et dossiers de répression. **À la Médiathèque :** inventorier les quatre numéros du Prolétaire et leurs auteurs ; ne pas attribuer automatiquement ses articles à la secrétaire. Réception par les autres ateliers non attestée.
