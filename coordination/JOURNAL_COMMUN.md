@@ -865,6 +865,49 @@ Qu'est-ce qui vous paraît utile, flou ou contestable dans cette proposition ? V
 
 **Écriture :** cette entrée de coordination uniquement, sans modification de charte, de droits Supabase, de contenus éditoriaux ou de publication. Les états « réponse reçue » ne signifient pas « travail intégral terminé ».
 
+
+## 2026-10-30 — Archiviste / Médiathèque — Accès aux pièces originales : Rossel et Combahee
+Sources vérifiées : Open Library, édition 1908 de Louis Rossel, identifiant Internet Archive mmoiresetcorres00rossgoog, https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; tentative d'ouverture du volume sur archive.org non aboutie, passage sur Avrial NON lu. *Historical Journal*, notes 8, 18 et 22 : https://www.cambridge.org/core/journals/historical-journal/article/abs/harbinghers-or-entrepreneurs-a-workers-cooperarive-during-the-paris-commune/B1073C3768ACA7CCBE3AD7CFA1A2E9C2 . Ly 108 contient plusieurs dossiers ; la lettre du directeur du Louvre à Avrial (12 mai 1871) est citée à la note 22 ; les feuilles de paie du 20 mai, note 18, concernent la rue de Lourmel, et ne peuvent être imputées au Louvre. Dépôt exact et consultation du carton Ly 108 restent à confirmer auprès de l'institution de conservation.
+Combahee : Boston Public Library, collection Barbara Smith MS.SC.0028, déclarée ouverte à la recherche, https://archives.bpl.org/repositories/2/archival_objects/76732 . Harvard Radcliffe, collection Barbara Smith acquise en 2026 : plan manuscrit annoté de la déclaration photographié, mais fonds volumineux en cours de traitement avant accès complet, https://www.radcliffe.harvard.edu/news-and-ideas/schlesinger-library-acquires-the-papers-of-groundbreaking-black-feminist-barbara-smith et https://www.radcliffe.harvard.edu/events-and-exhibitions/press-information-for-barbara-smith-collection . Ni l'ensemble des manuscrits ni les documents internes du fonds Boston n'ont été dépouillés dans cette passe.
+Bilan probatoire : progrès sur identifiants et conditions d'accès, mais aucune nouvelle transcription primaire de Rossel ou de la lettre du Louvre ; pas de preuve supplémentaire de pratiques électorales, de paie ou de décision. Poursuivre obtention des originaux et accès aux fonds.
+Modification réelle : entrée au journal commun uniquement, catalogue FN, dossier ARCH-005, Wiki public et manifeste V2.5 non adopté inchangés.
+
+
+## 2026-10-30 — Le Relieur — retour de test mobile sur l'accueil
+
+**Provenance :** test manuel de la page d'accueil Interstice sur téléphone, rapporté directement par l'utilisateur. **Statut : remarques observées, non corrections validées.**
+
+Constats : slogan « Des idées publiques. Des personnes protégées. » jugé peu accrocheur ; introduction, boutons et titres trop petits ; le titre déjà existant « Et si on essayait autre chose ? » devrait être proposé comme accroche principale plus haute sur la page. Le ressenti porte sur l'ensemble de la typographie mobile, pas seulement la section de découverte.
+
+**Code observé sur `main` :** le H1 actuel est « Des idées publiques. Des personnes protégées. » ; « Et si on essayait autre chose ? » est le H2 de la deuxième section. Dans `style.css` : texte de base 17px, certains libellés de 12px ; la taille des liens CTA est héritée et leur disposition est dense.
+
+**Transmission technique réellement effectuée :** commentaire sur la PR [#35](https://github.com/zoutiFrutti/Interstice/pull/35#issuecomment-6518191665), qui est une réponse **existante et vérifiable** du Graphiste à la transmission 007. Elle contient déjà des tests de lancement V0. La PR #22 porte le kit graphique et la PR #28 la modération ; ne pas doubler leurs modifications. **Rectification du registre précédent :** 007 est **« réponse reçue / travail V0 en PR #35 »**, et non plus « en attente sans retour ».
+
+**Piste éditoriale proposée (non adoptée) :** mettre « Et si on essayait autre chose ? » en H1 ; expliquer simplement le rôle d'Interstice en plus grand dessous ; préserver l'engagement de protection ailleurs dans la page ; agrandir les textes et zones tactiles. Le Graphiste prépare une version mobile testable et la soumet à arbitrage avant fusion. Ne pas inventer de fonctionnalité ou de nouvelle voie de contribution.
+
+**Aucune modification de `index.html`, `style.css`, aucune fusion de PR ni nouvelle publication résultant de ce rapport.** Le Manifeste V2.5 reste éditorial non adopté collectivement.
+
+
+## 2026-10-30 — Archiviste — Fabrication des tracts Combahee et vérification Ly 108
+
+**Source testimoniale consultée :** entretien de Barbara Smith avec Huda Hassan, 8 mars 2022, extrait https://www.bunkhistory.org/resources/eleven-black-women-why-did-they-die-an-interview-with-black-feminist-socialist-barbara-smith . Smith dit avoir rédigé un brouillon du tract *Six Black Women: Why Did They Die?* puis l'avoir présenté successivement aux autres membres pour accord et modifications ; Urban Planning Aid lui a fourni un appui graphique et technique. C'est un récit rétrospectif précis, non un procès-verbal de réunion de 1979.
+
+**Pièce contemporaine liée :** The History Project, *8 Black Women Why Did They Die?*, https://historyproject.omeka.net/items/show/591 ; notice décrivant les nombres précédents barrés (6, 7), les ressources pratiques de protection et un poème de ntozake shange. Décrire la pièce sans attribuer une autorisation de reproduction générale ; droits propres du poème à vérifier. Le témoignage et la notice se corroborent sur l'existence d'une production évolutive, pas sur toute la procédure décisionnelle.
+
+**Louvre, vérification bibliographique :** note 22 de l'article *Harbinghers or Entrepreneurs? A Workers' Cooperarive during the Paris Commune* https://www.cambridge.org/core/journals/historical-journal/article/abs/harbinghers-or-entrepreneurs-a-workers-cooperarive-during-the-paris-commune/B1073C3768ACA7CCBE3AD7CFA1A2E9C2 cite la lettre du directeur du Louvre à Avrial, 12 mai 1871, en Ly 108. La note 8 situe plusieurs dossiers hétérogènes dans Ly 108 ; elle n'identifie pas sans ambiguïté le service de conservation du carton. La note 18 concerne les feuilles de paie de la rue de Lourmel et non du Louvre. Open Library identifie l'édition de Rossel de 1908 et l'identifiant Internet Archive mmoiresetcorres00rossgoog https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; passage original non collationné.
+
+**Résultat intellectuel :** distinguer une rédaction initiée par une personne, une consultation collective et une éventuelle prise de décision politique. Ne pas déduire de la première une confiscation du pouvoir ni de la seconde une horizontalité entièrement démontrée.
+
+**Restant :** ouvrir les scans PDF des tracts, collationner le passage Rossel et trouver l'institution conservant Ly 108 avant toute demande formelle de copie. Aucun ajout FN ni ARCH, aucune publication Wiki ni modification du manifeste V2.5 non adopté.
+
+
+
+## 2026-10-30 — Archiviste — Combahee ressources pratiques BPL et Rossel Google Books
+Sources croisées : Boston Public Library, https://www.leventhalmap.org/articles/mapping-250-years-of-poetry-in-boston/ (reproduction de ressources listées dans les tracts Combahee : rencontres hebdomadaires, réseaux de soutien, autodéfense et associations locales) ; WBUR https://www.wbur.org/news/2019/06/10/boston-combahee-river-collective-intersectional-black-feminism (manifestation du 28 avril 1979, environ 500 participants) ; Massachusetts Women's History Center https://www.mawomenshistory.org/resources/articles/combahee-river-collective-pioneers-intersectional-feminism (recoupement secondaire). Notices primaires tracts https://historyproject.omeka.net/items/show/590 et https://historyproject.omeka.net/items/show/591 .
+Résultat : activités publiques et orientation concrète vers des ressources de soutien étayées par documents/présentation de collections. Pas de preuve nouvelle concernant délibérations internes, finance ou distribution du travail. Ne pas déduire d'une liste imprimée que chaque service annoncé fonctionnait effectivement.
+Louvre : édition 1908 des mémoires de Rossel disponible en ebook gratuit https://play.google.com/store/books/details/Louis_Rossel_M%C3%A9moires_et_correspondance?id=jW6dOv5n8Z8C et bibliographie Open Library https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; passage sur Avrial non lu lors de cette passe. Référence Ly 108 toujours issue d'une citation universitaire et dépôt conservateur non confirmé.
+Modifications : entrée de journal uniquement, pas de mise à jour de FN-069, ARCH-005 ou Wiki ; manifeste V2.5 de travail non adopté inchangé. Suites : accès au texte original, recherche de procès-verbaux/registre d'atelier et pièces d'organisation du collectif.
+
 ## 2026-10-30 — Graphiste / Intégrateur — Transmission 007, lancement V0
 
 **Source :** Transmission 007 du Relieur. Audit et briefing complet en `coordination/GRAPHISTE_TRANSMISSION_007_LANCEMENT_V0_2026-10-30.md` sur branche `design/lancement-v0-verifications-2026-10-30`. Identité maître conservée (`logo-faille-noire.svg`, `logo-interstice.svg`). PR #22 graphique et PR #28 publication structurée toujours en brouillon, non fusionnées sur `main`.
@@ -878,3 +921,21 @@ Qu'est-ce qui vous paraît utile, flou ou contestable dans cette proposition ? V
 **Raccordement :** les correctifs de bibliothèque et du manifeste recouvrent des travaux déjà présents dans la PR #22. Avant toute fusion, rapprocher les branches au dernier `main`, éliminer les doublons, conserver le journal commun et tester l'assemblage. La PR #28 reste distincte et ne doit pas devenir bloquante pour une V0 présentant uniquement des pages publiques et des fonctionnalités réellement disponibles.
 
 **Vigilance lancement :** contrôler le domaine public exact et les formulaires avant annonce ; ne pas présenter la V2.5 comme adoptée ni les 15 imports comme accessibles ; confirmer les visuels et crédits avec l'Atelier des Communications. Les perfectionnements du design system, exports supplémentaires et modération des imports sont reportables. Aucune fusion, publication sociale, mutation Supabase ou modification politique effectuée dans cette passe.
+
+## 2026-10-30 — Graphiste / Intégrateur — Transmission 010, lisibilité du site
+
+**Sujet :** appliquer directement le retour d'usage réel sur téléphone, en priorité avant la communication publique. Transmission 010 du Relieur, après Transmission 007. Travail sur la **PR #35 existante**, branche `design/lancement-v0-verifications-2026-10-30`, sans fusion.
+
+**Faits et sources :** `main` relu avant édition, PR #22 (polices et identité), PR #35 (contrôles V0), anciennes pages HTML/CSS, manifestes V2.5 et V2.1, workflow GitHub Actions `Verifications lancement public V0`. Aucun backend, aucune table Supabase, aucune décision éditoriale touchés.
+
+**Changements réellement committés :**
+- `index.html` : H1 « Et si on essayait autre chose ? » ; introduction humaine spécifiée dans la Transmission 010, réorganisation en deux actions de premier écran, trois possibilités concrètes, distinction explicite La Faille noire / Interstice, puis ressources Wiki, bibliothèque, propositions et participation. La phrase d'accroche n'est plus répétée. L'ancien engagement de protection reste en bas de l'accueil. Formulaire, noms de champs et `script.js` conservés.
+- `style.css` : typographie globale (lecture 19px ordinateur, 18px mobile, intro 21px mobile, H1 40–44px mobile, H2 30–34px, H3 23–26px, commandes 18px et surfaces principales au moins 52px), espaces mobiles, disposition des boutons, cartes de découverte, textes longs et réglages d'impression.
+- Six fichiers de polices/licences **repris à l'octet près** de la PR #22 : Barlow Condensed Bold et Atkinson Hyperlegible Next variable en WOFF2 latin/latin étendu, avec deux licences OFL. Logos et charte validée inchangés.
+- `manifeste.html` V2.1 : **deux règles de style seulement** corrigées, titre d'archive agrandi et contraste du sommaire rétabli ; vérification de la stricte conservation du HTML hors balise de style.
+- `tests/lancement-v0-smoke.mjs` étendu à 11 pages × deux écrans, contrôle des chemins/ancres, WOFF2 réellement chargées, titres, corps, intro, boutons, contrastes, ressources, erreurs JS et captures du nouvel accueil.
+
+**Tests et limites :** premier cycle étendu `41025612768` : 20/22 cas navigateur réussis, deux échecs localisés à l'archive V2.1 (H1 trop petit et liens sommaire à faible contraste). Deux règles CSS de cette archive ont été corrigées et une nouvelle exécution GitHub Actions a été engagée. Le résultat final doit être indiqué **après** vérification de ce run, sans confondre succès du code de test et affichage réel sur Android. Les tests utilisent un navigateur Chromium GitHub Actions, **pas** un téléphone physique ni Safari/Firefox. Formulaires jamais soumis, aucun droit ou données modifiés.
+
+**Coordination et suites :** préserver et rapprocher les contenus graphiques de PR #22, dont certaines illustrations restent optionnelles pour une V0 publique, et l'aperçu de modération de PR #28 demeure hors périmètre. Revoir l'Anarchitecte avant fusion ; tester l'accueil sur un vrai Android puis publier seulement après validation. Les anciens contenus de La Faille noire restent éditorialement non adoptés collectivement. Ne pas ralentir la sortie pour de simples détails décoratifs.
+
