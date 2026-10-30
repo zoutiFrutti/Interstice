@@ -107,3 +107,48 @@ Cette transmission sert de message **à récupérer ou relier** par les autres a
 
 **Aucune modification de permissions Supabase, migration, code du prototype, HTML Wiki, fusion, publication, ni adoption du Manifeste V2.5.** Le dépôt de ce bilan est une transmission documentaire.
 
+---
+
+## Transmission 014 — Bilan Juriste, vingt passes et avis éditorial · 30 octobre 2026
+
+**Destinataire documentaire : Relieur.** La Juriste a repris les dossiers existants, sans nouvel audit général ni atelier « Organisateur ». Le Relieur coordonne sans pouvoir politique. **Aucun changement Supabase, aucune collecte réelle, aucune fusion ni publication.**
+
+### Point de départ et preuves
+
+- [PR #41](https://github.com/zoutiFrutti/Interstice/pull/41) : HEAD vérifié `a59268357812d730f95b4cbad75275e4ac4d9e57`, ouverte en brouillon, 11 objets fictifs et deux cartes SVG ; 7 `communs` et 4 `possibles` ; quatre types `initiative`, `ressource`, `besoin`, `projet`. [GitHub Actions #41099508020](https://github.com/zoutiFrutti/Interstice/actions/runs/41099508020) **réellement réussie sur ce SHA** : jobs `test-core` et `browser-mobile`, 38 déclarations `test` Node et 8 tests Chromium dans les fichiers source. Tests de fuite d'export avec champs sensibles fictifs, exclusion des objets non fictifs, repères communaux distincts des fiches, carte/liste et mode sans carte couverts. **Cela ne constitue pas un audit de sécurité d'une API réelle.**
+- Les ancres `COMMUNE_ANCHORS` sont **des points de communes réelles**, non des géolocalisations d'initiatives. Une précision lat/lon existe pour ces **communes** ; aucune position exacte d'habitation ou d'activité fictive dans les objets. Un objet sans commune est retenu en liste et omis des marqueurs selon test ; libellé vide sur sa fiche possible, à corriger avant vitrine.
+- Le SVG est une grille et des marqueurs fabriqués par `cartes-map.mjs`, sans fond externe ni serveur de tuiles. `README.md` précise qu'une licence libre définitive **n'est pas adoptée**. Conditions ODbL/fournisseur de tuiles à réexaminer uniquement si un fond OSM est ajouté.
+
+### Exécution des 20 passes
+
+**Matrice de travail vérifiée :** [`propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md`](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md), section **« Transmission 014 — Matrice juridique de 20 passes »** (commit `c9127134987038779c8ee1f6ed1c8e2dea3e5688`).
+
+| Passes | Travaux effectivement accomplis | Situation |
+|---|---|---|
+| **01–03** | État HEAD, confrontation F1–F10, consultation GitHub Actions et fichiers de tests | **FAIT** : CI verte prouvée, pas de validation sécurité générale |
+| **04–08** | Repères géographiques, champs publics/exports, sans localisation, libellés de simulation et risque de faux référencement | **FAIT** : contrôles de code et limites de fiction ; revue de nom réel à venir |
+| **09–13** | Auteur ≠ représentant habilité, usurpation, correction, contestation et lieux sensibles | **FAIT** : cinq scénarios et critères de tests proposés ; **NON EXÉCUTABLES** en produit sans backend réel |
+| **14–15** | Dessin SVG, licences et absence de rencontre promise | **FAIT** sur les fichiers de la PR, pas de fond fournisseur réel |
+| **16–18** | Relecture juridique des pages Wiki de PR #44 et **correction effective dans la branche** | **FAIT**, commits `db65145cc77d69272fb6b3d1d92c70e452412a21` et `6be7842f368484165c5baf052f7ecd18e0f52fc4` |
+| **19–20** | Dissociation démo fictive / conditions R1–R10, matrice de 7 tests supplémentaires et avis final | **FAIT**, documents modifiés et vérifiés |
+
+### Deux corrections éditoriales réalisées sur PR #44
+
+- `wiki-decision-collective.html:46` : abandon de « leur droit à être informées, contester et participer » au profit d'une distinction entre information, contestation et participation, sans droit de vote général fictif. `:44` : possibilité de ne pas exposer sa vie privée, pas droit procédural universel. `:57–58` : correction **documentaire non sensible** seulement, avertissement contre GitHub public.
+- `wiki-lecture-croisee-travail-soin-pouvoir.html:7,16` : pas de fichier nominatif sur santé/handicap ; le formulaire de contribution ne se prétend pas canal privé. **Aucun canal RGPD réellement créé.**
+- [Avis juridique Wiki mis à jour](https://github.com/zoutiFrutti/Interstice/blob/main/docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md) (commit `c987b0c0836cbb0098f1a6f0f2270c54807769ad`). PR #44 reste **ouverte en brouillon, non fusionnée** après les deux corrections.
+
+### Classement et dépendances
+
+**BLOQUANT pour ouvrir à de vraies initiatives ou contacts :** R1–R5, responsables RGPD et bases légales, autorisations du backend testées, absence de diffusion de domiciles et lieux sensibles, source et licéité du référencement, canal de rectification/masquage/recours réellement opérationnel. Une whitelist dans l'export ne garantit pas l'absence de champs secrets déjà livrés au JavaScript client. **R6–R8 conditionnels** selon DSA, fonds/accès à des données tierces et organisation réelle de rencontres ; **R9–R10** nécessitent décisions humaines.
+
+**RECOMMANDÉ avant éventuelle vitrine fictive :** éviter l'expression « communes fictives » pour des points correspondant à des communes réelles ; prévoir un rendu explicite « localisation non publiée » si `territories:[]` ; conserver le bandeau fictif dans toutes les vues et exports et contrôler l'absence de noms risquant d'être confondus avec des collectifs existants ; revue mobile et lisibilité par le Graphiste.
+
+**ULTÉRIEUR :** comptes et mandats réels, interface de revendication, cas de signalement et de retrait, éventuelle AIPD, réutilisation de données externes et contrats d'événements, **sans ralentir le prototype purement fictif**.
+
+**Pour l'Anarchitecte et la Développeuse :** tests `J014-T01` à `J014-T07` dans la matrice ; `J014-T02` relève de la lisibilité de la fiche sans localisation, `J014-T01` doit tester **la réponse publique totale et les bundles**, pas seulement le JSON téléchargé. Le développement de la PR #41 appartient à leur domaine ; pas de correctif imposé par le Juriste sur cette branche.
+
+**Pour le Lecteur, la Médiathèque et le Graphiste :** les erreurs juridiques textuelles ciblées de PR #44 sont amendées, mais relecture des ouvrages/licences, tests navigateur et décision éditoriale restent en cours. Ne pas présenter les deux textes comme validés collectivement ou publiés.
+
+**Preuve de transmission :** présente note GitHub, à relier au `coordination/JOURNAL_COMMUN.md`. Son dépôt ne prouve pas la réception dans la conversation du Relieur. Le manifeste V2.5 reste une référence éditoriale non adoptée.
+
