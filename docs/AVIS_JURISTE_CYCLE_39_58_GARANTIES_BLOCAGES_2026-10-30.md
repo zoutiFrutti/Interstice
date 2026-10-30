@@ -102,3 +102,22 @@ Ces clauses sont des **propositions de gouvernance** ; elles ne modifient ni les
 7. Service-Public, dons et obligations selon leurs montants et régimes : https://www.service-public.gouv.fr/particuliers/vosdroits/F2722
 
 **Conclusion :** rendre la coordination utile mais réversible : pas d'identité ou de lieu sensible révélé par défaut ; pas de droit politique du financeur ou de l'administrateur ; pas d'export des contacts privés ; pas de recours fictif. Les quatre fonctions de la carte ne deviennent pas des obligations de livraison avant que leurs risques soient maîtrisés.
+---
+
+## VII. Vérification ciblée du prototype PR #41 — 30 octobre 2026
+
+**Objet de la passe :** répondre aux blocages B2, B3, B4 et B6 sans réexaminer l'audit Supabase historique ni modifier la branche de la Développeuse.
+
+**État réel de la PR :** [PR #41](https://github.com/zoutiFrutti/Interstice/pull/41), toujours ouverte en brouillon et non fusionnée lors du contrôle ; dernier HEAD relevé `beb832d31665bdeef05755c47ccaf2c7688b5c8b`. Lecture des fichiers de sa branche `feat/initiatives-decouverte-mobile-2026-10-30` : `decouvrir-initiatives.html`, `initiatives-app.mjs`, `initiatives-core.mjs`, `initiatives-data.mjs`, `tests/initiatives-core.test.mjs`.
+
+**Contrôle statique effectivement exécuté sur ces cinq fichiers (12 assertions) :** 10 propriétés attendues observées (bandeau explicitement fictif, zéro appel `fetch` ou `createClient` dans le module de l'application, absence de GPS dans ce module, pas de `localStorage` / `sessionStorage`, recherche manuelle par commune, filtrage par besoin/ressource, export limité aux fiches de simulation, liste blanche sans champs de contact, données de démonstration sans adresse ni coordonnées, présence de tests Node). Les deux assertions restantes sont **négatives parce que hors périmètre de la démo** : aucun canal de correction/recours dans `decouvrir-initiatives.html`, aucun backend réel connecté dans `initiatives-app.mjs`. Ce sont des constats **statiques et ciblés**, pas un audit dynamique, une preuve d'absence de fuite de toute la page ni un test de lecture d'écran.
+
+**Caveat sur CI :** une transmission Développeuse annonce **15 tests réussis** sur un commit antérieur `8ff4755568fb2660027b907f44a22a28dfa701b7` avec lien vers le [run GitHub Actions](https://github.com/zoutiFrutti/Interstice/actions/runs/41047101065). Je n'ai **pas** reproduit cette exécution localement, et ce résultat ne prouve pas que le dernier HEAD possède une CI réussie. Sur la branche consultée, le fichier de tests contient actuellement **20 déclarations `test("...")`**. La réussite de ces vingt tests, les essais sur téléphone, lecteur d'écran, les parcours d'alerte et les appels réels à une API demeurent **non attestés ici**.
+
+**Comparaison avec les critères Anarchitecte A01–A15 :**
+- **Étroitement démontrables par inspection :** A03 (filtrage territoire et catégorie pour les données fictives), A05 (recherche manuelle dans la démo sans GPS), une partie A10 (export de démonstration par liste blanche), une partie A12 (attributs et libellés dans le code, sans preuve d'accessibilité effective).
+- **Non couverts par la PR** : A01–A02 (publication d'un besoin réel), A04 (carte interactive), A06 (consentement à la mise en relation), A07 (rencontre hors plateforme), A08–A09 (arbitrage ressources et recours), A11 (résilience d'un enregistrement réseau), A13 (statuts déclarée/documentée/validée sur vraies fiches), A14 (parité site/app sur vrai backend), A15 (sortie avec données réelles). Leur absence ne constitue pas un échec du prototype fictif.
+- **Test de droit complémentaire à ajouter lors de la future intégration** : vérifier par comptes fictifs que l'initiative revendiquant une fiche ne peut pas lire les commentaires privés ou les coordonnées d'une autre personne, ni effacer des objections légalement conservables.
+
+**Conclusion de cette passe :** **aucune objection juridique à conserver la PR comme démonstration fictive en brouillon** sur la seule base des fichiers inspectés. **Aucune autorisation** de fusion, de publication de fiches réelles ou de mise en relation n'en découle. Le futur adaptateur HTTP doit satisfaire B1–B4.
+
