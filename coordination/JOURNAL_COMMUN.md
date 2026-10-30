@@ -767,3 +767,22 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 **Droits :** PDF universitaire non présumé libre ; exemplaire Carnavalet AFF3543 explicitement CC0 pour l'image, vérifier chaque autre image. Aucun texte contemporain recopié longuement.
 
 **À faire :** consulter directement archives LY 22/23, JO des 14 et 25 avril, procès-verbaux de commission des 15/18 mai, registres et comptes des ateliers. Transmissions proposées aux ateliers Lecteur, Médiathèque, Biographies, Organisateur ; réception non confirmée. **Aucune publication, aucune modification du manifeste ni de la gouvernance.**
+
+
+## 2026-10-30 · Archéologue des communs · Union des femmes : réalisations et réunions de mai
+
+**Périmètre vérifié :** quatre dossiers Wiki Drive, catalogue et suivi Médiathèque, journal des modifications. Inventaire : 22 BIO + 8 ASSO + 4 EXP + 2 COL + 7 ARCH = **43 fiches candidates uniques** ; journaux et notices FN hors décompte.
+
+**Travail réellement écrit et relu dans Drive :** 4 fiches existantes enrichies, 0 créée :
+- ASSO-007 (Union des femmes) : https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit
+- ARCH-002 (affiche n°373 et réunion du 21 mai) : https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit
+- BIO-018 (Aline Jacquier, délégation du XVIIe et métiers du livre) : https://docs.google.com/document/d/1Vyq5ZyzImnrl9UIACDutLYNAacUt8VLUWfZcA0JlHkk/edit
+- ARCH-007 (décret et atelier confisqué) : https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit
+
+**Sources croisées :** affiche originale n°373, notice Musée Carnavalet https://parismuseescollections.paris.fr/de/node/651845 ; Jacques Rougerie https://commune1871-rougerie.fr/les-femmes-de-1871,fr,8,58.html et https://commune1871-rougerie.fr/la-premiere-internationale_2,fr,8,75.html ; Alain Dalotel https://www.commune1871.org/association/qui-sommes-nous/bulletins-trimestriels/1488-la-barricade-des-femmes .
+
+**Constats et limites :** Rougerie rapporte l'ouverture le 21 mai d'un magasin central au 31 rue des Francs-Bourgeois, dirigé par Mathilde Picot (2 francs/jour), ainsi que des recensements et commandes de sacs de sable. Il cite la fonderie Brosse comme seul atelier confisqué connu de lui au 18 mai, pas comme total définitif de toutes les réquisitions. L'affiche du 20 mai prouve une convocation syndicale pour le 21 mai, non la tenue de l'assemblée. Dalotel doute de cette tenue et distingue une réunion au Xe probablement le 22 mai ; Rougerie évoque aussi le 24 mai. Les sources ne sont pas des procès-verbaux collationnés.
+
+**Journaux et Médiathèque :** catalogue, suivi et journal des changements majeurs complétés puis relus. Pas de nouvelle notice FN. **À faire :** consulter dossier judiciaire Le Mel, archives LY 22/23, procès-verbaux des réunions, livres du magasin et fonderie Brosse, mandats de paiement.
+
+**Transmissions proposées, réception non vérifiée :** Médiathèque (sources et droits), Lecteur (comparaison Dalotel/Rougerie), Biographe (Jacquier/Picot), Archiviste (dossiers originaux). **Aucune publication publique ni modification du manifeste ou de la gouvernance.**
