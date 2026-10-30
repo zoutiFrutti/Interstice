@@ -1099,3 +1099,17 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 ## 2026-10-30 — Anarchitecte — contrôle bibliographique deux publications Wiki V0
 
 Mission du Relieur reçue. Reprise du dossier existant PR #34 et feuille de route `coordination/RELIEUR_FEUILLE_DE_ROUTE_PUBLICATION_WIKI_V0_2026-10-30.md`, sans duplications des pages. Tableau de neuf auteurs, éditions, niveau effectif de consultation, pages et droits, et sept corrections éditoriales rédigé dans `coordination/propositions/ANARCHITECTE_AUDIT_SOURCES_DEUX_ARTICLES_WIKI_20261030.md` (commit `ea9ec04d2a0e4b20182185e6585fc958308a839b`). Contrôles externes : notices éditeurs Young/Oxford, Tebble/Wiley, Ahmed/Duke, Federici/PM Press, hooks/Routledge ; texte de Jo Freeman sur site de l'autrice ; bibliographies Freire ; fac-similé Kropotkine (2e éd., 1892). Berenstain : DOI et résumé, licence précise et pages intérieures à revoir. Correction détectée : édition anglaise Freire 1970 = Herder and Herder, non Continuum ; hooks 1994 désigne l'original anglais, non une édition française confirmée. Aucun article fusionné ou publié ; publication toujours conditionnée à la relecture, aux droits et à la décision humaine. Retour documentaire au Relieur par cette entrée.
+
+
+---
+
+## 2026-10-30 · Juriste — avis ciblé Wiki V0 sur deux enrichissements
+
+**Mission :** relecture juridique ciblée demandée par le Relieur de « Décider ensemble sans hiérarchies invisibles » (`wiki-decision-collective.html`) et « Qui fait vivre les communs ? » (`wiki-lecture-croisee-travail-soin-pouvoir.html`). Lecture de `coordination/RELIEUR_FEUILLE_DE_ROUTE_PUBLICATION_WIKI_V0_2026-10-30.md`, des versions `main` et de la PR #27 (branche `atelier-lecteur/wiki-rattrapage-main-20261030`, HEAD observé `7146a014...`), et des politiques Wiki existantes. Aucun enrichissement fusionné à la date du contrôle.
+
+**Résultats motivés :** page Décider ligne 52, faux risque d'un droit général de vote/participation des personnes extérieures ; page Travail et ligne 11, lien vers formulaire Wiki à connexion e-mail non adapté aux demandes sensibles ; revue des lignes 35–37, 50, 54 et 7 pour distinguer recommandations politiques et droit ; bibliographies/éditions et déplacements de liens de sortie ; témoignages personnels identifiants non trouvés dans les extraits contrôlés. Droits de citation examinés : CPI L.122-4/122-5 ; vie privée art. 9 Code civil, CNIL droits des personnes et historiques Git ; [Berenstain, éditeur Ergo](https://doi.org/10.3998/ergo.12405314.0003.022), licence CC BY-NC-ND 3.0 directement vérifiée, sans déduire un droit de traduction.
+
+**Livrables enregistrés et à relire :** avis court, hiérarchisé bloquant/recommandé/ultérieur avec emplacements exacts `docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md` (commit de rédaction `050a9c7c`, correction de liens `0a9081c9`, condensation `6e457bb1`) ; transmission au Relieur `coordination/transmissions/2026-10-30_JURISTE_VERS_RELIEUR_PUBLICATION_WIKI_V0.md` (commit `d485dc10`). L'enregistrement sur GitHub ne prouve pas réception en conversation.
+
+**Décisions requises avant mise en avant :** correction de la ligne 52, parcours honnête et sûr de demande de rectification (canal privé si données personnelles), validation des sources/licences et navigation, choix explicite de la version par les personnes habilitées. **Aucun HTML, Charte, Manifeste V2.5, donnée privée, PR ou statut éditorial modifiés ou adoptés.**
+
