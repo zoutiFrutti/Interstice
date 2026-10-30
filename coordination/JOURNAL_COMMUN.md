@@ -841,3 +841,26 @@ Qu'est-ce qui vous paraît utile, flou ou contestable dans cette proposition ? V
 
 **Suite :** décisions collectives sur référencement et critères de pratiques ; identification responsable RGPD, licences et conditions de traitement ; analyse DSA selon service réel ; audit API/RLS, tests de localisation, parcours de correction et moyens hors application avant lancement.
 
+
+
+## 2026-10-30 — Le Relieur — registre de suivi des transmissions 006 / 007 / 008 / 009
+
+**Périmètre :** 4 messages déclarés envoyés par la personne assurant leur relais dans les conversations ChatGPT. Le Relieur ne revendique aucun accès direct en écriture à ces conversations ; « envoyé » est confirmé par l'utilisateur, alors que les réponses ne sont dites attestées qu'en présence d'une trace vérifiable. Aucune nouvelle transmission vers ces ateliers lors de ce suivi.
+
+| Transmission | Destinataire réel | Envoi | Retour et preuve | Statut de mission |
+|---|---|---|---|---|
+| 006 | L'Anarchitecte | Déclaré envoyé | Réception explicitement confirmée et audit statique V0 consigné sur `main` (entrée « Transmission 006 » ; commit `d3cc076168`) | **Réponse reçue / audit partiel effectué** ; tests réels des pages, formulaires, mobile, accessibilité et URL publique encore à faire |
+| 007 | Le graphiste | Déclaré envoyé | Pas de nouvelle réponse explicitement liée à 007 dans les preuves consultées ; PR graphiques #22 et #28 anciennes et toujours ouvertes | **En attente de retour attesté** ; conserver les travaux existants, ne pas les redemander |
+| 008 | Le lecteur | Déclaré envoyé | PR [#34](https://github.com/zoutiFrutti/Interstice/pull/34) et dossier `coordination/propositions/SELECTION_EDITORIALE_LECTEUR_TRANSMISSION_008_20261030.md` | **Réponse reçue / présélection faite** : Young × Freeman et Berenstain × Ahmed pour relecture ; Ostrom × Foucault × Lyon réservé, non publiable à ce stade |
+| 009 | Atelier des Communications | Déclaré envoyé | Entrée « Transmission 009 » dans `main`, commit `fe2408830f` | **Réponse reçue / stratégie proposée** ; trois carrousels et légendes conservés, leur présence comme brouillons et leur ordre non vérifiés, aucun post programmé ou publié par cet atelier pendant la passe |
+
+**Contrôle complémentaire Metricool du Relieur :** marque connectée `faille.noire`. L'API de consultation des **posts programmés**, interrogée pour la période du 20/10 au 31/12/2026, ne retourne aucune programmation. Cet outil ne prouve **pas** l'absence de brouillons non programmés ; ne pas marquer « trois brouillons absents » ni « trois brouillons présents ».
+
+**Dépendances et priorités sans relance :**
+1. Attendre/observer la réponse 007 du Graphiste ; ne pas dupliquer le travail sur #22/#28.
+2. Faire une relecture contradictoire et juridique des deux textes retenus par 008, **sans publication automatique**.
+3. Vérifier techniquement le parcours public réel décrit par 006, y compris les formulaires et la capacité humaine de réception/réponse.
+4. Pour 009, vérifier les trois carrousels existants et le canal de retour **avant** tout calendrier ou appel massif.
+5. Conserver la coordination dans la conversation « Le Relieur » ; ne pas inventer « Atelier central coordination ». Le Manifeste V2.5 reste une référence éditoriale non adoptée collectivement.
+
+**Écriture :** cette entrée de coordination uniquement, sans modification de charte, de droits Supabase, de contenus éditoriaux ou de publication. Les états « réponse reçue » ne signifient pas « travail intégral terminé ».
