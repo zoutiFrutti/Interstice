@@ -96,3 +96,24 @@
 
 **Source opérationnelle :** la matrice juridique complète des vingt passes sur les cartes figure dans `propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md`, section **Transmission 014** ; les changements d'articles ci-dessus sont sur la branche PR #44, pas sur `main`.
 
+---
+
+## Suivi 015 — PR #44, contrôle juridique avant arbitrage · 30 octobre 2026
+
+**Relecture ciblée réellement effectuée** sur PR #44 `atelier-lecteur/correction-deux-pages-20261030`, HEAD contrôlé `393bfbd8bbacc543bf32f38447fe9f610009294e` ; PR **ouverte en brouillon**, aucune publication autorisée par cet avis. Les formulations textuelles ont évolué depuis notre correctif 014 : vérifier toujours le HEAD, pas les anciennes citations littérales.
+
+| Article / localisation précise au nouveau HEAD | Constat vérifié | Qualification |
+|---|---|---|
+| `wiki-decision-collective.html:44` | L'écoute d'un témoignage et la non-exposition de soi sont présentées comme proposition de pratique, pas droit procédural universel | **Corrigé**, pas de réserve juridique bloquante |
+| `wiki-decision-collective.html:46` | Information, contestation, consultation et participation distinguées ; aucun droit général de vote, veto ou accès aux documents internes pour les non-membres ; statuts/contrats/droit applicables mentionnés | **Corrigé**, pas de droit fictif |
+| `wiki-decision-collective.html:48` | Délégation contestable présentée comme proposition politique non adoptée et sans collecte de données intimes | **Corrigé** |
+| `wiki-decision-collective.html:57–58` | Lien « Soumettre une proposition de correction documentaire » ; le texte dit explicitement que le formulaire exige connexion et ne reçoit pas de réclamations confidentielles ou de données personnelles | **Corrigé sur la page** ; **canal RGPD réel absent** |
+| `wiki-lecture-croisee-travail-soin-pouvoir.html:7–8` | Analyse du handicap/santé sans fichier nominatif ; proposition politique annoncée « non adoptée » | **Corrigé**, pas de pouvoir disciplinaire |
+| `wiki-lecture-croisee-travail-soin-pouvoir.html:14–16` | Berenstain par passages, correction de note identifiée, Ahmed / Federici / hooks / Freire distingués en sources/notices ; formulaire non confidentiel annoncé | **Correct sur le principe**, vérifier liens/éditions et licence avant publication finale |
+
+**Bloquant si collecte sensible projetée :** la page du Wiki et `proposer-article.html` n'établissent aucun canal confidentiel d'exercice des droits ; ne pas solliciter ni déposer sur GitHub des témoignages identifiants, plaintes ou documents privés. Le canal n'est **pas créé** par la mise en garde. **Ce point n'empêche pas à lui seul l'arbitrage d'une synthèse éditoriale sans données personnelles nouvelles**.
+
+**Recommandé avant décision de publication :** préfixer la liste `wiki-decision-collective.html:33–37` « précautions à discuter, non adoptées » pour éviter de faire passer « prévoir une procédure de recours » pour une procédure du collectif déjà opérationnelle ; relire mobile/clavier, citations et licences. Le Juriste **n'a pas modifié les deux HTML pendant la transmission 015**, évitant de concurrencer la révision du Lecteur/Médiathèque.
+
+**Dépendance La Tisseuse :** les mêmes limites s'appliquent à un futur annuaire : un formulaire éditorial à connexion n'est pas une voie sûre pour une demande de retrait d'adresse, un signalement de discrimination ou une plainte sur l'accueil. La mise en place d'un destinataire réellement habilité et d'un canal privé opérationnel précède toute invitation à communiquer de telles données. **Aucun partenariat, droit de vote, adhésion au Manifeste V2.5 ni validation collective déduit du Wiki.**
+
