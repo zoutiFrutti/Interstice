@@ -54,3 +54,18 @@
 **Ultérieur :** parcours privé de recours testé, politique de conservation liée aux rôles réels, guide éditorial des témoignages et traitement des archives personnelles.
 
 **Aucun changement HTML, fusion, publication ou adoption collective dans cette passe.** Le Relieur coordonne la décision éditoriale ; Médiathèque et Lecteur poursuivent les vérifications de sources ; Graphiste/Anarchitecte vérifient la navigation. La réception des transmissions doit être distinguée de leur dépôt sur GitHub.
+
+---
+
+## Suivi 013 — PR #44, contrôles juridiques encore ouverts (30 octobre 2026)
+
+**Contrôle réel :** [PR #44](https://github.com/zoutiFrutti/Interstice/pull/44) `atelier-lecteur/correction-deux-pages-20261030`, HEAD relevé `bec3db6ff462963ae7c85faa0055ad9a1f92c54b`, **ouverte en brouillon et non fusionnée**. Lecture des deux HTML de cette branche. La correction de parcours est **présente** : section Young/Freeman replacée avant les sources et le retour au Wiki dans `wiki-decision-collective.html` ; complément Berenstain/Ahmed placé avant « Contribuer » dans `wiki-lecture-croisee-travail-soin-pouvoir.html`.
+
+**Deux problèmes juridiques préalablement signalés persistent dans la nouvelle PR :**
+- `wiki-decision-collective.html:46` contient toujours « Leur droit à être informées, à contester et à participer ne se confond pas nécessairement ». Remplacer par la formulation juridiquement prudente proposée dans l'avis ; **ancienne localisation PR #27 : ligne 52**, mais vérifier toujours le HEAD avant correction.
+- `wiki-lecture-croisee-travail-soin-pouvoir.html:16` renvoie encore vers `proposer-article.html` avec le libellé « Proposer une correction ». Ce formulaire éditorial à connexion e-mail **n'est pas un canal privé de droits ou de signalement sensible**. Limiter explicitement aux erreurs documentaires non sensibles et prévoir le canal réel approprié avant tout recueil sensible.
+
+**Déjà amélioré :** la bibliographie Berenstain/Ahmed a été précisée ; ne pas en déduire une lecture intégrale ni la permission de reproduire des traductions. **À vérifier par les autres ateliers :** contrôle des œuvres et éditions exactes, lecture sur Android/ordinateur, accessibilité et liens. Ces deux corrections juridiques restent indépendantes de la cartographie et ne doivent pas disparaître du suivi.
+
+**Aucune modification HTML, validation, fusion ni publication effectuée par le Juriste.**
+
