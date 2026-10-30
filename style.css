@@ -135,3 +135,53 @@ article .notice{max-width:100%}
   .home-hero .brand-identity{display:none}
   .home-hero{padding-top:22px}
 }
+
+
+/* Wiki • lecture éditoriale : pages du Lecteur, identité existante de la PR #35.
+   Portée volontairement limitée à body.wiki-reading. */
+body.wiki-reading {font-family:var(--font-reading);font-size:19px;line-height:1.75}
+.wiki-reading main {max-width:850px;padding-inline:clamp(18px,4vw,36px)}
+.wiki-reading header {max-width:920px}
+.wiki-reading main > section {max-width:70ch;margin-inline:auto}
+.wiki-reading .hero {padding-block:clamp(28px,5vw,48px) clamp(20px,3vw,32px)}
+.wiki-reading .hero h1 {max-width:20ch;font-size:clamp(40px,6vw,64px);line-height:1.1}
+.wiki-reading .hero > p:not(.tag) {max-width:62ch;font-size:clamp(20px,2.1vw,23px);line-height:1.55;color:#ece2db}
+.wiki-reading .tag {font-size:14px;color:#f0aaa8;letter-spacing:.065em;overflow-wrap:anywhere}
+.wiki-reading main > section:not(.hero) {padding-block:clamp(28px,4vw,43px);border-top:1px solid #4a4548}
+.wiki-reading main > section h2 {max-width:31ch;font-size:clamp(31px,4vw,42px);line-height:1.14;margin:0 0 .85em;scroll-margin-top:22px}
+.wiki-reading main > section h3 {max-width:34ch;font-size:clamp(24px,3vw,29px);margin:1.4em 0 .55em}
+.wiki-reading main > section p {line-height:1.79;margin:0 0 1.15em;color:#e0d9d4}
+.wiki-reading main > section p + p {margin-top:.45em}
+.wiki-reading main > section ul {padding-left:1.5em}
+.wiki-reading main > section li {line-height:1.74;margin-bottom:.62em}
+.wiki-reading main > section a {color:#f6beb8;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.19em;overflow-wrap:anywhere}
+.wiki-reading main > section a:hover {color:#fff0e3}
+.wiki-reading .reading-status {margin-top:24px;padding:16px 19px;border-left:3px solid #e6b7a7;background:#242022;max-width:68ch}
+.wiki-reading .reading-status strong {font-size:18px;color:#fff0df}
+.wiki-reading .reading-status p {font-size:17px!important;line-height:1.6!important;margin:6px 0 0!important;color:#e3d7cd!important}
+.wiki-reading .reading-toc {display:block;max-width:70ch;margin:0 auto 18px;border:1px solid #776d69;border-radius:10px;background:#211e21;padding:0 18px}
+.wiki-reading .reading-toc details {width:100%}
+.wiki-reading .reading-toc summary {cursor:pointer;min-height:54px;padding:16px 3px;font-size:19px;font-weight:750;color:#f0e5da}
+.wiki-reading .reading-toc ol {margin:4px 0 20px;padding-left:27px;columns:2}
+.wiki-reading .reading-toc li {break-inside:avoid;margin:7px 0;font-size:17px}
+.wiki-reading .reading-toc a {color:#f4c2b7;text-decoration:underline;text-underline-offset:3px}
+.wiki-reading .reading-actions {max-width:70ch;margin:24px auto 46px;display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.wiki-reading .reading-actions a {display:flex;min-height:56px;align-items:center;justify-content:center;padding:13px 17px;border:1px solid #b88b86;border-radius:8px;font-size:19px;line-height:1.35;font-weight:750;text-align:center;text-decoration:none;background:#922532;color:#fff}
+.wiki-reading .reading-actions .reading-back {background:#252124;color:#f8e5df}
+.wiki-reading .reading-actions a:hover {background:#b93645}
+.wiki-reading .reading-actions a:focus-visible,.wiki-reading .reading-toc a:focus-visible {outline:3px solid #fff1d7;outline-offset:3px}
+@media(max-width:600px) {
+ .wiki-reading main {padding-inline:20px}
+ .wiki-reading .hero {padding-block:22px 24px}
+ .wiki-reading .hero h1 {font-size:clamp(40px,10vw,45px)}
+ .wiki-reading main > section p,.wiki-reading main > section li {font-size:18px;line-height:1.74}
+ .wiki-reading main > section:not(.hero) {padding-block:28px}
+ .wiki-reading .reading-toc ol {columns:1}
+ .wiki-reading .reading-actions {grid-template-columns:1fr}
+ .wiki-reading .reading-toc a {display:inline-block;padding-block:4px}
+}
+@media print {
+ .wiki-reading main {max-width:100%}
+ .wiki-reading .reading-toc,.wiki-reading .reading-actions {display:none}
+ .wiki-reading main > section {max-width:100%}
+}

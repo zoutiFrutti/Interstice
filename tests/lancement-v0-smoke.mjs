@@ -1,9 +1,9 @@
 /* QA de lancement V0 : aucune soumission, aucune modification de données.
-   Le serveur HTTP est local à GitHub Actions ; deux tailles et dix-huit pages, sans écriture. */
+   Le serveur HTTP est local à GitHub Actions ; deux tailles et vingt pages, sans écriture. */
 import { chromium } from "playwright";
 import { existsSync, readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
-const files=["index.html","manifeste-v2-5.html","bibliotheque.html","wiki.html","participer.html","proposer-article.html","wiki-lecture-croisee-travail-soin-pouvoir.html","wiki-decision-collective.html","manifeste.html","squats-et-lieux-autonomes.html","charte-contributions-wiki.html","wiki-logement-habitat-droit-ville.html","habitat-dossier-participatif.html","habitat-dossier-friches.html","habitat-dossier-gouvernance.html","habitat-dossier-dalo.html","habitat-dossier-foncier-solidaire.html","habitat-dossier-lieux-collectifs.html"];
+const files=["index.html","manifeste-v2-5.html","bibliotheque.html","wiki.html","participer.html","proposer-article.html","wiki-lecture-croisee-travail-soin-pouvoir.html","wiki-decision-collective.html","manifeste.html","squats-et-lieux-autonomes.html","charte-contributions-wiki.html","wiki-logement-habitat-droit-ville.html","habitat-dossier-participatif.html","habitat-dossier-friches.html","habitat-dossier-gouvernance.html","habitat-dossier-dalo.html","habitat-dossier-foncier-solidaire.html","habitat-dossier-lieux-collectifs.html","wiki-decision-collective.html","wiki-lecture-croisee-travail-soin-pouvoir.html"];
 const widths=[{label:"mobile",width:390,height:844},{label:"desktop",width:1280,height:800}];
 const base=process.env.QA_BASE_URL||"http://127.0.0.1:8765";
 const checks=[];
@@ -105,6 +105,30 @@ try{
      const navigation=await page.locator(".story-sequence a").count();
      if(!status.includes("À relire par un être humain")||breadcrumbs!==2||navigation!==2)
        failed.push("Dossier : relecture, fil d'Ariane ou navigation incomplète");
+   }
+   if(filename==="wiki-decision-collective.html"||filename==="wiki-lecture-croisee-travail-soin-pouvoir.html"){
+     const read=await page.evaluate(()=>{
+       const sel=s=>document.querySelector(s);
+       const main=sel("main");
+       const paragraphs=[...document.querySelectorAll("main > section:not(.hero) p")];
+       const h2=[...document.querySelectorAll("main > section h2")];
+       const font=e=>parseFloat(getComputedStyle(e).fontSize);
+       const links=[...document.querySelectorAll('main a[href^="https://"]')];
+       const buttons=[...document.querySelectorAll(".reading-actions a")];
+       const labels=[...document.querySelectorAll(".reading-status strong")].map(e=>e.textContent);
+       return {bodyClass:document.body.classList.contains("wiki-reading"),mainWidth:main.getBoundingClientRect().width,
+         readingFont:Math.min(...paragraphs.map(font)),headingSize:Math.min(...h2.map(font)),numSections:h2.length,
+         status:labels.some(t=>t.includes("À relire par un être humain")),toc:!!sel(".reading-toc details"),
+         buttons:buttons.map(e=>({height:e.getBoundingClientRect().height,font:font(e),href:e.getAttribute("href")})),
+         linksValid:links.every(e=>e.href.startsWith("https://")),bodyOverflow:document.documentElement.scrollWidth>innerWidth+1};
+     });
+     if(!read.bodyClass||!read.status||!read.toc||read.numSections<6)failed.push("Lecture éditoriale : structure, statut ou sommaire");
+     if(read.readingFont<18||read.headingSize<29)failed.push("Typographie article : "+JSON.stringify(read));
+     if(viewport.label==="desktop"&&read.mainWidth>900)failed.push("Colonne article trop large : "+read.mainWidth);
+     if(read.bodyOverflow)failed.push("Débordement article");
+     if(read.buttons.length!==2||read.buttons.some(b=>b.height<52||b.font<18)||!read.linksValid)
+       failed.push("Actions retour/correction ou liens de sources : "+JSON.stringify(read));
+     await page.screenshot({path:"visual-qa/"+filename.replace(".html","")+"-premier-ecran-"+viewport.label+".png",fullPage:false});
    }
    if(errors.length)failed.push("JS "+errors.join(" ; "));
    if(failedResources.length)failed.push("Ressources "+failedResources.join(" ; "));
