@@ -246,3 +246,21 @@ La relation et l'autorisation ne doivent pas être exposées à une carte sans d
 - PR #35 / #44 contiennent deux versions divergentes des mêmes HTML : **pas de fusion automatique**, demande de revue du Lecteur et Graphiste pour intégration. Parcours correction, tests clavier/320px/lecteur d'écran et vérification HTTP globale sont encore à faire.
 - Toute publication d'une fiche réellement repérée par La Tisseuse attend revue Juriste, mandat, droits, processus de contestation/retrait, localisation protectrice, décision humaine ; aucune approbation morale ou « safe » absolu.
 - Statut : deux bibliographies **candidates**, aucune décision politique, juridique ou éditoriale collective, et aucun partenaire réel représenté ici.
+
+
+---
+
+## Addendum de contrôle 015 — reprise sans double comptage
+**30 octobre 2026, après renvoi identique de la transmission 015.** Ce passage ne constitue **ni une nouvelle campagne de trente passes ni trente nouvelles recherches**. Les 30 actions de 015 sont déjà tracées plus haut, avec **28 FAIT / 2 BLOQUE**, et les corrections PR #44 sont déjà commitées. Nouvelle vérification ponctuelle des changements apparus depuis l'enregistrement initial.
+
+### État de branche actualisé, vérifié
+- [PR #44](https://github.com/zoutiFrutti/Interstice/pull/44) toujours **ouverte en brouillon** ; HEAD consulté : `b08ee0b915a162faa2d870debc6580b08ca29935`.
+- `wiki-decision-collective.html` : blob `7be5bba6a2579eefbec01381f9a2653d2dc5ef14` ; **15 liens externes uniques**, trois liens internes ; un `h1` et **7 sections ouvertes/fermées** ; corrections Young, Freeman, Tebble et Mouffe maintenues.
+- `wiki-lecture-croisee-travail-soin-pouvoir.html` : blob `d52106115de9f1e5207d2df8799644a07faee464` ; **9 liens externes uniques**, trois liens internes ; un `h1` et **9 sections ouvertes/fermées** ; corrections Berenstain, Ahmed, Federici, Kropotkine, hooks et Freire maintenues.
+- **24 liens externes au total** au HEAD actuel, contre 23 lors du rapport initial ; le neuvième lien dans le second article est une référence à la page originale de Jo Freeman. Le répertoire GitHub confirme les liens internes, pas la disponibilité HTTP exhaustive de chaque URL externe. Les chiffres précédents sont des relevés *historiques*, non des erreurs à effacer rétroactivement.
+
+### Les deux blocages réexaminés, sans fausse clôture
+1. **Passe 07, droits de Berenstain : reste BLOQUE.** Vérification nouvelle du registre d'archivage de la revue *Ergo* (PhilArchive, établissement contacté en 2014) : l'éditeur y est décrit avec un régime **Creative Commons Attribution–NonCommercial–NoDerivatives** et une politique de dépôt du PDF éditeur en archive non lucrative avec crédit. Le répertoire Open Journals Collective confirme **CC BY-NC-ND** au *niveau de la revue*. **Ce n'est pas la preuve de la version précise (3.0/4.0), de la déclaration de licence liée au PDF historique précis ni des droits de traduction**. Sources : https://philarchive.org/journals.html ; https://www.openjournalscollective.org/catalogue/journal/303/ ; https://services.publishing.umich.edu/Journals/Ergo .
+2. **Passe 29, avis de correction et droits : reste BLOQUE.** La révision du PDF 2016 indique bien un **retrait de la note 20 en février 2024**, avec DOI https://doi.org/10.3998/ergo.5640 . La tentative de consultation de l'avis sur https://journals.publishing.umich.edu/ergo/article/id/5640/ renvoie une protection technique « Access Denied » ; le texte complet de la correction **n'a pas été lu**. Ne pas déduire une rétractation de l'article entier ou l'étendue des changements autres que la note explicitement signalée.
+- **Aucune réécriture bibliographique supplémentaire justifiée** par ce contrôle. Ne pas multiplier les commits et entrées de journal parce qu'un même ordre de mission a été renvoyé.
+- **Statut final inchangé :** deux bibliographies candidates, relecture Lecteur/Graphiste nécessaire avant convergence PR #35/#44 ; droit des versions et parcours sensible à instruire avec la Juriste. Contrat documentaire TIS-001 et exemples fictifs déjà consignés, aucun lieu réel importé.
