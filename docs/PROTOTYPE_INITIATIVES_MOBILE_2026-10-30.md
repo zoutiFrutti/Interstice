@@ -253,3 +253,47 @@ Les actions sont numérotées selon `coordination/RELIEUSE_TRANSMISSION_015_CYCL
 ### Contrat documentaire candidat #43
 
 Réutiliser les champs `id/from/to/subject/source_refs/requires/mission_ref/status/created_at/ack_at/result_ref`. Valider les références et états sans jamais faire d'une écriture Git un accusé ou un déclenchement d'agent. Toute éventuelle automatisation doit être conçue séparément avec contrôle des permissions, anti-boucles, exclusivité des identifiants et décision humaine, pas ajoutée au validateur lecture seule.
+
+
+## Transmission 015 — second contrôle, 30 cases, sans rejouer les anciens travaux
+
+Date 2026-10-30. Il s'agit d'un **nouveau bilan différentiel**, pas d'une prétendue seconde exécution complète des trente tests. Résultats avant ce cycle conservés dans la section précédente.
+
+| # | État | Preuve / résultat de ce cycle |
+|---|---|---|
+| 01 | FAIT | Main `b0c6c565bdc59919c4b2c87b83567efbaeb6f348` contrôlé par comparaison |
+| 02 | FAIT | PR41 divergente : 34 commits devant / 122 derrière au premier contrôle |
+| 03 | FAIT | Résultats de l'ancien run `41101912014` repris, pas confondus avec HEAD actuel |
+| 04 | FAIT | CSS de confinement 320px déjà présent dans `cartes-compat.css` ; aucune deuxième modification redondante |
+| 05 | FAIT | Sélecteur corrigé de retour clavier `#map-unlocated-results a[data-id]` vérifié sur branche |
+| 06 | FAIT | Attente communale filtrée de deux boutons déjà corrigée dans tests |
+| 07 | FAIT | Tests Node et navigateur présents séparément dans workflow |
+| 08 | FAIT | PR35 divergente de main : 68 devant / 133 derrière |
+| 09 | FAIT | Chemin sans carte vérifié dans le code : repli sur la liste |
+| 10 | FAIT | Test navigateur du cas sans localisation et focus lu dans la branche |
+| 11 | FAIT | Même `cartes-core.mjs` pour liste et carte ; aucun nouveau schéma |
+| 12 | FAIT | Export de démonstration en liste blanche et provenance simulée inspectés |
+| 13 | FAIT | Test canari DOM/URL/erreurs/export existant toujours présent |
+| 14 | FAIT | Nouveau test `015` refuse provenance absente dans la liste, carte et export ; commit `9336b74584b680dac6f768f51d88d23d21903783` |
+| 15 | BLOQUÉ | Nouveau test déposé mais exécution Node sur SHA final non attestée |
+| 16 | FAIT | Enveloppe JSON de PR43 déjà existante réutilisée ; pas de nouveau format |
+| 17 | FAIT | Distinction états PREPAREE/DEPOSEE/VUE_PAR_ORCHESTRATEUR/ACCUSEE_PAR_ATELIER relue |
+| 18 | FAIT | Validateur PR43 lu : contrôle IDs, destinataires, preuve d'accusé/résultat |
+| 19 | FAIT | Correction validateur : `VUE_PAR_ORCHESTRATEUR` ne peut pas avoir `ack_at` ; commit branche PR43 `5219acb9e2d6836b0e02a92530db6c9c06bf23e1` |
+| 20 | FAIT | Aucune API IA, transmission inter-conversations, ni moteur d'agent ajouté |
+| 21 | FAIT | #35 et #41 divergent de main ; CSS du Graphiste chargé par la page carte |
+| 22 | FAIT | PR44 et PR35 portent sur les mêmes articles Wiki : relecture manuelle requise |
+| 23 | FAIT | Journal non écrasé ; présent append sur la branche existante |
+| 24 | BLOQUÉ | Aucun résultat d'exécution des nouveaux tests sur HEAD actuel retourné |
+| 25 | FAIT | Correction du validateur confinée à la branche #43 ; écriture transitoire sur main annulée au commit `53aa446b5de212a6959e6236fc1ed179f5ad0739` |
+| 26 | FAIT | Nouveau test ajouté dans #41 et correction documentaire ciblée dans #43 |
+| 27 | BLOQUÉ | CI Node + Chromium success sur HEAD final non attestée |
+| 28 | BLOQUÉ | Essai sur Android physique non effectué |
+| 29 | FAIT | Ordre d'intégration proposé inchangé : #41 validée en CI, CSS #35, formulaires #42 séparés, articles #44 relus |
+| 30 | FAIT | Bilan différentiel et limites inscrits ci-dessous pour la Relieuse |
+
+**Résultat : 26 cases FAIT (dont vérifications et réutilisation de contrôles existants), 4 BLOQUÉ.** Ces cases ne sont pas 26 exécutions de tests indépendantes. Les nouveaux tests ne sont **pas** qualifiés de verts sans logs. L'ancienne erreur 320px du run `41101912014` ne permet pas de conclure sur le HEAD récent. Le validateur GitHub reste strictement documentaire et ne peut accuser réception pour une conversation ChatGPT.
+
+**Recommandation :** correctifs et contrat intégrables comme candidats ; **intégration techniquement prête non établie**. Revoir les nouveaux jobs Node et Chromium, tester le rendu 320/390/1280 sur SHA final, préserver les fixes PR35 et contenus PR44 et ne pas ouvrir de données réelles.
+
+**Incident de branche transparent :** une correction de validateur a d'abord été écrite directement sur main au commit `9df4f370454661f70d114659c81fe174e30a50a3`, puis revert au commit `53aa446b5de212a6959e6236fc1ed179f5ad0739`. Le correctif final est sur PR43 `5219acb9e2d6836b0e02a92530db6c9c06bf23e1`. Historique Git conservé.
