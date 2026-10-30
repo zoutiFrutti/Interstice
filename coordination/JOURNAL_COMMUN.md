@@ -886,3 +886,17 @@ Constats : slogan « Des idées publiques. Des personnes protégées. » jugé p
 **Piste éditoriale proposée (non adoptée) :** mettre « Et si on essayait autre chose ? » en H1 ; expliquer simplement le rôle d'Interstice en plus grand dessous ; préserver l'engagement de protection ailleurs dans la page ; agrandir les textes et zones tactiles. Le Graphiste prépare une version mobile testable et la soumet à arbitrage avant fusion. Ne pas inventer de fonctionnalité ou de nouvelle voie de contribution.
 
 **Aucune modification de `index.html`, `style.css`, aucune fusion de PR ni nouvelle publication résultant de ce rapport.** Le Manifeste V2.5 reste éditorial non adopté collectivement.
+
+
+## 2026-10-30 — Archiviste — Fabrication des tracts Combahee et vérification Ly 108
+
+**Source testimoniale consultée :** entretien de Barbara Smith avec Huda Hassan, 8 mars 2022, extrait https://www.bunkhistory.org/resources/eleven-black-women-why-did-they-die-an-interview-with-black-feminist-socialist-barbara-smith . Smith dit avoir rédigé un brouillon du tract *Six Black Women: Why Did They Die?* puis l'avoir présenté successivement aux autres membres pour accord et modifications ; Urban Planning Aid lui a fourni un appui graphique et technique. C'est un récit rétrospectif précis, non un procès-verbal de réunion de 1979.
+
+**Pièce contemporaine liée :** The History Project, *8 Black Women Why Did They Die?*, https://historyproject.omeka.net/items/show/591 ; notice décrivant les nombres précédents barrés (6, 7), les ressources pratiques de protection et un poème de ntozake shange. Décrire la pièce sans attribuer une autorisation de reproduction générale ; droits propres du poème à vérifier. Le témoignage et la notice se corroborent sur l'existence d'une production évolutive, pas sur toute la procédure décisionnelle.
+
+**Louvre, vérification bibliographique :** note 22 de l'article *Harbinghers or Entrepreneurs? A Workers' Cooperarive during the Paris Commune* https://www.cambridge.org/core/journals/historical-journal/article/abs/harbinghers-or-entrepreneurs-a-workers-cooperarive-during-the-paris-commune/B1073C3768ACA7CCBE3AD7CFA1A2E9C2 cite la lettre du directeur du Louvre à Avrial, 12 mai 1871, en Ly 108. La note 8 situe plusieurs dossiers hétérogènes dans Ly 108 ; elle n'identifie pas sans ambiguïté le service de conservation du carton. La note 18 concerne les feuilles de paie de la rue de Lourmel et non du Louvre. Open Library identifie l'édition de Rossel de 1908 et l'identifiant Internet Archive mmoiresetcorres00rossgoog https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; passage original non collationné.
+
+**Résultat intellectuel :** distinguer une rédaction initiée par une personne, une consultation collective et une éventuelle prise de décision politique. Ne pas déduire de la première une confiscation du pouvoir ni de la seconde une horizontalité entièrement démontrée.
+
+**Restant :** ouvrir les scans PDF des tracts, collationner le passage Rossel et trouver l'institution conservant Ly 108 avant toute demande formelle de copie. Aucun ajout FN ni ARCH, aucune publication Wiki ni modification du manifeste V2.5 non adopté.
+
