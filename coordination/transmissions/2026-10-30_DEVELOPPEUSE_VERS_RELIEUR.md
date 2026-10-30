@@ -9,7 +9,7 @@ La transmission du Penseur `2026-10-30_PENSEUR_VERS_DEVELOPPEUR.md`, la feuille 
 Sur la même branche PR #41, le prototype fictif reçoit : recherche explicite par besoins/ressources, champ de correspondance lisible sur la fiche-liste, conservation de l'ordre sans score, export JSON des seuls exemples fictifs avec liste blanche, et tests automatisés correspondants. Les autres parcours de base (commune → liste → fiche → retour) sont conservés.
 
 ## Frontières à préserver
-- **Réel :** code et tests versionnés sur une PR brouillon ; résultat des tests GitHub Actions à confirmer séparément.
+- **Réel :** code et tests versionnés sur une PR brouillon ; résultat vérifié : 15 tests Node réussis, 0 échec, sur le SHA `8ff4755568fb2660027b907f44a22a28dfa701b7` (https://github.com/zoutiFrutti/Interstice/actions/runs/41047101065). Aucun test mobile/lecteur d'écran attesté.
 - **Simulé :** toutes les fiches, ressources, besoins, territoires de démonstration et modalités de rencontre.
 - **Manquant :** publication sûre d'un besoin individuel, offre réelle, mise en relation consentie, contact public vérifié, recours, backend des initiatives.
 - **Bloquant avant production :** revue Anarchitecte (API/RLS), Juriste (droits, personnes, export et correction), Organisateur (rencontres et participation hors application), Graphiste (interface et intégration).
