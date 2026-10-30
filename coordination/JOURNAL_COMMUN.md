@@ -1237,3 +1237,8 @@ Lecture des HEAD relatifs de `main` (`a1fe47c475d8b128143407f5fb5162805349e20b`)
 
 
 **Contrôle complémentaire 014 — Mouffe : première édition Verso 2000**, distincte de la réédition Verso 2009, vérifiée par notice WorldCat et catalogue éditeur ; correction bibliographique dans la même PR #44, commit `a1bf2ec6df3141c6ddc8df1bccf8ecb2a3722e78`. Transmission Médiathèque existante remise à jour et relue, commit `9f605b54e6bc3a91d1a419e49876de97bdc83842`. PR #44 toujours ouverte en brouillon au dernier contrôle ; pas de fusion, publication ou accès aux œuvres intégraux revendiqués.
+
+
+## 2026-10-30 — Anarchitecte — dix passes complémentaires cartes (21–30)
+
+Suite réelle de transmission 014 sans refaire le modèle : PR #41 dispose désormais de `cartes-design.css`, `cartes-compat.css`, tests navigateur 390/1280, clavier, navigation et sans localisation. Test de fuite complémentaire `015` ajouté à `tests/initiatives-browser.test.mjs` sur la branche PR #41 (commit `898c9e80ecd6d3a9be02800c3cff7659fd0845ed`) : canari privé dans DOM, URL, erreurs et export. Résultats CI non attestés : recherche d'exécutions par SHA sans résultat ; ne pas déclarer réussite. Le workflow Markdown GitHub a été relu, mais aucun log d'échec précis ne permet encore de conclure sur sa cause. Détail des dix passes et limites ajouté au rapport existant `coordination/ANARCHITECTE_TRANSMISSION_014_TESTS_CARTES_2026-10-30.md` (commit `61dfa869147e08adc497d5caa56a6820c70a7eba`). Aucun merge, migration, ouverture de données réelles ou publication ; verdict provisoire : intégration à vérifier en CI et appareil.
