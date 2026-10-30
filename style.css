@@ -22,3 +22,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .manifesto-preview::before{content:"";position:absolute;left:20px;top:22px;width:clamp(70px,10vw,116px);height:clamp(70px,10vw,116px);background:url("assets/logo-faille-noire.svg") center/contain no-repeat}
 @media(max-width:600px){header strong::before{width:40px;height:40px}.brand-identity img{width:88px;height:88px}.manifesto-preview{padding-left:22px;padding-top:120px}.manifesto-preview::before{top:12px}}
 @media print{header strong::before{print-color-adjust:exact;-webkit-print-color-adjust:exact}.brand-identity img{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+/* Navigation mobile : conserver les liens accessibles sans débordement. */
+@media(max-width:600px){header{flex-wrap:wrap;justify-content:flex-start;row-gap:8px}header strong{flex-basis:100%}header a{overflow-wrap:anywhere}}
