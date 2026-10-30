@@ -973,3 +973,16 @@ Transmission retrouvée et lue : `coordination/transmissions/2026-10-30_PENSEUR_
 
 **Modifications exclues :** aucun code, base Supabase, site, charte constitutive, statut ni manifeste modifié. La transmission est déposée pour le Relieur, réception effective non attestée. Les études demeurent des hypothèses non adoptées. **Suite :** retour des ateliers sur B1–B7, preuves de tests et arbitrage collectif sur un pilote sans données privées exposées.
 
+
+
+## 2026-10-30 — Relieur — réception et suivi des études 39–58
+
+**Transmission reçue et lue :** `coordination/transmissions/2026-10-30_PENSEUR_VERS_RELIEUR.md`, feuille de route et vingt hypothèses n°39–58. Les études sont des **propositions critiques non adoptées** ; aucun arbitrage collectif n'est présumé.
+
+**Suivi créé et relu :** [registre Relieur des études 39–58](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/RELIEUR_SUIVI_ETUDES_39_58_2026-10-30.md). Il distingue cinq chantiers, les ateliers pressentis (**sans accord volontaire confirmé**), leurs preuves existantes, les contradictions et six décisions à réserver aux personnes concernées.
+
+**Retours réels recoupés :** L'Anarchitecte a rédigé `coordination/ANARCHITECTE_CRITERES_ACCEPTATION_39_58_2026-10-30.md` avec quinze tests candidats A01–A15, sans test d'intégration réel. La Développeuse a une [PR #41](https://github.com/zoutiFrutti/Interstice/pull/41) de découverte fictive de six initiatives avec CI verte sur le HEAD contrôlé, **antérieure** au courrier du Penseur. Le Graphiste a une [PR #35](https://github.com/zoutiFrutti/Interstice/pull/35) d'accueil/typographie non fusionnée. Le Lecteur a une [PR #34](https://github.com/zoutiFrutti/Interstice/pull/34) de présélection éditoriale, distincte d'une validation des vingt études. Le Juriste dispose de travaux antérieurs sur géolocalisation, recours et modération ; l'avis spécifique 39–58 et les trois scénarios de L'Organisateur ne sont pas attestés dans cette passe. **La présence des lettres GitHub ne prouve pas leur réception dans les conversations ChatGPT.**
+
+**Contrôle de trajectoire :** préserver quatre fonctions égales dans la vision (initiatives, besoins, ressources, projets), tout en lançant progressivement les tests : site V0 en lecture, prototype mobile fictif, puis seulement fonctions réelles avec capacité de modération/consentement et arbitrage humain. Aucune nouvelle transmission inutile, aucune collecte ou publication autorisée par ce suivi.
+
+**Modifications effectuées :** nouveau registre et présente entrée de journal ; aucun code applicatif, manifeste, permission, compte de modération ou texte historique modifié.
