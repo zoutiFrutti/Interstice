@@ -841,3 +841,40 @@ Qu'est-ce qui vous paraît utile, flou ou contestable dans cette proposition ? V
 
 **Suite :** décisions collectives sur référencement et critères de pratiques ; identification responsable RGPD, licences et conditions de traitement ; analyse DSA selon service réel ; audit API/RLS, tests de localisation, parcours de correction et moyens hors application avant lancement.
 
+
+
+## 2026-10-30 — Le Relieur — registre de suivi des transmissions 006 / 007 / 008 / 009
+
+**Périmètre :** 4 messages déclarés envoyés par la personne assurant leur relais dans les conversations ChatGPT. Le Relieur ne revendique aucun accès direct en écriture à ces conversations ; « envoyé » est confirmé par l'utilisateur, alors que les réponses ne sont dites attestées qu'en présence d'une trace vérifiable. Aucune nouvelle transmission vers ces ateliers lors de ce suivi.
+
+| Transmission | Destinataire réel | Envoi | Retour et preuve | Statut de mission |
+|---|---|---|---|---|
+| 006 | L'Anarchitecte | Déclaré envoyé | Réception explicitement confirmée et audit statique V0 consigné sur `main` (entrée « Transmission 006 » ; commit `d3cc076168`) | **Réponse reçue / audit partiel effectué** ; tests réels des pages, formulaires, mobile, accessibilité et URL publique encore à faire |
+| 007 | Le graphiste | Déclaré envoyé | Pas de nouvelle réponse explicitement liée à 007 dans les preuves consultées ; PR graphiques #22 et #28 anciennes et toujours ouvertes | **En attente de retour attesté** ; conserver les travaux existants, ne pas les redemander |
+| 008 | Le lecteur | Déclaré envoyé | PR [#34](https://github.com/zoutiFrutti/Interstice/pull/34) et dossier `coordination/propositions/SELECTION_EDITORIALE_LECTEUR_TRANSMISSION_008_20261030.md` | **Réponse reçue / présélection faite** : Young × Freeman et Berenstain × Ahmed pour relecture ; Ostrom × Foucault × Lyon réservé, non publiable à ce stade |
+| 009 | Atelier des Communications | Déclaré envoyé | Entrée « Transmission 009 » dans `main`, commit `fe2408830f` | **Réponse reçue / stratégie proposée** ; trois carrousels et légendes conservés, leur présence comme brouillons et leur ordre non vérifiés, aucun post programmé ou publié par cet atelier pendant la passe |
+
+**Contrôle complémentaire Metricool du Relieur :** marque connectée `faille.noire`. L'API de consultation des **posts programmés**, interrogée pour la période du 20/10 au 31/12/2026, ne retourne aucune programmation. Cet outil ne prouve **pas** l'absence de brouillons non programmés ; ne pas marquer « trois brouillons absents » ni « trois brouillons présents ».
+
+**Dépendances et priorités sans relance :**
+1. Attendre/observer la réponse 007 du Graphiste ; ne pas dupliquer le travail sur #22/#28.
+2. Faire une relecture contradictoire et juridique des deux textes retenus par 008, **sans publication automatique**.
+3. Vérifier techniquement le parcours public réel décrit par 006, y compris les formulaires et la capacité humaine de réception/réponse.
+4. Pour 009, vérifier les trois carrousels existants et le canal de retour **avant** tout calendrier ou appel massif.
+5. Conserver la coordination dans la conversation « Le Relieur » ; ne pas inventer « Atelier central coordination ». Le Manifeste V2.5 reste une référence éditoriale non adoptée collectivement.
+
+**Écriture :** cette entrée de coordination uniquement, sans modification de charte, de droits Supabase, de contenus éditoriaux ou de publication. Les états « réponse reçue » ne signifient pas « travail intégral terminé ».
+
+## 2026-10-30 — Graphiste / Intégrateur — Transmission 007, lancement V0
+
+**Source :** Transmission 007 du Relieur. Audit et briefing complet en `coordination/GRAPHISTE_TRANSMISSION_007_LANCEMENT_V0_2026-10-30.md` sur branche `design/lancement-v0-verifications-2026-10-30`. Identité maître conservée (`logo-faille-noire.svg`, `logo-interstice.svg`). PR #22 graphique et PR #28 publication structurée toujours en brouillon, non fusionnées sur `main`.
+
+**Constat :** la V0 dispose déjà d'un accueil, d'un manifeste V2.5 (référence éditoriale **non adoptée collectivement**), d'une bibliothèque, d'un Wiki de travaux publics et d'une page de participation. Ne pas confondre les 15 brouillons privés GitHub avec des articles publics. Les trois carrousels Instagram et légendes existants sont signalés par les Communications mais leur présence effective dans l'éditeur Metricool n'a pas été confirmée ; contrôle Metricool en lecture seule sur `faille.noire` : zéro publication **programmée** pour la période vérifiée, ce qui ne renseigne pas sur les brouillons.
+
+**Corrections commitées dans la branche V0, non fusionnées :** deux liens génériques bibliothèque/participation orientés vers `manifeste-v2-5.html` sans supprimer l'archive V2.1 ; balisage du manifeste en un `h1`, six `h2` et deux `h3` et favicon officiel Faille noire (le texte est conservé strictement après neutralisation des seules balises) ; bandeau de navigation responsive corrigé sur mobile sans redessiner le logo. Script `tests/lancement-v0-smoke.mjs` et workflow `.github/workflows/lancement-v0-smoke.yml` ajoutés.
+
+**Contrôles :** tests GitHub Actions Chromium sur cinq pages (accueil, manifeste V2.5, bibliothèque, Wiki, participation), en 390 × 844 et 1280 × 800 px, plus cinq vérifications de chemins/ancres : **15/15 réussis** au run https://github.com/zoutiFrutti/Interstice/actions/runs/41023365067 après le retrait d'une surcharge couleur inutile. Images/favicons, titres, statut non adopté, débordement et contraste des principaux boutons contrôlés. Captures déposées comme artefacts GitHub, sans formulaire soumis, données personnelles ni publication. Les tests ne couvrent pas encore Safari/Firefox, lecteur d'écran, zoom fort, vraie soumission Edge ou accès extérieur au site.
+
+**Raccordement :** les correctifs de bibliothèque et du manifeste recouvrent des travaux déjà présents dans la PR #22. Avant toute fusion, rapprocher les branches au dernier `main`, éliminer les doublons, conserver le journal commun et tester l'assemblage. La PR #28 reste distincte et ne doit pas devenir bloquante pour une V0 présentant uniquement des pages publiques et des fonctionnalités réellement disponibles.
+
+**Vigilance lancement :** contrôler le domaine public exact et les formulaires avant annonce ; ne pas présenter la V2.5 comme adoptée ni les 15 imports comme accessibles ; confirmer les visuels et crédits avec l'Atelier des Communications. Les perfectionnements du design system, exports supplémentaires et modération des imports sont reportables. Aucune fusion, publication sociale, mutation Supabase ou modification politique effectuée dans cette passe.
