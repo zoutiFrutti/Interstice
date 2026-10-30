@@ -34,3 +34,7 @@ Les travaux politiques du Penseur ne sont pas adoptés automatiquement par ce co
 **Blocages :** aucun vrai contact ou initiative publiés ; permissions API et chaîne de modération non prêtes ; tests sur Android physique/lecteur d'écran et revue Graphiste non réalisés. Aucun déploiement ni fusion.
 **Arbitrages pour le Relieur :** organiser relecture terrain sans app obligatoire, sélectionner première initiative volontaire et vérifiable, fixer la publication publique et les recours en lien avec le Juriste, demander adaptateur public en lecture seule à l'Anarchitecte, prioriser un accès simple sans carte imposée. Manifeste V2.5 et études 39–58 non adoptés collectivement.
 **Prochaine action :** revue humaine de la PR #41 (fonctionnel, juridique, graphique, mobile), puis seulement raccordement à des fiches publiques autorisées.
+
+
+## Incident de synchronisation après le bilan (30 octobre 2026)
+Le `main` a continué d'évoluer pendant la session ; la PR #41 peut présenter des conflits sur `coordination/JOURNAL_COMMUN.md`. Une fusion préparée **uniquement dans la branche de prototype** avec le Journal de `main` préservé a été refusée par les contrôles de sécurité de l'outil GitHub. **Aucun commit de synchronisation appliqué, aucune modification sur `main`**. Ce blocage doit être traité par une revue humaine/un processus Git autorisé avant toute fusion. Il ne remet pas en cause le résultat CI déjà exécuté (20 tests Node et 3 tests Chromium réussis). Ne pas fusionner automatiquement les journaux ni écraser leurs ajouts.
