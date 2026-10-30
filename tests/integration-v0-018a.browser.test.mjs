@@ -30,7 +30,7 @@ test("018-A: Accueil → découverte → besoin fictif → commune → carte/lis
     assert.equal(await page.locator("#results .initiative-card").count(),3);
     await page.locator("#display-map").click();
     assert.ok(await page.locator("#map-panel").isVisible());
-    assert.equal(await page.locator("#municipality-map .map-marker").count(),2);
+    assert.equal(await page.locator("#municipality-map .map-marker").count(),3,"Gaillac comprend aussi les repères des fiches multiterritoriales");
     await page.locator("#display-list").click();
     assert.equal(await page.locator("#results .initiative-card").count(),3);
     await page.locator("#category").selectOption("Réparation");
