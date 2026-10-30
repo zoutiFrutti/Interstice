@@ -4,6 +4,9 @@
 
 Ce kit **réemploie**, sans le recopier, [l'étude 59 du Penseur](PENSEUR_ETUDE_59_PROTOCOLE_ARBITRAGE_RESSOURCES_RARES_2026-10-30.md), les études 39–58 et les [15 critères de L'Anarchitecte](ANARCHITECTE_CRITERES_ACCEPTATION_39_58_2026-10-30.md). Le Relieur coordonne et prépare les exercices ; il **ne décide pas** de l'usage de biens, de règles collectives ni du traitement des données.
 
+### Complément opérationnel du cycle 014
+Le scénario S1 est désormais raccordé aux **deux cartes fictives déjà codées** dans la PR #41 par une [fiche d'essai comparative papier / interface](RELIEUR_014_FICHE_TEST_S1_PAPIER_CARTES_2026-10-30.md). Elle décrit les rôles, un essai sans smartphone, une recherche commune/voisinage, les fiches démo `demo-cycles` (Gaillac) et `demo-projet-gaillac`, et une grille **non remplie** pour un éventuel essai humain. Ce complément **ne prétend ni qu'un test volontaire a eu lieu ni qu'un outil ou rendez-vous est disponible**. Les scénarios S2 et S3 restent distincts et ne sont pas remplacés par des épingles sur la carte.
+
 ### Mode d'emploi commun
 - Première simulation proposée : **45 à 60 min**, trois à six personnes volontaires, ou simplement rôles fictifs sur papier. Aucun recrutement ni invitation effectué à ce jour.
 - Distribuer les cartes sans noms réels. Facilitation tournante, personne observatrice volontaire, notes **non nominatives** ; pas de photos, enregistrements ni adresses par défaut.
