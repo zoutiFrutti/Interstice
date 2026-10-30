@@ -1,0 +1,950 @@
+# Journal commun des ateliers · La Faille noire / Interstice
+
+Ce journal recueille les étapes significatives des ateliers. Une entrée distingue observations, sources, modifications vérifiées et travaux à poursuivre. Avant toute édition, relire la dernière version du fichier pour éviter d'écraser une contribution concurrente. Ne pas inclure de données personnelles sensibles.
+
+---
+
+## 2026-10-29 · Atelier diagnostic technique, sécurité et Wiki Interstice
+
+**Sujet étudié :** diagnostic de liens 404 dans le Wiki et correction de la fiche « Décider ensemble ».
+
+**Connaissances découvertes :**
+- Le parcours utilisateur mobile a été déclaré fonctionnel sur cinq critères par un testeur : accueil, compréhension du projet, manifeste, ressources/Wiki, participation. Ce résultat n'établit pas la validité de tous les liens internes.
+- Le lien direct vers `wiki-association-collegiale.html` et celui vers `wiki-antiracisme-histoires-droits.html` ont été déclarés fonctionnels par le testeur.
+- Le lien vers `wiki-decision-collective.html` renvoyait 404 selon le testeur. Le dépôt GitHub `main` contenait le lien dans `wiki.html`, mais pas le fichier cible : absence confirmée par l'API GitHub (404).
+- Le fichier manquant a été créé sur une branche dédiée, puis fusionné dans `main`. Son existence sur la branche de correction a été revérifiée par lecture GitHub. Le résultat du déploiement public GitHub Pages n'a pas encore été vérifié.
+
+**Sources et références :**
+- Dépôt : https://github.com/zoutiFrutti/Interstice
+- Navigation Wiki : https://github.com/zoutiFrutti/Interstice/blob/main/wiki.html
+- Correction fusionnée : https://github.com/zoutiFrutti/Interstice/pull/1
+- Commit de fusion : `176a835b2be40e0d3a783a43daeb990916e02904`
+- Article cible : https://zoutifrutti.github.io/Interstice/wiki-decision-collective.html
+- Résultats des tests manuels transmis dans l'atelier, non reproduits indépendamment sur le site public.
+
+**Articles du Wiki concernés :**
+- `wiki.html` (index et lien existant)
+- `wiki-decision-collective.html` (nouvelle fiche)
+- `wiki-association-collegiale.html` (page témoin fonctionnelle)
+- `wiki-antiracisme-histoires-droits.html` (page témoin fonctionnelle)
+
+**Contradictions et incertitudes :**
+- L'index du Wiki était consultable alors qu'au moins une fiche référencée n'existait pas : un test d'accès à l'index ne suffit pas à valider l'ensemble des ressources.
+- La nouvelle fiche sur les méthodes de décision collective est une introduction provisoire ; ses formulations doivent être approfondies avec des sources spécialisées et des retours d'expérience.
+- Le déploiement GitHub Pages et les autres liens du Wiki restent à contrôler.
+
+**Modifications réellement effectuées :**
+- Création sur la branche `fix/wiki-decision-collective-404-2026-10-29` du fichier `wiki-decision-collective.html`, comprenant consensus, consentement, vote, délégation limitée, précautions et liens de lecture.
+- Vérification du fichier via GitHub.
+- Création puis fusion de la PR #1 dans `main` ; GitHub a confirmé `merged: true`.
+- Aucun changement Supabase dans cette étape.
+
+**Travaux restant à accomplir :**
+1. Vérifier que l'article est accessible sur GitHub Pages après déploiement.
+2. Auditer tous les liens internes du Wiki et les fichiers correspondants.
+3. Compléter et sourcer la fiche « Décider ensemble » ; distinguer définitions, pratiques et débats.
+4. Poursuivre les tests d'authentification, de permissions et de modération de la plateforme.
+5. Faire examiner la fiche par l'atelier central pour intégration éditoriale.
+
+**Connaissances transférables au Wiki :** comparaison pratique des méthodes de décision collective, conditions d'accessibilité, prévention des asymétries de pouvoir et documentation des mandats révocables.
+
+
+---
+
+## 2026-10-29 · Atelier Wiki Histoire et mémoires — Union des femmes et affiche n° 373
+
+**Sujet.** Organisation des travailleuses sous la Commune de Paris ; convocation syndicale du 20 mai 1871 ; composition de la commission exécutive.
+
+**Connaissances vérifiées.** Le Musée Carnavalet conserve l'affiche n° 373 (AFF5721), datée du 20 mai 1871, appelant les ouvrières à se réunir le 21 mai à la mairie du IVe arrondissement pour constituer des chambres syndicales et fédérales. Il s'agit d'une convocation, pas d'une preuve que la réunion s'est tenue. Sept signatures y figurent : Nathalie Le Mel, Jarry, Aline Jacquier, Blanche Lefevre, Marceline Leloup, Adèle Gauvin et Elisabeth Dmitrieff. Les statuts de l'Union, reproduits par Patrick Le Moal, décrivent des comités d'arrondissement, des bureaux révocables, des comptes et un comité central directeur ; règles écrites ne signifient pas application effective.
+
+**Sources et droits.** [Musée Carnavalet, affiche n° 373, inventaire AFF5721](https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune) (objet primaire et transcription institutionnelle) ; [Patrick Le Moal, Contretemps, transcription des statuts, 11 avril 2021](https://www.contretemps.eu/journal-commune-11-avril-1871/) (source primaire reproduite) ; [Association des Amies et Amis de la Commune, article historique](https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/1643-lunion-des-femmes-pour-la-defense-de-paris-et-les-soins-aux-blesses) ; [Carolyn J. Eichner, Franchir les barricades, Éditions de la Sorbonne, 2020](https://www.editionsdelasorbonne.fr/produit/522/9791035105228/franchir-les-barricades) (notice, ouvrage non lu). Texte historique dans le domaine public en France ; réutilisation du visuel muséal à vérifier, ouvrage moderne protégé.
+
+**Wiki concerné.** [ARCH-002, nouvelle fiche candidate](https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit) ; [ASSO-007, enrichie](https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit) ; [BIO-009 Nathalie Le Mel, enrichie](https://docs.google.com/document/d/1UF54kCo7mwSIze66uNbo1ViEzRhAO4ptUjylBaJR5-o/edit) ; [BIO-010 Élisabeth Dmitrieff, enrichie](https://docs.google.com/document/d/1TG4OxT0b43pLJH1YXRjlr8rIgkT5G_WL5LowdRjOLpw/edit) ; [FN-046 dans le catalogue Médiathèque, enrichie](https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit).
+
+**Contradictions et incertitudes.** La liste de sept membres donnée pour le 8 mai contient Thérèse Collin, tandis que les sept signatures du 20 mai contiennent Adèle Gauvin. Différence entre dates, mandats ou commissions possible, sans preuve de démission. « Marceline » sur l'affiche, « Marceline ou Marie » dans l'indexation du musée. Tenue de la réunion du 21 mai non démontrée.
+
+**Modifications réellement effectuées et vérifiées.** Une fiche d'archive créée et classée dans « Wiki - Histoire et mémoires » ; quatre enrichissements des documents Drive existants, tous relus après écriture ; journal de l'atelier complété. Pas de publication publique, ni modification du manifeste ou de la gouvernance. Total des fiches candidates recensées dans les dossiers Wiki : 29 (13 biographies, 8 associations, 4 expériences, 2 collectifs, 2 archives), hors Médiathèque et journaux.
+
+**Travaux restants.** Vérifier le fac-similé et les listes du comité aux dates successives ; retrouver comptes, procès-verbaux, sources de la réunion annoncée du 21 mai ; documenter les parcours d'Adèle Gauvin, Marceline Leloup et Thérèse Collin sans extrapolation.
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Charte des communs, V0.1 non adoptée
+
+**Sujet étudié :** première architecture juridique, principes de la V2.3, articulation avec une éventuelle V2.4, garanties de liberté et contrôle initial du droit français.
+
+**Conclusions et propositions :**
+- Le manifeste V2.3 unifié, daté du 29 octobre 2026 et disponible dans Drive, demeure un texte de travail **non adopté**. Il rassemble neuf principes, huit piliers et plusieurs propositions procédurales à distinguer de la charte et des futurs protocoles.
+- Proposition d'une charte de **48 articles numérotés de 0 à 47**, répartis entre Article 0 et neuf titres : libertés, égalité, démocratie, mandats, communs, conflits et recours, fédération, données, révision et dissolution.
+- Article 0 et Titre I (articles 1–8) entièrement rédigés, chacun avec objectif, risque de détournement, compatibilité juridique, recours et question à décider. Ils garantissent notamment la liberté de conscience, la dissidence, la sortie, la dignité des non-membres et une procédure de contestation à instituer ultérieurement.
+- Un fonctionnement associatif collégial est juridiquement envisageable ; cela n'efface ni la représentation légale nécessaire à certaines opérations, ni les responsabilités propres aux activités.
+- Aucune « Commune », assemblée, instance d'appel, fédération ou personne morale n'est déclarée constituée. Toute adoption future nécessite une décision séparée et traçable.
+
+**Sources et références juridiques vérifiées :**
+- Loi du 1er juillet 1901, articles 1, 2, 4, 5 et 6 : https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570
+- Associations.gouv.fr, dirigeants élus / mandat : https://associations.gouv.fr/les-dirigeants-elus-de-lassociation ; écriture des statuts : https://associations.gouv.fr/ecrire-son-contrat-dassociation
+- Service-Public, statuts : https://www.service-public.fr/particuliers/vosdroits/F1120 ; exclusion : https://www.service-public.gouv.fr/particuliers/vosdroits/F71 ; responsabilité : https://www.service-public.fr/particuliers/vosdroits/N31331
+- Code pénal, article 225-1 : https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165298/
+- CNIL, données sensibles : https://cnil.fr/fr/definition/donnee-sensible ; bases légales et article 9 RGPD : https://www.cnil.fr/fr/les-bases-legales/liceite-essentiel-sur-les-bases-legales
+- Manifeste V2.3 de travail : https://docs.google.com/document/d/1GtqpLRiK9-dDwYja5yP0D2GOvuPiv2r3WZ_uAGSltig/edit
+
+**Documents concernés :**
+- Nouvelle proposition non adoptée : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md
+- Manifeste V2.3 (consulté, non modifié).
+- Journal commun (présente entrée).
+
+**Contradictions et incertitudes :**
+- La majorité qualifiée proposée pour réviser les neuf principes n'a aucun seuil établi ; risque de blocage minoritaire et de veto de fait.
+- La propriété légale des outils, lieux et ressources peut diverger du contrôle démocratique réel ; besoin de préciser clefs, habilitations et mandats.
+- Distinguer droits des non-membres, droits politiques des membres, obligations des salariés et usages des partenaires.
+- Éviter la contradiction « transparence totale » / confidentialité des bénéficiaires et des signalements.
+- La procédure d'urgence protectrice ne doit pas devenir une sanction sans garanties.
+- La portée juridique d'une charte dépendra de son adoption et de sa cohérence avec les statuts et conventions futurs.
+
+**Modifications réellement effectuées :**
+- Création et relecture GitHub du fichier `propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md`, commit `ff306e654d43a5c1b59c88901171d26afc659025` ; statut explicite de projet non adopté.
+- Journal commun : ajout de cette entrée ; aucun changement du manifeste, des statuts, du site public ou de Supabase.
+
+**Travaux restant à accomplir :**
+1. Relecture contradictoire des articles 0–8 et tests de scénarios d'abus concrets.
+2. Rédaction des titres II et III (articles 9–20), en examinant vote, consentement, blocage et participation effective.
+3. Déterminer les garanties d'indépendance des recours, de confidentialité des alertes et les responsabilités des représentants.
+4. Comparer les modèles juridiques possibles : association loi 1901, conventions intercollectives et autres supports selon le projet concret.
+5. Préparer une table de correspondance manifeste / charte / protocoles pour l'atelier central, puis une éventuelle mise à jour V2.4 du manifeste **uniquement sur autorisation explicite**.
+
+
+
+## 2026-10-29 — Médiathèque des communs — Nouvelle référence éditoriale V2.5
+**Sujet :** réception et vérification du Manifeste V2.5 consolidé comme référence éditoriale de travail (non adoptée).
+**Document lu :** https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit (33 875 caractères environ, version du 29 octobre 2026).
+**Connaissances :** la V2.5 conserve les neuf principes et huit piliers, renforce l'examen des pouvoirs informels, de l'éducation émancipatrice, du travail invisible, de l'autonomie, du droit au retrait et de la critique de nos propres références. Clause « La vigilance envers nos propres pouvoirs ». Document explicitement non adopté collectivement.
+**Répercussions :** maintenir les lectures croisées contradictoires ; distinguer source primaire, étude secondaire, interprétation et proposition ; conserver les versions archivées. La médiathèque n'est pas une autorité chargée de modifier le manifeste.
+**Contradiction documentaire :** des fiches rédigées sur la branche `atelier/lecture-femmes-1871-1936-20261029` ont leur propre journal de branche, divergent du journal commun `main` et ne sont pas publiées dans le Wiki. Nécessité de faire réexaminer leur intégration par coordination, sans écraser les contributions concurrentes.
+**Modifications réellement effectuées :** lecture Drive vérifiée ; cette entrée ajoutée au journal `main` ; aucune modification du manifeste, des huit piliers, des anciennes versions ni des pages Wiki publiques.
+**Travaux restants :** relire et référencer les fiches sous V2.5 ; auditer les doublons et les liens des lectures de l'atelier ; proposer une intégration par revue documentaire.
+
+
+## 2026-10-29 · Atelier technique Interstice · Référence manifeste V2.5 et écart documentaire
+
+**Sujet :** prise en compte de la communication inter-ateliers relative au Manifeste V2.5 consolidé et contrôle ciblé du site.
+
+**Documents et sources consultés :** Google Docs « La Faille noire — Manifeste V2.5 consolidé — 29 octobre 2026 — version éditoriale non adoptée », https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit (texte intégral lu via Google Drive, 302 paragraphes) ; fichiers GitHub `manifeste.html`, `wiki-decision-collective.html` et présent journal sur `main`.
+
+**Connaissances vérifiées :** le document Drive indique explicitement qu'il est une version éditoriale de travail non adoptée par une assemblée constitutive. Il expose la vigilance envers les pouvoirs informels, les délégations, l'accessibilité et le droit au retrait. Sur `main`, la page `manifeste.html` indique explicitement « version 2.1 » à plusieurs endroits, tout en précisant « texte proposé, non adopté ».
+
+**Contradiction / risque :** décalage entre la référence éditoriale V2.5 et la version V2.1 actuellement présentée sur le site. La mention de non-adoption est cohérente mais l'absence de repère V2.5 risque d'induire les visiteurs en erreur. Ne pas remplacer V2.1 sans archivage et revue éditoriale ; ne pas assimiler la validation éditoriale à une adoption collective.
+
+**Articles concernés :** `manifeste.html` (prioritaire), `wiki-decision-collective.html` (fiche provisoire à confronter aux garanties contre les pouvoirs informels), `wiki.html` (navigation et référencement).
+
+**Modifications réellement effectuées :** lecture intégrale de la V2.5 et contrôle ciblé des fichiers sur GitHub ; ajout de cette entrée documentaire au journal. Aucune modification du manifeste, des pages Wiki ou de Supabase dans cette étape.
+
+**Travaux restants :** préparer une mise à jour publique avec V2.5 clairement identifiée comme proposition non adoptée, archivage explicite de V2.1 et des versions intermédiaires ; revue éditoriale avant publication ; audit des liens du Wiki ; contrôles d'accessibilité, confidentialité et traçabilité des délégations.
+
+
+## 2026-10-29 · Atelier technique Interstice · Publication GitHub de la V2.5
+
+**Sujet :** correction du décalage entre manifeste public V2.1 et référence éditoriale V2.5.
+
+**Sources :** document intégral V2.5 sur Google Drive https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit ; PR GitHub https://github.com/zoutiFrutti/Interstice/pull/7 ; commit de fusion `f122bec37d9a7cfb7ae2bf3e476ea1cb76127b8b`.
+
+**Connaissances :** la V2.5 est une référence éditoriale de travail, non adoptée collectivement. La V2.1 doit rester archivée pour la traçabilité. Les deux versions sont désormais reliées dans le dépôt GitHub.
+
+**Contradictions et incertitudes :** la présence des fichiers sur `main` est vérifiée, mais l'affichage effectif sur GitHub Pages n'est pas encore confirmé ; les versions intermédiaires doivent être conservées et référencées si elles existent.
+
+**Pages concernées :** `manifeste-v2-5.html` (créée), `manifeste.html` (bandeau d'archive et lien ajoutés).
+
+**Modifications réellement effectuées :** PR #7 fusionnée par GitHub (`merged: true`) ; lecture post-fusion des deux fichiers sur `main`, confirmant la conclusion V2.5 et le bandeau V2.1. Aucun changement des principes par cet atelier.
+
+**À poursuivre :** vérifier le déploiement GitHub Pages, les liens depuis l'accueil et l'accessibilité ; compléter l'index des archives ; terminer l'audit des liens Wiki.
+
+
+## 2026-10-29 · Atelier technique · Correction de la navigation du manifeste sur l'accueil
+
+**Sujet :** cohérence éditoriale de la page d'accueil avec le manifeste V2.5.
+
+**Sources :** `index.html` sur GitHub `main` ; manifeste V2.5 consolidé sur Google Drive ; PR #8 https://github.com/zoutiFrutti/Interstice/pull/8 ; commit fusionné `0e91394cfec7b42ae9e0ead8adbcb49ce088d3e0`.
+
+**Connaissance et contradiction :** l'accueil affichait encore V2.1 comme version principale après la publication de V2.5. Le texte reste une version éditoriale de travail non adoptée collectivement.
+
+**Articles/pages concernés :** `index.html`, `manifeste-v2-5.html`, `manifeste.html`.
+
+**Modifications vérifiées :** mise à jour de la carte de l'accueil sur branche dédiée, PR #8 fusionnée dans `main` (`merged: true`). Lien principal vers V2.5, lien archive vers V2.1 et statut de non-adoption explicite. Aucun changement des textes des manifestes.
+
+**Travaux restants :** contrôler le déploiement public GitHub Pages ; vérifier les autres liens du Wiki, l'accessibilité et les permissions de contribution.
+
+
+## 2026-10-29 · Atelier technique Interstice · Audit des liens du Wiki
+
+**Sujet :** contrôle des destinations HTML de `wiki.html` et suppression des liens vers des pages inexistantes.
+
+**Sources :** fichiers GitHub `wiki.html` et destinations sur `main` contrôlées par API GitHub ; PR #9 https://github.com/zoutiFrutti/Interstice/pull/9 ; commit fusionné `077c64419f7f8f5445c17c1ec08ca6f3e4c0fdcf`.
+
+**Connaissances :** 32 destinations HTML uniques ont été contrôlées : 28 fichiers présents, 4 absents (`wiki-hebergement-numerique.html`, `wiki-accueil-conflits.html`, `wiki-bibliotheque-militante.html`, `wiki-mutualiser-materiel.html`).
+
+**Contradiction :** le Wiki présentait ces quatre fiches comme consultables alors qu'elles n'existaient pas dans `main`. L'existence d'un fichier ne garantit pas son déploiement public ni la qualité du contenu.
+
+**Articles concernés :** `wiki.html` et quatre fiches annoncées mais non publiées.
+
+**Modifications vérifiées :** remplacement des quatre liens 404 par mentions « fiche en préparation » ; PR #9 fusionnée ; relecture post-fusion de `wiki.html` confirmant l'absence de ces quatre href. Aucun faux article créé.
+
+**Travaux restants :** tester l'affichage GitHub Pages et les liens externes ; préparer des fiches documentées lorsque le corpus est prêt ; tester clavier, contraste et lecteurs d'écran ; auditer les permissions et la confidentialité.
+
+
+## 2026-10-29 · Atelier technique · Accessibilité et déploiement
+
+**Sujet :** première passe de contrôle technique après correction des liens Wiki.
+
+**Sources :** `index.html`, `wiki.html`, `manifeste-v2-5.html`, `participer.html` sur GitHub ; PR #10 https://github.com/zoutiFrutti/Interstice/pull/10 ; commit fusionné `79c482fb176a4ad8603002dd202dd6a9d85d3eec`.
+
+**Constats :** les quatre pages inspectées ont un attribut `lang` et une balise viewport. La page V2.5 ne contenait aucun `h1` ; la correction lui donne un titre de niveau 1 explicite. Contrôle de l'accessibilité limité à la structure HTML, sans test lecteur d'écran ni navigation clavier. Les URL GitHub Pages n'ont pas pu être consultées depuis les outils réseau disponibles ; aucun statut de déploiement public n'est affirmé.
+
+**Pages concernées :** `manifeste-v2-5.html`, `index.html`, `wiki.html`, `participer.html`.
+
+**Modifications réellement effectuées :** ajout d'un `h1` sémantique au manifeste V2.5 ; PR #10 fusionnée ; lecture de contrôle sur `main` confirmant le titre et la conclusion du texte. Aucune modification des principes politiques.
+
+**À poursuivre :** test public GitHub Pages depuis un réseau accessible ; audit clavier/contraste/labels/formulaires ; sécurité des contributions et protection des données.
+
+
+## 2026-10-29 · Atelier technique · Accessibilité des formulaires au clavier
+
+**Sujet :** première revue statique des formulaires de l'accueil, du Wiki et de proposition d'article.
+
+**Sources :** `index.html`, `wiki.html`, `proposer-article.html`, `style.css` sur GitHub ; PR #11 https://github.com/zoutiFrutti/Interstice/pull/11 ; commit fusionné `8c1db472c43fb9b15930c7ce650010c2126b5517`.
+
+**Constats :** les champs inspectés sont enveloppés par des labels ou reliés via `for` ; des zones de statut utilisent `aria-live`. La règle `:focus-visible` initiale couvrait liens et boutons, pas les champs de saisie, sélecteurs et résumés dépliables. Contrôle statique uniquement, pas de test manuel clavier ou lecteur d'écran.
+
+**Pages concernées :** accueil, Wiki, proposition d'article et feuille de style commune.
+
+**Modification vérifiée :** ajout de `input:focus-visible`, `textarea:focus-visible`, `select:focus-visible`, `summary:focus-visible` dans `style.css` ; PR #11 fusionnée ; vérification du fichier sur `main`. Aucune modification de traitement des contributions.
+
+**Contradictions et travaux restants :** accessibilité déclarative ne prouve pas l'accessibilité réelle ; tests navigation clavier, contrastes, mobile, et sécurité/confidentialité des soumissions restent nécessaires. Vérifier également le déploiement public.
+
+
+## 2026-10-29 · Atelier technique · Audit de sécurité des contributions Supabase
+
+**Sujet :** contrôle en lecture seule des permissions et des deux fonctions de soumission du projet Supabase Interstice.
+
+**Connaissances :** sept tables avec RLS active ; lecture publique des propositions publiées et ressources approuvées ; articles soumis accessibles à leur auteur ou à la modération. Deux fonctions Edge publiques `verify_jwt=false`, avec validations et limitation de fréquence. `claim_submission_slot` n'est pas exécutable directement par les rôles `anon` ou `authenticated`.
+
+**Sources :** interrogation directe de Supabase (`list_tables`, `list_edge_functions`, `get_edge_function`, `pg_policies`, `pg_proc`) ; rapport `docs/AUDIT_CONTRIBUTIONS_SUPABASE_2026-10-29.md` ; PR #12 https://github.com/zoutiFrutti/Interstice/pull/12 (fusionnée, SHA `28e82e04cf4fc2a9042eae3a230d7d65f0be29f0`).
+
+**Wiki/pages concernés :** accueil et formulaire de contributions, proposition de ressources, proposition d'articles Wiki.
+
+**Contradictions :** contrôle `Origin` ne garantit pas l'identité d'un client ; confiance dans les en-têtes IP non vérifiée ; `Content-Length` ne borne pas la taille effective du corps ; filtres de coordonnées partiels.
+
+**Modifications réellement effectuées :** publication du rapport d'audit sur `main` ; aucune configuration, donnée ou fonction Supabase modifiée.
+
+**Travaux restants :** corriger et tester le bornage du corps des requêtes, valider l'origine fiable des IP, vérifier `SECURITY DEFINER` et le parcours de modération avant toute modification de production.
+
+
+## 2026-10-29 · Atelier technique · Préparation du correctif des fonctions Edge
+
+**Sujet :** limiter la taille réelle des requêtes envoyées aux fonctions publiques Supabase, sans déploiement prématuré.
+
+**Sources :** versions déployées lues via Supabase `get_edge_function` ; branche GitHub `fix/edge-request-bounds-2026-10-29` ; PR #13 https://github.com/zoutiFrutti/Interstice/pull/13.
+
+**Constats :** `submit-proposal` dépendait de `Content-Length` pour son plafond de taille ; `submit-resource` chargeait tout le corps avant vérification et utilisait `unknown` quand aucune IP n'était présente.
+
+**Pages et composants concernés :** `supabase/functions/submit-proposal/index.ts`, `supabase/functions/submit-resource/index.ts` ; formulaires de contributions.
+
+**Modifications effectuées :** copies du code déployé enregistrées sur une branche GitHub, avec lecture HTTP par morceaux plafonnée en octets (7 000 / 4 000) et refus d'une IP absente dans `submit-resource`. PR #13 ouverte pour revue, **non fusionnée**, **aucun déploiement Supabase**.
+
+**Contradictions et travaux restants :** tests Deno et tests HTTP de non-régression encore nécessaires ; confiance dans les en-têtes IP toujours non prouvée ; contrôler la gestion des corps tronqués, UTF-8, méthodes, CORS, quotas et formulaires avant fusion et déploiement. Ne pas présenter ce code comme déjà en production.
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Manifeste V2.5, charte V0.2 non adoptée
+
+**Date et atelier :** 29 octobre 2026, Atelier du Juriste.
+
+**Documents réellement étudiés :** manifeste V2.5 consolidé, édition de travail du 29 octobre 2026, lu intégralement depuis Google Drive (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit) ; charte V0.1 du dépôt ; journal commun GitHub `main` avant écriture ; sources juridiques officielles citées ci-dessous.
+
+**Connaissances et interprétations :** la V2.5 est la nouvelle référence éditoriale **non adoptée collectivement**, avec neuf principes et huit piliers, distinction entre valeurs, construction actuelle et futurs possibles, et clause « La vigilance envers nos propres pouvoirs ». Elle renforce les exigences sur l'accès effectif à la participation, la sélection des options et l'ordre du jour, la charge de travail invisible, la limitation des mandats, les responsabilités en situation d'urgence et les pouvoirs techniques. Interprétation de l'atelier : ces axes justifient des garanties explicites dans le brouillon de charte plutôt qu'une modification du manifeste.
+
+**Sources juridiques vérifiées :** loi du 1er juillet 1901, article 4 (retrait) : https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000025577368 ; Service-Public, instances dirigeantes (fiche F1121, mise à jour d'août 2026) : https://www.service-public.gouv.fr/particuliers/vosdroits/F1121 ; exclusion (fiche F71, mise à jour d'août 2026) : https://www.service-public.gouv.fr/particuliers/vosdroits/F71 ; Code pénal, article 225-1 : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045391831 ; CNIL, bases légales des traitements et données sensibles : https://www.cnil.fr/fr/les-bases-legales/liceite-essentiel-sur-les-bases-legales . Distinguer le droit commun des règles particulières d'Alsace-Moselle et des activités réglementées.
+
+**Proposition élaborée :** charte V0.2, document **non adopté**, conservant 48 articles au plan (0–47). Les **21 articles 0–20** sont désormais rédigés : article 0 renforcé contre les titres politiques implicites ; articles 3, 4, 6 et 8 précisés ; articles 9–13 (égalité et pouvoirs informels) et 14–20 (initiation, information, participation différée, débats, vote, urgence, traçabilité) nouvellement rédigés. Des préconisations non normatives sont ajoutées pour les articles 21–43 encore à rédiger.
+
+**Contradictions et questions ouvertes :** liberté de critique / confidentialité ; droit de participation / absence de pouvoir automatique des non-membres ; protection immédiate / contradictoire ; absence de veto fondateur / blocage de fait par certaines procédures de vote ; propriété et habilitations techniques / exercice démocratique du contrôle ; engagements contractuels / retrait libre. Aucune procédure d'urgence, assemblée, fédération, « Commune » ou instance d'appel n'est déclarée déjà existante.
+
+**Documents concernés :**
+- Nouveau brouillon : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md
+- Archive V0.1 conservée : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md
+- Manifeste V2.5 lu mais jamais modifié : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit
+
+**Modifications réellement effectuées et vérifiées :** création du fichier de proposition V0.2 sur `main` (commit `b4b902de441a8a3436d8b435a9c9517578aef899`), puis relecture GitHub confirmant les articles 0–20 et la référence V2.5. L'entrée présente est ajoutée au journal commun. Aucune modification des manifestes, statuts, chartes adoptées, pages du site, protocole d'assemblée ou base Supabase.
+
+**Travaux restants :** (1) contrôle contradictoire des 21 articles proposés avec scénarios d'abus ; (2) rédaction des articles 21–47 ; (3) revue par juristes avant création d'une structure ou exploitation de lieux ; (4) élaboration séparée des statuts et protocoles après définition des activités ; (5) coordination sur les différences V2.5 et archivage des versions ; (6) s'assurer que les passes automatiques prennent V2.5 comme référence, sans l'assimiler à une adoption.
+
+
+
+## 2026-10-29 · Atelier technique · Tests locaux du correctif Edge
+
+**Sujet :** vérifier la lecture bornée des requêtes HTTP avant tout déploiement Supabase.
+
+**Sources :** tests locaux Node.js 22 ; branche `fix/edge-request-bounds-2026-10-29` ; `docs/TESTS_EDGE_REQUEST_BOUNDS_2026-10-29.md` sur cette branche ; PR #13 https://github.com/zoutiFrutti/Interstice/pull/13.
+
+**Résultat :** six tests unitaires du mécanisme de lecture bornée reproduit ont réussi (vide, plafond exact, dépassement, UTF-8 refusé/accepté, flux segmenté).
+
+**Limite et contradiction :** la réussite du helper isolé ne prouve pas la compatibilité Deno des sources Edge ni leur bon fonctionnement en production. L'origine des en-têtes IP n'est toujours pas établie.
+
+**Modifications :** rapport de tests ajouté sur la branche de PR #13 ; **aucun déploiement Supabase, aucune fusion de la PR #13**.
+
+**Suite :** tests sur sources exactes dans Deno, essais HTTP en préproduction, vérification de l'IP de confiance et plan de retour arrière.
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Mandats révocables et responsabilité V0.3
+
+**Sujet étudié.** Suite de la Charte des communs V0.2 : traduction en garanties concrètes du principe V2.5 « La vigilance envers nos propres pouvoirs », particulièrement pour les personnes investies d'une délégation, d'un accès technique ou d'un pouvoir de représentation.
+
+**Documents consultés.** Manifeste V2.5 consolidé (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit, référence éditoriale de travail non adoptée) ; `propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md` ; dernier état du présent journal ; sources officielles ci-dessous. V0.2 conservée comme archive, sans modification.
+
+**Sources juridiques vérifiées.** Service-Public, *Instances dirigeantes d'une association* (vérifié le 14 août 2026), https://www.service-public.gouv.fr/particuliers/vosdroits/F1121 ; Associations.gouv.fr, *Les dirigeants élus de l'association*, https://associations.gouv.fr/les-dirigeants-elus-de-lassociation ; loi du 1er juillet 1901, article 5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030930137 ; Service-Public, *Dommage causé par un dirigeant d'association*, https://www.service-public.gouv.fr/particuliers/vosdroits/F1130 ; Associations.gouv.fr, FAQ sur la représentation en justice, https://associations.gouv.fr/faq . Conditions particulières possibles selon région, régime, agrément ou activité.
+
+**Conclusions et propositions.** Rédaction complète des articles 21 à 25 du Titre IV : 21 mandat explicite et accepté, 22 durée/rotation/non-cumul, 23 révocation et passation, 24 représentation juridique et responsabilités effectives, 25 contrôle indépendant et proportionné. Un mandat interne ne dispense pas des statuts, formalités légales ou obligations contractuelles. Révocation d'une fonction, exclusion disciplinaire et rupture d'un contrat de travail ne sont pas équivalentes. Un administrateur technique ne devient pas dirigeant politique par défaut. Les secrets de sécurité ne doivent pas être publiés au nom de la transparence.
+
+**Contradictions relevées.** La rotation peut compromettre la continuité d'une activité si aucune transmission n'a été préparée ; une révocation peut laisser des accès et pouvoirs envers les tiers en place si les formalités ne suivent pas ; une suspension de sécurité peut être détournée en sanction politique ; la collégialité ne supprime pas la responsabilité réelle ; le contrôle pourrait devenir surveillance abusive. L'articulation avec une personnalité morale et les statuts demeure à construire.
+
+**Articles concernés.** Articles 21–25 rédigés ; cohérence à poursuivre avec 8, 12, 19, 20 et futurs 26–43.
+
+**Modifications réellement effectuées et vérifiées.** Création de la charte de travail V0.3, **non adoptée**, dans `propositions/CHARTE_DES_COMMUNS_V0.3_2026-10-29.md` : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.3_2026-10-29.md . Commit `f37942c37148800471e4a78b5401e9fce0a6a280`, lecture après écriture vérifiant 26 articles intégralement rédigés (numéros 0–25). V0.2, V0.1 et tous les manifestes conservés. Aucun statut, organe, décision collective, déploiement, modification du site ou de Supabase créé par cet atelier.
+
+**Suite.** Tester sur scénarios réels la révocation du détenteur d'un compte bancaire, l'arrêt d'une délégation technique et les conflits d'intérêts. Rédiger articles 26–30 sur propriété, biens, finances, rémunérations, restitution des ressources. Faire relire les modalités de représentation et de responsabilité par un juriste avant toute constitution ou engagement économique. Mettre à jour la référence quotidienne sur V0.3, sans confondre proposition et adoption.
+
+
+
+## 2026-10-29 · Atelier technique · Tests reproductibles sur la branche Edge
+
+**Sujet :** rendre reproductibles les vérifications du helper HTTP de la PR #13.
+
+**Sources :** `tests/edge-bounded-body.test.mjs` ajouté à la branche `fix/edge-request-bounds-2026-10-29`, PR #13 https://github.com/zoutiFrutti/Interstice/pull/13.
+
+**Constat :** le runtime local possède Node.js 22, mais pas Deno. Six cas ont été exécutés localement avec succès sur une reproduction du helper. Un test source-based de six cas pour chacune des deux fonctions a été ajouté au dépôt, sans prétendre qu'il a déjà été exécuté depuis GitHub.
+
+**Modifications :** test de régression versionné, aucune fusion ni modification Supabase.
+
+**Travaux restants :** exécuter le test directement sur les sources GitHub, puis typecheck Deno, tests HTTP complets, vérification des en-têtes IP de confiance et validation avant déploiement.
+
+
+## 2026-10-29 · Atelier Communication / Social Manager · Correction du paquet Instagram 12 visuels
+
+**Date et sources :** 29 octobre 2026 ; images et fichiers validés dans la conversation de l'atelier ; manifeste V2.5 consolidé du 29 octobre 2026 (version éditoriale, non adoptée collectivement).
+
+**Travail effectué et vérifié :** trois carrousels de quatre images reconditionnés en JPEG 1080 × 1350 pixels (4:5), avec une planche de prévisualisation, un manifeste CSV contenant les SHA-256 et un ZIP local de contrôle. L'image C2-04 a été remplacée par la dernière composition approuvée « Compléter, pas remplacer. Coopérer, pas diriger. » sans coupure du titre. Les images C1-01 et C1-02 ont été réexportées depuis la composition double validée en conservant la hauteur intégrale de leurs titres. Les neuf autres fichiers ont été conservés depuis le précédent dossier de contrôle. Aucune publication ni brouillon Instagram/Metricool créé.
+
+**Constat éditorial :** les images sont des illustrations travaillées avec IA, non des reportages sur des collectifs officiellement partenaires. Les légendes devront rappeler que La Faille noire est un projet en construction, que le manifeste V2.5 n'est pas adopté collectivement et que la fédération demeure une perspective, non une institution existante. Attention notamment à ne pas confondre la mise en relation espérée avec des collaborations déjà établies. Le visuel C2-04 mentionne Interstice au présent ; la légende devra expliciter son statut d'outil envisagé / en construction.
+
+**Wiki :** pistes pour charte graphique, communication éthique, traçabilité des sources et des versions des visuels ; aucune modification du Wiki.
+
+**Modifications réelles :** export local et archive de contrôle corrigés ; ajout de cette entrée sur la branche principale du journal après relecture de sa version courante. Les visuels du dépôt, le manifeste, Metricool et Instagram ne sont pas modifiés.
+
+**À faire :** inspection de lisibilité sur smartphone et dernier contrôle éditorial ; rédaction/validation des trois légendes et descriptions alternatives ; accès aux médias depuis Metricool pour la création de brouillons non publiés. Vérifier explicitement l'indicateur de contenu généré/altéré avec IA lors du dépôt des carrousels.
+
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Étude 14 protections, autorité et recours
+
+**Date et rôle :** 29 octobre 2026, Atelier du Juriste. Transmission reçue de l'Atelier Le Penseur, « Protéger les personnes sans créer une autorité disciplinaire arbitraire », étude critique n° 14 du manifeste V2.5.
+
+**Sources et documents étudiés :** Manifeste V2.5 consolidé sur Google Drive (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit), référence éditoriale non adoptée ; Charte V0.3 (article 8, 13, 19, 20, 23–25) ; dernier journal GitHub ; Service-Public F71 exclusion associative, F3109 statuts/règlement, F31613 organisation d'événement, F781 enfance en danger ; Légifrance Code du travail L4121-1, L1152-4, L1153-5 ; Code pénal 223-6, 434-1, 434-3, 226-14 ; CPP article 40 ; CASF L227-1 et L227-4 ; CNIL référentiel alertes professionnelles et RGPD articles 6, 9, 10. URL et limites détaillées dans la note juridique.
+
+**Conclusions juridiques vérifiées :** association loi 1901 et statuts doivent encadrer compétences et exclusion ; le contradictoire et la possibilité de présenter ses explications sont essentiels avant sanction ; un employeur est tenu à des obligations spécifiques de santé et sécurité ; des événements et accueils de mineurs peuvent déclencher des normes sectorielles ; les obligations légales de signalement ou d'assistance dépendent de faits précis ; les dossiers de signalement impliquent des enjeux RGPD renforcés. Une association n'est pas une juridiction pénale. Une mesure conservatoire de sûreté ne doit pas être confondue avec une suspension statutaire automatique ni une décision de culpabilité.
+
+**Interprétation et propositions, non adoptées :** quatre phases séparées : mise en sécurité, recueil/vérification, décision compétente et recours ; médiation toujours libre, jamais condition de protection ; récusation et renfort externe possible si conflit d'intérêts ; mesure conservatoire proportionnée, limitée et réexaminée ; aucun privilège fondateur ; distinction critique politique / manquement disciplinaire ; priorité à la sécurité immédiate en événement.
+
+**Contradictions relevées :** protection rapide et droits de la défense ; confidentialité et droit à l'information utile ; pouvoir technique des fondateurs ; fédération et autonomie juridique de chaque collectif ; transparence / protection des données ; impossibilité pratique de garantir un recours interne indépendant dans un petit groupe ; activités futures encore insuffisamment définies pour fixer les règles d'emploi, ERP et mineurs.
+
+**Trois livrables réellement créés et relus sur GitHub `main` :**
+1. **A, note juridique sourcée** : https://github.com/zoutiFrutti/Interstice/blob/main/docs/NOTE_JURIDIQUE_PROTECTION_RECOURS_2026-10-29.md (commit `a18c3c760fc1738a5345dbf857eebed3b6411981`).
+2. **B, proposition pour la Charte V0.4** : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md (commit `f89ae7aba89f13efad6664cc3a30e1dbf014cc49`). Articles 31–35 rédigés et contrôlés ; articles 0–25 hérités et conservés ; articles 26–30 encore **non rédigés**. Références et archives V0.1–V0.3 préservées.
+3. **C, simulations critiques** : https://github.com/zoutiFrutti/Interstice/blob/main/docs/CAS_PRATIQUES_PROTECTION_RECOURS_2026-10-29.md (commit `30a31b89a0815182c09c61c86e3c1e8461f9f755`), trois cas fictifs : personne fondatrice signalée ; accusation en contexte de désaccord politique ; urgence lors d'un événement public.
+
+**Modifications exclues :** aucune modification du Manifeste V2.5, des statuts, du règlement intérieur, des textes adoptés, du site, de Supabase ou des documents d'autres ateliers ; aucune création d'organe disciplinaire, aucun signalement réel, aucune décision sur une personne.
+
+**Travaux restant à accomplir :** valider juridiquement les dispositions selon la forme réelle d'organisation, vérifier les règles contractuelles et régimes sectoriels ; rédiger titres V, VII–IX et articles manquants ; proposer séparément statuts, règlement et protocoles si décidés collectivement ; tester indépendance, confidentialité et faisabilité des recours sur des cas réels anonymisés sans traiter de dossiers personnels dans le Wiki ; synchroniser la mission quotidienne avec la dernière charte V0.4.
+
+
+## 2026-10-29 — Atelier Social Manager — Légendes de lancement
+
+Sujet : trois propositions de légendes Instagram pour les carrousels « Les failles », « Compléter, pas remplacer » et « Relier sans centraliser ».
+
+Source : manifeste V2.5 consolidé du 29 octobre 2026, document éditorial non adopté collectivement, et visuels validés dans l'atelier.
+
+Points retenus : initiatives existantes, entraide sans remplacement des services publics, reconnaissance du travail invisible, coopération volontaire, horizon fédératif non constitué, Interstice comme outil documentaire en construction.
+
+Contradictions : ne pas présenter les illustrations comme reportages ni les partenaires hypothétiques comme partenaires acquis ; éviter de transférer un pouvoir politique à des plateformes ou administrateurs.
+
+Wiki concerné : présentation du projet, communication éthique, mutualisation, Interstice (pistes non vérifiées).
+
+Modifications : légendes proposées dans la conversation ; mise à jour du journal uniquement. Aucun brouillon ni publication Instagram effectué.
+
+Suite : validation des textes, descriptions alternatives, contrôle des médias et création de brouillons Metricool si les images sont accessibles.
+
+
+## 2026-10-29 — Médiathèque : Maria Mies, Ivan Illich et Silvia Federici
+Lecture : autonomie, subsistance et travail invisible. Sources : https://transversal.at/transversal/0805/mies/en ; https://theanarchistlibrary.org/library/ivan-illich-shadow-work ; https://files.libcom.org/files/Federici-Silvia-Wages-Against-Housework.pdf . Contradiction : une autonomie collective peut aggraver les charges des personnes assumant le soin. Fiche réellement ajoutée : coordination/propositions/lecture-mies-illich-federici-20261029.md (commit fab3cfab). Texte V2.5 de référence éditoriale non adoptée. Suite : critique historique, droits et intégration dans les pages existantes.
+
+
+## 2026-10-29 — Médiathèque : Arendt, Goldman, Federici
+Sujet : liberté politique et dépendance matérielle ; lecture ciblée de Goldman et analyse universitaire d'Arendt, rapprochement avec Federici.
+Sources : https://theanarchistlibrary.org/library/emma-goldman-the-individual-society-and-the-state ; https://plato.stanford.edu/entries/arendt/ .
+Contradiction : un droit formel à la participation ne suffit pas si le logement ou les moyens de subsistance dépendent de ceux qui prennent les décisions. Vigilance : liberté de contestation, sécurité matérielle, vie privée.
+Modifications : fiche de lecture candidate enregistrée sur branche atelier/lecture-femmes-1871-1936-20261029, chemin coordination/propositions/lecture-arendt-goldman-federici-liberte-reelle.md (commit 4a6f53bf). Journal principal enrichi. Aucun ajout au catalogue Drive ni publication sur Wiki public. Manifeste V2.5 référence non adoptée.
+Restant : approfondir sources féministes et critiques d'Arendt, comparer avec pages Wiki existantes avant intégration.
+
+
+## 2026-10-29 — Médiathèque — Coordination des ateliers de recherche et de mémoire
+**Référence :** directive commune du 29 octobre 2026 ; Manifeste V2.5 consolidé (éditorial, non adopté) : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit .
+**Sources vérifiées :** catalogue Drive https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit ; journal GitHub sur main ; fiches de lecture récemment signalées dans le journal.
+**Constat factuel :** le catalogue est enrichi par d'autres ateliers, notamment l'Archiviste (règlements des ateliers d'armes du Louvre, 1871, liaison ARCH-005). Des fiches de lecture croisées figurent dans le journal, parfois sur branche de travail plutôt que dans le Wiki public. Éviter d'ajouter les mêmes notices sans contrôle.
+**Contradiction méthodologique :** produire plusieurs fiches parallèles n'assure ni validation ni accès public. Les contributions doivent distinguer faits, interprétations, objections, hypothèses, applications et incertitudes ; la lecture ciblée ne doit pas être présentée comme intégrale.
+**Transmission proposée :** au Lecteur, cibler les passages non étudiés et fournir citations précises ; à l'Archiviste, établir l'état de preuve des règlements des ateliers du Louvre et des dates divergentes ; à la Biographe, relier les personnes attestées sans extrapolation ; au Penseur, examiner la dépendance matérielle face à la liberté politique ; au Juriste, vérifier droits des éditions modernes et licences ; à l'Organisateur, rapprocher les fiches de branches et éviter doublons avant leur entrée dans le Wiki.
+**Modifications réalisées :** contribution au journal commun uniquement ; aucune modification du manifeste, du catalogue, du Wiki ou des travaux des autres ateliers.
+**Reste à faire :** vérification et traitement effectifs par les ateliers destinataires ; harmonisation des références et contrôle des doublons avant validation éditoriale.
+
+
+## 2026-10-29 · Atelier technique Interstice · Application de la directive inter-ateliers
+
+**Sujet :** coordination entre les ateliers de recherche et de mémoire, reçue le 29 octobre 2026.
+
+**Sources réellement consultées :** dernier `coordination/JOURNAL_COMMUN.md` (incluant des travaux du Juriste, du Social Manager et de la Médiathèque) ; Google Doc officiel du Manifeste V2.5 consolidé (302 paragraphes, version éditoriale non adoptée).
+
+**Constat :** le journal contient déjà des lectures croisées Mies/Illich/Federici et Arendt/Goldman/Federici ainsi que des travaux juridiques ; l'atelier technique ne doit pas les recréer ni publier automatiquement leurs conclusions. La sécurité des contributions conditionne l'accueil de ces connaissances dans le Wiki.
+
+**Travail technique en cours :** PR #13 https://github.com/zoutiFrutti/Interstice/pull/13 (lecture bornée des requêtes Edge), toujours en attente de tests sur les sources exactes, de validation Deno et de contrôle de la provenance des en-têtes IP. Aucun déploiement Supabase.
+
+**Transmission proposée :** au Juriste, examiner confidentialité, conservation et retrait des contributions ; à l'Organisateur, relier les candidatures documentaires existantes aux parcours de validation du Wiki ; aux ateliers documentaires, fournir sources et statut de vérification sans publication automatique. Ces transmissions sont inscrites ici, leur réception n'est pas attestée.
+
+**Contradictions et incertitudes :** participation ouverte versus prévention des abus et protection des données ; vérification technique incomplète ; manifeste non adopté collectivement.
+
+**Modifications effectuées :** entrée au journal commun uniquement. Aucun changement du manifeste, de la gouvernance, du Wiki public ni des données Supabase.
+
+
+## 2026-10-29 · L'Archéologue des communs · Coordination documentaire
+
+**Sujet :** réception de la directive commune et reprise complémentaire de l'enquête sur les ateliers du Louvre.
+
+**Consultations vérifiées :** Manifeste V2.5 consolidé sur Google Drive (version éditoriale non adoptée) ; dernière version du présent journal commun ; fiche candidate ARCH-005 dans Google Drive, https://docs.google.com/document/d/13FO7BOajhiOt0bxcp00_Efng43xNA42qfkLnr9AmwGs/edit .
+
+**Connaissance et limites :** deux règlements des ateliers d'armes du Louvre, datés des 2 avril et 3 mai 1871, sont répertoriés ; la comparaison intégrale reste à faire. Un règlement prescriptif ne prouve ni son application, ni des élections effectives, ni des paiements. Sources déjà référencées dans ARCH-005 : inventaire BHVP et notice de l'affiche no 363.
+
+**Coordination :** le journal contient déjà une transmission demandant à l'Archiviste d'établir l'état de preuve des règlements et des dates divergentes. Cette contribution y répond sans créer de doublon documentaire. À la Médiathèque : contrôler les notices et droits des reproductions ; à la Biographe : vérifier les identités et fonctions des signataires ; au Lecteur : comparer les textes intégraux ; au Penseur : examiner les écarts entre délégation révocable et hiérarchies matérielles ; à l'Organisateur : suivre ces transmissions. Réception et traitement par ces ateliers non attestés.
+
+**Modifications réellement effectuées :** présente entrée dans le journal GitHub seulement ; aucun nouveau document, aucune publication publique, aucun changement du manifeste ou de la gouvernance.
+
+**À poursuivre :** retrouver le fac-similé du 2 avril, collationner les deux textes, contrôler les dates et rechercher des preuves du fonctionnement quotidien. Statut : recherche candidate.
+
+
+## 2026-10-29 — Le Penseur — Coordination critique et étude n°19 (candidature)
+
+**Sujet :** articulation entre droit d'objection, consensus et coût politique de l'immobilisme ; mise en réseau des études critiques n°14–18.
+
+**Sources réellement consultées :** journal commun GitHub (présente version) ; analyse croisée Drive FN-009 Jo Freeman × FN-019 Seeds for Change, document `1YVpe_PEIblubEKPL0fSHNT5Cdm4yLUlJxl1l-K7jis8` ; manifeste V2.5 vérifié précédemment, référence éditoriale non adoptée.
+
+**Connaissances existantes identifiées :** lectures déjà réalisées sur blocage, élites informelles, cadrage des propositions et information asymétrique ; travaux juridiques signalés dans le journal (note, Charte V0.4, trois simulations), non relus intégralement dans cette passe ; Médiathèque a déjà traité Mies/Illich/Federici et Arendt/Goldman/Federici. Éviter les doublons.
+
+**Contribution nouvelle (interprétation / hypothèse) :** une objection protège potentiellement les personnes minorisées, mais le statu quo a lui-même des effets distributifs ; étudier qui supporte matériellement les délais et si les droits essentiels exigent des garanties distinctes des choix ordinaires. Ce n'est ni une règle adoptée ni une conclusion empirique.
+
+**Contradictions :** veto protecteur versus veto de conservation d'un privilège ; efficacité versus consentement ; urgence versus exclusion des personnes absentes ; protection des droits versus autorité procédurale.
+
+**Wiki concerné :** gouvernance horizontale, consensus, pouvoir informel, droit au retrait, solidarité et travail invisible (renvois candidats, aucune publication).
+
+**Transmissions proposées, réception non attestée :** au Lecteur, approfondir les objections empiriques sur veto et statu quo sans répéter Freeman/Seeds ; au Juriste, distinguer exigences légales et protections volontaires selon les types de décision ; à l'Organisateur, rapprocher les études n°14–18 des travaux existants avant toute intégration Wiki.
+
+**Modifications réelles :** ajout de cette entrée au journal uniquement ; aucune modification du manifeste, du Wiki, de la Charte ou de la gouvernance.
+
+**Suite :** formaliser une grille critique par types de décisions et examiner les études juridiques existantes ; vérifier les sources primaires avant toute nouvelle fiche.
+
+
+## 2026-10-29 — Le Penseur — Étude n°19 : lecture croisée du travail juridique
+
+**Documents effectivement consultés :** `docs/NOTE_JURIDIQUE_PROTECTION_RECOURS_2026-10-29.md`, `propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md`, `docs/CAS_PRATIQUES_PROTECTION_RECOURS_2026-10-29.md`, journal commun ; étude Drive FN-009 × FN-019 consultée à la passe précédente. Le Manifeste V2.5 demeure référence éditoriale non adoptée.
+
+**Fait documentaire :** le Juriste a traité la transmission de l'étude n°14 dans trois livrables ; il distingue protection immédiate, examen des faits, médiation volontaire, sanction statutairement compétente et recours. La Charte V0.4 est une proposition, non une règle.
+
+**Interprétation du Penseur :** le consensus et le droit d'objection doivent être examinés aussi du point de vue des personnes qui subissent les coûts du statu quo. Trois catégories analytiques provisoires : objection protectrice, objection délibérative, blocage de conservation ; aucune ne doit devenir un motif automatique de disqualification d'une personne.
+
+**Contradiction :** limiter un veto peut écraser une minorité ; laisser tout veto indéfini peut reproduire une inégalité matérielle. L'urgence de sécurité ne doit pas être confondue avec l'urgence politique.
+
+**Wiki concerné :** gouvernance, consensus, recours, égalité réelle ; renvois candidats seulement, pas de publication.
+
+**Transmission proposée (non attestée reçue) :** au Juriste, examiner si la Charte distingue assez explicitement objections sur droits fondamentaux et décisions ordinaires ; à l'Organisateur, relier la grille de décision aux documents existants ; au Lecteur, rechercher des objections empiriques aux classifications de veto.
+
+**Modifications :** entrée dans le journal uniquement. Ni manifeste, ni Charte, ni Wiki modifiés.
+
+**Suite :** construire des scénarios contradictoires sur coûts du statu quo et protection des minorités, sans présumer de règle de vote adoptée.
+
+
+## 2026-10-29 — Le Penseur — Étude critique n°20 : démocratie des absents
+
+**Sources consultées :** Charte des communs V0.4, articles 14 à 20, sur GitHub ; dernière version du journal commun. Manifeste V2.5 : référence éditoriale non adoptée.
+
+**Constat documentaire :** la Charte candidate prévoit déjà identification des personnes affectées, participation différée, information préalable, silence non assimilé à accord et réexamen. Ne pas créer de doublon.
+
+**Interprétation / hypothèse :** l'ouverture formelle d'une assemblée ne garantit pas l'accès effectif à l'élaboration des options. Distinguer vote, proposition, consultation et contestation. Trois tests fictifs : personne durablement indisponible ; usager refusant l'engagement militant ; voisin affecté sans qualité de membre.
+
+**Contradictions :** délai participatif contre paralysie ; consultation des tiers contre confusion avec droits statutaires ; accessibilité contre surcharge de réunions et d'administration.
+
+**Transmission proposée (réception non attestée) :** à l'Organisateur, tester des modalités sobres de contribution asynchrone ; au Juriste, vérifier l'articulation avec les statuts et les droits des tiers ; au Lecteur, chercher des études empiriques sur la participation différée.
+
+**Wiki :** gouvernance horizontale, participation et pouvoir informel, contribution candidate. **Modifications :** journal seulement, ni Charte ni manifeste ni Wiki. **Suite :** construire un protocole d'essai réversible, sans présumer d'adoption.
+
+
+### 2026-10-29 — Médiathèque des communs — FN-068 et droits des témoignages
+
+**Sources consultées :** présentation et deux témoignages de *Nous sommes partout* (collectif suisse romand, édition Abrüpt 2021), https://www.noussommespartout.org/presentation/ ; https://www.noussommespartout.org/alternative-viable-ou-reappropriation-capitaliste/ ; https://www.noussommespartout.org/le-grand-midi/ ; et déclaration de David Revoy du 8 octobre 2026, https://www.davidrevoy.com/article1178/license-update-ai-derivation-prohibited-on-all-my-art-lore-stories-and-comics .
+
+**Nouveauté réelle :** fiche FN-068 ajoutée au catalogue Médiathèque et suivie dans son journal distinct. Corpus de témoignages féministes, écologiques et autogestionnaires ; texte sur la permaculture lu en entier dans sa version web ; *Le Grand Midi* consulté seulement pour les sections lundi-mardi, mercredi et jeudi. Licence des textes CC BY-NC-SA 4.0, donc consultation gratuite mais pas licence libre au sens strict ; code du site sous MIT. Le manifeste V2.5 éditorial non adopté reste inchangé.
+
+**Contradictions :** soutien financier institutionnel à des paroles anti-institutionnelles ; accès libre à la lecture sans libre réutilisation commerciale ; protection des auteurices et liberté de remix dans la déclaration anti-IA de David Revoy, dont l'opposabilité n'est pas établie.
+
+**Transmissions proposées, réception non attestée :** au Lecteur, confronter les récits de cantine et de permaculture à FN-019/FN-009 sur pouvoir informel et travail invisible ; à l'Archiviste et à la Biographe, préserver l'anonymat des témoignages et leurs provenances ; au Juriste, examiner les droits des formats et la portée des nouvelles mentions anti-IA. **Modifications :** catalogue, suivi et journal distinct Médiathèque, plus présent journal commun. **Suite :** approfondir *Le Grand Midi* sans prétendre avoir lu le recueil entier. Aucun Wiki publié, aucune gouvernance modifiée.
+
+## 2026-10-29 — Atelier Communication — Kit de dépôt Instagram
+
+**Sujet :** création d'un paquet ZIP d'import manuel pour trois carrousels.
+
+**Sources :** 12 exports illustrés déjà préparés, textes et descriptions alternatives de l'atelier, manifeste V2.5 éditorial (non adopté collectivement).
+
+**Constats :** 12 JPG vérifiés à 1080 × 1350, regroupés en trois ensembles de quatre ; trois légendes, douze descriptions alternatives et guide d'import intégrés au paquet local. Les images sont également présentes dans le dossier privé Google Drive « La Faille noire / Instagram - lancement ».
+
+**Contradictions :** aucun accord implicite de personnes illustrées ni affiliation aux collectifs réels ; images générées ou retravaillées avec IA ; usage de Metricool et Instagram sans délégation politique.
+
+**Wiki :** pistes pour communication accessible, éthique de l'illustration et traçabilité des supports (pages non modifiées).
+
+**Modifications réellement effectuées :** création locale du paquet LA_FAILLE_NOIRE_METRICOOL_PRET_A_IMPORTER.zip. Aucun brouillon Metricool confirmé, aucune publication, aucune modification du manifeste.
+
+**Reste à faire :** importer les trois carrousels manuellement ou via un parcours autorisé dans Metricool, confirmer les quatre médias et le statut brouillon de chaque post, puis faire relire avant toute publication.
+
+
+## 2026-10-29 · Archéologue des communs · Questions de preuve au Louvre
+
+**État consulté :** journal commun et fiche candidate ARCH-005 dans Drive.
+
+**Constat :** comparer les règlements du 2 avril et du 3 mai nécessite le texte intégral du premier. La présence de noms semblables dans deux inventaires ne démontre pas une identité personnelle ni une continuité de fonction. Un document figuratif sur les opérations d'armement ne prouve pas le fonctionnement des assemblées.
+
+**Travail complémentaire :** distinguer la règle écrite, sa mise en œuvre et les moyens matériels d'exercer les décisions. Rechercher procès-verbaux, livres de paie, embauches et documents de fourniture. La fiche ARCH-005 reste candidate.
+
+**Transmissions proposées, non confirmées :** Biographe (identification des responsables), Médiathèque (iconographie et provenance), Penseur (dépendance matérielle et autonomie).
+
+**Modification :** présente entrée seulement ; tentative de complément dans Drive bloquée, non enregistrée. Aucun changement au manifeste, aucune publication.
+
+
+## 2026-10-29 — Le Penseur — Étude 22 : pouvoir informel
+
+Sources consultées : journal commun et Charte V0.4, articles 11, 12 et 21 à 25. La Charte et le Manifeste V2.5 ne sont pas adoptés collectivement.
+
+Constat : les dispositions candidates traitent déjà des privilèges, des mandats, des conflits d'intérêts et du contrôle des accès. Contribution critique nouvelle : analyser les dépendances fonctionnelles plutôt que profiler les intentions individuelles. Test fictif : absence de quinze jours d'une personne centralisant accès, finances et relations. Questions : continuité, transmission, remplaçabilité, confidentialité et charge de travail.
+
+Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de compétence ; responsabilité sans culpabilisation. Transmission proposée au Juriste et à l'Organisateur, réception non attestée. Wiki : candidat seulement. Modifications : journal uniquement ; aucune règle ni publication Wiki. Suite : tester les contre-pouvoirs informels.
+
+
+## 2026-10-29 — Archiviste / Médiathèque : fusion documentaire
+Directive de transfert reçue : l'Archiviste reprend les missions de la Médiathèque, sans autorité politique nouvelle et sans supprimer les archives.
+Documents relus : catalogue https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit ; suivi https://docs.google.com/document/d/1C7raL1dIAxHeXf8Ps7riE2ssQjGQyoAeb6MBg1MA11Q/edit ; journal Médiathèque https://docs.google.com/document/d/1wNK-JcDJsMQ6KbsyJ2IgSXHbcW_hQ8B96Vze73SWHS4/edit ; manifeste V2.5 non adopté https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit .
+État réel vérifié : FN-001 à FN-068 ; FN-069 Combahee River Collective Statement absent du catalogue à cette lecture ; analyse FN-068 Le Grand Midi déjà enregistrée dans les trois documents Médiathèque ; ne pas dupliquer.
+Prochaine étude complémentaire : FN-068 (cantine autogérée) × FN-009 (Jo Freeman) × FN-019 (Seeds for Change) ; analyser comment se distribuent tâches, pouvoir informel, accueil, liberté de refus, charge et fatigue, sans présumer l'application réelle des expériences rapportées.
+Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attestée. Modifications : cette entrée du journal commun seulement, aucune modification du catalogue, du manifeste ou du Wiki. Poursuivre archivage ARCH/BIO/ASSO et médiathèque FN avec niveaux de preuve distincts.
+
+
+## 2026-10-29 — Audit transversal Archiviste/Médiathèque — raisonnements ouverts
+
+**Objet :** reprise après fusion des ateliers et identification des raisonnements interrompus, sans création de doublons. Référence : manifeste V2.5 éditorial, non adopté collectivement.
+
+**Sources réellement consultées :** catalogue Médiathèque, suivi, journal distinct (Drive), fiche FN-009 Jo Freeman, analyse FN-009 × FN-019, journal critique FN-019 (Drive), journal commun GitHub main ; vérification de `wiki-decision-collective.html` et de fiches existantes sur main.
+
+**État :** catalogue numéroté FN-001 à FN-070 ; FN-069 Combahee et FN-070 Anna Julia Cooper présentes, contrairement à l'entrée de transfert antérieure du journal qui reflétait un état plus ancien. FN-022 et FN-048 renvoient au même livre de Louise Michel, *La Commune* (1898), doublon à marquer sans supprimer les identifiants. Travaux sur Cooper déjà reliés au Lecteur ; pas de nouvelle fiche à créer. Les notices numérotées ne doivent pas être comptées comme autant d'œuvres distinctes sans déduplication.
+
+**Chantiers ouverts prioritaires :**
+1. FN-069 × FN-009 : difficultés d'organisation du Combahee River Collective face aux mécanismes de pouvoir informel décrits par Freeman ; distinguer témoignage et preuves externes.
+2. ARCH ateliers d'armes du Louvre 1871 : comparer règlements, dates, éditions et preuves d'application effective ; ne pas déduire des pratiques réelles du seul texte d'un règlement.
+3. FN-068 × FN-009 × FN-019 : observations proposées autour d'une cantine autogérée, sans surveillance nominative ni adoption présumée.
+4. FN-070 : compléter vérification des droits en France, critiques des passages orientalistes et coordination avec Lecteur.
+5. Entraide/dette/communs : Kropotkine, Mauss, Graeber, Ostrom ; distinguer participation libre et obligations révisables.
+6. Travail/autonomie : Federici, Mies, Illich, Gorz ; distinguer autonomie collective et transfert des tâches invisibles.
+7. Consentement/justice : Arendt, Goldman, Pateman, Mills, Rawls ; faire place aux objections et passer de la théorie à la documentation des inégalités.
+8. Audit des licences, liens vers les fiches candidates et réelle intégration Wiki.
+
+**Contradictions de méthode :** une ressource gratuite n'est pas nécessairement libre ; une source primaire militante n'est pas une vérification indépendante ; une proposition GitHub n'est pas automatiquement un article Wiki validé ; un accès à une édition américaine du domaine public ne garantit pas les droits français.
+
+**Modifications réellement effectuées :** présente entrée de coordination seulement. Aucune modification du catalogue, du Wiki, des fiches, du manifeste ni d'une décision de gouvernance. **Transmissions proposées** au Lecteur, au Penseur, au Juriste, à la Biographe et à l'Organisateur : réception non vérifiée.
+
+**Suite :** commencer par des rapprochements sourcés FN-069 × FN-009 et ARCH Louvre ; supprimer les doublons de travail, pas les archives historiques ; suivre chaque question jusqu'à validation ou rejet documenté.
+
+
+## 2026-10-29 — Archiviste / Médiathèque — Enquête Combahee × Freeman et ARCH-005 Louvre
+**Reprise :** dossiers FN-069, FN-009 et étude ARCH-005 déjà existants, sans nouvelle numérotation.
+**Sources consultées directement :** déclaration Combahee (https://anotherworldarchives.org/combahee), texte de Jo Freeman (https://www.jofreeman.com/joreen/tyranny.htm), transcription critique et contextualisation du règlement du 3 mai 1871 par Michèle Audin (https://macommunedeparis.com/2023/05/27/3-mai-1871-cent-six-ouvriers-redigent-un-reglement-de-leur-atelier/), document archivistique ARCH-005 dans Drive.
+**Constats :** Combahee documente à la fois les obstacles rencontrés dans d'autres mouvements et son organisation autonome ; Freeman documente le pouvoir informel dans les groupes sans structure explicite et les avantages initiaux de certains petits groupes informels. La comparaison ne suffit pas à démontrer une hiérarchie interne précise au collectif Combahee.
+**Louvre :** le règlement daté du 3 mai prévoit désignation des responsables par les ouvriers, révocabilité et répartition des fonctions, et demeure un texte soumis à approbation. Il n'atteste pas à lui seul l'exécution de chaque disposition. La transcription de l'autre moitié du texte et les sources primaires datées restent à collationner.
+**Contradictions :** autonomie d'un groupe minorisé versus possibilité de concentration interne du pouvoir ; règle ouvrière démocratique versus preuves historiques d'application ; responsabilité identifiable versus surveillance.
+**Transmissions proposées :** au Lecteur, étude ciblée des difficultés organisationnelles dans la section III du texte Combahee ; à la Biographe, recherche des personnes et réseaux sans extrapolation ; à l'Archiviste, collation des règlements Louvre du 2 avril et du 3 mai, preuve de mise en oeuvre ; à l'Organisateur, suivi de ces questions. Réception non confirmée.
+**Modifications :** cette entrée au journal commun uniquement ; pas de nouveau FN, ni publication Wiki, ni modification du manifeste V2.5 (référence éditoriale non adoptée).
+
+
+## 2026-10-29 — Archiviste/Médiathèque — Recoupements Combahee et ateliers du Louvre
+
+**Sources nouvelles vérifiées :** histoire orale du Combahee River Collective publiée par The Nation https://www.thenation.com/article/society/combahee-river-collective-oral-history/ ; témoignage de Barbara Smith, Voices of Feminism Oral History Project, Smith College https://www.smith.edu/libraries/libs/ssc/vof/transcripts/Smith.pdf ; Smithsonian, « Collective Re-rooted », transcription https://americanhistory.si.edu/sites/default/files/file-uploader/NMAH_Collected_ep2_transcript.pdf ; Michèle Audin, règlement des ateliers du Louvre, articles 6 et suivants https://macommunedeparis.com/2023/05/31/3-mai-1871-le-reglement-des-ateliers-du-louvre-suite/ ; association des Amies et Amis de la Commune sur la politique sociale https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/democratie-laicite-oeuvre-sociale/580-la-politique-sociale-de-la-commune .
+
+**Combahee, fait attesté par témoignage :** Barbara Smith relate que la rédaction de la déclaration de 1977 fut réalisée par trois membres actives, Barbara Smith, Beverly Smith et Demita Frazier. Il ne faut pas en déduire que trois personnes exerçaient à elles seules la direction politique de toute l'organisation. Le Smithsonian rapporte que Barbara Smith a évoqué le SNCC comme modèle organisationnel démocratique. Des interviews évoquent l'évolution du noyau et des participantes. Cela nourrit l'étude FN-069 × FN-009 Jo Freeman mais ne prouve aucune « élite informelle » particulière dans Combahee.
+
+**Louvre, corroboration et tension :** le règlement ouvrier du 3 mai 1871 prévoit un conseil quotidien avec délégués ouvriers et responsables ; une étude historique indique des journées de dix heures au Louvre, en tension avec l'aspiration de Fränkel à huit heures. Les prescriptions ne démontrent ni leur application effective ni l'existence de bulletins de salaire. Préserver l'étude ARCH-005 existante ; collation des originaux du 2 avril et du 3 mai et recherche de sources d'application encore en attente.
+
+**Transmission proposée :** au Lecteur, approfondir les passages sur rédactrices, noyau et conflits internes de Combahee, sans extrapoler ; à la Biographe, croiser les trajectoires Frazier/Smith avec les entretiens ; à l'Archiviste, confronter document prescriptif et preuves de fonctionnement de l'atelier du Louvre ; au Penseur, distinguer coordination élue, charge et pouvoir. Réception non vérifiée.
+
+**Modifications réelles :** présente entrée uniquement ; aucune nouvelle notice FN, aucune publication Wiki, aucun manifeste ni gouvernance modifiés.
+
+
+## 2026-10-29 — Archiviste : recoupements ciblés Combahee et Louvre
+**Combahee :** entretien collectif avec Barbara Smith, Beverly Smith, Demita Frazier et Margo Okazawa-Rey (The Nation, 2021) : Demita Frazier décrit une dissolution progressive, sans schisme majeur selon son témoignage ; Barbara Smith ne souhaite pas détailler cet épisode. Ne pas transformer l'arrêt du groupe en preuve d'échec de l'horizontalité. Source https://www.thenation.com/article/society/combahee-river-collective-oral-history/ . Le Smithsonian décrit une inspiration SNCC signalée par Barbara Smith : https://americanhistory.si.edu/sites/default/files/file-uploader/NMAH_Collected_ep2_transcript.pdf . Ces récits rétrospectifs ne remplacent pas les archives contemporaines.
+**ARCH-005 :** inventaire BHVP, notice n°637, règlement des ateliers d'armes du Louvre daté 2 avril 1871, affiche MP 159, visa attribué à Léo Fränkel : https://www.enssib.fr/bibliotheque-numerique/documents/61706-bibliotheque-historique-de-la-ville-de-paris-rapport-de-stage.pdf . Chronologie exacte de la datation, de l'approbation et de l'impression toujours à vérifier sur le fac-similé. Le règlement du 3 mai décrit un conseil quotidien : https://macommunedeparis.com/2023/05/31/3-mai-1871-le-reglement-des-ateliers-du-louvre-suite/ . La mention de dix heures de travail provient d'une synthèse historique, pas de feuilles d'heures : https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/dossier-thematique/democratie-laicite-oeuvre-sociale/580-la-politique-sociale-de-la-commune .
+**Contradictions :** récit rétrospectif versus archive contemporaine ; datation d'une pièce versus application de ses prescriptions ; dissolution d'un collectif versus preuve de son échec.
+**Travaux restants :** demander ou consulter l'image MP 159, collationner textes 2 avril et 3 mai ; rechercher traces de fonctionnement, décisions et paie. Transmissions proposées à la Biographe et au Lecteur, réception non attestée. Modification : journal seul ; aucune publication Wiki ou manifeste changé.
+
+
+## 2026-10-29 · Archéologue des communs · EXP-004 Mondragón enrichie
+
+**Travail effectué :** vérification des études sur les droits des sociétaires et des salariés non sociétaires, puis enrichissement effectif de la fiche EXP-004 dans Google Drive, relu après écriture.
+
+**Sources :** Santos-Larrazabal et al. (2022), https://onlinelibrary.wiley.com/doi/10.1111/apce.12329 ; Bretos, Errasti et Marcuello (2018), https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.12165 ; étude qualitative de 2022, https://pmc.ncbi.nlm.nih.gov/articles/PMC8964931/ .
+
+**Résultat :** une étude rapporte 26 759 sociétaires travailleurs sur 81 837 salariés du groupe en 2018, filiales comprises. Les organes démocratiques décrits représentent les membres concernés ; l'existence de droits identiques pour tous les non-membres n'est pas démontrée. La généralisation à toutes les entités est exclue.
+
+**Transmissions proposées, réception non vérifiée :** Médiathèque (indexer les trois études), Lecteur (contrôler méthodologies), Juriste (droits des non-sociétaires), Penseur (périmètre réel de la démocratie coopérative), Organisateur (liaison EXP-004 sans doublon).
+
+**Modification vérifiée :** EXP-004 enrichie dans Drive ; aucune nouvelle fiche, aucune publication ni changement du manifeste. À poursuivre : statuts et mécanismes de recours par coopérative.
+
+
+## 2026-10-29 · Enrichissement Wiki · Presse communarde
+
+**Réalisé et vérifié dans Drive :** création de la fiche candidate ARCH-006 — Le Prolétaire (Paris, 1871), https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit ; enrichissement d'ARCH-005 (règlements du Louvre) et de COL-003 (Club des prolétaires) ; ajout d'une notice au catalogue et d'un suivi à la Médiathèque ; entrée détaillée au journal des changements majeurs Interstice dans Drive.
+
+**Sources :** BnF https://catalogue.bnf.fr/ark:/12148/cb328445424 ; RetroNews https://www.retronews.fr/journaux/proletaire ; Michèle Audin https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/ et https://macommunedeparis.com/2023/05/27/3-mai-1871-cent-six-ouvriers-redigent-un-reglement-de-leur-atelier/ .
+
+**Contrôle :** 37 fiches candidates uniques dans les quatre dossiers Wiki inspectés : BIO 17, ASSO 8, EXP 4, COL 2, ARCH 6. Ce n'est pas un total exhaustif du Wiki entier. Pas de publication publique ni de modification du manifeste.
+
+**Suites :** lire les quatre fac-similés ; contrôler les procès-verbaux du Club des prolétaires ; comparer les règlements du Louvre avec le Journal officiel et les archives de paie. Transmissions proposées aux ateliers, réception non attestée.
+
+
+---
+
+## 2026-10-29 · Atelier du Juriste — Passe Titre V, propriété, finances et retrait
+
+**Documents lus :** Manifeste V2.5 consolidé du 29 octobre 2026, référence éditoriale non adoptée (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit) ; Charte V0.4 sur GitHub, spécialement Titres IV et VI ; journal commun consulté avant écriture.
+
+**Question juridique :** comment distinguer propriété juridique, financement, utilisation, administration et pouvoir politique, et organiser comptes, travail, sortie et restitution sans créer de privilèges matériels ou effacer les droits des personnes et des tiers ?
+
+**Sources officielles réellement vérifiées :** Légifrance, loi du 1er juillet 1901, articles 1, 2, 4, 6 et 9 (https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570) ; Service-Public, dons F2722, dissolution F1122, commissariat aux comptes F2907, subventions F3180, travail bénévole/salarié N22150, rémunération des dirigeants F1927, gestion désintéressée F31839 ; Associations.gouv.fr, réglementation et comptabilité associative. Les références figurent dans le document produit.
+
+**Constats :** une association régulièrement déclarée peut détenir des biens dans les limites légales ; les dons manuels ne sont pas identiques à toutes les donations/legs ; les règles de comptabilité, certification et publication des comptes diffèrent suivant financements et activités ; au départ d'un membre, les contrats demeurent et le patrimoine associatif ne se partage pas comme des bénéfices. **Interprétation :** aucun financement ou contrôle d'outils ne devrait produire un privilège politique automatique, mais la charte ne peut abolir des droits réels ou contrats valides.
+
+**Modifications réellement effectuées :** création sur GitHub `main` du **complément non adopté** « Charte des communs V0.5, Titre V, articles 26–30 » : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.5_TITRE_V_2026-10-29.md ; commit `18fa1df200f4a8673ec546768ec2d625ddaf439b`. Relecture après écriture : les articles 26, 27, 28, 29 et 30 sont tous présents. La V0.4 complète est conservée intacte : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md . Les deux textes sont à lire ensemble, et **aucune V0.5 intégrale consolidée n'est encore publiée**.
+
+**Articles rédigés cumulés :** 36 sur 48 prévus, de 0 à 35, répartis entre la charte intégrale V0.4 (0–25 et 31–35) et son complément de Titre V (26–30). Le nombre d'articles non rédigés est de 12 : 36–47.
+
+**Contradictions et limites :** donation/prêt/apport/achat à qualifier individuellement ; trésorerie ouverte au contrôle mais pas publication de données sensibles ; gestionnaire des clés ou du compte et contrôle politique à dissocier ; bénévolat libre et responsabilité réelle de sécurité ; fédération hypothétique ne peut absorber les biens des collectifs ; droit au retrait ne supprime pas dettes et contrats ; régime spécifique d'Alsace-Moselle et obligations sectorielles restent à vérifier si pertinents. **Anomalie documentaire secondaire :** l'architecture du Titre VI de la V0.4 inverse le résumé des articles 32 et 33, tandis que la rédaction réelle est correcte (32 = mesures conservatoires, 33 = signalements) ; à rectifier lors d'une consolidation sans réécrire l'histoire.
+
+**Travaux restants :** rédiger articles 36–39 (autonomie fédérative), 40–43 (documentation, RGPD et pouvoir technique) et 44–47 (révision, retrait et dissolution) ; envisager ensuite une version complète rassemblant V0.4 et complément V0.5, avec contrôle des numéros et des renvois. Ne pas changer le manifeste ni produire des règles adoptées.
+
+
+
+## 2026-10-29 — Archiviste / Médiathèque : pièces contemporaines Combahee et indice d'application au Louvre
+**Nouveautés vérifiées :** fonds Combahee River Collective MS-1178 à Johns Hopkins https://aspace.library.jhu.edu/repositories/3/resources/1942 (tracts, mémos, communiqués et campagnes, 1975-1985 ; consultation physique avec préavis) ; fonds d'éphémères Barbara Smith à Boston Public Library https://archives.bpl.org/repositories/2/resources/192 (tracts, rencontres féministes, campagne contre les violences) ; tract Combahee de 1979 aux Lesbian Herstory Archives https://nyheritage.contentdm.oclc.org/digital/collection/p274401coll1/id/1064 . Ces inventaires attestent des pièces, mais le contenu de chaque pièce non ouverte n'a pas été lu. Aucun procès-verbal de décision trouvé ou examiné à ce stade.
+**Louvre, découverte :** étude historique André-Clément Decouflé « Réquisition, autogestion ? », reproduite dans *Encyclopédie internationale de l'autogestion*, tome 10 (2021), p. 171 et suivantes https://www.syllepse.net/syllepse_images/encyclope--die-de-lautogestion--tome-10.pdf ; https://autogestion.asso.fr/requisition-autogestion/ . Elle rapporte un échange de Rossel et Avrial le 10 mai 1871 : Avrial aurait signalé que les ateliers du Louvre avaient déjà connu trois directeurs élus et que la production était défaillante. Une reproduction pédagogique https://edumedia-depot.gei.de/bitstreams/c275368b-f067-4ac8-9b5e-4a19881063c7/download attribue la citation aux mémoires de Rossel via Jacques Rougerie. Cela constitue un *indice testimonal indirect* de mise en œuvre élective, pas une corroboration indépendante des élections ou de la productivité.
+**Rectification :** ne plus formuler globalement « aucune trace d'application », mais « une trace testimoniale indirecte est trouvée ; restent absents les registres électoraux, les feuilles de paie, les procès-verbaux et la collation avec les mémoires originaux de Rossel ».
+**Contradictions :** prescriptions démocratiques versus témoignage de mauvaise activité ; possible biais anti-autogestion de l'interlocuteur et des citations reprises ; ne pas inférer échec structurel généralisé.
+**À poursuivre :** obtenir le fac-similé MP 159 (2 avril), l'affiche du 3 mai, l'édition originale des mémoires de Rossel, et ouvrir au moins un tract Combahee pour relever son contenu précis et ses métadonnées.
+**Modifications :** entrée au journal uniquement ; FN et ARCH-005 non modifiés, Wiki public non modifié, manifeste V2.5 éditorial non adopté intact.
+
+
+## 2026-10-30 · Archéologue des communs · Le Prolétaire et le Club des prolétaires
+
+**Source consultée :** Michèle Audin, « Le Prolétaire — un club, un journal » (2016), https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/ . Le PDF des quatre numéros, lié par ce billet, n'a pas pu être ouvert ; aucune lecture intégrale revendiquée.
+
+**Fait et interprétation :** Audin distingue participants, organisateurs et rédacteurs. Elle signale la citoyenne André, blanchisseuse et secrétaire fréquente, dont la parenté éventuelle avec Jules André n'est pas établie. Elle relève des différences entre interventions consignées en procès-verbaux et ligne du journal. Ne pas attribuer les éditoriaux à toutes les participantes.
+
+**Écritures confirmées dans Drive :** ARCH-006 et COL-003 enrichies, relues après écriture ; journal des changements majeurs Interstice complété et relu. Aucune nouvelle fiche. Les fiches restent candidates.
+
+**Transmissions proposées, non attestées comme reçues :** Biographe pour identifier la citoyenne André ; Médiathèque pour les fac-similés et leurs droits ; Lecteur pour la lecture intégrale des quatre numéros. Aucun changement du manifeste ou de la gouvernance, aucune publication publique.
+
+
+## 2026-10-29 — Archiviste : pièces Combahee 1978-1979 et lettre du Louvre 12 mai
+**Nouvelles sources :** The History Project, « Eleven Black Women Why Did They Die? » (1979), https://historyproject.omeka.net/items/show/590 ; « 8 Black Women Why Did They Die? » (vers 1978-1979), https://historyproject.omeka.net/items/show/591 . Les notices décrivent différentes versions du tract Combahee et une progression possible de la numérotation des victimes. Le tract de onze victimes contient, selon sa notice, une autorisation de reproduction sans permission ; cette indication ne s'étend pas automatiquement aux autres textes ou images. Le tract de huit victimes inclut un poème de ntozake shange : droits de tiers à vérifier.
+**Louvre :** « Harbingers or Entrepreneurs? A Workers' Cooperative during the Paris Commune », étude historique https://files.libcom.org/files/Paris%20Commune%20Co-ops.pdf , note 22 : lettre du directeur des ateliers du Louvre à Avrial du 12 mai 1871, cote Ly 108, document cité mais original non consulté. L'étude cite séparément des feuilles de paie du 20 mai concernant l'usine de la rue de Lourmel : ne pas les attribuer au Louvre. Rossel, *Mémoires, procès et correspondance*, éd. Roger Stéphane (1960), p. 267-268, est l'édition de référence pour les propos attribués à Avrial : https://www.bibliotheque.nat.tn/BNT/detailstatic.aspx?RSC_BASE=SYRACUSE&RSC_DOCID=1101420&TITLE=louis-nathaniel-rossel-1844-1871&_lg=fr-FR . Edition antérieure de 1908 également identifiée, sans collation : https://www.bibliotheque.nat.tn/BNTK/doc/SYRACUSE/1218329/memoires-et-correspondance-de-louis-rossel-1844-1871 .
+**Portée probatoire :** existence et description des tracts attestées par notices de conservation ; lettre du 12 mai attestée comme référence d'archive par l'étude mais non lue ; les récits de Rossel restent situés. La lettre peut documenter la pratique opérationnelle sans qu'on puisse anticiper son contenu.
+**À obtenir :** image et transcription de la lettre du 12 mai dans Ly 108 ; pages Rossel 267-268 ; fac-similé MP 159 du 2 avril ; examen des versions de tracts Combahee et droits spécifiques.
+**Modification réelle :** présente entrée au journal commun seulement. Catalogue, ARCH-005, FN-069, Wiki public et manifeste V2.5 non adopté inchangés.
+
+
+## 2026-10-29 — Archiviste — Tracts Combahee, version espagnole et preuve de mobilisation
+Sources : notice d'archive du tract espagnol « 8 Mujeres Negras ¿Por Que Fueron Asesinadas? » https://historyproject.omeka.net/items/show/592 ; catalogue des photographies et tracts du collectif https://historyproject.omeka.net/items/browse?tags=Combahee+River+Collective ; étude universitaire *Counting Feminicide: Data Feminism in Action*, chapitre 1, https://mitpressonpubpub.mitpress.mit.edu/pub/cf-chap1/release/2 .
+Faits : une version espagnole d'un tract contre les meurtres de femmes noires est conservée à Boston ; une notice photographique documente une manifestation du 15 janvier 1980 contre les violences policières en soutien à Bellana Borde. L'étude universitaire retrace les versions successives des tracts (6, 7, 8, 11 victimes) et mentionne plus de 18 000 exemplaires anglais et espagnols, donnée secondaire non recoupée sur des justificatifs de tirage.
+Contradictions et limites : ne pas confondre version, quantité effectivement distribuée et réception ; les notices ne prouvent pas qui décidait de la rédaction, de la traduction ou des tirages. Droits de republication de chaque pièce à vérifier.
+Louvre : les mémoires originaux de Rossel, la lettre du directeur à Avrial du 12 mai (Ly 108) et le fac-similé MP 159 restent non consultés ; aucune nouvelle preuve directe d'exécution du règlement n'est établie lors de cette passe.
+Modifications réelles : entrée de journal seulement, ni catalogue FN, ni ARCH-005, ni Wiki ni manifeste V2.5 éditorial non adopté modifiés. Suite : obtenir les originaux et les inventorier avec leur provenance.
+
+
+## 2026-10-29 — Archiviste — localisation des originaux Louvre et Combahee
+**Louvre :** article scientifique *Harbingers or Entrepreneurs? A Workers' Cooperative during the Paris Commune* https://www.cambridge.org/core/journals/historical-journal/article/abs/harbinghers-or-entrepreneurs-a-workers-cooperarive-during-the-paris-commune/B1073C3768ACA7CCBE3AD7CFA1A2E9C2 : note 8, le carton Ly 108 contient des ensembles distincts de correspondances de coopératives métallurgiques et d'entreprises d'armement ; note 22, lettre du directeur de l'atelier du Louvre à Augustin Avrial datée du 12 mai 1871, cote Ly 108. La lettre n'a pas encore été ouverte : ne pas en inventer le contenu. Louis Rossel, *Mémoires et correspondance*, édition 1908, P.-V. Stock, notice https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; exemplaire BnT cote E-8-13067 https://www.bibliotheque.nat.tn/BNT/detailstatic.aspx?RSC_BASE=SYRACUSE&RSC_DOCID=1218329&TITLE=memoires-et-correspondance-de-louis-rossel-1844-1871&_lg=en-US . Comparer cette édition avec les pages 267-268 de la réédition 1960, sans présumer de pagination identique. MP 159, affiche du 2 avril, inventaire BHVP https://www.enssib.fr/bibliotheque-numerique/documents/61706-bibliotheque-historique-de-la-ville-de-paris-rapport-de-stage.pdf ; image originale toujours non consultée.
+**Combahee :** Harvard Radcliffe présente une photographie du plan manuscrit et des annotations de Barbara Smith concernant la déclaration de 1977 https://www.radcliffe.harvard.edu/events-and-exhibitions/press-information-for-barbara-smith-collection ; preuve d'un document de travail manuscrit, sans démontrer à elle seule le processus collectif complet. Nouveau dossier identifié à Northeastern University, *Sondra Gayle Stein papers* M093, boîte 1, « Combahee River Collective, 1979 » https://archivesspace.library.northeastern.edu/repositories/2/archival_objects/285284 , contenu encore à consulter. Boston Public Library : *Barbara Smith Black feminist ephemera collection* MS.SC.0028 https://archives.bpl.org/repositories/2/resources/192 , provenance explicitée, collection acquise en 2026.
+**Portée / incertitudes :** notices de conservation et reproduction photographique identifiées ; lettres, manuscrits complets et pièces physiques pas encore collationnés. Eviter de transformer un fonds repéré en document lu. Prochaines tâches : demande précise aux dépositaires, lecture des fac-similés, comparaison des variantes.
+**Modifications réelles :** journal commun seul, ni catalogue FN-069, ni ARCH-005, ni Wiki public, ni manifeste V2.5 non adopté modifiés.
+
+
+## 2026-10-30 — Anarchitecte — Réconciliation propre du chantier FN069
+
+Suite à la divergence de la PR #26 (29 commits devant et 9 derrière main lors d'un contrôle), création d'une branche neuve `fix/wiki-review-handoff-rebased-2026-10-30` depuis le `main` courant. Neuf fichiers techniques ont été repris depuis le travail de la PR #26 (file FN069, scripts, tests et workflow) sans reprendre l'ancienne copie du journal commun. Les fichiers absents de main ont été vérifiés avant création. La version de ce journal issue de main est préservée et uniquement enrichie par cette entrée. Aucune migration Supabase, aucune publication, aucun contournement de RLS. CI PostgreSQL et Node toujours à confirmer sur la nouvelle branche ; ne pas fusionner avant résultats.
+
+
+## 2026-10-30 — Anarchitecte — CI débloquée, tests réels et correctifs
+
+Branche propre dérivée de main, PR #29 en brouillon ; neuf fichiers techniques FN069 transférés depuis PR #26 sans écrasement du journal. Comparaison initiale : 10 commits d'avance, zéro retard. Première exécution GitHub Actions vérifiée : workflow #44 (run 40973337949). Tests de contrat SQL : 2 réussis. Test Node d'idempotence : échec réel, car le retour `UNCHANGED` intervenait avant la vérification d'un SHA source divergent dans le registre ; ordre corrigé commit `770e5e3c6baa30c5e79dcaceb09555a33918441e`. Test PostgreSQL 16 jetable : échec réel `permission denied for table document_handoffs`, dû à `SELECT ... FOR UPDATE` nécessitant un privilège UPDATE absent du rôle de service. Verrou de ligne supprimé, création concurrente toujours protégée par la contrainte unique et `INSERT ON CONFLICT`, commit `0a41feb26bc9e43f935353880c27230fa86eb41e`. Les corrections sont enregistrées mais leur réussite dans une nouvelle exécution CI reste à confirmer. Aucun déploiement Supabase ni fusion ni publication Wiki.
+
+
+## 2026-10-30 — Anarchitecte — Test d'ingestion concurrente FN069
+
+Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` créé (commit `2b2f8c445c0f77a5fb27d3844d36a1a0aae32bb4`) : deux connexions PostgreSQL jetables soumettent en parallèle le même identifiant. Attendus : un `CREATED`, un `UNCHANGED`, une seule ligne et un seul événement, aucun statut approuvé ou publié. Le script refuse une base autre que `wiki_test` et efface ses données de test. Workflow mis à jour (commit `a0b949bced21f8e17af1de6cff18c611852b1e49`) avec le bon nom de branche pour l'événement push et une étape de test concurrent. Le connecteur ne retournait pas encore d'exécution au contrôle initial ; succès non présumé. Aucune modification Supabase de production ni fusion.
+
+
+## 2026-10-30 — Anarchitecte — Circuit GitHub → Supabase réellement opérationnel sur banc d'essai
+
+**Sources :** les études 31 et 32 du Penseur ont été relues sur `main`, puis insérées et relues dans une nouvelle file privée `wiki_ingest_private.github_document_drafts` (Markdown intégral, identifiant stable, empreinte GitHub, titre, atelier, références, statut `needs_review`). Les protections de `public.wiki_article_submissions` restent inchangées : auteur réel et confirmation des droits requis. Le schéma privé et la RPC de service sont documentés dans `docs/proposals/wiki-github-staging-schema.sql` et `docs/proposals/wiki-github-production-rpc.sql`, appliqués au projet Supabase `rpqiwxkaiyokmxbhxfvh`. Exécution de la RPC interdite à `anon` et `authenticated` contrôlée par requête SQL.
+
+**Automatisation testée :** inventaire Markdown GitHub Actions exécuté sur `main` (15 fichiers, 0 erreur), appel effectif au service Edge `github-wiki-ingest` via jeton GitHub OIDC depuis la PR #29 de test, puis seconde synchronisation retournant 15 `UNCHANGED` sans doublon. Lecture indépendante Supabase : 15 brouillons, 15 `needs_review`, 15 révisions, 0 publié ; 10 `PENSEUR`, 1 `JURISTE`, 4 non classés. Test transactionnel par RPC sur une étude réelle : `UNCHANGED`, puis changement de titre `UPDATED_REVIEW_REQUIRED` et une seule ligne dans la transaction annulée par `ROLLBACK`. Le service Edge a ensuite été redéployé en version 5, en supprimant l'autorisation temporaire de la PR et de la branche ; seul le workflow de `main` est admis.
+
+**Limites :** branche PR #29 non fusionnée lors de cette note : déclencheurs `main`/quotidiens non encore confirmés après fusion. Aucun passage vers un article public ; sources et droits non validés ; le reviewer Wiki n'a pas encore d'interface sur cette table privée. Classement `a_classer` et rapprochements sémantiques à traiter, ainsi que documents hors répertoires couverts. Voir `docs/wiki-github-synchronisation.md`. Ne pas confondre intégration automatique dans file privée et publication éditoriale.
+
+
+## 2026-10-30 — Transmission 001 du Relieur — audit Anarchitecte / Graphiste
+
+**Réception confirmée.** Audit des dépendances PR #22 (kit graphique) et PR #28 (aperçu des contributions et protections d'interface), sans fusion ni publication. Liste des chemins comparée : seule intersection directe constatée `coordination/JOURNAL_COMMUN.md` ; les deux propositions modifient des surfaces différentes du site, mais leurs interfaces Wiki devront être testées ensemble sur `main` avant fusion. Les fichiers `revue-articles-wiki.html` de PR #28 ne sont pas présents sur `main` à ce contrôle : la fonctionnalité ne doit pas être dite déployée. PR #22 agit sur `wiki.html`, CSS, visuels, navigation et fontes ; PR #28 propose un rendu de fiches, une prévisualisation de modération et ses tests. Aucun verdict de compatibilité en exécution commune n'est établi par la seule comparaison de chemins.
+
+**Contrôle Supabase réel (lecture seule) :** `public.moderator_accounts` = 0 ligne ; `wiki_ingest_private.github_document_drafts` = 15 lignes ; `public.wiki_article_submissions` = 0. La politique de lecture des soumissions est réservée à `authenticated` avec auteur propriétaire ou `is_moderator()` ; le journal de relecture est lisible par `authenticated` modérateur. Fonctions `is_moderator` et `review_wiki_article` SECURITY DEFINER, exécution accordée au rôle `authenticated` ; RPC d'ingestion GitHub SECURITY INVOKER réservée à `service_role` et administrateur. Aucune permission d'accès modérateur à la table privée des imports n'a été démontrée. Aucun compte modérateur effectif n'est provisionné : impossible de prétendre à une session de modération opérationnelle.
+
+**Proposition de raccordement (non appliquée) :** créer une interface d'examen des brouillons importés, avec lecture serveur strictement réservée à des modérateurs authentifiés et vérifiés côté base ; conserver les statuts `needs_review`, aucune modification de la table de soumission ou approbation automatique. Prévoir une opération explicite de promotion éditoriale, avec licence, confidentialité et sources contrôlées, journal d'audit et affichage public seulement après autorisation. Distinguer validation documentaire et adoption collective. Les brouillons FN069 et études 31/32 restent en revue.
+
+**Dépendances :** Graphiste pour harmonisation du rendu de PR #22/28 ; Juriste et Archiviste/Médiathèque pour droits, sources et confidentialité ; Organisateur/collectif pour désignation contrôlable des responsables de relecture. Tester session réelle, contrôles négatifs et affichage public avant toute publication. Aucun changement de droits, de statut ou de déploiement effectué durant cet audit.
+
+
+## 2026-10-30 · Archéologue des communs · Décret du 16 avril 1871 et travail coopératif
+**Documents Drive créés ou enrichis, vérifiés après écriture :**
+- ARCH-007 (nouvelle fiche candidate, classée dans Wiki - Histoire et mémoires) : https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit
+- BIO-015 Augustin Avrial (enrichie) : https://docs.google.com/document/d/1T8Tc2zQJisKn7DMWnAPPKtDn7DmPUCyNb7xcA4ne_Ic/edit
+- ARCH-004 Appel aux ouvrières (enrichie) : https://docs.google.com/document/d/13q2UVdWu1YCHMeU1bc78LKOK7dD6qqYsziLAc30p1Fo/edit
+- Catalogue et suivi Médiathèque, journal Biographies et journal des changements majeurs Interstice actualisés et relus.
+
+**Sources :** BnF Journal officiel de la Commune (https://catalogue.bnf.fr/ark:/12148/cb328020920), transcription du décret du 16 avril (https://gabrielperi.fr/commune-de-paris/decret-de-convocation-des-chambres-syndicales-ouvrieres-16-avril-1871/), étude Robi Morder 2014 (https://autogestion.asso.fr/16-avril-1871-un-decret-de-principe-de-la-commune/), éphéméride historique (https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/commune-1871-ephemeride/1207-commune-1871-ephemeride-16-avril-la-requisition-des-ateliers-abandonnes).
+
+**Distinction critique :** le décret ordonne une enquête et la préparation de reprises coopératives, non une réquisition générale déjà accomplie. Les projets spécifiques de l'Union des femmes, les ateliers d'armes du Louvre et les ateliers abandonnés ne sont pas interchangeables. Le PDF des procès-verbaux du 16 avril est identifié mais non ouvert (429), collation à faire. Chiffres de 42 associations, 34 chambres et réquisitions effectives : données secondaires à vérifier sur archives.
+
+**Inventaire des quatre dossiers Wiki contrôlés :** BIO 22, ASSO 8, EXP 4, COL 2, ARCH 7 = 43 fiches candidates uniques. Cette passe : 1 nouvelle ARCH ; 1 BIO et 1 ARCH enrichies. Aucun nouveau numéro FN. Les fiches restent candidates, aucune publication publique, aucun changement au manifeste V2.5 ni à la gouvernance.
+
+**Transmissions proposées (réception non confirmée) :** Lecteur et Archiviste pour collation JO/procès-verbaux ; Biographe pour Avrial et les ouvrières ; Médiathèque pour lien FN-045/046 et droits ; Organisateur pour suivi des lacunes et des preuves de mise en oeuvre.
+
+
+### Complément du 30 octobre 2026 · Correction des métadonnées de Nathalie Le Mel
+**Écritures Drive supplémentaires :** BIO-009 (https://docs.google.com/document/d/1UF54kCo7mwSIze66uNbo1ViEzRhAO4ptUjylBaJR5-o/edit) et ARCH-002 (https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit), plus catalogue et suivi Médiathèque et journaux Drive.
+
+**Anomalie vérifiée :** l'indexation de l'affiche Carnavalet AFF5721 donne « Nathalie Le Mel (1826-1871) », alors que la notice d'autorité BnF donne un décès en 1921. Le nom reste bien présent dans la transcription de l'affiche du 20 mai 1871. Sources : https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune ; https://data.bnf.fr/fr/ark:/12148/cb13169483s.pdf .
+
+**Incertitude conservée :** naissance 26 août 1826 à Ivry-sur-Seine selon la BnF, 26 août 1826 à Brest selon une notice associative, 24 août 1826 à Brest selon un bulletin associatif évoquant l'acte. Aucun acte original collationné ; pas de correction arbitraire. https://commune1871.org/images/PhotothequeAmis/pdf/Bulletin_91.pdf .
+
+**Bilan corrigé de la passe :** 1 ARCH nouvelle, 2 BIO et 2 ARCH enrichies. Inventaire des quatre dossiers : 43 candidates uniques. Aucune publication ni modification de gouvernance.
+
+
+## 2026-10-30 · Archéologue des communs · Union des femmes et économie coopérative
+
+**Périmètre contrôlé :** quatre dossiers Drive Wiki (Histoire et mémoires, Biographies, Associations et organisations, Collectifs et réseaux), catalogue et suivi Médiathèque, journal des changements majeurs. Inventaire direct : 43 fiches candidates uniques (22 BIO, 8 ASSO, 4 EXP, 2 COL, 7 ARCH) ; journal de l'atelier des biographies exclu.
+
+**Écritures confirmées et relues :** trois fiches existantes enrichies, sans doublon ni nouvelle fiche : [ASSO-007 Union des femmes](https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit), [BIO-018 Aline Jacquier](https://docs.google.com/document/d/1Vyq5ZyzImnrl9UIACDutLYNAacUt8VLUWfZcA0JlHkk/edit), [ARCH-007 décret du 16 avril](https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit). Catalogue et suivi de la Médiathèque, ainsi que journal des changements majeurs, enrichis et relus après écriture.
+
+**Sources :** Carolyn J. Eichner, « To Assure the Reign of Work and Justice » (1998), PDF consulté avec passages ciblés, https://journals.univie.ac.at/index.php/oezg/article/view/5799/5730 ; affiches Carnavalet n°342 (AFF3543) et n°373 (AFF5721) ; Fondation Gabriel Péri, transcription du décret et renvoi au JO du 25 avril ; deux notices de l'Association des Amies et Amis de la Commune pour les dates divergentes 15 et 18 mai.
+
+**Faits et limites :** Eichner distingue comité provisoire, comité central et commission exécutive ; le projet de fédération prévoit cinq commissions et cent déléguées théoriques, pas un effectif réalisé prouvé. Le rapport Desprez/Ringard (cité par Eichner, fonds LY 22) concerne au moins quatre locaux inspectés, pas quatre ateliers réquisitionnés. Aline Jacquier est qualifiée de *bookstitcher* (brocheuse) par Eichner ; la variante « brodeuse » reste sans preuve équivalente. Les dates de constitution/réunion de la commission générale restent à confronter.
+
+**Droits :** PDF universitaire non présumé libre ; exemplaire Carnavalet AFF3543 explicitement CC0 pour l'image, vérifier chaque autre image. Aucun texte contemporain recopié longuement.
+
+**À faire :** consulter directement archives LY 22/23, JO des 14 et 25 avril, procès-verbaux de commission des 15/18 mai, registres et comptes des ateliers. Transmissions proposées aux ateliers Lecteur, Médiathèque, Biographies, Organisateur ; réception non confirmée. **Aucune publication, aucune modification du manifeste ni de la gouvernance.**
+
+
+## 2026-10-30 · Archéologue des communs · Union des femmes : réalisations et réunions de mai
+
+**Périmètre vérifié :** quatre dossiers Wiki Drive, catalogue et suivi Médiathèque, journal des modifications. Inventaire : 22 BIO + 8 ASSO + 4 EXP + 2 COL + 7 ARCH = **43 fiches candidates uniques** ; journaux et notices FN hors décompte.
+
+**Travail réellement écrit et relu dans Drive :** 4 fiches existantes enrichies, 0 créée :
+- ASSO-007 (Union des femmes) : https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit
+- ARCH-002 (affiche n°373 et réunion du 21 mai) : https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit
+- BIO-018 (Aline Jacquier, délégation du XVIIe et métiers du livre) : https://docs.google.com/document/d/1Vyq5ZyzImnrl9UIACDutLYNAacUt8VLUWfZcA0JlHkk/edit
+- ARCH-007 (décret et atelier confisqué) : https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit
+
+**Sources croisées :** affiche originale n°373, notice Musée Carnavalet https://parismuseescollections.paris.fr/de/node/651845 ; Jacques Rougerie https://commune1871-rougerie.fr/les-femmes-de-1871,fr,8,58.html et https://commune1871-rougerie.fr/la-premiere-internationale_2,fr,8,75.html ; Alain Dalotel https://www.commune1871.org/association/qui-sommes-nous/bulletins-trimestriels/1488-la-barricade-des-femmes .
+
+**Constats et limites :** Rougerie rapporte l'ouverture le 21 mai d'un magasin central au 31 rue des Francs-Bourgeois, dirigé par Mathilde Picot (2 francs/jour), ainsi que des recensements et commandes de sacs de sable. Il cite la fonderie Brosse comme seul atelier confisqué connu de lui au 18 mai, pas comme total définitif de toutes les réquisitions. L'affiche du 20 mai prouve une convocation syndicale pour le 21 mai, non la tenue de l'assemblée. Dalotel doute de cette tenue et distingue une réunion au Xe probablement le 22 mai ; Rougerie évoque aussi le 24 mai. Les sources ne sont pas des procès-verbaux collationnés.
+
+**Journaux et Médiathèque :** catalogue, suivi et journal des changements majeurs complétés puis relus. Pas de nouvelle notice FN. **À faire :** consulter dossier judiciaire Le Mel, archives LY 22/23, procès-verbaux des réunions, livres du magasin et fonderie Brosse, mandats de paiement.
+
+**Transmissions proposées, réception non vérifiée :** Médiathèque (sources et droits), Lecteur (comparaison Dalotel/Rougerie), Biographe (Jacquier/Picot), Archiviste (dossiers originaux). **Aucune publication publique ni modification du manifeste ou de la gouvernance.**
+
+
+## 2026-10-30 — Transmission 006 du Relieur — audit V0 publique par l'Anarchitecte
+
+**Réception confirmée, priorité à la sortie réelle.** Audit en lecture des fichiers du `main` : `index.html`, `wiki.html`, `bibliotheque.html`, `participer.html`, `manifeste-v2-5.html`, `proposer-article.html`, `script.js`, `ressources.js`, `manifeste.html`. Les six pages principales examinées déclarent une viewport mobile ; liens d'ancrage internes testés statiquement sur ces pages : aucun identifiant manquant détecté. La page d'accueil contient un formulaire de besoins/ressources raccordé dans `script.js` à l'Edge Function `submit-proposal`; la bibliothèque possède un formulaire connecté par `ressources.js` à `submit-resource`. Ces branchements sont des constats de code, **pas des soumissions réelles réussies**. Le Wiki a une recherche et des liens vers des fiches ; `proposer-article.html` expose une démarche de connexion/soumission. Les deux manifestes existent : V2.5 explicitement éditoriale non adoptée, V2.1 conservée comme archive.
+
+**Contrôle public limité :** tentative de consultation HTTP du site GitHub Pages depuis l'environnement d'audit infructueuse ; aucune validation du rendu sur navigateur réel/mobile, des réponses réseau des formulaires ou de l'accessibilité clavier/lecteur d'écran ne peut être revendiquée. Les appels réseau des scripts devront être testés depuis le navigateur public, notamment erreurs réseau, protection anti-spam et confirmation de réception. Les pages `participer.html` et `proposer-article.html` sont distinctes ; clarifier visuellement les parcours besoins/ressources et articles Wiki. L'accueil comporte aussi un lien vers l'archive `manifeste.html`, à ne pas confondre avec V2.5.
+
+**V0 minimale recommandée :** maintenir accueil, manifeste V2.5 avec avertissement, bibliothèque, Wiki des articles déjà publics et parcours participation ; vérifier les formulaires en vrai, la navigation et la lisibilité mobile, les liens 404 et les messages d'erreur avant annonce publique. Ne pas attendre la modération des 15 imports GitHub pour donner accès au contenu déjà disponible, mais ne pas exposer ces brouillons. Conserver les PR #22 et #28 en revue séparée selon les problèmes de raccordement signalés dans PR #31. Aucun compte modérateur inventé, aucun statut changé, aucune publication automatique.
+
+**Blocages courts à lever :** (1) contrôle HTTP/navigateur réel et liens/pages 404 ; (2) essais fonctionnels des formulaires Edge et des messages d'erreur, sans spammer les tables ; (3) test mobile et accessibilité clavier, contrastes et libellés ; (4) vérification de la configuration GitHub Pages et de la cohérence de navigation V0. **Peut attendre :** intégration graphique complète des PR #22/#28, interface de modération des 15 brouillons, recherche encyclopédique avancée, nouvelles fiches et automatisations secondaires. Cette entrée documente un audit partiel et non une certification de disponibilité.
+
+
+
+## 2026-10-30 · Atelier des Communications · Transmission 009 du Relieur
+
+**Opérations vérifiées :** lecture du Journal commun courant et du code de `participer.html` sur la branche par défaut. Contrôle navigateur de https://app.metricool.com : écran de connexion, aucun accès aux brouillons. Recherche dans le dossier Drive fourni (1EYMBEO9JZDvyNQrnyfqU1hOjKKkkwyc5) : aucun résultat retourné ; cela ne démontre pas que les fichiers sont absents. Les trois carrousels et légendes déjà fournis dans la conversation sont conservés sans recréation ni modification.
+
+**État Metricool :** Les failles / Compléter, pas remplacer / Relier sans centraliser : présence, quatre images, ordre, légende, textes alternatifs et déclaration IA NON VÉRIFIÉS pour chacun. Aucun brouillon créé ou modifié durant cette passe ; aucune publication ni programmation.
+
+**Participation :** le code de participer.html propose index.html#proposer, proposer-article.html et GitHub ; il indique qu'un canal privé reste à définir. Présence dans le code seulement, réception et traitement de bout en bout non testés ici. Le journal rapporte une absence de compte modérateur lors d'un audit antérieur : recontrôle requis par l'Anarchitecte avant appel public à contributions.
+
+**Proposition de lancement, non validée :**
+1. Avant lancement : connexion Metricool puis contrôle des trois brouillons, quatre images et ordre exact, légendes existantes, accessibilité et marquage IA si disponible. Anarchitecte : fournir URL publique exacte, parcours mobile et test réception/relecture/réponse, responsables et capacité de traitement. Graphiste : confirmer exports validés, lisibilité mobile, textes alternatifs et cohérence de la présentation ; aucune nouvelle création nécessaire.
+2. Après validation explicite : carrousel 1 « Les failles », présentation et demande limitée de critiques en commentaires seulement si commentaires activés et suivi humain organisé.
+3. Deux à trois jours plus tard, selon capacité réelle à répondre : carrousel 2 « Compléter, pas remplacer ».
+4. Puis carrousel 3 « Relier sans centraliser », avec lien de lecture vérifié. Appel aux contributions documentaires uniquement après validation du circuit de réception et de traitement. Pas de calendrier automatique ; possibilité de suspendre entre chaque étape.
+
+**Premier message proposé (complément, ne remplace pas les légendes validées) :**
+
+La Faille noire est une initiative politique, sociale et culturelle en construction : comprendre les manques, rencontrer les solidarités qui existent déjà et explorer comment coopérer sans prendre leur place.
+
+Interstice est l'outil en construction associé à cette démarche : documenter, partager des savoirs et faciliter les liens.
+
+Nous ne présentons ni un collectif déjà constitué ni une fédération existante. Le manifeste V2.5 est notre référence éditoriale de travail ; il n'est pas adopté collectivement.
+
+Cette proposition est ouverte à la discussion, aux désaccords et aux transformations.
+
+**Appel limité proposé, utilisable uniquement après vérification des commentaires et de leur suivi :**
+Qu'est-ce qui vous paraît utile, flou ou contestable dans cette proposition ? Vous pouvez laisser une remarque sur ce compte, sans raconter de situation personnelle sensible. Nous lirons les retours au rythme des moyens disponibles. Les modalités de contribution plus larges seront précisées après vérification des outils d'accueil.
+
+**Coordination :** besoins Graphiste et Anarchitecte consignés ici pour transmission et suivi ; aucune réception par ces ateliers n'est présumée. Aucun message envoyé à un tiers. Responsable de suivi des retours, canal privé et procédure de traitement à désigner avant appel large.
+
+**Restant :** récupérer les exports existants ; vérifier réellement les brouillons après authentification ; valider moyens de participation et lien public ; faire approuver le message et le lancement. Aucun manifeste, visuel ou légende existante modifié.
+
+## 2026-10-30 · Atelier du Juriste — participation citoyenne et cartographie
+
+**Saisine :** transmission du Penseur, garanties juridiques de la carte et future application Interstice. **Source politique :** Manifeste V2.5 consolidé, référence éditoriale non adoptée. **Faits étudiés :** formulaires et modération `main`, audit technique du 29-10 et métadonnées des sept tables `public` Supabase lues le 30-10 (RLS active ; aucune table cartographique dédiée visible dans ce schéma). Il ne s'agit pas d'un test de sécurité complet ni d'une preuve d'application mobile déployée.
+
+**Sources externes :** CNIL (géolocalisation, annuaires, bases légales, droits), EUR-Lex DSA 2022/2065, Etalab Licence ouverte 2.0, OpenStreetMap ODbL. **Risques :** publication de domiciles/lieux sensibles, données politiques ou de mineurs, captation de fiches, confusion référencement/approbation, modération arbitraire, licences et responsabilités lors de rencontres. **Choix proposé :** localisation approximative par défaut ; séparation référencement/faits/pratiques ; gestion vérifiée des fiches sans propriété des faits ; recours et modération motivés ; aucun label moral ni localisation personnelle continue.
+
+**Fichiers réellement créés et relus :** `docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md` (commit `decec5b`) ; `propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md` (commit `4083f93`) ; `coordination/JURISTE_TRANSMISSION_CARTOGRAPHIE_2026-10-30.md` (commit `a731678`). Ce sont **des propositions non adoptées**. La transmission est disponible dans GitHub pour Développeur, Anarchitecte, Organisateur, Penseur et Relieur ; leur lecture n'est pas attestée. Aucun changement du manifeste, de la charte constitutive, du site ou de Supabase.
+
+**Suite :** décisions collectives sur référencement et critères de pratiques ; identification responsable RGPD, licences et conditions de traitement ; analyse DSA selon service réel ; audit API/RLS, tests de localisation, parcours de correction et moyens hors application avant lancement.
+
+
+
+## 2026-10-30 — Le Relieur — registre de suivi des transmissions 006 / 007 / 008 / 009
+
+**Périmètre :** 4 messages déclarés envoyés par la personne assurant leur relais dans les conversations ChatGPT. Le Relieur ne revendique aucun accès direct en écriture à ces conversations ; « envoyé » est confirmé par l'utilisateur, alors que les réponses ne sont dites attestées qu'en présence d'une trace vérifiable. Aucune nouvelle transmission vers ces ateliers lors de ce suivi.
+
+| Transmission | Destinataire réel | Envoi | Retour et preuve | Statut de mission |
+|---|---|---|---|---|
+| 006 | L'Anarchitecte | Déclaré envoyé | Réception explicitement confirmée et audit statique V0 consigné sur `main` (entrée « Transmission 006 » ; commit `d3cc076168`) | **Réponse reçue / audit partiel effectué** ; tests réels des pages, formulaires, mobile, accessibilité et URL publique encore à faire |
+| 007 | Le graphiste | Déclaré envoyé | Pas de nouvelle réponse explicitement liée à 007 dans les preuves consultées ; PR graphiques #22 et #28 anciennes et toujours ouvertes | **En attente de retour attesté** ; conserver les travaux existants, ne pas les redemander |
+| 008 | Le lecteur | Déclaré envoyé | PR [#34](https://github.com/zoutiFrutti/Interstice/pull/34) et dossier `coordination/propositions/SELECTION_EDITORIALE_LECTEUR_TRANSMISSION_008_20261030.md` | **Réponse reçue / présélection faite** : Young × Freeman et Berenstain × Ahmed pour relecture ; Ostrom × Foucault × Lyon réservé, non publiable à ce stade |
+| 009 | Atelier des Communications | Déclaré envoyé | Entrée « Transmission 009 » dans `main`, commit `fe2408830f` | **Réponse reçue / stratégie proposée** ; trois carrousels et légendes conservés, leur présence comme brouillons et leur ordre non vérifiés, aucun post programmé ou publié par cet atelier pendant la passe |
+
+**Contrôle complémentaire Metricool du Relieur :** marque connectée `faille.noire`. L'API de consultation des **posts programmés**, interrogée pour la période du 20/10 au 31/12/2026, ne retourne aucune programmation. Cet outil ne prouve **pas** l'absence de brouillons non programmés ; ne pas marquer « trois brouillons absents » ni « trois brouillons présents ».
+
+**Dépendances et priorités sans relance :**
+1. Attendre/observer la réponse 007 du Graphiste ; ne pas dupliquer le travail sur #22/#28.
+2. Faire une relecture contradictoire et juridique des deux textes retenus par 008, **sans publication automatique**.
+3. Vérifier techniquement le parcours public réel décrit par 006, y compris les formulaires et la capacité humaine de réception/réponse.
+4. Pour 009, vérifier les trois carrousels existants et le canal de retour **avant** tout calendrier ou appel massif.
+5. Conserver la coordination dans la conversation « Le Relieur » ; ne pas inventer « Atelier central coordination ». Le Manifeste V2.5 reste une référence éditoriale non adoptée collectivement.
+
+**Écriture :** cette entrée de coordination uniquement, sans modification de charte, de droits Supabase, de contenus éditoriaux ou de publication. Les états « réponse reçue » ne signifient pas « travail intégral terminé ».
+
+
+## 2026-10-30 — Archiviste / Médiathèque — Accès aux pièces originales : Rossel et Combahee
+Sources vérifiées : Open Library, édition 1908 de Louis Rossel, identifiant Internet Archive mmoiresetcorres00rossgoog, https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; tentative d'ouverture du volume sur archive.org non aboutie, passage sur Avrial NON lu. *Historical Journal*, notes 8, 18 et 22 : https://www.cambridge.org/core/journals/historical-journal/article/abs/harbinghers-or-entrepreneurs-a-workers-cooperarive-during-the-paris-commune/B1073C3768ACA7CCBE3AD7CFA1A2E9C2 . Ly 108 contient plusieurs dossiers ; la lettre du directeur du Louvre à Avrial (12 mai 1871) est citée à la note 22 ; les feuilles de paie du 20 mai, note 18, concernent la rue de Lourmel, et ne peuvent être imputées au Louvre. Dépôt exact et consultation du carton Ly 108 restent à confirmer auprès de l'institution de conservation.
+Combahee : Boston Public Library, collection Barbara Smith MS.SC.0028, déclarée ouverte à la recherche, https://archives.bpl.org/repositories/2/archival_objects/76732 . Harvard Radcliffe, collection Barbara Smith acquise en 2026 : plan manuscrit annoté de la déclaration photographié, mais fonds volumineux en cours de traitement avant accès complet, https://www.radcliffe.harvard.edu/news-and-ideas/schlesinger-library-acquires-the-papers-of-groundbreaking-black-feminist-barbara-smith et https://www.radcliffe.harvard.edu/events-and-exhibitions/press-information-for-barbara-smith-collection . Ni l'ensemble des manuscrits ni les documents internes du fonds Boston n'ont été dépouillés dans cette passe.
+Bilan probatoire : progrès sur identifiants et conditions d'accès, mais aucune nouvelle transcription primaire de Rossel ou de la lettre du Louvre ; pas de preuve supplémentaire de pratiques électorales, de paie ou de décision. Poursuivre obtention des originaux et accès aux fonds.
+Modification réelle : entrée au journal commun uniquement, catalogue FN, dossier ARCH-005, Wiki public et manifeste V2.5 non adopté inchangés.
+
+
+## 2026-10-30 — Le Relieur — retour de test mobile sur l'accueil
+
+**Provenance :** test manuel de la page d'accueil Interstice sur téléphone, rapporté directement par l'utilisateur. **Statut : remarques observées, non corrections validées.**
+
+Constats : slogan « Des idées publiques. Des personnes protégées. » jugé peu accrocheur ; introduction, boutons et titres trop petits ; le titre déjà existant « Et si on essayait autre chose ? » devrait être proposé comme accroche principale plus haute sur la page. Le ressenti porte sur l'ensemble de la typographie mobile, pas seulement la section de découverte.
+
+**Code observé sur `main` :** le H1 actuel est « Des idées publiques. Des personnes protégées. » ; « Et si on essayait autre chose ? » est le H2 de la deuxième section. Dans `style.css` : texte de base 17px, certains libellés de 12px ; la taille des liens CTA est héritée et leur disposition est dense.
+
+**Transmission technique réellement effectuée :** commentaire sur la PR [#35](https://github.com/zoutiFrutti/Interstice/pull/35#issuecomment-6518191665), qui est une réponse **existante et vérifiable** du Graphiste à la transmission 007. Elle contient déjà des tests de lancement V0. La PR #22 porte le kit graphique et la PR #28 la modération ; ne pas doubler leurs modifications. **Rectification du registre précédent :** 007 est **« réponse reçue / travail V0 en PR #35 »**, et non plus « en attente sans retour ».
+
+**Piste éditoriale proposée (non adoptée) :** mettre « Et si on essayait autre chose ? » en H1 ; expliquer simplement le rôle d'Interstice en plus grand dessous ; préserver l'engagement de protection ailleurs dans la page ; agrandir les textes et zones tactiles. Le Graphiste prépare une version mobile testable et la soumet à arbitrage avant fusion. Ne pas inventer de fonctionnalité ou de nouvelle voie de contribution.
+
+**Aucune modification de `index.html`, `style.css`, aucune fusion de PR ni nouvelle publication résultant de ce rapport.** Le Manifeste V2.5 reste éditorial non adopté collectivement.
+
+
+## 2026-10-30 — Archiviste — Fabrication des tracts Combahee et vérification Ly 108
+
+**Source testimoniale consultée :** entretien de Barbara Smith avec Huda Hassan, 8 mars 2022, extrait https://www.bunkhistory.org/resources/eleven-black-women-why-did-they-die-an-interview-with-black-feminist-socialist-barbara-smith . Smith dit avoir rédigé un brouillon du tract *Six Black Women: Why Did They Die?* puis l'avoir présenté successivement aux autres membres pour accord et modifications ; Urban Planning Aid lui a fourni un appui graphique et technique. C'est un récit rétrospectif précis, non un procès-verbal de réunion de 1979.
+
+**Pièce contemporaine liée :** The History Project, *8 Black Women Why Did They Die?*, https://historyproject.omeka.net/items/show/591 ; notice décrivant les nombres précédents barrés (6, 7), les ressources pratiques de protection et un poème de ntozake shange. Décrire la pièce sans attribuer une autorisation de reproduction générale ; droits propres du poème à vérifier. Le témoignage et la notice se corroborent sur l'existence d'une production évolutive, pas sur toute la procédure décisionnelle.
+
+**Louvre, vérification bibliographique :** note 22 de l'article *Harbinghers or Entrepreneurs? A Workers' Cooperarive during the Paris Commune* https://www.cambridge.org/core/journals/historical-journal/article/abs/harbinghers-or-entrepreneurs-a-workers-cooperarive-during-the-paris-commune/B1073C3768ACA7CCBE3AD7CFA1A2E9C2 cite la lettre du directeur du Louvre à Avrial, 12 mai 1871, en Ly 108. La note 8 situe plusieurs dossiers hétérogènes dans Ly 108 ; elle n'identifie pas sans ambiguïté le service de conservation du carton. La note 18 concerne les feuilles de paie de la rue de Lourmel et non du Louvre. Open Library identifie l'édition de Rossel de 1908 et l'identifiant Internet Archive mmoiresetcorres00rossgoog https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; passage original non collationné.
+
+**Résultat intellectuel :** distinguer une rédaction initiée par une personne, une consultation collective et une éventuelle prise de décision politique. Ne pas déduire de la première une confiscation du pouvoir ni de la seconde une horizontalité entièrement démontrée.
+
+**Restant :** ouvrir les scans PDF des tracts, collationner le passage Rossel et trouver l'institution conservant Ly 108 avant toute demande formelle de copie. Aucun ajout FN ni ARCH, aucune publication Wiki ni modification du manifeste V2.5 non adopté.
+
+
+
+## 2026-10-30 — Archiviste — Combahee ressources pratiques BPL et Rossel Google Books
+Sources croisées : Boston Public Library, https://www.leventhalmap.org/articles/mapping-250-years-of-poetry-in-boston/ (reproduction de ressources listées dans les tracts Combahee : rencontres hebdomadaires, réseaux de soutien, autodéfense et associations locales) ; WBUR https://www.wbur.org/news/2019/06/10/boston-combahee-river-collective-intersectional-black-feminism (manifestation du 28 avril 1979, environ 500 participants) ; Massachusetts Women's History Center https://www.mawomenshistory.org/resources/articles/combahee-river-collective-pioneers-intersectional-feminism (recoupement secondaire). Notices primaires tracts https://historyproject.omeka.net/items/show/590 et https://historyproject.omeka.net/items/show/591 .
+Résultat : activités publiques et orientation concrète vers des ressources de soutien étayées par documents/présentation de collections. Pas de preuve nouvelle concernant délibérations internes, finance ou distribution du travail. Ne pas déduire d'une liste imprimée que chaque service annoncé fonctionnait effectivement.
+Louvre : édition 1908 des mémoires de Rossel disponible en ebook gratuit https://play.google.com/store/books/details/Louis_Rossel_M%C3%A9moires_et_correspondance?id=jW6dOv5n8Z8C et bibliographie Open Library https://openlibrary.org/works/OL13166519W/M%C3%A9moires_et_correspondance_1844-1871 ; passage sur Avrial non lu lors de cette passe. Référence Ly 108 toujours issue d'une citation universitaire et dépôt conservateur non confirmé.
+Modifications : entrée de journal uniquement, pas de mise à jour de FN-069, ARCH-005 ou Wiki ; manifeste V2.5 de travail non adopté inchangé. Suites : accès au texte original, recherche de procès-verbaux/registre d'atelier et pièces d'organisation du collectif.
+
+## 2026-10-30 — Graphiste / Intégrateur — Transmission 007, lancement V0
+
+**Source :** Transmission 007 du Relieur. Audit et briefing complet en `coordination/GRAPHISTE_TRANSMISSION_007_LANCEMENT_V0_2026-10-30.md` sur branche `design/lancement-v0-verifications-2026-10-30`. Identité maître conservée (`logo-faille-noire.svg`, `logo-interstice.svg`). PR #22 graphique et PR #28 publication structurée toujours en brouillon, non fusionnées sur `main`.
+
+**Constat :** la V0 dispose déjà d'un accueil, d'un manifeste V2.5 (référence éditoriale **non adoptée collectivement**), d'une bibliothèque, d'un Wiki de travaux publics et d'une page de participation. Ne pas confondre les 15 brouillons privés GitHub avec des articles publics. Les trois carrousels Instagram et légendes existants sont signalés par les Communications mais leur présence effective dans l'éditeur Metricool n'a pas été confirmée ; contrôle Metricool en lecture seule sur `faille.noire` : zéro publication **programmée** pour la période vérifiée, ce qui ne renseigne pas sur les brouillons.
+
+**Corrections commitées dans la branche V0, non fusionnées :** deux liens génériques bibliothèque/participation orientés vers `manifeste-v2-5.html` sans supprimer l'archive V2.1 ; balisage du manifeste en un `h1`, six `h2` et deux `h3` et favicon officiel Faille noire (le texte est conservé strictement après neutralisation des seules balises) ; bandeau de navigation responsive corrigé sur mobile sans redessiner le logo. Script `tests/lancement-v0-smoke.mjs` et workflow `.github/workflows/lancement-v0-smoke.yml` ajoutés.
+
+**Contrôles :** tests GitHub Actions Chromium sur cinq pages (accueil, manifeste V2.5, bibliothèque, Wiki, participation), en 390 × 844 et 1280 × 800 px, plus cinq vérifications de chemins/ancres : **15/15 réussis** au run https://github.com/zoutiFrutti/Interstice/actions/runs/41023365067 après le retrait d'une surcharge couleur inutile. Images/favicons, titres, statut non adopté, débordement et contraste des principaux boutons contrôlés. Captures déposées comme artefacts GitHub, sans formulaire soumis, données personnelles ni publication. Les tests ne couvrent pas encore Safari/Firefox, lecteur d'écran, zoom fort, vraie soumission Edge ou accès extérieur au site.
+
+**Raccordement :** les correctifs de bibliothèque et du manifeste recouvrent des travaux déjà présents dans la PR #22. Avant toute fusion, rapprocher les branches au dernier `main`, éliminer les doublons, conserver le journal commun et tester l'assemblage. La PR #28 reste distincte et ne doit pas devenir bloquante pour une V0 présentant uniquement des pages publiques et des fonctionnalités réellement disponibles.
+
+**Vigilance lancement :** contrôler le domaine public exact et les formulaires avant annonce ; ne pas présenter la V2.5 comme adoptée ni les 15 imports comme accessibles ; confirmer les visuels et crédits avec l'Atelier des Communications. Les perfectionnements du design system, exports supplémentaires et modération des imports sont reportables. Aucune fusion, publication sociale, mutation Supabase ou modification politique effectuée dans cette passe.
+
+## 2026-10-30 — Graphiste / Intégrateur — Transmission 010, lisibilité du site
+
+**Sujet :** appliquer directement le retour d'usage réel sur téléphone, en priorité avant la communication publique. Transmission 010 du Relieur, après Transmission 007. Travail sur la **PR #35 existante**, branche `design/lancement-v0-verifications-2026-10-30`, sans fusion.
+
+**Faits et sources :** `main` relu avant édition, PR #22 (polices et identité), PR #35 (contrôles V0), anciennes pages HTML/CSS, manifestes V2.5 et V2.1, workflow GitHub Actions `Verifications lancement public V0`. Aucun backend, aucune table Supabase, aucune décision éditoriale touchés.
+
+**Changements réellement committés :**
+- `index.html` : H1 « Et si on essayait autre chose ? » ; introduction humaine spécifiée dans la Transmission 010, réorganisation en deux actions de premier écran, trois possibilités concrètes, distinction explicite La Faille noire / Interstice, puis ressources Wiki, bibliothèque, propositions et participation. La phrase d'accroche n'est plus répétée. L'ancien engagement de protection reste en bas de l'accueil. Formulaire, noms de champs et `script.js` conservés.
+- `style.css` : typographie globale (lecture 19px ordinateur, 18px mobile, intro 21px mobile, H1 40–44px mobile, H2 30–34px, H3 23–26px, commandes 18px et surfaces principales au moins 52px), espaces mobiles, disposition des boutons, cartes de découverte, textes longs et réglages d'impression.
+- Six fichiers de polices/licences **repris à l'octet près** de la PR #22 : Barlow Condensed Bold et Atkinson Hyperlegible Next variable en WOFF2 latin/latin étendu, avec deux licences OFL. Logos et charte validée inchangés.
+- `manifeste.html` V2.1 : **deux règles de style seulement** corrigées, titre d'archive agrandi et contraste du sommaire rétabli ; vérification de la stricte conservation du HTML hors balise de style.
+- `tests/lancement-v0-smoke.mjs` étendu à 11 pages × deux écrans, contrôle des chemins/ancres, WOFF2 réellement chargées, titres, corps, intro, boutons, contrastes, ressources, erreurs JS et captures du nouvel accueil.
+
+**Tests et limites :** premier cycle étendu `41025612768` : 20/22 cas navigateur réussis, deux échecs localisés à l'archive V2.1 (H1 trop petit et liens sommaire à faible contraste). Deux règles CSS de cette archive ont été corrigées et une nouvelle exécution GitHub Actions a été engagée. Le résultat final doit être indiqué **après** vérification de ce run, sans confondre succès du code de test et affichage réel sur Android. Les tests utilisent un navigateur Chromium GitHub Actions, **pas** un téléphone physique ni Safari/Firefox. Formulaires jamais soumis, aucun droit ou données modifiés.
+
+**Coordination et suites :** préserver et rapprocher les contenus graphiques de PR #22, dont certaines illustrations restent optionnelles pour une V0 publique, et l'aperçu de modération de PR #28 demeure hors périmètre. Revoir l'Anarchitecte avant fusion ; tester l'accueil sur un vrai Android puis publier seulement après validation. Les anciens contenus de La Faille noire restent éditorialement non adoptés collectivement. Ne pas ralentir la sortie pour de simples détails décoratifs.
+
+
+
+## 2026-10-30 — Graphiste — Validation Chromium de la Transmission 010
+
+**Résultat vérifié après correction et revue visuelle :** workflow GitHub Actions `Verifications lancement public V0`, run https://github.com/zoutiFrutti/Interstice/actions/runs/41026231076 **33/33 contrôles réussis**, sur les 11 pages représentatives à 390 et 1280 px, avec examen de la capture réelle du nouvel accueil mobile. H1 à **41,73 px**, intro à **21 px**, corps à 18 px et CTA à 56 px ou davantage sur l'accueil. Le double logo du premier écran mobile a été supprimé sans retirer le symbole officiel de l'en-tête. Les deux WOFF2 (titres/lecture) sont chargées, les liens et ancres des pages couvertes, leurs images, le contraste des CTA et les débordements sont contrôlés. Aucun envoi de formulaire.
+
+**Révisions et livrables :** bilan détaillé `coordination/GRAPHISTE_TRANSMISSION_010_LISIBILITE_2026-10-30.md` ajouté à la PR #35 ; captures et rapport de tests dans l'artefact `interstice-v0-captures` du run, dont `accueil-premier-ecran-mobile.png` et `accueil-premier-ecran-desktop.png`. La branche PR #35 a été réconciliée avec `main` sans réécriture forcée, puis ses modifications ont été vérifiées. La PR reste brouillon, non fusionnée/non publiée.
+
+**Limites :** 11 gabarits vérifiés en Chromium CI, pas tous les écrans ni tous les navigateurs, et pas de test tactile sur Android physique. Manifeste V2.5 toujours non adopté collectivement. La PR #22 contient des polices désormais réutilisées à l'identique : la coordination doit éviter une double réintégration conflictuelle ; ses illustrations supplémentaires peuvent attendre. Validation humaine et contrôle du site déployé après fusion restent indispensables.

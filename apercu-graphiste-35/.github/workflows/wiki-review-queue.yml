@@ -1,0 +1,81 @@
+name: Wiki documentary handoff validation
+on:
+  pull_request:
+    paths:
+      - 'coordination/wiki-review-queue/**'
+      - 'scripts/validate-wiki-review-queue.mjs'
+      - 'scripts/prepare-wiki-review-draft.mjs'
+      - 'scripts/reconcile-wiki-handoff.mjs'
+      - 'tests/wiki-handoff-idempotency.test.mjs'
+      - 'tests/wiki-handoff-sql-contract.test.mjs'
+      - 'docs/proposals/wiki-document-handoffs-schema.sql'
+      - 'tests/sql/wiki-handoff-integration.sql'
+      - 'tests/sql/wiki-handoff-concurrency.sh'
+      - '.github/workflows/wiki-review-queue.yml'
+  push:
+    branches:
+      - 'fix/wiki-review-handoff-rebased-2026-10-30'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-documentary-queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check proposed SQL privacy contract
+        run: node --test tests/wiki-handoff-sql-contract.test.mjs
+      - name: Test idempotent handoff and source revision protection
+        run: node --test tests/wiki-handoff-idempotency.test.mjs
+      - name: Validate identities, provenance, and non-publication
+        run: node scripts/validate-wiki-review-queue.mjs
+      - name: Verify draft stays unapproved without printing its content
+        run: |
+          node scripts/prepare-wiki-review-draft.mjs fn069-penseur-archives-croisees-2026-10-29 > "$RUNNER_TEMP/wiki-draft.json"
+          node -e 'const d=require(process.env.RUNNER_TEMP+"/wiki-draft.json");if(d.ready_to_submit!==false||d.license_confirmed!==false||d.privacy_confirmed!==false||d.author_id!==null||d.publication_status!=="not_published")process.exit(1);console.log("Draft remains blocked pending human review")'
+
+  postgres-integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: test_only
+          POSTGRES_DB: wiki_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d wiki_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      PGHOST: localhost
+      PGPORT: 5432
+      PGUSER: postgres
+      PGPASSWORD: test_only
+      PGDATABASE: wiki_test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PostgreSQL client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+      - name: Create Supabase-compatible local roles
+        run: |
+          psql -v ON_ERROR_STOP=1 -c 'CREATE ROLE anon NOLOGIN; CREATE ROLE authenticated NOLOGIN; CREATE ROLE service_role NOLOGIN BYPASSRLS;'
+      - name: Install candidate schema in disposable PostgreSQL
+        run: psql -v ON_ERROR_STOP=1 -f docs/proposals/wiki-document-handoffs-schema.sql
+      - name: Run transactional tests with rollback
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/wiki-handoff-integration.sql
+      - name: Test two concurrent submissions
+        run: bash tests/sql/wiki-handoff-concurrency.sh
+      - name: Confirm test data was rolled back
+        run: |
+          test "$(psql -Atqc 'select count(*) from wiki_ingest_private.document_handoffs')" = 0
+          test "$(psql -Atqc 'select count(*) from wiki_ingest_private.handoff_events')" = 0

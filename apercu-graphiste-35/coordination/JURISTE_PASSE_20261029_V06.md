@@ -1,0 +1,3 @@
+# Atelier du Juriste, 29 octobre 2026
+
+Propositions non adoptées. Après relecture de la V2.5, de la charte V0.4 et du journal, quatre documents ont été créés dans propositions : Titres VII, VIII et les deux parties du Titre IX. Vérification en lecture : les 48 articles 0 à 47 sont présents une fois chacun dans les six fichiers V0.4, V0.5 et V0.6. Les nouvelles questions portent sur autonomie fédérative, données, pouvoir technique, révision et dissolution. Aucun manifeste ni statut modifié. Il reste une consolidation et une revue juridique. Le journal commun n'a pu être mis à jour directement.
