@@ -1,0 +1,89 @@
+{
+  "project": "Interstice",
+  "selection": "018-A",
+  "verified_on": "2026-10-30",
+  "publication_status": "candidate",
+  "notes": "Links to source pages only. No media copied. Film playback not independently tested; source file pages provide complete work. FN-051 embedded player not tested.",
+  "items": [
+    {
+      "id": "FN-005",
+      "title": "Sita Sings the Blues",
+      "format": "animation musicale",
+      "url": "https://commons.wikimedia.org/wiki/File:Sita_Sings_the_Blues.webm",
+      "license": "CC0-1.0",
+      "status": "open_with_reservations"
+    },
+    {
+      "id": "FN-010",
+      "title": "Povo Gavião, partie 13",
+      "format": "documentary",
+      "url": "https://commons.wikimedia.org/wiki/File:Ind%C3%ADgenas_e_quilombolas_brasileiros_contam_sua_hist%C3%B3ria_-_Povo_Gavi%C3%A3o_-_parte_13.webm",
+      "license": "CC-BY-3.0",
+      "status": "open_with_reservations"
+    },
+    {
+      "id": "FN-016",
+      "title": "Gay and Proud",
+      "format": "documentary",
+      "url": "https://commons.wikimedia.org/wiki/File:Gay_and_Proud_(1970).webm",
+      "license": "public-domain-declared",
+      "status": "open_with_reservations"
+    },
+    {
+      "id": "FN-017",
+      "title": "Pepper&Carrot : Les livres, c'est génial",
+      "format": "comic",
+      "url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
+      "license": "CC-BY-4.0",
+      "status": "open"
+    },
+    {
+      "id": "FN-024",
+      "title": "The Seedkeepers",
+      "format": "documentary",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm",
+      "license": "CC-BY-3.0",
+      "status": "open_with_reservations"
+    },
+    {
+      "id": "FN-032",
+      "title": "Ise ileke sinsin",
+      "format": "documentary",
+      "url": "https://commons.wikimedia.org/wiki/File:Ise_ileke_sinsin.webm",
+      "license": "CC-BY-SA-4.0",
+      "status": "open_with_reservations"
+    },
+    {
+      "id": "FN-040",
+      "title": "Elephants Dream",
+      "format": "animation",
+      "url": "https://commons.wikimedia.org/wiki/File:Elephants_Dream_(2006).webm",
+      "license": "CC-BY-2.5",
+      "status": "open"
+    },
+    {
+      "id": "FN-051",
+      "title": "Jamais sans ma visseuse",
+      "format": "documentary",
+      "url": "https://horscine.org/film/jamais-sans-ma-visseuse/",
+      "license": "CC-BY-NC-ND",
+      "status": "free_to_view_restricted"
+    },
+    {
+      "id": "FN-052",
+      "title": "Sintel",
+      "format": "animation",
+      "url": "https://commons.wikimedia.org/wiki/File:Sintel_movie_-_Blender_Fondation.ogv",
+      "license": "CC-BY-3.0",
+      "status": "open"
+    },
+    {
+      "id": "FN-060",
+      "title": "Freedom or Fairness?",
+      "format": "comic",
+      "url": "https://commons.wikimedia.org/wiki/File:ME_456_Fairness.png",
+      "license": "CC-BY-SA-3.0",
+      "status": "open"
+    }
+  ]
+}
