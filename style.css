@@ -169,7 +169,7 @@ body.wiki-reading {font-family:var(--font-reading);font-size:19px;line-height:1.
 .wiki-reading .reading-actions a {display:flex;min-height:56px;align-items:center;justify-content:center;padding:13px 17px;border:1px solid #b88b86;border-radius:8px;font-size:19px;line-height:1.35;font-weight:750;text-align:center;text-decoration:none;background:#922532;color:#fff}
 .wiki-reading .reading-actions .reading-back {background:#252124;color:#f8e5df}
 .wiki-reading .reading-actions a:hover {background:#b93645}
-.wiki-reading .reading-actions a:focus-visible,.wiki-reading .reading-toc a:focus-visible {outline:3px solid #fff1d7;outline-offset:3px}
+.wiki-reading .reading-actions a:focus-visible,.wiki-reading .reading-toc a:focus-visible,.wiki-reading .reading-toc a:focus {outline:3px solid #fff1d7;outline-offset:3px}
 @media(max-width:600px) {
  .wiki-reading main {padding-inline:20px}
  .wiki-reading .hero {padding-block:22px 24px}
