@@ -350,3 +350,128 @@ Les valeurs ci-dessus sont un **contrat documentaire candidat**, pas une migrati
 
 **Zéro prise de contact, zéro fiche réelle publiée, zéro permission Supabase changée, zéro Charte adoptée.** Ce travail est un examen juridique spécialisé et un test de logique candidate ; aucune transmission GitHub ne prouve réception par la conversation de La Tisseuse ou de La Relieuse.
 
+---
+
+## Transmission 015 — Reprise complémentaire après le premier bilan (30 nouvelles passes)
+
+**Motif de la reprise :** la transmission 015 initiale figure déjà ci-dessus avec **30 passes** et ne doit pas être réécrite ni comptée de nouveau. Le présent additif porte uniquement sur **30 vérifications ou exercices supplémentaires**, six lots de cinq, après contrôle des versions fraîches. **Statut : propositions de méthode / tests sur objets fictifs, non règles politiques adoptées.** Aucun fichier de la Tisseuse ni code applicatif modifié.
+
+### Lot A — Passes supplémentaires 01–05 : réévaluation des preuves disponibles
+
+| # | Acte réalisé / preuve précise | Résultat / décision de suite |
+|---|---|---|
+| **01** | Récupération de la transmission 015 et de l'additif juridique antérieur | Le premier cycle 30/30 existe déjà dans ce même fichier, au blob antérieur `fea6e68e6b37f5e016d469baff8ff97e485fa187` ; **ne pas doubler ses acquis**. **FAIT** |
+| **02** | Relecture fraîche de `coordination/TIS_001_PREPARATION_BILAN_PARTIEL_2026-10-30.md`, blob `c448c8ac48d177e686b9d475ae568f918021ab12` | Toujours **0 structure vérifiée** dans cette pièce ; aucune preuve d'accord nouvelle dans le bilan en `main`. **FAIT** |
+| **03** | Relecture fraîche du cadrage TIS, blob `81bacb34f216d45c20a27dd37953cccda52e93e7` | Trois états documentaires de relation proposés ; ils ne sont **ni une autorisation automatique, ni trois étapes obligatoires de toute coopération**. **FAIT** |
+| **04** | Contrôle du contenu des 2 canevas du bilan TIS, sections A/B | Les modèles parlent bien de cartes fictives, d'absence d'adhésion et de refus possible ; **ils ne sont toujours ni personnalisés ni envoyés** dans cette source. Prévoir validations d'identité, mandat et capacité. **FAIT** |
+| **05** | Contrôle de [PR #41](https://github.com/zoutiFrutti/Interstice/pull/41), HEAD `25b19e0390c18b67068b5fbc7789ac351f7eb466`, `cartes-data.mjs` blob `290b920a761223c41c06b9254be01ba55df0260f` | Branché sur objets `isDemo:true`, `publicContact:null`, `source.type=simulation` ; **aucune intégration de données TIS** constatée dans ce fichier. L'interface de gestion réelle ne peut être déclarée livrée. **FAIT** |
+
+### Lot B — Passes supplémentaires 06–10 : séparer les quatre permissions
+
+| # | Acte réalisé / preuve précise | Résultat / décision de suite |
+|---|---|---|
+| **06** | Relecture de la doctrine CNIL sur réutilisation de données d'annuaires (12 juin 2024) | **Consentement RGPD ≠ accord éditorial volontaire.** Pour certaines données professionnelles l'intérêt légitime peut être pertinent ; l'opposition, l'information et les risques de recoupement restent à qualifier. Le cadrage TIS propose de demander un accord de fiche par prudence. **FAIT** |
+| **07** | Test fictif `X01` et `X02` : accord de fiche sans partenariat, partenariat privé sans fiche | **2/2 tests réussis** sur le modèle documentaire indépendant. Une coopération peut exister sans autorisation d'affichage public. Ne pas forcer les étapes à s'enchaîner dans le code. **FAIT** |
+| **08** | Tests fictifs `X03` / `X04` : refus de relance et silence | **2/2 tests réussis** ; le refus de contact est distinct du droit d'opposition à une fiche, et silence n'est pas accord. Prévoir refus non public. **FAIT** |
+| **09** | Test fictif `X06` et lecture des règles CPI précédentes | **Accord sur le texte d'une fiche ≠ licence de publier photo, logo ou texte tiers.** Un accord champ par champ inclut sources, images, territoires et durée ; la publication de l'affiliation n'est pas implicite. **FAIT** |
+| **10** | Test fictif `X05` : mandat non vérifié | Une personne peut transmettre des corrections factuelles, sans pour autant pouvoir signer au nom de la structure. Contrôle proportionné via statuts/délégation et **contact officiel** ; aucune copie de pièce d'identité dans GitHub. **FAIT** |
+
+### Lot C — Passes supplémentaires 11–15 : accueil, localisation, sortie
+
+| # | Acte réalisé / preuve précise | Résultat / décision de suite |
+|---|---|---|
+| **11** | Test fictif `X09` et niveaux L0–L3 du dossier de cartographie | **Aucune adresse exacte** en L0. Un tiers peut suggérer une ville, mais ne peut imposer la publication d'un domicile ou d'un point d'accueil. **FAIT** |
+| **12** | Test fictif `X10` : commune rare, activité sensible | Même l'affichage d'une **commune** peut révéler un lieu par recoupement ; revue manuelle et non-publication locale possibles. Ne pas automatiser un seuil mathématique de « sécurité ». **FAIT** |
+| **13** | Tests fictifs `X11` / `X12` sur les conditions d'accueil | Pas de certification « safe », horaires ou capacité inventés. Toujours `inconnu`, ou `déclaré par la structure au [date]` si source réellement vérifiée. **FAIT** |
+| **14** | Test fictif `X13` : fin d'une coopération avec source factuelle licite | **Retirer l'accord de coopération n'efface pas automatiquement une information factuelle légalement réutilisable**. Réexaminer séparément retrait de la fiche, base légale, opposition et copies/cache. **FAIT** |
+| **15** | Test fictif `X14` : opposition aux relances | Ne pas diffuser « refuse », « contesté » ou « opposant » dans le classement public ; si un registre minimal anti-relance est nécessaire, son responsable, son accès et sa durée restent à établir. **FAIT** |
+
+### Lot D — Passes supplémentaires 16–20 : GitHub n'est pas un dossier privé
+
+| # | Acte réalisé / preuve précise | Résultat / décision de suite |
+|---|---|---|
+| **16** | Contrôle via l'API GitHub de la visibilité du dépôt `zoutiFrutti/Interstice` | Dépôt **public** : journaux, commits, corrections, PR et métadonnées de sources ne sont pas un espace restreint. **FAIT** |
+| **17** | Contrôle lexical borné sur cadrage et bilan TIS en `main` : regex courriel/numéro français courant | **0 correspondance** de ces formats dans chacun des deux documents. **Cela ne détecte pas noms, URL de profils personnels, localisation rare ni identifiants indirects.** **FAIT** |
+| **18** | Test fictif `X15` : signalement privé canari et projection publique | **Canari absent de la vue fictive**. La politique d'export **par liste blanche serveur** reste exigée avant données réelles ; ce test ne garantit pas la sécurité de l'API Interstice. **FAIT** |
+| **19** | Contrôle du contrat TIS et de `cartes-core.mjs` sur PR #41 | Le statut `repéré/accepté/convenu`, les refus, négociations et mandats n'ont **pas de place dans JSON, SVG, URL ou export public**. Contrat de mapping distinct ci-dessous ; aucun nouvel `kind` ou backend. **FAIT** |
+| **20** | Confrontation des demandes de retrait et des historiques Git | **Ne jamais archiver** refus individuels, identité de signaleur, preuves, courriers, justificatifs ou ancien texte sensible en PR/Issue publiques ; une suppression dans un commit ultérieur ne garantit pas le retrait des anciennes versions. **FAIT** |
+
+### Lot E — Passes supplémentaires 21–25 : dernière relecture des deux articles
+
+| # | Acte réalisé / preuve précise | Résultat / décision de suite |
+|---|---|---|
+| **21** | Relecture de la PR #44 au HEAD `b08ee0b915a162faa2d870debc6580b08ca29935`, deux fichiers sur branche | PR encore ouverte, non fusionnée ; les fichiers ont évolué depuis le suivi précédent, **l'avis doit se baser sur les lignes actuelles**. **FAIT** |
+| **22** | `wiki-decision-collective.html:35–37,46` | Liste de précautions et de contestations, sans procédure promise ; à la ligne 46, aucun droit général de vote/veto/accès interne inventé pour les personnes extérieures. **FAIT** |
+| **23** | `wiki-decision-collective.html:57–58` et `wiki-lecture-croisee-travail-soin-pouvoir.html:16` | Les liens sont désormais des propositions documentaires, avec avertissements clairs sur le formulaire **à connexion**, qui n'est pas un canal de droits confidentiels ; **ne rien recevoir de sensible sur ce chemin**. **FAIT** |
+| **24** | `wiki-decision-collective.html:49–52`, `wiki-lecture-croisee-travail-soin-pouvoir.html:11,14–15` | Auteurs, sources, extraits, notices et limites de lecture davantage qualifiés. La paraphrase ne donne pas le droit de republier un livre ou une traduction ; **vérification bibliographique exhaustive laissée à la Médiathèque**. **FAIT** |
+| **25** | Assertions statiques `C07–C12` contre les pages et les fixtures | **6/6 passent** pour le statut politique et l'honnêteté du canal. Les contrôles n'attestent ni réponse RGPD opérationnelle, ni compatibilité navigateur, ni publication. **FAIT** |
+
+### Lot F — Passes supplémentaires 26–30 : tests utiles et décision
+
+| # | Acte réalisé / preuve précise | Résultat / décision de suite |
+|---|---|---|
+| **26** | Exécution de `X01–X15` sur quinze objets **entièrement fictifs** avec règles de décision simples | **15/15 assertions réussies**, indépendantes des tests déjà réalisés dans le premier cycle et du code de PR #41 ; elles attestent la cohérence des cas choisis, **pas le fonctionnement réel d'un service de partenaires**. **FAIT** |
+| **27** | Exécution des contrôles documentaires `C01–C06` sur pièces TIS et fixture de PR #41 | **6/6 passent** : absence de structure vérifiée, canevas non envoyés, trois états documentés, pas de contact personnel au format usuel, fixture simulation. Limite : contrôle statique ciblé. **FAIT** |
+| **28** | Construction de la **grille préalable à un premier message** (ci-dessous) | Cinq réponses `OUI` requises avant autorisation humaine d'envoi ; il ne suffit pas qu'une association paraisse pertinente. **FAIT : grille créée, aucun message envoyé** |
+| **29** | Construction de deux fiches de décision séparées : publication de fiche et coopération | Deux listes de vérification distinctes ; le oui à la première ne vaut pas oui à la seconde. Contrôle de confidentialité GitHub et disponibilité humaine inclus. **FAIT : grilles créées, aucune décision pour une structure réelle** |
+| **30** | Qualification des blocages et transmission écrite, sans ouvrir de nouveau chantier juridique | Aucun accord établi ; reste à demander à la Relieuse un porteur humain, une capacité de suivi et un canal restreint avant toutes données personnelles réelles. Bilan à enregistrer dans transmission existante et Journal, avec SHA vérifiés. **FAIT : résultat documentaire** |
+
+### Deux améliorations concrètes du protocole : formulaires décisionnels *internes*, non publiés
+
+**A. Vérification pré-contact (à faire valider par une personne habilitée ; aucune adresse personnelle demandée)**
+
+| Champ de décision (OUI / NON / À VÉRIFIER) | Preuve attendue |
+|---|---|
+| A1 — Source institutionnelle ou officielle lue et datée | URL publique réellement consultée, nom d'activité confirmé |
+| A2 — Canal de contact **officiel et approprié** à la sollicitation | Formulaire public institutionnel ou adresse générique choisie par la structure ; éviter boîte privée ou profil personnel déduit |
+| A3 — Expéditeur autorisé à parler au nom du projet | Validation humaine et périmètre de représentation, **sans signature fictive au nom du collectif** |
+| A4 — Message individualisé, non trompeur et respectueux du refus | Pas de « partenaire », démo présentée comme fictive, proposition ponctuelle réciproque ; ne pas relancer après opposition |
+| A5 — Moyens de réponse et validation explicite du **premier envoi** | Personne réelle disponible pour réception/suivi, cadre approprié du canal, validation du texte et destinataire |
+
+**À défaut d'un seul OUI, l'envoi demeure suspendu suivant la méthode Interstice**. Cette grille est une condition **interne proposée**, pas la formule d'une interdiction pénale automatique. Pour un message non commercial, la CNIL mentionne des exceptions au consentement préalable de prospection **selon qualification du message et du canal** ; cela ne dispense ni d'information lorsque nécessaire ni du respect d'une opposition.
+
+**B. Autorisation distincte de fiche publique (sans imposer l'adhésion à la Charte)**
+
+| Point | Condition de vérification |
+|---|---|
+| B1 — Identité de structure et droits | Nom et source officiels, représentant habilité pour corriger/valider la fiche, information RGPD si personnes identifiables |
+| B2 — Version stable de la fiche | Texte, source/date/licence, visibilité du lieu L0–L3, photos/logos distinctement autorisés |
+| B3 — Accord éditorial / base légale | Validation explicite de la version selon méthode TIS **et** détermination de la base légale pertinente ; ne pas les confondre |
+| B4 — Protection / correction / retrait | Canal opérationnel, masquage urgent si nécessaire, procédure de réexamen, droits de tiers et gestion des copies |
+| B5 — Mise en production contrôlée | Liste blanche **serveur**, test des rôles et API avec données fictives, validation humaine de publication, aucune migration implicite de la PR #41 |
+
+**C. Convention de coopération distincte et bornée (si réellement envisagée)**
+
+| Point | Condition de vérification |
+|---|---|
+| C1 — Objet concret et apport réciproque | Action, limites, qui fait quoi, qui répond, sans exiger d'adhésion politique |
+| C2 — Mandats distincts | Représentants habilités de chaque partie, sans attribuer automatiquement ce rôle à La Tisseuse / La Relieuse |
+| C3 — Responsabilité d'accueil | Si rencontre/prêt : lieu, sécurité, assurance, coûts et statut des personnes selon activité |
+| C4 — Durée, modification, sortie | Début, fin, ressources engagées, arrêt, traitement des obligations déjà nées et données/confidences |
+| C5 — Communication de l'accord | Consentement **séparé à annoncer publiquement** la relation ; la convention peut rester privée, aucun label « partenaire officiel » sans validation |
+
+### Mapping destiné à la Développeuse, sans import
+
+```json
+{
+  "id": "TIS-FICTIF-002",
+  "research_state": "REPERE",
+  "publication_state": "NON_PROPOSE",
+  "cooperation_state": "AUCUNE",
+  "locationLevel": "none",
+  "permissionToDisplay": false,
+  "consentToPublicCooperationAnnouncement": false,
+  "kind_candidate": "initiative",
+  "reading_candidate": "communs",
+  "NOTE": "EXEMPLE ENTIÈREMENT INVENTÉ ; NE PAS INJECTER DANS PR #41"
+}
+```
+
+**Ne jamais convertir `REPERE` en `publication=public` ni en `COOPERATION_CONVENUE` ; ne jamais exposer à l'API publique `research_state`, `cooperation_state`, les oppositions ou les preuves de mandat.** Les champs du JSON ci-dessus ne sont **pas une migration**, ni un projet de fiche réelle. La relation pourrait se développer sans fiche cartographique.
+
+### État final de cet additif
+
+**BLOQUANTS** pour solliciter réellement aujourd'hui : TIS-001 n'apporte pas encore de source officielle vérifiée et de structure identifiée avec certitude ; la validation humaine, les mandats d'envoi et les moyens de réponse restent à établir. **BLOQUANTS** pour une fiche/coopération publique réelle : garanties B1–B5 et, pour la coopération, C1–C5 ; conservation de données et signalements confidentiels impossible dans GitHub public. **RECOMMANDÉ** : garder les activités déclarées datées, la non-adhésion, les refus non publics et la localisation L0. **REPORTABLE** : formulaire de coopération automatisé, schéma SQL, tableaux de disponibilité réelle, carte avec lieux exacts et plateforme complète de signalement.
+
+**La première série de trente passes de transmission 015 reste conservée et non recomptée.** Une note de projet sur GitHub n'est pas une approbation d'une personne réelle, et un commit n'est pas une réception attestée par les conversations de La Tisseuse et de La Relieuse.
+
