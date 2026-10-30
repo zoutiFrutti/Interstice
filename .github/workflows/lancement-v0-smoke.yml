@@ -1,0 +1,45 @@
+name: Verifications lancement public V0
+on:
+  push:
+    branches: [design/lancement-v0-verifications-2026-10-30]
+  pull_request:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'bibliotheque.html'
+      - 'wiki.html'
+      - 'manifeste-v2-5.html'
+      - 'participer.html'
+      - 'style.css'
+      - 'tests/lancement-v0-smoke.mjs'
+      - '.github/workflows/lancement-v0-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer le navigateur de test
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Tester les cinq pages locales, sans soumettre de données
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/interstice-lancement.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          node tests/lancement-v0-smoke.mjs
+      - name: Conserver les captures et rapport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: interstice-v0-captures
+          path: visual-qa/
+          retention-days: 7
+          if-no-files-found: warn
