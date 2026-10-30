@@ -125,3 +125,60 @@ OSM et ODbL : https://www.openstreetmap.org/copyright
 
 **Sources de ces passes :** CNIL, [réutilisation et droits des professionnels référencés](https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes) ; [rectification et limites](https://www.cnil.fr/fr/comprendre-mes-droits/le-droit-de-rectification-corriger-vos-informations) ; [Service-Public, protection des données](https://www.service-public.gouv.fr/particuliers/vosdroits/F2024).
 
+
+### Passe 9 — Fiche informative ou organisation effective d'une rencontre
+
+**Examen au regard du prototype actuel :** la simulation de `initiatives-simulation.mjs` n'organise aucune rencontre et ne sollicite aucun contact. La page de démonstration est une fiche de recherche locale, pas un système de réservation ou d'assurance. Ce caractère doit rester lisible en tous points : liste, fiche, simulation, impression et export.
+
+| Fonction / action future | Qualification pratique à rechercher | Mesure avant fonction réelle |
+|---|---|---|
+| Description d'une initiative et lien externe public | Annuaire informatif ; Interstice édite/présente néanmoins des informations sous sa propre responsabilité et doit respecter le RGPD si des personnes sont identifiables | Provenance, autorisation/licence, correction et retrait ; ne pas dire « vérifié » sans méthode |
+| Annonce de rencontre décidée par une initiative tierce | Initiative annonce l'événement ; **Interstice n'est pas automatiquement organisateur**, mais les circonstances exactes comptent | Nom officiel de l'organisateur réellement habilité, lieu public licite, informations pratiques vérifiées, pas de garantie de sûreté |
+| Contact transmis d'une personne à une autre | Nouveau traitement de données / mise en relation, non simple annuaire | Consentement au partage si choisi comme base appropriée, information complète, limitation des données, accès/rétention et retrait ; autre base légale seulement si juridiquement pertinente |
+| Inscription, réservation, paiement, collecte d'adhésions | Risque d'obligations contractuelles et responsabilités nouvelles suivant qui décide et agit effectivement | Conditions, rôles, sécurité des paiements, assurance et droit sectoriel à qualifier avant activation |
+| Interstice choisit intervenants, programme, accueille, assure la sécurité ou fournit matériel | Actes susceptibles de caractériser une **organisation effective** d'activité | Porteur réel, normes du lieu et de l'activité, sécurité, assurance, statut du travail, tiers et mineurs, responsabilité ; ne pas transférer fictivement le risque aux participants |
+
+**J013-19 :** une fiche fictive indique « Aucune rencontre n'est organisée, aucun matériel n'est disponible » ; vérifier que ni impression, ni carte, ni fiche ne crée un bouton « Réserver » ou « Contacter l'organisateur » pour une personne réelle. **J013-20 :** concevoir un scénario fictif de rendez-vous annoncé par un tiers, puis un second où Interstice choisit heure/lieu et organise effectivement : les responsabilités et les informations à présenter doivent être différentes. **Aucune inscription ou rencontre réelle testée.**
+
+### Passe 10 — Cahier de garanties minimal immédiatement utilisable
+
+**Deux périmètres strictement séparés :** (F) **prototype fictif**, consultable comme démonstration ; (R) **ouverture à des initiatives réelles**, conditionnée à des décisions et vérifications nouvelles. Les critères `J013-xx` renvoient aux deux additifs du 30 octobre 2026 dans ce dossier et dans `docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md`.
+
+#### A. Prototype fictif : critères de livraison à vérifier
+
+| Réf. | Critère vérifiable | Preuve attendue |
+|---|---|---|
+| **F1** | Tous les contenus, points, zones, rencontres et ressources restent explicitement **inventés** ; aucun organisme réel n'est insinué | Captures liste/carte/fiche, textes imprimés/exportés |
+| **F2** | **Aucune collecte de données personnelles réelles**, aucun compte, formulaire libre d'identité, traceur de visite, GPS, carnet de contacts ou serveur de mise en relation introduit | Inspection réseau + code, essais navigateur avec données fictives, pas d'écriture Supabase |
+| **F3** | Carte des communs et carte des possibles partagent la même source **fictive** et une recherche par commune ; vue **liste équivalente** à chaque information représentée sur carte | Tests de comparaison cartes/listes, clavier/lecteur d'écran, petits et grands écrans |
+| **F4** | Quatre niveaux L0–L3 sont documentés mais, dans la fiction, seuls **L0** et **L1** sont nécessaires ; tout point visible n'est qu'un marqueur de commune **indicatif**, pas une adresse réelle | Validation de la représentation de la commune et de la légende |
+| **F5** | Statuts distincts : fictif / projet imaginé / besoin inventé / ressource imaginée ; aucune étiquette `documenté` ou `validé` décrivant une activité réelle | Revue des fiches, filtres, exports et métadonnées |
+| **F6** | Aucun classement moral, de popularité, d'adhésion, de vote ou de nombre de soutiens | Inspection de l'ordre, des filtres, tests avec initiatives fictives non adhérentes |
+| **F7** | Les données exportées ou imprimées sont uniquement celles du jeu fictif, par **liste blanche** et avec attribution si données/fond réellement réutilisés | Tests avec champs secrets artificiels ; contrôle du nom de licence/fournisseur s'il existe |
+| **F8** | Si fond de carte réel : source de tuiles, conditions d'utilisation, attribution visible, cache et absence de préchargement vérifiés ; sinon, **fond schématique autonome** sans fournisseur externe | Inspecteur réseau, mentions et tests des écrans ; grille source/fournisseur documentée |
+| **F9** | Aucune prise de rendez-vous, disponibilité de prêt, contact officiel ou promesse de protection affichés | Test parcours des deux cartes, fiche et impression |
+| **F10** | Aucune modification de permissions Supabase, aucun déploiement réel, aucune fusion automatique ; PR #41 reste un espace de revue | Diff GitHub et décision humaine spécifique avant fusion |
+
+**État de preuve au 30 octobre :** inspection statique de la branche PR #41 : six données fictives, liste, recherche commune/besoin, simulation locale fermée et export fictif visibles dans le code ; **aucun fond de carte réel ni vue carte interactive identifiés dans les fichiers inspectés**. Les critères F3–F4 et F8 dépendent du futur travail de la Développeuse ; aucune validation de ces fonctions n'est prétendue. Les tests Playwright sont présents mais **non exécutés par le Juriste**. La CI historique sur d'autres HEAD ne valide pas automatiquement les ajouts futurs.
+
+#### B. Ouverture à des initiatives réelles : blocages distincts
+
+| Priorité | Condition **à remplir avant données réelles**, et non à imposer à la démo |
+|---|---|
+| **R1 — bloquant** | Personne/structure réellement responsable du traitement, finalités, article 6 RGPD, exceptions article 9/10 si concernées, informations art. 13/14, destinataires, durée de conservation et exercice des droits |
+| **R2 — bloquant** | Schéma public/privé et autorisations API / RLS / vues **testés** avec comptes fictifs ; interdiction de renvoyer les coordonnées sensibles exactes par réponse, export, cache, fond ou URL |
+| **R3 — bloquant** | Gestion des niveaux L0–L3, enquête spécifique sur les lieux sensibles et réidentification indirecte, suppression des coordonnées inutiles et possibilité d'une fiche **sans carte** |
+| **R4 — bloquant** | Contrôle humain des sources et des droits de référencement, attribution, distinction `déclaré`/`documenté`/`projet`, droit d'opposition et correction sans adhésion |
+| **R5 — bloquant** | Canal privé fonctionnel, personnes et moyens réellement habilités, tri d'urgence, décision motivée et recours, demandes de droits RGPD ; aucun dossier sensible en GitHub public |
+| **R6 — conditionnel** | Qualification DSA selon le service réel (simple édition, hébergement ou plateforme), et obligations de signalement/notification/recours lorsqu'applicables |
+| **R7 — conditionnel** | Licence effective du fond, fournisseur de tuiles, attribution et cache ; droit des annuaires importés, des photos, logos, bases dérivées ODbL, respect RGPD |
+| **R8 — conditionnel** | Si contacts, réservations, prêts ou rencontres : porteur de chaque activité, sécurité, assurances, contrats, moyens de réponse et obligations sectorielles |
+| **R9 — à arbitrer** | Définir les critères politiques d'admissibilité et filtres volontaires, rôles et révocations, moyens hors application, gouvernance fédérative sans tutelle |
+| **R10 — à arbitrer** | Décider collectivement du territoire pilote, budget, maintenance, délais réalistes de réponse et financement sans droit de priorité arbitraire |
+
+**Conditions reportables tant que le périmètre reste fictif :** création de comptes, authentification d'initiative, données privées et demande de droit sur personne réelle, collecte GPS, véritable géocodage/adresses, paiement, réservations, messagerie, notation, suivi de fréquentation, export de données de tiers, interface d'administration/modération de vrais dossiers. **L'absence de ces fonctions est un choix de sûreté, pas une lacune juridique de la démonstration.**
+
+**Sources réutilisées et nouvellement vérifiées :** [CNIL géolocalisation](https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles), [CNIL réutilisation d'annuaires](https://www.cnil.fr/fr/reutilisation-de-donnees-par-des-annuaires-en-ligne-quels-droits-pour-les-professionnels-concernes), [CNIL rectification](https://www.cnil.fr/fr/comprendre-mes-droits/le-droit-de-rectification-corriger-vos-informations), [OpenStreetMap copyright](https://www.openstreetmap.org/copyright), [OSMF Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles/), [Nominatim Usage Policy](https://operations.osmfoundation.org/policies/nominatim/), [OSM France](https://www.openstreetmap.fr/usage/), [Etalab 2.0](https://www.data.gouv.fr/pages/legal/licences/etalab-2-0).
+
+**Statut :** proposition de cahier de recette ; les critères ne sont pas des tests déjà exécutés, ni des règles politiques adoptées. Le choix de l'éditeur des tuiles, le responsable de traitement, les personnes habilitées et toute publication réelle nécessitent vérification et décision appropriée.
+
