@@ -205,3 +205,53 @@ test("cartes : export public fictif liste blanche sans fuite après injection",a
  assert.equal(result.entries.length,1);assert.equal(result.entries[0].provenance,"simulation");
  for(const forbidden of ["privateEmail","secret@invalid.local","latitude","domicile","internalNotes","address"])assert.ok(!JSON.stringify(result).includes(forbidden));
 });
+
+test("014: carte et liste gardent mêmes IDs après filtres, indépendamment des ancres",async()=>{
+ const {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS}=await import("../cartes-data.mjs");
+ const {filterMapEntries,communeGroups}=await import("../cartes-core.mjs");
+ for(const reading of ["communs","possibles"]){
+  for(const filters of [{},{commune:"Gaillac"},{category:"Culture"},{objet:"outil"},{commune:"Nullepart"}]){
+   const list=filterMapEntries(DEMO_MAP_ENTRIES,{...filters,reading});
+   const groups=communeGroups(list,COMMUNE_ANCHORS);
+   const plotted=new Set(groups.flatMap(g=>g.items.map(x=>x.id)));
+   assert.ok([...plotted].every(id=>list.some(x=>x.id===id)));
+  }
+ }
+});
+test("014: types et identifiants uniques des deux lectures",async()=>{
+ const {DEMO_MAP_ENTRIES}=await import("../cartes-data.mjs");
+ assert.deepEqual(new Set(DEMO_MAP_ENTRIES.map(x=>x.kind)),new Set(["initiative","besoin","ressource","projet"]));
+ assert.equal(new Set(DEMO_MAP_ENTRIES.map(x=>x.id)).size,DEMO_MAP_ENTRIES.length);
+ assert.ok(DEMO_MAP_ENTRIES.every(x=>x.id.startsWith("demo-")&&x.source.type==="simulation"));
+});
+test("014: sans localisation, la liste garde la fiche et la carte l'omet",async()=>{
+ const {communeGroups,filterMapEntries}=await import("../cartes-core.mjs");
+ const {DEMO_MAP_ENTRIES,COMMUNE_ANCHORS}=await import("../cartes-data.mjs");
+ const e={...DEMO_MAP_ENTRIES[0],id:"demo-sans-lieu",territories:[],locationLevel:"none"};
+ const rows=filterMapEntries([...DEMO_MAP_ENTRIES,e],{reading:e.reading});
+ assert.ok(rows.some(x=>x.id===e.id));
+ assert.equal(communeGroups(rows,COMMUNE_ANCHORS).flatMap(x=>x.items).some(x=>x.id===e.id),false);
+});
+test("014: les repères approximatifs ne sont pas des adresses",async()=>{
+ const {COMMUNE_ANCHORS}=await import("../cartes-data.mjs");
+ const {projectCommune}=await import("../cartes-core.mjs");
+ for(const a of COMMUNE_ANCHORS){assert.ok(Number.isFinite(projectCommune(a).x));assert.ok(Number.isFinite(projectCommune(a).y));assert.equal("address" in a,false);}
+ assert.equal(projectCommune(null),null);
+});
+test("014: export rejette métadonnées et valeurs privées injectées",async()=>{
+ const {exportFictionalMapEntries}=await import("../cartes-core.mjs");
+ const {DEMO_MAP_ENTRIES}=await import("../cartes-data.mjs");
+ const secret="CANARY_PRIVATE_014";
+ const rows=DEMO_MAP_ENTRIES.map(x=>({...x,secretContact:secret,privateLocation:secret,internalNotes:secret,latitude:43.8,metadata:{token:secret}}));
+ const result=JSON.stringify(exportFictionalMapEntries(rows));
+ assert.equal(result.includes(secret),false);
+ assert.equal(result.includes("latitude"),false);
+ assert.equal(result.includes("privateLocation"),false);
+});
+test("014: les objets non fictifs sont exclus des exports",async()=>{
+ const {exportFictionalMapEntries}=await import("../cartes-core.mjs");
+ const {DEMO_MAP_ENTRIES}=await import("../cartes-data.mjs");
+ const row={...DEMO_MAP_ENTRIES[0],id:"real-canary",isDemo:false};
+ const out=exportFictionalMapEntries([...DEMO_MAP_ENTRIES,row]);
+ assert.ok(out.entries.every(x=>x.id!=="real-canary"));
+});
