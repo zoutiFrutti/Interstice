@@ -1122,3 +1122,18 @@ Dix actions : relecture ASSO-008, BIO-012, journal Drive, suivi Médiathèque ; 
 ## 2026-10-30 — Anarchitecte — contrôle technique ciblé des deux publications Wiki V0
 
 Contrôle documentaire ciblé des références `refs/pull/27/head` et `refs/pull/35/head` pour `wiki-decision-collective.html` et `wiki-lecture-croisee-travail-soin-pouvoir.html`, comparaison des PR #23, #27, #34, #35 avec `main` (SHA contrôlé `bc915a727ea5480ef8fd8d3527f4ff7b59886450`). Résultat : PR #27 place encore « Sources et approfondissements » avant Young/Freeman/Tebble et « Contribuer » avant Berenstain/Ahmed ; PR #35 remet les sections dans un ordre cohérent. Les deux articles ont chacun un H1 et aucun script embarqué dans les versions lues ; liens de retour et de correction présents au niveau du code. Les PR sont divergentes et #35 modifie le CSS global : aucune fusion en bloc recommandée. **Décision technique : CORRECTIONS NÉCESSAIRES.** HTML complet, liens externes HTTP, 390/1280 px, débordement, clavier, focus et appareil réel NON testés. Rapport et protocole reproductible : `coordination/propositions/ANARCHITECTE_CONTROLE_TECHNIQUE_WIKI_V0_2026-10-30.md`, commit `c285e56c8e3051954e667143fd387adaa3d646ad`. Aucun contenu fusionné, déployé ou publié ; validation humaine requise.
+
+
+## 2026-10-30 — Relieur — transmission 013 : cinquième priorité cartographie
+
+**Demande de l'utilisateur reçue dans la conversation Relieur :** ajouter la carte des communs et la carte des possibles aux quatre priorités existantes, et fournir aux dix ateliers existants des prompts spécialisés pour dix passes de travail chacun, dans un ordre qui respecte leurs dépendances.
+
+**Document créé et vérifié sur `main` :** [Transmission 013 — cinq priorités et cartographie](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/RELIEUR_TRANSMISSION_013_CARTES_COMMUNS_POSSIBLES_PRIORITES_2026-10-30.md), commit `ced5e6b13bf12359e2639f7655c1e27d1edf20c3`. Le présent enregistrement **ne signifie pas** que les conversations séparées ont reçu ou exécuté ces prompts ; l'utilisateur dispose de textes distincts à leur transmettre.
+
+**Définition de travail :** carte des communs = initiatives et ressources existantes, déclarées ou documentées ; carte des possibles = besoins, ressources à mutualiser, projets et propositions en devenir. **Un seul système**, quatre fonctions à égalité, double lecture, liste aussi complète que carte. Pilote fictif Tarn (Lisle-sur-Tarn/Gaillac), sans compte, GPS obligatoire, adresse privée, étiquette morale ni organismes inventés présentés comme réels.
+
+**Travaux à prolonger sans doublons :** PR #41 pour prototype code ; PR #44 pour deux pages Wiki corrigées ; PR #35 pour accueil et lisibilité ; PR #42 pour formulaires ; PR #43 pour scénarios S1–S3 ; lecture, sources, garanties et communications dans leurs dossiers existants. Référence technique/juridique : `coordination/JURISTE_TRANSMISSION_CARTOGRAPHIE_2026-10-30.md` et `propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md`, **non adoptées**.
+
+**Ordre de transmission préparé :** Penseur, Juriste, Médiathèque, Anarchitecte, Développeuse, Lecteur, Graphiste, Archiviste, Biographe, Communications ; Relieur assure coordination pratique et suit les vraies réceptions, sans « Organisateur » séparé.
+
+**Aucune fonctionnalité cartographique réelle ou carte publique n'est prétendue créée par ce document.** Aucun déploiement, fusion, permission ou texte politique modifié dans cette passe de coordination. Les dix passes de chaque atelier sont **demandées**, non réalisées par le Relieur à leur place.
