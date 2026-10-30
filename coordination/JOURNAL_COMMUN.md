@@ -1042,3 +1042,14 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 
 **Limites et suite :** pas de test de navigateur/Android ou de CI actuelle exécuté ; pas de validation de schéma géographique, pas d'adoption collective. Le Relieur doit reprendre les missions d'organisation pratique anciennement attribuées à l'Organisateur, coordonner les tests A01–A15 avec Développeuse/Anarchitecte et préparer les arbitrages humains B1–B7. Aucun code, site, Supabase, manifeste ou statut modifié.
 
+
+
+## 2026-10-30 — Atelier Graphiste : transmission générale 012, dix passes habitat
+
+**Mission :** reprise du Wiki Habitat depuis les 22 notions et six dossiers déjà créés, sans redémarrer d'audit. **Organisation clarifiée :** le Relieur assume aussi l'organisation pratique ; « L'Organisateur » n'est pas un atelier actif, archives préservées.
+
+**Faits et modifications :** trois portes d'entrée corrigées (accueil, Wiki, Habiter autrement), trois raccourcis de lecture et ancre de méthode, fil d'Ariane et parcours précédent/suivant sur six dossiers, deux liens Wikipédia précisés. Les 10 fichiers UI de la PR #35 et leurs copies d'aperçu ont des blobs identiques lors de la passe. Les contenus restent marqués « À relire par un être humain » ; aucun brouillon privé n'a été publié.
+
+**Test vérifié :** GitHub Actions sur la branche PR #35, SHA `9907f252d519adbaf44dcd7d08545171146a2067`, **54/54 succès** (18 validations de liens et 36 rendus 390/1280 px) : https://github.com/zoutiFrutti/Interstice/actions/runs/41050892814 . Le test a d'abord révélé une erreur de regexp et six contrôles de taille inférieure à 18 px ; corrections effectuées, puis nouvelle CI verte.
+
+**Limites :** CI ne vaut pas validation tactile, relecture juridique ou fusion. La PR #35 reste draft/non fusionnable, le déploiement du sous-dossier est à recontrôler après les mouvements de `main`. Transmission complète : `coordination/transmissions/GRAPHISTE_BILAN_TRANSMISSION_GENERALE_012_2026-10-30.md`. Relieur : coordonner les relectures et le rapprochement #35/#22 sans autorité disciplinaire ni arbitrage politique implicite.
