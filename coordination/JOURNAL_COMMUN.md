@@ -1053,3 +1053,16 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 **Test vérifié :** GitHub Actions sur la branche PR #35, SHA `9907f252d519adbaf44dcd7d08545171146a2067`, **54/54 succès** (18 validations de liens et 36 rendus 390/1280 px) : https://github.com/zoutiFrutti/Interstice/actions/runs/41050892814 . Le test a d'abord révélé une erreur de regexp et six contrôles de taille inférieure à 18 px ; corrections effectuées, puis nouvelle CI verte.
 
 **Limites :** CI ne vaut pas validation tactile, relecture juridique ou fusion. La PR #35 reste draft/non fusionnable, le déploiement du sous-dossier est à recontrôler après les mouvements de `main`. Transmission complète : `coordination/transmissions/GRAPHISTE_BILAN_TRANSMISSION_GENERALE_012_2026-10-30.md`. Relieur : coordonner les relectures et le rapprochement #35/#22 sans autorité disciplinaire ni arbitrage politique implicite.
+
+
+## 2026-10-30 — Le Relieur — transmission 012, dix passes et trois scénarios
+
+**Clarification active :** l'atelier « L'Organisateur » n'existe pas. Les missions de coordination pratique des études 39–48 reviennent au Relieur, sans autorité politique ou disciplinaire et sans acte collectif présumé.
+
+**Travaux réellement produits sur branche de coordination, sans modification de production :** [PR #43](https://github.com/zoutiFrutti/Interstice/pull/43) en **brouillon** ; [kit S1–S3](https://github.com/zoutiFrutti/Interstice/blob/coordination/relieur-pilote-10-passes-20261030/coordination/RELIEUR_PILOTE_3_SCENARIOS_CONCRETS_2026-10-30.md) et [dix passes + matrice A01–A15](https://github.com/zoutiFrutti/Interstice/blob/coordination/relieur-pilote-10-passes-20261030/coordination/RELIEUR_10_PASSES_CONTROLE_TRAJECTOIRE_2026-10-30.md).
+
+**Résultats :** trois simulations écrites (besoin sans smartphone ni soutiens ; atelier rare pour trois groupes, réemploi de l'étude 59 ; jardin/concerts et personnes affectées), grille d'observation non nominative, quinze tests d'acceptation reliés aux preuves existantes. **Zéro simulation terrain**, zéro test A01–A15 validé en production, aucune décision collective. PR #35 (accueil), #41 (annuaire fictif), #42 (formulaires testés en simulation) restent indépendantes en revue.
+
+**Alerte de communication concrète :** carrousel 3 visuel 03_04 formule au présent « Interstice sert à cartographier… » alors qu'aucune carte publique réelle n'est attestée. L'arbitrage sur cette promesse appartient aux personnes concernées, Communications et Graphiste. Ne pas publier automatiquement. **Alerte documentaire distincte :** rectificatif BIO-019 sur deux personnes Lefebvre/Lefèvre possiblement confondues : ne pas reproduire d'identification non confirmée.
+
+**Contrôle de trajectoire :** tester S1 avec volontaires et sans données privées, valider V0 publique par essai réel, puis déterminer avec des personnes responsables les capacités de réception, consentement, correction et modération avant collecte. Une CI de branche réussie n'est pas un test public. Aucun atelier supplémentaire ni PR documentaire concurrent demandé aux autres ateliers.
