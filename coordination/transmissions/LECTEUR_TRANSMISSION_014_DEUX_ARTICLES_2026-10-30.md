@@ -1,0 +1,52 @@
+# La Faille noire × Interstice — Le Lecteur
+## Transmission 014 au Relieur — 20 passes, deux versions HTML candidates
+Date : 2026-10-30
+Statut : **versions candidates à arbitrage humain, non publiées, non fusionnées**.
+Branche : `atelier-lecteur/correction-deux-pages-20261030` ; PR : https://github.com/zoutiFrutti/Interstice/pull/44
+
+### Relevé des 20 passes (actions, résultats, limites)
+1. **HEAD / PR #44.** Lue ouverte, draft, non fusionnée. HEAD initial de la présente mission `f0deef14d15a69be12fff02763f65090fe96bcd2`. La branche a ensuite avancé par deux modifications HTML du Lecteur et une correction de consensus. Relecture à refaire sur le HEAD final.
+2. **Décider ensemble / main.** Sur main : introduction, quatre méthodes, préparation et sources générales. PR #44 conserve tout et ajoute théorie critique, représentation, épistémologie et débat sur le pouvoir.
+3. **Young.** La notice de l'éditeur Oxford sur *Inclusion and Democracy* (imprimé 2000, chap. 2, p. 52-80, DOI 10.1093/0198297556.003.0003) mentionne salutations, rhétorique, narration et argumentation. **Résumé consulté, pas chapitre intégral** ; aucune fausse citation paginée.
+4. **Freeman.** La version sur https://www.jofreeman.com/joreen/tyranny.htm est une compilation de versions historiques présentée par l'autrice, non un fac-similé stable de *The Second Wave* 2(1), 1972. Le texte souligne les pouvoirs informels. Synthèse sans reproduction du texte.
+5. **Tebble.** Notice institutionnelle KCL https://kclpure.kcl.ac.uk/portal/en/publications/does-inclusion-require-democracy/ ; *Political Studies* 51(1), 2003, p. 197-214, DOI 10.1111/1467-9248.00420 : tension entre identité de groupes fluide/anti-essentialiste et représentation institutionnelle ; mobilise Hayek. **Article intégral non lu**. Cela ne réfute pas toute inclusion démocratique.
+6. **Corrections du Penseur.** Études 45-47 dans `coordination/PENSEUR_ETUDES_39_58_CYCLE_AUTONOMIE_COMMUNS_2026-10-30.md` : consensus peut devenir pression, dissidence à préserver, participants distincts des personnes affectées, consultation sans veto automatique. Deux précisions intégrées dans l'article 1 ; **aucun avis séparé du Penseur sur les deux pages retrouvé et prétendu validé**.
+7. **Personnes extérieures.** Texte explicité : consulter, informer, contester et voter sont des actes distincts ; leur portée juridique varie selon droit, statuts et contrats. L'article n'institue ni droit général de vote ni droit général aux informations internes.
+8. **Droit / politique.** Consentement, délégation, contrôle des ressources, protection de la critique, consultation proportionnée : présentés comme méthodes ou propositions à discuter, **pas droit positif ni règle du collectif adoptée**.
+9. **Article 1 intégral.** Présence vérifiée de l'introduction et des quatre méthodes ; des critiques Young/Freeman/Tebble, Goodin/Owen, Fricker/Dotson/Alcoff, Habermas/Mouffe/Allen/Forst. Le terme consentement a été désuniversalisé ; les précautions sur témoignage et vie privée sont préservées.
+10. **Article 1 structure.** Un seul `h1`, chapitres critiques avant « Sources et approfondissements », retour Wiki final, titre et source Oxford/Freeman/Tebble identifiés. Bibliographie complémentaire et différences d'édition contrôlées avec la Médiathèque.
+11. **Qui fait vivre les communs ? / main.** Page de main conservée, y compris les quatre perspectives, tensions, questions et pistes historiques ; la section Berenstain/Ahmed apparaît désormais avant les sources et la contribution.
+12. **Kropotkine / Federici.** Primaire Kropotkine *La Conquête du pain*, 2e éd. Tresse & Stock 1892, « Le travail agréable », p. 153-164 : charge domestique laissée aux femmes et temps pour vie sociale directement établis dans le chapitre ; non une preuve que la technique résout le soin. Federici, *Revolution at Point Zero* (PM Press/Common Notions/Autonomedia, 2012, ISBN 9781604863338) : **notice éditoriale**, non livre intégral.
+13. **hooks / Freire.** bell hooks, *Teaching to Transgress* (Routledge 1994) = original anglais, pas traduction française de 1994. Freire, *Pedagogy of the Oppressed*, trad. Myra Bergman Ramos (1970) : Herder and Herder attesté, catalogues Seabury à distinguer ; manuscrit portugais 1968. **Aucun ouvrage complet de ces auteurs lu durant cette passe**.
+14. **Berenstain / Ahmed.** Berenstain, « Epistemic Exploitation », *Ergo* 3(22), 2016, p. 569-590, extrait primaire travaillé par la Médiathèque ; note 20 rétractée février 2024, DOI correction 10.3998/ergo.5640 à lire intégralement. Ahmed *On Being Included* (Duke, 2012) : notice éditoriale seulement ; obstacles institutionnels, pas extrapolation en règle universelle.
+15. **Explication contrainte / consultation choisie.** Séparation explicite entre travail d'explication exigé, non reconnu, et consultation volontaire. Aucun témoignage n'est obligatoire ni représentatif de tout un groupe par défaut.
+16. **Corrections bibliographiques.** Contrôle recoupé avec `coordination/transmissions/2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md` (014 ajoutée) et `coordination/propositions/ANARCHITECTE_AUDIT_SOURCES_DEUX_ARTICLES_WIKI_20261030.md`. Moulinette d'édition : conserver les corrections déjà présentes (notamment Mouffe/Verso, bibliographie Goodin/Owen/Forst), sans écraser les commits de la Médiathèque.
+17. **Parcours des contributions.** `proposer-article.html` sur main inspecté : connexion par courriel et formulaire de proposition d'article (minimum 100 caractères de texte). **Pas** de canal autonome de rectification sensible, de plainte confidentielle ni d'exercice de droits. Les deux pages l'indiquent et déconseillent données privées sur formulaire/GitHub public.
+18. **Article 2 intégral.** Intro, quatre auteurs, convergences et objections, charge cachée d'explication, bibliographie finale et contribution vérifiés. Répétition des limites de lecture atténuée ; étiquette « candidate, à relire humainement » actualisée au 30 octobre.
+19. **Tests techniques réellement exécutés dans cette mission.** Script JavaScript ponctuel sur le contenu **relire depuis la branche** : **34/34 assertions statiques réussies** (imbrication apparente des balises, `h1` unique, sections équilibrées, ordre des sections, auteurs/sources, statuts, liens internes). **6 fichiers internes** vérifiés par lecture GitHub ; **22 liens externes uniques** relevés (14 article 1, 8 article 2), sans audit HTTP exhaustif. Le statut combiné et les workflow-runs du HEAD `e1aa1950` consultés : **aucun statut/aucun run** rapporté pour ce SHA. Les **60/60** contrôles Chromium 390/1280px cités par le Graphiste concernent uniquement PR #35, GitHub Actions https://github.com/zoutiFrutti/Interstice/actions/runs/41094118135 ; ils **ne valent pas QA de ce nouveau HEAD**. Pas de test lecteur d'écran, tactile Android, validation HTML W3C ni test de dépôt réel par formulaire.
+20. **Diff / bilan.** Deux fichiers candidats modifiés **sur PR #44**, sans troisième article. Écart documenté contre main ; rapport présent ; journal commun à compléter sans écraser ses entrées. Conserver PR #44 en draft sans fusion ou publication.
+
+### Versions candidates
+- **Article 1** : `wiki-decision-collective.html` — https://github.com/zoutiFrutti/Interstice/blob/atelier-lecteur/correction-deux-pages-20261030/wiki-decision-collective.html
+- **Article 2** : `wiki-lecture-croisee-travail-soin-pouvoir.html` — https://github.com/zoutiFrutti/Interstice/blob/atelier-lecteur/correction-deux-pages-20261030/wiki-lecture-croisee-travail-soin-pouvoir.html
+- **Diff GitHub** : https://github.com/zoutiFrutti/Interstice/pull/44/files
+
+### Delta éditorial résumé
+| Article | main | Candidate PR #44 |
+| --- | --- | --- |
+| Décider ensemble | méthodes et prudences de base, sources génériques | Young/Freeman, objection Tebble limitée, tiers affectés, dissensus, injustices épistémiques, doctrine complémentaire, bibliographie précise, limites juridiques et correction non confidentielle |
+| Qui fait vivre les communs ? | quatre auteurs, travail invisible, tensions et questions | Berenstain/Ahmed, distinction explication contrainte/consultation volontaire, passage primaire Kropotkine vérifié, précision hooks/Freire, bibliographie corrigée et canal de proposition borné |
+
+### Objections ouvertes et décisions humaines indispensables
+1. **Arbitrage du titre et de la longueur** : garder « Décider ensemble » ou préciser « sans hiérarchies invisibles » ; déterminer combien de sous-parties critiques conserver pour la première sortie.
+2. **Complétude des textes** : vérifier passages primaires Young, Tebble, Federici, hooks, Freire et Ahmed avant de qualifier les articles de synthèses approfondies. Avis de correction Berenstain à consulter intégralement et licence de version à documenter avant toute citation reproduite ou traduction.
+3. **Contre-arguments** : droit de critique et divergences Young/Tebble, consensus/dissensus, Kropotkine/Federici et Berenstain/consultation maintenus ; pas de doctrine imposée.
+4. **Juridique** : revue par la Juriste des personnes affectées et des voies de recours, sans confondre objectif politique et droit positif ; **aucun canal privé opérationnel prouvé**.
+5. **Intégration** : PR #44 a été constatée `mergeable=false` et avec un commit de retard par rapport au main comparé ; PR #35 contient des réglages graphiques et copies éditoriales d'un état antérieur. Réconcilier les fichiers **sans perdre les nouveaux paragraphes** ; inspecter conflits avant toute fusion humaine.
+6. **Qualité** : contrôle HTTP exhaustif des 22 liens, véritable validation HTML, navigateurs 390/1280 de la version après rapprochement, clavier/lecteur d'écran et test Android physique nécessaires. La CI de PR #35 ne valide pas cette PR.
+7. **Publication** : uniquement après désignation de relecteurs responsables, traitement des objections, décision humaine explicite et garanties du parcours de rectification ; aucune publication automatique.
+
+### Provenance et traçabilité
+- Sources primaires : Kropotkine (chapitre consulté), Freeman (texte autrice), Berenstain (passages examinés par Médiathèque).
+- Notices/résumés : Oxford Young ; KCL Tebble ; Duke Ahmed ; PM Press Federici ; Routledge hooks ; bibliographies Freire ; autres références de philosophie politique selon mentions locales.
+- Les assertions de cette transmission ne certifient **ni lecture intégrale non réalisée**, **ni fusion**, **ni approbation du collectif**, **ni réception dans une conversation ChatGPT distincte**.
