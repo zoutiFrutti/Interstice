@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0B0F14">
+  <title>KONTON Control · Cockpit V0</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au cockpit</a>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span class="brand-slash">/</span></div>
+        <div>
+          <p class="eyebrow">CONSOLE D'AGENTS</p>
+          <h1>KONTON <span>CONTROL</span></h1>
+        </div>
+      </div>
+      <div class="topbar-meta">
+        <span class="demo-chip"><span class="led led-amber" aria-hidden="true"></span> MODE DÉMO</span>
+        <span class="connection">Aucun service connecté</span>
+      </div>
+    </header>
+
+    <div class="notice" role="note">
+      <strong>Prototype interactif.</strong> Toutes les missions et tous les statuts ci-dessous sont fictifs.
+      GO, STOP et VALIDATION n'agissent sur aucun vrai agent. Le rafraîchissement remet la simulation à zéro.
+    </div>
+
+    <section class="metrics" aria-label="Résumé de la simulation">
+      <div class="metric"><strong id="count-agents">0</strong><span>Agents présentés</span></div>
+      <div class="metric"><strong id="count-running">0</strong><span>En simulation</span></div>
+      <div class="metric"><strong id="count-review">0</strong><span>À relire</span></div>
+      <div class="metric"><strong>0</strong><span>Connexions réelles</span></div>
+    </section>
+
+    <div class="workbench">
+      <aside class="sidebar panel" aria-label="Sélection des agents">
+        <div class="panel-heading">
+          <div><span class="eyebrow">01 / REGISTRE</span><h2>Agents</h2></div>
+          <span class="tiny-pill" id="visible-count">0 visibles</span>
+        </div>
+        <div class="scope-tabs" role="group" aria-label="Filtrer par périmètre">
+          <button class="tab active" type="button" data-scope="all" aria-pressed="true">Tous</button>
+          <button class="tab" type="button" data-scope="collectif" aria-pressed="false">Collectif</button>
+          <button class="tab" type="button" data-scope="personnel" aria-pressed="false">Perso</button>
+        </div>
+        <label class="search-label" for="agent-search">Rechercher un agent</label>
+        <input id="agent-search" type="search" placeholder="Nom, mission…" autocomplete="off">
+        <div id="agent-list" class="agent-list" aria-label="Liste des agents"></div>
+        <div class="sidebar-foot">
+          <span class="led led-gray" aria-hidden="true"></span>
+          <span>Registre local fictif · Aucun accès aux comptes</span>
+        </div>
+      </aside>
+
+      <main id="main" class="main-panel panel" tabindex="-1">
+        <div class="panel-heading">
+          <div><span class="eyebrow">02 / PUPITRE</span><h2>Commande</h2></div>
+          <span class="tiny-pill">V0.1</span>
+        </div>
+        <div class="agent-detail" id="agent-detail">
+          <p class="empty">Choisis un agent pour afficher son pupitre.</p>
+        </div>
+      </main>
+
+      <aside class="right-column" aria-label="Validations et journal">
+        <section class="panel queue-panel">
+          <div class="panel-heading"><div><span class="eyebrow">03 / CONTRÔLE HUMAIN</span><h2>À relire</h2></div><span class="count" id="review-badge">0</span></div>
+          <p class="subtle">Rien n'est publié ou approuvé automatiquement.</p>
+          <div id="review-queue" class="review-queue"></div>
+        </section>
+        <section class="panel log-panel">
+          <div class="panel-heading"><div><span class="eyebrow">04 / TRAÇABILITÉ</span><h2>Journal</h2></div></div>
+          <p class="subtle">Événements de cette session démo uniquement.</p>
+          <ol id="event-log" class="event-log" aria-live="polite" aria-relevant="additions"></ol>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <span>KONTON Control · maquette technique isolée</span>
+      <span>Personnel et collectif restent deux périmètres distincts.</span>
+    </footer>
+  </div>
+  <div class="sr-only" id="announcer" role="status" aria-live="polite"></div>
+</body>
+</html>
