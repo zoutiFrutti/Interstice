@@ -48,9 +48,17 @@ Parcours à préserver : 1. publier un besoin local ; 2. découvrir une initiati
 ## Dépendances et contradictions à résoudre
 
 - **Juriste :** base légale, finalités, effacement, preuve du consentement, sécurité des lieux et personnes vulnérables.
-- **Organisateur :** scénarios de terrain avec participation hors ligne et observation non intrusive.
+- **Relieur (organisation pratique) :** scénarios de terrain avec participation hors ligne et observation non intrusive.
 - **Graphiste :** recherche explicable, accessibilité de la liste et absence de pression au vote.
 - **Développeur :** schéma de données commun et tests entre site et application ; ne pas dupliquer les systèmes existants.
 - **Penseur / Lecteur :** confirmer les sources et contradictions des études. Les études 39–58 restent des hypothèses critiques et non des obligations du collectif.
 
 **Limite de ce livrable :** audit statique ciblé et proposition de tests, sans expérience réelle de navigation, test d'intégration mobile ni déploiement. Aucun statut, droit de modération ni fiche Wiki modifié.
+
+## Avancement technique V0 — transmission 012
+
+- `script.js` : test A02 (besoin vide, envoi valide), A11 (panne réseau, réponse non JSON, double clic) automatisés.
+- `ressources.js` : test A02 (proposition de ressource) et A11 (erreur non JSON, double clic) automatisés.
+- Tests sans réseau réel et sans écriture Supabase : `tests/v0-form-acceptance.test.mjs` (8 tests) exécutés en CI sur PR #42.
+- Les critères A01, A03–A10 et A12–A15 restent **non validés** ; un test JavaScript simulé ne certifie ni navigation mobile réelle ni consentement effectif.
+- Coordonnateur des scénarios et rencontres : **Relieur**, sans autorité de décision ni délégation d'habilitation implicite.

@@ -2,10 +2,11 @@ const root=document.getElementById("resources"),count=document.getElementById("c
 const resourceForm=document.getElementById("resource-form");
 resourceForm.addEventListener("submit",async event=>{
  event.preventDefault();
+ if(document.getElementById("resource-submit").disabled)return;
  const status=document.getElementById("resource-status"),button=document.getElementById("resource-submit");
  const payload={title:document.getElementById("resource-title").value.trim(),url:document.getElementById("resource-url").value.trim(),description:document.getElementById("resource-description").value.trim(),category:document.getElementById("resource-category").value,license:document.getElementById("resource-license").value.trim(),website:document.getElementById("resource-website").value};
  button.disabled=true;status.textContent="Envoi en cours…";
- try{const response=await fetch("https://rpqiwxkaiyokmxbhxfvh.supabase.co/functions/v1/submit-resource",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});const data=await response.json();if(!response.ok)throw Error(data.error||"Envoi impossible");status.textContent=data.message||"Ressource reçue pour examen.";resourceForm.reset();}
+ try{const response=await fetch("https://rpqiwxkaiyokmxbhxfvh.supabase.co/functions/v1/submit-resource",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});const data=await response.json().catch(()=>({}));if(!response.ok)throw Error(typeof data.error==="string"?data.error:"Envoi impossible");status.textContent=data.message||"Ressource reçue pour examen.";resourceForm.reset();}
  catch(error){status.textContent="Échec : "+(error.message||"Réessaie plus tard.");}
  finally{button.disabled=false;}
 });
