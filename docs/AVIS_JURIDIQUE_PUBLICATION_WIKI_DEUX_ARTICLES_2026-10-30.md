@@ -61,7 +61,7 @@
 
 ## Sources principales vérifiées
 
-- CPI L.122-4 / L.122-5 : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037388886/2026-10-30 et https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278917/2026-10-30 (vérifier les liens / versions si nécessaires ; la règle est exposée dans Légifrance).
+- CPI L.122-4 et L.122-5 : https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069414/2026-08-14 ; citation courte L.122-5 : https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037388886/2021-04-27.
 - Code civil art. 9 : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006419288
 - CNIL délai de réponse : https://www.cnil.fr/fr/cnil-direct/question/exercice-des-droits-informatique-et-libertes-dans-quel-delai-doit-me-repondre
 - CNIL rectification : https://www.cnil.fr/fr/comprendre-mes-droits/le-droit-de-rectification-corriger-vos-informations
