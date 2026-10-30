@@ -17,19 +17,23 @@
 <div><label for="commune">Commune ou territoire</label><input type="search" id="commune" list="communes" placeholder="Ex. Lisle-sur-Tarn" autocomplete="off">
 <datalist id="communes"><option value="Lisle-sur-Tarn"></option><option value="Gaillac"></option><option value="Rabastens"></option><option value="Albi"></option></datalist></div>
 <div><label for="objet">Besoin ou ressource</label><input type="search" id="objet" maxlength="100" placeholder="Ex. outils, transport" autocomplete="off"></div>
+<div><label for="scope">Je cherche</label><select id="scope"><option value="tous">Besoin ou ressource</option><option value="besoin">Un besoin exprimé</option><option value="ressource">Une ressource proposée</option></select></div>
 <div><label for="category">Domaine</label><select id="category"><option value="">Tous les domaines</option><option>Écologie</option><option>Réparation</option><option>Entraide</option><option>Culture</option><option>Mutualisation</option><option>Savoirs</option></select></div>
+<div><label for="order">Ordre de la liste</label><select id="order"><option value="source">Ordre des exemples</option><option value="titre">Par nom (A à Z)</option></select></div>
 <button type="button" class="button-muted" id="clear">Effacer les filtres</button>
 </form>
-<p class="matching-note">Recherche manuelle, sans popularité ni classement automatique. Les exemples restent dans leur ordre d'origine. Aucun texte recherché n'est transmis ou conservé.</p>
+<p class="matching-note">Recherche manuelle, sans popularité ni classement automatique. Les exemples restent dans leur ordre d’origine sauf si tu choisis le tri alphabétique. Aucun texte recherché n'est transmis ou conservé.</p>
 <div class="results-heading"><h2>Les initiatives imaginées</h2><p id="count" role="status" aria-live="polite">Chargement…</p></div>
-<button id="export-demo" type="button" class="button-muted">Exporter les exemples fictifs (JSON)</button>
+<button id="export-demo" type="button" class="button-muted">Exporter les résultats fictifs affichés (JSON)</button>
+<p class="export-note" id="export-status" role="status" aria-live="polite"></p>
 <div id="results" class="initiative-grid"></div>
+<div id="invalid-route" hidden role="alert" class="empty">La fiche demandée n’existe pas dans cette démonstration. Voici les exemples disponibles.</div>
 <div id="no-results" hidden class="empty"><h3>Aucun exemple correspondant</h3><p>Cela ne dit rien des initiatives réelles. Essaie Gaillac, Rabastens, Lisle-sur-Tarn ou Albi.</p><button class="button-muted" type="button" id="clear-empty">Voir tous les exemples</button></div>
 </section>
 <section id="detail" hidden aria-labelledby="detail-title">
-<button type="button" class="button-muted" id="back">← Retour aux initiatives</button><article id="detail-content"></article>
+<div class="detail-controls"><button type="button" class="button-muted" id="back">← Retour aux initiatives</button><button type="button" class="button-muted" id="print-fiche">Imprimer la fiche fictive</button></div><article id="detail-content"></article>
 </section>
-<noscript>JavaScript est nécessaire pour cette démonstration sans collecte.</noscript>
+<noscript><section class="empty"><h2>Sans JavaScript</h2><p>La recherche interactive nécessite JavaScript. Les informations générales et la participation au projet restent accessibles sans application : <a href="participer.html">participer à Interstice</a>.</p></section></noscript>
 </main>
 <footer>Interstice · Prototype mobile, exemples entièrement fictifs · Aucune participation réelle enregistrée</footer>
 <script type="module" src="initiatives-app.mjs"></script>

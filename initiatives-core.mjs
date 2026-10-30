@@ -1,19 +1,30 @@
 // Contrat de lecture portable : un futur adaptateur HTTP peut remplacer les fixtures.
 export function normalizeSearch(input=""){return String(input).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("fr").replace(/[^\p{L}\p{N}]+/gu," ").trim().replace(/\s+/g," ");}
 // Les rapprochements sont strictement facultatifs et expliqués champ par champ.
-export function explainResourceMatch(item,search=""){
+export function explainResourceMatch(item,search="",scope="tous"){
  const normalized=normalizeSearch(search);
  if(!normalized)return [];
  const words=normalized.split(" ").filter(Boolean);
  return [
-  ...(item.needs||[]).map(value=>({kind:"Besoin",value})),
-  ...(item.offers||[]).map(value=>({kind:"Ressource",value}))
+  ...(scope==="ressource"?[]:(item.needs||[]).map(value=>({kind:"Besoin",value}))),
+  ...(scope==="besoin"?[]:(item.offers||[]).map(value=>({kind:"Ressource",value})))
  ].filter(entry=>words.every(word=>normalizeSearch(entry.value).includes(word)))
   .map(entry=>entry.kind+" : "+entry.value);
 }
-export function filterInitiatives(items,{commune="",category="",objet=""}={}){
+export function filterInitiatives(items,{commune="",category="",objet="",scope="tous",order="source"}={}){
+ const safeScope=["tous","besoin","ressource"].includes(scope)?scope:"tous";
+ const safeOrder=["source","titre"].includes(order)?order:"source";
  const area=normalizeSearch(commune),cat=normalizeSearch(category);
- return items.filter(item=>(!area||item.territories.some(x=>normalizeSearch(x).includes(area)))&&(!cat||normalizeSearch(item.category)===cat)&&(!normalizeSearch(objet)||explainResourceMatch(item,objet).length>0));
+ const matches=items.filter(item=>(!area||item.territories.some(x=>normalizeSearch(x).includes(area)))&&(!cat||normalizeSearch(item.category)===cat)&&(!normalizeSearch(objet)||explainResourceMatch(item,objet,safeScope).length>0));
+ return safeOrder==="titre"?[...matches].sort((a,b)=>a.title.localeCompare(b.title,"fr")):matches;
+}
+// Explication lisible et strictement fondée sur les champs interrogés.
+export function explainSearchMatch(item,{commune="",category="",objet="",scope="tous"}={}){
+ const reasons=[];
+ if(normalizeSearch(commune)){for(const place of item.territories){if(normalizeSearch(place).includes(normalizeSearch(commune)))reasons.push("Territoire : "+place);}}
+ if(normalizeSearch(category)&&normalizeSearch(category)===normalizeSearch(item.category))reasons.push("Domaine : "+item.category);
+ if(normalizeSearch(objet))reasons.push(...explainResourceMatch(item,objet,scope));
+ return reasons;
 }
 export function getInitiativeById(items,id){return items.find(x=>x.id===id)||null;}
 export function createDemoRepository(items){

@@ -53,3 +53,44 @@ test("prototype ne transmet aucun texte de recherche : aucun fetch ni traceur",(
  assert.match(source,/Pourquoi cette fiche/);
  assert.match(source,/buildPublicDemoExport/);
 });
+
+test("choisir les besoins ou ressources change les correspondances",async()=>{
+ const {explainResourceMatch,filterInitiatives}=await import("../initiatives-core.mjs");
+ const jardin=DEMO_INITIATIVES.find(x=>x.id==="demo-jardin");
+ assert.ok(explainResourceMatch(jardin,"outils","besoin").includes("Besoin : Outils de jardinage"));
+ assert.deepEqual(explainResourceMatch(jardin,"outils","ressource"),[]);
+ assert.equal(filterInitiatives(DEMO_INITIATIVES,{objet:"outils",scope:"ressource"}).length,0);
+});
+test("tri A-Z explicite sans score, ordre source par défaut",async()=>{
+ const inSource=await repo.list();
+ const inAlpha=await repo.list({order:"titre"});
+ const expected=[...inSource].sort((a,b)=>a.title.localeCompare(b.title,"fr"));
+ assert.deepEqual(inAlpha.map(x=>x.id),expected.map(x=>x.id));
+ assert.deepEqual((await repo.list({order:"source"})).map(x=>x.id),inSource.map(x=>x.id));
+ assert.deepEqual((await repo.list({order:"non-connu"})).map(x=>x.id),inSource.map(x=>x.id));
+});
+test("chaque filtre explique un champ précis",async()=>{
+ const {explainSearchMatch}=await import("../initiatives-core.mjs");
+ const item=DEMO_INITIATIVES.find(x=>x.id==="demo-outils");
+ const reasons=explainSearchMatch(item,{commune:"Gaillac",category:"Mutualisation",objet:"stockage",scope:"besoin"});
+ assert.deepEqual(reasons,["Territoire : Gaillac","Domaine : Mutualisation","Besoin : Stockage"]);
+ assert.deepEqual(explainSearchMatch(item,{}),[]);
+});
+test("export filtré liste blanche : aucun contact et uniquement les lignes passées",async()=>{
+ const {buildPublicDemoExport}=await import("../initiatives-core.mjs");
+ const filtered=await repo.list({commune:"Rabastens",category:"Culture"});
+ const data=buildPublicDemoExport(filtered);
+ assert.equal(data.initiatives.length,1);
+ assert.equal(data.initiatives[0].id,"demo-couture");
+ assert.deepEqual(Object.keys(data.initiatives[0]).sort(),["id","title","category","territories","stage","summary","needs","offers","source"].sort());
+});
+test("état inconnu, fiche imprimable, lien sans JS présents dans l'interface",()=>{
+ const html=readFileSync(new URL("../decouvrir-initiatives.html",import.meta.url),"utf8");
+ const app=readFileSync(new URL("../initiatives-app.mjs",import.meta.url),"utf8");
+ const css=readFileSync(new URL("../initiatives.css",import.meta.url),"utf8");
+ assert.match(html,/id="invalid-route"/);
+ assert.match(html,/id="print-fiche"/);
+ assert.match(html,/<noscript>[\s\S]*participer\.html/);
+ assert.match(app,/history\.replaceState/);
+ assert.match(css,/@media print/);
+});
