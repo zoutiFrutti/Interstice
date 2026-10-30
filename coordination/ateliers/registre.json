@@ -1,0 +1,87 @@
+{
+  "schema_version": "interstice-coordination-v0.1",
+  "updated_at": "2026-10-30",
+  "disclaimer": "Registre candidat non adopté. Ne prouve ni réception ni exécution.",
+  "mission_document": "coordination/RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATION_2026-10-30.md",
+  "roles": [
+    {
+      "id": "relieuse",
+      "label": "La Relieuse",
+      "kind": "coordination",
+      "pr": 43
+    },
+    {
+      "id": "anarchitecte",
+      "label": "L'Anarchitecte",
+      "kind": "technique",
+      "pr": 42
+    },
+    {
+      "id": "developpeuse",
+      "label": "La Développeuse",
+      "kind": "technique",
+      "pr": 41
+    },
+    {
+      "id": "juriste",
+      "label": "La Juriste",
+      "kind": "juridique",
+      "pr": 33
+    },
+    {
+      "id": "mediatheque",
+      "label": "La Médiathèque",
+      "kind": "sources",
+      "pr": 38
+    },
+    {
+      "id": "penseur",
+      "label": "Le Penseur",
+      "kind": "recherche",
+      "pr": null
+    },
+    {
+      "id": "lecteur",
+      "label": "Le Lecteur",
+      "kind": "editorial",
+      "pr": 44
+    },
+    {
+      "id": "graphiste",
+      "label": "Le Graphiste",
+      "kind": "design",
+      "pr": 35
+    },
+    {
+      "id": "tisseuse",
+      "label": "La Tisseuse",
+      "kind": "cooperation",
+      "pr": null
+    },
+    {
+      "id": "archiviste",
+      "label": "L'Archiviste des communs",
+      "kind": "histoire",
+      "pr": null
+    },
+    {
+      "id": "assistant-anarchiviste",
+      "label": "Assistant de l'Anarchiviste",
+      "kind": "histoire",
+      "pr": null,
+      "gate": "Bilan cinquante passes relu par l'Archiviste"
+    },
+    {
+      "id": "biographe",
+      "label": "La Biographe",
+      "kind": "histoire",
+      "pr": null
+    },
+    {
+      "id": "communications",
+      "label": "Communications",
+      "kind": "diffusion",
+      "pr": null
+    }
+  ]
+}
