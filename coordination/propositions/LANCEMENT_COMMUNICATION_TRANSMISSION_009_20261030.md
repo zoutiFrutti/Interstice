@@ -243,3 +243,93 @@ Les scripts et sources de branche ne prouvent pas un déploiement public. Aucun 
 
 ### Livraison
 Paquet LA_FAILLE_NOIRE_LANCEMENT_VALIDATION_013.zip enregistré, avec originaux inchangés et propositions séparées. 28 entrées, intégrité ZIP contrôlée, 12 SHA-256 reconfirmés après empaquetage. L'accès Metricool précédemment refusé/non abouti n'a pas été relancé : état des brouillons non vérifié, aucun import en doublon. Sources externes des auteurs non relues intégralement par Communications ; versions candidates PR #44 et référence manifeste du dépôt consultées.
+
+
+## Consolidation 014 — état le plus récent
+
+# Communications — Transmission 014, bilan des 20 passes
+Date : 30 octobre 2026. Préparation soumise à décision humaine, aucune publication autorisée.
+Suite de 013, même paquet et même campagne. Le Relieur coordonne et organise, sans autorité politique supplémentaire.
+
+## Résultats par passe
+1. Paquet 013 identifié par son identité persistante et sa version courante 0 ; archive locale existante relue (28 entrées), intégrité sans erreur.
+2. Douze visuels sources retrouvés, pas de quatrième carrousel.
+3. Douze décodages et dimensions 1080×1350 vérifiés ; douze SHA-256 conformes au manifeste source.
+4. Trois légendes d'origine relues et conservées. Apostrophes et sauts de paragraphes du ZIP distincts du texte exact de la consigne : pas de réécriture politique.
+5. Affirmations rapprochées du manifeste V2.5, des versions du dépôt et des pages publiques. Les légendes décrivent une démarche, pas un bilan quantifié. Ni réseau constitué ni affiliation d'associations présumés.
+6. Visuel 03_04 original ouvert en pleine résolution, présent trompeur repéré.
+7. Variante graphique réellement produite par édition IA, sans effacer l'original. Texte vérifié visuellement : « Interstice se construit pour documenter les initiatives, partager les ressources et transmettre les savoirs. Les deux cartes sont des prototypes fictifs, pas un annuaire réel. » Titres et identité conservés avec de légères variations de rendu. PNG 1122×1402 RGB : CANDIDAT uniquement, export 1080×1350 restant après approbation.
+8. Cohérence relue avec la légende 3, qui présente déjà Interstice comme outil à construire. Aucun remplacement automatique de légende ou de visuel dans Metricool.
+9. Présentation de la carte des communs mise à jour : lecture destinée aux initiatives/lieux/ressources existants, avec documentation à établir avant tout annuaire réel.
+10. Présentation de la carte des possibles mise à jour : besoins, offres, idées/projets proposés ; aucun rapprochement ne vaut accord.
+11. Mention explicite des exemples fictifs et distinction carte codée en branche / service public réel. La transmission du Relieur atteste le développement des deux lectures ; les tests techniques des autres ateliers ne sont pas réexécutés par Communications.
+12. Six URL publiques interrogées par HTTP : accueil, Wiki, manifeste V2.5, deux articles, participer : toutes 200. Cela ne valide ni formulaire, ni Android, ni accessibilité.
+13. Communication des articles réécrite pour parler des fiches accessibles et de leurs enrichissements encore en relecture, sans annoncer la publication des derniers ajouts.
+14. Titres publics vérifiés : « Décider ensemble · Wiki des communs · Interstice » et « Qui fait vivre les communs ? · Interstice ». Les pages publiques relues ne contiennent pas Young/Tebble ni Berenstain/Ahmed ; ne pas confondre avec PR #44.
+15. Alternatives sources conservées et une alternative distincte pour la variante corrigée préparée. Import/conservation dans Metricool non vérifiés.
+16. Note IA maintenue ; les illustrations ne sont pas des photographies de membres/partenaires. Marquage de plateforme à vérifier, pas déclaré activé.
+17. Marque Metricool faille.noire confirmée par connecteur. Brouillons NON VÉRIFIÉS : outils limités aux posts programmés, dernière connexion navigateur non aboutie/refusée. Aucune relance d'identifiants, aucun doublon importé.
+18. Consultation Metricool du 1er octobre 2026 au 31 janvier 2027, timezone Europe/Paris : data=[] ; aucun post programmé retourné dans cette plage seulement. Hors plage et brouillons non couverts.
+19. Séquence conditionnée aux moyens volontaires de suivi actualisée ; pas de délai de réponse garanti, pas de collecte sensible en commentaires, pas de campagne supplémentaire.
+20. Paquet existant actualisé avec dossier VALIDATION_014 ; originaux, propositions 013 et candidate 014 séparés. État prêt à examiner/approuvé/publié distingué. Relecture et journal après enregistrement.
+
+## États
+| Élément | Prêt à examiner | Approuvé pour lancement | Effectivement publié |
+|---|---|---|---|
+| Sources des carrousels 1 et 2 | Oui, contrôles techniques faits | Non attesté | Non vérifié |
+| Source carrousel 3 originale | Oui, avec réserve de formulation | Non attesté | Non vérifié |
+| Variante corrigée 03_04 | Oui, PNG candidat ; export final restant | Non | Non |
+| Légendes existantes | Oui ; validation antérieure des textes distincte de l'autorisation de lancement | Lancement non autorisé | Non vérifié |
+| Présentation des deux cartes et texte site/articles 014 | Oui | Non | Non |
+| Articles de base | Accessibles par HTTP | Validation éditoriale non déduite de l'accès | Pages présentes ; enrichissements PR #44 non retrouvés |
+
+Aucun post publié ou programmé par cet atelier. Pas d'approbation humaine inventée.
+
+## URLs réellement contrôlées
+- https://zoutifrutti.github.io/Interstice/ — 200 — Interstice · La Faille Noire
+- https://zoutifrutti.github.io/Interstice/wiki.html — 200 — Wiki des communs · Interstice
+- https://zoutifrutti.github.io/Interstice/manifeste-v2-5.html — 200 — Manifeste V2.5 consolidé · La Faille noire
+- https://zoutifrutti.github.io/Interstice/wiki-decision-collective.html — 200 — Décider ensemble · Wiki des communs · Interstice
+- https://zoutifrutti.github.io/Interstice/wiki-lecture-croisee-travail-soin-pouvoir.html — 200 — Qui fait vivre les communs ? · Interstice
+- https://zoutifrutti.github.io/Interstice/participer.html — 200 — Participer · Interstice
+Contrôles HTTP de cette session, pas engagement de disponibilité future. Refaire le contrôle juste avant annonce.
+
+## Transmission au Relieur
+À arbitrer : validation de la variante 03_04, export final, dernière version publique des articles, suivi humain. À débloquer : accès authentifié aux brouillons Metricool. Une transmission déposée au journal n'est pas une réception attestée en conversation.
+
+
+### Texte des deux cartes actualisé
+# Présentation des deux cartes — proposition 014
+Deux lectures complémentaires sont codées dans une branche de travail d'Interstice avec des données fictives.
+
+La carte des communs est pensée pour documenter les initiatives, lieux, pratiques et ressources existants. Un futur référencement devra indiquer sa provenance et son niveau de vérification, sans faire passer une initiative pour membre de La Faille noire.
+
+La carte des possibles est pensée pour explorer les besoins, ressources proposées, idées et projets à construire. Une proposition n'est ni un accord ni une promesse de rencontre.
+
+Les exemples actuels sont inventés. Ce prototype ne constitue pas un annuaire d'initiatives réelles et n'atteste pas l'existence d'un réseau de collectifs. Sa présence dans une branche de développement ne signifie pas qu'il est disponible sur le site public.
+
+La vue liste doit rester une voie d'accès complète. La publication de fiches réelles dépendra de garanties et de moyens humains encore à vérifier.
+
+
+### Texte site/articles actualisé
+# Site et articles — texte proposé, non approuvé
+Et si on essayait autre chose ?
+
+Interstice est un chantier de documentation et de coopération associé à La Faille noire.
+
+Deux fiches de travail sont consultables : « Décider ensemble » et « Qui fait vivre les communs ? ». Elles ouvrent des questions sur les méthodes de décision, les rapports de pouvoir et le travail nécessaire à la vie collective.
+
+Des enrichissements sont encore en relecture. Nous ne présentons pas ces textes comme une doctrine, un guide définitif ou des règles adoptées.
+
+La carte des communs et la carte des possibles sont développées avec des exemples fictifs dans un prototype. Il ne s'agit pas encore d'un annuaire réel d'initiatives.
+
+Le manifeste V2.5 reste une référence éditoriale de travail non adoptée collectivement.
+
+Liens contrôlés dans cette session, à revérifier avant publication :
+https://zoutifrutti.github.io/Interstice/wiki-decision-collective.html
+https://zoutifrutti.github.io/Interstice/wiki-lecture-croisee-travail-soin-pouvoir.html
+
+Consigne de validation : ne pas annoncer les enrichissements Young/Tebble ou Berenstain/Ahmed comme publiés avant relecture de la page effectivement servie. Ne joindre un appel aux commentaires que si un suivi volontaire est confirmé.
+
+
+Paquet existant conservé sous la même identité, version 1 : originaux et VALIDATION_013 archivés, VALIDATION_014 ajouté. Le nom historique 013 est conservé pour éviter une série concurrente ; LIRE_VALIDATION_014.txt indique la version de travail courante. 36 entrées, archive intègre et 12 originaux vérifiés après empaquetage. Génération de la candidate : édition image intégrée, contrainte de conservation de l'identité et remplacement du seul petit paragraphe ; légères variations de rendu et dimensions non finales signalées. Aucun export final ou approbation revendiqué.
