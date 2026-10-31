@@ -197,3 +197,23 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
   .task-form #task-create { grid-row: 3; grid-column: 1 / -1; }
   .task-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Optional real local LLM module, visually separated from historical simulation. */
+.ai-panel { padding: 21px; margin-bottom: 16px; border-color: #67517c; }
+.ai-panel .panel-heading { margin-bottom: 10px; }
+.ai-form { display: grid; grid-template-columns: minmax(0,2fr) auto; gap: 9px 12px; align-items: end; margin: 18px 0; }
+.ai-form label { grid-column: 1; grid-row: 1; color: #bbc4d4; font-size: .84rem; }
+.ai-form select { grid-column: 1; grid-row: 2; width: 100%; min-width: 0; min-height: 44px; color: #eee; border: 1px solid #556175; background: #0b1119; padding: 10px; border-radius: 9px; }
+.ai-form button { grid-column: 2; grid-row: 2; min-height: 44px; }
+.ai-task-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.ai-answer { margin: 12px 0; background: #161f2c; border-left: 3px solid #bb8aff; border-radius: 6px; padding: 13px; }
+.ai-answer h3 { font-size: .96rem; }
+.ai-output { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .9rem; color: #e0e7ef; line-height: 1.6; }
+@media (max-width: 800px) { .ai-task-list { grid-template-columns: 1fr; } }
+@media (max-width: 680px) {
+  .ai-panel { padding: 17px; }
+  .ai-form { grid-template-columns: 1fr; }
+  .ai-form label,.ai-form select,.ai-form button { grid-column: 1; }
+  .ai-form button { grid-row: 3; }
+}
