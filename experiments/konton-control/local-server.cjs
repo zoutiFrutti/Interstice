@@ -201,6 +201,9 @@ async function handle(req, res) {
   if (url.pathname === "/api/ai/capabilities" && req.method === "GET") {
     return send(res, 200, aiEngine.capabilities());
   }
+  if (url.pathname === "/api/ai/readiness" && req.method === "GET") {
+    return send(res, 200, await aiEngine.readiness());
+  }
   if (url.pathname === "/api/ai/tasks" && req.method === "GET") {
     return send(res, 200, { tasks: aiEngine.list() });
   }
