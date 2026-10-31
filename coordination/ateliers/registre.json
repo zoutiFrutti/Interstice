@@ -1,6 +1,6 @@
 {
   "schema_version": "interstice-coordination-v0.1",
-  "updated_at": "2026-10-30",
+  "updated_at": "2026-10-31",
   "disclaimer": "Registre candidat non adopté. Ne prouve ni réception ni exécution.",
   "mission_document": "coordination/RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATION_2026-10-30.md",
   "roles": [
@@ -30,25 +30,25 @@
     },
     {
       "id": "mediatheque",
-      "label": "La Médiathèque",
+      "label": "La Médiathèque des communs",
       "kind": "sources",
       "pr": 38
     },
     {
       "id": "penseur",
-      "label": "Le Penseur",
+      "label": "La Penseuse",
       "kind": "recherche",
       "pr": null
     },
     {
       "id": "lecteur",
-      "label": "Le Lecteur",
+      "label": "La Lectrice",
       "kind": "editorial",
       "pr": 44
     },
     {
       "id": "graphiste",
-      "label": "Le Graphiste",
+      "label": "La Graphiste",
       "kind": "design",
       "pr": 35
     },
@@ -60,13 +60,13 @@
     },
     {
       "id": "archiviste",
-      "label": "L'Archiviste des communs",
+      "label": "L'Anarchiviste des communs",
       "kind": "histoire",
       "pr": null
     },
     {
       "id": "assistant-anarchiviste",
-      "label": "Assistant de l'Anarchiviste",
+      "label": "L'Assistant de l'Anarchiviste",
       "kind": "histoire",
       "pr": null,
       "gate": "Bilan cinquante passes relu par l'Archiviste"
@@ -79,7 +79,7 @@
     },
     {
       "id": "communications",
-      "label": "Communications",
+      "label": "La respo réseaux sociaux",
       "kind": "diffusion",
       "pr": null
     }
