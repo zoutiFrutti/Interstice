@@ -57,7 +57,7 @@ async function simulate(hostname, responseMap) {
     };
   };
   vm.runInNewContext(code, {
-    document, window: { location: { hostname } }, fetch, setTimeout, clearTimeout,
+    document, window: { location: { hostname, hash: "#github" }, addEventListener() {} }, fetch, setTimeout, clearTimeout,
     AbortController, Date, Number, Map, Set, String, Promise, Array, Error,
     encodeURIComponent
   }, { timeout: 2000 });
