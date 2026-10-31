@@ -1,0 +1,274 @@
+{
+  "cycle": "3",
+  "ready": [
+    {
+      "id": "ARCH-003",
+      "title": "ARCH 003",
+      "sha": "e4ac65cd9cfc8cd0705a738b04eeb6be477a4fc4",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-003_LOT_MAXI_CANDIDAT.md",
+      "summary": "AFF 331 : avis du XIe, Guillaume délégué ; pas de registres d'inscrites. Carnavalet 2020.0.36.",
+      "objection": "AFF 331 : avis du XIe, Guillaume délégué ; pas de registres d'inscrites. Carnavalet 2020.0.36.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "ARCH-004",
+      "title": "ARCH 004",
+      "sha": "611b640ce79cd53cc33aaab31cd05148ff51c71d",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-004_LOT_MAXI_CANDIDAT.md",
+      "summary": "Deux exemplaires 2020.0.154/.155 distincts ; date 18 mai sur le second ; cote incertaine retirée.",
+      "objection": "Deux exemplaires 2020.0.154/.155 distincts ; date 18 mai sur le second ; cote incertaine retirée.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "ARCH-006",
+      "title": "ARCH 006",
+      "sha": "3968fda392b84067e82f8e9175a1ab5f142cbb6f",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-006_LOT_MAXI_CANDIDAT.md",
+      "summary": "Le Prolétaire : 4 fascicules BnF ; ISSN papier 2743-2033, numérique 2743-2041 ; pagination à compléter.",
+      "objection": "Le Prolétaire : 4 fascicules BnF ; ISSN papier 2743-2033, numérique 2743-2041 ; pagination à compléter.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "ARCH-008",
+      "title": "ARCH 008",
+      "sha": "d2f13f2888f1cacc7240db409f77fdf5897ffb58",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-008_LOT_MAXI_CANDIDAT.md",
+      "summary": "Manifeste 6 mai BHVP ; FICEDL est une transcription de 1874 ; proclamation adverse non attribuée.",
+      "objection": "Manifeste 6 mai BHVP ; FICEDL est une transcription de 1874 ; proclamation adverse non attribuée.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "ASSO-005",
+      "title": "ASSO 005",
+      "sha": "657329d77fb96eb6f0fc29c58102d0ad65392f68",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ASSO-005_LOT_MAXI_CANDIDAT.md",
+      "summary": "Niagara : 29 hommes en 1905, femmes invitées 1906 ; date de vote non établie, LOC/NPS.",
+      "objection": "Niagara : 29 hommes en 1905, femmes invitées 1906 ; date de vote non établie, LOC/NPS.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "ASSO-008",
+      "title": "ASSO 008",
+      "sha": "5ede6f90fe73f26b43058835cec4995a2e38f722",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ASSO-008_LOT_MAXI_CANDIDAT.md",
+      "summary": "La Marmite : règles 1868 et crédit conditionnel ; comptes et fonctionnement réel non supposés.",
+      "objection": "La Marmite : règles 1868 et crédit conditionnel ; comptes et fonctionnement réel non supposés.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "COL-001",
+      "title": "COL 001",
+      "sha": "675b1aed1ae7559a3e55ae26d6630f9e24e2f45c",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/COL-001_LOT_MAXI_CANDIDAT.md",
+      "summary": "Soutien aux enquêtes de Wells : préface 1892 ≠ autobiographie 1970 ; montants inconnus.",
+      "objection": "Soutien aux enquêtes de Wells : préface 1892 ≠ autobiographie 1970 ; montants inconnus.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "wiki-antifascisme-histoire-et-mecanismes",
+      "title": "wiki antifascisme histoire et mecanismes",
+      "sha": "4ba89a81729574d58faeac8faa0e0c93634617f5",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-antifascisme-histoire-et-mecanismes.html",
+      "summary": "Éviter universalisation européenne et accusation pénale automatique.",
+      "objection": "Éviter universalisation européenne et accusation pénale automatique.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "wiki-antiracisme-histoires-droits",
+      "title": "wiki antiracisme histoires droits",
+      "sha": "9cc22b6c916baf9b21a737cf1b9139946683f23b",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-antiracisme-histoires-droits.html",
+      "summary": "Voix concernées et liens FN/BIO/COL sans prétendre des fiches publiques.",
+      "objection": "Voix concernées et liens FN/BIO/COL sans prétendre des fiches publiques.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "wiki-decision-collective",
+      "title": "wiki decision collective",
+      "sha": "e035ce0cf0b97c1b9ae985a2e7eb1e9753e4630c",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-decision-collective.html",
+      "summary": "PR44 éditorial + navigation PR35 ; pas de recours fictif ni règles adoptées.",
+      "objection": "PR44 éditorial + navigation PR35 ; pas de recours fictif ni règles adoptées.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "wiki-feminismes-histoire-egalite",
+      "title": "wiki feminismes histoire egalite",
+      "sha": "fd3fb96439560ba23a990b310d74b1d96e5f3f26",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-feminismes-histoire-egalite.html",
+      "summary": "Archives des ouvrières/Commune et travail invisible correctement référencés.",
+      "objection": "Archives des ouvrières/Commune et travail invisible correctement référencés.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "wiki-lecture-croisee-travail-soin-pouvoir",
+      "title": "wiki lecture croisee travail soin pouvoir",
+      "sha": "3b6f80037ed4ec1859c681d89b53d3028c3c2456",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "summary": "PR44 et sommaire PR35 ; distinctions entre soin, pouvoir et droit de recours.",
+      "objection": "PR44 et sommaire PR35 ; distinctions entre soin, pouvoir et droit de recours.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "wiki-politique-institutions-regimes",
+      "title": "wiki politique institutions regimes",
+      "sha": "496c862f5c838c15edd370fc33668a34361e16d5",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-politique-institutions-regimes.html",
+      "summary": "V-Dem et régime semi-présidentiel : catégories situées, non accusations.",
+      "objection": "V-Dem et régime semi-présidentiel : catégories situées, non accusations.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    },
+    {
+      "id": "wiki-socialismes-communismes-anarchismes-autogestion",
+      "title": "wiki socialismes communismes anarchismes autogestion",
+      "sha": "f67a0deeb060ef4ec6574d9b0d2dd3a6b7e297b0",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "summary": "Décret du 16 avril ≠ exécution ; autres expériences distinctes.",
+      "objection": "Décret du 16 avril ≠ exécution ; autres expériences distinctes.",
+      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "sources": "Sources et références dans le texte intégral",
+      "decision_Zout": null
+    }
+  ],
+  "approved_prior": [
+    {
+      "id": "ARCH-002",
+      "sha": "f9f0b6edf09cf0e84fe7e46960f25df1a8e99dbb"
+    },
+    {
+      "id": "ARCH-007",
+      "sha": "372bfcee95f7bd4a1f37dfa9393264662050e9ba"
+    }
+  ],
+  "correct": [
+    {
+      "name": "ARCH-005_LOT_MAXI_CANDIDAT.md",
+      "sha": "ea428cd1bd4bae84a3b8dca899f26af2dd8aa1f1",
+      "objection": "Louvre : règlements 2 avril / 3 mai et publication ultérieure séparés ; mise en œuvre non prouvée."
+    },
+    {
+      "name": "ASSO-007_LOT_MAXI_CANDIDAT.md",
+      "sha": "69feddc9ca917567e8a0cba16f7689e63b912346",
+      "objection": "Comparaison courte/longue : 13/14 avril, LY22, Desprez/Ringard, paiements. La longue reste intacte."
+    },
+    {
+      "name": "COL-003_LOT_MAXI_CANDIDAT.md",
+      "sha": "49acae12b8085a229ba8b6fd22a6bbe2f8b45838",
+      "objection": "Club Saint-Ambroise ≠ journal ; pas de ratio femmes/hommes, PH22310 ≠ scène de club."
+    },
+    {
+      "name": "wiki-association-collegiale.html",
+      "sha": "a88b58162bfb3c4c3f24556dbeba123da5f48294",
+      "objection": "Loi 1901, droit local et responsabilités : validation Juriste nécessaire."
+    },
+    {
+      "name": "wiki-autonomie-materielle-savoir-faire.html",
+      "sha": "55b98d7e9615f30703b3354c113909158d7a3ab5",
+      "objection": "Lien interne mort réellement corrigé ; sécurités techniques à examiner."
+    },
+    {
+      "name": "wiki-capitalisme-classes-travail.html",
+      "sha": "ccb1808b25252049d4cdf9cd474ec96eb7fddc90",
+      "objection": "Unités, dates, care, travail migrant et statistiques à recouper."
+    },
+    {
+      "name": "wiki-culture-creation-acces-art.html",
+      "sha": "fdc3bd5c936605b5a420661591fee7a61432a3c7",
+      "objection": "Droits professionnels, usages, financement et sources spécifiques."
+    },
+    {
+      "name": "wiki-ecologie-sociale-environnement.html",
+      "sha": "99f9edba03584c8be3d659a753fae31de4fbe7b3",
+      "objection": "Historique mondial, conservation coloniale et étude alimentaire corrigés ; bibliographie détaillée manque."
+    },
+    {
+      "name": "wiki-egalite-fiches.html",
+      "sha": "3adc6d7ba610f2bbdf8c9c98453d9c8aeca4b36c",
+      "objection": "Glossaire déjà présent ; terminologie spécialisée et sources à relire."
+    },
+    {
+      "name": "wiki-egalite-genres-inclusivite.html",
+      "sha": "91ab8c36b84660110dcc68201834a891823bc177",
+      "objection": "Carte accessible au clavier et sans JavaScript : tests à réaliser."
+    },
+    {
+      "name": "wiki-financements-culture-spectacle.html",
+      "sha": "3018a7c430bea6bdc75b63f1468afa2935c9be63",
+      "objection": "Répertoire documentaire, pas guichets ouverts garantis ; calendriers à contrôler."
+    },
+    {
+      "name": "wiki-handicap-validisme-neurodiversite.html",
+      "sha": "a097d59238d2263e71363cad58131490f84f1089",
+      "objection": "Autodétermination, démarches et non-divulgation du diagnostic."
+    },
+    {
+      "name": "wiki-justice-prisons-abolitionnisme.html",
+      "sha": "928ac4bc95b2aec7548cdbacd52cb75ce03fc4cc",
+      "objection": "Statistiques carcérales et recours datés, critiques abolitionnistes attribuées."
+    },
+    {
+      "name": "wiki-liberte-numerique-ia-surveillance.html",
+      "sha": "68437e9290bfcc35bbcaca4a804867d2c4768ccc",
+      "objection": "Sobriété d'IA distribuée = hypothèse à mesurer, pas résultat démontré."
+    },
+    {
+      "name": "wiki-patriarcat-histoire-mecanismes.html",
+      "sha": "2363844fdb24cbe42711e87100ca3241a306cb95",
+      "objection": "Théories d'origine discutées, statistiques et violences à contextualiser."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "wiki-education-enfance-protection.html",
+      "sha": "ff4a1b2cf13832dfc1050ce85d1b0d359c9f5e8a",
+      "objection": "Protection des mineurs et procédures sensibles : avis spécialisé requis."
+    },
+    {
+      "name": "wiki-frontieres-migrations-colonialisme.html",
+      "sha": "058e3629b172d88461a6d394c35809582739b6a6",
+      "objection": "Asile, notifications et délais variables ; revue Juriste indispensable."
+    },
+    {
+      "name": "wiki-logement-habitat-droit-ville.html",
+      "sha": "6a10c4a53d42debfd06526dd962cdc2fe502bd0a",
+      "objection": "Différences commandement payer/quitter, DALO/DAHO, avis juridique requis."
+    },
+    {
+      "name": "wiki-police-deces-memoire.html",
+      "sha": "f0dda721586ac4c5e76400b1b1ecbeba714cf684",
+      "objection": "Relevés et décisions, réputation, confidentialité et rectification à assurer."
+    },
+    {
+      "name": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "sha": "a7e026c3a66fd9d97a695db3bade1e86a89ff7ae",
+      "objection": "Droits de santé et soins non consentis : avis sanitaire/juridique requis."
+    }
+  ],
+  "new_human_approvals": 0
+}
