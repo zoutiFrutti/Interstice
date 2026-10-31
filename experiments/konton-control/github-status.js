@@ -184,6 +184,8 @@
     const entry = cache.get(repo);
     if (!force && entry && Date.now() - entry.when < CACHE_MS) {
       render(entry.data);
+      const home = $("home-github-state");
+      if (home) home.textContent = "Mis en cache · " + shownDate(entry.data.fetchedAt);
       feedback.textContent = "Données lues à " + shownDate(entry.data.fetchedAt) + " (cache court en mémoire).";
       return;
     }
