@@ -217,3 +217,13 @@ Retour utilisateur : l'APK V0.6 s'installe et s'ouvre sur le Crosscall Stellar X
 Ce changement **ne rend pas Ollama accessible à distance** et ne connecte pas les dépôts privés. L'application Android reste une APK de développement sans signature stable : la signature de debug peut changer à chaque compilation et exiger la désinstallation de la V0.6 avant la V0.7.
 
 La nouvelle navigation est couverte par le test Node test-navigation.cjs. Une compilation Android réussie ne remplace pas un contrôle visuel et fonctionnel sur le téléphone, notamment la largeur réelle de son écran et les boutons système Android.
+
+
+## V0.8 · Petites améliorations proactives
+
+- **Chargement GitHub à la demande** : la lecture API publique ne commence que lorsque l'utilisateur ouvre l'écran GitHub. Cela économise les requêtes et rend l'accueil plus rapide. L'actualisation reste manuelle.
+- **Choix d'un agent sur téléphone** : une fois un agent sélectionné dans la liste, le navigateur défile vers son pupitre GO/STOP uniquement sur les écrans étroits.
+- **Version Android/PWA incrémentée** : versionCode 8, cache statique renouvelé. Aucun changement de permissions, de dépôt personnel ou d'accès aux données privées.
+- Les tests Node incluent la lecture GitHub et la navigation. Le rendu réel sur Crosscall après installation reste à valider.
+
+Il s'agit d'améliorations autonomes à faible risque. Le pupitre des agents demeure fictif, l'observatoire GitHub est toujours en lecture seule, et le modèle Ollama reste uniquement accessible sur un serveur local compatible.
