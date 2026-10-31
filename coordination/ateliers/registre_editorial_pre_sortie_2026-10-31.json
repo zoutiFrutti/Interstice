@@ -3758,5 +3758,33 @@
     "eco_commit": "50ec932f21a0f57e1248e3ebd57af6f0ab56d0f2",
     "approvals": 0,
     "publications": 0
+  },
+  "cycle2_relieuse": {
+    "date": "2026-10-31",
+    "phase": "4_PASSES_DOCUMENTAIRES_EFFECTUEES",
+    "authorizations_added": 0,
+    "baseline_reader": {
+      "branch": "atelier-lectrice/8-passes-pre-sortie-20261031",
+      "report_blob_sha": "e500e227c23512ec2ca6e20b235abe0d47bd68e0",
+      "ready_to_submit": 14,
+      "needs_corrections": 15,
+      "blocked": 5
+    },
+    "human_visas_preserved": [
+      "ARCH-002",
+      "ARCH-007"
+    ],
+    "deliverables": [
+      "coordination/cycle2/STATUTS_34_2026-10-31.json",
+      "coordination/cycle2/LOTS_VALIDATION_14_2026-10-31.md",
+      "coordination/cycle2/PARCOURS_PILOTES_2026-10-31.md",
+      "coordination/cycle2/COOPERATIONS_EXTERIEURES_CANDIDATES_2026-10-31.md"
+    ],
+    "parcours_pilotes": 3,
+    "initiatives_documentees": 9,
+    "external_messages_sent": 0,
+    "merge_authorized": false,
+    "publication_authorized": false,
+    "technical_blocker": "edition-premiere/decisions.json sur integration/premiere-edition-candidate-2026-10-31 encore sans autorisations, à réconcilier avec les 2 visas avant toute intégration."
   }
 }
