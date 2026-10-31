@@ -10,8 +10,8 @@ android {
         applicationId 'fr.konton.control.preview'
         minSdk 26
         targetSdk 34
-        versionCode 6
-        versionName '0.6.0-preview'
+        versionCode 7
+        versionName '0.7.0-preview'
     }
 
     buildTypes {
@@ -38,7 +38,7 @@ dependencies {
 def webAssets = [
     'index.html', 'styles.css', 'app.js', 'github-status.js',
     'task-board.js', 'ai-board.js', 'pwa.js', 'manifest.webmanifest',
-    'sw.js', 'icons/konton-192.png', 'icons/konton-512.png'
+    'sw.js', 'navigation.js', 'icons/konton-192.png', 'icons/konton-512.png'
 ]
 tasks.register('bundleCockpit', Copy) {
     from(project.rootDir.parentFile) {
