@@ -37,11 +37,11 @@
       "title": "ARCH-002 — Affiche n°373 (20 mai 1871) — chambres syndicales des ouvrières",
       "source_folder": "ARCH",
       "modified_at": "2026-10-31T03:58:51.099Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "review_status": "RELU_SOURCES_RESERVES_ETAPE2_CANDIDAT",
+      "fact_check": "FAITS_TEXTUELS_CONSOLIDES_MISE_EN_OEUVRE_PARTIELLEMENT_INCONNUE",
+      "sources_check": "TRANSCRIPTIONS_NOTICES_ET_ETUDES_ATTRIBUEES_ORIGINAUX_INCOMPLETS",
+      "critical_read": "TRANSMIS_A_LA_LECTRICE_SANS_AVIS_ACQUIS",
+      "rights_check": "MEDIAS_NON_REPRODUITS_FICHIER_A_VERIFIER",
       "human_approval": "A_FAIRE",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
@@ -50,6 +50,13 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "etape2_31_10": {
+        "report": "coordination/transmissions/2026-10-31_ANARCHIVISTE_PRE_SORTIE_ETAPE2_LOT3.md",
+        "document_url": "https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit",
+        "issue": "Aucune preuve directe de tenue réunion 21 mai mairie IVe; date 21 avril AFF5590 autre événement; droits photo AFF5721 non confirmés; décès Le Mel 1921.",
+        "human_review": false,
+        "public_version": false
       }
     },
     {
@@ -137,11 +144,11 @@
       "title": "ARCH-007 — Décret du 16 avril 1871 sur les ateliers abandonnés — enquête, coopératives et limites",
       "source_folder": "ARCH",
       "modified_at": "2026-10-30T21:55:55.123Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "review_status": "RELU_SOURCES_RESERVES_ETAPE2_CANDIDAT",
+      "fact_check": "FAITS_TEXTUELS_CONSOLIDES_MISE_EN_OEUVRE_PARTIELLEMENT_INCONNUE",
+      "sources_check": "TRANSCRIPTIONS_NOTICES_ET_ETUDES_ATTRIBUEES_ORIGINAUX_INCOMPLETS",
+      "critical_read": "TRANSMIS_A_LA_LECTRICE_SANS_AVIS_ACQUIS",
+      "rights_check": "MEDIAS_NON_REPRODUITS_FICHIER_A_VERIFIER",
       "human_approval": "A_FAIRE",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
@@ -150,6 +157,13 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "etape2_31_10": {
+        "report": "coordination/transmissions/2026-10-31_ANARCHIVISTE_PRE_SORTIE_ETAPE2_LOT3.md",
+        "document_url": "https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit",
+        "issue": "Décret du 16 avril = enquête/projet, pas remise effective générale; 42 associations/34 chambres à attribuer à Morder; minutes et ateliers effectivement repris non collationnés.",
+        "human_review": false,
+        "public_version": false
       }
     },
     {
@@ -299,11 +313,11 @@
       "title": "ASSO-007 — Union des femmes de la Commune — mémoire organisationnelle",
       "source_folder": "ASSO",
       "modified_at": "2026-10-31T06:58:49.669Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "review_status": "RELU_SOURCES_RESERVES_ETAPE2_CANDIDAT",
+      "fact_check": "FAITS_TEXTUELS_CONSOLIDES_MISE_EN_OEUVRE_PARTIELLEMENT_INCONNUE",
+      "sources_check": "TRANSCRIPTIONS_NOTICES_ET_ETUDES_ATTRIBUEES_ORIGINAUX_INCOMPLETS",
+      "critical_read": "TRANSMIS_A_LA_LECTRICE_SANS_AVIS_ACQUIS",
+      "rights_check": "MEDIAS_NON_REPRODUITS_FICHIER_A_VERIFIER",
       "human_approval": "A_FAIRE",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
@@ -312,6 +326,13 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "etape2_31_10": {
+        "report": "coordination/transmissions/2026-10-31_ANARCHIVISTE_PRE_SORTIE_ETAPE2_LOT3.md",
+        "document_url": "https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit",
+        "issue": "Appel, statuts, adresse JO 14 avril, manifeste 6 mai et affiches de mai distingués; date exacte parution des statuts 12/20 avril à vérifier; magasin et rémunérations selon historiens, pas comptabilité lue.",
+        "human_review": false,
+        "public_version": false
       }
     },
     {
