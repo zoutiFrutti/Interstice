@@ -371,3 +371,13 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
   .home-actions { flex-direction: column; }
   .home-action { width: 100%; }
 }
+
+
+/* The Android preview cannot reach the loopback Node server running on a separate PC. */
+.android-preview #screen-outils .task-panel,
+.android-preview #screen-outils .ai-panel {
+  display: none !important;
+}
+.android-offline-note { padding: 20px; border-color: #405547; }
+.android-offline-note strong { display: block; color: #e6f9d9; margin-bottom: 10px; font-size: 1rem; }
+.android-offline-note p { color: #b8c9ca; line-height: 1.6; margin: 0; }
