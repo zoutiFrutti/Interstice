@@ -16,7 +16,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { createTaskEngine } = require("./task-engine.cjs");
 const { createAiEngine } = require("./ai-engine.cjs");
-const { configured, createOllamaProvider } = require("./ollama-provider.cjs");
+const { configured: ollamaConfigured, createOllamaProvider } = require("./ollama-provider.cjs");
 
 const HOST = "127.0.0.1";
 const PORT = Number(process.env.KONTON_CONTROL_PORT || 8765);
@@ -86,7 +86,7 @@ const engine = createTaskEngine({
 });
 const aiEngine = createAiEngine({
   sourceTask: id => engine.list().find(task => task.id === id),
-  provider: configured() ? createOllamaProvider() : null,
+  provider: ollamaConfigured() ? createOllamaProvider() : null,
   stateFile: process.env.KONTON_CONTROL_AI_STATE_FILE || path.join(__dirname, "data", "ai-tasks.json")
 });
 async function repoStatus(repo) {
