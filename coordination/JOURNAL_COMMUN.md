@@ -1054,3 +1054,10 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 
 ## 2026-10-31 — L'Éclaireuse — Cycle 4, trois passes
 Deux journaux et registre ÉCL-001..004 relus sur branche PR #43 ; états ENQUETE_CANDIDATE conservés. Contrôles documentaires nouveaux : méthodologie et limites des enquêtes Terres de Luttes (162 abandons recensés, 42 entretiens), modération et licence CC BY-NC-SA 3.0 d'EJAtlas ; BL00D.MONEY inaccessible directement (robots.txt), audit prioritaire en attente. Doublon EJAtlas déjà identifié, aucun nouveau cas LUT validé. Détails, sources, réserves et transmissions candidates : `coordination/JOURNAL_ECLAIREUSE.md`, commit `2ce05bf06c31d46aca7ce071a498114e5ce45103`. Aucune réception par les conversations d'ateliers attestée, aucun visa, contact, fusion ou publication.
+
+
+---
+
+## 2026-10-31 — La Relieuse — cycle 5 : six passes de convergence
+
+Six passes documentaires et de coordination exécutées, synthèse `coordination/cycle5/RELIEUSE_SIX_PASSES_CONVERGENCE_2026-10-31.md` commit `5c175579bde4d4b91c2469b6be096483bb3e5e5a`. V2.6 candidate et deux chartes candidates examinées sans adoption présumée ; quatorze textes à soumettre à Zout, ARCH-002/007 seuls visas conservés ; ÉCL-001..004 repris avec doublon EJAtlas écarté ; dernière candidate d'intégration SHA `43bfa539c618d722157c5f150c30b94acb45038d`, CI 41230241924 réussie, autorisations techniques encore vides et contrôles RGPD non clos. Aucune fusion, publication ni prise de contact. Reprise : visas par SHA, lecture croisée des chartes, double verrou, sécurité, fiches LUT/CIC. Transmission écrite sur branche, réception par les autres conversations non attestée.
