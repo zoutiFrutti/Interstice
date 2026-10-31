@@ -51,9 +51,12 @@ test("018-A: quatre kinds, deux lectures, onze exemples, aucune fiche réelle",(
  assert.equal(filterMapEntries(DEMO_MAP_ENTRIES,{reading:"communs"}).length,7);
  assert.equal(filterMapEntries(DEMO_MAP_ENTRIES,{reading:"possibles"}).length,4);
 });
-test("018-A: les deux pages graphiques gardent les textes avec les paragraphes additionnels d'encadrement",()=>{
- assert.equal((read("wiki-decision-collective.html").match(/<p(?:\s[^>]*)?>/gi)||[]).length,24);
- assert.equal((read("wiki-lecture-croisee-travail-soin-pouvoir.html").match(/<p(?:\s[^>]*)?>/gi)||[]).length,21);
- assert.ok(read("wiki-decision-collective.html").includes("Lecteur PR44 blob 7be5bba6"));
- assert.ok(read("wiki-lecture-croisee-travail-soin-pouvoir.html").includes("Lecteur PR44 blob d521061"));
+test("018-A : réconciliation éditoriale des deux articles PR44/35 et corrections P0 de La Lectrice",()=>{
+ const decision=read("wiki-decision-collective.html");
+ const care=read("wiki-lecture-croisee-travail-soin-pouvoir.html");
+ assert.ok((decision.match(/<p(?:\s[^>]*)?>/gi)||[]).length>=26);
+ assert.ok((care.match(/<p(?:\s[^>]*)?>/gi)||[]).length>=23);
+ assert.ok(decision.includes("<details")&&care.includes("<details"),"Sommaires accessibles conservés");
+ assert.match(decision,/formulaire|contestation|recours/i);
+ assert.match(care,/soin|handicap|confidentiel/i);
 });

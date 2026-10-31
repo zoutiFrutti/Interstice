@@ -2,7 +2,7 @@
 
 ## Constats au 31 octobre 2026
 - **2 visas éditoriaux ARCH-002/007 enregistrés mais 0 contenu admissible** : le registre pré-sortie de la PR #43 n'attribue aucun visa explicite de Zout aux 44 fiches Drive, 71 notices FN et 24 pages Wiki. La responsabilité éditoriale générale n'équivaut pas à une approbation de chaque texte.
-- Registre source : coordination/ateliers/registre_editorial_pre_sortie_2026-10-31.json sur coordination/relieur-pilote-10-passes-20261030, blob d36264ba5d6882bb1589fd7fa863d26f97fa4405.
+- Registre source : coordination/ateliers/registre_editorial_pre_sortie_2026-10-31.json sur coordination/relieur-pilote-10-passes-20261030, blob 49e749cf0ec3116f63a28651a97784de4ac2c633.
 - Snapshot edition-premiere/inventaire-snapshot.json : **copie technique réduite, non source canonique** ; à régénérer sous contrôle de La Relieuse après de nouvelles décisions, sans perdre les IDs.
 - main au moment de la préparation : c0d4089a7bc614881dad3b2229b3ff9bcc07742d.
 - Design : deux CSS existants sur design/fiches-premiere-edition-contrat-2026-10-31, repris sans dupliquer les styles ni refaire les maquettes.
@@ -55,3 +55,8 @@ Pas de merge sur main, publication, import automatique de fichiers Drive, exposi
 5. **QA :** suite renforcée avec tests statiques des neuf blobs, liens locaux, double verrou, aucun envoi, premier écran, recherche, clavier, 320/390/1280 et regressions V0 ; résultat GitHub Actions sur le SHA final faisant foi. Retour arrière possible par annulation des commits de la candidate, sans toucher aux branches sources.
 
 **Attention :** les neuf corrections sont des versions candidates, pas une revue juridique finale. Le fait que ces pages soient déjà présentes sur le site public ne constitue pas une validation de première édition.
+
+## Résultat de la première QA élargie
+La suite initiale des cinq passes a constaté **73/74 tests Node réussis** ; le seul échec était une assertion de **comptage figé des paragraphes** datant de l'intégration 018-A. Les versions éditoriales corrigées comptent désormais **26 et 23 paragraphes** (au lieu de 24 et 21) et conservaient leurs sommaires. L'assertion a été actualisée pour s'aligner sur les contenus de La Lectrice, sans modifier ceux-ci. Le job Chromium initial des cinq passes a réussi. Seule la CI du nouveau SHA atteste du verdict final.
+
+**Frontière :** pas de garantie de publication/visas de droits. Les neuf pages sont des versions de travail proposées par La Lectrice, pas neuf approvals. Le canal public proposer-article demeure coupé sur cette branche. La vérification des mentions légales de l'éditeur réel et des pages annexes, ainsi que les essais physiques Android/TalkBack, restent des réserves P0 pour une ouverture publique.
