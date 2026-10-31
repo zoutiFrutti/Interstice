@@ -160,3 +160,14 @@ Une démonstration locale sur branche candidate, **avec une ou deux fiches déj�
 Ce contrat ne crée **aucune** fiche, n'approuve **aucune** œuvre, n'ajoute **aucun** backend et n'autorise **aucune** publication.
 
 **Décision proposée à Zout :** valider le principe « un index public statique, les pages existantes conservées, des relations entre fiches », puis approuver séparément les premiers contenus vérifiés ; pas l'inverse.
+
+
+### Annexe A — Vérification effective des liens locaux des 24 pages (main, 31/10/2026)
+
+**Méthode :** lecture des 24 fichiers `wiki-*.html` cités par le registre, extraction de leurs attributs HTML `href`, comparaison des **chemins locaux** avec l'arbre Git du dépôt sur `main` ; exclusion des URL externes, liens de messagerie et ancres seules. Ce contrôle ne remplace ni un navigateur ni une vérification des fragments `#ancre`, liens générés par JavaScript ou destinations externes.
+
+**Résultat :** **une seule destination locale absente détectée** dans ces 24 fichiers : `wiki-mutualiser-materiel.html`, liée depuis `wiki-autonomie-materielle-savoir-faire.html`. Il faut supprimer ce lien ou le remplacer par un lien valide tant que la page n'existe pas. Aucun autre `href` local direct absent n'a été détecté dans le périmètre examiné.
+
+**Quatre pages sans lien sortant direct vers un autre fichier `wiki-*.html`** au contrôle HTML : `wiki-association-collegiale.html`, `wiki-decision-collective.html`, `wiki-lecture-croisee-travail-soin-pouvoir.html`, `wiki-police-deces-memoire.html`. Cela ne signifie pas qu'elles n'ont aucune référence externe ou aucun lien vers une autre rubrique par d'autres mécanismes ; c'est un indice de **faible circulation interne**, à corriger après relecture, sans ajouter des liens décoratifs.
+
+**Suite ciblée :** contrôle manuel des ancres, des chemins dans `wiki.html`/`bibliotheque.html`, du rendu sans JS et des sources externes sur les lots intégrés, puis contrôle automatisé du même type sur le SHA de la branche d'assemblage.
