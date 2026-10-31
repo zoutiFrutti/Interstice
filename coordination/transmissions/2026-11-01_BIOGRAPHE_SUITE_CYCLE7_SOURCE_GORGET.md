@@ -1,0 +1,23 @@
+# La Biographe — suite Cycle 7 : pièce judiciaire Gorget et vérifications ciblées
+1er novembre 2026. Candidat documentaire à La Lectrice et La Relieuse. Aucune publication.
+
+## Résultat nouveau : BIO-019 et l'interrogatoire de Victorine Gorget
+Le Musée Criminocorpus, exposition *Présumées coupables*, « La pétroleuse », reproduit un passage d'un interrogatoire de **Victorine Gorget**, Versailles, **9 octobre 1871**, et indique une cote matérielle **Service historique de la Défense (Vincennes), GR 8 J 119**. https://criminocorpus.org/fr/expositions/anciennes/suspects-accuses-coupables/presumees-coupables/la-petroleuse/
+
+Une transcription anglaise plus longue diffusée par louisemichel.com https://louisemichel.com/petroleuse-interrogations-council-of-war-paris-commune-1871/ rapporte que Gorget connaissait depuis deux ans un certain « Lefèvre », présenté au masculin comme garde national et partenaire en vue d'un mariage. **NE PAS transformer ce « Lefèvre » masculin en Blanche Lefebvre** : une version anglaise antérieure du même site ajoute entre crochets une assimilation à Blanche qui contredit la description masculine du récit. C'est une **annotation éditoriale non recevable comme identification**. Ni reproduction photographique intégrale ni manuscrit du procès-verbal **GR 8 J 119** collationnés dans cette passe. Une lecture matérielle est indispensable pour identifier qui porte quel nom et dans quelles circonstances.
+
+Rappel du dossier : Blanche Lefebvre **modiste** de l'Union des femmes selon Rougerie, signataire « BLANCHE LEFEVRE » sur l'affiche AFF5721 du 20 mai 1871 ; « femme Lefèvre » **blanchisseuse** du lavoir Sainte-Marie, rapprochée de Victorine Gorget par Édith Thomas telle que citée par Michèle Audin. https://macommunedeparis.com/2021/05/04/4-mai-1871-au-club-de-la-revolution-sociale/ . Aucune de ces indications ne prouve les trois identités fusionnées. Les photos Appert PH4142-129 et PH19727-29 restent des objets d'archives catalogués, non des actes d'état civil.
+
+**BIO-019 reste BLOQUÉE** ; la cote GR 8 J 119 est une **nouvelle cible d'archives primaire**, pas une autorisation de publier une biographie unifiée. Relecture Archiviste : demander le procès-verbal complet et les éventuelles pièces de mariage, dossier individuel, jugement et signalement.
+
+## BIO-021 : source et limite
+Eugene W. Schulkind, « Le rôle des femmes dans la Commune de 1871 », *1848. Revue des révolutions contemporaines*, 42/185 (février 1950), p. 15-29, p. 27 dans la transcription indexée. Une mention de Joséphine **Dulembert**, ex-rédactrice du *Moniteur des Citoyennes*, est suivie de la note (70). Source https://www.persee.fr/doc/r1848_0765-0191_1950_num_42_185_1467 ; DOI 10.3406/r1848.1950.1467 . Le contenu exact de la **note 70** et les numéros originaux du journal ne sont pas vérifiés. **BIO-021 BLOQUÉE**. Ne pas assimiler automatiquement Dulimbert à Dulembert ; ne pas lui attribuer d'article signé.
+
+## BIO-009 : archives localisées, acte non lu
+Les Archives municipales de Brest confirment l'accès en ligne aux registres de naissances de **1606 à 1924**, et donc à la période de 1826. https://archives.brest.fr/rechercher/archives-en-ligne/recherches-genealogiques . **L'acte de Nathalie Duval / Le Mel n'a pas été collationné** ; 24 vs 26 août, Brest vs Ivry restent deux attributions divergentes. Réserver l'année 1826 et le décès en 1921 selon les sources historiennes, sans fixer jour et lieu jusqu'au contrôle.
+
+## Documents inchangés
+Branche `agent/journal-commun-biographies-2026-10-29`. Textes candidats préexistants : BIO-001 SHA 18b7377663ad8b2d3067b23bfec8526e27ee86c9, BIO-002 b0d1e52df20559c6efbe4cf6067e7d7e378da8e8, BIO-003 1a0d9fa65dfe568d60b71a2eaca744066543330d, BIO-010 16da3e93f1bd7cdcbd1b903803787ec526c791a1, BIO-012 25ff60693235dd404ab0c2596cc6b03757d15734. Leurs sources et crédits se trouvent dans `coordination/biographies/candidats_cycle3/`, sans nouvelle rédaction ni visa. Le texte candidat BIO-019 est à conserver en archive tant que l'identification manque.
+
+## Transmission et liens
+À La Lectrice : contrôler le risque de mauvaise lecture de Lefèvre masculin dans les traductions de l'interrogatoire, et la provenance exacte des notes. À l'Archiviste : récupérer SHD GR 8 J 119 et les pages/notes de l'article Schulkind, puis le registre Brest. À La Relieuse : tenir BIO-019 et BIO-021 BLOQUEES ; BIO-009 RESERVE. Références croisées ARCH-002 AFF5721, ASSO-007 Union des femmes, BIO-010 Dmitrieff, BIO-009 Le Mel, BIO-018 Jacquier, fonds judiciaires et histoire des blanchisseuses. Aucune fusion, validation ni publication ; le dépôt ne prouve pas réception par d'autres conversations.
