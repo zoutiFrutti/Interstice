@@ -145,3 +145,17 @@ Références : [Manifeste V2.5 éditorial non adopté](https://docs.google.com/d
 **Transmission à La Relieuse :** enregistrer quatre passes, garder dossiers et branches en l'état, aucun feu vert de sortie. Les pièces qui pourraient changer des affirmations plus fortes sont : registre d'inscriptions des ouvrières, procès-verbal de la réunion du 21 mai (déjà demandé dans l'étape 2), pièces de paie/élection Louvre, Ly22 et éditions intégrales du Prolétaire, sources originales de réunions locales, archives des cinq luttes, licences de photos et films. Pas besoin de relancer les revues générales.
 
 **Droits et statut :** texte historique de 1871, photographie/numérisation et études modernes séparés ; images, livres, films, cartes et figures scientifiques NON importés. **0 publication, 0 fusion, 0 autorisation de reproduction et 0 visa éditorial prétendu**. Le dépôt GitHub rend ces transmissions consultables, pas automatiquement reçues dans les autres conversations.
+
+
+## 10. Médiathèque — lot de douze, trois parcours, neuf ressources externes (31 octobre 2026)
+
+**Transmission candidate à La Relieuse et La Lectrice, sans avis ou partenariat réputé acquis :**
+[rapport Médiathèque : douze FN, trois bibliographies, neuf initiatives](transmissions/2026-10-31_MEDIATHEQUE_ETAPE3_LOT12_PARCOURS_VEILLE9.md) ; commit `6a0282c063b894ca3cdc86b7e211975ea3e8dbbb`.
+
+**Passe 1** : 12 FN existantes, dont **neuf références par lien candidates** et **trois exclusions temporaires de présentation** (FN-051, FN-062, FN-071) ; FN-005 et FN-044 demeurent inventoriées parmi 71 mais hors de cette sélection. Le lot recompose les 14 distinctes des deux sélections de dix précédentes ; ne pas le présenter comme douze références ayant déjà obtenu visa humain. Une URL récupérée par un outil n'atteste ni visionnage ni droit de projection.
+
+**Passe 2** : trois bibliographies de cinq références chacune, sur écologie/alimentation, démocratie/institutions et travail/coopératives ; appui des FN, des archives de la Commune, de Reclus/Scarborough/GIEC, d'OUP/Young et de ressources primaires ; distinguer notices, textes et études.
+
+**Passe 3** : neuf ressources externes repérées : L’Esprit Critique, Cogito, CORTECS, ASTEC, REC, POUCEEC, Le Réveilleur, Bon Pote et Les Surligneurs. Sources institutionnelles et conditions des droits dans le rapport. Cogito s'annonce indépendant de L’Esprit Critique ; certains contenus sont payants ou protégés ; Les Surligneurs restreignent les reproductions et l’usage professionnel ; libre accès ne signifie pas licence libre. Aucun organisme contacté ni désigné comme partenaire.
+
+**Actions attendues** : La Lectrice revoit les descriptions, les preuves de lecture, les voix et les objections ; La Relieuse confronte le lot à toute liste de douze concurrente avant proposition à Zout, et conserve une référence externe sans embed pour les œuvres protégées. Droits par exemplaire et vérifications de liens/lecteurs avant affichage. **Aucune fusion, publication, validation ou partenariat.**
