@@ -10,6 +10,7 @@
   <script src="./app.js" defer></script>
   <script src="./github-status.js" defer></script>
   <script src="./task-board.js" defer></script>
+  <script src="./ai-board.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au cockpit</a>
@@ -29,8 +30,8 @@
     </header>
 
     <div class="notice" role="note">
-      <strong>Pupitre en simulation.</strong> Les missions et les statuts des agents sont fictifs. L’observatoire GitHub ci-dessous est distinct et affiche des données réelles uniquement si elles sont chargées.
-      GO, STOP et VALIDATION n'agissent sur aucun vrai agent. Le rechargement de la page remet les simulations à zéro.
+      <strong>Pupitre historique en simulation.</strong> Les missions et les statuts des agents sont fictifs. L’observatoire GitHub ci-dessous est distinct et affiche des données réelles uniquement si elles sont chargées.
+      Les commandes de ce pupitre historique ne lancent aucun agent réel ; le nouvel agent IA local dispose de ses propres commandes, sous configuration. Le rechargement de la page remet les simulations à zéro.
     </div>
 
     <section class="metrics" aria-label="Résumé de la simulation">
@@ -85,6 +86,23 @@
         </div>
       </div>
       <p class="github-fineprint">Les données sont conservées uniquement sur l'ordinateur qui exécute la passerelle. « Rapport lu » ne veut dire ni PR approuvée, ni article publié, ni CI certifiée. Le filtrage personnel/collectif de l'interface ne crée pas de droits d'accès.</p>
+    </section>
+
+
+    <section class="panel ai-panel" aria-labelledby="ai-heading">
+      <div class="panel-heading">
+        <div><span class="eyebrow">07 / PREMIER AGENT IA RÉEL · LOCAL</span><h2 id="ai-heading">La Relectrice technique</h2></div>
+        <span class="tiny-pill" id="ai-mode">Modèle IA non détecté</span>
+      </div>
+      <p class="subtle">Mission fixe : analyser un rapport GitHub existant, distinguer les faits des réserves et proposer trois contrôles humains. L'agent ne peut ni accéder aux fichiers ni publier ou fusionner une PR.</p>
+      <form class="ai-form" id="ai-create-form">
+        <label for="ai-source">Rapport GitHub local à analyser</label>
+        <select id="ai-source" required disabled><option>Configurer le moteur local pour activer l'agent</option></select>
+        <button id="ai-create" type="submit" class="small-btn task-primary" disabled>Préparer la mission</button>
+      </form>
+      <p id="ai-feedback" class="github-feedback" role="status" aria-live="polite">Le moteur IA n'est pas encore connecté à cette session.</p>
+      <div id="ai-tasks" class="ai-task-list" aria-label="Missions et réponses de l'agent"></div>
+      <p class="github-fineprint">STOP interrompt la requête réseau locale et empêche son résultat d'être validé dans le cockpit ; il ne prouve pas l'arrêt physique du calcul côté modèle. Les réponses de l'IA ne sont jamais des autorisations éditoriales, juridiques ou techniques. L'historique demeure sur l'ordinateur qui héberge le serveur local.</p>
     </section>
 
     <div class="workbench">
