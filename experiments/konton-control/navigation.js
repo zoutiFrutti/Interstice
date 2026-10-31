@@ -28,7 +28,7 @@
     if (shouldFocus) {
       const selected = screens.get(target);
       selected.focus({ preventScroll: true });
-      window.scrollTo({ top: 0, behavior: "instant" });
+      window.scrollTo({ top: 0, behavior: "auto" });
     }
   }
   function fromHash() {
@@ -40,7 +40,7 @@
       const name = button.dataset.screenTarget;
       if (!screens.has(name)) return;
       if (window.location.hash === "#" + name) select(name, true);
-      else window.location.hash = name;
+      else window.location.hash = "#" + name;
     });
   });
   window.addEventListener("hashchange", () => select(fromHash(), true));
