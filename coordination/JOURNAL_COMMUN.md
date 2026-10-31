@@ -1061,3 +1061,16 @@ Deux journaux et registre ÉCL-001..004 relus sur branche PR #43 ; états ENQUET
 ## 2026-10-31 — La Relieuse — cycle 5 : six passes de convergence
 
 Six passes documentaires et de coordination exécutées, synthèse `coordination/cycle5/RELIEUSE_SIX_PASSES_CONVERGENCE_2026-10-31.md` commit `5c175579bde4d4b91c2469b6be096483bb3e5e5a`. V2.6 candidate et deux chartes candidates examinées sans adoption présumée ; quatorze textes à soumettre à Zout, ARCH-002/007 seuls visas conservés ; ÉCL-001..004 repris avec doublon EJAtlas écarté ; dernière candidate d'intégration SHA `43bfa539c618d722157c5f150c30b94acb45038d`, CI 41230241924 réussie, autorisations techniques encore vides et contrôles RGPD non clos. Aucune fusion, publication ni prise de contact. Reprise : visas par SHA, lecture croisée des chartes, double verrou, sécurité, fiches LUT/CIC. Transmission écrite sur branche, réception par les autres conversations non attestée.
+
+
+---
+
+## 2026-10-31 — Clarification de Zout — projet individuel, pas de collectif constitué
+
+**Déclaration directe de Zout :** La Faille noire × Interstice est actuellement initiée, créée et conduite par **Zout Devys seul**. Aucun collectif humain constitué, membre supplémentaire investi, assemblée générale, commission ou instance de décision n'existe aujourd'hui. Les « ateliers » (Relieuse, Penseuse, Juriste, etc.) sont des **rôles confiés à ChatGPT** pour aider à produire, vérifier et coordonner le travail ; ce ne sont ni des personnes morales, ni des organes démocratiques, ni des copropriétaires, ni des mandataires autonomes.
+
+**Conséquence immédiate pour la coordination :** les procédures de gouvernance collective décrites dans le manifeste V2.6 candidat et les chartes candidates constituent des **principes et propositions pour un collectif futur**, non des règles de vote, quorum, révocation ou assemblée déjà applicables. À ce stade, Zout décide des orientations, du contenu, des priorités et de ses autorisations éditoriales. Les ateliers ChatGPT formulent des propositions et apportent une assistance sans pouvoir de décision indépendant. Ne plus demander de validation par une assemblée, commission ou mandataire fictif.
+
+**Limites conservées :** aucune adoption collective fictive, aucune représentation d'un groupe inexistant ; les obligations légales réellement applicables (éditeur/hébergeur, propriété intellectuelle, RGPD, droits et sécurité du site) ne disparaissent pas ; distinguer approbation éditoriale de Zout, vérification technique et publication effectivement autorisée. Une gouvernance collective ne pourra entrer en vigueur que lorsqu'existeront des participant·es humains réels et un accord explicite sur ses modalités.
+
+**Transmission :** directive de La Relieuse à relire par les ateliers depuis la branche de coordination PR #43 ; aucun message automatique à leurs conversations n'est présumé. Ne pas réécrire silencieusement V2.6 ni les chartes ; proposer un encadré de statut transitoire pour examen de Zout.
