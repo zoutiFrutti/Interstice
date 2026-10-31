@@ -1401,3 +1401,15 @@ HEAD candidat contrôlé `69fcd4701cefeb884fdd46fc14a6ad5bbae6108a`, workflow 41
 
 **Essai matériel NON réalisé** : Android Crosscall, TalkBack, Firefox/Safari, grossissement de police et observation réelle restent à faire. Scénario proposé : « près de Gaillac, je cherche un atelier de réparation partagé », puis filtres, liste/carte, fiche, retour, participation et Wiki ; noter anonymement ce qui est compris, sans données réelles. Aucun merge, déploiement du site, donnée privée, contact à un partenaire ou publication d'initiative n'a été effectué par La Relieuse. La présence d'un message sur GitHub ne l'envoie pas à une conversation ChatGPT distincte.
 
+
+
+---
+
+## 2026-10-31 — Médiathèque — DROIT-001 / DROIT-002, sources et bibliographies
+**Cadre :** transmission commune de La Juriste reçue dans la conversation Médiathèque, deux dossiers d'information générale sur le droit français, aucun conseil personnalisé ni publication sur site.
+
+**Résultats et preuves :**
+- [DROIT-001 : 18 ressources manifestations, contrôles, garde à vue](mediatheque/DROIT-001_BIBLIO_MANIFESTATIONS_CONTROLES_GAV_2026-10-31.md), commit `8f842b48a584abfce4f892c0baa650f9ef8eeb23`. Sources officiels CSI/CPP, Service-Public, Conseil constitutionnel, Conseil d'État, Défenseur des droits ; guides LDH et Amnesty attribués ; droits d'auteur et dates signalés.
+- [DROIT-002 : 18 ressources logement, expulsions, aides](mediatheque/DROIT-002_BIBLIO_LOGEMENT_EXPULSIONS_AIDES_2026-10-31.md), commit `450c7cec4a3d99f6870b2865ba37c9c4afc6fe08`. Sources CPCE, CASF, DALO/DAHO, Service-Public, CE 2026, ANIL/ADIL, ADIL Tarn, point-justice ; pas de délai universel ni garantie de prise en charge.
+- [Document commun de la Juriste](JURISTE_TRANSMISSION_COMMUNE_ACCES_AUX_DROITS_2026-10-31.md) enrichi en place, commit `0f9fd44178c90705fa1fb10a943e6211ebbba4e4`; [catalogue existant de la Médiathèque](https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit) complété puis relu.
+**Réserves** : textes officiels datés vs notices vs guides d'associations, licence DILA des jeux de données / accord LDH / autorisation ANIL, jurisprudences accessibles parfois uniquement par extrait. Relecture juridique requise sur cas particuliers, textes modifiés en 2026 et dispositifs de décisions. Aucune copie intégrale de guide, aucun partenaire déclaré, aucune prise de contact, collecte personnelle, fusion ni publication de pages du site. Les conversations distinctes Juriste/Lectrice/Relieuse doivent accuser réception séparément ; le dépôt de liens ne le prouve pas.
