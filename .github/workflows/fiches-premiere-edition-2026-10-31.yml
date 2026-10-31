@@ -23,6 +23,7 @@ jobs:
         run: |
           python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/fiches-2026-10-31.log 2>&1 &
           node --test tests/fiches-premiere-edition-2026-10-31.test.mjs
+          node --test tests/graphiste-3-passes-pages-reelles-2026-10-31.test.mjs
       - name: Captures et impression A4
         if: always()
         uses: actions/upload-artifact@v4
