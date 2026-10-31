@@ -3871,5 +3871,40 @@
     "merge": false,
     "publication": false,
     "contacts_sent": 0
+  },
+  "cycle5_relieuse": {
+    "date": "2026-10-31",
+    "status": "6_PASSES_REELLES_DOCUMENTAIRES_ET_COORDINATION",
+    "dossier": "coordination/cycle5/RELIEUSE_SIX_PASSES_CONVERGENCE_2026-10-31.md",
+    "dossier_commit": "5c175579bde4d4b91c2469b6be096483bb3e5e5a",
+    "journal_commit": "8294097c2e9bb187de4c62921a1e4e6873b89b7b",
+    "prior_approved": [
+      "ARCH-002",
+      "ARCH-007"
+    ],
+    "new_visas": 0,
+    "ready_to_submit": 14,
+    "needs_correction": 15,
+    "blocked": 5,
+    "v26": "CANDIDATE_NON_ADOPTEE",
+    "charters": "CANDIDATES_NON_ADOPTEES",
+    "ecl_ids": [
+      "ÉCL-001",
+      "ÉCL-002",
+      "ÉCL-003",
+      "ÉCL-004"
+    ],
+    "technical_sha": "43bfa539c618d722157c5f150c30b94acb45038d",
+    "ci_run": 41230241924,
+    "unresolved": [
+      "human editorial decisions",
+      "legal publisher and data",
+      "technical double-lock",
+      "independent reviews and final QA",
+      "source verification on ÉCL"
+    ],
+    "merge": false,
+    "publication": false,
+    "external_outreach": false
   }
 }
