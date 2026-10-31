@@ -1,0 +1,383 @@
+{
+  "schema": "interstice-eclaireuse-candidate-v1",
+  "date": "2026-10-31",
+  "status": "CANDIDAT_NON_APPROUVE",
+  "last_cycle_handled": "cycle3_relieuse",
+  "initiatives": [
+    {
+      "id": "ÉCL-001",
+      "name": "Enquêter sur le pouvoir",
+      "type": "ressources_critique",
+      "resources": [
+        {
+          "name": "BL00D.MONEY",
+          "url": "https://bl00d.money",
+          "reserve": "responsable et méthode non établis",
+          "licence": "A_VERIFIER",
+          "partnership": false,
+          "source_consultation": "URL_CANDIDATE_NON_INTEGRALEMENT_AUDITEE"
+        },
+        {
+          "name": "Who Profits",
+          "url": "https://www.whoprofits.org/",
+          "reserve": "attributions à recouper",
+          "licence": "A_VERIFIER",
+          "partnership": false,
+          "source_consultation": "URL_CANDIDATE_NON_INTEGRALEMENT_AUDITEE"
+        },
+        {
+          "name": "AFSC Investigate",
+          "url": "https://investigate.afsc.org/",
+          "reserve": "méthodes et portée à vérifier",
+          "licence": "A_VERIFIER",
+          "partnership": false,
+          "source_consultation": "URL_CANDIDATE_NON_INTEGRALEMENT_AUDITEE"
+        },
+        {
+          "name": "Disclose",
+          "url": "https://disclose.ngo/fr",
+          "reserve": "enquêtes et corrections",
+          "licence": "A_VERIFIER",
+          "partnership": false,
+          "source_consultation": "URL_CANDIDATE_NON_INTEGRALEMENT_AUDITEE"
+        },
+        {
+          "name": "EJAtlas",
+          "url": "https://ejatlas.org/",
+          "reserve": "cas déclarés non preuve exhaustive",
+          "licence": "A_VERIFIER",
+          "partnership": false,
+          "source_consultation": "URL_CANDIDATE_NON_INTEGRALEMENT_AUDITEE"
+        },
+        {
+          "name": "Observatoire des multinationales",
+          "url": "https://multinationales.org/",
+          "reserve": "ligne éditoriale et sources",
+          "licence": "A_VERIFIER",
+          "partnership": false,
+          "source_consultation": "URL_CANDIDATE_NON_INTEGRALEMENT_AUDITEE"
+        },
+        {
+          "name": "OpenCorporates",
+          "url": "https://opencorporates.com/",
+          "reserve": "registre agrégé, données juridictionnelles",
+          "licence": "A_VERIFIER",
+          "partnership": false,
+          "source_consultation": "URL_CANDIDATE_NON_INTEGRALEMENT_AUDITEE"
+        },
+        {
+          "name": "Transparency International",
+          "url": "https://www.transparency.org/fr/",
+          "reserve": "indicateurs et méthodologie",
+          "licence": "A_VERIFIER",
+          "partnership": false,
+          "source_consultation": "URL_CANDIDATE_NON_INTEGRALEMENT_AUDITEE"
+        }
+      ],
+      "connections": [
+        "wiki-politique-institutions-regimes.html",
+        "wiki-capitalisme-classes-travail.html",
+        "wiki-ecologie-sociale-environnement.html"
+      ],
+      "owners": [
+        "Médiathèque",
+        "Lectrice",
+        "Juriste"
+      ],
+      "status": "ENQUETE_CANDIDATE"
+    },
+    {
+      "id": "ÉCL-002",
+      "name": "Luttes et héritages",
+      "type": "cas_de_lutte",
+      "cases": [
+        {
+          "case_id": "LUT-001",
+          "name": "A69 Toulouse-Castres",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-002",
+          "name": "Notre-Dame-des-Landes",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-003",
+          "name": "Sivens",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-004",
+          "name": "Sainte-Soline",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-005",
+          "name": "Standing Rock",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-006",
+          "name": "Hambach",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-007",
+          "name": "Chipko",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-008",
+          "name": "Cherán",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-009",
+          "name": "Yasuní",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-010",
+          "name": "Mouvement des sans-terre",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-011",
+          "name": "Newbury Bypass",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-012",
+          "name": "Droits civiques États-Unis",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        },
+        {
+          "case_id": "LUT-013",
+          "name": "Anti-apartheid Afrique du Sud",
+          "status": "A_ENQUETER",
+          "fields": [
+            "contexte",
+            "acteurs",
+            "organisation",
+            "événements",
+            "sources contradictoires",
+            "résultats",
+            "héritages",
+            "échecs",
+            "actualité datée"
+          ]
+        }
+      ],
+      "source_seed": [
+        {
+          "title": "Conseil d'État A69 29 juin 2026",
+          "url": "https://www.conseil-etat.fr/actualites/autoroute-a69-le-conseil-d-etat-confirme-l-arret-de-la-caa-de-toulouse-autorisant-la-reprise-du-projet",
+          "scope": "une décision, pas la totalité des contentieux"
+        },
+        {
+          "title": "Contentieux emprises A69 octobre 2026",
+          "url": "https://www.ladepeche.fr/2026/10/13/autoroute-a69-toulouse-castres-la-justice-administrative-rejette-les-recours-contre-larrete-des-prefets-qui-regularisait-les-depassements-demprise-du-13600255.php",
+          "scope": "compte rendu journalistique de décision de référé"
+        }
+      ],
+      "connections": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-politique-institutions-regimes.html"
+      ],
+      "owners": [
+        "Anarchiviste",
+        "Tisseuse",
+        "Lectrice"
+      ],
+      "status": "ENQUETE_CANDIDATE"
+    },
+    {
+      "id": "ÉCL-003",
+      "name": "Enquêtes et outils des luttes",
+      "type": "methodes",
+      "resources": [
+        "https://terresdeluttes.fr/",
+        "https://ejatlas.org/",
+        "https://libertesassociatives.org/",
+        "https://www.ldh-france.org/"
+      ],
+      "methods": [
+        "recours juridiques",
+        "assemblées",
+        "enquêtes citoyennes",
+        "cartographie",
+        "observation indépendante",
+        "organisation collective"
+      ],
+      "distinction": "outil disponible ≠ efficacité démontrée",
+      "owners": [
+        "Médiathèque",
+        "Juriste",
+        "Tisseuse",
+        "Lectrice"
+      ],
+      "status": "ENQUETE_CANDIDATE"
+    },
+    {
+      "id": "ÉCL-004",
+      "name": "Cooperativa Integral Catalana",
+      "type": "etude_de_cas",
+      "sources": [
+        "https://cooperativa.cat/",
+        "https://calafou.org/ca",
+        "https://onlinelibrary.wiley.com/doi/full/10.1111/anti.12705",
+        "https://www.tandfonline.com/doi/full/10.1080/03085147.2026.2689260",
+        "https://www.sciencedirect.com/science/article/pii/S0016718523001379"
+      ],
+      "status_2026": "ACTIVITE_CIC_NON_DEMONTREE_PAR_SEUL_SITE",
+      "related": [
+        "Calafou coopérative indépendante à qualifier",
+        "FairCoop/FairCoin modèle documenté mais statut actuel à vérifier",
+        "Enric Duran : contributions datées à sourcer"
+      ],
+      "owners": [
+        "Tisseuse",
+        "Anarchiviste",
+        "Lectrice",
+        "Médiathèque",
+        "Juriste"
+      ],
+      "status": "ENQUETE_CANDIDATE"
+    }
+  ],
+  "visas_added": 0,
+  "publication_authorized": false,
+  "external_contacts_sent": 0
+}
