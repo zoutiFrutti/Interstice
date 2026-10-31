@@ -17,6 +17,7 @@ const path = require("node:path");
 const { createTaskEngine } = require("./task-engine.cjs");
 const { createAiEngine } = require("./ai-engine.cjs");
 const { configured: ollamaConfigured, createOllamaProvider } = require("./ollama-provider.cjs");
+const { resolveScope, ensureScopeOnly } = require("./scope-policy.cjs");
 
 const HOST = "127.0.0.1";
 const PORT = Number(process.env.KONTON_CONTROL_PORT || 8765);
@@ -24,9 +25,7 @@ const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || "";
 const DEFAULT_REPO = "zoutiFrutti/Interstice";
 const REPO_PATTERN = /^[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+$/;
 const safeRepo = value => typeof value === "string" && REPO_PATTERN.test(value) && !value.includes("..");
-const configured = (process.env.KONTON_CONTROL_REPOS || DEFAULT_REPO)
-  .split(",").map(part => part.trim()).filter(safeRepo);
-const ALLOWED = [...new Set(configured.length ? configured : [DEFAULT_REPO])].slice(0, 20);
+const { scope: SCOPE, allowed: ALLOWED } = resolveScope(process.env);
 const CACHE_MS = 90_000;
 const cache = new Map();
 const assets = new Map([
@@ -82,13 +81,15 @@ function getJson(remotePath) {
 const engine = createTaskEngine({
   allowed: ALLOWED,
   githubGet: getJson,
-  stateFile: process.env.KONTON_CONTROL_STATE_FILE || path.join(__dirname, "data", "tasks.json")
+  stateFile: process.env.KONTON_CONTROL_STATE_FILE || path.join(__dirname, "data", SCOPE, "tasks.json")
 });
 const aiEngine = createAiEngine({
   sourceTask: id => engine.list().find(task => task.id === id),
   provider: ollamaConfigured() ? createOllamaProvider() : null,
-  stateFile: process.env.KONTON_CONTROL_AI_STATE_FILE || path.join(__dirname, "data", "ai-tasks.json")
+  stateFile: process.env.KONTON_CONTROL_AI_STATE_FILE || path.join(__dirname, "data", SCOPE, "ai-tasks.json")
 });
+ensureScopeOnly(engine.list(), SCOPE);
+ensureScopeOnly(aiEngine.list(), SCOPE);
 async function repoStatus(repo) {
   if (!ALLOWED.includes(repo)) throw new Error("Dépôt non autorisé.");
   const previous = cache.get(repo);
@@ -262,7 +263,7 @@ async function handle(req, res) {
     return;
   }
   if (url.pathname === "/api/github/repos") {
-    return send(res, 200, { mode: "read-only", repositories: ALLOWED });
+    return send(res, 200, { mode: "read-only", scope: SCOPE, repositories: ALLOWED });
   }
   if (url.pathname === "/api/github/status") {
     const repo = url.searchParams.get("repo");
@@ -283,8 +284,8 @@ function start() {
     });
   }).listen(PORT, HOST, () => {
     process.stdout.write("KONTON Control · lecture GitHub et tâches LOCALES : http://" + HOST + ":" + PORT + "/\n");
-    process.stdout.write("Dépôts configurés : " + ALLOWED.length + " · jeton serveur : " + (TOKEN ? "présent" : "absent") + "\n");
+    process.stdout.write("Périmètre : " + SCOPE + " · dépôts configurés : " + ALLOWED.length + " · jeton serveur : " + (TOKEN ? "présent" : "absent") + "\n");
   });
 }
 if (require.main === module) start();
-module.exports = { safeRepo, permittedRequest, assets, repoStatus, start, handle, engine, aiEngine };
+module.exports = { safeRepo, permittedRequest, assets, repoStatus, start, handle, engine, aiEngine, SCOPE };
