@@ -3813,5 +3813,31 @@
     "publication_authorized": false,
     "merge_authorized": false,
     "blocking_issue": "Le double verrou technique n'a pas repris les deux accords humains ; mentions légales et RGPD restent des verrous réels."
+  },
+  "eclaireuse_handoff": {
+    "date": "2026-10-31",
+    "cycle": "post_cycle3",
+    "ids": [
+      "ÉCL-001",
+      "ÉCL-002",
+      "ÉCL-003",
+      "ÉCL-004"
+    ],
+    "status": "ENQUETE_CANDIDATE_NON_PUBLIEE",
+    "journal": "coordination/JOURNAL_ECLAIREUSE.md",
+    "resources": "coordination/eclaireuse/REGISTRE_ECL_001_004_2026-10-31.json",
+    "cic": "coordination/eclaireuse/CIC_ENQUETE_INITIALE_2026-10-31.md",
+    "luttes": "coordination/eclaireuse/PLAN_INTEGRATION_LUTTES_ET_ENQUETES_2026-10-31.md",
+    "relay": "coordination/eclaireuse/TRANSMISSION_ATELIERS_POINT_REPRISE_2026-10-31.md",
+    "journal_commun_updated": true,
+    "prior_visas_preserved": [
+      "ARCH-002",
+      "ARCH-007"
+    ],
+    "new_human_visas": 0,
+    "publication_authorized": false,
+    "merge_authorized": false,
+    "external_contacts": 0,
+    "automated_propagation_verified": false
   }
 }
