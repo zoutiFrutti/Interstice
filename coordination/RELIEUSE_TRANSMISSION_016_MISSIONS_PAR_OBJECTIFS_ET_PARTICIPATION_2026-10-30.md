@@ -140,3 +140,16 @@ La Relieuse présentera **un parcours d'essai unique**, accompagné des URLs et 
 - Les portails ont des conditions de réutilisation distinctes des œuvres individuelles.
 - Aucun changement de droits, fusion, déploiement, publication ou adoption politique automatiquement décidé. Le Manifeste V2.5 reste une référence éditoriale non adoptée.
 
+
+---
+
+## Addendum 018-B — Anarchitecte, réserve de sécurité V0
+**31 octobre 2026 — reçu et contrôlé par La Relieuse.** Rapport source sur main : `coordination/ANARCHITECTE_REVUE_V0_018B_2026-10-31.md`, revue de la candidate `integration/v0-018a-candidate-2026-10-30` au SHA `69fcd4701cefeb884fdd46fc14a6ad5bbae6108a`. CI `41128062335` : 58/58 Node et 19/19 Chromium, jobs verts. Le statut du rapport n'autorise pas une ouverture publique.
+
+**Blocage technique confirmé par lecture directe de la candidate :** `script.js` et `ressources.js` contiennent `const INTERSTICE_CANDIDATE_MODE=globalThis.INTERSTICE_CANDIDATE_MODE!==false` et conservent les URL d'envoi et de lecture Supabase. Un acteur peut manipuler le contexte client, donc cette garde n'est pas une barrière de sécurité. Le navigateur de test n'a envoyé aucune requête lors des scénarios examinés, mais cela ne prouve pas que les chemins réels sont inaccessibles.
+
+**Action unique à adresser à La Développeuse — 018-D :** sur la branche candidate d'intégration (en préservant les branches source), retirer physiquement des scripts servis en démonstration les fonctions et URLs de soumission et de lecture de données réelles, tout en laissant l'interface fictive et les messages de non-envoi. Ajouter des assertions sur l'artefact livré et un test navigateur avec altération volontaire de `INTERSTICE_CANDIDATE_MODE` ; rejouer Node et Chromium au SHA final. Aucun changement de permission, endpoint, schéma ni politique Supabase.
+
+**Dépendances :** La Graphiste peut examiner indépendamment l'expérience sur le SHA courant ; sa revue mobile reste à coordonner. L'Anarchitecte ne doit vérifier que le nouveau diff et les preuves CI après 018-D, sans répéter la revue 018-B. La Relieuse organise un test humain local et isolé sur données fictives ; tout déploiement public reste bloqué tant que les chemins réels persistent et qu'une validation humaine de publication n'a pas eu lieu.
+
+**Non fait à cette étape :** correctif logiciel, nouveau test, fusion, publication, autorisation de collecte ou mise en relation réelle. Aucun atelier n'est automatiquement notifié par cette entrée GitHub.
