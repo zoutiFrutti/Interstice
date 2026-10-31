@@ -234,5 +234,14 @@
   }
   select.addEventListener("change", () => showRepo(false));
   refresh.addEventListener("click", () => showRepo(true));
-  initialise();
+  // Avoid API requests and unnecessary loading when a person only opens Accueil.
+  // WebView/PWA navigation uses location.hash; direct #github links still work.
+  let started = false;
+  function maybeInitialise() {
+    if (started || window.location.hash !== "#github") return;
+    started = true;
+    initialise();
+  }
+  window.addEventListener("hashchange", maybeInitialise);
+  maybeInitialise();
 })();
