@@ -227,3 +227,18 @@ La nouvelle navigation est couverte par le test Node test-navigation.cjs. Une co
 - Les tests Node incluent la lecture GitHub et la navigation. Le rendu réel sur Crosscall après installation reste à valider.
 
 Il s'agit d'améliorations autonomes à faible risque. Le pupitre des agents demeure fictif, l'observatoire GitHub est toujours en lecture seule, et le modèle Ollama reste uniquement accessible sur un serveur local compatible.
+
+## V0.9 · Dix passes autonomes, corrections prudentes
+
+1. **Audit d'accueil** : retirer les fonctions techniques du trajet principal et distinguer simulation/données réelles (structure V0.7 conservée).
+2. **Commande démo** : réinitialisation explicite des agents, validations, timers et journaux fictifs.
+3. **Vérité des statuts** : accueil GitHub indique non consulté, chargement, résultat horodaté ou échec.
+4. **Cache** : les données GitHub servies depuis le cache local mémoire sont signalées comme telles, avec la date.
+5. **Performance** : la lecture GitHub reste déclenchée seulement à l'ouverture de l'onglet.
+6. **Navigation clavier** : repli de focus pour WebView plus ancien.
+7. **Accessibilité** : contours de focus visibles et respect des préférences de réduction d'animations.
+8. **Ergonomie smartphone** : cible tactile, lisibilité et retour au pupitre après sélection d'un agent.
+9. **Distribution mobile** : versionCode 9, cache PWA V0.9, pas de nouvelles permissions.
+10. **Vérification/traçabilité** : tests automatisés et compilation Android contrôlés sur le SHA exact ; PR brouillon non fusionnée.
+
+**Invariants** : aucune action GitHub distante en écriture, aucun accès aux dépôts privés dans l'APK, aucun agent réel contrôlé depuis le téléphone, aucune publication du site Interstice. La validation visuelle sur Crosscall reste à faire.
