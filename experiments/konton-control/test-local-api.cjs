@@ -10,7 +10,7 @@ const root = fs.mkdtempSync(path.join(os.tmpdir(), "konton-http-"));
 const port = String(34000 + Math.floor(Math.random() * 10000));
 const child = spawn(process.execPath, [path.join(__dirname, "local-server.cjs")], {
   env: {
-    ...process.env, GH_TOKEN: "", GITHUB_TOKEN: "",
+    ...process.env, GH_TOKEN: "", GITHUB_TOKEN: "", KONTON_AI_MODEL: "",
     KONTON_CONTROL_PORT: port, KONTON_CONTROL_REPOS: "zoutiFrutti/Interstice",
     KONTON_CONTROL_STATE_FILE: path.join(root, "tasks.json")
   },
@@ -72,6 +72,14 @@ async function main() {
   assert.equal(events.data.events.length, 1);
   const reviewUnrun = await request("POST", "/api/tasks/" + create.data.task.id + "/review", { decision: "acknowledge" });
   assert.equal(reviewUnrun.status, 409);
+  const aiCap = await request("GET", "/api/ai/capabilities");
+  assert.equal(aiCap.status, 200);
+  assert.equal(aiCap.data.configured, false);
+  const aiDenied = await request("POST", "/api/ai/tasks", { sourceTaskId: create.data.task.id });
+  assert.equal(aiDenied.status, 503);
+  const aiTasks = await request("GET", "/api/ai/tasks");
+  assert.equal(aiTasks.status, 200);
+  assert.equal(aiTasks.data.tasks.length, 0);
   const forbidden = await request("DELETE", "/api/tasks");
   assert.equal(forbidden.status, 405);
   assert.equal(fs.existsSync(path.join(root, "tasks.json")), true);
