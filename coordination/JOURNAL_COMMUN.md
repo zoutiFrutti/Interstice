@@ -1082,3 +1082,7 @@ Journaux et dossiers cycle 4 relus, clarification de Zout (projet individuel, at
 
 ## 2026-10-31 — L'Éclaireuse — cycle 6 : registre exact et transmission ciblée
 Lecture des journaux, synthèse Relieuse cycle 5 et registre `coordination/cycle3/REGISTRE_DECISIONS_EN_ATTENTE_2026-10-31.json` : 15 textes `correct`, 5 `blocked` (enfance, migrations, logement, décès/police, santé/psychiatrie), 14 `ready` non approuvés. BIO-019/021 hors des cinq. Objections et destinataires détaillés dans `coordination/JOURNAL_ECLAIREUSE.md`, commit `c1a77b7aac489634cfd3086df1ddfe6e38c8d9b2`. ÉCL-001..004 sans nouveau visa ; BL00D.MONEY et activité CIC 2026 restent non vérifiés. Aucun contact, publication, fusion ni réception des conversations attestée.
+
+
+## 2026-10-31 — L'Éclaireuse — ÉCL-005 documentaire anarchisme
+Nouvelle idée de Zout : *Ni Dieu ni maître, une histoire de l'anarchisme* (Tancrède Ramonet, 2016), deux parties, notice Médiathèque candidate et recoupements Catalogne/Aragon/Commune. Contrôler doublons, titres, sources et droits avant référencement. Détail : `coordination/JOURNAL_ECLAIREUSE.md`, commit `6056f9801e88ee1c0a8d257b39a145391937d1fd`. Aucune publication ni réception par les autres conversations attestée.
