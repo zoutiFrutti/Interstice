@@ -130,3 +130,33 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
   .footer { flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto!important; transition: none!important; } }
+
+
+/* Read-only GitHub status: deliberately distinct from simulated agent commands. */
+.github-panel { padding: 21px; margin-bottom: 16px; }
+.github-panel .panel-heading { margin-bottom: 8px; }
+.github-toolbar { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; margin-top: 17px; }
+.github-repo-picker { flex: 1; min-width: 210px; }
+.github-repo-picker label { color: #b0bed0; display: block; font-size: .83rem; margin-bottom: 8px; }
+.github-repo-picker select {
+  width: 100%; min-height: 44px; padding: 11px; border: 1px solid #526078;
+  background: #0b1119; color: #eaeaea; border-radius: 9px; font-size: 1rem;
+}
+.github-toolbar > button { min-height: 44px; }
+.github-feedback { border-left: 3px solid #a68bff; padding: 8px 12px; color: #c9c1e7; margin: 16px 0; font-size: .84rem; }
+.github-dashboard { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 11px; }
+.github-block { background: #0e151e; border: 1px solid #2d394a; border-radius: 12px; padding: 15px; min-width: 0; }
+.github-block h3 { font-size: 1rem; margin: 0 0 13px; }
+.github-link { display: block; text-decoration: none; color: #d3c3ff; font-size: .87rem; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
+.github-link:hover { text-decoration: underline; }
+.github-items { padding: 0; margin: 12px 0 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.github-items li { border-top: 1px solid #303b4d; padding-top: 10px; }
+.github-meta { display: block; color: #a7b6c8; font-size: .75rem; line-height: 1.5; margin-top: 4px; overflow-wrap: anywhere; }
+.github-fineprint { margin: 16px 0 0; color: #a4b1c0; font-size: .8rem; line-height: 1.6; }
+@media (max-width: 1000px) { .github-dashboard { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 680px) {
+  .github-panel { padding: 17px; }
+  .github-dashboard { grid-template-columns: 1fr; }
+  .github-toolbar { flex-direction: column; align-items: stretch; }
+  .github-repo-picker { min-width: 0; width: 100%; }
+}
