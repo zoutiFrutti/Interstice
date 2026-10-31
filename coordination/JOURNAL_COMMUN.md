@@ -1026,3 +1026,16 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 **Blocages précis :** marque Metricool connectée confirmée via connecteur, mais session navigateur non authentifiée ; présence des trois brouillons, contenu enregistré, alternatives et marquage IA NON VÉRIFIÉS. Le ZIP n'est pas un brouillon. Aucun contournement par programmation. Rendu sur téléphone et réception→relecture→réponse non testés. Le Relieur doit faciliter la confirmation de volontaires pour suivre les retours, sans devenir automatiquement modérateur.
 
 **Bilan :** paquet source contrôlé et réponses préparées ; lancement en cours de préparation, soumis à validation explicite. Aucun post créé, programmé ou publié, aucun fichier Drive rendu public, aucun achat, aucune transmission à une conversation attestée. Bilan déposé au Journal pour le Relieur, réception effective non présumée. Prochaine action utile : session Metricool authentifiée, recherche des doublons, contrôle des brouillons puis import uniquement si absent.
+
+
+---
+
+## 2026-10-31 — La Tisseuse — trois passes EXP / ÉCO-TIS-001 / renvois
+
+**Faits vérifiés le 31/10/2026.** Quatre Google Docs EXP originaux (001 Freegan Pony, 002 Caisse Montpellier, 004 MONDRAGON, 005 Barcelona en Comú) modifiés en place avec rectificatifs datés, liens de sources et réserves, puis relus après écriture. Trois cas A/B/C (Les Chlorophy'liens La Salvetat, SCTL Larzac, Green Belt Movement Kenya) consolidés dans le dossier ÉCO-TIS-001 existant sur `main`, commit `c0515f5bf7fd736c79f7a36d6ed98a9618b06000`. Renvois croisés vers huit pages Wiki réellement présentes sur `main` préparés sans modifier le HTML.
+
+**Dossier de transmission complet** : [trois passes EXP ÉCO et renvois](transmissions/2026-10-31_TISSEUSE_TROIS_PASSES_EXP_ECO_RENVOIS_LECTRICE_RELIEUSE.md), commit `54079db8be4bf357d4daec6874973a49dda31d6e`. Pour La Lectrice (contrelecture et corrections résiduelles) et La Relieuse (mise à jour de suivi L2/L4, visa éditorial humain, interface technique). Lecture/acceptation par leurs conversations **non attestées**.
+
+**Contradictions et limites** : Freegan Pony ancien lieu terminé décembre 2019 et convention 2016 annoncée ; Montpellier chiffres 500 (avril) et 600 affichés en octobre sans audit daté ; MONDRAGON salariés ≠ sociétaires ; étude Decidim contextualisée ; 120 arbres plantés par 24 personnes ≠ impact écologique ; SCTL légalement active ≠ terres disponibles ; GBM suivi prévu à 3–6 mois ≠ survie observée partout. Quatre EXP demeurent trois `A_CORRIGER` et une `BLOQUE_MOTIVE` en l'état ; aucun statut de publication/partenariat validé.
+
+**Aucune prise de contact externe, donnée privée collectée, nouveau numéro EXP, fusion, publication Wiki, import en cartes, accord de référencement ou de coopération.** La coordination doit d'abord réconcilier les fiches documentaires et obtenir relecture contradictoire, avis droits et décision de Zout.
