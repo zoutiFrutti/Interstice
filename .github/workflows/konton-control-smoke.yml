@@ -1,0 +1,51 @@
+name: KONTON Control smoke tests
+on:
+  pull_request:
+    paths:
+      - "experiments/konton-control/**"
+      - ".github/workflows/konton-control-smoke.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  node-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Static syntax
+        run: |
+          node --check experiments/konton-control/app.js
+          node --check experiments/konton-control/github-status.js
+          node --check experiments/konton-control/local-server.cjs
+          node --check experiments/konton-control/task-engine.cjs
+          node --check experiments/konton-control/task-board.js
+          node --check experiments/konton-control/test-task-engine.cjs
+          node --check experiments/konton-control/test-local-api.cjs
+          node --check experiments/konton-control/ai-engine.cjs
+          node --check experiments/konton-control/ollama-provider.cjs
+          node --check experiments/konton-control/ai-board.js
+          node --check experiments/konton-control/test-ai-engine.cjs
+          node --check experiments/konton-control/test-ollama-provider.cjs
+          node --check experiments/konton-control/scope-policy.cjs
+          node --check experiments/konton-control/test-scope-policy.cjs
+          node --check experiments/konton-control/test-ollama-readiness.cjs
+          node --check experiments/konton-control/navigation.js
+          node --check experiments/konton-control/test-navigation.cjs
+          node --check experiments/konton-control/pwa.js
+          node --check experiments/konton-control/sw.js
+      - name: Simulation agent and GitHub read-only checks
+        working-directory: experiments/konton-control
+        run: |
+          node test.cjs
+          node test-github.cjs
+          node test-task-engine.cjs
+          node test-local-api.cjs
+          node test-ai-engine.cjs
+          node test-ollama-provider.cjs
+          node test-scope-policy.cjs
+          node test-ollama-readiness.cjs
+          node test-navigation.cjs

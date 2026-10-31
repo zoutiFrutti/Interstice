@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0B0F14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/konton-192.png">
+  <title>KONTON Control · Régie mobile</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <script src="./github-status.js" defer></script>
+  <script src="./task-board.js" defer></script>
+  <script src="./ai-board.js" defer></script>
+  <script src="./pwa.js" defer></script>
+  <script src="./navigation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#screen-home">Aller au cockpit</a>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span class="brand-slash">/</span></div>
+        <div>
+          <p class="eyebrow">CONSOLE D'AGENTS</p>
+          <h1>KONTON <span>CONTROL</span></h1>
+        </div>
+      </div>
+      <div class="topbar-meta">
+        <span class="demo-chip"><span class="led led-amber" aria-hidden="true"></span> AGENTS EN DÉMO</span>
+        <span class="connection">V0.9 · Prototype Android</span>
+      </div>
+    </header>
+
+    <nav class="app-navigation" aria-label="Navigation principale">
+      <button class="nav-item is-active" type="button" data-screen-target="home" aria-controls="screen-home" aria-current="page"><span class="nav-glyph" aria-hidden="true">⌂</span><span>Accueil</span></button>
+      <button class="nav-item" type="button" data-screen-target="agents" aria-controls="screen-agents"><span class="nav-glyph" aria-hidden="true">◆</span><span>Agents</span></button>
+      <button class="nav-item" type="button" data-screen-target="github" aria-controls="screen-github"><span class="nav-glyph" aria-hidden="true">⌁</span><span>GitHub</span></button>
+      <button class="nav-item" type="button" data-screen-target="outils" aria-controls="screen-outils"><span class="nav-glyph" aria-hidden="true">⚙</span><span>Outils</span></button>
+    </nav>
+    <section class="screen screen-home" id="screen-home" data-screen="home" tabindex="-1" aria-label="Accueil">
+      <div class="home-hero">
+        <p class="eyebrow">VUE D'ENSEMBLE</p>
+        <h2>La régie dans la poche.</h2>
+        <p>Les agents sont pour l'instant <strong>en simulation</strong>. Les données GitHub publiques sont consultables en lecture seule.</p>
+        <div class="home-actions">
+          <button type="button" data-screen-target="agents" class="home-action primary-action">Ouvrir les agents</button>
+          <button type="button" data-screen-target="github" class="home-action secondary-action">Consulter GitHub</button>
+        </div>
+      </div>
+      <div class="home-status-grid">
+        <div class="home-status"><span class="led led-amber" aria-hidden="true"></span><div><strong>Agents · Démo</strong><p>GO et STOP ne lancent aucune vraie mission depuis cette APK.</p></div></div>
+        <div class="home-status"><span class="led led-blue" aria-hidden="true"></span><div><strong>GitHub · Lecture seule</strong><p>Statut : <span id="home-github-state">Non consulté</span>. Ouvre GitHub pour vérifier.</p></div></div>
+      </div>
+      
+    <section class="metrics" aria-label="Résumé de la simulation">
+      <div class="metric"><strong id="count-agents">0</strong><span>Agents présentés</span></div>
+      <div class="metric"><strong id="count-running">0</strong><span>En simulation</span></div>
+      <div class="metric"><strong id="count-review">0</strong><span>À relire</span></div>
+
+    </section>
+
+
+    </section>
+    <section class="screen" id="screen-github" data-screen="github" hidden tabindex="-1" aria-label="GitHub">
+      <div class="screen-title"><p class="eyebrow">LECTURE SEULE</p><h2>GitHub</h2><p>Le vrai état des dépôts publics, et rien de plus. Aucune action distante n'est déclenchée.</p></div>
+      <section class="github-panel panel" aria-labelledby="github-heading">
+      <div class="panel-heading">
+        <div><span class="eyebrow">05 / OBSERVATOIRE GITHUB · LECTURE SEULE</span><h2 id="github-heading">État des dépôts</h2></div>
+        <span class="tiny-pill" id="github-source">Connexion non établie</span>
+      </div>
+      <p class="subtle">Données GitHub réelles quand la lecture aboutit. Aucun agent n'est exécuté, aucune PR n'est fusionnée, aucune CI n'est relancée.</p>
+      <div class="github-toolbar">
+        <div class="github-repo-picker">
+          <label for="github-repo">Dépôt à consulter</label>
+          <select id="github-repo"><option value="zoutiFrutti/Interstice">Interstice (public)</option></select>
+        </div>
+        <button id="github-refresh" class="small-btn" type="button">Actualiser les données</button>
+      </div>
+      <p class="github-feedback" id="github-feedback" role="status" aria-live="polite">Lecture non démarrée.</p>
+      <div id="github-dashboard" class="github-dashboard" aria-label="Données GitHub de lecture seule"></div>
+      <p class="github-fineprint">En mode web, seuls les dépôts publics sont consultables. Les dépôts privés nécessitent la passerelle locale, sans jeton dans le navigateur. Les états CI affichent des exécutions précises, pas une certification du projet.</p>
+    </section>
+
+
+    </section>
+    <section class="screen" id="screen-outils" data-screen="outils" hidden tabindex="-1" aria-label="Outils avancés">
+      <div class="screen-title"><p class="eyebrow">CONFIGURATION & DÉVELOPPEMENT</p><h2>Outils avancés</h2><p>Les outils de serveur et d'IA locale sont destinés à un ordinateur configuré. Ils ne sont pas raccordés dans cette APK.</p></div>
+      <div id="android-offline-note" class="panel android-offline-note" hidden>
+        <strong>Cette version fonctionne seule sur ton téléphone.</strong>
+        <p>Tu peux tester les commandes des agents et consulter GitHub public. Les missions IA réelles et les dépôts privés nécessitent un serveur sécurisé. Rien à configurer ici pour le moment.</p>
+      </div>
+      <section class="mobile-install panel" aria-label="Installation sur téléphone">
+        <div><p class="eyebrow">INSTALLATION</p><p id="mobile-install-status" class="subtle">Installation en cours de vérification.</p></div>
+        <button id="mobile-install" type="button" class="small-btn" hidden>Installer l'application</button>
+      </section>
+      <section class="panel task-panel" aria-labelledby="task-heading">
+      <div class="panel-heading">
+        <div><span class="eyebrow">06 / ORCHESTRATEUR LOCAL</span><h2 id="task-heading">Vérifications à exécuter</h2></div>
+        <span class="tiny-pill" id="task-mode">Hors connexion locale</span>
+      </div>
+      <p class="subtle">Contrairement au pupitre fictif, ces tâches vérifient réellement une PR et les CI du commit exact. L'exécution et l'accusé de lecture ne modifient jamais GitHub.</p>
+      <form class="task-form" id="task-create-form">
+        <label for="task-repo">Dépôt autorisé</label>
+        <select id="task-repo" required disabled><option>Passerelle locale nécessaire</option></select>
+        <label for="task-pr">N° de pull request</label>
+        <input type="number" min="1" max="99999999" step="1" id="task-pr" required disabled placeholder="Ex. 39">
+        <button class="small-btn task-primary" id="task-create" type="submit" disabled>Créer une vérification</button>
+      </form>
+      <p id="task-feedback" class="github-feedback" role="status" aria-live="polite">Orchestrateur disponible uniquement sur le serveur local.</p>
+      <div class="task-grid">
+        <div>
+          <h3>Tâches et rapports</h3>
+          <div id="task-list"><p class="empty">Aucune tâche chargée.</p></div>
+        </div>
+        <div>
+          <h3>Journal détaillé</h3>
+          <ol class="event-log" id="task-events"><li>Sélectionne une tâche pour consulter ses événements.</li></ol>
+        </div>
+      </div>
+      <p class="github-fineprint">Les données sont conservées uniquement sur l'ordinateur qui exécute la passerelle. « Rapport lu » ne veut dire ni PR approuvée, ni article publié, ni CI certifiée. Le filtrage personnel/collectif de l'interface ne crée pas de droits d'accès.</p>
+    </section>
+
+
+    <section class="panel ai-panel" aria-labelledby="ai-heading">
+      <div class="panel-heading">
+        <div><span class="eyebrow">07 / PREMIER AGENT IA RÉEL · LOCAL</span><h2 id="ai-heading">La Relectrice technique</h2></div>
+        <span class="tiny-pill" id="ai-mode">Modèle IA non détecté</span>
+      </div>
+      <p class="subtle">Mission fixe : analyser un rapport GitHub existant, distinguer les faits des réserves et proposer trois contrôles humains. L'agent ne peut ni accéder aux fichiers ni publier ou fusionner une PR.</p>
+      <form class="ai-form" id="ai-create-form">
+        <label for="ai-source">Rapport GitHub local à analyser</label>
+        <select id="ai-source" required disabled><option>Configurer le moteur local pour activer l'agent</option></select>
+        <button id="ai-create" type="submit" class="small-btn task-primary" disabled>Préparer la mission</button>
+      </form>
+      <p id="ai-feedback" class="github-feedback" role="status" aria-live="polite">Le moteur IA n'est pas encore connecté à cette session.</p>
+      <div id="ai-tasks" class="ai-task-list" aria-label="Missions et réponses de l'agent"></div>
+      <p class="github-fineprint">STOP interrompt la requête réseau locale et empêche son résultat d'être validé dans le cockpit ; il ne prouve pas l'arrêt physique du calcul côté modèle. Les réponses de l'IA ne sont jamais des autorisations éditoriales, juridiques ou techniques. L'historique demeure sur l'ordinateur qui héberge le serveur local.</p>
+    </section>
+
+    </section>
+    <section class="screen" id="screen-agents" data-screen="agents" hidden tabindex="-1" aria-label="Agents de démonstration">
+      <div class="screen-title"><p class="eyebrow">PUPITRE DE DÉMONSTRATION</p><h2>Agents</h2><p>GO, STOP et les validations ne modifient aucun projet réel.</p></div>
+      <div class="demo-tools"><button type="button" id="demo-reset" class="small-btn">Réinitialiser la démo</button><span>Les actions ci-dessous sont fictives.</span></div>
+      <div class="workbench">
+      <aside class="sidebar panel" aria-label="Sélection des agents">
+        <div class="panel-heading">
+          <div><span class="eyebrow">01 / REGISTRE</span><h2>Agents</h2></div>
+          <span class="tiny-pill" id="visible-count">0 visibles</span>
+        </div>
+        <div class="scope-tabs" role="group" aria-label="Filtrer par périmètre">
+          <button class="tab active" type="button" data-scope="all" aria-pressed="true">Tous</button>
+          <button class="tab" type="button" data-scope="collectif" aria-pressed="false">Collectif</button>
+          <button class="tab" type="button" data-scope="personnel" aria-pressed="false">Perso</button>
+        </div>
+        <label class="search-label" for="agent-search">Rechercher un agent</label>
+        <input id="agent-search" type="search" placeholder="Nom, mission…" autocomplete="off">
+        <div id="agent-list" class="agent-list" aria-label="Liste des agents"></div>
+        <div class="sidebar-foot">
+          <span class="led led-gray" aria-hidden="true"></span>
+          <span>Registre local fictif · Aucun accès aux comptes</span>
+        </div>
+      </aside>
+
+      <section id="agent-command" class="main-panel panel">
+        <div class="panel-heading">
+          <div><span class="eyebrow">02 / PUPITRE</span><h2>Commande</h2></div>
+          <span class="tiny-pill">V0.1</span>
+        </div>
+        <div class="agent-detail" id="agent-detail">
+          <p class="empty">Choisis un agent pour afficher son pupitre.</p>
+        </div>
+      </section>
+
+      <aside class="right-column" aria-label="Validations et journal">
+        <section class="panel queue-panel">
+          <div class="panel-heading"><div><span class="eyebrow">03 / CONTRÔLE HUMAIN</span><h2>À relire</h2></div><span class="count" id="review-badge">0</span></div>
+          <p class="subtle">Rien n'est publié ou approuvé automatiquement.</p>
+          <div id="review-queue" class="review-queue"></div>
+        </section>
+        <section class="panel log-panel">
+          <div class="panel-heading"><div><span class="eyebrow">04 / TRAÇABILITÉ</span><h2>Journal</h2></div></div>
+          <p class="subtle">Événements de cette session démo uniquement.</p>
+          <ol id="event-log" class="event-log" aria-live="polite" aria-relevant="additions"></ol>
+        </section>
+      </aside>
+    </div>
+
+    </section>
+    <footer class="footer">
+      <span>KONTON Control · maquette technique isolée</span>
+      <span>Personnel et collectif restent deux périmètres distincts.</span>
+    </footer>
+  </div>
+  <div class="sr-only" id="announcer" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'fr.konton.control.preview'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'fr.konton.control.preview'
+        minSdk 26
+        targetSdk 34
+        versionCode 9
+        versionName '0.9.0-preview'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        main.assets.srcDir(layout.buildDirectory.dir('generated/cockpitAssets'))
+    }
+}
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.12.1'
+}
+
+// Copy ONLY public/static frontend. No local server, private files, tokens or task histories.
+def webAssets = [
+    'index.html', 'styles.css', 'app.js', 'github-status.js',
+    'task-board.js', 'ai-board.js', 'pwa.js', 'manifest.webmanifest',
+    'sw.js', 'navigation.js', 'icons/konton-192.png', 'icons/konton-512.png'
+]
+tasks.register('bundleCockpit', Copy) {
+    from(project.rootDir.parentFile) {
+        include webAssets
+    }
+    into(layout.buildDirectory.dir('generated/cockpitAssets/konton'))
+}
+tasks.named('preBuild') {
+    dependsOn(tasks.named('bundleCockpit'))
+}
