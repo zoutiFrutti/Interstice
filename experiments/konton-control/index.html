@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
   <script src="./github-status.js" defer></script>
+  <script src="./task-board.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au cockpit</a>
@@ -56,6 +57,34 @@
       <p class="github-feedback" id="github-feedback" role="status" aria-live="polite">Lecture non démarrée.</p>
       <div id="github-dashboard" class="github-dashboard" aria-label="Données GitHub de lecture seule"></div>
       <p class="github-fineprint">En mode web, seuls les dépôts publics sont consultables. Les dépôts privés nécessitent la passerelle locale, sans jeton dans le navigateur. Les états CI affichent des exécutions précises, pas une certification du projet.</p>
+    </section>
+
+
+    <section class="panel task-panel" aria-labelledby="task-heading">
+      <div class="panel-heading">
+        <div><span class="eyebrow">06 / ORCHESTRATEUR LOCAL</span><h2 id="task-heading">Vérifications à exécuter</h2></div>
+        <span class="tiny-pill" id="task-mode">Hors connexion locale</span>
+      </div>
+      <p class="subtle">Contrairement au pupitre fictif, ces tâches vérifient réellement une PR et les CI du commit exact. L'exécution et l'accusé de lecture ne modifient jamais GitHub.</p>
+      <form class="task-form" id="task-create-form">
+        <label for="task-repo">Dépôt autorisé</label>
+        <select id="task-repo" required disabled><option>Passerelle locale nécessaire</option></select>
+        <label for="task-pr">N° de pull request</label>
+        <input type="number" min="1" max="99999999" step="1" id="task-pr" required disabled placeholder="Ex. 39">
+        <button class="small-btn task-primary" id="task-create" type="submit" disabled>Créer une vérification</button>
+      </form>
+      <p id="task-feedback" class="github-feedback" role="status" aria-live="polite">Orchestrateur disponible uniquement sur le serveur local.</p>
+      <div class="task-grid">
+        <div>
+          <h3>Tâches et rapports</h3>
+          <div id="task-list"><p class="empty">Aucune tâche chargée.</p></div>
+        </div>
+        <div>
+          <h3>Journal détaillé</h3>
+          <ol class="event-log" id="task-events"><li>Sélectionne une tâche pour consulter ses événements.</li></ol>
+        </div>
+      </div>
+      <p class="github-fineprint">Les données sont conservées uniquement sur l'ordinateur qui exécute la passerelle. « Rapport lu » ne veut dire ni PR approuvée, ni article publié, ni CI certifiée. Le filtrage personnel/collectif de l'interface ne crée pas de droits d'accès.</p>
     </section>
 
     <div class="workbench">
