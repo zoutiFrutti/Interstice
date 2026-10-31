@@ -8,6 +8,7 @@
   <title>KONTON Control · Cockpit V0</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
+  <script src="./github-status.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au cockpit</a>
@@ -22,13 +23,13 @@
       </div>
       <div class="topbar-meta">
         <span class="demo-chip"><span class="led led-amber" aria-hidden="true"></span> MODE DÉMO</span>
-        <span class="connection">Aucun service connecté</span>
+        <span class="connection">GitHub : lecture seule facultative</span>
       </div>
     </header>
 
     <div class="notice" role="note">
-      <strong>Prototype interactif.</strong> Toutes les missions et tous les statuts ci-dessous sont fictifs.
-      GO, STOP et VALIDATION n'agissent sur aucun vrai agent. Le rafraîchissement remet la simulation à zéro.
+      <strong>Pupitre en simulation.</strong> Les missions et les statuts des agents sont fictifs. L’observatoire GitHub ci-dessous est distinct et affiche des données réelles uniquement si elles sont chargées.
+      GO, STOP et VALIDATION n'agissent sur aucun vrai agent. Le rechargement de la page remet les simulations à zéro.
     </div>
 
     <section class="metrics" aria-label="Résumé de la simulation">
@@ -36,6 +37,25 @@
       <div class="metric"><strong id="count-running">0</strong><span>En simulation</span></div>
       <div class="metric"><strong id="count-review">0</strong><span>À relire</span></div>
       <div class="metric"><strong>0</strong><span>Connexions réelles</span></div>
+    </section>
+
+
+    <section class="github-panel panel" aria-labelledby="github-heading">
+      <div class="panel-heading">
+        <div><span class="eyebrow">05 / OBSERVATOIRE GITHUB · LECTURE SEULE</span><h2 id="github-heading">État des dépôts</h2></div>
+        <span class="tiny-pill" id="github-source">Connexion non établie</span>
+      </div>
+      <p class="subtle">Données GitHub réelles quand la lecture aboutit. Aucun agent n'est exécuté, aucune PR n'est fusionnée, aucune CI n'est relancée.</p>
+      <div class="github-toolbar">
+        <div class="github-repo-picker">
+          <label for="github-repo">Dépôt à consulter</label>
+          <select id="github-repo"><option value="zoutiFrutti/Interstice">Interstice (public)</option></select>
+        </div>
+        <button id="github-refresh" class="small-btn" type="button">Actualiser les données</button>
+      </div>
+      <p class="github-feedback" id="github-feedback" role="status" aria-live="polite">Lecture non démarrée.</p>
+      <div id="github-dashboard" class="github-dashboard" aria-label="Données GitHub de lecture seule"></div>
+      <p class="github-fineprint">En mode web, seuls les dépôts publics sont consultables. Les dépôts privés nécessitent la passerelle locale, sans jeton dans le navigateur. Les états CI affichent des exécutions précises, pas une certification du projet.</p>
     </section>
 
     <div class="workbench">
