@@ -1130,7 +1130,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "6910542c3f29fb32730296e902bf71f77b2330a6",
+        "priority_reserve": "Chronologie et catégories politiques à contextualiser, voix des résistances hors Europe.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-antiracisme-histoires-droits.html",
@@ -1138,7 +1151,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "6c1081910a0499e2c9646da1f3d75218dcbc2ee8",
+        "priority_reserve": "Références de recours et voix concernées à dater; relier BIO/FN antiracistes.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-association-collegiale.html",
@@ -1146,7 +1172,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "1b2a021d31828047846b428c7091dfae31898ab5",
+        "priority_reserve": "Étapes juridiques générales sans références article par article ni avis Juriste.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-autonomie-materielle-savoir-faire.html",
@@ -1154,7 +1193,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1",
+        "priority_reserve": "Lien interne wiki-mutualiser-materiel.html absent et contrôles de sécurité par technique.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-capitalisme-classes-travail.html",
@@ -1162,7 +1214,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "db754eed38c3e02104418800366cae31e90d183c",
+        "priority_reserve": "Chiffres et droits sociaux à versionner; care, syndicalismes, travail migrant.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-culture-creation-acces-art.html",
@@ -1170,7 +1235,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "4a71182424035d1696cc9d2b948c3b948fb91923",
+        "priority_reserve": "Sources génériques par rubrique, droits du travail et spectacle à vérifier.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-decision-collective.html",
@@ -1178,7 +1256,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "e09926e74720a2b89ae78065544805c169cb3776",
+        "priority_reserve": "main moins prudent que PR44; recours sans procédure établie, bibliographie insuffisante.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-ecologie-sociale-environnement.html",
@@ -1186,7 +1277,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "dd6e149ad8d44b5db5180a800730617b116369f1",
+        "priority_reserve": "Références par assertion et histoire ouvrière/paysanne/autochtone, ÉCO-001.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-education-enfance-protection.html",
@@ -1194,7 +1298,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "931fc198127b9073b3ae513f63bf2dcdaaf177e1",
+        "priority_reserve": "Informations sur protection et violences mineures nécessitant contrôle spécialisé.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-egalite-fiches.html",
@@ -1202,7 +1319,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "083fbae5c37a87b32fd5c86c3da350c425f64c85",
+        "priority_reserve": "Sources et terminologies spécifiques à relire avec personnes concernées.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-egalite-genres-inclusivite.html",
@@ -1210,7 +1340,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "9ca5e5d2e1e83dfeed3669034c48e9ddc86b0646",
+        "priority_reserve": "Carte expérimentale et navigation/accessibilité à vérifier.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-feminismes-histoire-egalite.html",
@@ -1218,7 +1361,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "69789f5f665cdae4d85061293c9ecb2dcb13c919",
+        "priority_reserve": "Sources et interconnexion archives femmes Commune / FN/ BIO / ASSO à consolider.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-financements-culture-spectacle.html",
@@ -1226,7 +1382,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "030b75d277e09c3bc7e971d90d8ca5f1c18e7329",
+        "priority_reserve": "Aides, conditions et calendriers mouvants sans revue datée par dispositif.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-frontieres-migrations-colonialisme.html",
@@ -1234,7 +1403,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "eefa8c327980c6747dca58e14c5b9c9f61e895b9",
+        "priority_reserve": "Asile, recours, détention et délais trop sensibles sans contrôle juridique exhaustif.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-handicap-validisme-neurodiversite.html",
@@ -1242,7 +1424,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "ac20430979cc5d741d00867ca0fcfb4b70ea19ec",
+        "priority_reserve": "Version des démarches et participation des personnes concernées à confirmer.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-justice-prisons-abolitionnisme.html",
@@ -1250,7 +1445,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "165d2f325fb98cd6680db3da66e71f2b5068d1f3",
+        "priority_reserve": "Chiffres, droits et visions contradictoires à recouper par source.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-lecture-croisee-travail-soin-pouvoir.html",
@@ -1258,7 +1466,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "206f4d999dcfe12bb5d487830ad7cf02edf66780",
+        "priority_reserve": "main non réconcilié avec PR44 et formulaire de proposition non confidentiel.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-liberte-numerique-ia-surveillance.html",
@@ -1266,7 +1487,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "cc3245d9497fbe6130dd7e5c631ca387e906cdb3",
+        "priority_reserve": "Droit/technique 2026 et hypothèses IA distribuée/énergie à dater.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-logement-habitat-droit-ville.html",
@@ -1274,7 +1508,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "f0ce0e5966da0e5e263358ce397a31acd90ed2c3",
+        "priority_reserve": "DALO, expulsion, occupations sans versions juridiques/conditions par notion (DROIT-002).",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-patriarcat-histoire-mecanismes.html",
@@ -1282,7 +1529,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "0fc8ab4206b930b6100efa085b790e16d4429e45",
+        "priority_reserve": "Références/savoirs contradictoires, statistiques genre et soin à préciser.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-police-deces-memoire.html",
@@ -1290,7 +1550,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "562b8897552216ffcbdb6e968a76aa6e6b1b8e78",
+        "priority_reserve": "Données nominatives, décisions à recouper, droit de réponse hors GitHub public.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-politique-institutions-regimes.html",
@@ -1298,7 +1571,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "86facb7f05895d8234086d2fcee651d4e08bf486",
+        "priority_reserve": "Schémas et compétences à versionner sans classement universel.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-sante-psychiatrie-autonomie-soins.html",
@@ -1306,7 +1592,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "BLOQUEE",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "4cf6f1f1cf209c7617bbf7a6e86f0e5c362e57f5",
+        "priority_reserve": "Recours et information sanitaire à haut enjeu sans validation humaine spécialisée.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     },
     {
       "path": "wiki-socialismes-communismes-anarchismes-autogestion.html",
@@ -1314,7 +1613,20 @@
       "status": "PRESENT_MAIN_A_RECONTROLER",
       "content_review": "A_FAIRE",
       "mobile_accessibility": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "lectrice_pre_sortie": {
+        "review_date": "2026-10-31",
+        "classification": "A_CORRIGER",
+        "scope": "TRIAGE_TEXTE_SECTIONS_LIENS_NON_COLLATION_INTEGRALE",
+        "reviewed_baseline_ref": "main",
+        "reviewed_blob_sha": "4aa9dc92b5d864aeee3424d2a77f99abc0690afc",
+        "priority_reserve": "Sources et récits extra-européens, liens avec 44 fiches et contradictions des communs.",
+        "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "source_fact_verification": "A_COMPLETER",
+        "rights_review": "A_COMPLETER",
+        "accessibility_test": "NON_EXECUTE",
+        "decision_Zout": "NON_DONNEE"
+      }
     }
   ],
   "NOTE": "Ces catégories se recoupent, ne pas sommer comme autant de nouveaux articles; aucune page n'a reçu un feu vert de publication du seul fait de cet inventaire.",
@@ -1329,5 +1641,16 @@
       "BIO-001"
     ],
     "scope": "Lecture directe de six documents Drive; identification de risques, ni collation externe de chaque source ni validation pour publication."
+  },
+  "lectrice_pre_sortie_summary": {
+    "review_date": "2026-10-31",
+    "status": "CANDIDAT_NON_VALIDE",
+    "pages": 24,
+    "validable": 0,
+    "a_corriger": 15,
+    "bloquees": 9,
+    "demonstrated_gaps": 10,
+    "report": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+    "limitations": "Premier tri critique; ni relecture historique complète des 44 fiches Drive et 71 FN, ni collation indépendante exhaustive, ni tests navigateur; décision humaine à recueillir"
   }
 }
