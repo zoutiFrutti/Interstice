@@ -15,7 +15,14 @@ test("eco: index 320/390/1280, clavier, focus, impression et sans JS",async()=>{
     await page.goto(BASE+"/wiki-ecologie.html",{waitUntil:"load"});
     assert.equal(await page.locator("h1").count(),1);
     assert.equal(await page.locator(".eco-axis").count(),3);
-    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),"Débordement "+width);
+    const measures=await page.evaluate(()=>{
+      const outer=document.documentElement.scrollWidth,inner=innerWidth;
+      const offenders=[...document.querySelectorAll("body *")].filter(e=>e.getClientRects().length)
+       .map(e=>({name:e.tagName.toLowerCase(),id:e.id,right:Math.round(e.getBoundingClientRect().right)}))
+       .filter(x=>x.right>inner+1).slice(0,6);
+      return {outer,inner,offenders};
+    });
+    assert.ok(measures.outer<=measures.inner+1,"Débordement "+width+" : "+JSON.stringify(measures));
     await page.keyboard.press("Tab");
     assert.equal(await page.evaluate(()=>document.activeElement?.getAttribute("href")),"#contenu-eco");
     await page.keyboard.press("Enter");
