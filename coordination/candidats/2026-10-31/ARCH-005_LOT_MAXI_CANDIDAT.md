@@ -24,6 +24,10 @@ Les ateliers du Louvre permettent de poser la question de la responsabilité ouv
 
 **À vérifier :** fac-similé MP 159, variantes de la pièce n°363, mémoires de Rossel, procès-verbaux du conseil, registres d'embauche et paie. **Renvois :** ARCH-007, BIO-015, ASSO-007 et histoire du travail sous la Commune.
 
+
+## Contradiction centrale et périmètre de la fiche
+
+Le titre interroge explicitement la pratique : la réponse documentaire est que les **prescriptions** du règlement du 3 mai sont décrites par transcription, tandis que leur exécution reste inconnue. L'affiche du 2 avril signalée dans un inventaire BHVP n'a **pas été collationnée directement** et ne doit pas être traitée comme une version de la même réglementation. L'approbation administrative et le récit de Rossel ne sont pas vérifiés sur leurs originaux. **Pour une fiche sur l'histoire de la réglementation ouvrière, ces réserves sont publiables ; pour une histoire de sa mise en œuvre, la preuve manque.**
 ## Sources
 1. [Inventaire BHVP du règlement daté du 2 avril, rapport Enssib](https://www.enssib.fr/bibliotheque-numerique/documents/61706-bibliotheque-historique-de-la-ville-de-paris-rapport-de-stage.pdf).
 2. [BHVP, règlement du 3 mai, affiche n°363](https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0001490635).
@@ -31,6 +35,6 @@ Les ateliers du Louvre permettent de poser la question de la responsabilité ouv
 4. [Michèle Audin, 31 mai 2023, suite de la transcription](https://macommunedeparis.com/2023/05/31/3-mai-1871-le-reglement-des-ateliers-du-louvre-suite/).
 5. [André-Clément Decouflé, « Réquisition, autogestion ? » (étude secondaire)](https://autogestion.asso.fr/requisition-autogestion/).
 
-**Avis de La Lectrice : À CORRIGER** avant de soumettre comme histoire de la mise en œuvre. Il manque une collation des deux originaux et de la chaîne d'approbation ; cette version peut déjà être lue comme étude des **règles écrites**, non comme bilan d'une démocratie ouvrière effective. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
+**Avis de La Lectrice : PRÊT À SOUMETTRE À ZOUT EN TANT QU'ANALYSE DE RÈGLEMENTS (pas de leur application)** avant de soumettre comme histoire de la mise en œuvre. Il manque une collation des deux originaux et de la chaîne d'approbation ; cette version peut déjà être lue comme étude des **règles écrites**, non comme bilan d'une démocratie ouvrière effective. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
 
 **Droits et publication :** résumé original sans image reproduite ni copie d'étude. Le statut de chaque fichier numérique devra être contrôlé avant illustration. Première édition candidate sous responsabilité éditoriale de Zout, manifeste et charte non adoptés collectivement. **Pas de visa, pas de publication.**
