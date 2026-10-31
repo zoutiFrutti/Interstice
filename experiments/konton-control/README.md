@@ -1,12 +1,13 @@
-# KONTON Control · cockpit V0.2 — GitHub en lecture seule
+# KONTON Control · cockpit V0.3 — tâches locales de vérification GitHub
 
 **Statut : prototype sur branche, non déployé, non fusionné.**
 **31 octobre 2026.**
 
-Deux espaces indépendants coexistent :
+Trois espaces indépendants coexistent :
 
 1. **Pupitre d'agents** : GO, STOP, fiches, validation et journal entièrement fictifs. La simulation n'exécute aucun agent ChatGPT, CI ou automatisation réelle.
 2. **Observatoire GitHub** : métadonnées réellement lues en GET, dernières PR ouvertes et exécutions de CI, avec dates, branches, erreurs et liens vérifiables. **Aucune écriture GitHub**.
+3. **Orchestrateur local V0.3** : création d'une tâche précise de vérification d'une PR, exécution à la demande, récupération de son SHA exact et des exécutions GitHub Actions correspondantes, rapport enregistré localement, puis accusé de lecture humain. **Aucune action GitHub distante en écriture.**
 
 **Ne pas exposer de secrets ni fusionner sans revue.** Ce prototype n'est pas intégré au site public Interstice.
 
@@ -53,6 +54,22 @@ La variable KONTON_CONTROL_REPOS **est une liste d'autorisation côté serveur**
 - Les informations de dépôts privés ne doivent pas être recopiées dans le site Interstice public ou dans des rapports accessibles publiquement.
 - L'exposition locale est adaptée à un prototype monoposte, **pas à un serveur multicomptes ou à un hébergement public**. Une véritable interface mutualisée nécessitera authentification, gestion des rôles, isolation des organisations, journal d'audit, tests de sécurité et backend dédié.
 
+## Orchestrateur réel, mais limité aux vérifications
+
+Le pupitre d'agents demeure une démonstration ; ce nouvel espace est réellement exécutable lorsqu'on utilise le serveur Node local. Il n'est **pas disponible** dans une page GitHub Pages ou servie par le serveur statique Python.
+
+1. Démarrer node local-server.cjs dans le dossier experiments/konton-control, avec KONTON_CONTROL_REPOS et éventuellement GH_TOKEN comme ci-dessus.
+2. Ouvrir http://127.0.0.1:8765/. Dans le bloc « Vérifications à exécuter », choisir un dépôt autorisé, saisir un numéro de PR (par exemple 39 pour Interstice), puis créer la tâche.
+3. Cliquer « Exécuter la lecture ». Le serveur fait uniquement des GET GitHub sur la PR et les exécutions Actions filtrées par son SHA.
+4. Examiner la conclusion **prudente** et les liens vers les exécutions. Un résultat absent, incomplet ou non concordant ne sera jamais présenté comme une validation globale.
+5. Choisir « Rapport lu » ou « À approfondir ». Cette décision confirme **uniquement la lecture du rapport local**, et ne modifie ni la PR, ni son approbation, ni son état de fusion.
+
+Le journal et les rapports sont sauvegardés sur **la machine locale**, dans data/tasks.json par défaut, ignoré par Git. On peut choisir un autre chemin avec KONTON_CONTROL_STATE_FILE. Le fichier n'est pas synchronisé, chiffré ou sauvegardé automatiquement ; prendre les précautions habituelles en cas d'ordinateur partagé.
+
+L'API POST ne crée et ne modifie que les enregistrements locaux, avec taille limitée et garde-fous d'origine. Le moteur ne sait exécuter qu'une opération prédéfinie : github-pr-check. Aucune commande arbitraire, prompt, shell, workflow GitHub, action d'agent ou fusion de PR n'est exposé. Les exécutions ne sont ni planifiées, ni automatiques ; c'est une V0.3 **à déclenchement manuel**.
+
+**Limitation de sécurité :** ce serveur suppose un poste personnel de confiance et n'a **pas d'authentification multicomptes**. Ne pas le publier derrière un reverse proxy, ouvrir son port au réseau local ou le mettre sur un serveur distant sans authentification, autorisations, chiffrement et audit de sécurité. Les filtres collectif/personnel ne sont pas une séparation de sécurité côté utilisateur.
+
 ## Ce qui est effectivement connecté
 
 | Fonction | Statut |
@@ -61,6 +78,7 @@ La variable KONTON_CONTROL_REPOS **est une liste d'autorisation côté serveur**
 | Métadonnées du dépôt public Interstice | Lecture GitHub réelle en mode web |
 | PR ouvertes et exécutions GitHub Actions | Lecture réelle, limitée aux premières réponses |
 | Dépôts privés configurés par une personne authentifiée | Via passerelle locale, quand le jeton est présent |
+| Tâche GitHub PR + CI exacte, rapport et revue locale | **Fonctionnel en mode serveur local** ; aucune modification distante |
 | Démarrage/annulation de GitHub Actions, merge, publication | **Désactivés** |
 | Collecte WhatsApp, KONTON Bridge, Supabase | **Aucun accès** |
 | Interaction directe avec les conversations ChatGPT | **Aucun accès** |
@@ -72,15 +90,17 @@ Depuis experiments/konton-control :
 ~~~sh
 node test.cjs
 node test-github.cjs
+node test-task-engine.cjs
+node test-local-api.cjs
 ~~~
 
-Les tests vérifient les transitions locales et l'affichage read-only avec réponses API simulées. La lecture effective chez GitHub dépend d'une connexion internet et des permissions ; le test navigateur mobile et les outils d'accessibilité restent à faire.
+Les tests vérifient les transitions, l'affichage read-only, le moteur durable, l'audit et la protection HTTP locale avec réponses API simulées. La lecture effective chez GitHub dépend d'une connexion internet et des permissions ; le test navigateur mobile et les outils d'accessibilité restent à faire.
 
 ## Suite de la roadmap
 
 1. Relecture du rendu réel, largeur 390 px et bureau, puis navigation clavier/lecteur d'écran.
-2. Adapter la même lecture de statuts au cockpit sans exposer d'identifiants privés dans du code public.
-3. Définir des **tâches exécutables** et **des permissions côté serveur** avant tout vrai GO/STOP.
+2. Tester l'orchestrateur sur le poste cible, vérifier les droits d'accès GitHub et la restitution des rapports en conditions réelles.
+3. Formaliser les permissions par espace, les identités d'agents et les tâches futures. Le type PR-check est la première tâche réellement exécutable.
 4. Après validation humaine explicite, introduire un moteur d'orchestration local indépendant, puis un boîtier physique.
 5. Garder personnels / communs réellement séparés côté backend ; le filtre visuel de la démo ne vaut pas contrôle d'accès.
 
