@@ -717,3 +717,17 @@ Modifications réelles : entrée de journal seulement, ni catalogue FN, ni ARCH-
 **Tests exécutés et bornés** : [workflow Graphiste #41188459512](https://github.com/zoutiFrutti/Interstice/actions/runs/41188459512), **success 1/1**, Chromium 320/390/1280, police 18/18/19px, absence de débordement global et au zoom texte simulé 200 %, focus clavier du tableau, pas d'images, JS ni POST/requête extérieure, PDF A4 généré. Artefact « fiches-premiere-edition-captures-a4 » : trois PNG + A4. **Aucun Android/TalkBack physique, aucune inspection exhaustive pixel par pixel, aucun avis juridique ou réexamen des 139 contenus**.
 
 **Limites structurantes** : l'enum de la PR #28 ne comporte pas ASSO/COL/EXP/FN ; mapping des statuts du registre avec la machine de modération non validé ; seules les dates réellement connues s'affichent, ni approbation déduite du CSS ni autorisation de publication. Contrat à examiner par L'Anarchitecte (schéma + accès), La Développeuse (intégration en branche candidate) et La Relieuse (décision/visa éditorial Zout), sans fusion et sans présumer réception entre conversations.
+
+---
+
+## 2026-10-31 — La Graphiste — trois passes effectives sur les pages historiques, politiques et écologiques
+
+**Sources/reprise :** PR #50 sur PR #28, décision pré-sortie PR #43, propositions d'identité PR #35 et écologie PR #47. Six pages de \`main\` initialement identiques aux blobs de PR #50 ; page de lecture croisée en conflit avec \`main\`, **laissée intacte**.
+
+**Passe 1 (réelle).** Six vraies pages \`wiki-*.html\` reçoivent uniquement \`assets/fiche-premiere-edition.css\`, des classes HTML opt-in et un en-tête responsive, sans substitution de paragraphes, sources ou articles. Aperçu de **trois vrais IDs** ARCH-003, ASSO-007, BIO-009, **sans recopier les versions non validées** (BIO-009 n'a qu'un profil de métadonnées dans l'aperçu). Aucun média historique reproduit.
+
+**Passe 2 (réelle).** Réutilisation de l'identité noir #101014 / rouge #c5212c / ivoire #e9e5db, titres/lecture avec fallback de fontes PR #35 ; styles ciblés sur les cartes documentaires, les sommaires, les sources et dossiers écologie/politique, conservation des composants frise/comparaison/témoignage/droit/primaire/contradictions PR #50 ; **pas de nouveau schéma/renderer ni de CSS global remplacé**.
+
+**Passe 3 (réelle).** Suite Chromium étendue à **7 pages × 3 largeurs**, soit **21 états** : CI finale **[run 41210590138](https://github.com/zoutiFrutti/Interstice/actions/runs/41210590138) succès, SHA c06a5d0b4a3d248e87325c0b0a19792517c0991a**, 0 débordement horizontal, corps 18/18/19px, contraste principal 15,09:1, ancres testées au clavier, zoom texte simulé à 200%, captures 320/1280 et export A4. **Bugs de navigation mobile et grand titre écologie détectés puis corrigés après deux CI échouées.** Artifact \`fiches-premiere-edition-captures-a4\` id 13045379311. Pas de test Android/TalkBack, inspection visuelle humaine ni contrôle de toutes les sources.
+
+**Dossier et destinataires :** \`coordination/transmissions/2026-10-31_GRAPHISTE_TROIS_PASSES_FICHES_REELLES_QA.md\` ; La Développeuse pour une intégration sans écrasement, L'Anarchitecte pour le schéma et la sécurité, La Relieuse pour les visas humains par version. Prendre en compte ASSO-007 long/court et BIO-009 dates divergentes. **Aucun nouveau texte approuvé, fusionné ou publié.** Un message GitHub ne garantit pas réception par les conversations destinataires.
