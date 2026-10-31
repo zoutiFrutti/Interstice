@@ -105,7 +105,16 @@ function renderList() {
     info.append(make("strong", "", agent.name));
     info.append(make("span", "", scopeLabel(agent.scope) + " · " + statusMeta[agent.status].label));
     item.append(info);
-    item.addEventListener("click", function () { selectedId = agent.id; render(); });
+    item.addEventListener("click", function () {
+      selectedId = agent.id;
+      render();
+      // On a small phone, the list is above the GO/STOP panel.
+      // Take the user directly to the control they just selected.
+      const command = el("agent-command");
+      if (window.innerWidth <= 680 && command && typeof command.scrollIntoView === "function") {
+        command.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
     list.append(item);
   });
 }
