@@ -3786,5 +3786,32 @@
     "merge_authorized": false,
     "publication_authorized": false,
     "technical_blocker": "edition-premiere/decisions.json sur integration/premiere-edition-candidate-2026-10-31 encore sans autorisations, à réconcilier avec les 2 visas avant toute intégration."
+  },
+  "cycle3_relieuse": {
+    "date": "2026-10-31",
+    "status": "4_PASSES_REALISEES_DOCUMENTEES",
+    "completed_passes": 4,
+    "approved_prior": [
+      "ARCH-002",
+      "ARCH-007"
+    ],
+    "new_approvals": 0,
+    "ready_to_submit": 14,
+    "to_correct": 15,
+    "blocked": 5,
+    "paths": [
+      "coordination/cycle3/RELIEUSE_CYCLE3_PASSE_LANCEE_2026-10-31.md",
+      "coordination/cycle3/PAQUETS_VISAS_14_VERSIONS_2026-10-31.md",
+      "coordination/cycle3/REGISTRE_DECISIONS_EN_ATTENTE_2026-10-31.json",
+      "coordination/cycle3/CONTROLE_TROIS_PARCOURS_2026-10-31.md",
+      "coordination/cycle3/DOSSIER_OUVERTURE_SANS_CONTACT_2026-10-31.md"
+    ],
+    "technical_candidate_sha": "0ad8532c6cda858dc059e62ba50bf31333779fc7",
+    "candidate_ci_run": 41218947066,
+    "prototype_routes": 3,
+    "external_outreach_count": 0,
+    "publication_authorized": false,
+    "merge_authorized": false,
+    "blocking_issue": "Le double verrou technique n'a pas repris les deux accords humains ; mentions légales et RGPD restent des verrous réels."
   }
 }
