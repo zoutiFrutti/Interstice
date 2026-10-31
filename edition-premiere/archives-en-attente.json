@@ -1,0 +1,29 @@
+{
+  "schema": "edition-archives-preparation-v1",
+  "status": "STAGED_NOT_AUTHORIZED",
+  "checked_on": "2026-10-31",
+  "records": [
+    {
+      "id": "ARCH-002",
+      "source_path": "coordination/candidats/2026-10-31/ARCH-002_PREMIERE_EDITION.md",
+      "source_blob_sha": "f9f0b6edf09cf0e84fe7e46960f25df1a8e99dbb",
+      "visa": "ACCORD_EDITO_ZOUT",
+      "evidence": "https://github.com/zoutiFrutti/Interstice/pull/43#issuecomment-6543561461",
+      "rights_final": "A_VERIFIER",
+      "publication_authorized": false,
+      "merge_authorized": false,
+      "reason": "Rights still to verify. No authorized candidate HTML."
+    },
+    {
+      "id": "ARCH-007",
+      "source_path": "coordination/candidats/2026-10-31/ARCH-007_PREMIERE_EDITION.md",
+      "source_blob_sha": "372bfcee95f7bd4a1f37dfa9393264662050e9ba",
+      "visa": "ACCORD_EDITO_ZOUT",
+      "evidence": "https://github.com/zoutiFrutti/Interstice/pull/43#issuecomment-6543561461",
+      "rights_final": "A_VERIFIER",
+      "publication_authorized": false,
+      "merge_authorized": false,
+      "reason": "Rights still to verify. No authorized candidate HTML."
+    }
+  ]
+}

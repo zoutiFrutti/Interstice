@@ -3,14 +3,14 @@
   "source": {
     "branch": "coordination/relieur-pilote-10-passes-20261030",
     "path": "coordination/ateliers/registre_editorial_pre_sortie_2026-10-31.json",
-    "blob_sha": "d36264ba5d6882bb1589fd7fa863d26f97fa4405",
+    "blob_sha": "49e749cf0ec3116f63a28651a97784de4ac2c633",
     "checked_on": "2026-10-31",
     "not_canonical": true
   },
   "counts": {
-    "drive": 44,
-    "fn": 71,
-    "wiki": 24
+    "fiches_drive": 44,
+    "mediatheque_fn": 71,
+    "pages_wiki_existing": 24
   },
   "records": [
     {
@@ -21,77 +21,111 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "COL"
+      "source_folder": "COL",
+      "editorial_visa": null
     },
     {
       "id": "ARCH-002",
       "kind": "ARCH",
       "title": "ARCH-002 — Affiche n°373 (20 mai 1871) — chambres syndicales des ouvrières",
-      "status": "INVENTORIE_NON_REL_U",
-      "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "status": "RELU_SOURCES_RESERVES_ETAPE2_CANDIDAT",
+      "approval": "ACCORD_EDITO_ZOUT",
+      "rights": "MEDIAS_NON_REPRODUITS_FICHIER_A_VERIFIER",
       "source": "drive",
-      "source_folder": "ARCH"
+      "source_folder": "ARCH",
+      "editorial_visa": {
+        "decision": "ACCORD_EDITO_ZOUT",
+        "decider": "Zout",
+        "date": "2026-10-31",
+        "scope": "texte candidat sans media, reserve documentaire preservee",
+        "source_ref": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "source_path": "coordination/candidats/2026-10-31/ARCH-002_PREMIERE_EDITION.md",
+        "source_blob_sha": "f9f0b6edf09cf0e84fe7e46960f25df1a8e99dbb",
+        "evidence": "https://github.com/zoutiFrutti/Interstice/pull/43#issuecomment-6543561461",
+        "rights_final": "A_VERIFIER",
+        "technical_integration": "EN_ATTENTE",
+        "publication_authorized": false,
+        "merge_authorized": false
+      }
     },
     {
       "id": "ARCH-003",
       "kind": "ARCH",
       "title": "ARCH-003 — Affiche n°331 (15 mai 1871) — inscriptions des ouvrières",
-      "status": "INVENTORIE_NON_REL_U",
+      "status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "rights": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "source": "drive",
-      "source_folder": "ARCH"
+      "source_folder": "ARCH",
+      "editorial_visa": null
     },
     {
       "id": "ARCH-004",
       "kind": "ARCH",
       "title": "ARCH-004 — Appel aux ouvrières n°342 (18 mai 1871) — fédération productive",
-      "status": "INVENTORIE_NON_REL_U",
+      "status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "rights": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "source": "drive",
-      "source_folder": "ARCH"
+      "source_folder": "ARCH",
+      "editorial_visa": null
     },
     {
       "id": "ARCH-005",
       "kind": "ARCH",
       "title": "ARCH-005 — Règlements des ateliers d'armes du Louvre (2 avril et 3 mai 1871) — étude comparative",
-      "status": "INVENTORIE_NON_REL_U",
+      "status": "A_CORRIGER_RESERVES_PERSISTANTES",
       "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "rights": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "source": "drive",
-      "source_folder": "ARCH"
+      "source_folder": "ARCH",
+      "editorial_visa": null
     },
     {
       "id": "ARCH-006",
       "kind": "ARCH",
       "title": "ARCH-006 — Le Prolétaire (journal du Club des prolétaires, mai 1871) — fiche candidate",
-      "status": "INVENTORIE_NON_REL_U",
+      "status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "rights": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "source": "drive",
-      "source_folder": "ARCH"
+      "source_folder": "ARCH",
+      "editorial_visa": null
     },
     {
       "id": "ARCH-007",
       "kind": "ARCH",
       "title": "ARCH-007 — Décret du 16 avril 1871 sur les ateliers abandonnés — enquête, coopératives et limites",
-      "status": "INVENTORIE_NON_REL_U",
-      "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "status": "RELU_SOURCES_RESERVES_ETAPE2_CANDIDAT",
+      "approval": "ACCORD_EDITO_ZOUT",
+      "rights": "MEDIAS_NON_REPRODUITS_FICHIER_A_VERIFIER",
       "source": "drive",
-      "source_folder": "ARCH"
+      "source_folder": "ARCH",
+      "editorial_visa": {
+        "decision": "ACCORD_EDITO_ZOUT",
+        "decider": "Zout",
+        "date": "2026-10-31",
+        "scope": "texte candidat sans media, reserve documentaire preservee",
+        "source_ref": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "source_path": "coordination/candidats/2026-10-31/ARCH-007_PREMIERE_EDITION.md",
+        "source_blob_sha": "372bfcee95f7bd4a1f37dfa9393264662050e9ba",
+        "evidence": "https://github.com/zoutiFrutti/Interstice/pull/43#issuecomment-6543561461",
+        "rights_final": "A_VERIFIER",
+        "technical_integration": "EN_ATTENTE",
+        "publication_authorized": false,
+        "merge_authorized": false
+      }
     },
     {
       "id": "ARCH-008",
       "kind": "ARCH",
       "title": "ARCH-008 — Manifeste du 6 mai 1871 de l’Union des femmes — défense, travail et conflit autour de la paix",
-      "status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "rights": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "source": "drive",
-      "source_folder": "ARCH"
+      "source_folder": "ARCH",
+      "editorial_visa": null
     },
     {
       "id": "ASSO-001",
@@ -101,7 +135,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "ASSO-002",
@@ -111,7 +146,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "ASSO-003",
@@ -121,7 +157,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "ASSO-004",
@@ -131,7 +168,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "ASSO-005",
@@ -141,7 +179,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "ASSO-006",
@@ -151,17 +190,19 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "ASSO-007",
       "kind": "ASSO",
       "title": "ASSO-007 — Union des femmes de la Commune — mémoire organisationnelle",
-      "status": "INVENTORIE_NON_REL_U",
+      "status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "rights": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "ASSO-008",
@@ -171,7 +212,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-001",
@@ -181,7 +223,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-002",
@@ -191,7 +234,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-003",
@@ -201,7 +245,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-004",
@@ -211,7 +256,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-005",
@@ -221,7 +267,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-006",
@@ -231,7 +278,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-007",
@@ -241,7 +289,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-008",
@@ -251,7 +300,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-009",
@@ -261,7 +311,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-010",
@@ -271,7 +322,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-011",
@@ -281,7 +333,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-012",
@@ -291,7 +344,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-013",
@@ -301,7 +355,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-014",
@@ -311,7 +366,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-015",
@@ -321,7 +377,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-016",
@@ -331,7 +388,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-017",
@@ -341,7 +399,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-018",
@@ -351,7 +410,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-019",
@@ -361,7 +421,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-020",
@@ -371,7 +432,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-021",
@@ -381,7 +443,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "BIO-022",
@@ -391,7 +454,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "BIO"
+      "source_folder": "BIO",
+      "editorial_visa": null
     },
     {
       "id": "COL-001",
@@ -401,17 +465,19 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "COL"
+      "source_folder": "COL",
+      "editorial_visa": null
     },
     {
       "id": "COL-003",
       "kind": "COL",
       "title": "COL-003 — Club des prolétaires — assemblées de la Commune",
-      "status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "status": "A_CORRIGER_RESERVES_PERSISTANTES",
       "approval": "A_FAIRE",
-      "rights": "A_FAIRE",
+      "rights": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "source": "drive",
-      "source_folder": "COL"
+      "source_folder": "COL",
+      "editorial_visa": null
     },
     {
       "id": "EXP-001",
@@ -421,7 +487,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "EXP-002",
@@ -431,7 +498,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "EXP-004",
@@ -441,7 +509,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "EXP-005",
@@ -451,7 +520,8 @@
       "approval": "A_FAIRE",
       "rights": "A_FAIRE",
       "source": "drive",
-      "source_folder": "ASSO"
+      "source_folder": "ASSO",
+      "editorial_visa": null
     },
     {
       "id": "FN-001",
