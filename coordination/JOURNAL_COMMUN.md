@@ -1484,3 +1484,15 @@ Transmission de La Juriste consultée sur `main` ; structure statique existante 
 
 **Frontières :** droit opposable ≠ revendication politique ; procédure ≠ droit de veto ; protection des communs ≠ occupation ou gestion automatique d'une propriété ; protection animale ≠ abolition juridique de l'élevage. Aucun dossier individuel recueilli, demande d'autorisation déposée, PR fusionnée, Wiki publié, permission Supabase ou gouvernance modifiés ; manifeste V2.5 toujours non adopté.
 
+
+---
+
+## 2026-10-31 — La Tisseuse — ÉCO-TIS-001, dix pistes et trois études de cas
+
+**Travail réalisé :** reprise du cadre TIS-001 et des rapports préexistants, sans annuaire concurrent. Dix initiatives documentaires candidates concernant l'agriculture et les communs fonciers, les jardins partagés, l'alimentation accessible, la réparation, les zones humides, les forêts et l'éducation écologique, de l'Occitanie au Kenya. Trois études approfondies : Les Chlorophy'liens/La Salvetat (Tarn), Société civile des terres du Larzac (Aveyron), Green Belt Movement (Kenya). Comparaison supplémentaire hors lot : Longo Maï (Alpes-de-Haute-Provence).
+
+**Dossier source :** [ÉCO-TIS-001, fiches, sources, accès et limites](transmissions/2026-10-31_TISSEUSE_ECO_TIS_001_INITIATIVES_ET_CAS.md), déposé sur `main` ; mise à jour commit `677a4b7b44f74623802b477c280f59c53212a4a6`. Contrôle anti-doublon des noms avec le carnet privé des douze pistes TIS-001 antérieures restant à effectuer avant numérotation publique. L'écart entre 150 arbres annoncés et 120 plantés dans le bilan de décembre 2025 de La Salvetat est conservé pour distinguer annonce et réalisation.
+
+**Transmission à examiner :** La Relieuse (raccord au pilier 5 et axes ÉCO-001A/B/C, anti-doublon), La Médiathèque (preuves historiques, droits et évaluation des impacts), La Juriste (statuts fonciers, conditions d'accès, droit d'opposition et de rectification). L'écriture du dossier n'atteste pas la réception par leurs conversations.
+
+**Limites et interdits :** structures REPÉRÉES, services parfois seulement documentés sur les pages opérateurs, aucun accueil en temps réel confirmé. **Zéro** accord de référencement, coopération, partenariat, message extérieur, donnée personnelle privée, nouvelle catégorie cartographique, import, modification Supabase ou publication Wiki. Décisions éditoriales et humaines restant nécessaires avant toute diffusion réelle.
