@@ -21,7 +21,7 @@ for(const href of [...new Set(internalLinks)]){
  assert.equal(resp.status(),200,"Local document link broken: "+href);
 }
 const contrast=await p.evaluate(()=>{
- const c=x=>x.match(/\\d+/g)?.slice(0,3).map(Number);
+ const c=x=>x.match(/[0-9]+/g)?.slice(0,3).map(Number);
  const lum=a=>a.map(v=>v/255).map(v=>v<=.04045?v/12.92:Math.pow((v+.055)/1.055,2.4)).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);
  const main=document.querySelector("main"), fg=c(getComputedStyle(main).color), bg=c(getComputedStyle(document.body).backgroundColor);
  const x=lum(fg),y=lum(bg);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05);
