@@ -14,6 +14,7 @@ const http = require("node:http");
 const https = require("node:https");
 const fs = require("node:fs");
 const path = require("node:path");
+const { createTaskEngine } = require("./task-engine.cjs");
 
 const HOST = "127.0.0.1";
 const PORT = Number(process.env.KONTON_CONTROL_PORT || 8765);
@@ -31,6 +32,7 @@ const assets = new Map([
   ["/index.html", ["index.html", "text/html; charset=utf-8"]],
   ["/app.js", ["app.js", "text/javascript; charset=utf-8"]],
   ["/github-status.js", ["github-status.js", "text/javascript; charset=utf-8"]],
+  ["/task-board.js", ["task-board.js", "text/javascript; charset=utf-8"]],
   ["/styles.css", ["styles.css", "text/css; charset=utf-8"]]
 ]);
 
@@ -74,6 +76,11 @@ function getJson(remotePath) {
     req.on("error", reject);
   });
 }
+const engine = createTaskEngine({
+  allowed: ALLOWED,
+  githubGet: getJson,
+  stateFile: path.join(__dirname, "data", "tasks.json")
+});
 async function repoStatus(repo) {
   if (!ALLOWED.includes(repo)) throw new Error("Dépôt non autorisé.");
   const previous = cache.get(repo);
@@ -137,12 +144,79 @@ function permittedRequest(req) {
   if (site && site !== "same-origin" && site !== "none") return false;
   return true;
 }
+function readBody(req, limit = 4096) {
+  return new Promise((resolve, reject) => {
+    let size = 0;
+    const parts = [];
+    req.on("data", chunk => {
+      size += chunk.length;
+      if (size > limit) {
+        const error = new Error("Corps de requête trop volumineux.");
+        error.status = 413;
+        reject(error);
+        req.destroy();
+        return;
+      }
+      parts.push(chunk);
+    });
+    req.on("end", () => {
+      try {
+        const value = JSON.parse(Buffer.concat(parts).toString("utf8"));
+        if (!value || typeof value !== "object" || Array.isArray(value)) {
+          throw new Error("JSON objet requis.");
+        }
+        resolve(value);
+      } catch (_error) {
+        const error = new Error("Corps JSON invalide.");
+        error.status = 400;
+        reject(error);
+      }
+    });
+    req.on("error", reject);
+  });
+}
 async function handle(req, res) {
   if (!permittedRequest(req)) return send(res, 403, { error: "Origine locale interdite." });
-  if (req.method !== "GET") return send(res, 405, { error: "GET uniquement." });
+  if (req.method !== "GET" && req.method !== "POST") {
+    return send(res, 405, { error: "Méthode interdite." });
+  }
+  if (req.method === "POST" &&
+      (req.headers["x-konton-action"] !== "local" ||
+       !String(req.headers["content-type"] || "").startsWith("application/json"))) {
+    return send(res, 403, { error: "Action locale non autorisée ou format incorrect." });
+  }
   let url;
   try { url = new URL(req.url, "http://" + HOST + ":" + PORT); }
   catch (_error) { return send(res, 400, { error: "URL invalide." }); }
+  // Actions here mutate local task records ONLY; every GitHub operation remains GET.
+  if (url.pathname === "/api/tasks" && req.method === "GET") {
+    try { return send(res, 200, { tasks: engine.list(url.searchParams.get("scope") || "all") }); }
+    catch (error) { return send(res, error.status || 400, { error: cleanError(error) }); }
+  }
+  if (url.pathname === "/api/tasks" && req.method === "POST") {
+    try { return send(res, 201, { task: engine.create(await readBody(req)) }); }
+    catch (error) { return send(res, error.status || 400, { error: cleanError(error) }); }
+  }
+  const taskRoute = /^\/api\/tasks\/([a-f0-9-]{36})\/(run|review|events)$/.exec(url.pathname);
+  if (taskRoute) {
+    const [, id, action] = taskRoute;
+    if (action === "events" && req.method === "GET") {
+      try { return send(res, 200, { events: engine.events(id) }); }
+      catch (error) { return send(res, error.status || 404, { error: cleanError(error) }); }
+    }
+    if (action === "run" && req.method === "POST") {
+      try { await readBody(req); return send(res, 200, { task: await engine.run(id) }); }
+      catch (error) { return send(res, error.status || 400, { error: cleanError(error) }); }
+    }
+    if (action === "review" && req.method === "POST") {
+      try {
+        const data = await readBody(req);
+        return send(res, 200, { task: engine.review(id, data.decision) });
+      } catch (error) { return send(res, error.status || 400, { error: cleanError(error) }); }
+    }
+    return send(res, 405, { error: "Méthode interdite pour cette action." });
+  }
+  if (req.method !== "GET") return send(res, 405, { error: "Route réservée à GET." });
   const asset = assets.get(url.pathname);
   if (asset) {
     const fullPath = path.join(__dirname, asset[0]);
@@ -174,9 +248,9 @@ function start() {
       else res.end();
     });
   }).listen(PORT, HOST, () => {
-    process.stdout.write("KONTON Control · lecture GitHub seule : http://" + HOST + ":" + PORT + "/\n");
+    process.stdout.write("KONTON Control · lecture GitHub et tâches LOCALES : http://" + HOST + ":" + PORT + "/\n");
     process.stdout.write("Dépôts configurés : " + ALLOWED.length + " · jeton serveur : " + (TOKEN ? "présent" : "absent") + "\n");
   });
 }
 if (require.main === module) start();
-module.exports = { safeRepo, permittedRequest, assets, repoStatus, start };
+module.exports = { safeRepo, permittedRequest, assets, repoStatus, start, handle, engine };
