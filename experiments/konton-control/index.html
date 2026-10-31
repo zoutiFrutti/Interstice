@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0B0F14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/konton-192.png">
   <title>KONTON Control · Cockpit V0</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
   <script src="./github-status.js" defer></script>
   <script src="./task-board.js" defer></script>
   <script src="./ai-board.js" defer></script>
+  <script src="./pwa.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au cockpit</a>
@@ -34,6 +39,13 @@
       Les commandes de ce pupitre historique ne lancent aucun agent réel ; le nouvel agent IA local dispose de ses propres commandes, sous configuration. Le rechargement de la page remet les simulations à zéro.
     </div>
 
+    <section class="mobile-install panel" aria-label="Installation sur téléphone">
+      <div>
+        <p class="eyebrow">KONTON CONTROL · ANDROID</p>
+        <p id="mobile-install-status" class="subtle">Installation mobile en cours de vérification.</p>
+      </div>
+      <button id="mobile-install" type="button" class="small-btn" hidden>Installer l'application</button>
+    </section>
     <section class="metrics" aria-label="Résumé de la simulation">
       <div class="metric"><strong id="count-agents">0</strong><span>Agents présentés</span></div>
       <div class="metric"><strong id="count-running">0</strong><span>En simulation</span></div>
