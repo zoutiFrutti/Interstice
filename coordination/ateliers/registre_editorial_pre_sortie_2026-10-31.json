@@ -42,7 +42,7 @@
       "sources_check": "TRANSCRIPTIONS_NOTICES_ET_ETUDES_ATTRIBUEES_ORIGINAUX_INCOMPLETS",
       "critical_read": "TRANSMIS_A_LA_LECTRICE_SANS_AVIS_ACQUIS",
       "rights_check": "MEDIAS_NON_REPRODUITS_FICHIER_A_VERIFIER",
-      "human_approval": "A_FAIRE",
+      "human_approval": "ACCORD_EDITO_ZOUT",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
         "statut": "RELU_SOURCES_RESERVES",
@@ -55,8 +55,22 @@
         "report": "coordination/transmissions/2026-10-31_ANARCHIVISTE_PRE_SORTIE_ETAPE2_LOT3.md",
         "document_url": "https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit",
         "issue": "Aucune preuve directe de tenue réunion 21 mai mairie IVe; date 21 avril AFF5590 autre événement; droits photo AFF5721 non confirmés; décès Le Mel 1921.",
-        "human_review": false,
+        "human_review": true,
         "public_version": false
+      },
+      "editorial_visa": {
+        "decision": "ACCORD_EDITO_ZOUT",
+        "decider": "Zout",
+        "date": "2026-10-31",
+        "scope": "texte candidat sans media, reserve documentaire preservee",
+        "source_ref": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "source_path": "coordination/candidats/2026-10-31/ARCH-002_PREMIERE_EDITION.md",
+        "source_blob_sha": "f9f0b6edf09cf0e84fe7e46960f25df1a8e99dbb",
+        "evidence": "https://github.com/zoutiFrutti/Interstice/pull/43#issuecomment-6543561461",
+        "rights_final": "A_VERIFIER",
+        "technical_integration": "EN_ATTENTE",
+        "publication_authorized": false,
+        "merge_authorized": false
       }
     },
     {
@@ -149,7 +163,7 @@
       "sources_check": "TRANSCRIPTIONS_NOTICES_ET_ETUDES_ATTRIBUEES_ORIGINAUX_INCOMPLETS",
       "critical_read": "TRANSMIS_A_LA_LECTRICE_SANS_AVIS_ACQUIS",
       "rights_check": "MEDIAS_NON_REPRODUITS_FICHIER_A_VERIFIER",
-      "human_approval": "A_FAIRE",
+      "human_approval": "ACCORD_EDITO_ZOUT",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
         "statut": "RELU_SOURCES_RESERVES",
@@ -162,8 +176,22 @@
         "report": "coordination/transmissions/2026-10-31_ANARCHIVISTE_PRE_SORTIE_ETAPE2_LOT3.md",
         "document_url": "https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit",
         "issue": "Décret du 16 avril = enquête/projet, pas remise effective générale; 42 associations/34 chambres à attribuer à Morder; minutes et ateliers effectivement repris non collationnés.",
-        "human_review": false,
+        "human_review": true,
         "public_version": false
+      },
+      "editorial_visa": {
+        "decision": "ACCORD_EDITO_ZOUT",
+        "decider": "Zout",
+        "date": "2026-10-31",
+        "scope": "texte candidat sans media, reserve documentaire preservee",
+        "source_ref": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "source_path": "coordination/candidats/2026-10-31/ARCH-007_PREMIERE_EDITION.md",
+        "source_blob_sha": "372bfcee95f7bd4a1f37dfa9393264662050e9ba",
+        "evidence": "https://github.com/zoutiFrutti/Interstice/pull/43#issuecomment-6543561461",
+        "rights_final": "A_VERIFIER",
+        "technical_integration": "EN_ATTENTE",
+        "publication_authorized": false,
+        "merge_authorized": false
       }
     },
     {
@@ -3429,5 +3457,16 @@
     "ci": "https://github.com/zoutiFrutti/Interstice/actions/runs/41189280133",
     "actual_editable_contents_approved": 0,
     "non_public": true
+  },
+  "editorial_approval_summary": {
+    "date": "2026-10-31",
+    "approved_editorial_only": 2,
+    "approved_ids": [
+      "ARCH-002",
+      "ARCH-007"
+    ],
+    "ready_for_publication": 0,
+    "non_collective_adoption": true,
+    "important": "Les accords ne valent ni validation des droits, ni merge ni publication."
   }
 }
