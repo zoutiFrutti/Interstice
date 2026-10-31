@@ -1,0 +1,40 @@
+name: Candidat documentaire ecologie hors publication
+on:
+  push:
+    branches: [integration/eco-documentaire-candidat-2026-10-31]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/wiki-ecologie-candidate.test.mjs
+  navigateur:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verifier l'index statique
+        run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/eco-documentaire.log 2>&1 &
+          node --test tests/wiki-ecologie-candidate.browser.test.mjs
+      - name: Captures techniques
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eco-index-candidat-320-390-1280
+          path: artifacts/eco-candidate-*.png
+          retention-days: 7
+          if-no-files-found: warn
