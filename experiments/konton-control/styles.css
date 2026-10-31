@@ -234,3 +234,140 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
 @media (max-width: 550px) {
   .mobile-install { flex-direction: column; align-items: stretch; }
 }
+
+
+/* V0.7 — focused mobile navigation and hierarchy */
+.screen[hidden] { display: none !important; }
+.app-navigation {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  background: #111821;
+  padding: 6px;
+  border: 1px solid #303a49;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+.nav-item {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #afbbca;
+  min-height: 57px;
+  padding: 9px 5px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 750;
+}
+.nav-item .nav-glyph { font-size: 1.25rem; line-height: 1; }
+.nav-item.is-active {
+  color: #effbdc;
+  background: #29392a;
+  border-color: #617a4d;
+}
+.nav-item:hover:not(.is-active) { background: #1a2734; color: #fff; }
+.nav-item:focus-visible, .home-action:focus-visible { outline: 3px solid #b58aff; outline-offset: 2px; }
+.screen { min-height: 45vh; }
+.screen-title {
+  margin-bottom: 17px;
+  padding: 12px 4px;
+}
+.screen-title .eyebrow { color: #90ac89; }
+.screen-title h2 { font-size: clamp(1.8rem, 4vw, 2.3rem); }
+.screen-title p:not(.eyebrow) { max-width: 65ch; color: #b7c4d2; margin: 9px 0 0; line-height: 1.5; }
+.home-hero {
+  padding: clamp(23px, 4vw, 42px);
+  background: linear-gradient(135deg, #1c2b26, #101c20 55%, #111824);
+  border: 1px solid #365045;
+  border-radius: 18px;
+  margin-bottom: 14px;
+}
+.home-hero h2 {
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  font-weight: 850;
+  letter-spacing: -.045em;
+  line-height: 1.08;
+  max-width: 13ch;
+  margin: 0 0 15px;
+}
+.home-hero > p:not(.eyebrow) {
+  max-width: 52ch;
+  line-height: 1.6;
+  color: #c3d2d7;
+  margin: 0 0 22px;
+}
+.home-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.home-action {
+  border: 1px solid #43555c;
+  background: #23313d;
+  color: #f0f7f9;
+  font-weight: 800;
+  border-radius: 12px;
+  min-height: 52px;
+  padding: 13px 18px;
+}
+.home-action.primary-action { background: #8be55c; color: #0b1710; border-color: #8be55c; }
+.home-action:hover { filter: brightness(1.12); }
+.home-status-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.home-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #121b26;
+  border: 1px solid #2c394b;
+  padding: 20px;
+  border-radius: 14px;
+}
+.home-status .led { width: 11px; height: 11px; margin-top: 6px; }
+.home-status strong { font-size: .98rem; }
+.home-status p { margin: 8px 0 0; color: #a6b7c7; line-height: 1.5; font-size: .86rem; }
+.screen-home .metrics { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.screen-github .github-panel { margin-top: 0; }
+#screen-agents .workbench { margin-top: 0; }
+
+@media (max-width: 680px) {
+  .app { padding-bottom: calc(104px + env(safe-area-inset-bottom, 0px)); }
+  .app-navigation {
+    position: fixed;
+    z-index: 50;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 6px 8px calc(7px + env(safe-area-inset-bottom, 0px));
+    border-radius: 16px 16px 0 0;
+    border-width: 1px 0 0;
+    background: #101720;
+    box-shadow: 0 -6px 25px rgba(0,0,0,.6);
+    gap: 4px;
+  }
+  .nav-item {
+    min-height: 61px;
+    padding: 7px 2px;
+    flex-direction: column;
+    gap: 4px;
+    font-size: .72rem;
+  }
+  .nav-item .nav-glyph { font-size: 1.25rem; }
+  .home-hero h2 { font-size: 2.3rem; }
+  .home-hero { padding: 25px 20px; }
+  .home-status-grid { grid-template-columns: 1fr; gap: 9px; }
+  .home-status { padding: 15px; }
+  .screen-home .metrics { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .screen-home .metric { padding: 12px 10px; text-align: center; align-items: center; min-height: 86px; }
+  .screen-home .metric strong { font-size: 1.6rem; }
+  .screen-home .metric span { font-size: .75rem; line-height: 1.25; }
+  .topbar-meta .connection { display: none; }
+  #screen-agents .panel-heading { margin-bottom: 14px; }
+}
+@media (max-width: 400px) {
+  .home-actions { flex-direction: column; }
+  .home-action { width: 100%; }
+}
