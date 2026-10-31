@@ -1,0 +1,297 @@
+{
+  "date": "2026-10-31",
+  "reader_report_blob": "e500e227c23512ec2ca6e20b235abe0d47bd68e0",
+  "reader_report_branch": "atelier-lectrice/8-passes-pre-sortie-20261031",
+  "counts": {
+    "ready": 14,
+    "to_correct": 15,
+    "blocked": 5,
+    "editorial_visas": 2
+  },
+  "editorial_visas": [
+    {
+      "id": "ARCH-002",
+      "sha": "f9f0b6edf09cf0e84fe7e46960f25df1a8e99dbb"
+    },
+    {
+      "id": "ARCH-007",
+      "sha": "372bfcee95f7bd4a1f37dfa9393264662050e9ba"
+    }
+  ],
+  "ready": [
+    {
+      "name": "ARCH-003_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-003_LOT_MAXI_CANDIDAT.md",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "AFF 331 : avis du XIe, Guillaume délégué ; pas de registres d'inscrites. Carnavalet 2020.0.36.",
+      "sha": "e4ac65cd9cfc8cd0705a738b04eeb6be477a4fc4"
+    },
+    {
+      "name": "ARCH-004_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-004_LOT_MAXI_CANDIDAT.md",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Deux exemplaires 2020.0.154/.155 distincts ; date 18 mai sur le second ; cote incertaine retirée.",
+      "sha": "611b640ce79cd53cc33aaab31cd05148ff51c71d"
+    },
+    {
+      "name": "ARCH-006_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-006_LOT_MAXI_CANDIDAT.md",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Le Prolétaire : 4 fascicules BnF ; ISSN papier 2743-2033, numérique 2743-2041 ; pagination à compléter.",
+      "sha": "3968fda392b84067e82f8e9175a1ab5f142cbb6f"
+    },
+    {
+      "name": "ARCH-008_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-008_LOT_MAXI_CANDIDAT.md",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Manifeste 6 mai BHVP ; FICEDL est une transcription de 1874 ; proclamation adverse non attribuée.",
+      "sha": "d2f13f2888f1cacc7240db409f77fdf5897ffb58"
+    },
+    {
+      "name": "ASSO-005_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ASSO-005_LOT_MAXI_CANDIDAT.md",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Niagara : 29 hommes en 1905, femmes invitées 1906 ; date de vote non établie, LOC/NPS.",
+      "sha": "657329d77fb96eb6f0fc29c58102d0ad65392f68"
+    },
+    {
+      "name": "ASSO-008_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ASSO-008_LOT_MAXI_CANDIDAT.md",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "La Marmite : règles 1868 et crédit conditionnel ; comptes et fonctionnement réel non supposés.",
+      "sha": "5ede6f90fe73f26b43058835cec4995a2e38f722"
+    },
+    {
+      "name": "COL-001_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/COL-001_LOT_MAXI_CANDIDAT.md",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Soutien aux enquêtes de Wells : préface 1892 ≠ autobiographie 1970 ; montants inconnus.",
+      "sha": "675b1aed1ae7559a3e55ae26d6630f9e24e2f45c"
+    },
+    {
+      "name": "wiki-antifascisme-histoire-et-mecanismes.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-antifascisme-histoire-et-mecanismes.html",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Éviter universalisation européenne et accusation pénale automatique.",
+      "sha": "4ba89a81729574d58faeac8faa0e0c93634617f5"
+    },
+    {
+      "name": "wiki-antiracisme-histoires-droits.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-antiracisme-histoires-droits.html",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Voix concernées et liens FN/BIO/COL sans prétendre des fiches publiques.",
+      "sha": "9cc22b6c916baf9b21a737cf1b9139946683f23b"
+    },
+    {
+      "name": "wiki-decision-collective.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-decision-collective.html",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "PR44 éditorial + navigation PR35 ; pas de recours fictif ni règles adoptées.",
+      "sha": "e035ce0cf0b97c1b9ae985a2e7eb1e9753e4630c"
+    },
+    {
+      "name": "wiki-feminismes-histoire-egalite.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-feminismes-histoire-egalite.html",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Archives des ouvrières/Commune et travail invisible correctement référencés.",
+      "sha": "fd3fb96439560ba23a990b310d74b1d96e5f3f26"
+    },
+    {
+      "name": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "PR44 et sommaire PR35 ; distinctions entre soin, pouvoir et droit de recours.",
+      "sha": "3b6f80037ed4ec1859c681d89b53d3028c3c2456"
+    },
+    {
+      "name": "wiki-politique-institutions-regimes.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-politique-institutions-regimes.html",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "V-Dem et régime semi-présidentiel : catégories situées, non accusations.",
+      "sha": "496c862f5c838c15edd370fc33668a34361e16d5"
+    },
+    {
+      "name": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "status": "PRÊT À SOUMETTRE À ZOUT",
+      "objection": "Décret du 16 avril ≠ exécution ; autres expériences distinctes.",
+      "sha": "f67a0deeb060ef4ec6574d9b0d2dd3a6b7e297b0"
+    }
+  ],
+  "to_correct": [
+    {
+      "name": "ARCH-005_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ARCH-005_LOT_MAXI_CANDIDAT.md",
+      "status": "À CORRIGER",
+      "objection": "Louvre : règlements 2 avril / 3 mai et publication ultérieure séparés ; mise en œuvre non prouvée.",
+      "sha": "ea428cd1bd4bae84a3b8dca899f26af2dd8aa1f1"
+    },
+    {
+      "name": "ASSO-007_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/ASSO-007_LOT_MAXI_CANDIDAT.md",
+      "status": "À CORRIGER",
+      "objection": "Comparaison courte/longue : 13/14 avril, LY22, Desprez/Ringard, paiements. La longue reste intacte.",
+      "sha": "69feddc9ca917567e8a0cba16f7689e63b912346"
+    },
+    {
+      "name": "COL-003_LOT_MAXI_CANDIDAT.md",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/coordination/candidats/2026-10-31/COL-003_LOT_MAXI_CANDIDAT.md",
+      "status": "À CORRIGER",
+      "objection": "Club Saint-Ambroise ≠ journal ; pas de ratio femmes/hommes, PH22310 ≠ scène de club.",
+      "sha": "49acae12b8085a229ba8b6fd22a6bbe2f8b45838"
+    },
+    {
+      "name": "wiki-association-collegiale.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-association-collegiale.html",
+      "status": "À CORRIGER",
+      "objection": "Loi 1901, droit local et responsabilités : validation Juriste nécessaire.",
+      "sha": "a88b58162bfb3c4c3f24556dbeba123da5f48294"
+    },
+    {
+      "name": "wiki-autonomie-materielle-savoir-faire.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-autonomie-materielle-savoir-faire.html",
+      "status": "À CORRIGER",
+      "objection": "Lien interne mort réellement corrigé ; sécurités techniques à examiner.",
+      "sha": "55b98d7e9615f30703b3354c113909158d7a3ab5"
+    },
+    {
+      "name": "wiki-capitalisme-classes-travail.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-capitalisme-classes-travail.html",
+      "status": "À CORRIGER",
+      "objection": "Unités, dates, care, travail migrant et statistiques à recouper.",
+      "sha": "ccb1808b25252049d4cdf9cd474ec96eb7fddc90"
+    },
+    {
+      "name": "wiki-culture-creation-acces-art.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-culture-creation-acces-art.html",
+      "status": "À CORRIGER",
+      "objection": "Droits professionnels, usages, financement et sources spécifiques.",
+      "sha": "fdc3bd5c936605b5a420661591fee7a61432a3c7"
+    },
+    {
+      "name": "wiki-ecologie-sociale-environnement.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-ecologie-sociale-environnement.html",
+      "status": "À CORRIGER",
+      "objection": "Historique mondial, conservation coloniale et étude alimentaire corrigés ; bibliographie détaillée manque.",
+      "sha": "99f9edba03584c8be3d659a753fae31de4fbe7b3"
+    },
+    {
+      "name": "wiki-egalite-fiches.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-egalite-fiches.html",
+      "status": "À CORRIGER",
+      "objection": "Glossaire déjà présent ; terminologie spécialisée et sources à relire.",
+      "sha": "3adc6d7ba610f2bbdf8c9c98453d9c8aeca4b36c"
+    },
+    {
+      "name": "wiki-egalite-genres-inclusivite.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-egalite-genres-inclusivite.html",
+      "status": "À CORRIGER",
+      "objection": "Carte accessible au clavier et sans JavaScript : tests à réaliser.",
+      "sha": "91ab8c36b84660110dcc68201834a891823bc177"
+    },
+    {
+      "name": "wiki-financements-culture-spectacle.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-financements-culture-spectacle.html",
+      "status": "À CORRIGER",
+      "objection": "Répertoire documentaire, pas guichets ouverts garantis ; calendriers à contrôler.",
+      "sha": "3018a7c430bea6bdc75b63f1468afa2935c9be63"
+    },
+    {
+      "name": "wiki-handicap-validisme-neurodiversite.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-handicap-validisme-neurodiversite.html",
+      "status": "À CORRIGER",
+      "objection": "Autodétermination, démarches et non-divulgation du diagnostic.",
+      "sha": "a097d59238d2263e71363cad58131490f84f1089"
+    },
+    {
+      "name": "wiki-justice-prisons-abolitionnisme.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-justice-prisons-abolitionnisme.html",
+      "status": "À CORRIGER",
+      "objection": "Statistiques carcérales et recours datés, critiques abolitionnistes attribuées.",
+      "sha": "928ac4bc95b2aec7548cdbacd52cb75ce03fc4cc"
+    },
+    {
+      "name": "wiki-liberte-numerique-ia-surveillance.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-liberte-numerique-ia-surveillance.html",
+      "status": "À CORRIGER",
+      "objection": "Sobriété d'IA distribuée = hypothèse à mesurer, pas résultat démontré.",
+      "sha": "68437e9290bfcc35bbcaca4a804867d2c4768ccc"
+    },
+    {
+      "name": "wiki-patriarcat-histoire-mecanismes.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-patriarcat-histoire-mecanismes.html",
+      "status": "À CORRIGER",
+      "objection": "Théories d'origine discutées, statistiques et violences à contextualiser.",
+      "sha": "2363844fdb24cbe42711e87100ca3241a306cb95"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "wiki-education-enfance-protection.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-education-enfance-protection.html",
+      "status": "BLOQUÉ",
+      "objection": "Protection des mineurs et procédures sensibles : avis spécialisé requis.",
+      "sha": "ff4a1b2cf13832dfc1050ce85d1b0d359c9f5e8a"
+    },
+    {
+      "name": "wiki-frontieres-migrations-colonialisme.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-frontieres-migrations-colonialisme.html",
+      "status": "BLOQUÉ",
+      "objection": "Asile, notifications et délais variables ; revue Juriste indispensable.",
+      "sha": "058e3629b172d88461a6d394c35809582739b6a6"
+    },
+    {
+      "name": "wiki-logement-habitat-droit-ville.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-logement-habitat-droit-ville.html",
+      "status": "BLOQUÉ",
+      "objection": "Différences commandement payer/quitter, DALO/DAHO, avis juridique requis.",
+      "sha": "6a10c4a53d42debfd06526dd962cdc2fe502bd0a"
+    },
+    {
+      "name": "wiki-police-deces-memoire.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-police-deces-memoire.html",
+      "status": "BLOQUÉ",
+      "objection": "Relevés et décisions, réputation, confidentialité et rectification à assurer.",
+      "sha": "f0dda721586ac4c5e76400b1b1ecbeba714cf684"
+    },
+    {
+      "name": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-sante-psychiatrie-autonomie-soins.html",
+      "status": "BLOQUÉ",
+      "objection": "Droits de santé et soins non consentis : avis sanitaire/juridique requis.",
+      "sha": "a7e026c3a66fd9d97a695db3bade1e86a89ff7ae"
+    }
+  ],
+  "groups": [
+    {
+      "name": "HISTOIRE",
+      "files": [
+        "ARCH-003_LOT_MAXI_CANDIDAT.md",
+        "ARCH-004_LOT_MAXI_CANDIDAT.md",
+        "ARCH-006_LOT_MAXI_CANDIDAT.md",
+        "ARCH-008_LOT_MAXI_CANDIDAT.md",
+        "ASSO-005_LOT_MAXI_CANDIDAT.md",
+        "ASSO-008_LOT_MAXI_CANDIDAT.md",
+        "COL-001_LOT_MAXI_CANDIDAT.md"
+      ]
+    },
+    {
+      "name": "POLITIQUE_DÉMOCRATIE",
+      "files": [
+        "wiki-antifascisme-histoire-et-mecanismes.html",
+        "wiki-decision-collective.html",
+        "wiki-politique-institutions-regimes.html",
+        "wiki-socialismes-communismes-anarchismes-autogestion.html"
+      ]
+    },
+    {
+      "name": "FÉMINISMES_SOCIAL",
+      "files": [
+        "wiki-antiracisme-histoires-droits.html",
+        "wiki-feminismes-histoire-egalite.html",
+        "wiki-lecture-croisee-travail-soin-pouvoir.html"
+      ]
+    }
+  ],
+  "publication_authorized": false
+}
