@@ -1,0 +1,4 @@
+import test from "node:test";import assert from "node:assert/strict";import {readFileSync} from "node:fs";const s=p=>readFileSync(p,"utf8");
+test("C6 correctif Edge proposé sans collecte ni secret",()=>{const x=s("edition-premiere/security-p0/submit-proposal-disabled.ts");assert.match(x,/status:503/);assert.doesNotMatch(x,/createClient|\.insert\(|SERVICE_ROLE|fetch\(|Deno\.env/);});
+test("C6 révocation SQL ciblée, réversible, non appliquée",()=>{const x=s("edition-premiere/security-p0/suspend-submit-wiki-article.sql");assert.match(x,/REVOKE EXECUTE/);assert.match(x,/authenticated/);assert.match(x,/GRANT EXECUTE/);assert.doesNotMatch(x,/DROP TABLE|DELETE FROM|TRUNCATE/i);});
+test("C6 dossier donne P0, limites et versions",()=>{const x=s("edition-premiere/CYCLE6_P0_RAPPORT.md");for(const k of ["P0 OUVERT","NON APPLIQUÉES","ARCH-002","ARCH-007","quinze","RLS"])assert.match(x,new RegExp(k,"i"));});
