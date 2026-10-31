@@ -1,0 +1,1431 @@
+{
+  "schema": "edition-pre-sortie-inventaire-v1",
+  "source": {
+    "branch": "coordination/relieur-pilote-10-passes-20261030",
+    "path": "coordination/ateliers/registre_editorial_pre_sortie_2026-10-31.json",
+    "blob_sha": "d36264ba5d6882bb1589fd7fa863d26f97fa4405",
+    "checked_on": "2026-10-31",
+    "not_canonical": true
+  },
+  "counts": {
+    "drive": 44,
+    "fn": 71,
+    "wiki": 24
+  },
+  "records": [
+    {
+      "id": "ARCH-001",
+      "kind": "ARCH",
+      "title": "ARCH-001 — Lettre de 1907 et Mary Eato Lydia Smith — recherche",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "COL"
+    },
+    {
+      "id": "ARCH-002",
+      "kind": "ARCH",
+      "title": "ARCH-002 — Affiche n°373 (20 mai 1871) — chambres syndicales des ouvrières",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ARCH"
+    },
+    {
+      "id": "ARCH-003",
+      "kind": "ARCH",
+      "title": "ARCH-003 — Affiche n°331 (15 mai 1871) — inscriptions des ouvrières",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ARCH"
+    },
+    {
+      "id": "ARCH-004",
+      "kind": "ARCH",
+      "title": "ARCH-004 — Appel aux ouvrières n°342 (18 mai 1871) — fédération productive",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ARCH"
+    },
+    {
+      "id": "ARCH-005",
+      "kind": "ARCH",
+      "title": "ARCH-005 — Règlements des ateliers d'armes du Louvre (2 avril et 3 mai 1871) — étude comparative",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ARCH"
+    },
+    {
+      "id": "ARCH-006",
+      "kind": "ARCH",
+      "title": "ARCH-006 — Le Prolétaire (journal du Club des prolétaires, mai 1871) — fiche candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ARCH"
+    },
+    {
+      "id": "ARCH-007",
+      "kind": "ARCH",
+      "title": "ARCH-007 — Décret du 16 avril 1871 sur les ateliers abandonnés — enquête, coopératives et limites",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ARCH"
+    },
+    {
+      "id": "ARCH-008",
+      "kind": "ARCH",
+      "title": "ARCH-008 — Manifeste du 6 mai 1871 de l’Union des femmes — défense, travail et conflit autour de la paix",
+      "status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ARCH"
+    },
+    {
+      "id": "ASSO-001",
+      "kind": "ASSO",
+      "title": "ASSO-001 — White Rose Mission and Industrial Association — fiche candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "ASSO-002",
+      "kind": "ASSO",
+      "title": "ASSO-002 — Woman's Loyal Union — fiche candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "ASSO-003",
+      "kind": "ASSO",
+      "title": "ASSO-003 — Equal Suffrage League de Brooklyn — candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "ASSO-004",
+      "kind": "ASSO",
+      "title": "ASSO-004 — Lincoln Settlement House — fiche candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "ASSO-005",
+      "kind": "ASSO",
+      "title": "ASSO-005 — Niagara Movement — histoire critique",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "ASSO-006",
+      "kind": "ASSO",
+      "title": "ASSO-006 — Phyllis Wheatley Club de Buffalo — recherche",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "ASSO-007",
+      "kind": "ASSO",
+      "title": "ASSO-007 — Union des femmes de la Commune — mémoire organisationnelle",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "ASSO-008",
+      "kind": "ASSO",
+      "title": "ASSO-008 — La Marmite — coopérative ouvrière 1868",
+      "status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "BIO-001",
+      "kind": "BIO",
+      "title": "BIO-001 — Ida B. Wells — fiche de recherche",
+      "status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-002",
+      "kind": "BIO",
+      "title": "BIO-002 — Victoria Earle Matthews — recherche",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-003",
+      "kind": "BIO",
+      "title": "BIO-003 — Maritcha Remond Lyons — recherche",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-004",
+      "kind": "BIO",
+      "title": "BIO-004 — Sarah Smith Garnet — recherche critique",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-005",
+      "kind": "BIO",
+      "title": "BIO-005 — Susan Smith McKinney Steward — recherche critique",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-006",
+      "kind": "BIO",
+      "title": "BIO-006 — Verina Morton-Jones — fiche de recherche critique",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-007",
+      "kind": "BIO",
+      "title": "BIO-007 — Mary Burnett Talbert — recherche critique",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-008",
+      "kind": "BIO",
+      "title": "BIO-008 — Louise Michel — Commune et mémoire critique",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-009",
+      "kind": "BIO",
+      "title": "BIO-009 — Nathalie Le Mel — ouvrières et Commune",
+      "status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-010",
+      "kind": "BIO",
+      "title": "BIO-010 — Élisabeth Dmitrieff — organisation des femmes",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-011",
+      "kind": "BIO",
+      "title": "BIO-011 — André Léo — Commune, féminisme et paysannerie",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-012",
+      "kind": "BIO",
+      "title": "BIO-012 — Eugène Varlin — coopération et Commune",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-013",
+      "kind": "BIO",
+      "title": "BIO-013 — Paule Minck — clubs, éducation et Commune",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-014",
+      "kind": "BIO",
+      "title": "BIO-014 — Léo Frankel — du travail ouvrier à la Commune",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-015",
+      "kind": "BIO",
+      "title": "BIO-015 — Augustin Avrial — mécanicien, communard, inventeur",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-016",
+      "kind": "BIO",
+      "title": "BIO-016 — Anna Julia Cooper — fiche biographique",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-017",
+      "kind": "BIO",
+      "title": "BIO-017 — Louise Talbot — ouvrière et militante de la Commune",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-018",
+      "kind": "BIO",
+      "title": "BIO-018 — Aline Jacquier — biographie candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-019",
+      "kind": "BIO",
+      "title": "BIO-019 — Blanche Lefèvre — fiche candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-020",
+      "kind": "BIO",
+      "title": "BIO-020 — Élisabeth Deguy — fiche candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-021",
+      "kind": "BIO",
+      "title": "BIO-021 — Joséphine Dulimbert — fiche candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "BIO-022",
+      "kind": "BIO",
+      "title": "BIO-022 — Anne-Marie Ménand — fiche candidate",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "BIO"
+    },
+    {
+      "id": "COL-001",
+      "kind": "COL",
+      "title": "COL-001 — Femmes de New York et Brooklyn et Southern Horrors (1892)",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "COL"
+    },
+    {
+      "id": "COL-003",
+      "kind": "COL",
+      "title": "COL-003 — Club des prolétaires — assemblées de la Commune",
+      "status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "COL"
+    },
+    {
+      "id": "EXP-001",
+      "kind": "EXP",
+      "title": "EXP-001 — Freegan Pony — cantine participative et récupération alimentaire",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "EXP-002",
+      "kind": "EXP",
+      "title": "EXP-002 — Caisse alimentaire commune de Montpellier — recherche critique",
+      "status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "EXP-004",
+      "kind": "EXP",
+      "title": "EXP-004 — Mondragón — fédération coopérative et démocratie économique",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "EXP-005",
+      "kind": "EXP",
+      "title": "EXP-005 — Barcelona en Comú et Decidim — démocratie et limites numériques",
+      "status": "INVENTORIE_NON_REL_U",
+      "approval": "A_FAIRE",
+      "rights": "A_FAIRE",
+      "source": "drive",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "FN-001",
+      "kind": "FN",
+      "title": "Discours de la servitude volontaire",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-002",
+      "kind": "FN",
+      "title": "La Conquête du pain",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-003",
+      "kind": "FN",
+      "title": "Qu’est-ce que la propriété ?",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-004",
+      "kind": "FN",
+      "title": "L’Entraide, un facteur de l’évolution",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-005",
+      "kind": "FN",
+      "title": "Sita Sings the Blues",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-006",
+      "kind": "FN",
+      "title": "Bound by Law?",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-007",
+      "kind": "FN",
+      "title": "Déclaration des droits de la femme et de la citoyenne",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-008",
+      "kind": "FN",
+      "title": "The Souls of Black Folk",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-009",
+      "kind": "FN",
+      "title": "The Tyranny of Structurelessness",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-010",
+      "kind": "FN",
+      "title": "Povo Gavião (Indígenas e quilombolas...), partie 13",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-011",
+      "kind": "FN",
+      "title": "Quilombo Praia Grande (Indígenas e quilombolas...), partie 01",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-012",
+      "kind": "FN",
+      "title": "After Capitalism: a Cooperative Economy",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-013",
+      "kind": "FN",
+      "title": "This Land Is Our Land",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-014",
+      "kind": "FN",
+      "title": "Sobre(Vivências)",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-015",
+      "kind": "FN",
+      "title": "Queer the Campus",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-016",
+      "kind": "FN",
+      "title": "Gay and Proud",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-017",
+      "kind": "FN",
+      "title": "Pepper&Carrot, épisode 26",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-018",
+      "kind": "FN",
+      "title": "Pepper et Superflu",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-019",
+      "kind": "FN",
+      "title": "Consensus Decision Making",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-020",
+      "kind": "FN",
+      "title": "Online Decision Making",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-021",
+      "kind": "FN",
+      "title": "Dieu et l’État",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-022",
+      "kind": "FN",
+      "title": "La Commune (1898)",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": "FN-048"
+    },
+    {
+      "id": "FN-023",
+      "kind": "FN",
+      "title": "Mémoires de Louise Michel",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-024",
+      "kind": "FN",
+      "title": "The Seedkeepers",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-025",
+      "kind": "FN",
+      "title": "Women at work – Chatpatit",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-026",
+      "kind": "FN",
+      "title": "The Cargo Women of Melilla",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-027",
+      "kind": "FN",
+      "title": "Esther Duflo: Representation for Women in India",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-028",
+      "kind": "FN",
+      "title": "Comixplain: Attribute Types (FR)",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-029",
+      "kind": "FN",
+      "title": "My Disillusionment in Russia",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-030",
+      "kind": "FN",
+      "title": "Direct Action",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-031",
+      "kind": "FN",
+      "title": "Southern Horrors",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-032",
+      "kind": "FN",
+      "title": "Ise ileke sinsin",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-033",
+      "kind": "FN",
+      "title": "Woman and Labour",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-034",
+      "kind": "FN",
+      "title": "The Land of Little Rain",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-035",
+      "kind": "FN",
+      "title": "Women and Economics",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-036",
+      "kind": "FN",
+      "title": "The Principles of Anarchism",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-037",
+      "kind": "FN",
+      "title": "CARE Principles for Indigenous Data Governance",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-038",
+      "kind": "FN",
+      "title": "Principes féministes de l’internet 2.0",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": "FN-057"
+    },
+    {
+      "id": "FN-039",
+      "kind": "FN",
+      "title": "Share alike: Ensemble, tout devient possible",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-040",
+      "kind": "FN",
+      "title": "Elephants Dream",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-041",
+      "kind": "FN",
+      "title": "American Indian Stories",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-042",
+      "kind": "FN",
+      "title": "Life Among the Piutes",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-043",
+      "kind": "FN",
+      "title": "Better Practices in the Classroom",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-044",
+      "kind": "FN",
+      "title": "Dulce",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-045",
+      "kind": "FN",
+      "title": "Déclaration au peuple français",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-046",
+      "kind": "FN",
+      "title": "Appels et statuts de l’Union des femmes",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-047",
+      "kind": "FN",
+      "title": "L’Urgence de ralentir",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-048",
+      "kind": "FN",
+      "title": "La Commune (1898), deuxième entrée",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": "FN-022"
+    },
+    {
+      "id": "FN-049",
+      "kind": "FN",
+      "title": "A Room of One’s Own",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-050",
+      "kind": "FN",
+      "title": "The Theory of the Leisure Class",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-051",
+      "kind": "FN",
+      "title": "Jamais sans ma visseuse",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-052",
+      "kind": "FN",
+      "title": "Sintel",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-053",
+      "kind": "FN",
+      "title": "Comic strips Linux TCP BBR",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-054",
+      "kind": "FN",
+      "title": "Pulling Together",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-055",
+      "kind": "FN",
+      "title": "Introduction to Women, Gender, Sexuality Studies",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-056",
+      "kind": "FN",
+      "title": "Limitações... cooperativas rurais do Vale do Arinos",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-057",
+      "kind": "FN",
+      "title": "Principes féministes de l’internet 2.0, deuxième entrée",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": "FN-038"
+    },
+    {
+      "id": "FN-058",
+      "kind": "FN",
+      "title": "10 Principles of Disability Justice",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-059",
+      "kind": "FN",
+      "title": "Together: The Documentary on Coop Resilience",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-060",
+      "kind": "FN",
+      "title": "Freedom or Fairness?",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-061",
+      "kind": "FN",
+      "title": "Traditional Knowledge/Biocultural Labels: Usage and Style Guide",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-062",
+      "kind": "FN",
+      "title": "Little Bear’s Day",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-063",
+      "kind": "FN",
+      "title": "Data Feminism",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-064",
+      "kind": "FN",
+      "title": "Design Justice Network Principles",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-065",
+      "kind": "FN",
+      "title": "Recommandation sur une science ouverte",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-066",
+      "kind": "FN",
+      "title": "State of the Commons 2022",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-067",
+      "kind": "FN",
+      "title": "Tejid@s Junt@s / Stitched Together",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-068",
+      "kind": "FN",
+      "title": "Nous sommes partout",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-069",
+      "kind": "FN",
+      "title": "Combahee River Collective Statement",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-070",
+      "kind": "FN",
+      "title": "A Voice from the South",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "FN-071",
+      "kind": "FN",
+      "title": "Superheroes on the Move",
+      "status": "NOTICE_CATALOGUE_REPRISE_SOURCES_EXTERIEURES_PARTIELLES",
+      "approval": "AUCUN_VISA_HUMAIN",
+      "rights": "DECLARATION_CATALOGUE_SEULE_SANS_PERMISSION_REPRODUCTION",
+      "source": "mediatheque",
+      "duplicate_ref": null
+    },
+    {
+      "id": "WIKI:wiki-antifascisme-histoire-et-mecanismes.html",
+      "kind": "WIKI",
+      "path": "wiki-antifascisme-histoire-et-mecanismes.html",
+      "title": "wiki-antifascisme-histoire-et-mecanismes",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "6910542c3f29fb32730296e902bf71f77b2330a6"
+    },
+    {
+      "id": "WIKI:wiki-antiracisme-histoires-droits.html",
+      "kind": "WIKI",
+      "path": "wiki-antiracisme-histoires-droits.html",
+      "title": "wiki-antiracisme-histoires-droits",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "6c1081910a0499e2c9646da1f3d75218dcbc2ee8"
+    },
+    {
+      "id": "WIKI:wiki-association-collegiale.html",
+      "kind": "WIKI",
+      "path": "wiki-association-collegiale.html",
+      "title": "wiki-association-collegiale",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "1b2a021d31828047846b428c7091dfae31898ab5"
+    },
+    {
+      "id": "WIKI:wiki-autonomie-materielle-savoir-faire.html",
+      "kind": "WIKI",
+      "path": "wiki-autonomie-materielle-savoir-faire.html",
+      "title": "wiki-autonomie-materielle-savoir-faire",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1"
+    },
+    {
+      "id": "WIKI:wiki-capitalisme-classes-travail.html",
+      "kind": "WIKI",
+      "path": "wiki-capitalisme-classes-travail.html",
+      "title": "wiki-capitalisme-classes-travail",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "db754eed38c3e02104418800366cae31e90d183c"
+    },
+    {
+      "id": "WIKI:wiki-culture-creation-acces-art.html",
+      "kind": "WIKI",
+      "path": "wiki-culture-creation-acces-art.html",
+      "title": "wiki-culture-creation-acces-art",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "4a71182424035d1696cc9d2b948c3b948fb91923"
+    },
+    {
+      "id": "WIKI:wiki-decision-collective.html",
+      "kind": "WIKI",
+      "path": "wiki-decision-collective.html",
+      "title": "wiki-decision-collective",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "e09926e74720a2b89ae78065544805c169cb3776"
+    },
+    {
+      "id": "WIKI:wiki-ecologie-sociale-environnement.html",
+      "kind": "WIKI",
+      "path": "wiki-ecologie-sociale-environnement.html",
+      "title": "wiki-ecologie-sociale-environnement",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "dd6e149ad8d44b5db5180a800730617b116369f1"
+    },
+    {
+      "id": "WIKI:wiki-education-enfance-protection.html",
+      "kind": "WIKI",
+      "path": "wiki-education-enfance-protection.html",
+      "title": "wiki-education-enfance-protection",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "931fc198127b9073b3ae513f63bf2dcdaaf177e1"
+    },
+    {
+      "id": "WIKI:wiki-egalite-fiches.html",
+      "kind": "WIKI",
+      "path": "wiki-egalite-fiches.html",
+      "title": "wiki-egalite-fiches",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "083fbae5c37a87b32fd5c86c3da350c425f64c85"
+    },
+    {
+      "id": "WIKI:wiki-egalite-genres-inclusivite.html",
+      "kind": "WIKI",
+      "path": "wiki-egalite-genres-inclusivite.html",
+      "title": "wiki-egalite-genres-inclusivite",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "9ca5e5d2e1e83dfeed3669034c48e9ddc86b0646"
+    },
+    {
+      "id": "WIKI:wiki-feminismes-histoire-egalite.html",
+      "kind": "WIKI",
+      "path": "wiki-feminismes-histoire-egalite.html",
+      "title": "wiki-feminismes-histoire-egalite",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "69789f5f665cdae4d85061293c9ecb2dcb13c919"
+    },
+    {
+      "id": "WIKI:wiki-financements-culture-spectacle.html",
+      "kind": "WIKI",
+      "path": "wiki-financements-culture-spectacle.html",
+      "title": "wiki-financements-culture-spectacle",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "030b75d277e09c3bc7e971d90d8ca5f1c18e7329"
+    },
+    {
+      "id": "WIKI:wiki-frontieres-migrations-colonialisme.html",
+      "kind": "WIKI",
+      "path": "wiki-frontieres-migrations-colonialisme.html",
+      "title": "wiki-frontieres-migrations-colonialisme",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "eefa8c327980c6747dca58e14c5b9c9f61e895b9"
+    },
+    {
+      "id": "WIKI:wiki-handicap-validisme-neurodiversite.html",
+      "kind": "WIKI",
+      "path": "wiki-handicap-validisme-neurodiversite.html",
+      "title": "wiki-handicap-validisme-neurodiversite",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "ac20430979cc5d741d00867ca0fcfb4b70ea19ec"
+    },
+    {
+      "id": "WIKI:wiki-justice-prisons-abolitionnisme.html",
+      "kind": "WIKI",
+      "path": "wiki-justice-prisons-abolitionnisme.html",
+      "title": "wiki-justice-prisons-abolitionnisme",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "165d2f325fb98cd6680db3da66e71f2b5068d1f3"
+    },
+    {
+      "id": "WIKI:wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "kind": "WIKI",
+      "path": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "title": "wiki-lecture-croisee-travail-soin-pouvoir",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "206f4d999dcfe12bb5d487830ad7cf02edf66780"
+    },
+    {
+      "id": "WIKI:wiki-liberte-numerique-ia-surveillance.html",
+      "kind": "WIKI",
+      "path": "wiki-liberte-numerique-ia-surveillance.html",
+      "title": "wiki-liberte-numerique-ia-surveillance",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "cc3245d9497fbe6130dd7e5c631ca387e906cdb3"
+    },
+    {
+      "id": "WIKI:wiki-logement-habitat-droit-ville.html",
+      "kind": "WIKI",
+      "path": "wiki-logement-habitat-droit-ville.html",
+      "title": "wiki-logement-habitat-droit-ville",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "f0ce0e5966da0e5e263358ce397a31acd90ed2c3"
+    },
+    {
+      "id": "WIKI:wiki-patriarcat-histoire-mecanismes.html",
+      "kind": "WIKI",
+      "path": "wiki-patriarcat-histoire-mecanismes.html",
+      "title": "wiki-patriarcat-histoire-mecanismes",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "0fc8ab4206b930b6100efa085b790e16d4429e45"
+    },
+    {
+      "id": "WIKI:wiki-police-deces-memoire.html",
+      "kind": "WIKI",
+      "path": "wiki-police-deces-memoire.html",
+      "title": "wiki-police-deces-memoire",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "562b8897552216ffcbdb6e968a76aa6e6b1b8e78"
+    },
+    {
+      "id": "WIKI:wiki-politique-institutions-regimes.html",
+      "kind": "WIKI",
+      "path": "wiki-politique-institutions-regimes.html",
+      "title": "wiki-politique-institutions-regimes",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "86facb7f05895d8234086d2fcee651d4e08bf486"
+    },
+    {
+      "id": "WIKI:wiki-sante-psychiatrie-autonomie-soins.html",
+      "kind": "WIKI",
+      "path": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "title": "wiki-sante-psychiatrie-autonomie-soins",
+      "status": "BLOQUEE",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "4cf6f1f1cf209c7617bbf7a6e86f0e5c362e57f5"
+    },
+    {
+      "id": "WIKI:wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "kind": "WIKI",
+      "path": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "title": "wiki-socialismes-communismes-anarchismes-autogestion",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNEE",
+      "rights": "A_COMPLETER",
+      "source": "wiki",
+      "source_blob_sha": "4aa9dc92b5d864aeee3424d2a77f99abc0690afc"
+    }
+  ]
+}

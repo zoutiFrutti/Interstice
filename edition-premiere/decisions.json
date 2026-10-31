@@ -1,0 +1,7 @@
+{
+  "schema": "edition-pre-sortie-autorisations-v1",
+  "reference": "coordination/ateliers/registre_editorial_pre_sortie_2026-10-31.json",
+  "status": "AUCUN_VISA_EDITO_EXPLICITE",
+  "notes": "Une entrée nécessite une validation dans le registre source et une décision écrite individuelle de Zout. Aucun contenu autorisé par défaut.",
+  "authorizations": []
+}

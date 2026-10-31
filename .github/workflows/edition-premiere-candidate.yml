@@ -1,0 +1,43 @@
+name: Première édition - candidat fermé et lots à visa
+on:
+  push:
+    branches: [integration/premiere-edition-candidate-2026-10-31]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check scripts/build-premiere-edition.mjs
+      - run: node --test tests/edition-premiere-circuit.test.mjs
+      - run: node scripts/build-premiere-edition.mjs
+  chromium:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Préparer uniquement les prévisualisations admissibles
+        run: node scripts/build-premiere-edition.mjs
+      - name: Tests mobiles, clavier, recherche, zoom et A4
+        run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/interstice-edition.log 2>&1 &
+          node --test tests/edition-premiere-circuit.browser.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: premiere-edition-candidate-captures
+          path: artifacts/edition-premiere-captures/
+          retention-days: 7
+          if-no-files-found: warn

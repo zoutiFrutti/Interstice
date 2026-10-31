@@ -1,0 +1,97 @@
+/* Extension candidate de la PR #28 (fiche-design-system.css).
+   Ne modifie pas le moteur de rendu, la charte ni les statuts.
+   Activer UNIQUEMENT après examen L'Anarchitecte / La Relieuse. */
+.interstice-fiche{
+ --fiche-noir: #101014;
+ --fiche-ivoire: #e9e5db;
+ --fiche-rouge: #c5212c;
+ --fiche-surface: #201d20;
+ --fiche-contraste: #fff1d9;
+ --fiche-corps: var(--font-reading, "Atkinson Hyperlegible Next",system-ui,sans-serif);
+ --fiche-titres: var(--font-heading,"Barlow Condensed","Arial Narrow",system-ui,sans-serif);
+ color:var(--fiche-ivoire);
+ font-family:var(--fiche-corps);
+ font-size:19px;
+ line-height:1.65;
+ min-width:0;
+}
+.interstice-fiche .fiche-kind{font-weight:800;letter-spacing:.05em;color:#ffe6d8;font-size:16px}
+.interstice-fiche .fiche-hero h1{font-family:var(--fiche-titres);font-size:clamp(39px,5.8vw,66px);line-height:1.14;overflow-wrap:anywhere}
+.interstice-fiche .fiche-hero .fiche-abstract{max-width:74ch;font-size:clamp(19px,2vw,22px);line-height:1.55}
+.interstice-fiche .fiche-dates{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 22px;
+ padding:16px 19px;margin:20px 0 28px;background:var(--fiche-surface);
+ border:1px solid #928880;border-radius:9px;
+}
+.interstice-fiche .fiche-dates dt{font-weight:800;font-size:16px}
+.interstice-fiche .fiche-dates dd{margin:0;overflow-wrap:anywhere}
+.interstice-fiche .fiche-dates>div{min-width:0}
+.interstice-fiche .fiche-label{font-size:16px;font-weight:800;letter-spacing:.018em;display:block}
+.interstice-fiche .fiche-claim{padding:17px 19px;margin:15px 0;background:#252025;border:1px solid #887879;border-radius:8px;max-width:75ch;overflow-wrap:anywhere}
+.interstice-fiche .fiche-claim p{margin:.25rem 0 .6rem}
+.interstice-fiche .fiche-claim[data-nature="interpretation"]{border-left:5px solid #ccb5a8}
+.interstice-fiche .fiche-claim[data-nature="incertitude"]{border-left:5px solid #e7dfb5}
+.interstice-fiche .fiche-claim[data-nature="fait"]{border-left:5px solid #d44a56}
+.interstice-fiche .fiche-credit{border-top:1px solid #978783;padding:10px 0;font-size:17px}
+.interstice-fiche .fiche-credit dt{font-weight:800}
+.interstice-fiche .fiche-credit dd{margin:0 0 12px}
+.interstice-fiche .fiche-related{border:1px solid #948984;border-radius:9px;padding:18px 20px;margin:28px 0}
+.interstice-fiche .fiche-related ul{margin:10px 0 0;padding-left:24px}
+.interstice-fiche .fiche-related li{margin:8px 0}
+.interstice-fiche .fiche-related a{min-height:44px;display:inline-flex;align-items:center}
+.interstice-fiche .fiche-responsabilite{
+ padding:20px;border-left:5px solid var(--fiche-rouge);background:var(--fiche-surface);
+ font-size:17px;line-height:1.6;margin:30px 0;break-inside:avoid;
+}
+.interstice-fiche .fiche-responsabilite strong{display:block;margin-bottom:6px}
+.interstice-fiche .fiche-timeline{list-style:decimal;display:grid;gap:14px;padding-left:30px;max-width:75ch}
+.interstice-fiche .fiche-timeline>li{padding:12px 17px;border-left:3px solid #dcb9af;background:#242024;min-width:0;break-inside:avoid}
+.interstice-fiche .fiche-timeline time{font-weight:800}
+.interstice-fiche .fiche-primary-source{border:1px solid #8e8781;border-radius:7px;padding:18px 20px;background:#232023}
+.interstice-fiche .fiche-primary-source .fiche-source-absence{border:1px dashed #b0a29c;padding:18px;margin:12px 0}
+.interstice-fiche .fiche-testimony{border-left:4px solid var(--fiche-rouge);padding:14px 22px;margin:18px 0;max-width:74ch;background:#231f22}
+.interstice-fiche .fiche-testimony cite{font-style:normal;display:block;font-size:16px;line-height:1.5}
+.interstice-fiche .fiche-comparison{max-width:100%;margin:18px 0;overflow-x:auto;border:1px solid #8e8682;border-radius:9px;scrollbar-width:auto}
+.interstice-fiche .fiche-comparison:focus-visible{outline:3px solid var(--fiche-contraste);outline-offset:3px}
+.interstice-fiche .fiche-comparison table{width:100%;min-width:600px;border-collapse:collapse;font-size:17px;line-height:1.5}
+.interstice-fiche .fiche-comparison caption{text-align:left;padding:15px;font-size:17px;font-weight:800}
+.interstice-fiche .fiche-comparison th,.interstice-fiche .fiche-comparison td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid #8d7e7d}
+.interstice-fiche .fiche-comparison th{font-weight:800}
+.interstice-fiche .fiche-rights{border:2px solid #b9aaa0;padding:18px;margin:24px 0;background:var(--fiche-surface)}
+.interstice-fiche .fiche-rights nav{display:flex;flex-wrap:wrap;gap:10px}
+.interstice-fiche .fiche-rights nav a{display:inline-flex;min-height:44px;align-items:center}
+.interstice-fiche .fiche-historical-map .fiche-place-list{padding-left:25px}
+.interstice-fiche .fiche-dispute{border-left:5px solid #d7b5b3;background:#252025;padding:17px 19px}
+.interstice-fiche .fiche-dispute p,.interstice-fiche .fiche-dispute li{overflow-wrap:anywhere}
+.interstice-fiche a:focus-visible,.interstice-fiche summary:focus-visible{outline:3px solid var(--fiche-contraste);outline-offset:3px}
+.interstice-fiche .fiche-state a:focus-visible,
+.interstice-fiche .fiche-section--sources a:focus-visible{outline-color:var(--fiche-noir)}
+@media(max-width:600px){
+ .interstice-fiche{font-size:18px;line-height:1.68}
+ .interstice-fiche .fiche-dates{grid-template-columns:minmax(0,1fr);padding:14px}
+ .interstice-fiche .fiche-claim,.interstice-fiche .fiche-related{padding:15px}
+ .interstice-fiche .fiche-comparison table{font-size:16px}
+ .interstice-fiche .fiche-timeline{padding-left:24px}
+ .interstice-fiche .fiche-timeline>li{padding:11px}
+}
+@media(prefers-reduced-motion:reduce){
+ .interstice-fiche{scroll-behavior:auto}
+}
+@media print{
+ .interstice-fiche{font:11pt/1.5 Arial,sans-serif;color:#111}
+ .interstice-fiche .fiche-hero h1{font-family:Arial,sans-serif;font-size:25pt;color:#111}
+ .interstice-fiche .fiche-dates,.interstice-fiche .fiche-claim,
+ .interstice-fiche .fiche-related,.interstice-fiche .fiche-primary-source,
+ .interstice-fiche .fiche-responsabilite,.interstice-fiche .fiche-testimony,
+ .interstice-fiche .fiche-dispute,.interstice-fiche .fiche-timeline>li,
+ .interstice-fiche .fiche-rights{background:#fff!important;color:#111!important;border-color:#444!important;print-color-adjust:economy}
+ .interstice-fiche .fiche-kind,.interstice-fiche .fiche-label,
+ .interstice-fiche .fiche-dates dt,.interstice-fiche .fiche-hero p{color:#111!important}
+ .interstice-fiche .fiche-comparison{overflow:visible;border:0}
+ .interstice-fiche .fiche-comparison table{min-width:0!important;font-size:9pt}
+ .interstice-fiche .fiche-comparison th,.interstice-fiche .fiche-comparison td{padding:6px}
+ .interstice-fiche .fiche-claim,.interstice-fiche .fiche-dates,
+ .interstice-fiche .fiche-related,.interstice-fiche .fiche-responsabilite{break-inside:avoid}
+ .interstice-fiche a{color:#111!important;text-decoration:underline}
+ .interstice-fiche a[href^="http"]:after{content:" [" attr(href) "]";font-size:8pt;overflow-wrap:anywhere}
+}
