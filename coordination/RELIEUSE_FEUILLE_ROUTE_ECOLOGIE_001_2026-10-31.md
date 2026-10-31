@@ -68,3 +68,17 @@
 **Prochain point de coordination :** récupérer l'index primaire (Assistant) et la table sourcée (Médiathèque), puis choisir **un seul** volet à approfondir en premier ; pas d'envoi aux huit ateliers simultanément. Les travaux des autres chantiers (V0 citoyenne, DROIT-001/002, Médiathèque vivante) restent autonomes, sans réaffectation autoritaire des ateliers.
 
 **Traçabilité :** feuille de route sur la branche candidate PR #43 ; aucun contenu Wiki modifié, aucune diffusion publique, aucune modification de manifeste, aucun contact ni nouvelle autorité.
+
+## 7. Retour de La Lectrice — grille contradictoire et 18 objections ÉCO-001
+**31 octobre 2026 · Contribution documentaire enregistrée, non reçue automatiquement par les conversations destinataires.**
+Référence partagée : [Annexe LECTRICE au rapport de l'Archiviste](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md), section « Annexe LECTRICE ». **18 objections numérotées** `ECO-L01`–`ECO-L18`, grille `fait / source / interprétation / objection / proposition politique / incertitude` et trois exemples remplis.
+
+**Alerte rédactionnelle substantielle, sans réviser les résultats scientifiques :** Scarborough et al. (2023) : **25,1 % des émissions de référence** du groupe britannique à ≥100 g/jour de viande, **pas 25,1 % de réduction** ; 55 504 personnes, questionnaires anciens, groupes et marges d'incertitude à afficher. Autre alerte : Chipko, mobilisations villageoises/coopératives pour les ressources forestières et évolution controversée des politiques de conservation ; ne pas attribuer l'histoire au seul personnage Gaura Devi. Écologie politique ≠ preuve biophysique ; bas carbone du nucléaire ≠ garantie sans risque ni adoption politique ; féminisme écologique ≠ « femmes naturellement proches de la nature ».
+
+| Atelier destinataire | Transmission ciblée / preuve attendue | État |
+|---|---|---|
+| **Médiathèque** | Reprendre `ECO-L01–L05`, `L07`, `L12–L17` : fiches de sources déjà existantes, niveaux de lecture, voix paysannes et locales/archives Chipko, études d'impact ACV, emploi agricole OIT, prix d'alimentation FAO SOFI 2026. Ne pas renuméroter FN ; vérifier ouvrages d'origine et licence des documents. | **Déposé dans GitHub ; réception non démontrée** |
+| **Penseur** | Reprendre `ECO-L05–L11`, `L16–L18` à la lumière des études 39, 40, 42, 43, 45–47, 49, 50 : exclusion des communs, propriété, expertise, technique, énergie, besoins, décroissance, travail invisible, pouvoir de décider ; ajouter objections avec faits, non doctrine imposée. | **Déposé dans GitHub ; réception non démontrée** |
+| **Relieuse** | Affecter chaque critique à ÉCO-001A/B/C, noter `FAIT`, `A_VERIFIER`, `OBJECTION_MAINTENUE`, `CORRECTION_PROPOSEE`, `DECISION_HUMAINE`. Priorité L02/L03, L08, L10, L14–L17 ; ne déclencher aucune publication ni nouvelle tâche pour les huit ateliers en bloc. | **Présent pour coordination, non adopté** |
+
+**Réserve d'ordre** : la présente contre-lecture est une **méthode précoce sur sources existantes** ; la passe finale ligne par ligne attend l'index primaire A1 et la synthèse sourcée A. Les 18 lignes ne sont **pas 18 erreurs prouvées** dans un article futur. Aucun changement `wiki-ecologie-sociale-environnement.html`, aucun manifeste, aucun nouveau statut politique, aucune fusion ou publication.
