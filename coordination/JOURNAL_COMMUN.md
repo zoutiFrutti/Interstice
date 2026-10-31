@@ -1078,3 +1078,7 @@ Six passes documentaires et de coordination exécutées, synthèse `coordination
 
 ## 2026-10-31 — L'Éclaireuse — cycle 5, quatre passes
 Journaux et dossiers cycle 4 relus, clarification de Zout (projet individuel, ateliers ChatGPT) intégrée aux réserves. ÉCL-001..004 inchangés : BL00D.MONEY bloqué à la consultation directe, responsable/méthode/licence non validés ; méthodes Who Profits et AFSC examinées, arrêt des mises à jour AFSC prisons/frontières depuis 2025 noté ; résultats Terres de Luttes et licence EJAtlas recoupés ; CIC 2026 encore incertaine. PR #58 V2.6/chartes candidates sans adoption. Transmission détaillée `coordination/JOURNAL_ECLAIREUSE.md` commit `2aec5c47a80664bd659e90a2eb5a5f545d1173d6`. Réception par autres conversations non attestée ; aucun visa, fusion, publication ni contact.
+
+
+## 2026-10-31 — L'Éclaireuse — cycle 6 : registre exact et transmission ciblée
+Lecture des journaux, synthèse Relieuse cycle 5 et registre `coordination/cycle3/REGISTRE_DECISIONS_EN_ATTENTE_2026-10-31.json` : 15 textes `correct`, 5 `blocked` (enfance, migrations, logement, décès/police, santé/psychiatrie), 14 `ready` non approuvés. BIO-019/021 hors des cinq. Objections et destinataires détaillés dans `coordination/JOURNAL_ECLAIREUSE.md`, commit `c1a77b7aac489634cfd3086df1ddfe6e38c8d9b2`. ÉCL-001..004 sans nouveau visa ; BL00D.MONEY et activité CIC 2026 restent non vérifiés. Aucun contact, publication, fusion ni réception des conversations attestée.
