@@ -36,6 +36,7 @@ const assets = new Map([
   ["/task-board.js", ["task-board.js", "text/javascript; charset=utf-8"]],
   ["/ai-board.js", ["ai-board.js", "text/javascript; charset=utf-8"]],
   ["/pwa.js", ["pwa.js", "text/javascript; charset=utf-8"]],
+  ["/navigation.js", ["navigation.js", "text/javascript; charset=utf-8"]],
   ["/sw.js", ["sw.js", "text/javascript; charset=utf-8"]],
   ["/manifest.webmanifest", ["manifest.webmanifest", "application/manifest+json"]],
   ["/icons/konton-192.png", ["icons/konton-192.png", "image/png"]],
