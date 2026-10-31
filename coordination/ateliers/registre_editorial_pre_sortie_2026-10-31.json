@@ -78,11 +78,11 @@
       "title": "ARCH-003 — Affiche n°331 (15 mai 1871) — inscriptions des ouvrières",
       "source_folder": "ARCH",
       "modified_at": "2026-10-29T15:56:08.725Z",
-      "review_status": "INVENTORIE_NON_REL_U",
+      "review_status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "fact_check": "A_FAIRE",
       "sources_check": "A_FAIRE",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "critical_read": "LA_LECTRICE_A_RELIRE_CANDIDAT",
+      "rights_check": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "human_approval": "A_FAIRE",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
@@ -103,6 +103,14 @@
         "legal_media_review": "A_FAIRE",
         "human_editorial_visa": "NON_DONNE",
         "publication": "INTERDITE_SANS_VISAS"
+      },
+      "cycle_multithematique_20261031": {
+        "pass": 1,
+        "edited_in_existing_google_doc": true,
+        "status": "TEXTE_CONSOLIDE_CANDIDAT_RESERVES_PERSISTANTES",
+        "editorial_publication": false,
+        "readback_verified": true,
+        "linked_eco_document": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
       }
     },
     {
@@ -110,11 +118,11 @@
       "title": "ARCH-004 — Appel aux ouvrières n°342 (18 mai 1871) — fédération productive",
       "source_folder": "ARCH",
       "modified_at": "2026-10-31T06:58:53.086Z",
-      "review_status": "INVENTORIE_NON_REL_U",
+      "review_status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "fact_check": "A_FAIRE",
       "sources_check": "A_FAIRE",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "critical_read": "LA_LECTRICE_A_RELIRE_CANDIDAT",
+      "rights_check": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "human_approval": "A_FAIRE",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
@@ -135,6 +143,14 @@
         "legal_media_review": "A_FAIRE",
         "human_editorial_visa": "NON_DONNE",
         "publication": "INTERDITE_SANS_VISAS"
+      },
+      "cycle_multithematique_20261031": {
+        "pass": 1,
+        "edited_in_existing_google_doc": true,
+        "status": "TEXTE_CONSOLIDE_CANDIDAT_RESERVES_PERSISTANTES",
+        "editorial_publication": false,
+        "readback_verified": true,
+        "linked_eco_document": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
       }
     },
     {
@@ -142,11 +158,11 @@
       "title": "ARCH-005 — Règlements des ateliers d'armes du Louvre (2 avril et 3 mai 1871) — étude comparative",
       "source_folder": "ARCH",
       "modified_at": "2026-10-30T21:55:57.176Z",
-      "review_status": "INVENTORIE_NON_REL_U",
+      "review_status": "A_CORRIGER_RESERVES_PERSISTANTES",
       "fact_check": "A_FAIRE",
       "sources_check": "A_FAIRE",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "critical_read": "LA_LECTRICE_A_RELIRE_CANDIDAT",
+      "rights_check": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "human_approval": "A_FAIRE",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
@@ -167,6 +183,14 @@
         "legal_media_review": "A_FAIRE",
         "human_editorial_visa": "NON_DONNE",
         "publication": "INTERDITE_SANS_VISAS"
+      },
+      "cycle_multithematique_20261031": {
+        "pass": 2,
+        "edited_in_existing_google_doc": true,
+        "status": "TEXTE_CONSOLIDE_CANDIDAT_RESERVES_PERSISTANTES",
+        "editorial_publication": false,
+        "readback_verified": true,
+        "linked_eco_document": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
       }
     },
     {
@@ -174,11 +198,11 @@
       "title": "ARCH-006 — Le Prolétaire (journal du Club des prolétaires, mai 1871) — fiche candidate",
       "source_folder": "ARCH",
       "modified_at": "2026-10-30T18:48:52.714Z",
-      "review_status": "INVENTORIE_NON_REL_U",
+      "review_status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "fact_check": "A_FAIRE",
       "sources_check": "A_FAIRE",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "critical_read": "LA_LECTRICE_A_RELIRE_CANDIDAT",
+      "rights_check": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "human_approval": "A_FAIRE",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
@@ -199,6 +223,14 @@
         "legal_media_review": "A_FAIRE",
         "human_editorial_visa": "NON_DONNE",
         "publication": "INTERDITE_SANS_VISAS"
+      },
+      "cycle_multithematique_20261031": {
+        "pass": 2,
+        "edited_in_existing_google_doc": true,
+        "status": "TEXTE_CONSOLIDE_CANDIDAT_RESERVES_PERSISTANTES",
+        "editorial_publication": false,
+        "readback_verified": true,
+        "linked_eco_document": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
       }
     },
     {
@@ -247,11 +279,11 @@
       "title": "ARCH-008 — Manifeste du 6 mai 1871 de l’Union des femmes — défense, travail et conflit autour de la paix",
       "source_folder": "ARCH",
       "modified_at": "2026-10-31T06:58:20.465Z",
-      "review_status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "review_status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "fact_check": "NON_FINALISE",
       "sources_check": "PRESENTES_DANS_LE_DOSSIER_A_RECOUPER",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "critical_read": "LA_LECTRICE_A_RELIRE_CANDIDAT",
+      "rights_check": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "human_approval": "A_FAIRE",
       "initial_risk_notes": "Affiche du 6 mai 1871 référencée BHVP 2-AFF-003190 ; confronter transcription et fac-similé, cinq noms de signataires ≠ comité entier, proclamation adverse datée incertaine.",
       "initial_read_date": "2026-10-31",
@@ -274,6 +306,14 @@
         "legal_media_review": "A_FAIRE",
         "human_editorial_visa": "NON_DONNE",
         "publication": "INTERDITE_SANS_VISAS"
+      },
+      "cycle_multithematique_20261031": {
+        "pass": 1,
+        "edited_in_existing_google_doc": true,
+        "status": "TEXTE_CONSOLIDE_CANDIDAT_RESERVES_PERSISTANTES",
+        "editorial_publication": false,
+        "readback_verified": true,
+        "linked_eco_document": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
       }
     },
     {
@@ -413,11 +453,11 @@
       "title": "ASSO-007 — Union des femmes de la Commune — mémoire organisationnelle",
       "source_folder": "ASSO",
       "modified_at": "2026-10-31T06:58:49.669Z",
-      "review_status": "RELU_SOURCES_RESERVES_ETAPE2_CANDIDAT",
+      "review_status": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "fact_check": "FAITS_TEXTUELS_CONSOLIDES_MISE_EN_OEUVRE_PARTIELLEMENT_INCONNUE",
       "sources_check": "TRANSCRIPTIONS_NOTICES_ET_ETUDES_ATTRIBUEES_ORIGINAUX_INCOMPLETS",
-      "critical_read": "TRANSMIS_A_LA_LECTRICE_SANS_AVIS_ACQUIS",
-      "rights_check": "MEDIAS_NON_REPRODUITS_FICHIER_A_VERIFIER",
+      "critical_read": "LA_LECTRICE_A_RELIRE_CANDIDAT",
+      "rights_check": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "human_approval": "A_FAIRE",
       "specialist_review": {
         "atelier": "L'Anarchiviste des communs",
@@ -445,6 +485,14 @@
         "legal_media_review": "A_FAIRE",
         "human_editorial_visa": "NON_DONNE",
         "publication": "INTERDITE_SANS_VISAS"
+      },
+      "cycle_multithematique_20261031": {
+        "pass": 2,
+        "edited_in_existing_google_doc": true,
+        "status": "TEXTE_CONSOLIDE_CANDIDAT_RESERVES_PERSISTANTES",
+        "editorial_publication": false,
+        "readback_verified": true,
+        "linked_eco_document": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
       }
     },
     {
@@ -962,11 +1010,11 @@
       "title": "COL-003 — Club des prolétaires — assemblées de la Commune",
       "source_folder": "COL",
       "modified_at": "2026-10-31T07:21:16.042Z",
-      "review_status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "review_status": "A_CORRIGER_RESERVES_PERSISTANTES",
       "fact_check": "NON_FINALISE",
       "sources_check": "PRESENTES_DANS_LE_DOSSIER_A_RECOUPER",
-      "critical_read": "A_FAIRE",
-      "rights_check": "A_FAIRE",
+      "critical_read": "LA_LECTRICE_A_RELIRE_CANDIDAT",
+      "rights_check": "PHOTOGRAPHIES_NUMERISATIONS_TEXTE_MODERNE_SOUS_CONDITIONS",
       "human_approval": "A_FAIRE",
       "initial_risk_notes": "Affluence à 4 000 et part des femmes contradictoires selon récits, archives Ly22 non lues ; distinguer club, journal et personnes dirigeantes.",
       "initial_read_date": "2026-10-31",
@@ -989,6 +1037,14 @@
         "legal_media_review": "A_FAIRE",
         "human_editorial_visa": "NON_DONNE",
         "publication": "INTERDITE_SANS_VISAS"
+      },
+      "cycle_multithematique_20261031": {
+        "pass": 2,
+        "edited_in_existing_google_doc": true,
+        "status": "TEXTE_CONSOLIDE_CANDIDAT_RESERVES_PERSISTANTES",
+        "editorial_publication": false,
+        "readback_verified": true,
+        "linked_eco_document": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
       }
     },
     {
@@ -3673,5 +3729,34 @@
     "biographies_pending": 22,
     "fn_corpus_existing": 71,
     "need_next_human_approval": true
+  },
+  "cycle_multithematique_20261031": {
+    "date": "2026-10-31",
+    "passes": [
+      {
+        "number": 1,
+        "scope": "ARCH-003 ARCH-004 ARCH-008",
+        "written_drive": true
+      },
+      {
+        "number": 2,
+        "scope": "ARCH-005 ARCH-006 COL-003 ASSO-007",
+        "written_drive": true
+      },
+      {
+        "number": 3,
+        "scope": "ECO-001A Larzac Plogoff Chipko Green Belt Warren County",
+        "written_github": true
+      },
+      {
+        "number": 4,
+        "scope": "ECO-001B/C écologie sociale communs végétarisme véganisme alimentation",
+        "written_github": true
+      }
+    ],
+    "eco_report": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md",
+    "eco_commit": "50ec932f21a0f57e1248e3ebd57af6f0ab56d0f2",
+    "approvals": 0,
+    "publications": 0
   }
 }
