@@ -278,3 +278,15 @@ body.fiche-wiki-page > header a{
 @media print{
  body.fiche-wiki-page > header{display:none}
 }
+
+
+/* Motifs de débordement courants dans le corpus existant : URL longues,
+   fragments sans espace et sous-elements grid aux bornes mobiles. */
+.interstice-fiche.fiche-wiki-candidate :is(p,li,dd,dt,a,code,small){
+  overflow-wrap:anywhere;
+  min-width:0;
+}
+.interstice-fiche.fiche-wiki-candidate :is(.cards,.catalogue,.grid,.org,.org-level,.note,.entry,.notion,.regime,.node){
+  max-width:100%;
+  min-width:0;
+}
