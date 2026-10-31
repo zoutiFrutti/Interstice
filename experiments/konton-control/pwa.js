@@ -8,6 +8,9 @@
   if (!indicator || !install) return;
 
   if (isApk) {
+    document.body.classList.add("android-preview");
+    const note = document.getElementById("android-offline-note");
+    if (note) note.hidden = false;
     indicator.textContent = "Application Android embarquée · interface disponible hors connexion";
     install.hidden = true;
     return;
