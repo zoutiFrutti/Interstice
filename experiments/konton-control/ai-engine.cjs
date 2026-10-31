@@ -107,6 +107,19 @@ function createAiEngine(options) {
       model: enabled ? provider.model : null, available: "non vérifié",
       supportedMission: "review-github-report", maxActive: 1 };
   }
+  async function readiness() {
+    if (!enabled) return { configured: false, ready: false, connected: false,
+      reason: "Aucun modèle configuré côté serveur." };
+    if (typeof provider.probe !== "function") return { configured: true,
+      ready: false, connected: false, reason: "Vérification de modèle indisponible." };
+    try {
+      const status = await provider.probe();
+      return { configured: true, provider: provider.name, ...status };
+    } catch (_error) {
+      return { configured: true, ready: false, connected: false,
+        reason: "Contrôle du moteur local impossible." };
+    }
+  }
   function list() { return copy(state.tasks.slice().reverse()); }
   function events(id) {
     const task = get(id);
@@ -199,6 +212,6 @@ function createAiEngine(options) {
     save();
     return copy(task);
   }
-  return { capabilities, list, events, create, run, cancel, review };
+  return { capabilities, readiness, list, events, create, run, cancel, review };
 }
 module.exports = { createAiEngine, buildSnapshot, promptFrom };
