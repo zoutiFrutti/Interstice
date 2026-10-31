@@ -31,13 +31,22 @@
       "date_edition": "1962 ; édition américaine Houghton Mifflin ; exemplaire Smithsonian",
       "provenance": "États-Unis",
       "theme": "histoire des pesticides et des luttes sanitaires",
-      "source_url": "https://www.si.edu/object/nmah_1453548",
+      "source_url": "https://www.si.edu/object/untitled:nmah_1453548",
       "actual_reading_level": "notice muséale consultée ; livre non lu",
       "copyright": "protégé ; métadonnées Smithsonian CC0, image et texte du livre soumis à droits",
       "interest": "La controverse sur les pesticides relie savoir scientifique, santé et mobilisation publique.",
       "critical_reserve": "Ne pas faire de Carson l'origine exclusive de toutes les écologies ; reconstituer critiques, contexte sanitaire et réponses industrielles.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-sante-psychiatrie-autonomie-soins.html"
+      ],
+      "current_source_check": "NOTICE_SMITHSONIAN_REPERÉE_ET_CC0_METADATA_NON_IMAGE",
+      "edition_verified_level": "notice muséale consultée ; livre non lu",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE",
+      "rights_note": "ATTENTION : métadonnées Smithsonian CC0 ; photographie de l'exemplaire avec restrictions ; texte de Carson protégé. Lien de référence direct corrigé vers notice https://www.si.edu/object/untitled:nmah_1453548"
     },
     {
       "candidate_id": "ECO-02",
@@ -53,7 +62,15 @@
       "interest": "Donner leur place aux villageoises, aux forêts d'usage et aux économies locales.",
       "critical_reserve": "Commentaire rétrospectif, non procès-verbal ; ne pas attribuer tout Chipko à une seule personne ni généraliser une chronologie.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-feminismes-histoire-egalite.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "commentaire consulté par sections ; archives orales non lues",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-03",
@@ -69,7 +86,15 @@
       "interest": "Relier plantations d'arbres, eau, bois-énergie, démocratie et droits des femmes rurales.",
       "critical_reserve": "Bilan produit par l'organisation ; chiffres de plantations et effets à faire contrôler indépendamment.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-egalite-fiches.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "rétrospective institutionnelle lue par sections ; sources de terrain non consultées",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-04",
@@ -85,7 +110,15 @@
       "interest": "Suivre expropriations, serment des 103, solidarités et organisation durable des terres.",
       "critical_reserve": "Source située favorable aux opposants ; vérifier divergences entre acteurs et devenir du foncier.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-logement-habitat-droit-ville.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "récit rétrospectif lu sur page, archives originales des comités non consultées",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-05",
@@ -101,7 +134,15 @@
       "interest": "Cote d'archives précise (1 J 606), inclut tracts et 38 photos : chantier de sources primaires.",
       "critical_reserve": "L'inventaire ne prouve ni contenu intégral ni version des différents protagonistes ; distinguer impacts locaux et débat climatique.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-politique-institutions-regimes.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "instrument de recherche consulté ; pièces, tracts et photos non consultés",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-06",
@@ -117,7 +158,15 @@
       "interest": "Relie le mouvement populaire de Warren County aux études sur les inégalités raciales et sociales.",
       "critical_reserve": "La mobilisation de 1982 est un jalon, pas l'origine exclusive des luttes de justice environnementale.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-antiracisme-histoires-droits.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "chronologie administrative consultée ; procès/archives des mobilisations non lus",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-07",
@@ -133,7 +182,15 @@
       "interest": "Examine l'action humaine sur les milieux et les lectures géographiques avant le vocabulaire écologique actuel.",
       "critical_reserve": "Géographie du XIXe siècle, formulations datées ; ne pas lui attribuer la science climatique contemporaine.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-socialismes-communismes-anarchismes-autogestion.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "texte historique lu par sections dans transcription moderne, exemplaire 1864 non collationné",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-08",
@@ -149,7 +206,15 @@
       "interest": "Articule domination politique, technologie, ville et milieu naturel dans une histoire des idées.",
       "critical_reserve": "Essai théorique et politique, pas preuve que toutes les formes décentralisées aient de meilleurs résultats environnementaux.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-socialismes-communismes-anarchismes-autogestion.html",
+        "wiki-ecologie-sociale-environnement.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "texte primaire disponible et parcouru par sections ; fac-similé de Comment non collationné",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-09",
@@ -165,7 +230,15 @@
       "interest": "Texte fondateur pour comprendre la formulation politique de l'écoféminisme en 1974.",
       "critical_reserve": "Ne pas ramener l'ensemble des écoféminismes à d'Eaubonne ; contester toute naturalisation des femmes et du vivant.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-feminismes-histoire-egalite.html",
+        "wiki-ecologie-sociale-environnement.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "notice bibliographique consultée, ouvrage non lu",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-10",
@@ -181,7 +254,15 @@
       "interest": "Contrepoint empirique à la dichotomie État/marché pour gérer des ressources partagées.",
       "critical_reserve": "Les résultats dépendent de cas institutionnels situés, ne constituent ni recette politique universelle ni validation de toutes les coopératives.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-socialismes-communismes-anarchismes-autogestion.html",
+        "wiki-decision-collective.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "notice et résumé éditeur lus ; chapitres non lus",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-11",
@@ -197,7 +278,15 @@
       "interest": "Permet de documenter une argumentation anarchiste sensible aux animaux sans lui imposer les raisons climatiques modernes.",
       "critical_reserve": "Ni données nutritionnelles ni preuve d'un consensus libertaire sur le végétarisme ; distinguer texte original de sa mise en ligne.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-culture-creation-acces-art.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "texte original consulté sous transcription, exemplaire papier non vérifié",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-12",
@@ -213,7 +302,15 @@
       "interest": "Source de recherche détaillant le rôle de l'ahimsa, la pluralité des pratiques alimentaires jaïnes et la différence entre végétarisme traditionnel et véganisme moderne.",
       "critical_reserve": "Synthèse académique historique avec généralisations à discuter et données anciennes ; éviter de présumer l'uniformité des pratiques selon les communautés, lieux ou époques.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-frontieres-migrations-colonialisme.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "texte universitaire consulté dans la version PDF (début, section ahimsa et alimentation) ; première page contrôlée visuellement ; corpus religieux originel non consulté",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-13",
@@ -229,7 +326,15 @@
       "interest": "Retrace réseau des réformateurs, organisation des réunions et création d'une société pérenne.",
       "critical_reserve": "Émetteur partie prenante ; le végétarisme, comme pratique, précède de loin 1847 ; place des femmes à rechercher.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-culture-creation-acces-art.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "page historique lue, procès-verbaux du 30 septembre 1847 non consultés",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-14",
@@ -245,7 +350,15 @@
       "interest": "Situe Watson et Elsie/Sally Shrigley dans la construction d'une définition dépassant l'assiette.",
       "critical_reserve": "Récit rétrospectif ; vérifier archives du bulletin de 1944 ; ne pas effacer les fondatrices ni réduire végétarisme/véganisme au carbone.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-egalite-fiches.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "chronologie associative consultée, pièces fondatrices originales non consultées",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-15",
@@ -261,7 +374,15 @@
       "interest": "Élargit l'histoire à la défense des animaux avant la constitution du véganisme contemporain.",
       "critical_reserve": "Pensée réformatrice du XIXe siècle, vocabulaire hiérarchisant daté ; ne pas transformer en manifeste universel.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-justice-prisons-abolitionnisme.html"
+      ],
+      "current_source_check": "PROVENANCE_DOSSIER_PRECEDENT_NON_RETESTEE_DANS_CE_CYCLE",
+      "edition_verified_level": "page de titre et sommaire de transcription consultés ; livre intégral non lu",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-16",
@@ -277,7 +398,15 @@
       "interest": "Synthèse scientifique large distinguant production, consommation, pertes, innovations et limites.",
       "critical_reserve": "Étude de synthèse et scénarios, pas règle individuelle ; conserver niveaux de confiance et contexte de chaque chiffre.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-capitalisme-classes-travail.html"
+      ],
+      "current_source_check": "PAGE_GIEC_403_NON_CONCLUANT",
+      "edition_verified_level": "chapitre HTML consulté par extraits et sections, pas rapport complet",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     },
     {
       "candidate_id": "ECO-17",
@@ -293,7 +422,16 @@
       "interest": "Étude quantitative de 55 504 personnes reliant groupes alimentaires et multiples indicateurs environnementaux.",
       "critical_reserve": "Observation et modélisation, pas effet individuel causal garanti ; données UK, incertitudes et agriculture locale.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-sante-psychiatrie-autonomie-soins.html"
+      ],
+      "current_source_check": "LIEN_NATURE_REESSAYE_NON_CONCLUANT",
+      "edition_verified_level": "résumé, méthodes et informations de droits parcourus ; annexes non dépouillées intégralement",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE",
+      "rights_note": "Nature Food 2023 CC BY 4.0 selon dossier, accès actuel non concluant : ne pas revendiquer contrôle complet du texte ou des tableaux"
     },
     {
       "candidate_id": "ECO-18",
@@ -309,7 +447,16 @@
       "interest": "Modélisation estimant une baisse de 17 % des émissions alimentaires mondiales sous scénario EAT-Lancet.",
       "critical_reserve": "Ce n'est pas une simulation de véganisme universel ; nécessité d'améliorer alimentation des personnes sous-consommant.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-capitalisme-classes-travail.html"
+      ],
+      "current_source_check": "PAGE_NATURE_OUVERTE",
+      "edition_verified_level": "résumé et informations de droits consultés ; hypothèses détaillées non auditées",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE",
+      "rights_note": "Nature Climate Change 2024 open access CC BY 4.0 sous réserve matériels de tiers"
     },
     {
       "candidate_id": "ECO-19",
@@ -325,7 +472,17 @@
       "interest": "Voix communautaires non européennes sur semences, transmission et souveraineté locale.",
       "critical_reserve": "Pas une licence générale sur les savoirs autochtones ; langue orale non vérifiée, risques de folklorisation.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": "FN-024"
+      "related_existing_fn": "FN-024",
+      "connected_wiki_pages": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-frontieres-migrations-colonialisme.html"
+      ],
+      "current_source_check": "FICHE_COMMONS_VERIFIEE_VIA_RECHERCHE_CC_BY_3",
+      "edition_verified_level": "FN-024 existante ; métadonnées et sous-titres consultés, film non visionné intégralement",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE",
+      "existing_fn_id": "FN-024",
+      "deduplication": "RENVOI_FN_EXISTANTE_SANS_CREER_NOUVEL_IDENTIFIANT"
     },
     {
       "candidate_id": "ECO-20",
@@ -341,7 +498,35 @@
       "interest": "Ancre la transition agro-alimentaire dans les protections humaines et risques professionnels.",
       "critical_reserve": "La convention n'établit pas que les protections soient appliquées sur le terrain ; ratifications et droit local à actualiser.",
       "checked_at": "2026-10-31",
-      "related_existing_fn": null
+      "related_existing_fn": null,
+      "connected_wiki_pages": [
+        "wiki-capitalisme-classes-travail.html",
+        "wiki-sante-psychiatrie-autonomie-soins.html"
+      ],
+      "current_source_check": "SITE_OIT_403_NON_CONCLUANT",
+      "edition_verified_level": "texte normatif de l'OIT consulté par sections, applications nationales non vérifiées",
+      "rights_review": "PUBLICATION_PAR_LIEN_SEULEMENT_SANS_REPRODUCTION",
+      "editorial_status": "CANDIDAT_SOURCES_A_RELIRE"
     }
-  ]
+  ],
+  "consolidation": {
+    "date": "2026-10-31",
+    "pass": 2,
+    "count": 20,
+    "duplicate_fn_reused": [
+      "FN-024"
+    ],
+    "status": "CANDIDATS_AU_LIEN_NON_PUBLIES",
+    "rule": "source institutionnelle vs texte original vs notice vs synthèse vs expérience; une URL 403/cache miss n'est pas déclarée morte; métadonnées CC0 n'ouvrent ni photo ni ouvrage",
+    "priority_review": [
+      "ECO-01 photo Smithsonian copyright",
+      "ECO-05 fonds Plogoff 1 J 606 pas pièce originale",
+      "ECO-12 source universitaire et cultures jaïnes",
+      "ECO-16 GIEC rapport ch. 12 403 dans session",
+      "ECO-17 comparateurs, ACV, CC BY, page non concluante",
+      "ECO-18 Li : scénario régime planétaire pas végan universel",
+      "ECO-19 CC BY fichier ≠ propriété collective des savoirs",
+      "ECO-20 Convention OIT norme ≠ application"
+    ]
+  }
 }
