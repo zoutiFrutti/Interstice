@@ -381,3 +381,19 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
 .android-offline-note { padding: 20px; border-color: #405547; }
 .android-offline-note strong { display: block; color: #e6f9d9; margin-bottom: 10px; font-size: 1rem; }
 .android-offline-note p { color: #b8c9ca; line-height: 1.6; margin: 0; }
+
+/* V0.9: accessible targets and readable hierarchy */
+.demo-tools { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:0 0 14px; }
+.demo-tools span { color:#bac8d5; font-size:.85rem; }
+.demo-tools button { min-height:44px; }
+:where(button, a, select, input, summary):focus-visible { outline:3px solid #c7a4ff; outline-offset:3px; }
+@media (max-width:680px) {
+  .screen-title { padding:6px 2px 12px; }
+  .screen-title p:not(.eyebrow) { font-size:.9rem; }
+  .github-items a { overflow-wrap:anywhere; }
+  .home-status { align-items:flex-start; }
+  button, select { touch-action:manipulation; }
+}
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; }
+}
