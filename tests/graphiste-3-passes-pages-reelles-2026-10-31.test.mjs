@@ -52,6 +52,10 @@ test("Trois passes Graphiste : QA des 6 véritables pages Wiki et des profils ca
        tableScroll:tbl?{scroll:tbl.scrollWidth,client:tbl.clientWidth}:null
       };
      });
+     if(metrics.documentWidth>width+1){
+       const overflowing=await page.evaluate(()=>[...document.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>innerWidth+1 || e.getBoundingClientRect().left< -1).slice(0,14).map(e=>({tag:e.tagName,cls:String(e.className).slice(0,90),text:e.textContent?.slice(0,65),r:Math.round(e.getBoundingClientRect().right),w:Math.round(e.getBoundingClientRect().width)})));
+       console.log("PAGES_REELLES_OVERFLOW "+JSON.stringify({path,width,overflowing}));
+     }
      assert.ok(metrics.documentWidth<=width+1,path+" horizontal overflow "+width+" -> "+metrics.documentWidth);
      assert.ok(parseFloat(metrics.font)>=18,path+" font below 18px");
      const mc=color(metrics.mainColor),bg=color(metrics.mainBackground);
