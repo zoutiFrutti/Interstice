@@ -22,7 +22,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "BLOQUE_MOTIVE",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ARCH-002",
@@ -34,7 +42,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ARCH-003",
@@ -46,7 +62,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ARCH-004",
@@ -58,7 +82,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ARCH-005",
@@ -70,7 +102,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ARCH-006",
@@ -82,7 +122,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ARCH-007",
@@ -94,7 +142,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ARCH-008",
@@ -108,7 +164,15 @@
       "rights_check": "A_FAIRE",
       "human_approval": "A_FAIRE",
       "initial_risk_notes": "Affiche du 6 mai 1871 référencée BHVP 2-AFF-003190 ; confronter transcription et fac-similé, cinq noms de signataires ≠ comité entier, proclamation adverse datée incertaine.",
-      "initial_read_date": "2026-10-31"
+      "initial_read_date": "2026-10-31",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ASSO-001",
@@ -120,7 +184,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ASSO-002",
@@ -132,7 +204,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ASSO-003",
@@ -144,7 +224,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "BLOQUE_MOTIVE",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ASSO-004",
@@ -156,7 +244,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ASSO-005",
@@ -168,7 +264,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ASSO-006",
@@ -180,7 +284,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ASSO-007",
@@ -192,7 +304,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "ASSO-008",
@@ -206,7 +326,15 @@
       "rights_check": "A_FAIRE",
       "human_approval": "A_FAIRE",
       "initial_risk_notes": "Comptabilité d'origine, rémunérations, registres de votes/admissions non consultés ; 1868 et dossier 1894 distincts, estimations d'établissements et convives à attribuer.",
-      "initial_read_date": "2026-10-31"
+      "initial_read_date": "2026-10-31",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-001",
@@ -220,7 +348,15 @@
       "rights_check": "A_FAIRE",
       "human_approval": "A_FAIRE",
       "initial_risk_notes": "Sources primaires et secondaires citées ; relecture factuelle et iconographique complète reste à réaliser avant feu vert.",
-      "initial_read_date": "2026-10-31"
+      "initial_read_date": "2026-10-31",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-002",
@@ -232,7 +368,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-003",
@@ -244,7 +388,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-004",
@@ -256,7 +408,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-005",
@@ -268,7 +428,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-006",
@@ -280,7 +448,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-007",
@@ -292,7 +468,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-008",
@@ -304,7 +488,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-009",
@@ -318,7 +510,15 @@
       "rights_check": "A_FAIRE",
       "human_approval": "A_FAIRE",
       "initial_risk_notes": "Dates et lieu de naissance contradictoires (24/26 août 1826, Brest/Ivry selon notices) ; acte de Brest 1E73 non collationné. Conserver l'incertitude, décès 1921.",
-      "initial_read_date": "2026-10-31"
+      "initial_read_date": "2026-10-31",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "BLOQUE_MOTIVE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-010",
@@ -330,7 +530,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-011",
@@ -342,7 +550,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-012",
@@ -354,7 +570,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-013",
@@ -366,7 +590,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-014",
@@ -378,7 +610,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-015",
@@ -390,7 +630,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-016",
@@ -402,7 +650,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-017",
@@ -414,7 +670,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-018",
@@ -426,7 +690,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-019",
@@ -438,7 +710,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "BLOQUE_MOTIVE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-020",
@@ -450,7 +730,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-021",
@@ -462,7 +750,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "BLOQUE_MOTIVE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "BIO-022",
@@ -474,7 +770,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "La Biographe",
+        "statut": "CORRECTION_NECESSAIRE",
+        "rapport": "coordination/transmissions/2026-10-31_BIOGRAPHE_REVUE_PRE_SORTIE_BIO001_BIO022.md",
+        "ref": "agent/journal-commun-biographies-2026-10-29",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "COL-001",
@@ -486,7 +790,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "RELU_SOURCES_RESERVES",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "COL-003",
@@ -500,7 +812,15 @@
       "rights_check": "A_FAIRE",
       "human_approval": "A_FAIRE",
       "initial_risk_notes": "Affluence à 4 000 et part des femmes contradictoires selon récits, archives Ly22 non lues ; distinguer club, journal et personnes dirigeantes.",
-      "initial_read_date": "2026-10-31"
+      "initial_read_date": "2026-10-31",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "EXP-001",
@@ -512,7 +832,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "EXP-002",
@@ -526,7 +854,15 @@
       "rights_check": "A_FAIRE",
       "human_approval": "A_FAIRE",
       "initial_risk_notes": "Chiffres opérationnels et critères d'adhésion susceptibles d'évoluer ; contrôler la source à date de publication, aucun partenariat.",
-      "initial_read_date": "2026-10-31"
+      "initial_read_date": "2026-10-31",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "BLOQUE_MOTIVE",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "EXP-004",
@@ -538,7 +874,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     },
     {
       "id": "EXP-005",
@@ -550,7 +894,15 @@
       "sources_check": "A_FAIRE",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "specialist_review": {
+        "atelier": "L'Anarchiviste des communs",
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_ANARCHIVISTE_REVISION_HISTORIQUE_22_FICHES_PRE_SORTIE.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "lecture": "revue documentaire de tri, collation exhaustive non attestée",
+        "decision_publication": "AUCUNE_VALIDATION"
+      }
     }
   ],
   "mediatheque_fn": [
@@ -2350,6 +2702,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2371,6 +2729,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2392,6 +2756,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2413,6 +2783,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2434,6 +2810,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2455,6 +2837,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2476,6 +2864,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2497,6 +2891,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2518,6 +2918,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2539,6 +2945,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2560,6 +2972,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2581,6 +2999,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2602,6 +3026,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2623,6 +3053,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2644,6 +3080,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2665,6 +3107,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2686,6 +3134,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2707,6 +3161,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2728,6 +3188,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2749,6 +3215,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2770,6 +3242,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2791,6 +3269,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2812,6 +3296,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "BLOQUEE",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     },
     {
@@ -2833,6 +3323,12 @@
         "rights_review": "A_COMPLETER",
         "accessibility_test": "NON_EXECUTE",
         "decision_Zout": "NON_DONNEE"
+      },
+      "lectrice_initial_review": {
+        "statut": "A_CORRIGER",
+        "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
+        "ref": "coordination/relieur-pilote-10-passes-20261030",
+        "decision_publication": "AUCUNE_VALIDATION"
       }
     }
   ],
@@ -2879,5 +3375,38 @@
     },
     "status": "CANDIDAT_AVEC_RESERVES_NON_PUBLIE",
     "link_verification_note": "Ouvertures directes de 71 URL sources tentées; 49 pages effectivement obtenues, 22 tentatives non concluantes (timeout/cache miss/403), dont 1 URL doublon FN048 vérifiée par l'ouverture du même lien FN022. Aucune lecture ou visionnage complet de média, aucun test HTTP garantissant la navigation réelle."
+  },
+  "specialist_review_summary": {
+    "date": "2026-10-31",
+    "historiques": {
+      "A_CORRIGER": 9,
+      "BLOQUE_MOTIVE": 3,
+      "RELU_SOURCES_RESERVES": 10
+    },
+    "biographies": {
+      "CORRECTION_NECESSAIRE": 19,
+      "BLOQUE_MOTIVE": 3
+    },
+    "wiki": {
+      "A_CORRIGER": 15,
+      "BLOQUEE": 9
+    },
+    "total_fiches_specialist_reviewed": 44,
+    "implied_editorial_visas": 0,
+    "uncertainties": "tri spécialisé documenté, pas vérification définitive des sources, des droits ou du contenu public",
+    "evidence_biographe": "agent/journal-commun-biographies-2026-10-29",
+    "evidence_archiviste": "coordination/relieur-pilote-10-passes-20261030"
+  },
+  "legal_pre_sortie_report": {
+    "ref": "juriste/pre-sortie-avis-droits-20261031",
+    "path": "docs/AVIS_JURISTE_CONTROLE_PREMIERE_EDITION_2026-10-31.md",
+    "state": "AVIS_CANDIDAT_NON_VALIDATION_GENERALE"
+  },
+  "integration_candidate": {
+    "ref": "integration/premiere-edition-candidate-2026-10-31",
+    "sha": "b278b61c891d7779fdb2df7e58f495164970abed",
+    "ci": "https://github.com/zoutiFrutti/Interstice/actions/runs/41189280133",
+    "actual_editable_contents_approved": 0,
+    "non_public": true
   }
 }
