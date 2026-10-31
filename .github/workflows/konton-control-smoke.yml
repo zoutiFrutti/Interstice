@@ -21,8 +21,12 @@ jobs:
           node --check experiments/konton-control/app.js
           node --check experiments/konton-control/github-status.js
           node --check experiments/konton-control/local-server.cjs
+          node --check experiments/konton-control/task-engine.cjs
+          node --check experiments/konton-control/task-board.js
+          node --check experiments/konton-control/test-task-engine.cjs
       - name: Simulation agent and GitHub read-only checks
         working-directory: experiments/konton-control
         run: |
           node test.cjs
           node test-github.cjs
+          node test-task-engine.cjs
