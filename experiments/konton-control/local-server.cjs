@@ -79,7 +79,7 @@ function getJson(remotePath) {
 const engine = createTaskEngine({
   allowed: ALLOWED,
   githubGet: getJson,
-  stateFile: path.join(__dirname, "data", "tasks.json")
+  stateFile: process.env.KONTON_CONTROL_STATE_FILE || path.join(__dirname, "data", "tasks.json")
 });
 async function repoStatus(repo) {
   if (!ALLOWED.includes(repo)) throw new Error("Dépôt non autorisé.");
