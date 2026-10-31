@@ -26,6 +26,10 @@ La possibilité de débattre collectivement et de demander des comptes aux élus
 
 **Pièces attendues :** procès-verbaux sous la cote historique **Ly 22** au Service historique de la défense, lecture des quatre numéros du journal et vérification des annotations du portrait. **Renvois :** ARCH-006, BIO candidates de 1871, travail invisible, éducation populaire.
 
+
+## Contradiction centrale et droit des personnes
+
+Le club, son journal et la photographie de Françoise André sont **trois types de sources** : les écrits de la presse ne sont pas les minutes de toutes les réunions, et la photographie PH22310 a été prise selon la notice en prison à Versailles, pas pendant une séance à Saint-Ambroise. **Le rapprochement de « citoyenne André » avec Françoise André est plausible, non une preuve d'identité entre toutes les mentions**. Les chiffres d'assistance non attribuables à une séance ont été exclus. La cote **Ly 22** reste une recherche utile pour étoffer le récit, mais n'empêche pas de soumettre ce texte limité à une notice critique.
 ## Sources
 1. [BnF, Le Prolétaire, notice cb328445424](https://catalogue.bnf.fr/ark:/12148/cb328445424).
 2. [Michèle Audin, « Le Prolétaire — un club, un journal » (2016)](https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/).
@@ -33,6 +37,6 @@ La possibilité de débattre collectivement et de demander des comptes aux élus
 4. [Musée Carnavalet, portrait PH22310 de Françoise André](https://parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/portrait-de-francoise-andre-epouse-humbert-membre-de-la-commune-1871).
 5. [Amies et Amis de la Commune, « Les clubs sous la Commune »](https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/448-les-clubs-sous-la-commune).
 
-**Avis de La Lectrice : À CORRIGER** tant que les procès-verbaux **Ly 22** et les séances pertinentes ne sont pas collationnés. Les chiffres « 4 000 participants » ou proportions de femmes restent délibérément exclus ; aucune image d'un autre club ne sert d'illustration. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
+**Avis de La Lectrice : PRÊT À SOUMETTRE À ZOUT COMME NOTICE DE CLUB (sans statistiques d'affluence)** tant que les procès-verbaux **Ly 22** et les séances pertinentes ne sont pas collationnés. Les chiffres « 4 000 participants » ou proportions de femmes restent délibérément exclus ; aucune image d'un autre club ne sert d'illustration. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
 
 **Droits :** synthèse originale, sans portrait ni reproduction de presse ; licence de chaque média à vérifier séparément. Manifeste V2.5 et charte critiques non adoptés collectivement. **La Lectrice, La Juriste et Zout n'ont pas encore donné d'accord à cette version. Pas de publication.**
