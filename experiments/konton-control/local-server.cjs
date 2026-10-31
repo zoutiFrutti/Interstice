@@ -35,6 +35,11 @@ const assets = new Map([
   ["/github-status.js", ["github-status.js", "text/javascript; charset=utf-8"]],
   ["/task-board.js", ["task-board.js", "text/javascript; charset=utf-8"]],
   ["/ai-board.js", ["ai-board.js", "text/javascript; charset=utf-8"]],
+  ["/pwa.js", ["pwa.js", "text/javascript; charset=utf-8"]],
+  ["/sw.js", ["sw.js", "text/javascript; charset=utf-8"]],
+  ["/manifest.webmanifest", ["manifest.webmanifest", "application/manifest+json"]],
+  ["/icons/konton-192.png", ["icons/konton-192.png", "image/png"]],
+  ["/icons/konton-512.png", ["icons/konton-512.png", "image/png"]],
   ["/styles.css", ["styles.css", "text/css; charset=utf-8"]]
 ]);
 
