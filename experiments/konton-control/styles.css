@@ -160,3 +160,40 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
   .github-toolbar { flex-direction: column; align-items: stretch; }
   .github-repo-picker { min-width: 0; width: 100%; }
 }
+
+
+/* Local task runner (distinct from demo agents and read-only status cards). */
+.task-panel { padding: 21px; margin-bottom: 16px; }
+.task-panel .panel-heading { margin-bottom: 9px; }
+.task-form { display: grid; grid-template-columns: minmax(200px,2fr) minmax(95px,0.65fr) auto; gap: 8px 12px; align-items: end; margin: 18px 0; }
+.task-form label { font-size: .81rem; color: #b3c0cf; font-weight: 700; }
+.task-form select,.task-form input { background: #0b1119; border: 1px solid #536078; border-radius: 9px; color: #fff; min-height: 44px; padding: 10px; width: 100%; min-width: 0; }
+.task-form label[for="task-repo"] { grid-column: 1; grid-row: 1; }
+.task-form #task-repo { grid-column: 1; grid-row: 2; }
+.task-form label[for="task-pr"] { grid-column: 2; grid-row: 1; }
+.task-form #task-pr { grid-column: 2; grid-row: 2; }
+.task-form #task-create { grid-column: 3; grid-row: 2; }
+.task-primary { background: #263d4d; color: #ccfff3; border-color: #448178; }
+.task-grid { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); gap: 16px; margin-top: 15px; }
+.task-grid > div { min-width: 0; }
+.task-grid h3 { font-size: 1rem; }
+#task-list { display: grid; gap: 10px; }
+.task-card { border: 1px solid #39485e; background: #0e151e; padding: 15px; border-radius: 11px; overflow-wrap: anywhere; }
+.task-card-top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; margin-bottom: 8px; }
+.task-card-top strong { font-size: 1rem; }
+.task-report { padding: 13px; background: #1a2430; border: 1px solid #304057; border-radius: 9px; margin: 12px 0; font-size: .83rem; line-height: 1.5; }
+.task-report p { margin: 8px 0; }
+.task-report strong { display: block; font-size: .94rem; }
+.task-assessment { color: #f1cf93; font-weight: 700; }
+.task-error { color: #ffa7a7; font-size: .86rem; }
+.task-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.task-actions button { flex: 1 1 140px; }
+.task-run-details summary { cursor: pointer; padding: 7px 0; color: #d0c0ff; }
+.task-run-details:focus-visible { outline: 3px solid #bb8aff; }
+#task-events { max-height: 540px; }
+@media (max-width: 680px) {
+  .task-panel { padding: 17px; }
+  .task-form { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .task-form #task-create { grid-row: 3; grid-column: 1 / -1; }
+  .task-grid { grid-template-columns: 1fr; }
+}
