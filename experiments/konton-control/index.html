@@ -9,16 +9,17 @@
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" type="image/png" sizes="192x192" href="./icons/konton-192.png">
-  <title>KONTON Control · Cockpit V0</title>
+  <title>KONTON Control · Régie mobile</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
   <script src="./github-status.js" defer></script>
   <script src="./task-board.js" defer></script>
   <script src="./ai-board.js" defer></script>
   <script src="./pwa.js" defer></script>
+  <script src="./navigation.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Aller au cockpit</a>
+  <a class="skip-link" href="#screen-home">Aller au cockpit</a>
   <div class="app">
     <header class="topbar">
       <div class="brand">
@@ -29,32 +30,44 @@
         </div>
       </div>
       <div class="topbar-meta">
-        <span class="demo-chip"><span class="led led-amber" aria-hidden="true"></span> MODE DÉMO</span>
-        <span class="connection">GitHub : lecture seule facultative</span>
+        <span class="demo-chip"><span class="led led-amber" aria-hidden="true"></span> AGENTS EN DÉMO</span>
+        <span class="connection">V0.7 · Prototype Android</span>
       </div>
     </header>
 
-    <div class="notice" role="note">
-      <strong>Pupitre historique en simulation.</strong> Les missions et les statuts des agents sont fictifs. L’observatoire GitHub ci-dessous est distinct et affiche des données réelles uniquement si elles sont chargées.
-      Les commandes de ce pupitre historique ne lancent aucun agent réel ; le nouvel agent IA local dispose de ses propres commandes, sous configuration. Le rechargement de la page remet les simulations à zéro.
-    </div>
-
-    <section class="mobile-install panel" aria-label="Installation sur téléphone">
-      <div>
-        <p class="eyebrow">KONTON CONTROL · ANDROID</p>
-        <p id="mobile-install-status" class="subtle">Installation mobile en cours de vérification.</p>
+    <nav class="app-navigation" aria-label="Navigation principale">
+      <button class="nav-item is-active" type="button" data-screen-target="home" aria-controls="screen-home" aria-current="page"><span class="nav-glyph" aria-hidden="true">⌂</span><span>Accueil</span></button>
+      <button class="nav-item" type="button" data-screen-target="agents" aria-controls="screen-agents"><span class="nav-glyph" aria-hidden="true">◆</span><span>Agents</span></button>
+      <button class="nav-item" type="button" data-screen-target="github" aria-controls="screen-github"><span class="nav-glyph" aria-hidden="true">⌁</span><span>GitHub</span></button>
+      <button class="nav-item" type="button" data-screen-target="outils" aria-controls="screen-outils"><span class="nav-glyph" aria-hidden="true">⚙</span><span>Outils</span></button>
+    </nav>
+    <section class="screen screen-home" id="screen-home" data-screen="home" tabindex="-1" aria-label="Accueil">
+      <div class="home-hero">
+        <p class="eyebrow">VUE D'ENSEMBLE</p>
+        <h2>La régie dans la poche.</h2>
+        <p>Les agents sont pour l'instant <strong>en simulation</strong>. Les données GitHub publiques sont consultables en lecture seule.</p>
+        <div class="home-actions">
+          <button type="button" data-screen-target="agents" class="home-action primary-action">Ouvrir les agents</button>
+          <button type="button" data-screen-target="github" class="home-action secondary-action">Consulter GitHub</button>
+        </div>
       </div>
-      <button id="mobile-install" type="button" class="small-btn" hidden>Installer l'application</button>
-    </section>
+      <div class="home-status-grid">
+        <div class="home-status"><span class="led led-amber" aria-hidden="true"></span><div><strong>Agents · Démo</strong><p>GO et STOP ne lancent aucune vraie mission depuis cette APK.</p></div></div>
+        <div class="home-status"><span class="led led-blue" aria-hidden="true"></span><div><strong>GitHub · Lecture seule</strong><p>Statuts réels uniquement après récupération réussie des données.</p></div></div>
+      </div>
+      <!-- Ancien avertissement retiré au profit des étiquettes visibles -->
     <section class="metrics" aria-label="Résumé de la simulation">
       <div class="metric"><strong id="count-agents">0</strong><span>Agents présentés</span></div>
       <div class="metric"><strong id="count-running">0</strong><span>En simulation</span></div>
       <div class="metric"><strong id="count-review">0</strong><span>À relire</span></div>
-      <div class="metric"><strong>0</strong><span>Connexions réelles</span></div>
+
     </section>
 
 
-    <section class="github-panel panel" aria-labelledby="github-heading">
+    </section>
+    <section class="screen" id="screen-github" data-screen="github" hidden tabindex="-1" aria-label="GitHub">
+      <div class="screen-title"><p class="eyebrow">LECTURE SEULE</p><h2>GitHub</h2><p>Le vrai état des dépôts publics, et rien de plus. Aucune action distante n'est déclenchée.</p></div>
+      <section class="github-panel panel" aria-labelledby="github-heading">
       <div class="panel-heading">
         <div><span class="eyebrow">05 / OBSERVATOIRE GITHUB · LECTURE SEULE</span><h2 id="github-heading">État des dépôts</h2></div>
         <span class="tiny-pill" id="github-source">Connexion non établie</span>
@@ -73,7 +86,14 @@
     </section>
 
 
-    <section class="panel task-panel" aria-labelledby="task-heading">
+    </section>
+    <section class="screen" id="screen-outils" data-screen="outils" hidden tabindex="-1" aria-label="Outils avancés">
+      <div class="screen-title"><p class="eyebrow">CONFIGURATION & DÉVELOPPEMENT</p><h2>Outils avancés</h2><p>Les outils de serveur et d'IA locale sont destinés à un ordinateur configuré. Ils ne sont pas raccordés dans cette APK.</p></div>
+      <section class="mobile-install panel" aria-label="Installation sur téléphone">
+        <div><p class="eyebrow">INSTALLATION</p><p id="mobile-install-status" class="subtle">Installation en cours de vérification.</p></div>
+        <button id="mobile-install" type="button" class="small-btn" hidden>Installer l'application</button>
+      </section>
+      <section class="panel task-panel" aria-labelledby="task-heading">
       <div class="panel-heading">
         <div><span class="eyebrow">06 / ORCHESTRATEUR LOCAL</span><h2 id="task-heading">Vérifications à exécuter</h2></div>
         <span class="tiny-pill" id="task-mode">Hors connexion locale</span>
@@ -117,7 +137,10 @@
       <p class="github-fineprint">STOP interrompt la requête réseau locale et empêche son résultat d'être validé dans le cockpit ; il ne prouve pas l'arrêt physique du calcul côté modèle. Les réponses de l'IA ne sont jamais des autorisations éditoriales, juridiques ou techniques. L'historique demeure sur l'ordinateur qui héberge le serveur local.</p>
     </section>
 
-    <div class="workbench">
+    </section>
+    <section class="screen" id="screen-agents" data-screen="agents" hidden tabindex="-1" aria-label="Agents de démonstration">
+      <div class="screen-title"><p class="eyebrow">PUPITRE DE DÉMONSTRATION</p><h2>Agents</h2><p>GO, STOP et les validations ne modifient aucun projet réel.</p></div>
+      <div class="workbench">
       <aside class="sidebar panel" aria-label="Sélection des agents">
         <div class="panel-heading">
           <div><span class="eyebrow">01 / REGISTRE</span><h2>Agents</h2></div>
@@ -137,7 +160,7 @@
         </div>
       </aside>
 
-      <main id="main" class="main-panel panel" tabindex="-1">
+      <section id="agent-command" class="main-panel panel">
         <div class="panel-heading">
           <div><span class="eyebrow">02 / PUPITRE</span><h2>Commande</h2></div>
           <span class="tiny-pill">V0.1</span>
@@ -145,7 +168,7 @@
         <div class="agent-detail" id="agent-detail">
           <p class="empty">Choisis un agent pour afficher son pupitre.</p>
         </div>
-      </main>
+      </section>
 
       <aside class="right-column" aria-label="Validations et journal">
         <section class="panel queue-panel">
@@ -161,6 +184,7 @@
       </aside>
     </div>
 
+    </section>
     <footer class="footer">
       <span>KONTON Control · maquette technique isolée</span>
       <span>Personnel et collectif restent deux périmètres distincts.</span>
