@@ -71,8 +71,7 @@
         mode: "cors",
         signal: controller.signal,
         headers: {
-          "Accept": "application/vnd.github+json",
-          "X-GitHub-Api-Version": "2022-11-28"
+          "Accept": "application/vnd.github+json"
         }
       });
       if (!response.ok) {
