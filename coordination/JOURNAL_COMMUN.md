@@ -1471,3 +1471,16 @@ Transmission de La Juriste consultée sur `main` ; structure statique existante 
 - [Catalogue existant de la Médiathèque](https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit) : ajout d'une courte note « LA LECTRICE — ÉCOLOGIE 001 » **sur le document existant**, lue et vérifiée après écriture, sans supprimer le fonds déjà catalogué.
 
 **Statuts** : 18 objections = **candidates** (pas 18 erreurs déjà observées), bilan historique à compléter par sources primaires locales, relecture scientifique compétente et décision humaine nécessaires. Aucune nouvelle FN/BIO, aucun nouveau Wiki, image, manifeste, fusion, contact extérieur, partenariat ou publication du site. La réception effective par Médiathèque, Penseur et Relieuse est à confirmer indépendamment des écritures GitHub/Docs.
+
+
+
+## 2026-10-31 — Juriste — étude droits écologiques et communs
+
+**Mission :** étude ciblée selon la [proposition documentaire écologique de l'Archiviste](transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md), sans nouveau service juridique ni révision politique.
+
+**Dossier créé :** [`docs/ETUDE_JURIDIQUE_DROITS_ECOLOGIQUES_ET_COMMUNS_2026-10-31.md`](https://github.com/zoutiFrutti/Interstice/blob/main/docs/ETUDE_JURIDIQUE_DROITS_ECOLOGIQUES_ET_COMMUNS_2026-10-31.md), commit `659f2d91dbb1fb9c7d81ade99665ac061c0a16b0` : Charte 2004, information et participation, Aarhus/UE, eau/forêts/terres et droits d'usage, pollutions/ICPE, agriculture/élevage et protections animales, **neuf jurisprudences numérotées et datées**, six fiches candidates ECO-DROIT-001 à 006. **Versions modifiées en août 2026** repérées pour Code environnement L.211-1 et L.411-1 et Code rural L.143-1. Sources primaires institutionnelles et limites explicitement indiquées.
+
+**Transmission :** [`coordination/transmissions/2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md`](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md), commit `42c09640f5d11a9493bd87fc2db9136ffcbd14ff`, lecture croisée demandée à la Lectrice et traçabilité confiée à la Relieuse et Médiathèque. **Aucune autre conversation n'est présumée avoir reçu** cette transmission.
+
+**Frontières :** droit opposable ≠ revendication politique ; procédure ≠ droit de veto ; protection des communs ≠ occupation ou gestion automatique d'une propriété ; protection animale ≠ abolition juridique de l'élevage. Aucun dossier individuel recueilli, demande d'autorisation déposée, PR fusionnée, Wiki publié, permission Supabase ou gouvernance modifiés ; manifeste V2.5 toujours non adopté.
+
