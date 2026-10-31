@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '22'
       - run: node --check scripts/build-premiere-edition.mjs
-      - run: node --test tests/edition-premiere-circuit.test.mjs tests/edition-5-passes.test.mjs tests/initiatives-core.test.mjs tests/v0-form-acceptance.test.mjs tests/integration-v0-018a.test.mjs
+      - run: node --test tests/edition-premiere-circuit.test.mjs tests/edition-5-passes.test.mjs tests/initiatives-core.test.mjs tests/v0-form-acceptance.test.mjs tests/integration-v0-018a.test.mjs tests/parcours-critiques-integration.test.mjs
       - run: node scripts/build-premiere-edition.mjs
   chromium:
     runs-on: ubuntu-24.04
