@@ -1,0 +1,52 @@
+/* PR41 : compléments d'intégration, sans toucher au CSS du Graphiste (PR35).
+   Le fichier cartes-design.css précédent reste une copie conforme de la PR35. */
+#map-unlocated[hidden]{display:none!important}
+#map-unlocated{margin-top:20px;padding:16px;border:1px solid #aa9e8d;border-radius:10px}
+#map-unlocated h3{margin-top:0}
+#map-unlocated-results{margin-top:12px}
+.initiative-main .map-marker-halo{r:50px}
+.initiative-main .map-marker-label{font-size:17px;letter-spacing:-.01em}
+.initiative-main .map-region-label{font-size:20px}
+.initiative-main .map-axis-label{font-size:15px}
+.initiative-main .map-marker:focus .map-marker-halo{stroke:#fff0ca;stroke-width:4}
+.initiative-main .map-caption{font-size:18px;line-height:1.6}
+@media(max-width:480px){
+  .initiative-main #map-panel{padding:10px}
+  .initiative-main .map-marker-label{font-size:17px}
+  .initiative-main #map-panel .map-controls button{min-height:54px}
+}
+@media print{#map-unlocated{display:block!important}}
+
+/* Alternative tactile accessible aux petits repères SVG. */
+.map-commune-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.initiative-main .map-commune-buttons button{min-height:56px;padding:12px 14px;text-align:left;
+ white-space:normal;overflow-wrap:anywhere;border:2px solid #b7a5a2}
+@media(max-width:480px){.map-commune-buttons{grid-template-columns:minmax(0,1fr)}}
+
+/* Transmission 015 : containment conservateur au viewport 320px. */
+.initiative-header,.initiative-main,.initiative-main *{min-width:0}
+.initiative-main input,.initiative-main select,.initiative-main textarea{max-width:100%;box-sizing:border-box}
+.initiative-header .identity{overflow-wrap:anywhere}
+.initiative-main h1,.initiative-main h2,.initiative-main h3,.initiative-main p,.initiative-main a{overflow-wrap:anywhere}
+@media(max-width:350px){
+ .initiative-header{flex-wrap:wrap}
+ .initiative-main{padding-inline:12px}
+ .initiative-main #filters,.initiative-main #simulation-form{padding:12px}
+ .initiative-main .map-legend,.initiative-main #map-panel{padding:10px}
+}
+
+/* Carte existante conservée : lecture SVG à taille réelle dans une région défilante,
+   avec accès au clavier, sans modifier cartes-design.css (atelier Graphiste). */
+.initiative-main #map-scroll-region{max-width:100%;min-width:0}
+.initiative-main #map-scroll-region:focus-visible{outline:3px solid #fff0ca;outline-offset:3px}
+.initiative-main .map-scroll-hint{font-size:18px;line-height:1.6;margin:14px 0 8px}
+@media(max-width:600px){
+ .initiative-main #map-scroll-region{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:auto}
+ .initiative-main #municipality-map{display:block;width:760px;max-width:none;height:420px;max-height:none;
+  aspect-ratio:760/420;margin-right:14px}
+ .initiative-main .map-marker-label{font-size:23px;font-weight:800;letter-spacing:0}
+ .initiative-main .map-region-label{font-size:23px}
+ .initiative-main .map-axis-label{font-size:18px}
+ .initiative-main .map-marker-halo{r:36px}
+}
+@media(prefers-reduced-motion:reduce){.initiative-main #map-scroll-region{scroll-behavior:auto}}
