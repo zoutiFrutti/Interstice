@@ -46,3 +46,21 @@ Calcul sur deux valeurs exactes précédemment citées dans le chantier : (9 737
 **Contrôle statique complémentaire de la PR #32, sans prétendre à un test navigateur :** sur le HTML de la branche, 5 références locales (style, emblème et trois pages) ont été trouvées sur `main` ; les 3 ancres internes ont un identifiant correspondant ; un seul `h1` ; 19 URL externes distinctes, **sans test HTTP exhaustif**. Aucune ressource externe ni témoignage n'a été copié. Ce contrôle ne valide ni l'accessibilité réelle ni les formulaires.
 
 **Statut :** addendum documentaire, non publié sur le Wiki ; aucun taux corrigé sans série homogène, aucune fusion, aucune adoption collective.
+
+
+## Résolution documentaire — 31 octobre 2026 : série homogène retrouvée dans le PDF officiel
+
+**Résultat nouveau qui remplace l'incertitude du paragraphe « Contradiction chiffrée » ci-dessus :** le PDF original [SSMSI, Interstats Info rapide n°61, mars 2026, page 2, figure 1](https://www.dilcrah.gouv.fr/files/2026-03/IR61%20Les%20atteintes%20a%CC%80%20caracte%CC%80re%20raciste%2C%20xe%CC%81nophobe%20ou%20antireligieux%20en%202025.pdf) contient directement les **deux années dans une même table** :
+
+| Série « ensemble des crimes et délits à caractère raciste » | Nombre |
+|---|---:|
+| 2024, données stabilisées dans la publication 2025 | **9 295** |
+| 2025, données provisoires extraites en janvier 2026 | **9 737** |
+| Différence | **+442** |
+| Variation calculée | **+4,755 %**, arrondie à **+5 %** |
+
+Calcul reproductible : `(9737 - 9295) / 9295 * 100 = 4,755 %` (arrondi à trois décimales). **Le taux officiel de +5 % est ainsi réconcilié**. Le chiffre de **9 350 pour 2024**, publié antérieurement en 2025, correspond à une version antérieure des données ; le PDF n°61 indique explicitement dans l'encadré « Sources et méthodes » que **« Dans la figure 1, les données de 2024 ont été actualisées avec les bases statistiques stabilisées. »** La différence entre les deux millésimes de 2024 est de 55 faits. Cette mise à jour de la base des **infractions enregistrées** n'est **pas** la révision d'octobre 2026 des **taux de plainte VRS**, qui reste un chantier distinct.
+
+**Avant / après :** avant cette passe, le dossier concluait que le dénominateur comparable n'avait pas été retrouvé et qu'il fallait rechercher les CSV/Parquet ; après cette passe, la figure 1 du PDF primaire fournit la paire exacte, sans dépendre du téléchargement de la base. Le passage de vigilance statistique dans `wiki-antiracisme-histoires-droits.html` a été corrigé sur la branche de la PR #32, commit [e9efac7](https://github.com/zoutiFrutti/Interstice/commit/e9efac7964cc4fb4d9b6a55b6a0f27a36ed8de5a). Les deux chiffres historiques sont conservés et attribués à leur millésime ; aucun taux de plainte n'a été modifié.
+
+**Crédibilité et limites :** le SSMSI est la source primaire du comptage administratif ; la figure 1 et la note méthodologique sont consultables dans le même document officiel. La CNCDH relaie certaines statistiques et n'est pas une seconde mesure indépendante. L'extraction des taux VRS rétropolés, les perspectives directement produites par les collectifs concernés, les contrôles HTTP exhaustifs et les tests navigateur/accessibilité restent à faire. Aucun graphique ni tableau tiers n'a été reproduit sur le site ; cette note retranscrit uniquement les quatre valeurs utiles à la vérification. Aucun manifeste, charte, code d'application, formulaire, CSS, Supabase ou ressource graphique n'a été modifié.
