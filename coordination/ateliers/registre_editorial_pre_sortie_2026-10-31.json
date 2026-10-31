@@ -101,12 +101,14 @@
       "title": "ARCH-008 — Manifeste du 6 mai 1871 de l’Union des femmes — défense, travail et conflit autour de la paix",
       "source_folder": "ARCH",
       "modified_at": "2026-10-31T06:58:20.465Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
+      "review_status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "fact_check": "NON_FINALISE",
+      "sources_check": "PRESENTES_DANS_LE_DOSSIER_A_RECOUPER",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "initial_risk_notes": "Affiche du 6 mai 1871 référencée BHVP 2-AFF-003190 ; confronter transcription et fac-similé, cinq noms de signataires ≠ comité entier, proclamation adverse datée incertaine.",
+      "initial_read_date": "2026-10-31"
     },
     {
       "id": "ASSO-001",
@@ -197,24 +199,28 @@
       "title": "ASSO-008 — La Marmite — coopérative ouvrière 1868",
       "source_folder": "ASSO",
       "modified_at": "2026-10-30T18:48:50.698Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
+      "review_status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "fact_check": "NON_FINALISE",
+      "sources_check": "PRESENTES_DANS_LE_DOSSIER_A_RECOUPER",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "initial_risk_notes": "Comptabilité d'origine, rémunérations, registres de votes/admissions non consultés ; 1868 et dossier 1894 distincts, estimations d'établissements et convives à attribuer.",
+      "initial_read_date": "2026-10-31"
     },
     {
       "id": "BIO-001",
       "title": "BIO-001 — Ida B. Wells — fiche de recherche",
       "source_folder": "BIO",
       "modified_at": "2026-10-28T22:59:53.400Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
+      "review_status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "fact_check": "NON_FINALISE",
+      "sources_check": "PRESENTES_DANS_LE_DOSSIER_A_RECOUPER",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "initial_risk_notes": "Sources primaires et secondaires citées ; relecture factuelle et iconographique complète reste à réaliser avant feu vert.",
+      "initial_read_date": "2026-10-31"
     },
     {
       "id": "BIO-002",
@@ -305,12 +311,14 @@
       "title": "BIO-009 — Nathalie Le Mel — ouvrières et Commune",
       "source_folder": "BIO",
       "modified_at": "2026-10-31T06:58:51.188Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
+      "review_status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "fact_check": "NON_FINALISE",
+      "sources_check": "PRESENTES_DANS_LE_DOSSIER_A_RECOUPER",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "initial_risk_notes": "Dates et lieu de naissance contradictoires (24/26 août 1826, Brest/Ivry selon notices) ; acte de Brest 1E73 non collationné. Conserver l'incertitude, décès 1921.",
+      "initial_read_date": "2026-10-31"
     },
     {
       "id": "BIO-010",
@@ -485,12 +493,14 @@
       "title": "COL-003 — Club des prolétaires — assemblées de la Commune",
       "source_folder": "COL",
       "modified_at": "2026-10-31T07:21:16.042Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
+      "review_status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "fact_check": "NON_FINALISE",
+      "sources_check": "PRESENTES_DANS_LE_DOSSIER_A_RECOUPER",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "initial_risk_notes": "Affluence à 4 000 et part des femmes contradictoires selon récits, archives Ly22 non lues ; distinguer club, journal et personnes dirigeantes.",
+      "initial_read_date": "2026-10-31"
     },
     {
       "id": "EXP-001",
@@ -509,12 +519,14 @@
       "title": "EXP-002 — Caisse alimentaire commune de Montpellier — recherche critique",
       "source_folder": "ASSO",
       "modified_at": "2026-10-29T10:34:42.456Z",
-      "review_status": "INVENTORIE_NON_REL_U",
-      "fact_check": "A_FAIRE",
-      "sources_check": "A_FAIRE",
+      "review_status": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
+      "fact_check": "NON_FINALISE",
+      "sources_check": "PRESENTES_DANS_LE_DOSSIER_A_RECOUPER",
       "critical_read": "A_FAIRE",
       "rights_check": "A_FAIRE",
-      "human_approval": "A_FAIRE"
+      "human_approval": "A_FAIRE",
+      "initial_risk_notes": "Chiffres opérationnels et critères d'adhésion susceptibles d'évoluer ; contrôler la source à date de publication, aucun partenariat.",
+      "initial_read_date": "2026-10-31"
     },
     {
       "id": "EXP-004",
@@ -1305,5 +1317,17 @@
       "human_approval": "A_FAIRE"
     }
   ],
-  "NOTE": "Ces catégories se recoupent, ne pas sommer comme autant de nouveaux articles; aucune page n'a reçu un feu vert de publication du seul fait de cet inventaire."
+  "NOTE": "Ces catégories se recoupent, ne pas sommer comme autant de nouveaux articles; aucune page n'a reçu un feu vert de publication du seul fait de cet inventaire.",
+  "initial_content_screening": {
+    "count": 6,
+    "ids": [
+      "BIO-009",
+      "ASSO-008",
+      "ARCH-008",
+      "COL-003",
+      "EXP-002",
+      "BIO-001"
+    ],
+    "scope": "Lecture directe de six documents Drive; identification de risques, ni collation externe de chaque source ni validation pour publication."
+  }
 }
