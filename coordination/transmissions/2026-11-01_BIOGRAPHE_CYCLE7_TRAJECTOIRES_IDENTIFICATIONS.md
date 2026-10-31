@@ -1,0 +1,37 @@
+# Cycle 7 — La Biographe — trajectoires, identifications et réseaux
+1er novembre 2026. Transmission candidate à La Lectrice et La Relieuse. Aucune validation éditoriale, fusion ou publication.
+
+## 1. Version de départ et contrôle des SHA
+Branche : `agent/journal-commun-biographies-2026-10-29`. Dernier rapport de référence : `coordination/transmissions/2026-10-31_BIOGRAPHE_CYCLE6_IDENTIFICATIONS.md` (blob 45394e395c29e7f4c9cc2441283650ac76fc2258).
+| BIO | SHA blob vérifié | Statut et limite |
+|---|---|---|
+| 001 Ida B. Wells | 18b7377663ad8b2d3067b23bfec8526e27ee86c9 | candidate à relecture ; contribution individuelle de ses soutiens à établir par autres sources |
+| 002 Victoria Earle Matthews | b0d1e52df20559c6efbe4cf6067e7d7e378da8e8 | candidate ; archives White Rose Mission non lues intégralement |
+| 003 Maritcha Remond Lyons | 1a0d9fa65dfe568d60b71a2eaca744066543330d | candidate ; manuscrit autobiographique non collationné |
+| 010 Élisabeth Dmitrieff | 16da3e93f1bd7cdcbd1b903803787ec526c791a1 | candidate ; écrits collectifs non attribuables exclusivement |
+| 012 Eugène Varlin | 25ff60693235dd404ab0c2596cc6b03757d15734 | candidate ; statuts La Marmite ne prouvent pas exécution |
+Les cinq textes complets, avec sources, crédit, limites et droits, sont dans `coordination/biographies/candidats_cycle3/BIO-XXX.md`. Aucune modification de ces fichiers durant cette passe ; SHA identiques, ne pas les présenter comme des versions nouvellement corrigées.
+
+## 2. Dossiers aux incertitudes majeures
+- **BIO-009 Nathalie Le Mel — RESERVE**. Date 24/26 août 1826 et Brest/Ivry contradictoires selon les notices. BnF https://data.bnf.fr/fr/ark:/12148/cb13169483s.pdf contre historiographie, acte Brest 1E73 non collationné. Décès 8 mai 1921, non 1871. Son travail à La Marmite et à l'Union des femmes doit être distingué des actes collectifs non exécutés.
+- **BIO-019 Blanche Lefebvre — BLOQUEE**. Signataire modiste distincte de la « femme Lefèvre » blanchisseuse. Audin attribue à Édith Thomas l'identification de cette dernière comme Victorine Gorget, sans pièce d'état civil vérifiée. Carnavalet AFF5721 identifie la signature de Blanche ; PH4142-129/PH19727-29 sont objets muséaux attribués à Gorget, non preuve de l'équivalence des patronymes. Sources https://macommunedeparis.com/2021/05/04/4-mai-1871-au-club-de-la-revolution-sociale/ ; https://commune1871-rougerie.fr/les-femmes-de-1871%2Cfr%2C8%2C58.html .
+- **BIO-021 Joséphine Dulimbert/Dulembert — BLOQUEE**. Une étude de 1950 la présente en rédactrice du *Moniteur des Citoyennes*, mais sans exemplaire signé du journal collationné : https://www.persee.fr/doc/r1848_0765-0191_1950_num_42_185_1467 . Note de bas de page, état civil et exemplaires du titre à consulter avant équivalence certaine des graphies.
+
+## 3. Nouvelle connexion vérifiable avec les enquêtes espagnoles
+**Attention aux doubles objets** : archives nationales espagnoles PARES ont deux notices d'autorité distinctes : *Mujeres Libres (revista, Madrid-Barcelona. 1936-1938)* https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/52088 et *Mujeres Libres (España)* (organisation, 1936–1939) https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/45397 . Ne pas attribuer à une rédactrice toutes les actions de la fédération ni à la revue la personnalité institutionnelle de l'organisation.
+**Lucía Sánchez Saornil (1895–1970)** : notice d'autorité PARES avec dates précises 13 décembre 1895 (Madrid) et 2 juin 1970 (Valence) https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/152424 ; BNE https://www.bne.es/es/autores/sanchez-saornil-lucia . Documente ses écrits, son travail dans la téléphonie, son activité libertaire et ses pseudonymes ; ne pas transformer le pseudonyme « Luciano de San Saor » en une seconde personne.
+**Femmes et travail collectif** : Martha A. Ackelsberg, *Activism, Revolution and War: Mujeres Libres Addressing the Personal and the Political* (2018) https://scholarworks.smith.edu/gov_facpubs/12/ examine Lucía Sánchez Saornil, Mercedes Comaposada, Soledad Estorach et Sara Berenguer, en insistant sur les réseaux d'éducation et de mobilisation des femmes ouvrières ; revue PARES mentionne aussi Amparo Poch. Les traductions/variantes de patronymes et parcours individuels restent à confronter aux documents de première main.
+**Lien territorial documenté, sans carte individuelle** : Centre Toulousain de Documentation sur l'Exil, bulletin 5, https://www.documentationexilespagnol-toulouse.fr/medias/files/bulletin-n-5.pdf rapporte une réfugiée de Mujeres Libres à Cordes-sur-Ciel (Tarn), non identifiée dans ce seul extrait : pas d'identification nominative ni de création d'une adresse personnelle. Cette piste permet de chercher le rôle des exilées espagnoles dans la transmission des luttes et savoirs populaires en Occitanie.
+**Anti-doublon** : avant toute fiche sur Sánchez Saornil ou autres femmes déjà couvertes par Wikipédia, identifier une question originale (réseau local de formation, transmission de l'exil, contribution peu visible) et une archive primaire spécifique ; sinon simple lien vers les notices existantes. Aucun BIO nouveau.
+
+## 4. Zapatistes et personnes vivantes
+Pour l'EZLN, limiter l'étude biographique aux figures historiques décédées et aux prises de position publiques : un hommage officiel de 2026 à la Comandanta Ramona (1959–2006) https://www.gob.mx/cultura/prensa/el-inehrm-rendira-homenaje-a-la-comandanta-ramona-del-ezln?idiom=es la situe dans le CCRI et les luttes des femmes. Une rétrospective d'État n'est ni archive orale indigène ni approbation du mouvement ; confronter si possible ses déclarations originales. Ne pas publier noms civils, positions actuelles, itinéraires, relations privées ou localisations de personnes vivantes. Ne pas rabattre les communautés sur une dirigeante emblématique.
+
+## 5. Liens aux parcours
+- **Pouvoir, éducation et voix marginalisées** : BIO-001/002/003 ↔ COL-001, ASSO-001/002. Éducation et journaux noirs ≠ pouvoir individuel d'une seule personne. En Espagne, Mujeres Libres montre l'enjeu d'éducation et de capacités d'action, sans filiation historique directe prouvée.
+- **Travail, communs et autonomie** : BIO-012/009 ↔ ASSO-008 La Marmite, BIO-010 ↔ ASSO-007 Union des femmes, ARCH-002/004. Comparaison possible avec les réseaux ouvriers et de formation de Mujeres Libres, sans les présenter comme institution identique.
+- **Écologie et luttes territoriales** : ÉCL-002, terres, accès aux ressources et droits des communautés ; enquête zapatiste historique et Chipko sont des dossiers distincts. Aucun récit de participation contemporaine inventé.
+Crédits : sources anciennes et archivistiques nommées ci-dessus, synthèse de La Biographe ; aucun média repris, droits des portraits et documents modernes à vérifier individuellement.
+
+## Transmission et suites exactes
+À La Lectrice : revoir les cinq SHA, confronter les notices historiques espagnoles à la bibliographie critique, conserver réserve 009 et blocages 019/021. À La Relieuse : enregistrer ce rapport comme **candidat documentaire** ; proposer enquête commune aux archivistes espagnols (revue/organisation et exil en Occitanie), sans attribuer de réception par une autre conversation. À l'Archiviste : cote originale Le Mel, dossier Victorine Gorget, exemplaire *Moniteur*, fonds d'exil des femmes de Mujeres Libres. Aucun visa de Zout, aucune fusion ni publication.
