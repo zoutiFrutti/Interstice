@@ -1,0 +1,385 @@
+# LA FAILLE NOIRE × INTERSTICE — MANIFESTE V2.6 CANDIDAT
+
+**Texte de lecture consolidé sans annotations. 11 ajouts et 3 reformulations éditorialement approuvés ; non adopté collectivement.**
+
+LA FAILLE NOIRE
+MANIFESTE V2.6 CONSOLIDÉ — VERSION CANDIDATE
+Liberté · Égalité · Solidarité
+De la Faille naît l'Interstice.
+
+Version candidate V2.6 du 31 octobre 2026.
+Statut : les 14 propositions de révision ont été approuvées éditorialement par la personne à l’initiative du projet ; aucune adoption collective ni validation juridique n'est présumée.
+
+I. POURQUOI LA FAILLE NOIRE ?
+
+1. Un monde qui peut être transformé
+Nous vivons dans un monde où les possibilités de créer, de partager, d'apprendre et de vivre dignement coexistent avec de profondes inégalités.
+Les richesses et les ressources sont concentrées. Les décisions qui affectent nos existences sont souvent prises loin des personnes concernées. Les discriminations, les violences et les rapports de domination limitent les libertés réelles.
+La destruction des milieux naturels menace les conditions mêmes de la vie. Les logiques de concurrence, d'exploitation et de rentabilité peuvent prendre le pas sur les besoins humains, les solidarités et les équilibres écologiques.
+Pourtant, d'autres manières de vivre et de s'organiser existent déjà.
+Des associations, des syndicats, des collectifs, des coopératives, des lieux culturels, des réseaux d'entraide et des initiatives citoyennes expérimentent quotidiennement des formes de solidarité et d'autonomie.
+Nous ne prétendons ni avoir inventé ces pratiques ni devoir les réunir sous une autorité nouvelle.
+Nous ne voulons pas remplacer les services publics, effacer les luttes existantes ou nous approprier le travail des autres.
+Nous voulons contribuer à ouvrir des possibilités supplémentaires.
+
+La documentation d'une initiative, d'une lutte ou d'une personne n'établit ni son accord pour coopérer avec nous, ni un partenariat, ni un mandat de représentation. Les autorisations et les désaccords doivent rester vérifiables.
+
+2. Une proposition, pas une organisation achevée
+La Faille noire est aujourd'hui une proposition politique, sociale et culturelle en construction.
+Elle ne constitue pas encore une fédération établie, une institution démocratiquement constituée ou une communauté disposant de règles collectivement adoptées.
+Ce manifeste exprime une orientation. Il ne crée pas, à lui seul, d'obligations pour des personnes qui ne l'ont pas librement accepté.
+Nous distinguons trois niveaux : les principes que nous défendons ; les initiatives que nous souhaitons commencer à construire ; les futurs que nous pourrions envisager ensemble, sans les imposer.
+Nous ne cherchons pas à prendre le pouvoir à la place des autres.
+Nous cherchons à multiplier les moyens de le comprendre, de le contester et de ne plus le subir, sans présumer qu'une forme unique de démocratie ou d'organisation convienne partout.
+
+3. La cohérence entre nos fins et nos moyens
+Nous ne considérons pas qu'un objectif émancipateur justifie n'importe quel moyen employé pour l'atteindre.
+Les méthodes d'action, les formes d'organisation et les relations entre les personnes doivent pouvoir être confrontées aux principes que nous défendons.
+L'urgence, l'efficacité ou la nécessité de protéger un projet ne doivent pas devenir des justifications permanentes à la concentration du pouvoir.
+Nous voulons construire des moyens d'agir qui puissent être critiqués, contrôlés et transformés.
+Nous reconnaissons qu'aucune intention généreuse ne garantit, à elle seule, des conséquences justes.
+
+II. CE QUE NOUS DÉFENDONS
+
+LIBERTÉ
+
+Principe 1. Liberté individuelle et liberté de conscience
+Chaque personne doit pouvoir construire sa vie, exprimer ses convictions, développer ses capacités et choisir ses engagements, dans le respect des droits et des libertés des autres.
+Nous défendons la liberté de conscience, de pensée, d'expression, de création, d'association et de désaccord.
+Nous défendons également la liberté de ne pas participer, de préserver son intimité, de disposer d'espaces personnels, de vivre seul ou de se retirer d'un engagement.
+L'appartenance à un collectif ne doit jamais signifier l'abandon de son autonomie.
+La solidarité ne doit pas devenir une dette morale. L'accueil ne doit pas imposer une adhésion politique.
+
+Principe 2. Autogestion et démocratie directe
+Nous défendons la participation des personnes concernées aux décisions qui les touchent.
+Cette participation suppose de pouvoir accéder à l'information, comprendre les propositions, contribuer à leur élaboration, les modifier, formuler des objections et demander leur révision.
+Nous reconnaissons que le pouvoir ne réside pas uniquement dans le vote.
+Il peut aussi se trouver dans la capacité de fixer l'ordre du jour, de préparer les documents, de sélectionner les options, de maîtriser les outils techniques ou de contrôler les moyens de communication.
+Ces responsabilités doivent être visibles et contestables.
+L'absence, le silence ou l'impossibilité de participer ne doivent pas être automatiquement interprétés comme un consentement.
+Nous reconnaissons la nécessité possible de délégations, notamment pour accomplir certaines tâches ou répondre à des situations urgentes.
+Une délégation ne doit pas devenir un pouvoir permanent ou incontrôlable. Son périmètre, sa durée, ses responsabilités et les possibilités de contrôle ou de révocation doivent pouvoir être définis collectivement.
+Nous voulons rendre visibles les hiérarchies informelles, y compris lorsqu'elles apparaissent au sein de groupes qui se déclarent horizontaux.
+
+Le droit de ne pas participer doit coexister avec des moyens accessibles de recevoir l'information, de formuler une objection différée et de contester une décision qui affecte directement ses droits ou ses conditions de vie ; ces moyens ne doivent pas imposer une disponibilité permanente.
+
+Principe 3. Liberté de questionner et de transformer
+Aucune idée, aucune règle et aucune organisation ne doivent être considérées comme définitivement achevées.
+Nous défendons le droit de critiquer les pratiques du collectif, de proposer des alternatives et de remettre en question les décisions.
+La critique ne doit pas être confondue avec une trahison.
+Le désaccord peut contribuer à la qualité des décisions et à la transformation des idées.
+Nous voulons des organisations capables d'apprendre de leurs erreurs, de reconnaître leurs limites et de modifier leur fonctionnement.
+
+ÉGALITÉ
+
+Principe 4. Égale dignité et non-discrimination
+Nous affirmons l'égale dignité de toutes les personnes.
+Nous refusons les discriminations fondées notamment sur l'origine, la couleur de peau, le genre, l'identité ou l'expression de genre, l'orientation sexuelle, le handicap, l'âge, la situation sociale, les convictions ou la situation administrative.
+Nous défendons l'égalité des droits et des capacités réelles de participation.
+Traiter toutes les personnes de manière identique ne suffit pas lorsque les obstacles rencontrés sont différents.
+Les mesures destinées à réduire ces obstacles doivent être discutées avec les personnes concernées, évaluées et révisables.
+Nous distinguons les privilèges qui concentrent le pouvoir des aménagements qui permettent une participation plus équitable.
+L'accessibilité des lieux, des informations, des outils et des procédures fait partie de cette exigence.
+
+Principe 5. Refus des dominations
+Nous refusons les rapports de domination qui permettent à certaines personnes ou institutions de contrôler durablement l'existence des autres.
+Nous reconnaissons que les dominations économiques, sociales, racistes, sexistes, validistes, coloniales et autres peuvent se combiner et renforcer leurs effets.
+Nous voulons examiner ces mécanismes dans la société, mais aussi dans nos propres pratiques.
+Nous refusons qu'une personne fondatrice, donatrice, propriétaire d'un lieu, responsable technique ou administratrice d'un outil obtienne, de ce seul fait, un privilège politique permanent.
+L'expertise peut éclairer une décision. Elle ne doit pas, à elle seule, donner le pouvoir de décider à la place des personnes concernées.
+
+Principe 6. Justice, recours et résolution des conflits
+Nous défendons le droit de chaque personne à la dignité, à la sécurité et à la protection contre les violences.
+Nous reconnaissons que la liberté d'expression, le droit à la contestation, la confidentialité et la protection des personnes peuvent parfois entrer en tension.
+Ces conflits ne doivent être résolus ni par l'arbitraire ni par la suppression automatique de toute contradiction.
+Nous souhaitons rechercher des garanties équitables, proportionnées et contestables.
+Les personnes concernées doivent pouvoir être entendues et disposer de voies de recours adaptées.
+La médiation ne doit pas être imposée à une personne victime de violences.
+Nous refusons que la protection du collectif serve de prétexte à dissimuler des abus, comme nous refusons qu'une accusation conduise automatiquement à une sanction sans examen équitable.
+Les procédures précises de prévention, de protection, de décision et de recours devront être élaborées dans un cadre collectif distinct de ce manifeste.
+
+Les situations de danger, les violences, les désaccords ordinaires et les accusations contestées n'appellent pas les mêmes réponses. La protection immédiate ne vaut ni condamnation définitive ni dispense d'examiner les faits ; les obligations légales de signalement et de protection demeurent distinctes des procédures internes.
+
+SOLIDARITÉ
+
+Principe 7. Entraide et justice économique
+Nous défendons une solidarité libre, réciproque et respectueuse de l'autonomie des personnes.
+L'entraide ne doit pas être conditionnée à une adhésion idéologique ou à une obligation de reconnaissance.
+Nous souhaitons favoriser l'accès aux ressources, aux connaissances, aux outils et aux moyens de vivre dignement.
+Nous reconnaissons que l'accueil, les soins, la médiation, l'organisation et l'entretien des communs reposent sur un travail souvent invisible.
+Nous voulons rendre ce travail identifiable, en examiner la répartition, reconnaître sa pénibilité et éviter qu'il repose durablement sur les mêmes personnes.
+Le bénévolat doit rester librement consenti. Le travail professionnel doit pouvoir être justement rémunéré.
+Le droit de se retirer d'une responsabilité doit être pris en compte sans transformer les personnes les plus disponibles en responsables permanents.
+Nous voulons soutenir l'accès aux droits existants, sans prétendre remplacer les protections et les services publics.
+
+Une organisation ne devrait pas remplacer durablement un travail rémunéré par des contributions bénévoles invisibles, ni exiger des personnes discriminées qu'elles assurent gratuitement la formation et la médiation de tout le groupe.
+
+Principe 8. Responsabilité écologique et partage des ressources
+Nous considérons les conditions écologiques de la vie comme indissociables de la justice sociale.
+Nous défendons la préservation des milieux naturels, la réduction des destructions évitables, la réparation, la réutilisation et la gestion responsable des ressources.
+Nous voulons examiner les conséquences matérielles de nos activités, y compris lorsqu'elles sont présentées comme solidaires ou alternatives.
+Nous reconnaissons que les coûts écologiques peuvent être déplacés vers d'autres territoires et d'autres populations.
+Une autonomie locale qui dépend de l'exploitation invisible d'autrui ne constitue pas, à nos yeux, une autonomie pleinement solidaire.
+
+Les données sur le climat, la biodiversité et l'alimentation doivent être distinguées des interprétations politiques et des convictions éthiques, notamment sur la condition animale. Aucun choix alimentaire individuel ne découle automatiquement d'une moyenne scientifique, et aucune prescription alimentaire collective n'est instituée par ce manifeste.
+
+Principe 9. Construction collective et autonomie solidaire
+Nous défendons l'autonomie des personnes et des collectifs ainsi que leur capacité à coopérer librement.
+Nous ne recherchons pas une uniformité des modes de vie, des opinions ou des organisations.
+Nous reconnaissons qu'une coordination peut être nécessaire sans devoir devenir une autorité supérieure.
+La légitimité d'une délégation ne réside pas seulement dans sa désignation, mais également dans la possibilité de connaître, contrôler, contester et réviser son action.
+Nous souhaitons préserver les possibilités de coopération, de désaccord, de retrait et de transformation des engagements.
+Les personnes absentes ou moins disponibles ne doivent pas être considérées comme politiquement inexistantes.
+Les modalités de leur participation, les limites de cette participation et les responsabilités collectives qui en découlent devront être discutées sans présumer qu'une solution unique conviendra à toutes les situations.
+
+LA VIGILANCE ENVERS NOS PROPRES POUVOIRS
+Nous savons qu'aucune organisation ne devient égalitaire par la seule affirmation de ses principes.
+Le pouvoir peut naître de la propriété, des compétences, des relations, de l'ancienneté, de la maîtrise des informations ou simplement du temps dont disposent certaines personnes.
+Nous souhaitons rendre ces pouvoirs visibles, discutables et contrôlables.
+Nous reconnaissons la nécessité possible de responsabilités et de délégations, sans les confondre avec un droit permanent de gouverner.
+Nous voulons pouvoir examiner nos pratiques, reconnaître nos contradictions, entendre les critiques et transformer ce qui reproduit des dominations.
+Aucune figure historique, aucune théorie, aucune personne fondatrice et aucune organisation ne doivent être soustraites à cet examen.
+L'émancipation n'est pas une qualité que nous pouvons nous attribuer. C'est une exigence à laquelle nos actes doivent continuellement être confrontés.
+
+LES HUIT PILIERS POLITIQUES
+
+Pilier 1. Éducation populaire et émancipation
+Nous voulons favoriser l'accès aux connaissances, à l'esprit critique, aux outils d'expression et aux moyens de comprendre le monde.
+L'éducation ne doit pas se réduire à transmettre des réponses toutes faites : une affirmation doit pouvoir être reliée à sa source, à son contexte, à ses limites et à des objections sérieuses, sans exiger une conclusion idéologique prédéfinie.
+Nous souhaitons développer des formes d'apprentissage dans lesquelles les personnes peuvent questionner les contenus, contribuer à leur production et partager leurs expériences.
+Les personnes qui enseignent ou animent disposent de responsabilités qui doivent pouvoir être interrogées.
+Les savoirs issus de l'expérience doivent pouvoir dialoguer avec les savoirs scientifiques et historiques, sans que leurs méthodes de validation soient confondues.
+Nous souhaitons développer des ressources accessibles, des ateliers, des rencontres et des espaces de transmission réciproque.
+
+Pilier 2. Entraide, solidarité et accès aux droits
+Nous voulons soutenir des formes concrètes d'entraide entre personnes et collectifs.
+Cela peut concerner l'accès à l'alimentation, au logement, aux transports, aux soins, à la culture, à l'information ou aux démarches administratives.
+Nous souhaitons privilégier les collaborations avec les structures et initiatives existantes lorsqu'elles répondent déjà à ces besoins.
+Les personnes accompagnées doivent conserver leur capacité de décision, leur intimité et leur liberté de refuser une aide.
+La solidarité ne doit pas devenir un moyen de surveillance, de recrutement ou de contrôle.
+
+Pilier 3. Autonomie matérielle et économique
+Nous voulons explorer des formes d'organisation économique qui réduisent la dépendance et favorisent la coopération.
+Cela peut comprendre des ateliers partagés, des outils mutualisés, des coopératives, des systèmes de réparation, des lieux communs ou des initiatives de production collective.
+Nous défendons des formes de mise en commun qui garantissent non seulement l'accès aux ressources, mais aussi la possibilité de participer aux décisions concernant leurs usages, leur entretien et leur transmission.
+La propriété collective ne doit pas servir de couverture à une appropriation du pouvoir par quelques personnes.
+Nous souhaitons distinguer la propriété juridique, les droits d'usage et le contrôle effectif des moyens communs.
+Le partage des ressources doit respecter les espaces personnels, les engagements librement consentis et le droit au retrait.
+Nous voulons également rendre visibles les conditions de travail, les responsabilités économiques et les risques financiers de chaque initiative.
+
+Pilier 4. Culture, création et mémoires libres
+Nous défendons la culture comme un espace d'expression, de rencontre, de transmission et de transformation sociale.
+Nous voulons soutenir les artistes, les créateurs, les lieux indépendants, les pratiques amateurs et les formes de création collective.
+Nous souhaitons favoriser l'accès aux œuvres et aux connaissances dans le respect des droits des auteurs et des personnes concernées.
+Une œuvre librement consultable n'est pas nécessairement librement reproductible.
+Nous défendons également une mémoire critique des luttes et des mouvements d'émancipation.
+Nous souhaitons documenter leurs réussites, leurs contradictions, leurs exclusions et leurs échecs.
+Aucune figure historique, aucun mouvement et aucune tradition politique ne doivent devenir intouchables au motif qu'ils appartiennent à notre histoire militante.
+Les personnes dont les expériences ont été marginalisées doivent pouvoir participer à la construction de ces mémoires, sans être contraintes de témoigner.
+
+Une archive, un témoignage et un texte normatif n'attestent pas la même chose. Les intentions déclarées d'une organisation historique ne doivent pas être présentées comme des pratiques effectivement démontrées ; les droits des personnes, des auteurs et des communautés représentées doivent être examinés avant reproduction.
+
+Pilier 5. Écologie sociale, habitat et autonomie territoriale
+Nous voulons développer des manières d'habiter et de produire qui respectent les milieux naturels et les besoins humains.
+Nous souhaitons explorer la rénovation, la sobriété matérielle, les usages partagés, la coopération territoriale et les formes d'habitat choisies.
+L'habitat collectif ne doit jamais être présenté comme une obligation morale.
+La possibilité de vivre seul, de disposer d'un espace intime et de se retirer d'une activité commune doit être respectée.
+Nous défendons une écologie sociale qui relie les conditions de vie, les rapports de domination et les responsabilités envers les autres territoires.
+L'autonomie locale ne doit devenir ni un privilège territorial ni un prétexte à déplacer ailleurs les conséquences de nos choix.
+Le partage des connaissances et des ressources doit respecter les droits, les usages et le consentement des communautés concernées.
+Nous souhaitons évaluer les conséquences sociales et écologiques des projets au-delà du seul territoire où ils sont réalisés.
+
+Une autonomie territoriale ne signifie pas autarcie : l'eau, les sols, les migrations, les chaînes d'approvisionnement, les conditions de travail et les intérêts des générations futures dépassent les limites locales. Les désaccords sur la manière de représenter ces intérêts doivent rester visibles.
+
+Pilier 6. Autogestion, démocratie directe et fédéralisme libertaire
+Nous voulons expérimenter des formes d'organisation dans lesquelles les décisions sont prises aussi près que possible des personnes concernées.
+Nous souhaitons distinguer la représentation formelle, la participation effective et la capacité de contester les décisions.
+Une assemblée, une consultation ou un comité ne deviennent pas démocratiques du seul fait de leur existence.
+Nous voulons examiner qui participe réellement, qui ne peut pas participer, qui prépare les décisions et qui supporte les conséquences de leur application.
+Les délégations peuvent être nécessaires, mais leurs responsabilités et leurs limites doivent rester explicites.
+Nous voulons favoriser des collectifs autonomes capables de coopérer sans devoir se soumettre à une direction centrale.
+Les modalités précises de décision, de mandat, de révocation et de recours devront être élaborées collectivement, expérimentées et révisées.
+
+Pilier 7. Savoirs libres, médiathèque et autonomie technologique
+Nous voulons développer des outils et des espaces documentaires qui facilitent l'accès aux connaissances, la coopération et la transmission.
+Nous privilégions, lorsque cela est pertinent, les logiciels libres, les formats ouverts, l'interopérabilité et la possibilité de maîtriser ses propres données.
+Nous reconnaissons qu'un logiciel libre n'est pas automatiquement sécurisé, accessible ou démocratique.
+Nous souhaitons permettre des usages sans compte obligatoire lorsque cela est possible, protéger les données personnelles et préserver des possibilités de participation hors ligne.
+Les outils numériques doivent rester au service des personnes.
+L'intelligence artificielle peut contribuer à certaines tâches de recherche, d'organisation ou de création, mais elle ne doit pas se substituer à la délibération collective, servir à surveiller les membres ou justifier le remplacement abusif du travail humain rémunéré.
+Nous voulons distinguer les faits établis, les sources, les témoignages, les interprétations, les hypothèses et les propositions politiques.
+La Médiathèque et le Wiki doivent rester critiquables et révisables. Ils ne doivent pas devenir des instruments de légitimation automatique du projet.
+
+La possibilité de quitter un outil, de récupérer ses propres données dans un format utilisable et de demander la correction ou le retrait d'informations doit être examinée dès sa conception, sous réserve des droits d'autrui et des obligations légales. Le code ouvert ne garantit ni l'absence de surveillance ni l'égalité d'accès.
+
+Les contenus doivent distinguer leur statut réel : publié, candidat, bloqué, corrigé ou retiré ; identifier leur provenance, leur version et leurs réserves. La responsabilité éditoriale de la première édition est assurée, à titre transitoire, par la personne à l’initiative du projet. Cette responsabilité ne constitue ni un privilège politique permanent, ni une adoption collective des contenus ou des orientations du projet, ni un mandat de représentation des initiatives documentées.
+
+Pilier 8. Égalité réelle, diversité et lutte contre les discriminations
+Nous voulons construire des espaces où les différences ne deviennent pas des motifs d'exclusion ou de domination.
+Nous défendons l'accueil des personnes LGBTQIA+, des personnes handicapées, des personnes racisées, des minorités et de toutes celles et ceux qui subissent des discriminations.
+Nous reconnaissons que l'égalité formelle ne garantit pas l'accès réel aux responsabilités, aux ressources ou à la parole.
+Nous souhaitons identifier les obstacles matériels, sociaux et organisationnels à la participation.
+Les personnes concernées doivent pouvoir contribuer à la définition des problèmes et des réponses qui les touchent.
+Nous voulons rechercher des protections effectives contre les violences et des possibilités de recours équitables, sans transformer la lutte contre les dominations en pouvoir arbitraire exercé au nom du collectif.
+
+III. CE QUE NOUS SOUHAITONS CONSTRUIRE MAINTENANT
+Les propositions suivantes sont des orientations de travail, non des programmes déjà adoptés ou financés.
+
+1. Se rencontrer avant de s'organiser
+Nous souhaitons commencer par des rencontres ouvertes, des discussions et des échanges entre personnes et initiatives intéressées.
+Il ne s'agit pas de demander une adhésion préalable à une structure achevée.
+Nous voulons comprendre les besoins, les désaccords, les envies et les expériences existantes.
+La participation doit rester libre.
+
+2. Partager et transmettre les connaissances
+Nous souhaitons développer une Médiathèque des communs et un Wiki permettant de découvrir des œuvres, des expériences historiques, des outils et des réflexions critiques.
+Nous voulons documenter les sources et leurs limites.
+Les biographies, les archives et les lectures croisées devront distinguer les faits établis, les témoignages, les interprétations et les désaccords historiques.
+Nous souhaitons rendre accessibles les contradictions de nos propres références politiques.
+Aucune ressource ne doit devenir une vérité officielle du seul fait qu'elle figure dans notre documentation.
+
+3. Développer Interstice
+Interstice est envisagé comme un ensemble d'outils numériques au service de la connaissance, de la coopération et de l'organisation collective.
+Nous souhaitons privilégier l'accessibilité, la protection de la vie privée, les formats ouverts et la possibilité d'une autonomie technique.
+Les décisions politiques ne doivent pas être prises automatiquement par les outils.
+L'administration technique ne doit pas conférer une autorité politique permanente.
+Nous voulons rendre visibles les choix de conception qui influencent l'accès à l'information, la présentation des propositions et la participation.
+
+4. Favoriser des collaborations concrètes
+Nous souhaitons encourager des initiatives modestes et utiles : ateliers de réparation, échanges de compétences, créations artistiques, événements, actions d'entraide et projets collectifs.
+Nous privilégions la coopération avec les structures existantes plutôt que la multiplication artificielle de nouvelles organisations.
+Les conditions matérielles, les responsabilités et les contributions doivent pouvoir être discutées clairement.
+
+5. Rendre visibles les initiatives existantes
+Nous souhaitons documenter et faire connaître des expériences d'autogestion, de solidarité, de création et d'écologie sociale.
+Cette visibilité doit respecter l'autonomie des initiatives et le consentement des personnes concernées.
+Présenter une initiative ne signifie pas parler à sa place, la représenter ou prétendre qu'elle appartient à La Faille noire.
+
+Il faut distinguer le droit de citer une information publique, la permission de reproduire des contenus, l'accord de présenter une initiative comme partenaire et l'autorisation de transmettre des coordonnées. Un référencement ne doit pas inventer de contact ou de disponibilité.
+
+6. Préparer une organisation collective
+Nous souhaitons ouvrir un travail sur une éventuelle charte des communs, les modalités de décision, les responsabilités, les finances et les garanties démocratiques.
+Nous voulons distinguer les responsabilités d'exécution, les décisions collectives et leur contrôle.
+Une délégation ne doit pas être confondue avec une appropriation durable du pouvoir.
+Les procédures devront tenir compte des personnes absentes, des contraintes de temps, des besoins d'accessibilité et des possibilités de participation différée.
+La personne à l’initiative du projet ne dispose d'aucun privilège politique permanent.
+Les règles éventuelles devront être discutées et adoptées par les personnes auxquelles elles s'appliqueront, avec un examen explicite de leurs effets sur les personnes absentes, les non-membres concernés et les obligations légales qui ne dépendent pas d'un vote.
+
+7. Expérimenter à une échelle raisonnable
+Nous souhaitons commencer par des expériences limitées, documentées et réversibles.
+Une initiative doit pouvoir être évaluée, transformée ou arrêtée.
+Son évaluation ne doit pas se limiter au nombre de participants, d'activités ou de ressources mobilisées.
+Nous voulons examiner qui bénéficie réellement des décisions, qui peut participer, qui reste à l'écart et qui supporte le travail d'organisation.
+Les erreurs doivent pouvoir être reconnues sans être dissimulées pour préserver l'image du projet.
+
+8. Agir sans imposer
+Nous reconnaissons la diversité des formes d'engagement : création, entraide, recherche, mobilisation, organisation et action collective.
+La désobéissance civile non violente peut constituer une forme légitime de contestation politique.
+Elle ne devient pas pour autant une obligation, une orientation automatiquement adoptée ou un engagement imposé aux participants.
+Toute initiative de cette nature doit tenir compte du consentement des personnes, des risques, des responsabilités et des conséquences juridiques et humaines.
+Notre première ambition est simple : rencontrer, comprendre, relier, partager et expérimenter, sans imposer.
+
+IV. LES FUTURS POSSIBLES
+Les perspectives suivantes ne sont ni des promesses ni des obligations.
+Elles décrivent des directions qui pourraient être explorées si des personnes souhaitent librement les construire et disposent des moyens nécessaires.
+
+1. Une École commune
+Un réseau d'apprentissage, de transmission et de recherche accessible à différents publics.
+Il pourrait accueillir des ateliers pratiques, des discussions, des formations et des échanges de savoirs.
+Les personnes participantes devraient pouvoir contribuer à la définition des contenus et des méthodes.
+L'objectif ne serait pas de former des adhérents à une doctrine, mais de développer les capacités d'apprendre, de comprendre et de questionner.
+
+2. Des réseaux de solidarité
+Des initiatives locales pourraient coopérer pour faciliter l'entraide, l'accès aux droits et la réponse à certains besoins matériels.
+Elles devraient respecter l'autonomie des personnes aidées, la confidentialité et la liberté de refuser un accompagnement.
+Elles ne devraient pas se substituer aux obligations des services publics.
+
+3. Des communs matériels et économiques
+Des ateliers, outils, équipements, espaces de travail et ressources pourraient être mutualisés.
+Leur fonctionnement devrait distinguer la propriété, les usages, l'entretien, les responsabilités et les droits de décision.
+Une ressource commune ne devrait pas devenir la propriété politique de la personne qui la finance, la possède juridiquement ou en maîtrise la technique.
+
+4. Des lieux culturels et de création
+Des espaces pourraient accueillir des artistes, des ateliers, des représentations, des résidences, des rencontres et des activités collectives.
+Ces lieux devraient préserver la liberté artistique, respecter le travail des professionnels et favoriser l'accès des publics.
+Leur gestion devrait pouvoir être discutée par les personnes concernées.
+
+5. Des habitats solidaires et des territoires coopératifs
+Nous pourrions explorer des formes d'habitat et d'organisation territoriale qui facilitent l'entraide, la mutualisation et la responsabilité écologique.
+Ces expériences devraient respecter les choix individuels, les espaces privés et les différentes manières de vivre.
+Elles devraient prendre en compte les risques climatiques, les contraintes juridiques, les ressources locales et leurs conséquences sur d'autres territoires.
+
+6. Une fédération de collectifs autonomes
+Des collectifs pourraient choisir de coopérer au sein d'un réseau fédératif.
+Une telle fédération devrait faciliter les échanges, les projets communs et la mutualisation de certains moyens sans se substituer aux décisions des collectifs qui la composent.
+La coordination ne devrait pas disposer d'une autorité générale du seul fait qu'elle rassemble plusieurs initiatives.
+Les modalités de représentation, de contrôle, de désaccord et de retrait devraient être discutées par les personnes et collectifs concernés.
+
+7. La Commune comme hypothèse de coordination
+La Commune pourrait, à terme, désigner un espace ou un dispositif de coordination entre initiatives.
+Elle ne serait pas nécessairement un lieu unique, une administration centrale ou un gouvernement du projet.
+Sa fonction éventuelle serait de faciliter la coopération, la circulation des informations et l'organisation de moyens partagés.
+Elle devrait être évaluée non seulement selon ses intentions, mais aussi selon la répartition effective du pouvoir.
+Les personnes chargées de coordonner des ressources, des informations ou des projets devraient rendre compte de leur action.
+La nécessité pratique d'une coordination ne devrait pas être confondue avec la légitimité d'un pouvoir politique permanent.
+Aucune compétence ou autorité ne pourrait lui être attribuée par ce manifeste seul.
+
+8. Des infrastructures numériques communes
+Interstice pourrait évoluer vers une infrastructure numérique libre, interopérable et éventuellement auto-hébergée.
+Elle pourrait accueillir des outils documentaires, collaboratifs et organisationnels.
+La maîtrise technique devrait être accompagnée de transparence, d'accessibilité, de protection des données et de possibilités de contrôle.
+Les personnes utilisant ces outils ne devraient pas être contraintes d'abandonner leur autonomie numérique pour participer au projet.
+
+9. Une solidarité au-delà des frontières
+Nous souhaitons que les coopérations puissent dépasser les limites administratives et nationales.
+L'entraide, la circulation des savoirs et les solidarités internationales doivent respecter l'autonomie des personnes et des initiatives concernées.
+Nous refusons de considérer nos expériences locales comme des modèles universels à reproduire partout.
+Notre ambition n'est pas de dessiner une société à laquelle chacun devrait se conformer, mais d'élargir les possibilités de vivre, de créer et de décider librement ensemble.
+
+ANNEXE — QUESTIONS OUVERTES POUR UNE PREMIÈRE RENCONTRE CONSTITUTIVE
+Ces questions ne sont pas résolues par le manifeste. Elles devront pouvoir être débattues avant toute adoption de règles collectives.
+
+1. Comment garantir qu'aucune personne fondatrice, propriétaire, donatrice ou administratrice ne dispose de privilèges politiques permanents ?
+2. Comment prendre des décisions accessibles, compréhensibles et révisables sans multiplier inutilement les réunions et les procédures ?
+3. Comment prévenir les violences, protéger les personnes et organiser des recours équitables sans créer de pouvoir disciplinaire arbitraire ?
+4. Comment financer les initiatives, rendre les comptes transparents, rémunérer le travail et protéger la confidentialité des personnes ?
+5. Comment préserver l'autonomie des initiatives qui choisiraient de coopérer avec La Faille noire ?
+6. Comment protéger les données personnelles, permettre une participation hors ligne et éviter la dépendance aux outils numériques ?
+7. Comment sélectionner, évaluer, transformer ou arrêter les expérimentations collectives ?
+8. Comment organiser des activités éducatives accessibles, notamment lorsqu'elles concernent des mineurs, avec les protections nécessaires ?
+9. Comment discuter de la désobéissance civile non violente, de ses limites et de ses risques sans imposer un engagement à quiconque ?
+10. Quelles fonctions pourraient avoir Interstice et une éventuelle Commune, et comment éviter qu'ils deviennent des centres de pouvoir ?
+11. Comment rendre visibles et contrôlables les pouvoirs informels, notamment ceux liés aux relations, à l'ancienneté, aux compétences et à la circulation de l'information ?
+12. Comment reconnaître, répartir et éventuellement rémunérer le travail invisible nécessaire au fonctionnement des communs ?
+13. Comment permettre aux personnes absentes ou moins disponibles d'influencer les décisions qui les concernent, sans imposer aux autres une charge permanente ?
+14. Comment distinguer les délégations nécessaires des concentrations durables de pouvoir, particulièrement en situation d'urgence ?
+15. Comment évaluer les effets réels de nos initiatives sur les personnes qui y participent, celles qui n'y participent pas et celles qui en supportent les conséquences ?
+16. Comment documenter les contradictions de nos propres références historiques et politiques sans construire une mémoire officielle ou un panthéon intouchable ?
+17. Comment articuler autonomie locale, droits des communautés, partage des connaissances et responsabilités envers les autres territoires ?
+
+18. Comment distinguer dans nos publications le droit de documenter une initiative, son consentement à être mise en avant et un partenariat réellement accepté ?
+19. Comment garantir une correction éditoriale, un droit de réponse et un retrait proportionné sans effacer les archives ni exposer des données sensibles ?
+20. Comment séparer les choix alimentaires individuels, les résultats des sciences environnementales et les débats sur les droits et intérêts des animaux ?
+21. Comment protéger les personnes sans imposer la médiation, sans priver les personnes mises en cause d'un examen équitable et sans contourner les obligations légales ?
+22. Qui assume les coûts énergétiques, humains et juridiques des infrastructures numériques, et comment en sortir sans perdre son autonomie ?
+
+CONCLUSION — DE LA FAILLE NAÎT L'INTERSTICE
+La Faille noire ne promet pas une société parfaite.
+Elle ne prétend pas détenir une vérité définitive ni proposer une organisation applicable à toutes les situations.
+Elle part d'une conviction : les personnes doivent pouvoir disposer de davantage de liberté réelle, d'égalité et de moyens de coopérer sans domination.
+Nous savons que les contradictions ne disparaissent pas lorsqu'on les inscrit dans un manifeste.
+La liberté peut entrer en tension avec la responsabilité collective. L'égalité peut demander des moyens différents. La solidarité peut devenir une contrainte. L'organisation peut produire du pouvoir là où elle voulait le limiter.
+Nous ne voulons pas dissimuler ces difficultés.
+Nous voulons construire des moyens de les reconnaître, de les discuter et d'y répondre ensemble.
+Nous ne demandons à personne d'abandonner son autonomie pour rejoindre une idée.
+Nous proposons de créer des espaces où les initiatives peuvent se rencontrer, où les savoirs circulent, où les ressources se partagent et où les personnes conservent la possibilité de contester ce qui se construit.
+Nous défendons la liberté sans indifférence, l'égalité sans uniformité et la solidarité sans domination.
+Compléter ce qui existe.
+Construire ce qui manque.
+Avancer ensemble.
+De la Faille naît l'Interstice.
+
+FIN DU MANIFESTE V2.6 CONSOLIDÉ CANDIDAT
+Version candidate du 31 octobre 2026. Ce document ne vaut ni adoption collective, ni création d'une organisation constituée, ni validation juridique d'une charte ou d'un règlement intérieur. Il reste ouvert à la discussion et à la révision.
+
+La responsabilité éditoriale transitoire de la première édition, assumée dans son périmètre par la personne à l’initiative du projet, ne vaut ni représentation des initiatives documentées, ni pouvoir permanent de gouvernance. Elle pourra être réexaminée lorsque des modalités de décision auront été définies. Les responsabilités légales effectivement applicables restent déterminées et déclarées dans les documents administratifs et mentions légales appropriés, sans divulgation dans ce manifeste.
