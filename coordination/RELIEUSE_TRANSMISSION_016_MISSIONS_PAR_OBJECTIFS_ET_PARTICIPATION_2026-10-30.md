@@ -180,3 +180,28 @@ La Relieuse présentera **un parcours d'essai unique**, accompagné des URLs et 
 - **Diffusion publique / participation réelle : non autorisée** par ces tests ; contrôle des autres chemins (ex. `proposer-article.html` et CDN Supabase) et validations juridiques/éditoriales et humaines restent nécessaires.
 
 **Aucune fusion ni publication.** La présente note sur GitHub n'envoie aucun message à une autre conversation.
+
+
+---
+
+## Bilan consolidé 018-D — décision d'essai humain
+**31 octobre 2026 — La Relieuse, transmission 018-D reçue et recontrôlée.**
+
+| Contrôle | État | Preuve |
+| --- | --- | --- |
+| HEAD unique de démonstration | `9a56a490a3deef80a43ed83b2ff86c9f6c335b05` | branche `integration/v0-018a-candidate-2026-10-30` |
+| Parcours de base | VALIDÉ automatisé | 11 fiches fictives, 2 cartes + liste, 4 types, formulaires non envoyants, Wiki et deux articles candidats |
+| Correctif frontière démo 018-D | VALIDÉ automatisé | Deux scripts sans transport/endpoint réel ; tests forçant l'ancien mode désactivé ; CI `41176190522` 59 Node / 20 Chromium |
+| Graphisme 018-C | PARTIEL | PR #45, run `41175965649`, 30 états ; H1/CTA masqués sous bandeaux sur les premiers écrans |
+| Android physique / TalkBack / essai citoyen | NON TESTÉ | Aucune preuve d'essai matériel |
+| Liens annexes, publication, données réelles | NON VALIDÉ | `proposer-article.html` conserve Supabase ; autorisations et revue collective nécessaires |
+
+**Décision :**
+- **PRÊT POUR ESSAI HUMAIN EXPLORATOIRE, LOCAL, ENCADRÉ, SANS COLLECTE NI DONNÉES RÉELLES**, sur copie exacte du SHA vérifié, en limitant le parcours aux pages de démonstration et sans visiter ni soumettre le formulaire annexe `proposer-article.html`.
+- **VALIDATION DE PREMIÈRE VISITE REPORTÉE APRÈS 018-E** : La Développeuse corrige seule la hiérarchie de `index.html` et `decouvrir-initiatives.html`, sans toucher aux scripts de sécurité. La Graphiste contrôle uniquement le delta et le premier écran 320/390/1280.
+- **RECONTRÔLE 018-D CIBLÉ À L'ANARCHITECTE** : comparer `69fcd470...` → `9a56a490...` et attester absence de transport dans deux scripts et CI correspondante. Ne pas recommencer l'audit complet.
+- **SITE PUBLIC / COOPÉRATION RÉELLE : NON AUTORISÉS** : revue des chemins annexes, dispositions de droits, modération, validation des articles et décision humaine/collective indispensables.
+
+**Essai Android proposé** : sur téléphone connecté au même réseau local de confiance qu'une machine servant la copie, scénario Gaillac « chercher un atelier de réparation partagé », sans prénom, coordonnées ni données réelles. Observer compréhension du caractère fictif, visibilité CTA, champs, filtres, carte/liste, fiche/retour, Participation/Wiki ; vérifier taille de police élevée, navigation tactile et TalkBack si disponible. Enregistrer seulement remarques anonymisées et les actions difficiles, avec consentement de la personne volontaire.
+
+**Journal commun sur main** : entrée de réception 31/10 enregistrée sur `coordination/JOURNAL_COMMUN.md`, commit `5cad3079375ef77c3c78478d5a4390c3605f1db4`. Cette mise à jour documentaire n'est pas une mise en ligne de la V0. Aucun atelier de conversation distinct n'a été automatiquement contacté. Aucun merge ni déploiement effectué.
