@@ -1,0 +1,5 @@
+# LA FAILLE NOIRE × INTERSTICE — Cycle 4 / V26_CONCORDANCE
+
+Passes 1-2 : Sources PR #58 manifeste V2.6 blob 8aa342bc7b45dc6736499eb363c6c895c3bc3621, Charte des communs V0.8 blob cbfd028e13aba2b5ee31d2af8b669552c840c8ed, Charte éditoriale V0.1 blob 57b9a8bd9db6280d6a2c753082310c25b0ea32ec, concordance juridique blob 7e68c592320c84927c07eb3e658ef48650879d53. Les 11 ajouts et 3 reformulations de la Penseuse sont approuvés éditorialement, mais V2.6 n'est pas adoptée collectivement ; les deux chartes sont candidates et non approuvées. V2.5 doit être conservée. Tableau : liberté/égalité/solidarité -> principes et usages; pouvoir informel/travail invisible -> mandats, comptes et recours; coopération -> autonomie et retrait; savoirs -> sources, objections et rectification; première édition -> responsabilité éditoriale transitoire distincte du statut légal. Questions ouvertes : adoption, quorums, recours, éditeur, RGPD, budgets, droits. Exiger contrelecture Penseuse et Lectrice sur les fichiers exacts, sans prétendre qu'elle a déjà eu lieu.
+
+**Statut : coordination candidate. Aucune décision de Zout inventée. Aucune publication ni fusion.**
