@@ -1,0 +1,33 @@
+name: Graphiste 018-C audit cible - branche isolée
+on:
+  push:
+    branches:
+      - audit/graphiste-018c-v0-2026-10-31
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-graphique:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer Chromium Playwright
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Vérification sur le code V0 intégré sans envoi
+        run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/graphiste-018c.log 2>&1 &
+          node --test tests/graphiste-018c-audit.mjs
+      - name: Captures de contrôle et mesures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: graphiste-018c-parcours-320-390-1280
+          path: artifacts/*
+          retention-days: 14
+          if-no-files-found: warn
