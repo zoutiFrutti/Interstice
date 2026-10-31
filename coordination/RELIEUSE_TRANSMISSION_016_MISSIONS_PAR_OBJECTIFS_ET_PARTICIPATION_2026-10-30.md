@@ -153,3 +153,30 @@ La Relieuse présentera **un parcours d'essai unique**, accompagné des URLs et 
 **Dépendances :** La Graphiste peut examiner indépendamment l'expérience sur le SHA courant ; sa revue mobile reste à coordonner. L'Anarchitecte ne doit vérifier que le nouveau diff et les preuves CI après 018-D, sans répéter la revue 018-B. La Relieuse organise un test humain local et isolé sur données fictives ; tout déploiement public reste bloqué tant que les chemins réels persistent et qu'une validation humaine de publication n'a pas eu lieu.
 
 **Non fait à cette étape :** correctif logiciel, nouveau test, fusion, publication, autorisation de collecte ou mise en relation réelle. Aucun atelier n'est automatiquement notifié par cette entrée GitHub.
+
+
+---
+
+## Addendum 018-C — Revue graphique et validation de 018-D
+**31 octobre 2026 — vérification directe par La Relieuse.** Ce suivi **actualise** l'état provisoire de la transmission 018-B : la correction 018-D est maintenant réalisée dans la branche candidate ; ne pas renvoyer la même mission.
+
+### Preuves vérifiées
+- **Graphiste 018-C :** PR #45 `audit/graphiste-018c-v0-2026-10-31`, HEAD `c1bcc8766e8c3b13bd3b5254671560b4350145c9`. PR documentaire/test uniquement, non fusionnée ; rapport `coordination/transmissions/GRAPHISTE_TRANSMISSION_018C_VALIDATION_V0_2026-10-31.md`. CI graphique `41175965649` et `41176116263` réussies, 30 états vérifiés 320/390/1280, 0 débordement horizontal ; non-validation Android/TalkBack.
+- **Défauts constatés sur candidate initiale `69fcd4701cefeb884fdd46fc14a6ad5bbae6108a` :** à 320×850, bandeau accueil 739 px, H1 à 1000 px, premier CTA à 1372 px ; sur Découverte, notice 477 px, H1 à 743 px. Une information honnête mais trop haute masque la première action. L'audit ne relève pas de défaut de fonctionnement des cartes ou des textes Wiki.
+- **Sécurité 018-D effectivement corrigée :** candidate intégrée HEAD `9a56a490a3deef80a43ed83b2ff86c9f6c335b05`. `script.js` et `ressources.js` distribués en démo ne contiennent plus d'adresse Supabase, de `fetch()` ni de `INTERSTICE_CANDIDATE_MODE`. CI `41176190522` **success**, **59 tests Node + 20 tests Chromium réussis**, incluant l'attaque simulée de la variable candidate forcée à `false`. Pas d'intervention Supabase ni de fusion. La confirmation au SHA actuel vaut pour ces deux scripts ; ce n'est pas une validation de tous les liens auxiliaires du site.
+
+### Décision 018-E — hiérarchie visuelle minimale avant le test ergonomique
+**Responsable écriture unique : La Développeuse, sur la branche intégrée actuelle après vérification du HEAD.** La Graphiste fournit la QA du delta, pas de modification concurrente.
+
+1. `index.html` : maintenir immédiatement visible, avant le H1, une courte mention non ambiguë « Démonstration fictive — aucune initiative réelle », mais déplacer les trois explications de statut après le H1, la présentation et les actions principales, dans une section accessible.
+2. `decouvrir-initiatives.html` : même mention courte avant le H1, puis détails accessibles après l'accroche et avant les premières fiches/actions pouvant induire en erreur. Garder « aucune collecte », sans GPS, sans envoi, sans partenariat réel et indisponibilité de messagerie. Le déplacement du texte ne doit pas rendre les conditions invisibles avant une interaction sensible.
+3. CSS existants uniquement si nécessaires. Préserver l'identité graphique, l'intégralité des deux articles Wiki, les onze exemples fictifs, les quatre types, les deux cartes/liste, les scripts **sans transport réel** et les tests.
+4. Tests de non-régression Node/Chromium, plus test ciblé issu de PR #45 sur 320/390/1280 : premier CTA accueil visible dans la hauteur initiale de 850 px, et titre + accès à la recherche Découverte immédiatement compréhensibles ; mesurer les positions, vérifier les statuts fictifs toujours visibles et la navigation clavier. Si une contrainte empêche ces seuils, exposer mesures et arbitrage explicite plutôt que masquer le défaut.
+5. Livrer SHA, diff limité, nouveaux résultats CI ; La Graphiste recontrôle uniquement ce delta et l'Anarchitecte relit seulement les modifications si elles touchent la frontière de sécurité.
+
+### Passage à l'expérimentation
+- **Essai exploratoire local encadré avant 018-E : possible**, mais ne prouve pas la qualité du premier écran.
+- **Test d'utilisabilité de première visite : après 018-E** et CI ; sur Android physique, idéalement lecture TalkBack, agrandissement de police, actions, carte/liste, retours et compréhension des statuts. Ne recueillir que des observations anonymisées et volontaires, sans donnée de personne ni initiative réelle.
+- **Diffusion publique / participation réelle : non autorisée** par ces tests ; contrôle des autres chemins (ex. `proposer-article.html` et CDN Supabase) et validations juridiques/éditoriales et humaines restent nécessaires.
+
+**Aucune fusion ni publication.** La présente note sur GitHub n'envoie aucun message à une autre conversation.
