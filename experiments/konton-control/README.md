@@ -1,13 +1,14 @@
-# KONTON Control · cockpit V0.4 — premières missions IA locales
+# KONTON Control · cockpit V0.5 — séparation des espaces et disponibilité IA
 
 **Statut : prototype sur branche, non déployé, non fusionné.**
 **31 octobre 2026.**
 
-Trois espaces indépendants coexistent :
+Quatre modules coexistent :
 
 1. **Pupitre d'agents** : GO, STOP, fiches, validation et journal entièrement fictifs. La simulation n'exécute aucun agent ChatGPT, CI ou automatisation réelle.
 2. **Observatoire GitHub** : métadonnées réellement lues en GET, dernières PR ouvertes et exécutions de CI, avec dates, branches, erreurs et liens vérifiables. **Aucune écriture GitHub**.
-3. **Orchestrateur local V0.3** : création d'une tâche précise de vérification d'une PR, exécution à la demande, récupération de son SHA exact et des exécutions GitHub Actions correspondantes, rapport enregistré localement, puis accusé de lecture humain. **Aucune action GitHub distante en écriture.**
+3. **Orchestrateur local V0.3** : vérification d'une PR et de ses CI sur le SHA exact, rapport et accusé de lecture locaux. **Aucune écriture GitHub.**
+4. **Relectrice IA V0.4/V0.5** : analyse de rapport par un modèle Ollama local facultatif. Vérification réelle de la présence du modèle sans prétendre avoir testé l'inférence.
 
 **Ne pas exposer de secrets ni fusionner sans revue.** Ce prototype n'est pas intégré au site public Interstice.
 
@@ -37,20 +38,21 @@ Node.js récent installé sur l'ordinateur, puis depuis experiments/konton-contr
 
 ~~~sh
 export GH_TOKEN="$(gh auth token)"
-export KONTON_CONTROL_REPOS="zoutiFrutti/Interstice,mon-compte/mon-depot-prive"
+export KONTON_CONTROL_SCOPE="personnel"
+export KONTON_CONTROL_REPOS="zoutiFrutti/KawaGo,zoutiFrutti/Toto-Black"
 node local-server.cjs
 ~~~
 
 Ouvrir ensuite http://127.0.0.1:8765/
 
-La variable KONTON_CONTROL_REPOS **est une liste d'autorisation côté serveur**, à adapter avant l'utilisation. Seuls les noms qui y figurent sont consultables. Si GH_TOKEN n'est pas disponible, le serveur peut seulement lire les dépôts publics ; les dépôts privés renverront une erreur. La commande gh auth token nécessite une session GitHub CLI existante. Ne jamais copier-coller le jeton dans un formulaire web, un fichier versionné, une capture d'écran ou une conversation.
+La variable KONTON_CONTROL_REPOS **est une liste d'autorisation côté serveur** ; les dépôts doivent tous appartenir au périmètre choisi par KONTON_CONTROL_SCOPE. Seuls les noms qui y figurent sont consultables. Si GH_TOKEN n'est pas disponible, le serveur peut seulement lire les dépôts publics ; les dépôts privés renverront une erreur. La commande gh auth token nécessite une session GitHub CLI existante. Ne jamais copier-coller le jeton dans un formulaire web, un fichier versionné, une capture d'écran ou une conversation.
 
 **Précautions :**
 
 - Le serveur est lié exclusivement à 127.0.0.1 et contrôle Host, Origin et Fetch Metadata ; il n'ajoute aucun en-tête CORS autorisant des sites externes.
 - L'interface statique ne reçoit jamais le jeton, qui reste en mémoire du processus local.
 - La passerelle n'autorise que GET, sur trois endpoints GitHub REST prédéfinis, pour les dépôts figurant dans la liste blanche.
-- Réponses sans cache navigateur, cache mémoire côté serveur court (90 secondes), aucune écriture sur disque ni journalisation de contenus privés.
+- Réponses GitHub sans cache navigateur, cache mémoire court (90 secondes). **Les rapports des tâches sont bien écrits sur disque local** ; aucune donnée privée n'est envoyée au site public.
 - Les informations de dépôts privés ne doivent pas être recopiées dans le site Interstice public ou dans des rapports accessibles publiquement.
 - L'exposition locale est adaptée à un prototype monoposte, **pas à un serveur multicomptes ou à un hébergement public**. Une véritable interface mutualisée nécessitera authentification, gestion des rôles, isolation des organisations, journal d'audit, tests de sécurité et backend dédié.
 
@@ -64,7 +66,7 @@ Le pupitre d'agents demeure une démonstration ; ce nouvel espace est réellemen
 4. Examiner la conclusion **prudente** et les liens vers les exécutions. Un résultat absent, incomplet ou non concordant ne sera jamais présenté comme une validation globale.
 5. Choisir « Rapport lu » ou « À approfondir ». Cette décision confirme **uniquement la lecture du rapport local**, et ne modifie ni la PR, ni son approbation, ni son état de fusion.
 
-Le journal et les rapports sont sauvegardés sur **la machine locale**, dans data/tasks.json par défaut, ignoré par Git. On peut choisir un autre chemin avec KONTON_CONTROL_STATE_FILE. Le fichier n'est pas synchronisé, chiffré ou sauvegardé automatiquement ; prendre les précautions habituelles en cas d'ordinateur partagé.
+Le journal et les rapports sont sauvegardés sur **la machine locale**, dans data/collectif/tasks.json ou data/personnel/tasks.json selon l'instance, ignoré par Git. On peut choisir un autre chemin avec KONTON_CONTROL_STATE_FILE. Le fichier n'est pas synchronisé, chiffré ou sauvegardé automatiquement ; prendre les précautions habituelles en cas d'ordinateur partagé.
 
 L'API POST ne crée et ne modifie que les enregistrements locaux, avec taille limitée et garde-fous d'origine. Le moteur ne sait exécuter qu'une opération prédéfinie : github-pr-check. Aucune commande arbitraire, prompt, shell, workflow GitHub, action d'agent ou fusion de PR n'est exposé. Les exécutions ne sont ni planifiées, ni automatiques ; c'est une V0.3 **à déclenchement manuel**.
 
@@ -135,7 +137,7 @@ Puis ouvrir http://127.0.0.1:8765/ . D'abord créer et **exécuter** une vérifi
 - La réponse IA est présentée **comme texte non fiable**, jamais exécutée comme HTML ni interprétée comme un ordre.
 - L'accusé de lecture est local, ne certifie pas les CI et n'approuve aucune PR.
 - Aucune boucle autonome, navigation web, shell, modification de fichiers, fusion GitHub ou publication n'est accessible à l'agent.
-- Les rapports IA peuvent contenir des informations sur les dépôts privés ; ils sont enregistrés dans data/ai-tasks.json (ignoré par Git), **non chiffré**. Réserver la passerelle à une machine personnelle de confiance et ne pas exposer son port.
+- Les rapports IA peuvent contenir des informations sur les dépôts privés ; ils sont enregistrés dans data/collectif/ai-tasks.json ou data/personnel/ai-tasks.json (ignorés par Git), **non chiffré**. Réserver la passerelle à une machine personnelle de confiance et ne pas exposer son port.
 - Les listes de dépôts et le filtrage Personnel/Collectif ne sont **pas** une sécurité multiutilisateurs. Il n'existe pas encore de rôles ou d'authentification côté serveur.
 
 Les connexions IA restent strictement locales et facultatives ; pas de compte cloud, de clé API ou de dépense lancée par le prototype.
@@ -151,3 +153,54 @@ La CI teste les rapports figés, l'injection de texte hostile dans des titres de
 ### Prochaine passe
 
 Contrôle d'un vrai modèle sur une machine compatible, revue ergonomique mobile/desktop, audit de sécurité de la passerelle locale, puis séparation d'accès authentifiée si une version réseau doit exister. La connexion à des agents multi-outils reste un travail distinct, soumis à permissions et validation explicites.
+
+
+## V0.5 · Séparation des instances et diagnostic du modèle
+
+**Une seule catégorie de projets par processus local** : collectif ou personnel. C'est un garde-fou côté serveur et sur les fichiers de rapports, **pas une authentification des personnes**.
+
+Démarrer l'instance collective, sans jeton si le dépôt est public :
+
+~~~sh
+export KONTON_CONTROL_SCOPE=collectif
+export KONTON_CONTROL_REPOS=zoutiFrutti/Interstice
+export KONTON_CONTROL_PORT=8765
+node local-server.cjs
+~~~
+
+Démarrer, dans un autre terminal et seulement si nécessaire, l'instance personnelle :
+
+~~~sh
+export GH_TOKEN="$(gh auth token)"
+export KONTON_CONTROL_SCOPE=personnel
+export KONTON_CONTROL_REPOS=zoutiFrutti/KawaGo,zoutiFrutti/Toto-Black
+export KONTON_CONTROL_PORT=8766
+node local-server.cjs
+~~~
+
+Ouvrir l'instance personnelle sur http://127.0.0.1:8766/. Les processus doivent utiliser deux ports différents. Le jeton doit avoir des droits minimaux et ne doit jamais entrer dans le dépôt.
+
+Le serveur **refuse de démarrer** si la liste mélange Interstice avec un projet personnel, ou si un ancien journal chargé comporte des tâches d'un autre périmètre. La classification est volontairement limitée aux dépôts de l'utilisateur : Interstice = collectif, les autres dépôts zoutiFrutti = personnel. Un futur dépôt collectif supplémentaire demandera une mise à jour explicite de la politique.
+
+Les nouveaux rapports sont rangés séparément sous data/collectif/ ou data/personnel/. Les anciens rapports sous data/tasks.json et data/ai-tasks.json ne sont **pas migrés automatiquement**. Avant un déplacement manuel : arrêter le serveur, sauvegarder, vérifier le périmètre des données. Ne jamais donner le même chemin de stockage personnalisé aux deux instances.
+
+### Disponibilité réelle du modèle
+
+GET /api/ai/readiness interroge http://127.0.0.1:11434/api/tags et cherche le **nom exact du modèle installé**. Aucune connexion cloud.
+
+- Modèle repéré : le service local répond et le modèle configuré est dans la liste. Cela ne prouve pas qu'une génération réussira.
+- Modèle absent : le service répond, mais le modèle n'est pas installé.
+- Service indisponible : aucune réponse locale valide. Le cockpit désactive les nouveaux GO d'agent.
+- Sans KONTON_AI_MODEL, l'IA reste désactivée. La CI simule les réponses HTTP ; elle ne lance pas un vrai modèle.
+
+### Tests
+
+~~~sh
+node test-scope-policy.cjs
+node test-ollama-readiness.cjs
+node test-local-api.cjs
+~~~
+
+Les tests couvrent le refus de mélanger les espaces, le rejet d'historiques d'un autre périmètre, l'absence du modèle et les erreurs de disponibilité. Reste à effectuer un **vrai essai sur une machine compatible**, la QA mobile et une revue de sécurité avant toute exposition réseau.
+
+**Aucune publication, fusion GitHub, création de compte, approbation ni autonomie éditoriale n'est ajoutée.**
