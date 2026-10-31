@@ -704,3 +704,16 @@ Modifications réelles : entrée de journal seulement, ni catalogue FN, ni ARCH-
 
 **Limites :** aucune fusion, publication ou élévation de droit. Le flux de données réelles nécessite encore une revue avec un modérateur autorisé, l'audit RLS/fonctions privilégiées par l'Anarchitecte et l'harmonisation avec le kit graphique de la PR #22. Ni le schéma JSON ni une prévisualisation n'approuvent le fond. Le manifeste V2.5 reste référence de travail non adoptée collectivement.
 
+---
+
+## 2026-10-31 — La Graphiste — Contrat commun fiches première édition
+
+**Démarrage et anti-doublon.** Décision éditoriale de La Relieuse sur branche PR #43 relue ; registre pré-sortie recense 44 fiches Drive, 71 notices FN et 24 pages Wiki, catégories de nature différente, sans visa global. Reprise vérifiée des composants existants de la PR #28, de la typographie PR #35 et des formats écologiques PR #47. **Aucune page publique ou texte de La Lectrice modifié.**
+
+**Travail réel sur branche candidate empilée sur PR #28**, créée sur HEAD 3aace33cb49fe66423e340139b7c124b41a8fb00 : contrat « design-system/CONTRAT_FICHES_PREMIERE_EDITION_2026-10-31.md », CSS réutilisable et scopé « assets/fiche-premiere-edition.css », maquette « design-system/maquette-fiches-premiere-edition.html » (faux exemples de forme seulement, sans contenu historique), test « tests/fiches-premiere-edition-2026-10-31.test.mjs », workflow « .github/workflows/fiches-premiere-edition-2026-10-31.yml ». Socle PR #28 et machine de rendu non touchés.
+
+**Nouveaux composants proposés, non intégrés au renderer** : métadonnées dates/état/responsabilité, faits/interprétations et contradictions, crédits et liens connexes ; profils BIO, ASSO, COL, ARCH, EXP, FN et Wiki ; frise, carte historique à alternative textuelle, comparaison d'études, témoignage, fiche de droit, document primaire et dossier contradictoire.
+
+**Tests exécutés et bornés** : [workflow Graphiste #41188459512](https://github.com/zoutiFrutti/Interstice/actions/runs/41188459512), **success 1/1**, Chromium 320/390/1280, police 18/18/19px, absence de débordement global et au zoom texte simulé 200 %, focus clavier du tableau, pas d'images, JS ni POST/requête extérieure, PDF A4 généré. Artefact « fiches-premiere-edition-captures-a4 » : trois PNG + A4. **Aucun Android/TalkBack physique, aucune inspection exhaustive pixel par pixel, aucun avis juridique ou réexamen des 139 contenus**.
+
+**Limites structurantes** : l'enum de la PR #28 ne comporte pas ASSO/COL/EXP/FN ; mapping des statuts du registre avec la machine de modération non validé ; seules les dates réellement connues s'affichent, ni approbation déduite du CSS ni autorisation de publication. Contrat à examiner par L'Anarchitecte (schéma + accès), La Développeuse (intégration en branche candidate) et La Relieuse (décision/visa éditorial Zout), sans fusion et sans présumer réception entre conversations.
