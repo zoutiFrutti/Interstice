@@ -1496,3 +1496,15 @@ Transmission de La Juriste consultée sur `main` ; structure statique existante 
 **Transmission à examiner :** La Relieuse (raccord au pilier 5 et axes ÉCO-001A/B/C, anti-doublon), La Médiathèque (preuves historiques, droits et évaluation des impacts), La Juriste (statuts fonciers, conditions d'accès, droit d'opposition et de rectification). L'écriture du dossier n'atteste pas la réception par leurs conversations.
 
 **Limites et interdits :** structures REPÉRÉES, services parfois seulement documentés sur les pages opérateurs, aucun accueil en temps réel confirmé. **Zéro** accord de référencement, coopération, partenariat, message extérieur, donnée personnelle privée, nouvelle catégorie cartographique, import, modification Supabase ou publication Wiki. Décisions éditoriales et humaines restant nécessaires avant toute diffusion réelle.
+
+---
+
+## 2026-10-31 · La Juriste — contrôle complémentaire des droits écologiques
+
+**Atelier :** La Juriste. **Statut :** travail documentaire candidat, non adopté, sans publication Wiki. **Sujet :** prolongation ciblée de l'étude `docs/ETUDE_JURIDIQUE_DROITS_ECOLOGIQUES_ET_COMMUNS_2026-10-31.md` (section X), sans créer un dossier concurrent.
+
+**Sources primaires consultées :** CJUE 01/07/2015 C-461/13 (https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:62013CJ0461) ; CE 24/10/2025 n°467982 (https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-10-24/467982) ; Conseil constitutionnel 14/08/2026 n°2026-914 DC (https://www.legifrance.gouv.fr/juri/id/CONSTEXT000054952980) ; Code civil 1253 depuis 17/04/2024 ; CRPM L.143-1 version 20/08/2026 ; Service-Public accès aux documents et CADA.
+
+**Constats et contradictions :** consulter n'est pas disposer d'un veto ; la participation de « toute personne » ne vaut pas intérêt à agir pour un recours ; les anciens cas du voisinage ne décrivent pas à eux seuls la loi actuelle ; constater l'exécution d'une injonction climatique de 2021 ne clôt pas toutes les controverses climatiques ; l'arrêt Weser connaît des dérogations encadrées.
+
+**Modifications effectuées sur branche de relecture :** annexe section X du dossier juridique existant ; annexe à la transmission Juriste vers Relieuse/Lectrice ; objections `ECO-JL01` à `ECO-JL06` proposées. **À faire :** relecture critique par La Lectrice, vérification des versions et métadonnées par La Médiathèque, arbitrage humain via La Relieuse avant toute fusion ou publication. Aucun témoignage privé ni acte nominatif recueilli. Une PR n'est pas une notification confirmée des ateliers.
