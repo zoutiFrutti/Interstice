@@ -11,6 +11,7 @@
   const nav = Array.from(document.querySelectorAll(".app-navigation [data-screen-target]"));
   const allButtons = Array.from(document.querySelectorAll("[data-screen-target]"));
   const fallback = "home";
+  const safeFocus = element => { try { element.focus({ preventScroll: true }); } catch (_error) { element.focus(); } };
 
   function select(name, shouldFocus) {
     const target = screens.has(name) ? name : fallback;
@@ -27,7 +28,7 @@
       ({ home: "Accueil", agents: "Agents (simulation)", github: "GitHub", outils: "Outils" })[target];
     if (shouldFocus) {
       const selected = screens.get(target);
-      selected.focus({ preventScroll: true });
+      safeFocus(selected);
       window.scrollTo({ top: 0, behavior: "auto" });
     }
   }
