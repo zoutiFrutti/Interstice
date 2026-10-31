@@ -253,6 +253,28 @@ function decide(id, status) {
   record((status === "done" ? "VALIDATION" : "À REVOIR") + " · " + agent.name + " · décision fictive enregistrée localement");
   render();
 }
+const resetDemo = el("demo-reset");
+if (resetDemo) resetDemo.addEventListener("click", function () {
+  pendingTimers.forEach(timer => window.clearTimeout(timer));
+  pendingTimers.clear();
+  agents.forEach(function (agent, index) {
+    agent.status = examples[index].status;
+    agent.output = examples[index].output;
+  });
+  logRecords.length = 0;
+  selectedId = agents[0].id;
+  scope = "all";
+  searchTerm = "";
+  const search = el("agent-search");
+  if (search) search.value = "";
+  document.querySelectorAll("[data-scope]").forEach(function (button) {
+    const isActive = button.dataset.scope === "all";
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+  record("Démonstration réinitialisée. Aucune donnée réelle modifiée.");
+  render();
+});
 document.querySelectorAll("[data-scope]").forEach(function (button) {
   button.addEventListener("click", function () {
     scope = button.dataset.scope;
