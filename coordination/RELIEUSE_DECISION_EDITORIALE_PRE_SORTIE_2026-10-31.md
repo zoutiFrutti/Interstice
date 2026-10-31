@@ -70,3 +70,15 @@ Références : [Manifeste V2.5 éditorial non adopté](https://docs.google.com/d
 **Dix lacunes, sans doublonner les titres déjà présents** : (P0) décision réelle/contestations, travail invisible, informations juridiques réellement praticables ; (P1) archives ouvrières et femmes de 1871, souveraineté autochtone des savoirs, conservation coloniale, histoire LGBTQIA+, travail migrant ; (P2) transmission et propriété des savoirs, contradictions des communs. Les 44 fiches et FN existantes sont pointées comme premières pièces, pas comme nouvelles œuvres libres de droits.
 
 **À décider par Zout, après preuves** : statut des lots et ordre de correction, pas acceptation automatique. La Relieuse peut mettre à jour son registre de coordination et demander les avis techniques/juridiques documentés. Ce dépôt n'effectue **aucun merge, publication, suppression, consentement politique ou visa éditorial**.
+
+
+---
+
+## Contribution L3 — Médiathèque : 71 FN réexaminées (31 octobre 2026)
+**Passation documentaire candidate déposée par La Médiathèque, à relire par La Relieuse et La Lectrice** :
+- [Tableau exhaustif individuel FN-001 à FN-071, anomalies et lacunes des huit piliers](transmissions/2026-10-31_MEDIATHEQUE_PRE_SORTIE_REVUE_71_FN.md) ; commit `9a7f9f96f2475624db4312c2dfc71395a2dd97b4`.
+- [Registre pré-sortie FN enrichi, sans renuméroter ni valider les autres lots](ateliers/registre_editorial_pre_sortie_2026-10-31.json) ; commit `b9c0e6d8d3ec7cb296c86026e9098768a6c371d6`.
+- [Catalogue Médiathèque Drive historique](https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit) complété par un index pré-sortie.
+**Comptage borné : 71 notices relues dans le catalogue**, 2 paires de doublons FN-022/048 et FN-038/057, soit 69 références distinctes probables et 71 IDs conservés. FN-018 existe dans un paragraphe non normalisé. Deux sélections de dix rapprochées : 6 références communes, union 14, pas 20 œuvres nouvelles.
+**Liens : 71 tentatives d'accès à leur URL principale**, dont **49 pages effectivement récupérées, 22 tentatives non concluantes** (timeout/cache miss/403) ; test navigateur et lecteur vidéo non réalisé. Aucun visa de droits, relecture critique finale, copie de média, fusion ou approbation de Zout. Les 10 ressources complémentaires restent de simples propositions non numérotées et documentées.
+**Demandes ciblées :** à La Lectrice, vérification du sens des résumés et contradictions (pas de validation fictive) ; à La Juriste, droits territoriaux FN-070, licences FN-005/014/063/064/071, NC/ND et représentation de communautés ; à La Relieuse, choix d'une liste courte de **liens bibliographiques externes uniquement** avant visa éditorial du lot. L'index GitHub ne prouve pas que la conversation indépendante de La Lectrice ou de La Relieuse l'ait reçu.
