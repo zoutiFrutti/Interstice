@@ -3839,5 +3839,37 @@
     "merge_authorized": false,
     "external_contacts": 0,
     "automated_propagation_verified": false
+  },
+  "cycle4_relieuse": {
+    "date": "2026-10-31",
+    "status": "5_PASSES_DOCUMENTAIRES_REALISEES",
+    "sources": {
+      "v26": "8aa342bc7b45dc6736499eb363c6c895c3bc3621",
+      "communs": "cbfd028e13aba2b5ee31d2af8b669552c840c8ed",
+      "editoriale": "57b9a8bd9db6280d6a2c753082310c25b0ea32ec"
+    },
+    "deliverables": [
+      "coordination/cycle4/V26_CONCORDANCE_2026-10-31.md",
+      "coordination/cycle4/LOTS_ET_VISAS_2026-10-31.md",
+      "coordination/cycle4/ECL_TRANSMISSIONS_2026-10-31.md",
+      "coordination/cycle4/BILAN_REPRISE_2026-10-31.md"
+    ],
+    "approved_ids_preserved": [
+      "ARCH-002",
+      "ARCH-007"
+    ],
+    "new_visas": 0,
+    "ready_to_submit": 14,
+    "to_correct": 15,
+    "blocked": 5,
+    "ecl_ids": [
+      "ÉCL-001",
+      "ÉCL-002",
+      "ÉCL-003",
+      "ÉCL-004"
+    ],
+    "merge": false,
+    "publication": false,
+    "contacts_sent": 0
   }
 }
