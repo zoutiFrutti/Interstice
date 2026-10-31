@@ -134,3 +134,50 @@ L'exemple montre la structure et **n'autorise pas sa publication**. Pour les ent
 **Faisable sans site parallèle, sans backend supplémentaire et sans migration.** Mais **pas prêt à publier les fonds** : avant le développement, il manque les visas éditoriaux et la normalisation des liens/provenances. Priorité de réalisation technique : **corriger le lien mort, fixer le contrat d'index, brancher la recherche interne, adapter un gabarit commun et exécuter les tests**. Les changements sont soumis à revue, pas automatiquement autorisés.
 
 **Traçabilité :** diagnostic GitHub du 31 octobre 2026 ; statut « proposition non adoptée collectivement, non publiée » ; absence de test navigateur complet sur ce chantier.
+
+---
+
+## 7. Correction contractuelle — mission 3 passes du 31/10/2026 (sur PR #51)
+
+**Référentiel exact :** PR #51, HEAD initial `783b43334b3e6f1819aea36accf826759fa64478` ; base de la PR = branche de coordination de La Relieuse, **non `main`**. Cette section complète le contrat existant, sans créer une nouvelle architecture ni modifier une page publique. Les documents récemment déposés sur `main` peuvent être absents de cette branche : les rapprocher par chemin/version avant toute intégration.
+
+### Passe 1 : catégories, identifiants, routes et relations historiques/politiques
+
+- Contrôle statique des **24 fichiers `wiki-*.html` de la candidate PR #51** : routes conservées ; extraction des `href` locaux et des ancres `#...`, comparaison des fichiers locaux avec l'arbre Git du SHA. **Un chemin local manquant** : `wiki-mutualiser-materiel.html` dans `wiki-autonomie-materielle-savoir-faire.html`. **Aucune ancre locale cassée ou duplication de `id` HTML détectée** dans les 24 pages par cette extraction simple ; ne couvre pas ancres de destinations distantes, liens dynamiques ni navigation réelle.
+- Quatre pages sans lien sortant direct vers un autre `wiki-*.html` : `wiki-association-collegiale.html`, `wiki-decision-collective.html`, `wiki-lecture-croisee-travail-soin-pouvoir.html` et `wiki-police-deces-memoire.html`. Ajouter des liens **sémantiques** vers des pages existantes quand le fond les justifie, pas des renvois de remplissage.
+- Le texte HTML des 24 pages ne contient aucun ID littéral `BIO-###`, `ARCH-###`, `ASSO-###`, `COL-###`, `EXP-###` ou `FN-###` détecté par recherche de motif. **Ce constat concerne ces fichiers au SHA contrôlé**, pas les documents Drive ni les branches nouvelles. Il démontre que la découverte par ID et les liens directs vers les fonds ne sont pas encore intégrés.
+- Registre présent sur la candidate : 44 IDs uniques selon `id` ; 22 BIO, 8 ASSO, 8 ARCH, 4 EXP, 2 COL ; 71 FN et 24 pages Wiki. Les décalages `ARCH-001=>COL` et `EXP-001/002/004/005=>ASSO` décrivent le **dossier source**, pas une erreur d'identifiant. Sauts `COL-002` et `EXP-003` : **ne pas les combler artificiellement**.
+- Registre au SHA contrôlé : `human_approval=A_FAIRE` pour 44/44 ; `publication_decision=AUCUN_VISA_HUMAIN` pour 71/71 FN ; `human_approval=A_FAIRE` pour 24/24 pages. **Ne pas généraliser ce relevé à des versions plus récentes du registre** ou à d'éventuels visas explicites sur d'autres branches.
+- Les deux paires FN-022/048 et FN-038/057 pointent vers la même URL par paire ; l'identité des éditions et la politique d'alias restent à décider. Pas de purge d'ID.
+- **Routes cibles stables et déjà existantes :** `wiki.html`, `wiki-ecologie-sociale-environnement.html`, `wiki-politique-institutions-regimes.html`, `wiki-socialismes-communismes-anarchismes-autogestion.html`, `wiki-feminismes-histoire-egalite.html`, `wiki-capitalisme-classes-travail.html`, `wiki-decision-collective.html`, `bibliotheque.html`. Pour les relations de la Commune, demander à La Relieuse le visa précis de BIO-009, ASSO-008, ARCH-008 et COL-003 avant d'exposer un lien public vers de nouvelles fiches.
+- Un renvoi ne se crée que si **la cible existe dans la candidate de sortie ET est autorisée à paraître**. Sinon conserver la relation dans le registre interne, sans lien cassé ou pseudo-fiche vide.
+
+### Passe 2 : intégration ÉCO-001A/B/C, sans catégorie ni site parallèle
+
+**Source de vérité :** `coordination/RELIEUSE_FEUILLE_ROUTE_ECOLOGIE_001_2026-10-31.md` sur la branche coordination, plus `coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md` sur `main`, la revue de La Lectrice et le contrat antérieur `coordination/ANARCHITECTE_CONTRAT_INTEGRATION_FONDS_ECOLOGIQUE_2026-10-31.md` sur `main`. Ces documents ne sont **pas** trois fiches prêtes à publier.
+
+| ID de travail | Contenu et pièces demandées | Ancrage existant | Dépendances de publication |
+| --- | --- | --- | --- |
+| **ÉCO-001A** | Histoire des luttes : frise date/lieu/acteurs/objectifs/issue, primaire ou absence, recherche contradictoire, niveaux de lecture, droits | `wiki-ecologie-sociale-environnement.html#axe3`, renvois vers `#axe6` ; liens à Féminismes, Travail, Frontières | Revue Archiviste/Lectrice, droits images, accord Zout sur **version** |
+| **ÉCO-001B** | Écologie sociale, communs fonciers, territoires, Reclus/Bookchin/d'Eaubonne, conflits et objections | `#axe3`, renvois `#axe4` (énergie/ressources) et `#axe6` (territoires) ; liens à Socialismes, Logement, Autonomie | Distinguer théorie/terrain/rapport institutionnel, droit des terres, avis Juriste, accord Zout |
+| **ÉCO-001C** | Histoire végétarisme/véganisme (1847, Reclus 1901, 1944) **et** comparaison scientifique contextualisée (GES/eau/terres/biodiversité, population/année/comparateur/intervalle/limites) | `#axe5`, dans « Agriculture et alimentation » ; renvois `#axe1` et `#axe2` | Ne pas confondre éthique animale et science, pas de préconisation sanitaire individuelle ; contrôles sources scientifiques/licences et accord Zout |
+
+La page actuelle a déjà six ancres (`axe1` à `axe6`) et des rubriques pertinentes. **Pas de `wiki-ecologie.html`, `eco-001a.html`, nouvelle rubrique racine ou backend**. Une fois les textes approuvés, ajouter des sous-sections accessibles dans **le fichier existant**, avec identifiants d'ancres additionnels optionnels (`eco-001a`, `eco-001b`, `eco-001c`) uniquement si les textes existent ; ne jamais afficher de liens vers des ancres fictives avant cela.
+
+Pour chaque sous-section candidate : ID, version, auteur/coordination éditoriale, date de vérification, sources et degré de consultation, chiffres/études avec périmètre, crédits et droits médias, objections, incertitudes, éventuels liens vers des notices FN **publiées**, distinction « sous responsabilité éditoriale de Zout / non adopté collectivement ». Les données des 3 cas ÉCO-TIS-001 sont des **expériences documentées candidates**, pas des partenariats ni une preuve de disponibilité actuelle.
+
+### Passe 3 : contrat de QA corrigé et avis
+
+Sur le HEAD initial de PR #51 : **le Wiki ne recherche encore que Wikipédia**, la Bibliothèque utilise 30 ressources locales et peut charger des ressources approuvées Supabase, mais **n'intègre pas les 71 FN** ; aucun index public `contenus/index-public.json` ou nouvelle page `fiches/` détecté dans l'arbre. Le fonds historique, les trois ÉCO et leurs relations restent des **candidats**, pas une implémentation testable de moteur interne.
+
+**Résultat QA : PARTIEL / NON PRÊT à intégrer publiquement.** Le contrôle a porté sur le contenu du dépôt et les attributs HTML locaux, pas sur une CI dédiée, un rendu mobile, les API Wikipédia/Supabase, une requête HTTP de chaque source ni un déploiement. Sur le SHA initial de PR #51, l'API GitHub Actions retourne **0 exécution** et l'API de statut ne retourne **aucun check de statut** : ce n'est pas une CI verte. Les tentatives de lecture du site GitHub Pages et de deux sources externes par un client web ont été non concluantes (accessibilité outil/403/redirection). **Ne pas étiqueter ces URLs « 404 » ou « valides » sur cette seule base.**
+
+Critères de QA de la future candidate **assemblée** : (1) zéro lien HTML/fragment local cassé, (2) identifiants uniques et alias contrôlés, (3) recherche interne séparée de Wikipédia, par titre/ID/termes sans fuite des brouillons, (4) notices FN approuvées seulement, sans copie d'œuvre et sans mélange avec les 30 liens ou les contributions Supabase, (5) statut éditorial vs adoption collective distincts, (6) provenance/droits/contradictions visibles, (7) nav clavier/320-390-1280px/zoom/impression/TalkBack, (8) absence de nouveau POST et de dépendance serveur de consultation, (9) tests sur **SHA exact de la candidate assemblée**, (10) autorisation humaine de sortie séparée des checks techniques.
+
+**Vrais points de blocage :** (P0) autorisation par ID+version absente du registre contrôlé et pages sensibles à revoir ; (P0 technique visible) lien `wiki-mutualiser-materiel.html` absent ; (P0 pour nouvelle fonction) recherche locale et index public absents ; (P0 d'intégration) aucune version assemblée avec les textes ÉCO approuvés à tester. Réserves sans refonte : manque de renvois historiques, catégories décalées entre Drive et préfixe (provenance), doublons FN probables, documents datés sur `main` non réconciliés avec la base de PR #51.
+
+**Action La Développeuse :** corriger lien mort sur sa branche candidate ; prévoir index strictement approuvé et recherche locale réutilisant `wiki.html` et `bibliotheque.html` ; éviter de fondre avec le flux GitHub→Supabase et avec la PR #41 cartes. Tests d'intégration et de non-régression sur le SHA assemblé. **Aucune construction de nouvelle plateforme**.
+
+**Action La Relieuse :** comparer les transmissions plus récentes présentes sur `main` et la branche de coordination à la photo du registre de PR #51 ; prioriser visas sur versions exactes, droits/contradictions des trois ÉCO et des liens historiques, sans adopter collectivement le manifeste.
+
+**Conclusion :** ajustement de routage et de contrat dans la PR #51 **uniquement**, sans modification des pages, ajout de base, migration, fusion, déploiement, publication ou visa éditorial.
