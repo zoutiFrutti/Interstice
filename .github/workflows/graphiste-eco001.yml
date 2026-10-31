@@ -1,0 +1,33 @@
+name: Graphiste ECO-001 maquette sans publication
+on:
+  push:
+    branches:
+      - design/eco-001-maquettes-documentaires-2026-10-31
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  maquette-accessibilite:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer Playwright Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Mesures et captures sans serveur externe
+        run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/eco001-maquette.log 2>&1 &
+          node --test tests/graphiste-eco001-maquette.test.mjs
+      - name: Preuves de maquettage uniquement
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: graphiste-eco001-captures-a4
+          path: artifacts/*
+          retention-days: 14
+          if-no-files-found: warn
