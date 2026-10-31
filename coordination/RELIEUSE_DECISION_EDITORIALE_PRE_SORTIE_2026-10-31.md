@@ -107,3 +107,13 @@ Références : [Manifeste V2.5 éditorial non adopté](https://docs.google.com/d
 5. **V0 citoyenne distincte** : 018-D sécurisée sur `9a56a490...`, mais correction visuelle 018-E et tests Android/TalkBack non confirmés ; `proposer-article.html` conserve des chemins réels, à traiter avant ouverture sans restrictions.
 
 **Décision actuelle de La Relieuse : INVENTAIRE REÇU, RELECTURE DE TRI ENREGISTRÉE, PREMIER LOT NON ENCORE ADMISSIBLE.** Ni la réussite CI ni la mention générale de responsabilité de Zout ne publient une fiche. Aucun merge, déploiement, changement de charte/manifeste, nouveau pouvoir collectif ou envoi automatique vers les conversations.
+
+
+## 8. ARCHIVISTE — ÉTAPE 2 / PREMIER LOT DOCUMENTAIRE (31 octobre 2026)
+**L2 — trois fiches déjà relues dans les 22, maintenant consolidées dans leur Google Doc respectif :**
+- **ARCH-002** [AFF5721, convocation du 21 mai sans tenue démontrée](https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit).
+- **ARCH-007** [décret du 16 avril, procédure et non collectivisation réalisée](https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit).
+- **ASSO-007** [Union des femmes, appel, statuts, JO, affiches, réalisations attribuées et incertitudes](https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit).
+
+**[Rapport de transmission exact et trois demandes ciblées pour l'Assistant](transmissions/2026-10-31_ANARCHIVISTE_PRE_SORTIE_ETAPE2_LOT3.md)**, commit `ec59c7741022207ee51b65595497f5a9bc6a7bb8`. Le registre commun n'a modifié que les **trois statuts historiques correspondants**, commit `f7ecf3e0b41b4df4b4bb014634fb8edbb1722ef0`. Statut toujours candidat avec réserves ; La Lectrice n'a pas encore rendu d'avis et Zout n'a pas approuvé le lot. Sont bloquants **uniquement les énoncés plus forts sur l'événement effectivement tenu, les ateliers effectivement exploités et la date exacte de diffusion des statuts**, ainsi que toute reproduction de fichier sans droit prouvé ; les réserves sont publiables comme incertitudes identifiées après validation.
+**Ne pas refaire la revue des 22, ne pas fusionner ni publier**. L'Assistant a une demande dans le rapport, sa réception autonome n'est pas attestée.
