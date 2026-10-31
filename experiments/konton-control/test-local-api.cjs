@@ -57,6 +57,7 @@ async function main() {
   const ok = await request("GET", "/api/github/repos");
   assert.equal(ok.status, 200);
   assert.deepEqual(ok.data.repositories, ["zoutiFrutti/Interstice"]);
+  assert.equal(ok.data.scope, "collectif");
   const rejected = await request("POST", "/api/tasks", { repo: "zoutiFrutti/Interstice", prNumber: 39 }, { "X-Konton-Action": "wrong" });
   assert.equal(rejected.status, 403);
   const crossSite = await request("GET", "/api/tasks", undefined, { Origin: "https://other.example", "Sec-Fetch-Site": "cross-site" });
@@ -75,6 +76,10 @@ async function main() {
   const aiCap = await request("GET", "/api/ai/capabilities");
   assert.equal(aiCap.status, 200);
   assert.equal(aiCap.data.configured, false);
+  const readiness = await request("GET", "/api/ai/readiness");
+  assert.equal(readiness.status, 200);
+  assert.equal(readiness.data.ready, false);
+  assert.equal(readiness.data.configured, false);
   const aiDenied = await request("POST", "/api/ai/tasks", { sourceTaskId: create.data.task.id });
   assert.equal(aiDenied.status, 503);
   const aiTasks = await request("GET", "/api/ai/tasks");
