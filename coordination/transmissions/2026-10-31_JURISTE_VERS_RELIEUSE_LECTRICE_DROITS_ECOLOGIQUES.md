@@ -44,3 +44,13 @@ Le dossier étudie :
 **REPORTABLE :** annuaire de juristes de l'environnement, analyse comparée internationale, déclinaison locale des six fiches, import cartographique, accord de coopération et automatisation.
 
 **Aucune** nouvelle consultation personnalisée, gouvernance, règle disciplinaire, collecte privée, permission Supabase, fusion, publication ou révision du manifeste. Statut : transmission documentaire candidate, pas réception confirmée par les ateliers.
+
+---
+
+## Annexe à la transmission — Contrôle complémentaire Juriste (31/10/2026, branche de relecture)
+
+**Sans changer les six identifiants ECO-DROIT existants**, un complément est proposé en **section X du dossier juridique existant** : CJUE C-461/13 (1er juillet 2015, eau et dérogations) ; CE n°467982 (24 octobre 2025, exécution Grande-Synthe) ; Conseil constitutionnel n°2026-914 DC (14 août 2026, distinction cruciale entre participation de toute personne et qualité pour agir) ; texte actuel des troubles anormaux de voisinage (Code civil 1253, 2024) ; rappel CADA et correction du lien CRPM L.143-1 (version août 2026).
+
+**À La Lectrice :** reprendre prioritairement les objections `ECO-JL01` à `ECO-JL06` de la section X.3 et confronter chaque énoncé au texte officiel et à son exception. **À La Relieuse :** inscrire la section X en relecture, avec contrôle des sources 2026 et décision humaine. **À La Médiathèque :** enrichir les notices du catalogue existant sans doublon FN. 
+
+Cette annexe déposée sur une branche ou proposée en PR ne constitue **ni réception effective par ces conversations**, ni validation juridique humaine, ni fusion automatique, ni publication Wiki.
