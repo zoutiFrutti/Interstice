@@ -1,0 +1,29 @@
+/* Extension accessible des fiches PR #50. Scope strict, sans backend. */
+.interstice-fiche.parcours-critique{--pc-ink:#101014;--pc-paper:#e9e5db;--pc-red:#c5212c;max-width:1000px;margin:auto;padding:18px;color:var(--pc-paper);font-family:var(--font-reading,system-ui,sans-serif);font-size:19px;line-height:1.68}
+.parcours-critique *{box-sizing:border-box;min-width:0}
+.parcours-critique .pc-kicker{font-size:16px;font-weight:800;letter-spacing:.04em;color:#ffcbc7}
+.parcours-critique h1,.parcours-critique h2,.parcours-critique h3{font-family:var(--font-heading,"Arial Narrow",system-ui,sans-serif);line-height:1.17;overflow-wrap:anywhere}
+.parcours-critique h1{font-size:clamp(38px,6vw,65px);max-width:25ch}
+.parcours-critique h2{font-size:clamp(29px,4vw,42px)}
+.parcours-critique h3{font-size:clamp(23px,3vw,30px)}
+.parcours-critique p,.parcours-critique li{max-width:75ch;overflow-wrap:anywhere}
+.parcours-critique .pc-warning,.parcours-critique .pc-panel{border:1px solid #968987;background:#211e22;border-radius:9px;padding:18px 20px;margin:20px 0}
+.parcours-critique .pc-warning{border-left:5px solid var(--pc-red)}
+.parcours-critique .pc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:17px}
+.parcours-critique .pc-step{border-top:2px solid #ae9b92;padding:24px 0;margin:25px 0}
+.parcours-critique .pc-label{font-weight:800;font-size:16px;letter-spacing:.025em;color:#ffe3d4}
+.parcours-critique .pc-claim{border-left:5px solid #e0b9ab;padding:13px 18px;background:#2b2429}
+.parcours-critique .pc-objection{border-left:5px solid #d33c49;padding:13px 18px;background:#2b2429}
+.parcours-critique .pc-uncertainty{border:2px dashed #ad9d91;padding:13px 18px}
+.parcours-critique .pc-sources li{margin:12px 0}
+.parcours-critique a{color:#ffcecb;text-underline-offset:3px;overflow-wrap:anywhere}
+.parcours-critique a:focus-visible,.parcours-critique summary:focus-visible{outline:3px solid var(--pc-paper);outline-offset:3px}
+.parcours-critique nav.pc-toc{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+.parcours-critique nav.pc-toc a{display:inline-flex;align-items:center;min-height:48px;padding:10px 14px;border:1px solid #b0a6a1;border-radius:8px;background:#342b30;color:#fff2ea}
+.parcours-critique details{border:1px solid #8f8680;border-radius:8px;margin:13px 0;padding:12px 15px;background:#272328}
+.parcours-critique summary{font-weight:800;cursor:pointer;min-height:44px;display:flex;align-items:center}
+.parcours-critique .pc-action{font-weight:700}
+.parcours-critique .pc-footer{border-top:2px solid #9c908a;padding:20px 0}
+@media(max-width:680px){.interstice-fiche.parcours-critique{font-size:18px;padding:12px}.parcours-critique .pc-grid{grid-template-columns:minmax(0,1fr)}.parcours-critique nav.pc-toc{display:grid;grid-template-columns:minmax(0,1fr)}.parcours-critique nav.pc-toc a{width:100%}}
+@media(prefers-reduced-motion:reduce){.parcours-critique{scroll-behavior:auto}}
+@media print{@page{size:A4;margin:15mm}html,body{background:#fff!important;color:#111!important}.interstice-fiche.parcours-critique{color:#111!important;font:11pt/1.5 Arial,sans-serif;max-width:none;padding:0}.parcours-critique .pc-label,.parcours-critique .pc-kicker{color:#111!important}.parcours-critique :is(.pc-warning,.pc-panel,.pc-claim,.pc-objection,.pc-uncertainty,details){color:#111!important;background:#fff!important;border-color:#555!important;break-inside:avoid}.parcours-critique a{color:#111!important;text-decoration:underline}.parcours-critique a[href^="http"]:after{content:" [" attr(href) "]";font-size:8pt;overflow-wrap:anywhere}.parcours-critique nav.pc-toc{display:none}.parcours-critique h2,.parcours-critique h3{break-after:avoid}.parcours-critique details:not([open])>*:not(summary){display:block!important}}
