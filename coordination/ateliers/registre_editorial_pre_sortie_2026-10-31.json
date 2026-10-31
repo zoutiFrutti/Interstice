@@ -91,6 +91,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/ARCH-003_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "49a69c2a8bad158fb349e084409fc26bdee39624",
+        "stage": "CANDIDAT_COMPLET_CONTRE_LECTURE_REQUISE",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -111,6 +123,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/ARCH-004_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "130f2ffe43ed740983f0af57181e8de3f1523f2d",
+        "stage": "CANDIDAT_COMPLET_CONTRE_LECTURE_REQUISE",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -131,6 +155,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/ARCH-005_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "1482c3a2e0d5d54c840d1f19c7d6ab26392ff7bb",
+        "stage": "CANDIDAT_SENSIBLE_CONTROLE_CIBLE_REQUIS",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -151,6 +187,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/ARCH-006_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "c09140381219b5829eae2366c86f0091625472fa",
+        "stage": "CANDIDAT_COMPLET_CONTRE_LECTURE_REQUISE",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -214,6 +262,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/ARCH-008_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "285278425d1c13dc12228abf0dac8f7aefb4708b",
+        "stage": "CANDIDAT_COMPLET_CONTRE_LECTURE_REQUISE",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -314,6 +374,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/ASSO-005_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "d0269fe102779c35aebe901b7d4a382891d55f5f",
+        "stage": "CANDIDAT_COMPLET_CONTRE_LECTURE_REQUISE",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -361,6 +433,18 @@
         "issue": "Appel, statuts, adresse JO 14 avril, manifeste 6 mai et affiches de mai distingués; date exacte parution des statuts 12/20 avril à vérifier; magasin et rémunérations selon historiens, pas comptabilité lue.",
         "human_review": false,
         "public_version": false
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/ASSO-007_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "ea795f4b6d3ab79a98b39fa69cb063ca623a44b7",
+        "stage": "CANDIDAT_SENSIBLE_CONTROLE_CIBLE_REQUIS",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -383,6 +467,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/ASSO-008_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "3f9d42fdfa015d856648299b5a4309eca5641b2a",
+        "stage": "CANDIDAT_COMPLET_CONTRE_LECTURE_REQUISE",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -847,6 +943,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/COL-001_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "84d216ae0ccee97a7126274cbee480eeb7762cfe",
+        "stage": "CANDIDAT_COMPLET_CONTRE_LECTURE_REQUISE",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -869,6 +977,18 @@
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "lecture": "revue documentaire de tri, collation exhaustive non attestée",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "round2_31oct": {
+        "document": "coordination/candidats/2026-10-31/COL-003_LOT_MAXI_CANDIDAT.md",
+        "branch": "coordination/relieur-pilote-10-passes-20261030",
+        "blob_sha": "262be11b26aabcebd0bf8e01c0ca03008245ac74",
+        "stage": "CANDIDAT_SENSIBLE_CONTROLE_CIBLE_REQUIS",
+        "created_by": "La Relieuse",
+        "source_existing_drive_review": true,
+        "contradictory_reading": "NON_ACQUISE_SUR_CE_TEXTE",
+        "legal_media_review": "A_FAIRE",
+        "human_editorial_visa": "NON_DONNE",
+        "publication": "INTERDITE_SANS_VISAS"
       }
     },
     {
@@ -2811,6 +2931,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "6e4485b261883081bc94adf11e4087d09bedd27b",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -2919,6 +3047,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "ad4c4dd651d9d1b68c37ea326b7c96871803adbe",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -2973,6 +3109,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "609f5c98522ab0f9ab8b550907d35579725e0d3c",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -3081,6 +3225,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "893b2a2b06dfd5e7c10496723093baa681f9dac3",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -3108,6 +3260,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "26a6a43f0de91d9e31963a44e105558c2fca32d1",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -3189,6 +3349,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "594ed6f197563c50b4b59cea99e8df14b1b57b9c",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -3243,6 +3411,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "2cb688bc6eef702fe439df1ae609d0d6087cdc60",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -3297,6 +3473,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "f55250fbc3e9f0a2ad826d306a0e0e47f04fe8fd",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -3351,6 +3535,14 @@
         "rapport": "coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md",
         "ref": "coordination/relieur-pilote-10-passes-20261030",
         "decision_publication": "AUCUNE_VALIDATION"
+      },
+      "correction_branch_31oct": {
+        "branch": "atelier-lectrice/pre-sortie-p0-trois-archives-20261031",
+        "blob_sha": "54974ec0316929720fb9ad8bd11ed382070fbb7c",
+        "status": "CORRECTION_CANDIDATE_EFFECTUEE_NON_FUSIONNEE",
+        "source_report": "coordination/transmissions/2026-10-31_LECTRICE_ETAPE_3_CORRECTIONS_P0_TROIS_ARCHIVES.md",
+        "approval": "NON_DONNE",
+        "publication": "NON_AUTORISEE"
       }
     },
     {
@@ -3441,7 +3633,7 @@
       "BLOQUEE": 9
     },
     "total_fiches_specialist_reviewed": 44,
-    "implied_editorial_visas": 0,
+    "implied_editorial_visas": 2,
     "uncertainties": "tri spécialisé documenté, pas vérification définitive des sources, des droits ou du contenu public",
     "evidence_biographe": "agent/journal-commun-biographies-2026-10-29",
     "evidence_archiviste": "coordination/relieur-pilote-10-passes-20261030"
@@ -3468,5 +3660,18 @@
     "ready_for_publication": 0,
     "non_collective_adoption": true,
     "important": "Les accords ne valent ni validation des droits, ni merge ni publication."
+  },
+  "round2_summary": {
+    "date": "2026-10-31",
+    "editorial_visas_Zout": 2,
+    "new_complete_candidates": 10,
+    "standard_counter_review": 7,
+    "high_caution_counter_review": 3,
+    "corrected_existing_wiki_on_branch": 9,
+    "unmodified_wiki_from_tri": 15,
+    "other_historical_drive_not_yet_rewritten": 32,
+    "biographies_pending": 22,
+    "fn_corpus_existing": 71,
+    "need_next_human_approval": true
   }
 }
