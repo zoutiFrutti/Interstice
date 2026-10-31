@@ -26,6 +26,7 @@ test("première édition: index sans lot, mobile, clavier, recherche, zoom, A4 e
     await page.keyboard.press("Tab");
     assert.equal(await page.evaluate(()=>document.activeElement.getAttribute("href")),"#contenu");
     await page.keyboard.press("Enter");
+    await page.waitForFunction(()=>location.hash==="#contenu",{timeout:3000});
     assert.equal(new URL(page.url()).hash,"#contenu");
     const q=page.locator("#edition-recherche");
     await q.fill("BIO-009");
