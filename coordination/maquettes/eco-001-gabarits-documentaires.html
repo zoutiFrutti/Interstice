@@ -18,7 +18,7 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--faille-black);color:var(--faille-ivory);font:19px/1.65 var(--font-reading)}
 a{color:#ffd0c9;text-decoration-thickness:1px;text-underline-offset:4px}
 a:hover{text-decoration-thickness:2px}
-a:focus-visible,summary:focus-visible{outline:3px solid var(--faille-ivory);outline-offset:4px}
+a:focus-visible,summary:focus-visible,.table-scroll:focus-visible{outline:3px solid var(--faille-ivory);outline-offset:4px}
 .skip{position:absolute;left:-10000px;top:8px;padding:10px;background:#e9e5db;color:#101014;z-index:5}
 .skip:focus{left:12px}
 header,main,footer{width:min(100% - 38px,1010px);margin:auto}
@@ -66,8 +66,8 @@ section{border-top:1px solid var(--border);padding:42px 0}
 .track{width:100%;height:25px;background:#534c4b;border-radius:4px;overflow:hidden}
 .fill{height:100%;background:#e5ded2;display:block;border-right:3px solid #b62235}
 .numbers{display:flex;justify-content:space-between;gap:10px;font-size:16px}
-.table-scroll{max-width:100%;overflow-x:auto}
-table{border-collapse:collapse;width:100%;min-width:0;font-size:17px;line-height:1.48}
+.table-scroll{max-width:100%;overflow-x:auto;scrollbar-width:auto;border:1px solid #8d817c;border-radius:7px}
+table{border-collapse:collapse;width:100%;min-width:650px;font-size:17px;line-height:1.48}
 caption{text-align:left;font-weight:750;font-size:19px;padding:10px 0}
 th,td{text-align:left;vertical-align:top;padding:14px 12px;border-bottom:1px solid #8d817c;overflow-wrap:anywhere}
 th{font-weight:750}
@@ -86,7 +86,7 @@ footer{border-top:2px solid #a49a91;padding:23px 0 45px;font-size:16px}
  .timeline{margin-left:9px}
  table{font-size:16px}
  td,th{padding:11px 8px}
- .table-scroll{overflow:visible}
+ .table-scroll{overflow-x:auto}
 }
 @media(max-width:350px){
  h1{font-size:38px}
@@ -111,6 +111,8 @@ footer{border-top:2px solid #a49a91;padding:23px 0 45px;font-size:16px}
  .timeline{border-color:#666}
  .timeline>li:before{background:#000!important;border-color:#fff}
  .no-image{background:#fff!important;min-height:25mm}
+ .table-scroll{overflow:visible!important;border:none!important}
+ table{min-width:0!important;font-size:9pt}
  .track{background:#ddd!important}
  .fill{background:#666!important;border-color:#111!important}
  a{color:#111!important;text-decoration:underline}
@@ -187,7 +189,7 @@ footer{border-top:2px solid #a49a91;padding:23px 0 45px;font-size:16px}
 </article>
 <aside class="card">
 <div class="no-image" role="note">Aucun portrait reproduit.<br>La documentation ne dépend pas d'une image.</div>
-<p class="status">PORTRAIT NON AUTORISÉ / NON VÉRIFIÉ</p>
+<p class="status">VISUEL NON REPRODUIT · DROITS NON VÉRIFIÉS</p>
 <p><strong>Source du repère :</strong> <a href="https://www.greenbeltmovement.org/history/">Green Belt Movement, rétrospective institutionnelle</a>.</p>
 <p><strong>Réserve :</strong> biographies, photos et droits de personnes requièrent une revue spécifique.</p>
 </aside>
@@ -196,13 +198,14 @@ footer{border-top:2px solid #a49a91;padding:23px 0 45px;font-size:16px}
 <section id="science" aria-labelledby="science-titre">
 <p class="eyebrow">AXE C · ÉTHIQUE ALIMENTAIRE ET IMPACTS DOCUMENTÉS</p>
 <h2 id="science-titre">S. Comparer des indicateurs, pas des personnes</h2>
-<p class="lead">Illustration de données **rapportées par le dossier de l’Archiviste** : étude britannique Scarborough et al., 2023, groupes alimentaires, données ACV. Relecture scientifique nécessaire avant intégration Wiki.</p>
+<p class="lead">Illustration de données <strong>rapportées par le dossier de l’Archiviste</strong> : étude britannique Scarborough et al., 2023, groupes alimentaires, données ACV. Relecture scientifique nécessaire avant intégration Wiki.</p>
 <div class="note"><strong>Base des barres ci-dessous :</strong> groupe à consommation élevée de viande (≥100 g/j) = indice 100 pour chaque indicateur. Le groupe végan a un impact estimé plus faible dans ce modèle ; cela ne prédit pas l'impact d'une personne ou d'un territoire.</div>
 <div class="comparison" role="group" aria-label="Comparaison de deux métriques issues du dossier documentaire">
 <div class="metric"><strong>Émissions de gaz à effet de serre, impact relatif estimé du groupe végan</strong><div class="track" role="img" aria-label="25,1 pour cent de la valeur du groupe à consommation élevée de viande, dont la base est 100 pour cent"><span class="fill" style="width:25.1%"></span></div><div class="numbers"><span>Groupe végan : 25,1 % de la base</span><span>Base : 100 %</span></div></div>
 <div class="metric"><strong>Utilisation de l'eau, impact relatif estimé du groupe végan</strong><div class="track" role="img" aria-label="46,4 pour cent de la valeur du groupe à consommation élevée de viande, dont la base est 100 pour cent"><span class="fill" style="width:46.4%"></span></div><div class="numbers"><span>Groupe végan : 46,4 % de la base</span><span>Base : 100 %</span></div></div>
 </div>
-<div class="table-scroll">
+<p class="meta">Sur petit écran, le tableau se fait défiler latéralement au toucher ou au clavier ; les deux valeurs sont aussi affichées au-dessus en texte.</p>
+<div class="table-scroll" role="region" tabindex="0" aria-label="Tableau scientifique défilant, deux indicateurs et deux groupes">
 <table>
 <caption>Équivalent textuel intégral de la comparaison · indices relatifs à la base de chaque métrique</caption>
 <thead><tr><th scope="col">Indicateur</th><th scope="col">Groupe ≥100 g de viande/j</th><th scope="col">Groupe végan</th><th scope="col">Nature du résultat</th></tr></thead>
