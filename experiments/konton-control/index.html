@@ -31,7 +31,7 @@
       </div>
       <div class="topbar-meta">
         <span class="demo-chip"><span class="led led-amber" aria-hidden="true"></span> AGENTS EN DÉMO</span>
-        <span class="connection">V0.8 · Prototype Android</span>
+        <span class="connection">V0.9 · Prototype Android</span>
       </div>
     </header>
 
@@ -53,9 +53,9 @@
       </div>
       <div class="home-status-grid">
         <div class="home-status"><span class="led led-amber" aria-hidden="true"></span><div><strong>Agents · Démo</strong><p>GO et STOP ne lancent aucune vraie mission depuis cette APK.</p></div></div>
-        <div class="home-status"><span class="led led-blue" aria-hidden="true"></span><div><strong>GitHub · Lecture seule</strong><p>Statuts réels uniquement après récupération réussie des données.</p></div></div>
+        <div class="home-status"><span class="led led-blue" aria-hidden="true"></span><div><strong>GitHub · Lecture seule</strong><p>Statut : <span id="home-github-state">Non consulté</span>. Ouvre GitHub pour vérifier.</p></div></div>
       </div>
-      <!-- Ancien avertissement retiré au profit des étiquettes visibles -->
+      
     <section class="metrics" aria-label="Résumé de la simulation">
       <div class="metric"><strong id="count-agents">0</strong><span>Agents présentés</span></div>
       <div class="metric"><strong id="count-running">0</strong><span>En simulation</span></div>
@@ -144,6 +144,7 @@
     </section>
     <section class="screen" id="screen-agents" data-screen="agents" hidden tabindex="-1" aria-label="Agents de démonstration">
       <div class="screen-title"><p class="eyebrow">PUPITRE DE DÉMONSTRATION</p><h2>Agents</h2><p>GO, STOP et les validations ne modifient aucun projet réel.</p></div>
+      <div class="demo-tools"><button type="button" id="demo-reset" class="small-btn">Réinitialiser la démo</button><span>Les actions ci-dessous sont fictives.</span></div>
       <div class="workbench">
       <aside class="sidebar panel" aria-label="Sélection des agents">
         <div class="panel-heading">
