@@ -1,0 +1,10 @@
+# La Juriste vers La Relieuse — CYCLE 3, contrôle serveur réel
+**31 octobre 2026.** Source détaillée : [dossier Cycle 3](../juriste/2026-10-31_CYCLE3_VERIFICATION_SERVEUR_ET_DECISIONS.md), intégré à la branche de PR #56.
+
+**Ne pas marquer P0 formulaires comme fermés.** Contrôle direct de Supabase Interstice : `submit-proposal` Edge Function v2 **ACTIVE, verify_jwt=false**, contrôle `Origin` et anti-abus mais **sans suspension serveur** ; `submit_wiki_article` `SECURITY DEFINER` toujours exécutable par `authenticated` et stocke les propositions malgré boutons désactivés sur branche. Tables `proposals`, `wiki_article_submissions`, `resource_submissions` à **0 ligne** au contrôle agrégé ; cela ne prouve pas zéro e-mail dans Auth ni absence de logs ou sauvegardes. RLS présente, lecture propre ou modérateur, vue `public_proposals` `security_invoker=true`, 5 avertissements `SECURITY DEFINER` à revoir. Aucun appel POST, effacement, mutation serveur ni accès aux contenus personnels.
+
+**P0 ouverts :** (1) suspension effective backend si décidée, (2) bases RGPD et retrait/confidentialité réellement testés, (3) mentions légales/éditeur/directeur/hébergeur/contact juridiquement exacts. Les éléments historiques/politiques controversés **ne constituent pas un P0 par leur seule contradiction**. Les licences ne bloquent que les médias effectivement ajoutés.
+
+**Décisions humaines :** identité et qualification de l'éditeur, directeur de publication, hébergeur, professionnel/non professionnel, responsable du traitement, bases/durées, canal de rectification, mandat explicite de fermeture ou réouverture serveur. Ne pas publier de coordonnées privées sans examen légal.
+
+**Transmission documentaire uniquement** : aucun service juridique, décision de publication, annonce de partenaire, fusion, déploiement ni preuve de lecture par les autres conversations.
