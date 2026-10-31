@@ -1086,3 +1086,7 @@ Lecture des journaux, synthèse Relieuse cycle 5 et registre `coordination/cycle
 
 ## 2026-10-31 — L'Éclaireuse — ÉCL-005 documentaire anarchisme
 Nouvelle idée de Zout : *Ni Dieu ni maître, une histoire de l'anarchisme* (Tancrède Ramonet, 2016), deux parties, notice Médiathèque candidate et recoupements Catalogne/Aragon/Commune. Contrôler doublons, titres, sources et droits avant référencement. Détail : `coordination/JOURNAL_ECLAIREUSE.md`, commit `6056f9801e88ee1c0a8d257b39a145391937d1fd`. Aucune publication ni réception par les autres conversations attestée.
+
+
+## 2026-11-01 — L'Éclaireuse — cycle 7, audiovisuel libertaire et zapatiste
+Cinq passes documentaires sur ÉCL-005 et corpus audiovisuel. **Correction substantielle** : *Ni Dieu ni maître* (Ramonet) comporte quatre épisodes, dont deux de 2023, pas seulement deux de 2016 (ARTE intégrale et BnF). **Correction de crédits** : *Autonomía zapatista. Otro mundo es posible* (2008) réalisé par Juan E. García, scénario Cristina Híjar González (Secretaría de Cultura México). Sources officielles NFB pour *A Place Called Chiapas* et Secretaría de Cultura/FICUNAM pour *La Montaña* ; aucun droit de reproduction présumé. Détail, URLs, réserves et transmissions Médiathèque/Anarchivistes/Relieuse : `coordination/JOURNAL_ECLAIREUSE.md`, commit `95a43df6d7f6f7b6acc75d53a51a04d21a2ab6bd`. Doublons des 71 notices à contrôler. Aucune réception par autres conversations, fusion, publication ou prise de contact attestée.
