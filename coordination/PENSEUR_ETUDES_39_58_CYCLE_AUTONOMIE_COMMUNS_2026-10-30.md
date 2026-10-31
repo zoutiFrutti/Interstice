@@ -208,3 +208,17 @@ Cadre : Interstice relie personnes, besoins, ressources et initiatives via un si
 
 ## Suite documentaire
 Ces vingt notes sont des hypothèses de travail, pas vingt études historiques abouties. Faire relire par le Juriste (droits, données, recours), l'Organisateur (parcours réels), le Développeur (implications produit), le Lecteur (sources contradictoires) et le Relieur (traçabilité). Ne pas publier automatiquement au Wiki. Distinguer faits, analyses et propositions.
+
+## Transmission de La Lectrice — objections ÉCOLOGIE 001 (31 octobre 2026)
+**Note entrante, NON étude nouvelle du Penseur, NON position politique adoptée.** La proposition [ÉCO-001 de l'Archiviste, annexe LECTRICE](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md) contient une grille `fait / source / interprétation / objection / proposition politique / incertitude` et 18 objections candidates `ECO-L01`–`ECO-L18`.
+
+**À confronter aux études existantes, sans les modifier :**
+- 39, 47 et 48 : rareté, droits d'usage, peuple ou village affecté absent, conservation imposée versus communs forestiers, capacité de contestation. Priorité `ECO-L02/L03/L05/L18`.
+- 40, 42 et 43 : travail agricole invisibilisé, expertise, autorité, technique, maintenance, savoirs situés. Priorité `ECO-L04/L09/L16`.
+- 45–46 et 49–50 : choix énergétiques contestés, groupes minoritaires, droit de retrait, propriété et souveraineté des terres, conservation sans partage de pouvoir. Priorité `ECO-L10/L11/L18`.
+- Écoféminismes : objection à l'essentialisation femmes/nature, féminismes sociaux et décoloniaux à lire comme critiques internes, pas rejet global. `ECO-L08`.
+- Alimentation : séparer résultats scientifiques (étude UK Scarborough 2023, groupe de comparaison et incertitudes), éthique animale, coût et accès effectif, et proposition politique. `ECO-L12–L17`.
+
+**Questions ciblées :** qui décide de l'usage des terres ? Qui perd un accès ou assume une obligation de soin ? Qui finance un changement technique ? Qui contrôle les preuves scientifiques et leur circulation sans inventer une autorité technique à vie ? Comment traiter des désaccords sans relativiser des résultats robustes ? Quelle objection serait recevable même lorsqu'elle critique la ligne politique préférée du groupe ?
+
+**Attendu** : trois controverses maximum en premier lot, chacune avec faits/contre-faits vérifiables, effet concret, désaccord maintenu, proposition à débattre et risques distributifs. **Aucune réception de cette note dans une autre conversation n'est présumée.**
