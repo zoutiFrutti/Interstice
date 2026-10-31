@@ -190,11 +190,15 @@
     const requestId = ++state.requestId;
     setLoading(true);
     feedback.textContent = "Lecture GitHub en cours pour " + repo + "…";
+    const home = $("home-github-state");
+    if (home) home.textContent = "Vérification en cours";
     try {
       const data = state.mode === "local" ? await readLocal(repo) : await readPublic(repo);
       if (requestId !== state.requestId) return;
       cache.set(repo, { data, when: Date.now() });
       render(data);
+      const home = $("home-github-state");
+      if (home) home.textContent = "Actualisé le " + shownDate(data.fetchedAt);
       feedback.textContent = "Lecture seule · actualisé le " + shownDate(data.fetchedAt) +
         " · " + (state.mode === "local" ? "passerelle locale" : "API publique GitHub") + ".";
     } catch (error) {
@@ -203,6 +207,8 @@
       const block = createBlock("Lecture indisponible");
       message(block, error && error.message ? error.message : "Erreur de connexion.");
       feedback.textContent = "Statut non vérifié. Aucun résultat CI présumé.";
+      const home = $("home-github-state");
+      if (home) home.textContent = "Connexion indisponible";
     } finally {
       if (requestId === state.requestId) setLoading(false);
     }
