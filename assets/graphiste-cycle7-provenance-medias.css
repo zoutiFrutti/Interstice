@@ -1,0 +1,13 @@
+/* Cycle 7 : seulement sur le profil opt-in C5, sans refonte */
+.interstice-fiche.graphiste-c5 .c7-media{border:2px solid #b9aba1;background:#292328;padding:16px 18px;margin:18px 0;border-radius:8px}
+.interstice-fiche.graphiste-c5 .c7-media[data-media-kind="archive-authentique"]{border-left:7px solid #e9e5db}
+.interstice-fiche.graphiste-c5 .c7-media[data-media-kind="illustration"]{border-left:7px dashed #d6a7a0}
+.interstice-fiche.graphiste-c5 .c7-media[data-media-kind="reconstitution"]{border:3px dashed #e2a29d}
+.interstice-fiche.graphiste-c5 .c7-media[data-rights="non-verifies"]{background:#342027}
+.interstice-fiche.graphiste-c5 .c7-media__type{font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:#ffdfd5}
+.interstice-fiche.graphiste-c5 .c7-media dl{display:grid;grid-template-columns:minmax(8ch,25%) minmax(0,1fr);gap:8px 14px}
+.interstice-fiche.graphiste-c5 .c7-media dt{font-weight:800}
+.interstice-fiche.graphiste-c5 .c7-media dd{margin:0;overflow-wrap:anywhere}
+.interstice-fiche.graphiste-c5 .c7-territory{border-top:2px solid #ad9c91;padding-top:17px;margin-block:20px}
+@media(max-width:550px){.interstice-fiche.graphiste-c5 .c7-media dl{grid-template-columns:minmax(0,1fr);gap:3px}.interstice-fiche.graphiste-c5 .c7-media dd{margin-bottom:10px}}
+@media print{.interstice-fiche.graphiste-c5 .c7-media{background:white!important;color:#111!important;border-color:#555!important;break-inside:avoid}.interstice-fiche.graphiste-c5 .c7-media__type{color:#111!important}}
