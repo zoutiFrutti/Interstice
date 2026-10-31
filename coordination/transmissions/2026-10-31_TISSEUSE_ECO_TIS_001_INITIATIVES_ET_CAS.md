@@ -147,3 +147,42 @@ Ne PAS recréer TIS-001 : conserver [cadrage original](../TISSEUSE_CADRAGE_COOPE
 - [Le Temps, enquête critique 2014](https://www.letemps.ch/societe/linsoumission-mode-vie) : article de presse secondaire présentant des tensions historiques et des controverses ; ne pas les transposer sans preuves à la situation 2026.
 
 **Usage :** réserve comparative à instruire par La Médiathèque et La Lectrice avant de rejoindre une sélection de dix ou une fiche TIS existante. Aucun nouvel identifiant de fiche, annuaire ou partenaire.
+
+
+---
+
+## Consolidation des trois études de cas — passe du 31/10/2026 (14 h, Europe/Paris)
+
+**Cette mise à jour complète les trois cas A/B/C ci-dessus sans créer de nouvel identifiant, sans prétendre qu'un chantier passé serait un service actuel, ni transformer une structure externe en partenaire.** Sources de contrôle : sites institutionnels, pages d'opérateurs et registre public consultés le 31/10/2026. Les déclarations des opérateurs sont attribuées.
+
+### CAS A — Les Chlorophy'liens, La Salvetat, Monestiés : une plantation attestée, pas un bilan biologique
+
+- **Activité paysanne décrite (site de ferme, non daté)** : maraîchage, grandes cultures, arboriculture/verger, pain et projet de lieu de vie et d'accueil. La fiche Terre de Liens chiffre à **26,94 ha** le foncier concerné, mentionne la **Foncière Terre de Liens comme propriétaire du foncier** et les **bâtiments achetés par les paysan·nes** ; ne pas transformer le tout en une propriété unique du collectif ni généraliser le statut du foncier à toutes les surfaces voisines. Source : https://fermes.terredeliens.org/midi-pyrenees/fermes-de-la-r%C3%A9gion-midi-pyr%C3%A9n%C3%A9es/la-salvetat/
+- **Action précise réalisée** : bilan Terre de Liens **16/12/2025**, mis à jour **17/12/2025**, rapportant **120 arbres plantés par 24 personnes** le samedi précédent, avec CEN Occitanie, Arbres et Paysages Tarnais, projet LIFE Biodiv'Paysanne et soutien régional. L'appel annonçait un OBJECTIF de 150 arbres, pas 150 effectivement plantés. Source de bilan : https://terredeliens.org/midi-pyrenees/hub-actus-midi-pyr%C3%A9n%C3%A9e%C3%A9s/un-chantier-de-plantation-agroforesti%C3%A8re-sur-une-ferme-16-12-2025/
+- **Non démontré** : survie des plantations à 3, 6 ou 12 mois, gain de biodiversité quantifié, disponibilités d'emplois, de visites, de produits, gouvernance intérieure et rémunération du travail. Le chantier d'inscription de décembre 2025 est **TERMINÉ**.
+- **Correction de statut** : EXPÉRIENCE documentée, action réalisée selon l'organisateur ; accès présent **INCONNU** ; étude de cas Wiki **CANDIDATE** ; référencement **NON ACCEPTÉ** ; partenariat **AUCUN**.
+- **Renvois** : `wiki-ecologie-sociale-environnement.html` (mesure des impacts) ; `wiki-autonomie-materielle-savoir-faire.html` (production et savoir-faire) ; `wiki-socialismes-communismes-anarchismes-autogestion.html` (règles de décision à investiguer) ; `wiki-logement-habitat-droit-ville.html` (habiter et produire : deux droits distincts). Associer EXP-002 (accès à l'alimentation) sans prétendre que la ferme vend au dispositif.
+
+### CAS B — SCTL, Larzac : existence légale actuelle, règles foncières à dater
+
+- **Existence actuelle recoupée indépendamment** : registre public Annuaire des Entreprises **mis à jour 14/10/2026**, unité légale `331 605 527`, **en activité**. Cela atteste une personne morale, pas la date d'une permanence ni une terre disponible. https://annuaire-entreprises.data.gouv.fr/entreprise/331605527
+- **Chronologie historique** : assemblée constitutive **29/11/1984**, bail emphytéotique de l'État signé **29/04/1985**. Page Larzac.org indique 6 357 hectares et un conseil de gérance à 11 personnes, avec baux agricoles, prêts à usage et baux de chasse ; chiffres issus d'un récit institutionnel historique, pas certifiés au 31/10/2026. Elle indique un avenant en **juillet 2013** jusqu'au **30/04/2083**. https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/
+- **Divergence à conserver** : une page parle d'un cadre de 99 ans, une autre d'un bail initial de 60 ans renouvelable ; seule la lecture du texte du bail **et de ses avenants** permet de trancher leurs formulations juridiques. Ne pas écrire « bail de 99 ans depuis 1985 » sans préciser l'historique ni fixer les chiffres des baux d'occupants comme actuels.
+- **Limites** : qui détient réellement la décision d'attribution, processus de refus, recours, place des non-agriculteurs et agricultrices, chasse, valeur d'usage, effets des changements de génération. Gestion collective ≠ absence de pouvoir/hiérarchie. Aucune parcelle offerte.
+- **Correction de statut** : PERSONNE MORALE active, expérience foncière historique documentée ; accès à un foncier/une permanence **NON VÉRIFIÉ** ; cas Wiki **CANDIDAT** ; référencement **NON ACCEPTÉ** ; partenariat **AUCUN**.
+- **Renvois** : `wiki-logement-habitat-droit-ville.html` (usage, habitat et foncier), `wiki-ecologie-sociale-environnement.html` (terres et biodiversité), `wiki-socialismes-communismes-anarchismes-autogestion.html` (mandats et renouvellement), `wiki-decision-collective.html` (attribution, recours), `wiki-capitalisme-classes-travail.html` (valeur d'usage), EXP-004 Mondragón (différence entre coopérative de travail et foncière).
+
+### CAS C — Green Belt Movement (Kenya) : méthode affichée de suivi et question de preuve
+
+- **Histoire d'organisation (source officielle)** : Green Belt Movement fondé en **1977** dans le cadre du National Council of Women of Kenya, pour répondre à des besoins signalés par des femmes rurales concernant l'eau, l'alimentation et le bois de feu ; le récit mentionne Wangari Maathai. Ce mouvement est **collectif**. https://www.greenbeltmovement.org/history/
+- **Méthode procédurale publiée** : le GBM décrit **10 étapes** ; formation des groupes et pépinières, plantation (étape 8), **premier suivi continu avec enregistrement des survies et replantation des plants non performants (étape 9)** ; **contrôle final entre 3 et 6 mois (étape 10)** comprenant comptage des arbres survivants. Il s'agit d'une PROCÉDURE RÉCLAMÉE par l'organisation et non de la preuve que chaque chantier historique ou futur l'a appliquée ni d'un audit externe. https://www.greenbeltmovement.org/gbm-ten-10-step-procedure/
+- **Différences importantes** : arbres plantés ≠ arbres encore vivants ; survie à 3–6 mois ≠ restauration écologique durable ; revendication de protection forestière ≠ absence de conflit foncier. Citer les voix des membres et des communautés, sans présenter les femmes comme « naturellement plus écologiques ». Enquêter sur rémunérations, espèces, droit d'accès aux terres, diversité interne et indépendance des évaluations.
+- **Accès** : information générale de bénévolat/visite disponible sur l'organisation, sans réservation, éligibilité, prix ou participation en date du 31/10/2026 confirmés ici.
+- **Correction de statut** : ORGANISATION et programmes documentés par source propre, vérification indépendante d'impacts **INCOMPLÈTE**, accueil actuel **NON VÉRIFIÉ**, cas Wiki **CANDIDAT**, référencement **NON ACCEPTÉ**, partenariat **AUCUN**.
+- **Renvois** : `wiki-ecologie-sociale-environnement.html` (écosystèmes, droits locaux), `wiki-egalite-genres-inclusivite.html` (droits et travail sans essentialisation), `wiki-frontieres-migrations-colonialisme.html` (histoire des territoires et voix locales), `wiki-decision-collective.html` (comités et processus), `wiki-education-enfance-protection.html` (éducation populaire, sans assimiler à une structure scolaire), études ÉCO-001A/B et dossiers Biographies sur Wangari Maathai si identifiant déjà disponible.
+
+### Transmission de consolidation et barrières
+
+**La Lectrice** : contre-lire les trois noyaux de preuve (120 arbres plantés vs 150 visés ; personne morale du Larzac vs propriété/disponibilité ; procédure GBM vs impact mesuré), débusquer omissions de travail invisible, autorité et approches coloniales. **La Relieuse** : garder les trois identifiants de cas existants, proposer des liens dans le Wiki seulement après décision de publication, recouper le carnet TIS-001 015 et les EXP, préserver les statuts sans accord Zout présumé. **La Juriste, à solliciter documentairement via La Relieuse** : patrimoine foncier, droits d'usage, droits d'auteur des photos et conditions d'accueil.
+
+**Bilan** : trois études **consolidées sur leur fichier historique**, aucun cas supplémentaire créé, aucun contenu injecté dans les pages Wiki publiques, aucune modification de carte, aucun contact.
