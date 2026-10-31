@@ -45,3 +45,20 @@ Zout est actuellement l'unique personne humaine portant l'initiative. Aucun coll
 - La PR #43 mentionne **A01–A15** comme critères d'essai et trois scénarios écrits, sans essai terrain ; ce ne sont ni quinze articles ni quinze pages.
 - La PR #51 cite **24 pages Wiki, 44 fiches Drive et 71 notices FN** comme ensembles distincts, avec réserves d'intégration.
 - Prochaine vérification : lire les fichiers de transmission précis sur les branches des PR #62 et #63, puis retrouver le registre d'origine avant toute affirmation nominative.
+
+## Passe 7 — Registre source retrouvé et tri clarifié
+**Source effectivement lue :** `coordination/ateliers/registre_editorial_pre_sortie_2026-10-31.json`, branche `coordination/relieur-pilote-10-passes-20261030`, blob `f005414fc566cf020e2ac8931f4841e30ffde859` (227391 caractères). Ne pas confondre ce nom de branche historique avec la création d'une conversation « Le Relieur ».
+
+### État du premier tri de La Lectrice (24 pages Wiki)
+- `lectrice_pre_sortie_summary` : **0 validable, 15 A_CORRIGER, 9 BLOQUEES** au premier tri ; rapport `coordination/transmissions/2026-10-31_LECTRICE_PRE_SORTIE_24_PAGES_OBJECTIONS_LACUNES.md`.
+- Neuf pages bloquées à ce stade : `wiki-association-collegiale.html`, `wiki-decision-collective.html`, `wiki-education-enfance-protection.html`, `wiki-financements-culture-spectacle.html`, `wiki-frontieres-migrations-colonialisme.html`, `wiki-lecture-croisee-travail-soin-pouvoir.html`, `wiki-logement-habitat-droit-ville.html`, `wiki-police-deces-memoire.html`, `wiki-sante-psychiatrie-autonomie-soins.html`.
+- Quinze autres pages sont classées A_CORRIGER dans le même premier tri ; la PR #63 décrit un inventaire graphique de quinze pages, mais l'identité exacte des deux lots reste à comparer aux fichiers de la PR #63.
+
+### État ultérieur de coordination, autre périmètre
+- `cycle5_relieuse` : **14 prêts à soumettre, 15 à corriger, 5 bloqués**, et **0 nouveau visa** ; les identifiants précis des cinq ne sont pas extraits du résumé, à rechercher dans `coordination/cycle2/STATUTS_34_2026-10-31.json` ou les documents des cycles 3 à 5.
+- `editorial_approval_summary` : accords éditoriaux individuels documentés **ARCH-002** et **ARCH-007**, sans autorisation de fusion ou de publication.
+- Corpus distincts : 44 fiches Drive, 71 notices FN, 24 pages Wiki. Ne pas additionner comme 139 nouveaux articles indépendants.
+- Les 5 blocages ultérieurs ne sont **pas** les 9 pages bloquées du premier tri, ni les fiches historiques portant une réserve spécialisée.
+
+### Prochain contrôle
+Lire les fichiers de statut du cycle 2 à 5 et le rapport détaillé de la PR #63 ; établir un tableau d'identifiants et de SHA avant de conclure sur les cinq blocages actuels. Aucun visa, fusion, publication ou contact ajouté.
