@@ -93,14 +93,17 @@ test("018-C : parcours graphique V0 intégrée, test navigateur tactile simulé 
     await capture(page,width,"fiche-fictive");
     await page.locator("#back").tap();
     assert.equal(await page.locator("#commune").inputValue(),"Gaillac");
-    await page.locator('.initiative-header a[href="participer.html"]').tap();
+    await Promise.all([page.waitForURL("**/participer.html"),page.locator('.initiative-header a[href="participer.html"]').tap()]);
+    await page.waitForLoadState("networkidle");
     await inspect(page,"participer",width);
     await capture(page,width,"participer");
-    await page.locator('a[href="wiki.html"]').first().tap();
+    await Promise.all([page.waitForURL("**/wiki.html"),page.locator('a[href="wiki.html"]').first().tap()]);
+    await page.waitForLoadState("networkidle");
     await inspect(page,"wiki-index",width);
     await capture(page,width,"wiki-index");
     for(const [file,key] of [["wiki-decision-collective.html","wiki-decider"],["wiki-lecture-croisee-travail-soin-pouvoir.html","wiki-travail-soin"]]){
-      await page.locator('a[href="'+file+'"]').first().tap();
+      await Promise.all([page.waitForURL("**/"+file),page.locator('a[href="'+file+'"]').first().tap()]);
+      await page.waitForLoadState("networkidle");
       await inspect(page,key,width);
       const status=await page.locator(".reading-status").innerText();
       assert.match(status,/relire par un être humain/i);
