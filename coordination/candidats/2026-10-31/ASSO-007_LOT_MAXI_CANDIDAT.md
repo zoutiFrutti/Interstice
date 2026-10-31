@@ -30,6 +30,11 @@ L'Union a défendu des objectifs de participation et d'émancipation des femmes 
 
 **Points restant à vérifier :** les numéros originaux de *La Sociale* concernant les appels et statuts ; l'adresse du 13/14 avril ; les procès-verbaux éventuels de mai ; les comptes et rémunérations. Ces limites sont visibles et ne sont pas présentées comme résultats acquis.
 
+
+## Arbitrage entre deux éditions candidates (sans écrasement)
+
+**Édition longue antérieure** : [ASSO-007_PREMIERE_EDITION.md](ASSO-007_PREMIERE_EDITION.md), SHA de base `8a5f61e93cf6cfdc0687e78ea9622752908e6762`. **Édition courte** : présent document. Les deux sont maintenues ; elles n'ont ni la même fonction ni le même degré de détail. La courte doit rester une synthèse d'accès à la longue, et non une version qui effacerait les contradictions. **La publication de la date exacte des statuts exige une collation de La Sociale (12 et 20 avril)** ; tant que cette pièce manque, le texte dit explicitement « date débattue » et n'assigne aucune date ferme. Le *Journal officiel* du **14 avril** atteste une adresse distincte, et les listes de signataires portent sur des organes et des dates distincts. Les dépenses, magasins et indemnités rapportés par des historien·nes ne sont pas des chiffres de trésorerie lus directement.
+
 ## Sources
 1. [Fondation Gabriel Péri, transcriptions des appels d'avril](https://gabrielperi.fr/commune-de-paris/appel-aux-citoyennes-de-paris-10-avril-et-adresse-des-citoyennes-14-avril-1871/).
 2. [Contretemps, Patrick Le Moal, statuts reproduits dans une chronologie du 11 avril](https://www.contretemps.eu/journal-commune-11-avril-1871/).
@@ -55,4 +60,4 @@ La version courte est **un résumé éditorial** et ne remplace pas la [version 
 
 **Références de provenance à conserver dans la longue version :** *Journal officiel* du 14 avril (Archives autonomies), Fondation Gabriel Péri, Le Moal (*Contretemps*), les notices Carnavalet 2020.0.36 / .154 / .155 / AFF5721, BHVP 2-AFF-003190, étude Eichner (1998), Rougerie, Dalotel. **Niveau de lecture :** originaux de presse et comptabilités non collationnés dans ce lot ; synthèse sans médias copiés.
 
-**Avis de La Lectrice : À CORRIGER** avant arbitrage comme **texte court autonome** : vérifier les dates de *La Sociale* et les formulations attribuant une réalisation. **La version longue reste disponible et distincte**, sans écrasement et sans visa de Zout. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
+**Avis de La Lectrice : PRÊT À SOUMETTRE À ZOUT COMME SYNTHÈSE COURTE AVEC RÉSERVES AFFICHÉES** avant arbitrage comme **texte court autonome** : vérifier les dates de *La Sociale* et les formulations attribuant une réalisation. **La version longue reste disponible et distincte**, sans écrasement et sans visa de Zout. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
