@@ -1,52 +1,87 @@
-# KONTON Control · cockpit V0.1
+# KONTON Control · cockpit V0.2 — GitHub en lecture seule
 
-**Statut : prototype interactif isolé, NON connecté, NON déployé.**
-**30 octobre 2026.**
+**Statut : prototype sur branche, non déployé, non fusionné.**
+**31 octobre 2026.**
 
-Le cockpit sert à expérimenter une régie d'agents IA avec les gestes GO / STOP / validation humaine. Il ne modifie ni le site Interstice, ni l'app Android KONTON, ni Supabase, ni GitHub Actions. Les noms des ateliers sont des **exemples de démonstration** : leurs statuts et résultats à l'écran sont entièrement fictifs.
+Deux espaces indépendants coexistent :
 
-## Essayer
+1. **Pupitre d'agents** : GO, STOP, fiches, validation et journal entièrement fictifs. La simulation n'exécute aucun agent ChatGPT, CI ou automatisation réelle.
+2. **Observatoire GitHub** : métadonnées réellement lues en GET, dernières PR ouvertes et exécutions de CI, avec dates, branches, erreurs et liens vérifiables. **Aucune écriture GitHub**.
 
-Dans le dossier du prototype :
+**Ne pas exposer de secrets ni fusionner sans revue.** Ce prototype n'est pas intégré au site public Interstice.
+
+## Usage immédiat : Interstice public
+
+Depuis la racine du dépôt :
 
 ~~~sh
 python3 -m http.server 8000
 ~~~
 
-Ouvrir http://localhost:8000/experiments/konton-control/ si le serveur est lancé depuis la racine du dépôt. Pour un serveur lancé dans ce dossier, utiliser http://localhost:8000/.
+Dans le navigateur : http://127.0.0.1:8000/experiments/konton-control/
 
-Pas de compilation, pas de paquet externe, pas de connexion internet nécessaire. L'interface est mobile et utilisable au clavier. Le bouton GO lance une simulation de 2,4 secondes qui produit une sortie « à relire » ; STOP interrompt cette simulation ; les décisions « Valider » / « À revoir » ne changent que la mémoire de l'onglet. Un rafraîchissement réinitialise tout.
+Cette version tente de lire trois endpoints publics de l'API REST GitHub, sur le dépôt public zoutiFrutti/Interstice uniquement :
 
-## Périmètre et responsabilités
+- métadonnées du dépôt ;
+- PR ouvertes, dix premières maximum ;
+- dix dernières exécutions de workflows, toutes branches confondues.
 
-- Deux périmètres dans l'interface : collectif (La Faille noire × Interstice) et personnel (KONTON et projets individuels). Il s'agit d'un **filtre d'affichage, pas d'une barrière de sécurité**. Ne jamais utiliser ce filtre comme contrôle d'accès réel.
-- Aucun appel réseau, stockage navigateur, token, clé, connexion à un fournisseur d'IA ou exécution réelle.
-- Aucune donnée personnelle réelle ni donnée de travail confidentielle dans le code.
-- Aucune action ne doit pouvoir publier un article, fusionner une PR ou envoyer un message sans permission et vérification explicites côté serveur.
-- Le cockpit ne se substitue pas au site public et ne doit pas rendre une application ou la participation citoyenne dépendante de ce pupitre.
-- Le manifeste V2.5 de La Faille noire est une référence de travail non adoptée.
+La page indique précisément l'échec des lectures, les limites de la collecte et la date de récupération. Un « succès » de CI est propre à une exécution donnée, pas au dépôt entier. Si une réponse échoue ou n'est pas accessible, aucun résultat fictif n'est présenté comme réel.
 
-## Contrat de la future couche de connexion (proposition)
+Le navigateur n'a pas de jeton. Les limites de l'API GitHub sans authentification peuvent ralentir ou bloquer temporairement les lectures. La page n'a aucun mécanisme de suivi automatique en arrière-plan.
 
-Implémenter les opérations suivantes dans un **adaptateur optionnel** remplaçable :
+## Usage local : ses dépôts privés, sans jeton dans le navigateur
 
-| Opération | Résultat attendu | Condition |
-| --- | --- | --- |
-| listAgents(scope) | identifiants, capacités, états permis | session autorisée |
-| getRuns(agentId) | historique autorisé, horodaté | permissions par périmètre |
-| requestRun(agentId, missionId) | identifiant d'exécution / erreur | permission explicite |
-| requestCancel(runId) | statut réel d'annulation, pas une simple animation | permission et retour du service |
-| listReviewQueue(scope) | sorties en attente, sources, niveau de risque | contrôle d'accès serveur |
-| submitReview(reviewId, decision) | décision auditée et retour du serveur | revue humaine authentifiée |
+Node.js récent installé sur l'ordinateur, puis depuis experiments/konton-control :
 
-**Ne pas connecter ce prototype tel quel à des services externes.** Avant tout connecteur : authentification et rôles côté serveur, séparation réelle des espaces et des bases de données, actions à privilèges en liste blanche, prévention des commandes répétées, secrets côté serveur, provenance des résultats, gestion des erreurs, traces durables, tests de sécurité et d'accessibilité.
+~~~sh
+export GH_TOKEN="$(gh auth token)"
+export KONTON_CONTROL_REPOS="zoutiFrutti/Interstice,mon-compte/mon-depot-prive"
+node local-server.cjs
+~~~
 
-Le moteur d'agents pourrait être local/auto-hébergé ; les API IA commerciales devraient rester facultatives, contrôlées et remplaçables. Les ateliers ChatGPT actuels ne sont pas présumés pilotables directement.
+Ouvrir ensuite http://127.0.0.1:8765/
 
-## Suite du chantier
+La variable KONTON_CONTROL_REPOS **est une liste d'autorisation côté serveur**, à adapter avant l'utilisation. Seuls les noms qui y figurent sont consultables. Si GH_TOKEN n'est pas disponible, le serveur peut seulement lire les dépôts publics ; les dépôts privés renverront une erreur. La commande gh auth token nécessite une session GitHub CLI existante. Ne jamais copier-coller le jeton dans un formulaire web, un fichier versionné, une capture d'écran ou une conversation.
 
-1. Faire relire l'ergonomie V0 sur mobile et ordinateur ; ne pas fusionner automatiquement.
-2. Ajouter tests d'interactions et simulateur de réponses d'adaptateur distinct de l'interface.
-3. Définir un service local d'orchestration multi-agents, puis l'authentification et les autorisations réelles.
-4. Brancher une seule source de statut autorisée en lecture seule, avant toute action distante.
-5. Adapter la même interface au boîtier physique (écran, molette, GO/STOP).
+**Précautions :**
+
+- Le serveur est lié exclusivement à 127.0.0.1 et contrôle Host, Origin et Fetch Metadata ; il n'ajoute aucun en-tête CORS autorisant des sites externes.
+- L'interface statique ne reçoit jamais le jeton, qui reste en mémoire du processus local.
+- La passerelle n'autorise que GET, sur trois endpoints GitHub REST prédéfinis, pour les dépôts figurant dans la liste blanche.
+- Réponses sans cache navigateur, cache mémoire côté serveur court (90 secondes), aucune écriture sur disque ni journalisation de contenus privés.
+- Les informations de dépôts privés ne doivent pas être recopiées dans le site Interstice public ou dans des rapports accessibles publiquement.
+- L'exposition locale est adaptée à un prototype monoposte, **pas à un serveur multicomptes ou à un hébergement public**. Une véritable interface mutualisée nécessitera authentification, gestion des rôles, isolation des organisations, journal d'audit, tests de sécurité et backend dédié.
+
+## Ce qui est effectivement connecté
+
+| Fonction | Statut |
+| --- | --- |
+| Sélection d'un agent, GO, STOP, relecture | Simulation, en mémoire de l'onglet |
+| Métadonnées du dépôt public Interstice | Lecture GitHub réelle en mode web |
+| PR ouvertes et exécutions GitHub Actions | Lecture réelle, limitée aux premières réponses |
+| Dépôts privés configurés par une personne authentifiée | Via passerelle locale, quand le jeton est présent |
+| Démarrage/annulation de GitHub Actions, merge, publication | **Désactivés** |
+| Collecte WhatsApp, KONTON Bridge, Supabase | **Aucun accès** |
+| Interaction directe avec les conversations ChatGPT | **Aucun accès** |
+
+## Exécuter les tests
+
+Depuis experiments/konton-control :
+
+~~~sh
+node test.cjs
+node test-github.cjs
+~~~
+
+Les tests vérifient les transitions locales et l'affichage read-only avec réponses API simulées. La lecture effective chez GitHub dépend d'une connexion internet et des permissions ; le test navigateur mobile et les outils d'accessibilité restent à faire.
+
+## Suite de la roadmap
+
+1. Relecture du rendu réel, largeur 390 px et bureau, puis navigation clavier/lecteur d'écran.
+2. Adapter la même lecture de statuts au cockpit sans exposer d'identifiants privés dans du code public.
+3. Définir des **tâches exécutables** et **des permissions côté serveur** avant tout vrai GO/STOP.
+4. Après validation humaine explicite, introduire un moteur d'orchestration local indépendant, puis un boîtier physique.
+5. Garder personnels / communs réellement séparés côté backend ; le filtre visuel de la démo ne vaut pas contrôle d'accès.
+
+Le manifeste V2.5 de La Faille noire et la charte sont des références éditoriales **non adoptées collectivement**. L'observatoire n'implique aucune adoption, validation juridique ou publication.
