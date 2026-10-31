@@ -1,0 +1,1634 @@
+{
+  "schema": "interstice_bibliographies_pages_2026-10-31",
+  "date": "2026-10-31",
+  "status": "CANDIDAT_A_RELIRE_SANS_EDITION_DES_PAGES_MAIN",
+  "relation": "Pages wiki existantes main, relecture des 71 FN précédemment réalisée, aucune relecture exhaustive de chaque page dans cette passe",
+  "duplicate_policy": {
+    "FN-048": "FN-022",
+    "FN-057": "FN-038"
+  },
+  "references_to_legal_dossiers": [
+    "coordination/mediatheque/DROIT-001_BIBLIO_MANIFESTATIONS_CONTROLES_GAV_2026-10-31.md",
+    "coordination/mediatheque/DROIT-002_BIBLIO_LOGEMENT_EXPULSIONS_AIDES_2026-10-31.md"
+  ],
+  "pages": [
+    {
+      "page": "wiki-politique-institutions-regimes.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-politique-institutions-regimes.html",
+      "topic": "Politiques, institutions, contestation et rapports de pouvoir",
+      "suggested_references": [
+        {
+          "id": "FN-001",
+          "title": "Discours de la servitude volontaire",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-001. Discours de la servitude volontaire — Étienne de La Boétie ; première publication posthume 1574 (extrait), 1576 traditionnellement cité ; édition utilisée 1922 établie par Paul Bonnefon.",
+          "url": "https://fr.wikisource.org/wiki/Discours_de_la_servitude_volontaire/%C3%89dition_1922/Discours",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-003",
+          "title": "Qu’est-ce que la propriété ?",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-003. Qu’est-ce que la propriété ? — Pierre-Joseph Proudhon, 1840 (édition de 1849 consultée).",
+          "url": "https://fr.wikisource.org/wiki/Qu%E2%80%99est_ce_que_la_propri%C3%A9t%C3%A9_%3F",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-007",
+          "title": "Déclaration des droits de la femme et de la citoyenne",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-007 — Déclaration des droits de la femme et de la citoyenne ; Olympe de Gouges, 1791 ; déclaration politique, français ; piliers 8 et 1. Met en évidence l'exclusion politique des femmes au sein d'un universalisme révolutionnaire proclamé. Apport :",
+          "url": "https://fr.wikisource.org/wiki/D%C3%A9claration_des_droits_de_la_femme_et_de_la_citoyenne",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-008",
+          "title": "The Souls of Black Folk",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-008 — The Souls of Black Folk ; W. E. B. Du Bois, 1903, deuxième édition 1903 ; essais et récits, anglais ; piliers 8 et 1. Analyse racisme, ségrégation et expériences vécues afro-américaines au tournant du XXe siècle. Apport : contrepoint aux tra",
+          "url": "https://en.wikisource.org/wiki/The_Souls_of_Black_Folk_(2nd_ed)",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-021",
+          "title": "Dieu et l’État",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-021 — Dieu et l'État ; Mikhaïl Bakounine ; publication posthume 1882, édition française 1892 avec préfaces de Carlo Cafiero et Élisée Reclus ; essai politique et philosophique, français ; piliers de travail 6 (autogestion et fédéralisme libertaire",
+          "url": "https://fr.wikisource.org/wiki/Dieu_et_l%E2%80%99%C3%89tat_%281892%29",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-060",
+          "title": "Freedom or Fairness? (Mimi & Eunice, bande n°456)",
+          "author": "Nina Paley",
+          "edition": "12 septembre 2011 ; comic strip de trois cases, anglais",
+          "url": "https://mimiandeunice.com/2011/09/12/freedom-or-fairness/",
+          "rights": "CC BY-SA 3.0 annoncé dans le catalogue ; licence propre du strip non attestée sur la page ouverte",
+          "review_status": "CANDIDAT_LIEN_DROITS_A_CONFIRMER",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-06",
+          "title": "Environmental Justice Primer for Ports — Timeline of American Environmental Justice Movement",
+          "author": "US Environmental Protection Agency",
+          "edition": "chronologie institutionnelle archivée en janvier 2021 ; épisode Warren County 1982",
+          "url": "https://19january2021snapshot.epa.gov/community-port-collaboration/environmental-justice-primer-ports-appendix-timeline-american_.html",
+          "rights": "document administratif EPA archivé ; droits de reproduction des éléments tiers à vérifier",
+          "reading": "chronologie administrative consultée ; procès/archives des mobilisations non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Texte historique et satire ne décrivent pas le fonctionnement contemporain des institutions ; vérifier datation de l'édition."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-capitalisme-classes-travail.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-capitalisme-classes-travail.html",
+      "topic": "Classes, économie, travail et conditions matérielles",
+      "suggested_references": [
+        {
+          "id": "FN-002",
+          "title": "La Conquête du pain",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-002. La Conquête du pain — Pierre Kropotkine, 1892 (édition consultée).",
+          "url": "https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain/Texte_entier",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-003",
+          "title": "Qu’est-ce que la propriété ?",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-003. Qu’est-ce que la propriété ? — Pierre-Joseph Proudhon, 1840 (édition de 1849 consultée).",
+          "url": "https://fr.wikisource.org/wiki/Qu%E2%80%99est_ce_que_la_propri%C3%A9t%C3%A9_%3F",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-009",
+          "title": "The Tyranny of Structurelessness",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-009 — The Tyranny of Structurelessness ; Jo Freeman (Joreen), 1972 ; essai féministe critique, anglais ; piliers 6 et 8. Interroge la formation de hiérarchies informelles dans les collectifs dépourvus de structures explicites. Apport : examen cont",
+          "url": "https://theanarchistlibrary.org/library/quiet-rumours",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-013",
+          "title": "This Land Is Our Land",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-013. This Land Is Our Land: The Fight to Reclaim the Commons ; Jeremy Earp et Sut Jhally, 2010, documentaire, anglais, 47 minutes. Piliers 3, 5 et 7. À partir des arguments de David Bollier, explique les tensions entre privatisation de ressources ",
+          "url": "https://www.filmsforaction.org/watch/this-land-is-our-land-the-fight-to-reclaim-the-commons/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-056",
+          "title": "Limitações... cooperativas rurais do Vale do Arinos",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-056 — Limitações no processo de desenvolvimento e manutenção de cooperativas rurais do Vale do Arinos, Mato Grosso ; Vanderleia Saleti Mantovani, Ademir Kleber Morbeck de Oliveira, José Antônio Maior Bono ; 25 octobre 2022 ; article de recherche, ",
+          "url": "https://interacoes.ucdb.br/interacoes/article/view/3049",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-067",
+          "title": "Tejid@s Junt@s / Stitched Together",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-067 — Tejid@s Junt@s / Stitched Together: Workers, Students, and the Movement for Alta Gracia.",
+          "url": "https://commons.wikimedia.org/wiki/File:TejidXs_JuntXs.ogv",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-10",
+          "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+          "author": "Elinor Ostrom",
+          "edition": "Cambridge University Press, 1990, 280 p., édition anglophone",
+          "url": "https://www.cambridge.org/core/books/governing-the-commons/A8BB63BC4A1433A50A3FB92EDBBB97D5",
+          "rights": "ouvrage moderne protégé ; accès aperçu/notice ne vaut pas licence ouverte",
+          "reading": "notice et résumé éditeur lus ; chapitres non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-20",
+          "title": "Convention (n° 184) sur la sécurité et la santé dans l'agriculture",
+          "author": "Organisation internationale du travail",
+          "edition": "convention internationale adoptée le 21 juin 2001, entrée en vigueur 20 septembre 2003",
+          "url": "https://www.ilo.org/resource/other/c184-safety-and-health-agriculture-convention-2001",
+          "rights": "texte officiel accessible, droit de réemploi des pages et traductions OIT à vérifier",
+          "reading": "texte normatif de l'OIT consulté par sections, applications nationales non vérifiées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Distinction de la théorie, des expériences coopératives et des normes internationales."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "topic": "Histoire des socialismes, anarchismes et de l'autogestion",
+      "suggested_references": [
+        {
+          "id": "FN-002",
+          "title": "La Conquête du pain",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-002. La Conquête du pain — Pierre Kropotkine, 1892 (édition consultée).",
+          "url": "https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain/Texte_entier",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-004",
+          "title": "L’Entraide, un facteur de l’évolution",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-004 — L'Entraide, un facteur de l'évolution ; Pierre Kropotkine, 1902 ; traduction Louise Guieysse-Bréal, 1906 ; essai, français ; piliers 2, 5 et 6. Observe les coopérations chez des animaux et dans des sociétés humaines, comme réponse aux récits",
+          "url": "https://fr.wikisource.org/wiki/L%27entraide,_un_facteur_de_l%27%C3%A9volution/Introduction",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-009",
+          "title": "The Tyranny of Structurelessness",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-009 — The Tyranny of Structurelessness ; Jo Freeman (Joreen), 1972 ; essai féministe critique, anglais ; piliers 6 et 8. Interroge la formation de hiérarchies informelles dans les collectifs dépourvus de structures explicites. Apport : examen cont",
+          "url": "https://theanarchistlibrary.org/library/quiet-rumours",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-019",
+          "title": "Consensus Decision Making",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-019 — Consensus Decision Making, Seeds for Change, seconde édition 2020, guide collectif en anglais. Pilier 6. Expose consensus, objections, facilitation et dynamiques de groupe. Apport : pratique et limites d'une gouvernance horizontale. Accès ht",
+          "url": "https://seedsforchange.org.uk/downloads/consensus.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-021",
+          "title": "Dieu et l’État",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-021 — Dieu et l'État ; Mikhaïl Bakounine ; publication posthume 1882, édition française 1892 avec préfaces de Carlo Cafiero et Élisée Reclus ; essai politique et philosophique, français ; piliers de travail 6 (autogestion et fédéralisme libertaire",
+          "url": "https://fr.wikisource.org/wiki/Dieu_et_l%E2%80%99%C3%89tat_%281892%29",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-045",
+          "title": "Déclaration au peuple français",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-045 — Déclaration au peuple français, Commune de Paris, 19 avril 1871. Type : programme politique primaire, français ; pilier 6 Autogestion et fédéralisme libertaire, pilier 5 autonomie territoriale. Propose autonomie des communes et coordination ",
+          "url": "https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/commune-1871-ephemeride/1209-commune-1871-ephemeride-19-avril-la-declaration-au-peuple-francais",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-046",
+          "title": "Appels et statuts de l’Union des femmes",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-046 — Appels et statuts de l'Union des femmes pour la défense de Paris et les soins aux blessés (avril-mai 1871), organisation impulsée notamment par Nathalie Le Mel et Élisabeth Dmitrieff. Type : textes organisationnels, français ; piliers 8, 3 e",
+          "url": "https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/1643-lunion-des-femmes-pour-la-defense-de-paris-et-les-soins-aux-blesses",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-059",
+          "title": "Together: The Documentary on Coop Resilience",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-059 — Together: The Documentary on Coop Resilience ; CECOP (organisme éditeur et producteur institutionnel annoncé), 2012 (mise en ligne sur la page actuelle datée du 14 juin 2021) ; documentaire de témoignages ; langues originales diverses, sous-",
+          "url": "https://cecop.coop/works/together-the-documentary-on-coop-resilience",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-07",
+          "title": "L’Homme et la Nature — De l’action humaine sur la géographie physique",
+          "author": "Élisée Reclus",
+          "edition": "Revue des Deux Mondes, 2e période, tome 54, 1864, p. 762-771 ; édition transcrite Wikisource",
+          "url": "https://fr.wikisource.org/wiki/L%E2%80%99Homme_et_la_Nature_-_De_l%E2%80%99action_humaine_sur_la_g%C3%A9ographie_physique",
+          "rights": "œuvre domaine public France ; édition web, notes et photographies à distinguer",
+          "reading": "texte historique lu par sections dans transcription moderne, exemplaire 1864 non collationné",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-08",
+          "title": "Ecology and Revolutionary Thought",
+          "author": "Murray Bookchin (Lewis Herber)",
+          "edition": "Comment, 1964 ; version HTML du site d'archives Bookchin",
+          "url": "https://murraybookchin.org/essays/ecology-and-revolutionary-thought/",
+          "rights": "œuvre protégée (Bookchin mort 2006), reproduction/traduction non autorisées sans vérification",
+          "reading": "texte primaire disponible et parcouru par sections ; fac-similé de Comment non collationné",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-10",
+          "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+          "author": "Elinor Ostrom",
+          "edition": "Cambridge University Press, 1990, 280 p., édition anglophone",
+          "url": "https://www.cambridge.org/core/books/governing-the-commons/A8BB63BC4A1433A50A3FB92EDBBB97D5",
+          "rights": "ouvrage moderne protégé ; accès aperçu/notice ne vaut pas licence ouverte",
+          "reading": "notice et résumé éditeur lus ; chapitres non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Les textes normatifs et manifestes ne prouvent pas leur application ; attention aux régimes historiques distincts."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-decision-collective.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-decision-collective.html",
+      "topic": "Délibération, consensus et pouvoir informel",
+      "suggested_references": [
+        {
+          "id": "FN-009",
+          "title": "The Tyranny of Structurelessness",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-009 — The Tyranny of Structurelessness ; Jo Freeman (Joreen), 1972 ; essai féministe critique, anglais ; piliers 6 et 8. Interroge la formation de hiérarchies informelles dans les collectifs dépourvus de structures explicites. Apport : examen cont",
+          "url": "https://theanarchistlibrary.org/library/quiet-rumours",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-019",
+          "title": "Consensus Decision Making",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-019 — Consensus Decision Making, Seeds for Change, seconde édition 2020, guide collectif en anglais. Pilier 6. Expose consensus, objections, facilitation et dynamiques de groupe. Apport : pratique et limites d'une gouvernance horizontale. Accès ht",
+          "url": "https://seedsforchange.org.uk/downloads/consensus.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-020",
+          "title": "Online Decision Making",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-020 — Online Decision Making, Seeds for Change, seconde édition 2023, guide en anglais. Piliers 6 et 7. Décisions démocratiques à distance, accès des membres, limites d'outils numériques. Accès https://www.seedsforchange.org.uk/downloads/onlinedec",
+          "url": "https://www.seedsforchange.org.uk/downloads/onlinedecisions.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-038",
+          "title": "Principes féministes de l’internet 2.0",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-038 — Principes féministes de l’internet, version 2.0 / Feminist Principles of the Internet 2.0 ; collectif de militantes et de personnes engagées dans les droits sexuels et numériques, coordination Association for Progressive Communications (APC)",
+          "url": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-060",
+          "title": "Freedom or Fairness? (Mimi & Eunice, bande n°456)",
+          "author": "Nina Paley",
+          "edition": "12 septembre 2011 ; comic strip de trois cases, anglais",
+          "url": "https://mimiandeunice.com/2011/09/12/freedom-or-fairness/",
+          "rights": "CC BY-SA 3.0 annoncé dans le catalogue ; licence propre du strip non attestée sur la page ouverte",
+          "review_status": "CANDIDAT_LIEN_DROITS_A_CONFIRMER",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-10",
+          "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+          "author": "Elinor Ostrom",
+          "edition": "Cambridge University Press, 1990, 280 p., édition anglophone",
+          "url": "https://www.cambridge.org/core/books/governing-the-commons/A8BB63BC4A1433A50A3FB92EDBBB97D5",
+          "rights": "ouvrage moderne protégé ; accès aperçu/notice ne vaut pas licence ouverte",
+          "reading": "notice et résumé éditeur lus ; chapitres non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Éviter de réduire le pouvoir à un nombre de votes, vérifier accès aux décisions et pouvoir informel."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-association-collegiale.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-association-collegiale.html",
+      "topic": "Association et démocratie de fonctionnement",
+      "suggested_references": [
+        {
+          "id": "FN-009",
+          "title": "The Tyranny of Structurelessness",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-009 — The Tyranny of Structurelessness ; Jo Freeman (Joreen), 1972 ; essai féministe critique, anglais ; piliers 6 et 8. Interroge la formation de hiérarchies informelles dans les collectifs dépourvus de structures explicites. Apport : examen cont",
+          "url": "https://theanarchistlibrary.org/library/quiet-rumours",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-019",
+          "title": "Consensus Decision Making",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-019 — Consensus Decision Making, Seeds for Change, seconde édition 2020, guide collectif en anglais. Pilier 6. Expose consensus, objections, facilitation et dynamiques de groupe. Apport : pratique et limites d'une gouvernance horizontale. Accès ht",
+          "url": "https://seedsforchange.org.uk/downloads/consensus.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-020",
+          "title": "Online Decision Making",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-020 — Online Decision Making, Seeds for Change, seconde édition 2023, guide en anglais. Piliers 6 et 7. Décisions démocratiques à distance, accès des membres, limites d'outils numériques. Accès https://www.seedsforchange.org.uk/downloads/onlinedec",
+          "url": "https://www.seedsforchange.org.uk/downloads/onlinedecisions.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-059",
+          "title": "Together: The Documentary on Coop Resilience",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-059 — Together: The Documentary on Coop Resilience ; CECOP (organisme éditeur et producteur institutionnel annoncé), 2012 (mise en ligne sur la page actuelle datée du 14 juin 2021) ; documentaire de témoignages ; langues originales diverses, sous-",
+          "url": "https://cecop.coop/works/together-the-documentary-on-coop-resilience",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-10",
+          "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+          "author": "Elinor Ostrom",
+          "edition": "Cambridge University Press, 1990, 280 p., édition anglophone",
+          "url": "https://www.cambridge.org/core/books/governing-the-commons/A8BB63BC4A1433A50A3FB92EDBBB97D5",
+          "rights": "ouvrage moderne protégé ; accès aperçu/notice ne vaut pas licence ouverte",
+          "reading": "notice et résumé éditeur lus ; chapitres non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Pratiques associatives et règles en vigueur nécessitent avis juridique daté, pas de conseil automatisé."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-logement-habitat-droit-ville.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-logement-habitat-droit-ville.html",
+      "topic": "Logement, urbanisation, communs urbains, accès aux droits",
+      "suggested_references": [
+        {
+          "id": "FN-003",
+          "title": "Qu’est-ce que la propriété ?",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-003. Qu’est-ce que la propriété ? — Pierre-Joseph Proudhon, 1840 (édition de 1849 consultée).",
+          "url": "https://fr.wikisource.org/wiki/Qu%E2%80%99est_ce_que_la_propri%C3%A9t%C3%A9_%3F",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-013",
+          "title": "This Land Is Our Land",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-013. This Land Is Our Land: The Fight to Reclaim the Commons ; Jeremy Earp et Sut Jhally, 2010, documentaire, anglais, 47 minutes. Piliers 3, 5 et 7. À partir des arguments de David Bollier, explique les tensions entre privatisation de ressources ",
+          "url": "https://www.filmsforaction.org/watch/this-land-is-our-land-the-fight-to-reclaim-the-commons/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-025",
+          "title": "Women at work – Chatpatit",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-025 — Women at work - Chatpatit. Auteur/créateur crédité : Lek Ladki Abhiyan (Satara, Inde), en collaboration documentaire avec CIS-A2K selon la notice. Date : 8 mars 2021. Format : portrait documentaire court, vidéo WebM, 5 min 25 s. Langue parlé",
+          "url": "https://commons.wikimedia.org/wiki/File:Women_at_work_-_Chatpatit.webm",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-035",
+          "title": "Women and Economics",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-035 — Women and Economics: A Study of the Economic Relation Between Men and Women as a Factor in Social Evolution ; Charlotte Perkins Gilman ; 1898 ; livre d'essai féministe économique, anglais ; piliers 3 (Autonomie matérielle et économique), 8 (",
+          "url": "https://digital.library.upenn.edu/women/gilman/economics/economics.html",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-068",
+          "title": "Nous sommes partout — sauvegarde n°1 / Suisse romande",
+          "author": "Collectif Nous sommes partout, témoignages nommés et anonymes",
+          "edition": "2021 ; recueil éditorial Abrüpt, 648 p. pour imprimé ; base web multilingue",
+          "url": "https://www.noussommespartout.org/",
+          "rights": "CC BY-NC-SA 4.0 annoncée pour textes ; licence MIT du code du site distincte ; pas de copie",
+          "review_status": "CANDIDAT_LIEN_PROTEGE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-04",
+          "title": "1971-1981 — Le Larzac militant",
+          "author": "Larzac.org, récit collectif territorial",
+          "edition": "chronique web non datée ; lutte 1971-1981",
+          "url": "https://larzac.org/accueil/une-histoire-singuliere/le-larzac-militant/1971-1981/",
+          "rights": "texte et photos du site protégés ; licence libre non établie",
+          "reading": "récit rétrospectif lu sur page, archives originales des comités non consultées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-10",
+          "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+          "author": "Elinor Ostrom",
+          "edition": "Cambridge University Press, 1990, 280 p., édition anglophone",
+          "url": "https://www.cambridge.org/core/books/governing-the-commons/A8BB63BC4A1433A50A3FB92EDBBB97D5",
+          "rights": "ouvrage moderne protégé ; accès aperçu/notice ne vaut pas licence ouverte",
+          "reading": "notice et résumé éditeur lus ; chapitres non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Littérature politique ≠ droit positif ; renvoi séparé vers DROIT-002, lois et territoires à actualiser."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-sante-psychiatrie-autonomie-soins.html",
+      "topic": "Santé, soins et solidarités",
+      "suggested_references": [
+        {
+          "id": "FN-055",
+          "title": "Introduction to Women, Gender, Sexuality Studies",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-055 — Introduction to Women, Gender, Sexuality Studies ; Miliann Kang, Donovan Lessard, Laura Heston, Sonny Nordmarken ; 30 juin 2017 ; manuel universitaire libre, texte en ligne et EPUB/PDF ; anglais ; piliers 8 et 1, renvoi 3.",
+          "url": "https://openbooks.library.umass.edu/introwgss/",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-058",
+          "title": "10 Principles of Disability Justice",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-058 — 10 Principles of Disability Justice / Dix principes de justice du handicap ; collectif Sins Invalid, cadre développé notamment avec Patty Berne ; première version citée septembre 2015 par la bibliographie officielle Sins Invalid, page actuel",
+          "url": "https://sinsinvalid.org/10-principles/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-066",
+          "title": "State of the Commons 2022",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-066 — State of the Commons 2022 ; Creative Commons (éditeur collectif) ; 2023 ; rapport annuel illustré de 14 pages, anglais ; piliers V2.5 : 7 Savoirs libres, médiathèque et autonomie technologique ; 4 Culture, création et mémoires libres ; 5 Éco",
+          "url": "https://creativecommons.org/wp-content/uploads/2023/04/State-of-the-Commons-2022-for-Digital-Sharing-1.0.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-068",
+          "title": "Nous sommes partout — sauvegarde n°1 / Suisse romande",
+          "author": "Collectif Nous sommes partout, témoignages nommés et anonymes",
+          "edition": "2021 ; recueil éditorial Abrüpt, 648 p. pour imprimé ; base web multilingue",
+          "url": "https://www.noussommespartout.org/",
+          "rights": "CC BY-NC-SA 4.0 annoncée pour textes ; licence MIT du code du site distincte ; pas de copie",
+          "review_status": "CANDIDAT_LIEN_PROTEGE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-01",
+          "title": "Silent Spring",
+          "author": "Rachel Carson",
+          "edition": "1962 ; édition américaine Houghton Mifflin ; exemplaire Smithsonian",
+          "url": "https://www.si.edu/object/untitled:nmah_1453548",
+          "rights": "protégé ; métadonnées Smithsonian CC0, image et texte du livre soumis à droits",
+          "reading": "notice muséale consultée ; livre non lu",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-17",
+          "title": "Vegans, vegetarians, fish-eaters and meat-eaters in the UK show discrepant environmental impacts",
+          "author": "Peter Scarborough, Michael Clark et collègues",
+          "edition": "Nature Food 4, 565-574, 20 juillet 2023, DOI 10.1038/s43016-023-00795-w",
+          "url": "https://www.nature.com/articles/s43016-023-00795-w",
+          "rights": "article en accès ouvert CC BY 4.0, éléments tiers parfois exclus",
+          "reading": "résumé, méthodes et informations de droits parcourus ; annexes non dépouillées intégralement",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-20",
+          "title": "Convention (n° 184) sur la sécurité et la santé dans l'agriculture",
+          "author": "Organisation internationale du travail",
+          "edition": "convention internationale adoptée le 21 juin 2001, entrée en vigueur 20 septembre 2003",
+          "url": "https://www.ilo.org/resource/other/c184-safety-and-health-agriculture-convention-2001",
+          "rights": "texte officiel accessible, droit de réemploi des pages et traductions OIT à vérifier",
+          "reading": "texte normatif de l'OIT consulté par sections, applications nationales non vérifiées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Sources culturelles illustratives, non guides de traitement ; distinguer travaux scientifiques et droits des personnes."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-handicap-validisme-neurodiversite.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-handicap-validisme-neurodiversite.html",
+      "topic": "Handicap, validisme et accès au savoir",
+      "suggested_references": [
+        {
+          "id": "FN-042",
+          "title": "Life Among the Piutes",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-042 — Life Among the Piutes: Their Wrongs and Claims ; Sarah Winnemucca Hopkins (v.1844–1891), édité par Mary Tyler Peabody Mann ; 1883 ; récit autobiographique et plaidoyer historique ; anglais ; piliers officiels 8 « Égalité réelle, diversité et",
+          "url": "https://en.wikisource.org/wiki/Life_Among_the_Piutes",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-054",
+          "title": "Pulling Together",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-054 — Pulling Together: A Guide for Curriculum Developers ; Asma-na-hi Antoine, Rachel Mason, Roberta Mason, Sophia Palahicky et Carmen Rodriguez de France ; BCcampus, 2018 ; guide de formation / pédagogie décoloniale ; anglais ; piliers 1 et 8, r",
+          "url": "https://opentextbc.ca/indigenizationcurriculumdevelopers/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-055",
+          "title": "Introduction to Women, Gender, Sexuality Studies",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-055 — Introduction to Women, Gender, Sexuality Studies ; Miliann Kang, Donovan Lessard, Laura Heston, Sonny Nordmarken ; 30 juin 2017 ; manuel universitaire libre, texte en ligne et EPUB/PDF ; anglais ; piliers 8 et 1, renvoi 3.",
+          "url": "https://openbooks.library.umass.edu/introwgss/",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-061",
+          "title": "Traditional Knowledge/Biocultural Labels: Usage and Style Guide",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-061 — Traditional Knowledge/Biocultural Labels: Usage and Style Guide ; Local Contexts (collectif/organisme éditeur) ; mise à jour du 14 août 2023 ; guide PDF, 3 pages ; anglais ; piliers 7 (savoirs et autonomie technologique), 8 (égalité), 4 (mém",
+          "url": "https://localcontexts.org/wp-content/uploads/2023/08/TK-and-BC-Labels-Usage-and-Style-Guide.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-062",
+          "title": "Little Bear's Day / Un jour avec Petit Ours",
+          "author": "Caylie Gnyra ; contributions de traduction distinctes",
+          "edition": "Première parution non établie ; album jeunesse multilingue cri des Plaines / anglais / français ; adaptation haïda datée 2018",
+          "url": "https://indigenousstorybooks.ca/stories/crk/0002/",
+          "rights": "CC BY-NC-SA 3.0 annoncée sur page existante, licence non libre au sens NC ; droits des versions distincts",
+          "review_status": "A_RETESTER_LIEN",
+          "type": "notice_FN_existante"
+        }
+      ],
+      "critical_notes": [
+        "La sélection est un appui pédagogique, non une bibliographie médicale ; accessibilité et sources spécialisées manquent."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-justice-prisons-abolitionnisme.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-justice-prisons-abolitionnisme.html",
+      "topic": "Justice, police, droits et abolitionnisme",
+      "suggested_references": [
+        {
+          "id": "FN-001",
+          "title": "Discours de la servitude volontaire",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-001. Discours de la servitude volontaire — Étienne de La Boétie ; première publication posthume 1574 (extrait), 1576 traditionnellement cité ; édition utilisée 1922 établie par Paul Bonnefon.",
+          "url": "https://fr.wikisource.org/wiki/Discours_de_la_servitude_volontaire/%C3%89dition_1922/Discours",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-007",
+          "title": "Déclaration des droits de la femme et de la citoyenne",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-007 — Déclaration des droits de la femme et de la citoyenne ; Olympe de Gouges, 1791 ; déclaration politique, français ; piliers 8 et 1. Met en évidence l'exclusion politique des femmes au sein d'un universalisme révolutionnaire proclamé. Apport :",
+          "url": "https://fr.wikisource.org/wiki/D%C3%A9claration_des_droits_de_la_femme_et_de_la_citoyenne",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-038",
+          "title": "Principes féministes de l’internet 2.0",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-038 — Principes féministes de l’internet, version 2.0 / Feminist Principles of the Internet 2.0 ; collectif de militantes et de personnes engagées dans les droits sexuels et numériques, coordination Association for Progressive Communications (APC)",
+          "url": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-063",
+          "title": "Data Feminism",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-063 — Data Feminism. Autrices : Catherine D'Ignazio et Lauren F. Klein. Année : 2020 (édition électronique MIT Press 21 février ; imprimée 10 mars). Type : ouvrage critique, sciences sociales et éthique des données, 328 pages dans l'édition MIT Pr",
+          "url": "https://data-feminism.mitpress.mit.edu/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-068",
+          "title": "Nous sommes partout — sauvegarde n°1 / Suisse romande",
+          "author": "Collectif Nous sommes partout, témoignages nommés et anonymes",
+          "edition": "2021 ; recueil éditorial Abrüpt, 648 p. pour imprimé ; base web multilingue",
+          "url": "https://www.noussommespartout.org/",
+          "rights": "CC BY-NC-SA 4.0 annoncée pour textes ; licence MIT du code du site distincte ; pas de copie",
+          "review_status": "CANDIDAT_LIEN_PROTEGE",
+          "type": "notice_FN_existante"
+        }
+      ],
+      "critical_notes": [
+        "Articuler DROIT-001 ; pratiques policières et droit pénal évoluent, aucun conseil juridique individuel."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-liberte-numerique-ia-surveillance.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-liberte-numerique-ia-surveillance.html",
+      "topic": "Numérique, surveillance, gouvernance du savoir",
+      "suggested_references": [
+        {
+          "id": "FN-006",
+          "title": "Bound by Law?",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-006 — Bound by Law? Tales from the Public Domain ; Keith Aoki, James Boyle, Jennifer Jenkins, 2006 ; bande dessinée documentaire, anglais ; piliers 4 et 7. Une mise en scène illustrée des obstacles juridiques que rencontre une personne réalisant u",
+          "url": "https://wiki.creativecommons.org/wiki/Bound_By_Law%3F",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-020",
+          "title": "Online Decision Making",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-020 — Online Decision Making, Seeds for Change, seconde édition 2023, guide en anglais. Piliers 6 et 7. Décisions démocratiques à distance, accès des membres, limites d'outils numériques. Accès https://www.seedsforchange.org.uk/downloads/onlinedec",
+          "url": "https://www.seedsforchange.org.uk/downloads/onlinedecisions.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-028",
+          "title": "Comixplain: Attribute Types (FR)",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-028 — Comixplain, « Attribute Types » (édition française). Scénario : Victor De-Jesus-Oliveira ; dessin : Magdalena Boucher ; projet collectif de la University of Applied Sciences St. Pölten (Autriche). Première diffusion des éditions Comixplain :",
+          "url": "https://www.comixplain.cc/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-037",
+          "title": "CARE Principles for Indigenous Data Governance",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-037 — The CARE Principles for Indigenous Data Governance ; Stephanie Russo Carroll, Ibrahim Garba, Oscar Figueroa-Rodríguez, Jarita Holbrook, Raymond Lovett, Simeon Materechera, Mark Parsons, Kay Raseroka, Desi Rodriguez-Lonebear, Robyn Rowe, Rodr",
+          "url": "https://www.gida-global.org/s/dsj-1158_carroll.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-038",
+          "title": "Principes féministes de l’internet 2.0",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-038 — Principes féministes de l’internet, version 2.0 / Feminist Principles of the Internet 2.0 ; collectif de militantes et de personnes engagées dans les droits sexuels et numériques, coordination Association for Progressive Communications (APC)",
+          "url": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-061",
+          "title": "Traditional Knowledge/Biocultural Labels: Usage and Style Guide",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-061 — Traditional Knowledge/Biocultural Labels: Usage and Style Guide ; Local Contexts (collectif/organisme éditeur) ; mise à jour du 14 août 2023 ; guide PDF, 3 pages ; anglais ; piliers 7 (savoirs et autonomie technologique), 8 (égalité), 4 (mém",
+          "url": "https://localcontexts.org/wp-content/uploads/2023/08/TK-and-BC-Labels-Usage-and-Style-Guide.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-065",
+          "title": "Recommandation sur une science ouverte",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-065 — Recommandation sur une science ouverte ; UNESCO, Conférence générale ; adoptée le 23 novembre 2021 ; recommandation normative internationale, texte français ; piliers V2.5 : 7 Savoirs libres, médiathèque et autonomie technologique ; 1 Éducat",
+          "url": "https://www.unesco.org/fr/legal-affairs/recommendation-open-science",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        }
+      ],
+      "critical_notes": [
+        "FN-057 renvoie à FN-038, pas de deuxième bibliographie pour la même œuvre. Ne pas confondre droits et sécurité technique."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-culture-creation-acces-art.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-culture-creation-acces-art.html",
+      "topic": "Culture, cinéma, BD et création ouverte",
+      "suggested_references": [
+        {
+          "id": "FN-005",
+          "title": "Sita Sings the Blues",
+          "author": "Nina Paley",
+          "edition": "2008 ; long métrage d’animation, 81 min 31 s sur le fichier Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Sita_Sings_the_Blues.webm",
+          "rights": "CC0 indiqué pour cette copie amputée de la bande-son protégée ; statut de l’œuvre sonore complète distinct",
+          "review_status": "VERSION_BLOQUEE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-006",
+          "title": "Bound by Law?",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-006 — Bound by Law? Tales from the Public Domain ; Keith Aoki, James Boyle, Jennifer Jenkins, 2006 ; bande dessinée documentaire, anglais ; piliers 4 et 7. Une mise en scène illustrée des obstacles juridiques que rencontre une personne réalisant u",
+          "url": "https://wiki.creativecommons.org/wiki/Bound_By_Law%3F",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-017",
+          "title": "Pepper&Carrot — épisode 26 : Les livres, c’est génial",
+          "author": "David Revoy ; crédits spécifiques de traduction sur la page",
+          "edition": "2018 ; bande dessinée web en français",
+          "url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
+          "rights": "CC BY 4.0 annoncée par l’éditeur/auteur ; conserver traduction et crédits",
+          "review_status": "CANDIDAT_LIEN_A_RELIRE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-018",
+          "title": "Pepper et Superflu",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "PASSE 5 : nouvelle BD vérifiée. Pepper et Superflu (David Revoy et Gee, 2022), français, BD, pilier culture libre. Page : https://www.peppercarrot.com/fr/webcomic-misc/2022-11-09_Pepper-and-Superflu.html . Licence CC BY-SA 4.0, fichiers sources dispo",
+          "url": "https://www.peppercarrot.com/fr/webcomic-misc/2022-11-09_Pepper-and-Superflu.html",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-040",
+          "title": "Elephants Dream",
+          "author": "Bassam Kurdali ; Orange Open Movie Team / Blender Foundation",
+          "edition": "2006 ; court-métrage 3D, anglais, fichier 10 min 58 s",
+          "url": "https://commons.wikimedia.org/wiki/File:Elephants_Dream_(2006).webm",
+          "rights": "CC BY 2.5 explicite sur la fiche Commons du fichier",
+          "review_status": "CANDIDAT_LIEN_A_RELIRE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-044",
+          "title": "Dulce",
+          "author": "Guille Isa et Angello Faccini ; Jungles in Paris / Conservation International",
+          "edition": "2018 ; court documentaire en espagnol, environ 10 min, Colombie",
+          "url": "https://vimeo.com/304173357",
+          "rights": "Droits réservés ; lecture de la page Vimeo n’équivaut pas à licence de projection, copie ou intégration",
+          "review_status": "CANDIDAT_LIEN_PROTEGE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-052",
+          "title": "Sintel",
+          "author": "Colin Levy ; Durian Open Movie Project / Blender Foundation",
+          "edition": "2010 ; animation 3D, anglais, 14 min 48 s sur fichier Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Sintel_movie_-_Blender_Fondation.ogv",
+          "rights": "CC BY 3.0 explicite sur la fiche Commons",
+          "review_status": "CANDIDAT_LIEN_A_RELIRE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-060",
+          "title": "Freedom or Fairness? (Mimi & Eunice, bande n°456)",
+          "author": "Nina Paley",
+          "edition": "12 septembre 2011 ; comic strip de trois cases, anglais",
+          "url": "https://mimiandeunice.com/2011/09/12/freedom-or-fairness/",
+          "rights": "CC BY-SA 3.0 annoncé dans le catalogue ; licence propre du strip non attestée sur la page ouverte",
+          "review_status": "CANDIDAT_LIEN_DROITS_A_CONFIRMER",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-068",
+          "title": "Nous sommes partout — sauvegarde n°1 / Suisse romande",
+          "author": "Collectif Nous sommes partout, témoignages nommés et anonymes",
+          "edition": "2021 ; recueil éditorial Abrüpt, 648 p. pour imprimé ; base web multilingue",
+          "url": "https://www.noussommespartout.org/",
+          "rights": "CC BY-NC-SA 4.0 annoncée pour textes ; licence MIT du code du site distincte ; pas de copie",
+          "review_status": "CANDIDAT_LIEN_PROTEGE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-11",
+          "title": "À propos du végétarisme",
+          "author": "Élisée Reclus",
+          "edition": "La Réforme alimentaire, vol. V n°3, mars 1901, p. 37-45 ; transcription moderne",
+          "url": "https://fr.anarchistlibraries.net/library/elisee-reclus-a-propos-du-vegetarisme",
+          "rights": "auteur décédé 1905, texte ancien du domaine public France ; interface/transcription sous règles propres",
+          "reading": "texte original consulté sous transcription, exemplaire papier non vérifié",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "FN-005 est bloquée comme film musical complet ; œuvres NC/ND/droits réservés en liens externes seulement."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-ecologie-sociale-environnement.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-ecologie-sociale-environnement.html",
+      "topic": "Écologie, climat, biodiversité et communs territoriaux",
+      "suggested_references": [
+        {
+          "id": "FN-002",
+          "title": "La Conquête du pain",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-002. La Conquête du pain — Pierre Kropotkine, 1892 (édition consultée).",
+          "url": "https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain/Texte_entier",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-024",
+          "title": "The Seedkeepers",
+          "author": "Indigenous Community Video Collective — NE India",
+          "edition": "2015 ; documentaire communautaire, 4 min 53 s, Nagaland, Inde",
+          "url": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm",
+          "rights": "CC BY 3.0 indiquée dans la notice existante ; droits liés aux savoirs et aux personnes distincts",
+          "review_status": "A_RETESTER_LIEN",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-034",
+          "title": "The Land of Little Rain",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-034 — The Land of Little Rain. Autrice : Mary Austin (1868-1934). Première publication : octobre 1903. Format : récits et essais de nature / écriture de territoire. Langue : anglais. Piliers : 5 — Écologie sociale et autonomie territoriale ; 4 — C",
+          "url": "https://www.gutenberg.org/files/365/365-h/365-h.htm",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-044",
+          "title": "Dulce",
+          "author": "Guille Isa et Angello Faccini ; Jungles in Paris / Conservation International",
+          "edition": "2018 ; court documentaire en espagnol, environ 10 min, Colombie",
+          "url": "https://vimeo.com/304173357",
+          "rights": "Droits réservés ; lecture de la page Vimeo n’équivaut pas à licence de projection, copie ou intégration",
+          "review_status": "CANDIDAT_LIEN_PROTEGE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-071",
+          "title": "Superheroes on the Move: A Comic on Sustainable Mobility",
+          "author": "Citizen consumer and civic Action Group (CAG)",
+          "edition": "2025 ; BD jeunesse pédagogique, anglais, Inde",
+          "url": "https://www.cag.org.in/database/superheroes-move-comic-sustainable-mobility",
+          "rights": "CC BY-SA 4.0 indiqué pour ressource, CC BY-NC-SA 4.0 pied de page générique ; édition PDF non examinée",
+          "review_status": "BLOQUE_SOURCE_DROITS",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-01",
+          "title": "Silent Spring",
+          "author": "Rachel Carson",
+          "edition": "1962 ; édition américaine Houghton Mifflin ; exemplaire Smithsonian",
+          "url": "https://www.si.edu/object/untitled:nmah_1453548",
+          "rights": "protégé ; métadonnées Smithsonian CC0, image et texte du livre soumis à droits",
+          "reading": "notice muséale consultée ; livre non lu",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-02",
+          "title": "How a tree-hugging protest transformed Indian environmentalism",
+          "author": "Seema Mundoli",
+          "edition": "26 mars 2024 ; commentaire Nature sur Chipko/Gaura Devi, événements 1973-1974",
+          "url": "https://www.nature.com/articles/d41586-024-00895-y",
+          "rights": "© Springer Nature, licence de réemploi de cette page non confirmée",
+          "reading": "commentaire consulté par sections ; archives orales non lues",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-03",
+          "title": "Our History — Green Belt Movement",
+          "author": "Green Belt Movement ; héritage Wangari Maathai",
+          "edition": "page historique institutionnelle actuelle ; mouvement créé en 1977",
+          "url": "https://www.greenbeltmovement.org/history/",
+          "rights": "© site/photographies et témoignages protégés, aucune licence libre vérifiée",
+          "reading": "rétrospective institutionnelle lue par sections ; sources de terrain non consultées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-04",
+          "title": "1971-1981 — Le Larzac militant",
+          "author": "Larzac.org, récit collectif territorial",
+          "edition": "chronique web non datée ; lutte 1971-1981",
+          "url": "https://larzac.org/accueil/une-histoire-singuliere/le-larzac-militant/1971-1981/",
+          "rights": "texte et photos du site protégés ; licence libre non établie",
+          "reading": "récit rétrospectif lu sur page, archives originales des comités non consultées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-05",
+          "title": "Contestation du projet de construction d'une centrale nucléaire à Plogoff",
+          "author": "Archives départementales du Finistère via FranceArchives ; producteur du fonds non identifié",
+          "edition": "1980-1981 ; notice de fonds 1 J 606",
+          "url": "https://francearchives.gouv.fr/fr/facomponent/7f28b7b83b405ff36a99e39b6dc5474e034692b9",
+          "rights": "description accessible ; droits et reproduction de chaque pièce non établis",
+          "reading": "instrument de recherche consulté ; pièces, tracts et photos non consultés",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-06",
+          "title": "Environmental Justice Primer for Ports — Timeline of American Environmental Justice Movement",
+          "author": "US Environmental Protection Agency",
+          "edition": "chronologie institutionnelle archivée en janvier 2021 ; épisode Warren County 1982",
+          "url": "https://19january2021snapshot.epa.gov/community-port-collaboration/environmental-justice-primer-ports-appendix-timeline-american_.html",
+          "rights": "document administratif EPA archivé ; droits de reproduction des éléments tiers à vérifier",
+          "reading": "chronologie administrative consultée ; procès/archives des mobilisations non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-07",
+          "title": "L’Homme et la Nature — De l’action humaine sur la géographie physique",
+          "author": "Élisée Reclus",
+          "edition": "Revue des Deux Mondes, 2e période, tome 54, 1864, p. 762-771 ; édition transcrite Wikisource",
+          "url": "https://fr.wikisource.org/wiki/L%E2%80%99Homme_et_la_Nature_-_De_l%E2%80%99action_humaine_sur_la_g%C3%A9ographie_physique",
+          "rights": "œuvre domaine public France ; édition web, notes et photographies à distinguer",
+          "reading": "texte historique lu par sections dans transcription moderne, exemplaire 1864 non collationné",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-08",
+          "title": "Ecology and Revolutionary Thought",
+          "author": "Murray Bookchin (Lewis Herber)",
+          "edition": "Comment, 1964 ; version HTML du site d'archives Bookchin",
+          "url": "https://murraybookchin.org/essays/ecology-and-revolutionary-thought/",
+          "rights": "œuvre protégée (Bookchin mort 2006), reproduction/traduction non autorisées sans vérification",
+          "reading": "texte primaire disponible et parcouru par sections ; fac-similé de Comment non collationné",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-09",
+          "title": "Le Féminisme ou la Mort",
+          "author": "Françoise d'Eaubonne",
+          "edition": "Pierre Horay, 1974, 274 p. ; notice universitaire BiblioFEM UQAM",
+          "url": "https://bibliographies.uqam.ca/bibliofem/bibliographie/WRDH3T2T",
+          "rights": "œuvre protégée ; notice UQAM réutilisable uniquement selon conditions du portail à vérifier",
+          "reading": "notice bibliographique consultée, ouvrage non lu",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-10",
+          "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+          "author": "Elinor Ostrom",
+          "edition": "Cambridge University Press, 1990, 280 p., édition anglophone",
+          "url": "https://www.cambridge.org/core/books/governing-the-commons/A8BB63BC4A1433A50A3FB92EDBBB97D5",
+          "rights": "ouvrage moderne protégé ; accès aperçu/notice ne vaut pas licence ouverte",
+          "reading": "notice et résumé éditeur lus ; chapitres non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-11",
+          "title": "À propos du végétarisme",
+          "author": "Élisée Reclus",
+          "edition": "La Réforme alimentaire, vol. V n°3, mars 1901, p. 37-45 ; transcription moderne",
+          "url": "https://fr.anarchistlibraries.net/library/elisee-reclus-a-propos-du-vegetarisme",
+          "rights": "auteur décédé 1905, texte ancien du domaine public France ; interface/transcription sous règles propres",
+          "reading": "texte original consulté sous transcription, exemplaire papier non vérifié",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-12",
+          "title": "Jainism and Food",
+          "author": "Colleen Taylor Sen",
+          "edition": "Encyclopedia of Food and Agricultural Ethics, éd. P. B. Thompson et D. M. Kaplan, Springer, 2014, section Jainism and Food, p. 1298 et suivantes",
+          "url": "https://food.unt.edu/documents/J.pdf",
+          "rights": "© Springer Science+Business Media, 2014 ; PDF en accès public sans licence de réutilisation générale établie",
+          "reading": "texte universitaire consulté dans la version PDF (début, section ahimsa et alimentation) ; première page contrôlée visuellement ; corpus religieux originel non consulté",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-13",
+          "title": "History — Vegetarian Society",
+          "author": "The Vegetarian Society (Royaume-Uni)",
+          "edition": "rétrospective institutionnelle en ligne, actualisée en 2024 ; fondation 30 septembre 1847",
+          "url": "https://vegsoc.org/who-we-are/history/",
+          "rights": "page et images protégées ; pas de licence libre déclarée",
+          "reading": "page historique lue, procès-verbaux du 30 septembre 1847 non consultés",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-14",
+          "title": "History — The Vegan Society",
+          "author": "The Vegan Society",
+          "edition": "rétrospective institutionnelle actuelle ; fondation novembre 1944",
+          "url": "https://www.vegansociety.com/about-us/history",
+          "rights": "texte et médias protégés, pas de licence libre annoncée",
+          "reading": "chronologie associative consultée, pièces fondatrices originales non consultées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-15",
+          "title": "Animals’ Rights: Considered in Relation to Social Progress",
+          "author": "Henry S. Salt",
+          "edition": "George Bell & Sons, Londres, 1892, 166 p. ; transcription Wikisource",
+          "url": "https://en.wikisource.org/wiki/Animals%27_Rights%3A_Considered_in_Relation_to_Social_Progress",
+          "rights": "ouvrage ancien domaine public probable en France et Royaume-Uni ; édition moderne et images à contrôler",
+          "reading": "page de titre et sommaire de transcription consultés ; livre intégral non lu",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-16",
+          "title": "Climate Change 2022: Mitigation of Climate Change — AR6 WGIII, chapitre 12 Cross sectoral perspectives",
+          "author": "GIEC/IPCC, collectif scientifique du groupe III",
+          "edition": "GIEC, 2022, sixième rapport d'évaluation, chap.12, section alimentation",
+          "url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-12/",
+          "rights": "droits du rapport et de ses figures soumis aux conditions du GIEC ; licence de reprise générale non vérifiée",
+          "reading": "chapitre HTML consulté par extraits et sections, pas rapport complet",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-17",
+          "title": "Vegans, vegetarians, fish-eaters and meat-eaters in the UK show discrepant environmental impacts",
+          "author": "Peter Scarborough, Michael Clark et collègues",
+          "edition": "Nature Food 4, 565-574, 20 juillet 2023, DOI 10.1038/s43016-023-00795-w",
+          "url": "https://www.nature.com/articles/s43016-023-00795-w",
+          "rights": "article en accès ouvert CC BY 4.0, éléments tiers parfois exclus",
+          "reading": "résumé, méthodes et informations de droits parcourus ; annexes non dépouillées intégralement",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-18",
+          "title": "Reducing climate change impacts from the global food system through diet shifts",
+          "author": "Yanxian Li, Pan He et collègues",
+          "edition": "Nature Climate Change 14, 943-953, 13 août 2024, DOI 10.1038/s41558-024-02084-1",
+          "url": "https://www.nature.com/articles/s41558-024-02084-1",
+          "rights": "article en accès ouvert CC BY 4.0, sous réserve de crédits tiers",
+          "reading": "résumé et informations de droits consultés ; hypothèses détaillées non auditées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-19",
+          "title": "The Seedkeepers",
+          "author": "Indigenous Community Video Collective — NE India",
+          "edition": "vidéo communautaire, 15 octobre 2015, fichier Wikimedia Commons 4 min 53",
+          "url": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm",
+          "rights": "fichier CC BY 3.0, attribution ; droits de la personnalité et usages culturels à respecter",
+          "reading": "FN-024 existante ; métadonnées et sous-titres consultés, film non visionné intégralement",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-20",
+          "title": "Convention (n° 184) sur la sécurité et la santé dans l'agriculture",
+          "author": "Organisation internationale du travail",
+          "edition": "convention internationale adoptée le 21 juin 2001, entrée en vigueur 20 septembre 2003",
+          "url": "https://www.ilo.org/resource/other/c184-safety-and-health-agriculture-convention-2001",
+          "rights": "texte officiel accessible, droit de réemploi des pages et traductions OIT à vérifier",
+          "reading": "texte normatif de l'OIT consulté par sections, applications nationales non vérifiées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "ECO-19 = FN-024, ne pas répéter sous deux fiches. Rapports/études et témoignages dans des sections distinctes."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-education-enfance-protection.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-education-enfance-protection.html",
+      "topic": "Éducation populaire, enfance et transmission",
+      "suggested_references": [
+        {
+          "id": "FN-007",
+          "title": "Déclaration des droits de la femme et de la citoyenne",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-007 — Déclaration des droits de la femme et de la citoyenne ; Olympe de Gouges, 1791 ; déclaration politique, français ; piliers 8 et 1. Met en évidence l'exclusion politique des femmes au sein d'un universalisme révolutionnaire proclamé. Apport :",
+          "url": "https://fr.wikisource.org/wiki/D%C3%A9claration_des_droits_de_la_femme_et_de_la_citoyenne",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-017",
+          "title": "Pepper&Carrot — épisode 26 : Les livres, c’est génial",
+          "author": "David Revoy ; crédits spécifiques de traduction sur la page",
+          "edition": "2018 ; bande dessinée web en français",
+          "url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
+          "rights": "CC BY 4.0 annoncée par l’éditeur/auteur ; conserver traduction et crédits",
+          "review_status": "CANDIDAT_LIEN_A_RELIRE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-043",
+          "title": "Better Practices in the Classroom",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-043 — Better Practices in the Classroom: A Teaching Guidebook for Sustainable, Inclusive, and Equitable Learning from a Gender and Sexuality Studies Framework. Autrices : Natalie Kouri-Towe et Myloe Martel-Perry. Édition : 2 mai 2024, Concordia Un",
+          "url": "https://opentextbooks.concordia.ca/teachingresource/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-054",
+          "title": "Pulling Together",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-054 — Pulling Together: A Guide for Curriculum Developers ; Asma-na-hi Antoine, Rachel Mason, Roberta Mason, Sophia Palahicky et Carmen Rodriguez de France ; BCcampus, 2018 ; guide de formation / pédagogie décoloniale ; anglais ; piliers 1 et 8, r",
+          "url": "https://opentextbc.ca/indigenizationcurriculumdevelopers/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-055",
+          "title": "Introduction to Women, Gender, Sexuality Studies",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-055 — Introduction to Women, Gender, Sexuality Studies ; Miliann Kang, Donovan Lessard, Laura Heston, Sonny Nordmarken ; 30 juin 2017 ; manuel universitaire libre, texte en ligne et EPUB/PDF ; anglais ; piliers 8 et 1, renvoi 3.",
+          "url": "https://openbooks.library.umass.edu/introwgss/",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-062",
+          "title": "Little Bear's Day / Un jour avec Petit Ours",
+          "author": "Caylie Gnyra ; contributions de traduction distinctes",
+          "edition": "Première parution non établie ; album jeunesse multilingue cri des Plaines / anglais / français ; adaptation haïda datée 2018",
+          "url": "https://indigenousstorybooks.ca/stories/crk/0002/",
+          "rights": "CC BY-NC-SA 3.0 annoncée sur page existante, licence non libre au sens NC ; droits des versions distincts",
+          "review_status": "A_RETESTER_LIEN",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-071",
+          "title": "Superheroes on the Move: A Comic on Sustainable Mobility",
+          "author": "Citizen consumer and civic Action Group (CAG)",
+          "edition": "2025 ; BD jeunesse pédagogique, anglais, Inde",
+          "url": "https://www.cag.org.in/database/superheroes-move-comic-sustainable-mobility",
+          "rights": "CC BY-SA 4.0 indiqué pour ressource, CC BY-NC-SA 4.0 pied de page générique ; édition PDF non examinée",
+          "review_status": "BLOQUE_SOURCE_DROITS",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-12",
+          "title": "Jainism and Food",
+          "author": "Colleen Taylor Sen",
+          "edition": "Encyclopedia of Food and Agricultural Ethics, éd. P. B. Thompson et D. M. Kaplan, Springer, 2014, section Jainism and Food, p. 1298 et suivantes",
+          "url": "https://food.unt.edu/documents/J.pdf",
+          "rights": "© Springer Science+Business Media, 2014 ; PDF en accès public sans licence de réutilisation générale établie",
+          "reading": "texte universitaire consulté dans la version PDF (début, section ahimsa et alimentation) ; première page contrôlée visuellement ; corpus religieux originel non consulté",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "FN-062 NC et audio non vérifié, FN-071 lien et licence incertains, aucune recommandation clinique."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-antiracisme-histoires-droits.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-antiracisme-histoires-droits.html",
+      "topic": "Antiracisme, histoire des luttes et droits",
+      "suggested_references": [
+        {
+          "id": "FN-008",
+          "title": "The Souls of Black Folk",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-008 — The Souls of Black Folk ; W. E. B. Du Bois, 1903, deuxième édition 1903 ; essais et récits, anglais ; piliers 8 et 1. Analyse racisme, ségrégation et expériences vécues afro-américaines au tournant du XXe siècle. Apport : contrepoint aux tra",
+          "url": "https://en.wikisource.org/wiki/The_Souls_of_Black_Folk_(2nd_ed)",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-010",
+          "title": "Indígenas e quilombolas brasileiros contam sua história — Povo Gavião, parte 13",
+          "author": "Jani Pereira et Felipe Laurito ; images José Palahv Gavião et Debóra R. Suruí",
+          "edition": "2022 ; témoignage filmé, portugais brésilien, ~8 min 07 s",
+          "url": "https://commons.wikimedia.org/wiki/File:Ind%C3%ADgenas_e_quilombolas_brasileiros_contam_sua_hist%C3%B3ria_-_Povo_Gavi%C3%A3o_-_parte_13.webm",
+          "rights": "CC BY 3.0 annoncée dans la notice Commons existante ; contrôle direct de la page non concluant",
+          "review_status": "A_RETESTER_LIEN",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-011",
+          "title": "Quilombo Praia Grande (Indígenas e quilombolas...), partie 01",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-011. Indígenas e quilombolas brasileiros contam sua história — Quilombo Praia Grande, partie 01. Attribution : Jani Pereira ; images Daniel Gonçalves de Matos, Luciane da Rosa et Tayssa Laila de Oliveira Gomes ; scénario Janicéia Silva et Jani Per",
+          "url": "https://commons.wikimedia.org/wiki/File:Ind%C3%ADgenas_e_quilombolas_brasileiros_contam_sua_hist%C3%B3ria_-_Quilombo_Praia_Grande_-_parte_01.webm",
+          "rights": "TENTATIVE WEB NON CONCLUANTE",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-016",
+          "title": "Gay and Proud",
+          "author": "Lilli Vincenz",
+          "edition": "1970 ; film documentaire d’archives, anglais, 11 min 43 s",
+          "url": "https://commons.wikimedia.org/wiki/File:Gay_and_Proud_(1970).webm",
+          "rights": "Domaine public signalé par Commons, LOC « no known restrictions » ; réserver la portée territoriale et les droits annexes",
+          "review_status": "CANDIDAT_LIEN_A_RELIRE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-067",
+          "title": "Tejid@s Junt@s / Stitched Together",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-067 — Tejid@s Junt@s / Stitched Together: Workers, Students, and the Movement for Alta Gracia.",
+          "url": "https://commons.wikimedia.org/wiki/File:TejidXs_JuntXs.ogv",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-070",
+          "title": "A Voice from the South",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-070 — A Voice from the South: By a Black Woman of the South ; autrice : Anna Julia Cooper (1858–1964) ; 1892, Xenia (Ohio), Aldine Printing House ; type : recueil de huit essais historiques sur éducation, racisme, condition des femmes et représent",
+          "url": "https://www.gutenberg.org/cache/epub/61741/pg61741-images.html",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-06",
+          "title": "Environmental Justice Primer for Ports — Timeline of American Environmental Justice Movement",
+          "author": "US Environmental Protection Agency",
+          "edition": "chronologie institutionnelle archivée en janvier 2021 ; épisode Warren County 1982",
+          "url": "https://19january2021snapshot.epa.gov/community-port-collaboration/environmental-justice-primer-ports-appendix-timeline-american_.html",
+          "rights": "document administratif EPA archivé ; droits de reproduction des éléments tiers à vérifier",
+          "reading": "chronologie administrative consultée ; procès/archives des mobilisations non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Voix et contexte de personnes concernées ; données hors France ne prouvent pas les règles françaises."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-feminismes-histoire-egalite.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-feminismes-histoire-egalite.html",
+      "topic": "Féminismes, organisations et représentations",
+      "suggested_references": [
+        {
+          "id": "FN-007",
+          "title": "Déclaration des droits de la femme et de la citoyenne",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-007 — Déclaration des droits de la femme et de la citoyenne ; Olympe de Gouges, 1791 ; déclaration politique, français ; piliers 8 et 1. Met en évidence l'exclusion politique des femmes au sein d'un universalisme révolutionnaire proclamé. Apport :",
+          "url": "https://fr.wikisource.org/wiki/D%C3%A9claration_des_droits_de_la_femme_et_de_la_citoyenne",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-009",
+          "title": "The Tyranny of Structurelessness",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-009 — The Tyranny of Structurelessness ; Jo Freeman (Joreen), 1972 ; essai féministe critique, anglais ; piliers 6 et 8. Interroge la formation de hiérarchies informelles dans les collectifs dépourvus de structures explicites. Apport : examen cont",
+          "url": "https://theanarchistlibrary.org/library/quiet-rumours",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-038",
+          "title": "Principes féministes de l’internet 2.0",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-038 — Principes féministes de l’internet, version 2.0 / Feminist Principles of the Internet 2.0 ; collectif de militantes et de personnes engagées dans les droits sexuels et numériques, coordination Association for Progressive Communications (APC)",
+          "url": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-041",
+          "title": "American Indian Stories",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-041 — American Indian Stories ; Zitkala-Ša (Gertrude Simmons Bonnin, 1876–1938) ; 1921 ; recueil de récits autobiographiques, fiction et essai politique ; anglais ; piliers officiels 8 « Égalité réelle, diversité et lutte contre les discrimination",
+          "url": "https://www.gutenberg.org/ebooks/10376",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-051",
+          "title": "Jamais sans ma visseuse",
+          "author": "Réalisation collective ; accompagnement La Télé Buissonnière",
+          "edition": "2021 ; documentaire français, 17 min 45 s",
+          "url": "https://horscine.org/film/jamais-sans-ma-visseuse/",
+          "rights": "CC BY-NC-ND annoncée, version exacte non vérifiée ; pas licence libre",
+          "review_status": "BLOQUE_CONTROLE_DROITS_LECTEUR",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-068",
+          "title": "Nous sommes partout — sauvegarde n°1 / Suisse romande",
+          "author": "Collectif Nous sommes partout, témoignages nommés et anonymes",
+          "edition": "2021 ; recueil éditorial Abrüpt, 648 p. pour imprimé ; base web multilingue",
+          "url": "https://www.noussommespartout.org/",
+          "rights": "CC BY-NC-SA 4.0 annoncée pour textes ; licence MIT du code du site distincte ; pas de copie",
+          "review_status": "CANDIDAT_LIEN_PROTEGE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-069",
+          "title": "Combahee River Collective Statement",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-069 — The Combahee River Collective Statement ; auteur : Combahee River Collective (collectif féministe noir lesbien de Boston) ; déclaration datée avril 1977, édition/reproduction mentionnant un copyright 1978 ; type : déclaration politique et té",
+          "url": "https://anotherworldarchives.org/combahee",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-02",
+          "title": "How a tree-hugging protest transformed Indian environmentalism",
+          "author": "Seema Mundoli",
+          "edition": "26 mars 2024 ; commentaire Nature sur Chipko/Gaura Devi, événements 1973-1974",
+          "url": "https://www.nature.com/articles/d41586-024-00895-y",
+          "rights": "© Springer Nature, licence de réemploi de cette page non confirmée",
+          "reading": "commentaire consulté par sections ; archives orales non lues",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-03",
+          "title": "Our History — Green Belt Movement",
+          "author": "Green Belt Movement ; héritage Wangari Maathai",
+          "edition": "page historique institutionnelle actuelle ; mouvement créé en 1977",
+          "url": "https://www.greenbeltmovement.org/history/",
+          "rights": "© site/photographies et témoignages protégés, aucune licence libre vérifiée",
+          "reading": "rétrospective institutionnelle lue par sections ; sources de terrain non consultées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-09",
+          "title": "Le Féminisme ou la Mort",
+          "author": "Françoise d'Eaubonne",
+          "edition": "Pierre Horay, 1974, 274 p. ; notice universitaire BiblioFEM UQAM",
+          "url": "https://bibliographies.uqam.ca/bibliofem/bibliographie/WRDH3T2T",
+          "rights": "œuvre protégée ; notice UQAM réutilisable uniquement selon conditions du portail à vérifier",
+          "reading": "notice bibliographique consultée, ouvrage non lu",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Représentations culturelles et droit d'auteur ne se confondent pas avec preuves des pratiques collectives."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-financements-culture-spectacle.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-financements-culture-spectacle.html",
+      "topic": "Financement de la culture et partage des ressources",
+      "suggested_references": [
+        {
+          "id": "FN-006",
+          "title": "Bound by Law?",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-006 — Bound by Law? Tales from the Public Domain ; Keith Aoki, James Boyle, Jennifer Jenkins, 2006 ; bande dessinée documentaire, anglais ; piliers 4 et 7. Une mise en scène illustrée des obstacles juridiques que rencontre une personne réalisant u",
+          "url": "https://wiki.creativecommons.org/wiki/Bound_By_Law%3F",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-017",
+          "title": "Pepper&Carrot — épisode 26 : Les livres, c’est génial",
+          "author": "David Revoy ; crédits spécifiques de traduction sur la page",
+          "edition": "2018 ; bande dessinée web en français",
+          "url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
+          "rights": "CC BY 4.0 annoncée par l’éditeur/auteur ; conserver traduction et crédits",
+          "review_status": "CANDIDAT_LIEN_A_RELIRE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-039",
+          "title": "Share alike: Ensemble, tout devient possible",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-039 — Share alike : Ensemble, tout devient possible ; réalisation Pablo Albandea et Tristan Duval, production Lent ciné ; 2025 ; documentaire / essai filmé, France, français, 17 min 58 ; piliers 4 « Culture et création libre », 3 « Autonomie matér",
+          "url": "https://horscine.org/film/share-alike-ensemble-tout-devient-possible/",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-040",
+          "title": "Elephants Dream",
+          "author": "Bassam Kurdali ; Orange Open Movie Team / Blender Foundation",
+          "edition": "2006 ; court-métrage 3D, anglais, fichier 10 min 58 s",
+          "url": "https://commons.wikimedia.org/wiki/File:Elephants_Dream_(2006).webm",
+          "rights": "CC BY 2.5 explicite sur la fiche Commons du fichier",
+          "review_status": "CANDIDAT_LIEN_A_RELIRE",
+          "type": "notice_FN_existante"
+        }
+      ],
+      "critical_notes": [
+        "Licences œuvres ≠ absence de financement ou de travail ; questions juridiques d'aides à actualiser."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    },
+    {
+      "page": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "source_ref": "https://github.com/zoutiFrutti/Interstice/blob/main/wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "topic": "Travail invisible, soin et structures collectives",
+      "suggested_references": [
+        {
+          "id": "FN-002",
+          "title": "La Conquête du pain",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "Fiche FN-002. La Conquête du pain — Pierre Kropotkine, 1892 (édition consultée).",
+          "url": "https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain/Texte_entier",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-009",
+          "title": "The Tyranny of Structurelessness",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-009 — The Tyranny of Structurelessness ; Jo Freeman (Joreen), 1972 ; essai féministe critique, anglais ; piliers 6 et 8. Interroge la formation de hiérarchies informelles dans les collectifs dépourvus de structures explicites. Apport : examen cont",
+          "url": "https://theanarchistlibrary.org/library/quiet-rumours",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-019",
+          "title": "Consensus Decision Making",
+          "author": "Attribution/édition à reprendre dans catalogue FN",
+          "edition": "FN-019 — Consensus Decision Making, Seeds for Change, seconde édition 2020, guide collectif en anglais. Pilier 6. Expose consensus, objections, facilitation et dynamiques de groupe. Apport : pratique et limites d'une gouvernance horizontale. Accès ht",
+          "url": "https://seedsforchange.org.uk/downloads/consensus.pdf",
+          "rights": "PAGE OUVERTE WEB",
+          "review_status": "CANDIDAT_REFERENCE_SOUS_REVUE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-051",
+          "title": "Jamais sans ma visseuse",
+          "author": "Réalisation collective ; accompagnement La Télé Buissonnière",
+          "edition": "2021 ; documentaire français, 17 min 45 s",
+          "url": "https://horscine.org/film/jamais-sans-ma-visseuse/",
+          "rights": "CC BY-NC-ND annoncée, version exacte non vérifiée ; pas licence libre",
+          "review_status": "BLOQUE_CONTROLE_DROITS_LECTEUR",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "FN-068",
+          "title": "Nous sommes partout — sauvegarde n°1 / Suisse romande",
+          "author": "Collectif Nous sommes partout, témoignages nommés et anonymes",
+          "edition": "2021 ; recueil éditorial Abrüpt, 648 p. pour imprimé ; base web multilingue",
+          "url": "https://www.noussommespartout.org/",
+          "rights": "CC BY-NC-SA 4.0 annoncée pour textes ; licence MIT du code du site distincte ; pas de copie",
+          "review_status": "CANDIDAT_LIEN_PROTEGE",
+          "type": "notice_FN_existante"
+        },
+        {
+          "id": "ECO-10",
+          "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+          "author": "Elinor Ostrom",
+          "edition": "Cambridge University Press, 1990, 280 p., édition anglophone",
+          "url": "https://www.cambridge.org/core/books/governing-the-commons/A8BB63BC4A1433A50A3FB92EDBBB97D5",
+          "rights": "ouvrage moderne protégé ; accès aperçu/notice ne vaut pas licence ouverte",
+          "reading": "notice et résumé éditeur lus ; chapitres non lus",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        },
+        {
+          "id": "ECO-20",
+          "title": "Convention (n° 184) sur la sécurité et la santé dans l'agriculture",
+          "author": "Organisation internationale du travail",
+          "edition": "convention internationale adoptée le 21 juin 2001, entrée en vigueur 20 septembre 2003",
+          "url": "https://www.ilo.org/resource/other/c184-safety-and-health-agriculture-convention-2001",
+          "rights": "texte officiel accessible, droit de réemploi des pages et traductions OIT à vérifier",
+          "reading": "texte normatif de l'OIT consulté par sections, applications nationales non vérifiées",
+          "type": "ressource_ECO_de_recherche_sans_FN",
+          "review_status": "CANDIDAT_SOURCES_A_RELIRE"
+        }
+      ],
+      "critical_notes": [
+        "Les récits n'autorisent pas à inférer automatiquement les salaires et l'effectivité des votes."
+      ],
+      "status": "BIBLIO_PROPOSEE_NON_INTEGREE_DANS_PAGE"
+    }
+  ]
+}
