@@ -1,0 +1,30 @@
+name: Graphiste Cycle4 candidate QA
+on:
+  push:
+    branches:
+      - design/graphiste-cycle4-convergence-2026-10-31
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/c4.log 2>&1 &
+          node --test tests/graphiste-cycle4-2026-10-31.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: graphiste-cycle4-captures-a4
+          path: artifacts/*
+          retention-days: 14
+          if-no-files-found: warn
