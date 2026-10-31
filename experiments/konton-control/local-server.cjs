@@ -15,6 +15,8 @@ const https = require("node:https");
 const fs = require("node:fs");
 const path = require("node:path");
 const { createTaskEngine } = require("./task-engine.cjs");
+const { createAiEngine } = require("./ai-engine.cjs");
+const { configured, createOllamaProvider } = require("./ollama-provider.cjs");
 
 const HOST = "127.0.0.1";
 const PORT = Number(process.env.KONTON_CONTROL_PORT || 8765);
@@ -33,6 +35,7 @@ const assets = new Map([
   ["/app.js", ["app.js", "text/javascript; charset=utf-8"]],
   ["/github-status.js", ["github-status.js", "text/javascript; charset=utf-8"]],
   ["/task-board.js", ["task-board.js", "text/javascript; charset=utf-8"]],
+  ["/ai-board.js", ["ai-board.js", "text/javascript; charset=utf-8"]],
   ["/styles.css", ["styles.css", "text/css; charset=utf-8"]]
 ]);
 
@@ -80,6 +83,11 @@ const engine = createTaskEngine({
   allowed: ALLOWED,
   githubGet: getJson,
   stateFile: process.env.KONTON_CONTROL_STATE_FILE || path.join(__dirname, "data", "tasks.json")
+});
+const aiEngine = createAiEngine({
+  sourceTask: id => engine.list().find(task => task.id === id),
+  provider: configured() ? createOllamaProvider() : null,
+  stateFile: process.env.KONTON_CONTROL_AI_STATE_FILE || path.join(__dirname, "data", "ai-tasks.json")
 });
 async function repoStatus(repo) {
   if (!ALLOWED.includes(repo)) throw new Error("Dépôt non autorisé.");
@@ -188,6 +196,32 @@ async function handle(req, res) {
   let url;
   try { url = new URL(req.url, "http://" + HOST + ":" + PORT); }
   catch (_error) { return send(res, 400, { error: "URL invalide." }); }
+  // Only local reports are mutated. GitHub remains GET-only.
+  if (url.pathname === "/api/ai/capabilities" && req.method === "GET") {
+    return send(res, 200, aiEngine.capabilities());
+  }
+  if (url.pathname === "/api/ai/tasks" && req.method === "GET") {
+    return send(res, 200, { tasks: aiEngine.list() });
+  }
+  if (url.pathname === "/api/ai/tasks" && req.method === "POST") {
+    try { return send(res, 201, { task: aiEngine.create(await readBody(req)) }); }
+    catch (error) { return send(res, error.status || 400, { error: cleanError(error) }); }
+  }
+  const aiRoute = /^\/api\/ai\/tasks\/([a-f0-9-]{36})\/(run|cancel|review|events)$/.exec(url.pathname);
+  if (aiRoute) {
+    const [, id, action] = aiRoute;
+    if (action === "events" && req.method === "GET") {
+      try { return send(res, 200, { events: aiEngine.events(id) }); }
+      catch (error) { return send(res, error.status || 400, { error: cleanError(error) }); }
+    }
+    if (req.method !== "POST") return send(res, 405, { error: "Action locale POST uniquement." });
+    try {
+      const data = await readBody(req);
+      if (action === "run") return send(res, 200, { task: await aiEngine.run(id) });
+      if (action === "cancel") return send(res, 200, { task: aiEngine.cancel(id) });
+      if (action === "review") return send(res, 200, { task: aiEngine.review(id, data.decision) });
+    } catch (error) { return send(res, error.status || 400, { error: cleanError(error) }); }
+  }
   // Actions here mutate local task records ONLY; every GitHub operation remains GET.
   if (url.pathname === "/api/tasks" && req.method === "GET") {
     try { return send(res, 200, { tasks: engine.list(url.searchParams.get("scope") || "all") }); }
@@ -253,4 +287,4 @@ function start() {
   });
 }
 if (require.main === module) start();
-module.exports = { safeRepo, permittedRequest, assets, repoStatus, start, handle, engine };
+module.exports = { safeRepo, permittedRequest, assets, repoStatus, start, handle, engine, aiEngine };
