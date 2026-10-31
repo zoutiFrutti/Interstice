@@ -84,3 +84,46 @@ test("018-A: tentatives explicites de formulaires réels sont neutralisées, san
   assert.deepEqual(external,[]);
  }finally{await page.close();await browser.close();}
 });
+
+test("018-D: variable candidate forcée à false avant et après chargement, aucune requête réelle",async()=>{
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ try{
+  for(const width of [320,390,1280]){
+   const page=await browser.newPage({viewport:{width,height:844},reducedMotion:"reduce"});
+   const external=[],modifying=[],errors=[];
+   await page.addInitScript({content:"window.INTERSTICE_CANDIDATE_MODE=false;"});
+   page.on("request",req=>{
+    if(req.method()!=="GET")modifying.push(req.method()+" "+req.url());
+    if(!req.url().startsWith(BASE+"/")&&!req.url().startsWith("data:"))external.push(req.url());
+   });
+   page.on("pageerror",err=>errors.push(err.message));
+   await page.route("**/*",route=>{
+    if(!route.request().url().startsWith(BASE+"/")&&!route.request().url().startsWith("data:")){
+     external.push(route.request().url());return route.abort();
+    }
+    return route.continue();
+   });
+   try{
+    await page.goto(BASE+"/index.html",{waitUntil:"networkidle"});
+    await page.evaluate(()=>{window.INTERSTICE_CANDIDATE_MODE=false;});
+    assert.match(await page.locator("#liste-propositions").innerText(),/désactivée/);
+    await page.locator("#besoin").fill("Besoin fictif "+width);
+    await page.locator("#submit").click();
+    await page.locator("#submit").click();
+    assert.match(await page.locator("#etat").innerText(),/proposition non transmise/);
+    await page.goto(BASE+"/bibliotheque.html",{waitUntil:"networkidle"});
+    await page.evaluate(()=>{window.INTERSTICE_CANDIDATE_MODE=false;});
+    assert.ok(await page.locator("#resources .resource-card").count()>0,"Catalogue local préservé");
+    await page.locator("#resource-title").fill("Ressource fictive "+width);
+    await page.locator("#resource-url").fill("https://example.invalid/fiction");
+    await page.locator("#resource-description").fill("Texte inventé pour vérifier l'absence de toute soumission.");
+    await page.locator("#resource-submit").click();
+    await page.locator("#resource-submit").click();
+    assert.match(await page.locator("#resource-status").innerText(),/ressource non envoyée/);
+    assert.deepEqual(modifying,[],"Aucune requête modifiante à "+width+" px");
+    assert.deepEqual(external,[],"Aucune requête externe à "+width+" px");
+    assert.deepEqual(errors,[],"Aucune erreur JavaScript à "+width+" px");
+   }finally{await page.close();}
+  }
+ }finally{await browser.close();}
+});

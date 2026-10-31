@@ -1,78 +1,89 @@
-import {test} from 'node:test';
-import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
-import vm from 'node:vm';
+import {test} from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+import vm from "node:vm";
 
-function setup(script,values={},respond=async()=>({ok:true,json:async()=>({message:'Reçu'})}),candidateMode=false){
+function setup(script,values={},resources=[]){
  const nodes=new Map();
- const make=(id)=>{const el={id,value:values[id]??'',textContent:'',disabled:false,children:[],
-  addEventListener(type,fn){this[type]=fn;},append(...children){this.children.push(...children);},
-  replaceChildren(...children){this.children=children;},reset(){this.resetCount=(this.resetCount||0)+1;},
-  setAttribute(){},style:{}};nodes.set(id,el);return el;};
+ function make(id){
+  const el={id,value:values[id]??"",textContent:"",disabled:false,children:[],
+   addEventListener(type,fn){this[type]=fn;},
+   append(...children){this.children.push(...children);},
+   replaceChildren(...children){this.children=children;},
+   reset(){this.resetCount=(this.resetCount||0)+1;},style:{}};
+  nodes.set(id,el);return el;
+ }
  const document={getElementById:id=>nodes.get(id)||make(id),createElement:tag=>make(tag)};
  const calls=[];
- const context={document,URL,INTERSTICE_RESOURCES:[],INTERSTICE_CANDIDATE_MODE:candidateMode,fetch:async(...args)=>{calls.push(args);return respond(...args);}};
- vm.runInNewContext(readFileSync(new URL('../'+script,import.meta.url),'utf8'),context);
- const submit=script==='script.js'?'form':'resource-form';
- return {nodes,el:document.getElementById,calls,submit:async()=>{
+ const context={document,URL,INTERSTICE_RESOURCES:resources,INTERSTICE_CANDIDATE_MODE:false,
+  window:{INTERSTICE_CANDIDATE_MODE:false},
+  fetch:async(...args)=>{calls.push(args);throw Error("Unexpected external request");}};
+ vm.runInNewContext(readFileSync(new URL("../"+script,import.meta.url),"utf8"),context);
+ const id=script==="script.js"?"form":"resource-form";
+ return {el:document.getElementById,calls,submit:async()=>{
   let prevented=false;
-  await document.getElementById(submit).submit({preventDefault(){prevented=true;}});
+  await document.getElementById(id).submit({preventDefault(){prevented=true;}});
   assert.equal(prevented,true);
  }};
 }
-test('A02: demande vide rejetée sans requête',async()=>{
- const a=setup('script.js');await a.submit();assert.equal(a.calls.filter(x=>x[1]?.method==='POST').length,0);
- assert.match(a.el('etat').textContent,/Indique/);
+test("018-D : besoin et offre vides gardent une validation locale",async()=>{
+ const a=setup("script.js");await a.submit();
+ assert.match(a.el("etat").textContent,/Indique/);assert.deepEqual(a.calls,[]);
 });
-test('A02: envoi de besoin et reset après confirmation',async()=>{
- const a=setup('script.js',{besoin:'Besoin de vélo',lieu:'secteur Gaillac'});
- await a.submit();const posts=a.calls.filter(x=>x[1]?.method==='POST');
- assert.equal(posts.length,1);assert.equal(JSON.parse(posts[0][1].body).need,'Besoin de vélo');
- assert.equal(a.el('form').resetCount,1);assert.match(a.el('etat').textContent,/Reçu/);
+test("018-D : un besoin ne peut pas être envoyé même si le mode est forcé à false",async()=>{
+ const a=setup("script.js",{besoin:"Atelier fictif",lieu:"Gaillac"});
+ await a.submit();assert.match(a.el("etat").textContent,/proposition non transmise/);
+ assert.deepEqual(a.calls,[]);assert.equal(a.el("form").resetCount,undefined);
 });
-test('A11: panne réseau ne réinitialise pas le formulaire',async()=>{
- const a=setup('script.js',{besoin:'Un outil'},async()=>{throw Error('offline')});
- await a.submit();assert.equal(a.el('form').resetCount||0,0);
- assert.match(a.el('etat').textContent,/Échec/);assert.equal(a.el('submit').disabled,false);
+test("018-D : une ressource proposée seule ne déclenche rien",async()=>{
+ const a=setup("script.js",{partage:"Outils fictifs"});
+ await a.submit();assert.match(a.el("etat").textContent,/aucune publication ni contact/);
+ assert.deepEqual(a.calls,[]);
 });
-test('A11: réponse non JSON en erreur reste explicite',async()=>{
- const a=setup('script.js',{besoin:'Un outil'},async()=>({ok:false,json:async()=>{throw Error('not-json')}}));
- await a.submit();assert.match(a.el('etat').textContent,/Envoi impossible/);
+test("018-D : plusieurs soumissions de proposition restent inertes",async()=>{
+ const a=setup("script.js",{besoin:"Test"});
+ for(let i=0;i<4;i++)await a.submit();
+ assert.deepEqual(a.calls,[]);
 });
-test('A11: double soumission en cours bloquée',async()=>{
- let release;const gate=new Promise(r=>release=r);
- const a=setup('script.js',{besoin:'Un outil'},async()=>{await gate;return {ok:true,json:async()=>({message:'Reçu'})}});
- const pending=a.submit();await Promise.resolve();await a.submit();release();await pending;
- assert.equal(a.calls.filter(x=>x[1]?.method==='POST').length,1);
+test("018-D : bouton de proposition désactivé sans requête",async()=>{
+ const a=setup("script.js",{besoin:"Test"});a.el("submit").disabled=true;
+ await a.submit();assert.deepEqual(a.calls,[]);assert.equal(a.el("etat").textContent,"");
 });
-test('A02: formulaire ressource transmet la source et ne publie pas',async()=>{
- const a=setup('ressources.js',{'resource-title':'Un guide','resource-url':'https://example.org',
- 'resource-description':'Ressource pédagogique','resource-category':'Faire'});
- await a.submit();const posts=a.calls.filter(x=>x[1]?.method==='POST');
- assert.equal(posts.length,1);assert.equal(JSON.parse(posts[0][1].body).url,'https://example.org');
- assert.match(a.el('resource-status').textContent,/Reçu/);
+test("018-D : pas de chargement des propositions réelles",()=>{
+ const a=setup("script.js");
+ assert.match(a.el("liste-propositions").textContent,/désactivée/);assert.deepEqual(a.calls,[]);
 });
-test('A11: formulaire ressource gère les erreurs non JSON',async()=>{
- const a=setup('ressources.js',{'resource-title':'Un guide'},async()=>({ok:false,json:async()=>{throw Error('invalid')}}));
- await a.submit();assert.match(a.el('resource-status').textContent,/Envoi impossible/);
- assert.equal(a.el('resource-form').resetCount||0,0);
+test("018-D : soumission de ressource neutralisée",async()=>{
+ const a=setup("ressources.js",{"resource-title":"Ressource imaginaire","resource-url":"https://example.invalid"});
+ await a.submit();assert.match(a.el("resource-status").textContent,/ressource non envoyée/);
+ assert.deepEqual(a.calls,[]);assert.equal(a.el("resource-form").resetCount,undefined);
 });
-test('A11: ressource protège contre le double clic',async()=>{
- let release;const gate=new Promise(r=>release=r);
- const a=setup('ressources.js',{'resource-title':'Un guide'},async()=>{await gate;return {ok:true,json:async()=>({message:'Reçu'})}});
- const pending=a.submit();await Promise.resolve();await a.submit();release();await pending;
- assert.equal(a.calls.filter(x=>x[1]?.method==='POST').length,1);
+test("018-D : soumissions répétées de ressources toujours inertes",async()=>{
+ const a=setup("ressources.js",{"resource-title":"Exemple"});
+ for(let i=0;i<4;i++)await a.submit();
+ assert.deepEqual(a.calls,[]);
 });
-
-test('018A: candidate proposal never sends POST',async()=>{
- const a=setup('script.js',{besoin:'Exemple de test'},undefined,true);
- await a.submit();
- assert.equal(a.calls.filter(x=>x[1]?.method==='POST').length,0);
- assert.match(a.el('etat').textContent,/non transmise/);
+test("018-D : bouton ressource désactivé sans requête",async()=>{
+ const a=setup("ressources.js");a.el("resource-submit").disabled=true;await a.submit();
+ assert.equal(a.el("resource-status").textContent,"");assert.deepEqual(a.calls,[]);
 });
-test('018A: candidate resource never sends POST',async()=>{
- const a=setup('ressources.js',{'resource-title':'Exemple fictif'},undefined,true);
- await a.submit();
- assert.equal(a.calls.filter(x=>x[1]?.method==='POST').length,0);
- assert.match(a.el('resource-status').textContent,/non envoyée/);
+test("018-D : liste des ressources locales, recherche et catégorie maintenues",()=>{
+ const rows=[
+  {title:"Guide vélo",description:"Réparation",category:"Faire",url:"https://example.invalid/1",license:"Libre"},
+  {title:"Archive",description:"Documents",category:"Comprendre",url:"https://example.invalid/2",license:"Libre"}];
+ const a=setup("ressources.js",{},rows);
+ assert.match(a.el("count").textContent,/2 ressources/);
+ a.el("search").value="vélo";a.el("search").input();
+ assert.match(a.el("count").textContent,/1 ressource/);
+ a.el("search").value="";a.el("category").value="Comprendre";a.el("category").change();
+ assert.match(a.el("count").textContent,/1 ressource/);assert.deepEqual(a.calls,[]);
+});
+test("018-D : aucun endpoint, transport ni interrupteur dans les scripts de démonstration",()=>{
+ const forbidden=["supabase","/functions/v1/submit-","/rest/v1/","public_proposals",
+  "approved_resources","fetch(","XMLHttpRequest","sendBeacon","WebSocket",
+  "EventSource","INTERSTICE_CANDIDATE_MODE"];
+ for(const file of ["script.js","ressources.js"]){
+  const source=readFileSync(new URL("../"+file,import.meta.url),"utf8");
+  for(const token of forbidden)assert.equal(source.includes(token),false,file+" contient "+token);
+ }
 });

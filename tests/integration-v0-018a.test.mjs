@@ -38,8 +38,10 @@ test("018-A: les trois statuts sont affichés et les formulaires sont sans envoi
  const index=read("index.html"),app=read("script.js"),lib=read("ressources.js");
  for(const label of ["Simulation fictive","Proposition réelle soumise à validation","Fonction non disponible"])assert.ok(index.includes(label));
  assert.ok(index.includes('href="decouvrir-initiatives.html"'));
- assert.ok(app.includes("INTERSTICE_CANDIDATE_MODE!==false"));
- assert.ok(lib.includes("INTERSTICE_CANDIDATE_MODE!==false"));
+ assert.ok(app.includes("proposition non transmise"));
+ assert.ok(lib.includes("ressource non envoyée"));
+ assert.doesNotMatch(app,/INTERSTICE_CANDIDATE_MODE|supabase|fetch\s*\(/i);
+ assert.doesNotMatch(lib,/INTERSTICE_CANDIDATE_MODE|supabase|fetch\s*\(/i);
  assert.ok(read("participer.html").includes('href="wiki.html"'));
 });
 test("018-A: quatre kinds, deux lectures, onze exemples, aucune fiche réelle",()=>{

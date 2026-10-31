@@ -20,7 +20,7 @@ Accueil (index.html) → **Découvrir les exemples fictifs** (decouvrir-initiati
 2. Proposition réelle soumise à validation : fonction distincte, formulaire en lecture/essai **non envoyant** dans cette candidate.
 3. Fonctions non disponibles : messagerie, coopération réelle, mise en relation à travers la carte.
 
-Les scripts de la PR #42 sont repris avec une garde candidate activée par défaut, qui neutralise tout POST et les GET de propositions/ressources réelles. Les tests unitaires simulent volontairement le mode hors candidate **en mémoire** avec fetch factice ; ils n'appellent aucune API réelle. Il faudra une décision explicite et une revue juridique pour modifier cette garde.
+**Sécurisation 018-D :** les fichiers `script.js` et `ressources.js` distribués avec cette candidate ne contiennent plus aucun chemin de requête réelle, ni de commutateur `INTERSTICE_CANDIDATE_MODE`. Les formulaires sont strictement locaux et affichent les messages explicites de non-envoi ; le catalogue de ressources local reste consultable. Le code de production de la PR #42 est conservé intact sur sa branche originale. Les tests statiques et Chromium vérifient que forcer cette ancienne variable à `false` ne produit aucune requête.
 
 ## Démarrer sans publier
 Sur une copie locale de la branche :
@@ -46,3 +46,12 @@ Workflow dans .github/workflows/integration-v0-018a.yml, déclenché sur le push
 
 ## Réserves
 Essais sur Android physique, TalkBack, Safari et Firefox **non exécutés**. Pas de test POST réel. Aucun changement de permissions, RLS, Supabase, base, messagerie, droits ou contenu sur main. PR d'origine préservées. Publier ou adopter nécessite une décision humaine. Les liens de contribution à d'autres formulaires du site ne font pas partie du test de soumission.
+
+## Transmission 018-D : isolement des scripts de démonstration
+
+- Le JavaScript livré pour les formulaires et le catalogue ne comporte plus de soumission ni de lecture des propositions/ressources réelles.
+- Le bouton de proposition et le formulaire ressource affichent un état explicite, sans effacer les saisies ni envoyer les données.
+- Les tests précédents qui simulaient une soumission de production en mémoire ont été remplacés **sur cette seule branche** par des tests de non-envoi et un contrôle statique des scripts.
+- Un test Chromium force l'ancienne variable de mode à `false` avant et après chargement, puis réessaie les deux formulaires à 320, 390 et 1280 px.
+- Le jeu des onze fiches, les deux cartes, le Wiki, la navigation, le CSS commun et les branches sources ne sont pas modifiés.
+- L'état du dernier run GitHub Actions sur le nouveau SHA fait foi : ce document ne prétend pas avoir exécuté de tests physiques sur téléphone.
