@@ -1,4 +1,4 @@
-# KONTON Control · cockpit V0.3 — tâches locales de vérification GitHub
+# KONTON Control · cockpit V0.4 — premières missions IA locales
 
 **Statut : prototype sur branche, non déployé, non fusionné.**
 **31 octobre 2026.**
@@ -105,3 +105,49 @@ Les tests vérifient les transitions, l'affichage read-only, le moteur durable, 
 5. Garder personnels / communs réellement séparés côté backend ; le filtre visuel de la démo ne vaut pas contrôle d'accès.
 
 Le manifeste V2.5 de La Faille noire et la charte sont des références éditoriales **non adoptées collectivement**. L'observatoire n'implique aucune adoption, validation juridique ou publication.
+
+
+## V0.4 · Premier agent IA réellement exécutable (facultatif)
+
+**Ce qui est réel :** un adaptateur local Ollama qui envoie une mission bornée à un modèle IA *uniquement si un modèle est explicitement configuré et démarré*. À ce stade, le dépôt ne démontre pas qu'un modèle est installé ou fonctionnel sur la machine de l'utilisateur. Les tests CI emploient un fournisseur simulé ; aucun modèle n'a été appelé pendant ces tests.
+
+La mission est fixe : « La Relectrice technique » analyse un rapport GitHub de la V0.3 déjà terminé. Elle reçoit seulement des métadonnées bornées : nom du dépôt, titre de PR, SHA, état, noms de workflows et conclusions. Aucun diff, log, secret GitHub ou accès aux fichiers n'est transmis au modèle. Le contenu GitHub est **non fiable** et explicitement présenté au modèle comme des données, non des instructions.
+
+### Démarrage sur une machine compatible
+
+Ollama doit fonctionner **sur la même machine** que le serveur KONTON Control, sur 127.0.0.1:11434. Installation selon la documentation de son éditeur, puis téléchargement volontaire d'un modèle suffisamment léger pour la machine, par exemple :
+
+~~~sh
+ollama pull qwen2.5:3b
+export KONTON_AI_MODEL=qwen2.5:3b
+node local-server.cjs
+~~~
+
+Puis ouvrir http://127.0.0.1:8765/ . D'abord créer et **exécuter** une vérification GitHub V0.3 ; ensuite, sélectionner ce rapport dans « La Relectrice technique », créer une mission, GO, examiner la réponse, puis « Réponse lue » ou « À approfondir ».
+
+**Sur un Mac Catalina (10.15) de 2013 :** la version actuelle d'Ollama nécessite macOS 14 Sonoma ou plus récent. L'installation n'est donc pas prévue sur cette configuration. Préférer le futur serveur / ordinateur compatible, et conserver le pupitre statique utilisable sur Catalina. On ne prétend pas que les modèles fonctionneront sur ce vieux Mac.
+
+### Limites des commandes
+
+- GO émet une requête locale réelle à un modèle, si configuré.
+- STOP utilise AbortController pour interrompre le **client local**. Un retour « interrompu » ne prouve pas que le moteur d'inférence a physiquement arrêté tout calcul. Les réponses arrivées après STOP sont ignorées.
+- En cas de redémarrage, une mission auparavant en cours passe au statut « interrompu », sans réponse validée.
+- La réponse IA est présentée **comme texte non fiable**, jamais exécutée comme HTML ni interprétée comme un ordre.
+- L'accusé de lecture est local, ne certifie pas les CI et n'approuve aucune PR.
+- Aucune boucle autonome, navigation web, shell, modification de fichiers, fusion GitHub ou publication n'est accessible à l'agent.
+- Les rapports IA peuvent contenir des informations sur les dépôts privés ; ils sont enregistrés dans data/ai-tasks.json (ignoré par Git), **non chiffré**. Réserver la passerelle à une machine personnelle de confiance et ne pas exposer son port.
+- Les listes de dépôts et le filtrage Personnel/Collectif ne sont **pas** une sécurité multiutilisateurs. Il n'existe pas encore de rôles ou d'authentification côté serveur.
+
+Les connexions IA restent strictement locales et facultatives ; pas de compte cloud, de clé API ou de dépense lancée par le prototype.
+
+### Tests V0.4
+
+~~~sh
+node test-ai-engine.cjs
+~~~
+
+La CI teste les rapports figés, l'injection de texte hostile dans des titres de PR (traités comme données), l'interruption en course, la persistance, la reprise après arrêt et l'exigence d'une relecture humaine. **Les tests ne vérifient pas la qualité des réponses d'un modèle réel, ni le fonctionnement d'Ollama sur la machine.**
+
+### Prochaine passe
+
+Contrôle d'un vrai modèle sur une machine compatible, revue ergonomique mobile/desktop, audit de sécurité de la passerelle locale, puis séparation d'accès authentifiée si une version réseau doit exister. La connexion à des agents multi-outils reste un travail distinct, soumis à permissions et validation explicites.
