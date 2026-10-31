@@ -83,8 +83,8 @@ async function main() {
   raw.tasks[0].status = "running";
   fs.writeFileSync(store, JSON.stringify(raw));
   const recovered = createTaskEngine(options);
-  assert.equal(recovered.list()[0].status, "failed");
-  assert.match(recovered.list()[0].error, /redémarrage/);
+  assert.equal(recovered.list().find(t => t.id === item.id).status, "failed");
+  assert.match(recovered.list().find(t => t.id === item.id).error, /redémarrage/);
   assert.equal(recovered.events(item.id).slice(-1)[0].action, "interrupted");
   process.stdout.write("KONTON Control V0.3 : tâche réelle, SHA strict, audit, erreurs, reprise et persistance OK\n");
 }
