@@ -1383,3 +1383,8 @@ Plan détaillé 015 lu. Même campagne, même paquet de lancement, aucune quatri
 
 **Statut :** première prise de contact, publication de fiches réelles, stockage de réponses/mandats privés et accord de partenariat **non autorisés par ce bilan** ; obtenir sources, mandats, personne responsable du suivi, canal protégé et validation humaine avant ces opérations. Aucune donnée personnelle privée collectée, aucune permission Supabase modifiée, aucune PR fusionnée, aucune publication ou Charte adoptée. **Transmission déposée ≠ accusé de réception par une autre conversation.**
 
+
+
+## 2026-10-31 — Anarchitecte → La Relieuse — revue V0 intégrée 018-B
+
+HEAD candidat contrôlé `69fcd4701cefeb884fdd46fc14a6ad5bbae6108a`, workflow 41128062335 : jobs Node et Chromium success. Parcours fictif, navigation, liens, formulaires sans envoi normal documentés. **Réserve nouvelle :** le mode candidat de `script.js` et `ressources.js` est débrayable côté client via `globalThis.INTERSTICE_CANDIDATE_MODE=false` avant chargement, et les branches de soumission Supabase restent embarquées. Ne pas présenter cette garde JavaScript comme sécurité pour un déploiement public. Essai extérieur **local/isolé et encadré** envisageable ; ouverture publique et données réelles non prêtes. Rapport complet `coordination/ANARCHITECTE_REVUE_V0_018B_2026-10-31.md` (commit `1775aa0f7cac0214fa70bf8ed8f27df5882f47ad`). Branche candidate inchangée, aucune fusion/déploiement, aucune modification Supabase. Dépôt GitHub de cette transmission ne prouve pas sa réception par la conversation de La Relieuse.
