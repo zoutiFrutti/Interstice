@@ -117,3 +117,31 @@ Références : [Manifeste V2.5 éditorial non adopté](https://docs.google.com/d
 
 **[Rapport de transmission exact et trois demandes ciblées pour l'Assistant](transmissions/2026-10-31_ANARCHIVISTE_PRE_SORTIE_ETAPE2_LOT3.md)**, commit `ec59c7741022207ee51b65595497f5a9bc6a7bb8`. Le registre commun n'a modifié que les **trois statuts historiques correspondants**, commit `f7ecf3e0b41b4df4b4bb014634fb8edbb1722ef0`. Statut toujours candidat avec réserves ; La Lectrice n'a pas encore rendu d'avis et Zout n'a pas approuvé le lot. Sont bloquants **uniquement les énoncés plus forts sur l'événement effectivement tenu, les ateliers effectivement exploités et la date exacte de diffusion des statuts**, ainsi que toute reproduction de fichier sans droit prouvé ; les réserves sont publiables comme incertitudes identifiées après validation.
 **Ne pas refaire la revue des 22, ne pas fusionner ni publier**. L'Assistant a une demande dans le rapport, sa réception autonome n'est pas attestée.
+
+
+---
+
+## 9. ARCHIVISTE — CYCLE MULTITHÉMATIQUE / QUATRE PASSES (31 octobre 2026)
+
+**Quatre passes réelles achevées par L'Anarchiviste :**
+1. **Affiches** n°331 (15 mai), n°342 (18 mai), n°270 (6 mai) : ARCH-003/004/008, notices muséales et BHVP/Commons recoupées, corrections effectives des trois Google Docs. Projets/convocations ≠ pratique.
+2. **Contradictions** : ARCH-005 (2 avril/3 mai, mention Frankel, prescriptions ≠ paie), ARCH-006 (4 numéros Le Prolétaire, journal ≠ club), COL-003 (Saint-Ambroise ≠ Saint-Germain-l'Auxerrois, ratios de femmes contradictoires), ASSO-007 (listes, statuts, réalisations) : quatre Google Docs corrigés et relus. **ARCH-005 et COL-003 gardent A_CORRIGER avec incertitudes**, pas de clôture artificielle.
+3. **ÉCO-001A** : Larzac (Archives Aveyron), Plogoff (Archives Finistère, film Le Garrec), Chipko (étude Seema Mundoli), Green Belt Movement (histoire institutionnelle), Warren County (archives et rapports EPA) ; histoire des luttes située avec hypothèses attribuées et données non établies.
+4. **ÉCO-001B/C** : Reclus, Bookchin, d'Eaubonne, communs (Ostrom notice non lue), végétarisme 1847 et véganisme 1944 ; Reclus 1901 et étude Scarborough *Nature Food* 2023, résultats avec leur échantillon et incertitude. Aucune prescription alimentaire ni opinion politique adoptée.
+
+**Sept documents de recherche Drive modifiés sans renommer ni créer de doublon :**
+- [ARCH-003](https://docs.google.com/document/d/12ab5MPTFdZXAS7oUdagWh5oqC3YONZNiJL0j29uwbrE/edit) : complément consolidé écrit et relu dans l'existant.
+- [ARCH-004](https://docs.google.com/document/d/13q2UVdWu1YCHMeU1bc78LKOK7dD6qqYsziLAc30p1Fo/edit) : complément consolidé écrit et relu dans l'existant.
+- [ARCH-008](https://docs.google.com/document/d/1DcdQac1i1QZXkmMd5PaX63GtH63wHM6fuPMObZjsAN4/edit) : complément consolidé écrit et relu dans l'existant.
+- [ARCH-005](https://docs.google.com/document/d/13FO7BOajhiOt0bxcp00_Efng43xNA42qfkLnr9AmwGs/edit) : complément consolidé écrit et relu dans l'existant.
+- [ARCH-006](https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit) : complément consolidé écrit et relu dans l'existant.
+- [COL-003](https://docs.google.com/document/d/1dCYjWceGFmzbR7GSAoK_r5z5OvwmT4j-ZI-NS7R4_LI/edit) : complément consolidé écrit et relu dans l'existant.
+- [ASSO-007](https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit) : complément consolidé écrit et relu dans l'existant.
+
+**[Dossier écologique enrichi in situ et relu](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md)**, commit `50ec932f21a0f57e1248e3ebd57af6f0ab56d0f2`. Le registre a été complété pour **7 identifiants de fiches existantes seulement**, commit `457dec3203c11e5b4c17606d98e7dae6bb6982af`. **ÉCO-001A/B/C restent des axes documentaires du rapport et non des fiches Wiki ou FN nouvelles.**
+
+**Transmission à La Lectrice :** contrôle contradictoire des dates des affiches, origine réelle des variantes, organes de l'Union, ratio de participation au Club des prolétaires, distinction journal/club, droit des images ; vérifier sources écologiques situées, effets moyens Nature Food, absence de lecture intégrale Reclus/Bookchin/Ostrom/GIEC et absence de voix participantes originales pour Chipko et Warren County.
+
+**Transmission à La Relieuse :** enregistrer quatre passes, garder dossiers et branches en l'état, aucun feu vert de sortie. Les pièces qui pourraient changer des affirmations plus fortes sont : registre d'inscriptions des ouvrières, procès-verbal de la réunion du 21 mai (déjà demandé dans l'étape 2), pièces de paie/élection Louvre, Ly22 et éditions intégrales du Prolétaire, sources originales de réunions locales, archives des cinq luttes, licences de photos et films. Pas besoin de relancer les revues générales.
+
+**Droits et statut :** texte historique de 1871, photographie/numérisation et études modernes séparés ; images, livres, films, cartes et figures scientifiques NON importés. **0 publication, 0 fusion, 0 autorisation de reproduction et 0 visa éditorial prétendu**. Le dépôt GitHub rend ces transmissions consultables, pas automatiquement reçues dans les autres conversations.
