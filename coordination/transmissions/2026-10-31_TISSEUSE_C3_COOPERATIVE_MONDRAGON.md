@@ -1,0 +1,18 @@
+# CAS C3-COOP — MONDRAGON (Pays basque, Espagne)
+Vérification documentaire : 31 octobre 2026. Statut : CANDIDAT PARCOURS CRITIQUE, sans accord éditorial, fusion, publication, référencement consenti ni partenariat. À relire par La Lectrice et La Relieuse. Les faits déclarés par les opérateurs sont explicitement attribués.
+
+**Parcours correspondant (page Wiki existante)** : [Capitalisme, classes et travail](../../../wiki-capitalisme-classes-travail.html) et [Socialismes et autogestion](../../../wiki-socialismes-communismes-anarchismes-autogestion.html), [Décider ensemble](../../../wiki-decision-collective.html). Navigation candidate, non intégrée : article coopératives → « une personne, une voix : qui vote ? » → principes et comptes → objection sociétaires/salariés → exercice sur périmètre statistique → retour.
+
+**Activité actuelle et ressources** : groupe de coopératives actif, organisation déclarée sur quatre domaines industrie, finance, distribution, connaissance. [Site officiel, consulté 31/10/2026](https://www.mondragon-corporation.com/en/about-us/) indique **81 coopératives**, environ 70 000 personnes et 12 centres de recherche. Chiffres arrondis et communication institutionnelle, non un décompte indépendant.
+
+**Objectifs annoncés** : primauté du travail, démocratie coopérative, intercoopération, éducation, emploi et participation, notamment principe « une personne, une voix » dans les instances des coopératives **pour les personnes sociétaires et selon les règles applicables**, pas pour tous les employés du groupe.
+
+**Résultats datés par le groupe** : [rapport 2025 présenté sur site](https://www.mondragon-corporation.com/en/anual-report/letters-for-the-president/) : **plus de 71 400 emplois**, **11,3 milliards d'euros de ventes**, **618,8 millions d'euros de bénéfices**, **plus de 1 300 nouveaux emplois** selon MONDRAGON. Ces chiffres d'ensemble ne mesurent ni démocratie vécue, ni égalité salariale, ni redistribution de chaque entité. **Donnée d'étude distincte** : article scientifique de 2022 sur l'exercice **2018** : **26 759 sociétaires travailleurs sur 81 837 emplois de groupe** incluant les filiales ; ce n'est pas le taux de sociétaires 2025/2026. https://onlinelibrary.wiley.com/doi/10.1111/apce.12329 .
+
+**Travail et participation** : distinguer quatre périmètres : personnes sociétaires de coopératives, salariées non sociétaires, salariées des filiales internationales, éventuellement sous-traitants. Les processus de vote des sociétaires ne prouvent pas les droits identiques de ces autres groupes. Activité économique actuelle attestée par rapport du groupe, **application effective des principes dans chaque entité non auditée**.
+
+**Objection majeure** : concentration du pouvoir et accès au sociétariat, représentation des filiales, rapports femmes/hommes, conditions de travail et départs, distribution des profits ; ne pas en conclure que tout emploi coopératif serait démocratique. *Question critique* : comment changerait le récit « 1 personne = 1 voix » si l'on indiquait séparément salariés sociétaires et non sociétaires ?
+
+**Canal et référence publics** : [site institutionnel](https://www.mondragon-corporation.com/en/), rapport annuel ; aucun contact effectué. **Aucun partenariat Interstice** ; pas d'emploi ni visite immédiatement disponible inférés. [EXP-004 corrigée existante](https://docs.google.com/document/d/1qIwYtVa4Sj5xWQTExW4xhI5x7565tin8-G48CoTz834/edit).
+
+**Réserves avant visa** : vérifier méthodologie et champ exact de l'étude de sociétariat, rechercher contre-enquête salariés et filiales, droits des photos et graphiques, examen de la Lectrice, validation Zout.
