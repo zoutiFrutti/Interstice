@@ -108,3 +108,51 @@ remarques_confidentialite:
 **Catalogue Médiathèque enrichi et relu** : https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit
 
 **Portée** : contribution documentaire candidate, non revue par juriste humaine, aucun fichier de personnes, aucune permanence juridique, aucun appel à témoignage, aucune fusion, aucun site/fiche publique déployé ni modification du manifeste.
+
+## 8. Contribution de La Lectrice — protocole de relecture critique des fiches DROIT-001/002
+**31 octobre 2026. Statut : méthode et objections candidates, NON validation des futures fiches.** Fondée sur le cadrage de La Juriste (§§1–6), les **36 sources** de La Médiathèque et des recoupements ciblés Service-Public. Les fiches de poche, détaillées et d'orientation ne sont **pas fournies dans ce dossier comme textes complets à corriger** : on ne peut donc pas déclarer une relecture ligne par ligne de fiches non rédigées.
+
+### Où sont les objections (sans nouveau dossier parallèle)
+- [DROIT-001 — annexe Lectrice L001-01 à L001-12](mediatheque/DROIT-001_BIBLIO_MANIFESTATIONS_CONTROLES_GAV_2026-10-31.md) : déclaration/interdiction, contrôle vs vérification, audition libre vs garde à vue, durées, avocat, médecin, 3039 et recours. Statuts et exceptions à faire confirmer par La Juriste.
+- [DROIT-002 — annexe Lectrice L002-01 à L002-12](mediatheque/DROIT-002_BIBLIO_LOGEMENT_EXPULSIONS_AIDES_2026-10-31.md) : six semaines/deux mois, trêve et exceptions, habitat non décent vs arrêté, DALO/DAHO, 115, FSL, ADIL, procédures. Statuts et délais à faire confirmer par La Juriste.
+
+### Méthode commune : un contrôle par assertion, pas une validation globale « la fiche est bonne »
+1. **Identifier à qui parle la phrase** (organisateur, participant, personne retenue, proche, locataire, occupant, demandeur DALO, personne sans abri) et le territoire précis. Un droit « pour tous » exige une source qui en prouve le champ.
+2. **Étiqueter le niveau d'énoncé** :
+   - **Information légale vérifiable** : norme, version et date d'entrée en vigueur, décision juridictionnelle identifiable et portée réelle ; préciser les conditions et exceptions.
+   - **Conseil pratique général** : action possible en situation ordinaire (« vérifier l'acte reçu », « rechercher une permanence »), jamais obligation automatique, issue garantie, ni consigne de résistance ou suspension unilatérale de paiement.
+   - **Consultation juridique personnalisée** : déterminer à partir d'une convocation, d'un arrêté, bail, commandement ou décision de justice **ce qui s'applique à une personne**, calculer son échéance propre, choisir sa stratégie ou rédiger son recours. **Ne pas réaliser cela dans le Wiki**, orienter vers la personne ou structure compétente et ne pas collecter les pièces sur GitHub.
+   - **Proposition politique / guide associatif** : valeur d'opinion ou d'accompagnement explicitement nommée, jamais présentée comme droit positif ou jurisprudence.
+3. **Lier chaque délai à 5 éléments** : acte ou événement déclencheur ; qui reçoit l'acte ; unité et mode de computation (jours francs, semaines, mois, jours ouvrables quand applicable) ; exceptions/prolongation/suspension ; source datée et voie d'action. Si l'un manque : **bloquer l'instruction « vous avez X jours »**.
+4. **Vérifier les négations et absolus** : « toujours », « jamais », « automatiquement », « gratuit », « immédiatement », « obligatoire », « impossible », « autorisé », « garanti ». Les confronter au texte et remplacer par la condition exacte, pas seulement « en général ».
+5. **Tester l'action réelle sans données privées** : « Où ? Par qui ? Avec quoi ? Est-ce disponible sans compte ? Qui répond ? Quelle preuve conserver pour soi ? Quelle aide humaine si la démarche échoue ? ». Ne jamais inventer permanence, canal sécurisé, retour sous 24 h ou partenariat.
+6. **Comparer les trois formats** : poche et détail doivent avoir mêmes conditions cruciales ; la version orientation ne doit pas promettre consultation immédiate. Version poche = synthèse honnête, pas effacement d'exceptions qui changent le comportement.
+7. **Éprouver la compréhension** : phrase courte, un verbe d'action, sigles définis dès leur première occurrence, glossaire très bref au besoin, décisions par ordre chronologique. Lecture mobile **320 px**, zoom 200 %, clavier et lecteur d'écran, impression noir/blanc A4 et poche, usage hors-ligne sans compte ni traceur : tests à demander aux ateliers techniques, **pas encore réalisés par La Lectrice**.
+8. **Traçabilité et sortie** : conserver la phrase originale, sa correction candidate, les références avec dates, le statut `FAIT` documentaire / `A_VERIFIER_JURISTE` / `BLOQUANT_PUBLICATION` / `NON_APPLICABLE`, et nom/fonction du validateur humain **à désigner**. Une objection peut être levée par preuve et version, pas par simple approbation de principe.
+
+### Exemples contrôlés : avant / proposition, jamais consignes individuelles
+| Formulation problématique (exemple inventé, non trouvée dans une fiche publiée) | Alternative de lecture possible, à valider par La Juriste |
+|---|---|
+| « Une manif doit être autorisée » | « Les organisateurs de certaines manifestations sur la voie publique doivent effectuer une déclaration préalable ; les règles et exceptions dépendent du rassemblement. La déclaration n'est pas une autorisation. » |
+| « La police peut vous garder quatre heures » | « Une **vérification d'identité**, distincte du simple contrôle et de la garde à vue, peut conduire à une retenue soumise à un cadre et à une durée maximale ; il existe des règles particulières selon les situations et les territoires. » |
+| « La garde à vue dure 24 h » | « 24 h constitue la durée initiale dans le régime ordinaire ; une prolongation peut être décidée sous conditions. » |
+| « Après un impayé vous avez deux mois » | « Identifier d'abord le document : **commandement de payer** (six semaines dans le parcours habituel visé) ou **commandement de quitter les lieux** (deux mois en principe, exceptions et décision judiciaire). » |
+| « Vous ne pouvez jamais être expulsé en hiver » | « La trêve reporte de nombreuses expulsions matérielles du 1er novembre au 31 mars, mais certaines situations sont exclues et les procédures peuvent continuer. » |
+| « Vous avez un DALO donc on vous loge vite » | « La décision de la commission ouvre des obligations et recours selon critères et délais territoriaux ; elle ne garantit pas une attribution matérielle immédiate. » |
+| « Un logement indécent vous dispense de payer » | « Ne pas assimiler non-décence et **arrêté administratif d'insalubrité** : leurs conséquences sur le loyer sont différentes. Faire vérifier les pièces par une aide humaine. » |
+
+### Tests de compréhension à faire avec des personnes, sans recueillir leurs affaires
+- **T1** : après la lecture de la poche DROIT-001, une personne sans bagage juridique sait-elle désigner si une formalité concerne l'organisateur ou la personne qui participe ?
+- **T2** : sur trois cartes **entièrement fictives** « contrôle », « audition libre » et « garde à vue », la personne retrouve-t-elle l'étape correcte et la référence ?
+- **T3** : sur trois faux documents « rappel de loyer », « commandement de payer » et « commandement de quitter », repère-t-elle quel délai n'est **pas** interchangeable ?
+- **T4** : lit-elle la trêve hivernale comme une suspension de certaines **expulsions matérielles**, non une disparition des dettes ou des procédures ?
+- **T5** : distingue-t-elle DALO, DAHO et appel au 115, sans attendre une place garantie ?
+- **T6** : trouve-t-elle une source et une orientation officielle en deux gestes, y compris hors compte ? Peut-elle expliquer pourquoi elle ne doit pas transmettre d'éléments identifiants dans GitHub ?
+- **Mesure minimale** : réussite de la compréhension par explication dans ses mots, sans donnée personnelle ; noter seulement « compris / ambigu / incompris » et le passage en cause, aucun prénom, adresse, récit vécu ou document réel. La méthode de test et son acceptabilité doivent être validées avant essai humain.
+
+### Conditions de transmission et levée des réserves
+**La Médiathèque :** continuer de versionner les références/éditions, distinguer norme, notices pratiques, jurisprudence, guides militants et licences. **La Juriste :** décider quelles objections sont fondées, vérifier exceptions et délais article par article, relire les modèles de textes. **La Tisseuse :** contrôler services et modalités réelles sans annoncer d'accord. **La Graphiste / L'Anarchitecte :** tester trois formats et lisibilité sans captation de données. **La Relieuse :** désigner les relectures humaines et arbitrer le périmètre, sans se constituer autorité juridique. **La Lectrice :** comparer ultérieurement les *phrases effectivement rédigées* à L001/L002, marquer tout nouvel écart et conserver le droit de critique.
+
+**Seuil de non-publication :** délai sans point de départ, exception dangereuse omise, mauvais acteur (organisateur/participant ; bailleur/locataire ; contrôle/GAV), droit absolu inexistant, procédure sans voie de recours ni aide réaliste quand nécessaire, canal d'urgence/confidentiel fictif, ou absence de relecture humaine sur les points sensibles. Une « validation de l'article par La Lectrice » **n'est pas possible** à ce stade.
+
+**Traçabilité** : contribution enregistrée dans la présente transmission commune et **dans les deux bibliographies existantes**, sans créer de troisième dossier, sans modifier de fiche HTML, sans collecte de cas ni publication de service. L'écriture GitHub ne prouve pas la réception par une autre conversation.
