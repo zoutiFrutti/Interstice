@@ -290,3 +290,12 @@ body.fiche-wiki-page > header a{
   max-width:100%;
   min-width:0;
 }
+
+
+/* Chromium 320px, titre réel ÉCO : le mot « environnementale » restait
+   un segment inline insécable dans <em>, malgré le reflow du conteneur. */
+.interstice-fiche.fiche-wiki-candidate .hero h1,
+.interstice-fiche.fiche-wiki-candidate .hero h1 em{
+  overflow-wrap:anywhere;
+  max-width:100%;
+}
