@@ -209,3 +209,13 @@ La Relieuse présentera **un parcours d'essai unique**, accompagné des URLs et 
 
 ## Suivi DROIT-001 / DROIT-002 — 31 octobre 2026
 Chantier transversal **cadré, non publié** : [feuille de route courte, responsabilités et critères de validation](RELIEUSE_FEUILLE_ROUTE_DROIT_001_002_2026-10-31.md). Source : [transmission de la Juriste sur main](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/JURISTE_TRANSMISSION_COMMUNE_ACCES_AUX_DROITS_2026-10-31.md). **Vague A uniquement proposée** (Juriste, Médiathèque, Tisseuse) ; aucune conversation notifiée ni partenariat présumé. Développeuse/Graphiste/Anarchitecte sollicités seulement après fiches vérifiées ; éviter de perturber la V0 actuelle. Aucun conseil personnalisé, collecte, fusion ou publication.
+
+
+---
+
+## Suivi ÉCOLOGIE 001 — 31 octobre 2026
+**Trois axes documentaires candidats, sans nouveau pilier ni modification du manifeste** : [feuille de route ÉCOLOGIE 001](RELIEUSE_FEUILLE_ROUTE_ECOLOGIE_001_2026-10-31.md), à partir de la [transmission source Archiviste](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md) et du corpus déjà ajouté à la Médiathèque. Le pilier 5 du manifeste V2.5 est « Écologie sociale, habitat et autonomie territoriale » (référence éditoriale non adoptée).
+
+**ÉCO-001A** histoire des luttes ; **ÉCO-001B** écologie sociale/communs ; **ÉCO-001C** histoire du végétarisme/véganisme et résultats environnementaux. **Vague A1 proposée :** Médiathèque (table de sources consolidées, sans nouvelles FN redondantes) et Assistant de l'Anarchiviste (index de pièces primaires et droits, pas d'autre synthèse historique). **Vague A2 :** Archiviste (arbitrage critique sur nouvelles pièces) et Biographies (une fiche pilote, après contrôle doublons). **Vague B :** Lectrice, Penseur, Juriste en contrôle ciblé des dossiers ; **Vague C :** Tisseuse uniquement sur besoin précis, sans prise de contact ni partenariat supposé. Huit messages précis **PRÉPARÉS dans la feuille de route** : l'écriture GitHub ne notifie aucune conversation.
+
+**Blocages de publication :** traçabilité historique, validité scientifique et dénominateurs comparatifs, droits des images et textes, reconnaissance des voix autochtones, distinctions entre faits/science/interprétations/politiques et décision humaine collective. Pas de nouveau Wiki, de ligne politique ou de changement technique dans ce dépôt par cette transmission ; la V0 citoyenne et les deux fiches DROIT restent prioritaires selon leurs dépendances respectives.
