@@ -1,4 +1,4 @@
-# KONTON Control · cockpit V0.5 — séparation des espaces et disponibilité IA
+# KONTON Control · cockpit V0.7 — navigation Android simplifiée
 
 **Statut : prototype sur branche, non déployé, non fusionné.**
 **31 octobre 2026.**
@@ -204,3 +204,16 @@ node test-local-api.cjs
 Les tests couvrent le refus de mélanger les espaces, le rejet d'historiques d'un autre périmètre, l'absence du modèle et les erreurs de disponibilité. Reste à effectuer un **vrai essai sur une machine compatible**, la QA mobile et une revue de sécurité avant toute exposition réseau.
 
 **Aucune publication, fusion GitHub, création de compte, approbation ni autonomie éditoriale n'est ajoutée.**
+
+## V0.7 · Interface mobile simplifiée après test sur Crosscall
+
+Retour utilisateur : l'APK V0.6 s'installe et s'ouvre sur le Crosscall Stellar X5, mais l'écran initial est trop chargé. La V0.7 sépare l'interface en **Accueil / Agents / GitHub / Outils**, via une navigation fixe en bas sur téléphone.
+
+- **Accueil** : deux actions principales, état explicite de la simulation et aperçu des compteurs fictifs. Pas de formulaires serveur.
+- **Agents** : un pupitre de démonstration. Les commandes GO, STOP et les validations locales restent fictives.
+- **GitHub** : informations publiques réelles uniquement après réponse de l'API, en lecture seule.
+- **Outils** : fonctions techniques séparées. Dans l'APK, les formulaires serveur qui ne peuvent pas fonctionner sont masqués au profit d'une explication claire.
+
+Ce changement **ne rend pas Ollama accessible à distance** et ne connecte pas les dépôts privés. L'application Android reste une APK de développement sans signature stable : la signature de debug peut changer à chaque compilation et exiger la désinstallation de la V0.6 avant la V0.7.
+
+La nouvelle navigation est couverte par le test Node test-navigation.cjs. Une compilation Android réussie ne remplace pas un contrôle visuel et fonctionnel sur le téléphone, notamment la largeur réelle de son écran et les boutons système Android.
