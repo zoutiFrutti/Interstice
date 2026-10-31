@@ -1,0 +1,15 @@
+/* Cycle6 : états éditoriaux explicites, jamais une décision automatique */
+.interstice-fiche.graphiste-c5 .c6-status{border:2px solid #c8b8aa;background:#292328;padding:15px 18px;border-radius:8px;margin-block:16px}
+.interstice-fiche.graphiste-c5 .c6-status__type{font-weight:800;text-transform:uppercase;letter-spacing:.035em;font-size:16px}
+.interstice-fiche.graphiste-c5 .c6-status[data-status="adopte-individuel"]{border-left:8px solid #e9e5db}
+.interstice-fiche.graphiste-c5 .c6-status[data-status="candidat"]{border-left:8px solid #c5212c}
+.interstice-fiche.graphiste-c5 .c6-status[data-status="corrige"]{border-left:8px dashed #d4b3a6}
+.interstice-fiche.graphiste-c5 .c6-status[data-status="reserve"]{border:2px dashed #e9e5db}
+.interstice-fiche.graphiste-c5 .c6-status[data-status="bloque"]{border:3px double #fbabb1;background:#391e26}
+.interstice-fiche.graphiste-c5 .c6-status p{margin:.5em 0 0}
+.interstice-fiche.graphiste-c5 .c6-governance{padding:18px 20px;border-top:3px solid #e9e5db;background:#242126}
+.interstice-fiche.graphiste-c5 .c6-inventory{padding-left:20px}
+.interstice-fiche.graphiste-c5 .c6-inventory li{padding:7px 0;overflow-wrap:anywhere}
+.interstice-fiche.graphiste-c5 .c6-source-sha{font:15px/1.55 ui-monospace,monospace;word-break:break-all}
+@media(max-width:600px){.interstice-fiche.graphiste-c5 .c6-status{padding:12px}}
+@media print{.interstice-fiche.graphiste-c5 .c6-status,.interstice-fiche.graphiste-c5 .c6-governance{background:white!important;color:#111!important;border-color:#555!important;break-inside:avoid}.interstice-fiche.graphiste-c5 .c6-status__type,.interstice-fiche.graphiste-c5 .c6-source-sha{color:#111!important}}
