@@ -1,6 +1,8 @@
 const $=id=>document.getElementById(id);
 $("form").addEventListener("submit",async e=>{
  e.preventDefault();
+ $("etat").textContent="Envoi suspendu dans cette version candidate jusqu’à validation des protections des données.";
+ return;
  const need=$("besoin").value.trim(),offer=$("partage").value.trim(),area=$("lieu").value.trim(),category=$("categorie").value||"Idées et projets";
  if(!need&&!offer){$("etat").textContent="Indique au moins un besoin ou une ressource.";return;}
  const button=$("submit");button.disabled=true;$("etat").textContent="Envoi en cours…";
