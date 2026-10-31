@@ -1,0 +1,1309 @@
+{
+  "schema_version": "interstice-review-v0.1",
+  "date": "2026-10-31",
+  "mandate": "Zout déclare prendre la responsabilité éditoriale de la première édition, pas mandat collectif",
+  "status": "INVENTAIRE_VERIFIE_NON_VALIDATION_EDITORIALE",
+  "reference_manifest": "Manifeste V2.5 29/10/2026 non adopté collectivement",
+  "reference_charter": "Charte V0.3 non adoptée",
+  "publication_scope": "Toutes fiches candidates examinées, publiées seulement si vérifiées et approuvées explicitement, avec incertitudes apparentes",
+  "counts": {
+    "fiches_drive": 44,
+    "mediatheque_fn": 71,
+    "pages_wiki_existing": 24
+  },
+  "drive_fiches": [
+    {
+      "id": "ARCH-001",
+      "title": "ARCH-001 — Lettre de 1907 et Mary Eato Lydia Smith — recherche",
+      "source_folder": "COL",
+      "modified_at": "2026-10-29T07:13:42.115Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ARCH-002",
+      "title": "ARCH-002 — Affiche n°373 (20 mai 1871) — chambres syndicales des ouvrières",
+      "source_folder": "ARCH",
+      "modified_at": "2026-10-31T03:58:51.099Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ARCH-003",
+      "title": "ARCH-003 — Affiche n°331 (15 mai 1871) — inscriptions des ouvrières",
+      "source_folder": "ARCH",
+      "modified_at": "2026-10-29T15:56:08.725Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ARCH-004",
+      "title": "ARCH-004 — Appel aux ouvrières n°342 (18 mai 1871) — fédération productive",
+      "source_folder": "ARCH",
+      "modified_at": "2026-10-31T06:58:53.086Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ARCH-005",
+      "title": "ARCH-005 — Règlements des ateliers d'armes du Louvre (2 avril et 3 mai 1871) — étude comparative",
+      "source_folder": "ARCH",
+      "modified_at": "2026-10-30T21:55:57.176Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ARCH-006",
+      "title": "ARCH-006 — Le Prolétaire (journal du Club des prolétaires, mai 1871) — fiche candidate",
+      "source_folder": "ARCH",
+      "modified_at": "2026-10-30T18:48:52.714Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ARCH-007",
+      "title": "ARCH-007 — Décret du 16 avril 1871 sur les ateliers abandonnés — enquête, coopératives et limites",
+      "source_folder": "ARCH",
+      "modified_at": "2026-10-30T21:55:55.123Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ARCH-008",
+      "title": "ARCH-008 — Manifeste du 6 mai 1871 de l’Union des femmes — défense, travail et conflit autour de la paix",
+      "source_folder": "ARCH",
+      "modified_at": "2026-10-31T06:58:20.465Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ASSO-001",
+      "title": "ASSO-001 — White Rose Mission and Industrial Association — fiche candidate",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-28T23:04:39.870Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ASSO-002",
+      "title": "ASSO-002 — Woman's Loyal Union — fiche candidate",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-28T23:05:35.157Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ASSO-003",
+      "title": "ASSO-003 — Equal Suffrage League de Brooklyn — candidate",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-29T06:55:32.773Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ASSO-004",
+      "title": "ASSO-004 — Lincoln Settlement House — fiche candidate",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-29T07:05:47.785Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ASSO-005",
+      "title": "ASSO-005 — Niagara Movement — histoire critique",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-29T07:13:36.085Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ASSO-006",
+      "title": "ASSO-006 — Phyllis Wheatley Club de Buffalo — recherche",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-29T08:50:48.171Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ASSO-007",
+      "title": "ASSO-007 — Union des femmes de la Commune — mémoire organisationnelle",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-31T06:58:49.669Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "ASSO-008",
+      "title": "ASSO-008 — La Marmite — coopérative ouvrière 1868",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-30T18:48:50.698Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-001",
+      "title": "BIO-001 — Ida B. Wells — fiche de recherche",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-28T22:59:53.400Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-002",
+      "title": "BIO-002 — Victoria Earle Matthews — recherche",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-28T23:02:53.242Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-003",
+      "title": "BIO-003 — Maritcha Remond Lyons — recherche",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-28T23:02:59.839Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-004",
+      "title": "BIO-004 — Sarah Smith Garnet — recherche critique",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T06:55:19.728Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-005",
+      "title": "BIO-005 — Susan Smith McKinney Steward — recherche critique",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T06:55:25.985Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-006",
+      "title": "BIO-006 — Verina Morton-Jones — fiche de recherche critique",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T07:05:40.402Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-007",
+      "title": "BIO-007 — Mary Burnett Talbert — recherche critique",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T08:50:41.852Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-008",
+      "title": "BIO-008 — Louise Michel — Commune et mémoire critique",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T09:47:51.707Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-009",
+      "title": "BIO-009 — Nathalie Le Mel — ouvrières et Commune",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-31T06:58:51.188Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-010",
+      "title": "BIO-010 — Élisabeth Dmitrieff — organisation des femmes",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-31T00:56:16.439Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-011",
+      "title": "BIO-011 — André Léo — Commune, féminisme et paysannerie",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T10:34:40.409Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-012",
+      "title": "BIO-012 — Eugène Varlin — coopération et Commune",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-30T18:48:44.446Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-013",
+      "title": "BIO-013 — Paule Minck — clubs, éducation et Commune",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T12:14:42.559Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-014",
+      "title": "BIO-014 — Léo Frankel — du travail ouvrier à la Commune",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T21:22:00.310Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-015",
+      "title": "BIO-015 — Augustin Avrial — mécanicien, communard, inventeur",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-30T00:59:26.207Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-016",
+      "title": "BIO-016 — Anna Julia Cooper — fiche biographique",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T22:32:42.087Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-017",
+      "title": "BIO-017 — Louise Talbot — ouvrière et militante de la Commune",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T22:17:23.224Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-018",
+      "title": "BIO-018 — Aline Jacquier — biographie candidate",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-30T06:56:06.566Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-019",
+      "title": "BIO-019 — Blanche Lefèvre — fiche candidate",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-31T03:58:49.556Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-020",
+      "title": "BIO-020 — Élisabeth Deguy — fiche candidate",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T23:07:53.526Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-021",
+      "title": "BIO-021 — Joséphine Dulimbert — fiche candidate",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T23:08:04.387Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "BIO-022",
+      "title": "BIO-022 — Anne-Marie Ménand — fiche candidate",
+      "source_folder": "BIO",
+      "modified_at": "2026-10-29T23:08:36.198Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "COL-001",
+      "title": "COL-001 — Femmes de New York et Brooklyn et Southern Horrors (1892)",
+      "source_folder": "COL",
+      "modified_at": "2026-10-28T22:59:55.192Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "COL-003",
+      "title": "COL-003 — Club des prolétaires — assemblées de la Commune",
+      "source_folder": "COL",
+      "modified_at": "2026-10-31T07:21:16.042Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "EXP-001",
+      "title": "EXP-001 — Freegan Pony — cantine participative et récupération alimentaire",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-29T09:59:22.416Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "EXP-002",
+      "title": "EXP-002 — Caisse alimentaire commune de Montpellier — recherche critique",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-29T10:34:42.456Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "EXP-004",
+      "title": "EXP-004 — Mondragón — fédération coopérative et démocratie économique",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-29T21:52:13.634Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "id": "EXP-005",
+      "title": "EXP-005 — Barcelona en Comú et Decidim — démocratie et limites numériques",
+      "source_folder": "ASSO",
+      "modified_at": "2026-10-29T10:34:55.490Z",
+      "review_status": "INVENTORIE_NON_REL_U",
+      "fact_check": "A_FAIRE",
+      "sources_check": "A_FAIRE",
+      "critical_read": "A_FAIRE",
+      "rights_check": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    }
+  ],
+  "mediatheque_fn": [
+    {
+      "id": "FN-001",
+      "title_or_catalogue_excerpt": "Index catalogue à identifier",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-002",
+      "title_or_catalogue_excerpt": "Index catalogue à identifier",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-003",
+      "title_or_catalogue_excerpt": "Index catalogue à identifier",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-004",
+      "title_or_catalogue_excerpt": "FN-004 — L'Entraide, un facteur de l'évolution ; Pierre Kropotkine, 1902 ; traduction Louise Guieysse-Bréal, 1906 ; essai, français ; piliers 2, 5 et 6. Observe les coopérations ch",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-005",
+      "title_or_catalogue_excerpt": "FN-005 — Sita Sings the Blues ; Nina Paley, 2008 ; film d'animation, anglais, 82 min ; piliers 4 et 8. Réinterprétation musicale et visuelle du Ramayana autour d'une histoire de sé",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-006",
+      "title_or_catalogue_excerpt": "FN-006 — Bound by Law? Tales from the Public Domain ; Keith Aoki, James Boyle, Jennifer Jenkins, 2006 ; bande dessinée documentaire, anglais ; piliers 4 et 7. Une mise en scène ill",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-007",
+      "title_or_catalogue_excerpt": "FN-007 — Déclaration des droits de la femme et de la citoyenne ; Olympe de Gouges, 1791 ; déclaration politique, français ; piliers 8 et 1. Met en évidence l'exclusion politique de",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-008",
+      "title_or_catalogue_excerpt": "FN-008 — The Souls of Black Folk ; W. E. B. Du Bois, 1903, deuxième édition 1903 ; essais et récits, anglais ; piliers 8 et 1. Analyse racisme, ségrégation et expériences vécues af",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-009",
+      "title_or_catalogue_excerpt": "FN-009 — The Tyranny of Structurelessness ; Jo Freeman (Joreen), 1972 ; essai féministe critique, anglais ; piliers 6 et 8. Interroge la formation de hiérarchies informelles dans l",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-010",
+      "title_or_catalogue_excerpt": "FN-010. Indígenas e quilombolas brasileiros contam sua história — Povo Gavião, partie 13. Équipe : réalisation et montage Jani Pereira / Felipe Laurito ; images José Palahv Gavião,",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-011",
+      "title_or_catalogue_excerpt": "FN-011. Indígenas e quilombolas brasileiros contam sua história — Quilombo Praia Grande, partie 01. Attribution : Jani Pereira ; images Daniel Gonçalves de Matos, Luciane da Rosa e",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-012",
+      "title_or_catalogue_excerpt": "FN-012. After Capitalism: a Cooperative Economy ; Sarah Maria, 2026, documentaire 48 minutes, anglais. Piliers 3 et 6, renvoi 2. Explore, à Baltimore, des entreprises coopératives ",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-013",
+      "title_or_catalogue_excerpt": "FN-013. This Land Is Our Land: The Fight to Reclaim the Commons ; Jeremy Earp et Sut Jhally, 2010, documentaire, anglais, 47 minutes. Piliers 3, 5 et 7. À partir des arguments de D",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-014",
+      "title_or_catalogue_excerpt": "FN-014 — (Sobre)Vivências, Auarart Filmes, réalisation Gabriel Celestino et Leonidas Taschetto, 2018, documentaire portugais de 53 min 36. Pilier 8. Quatorze personnes LGBT évoquen",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-015",
+      "title_or_catalogue_excerpt": "FN-015 — Queer the Campus: A Documentary, Samuel Klug, 2019, documentaire en anglais de 22 min 32. Piliers 8 et 1. Étudiant·es mobilisé·es pour la visibilité queer et les toilettes",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-016",
+      "title_or_catalogue_excerpt": "FN-016 — Gay and Proud, Lilli Vincenz, 1970, documentaire d'archives américain en anglais, 11 min 43. Pilier 8. Images de la marche Christopher Street Liberation Day du 28 juin 197",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-017",
+      "title_or_catalogue_excerpt": "FN-017 — Pepper&Carrot, épisode 26 « Les livres, c'est génial », David Revoy, 2018, BD française. Piliers 4 et 7. Récit fantastique humoristique valorisant livres et connaissance ;",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-018",
+      "title_or_catalogue_excerpt": "Index catalogue à identifier",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-019",
+      "title_or_catalogue_excerpt": "FN-019 — Consensus Decision Making, Seeds for Change, seconde édition 2020, guide collectif en anglais. Pilier 6. Expose consensus, objections, facilitation et dynamiques de groupe",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-020",
+      "title_or_catalogue_excerpt": "FN-020 — Online Decision Making, Seeds for Change, seconde édition 2023, guide en anglais. Piliers 6 et 7. Décisions démocratiques à distance, accès des membres, limites d'outils n",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-021",
+      "title_or_catalogue_excerpt": "FN-021 — Dieu et l'État ; Mikhaïl Bakounine ; publication posthume 1882, édition française 1892 avec préfaces de Carlo Cafiero et Élisée Reclus ; essai politique et philosophique, ",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-022",
+      "title_or_catalogue_excerpt": "FN-022 — La Commune ; Louise Michel ; 1898 ; récit historique et militant, français ; piliers 6 (autogestion), 8 (égalité), 4 (transmission). Témoignage rétrospectif sur la Commune",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-023",
+      "title_or_catalogue_excerpt": "FN-023 — Mémoires de Louise Michel, écrits par elle-même ; Louise Michel ; F. Roy, 1886 ; autobiographie, français ; piliers 6, 8 et 4. Récit à la première personne sur l’engagemen",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-024",
+      "title_or_catalogue_excerpt": "FN-024 — The Seedkeepers. Auteur/créateur crédité : Indigenous Community Video Collective - NE India. Date : 15 octobre 2015. Format : court métrage documentaire communautaire, vid",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-025",
+      "title_or_catalogue_excerpt": "FN-025 — Women at work - Chatpatit. Auteur/créateur crédité : Lek Ladki Abhiyan (Satara, Inde), en collaboration documentaire avec CIS-A2K selon la notice. Date : 8 mars 2021. Form",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-026",
+      "title_or_catalogue_excerpt": "FN-026 — The Cargo Women of Melilla. Réalisation créditée : Gosia Juszczak ; diffusion et auteur de la mise en ligne : Novara Media, en association avec Caravana Abriendo Fronteras",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-027",
+      "title_or_catalogue_excerpt": "FN-027 — Esther Duflo: Representation for Women in India. Auteur / chaîne créditée : CORE team (CORE Econ) ; intervenante Esther Duflo. Publication : 31 mars 2017 (notice ; métadon",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-028",
+      "title_or_catalogue_excerpt": "FN-028 — Comixplain, « Attribute Types » (édition française). Scénario : Victor De-Jesus-Oliveira ; dessin : Magdalena Boucher ; projet collectif de la University of Applied Scienc",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-029",
+      "title_or_catalogue_excerpt": "FN-029 — My Disillusionment in Russia (« Ma désillusion en Russie », traduction descriptive du titre, non édition française). Autrice : Emma Goldman (1869-1940). Publication origin",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-030",
+      "title_or_catalogue_excerpt": "FN-030 — Direct Action (« De l'action directe »). Autrice : Voltairine de Cleyre (1866-1912). Conférence du 21 janvier 1912, texte paru dans Mother Earth en 1912, repris dans Selec",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-031",
+      "title_or_catalogue_excerpt": "FN-031 — Southern Horrors: Lynch Law in All Its Phases. Autrice : Ida B. Wells (Ida B. Wells-Barnett, 1862-1931). Année : 1892 (première publication du pamphlet ; l'édition numériq",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-032",
+      "title_or_catalogue_excerpt": "FN-032 — Ise ileke sinsin (Beads making). Créateur déclaré et producteur : Yoruba Wikimedians User Group ; réalisation et production : Tunde Oladimeji ; personne présentée : Moreni",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-033",
+      "title_or_catalogue_excerpt": "FN-033 — Woman and Labour. Autrice : Olive Schreiner (1855-1920). Première publication : 1911. Format : essai féministe et critique socioéconomique. Langue : anglais. Piliers : 3 —",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-034",
+      "title_or_catalogue_excerpt": "FN-034 — The Land of Little Rain. Autrice : Mary Austin (1868-1934). Première publication : octobre 1903. Format : récits et essais de nature / écriture de territoire. Langue : ang",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-035",
+      "title_or_catalogue_excerpt": "FN-035 — Women and Economics: A Study of the Economic Relation Between Men and Women as a Factor in Social Evolution ; Charlotte Perkins Gilman ; 1898 ; livre d'essai féministe éco",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-036",
+      "title_or_catalogue_excerpt": "FN-036 — The Principles of Anarchism (Les principes de l'anarchisme) ; Lucy E. Parsons ; conférence, datation incertaine, estimée entre 1905 et 1910 par une édition, autre source a",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-037",
+      "title_or_catalogue_excerpt": "FN-037 — The CARE Principles for Indigenous Data Governance ; Stephanie Russo Carroll, Ibrahim Garba, Oscar Figueroa-Rodríguez, Jarita Holbrook, Raymond Lovett, Simeon Materechera,",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-038",
+      "title_or_catalogue_excerpt": "FN-038 — Principes féministes de l’internet, version 2.0 / Feminist Principles of the Internet 2.0 ; collectif de militantes et de personnes engagées dans les droits sexuels et num",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-039",
+      "title_or_catalogue_excerpt": "FN-039 — Share alike : Ensemble, tout devient possible ; réalisation Pablo Albandea et Tristan Duval, production Lent ciné ; 2025 ; documentaire / essai filmé, France, français, 17",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-040",
+      "title_or_catalogue_excerpt": "FN-040 — Elephants Dream ; réalisation Bassam Kurdali, production Orange Open Movie Team / Blender Foundation / Netherlands Media Art Institute ; 2006 ; court métrage d'animation 3",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-041",
+      "title_or_catalogue_excerpt": "FN-041 — American Indian Stories ; Zitkala-Ša (Gertrude Simmons Bonnin, 1876–1938) ; 1921 ; recueil de récits autobiographiques, fiction et essai politique ; anglais ; piliers offi",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-042",
+      "title_or_catalogue_excerpt": "FN-042 — Life Among the Piutes: Their Wrongs and Claims ; Sarah Winnemucca Hopkins (v.1844–1891), édité par Mary Tyler Peabody Mann ; 1883 ; récit autobiographique et plaidoyer his",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-043",
+      "title_or_catalogue_excerpt": "FN-043 — Better Practices in the Classroom: A Teaching Guidebook for Sustainable, Inclusive, and Equitable Learning from a Gender and Sexuality Studies Framework. Autrices : Natali",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-044",
+      "title_or_catalogue_excerpt": "FN-044 — Dulce. Réalisation : Guille Isa et Angello Faccini ; production Jungles in Paris et Conservation International ; 2018. Type : court métrage documentaire, environ 10 minute",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-045",
+      "title_or_catalogue_excerpt": "FN-045 — Déclaration au peuple français, Commune de Paris, 19 avril 1871. Type : programme politique primaire, français ; pilier 6 Autogestion et fédéralisme libertaire, pilier 5 a",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-046",
+      "title_or_catalogue_excerpt": "FN-046 — Appels et statuts de l'Union des femmes pour la défense de Paris et les soins aux blessés (avril-mai 1871), organisation impulsée notamment par Nathalie Le Mel et Élisabet",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-047",
+      "title_or_catalogue_excerpt": "FN-047 — L’Urgence de ralentir, Philippe Borrel, 2014, documentaire 84 min, français, ARTE France / Cinétévé, d'après une idée originale de Noël Mamère. Piliers 3 autonomie matérie",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-048",
+      "title_or_catalogue_excerpt": "Index catalogue à identifier",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-049",
+      "title_or_catalogue_excerpt": "FN-049 — A Room of One's Own (Une chambre à soi) ; Virginia Woolf ; 1929, Hogarth Press, Londres ; essai féministe et littéraire ; anglais original ; piliers officiels 8 « Égalité ",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-050",
+      "title_or_catalogue_excerpt": "FN-050 — The Theory of the Leisure Class: An Economic Study in the Evolution of Institutions ; Thorstein Veblen ; 1899, Macmillan ; essai de sociologie et d'économie ; anglais orig",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-051",
+      "title_or_catalogue_excerpt": "FN-051 — Jamais sans ma visseuse ; réalisation collective, avec accompagnement de la Télé Buissonnière ; 2021 ; documentaire / portrait, 17 min 45 ; langue française ; piliers 6, 8",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-052",
+      "title_or_catalogue_excerpt": "FN-052 — Sintel ; réalisation Colin Levy, production Blender Foundation / Blender Institute (Durian Open Movie Project), 2010 ; court métrage d'animation, 14 min 48 ; anglais, sous",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-053",
+      "title_or_catalogue_excerpt": "FN-053 — Comic strips Linux TCP BBR ; Oliver H ; 5 janvier 2017 (création, version Commons mise à jour en 2018) ; bande dessinée courte en deux vignettes, fichier SVG ; français (d",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-054",
+      "title_or_catalogue_excerpt": "FN-054 — Pulling Together: A Guide for Curriculum Developers ; Asma-na-hi Antoine, Rachel Mason, Roberta Mason, Sophia Palahicky et Carmen Rodriguez de France ; BCcampus, 2018 ; gu",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-055",
+      "title_or_catalogue_excerpt": "FN-055 — Introduction to Women, Gender, Sexuality Studies ; Miliann Kang, Donovan Lessard, Laura Heston, Sonny Nordmarken ; 30 juin 2017 ; manuel universitaire libre, texte en lign",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-056",
+      "title_or_catalogue_excerpt": "FN-056 — Limitações no processo de desenvolvimento e manutenção de cooperativas rurais do Vale do Arinos, Mato Grosso ; Vanderleia Saleti Mantovani, Ademir Kleber Morbeck de Olivei",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-057",
+      "title_or_catalogue_excerpt": "FN-057 — Principes féministes de l’internet 2.0 / Feminist Principles of the Internet, Version 2.0 ; Association pour le progrès des communications (APC) et contributrices militant",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-058",
+      "title_or_catalogue_excerpt": "FN-058 — 10 Principles of Disability Justice / Dix principes de justice du handicap ; collectif Sins Invalid, cadre développé notamment avec Patty Berne ; première version citée se",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-059",
+      "title_or_catalogue_excerpt": "FN-059 — Together: The Documentary on Coop Resilience ; CECOP (organisme éditeur et producteur institutionnel annoncé), 2012 (mise en ligne sur la page actuelle datée du 14 juin 20",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-060",
+      "title_or_catalogue_excerpt": "FN-060 — Freedom or Fairness? (Mimi & Eunice, strip n°456) ; Nina Paley ; 12 septembre 2011 ; BD courte en trois cases / comic strip ; anglais ; piliers 4 Culture, création et mémo",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-061",
+      "title_or_catalogue_excerpt": "FN-061 — Traditional Knowledge/Biocultural Labels: Usage and Style Guide ; Local Contexts (collectif/organisme éditeur) ; mise à jour du 14 août 2023 ; guide PDF, 3 pages ; anglais",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-062",
+      "title_or_catalogue_excerpt": "FN-062 — Little Bear's Day / ᒪᐢᑯᓯᐢ ᐅᑮᓯᑳᒼ / Un jour avec Petit Ours ; Caylie Gnyra (texte, illustrations et version crie indiquée) ; date de première publication NON CONFIRMÉE ; ada",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-063",
+      "title_or_catalogue_excerpt": "FN-063 — Data Feminism. Autrices : Catherine D'Ignazio et Lauren F. Klein. Année : 2020 (édition électronique MIT Press 21 février ; imprimée 10 mars). Type : ouvrage critique, sci",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-064",
+      "title_or_catalogue_excerpt": "FN-064 — Design Justice Network Principles / Principes de justice en design. Auteur collectif : Design Justice Network, élaboré par un groupe de participantes et participants à l'A",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-065",
+      "title_or_catalogue_excerpt": "FN-065 — Recommandation sur une science ouverte ; UNESCO, Conférence générale ; adoptée le 23 novembre 2021 ; recommandation normative internationale, texte français ; piliers V2.5",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-066",
+      "title_or_catalogue_excerpt": "FN-066 — State of the Commons 2022 ; Creative Commons (éditeur collectif) ; 2023 ; rapport annuel illustré de 14 pages, anglais ; piliers V2.5 : 7 Savoirs libres, médiathèque et au",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-067",
+      "title_or_catalogue_excerpt": "FN-067 — Tejid@s Junt@s / Stitched Together: Workers, Students, and the Movement for Alta Gracia.\r",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-068",
+      "title_or_catalogue_excerpt": "FN-068 — Nous sommes partout : sauvegarde n°1 / Suisse romande ; collectif éditorial Nous sommes partout (collectif initial de sept personnes), témoignages de contributeurices nomm",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-069",
+      "title_or_catalogue_excerpt": "FN-069 — The Combahee River Collective Statement ; auteur : Combahee River Collective (collectif féministe noir lesbien de Boston) ; déclaration datée avril 1977, édition/reproduct",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-070",
+      "title_or_catalogue_excerpt": "FN-070 — A Voice from the South: By a Black Woman of the South ; autrice : Anna Julia Cooper (1858–1964) ; 1892, Xenia (Ohio), Aldine Printing House ; type : recueil de huit essais",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    },
+    {
+      "id": "FN-071",
+      "title_or_catalogue_excerpt": "FN-071 — Superheroes on the Move: A Comic on Sustainable Mobility ; auteur/éditeur : Citizen consumer and civic Action Group (CAG), Inde ; publication sur la page officielle le 20 ",
+      "kind": "référence bibliographique ou média externe",
+      "review_status": "INVENTORIE_NON_VERIFIE",
+      "license_check": "A_FAIRE",
+      "publication_decision": "A_FAIRE"
+    }
+  ],
+  "wiki_pages": [
+    {
+      "path": "wiki-antifascisme-histoire-et-mecanismes.html",
+      "blob_sha_at_inventory": "6910542c3f29fb32730296e902bf71f77b2330a6",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-antiracisme-histoires-droits.html",
+      "blob_sha_at_inventory": "6c1081910a0499e2c9646da1f3d75218dcbc2ee8",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-association-collegiale.html",
+      "blob_sha_at_inventory": "1b2a021d31828047846b428c7091dfae31898ab5",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-autonomie-materielle-savoir-faire.html",
+      "blob_sha_at_inventory": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-capitalisme-classes-travail.html",
+      "blob_sha_at_inventory": "db754eed38c3e02104418800366cae31e90d183c",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-culture-creation-acces-art.html",
+      "blob_sha_at_inventory": "4a71182424035d1696cc9d2b948c3b948fb91923",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-decision-collective.html",
+      "blob_sha_at_inventory": "e09926e74720a2b89ae78065544805c169cb3776",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-ecologie-sociale-environnement.html",
+      "blob_sha_at_inventory": "dd6e149ad8d44b5db5180a800730617b116369f1",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-education-enfance-protection.html",
+      "blob_sha_at_inventory": "931fc198127b9073b3ae513f63bf2dcdaaf177e1",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-egalite-fiches.html",
+      "blob_sha_at_inventory": "083fbae5c37a87b32fd5c86c3da350c425f64c85",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-egalite-genres-inclusivite.html",
+      "blob_sha_at_inventory": "9ca5e5d2e1e83dfeed3669034c48e9ddc86b0646",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-feminismes-histoire-egalite.html",
+      "blob_sha_at_inventory": "69789f5f665cdae4d85061293c9ecb2dcb13c919",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-financements-culture-spectacle.html",
+      "blob_sha_at_inventory": "030b75d277e09c3bc7e971d90d8ca5f1c18e7329",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-frontieres-migrations-colonialisme.html",
+      "blob_sha_at_inventory": "eefa8c327980c6747dca58e14c5b9c9f61e895b9",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-handicap-validisme-neurodiversite.html",
+      "blob_sha_at_inventory": "ac20430979cc5d741d00867ca0fcfb4b70ea19ec",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-justice-prisons-abolitionnisme.html",
+      "blob_sha_at_inventory": "165d2f325fb98cd6680db3da66e71f2b5068d1f3",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "blob_sha_at_inventory": "206f4d999dcfe12bb5d487830ad7cf02edf66780",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-liberte-numerique-ia-surveillance.html",
+      "blob_sha_at_inventory": "cc3245d9497fbe6130dd7e5c631ca387e906cdb3",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-logement-habitat-droit-ville.html",
+      "blob_sha_at_inventory": "f0ce0e5966da0e5e263358ce397a31acd90ed2c3",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-patriarcat-histoire-mecanismes.html",
+      "blob_sha_at_inventory": "0fc8ab4206b930b6100efa085b790e16d4429e45",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-police-deces-memoire.html",
+      "blob_sha_at_inventory": "562b8897552216ffcbdb6e968a76aa6e6b1b8e78",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-politique-institutions-regimes.html",
+      "blob_sha_at_inventory": "86facb7f05895d8234086d2fcee651d4e08bf486",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "blob_sha_at_inventory": "4cf6f1f1cf209c7617bbf7a6e86f0e5c362e57f5",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    },
+    {
+      "path": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "blob_sha_at_inventory": "4aa9dc92b5d864aeee3424d2a77f99abc0690afc",
+      "status": "PRESENT_MAIN_A_RECONTROLER",
+      "content_review": "A_FAIRE",
+      "mobile_accessibility": "A_FAIRE",
+      "human_approval": "A_FAIRE"
+    }
+  ],
+  "NOTE": "Ces catégories se recoupent, ne pas sommer comme autant de nouveaux articles; aucune page n'a reçu un feu vert de publication du seul fait de cet inventaire."
+}
