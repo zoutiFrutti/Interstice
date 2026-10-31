@@ -91,3 +91,20 @@ remarques_confidentialite:
 - `coordination/JOURNAL_COMMUN.md`
 
 **Note de méthode :** la création de ce fichier sur GitHub fournit la source documentaire commune. Elle **ne notifie pas** automatiquement les autres conversations. Chaque destinataire doit recevoir son propre prompt ou un accusé vérifiable d'un orchestrateur effectivement connecté.
+
+
+---
+
+## 7. Contribution Médiathèque — deux dossiers bibliographiques candidats (31 octobre 2026)
+
+**DROIT-001** : [18 ressources sur manifestations, contrôles et garde à vue](mediatheque/DROIT-001_BIBLIO_MANIFESTATIONS_CONTROLES_GAV_2026-10-31.md), commit `8f842b48a584abfce4f892c0baa650f9ef8eeb23`.
+
+**DROIT-002** : [18 ressources sur logement, expulsions et aides](mediatheque/DROIT-002_BIBLIO_LOGEMENT_EXPULSIONS_AIDES_2026-10-31.md), commit `450c7cec4a3d99f6870b2865ba37c9c4afc6fe08`.
+
+**Méthode vérifiée** : 36 entrées, avec titre, organisme, URL, date de consultation, version éditoriale ou législative, territoire, intérêt pratique, niveau réel de consultation et droits de réutilisation. Les versions de 2026 du CPP, CSI, CPCE, du DALO et de certaines fiches Service-Public ont été consultées ; aucune version de guide associatif n'est présumée libre parce qu'accessible. Les commentaires de jurisprudence et résultats indexés ne valent pas lecture intégrale du dispositif. Les sources 2026 les plus récentes du Conseil d'État sur les manifestations sont attribuées à des **ordonnances** et le dispositif de la décision 520729 doit encore être collationné par La Juriste. Pour le logement, distinguer six semaines de commandement de payer et principe de deux mois suivant le commandement de quitter, avec exceptions.
+
+**Répartition candidate** : La Juriste valide dates/règles/exceptions et jurisprudences ; La Lectrice teste formulations à risque et situations des personnes ; La Relieuse enregistre les deux dossiers, identifie validations humaines et organise les versions poche/détaillée/orientation. La Tisseuse peut seulement repérer services humains sur sources officielles, sans accréditation ni partenariat. **Aucune réception automatique par ces conversations**.
+
+**Catalogue Médiathèque enrichi et relu** : https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit
+
+**Portée** : contribution documentaire candidate, non revue par juriste humaine, aucun fichier de personnes, aucune permanence juridique, aucun appel à témoignage, aucune fusion, aucun site/fiche publique déployé ni modification du manifeste.
