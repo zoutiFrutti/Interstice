@@ -1,0 +1,270 @@
+{
+  "schema_version": "interstice-selection-communs-018a-v1",
+  "updated_at": "2026-10-31",
+  "scope": "demo_link_only",
+  "publication_status": "candidate_not_approved",
+  "download_media": false,
+  "embed_media": false,
+  "missing_categories": [
+    "oeuvre_musicale_autonome"
+  ],
+  "counts": {
+    "works": 10,
+    "open_license_or_pd": 6,
+    "free_access_restricted": 4
+  },
+  "works": [
+    {
+      "id": "FN-040",
+      "title": "Elephants Dream",
+      "creators": [
+        "Bassam Kurdali",
+        "Orange Open Movie Team"
+      ],
+      "format": "court-metrage-animation-3d",
+      "language": [
+        "en"
+      ],
+      "duration_seconds": 658,
+      "period": "2006",
+      "origin": "Pays-Bas",
+      "description": "Deux personnages traversent une machinerie énigmatique dont ils ne partagent pas la même interprétation. Film d'animation expérimental associé au projet de création ouverte Blender.",
+      "url": "https://commons.wikimedia.org/wiki/File:Elephants_Dream_(2006).webm",
+      "access_level": "notice-et-fichier-entier-disponible-non-visionne",
+      "rights_group": "librement_reutilisable",
+      "license": "CC BY 2.5",
+      "rights_evidence": "https://commons.wikimedia.org/wiki/File:Elephants_Dream_(2006).webm",
+      "presentation_status": "pret_lien",
+      "interest": "Cinéma expérimental, arts numériques et accès aux outils de création.",
+      "caution": "Durée de l'encodage 10:58, film parfois décrit comme ~9 min ; crédit de projection et sous-titres à examiner.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-016",
+      "title": "Gay and Proud",
+      "creators": [
+        "Lilli Vincenz"
+      ],
+      "format": "documentaire-archives",
+      "language": [
+        "en"
+      ],
+      "duration_seconds": 703,
+      "period": "1970",
+      "origin": "États-Unis",
+      "description": "Images de la marche de Christopher Street à New York le 28 juin 1970, trace située de l'histoire des mobilisations LGBTQ.",
+      "url": "https://commons.wikimedia.org/wiki/File:Gay_and_Proud_(1970).webm",
+      "access_level": "notice-et-fichier-entier-disponible-non-visionne",
+      "rights_group": "librement_reutilisable_avec_reserve",
+      "license": "Domaine public selon Wikimedia Commons ; Library of Congress : aucune restriction connue",
+      "rights_evidence": "https://commons.wikimedia.org/wiki/File:Gay_and_Proud_(1970).webm",
+      "presentation_status": "pret_lien",
+      "interest": "Patrimoine audiovisuel, mémoire LGBTQ et histoire urbaine.",
+      "caution": "Aucune restriction connue ne constitue pas une garantie exhaustive de droits pour toute juridiction.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-010",
+      "title": "Indígenas e quilombolas brasileiros contam sua história — Povo Gavião, parte 13",
+      "creators": [
+        "Jani Pereira",
+        "Felipe Laurito",
+        "Janicéia Silva",
+        "José Palahv Gavião",
+        "Debóra R. Suruí"
+      ],
+      "format": "temoignage-video-communautaire",
+      "language": [
+        "pt-BR"
+      ],
+      "duration_seconds": 487,
+      "period": "2022",
+      "origin": "Brésil",
+      "description": "Conversation de membres du peuple Gavião sur les transformations de leurs conditions de vie. Le récit est porté par des personnes concernées.",
+      "url": "https://commons.wikimedia.org/wiki/File:Ind%C3%ADgenas_e_quilombolas_brasileiros_contam_sua_hist%C3%B3ria_-_Povo_Gavi%C3%A3o_-_parte_13.webm",
+      "access_level": "notice-et-fichier-entier-disponible-non-visionne",
+      "rights_group": "librement_reutilisable_avec_reserve",
+      "license": "CC BY 3.0 affichée sur la fiche Commons",
+      "rights_evidence": "https://commons.wikimedia.org/wiki/File:Ind%C3%ADgenas_e_quilombolas_brasileiros_contam_sua_hist%C3%B3ria_-_Povo_Gavi%C3%A3o_-_parte_13.webm",
+      "presentation_status": "pret_lien",
+      "interest": "Mémoire et langues autochtones, parole non européenne.",
+      "caution": "Ne pas déduire de la licence un mandat culturel général de réutilisation ; transcription et visionnage intégraux non effectués.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-032",
+      "title": "Ise ileke sinsin (Beads making)",
+      "creators": [
+        "Yoruba Wikimedians User Group",
+        "Tunde Oladimeji"
+      ],
+      "format": "documentaire-savoir-faire-et-chant",
+      "language": [
+        "orale non vérifiée",
+        "titre en yoruba et anglais"
+      ],
+      "duration_seconds": 291,
+      "period": "2022",
+      "origin": "Nigeria — Iseyin, Oyo",
+      "description": "Morenikeji Ajigbotorisa présente la fabrication et les usages culturels des perles ileke. Les crédits identifient également des chants.",
+      "url": "https://commons.wikimedia.org/wiki/File:Ise_ileke_sinsin.webm",
+      "access_level": "notice-et-fichier-entier-disponible-non-visionne",
+      "rights_group": "librement_reutilisable_avec_reserve",
+      "license": "CC BY-SA 4.0",
+      "rights_evidence": "https://commons.wikimedia.org/wiki/File:Ise_ileke_sinsin.webm",
+      "presentation_status": "pret_lien",
+      "interest": "Patrimoine vivant, artisanat, contribution féminine et dimension sonore.",
+      "caution": "Langue orale non constatée ; droits de tiers, chants et consentement culturel à examiner pour toute réédition.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-017",
+      "title": "Pepper&Carrot — épisode 26 : Les livres, c'est génial",
+      "creators": [
+        "David Revoy",
+        "Valvin et CalimeroTeknik (traduction française)"
+      ],
+      "format": "bande-dessinee-web",
+      "language": [
+        "fr"
+      ],
+      "duration_seconds": null,
+      "period": "2018",
+      "origin": "France",
+      "description": "Une aventure humoristique dans laquelle le savoir transmis par les livres aide une héroïne à traverser des situations fantaisistes.",
+      "url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
+      "access_level": "episode-entier-en-ligne-transcription-lue",
+      "rights_group": "librement_reutilisable",
+      "license": "CC BY 4.0",
+      "rights_evidence": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
+      "presentation_status": "pret_lien",
+      "interest": "Fantaisie, dessin, plaisir de lire et fichiers sources ouverts.",
+      "caution": "Crédits de traduction et d'illustration à conserver ; ne pas réduire le récit à un message militant.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-071",
+      "title": "Superheroes on the Move: A Comic on Sustainable Mobility",
+      "creators": [
+        "Citizen consumer and civic Action Group (CAG)"
+      ],
+      "format": "bande-dessinee-pedagogique",
+      "language": [
+        "en"
+      ],
+      "duration_seconds": null,
+      "period": "2025",
+      "origin": "Inde",
+      "description": "Une BD jeunesse utilise des personnages de fiction pour aborder transports moins polluants et mobilité quotidienne.",
+      "url": "https://www.cag.org.in/database/superheroes-move-comic-sustainable-mobility",
+      "access_level": "notice-officielle-indexee-pdf-non-lu",
+      "rights_group": "librement_reutilisable_avec_reserve",
+      "license": "CC BY-SA 4.0 sur notice spécifique",
+      "rights_evidence": "https://www.cag.org.in/database/superheroes-move-comic-sustainable-mobility",
+      "presentation_status": "pret_lien_sous_recontrole_technique",
+      "interest": "Éducation par le récit dessiné, mobilité et enjeux d'environnement en Inde.",
+      "caution": "Site officiel indexé, ouverture directe en échec/timeout pendant ce contrôle ; ne pas revendiquer lecture intégrale du PDF, vérifier les éléments tiers.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-062",
+      "title": "Little Bear's Day / ᒪᐢᑯᓯᐢ ᐅᑮᓯᑳᒼ",
+      "creators": [
+        "Caylie Gnyra"
+      ],
+      "format": "album-illustre-jeunesse-multilingue",
+      "language": [
+        "crk",
+        "en",
+        "fr"
+      ],
+      "duration_seconds": null,
+      "period": "date originale non vérifiée ; version haïda 2018",
+      "origin": "Canada",
+      "description": "Le déroulement d'une journée de Petit Ours devient une première lecture comparée en cri des Plaines, en anglais et en français.",
+      "url": "https://indigenousstorybooks.ca/stories/crk/0002/",
+      "access_level": "texte-de-l-histoire-entier-sur-page-audio-cri-absent",
+      "rights_group": "gratuit_protege",
+      "license": "CC BY-NC-SA 3.0",
+      "rights_evidence": "https://indigenousstorybooks.ca/stories/crk/0002/",
+      "presentation_status": "pret_lien",
+      "interest": "Transmission linguistique, dessin et apprentissage du vocabulaire.",
+      "caution": "Audio de la version crie indiqué indisponible ; date de première parution inconnue ; respect des traductions et droits culturels.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-068",
+      "title": "Nous sommes partout — sauvegarde n°1 / Suisse romande",
+      "creators": [
+        "Collectif Nous sommes partout"
+      ],
+      "format": "recueil-ecrit-collectif-et-lectures",
+      "language": [
+        "fr"
+      ],
+      "duration_seconds": null,
+      "period": "2021",
+      "origin": "Suisse",
+      "description": "Un ensemble de témoignages de personnes et collectifs engagés, rassemblés puis mis en circulation aussi par des lectures publiques.",
+      "url": "https://www.noussommespartout.org/",
+      "access_level": "textes-accessibles-sur-site-ouvrage-integral-non-lu",
+      "rights_group": "gratuit_protege",
+      "license": "CC BY-NC-SA 4.0 sur les textes ; code du site MIT distinct",
+      "rights_evidence": "https://www.noussommespartout.org/presentation/",
+      "presentation_status": "pret_lien",
+      "interest": "Formes littéraires collectives, mémoire militante et scène participative.",
+      "caution": "Ne pas diffuser ni identifier des personnes anonymisées ; le livre imprimé et les textes web ne doivent pas être confondus.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-051",
+      "title": "Jamais sans ma visseuse",
+      "creators": [
+        "Collectif de l'atelier",
+        "La Télé Buissonnière (accompagnement)"
+      ],
+      "format": "court-documentaire-portrait",
+      "language": [
+        "fr"
+      ],
+      "duration_seconds": 1065,
+      "period": "2021",
+      "origin": "France",
+      "description": "Un atelier de bricolage féministe en mixité choisie présente son apprentissage partagé, ses outils et sa vie collective.",
+      "url": "https://horscine.org/film/jamais-sans-ma-visseuse/",
+      "access_level": "notice-officielle-et-lecteur-integre-non-teste",
+      "rights_group": "gratuit_protege",
+      "license": "CC BY-NC-ND, version non précisée par fiche",
+      "rights_evidence": "https://horscine.org/film/jamais-sans-ma-visseuse/",
+      "presentation_status": "pret_lien",
+      "interest": "Création militante, fabrication et distribution des savoir-faire.",
+      "caution": "Aucune adaptation permise par la licence ND ; la disponibilité effective du flux PeerTube reste à tester.",
+      "checked_at": "2026-10-31"
+    },
+    {
+      "id": "FN-044",
+      "title": "Dulce",
+      "creators": [
+        "Guille Isa",
+        "Angello Faccini"
+      ],
+      "format": "court-documentaire",
+      "language": [
+        "es"
+      ],
+      "duration_seconds": null,
+      "period": "2018",
+      "origin": "Colombie",
+      "description": "Sur la côte pacifique colombienne, une mère apprend à sa fille à nager pour qu'elle puisse participer aux activités dans la mangrove.",
+      "url": "https://vimeo.com/304173357",
+      "access_level": "page-video-officielle-presente-visionnage-non-effectue",
+      "rights_group": "gratuit_protege",
+      "license": "Droits réservés ; aucune licence ouverte repérée",
+      "rights_evidence": "https://vimeo.com/304173357",
+      "presentation_status": "pret_lien",
+      "interest": "Cinéma documentaire, transmission familiale, patrimoine écologique et travail des femmes.",
+      "caution": "Accès gratuit au lecteur susceptible de varier selon territoire ; projection et copie non autorisées par la simple disponibilité Vimeo.",
+      "checked_at": "2026-10-31"
+    }
+  ]
+}
