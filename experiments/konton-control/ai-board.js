@@ -11,6 +11,7 @@
   const mode = $("ai-mode");
   const list = $("ai-tasks");
   let enabled = false;
+  let modelReady = false;
   let selectedReports = [];
   let running = false;
   const active = new Set();
@@ -63,8 +64,8 @@
       opt.value = task.id;
       selector.append(opt);
     });
-    selector.disabled = !enabled;
-    create.disabled = !enabled;
+    selector.disabled = !modelReady;
+    create.disabled = !modelReady;
   }
   function render(items) {
     list.replaceChildren();
@@ -105,7 +106,7 @@
             await api("/api/ai/tasks/" + task.id + "/run", "POST", {});
             feedback.textContent = "Mission terminée. Lire et vérifier sa réponse.";
           } finally { active.delete(task.id); running = false; }
-        }));
+        }, !modelReady));
       }
       if (task.status === "running" || task.status === "cancel_requested" || active.has(task.id)) {
         buttons.append(button("STOP · interrompre", async () => {
@@ -135,7 +136,7 @@
   }
   form.addEventListener("submit", async event => {
     event.preventDefault();
-    if (!enabled || !selector.value) return;
+    if (!enabled || !modelReady || !selector.value) return;
     create.disabled = true;
     try {
       const result = await api("/api/ai/tasks", "POST", { sourceTaskId: selector.value });
@@ -158,8 +159,12 @@
         return;
       }
       enabled = true;
-      mode.textContent = "Modèle configuré · " + cap.model;
-      feedback.textContent = "Modèle déclaré côté serveur. Son fonctionnement réel reste à vérifier par une mission.";
+      const health = await api("/api/ai/readiness");
+      modelReady = health.ready === true;
+      mode.textContent = (modelReady ? "Modèle installé · " : "Modèle indisponible · ") + cap.model;
+      feedback.textContent = (health.reason || "État non vérifié.") +
+        (modelReady ? " Une génération réelle reste à tester." :
+          " Installer/démarrer le modèle sur cette machine, puis recharger la page.");
       await loadSources();
       await refresh();
       // While a mission is running, refresh display to expose STOP without waiting for /run to finish.
