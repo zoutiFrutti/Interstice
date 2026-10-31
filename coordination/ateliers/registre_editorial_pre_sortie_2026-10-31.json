@@ -3906,5 +3906,17 @@
     "merge": false,
     "publication": false,
     "external_outreach": false
+  },
+  "portage_actuel_20261031": {
+    "source": "Déclaration explicite de Zout du 31 octobre 2026",
+    "nature": "PROJET_INDIVIDUEL_PORTE_PAR_ZOUT",
+    "autres_personnes_membres": 0,
+    "instances_collectives_existantes": false,
+    "ateliers": "ROLES_CHATGPT_SANS_AUTORITE_PROPRE",
+    "decision_actuelle": "ZOUT",
+    "regles_gouvernance_collective": "PROPOSITIONS_POUR_PHASE_FUTURE_NON_APPLICABLES_ACTUELLEMENT",
+    "legal_requirements": "RESTENT_APPLICABLES_SELON_LES_ACTIVITES",
+    "journal_commit": "f2ef82c620e9481af08ef75251ba71ff82d6e9f7",
+    "editions_v26_chartes_modifiees": false
   }
 }
