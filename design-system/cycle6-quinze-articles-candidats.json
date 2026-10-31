@@ -1,0 +1,130 @@
+{
+  "version": "cycle6-candidate-2026-10-31",
+  "provenance": {
+    "branch": "coordination/relieur-pilote-10-passes-20261030",
+    "register_blob_sha": "f005414fc566cf020e2ac8931f4841e30ffde859"
+  },
+  "warning": "Inventaire de préparation graphique uniquement ; aucun visa Zout induit ; contrôles requis sur version exacte corrigée.",
+  "items": [
+    {
+      "path": "wiki-antifascisme-histoire-et-mecanismes.html",
+      "source_blob_sha": "6910542c3f29fb32730296e902bf71f77b2330a6",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Chronologie et catégories politiques à contextualiser, voix des résistances hors Europe."
+    },
+    {
+      "path": "wiki-antiracisme-histoires-droits.html",
+      "source_blob_sha": "6c1081910a0499e2c9646da1f3d75218dcbc2ee8",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Références de recours et voix concernées à dater; relier BIO/FN antiracistes."
+    },
+    {
+      "path": "wiki-autonomie-materielle-savoir-faire.html",
+      "source_blob_sha": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Lien interne wiki-mutualiser-materiel.html absent et contrôles de sécurité par technique."
+    },
+    {
+      "path": "wiki-capitalisme-classes-travail.html",
+      "source_blob_sha": "db754eed38c3e02104418800366cae31e90d183c",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Chiffres et droits sociaux à versionner; care, syndicalismes, travail migrant."
+    },
+    {
+      "path": "wiki-culture-creation-acces-art.html",
+      "source_blob_sha": "4a71182424035d1696cc9d2b948c3b948fb91923",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Sources génériques par rubrique, droits du travail et spectacle à vérifier."
+    },
+    {
+      "path": "wiki-ecologie-sociale-environnement.html",
+      "source_blob_sha": "dd6e149ad8d44b5db5180a800730617b116369f1",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Références par assertion et histoire ouvrière/paysanne/autochtone, ÉCO-001."
+    },
+    {
+      "path": "wiki-egalite-fiches.html",
+      "source_blob_sha": "083fbae5c37a87b32fd5c86c3da350c425f64c85",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Sources et terminologies spécifiques à relire avec personnes concernées."
+    },
+    {
+      "path": "wiki-egalite-genres-inclusivite.html",
+      "source_blob_sha": "9ca5e5d2e1e83dfeed3669034c48e9ddc86b0646",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Carte expérimentale et navigation/accessibilité à vérifier."
+    },
+    {
+      "path": "wiki-feminismes-histoire-egalite.html",
+      "source_blob_sha": "69789f5f665cdae4d85061293c9ecb2dcb13c919",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Sources et interconnexion archives femmes Commune / FN/ BIO / ASSO à consolider."
+    },
+    {
+      "path": "wiki-handicap-validisme-neurodiversite.html",
+      "source_blob_sha": "ac20430979cc5d741d00867ca0fcfb4b70ea19ec",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Version des démarches et participation des personnes concernées à confirmer."
+    },
+    {
+      "path": "wiki-justice-prisons-abolitionnisme.html",
+      "source_blob_sha": "165d2f325fb98cd6680db3da66e71f2b5068d1f3",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Chiffres, droits et visions contradictoires à recouper par source."
+    },
+    {
+      "path": "wiki-liberte-numerique-ia-surveillance.html",
+      "source_blob_sha": "cc3245d9497fbe6130dd7e5c631ca387e906cdb3",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Droit/technique 2026 et hypothèses IA distribuée/énergie à dater."
+    },
+    {
+      "path": "wiki-patriarcat-histoire-mecanismes.html",
+      "source_blob_sha": "0fc8ab4206b930b6100efa085b790e16d4429e45",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Références/savoirs contradictoires, statistiques genre et soin à préciser."
+    },
+    {
+      "path": "wiki-politique-institutions-regimes.html",
+      "source_blob_sha": "86facb7f05895d8234086d2fcee651d4e08bf486",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Schémas et compétences à versionner sans classement universel."
+    },
+    {
+      "path": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "source_blob_sha": "4aa9dc92b5d864aeee3424d2a77f99abc0690afc",
+      "status": "A_CORRIGER",
+      "approval": "NON_DONNE",
+      "publication": "NON_AUTORISEE",
+      "reserve": "Sources et récits extra-européens, liens avec 44 fiches et contradictions des communs."
+    }
+  ]
+}
