@@ -135,3 +135,15 @@ Ne PAS recréer TIS-001 : conserver [cadrage original](../TISSEUSE_CADRAGE_COOPE
 ### 4. Conclusion honnête
 
 **Résultat atteint :** dix organismes distincts repérés et documentés par sources publiques ; trois cas transversaux approfondis ; état et limites d'accès distingués ; aucune collecte ni contact privé. **Non atteint :** acceptation de fiches, accords, visites, audits indépendants des impacts, vérifications en personne, examen intégral des douze identités TIS-001 déjà collectées, réception/validation par les conversations des trois ateliers. L'extension écologique reste **candidate et révisable**.
+
+
+### 5. Comparaison hors Occitanie (piste supplémentaire, **non comptée dans les dix**)
+
+**Longo Maï / coopérative Grange Neuve, Limans (Alpes-de-Haute-Provence, France)** — fondation du réseau de communautés autogérées en **1973**, agriculture et artisanat mutualisés, gestion communautaire, projets de semences et de forêts, radio associative. L'organisation de soutien Pro Longo Maï présente publiquement les activités, l'accueil et la formation de visiteurs. **Conditions publiées :** la page « portes ouvertes » indique des accueils après organisation collective et accompagnement, sans calendrier 2026, frais, durée ou admission garantie à cette consultation ; des annonces anciennes de périodes d'accueil ne sont pas un programme 2026. **Incertitudes majeures :** statut exact de chacune des entités du réseau, place du travail rémunéré/non rémunéré, pouvoirs informels, critique contradictoire des récits d'autogestion, contraintes juridiques des accueils et conditions de vie. Longo Maï **n'est pas** présenté comme exclusivement végétalien ; l'agriculture comprend selon les lieux de l'élevage. **Intérêt :** comparaison de la SCTL avec une expérience communautaire de production et d'accueil, et dépassement de la seule Occitanie. **État : REPÉRÉ, services historiques d'accueil documentés ; aucune admission 2026 attestée, aucun contact.**
+- [Pro Longo Maï, présentation officielle non datée, consultée le 31/10/2026](https://www.prolongomaif.ch/longo-ma%C3%AF/qui-sommes-nous/)
+- [Pro Longo Maï, portes ouvertes, non datée, consultée le 31/10/2026](https://www.prolongomaif.ch/longo-ma%C3%AF/portes-ouvertes/)
+- [Pro Longo Maï, Grange Neuve, non datée](https://www.prolongomaif.ch/longo-ma%C3%AF/coop%C3%A9ratives/grange-neuve-fr/)
+- [Commune de Limans, mention territoriale, non datée](https://limans.fr/le-village/)
+- [Le Temps, enquête critique 2014](https://www.letemps.ch/societe/linsoumission-mode-vie) : article de presse secondaire présentant des tensions historiques et des controverses ; ne pas les transposer sans preuves à la situation 2026.
+
+**Usage :** réserve comparative à instruire par La Médiathèque et La Lectrice avant de rejoindre une sélection de dix ou une fiche TIS existante. Aucun nouvel identifiant de fiche, annuaire ou partenaire.
