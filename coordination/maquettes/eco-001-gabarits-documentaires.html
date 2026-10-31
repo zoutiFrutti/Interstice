@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Maquette interne non publiée de quatre gabarits documentaires écologiques Interstice.">
+<title>ÉCO-001 · Atelier Graphiste · Maquette non publiée</title>
+<style>
+/* Maquette autonome, identitaire mais non intégrée. Ni image ni requête externe.
+   Barlow Condensed et Atkinson Hyperlegible Next : seulement si présentes via futurs assets validés. */
+:root{--faille-black:#101014;--faille-red:#c5212c;--faille-ivory:#e9e5db;--surface:#201d20;--border:#8e8580;
+ --font-heading:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+ --font-reading:"Atkinson Hyperlegible Next",system-ui,sans-serif;
+ color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--faille-black);color:var(--faille-ivory);font:19px/1.65 var(--font-reading)}
+a{color:#ffd0c9;text-decoration-thickness:1px;text-underline-offset:4px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--faille-ivory);outline-offset:4px}
+.skip{position:absolute;left:-10000px;top:8px;padding:10px;background:#e9e5db;color:#101014;z-index:5}
+.skip:focus{left:12px}
+header,main,footer{width:min(100% - 38px,1010px);margin:auto}
+header{border-bottom:2px solid #90867f;padding:22px 0 26px}
+.brand{font-family:var(--font-heading);font-size:clamp(24px,4vw,32px);font-weight:900;letter-spacing:.08em}
+.brand i{font-style:normal;color:#fa6867}
+.intro{padding:32px 0 24px}
+.eyebrow{font-size:16px;letter-spacing:.06em;font-weight:750;margin:0 0 12px;color:#e9d3c8}
+h1,h2,h3{font-family:var(--font-heading);font-weight:800;line-height:1.17;margin:0 0 .5em;overflow-wrap:anywhere}
+h1{font-size:clamp(39px,5.8vw,65px);max-width:21ch}
+h2{font-size:clamp(30px,3.8vw,43px)}
+h3{font-size:clamp(24px,2.6vw,30px)}
+p,li{overflow-wrap:anywhere}
+.intro>p:not(.eyebrow){max-width:75ch}
+.restriction{margin:18px 0;padding:16px 20px;border-left:5px solid var(--faille-red);background:#292327}
+nav{display:flex;flex-wrap:wrap;gap:10px;padding:10px 0 32px}
+nav a,.back{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 16px;border:2px solid #b7a9a0;border-radius:7px;color:var(--faille-ivory);font-weight:700;text-decoration:none}
+nav a:hover,.back:hover{background:#332c30}
+section{border-top:1px solid var(--border);padding:42px 0}
+.lead{font-size:21px;max-width:75ch}
+.note{background:#262226;border:1px solid #aa9891;border-radius:8px;padding:16px 18px;margin:18px 0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:9px;padding:20px 22px;min-width:0}
+.meta{font-size:16px;color:#f0d6c9;letter-spacing:.02em;font-weight:700;margin:0 0 9px}
+.card p{margin:.45em 0 1em}
+.status{font-size:16px;padding:.4em .65em;border:1px solid #aa9690;display:inline-block;font-weight:750;background:#2d252b}
+.credits{border-top:1px solid #8f807d;padding:16px 0;font-size:16px}
+.credits dt{font-weight:750}
+.credits dd{margin:0 0 12px;overflow-wrap:anywhere}
+.sources{padding:18px 20px;background:#252025;border-left:4px solid #a7a19c}
+.sources ol{padding-left:1.2em}
+.sources li{margin:9px 0}
+.timeline{counter-reset:ev;list-style:none;padding:0;margin:28px 0;display:grid;gap:18px;border-left:3px solid #b9b0a6}
+.timeline>li{position:relative;margin-left:24px}
+.timeline>li:before{content:"";width:15px;height:15px;border-radius:50%;position:absolute;left:-33px;top:23px;border:3px solid #e9e5db;background:var(--faille-red)}
+.date{font:800 25px/1.2 var(--font-heading);display:block;color:#fff3e6}
+.struggle-grid,.bio-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:18px}
+.struggle-grid .card,.bio-grid .card{height:100%}
+.struggle-grid h3,.bio-grid h3{font-size:25px}
+.field{border-bottom:1px solid #6e6663;padding:10px 0}
+.field strong{display:block;color:#f5c4b7}
+.no-image{border:2px dashed #968681;min-height:175px;padding:22px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;background:#262126}
+.comparison{overflow-x:visible}
+.metric{border:1px solid #968985;padding:19px;border-radius:8px;margin:14px 0;background:#231e21}
+.metric strong{display:block;font-size:19px}
+.track{width:100%;height:25px;background:#534c4b;border-radius:4px;overflow:hidden}
+.fill{height:100%;background:#e5ded2;display:block;border-right:3px solid #b62235}
+.numbers{display:flex;justify-content:space-between;gap:10px;font-size:16px}
+.table-scroll{max-width:100%;overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:0;font-size:17px;line-height:1.48}
+caption{text-align:left;font-weight:750;font-size:19px;padding:10px 0}
+th,td{text-align:left;vertical-align:top;padding:14px 12px;border-bottom:1px solid #8d817c;overflow-wrap:anywhere}
+th{font-weight:750}
+tbody th{color:#ffe0d6}
+.warning{font-size:17px;border-left:4px solid #ddd0c0;padding-left:17px;margin:19px 0}
+footer{border-top:2px solid #a49a91;padding:23px 0 45px;font-size:16px}
+@media(max-width:720px){
+ body{font-size:18px;line-height:1.67}
+ header,main,footer{width:calc(100% - 28px)}
+ section{padding:33px 0}
+ .struggle-grid,.bio-grid{grid-template-columns:minmax(0,1fr)}
+ .card{padding:16px}
+ .lead{font-size:20px}
+ nav{display:grid;grid-template-columns:minmax(0,1fr)}
+ nav a{justify-content:flex-start;padding:14px}
+ .timeline{margin-left:9px}
+ table{font-size:16px}
+ td,th{padding:11px 8px}
+ .table-scroll{overflow:visible}
+}
+@media(max-width:350px){
+ h1{font-size:38px}
+ h2{font-size:29px}
+ .card{padding:13px}
+ .metric{padding:12px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+ @page{size:A4;margin:15mm}
+ :root{color-scheme:light}
+ *,*:before,*:after{box-shadow:none!important;text-shadow:none!important}
+ html,body{background:#fff!important;color:#111!important;font-family:Arial,sans-serif;font-size:10.8pt;line-height:1.45}
+ header,main,footer{width:100%}
+ header{padding:0 0 10mm}
+ .skip,nav{display:none!important}
+ section{padding:8mm 0;border-top:1px solid #666;break-before:auto}
+ h1,h2,h3,.date{font-family:"Arial Narrow",Arial,sans-serif;color:#111!important}
+ h1{font-size:24pt}h2{font-size:18pt}h3{font-size:14pt}
+ .card,.note,.restriction,.sources,.metric{background:#fff!important;color:#111!important;border:1px solid #666;break-inside:avoid}
+ .meta,.status,.field strong,.eyebrow,tbody th{color:#111!important}
+ .timeline{border-color:#666}
+ .timeline>li:before{background:#000!important;border-color:#fff}
+ .no-image{background:#fff!important;min-height:25mm}
+ .track{background:#ddd!important}
+ .fill{background:#666!important;border-color:#111!important}
+ a{color:#111!important;text-decoration:underline}
+ a[href^="http"]:after{content:" [" attr(href) "]";font-size:8.5pt;overflow-wrap:anywhere}
+ .struggle-grid,.bio-grid{grid-template-columns:1fr 1fr}
+ .credits{font-size:9pt}
+ footer{padding:5mm 0 0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header><div class="brand">LA FAILLE NOIRE <i>×</i> INTERSTICE</div><p class="meta">ATELIER GRAPHISTE · ÉCO-001 · MAQUETTE INTERNE NON PUBLIÉE</p></header>
+<main id="contenu">
+<div class="intro">
+<p class="eyebrow">UNE FAMILLE DE FORMATS · TROIS AXES CANDIDATS</p>
+<h1>Documenter les luttes. Examiner les preuves.</h1>
+<p class="lead">Quatre manières de lire des histoires, des personnes, des conflits et des résultats scientifiques, sans adopter une nouvelle charte ni transformer des hypothèses en faits.</p>
+<p class="restriction"><strong>Maquette non publiable en l’état.</strong> Les exemples ci-dessous viennent du dossier documentaire de l’Archiviste ; ils illustrent un agencement. Les sources et chiffres requièrent une relecture humaine avant toute reprise publique. Aucune photo ni donnée personnelle.</p>
+</div>
+<nav aria-label="Aller aux gabarits">
+<a href="#frise">F · Frise des luttes</a>
+<a href="#lutte">L · Fiche de lutte collective</a>
+<a href="#biographie">B · Biographie contextualisée</a>
+<a href="#science">S · Comparaison scientifique</a>
+</nav>
+<section id="frise" aria-labelledby="frise-titre">
+<p class="eyebrow">AXE A · HISTOIRE DES LUTTES ÉCOLOGIQUES</p>
+<h2 id="frise-titre">F. Une frise qui ne fabrique pas une origine unique</h2>
+<p class="lead">Dates, lieux, organisations et controverses. Ceci est une sélection de repères du dossier, pas une histoire complète ni une chaîne de causalité.</p>
+<ol class="timeline">
+<li><article class="card"><span class="date"><time datetime="1901">1901</time> · France</span><h3>Élisée Reclus écrit sur le végétarisme</h3><p>Repère d'histoire intellectuelle, distinct d'une mobilisation contemporaine et du terme « véganisme » apparu plus tard.</p><p class="meta">SOURCE : texte primaire consulté en transcription moderne · original de 1901 non collationné</p><p><a href="https://fr.anarchistlibraries.net/library/elisee-reclus-a-propos-du-vegetarisme">Référence du texte de Reclus</a></p></article></li>
+<li><article class="card"><span class="date"><time datetime="1973">1973</time>–<time datetime="1974">1974</time> · Inde</span><h3>Mobilisations de Chipko</h3><p>Actions collectives autour des forêts, des usages et des conditions de vie ; ne pas réduire l'histoire à une personne ni à un geste symbolique.</p><p class="meta">SOURCE : analyses contemporaines consultées partiellement · archives orales locales non collationnées</p><p><a href="https://www.nature.com/articles/d41586-024-00895-y">Mundoli, analyse historique (2024)</a></p></article></li>
+<li><article class="card"><span class="date"><time datetime="1977">1977</time> · Kenya</span><h3>Green Belt Movement</h3><p>Repère d'organisation collective autour des arbres, du travail et des droits, à contextualiser sans l'attribuer à une seule personne.</p><p class="meta">SOURCE : histoire institutionnelle rétrospective · archives locales originales non consultées</p><p><a href="https://www.greenbeltmovement.org/history/">Histoire institutionnelle du Green Belt Movement</a></p></article></li>
+<li><article class="card"><span class="date"><time datetime="1982">1982</time> · États-Unis</span><h3>Warren County et justice environnementale</h3><p>Conflit important, sans le présenter comme l'origine unique des résistances aux pollutions.</p><p class="meta">SOURCE : rétrospective administrative · archives militantes à examiner</p><p><a href="https://19january2021snapshot.epa.gov/community-port-collaboration/environmental-justice-primer-ports-appendix-timeline-american_.html">Chronologie historique de l’EPA</a></p></article></li>
+</ol>
+<p class="warning"><strong>QUESTION CRITIQUE :</strong> quelles mobilisations paysannes, ouvrières, autochtones, anticoloniales et non européennes restent absentes de cette sélection ? Absence signalée, pas comblée par une image imaginaire.</p>
+</section>
+<section id="lutte" aria-labelledby="lutte-titre">
+<p class="eyebrow">AXES A + B · LUTTE, COMMUNS ET DROITS D'USAGE</p>
+<h2 id="lutte-titre">L. Fiche de lutte collective</h2>
+<div class="struggle-grid">
+<article class="card">
+<p class="meta">EXEMPLE DOCUMENTAIRE · CHIPKO 1973–1974 · INDE</p>
+<h3>Qui agit, et pour quelle forêt ?</h3>
+<div class="field"><strong>Événement / période</strong>Mobilisations collectives à dater précisément selon villages et sources.</div>
+<div class="field"><strong>Actrices et acteurs</strong>Habitantes, villageoises, réseaux locaux et autres personnes à documenter sans présumer une identité juridique commune.</div>
+<div class="field"><strong>Faits, demandes, usages</strong>Accès et contrôle de ressources forestières ; séparer revendications, constats et résultats observés.</div>
+<div class="field"><strong>Débat</strong>Protection institutionnelle de la forêt ≠ droits de subsistance automatiquement garantis.</div>
+<div class="field"><strong>Objection</strong>Une histoire centrée sur une héroïne efface les autres actrices et la continuité des mobilisations.</div>
+</article>
+<aside class="card" aria-label="Provenance et incertitudes de la fiche de lutte">
+<p class="status">CANDIDAT · À VÉRIFIER</p>
+<h3>La preuve, pas la légende</h3>
+<p><strong>Source secondaire :</strong> Seema Mundoli, commentaire publié dans <em>Nature</em> en 2024.</p>
+<p><strong>Accès :</strong> analyse et résumé consultés par l'Archiviste ; pas d'archives orales originales.</p>
+<p><strong>Limites :</strong> villages, dates, représentativité et catégories d'appartenance à préciser.</p>
+<p><a href="https://www.nature.com/articles/d41586-024-00895-y">Consulter la source citée</a></p>
+</aside>
+</div>
+</section>
+<section id="biographie" aria-labelledby="bio-titre">
+<p class="eyebrow">AXE A · HISTOIRE DES PERSONNES ET DU TRAVAIL COLLECTIF</p>
+<h2 id="bio-titre">B. Une biographie sans portrait inventé</h2>
+<div class="bio-grid">
+<article class="card">
+<p class="meta">BIOGRAPHIE CANDIDATE · CONTEXTE COLLECTIF</p>
+<h3>Wangari Maathai et le Green Belt Movement</h3>
+<p>Ce gabarit propose de présenter parcours, engagements, contraintes, controverses et réalisations documentées, mais jamais une héroïsation excluant les femmes et collectifs qui ont participé au mouvement.</p>
+<div class="field"><strong>Repère contextualisé</strong>Création du Green Belt Movement en 1977 selon sa rétrospective institutionnelle.</div>
+<div class="field"><strong>Ce qui n'a pas été fait seule</strong>Travail des organisations, des communautés et des participantes : références à compléter avant rédaction publique.</div>
+<div class="field"><strong>Contradictions et voix absentes</strong>Controverses précises à sourcer ; ne pas en inventer.</div>
+<div class="field"><strong>Crédits et droits</strong>Aucun visuel reproduit. L'absence de photo n'empêche pas la lecture.</div>
+</article>
+<aside class="card">
+<div class="no-image" role="note">Aucun portrait reproduit.<br>La documentation ne dépend pas d'une image.</div>
+<p class="status">PORTRAIT NON AUTORISÉ / NON VÉRIFIÉ</p>
+<p><strong>Source du repère :</strong> <a href="https://www.greenbeltmovement.org/history/">Green Belt Movement, rétrospective institutionnelle</a>.</p>
+<p><strong>Réserve :</strong> biographies, photos et droits de personnes requièrent une revue spécifique.</p>
+</aside>
+</div>
+</section>
+<section id="science" aria-labelledby="science-titre">
+<p class="eyebrow">AXE C · ÉTHIQUE ALIMENTAIRE ET IMPACTS DOCUMENTÉS</p>
+<h2 id="science-titre">S. Comparer des indicateurs, pas des personnes</h2>
+<p class="lead">Illustration de données **rapportées par le dossier de l’Archiviste** : étude britannique Scarborough et al., 2023, groupes alimentaires, données ACV. Relecture scientifique nécessaire avant intégration Wiki.</p>
+<div class="note"><strong>Base des barres ci-dessous :</strong> groupe à consommation élevée de viande (≥100 g/j) = indice 100 pour chaque indicateur. Le groupe végan a un impact estimé plus faible dans ce modèle ; cela ne prédit pas l'impact d'une personne ou d'un territoire.</div>
+<div class="comparison" role="group" aria-label="Comparaison de deux métriques issues du dossier documentaire">
+<div class="metric"><strong>Émissions de gaz à effet de serre, impact relatif estimé du groupe végan</strong><div class="track" role="img" aria-label="25,1 pour cent de la valeur du groupe à consommation élevée de viande, dont la base est 100 pour cent"><span class="fill" style="width:25.1%"></span></div><div class="numbers"><span>Groupe végan : 25,1 % de la base</span><span>Base : 100 %</span></div></div>
+<div class="metric"><strong>Utilisation de l'eau, impact relatif estimé du groupe végan</strong><div class="track" role="img" aria-label="46,4 pour cent de la valeur du groupe à consommation élevée de viande, dont la base est 100 pour cent"><span class="fill" style="width:46.4%"></span></div><div class="numbers"><span>Groupe végan : 46,4 % de la base</span><span>Base : 100 %</span></div></div>
+</div>
+<div class="table-scroll">
+<table>
+<caption>Équivalent textuel intégral de la comparaison · indices relatifs à la base de chaque métrique</caption>
+<thead><tr><th scope="col">Indicateur</th><th scope="col">Groupe ≥100 g de viande/j</th><th scope="col">Groupe végan</th><th scope="col">Nature du résultat</th></tr></thead>
+<tbody>
+<tr><th scope="row">Gaz à effet de serre</th><td>100 % (référence)</td><td>25,1 % de la référence</td><td>Impact environnemental moyen estimé</td></tr>
+<tr><th scope="row">Utilisation de l'eau</th><td>100 % (référence)</td><td>46,4 % de la référence</td><td>Impact environnemental moyen estimé</td></tr>
+</tbody>
+</table>
+</div>
+<p class="warning"><strong>LIMITES :</strong> étude britannique, échantillon de 55 504 personnes, estimation ACV ; variabilités des productions, incertitudes de l'étude, différences de systèmes agricoles et de conditions de travail non visualisées ici. La dimension éthique du véganisme est distincte de l'évaluation environnementale. Aucun conseil nutritionnel individuel.</p>
+<div class="sources"><strong>Source à relire :</strong> Scarborough et al. (2023), <em>Nature Food</em>, DOI <a href="https://doi.org/10.1038/s43016-023-00795-w">10.1038/s43016-023-00795-w</a>. Les pourcentages sont ceux repris dans le dossier de l'Archiviste, non une contre-expertise nouvelle de La Graphiste.</div>
+</section>
+<section aria-labelledby="trace-titre">
+<h2 id="trace-titre">Provenance, crédit, version et incertitude</h2>
+<dl class="credits">
+<dt>Statut éditorial</dt><dd>Maquette candidate. Aucune fiche ni donnée validée pour publication.</dd>
+<dt>Référence du chantier</dt><dd>ÉCO-001 · trois axes documentaires candidats ; aucun nouveau numéro FN/BIO/ARCH.</dd>
+<dt>Sources</dt><dd>Liens d'origine dans les gabarits, niveaux de consultation hérités du dossier de l'Archiviste. Les sources primaires non collationnées sont explicitement signalées.</dd>
+<dt>Images et crédits médias</dt><dd>Zéro image ou photographie reproduite ; aucun visuel de communauté réelle créé. Graphiques HTML/CSS originaux et purement documentaires.</dd>
+<dt>Version de travail</dt><dd>0.1-candidate · 31 octobre 2026 ; relecture historique, scientifique, éditoriale et technique NON effectuée sur cette maquette.</dd>
+<dt>Impression</dt><dd>A4 noir/blanc, sources, réserves et adresses URL lisibles ; contrôler matériellement avant toute diffusion.</dd>
+</dl>
+<p><a class="back" href="#contenu">Retour au début de la maquette</a></p>
+</section>
+</main>
+<footer>La Faille noire × Interstice · Atelier Graphiste · Proposition graphique documentaire non adoptée · Aucune fusion ni publication.</footer>
+</body>
+</html>
