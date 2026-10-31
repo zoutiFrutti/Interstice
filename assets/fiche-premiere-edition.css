@@ -250,3 +250,31 @@
     break-after:avoid;
   }
 }
+
+
+/* Fix mesuré à 320px : les en-têtes globaux n'avaient pas de retour de ligne.
+   La classe explicite évite de modifier la navigation du reste du site. */
+body.fiche-wiki-page > header{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:9px 14px;
+  min-width:0;
+}
+body.fiche-wiki-page > header strong{min-width:0}
+body.fiche-wiki-page > header a{
+  overflow-wrap:anywhere;
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+}
+@media(max-width:600px){
+  body.fiche-wiki-page > header{
+    justify-content:flex-start;
+    padding:12px 16px;
+  }
+  body.fiche-wiki-page > header strong{flex-basis:100%}
+}
+@media print{
+ body.fiche-wiki-page > header{display:none}
+}
