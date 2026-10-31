@@ -45,7 +45,7 @@ test("première édition: inventaire stable, zéro visa réellement attribué",(
  assert.equal(ids.records.filter(x=>x.source==="wiki").length,24);
  assert.equal(new Set(ids.records.map(x=>x.id)).size,139);
  assert.deepEqual(decisions.authorizations,[]);
- assert.equal(ids.records.filter(x=>x.approval==="ACCORD_EDITO_ZOUT").length,0);
+ assert.deepEqual(ids.records.filter(x=>x.approval==="ACCORD_EDITO_ZOUT").map(x=>x.id),["ARCH-002","ARCH-007"]);
 });
 test("première édition: aucun lot ni fiche généré sans visa",()=>{
  const e=env(),r=buildEdition(e);
@@ -98,4 +98,17 @@ test("première édition: aucune écriture sur le Wiki réel ni scripts réseau"
  for(const forbidden of ["/rest/v1/","/functions/v1/submit","supabase.co","fetch(","XMLHttpRequest","sendBeacon"])
   assert.equal(m.includes(forbidden),false,forbidden);
  assert.equal(ids.records.filter(x=>x.approval===true).length,0);
+});
+
+test("première édition: visas ARCH-002/007 réels mais droits bloquants",()=>{
+ for(const id of ["ARCH-002","ARCH-007"]){
+  const record=ids.records.find(x=>x.id===id);
+  assert.equal(record.editorial_visa?.decision,"ACCORD_EDITO_ZOUT");
+  assert.equal(record.editorial_visa?.rights_final,"A_VERIFIER");
+  assert.equal(record.editorial_visa?.publication_authorized,false);
+  const e=env();
+  const candidate={...e.auth,id,lot:"ARCH",source_editorial_blob_sha:record.editorial_visa.source_blob_sha};
+  e.inventory.records=[record];e.save([candidate]);
+  assert.throws(()=>buildEdition(e),/Réserve de droits toujours ouverte/);
+ }
 });

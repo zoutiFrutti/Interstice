@@ -1,7 +1,7 @@
 # Première édition : circuit technique à visa (candidat non publié)
 
 ## Constats au 31 octobre 2026
-- **0 contenu admissible** : le registre pré-sortie de la PR #43 n'attribue aucun visa explicite de Zout aux 44 fiches Drive, 71 notices FN et 24 pages Wiki. La responsabilité éditoriale générale n'équivaut pas à une approbation de chaque texte.
+- **2 visas éditoriaux ARCH-002/007 enregistrés mais 0 contenu admissible** : le registre pré-sortie de la PR #43 n'attribue aucun visa explicite de Zout aux 44 fiches Drive, 71 notices FN et 24 pages Wiki. La responsabilité éditoriale générale n'équivaut pas à une approbation de chaque texte.
 - Registre source : coordination/ateliers/registre_editorial_pre_sortie_2026-10-31.json sur coordination/relieur-pilote-10-passes-20261030, blob d36264ba5d6882bb1589fd7fa863d26f97fa4405.
 - Snapshot edition-premiere/inventaire-snapshot.json : **copie technique réduite, non source canonique** ; à régénérer sous contrôle de La Relieuse après de nouvelles décisions, sans perdre les IDs.
 - main au moment de la préparation : c0d4089a7bc614881dad3b2229b3ff9bcc07742d.
@@ -46,3 +46,12 @@ Chaque lot doit être un commit séparé avec sources, visas, révision vérifi�
 
 ## Interdits
 Pas de merge sur main, publication, import automatique de fichiers Drive, exposition de personnes, reproduction de médias protégés, changement de Supabase, RLS, migration, permission, nouveau service ou formulaire de collecte.
+
+## Cinq passes techniques (31 octobre 2026)
+1. **P0 Wiki :** neuf pages exactes reprises de la branche de La Lectrice (aucune réécriture), dont les versions enrichies de PR #44 ; risques juridiques et humains toujours soumis à l'avis spécialisé. La page proposer-article.html est remplacée dans cette seule candidate par une explication statique sans authentification ni formulaire ni réception.
+2. **V0 018-E :** réutilisation des scripts, onze exemples, deux lectures cartographiques et tests du prototype 018-D, avec repositionnement de l'avertissement long derrière les premières actions. Les avertissements courts « fictif » et « aucun envoi » restent visibles.
+3. **Recherche / navigation :** les 24 pages déjà présentes sont trouvables par filtre local (nom et mots-clés), même liste visible sans JavaScript, sans indexer les dossiers non autorisés. Lien inexistant wiki-mutualiser-materiel.html désactivé et indiqué comme fiche à venir.
+4. **Archives :** ARCH-002/007, source Markdown originale exact blob, identifiants conservés ; visas explicites et provenance repris dans edition-premiere/archives-en-attente.json. Le registre indique encore rights_final=A_VERIFIER et publication_authorized=false. Le générateur refuse ces dossiers tant que droit et version exacts ne sont pas confirmés. Les candidatures écologiques/politiques sans visa individuel restent absentes.
+5. **QA :** suite renforcée avec tests statiques des neuf blobs, liens locaux, double verrou, aucun envoi, premier écran, recherche, clavier, 320/390/1280 et regressions V0 ; résultat GitHub Actions sur le SHA final faisant foi. Retour arrière possible par annulation des commits de la candidate, sans toucher aux branches sources.
+
+**Attention :** les neuf corrections sont des versions candidates, pas une revue juridique finale. Le fait que ces pages soient déjà présentes sur le site public ne constitue pas une validation de première édition.

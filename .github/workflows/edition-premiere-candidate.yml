@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '22'
       - run: node --check scripts/build-premiere-edition.mjs
-      - run: node --test tests/edition-premiere-circuit.test.mjs
+      - run: node --test tests/edition-premiere-circuit.test.mjs tests/edition-5-passes.test.mjs tests/initiatives-core.test.mjs tests/v0-form-acceptance.test.mjs tests/integration-v0-018a.test.mjs
       - run: node scripts/build-premiere-edition.mjs
   chromium:
     runs-on: ubuntu-24.04
@@ -33,7 +33,7 @@ jobs:
       - name: Tests mobiles, clavier, recherche, zoom et A4
         run: |
           python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/interstice-edition.log 2>&1 &
-          node --test tests/edition-premiere-circuit.browser.test.mjs
+          node --test tests/edition-premiere-circuit.browser.test.mjs tests/edition-5-passes.browser.test.mjs tests/initiatives-browser.test.mjs tests/integration-v0-018a.browser.test.mjs
       - if: always()
         uses: actions/upload-artifact@v4
         with:

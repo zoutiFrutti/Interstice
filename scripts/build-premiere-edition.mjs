@@ -27,6 +27,11 @@ function validateDecision(d,r){
  for(const key of AUTH_FIELDS)if(typeof d[key]!=="string"||d[key].length<5)throw Error("Contrôle manquant "+key+" : "+d.id);
  if(!validDate(d.verified_at))throw Error("Date de vérification incorrecte : "+d.id);
  if(d.rights_status!=="DROITS_OK_OU_SANS_MEDIA"||d.no_media!==true)throw Error("Droits non acquis : "+d.id);
+ if(r.kind==="ARCH" && r.editorial_visa){
+  if(r.editorial_visa.rights_final!=="DROITS_OK_OU_SANS_MEDIA")throw Error("Réserve de droits toujours ouverte : "+d.id);
+  if(d.source_editorial_blob_sha!==r.editorial_visa.source_blob_sha)throw Error("Version éditoriale de l'archive différente : "+d.id);
+ }
+
  if(r.kind==="WIKI"){
   if(d.source_blob_sha!==r.source_blob_sha)throw Error("Version de Wiki différente : "+d.id);
  }else if(!REGEXP.test(d.id)){
