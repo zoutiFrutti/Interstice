@@ -30,6 +30,9 @@ jobs:
           node --check experiments/konton-control/ai-board.js
           node --check experiments/konton-control/test-ai-engine.cjs
           node --check experiments/konton-control/test-ollama-provider.cjs
+          node --check experiments/konton-control/scope-policy.cjs
+          node --check experiments/konton-control/test-scope-policy.cjs
+          node --check experiments/konton-control/test-ollama-readiness.cjs
       - name: Simulation agent and GitHub read-only checks
         working-directory: experiments/konton-control
         run: |
@@ -39,3 +42,5 @@ jobs:
           node test-local-api.cjs
           node test-ai-engine.cjs
           node test-ollama-provider.cjs
+          node test-scope-policy.cjs
+          node test-ollama-readiness.cjs
