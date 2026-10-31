@@ -75,6 +75,52 @@ function createOllamaProvider(options = {}) {
       req.end(payload);
     });
   }
-  return { name: "ollama-local", model, generate };
+  // Readiness is an actual GET against the same loopback server, never a cloud ping.
+  // It checks availability and exact model presence; it does NOT assert inference quality.
+  async function probe() {
+    return new Promise(resolve => {
+      const result = (ready, connected, reason) => ({ ready, connected, model, reason });
+      let done = false;
+      const finish = value => { if (!done) { done = true; resolve(value); } };
+      const request = transport({
+        hostname: "127.0.0.1", port: 11434, path: "/api/tags",
+        method: "GET",
+        headers: { Accept: "application/json" }
+      }, response => {
+        if (response.statusCode !== 200) {
+          response.resume && response.resume();
+          finish(result(false, false, "Ollama a répondu avec HTTP " + response.statusCode));
+          return;
+        }
+        const pieces = [];
+        let size = 0;
+        response.on("data", chunk => {
+          size += chunk.length;
+          if (size > 65536) {
+            request.destroy(new Error("Liste de modèles trop volumineuse."));
+            return;
+          }
+          pieces.push(chunk);
+        });
+        response.on("end", () => {
+          try {
+            const payload = JSON.parse(Buffer.concat(pieces).toString("utf8"));
+            if (!Array.isArray(payload.models)) throw new Error("Liste Ollama invalide.");
+            const installed = payload.models.some(item =>
+              item && (item.name === model || item.model === model));
+            finish(installed ? result(true, true, "Modèle installé (inférence non testée).") :
+              result(false, true, "Moteur accessible mais modèle demandé absent."));
+          } catch (_error) {
+            finish(result(false, false, "Réponse de disponibilité invalide."));
+          }
+        });
+        response.on("error", () => finish(result(false, false, "Lecture du moteur interrompue.")));
+      });
+      request.on("error", () => finish(result(false, false, "Moteur IA local inaccessible.")));
+      request.setTimeout(3000, () => request.destroy(new Error("Délai Ollama dépassé.")));
+      request.end();
+    });
+  }
+  return { name: "ollama-local", model, generate, probe };
 }
 module.exports = { configured, createOllamaProvider, MODEL_PATTERN };
