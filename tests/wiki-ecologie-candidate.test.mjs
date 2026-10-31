@@ -32,8 +32,10 @@ test("eco: liens internes et ancres résolus",()=>{
  assert.ok(total>13);
 });
 test("eco: sans image, script, collecte, graphiques ou chiffres de résultats",()=>{
- for(const forbidden of [/<script\b/i,/<form\b/i,/<img\b/i,/<canvas\b/i,/<iframe\b/i,/\bfetch\s*\(/i,/supabase/i,/\d+(?:[,.]\d+)?\s*%/])
+ for(const forbidden of [/<script\b/i,/<form\b/i,/<img\b/i,/<canvas\b/i,/<iframe\b/i,/\bfetch\s*\(/i,/supabase/i])
   assert.doesNotMatch(html,forbidden);
+ const editorial=html.replace(/<style>[\s\S]*?<\/style>/gi,"");
+ assert.doesNotMatch(editorial,/\d+(?:[,.]\d+)?\s*%/,"Pas de statistique dans le contenu éditorial");
  assert.match(html,/@media print/);assert.match(html,/prefers-reduced-motion/);
  assert.match(html,/href="#contenu-eco"/);
 });
