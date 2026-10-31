@@ -1039,3 +1039,14 @@ Sources vérifiées : procès-verbal du décret du 16 avril (https://archivesaut
 **Contradictions et limites** : Freegan Pony ancien lieu terminé décembre 2019 et convention 2016 annoncée ; Montpellier chiffres 500 (avril) et 600 affichés en octobre sans audit daté ; MONDRAGON salariés ≠ sociétaires ; étude Decidim contextualisée ; 120 arbres plantés par 24 personnes ≠ impact écologique ; SCTL légalement active ≠ terres disponibles ; GBM suivi prévu à 3–6 mois ≠ survie observée partout. Quatre EXP demeurent trois `A_CORRIGER` et une `BLOQUE_MOTIVE` en l'état ; aucun statut de publication/partenariat validé.
 
 **Aucune prise de contact externe, donnée privée collectée, nouveau numéro EXP, fusion, publication Wiki, import en cartes, accord de référencement ou de coopération.** La coordination doit d'abord réconcilier les fiches documentaires et obtenir relecture contradictoire, avis droits et décision de Zout.
+
+
+---
+
+## 2026-10-31 — La Relieuse — transmission ÉCL-001 à ÉCL-004 et journal permanent
+
+**Nouveau protocole documentaire candidat** : `coordination/JOURNAL_ECLAIREUSE.md` créé sur la branche de coordination PR #43 ; complémente le journal commun sans le remplacer. Quatre entrées nouvelles **ÉCL-001 Ressources critiques / enquêter sur le pouvoir**, **ÉCL-002 Luttes et héritages (13 cas candidats)**, **ÉCL-003 Enquêtes et outils des luttes**, **ÉCL-004 Coopérative intégrale catalane**. Toutes sont **ENQUETE_CANDIDATE**, aucune approuvée ni publiée. Voir `coordination/eclaireuse/REGISTRE_ECL_001_004_2026-10-31.json` et les dossiers `CIC_ENQUETE_INITIALE_2026-10-31.md`, `PLAN_INTEGRATION_LUTTES_ET_ENQUETES_2026-10-31.md`, `TRANSMISSION_ATELIERS_POINT_REPRISE_2026-10-31.md`.
+
+**Recherches initiales** : décision A69 Conseil d'État 29 juin 2026 et procédure octobre ; CIC 2010, déclarations de Calafou sur propriété coopérative depuis 2023, travaux académiques sur FairCoop/FairCoin. Recherche partielle et incertitudes de fonctionnement 2026 explicitées. EJAtlas est commun aux ÉCL-001 et ÉCL-003 : un seul registre source.
+
+**Droits et décisions** : aucun nouveau visa Zout, aucun contact externe, pas de modification du manifeste/charte, pas de fusion/deploiement. Les visas ARCH-002/007 restent intacts. Reprise au prochain cycle : lire journal Éclaireuse sur branche PR #43 et ses dossiers ; vérifier contenus/droits puis répartir en atelier. **Écrire ce journal ne lance pas de travail dans les conversations d'ateliers** et les bilans programmés 08h/20h ne prouvent pas d'accès à GitHub.
