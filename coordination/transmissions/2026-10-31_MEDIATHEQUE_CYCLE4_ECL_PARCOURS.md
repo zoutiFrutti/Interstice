@@ -1,0 +1,55 @@
+# La Faille noire × Interstice — La Médiathèque — CYCLE 4 (31 octobre 2026)
+**Trois passes documentaires, sources et liens candidats. Aucune nouvelle entrée FN, aucune duplication EJAtlas, aucun partenariat et aucune publication.**
+
+## Passe 1 — ÉCL-001 et ÉCL-003 : qualification documentaire
+**Lecture effective :** pages d'accueil, méthode ou conditions indiquées ci-dessous ; pas d'enquête complète lue pour chacune des onze, ni accès confirmé aux fichiers ÉCL originaux lors de cette passe. Le rapprochement aux ÉCL repose sur la demande de transmission et sur les dossiers existants, pas sur une approbation de leurs conclusions.
+
+| Ressource | Organisme et nature | Accès/niveau vérifié | Droits | Recommandation et limites | Parcours |
+|---|---|---|---|---|---|
+| BL00D.MONEY | Enquête/source initiale ÉCL-001 | URL et responsable exacts non corroborés ici; désambiguïsation impérative | Non confirmé | Aucune reproduction ni qualification définitive de ses allégations | Démocratie; contre-enquête |
+| Who Profits | Centre indépendant de recherches sur l'économie de l'occupation | https://www.whoprofits.org/ ; méthode et cas à examiner séparément | Licence de republication non attestée | Lien simple vers fiche datée, attribuer chaque constat, recouper données entreprises | Démocratie; ressources/entreprises |
+| AFSC Investigate | American Friends Service Committee, base Investigate | https://investigate.afsc.org/methodology ; méthode consultée | Licence de réemploi non confirmée | L'équipe vérifie des travaux de Who Profits et de sources primaires; critères et catégories propres, pas deux confirmations indépendantes si même origine | Démocratie; contre-enquêtes |
+| Disclose | Média associatif d'investigation | https://disclose.ngo/fr ; page institutionnelle consultée, enquêtes particulières non intégralement lues | Accès public ≠ licence de reprise | Lien vers guide d'enquête ou investigation signée, dater et citer auteur | Contre-enquêtes; libertés |
+| EJAtlas | ICTA-UAB, Leah Temper, Daniela Del Bene, Joan Martinez-Alier et réseau de contributions | https://www.envjustice.org/ejatlas/ ; méthode et licence consultées | CC BY-NC-SA 3.0 pour les données selon institution; médias/tiers distincts | **RÉEMPLOYER LA SEULE ENTRÉE EJAtlas existante**; ne créer ni nouvelle fiche ni second ID; lien vers cas précis avec recoupement local | Écologie; ÉCL-002 |
+| Observatoire des multinationales | Association Observatoire des multinationales, direction Olivier Petitjean | https://multinationales.org/fr/pages/a-propos ; page institutionnelle consultée | Licence d'article non déterminée | Référencer enquête par titre, auteur, date, méthode et réponse des entreprises quand disponible | Contre-enquêtes; entreprises |
+| OpenCorporates | OpenCorporates Ltd, registre agrégateur | https://opencorporates.com/terms-of-use/ ; conditions consultées | ODbL base; CC BY-SA contenu site déclaré; accès et API sous conditions distinctes | Lien vers société et registre original ; pas scraping ni copie de base ; vérifier homonymes, juridictions et dates | Contre-enquêtes; sociétés |
+| Transparency International | ONG et mouvement anticorruption | https://www.transparency.org/en/copyright-enquiries ; conditions consultées | CC BY-ND 4.0 sauf mention contraire; jeux de données CPI avec règles propres | Lien vers enquête/dataset; expliquer qu'indice de perception ne prouve pas corruption d'une société ou personne | Démocratie; contre-enquêtes |
+| Terres de Luttes | Réseau/mouvement de luttes territoriales | https://terresdeluttes.fr/ ; site institutionnel repéré, activité et sources d'une lutte à examiner | Licence et droits des images non confirmés | Lien vers ressource/campagne identifiée, recouper avec décisions publiques et archives locales | Écologie; ÉCL-002 |
+| Observatoire des libertés associatives | Observatoire des libertés associatives, travaux collectifs | https://libertesassociatives.org/ ; sommaires de rapports consultés | Licence de reproduction d'un rapport à contrôler | Lien vers rapport daté et méthode; confidentialité des témoignages à préserver | Libertés publiques; démocratie |
+| LDH | Ligue des droits de l'Homme | https://www.ldh-france.org/ ; organisme repéré, page thématique précise à choisir | Droits des publications/photographies non établis | Lien vers communiqué ou rapport signé et daté, distinguer revendication, fait et analyse juridique | Libertés publiques; démocratie |
+
+**Correction anti-doublon EJAtlas :** pas de deuxième fiche EJAtlas créée ; viser l'entrée historique existante à l'aide de la Relieuse et pointer sa même URL canonique. L'Atlas est collaboratif, modéré et en CC BY-NC-SA 3.0 pour ses données, mais son signalement d'un conflit ne vaut ni jugement définitif ni déclaration du résultat matériel.
+
+**Point prioritaire BL00D.MONEY :** le projet exact, son URL canonique, ses auteurs, méthode et licence ne sont **pas démontrés par une source originale retrouvée** ici. Le nom doit rester « ressource ÉCL-001 initiale, identité à vérifier » ; pas de citation de ses données ni conclusion reprise. La qualification d'ÉCL-001/003 comme entièrement lues serait fictive.
+
+## Passe 2 — Fonds transversal et parcours existants
+Les **12 FN de première édition ne sont pas reprises ni renumérotées** ; leur classement précédent reste 6 liens candidats (FN-016/017/040/052/060/068), 3 différés (FN-010/024/032), 3 exclusions temporaires (FN-051/062/071). Elles servent de renvois contextuels : libre culture (FN-017/040/052/060), mémoires et témoignages (FN-016/068), savoirs communautaires (FN-010/024/032 différés). Leur présence dans une bibliographie ne change pas le statut d'accès ni les droits des films.
+
+ÉCL-002 couvre des luttes à relier par objet/dates et sources primaires, notamment A69, Notre-Dame-des-Landes, Sivens, Sainte-Soline, Larzac, Plogoff, Chipko, Green Belt et Warren County selon les dossiers déjà travaillés ; **la présence dans la liste n'est pas la preuve que toutes les études ont été recollationnées ce jour**. Pour la CIC, distinguer structures historiques vers 2010, témoignages d'activité, Calafou et FairCoop, ainsi que l'état actuel à vérifier ; ne présenter aucun projet comme partenaire.
+
+| Bibliographie courte | Sélection réutilisée | Apprentissage et contradiction |
+|---|---|---|
+| Contre-enquêtes et chaînes de preuve | Disclose (méthodologie et guides) ; Observatoire des multinationales (enquêtes signées) ; Who Profits (dossiers entreprises) ; AFSC Investigate (méthode, dépendance à Who Profits) ; OpenCorporates (registre et source primaire officielle). | Objectif : tester société identifiée, date, document original, responsabilité, réponse contradictoire; aucune accusation personnelle tirée d'une seule base. |
+| Esprit critique et démocratie | FN-001 La Boétie ; FN-009 Jo Freeman ; Iris Marion Young, Inclusion and Democracy (notice OUP) ; Transparency International (méthodologie CPI) ; Les Surligneurs (vérification juridique). | Objectif : distinguer jugement de valeur, méthode, source institutionnelle et indicateur statistique. |
+| Libertés publiques et collectifs | Observatoire des libertés associatives, rapports ; LDH, communiqués datés ; FN-068 Nous sommes partout (récits partiels) ; ARCH-007 (décret historique) ; ÉCL-002 sur les luttes contemporaines. | Objectif : distinguer droits applicables, témoignages, contestations, actes administratifs et décisions de justice. |
+| Écologie et alimentation | Reclus, À propos du végétarisme (1901) ; Scarborough et al., Nature Food 2023 ; GIEC AR6 WGIII ch.12 ; EJAtlas, cas locaux ; Chipko / Green Belt selon ÉCO-001A. | Objectif : séparer données scientifiques, droits fonciers, alimentation et récits de lutte. |
+| Travail, communs et coopératives | FN-002 Kropotkine ; ARCH-007 décret du 16 avril ; ASSO-007 Union des femmes ; Cooperativa Integral Catalana (CIC, archives et statuts à dater) ; EXP-002 Caisse alimentaire commune de Montpellier. | Objectif : faire apparaître gouvernance, travail invisible, conflits et réalisations; CIC ≠ Calafou ≠ FairCoop. |
+
+## Passe 3 — Propositions de liens sans reproduction pour le Wiki existant
+| Route Wiki existante (cible candidate) | Renvois à ajouter après validation | Précaution |
+|---|---|---|
+| wiki-ecologie-sociale-environnement.html | ÉCL-002 / ÉCO-001A, EJAtlas (une seule référence), Terres de Luttes, GIEC, Scarborough, FN-024 différée | Relier études de cas, mécanismes environnementaux et contradictions ; aucune carte ou donnée copiée. |
+| wiki-decision-collective.html | FN-001, FN-009, Iris Marion Young, Transparency International, Observatoire des libertés associatives | Renvoi critique pouvoir informel, droits et sources des enquêtes. |
+| wiki-lecture-croisee-travail-soin-pouvoir.html | FN-002, ARCH-007, ASSO-007, CIC, EXP-002, OpenCorporates | Tester annonces/actes, gouvernance, rémunérations et sources d'identité des organisations. |
+| wiki-logement-habitat-droit-ville.html | ÉCL-002 (NDDL, Sivens, A69, Sainte-Soline si pertinents), Observatoire libertés associatives, LDH | Distinguer propriété/usage du sol, actes d'urbanisme, droits et réactions militantes. |
+
+### Règles de crédit et de droits
+- Une référence bibliographique pointe vers une page officielle et donne : titre de ressource individuelle, responsable, date, lien, méthode, statut (source primaire/secondaire/ressource militante) et réserve. **Ce n'est pas une approbation du propos ni une relation avec l'organisme.**
+- WHO PROFITS → AFSC : AFSC explicite réutiliser et vérifier en partie des travaux Who Profits, éviter la fausse double corroboration. Les preuves d'une entreprise exigent documents datés, sociétés exactes et contradictoire.
+- OpenCorporates : ODbL de la base **distincte** des restrictions du site et de l'API ; pas de scraping ou syndication automatique. Transparency International : CC BY-ND 4.0 par défaut selon conditions publiées et éventuelles dispositions particulières pour les données. EJAtlas : CC BY-NC-SA 3.0 de la base, pas licence générale des photos et contributions externes.
+- Disclose, LDH, observatoires, Terres de Luttes : libre consultation ne signifie pas droits de rediffusion ; les noms de personnes, photographies et témoignages demandent leurs propres protections.
+
+### Transmission à La Lectrice et La Relieuse
+**La Lectrice :** contrôler l'identité/source initiale BL00D.MONEY, les raccourcis de causalité entreprises/armes, l'absence de double corroboration AFSC/Who Profits, et les liens entre sources de mouvements et preuves administratives. **La Relieuse :** reprendre les entrées ÉCL exactes, éviter duplication EJAtlas, ordonner les références sous les trois parcours et conserver 12 FN avec les statuts de cycle 3 ; soumettre à validation humaine avant toute intégration Wiki. **La Juriste selon besoin :** droits de base ODbL/CC, confidentialité de victimes/témoignages et risques d'accusations non recoupées. Les autres conversations ne sont pas réputées avoir reçu automatiquement le dépôt.
+
+**Aucune œuvre copiée, hébergée, fusionnée ou publiée ; aucun contact extérieur.**
