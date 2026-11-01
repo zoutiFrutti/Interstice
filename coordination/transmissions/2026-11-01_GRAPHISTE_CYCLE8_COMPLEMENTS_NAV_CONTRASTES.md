@@ -1,0 +1,13 @@
+# La Graphiste — cycle 8, passes complémentaires : navigation et contraste
+**1er novembre 2026 · proposition graphique, aucune publication / fusion ni décision éditoriale.**
+## État documentaire et périmètre
+PR #68 initialement au SHA `510e6c56e6612eada993a6175551c88d957fbf6e`, CI antérieure réussie `41296095280`. Relecture du Journal commun PR #43 HEAD `17caf07dcc82dd2a089ce2deb5691a27d2b8c1e5` et des listes de transmissions du 1er novembre : aucune adoption collective, seule initiative de Zout ; CIC 2026 incertaine ; des médias audiovisuels sont sujets à droits/attribution, non absorbés dans les maquettes. Chaîne graphique #50/#57/#59/#61/#63/#66 inchangée.
+## Passes et modifications réelles
+1. `design-system/maquette-cycle8-navigation-integree.html`, commit `e5a957631b53a26b69fc5a4ae03b0e4db03852b7` : trois destinations ajoutées au sommaire, **statuts, médias et exercice** ; aria-label du sommaire ajusté. Les quatre entrées initiales demeurent.
+2. `tests/graphiste-cycle8-2026-11-01.test.mjs`, commits `7450a5cd03cc5a7d35d1475676d631d97afb4fe1` et `f9bc60a7496003cb2d4aa26ad4ede47da09f2cf7` : contrôle de sept destinations et de deux paires de contraste effectivement opaques (lien de sommaire et carte), sans prétendre auditer un élément à fond transparent. Le test ancien contrôle aussi le texte principal. Les exécutions de chaque SHA sont dans Actions.
+3. `design-system/maquette-cycle8-navigation-integree.html`, commit `472a848c5232e3259ff1e14417bc24c3a400a794` : quatre liens « Ouvrir la page candidate existante » sont renommés avec une cible explicite **hors contexte** (Wiki, Bibliothèque, biographies, enquêtes). L'URL et le contenu éditorial demeurent inchangés.
+## Tests et réserves
+Le test GitHub Actions associé au dernier SHA reste seul arbitre du résultat, et ne concerne que la maquette. Teste le DOM, les ancres, le clavier ciblé, les liens locaux, le contraste des composants mesurés, 320/390/1280, zoom **CSS simulé**, captures et PDF généré. Non réalisés : audit complet des contrastes, VoiceOver/TalkBack/NVDA sur appareil, zoom réel 400 %, inspection humaine des captures/PDF, tests utilisateurs et audits de tous les médias et textes historiques. Aucun droit de média ni licence n'est inféré de la présence des catégories. `noindex` ne garantit pas la confidentialité.
+## Reprise
+La Développeuse : intégrer sélectivement uniquement les versions validées par Zout et vérifier les vraies routes d'application. La Relieuse : préserver les limites documentaires et obtenir les preuves d'édition, sources, droits et décisions individuelles par SHA. L'Anarchitecte : garantir les parcours vers statuts et limites dans le site réel.
+**Aucune fusion, publication ni modification du site de production.**
