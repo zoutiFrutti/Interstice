@@ -8,6 +8,10 @@ Les conditions suivantes sont des **portes de finalisation**, pas une interdicti
 | B : mapping documentaire | Médiathèque 71 FN + alias, Lectrice statuts, Biographe fiches | Anarchitecte : contrat et schéma provisoires | ATTENTE | Matrices et identifiants vérifiés |
 | C : intégration testée | Anarchitecte contrat stabilisé, Développeuse sécurité/rollback, Graphiste delta | Développeuse : tests isolés ; Graphiste : maquettes | ATTENTE | HEAD candidat commun et résultats Node/Chromium réels |
 | D : communication | Juriste/édition, droits médias, textes candidats et décisions humaines | Responsable réseaux : kit conditionnel | ATTENTE | Autorisation explicite et provenance contrôlée |
-| E : clôture | Seize objectifs documentés, preuves revues, blocages traités | Relieuse : audit progressif | ATTENTE | Matrice finale ou reports explicites de Zout |
+| E : clôture | Dix-sept objectifs documentés (16 historiques + Vigie), preuves revues, blocages traités | Relieuse : audit progressif | ATTENTE | Matrice finale ou reports explicites de Zout |
 
 Le temps écoulé n'est **jamais** une preuve de déblocage. Aucun feu n'est vert sur la seule existence d'une branche ou d'une PR.
+
+## Extension Vigie
+
+La Vigie est ajoutée comme 17e atelier candidat ; VIG-001 peut démarrer indépendamment. La porte E inclut désormais son rapport ou un report explicite de Zout. Aucun feu A–E n'est levé par cet ajout.
