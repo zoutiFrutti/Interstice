@@ -22,7 +22,7 @@
 - Aucun compte, profil ou audience existante n'est affirmé ni utilisé.
 
 ## Dossier de vérification des sources, dates et citations
-1. Manifeste V2.6, Charte éditoriale V0.1, Charte des communs V0.8 : PR #58, textes candidats non adoptés ; aucune citation longue ni phrase attribuée à une assemblée.
+1. Manifeste V2.6, Charte éditoriale V0.1, Charte des communs V0.9 transitoire : PR #58, textes candidats non adoptés ; aucune citation longue ni phrase attribuée à une assemblée.
 2. Wiki et Bibliothèque : `wiki.html`, `bibliotheque.html` sur main ; audit de la version déployée, catalogue effectivement affiché, liens cassés et notices FN distinctes encore requis.
 3. Espagne : Balcells 2017, Yeoman 2018, Ackelsberg 1993, références dans dossier C7 ; pas de lecture complète présumée.
 4. Zapatisme : Enlace Zapatista 5 novembre 2023, source primaire du mouvement, non démonstration d'une situation 2026 ; vérification indépendante à faire.
