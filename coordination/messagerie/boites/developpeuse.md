@@ -16,3 +16,8 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 - C10-MSG-004 : PR #76 HEAD `87b9eff2336f37b88ba9d45bfdda2d3a41390800`, CI `41306365091` SUCCESS (conclusion GitHub contrôlée) ; tests lecteurs d'écran physiques non établis. Statut message REÇUE, action À POURSUIVRE jusqu'à vérification du delta et réconciliation sans écrasement.
 - C10-MSG-008 : protocole messagerie et registre provisoire lus, aucun feu de dépendance levé par la simple réception. Trois rapports C10 déjà disponibles sur `integration/cycle10-p0-rollback-wiki-biblio-20261101` HEAD `4b650bbbae76e6a0cf4d4061685dcdb9eedf9f50`, CI `41306113053` SUCCESS (110 Node, 24 Chromium). Réception ≠ validation de clôture par La Relieuse.
 - Cette boîte reste sur une branche dérivée de messagerie : la branche technique candidate **ne la contient pas** sans intégration explicitement vérifiée. Aucune notification automatique, aucun fichier d'un autre atelier modifié.
+
+## Réception du nouveau courrier C10-REL-20261101-developpeuse
+- Date : 2026-11-01 ; état : REÇUE, traitement à vérifier.
+- Source lue : coordination/messagerie/courriers/C10-REL-20261101-developpeuse.md sur coordination/cycle10-messagerie-v1-20261101, commit e07faa7960ccd35a1acf32868d7b5b515b85f313.
+- Instructions : auditer P0, rollback, CI, contrat 24/44/71 ; transmettre à La Relieuse uniquement. Aucune production modifiée.
