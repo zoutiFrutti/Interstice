@@ -21,3 +21,7 @@
 | C10-VIG-001 | Relieuse | Vigie | `coordination/messagerie/courriers/C10-VIG-001.md` ; boîte `coordination/messagerie/boites/vigie.md` ; revue `coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md` | P1 | ÉMISE | Contrôler les travaux C0, VIG-001, rapport à La Relieuse |
 
 Le message C10-MSG-008 a été émis historiquement à seize ateliers ; il n'est **pas** rétrospectivement adressé à La Vigie. L'extension ne prouve aucune réception. Les courriers C10-REL et SUITE ne sont pas réconciliés ici.
+
+## Courriers de reprise (registre complémentaire)
+
+Les courriers individuels `C10-REL-20261101-<atelier>` sont référencés dans les seize boîtes historiques. Les courriers `C10-REL-20261101-SUITE-<atelier>` sont référencés dans les seize boîtes après correction du 2026-11-01. La Vigie a son propre `C10-VIG-001`. **État central : ÉMISE tant qu'un accusé de branche n'a pas été rapproché.** Le rapprochement est documenté séparément dans l'audit passe 05 ; aucun statut REÇUE global n'est inféré d'une boîte locale. Les identifiants des courriers de reprise sont distincts de la série C10-MSG-001–008.
