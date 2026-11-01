@@ -16,7 +16,7 @@ ID `C10-MSG-NNN` unique ; date ISO ; atelier source ; destinataire(s) ; objet ; 
 ## Workflow
 1. L'atelier vérifie les messages le concernant dans l'index et sa boîte ; compare les références GitHub à leur SHA.
 2. Il ajoute un accusé vérifiable sur sa branche, puis agit sur les tâches réalisables.
-3. Il transmet résultat, preuves et statuts par objectif. La Relieuse consolide sur sa branche ; en cas de conflits, ne pas écraser silencieusement.
+3. Il transmet résultat, preuves, statuts et projets de courriers à La Relieuse. **Tout courrier inter-ateliers passe obligatoirement par La Relieuse**, qui contrôle les dépendances, les doublons et les contradictions avant distribution dans les boîtes destinataires. Ne pas modifier directement la boîte d'un autre atelier. La Relieuse consolide sur sa branche sans écraser silencieusement les travaux.
 4. La Relieuse ouvre la vague suivante seulement si la dépendance bloquante est prouvée levée. Les tâches indépendantes peuvent continuer.
 5. Les décisions humaines sont enregistrées uniquement sur instruction explicite de Zout ; aucun atelier ne s'auto-autorise.
 
