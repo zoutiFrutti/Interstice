@@ -8,3 +8,6 @@
 
 ## À renseigner par l'atelier
 Pour chaque message : réception datée, commit de l'accusé, livrable traité, commit/blob SHA, vérification réellement effectuée, blocage éventuel. Ne jamais remplacer ÉMISE par REÇUE sans lecture et accusé.
+
+## Courrier de reprise émis par La Relieuse — 2026-11-01
+- **C10-REL-20261101-anarchiviste-communs** : ÉMISE ; lire `coordination/messagerie/courriers/C10-REL-20261101-anarchiviste-communs.md` sur `coordination/cycle10-messagerie-v1-20261101`, vérifier les références, accuser réception et transmettre un compte-rendu à La Relieuse. Ne pas considérer ce dépôt comme un accusé.
