@@ -1,0 +1,21 @@
+name: Agent Lectrice C12
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preparation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tests de securite et preparation
+        run: python3 -m unittest discover -s coordination/agents -p 'test_*.py'
+      - name: Preparer la mission Lectrice
+        run: |
+          python3 coordination/agents/lectrice_agent_c12.py \
+            --entree coordination/agents/exemple_texte_lectrice_c12.txt \
+            --sortie rapport-lectrice-c12.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rapport-lectrice-c12
+          path: rapport-lectrice-c12.json
