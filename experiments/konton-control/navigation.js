@@ -25,7 +25,7 @@
       else button.removeAttribute("aria-current");
     });
     document.title = "KONTON Control · " +
-      ({ home: "Accueil", agents: "Agents (simulation)", github: "GitHub", outils: "Outils" })[target];
+      ({ home: "Accueil", agents: "Agents (simulation)", github: "GitHub", cycles: "Cycles", outils: "Outils" })[target];
     if (shouldFocus) {
       const selected = screens.get(target);
       safeFocus(selected);
