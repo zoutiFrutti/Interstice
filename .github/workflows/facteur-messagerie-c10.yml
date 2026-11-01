@@ -1,0 +1,36 @@
+name: Facteur messagerie C10
+on:
+  pull_request:
+    paths:
+      - 'coordination/messagerie/facteur.py'
+      - '.github/workflows/facteur-messagerie-c10.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: facteur-messagerie-c10-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vérifier syntaxe Python
+        run: python3 -m py_compile coordination/messagerie/facteur.py
+  distribuer:
+    if: github.event_name != 'pull_request'
+    needs: verifier
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scanner les 17 boîtes et ouvrir les tickets manquants
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          MESSAGERIE_REF: coordination/cycle10-messagerie-v1-20261101
+        run: python3 coordination/messagerie/facteur.py
