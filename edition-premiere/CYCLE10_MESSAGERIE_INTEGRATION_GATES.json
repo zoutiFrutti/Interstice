@@ -1,0 +1,56 @@
+{
+  "cycle": 10,
+  "branch": "integration/cycle10-p0-rollback-wiki-biblio-20261101",
+  "source_head": "4b650bbbae76e6a0cf4d4061685dcdb9eedf9f50",
+  "stage": "pre_integration",
+  "publication_allowed": false,
+  "production_changes_allowed": false,
+  "messages": [
+    {
+      "id": "C10-MSG-003",
+      "receipt_commit": "4950447066abda2aaf1fc0bc1f178603cb65c76a",
+      "status": "REÇUE",
+      "integrated": false
+    },
+    {
+      "id": "C10-MSG-004",
+      "receipt_commit": "4950447066abda2aaf1fc0bc1f178603cb65c76a",
+      "status": "REÇUE",
+      "integrated": false
+    },
+    {
+      "id": "C10-MSG-008",
+      "receipt_commit": "4950447066abda2aaf1fc0bc1f178603cb65c76a",
+      "status": "REÇUE",
+      "integrated": false
+    }
+  ],
+  "inputs": [
+    {
+      "atelier": "anarchitecte",
+      "head": "46e628cb6d40ea39c874fb18cb231f14f3e74b5f",
+      "contract_blob": "b4e2e56be6bb82c0fb14860aa083ea9011e0a89e",
+      "mapping_blob": "a02373657a552ebecf600fb54b8b5fe78bdedd69",
+      "status": "VERIFIED_SOURCE_NOT_IMPORTED"
+    },
+    {
+      "atelier": "graphiste",
+      "head": "87b9eff2336f37b88ba9d45bfdda2d3a41390800",
+      "ci_run": 41306365091,
+      "status": "CI_SUCCESS_SOURCE_NOT_IMPORTED"
+    },
+    {
+      "atelier": "lectrice_mediatheque",
+      "status": "WAITING_CROSS_CHECK",
+      "mapping_finalized": false
+    }
+  ],
+  "gates": {
+    "contract_read": true,
+    "graphiste_ci_confirmed": true,
+    "editorial_statuses_crosschecked": false,
+    "aliases_decided": false,
+    "publication_authorization": false,
+    "can_integrate": false
+  }
+}
