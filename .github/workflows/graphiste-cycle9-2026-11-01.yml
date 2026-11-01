@@ -1,0 +1,28 @@
+name: Graphiste Cycle9 candidate integration QA
+on:
+  push:
+    branches: [design/graphiste-cycle9-integration-2026-11-01]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/c9.log 2>&1 &
+          node --test tests/graphiste-cycle9-2026-11-01.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: graphiste-cycle9-captures-a4
+          path: artifacts/*
+          if-no-files-found: warn

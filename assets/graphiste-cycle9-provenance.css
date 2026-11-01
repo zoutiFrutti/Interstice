@@ -1,0 +1,8 @@
+/* C9 : intégration candidate seulement, extension des PR #66 et #68 */
+.interstice-fiche.graphiste-c8 .c9-provenance{border:2px solid #bdaaa0;background:#272126;border-radius:8px;padding:18px;margin:16px 0}
+.interstice-fiche.graphiste-c8 .c9-provenance[data-rights="unverified"]{border-left:7px solid #c5212c}
+.interstice-fiche.graphiste-c8 .c9-provenance dt{font-weight:800}.interstice-fiche.graphiste-c8 .c9-provenance dd{margin:0 0 12px;overflow-wrap:anywhere}
+.interstice-fiche.graphiste-c8 .c9-alert{border-left:6px solid #e9e5db;background:#33272c;padding:14px 18px}
+.interstice-fiche.graphiste-c8 .c9-alert strong{display:block}
+.interstice-fiche.graphiste-c8 .c9-provenance a{overflow-wrap:anywhere}
+@media print{.interstice-fiche.graphiste-c8 .c9-provenance,.interstice-fiche.graphiste-c8 .c9-alert{background:#fff!important;color:#111!important;border-color:#555!important;break-inside:avoid}}
