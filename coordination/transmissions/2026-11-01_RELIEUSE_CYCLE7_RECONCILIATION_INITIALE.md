@@ -62,3 +62,30 @@ Zout est actuellement l'unique personne humaine portant l'initiative. Aucun coll
 
 ### Prochain contrôle
 Lire les fichiers de statut du cycle 2 à 5 et le rapport détaillé de la PR #63 ; établir un tableau d'identifiants et de SHA avant de conclure sur les cinq blocages actuels. Aucun visa, fusion, publication ou contact ajouté.
+
+
+## Cycle 8 — Passe 1 : identification nominative des cinq blocages et matrice des 34
+Source contrôlée : `coordination/cycle2/STATUTS_34_2026-10-31.json`, branche `coordination/relieur-pilote-10-passes-20261030`, blob `09a73b4931ef41811349072316248979a5afa97c`. État **historique du registre cycle 2**, non une vérification de résolution au 1er novembre.
+
+**Comptage exact :** 14 `ready`, 15 `to_correct`, 5 `blocked`, deux visas éditoriaux distincts (ARCH-002 et ARCH-007). Ces 34 éléments sont mixtes (fiches historiques et pages Wiki) et ne doivent pas être assimilés aux 24 pages du premier tri.
+
+### Cinq blocages nommés
+| Page | Blob du lot de La Lectrice | Réserve du registre |
+|---|---|---|
+| `wiki-education-enfance-protection.html` | `ff4a1b2cf13832dfc1050ce85d1b0d359c9f5e8a` | Protection des mineurs et procédures sensibles : avis spécialisé requis. |
+| `wiki-frontieres-migrations-colonialisme.html` | `058e3629b172d88461a6d394c35809582739b6a6` | Asile, notifications et délais variables : revue Juriste indispensable. |
+| `wiki-logement-habitat-droit-ville.html` | `6a10c4a53d42debfd06526dd962cdc2fe502bd0a` | Commandement de payer/quitter, DALO/DAHO : avis juridique requis. |
+| `wiki-police-deces-memoire.html` | `f0dda721586ac4c5e76400b1b1ecbeba714cf684` | Réputation, confidentialité, rectification et sources. |
+| `wiki-sante-psychiatrie-autonomie-soins.html` | `a7e026c3a66fd9d97a695db3bade1e86a89ff7ae` | Droits de santé et soins non consentis : avis sanitaire/juridique requis. |
+
+### Quinze éléments à corriger, selon ce même registre
+- Fiches : `ARCH-005`, `ASSO-007`, `COL-003`.
+- Pages Wiki : `association-collegiale`, `autonomie-materielle-savoir-faire`, `capitalisme-classes-travail`, `culture-creation-acces-art`, `ecologie-sociale-environnement`, `egalite-fiches`, `egalite-genres-inclusivite`, `financements-culture-spectacle`, `handicap-validisme-neurodiversite`, `justice-prisons-abolitionnisme`, `liberte-numerique-ia-surveillance`, `patriarcat-histoire-mecanismes` (tous préfixés `wiki-` et suffixés `.html`).
+
+### Quatorze prêts à soumettre (non approuvés)
+- Fiches : `ARCH-003`, `ARCH-004`, `ARCH-006`, `ARCH-008`, `ASSO-005`, `ASSO-008`, `COL-001`.
+- Pages Wiki : `antifascisme-histoire-et-mecanismes`, `antiracisme-histoires-droits`, `decision-collective`, `feminismes-histoire-egalite`, `lecture-croisee-travail-soin-pouvoir`, `politique-institutions-regimes`, `socialismes-communismes-anarchismes-autogestion`.
+
+**Décisions Zout :** aucune nouvelle décision enregistrée par cette passe. Les visas ARCH-002 et ARCH-007 portent uniquement sur leurs textes candidats aux SHA `f9f0b6edf09cf0e84fe7e46960f25df1a8e99dbb` et `372bfcee95f7bd4a1f37dfa9393264662050e9ba`, respectivement, sans droits médias ni autorisation de publication.
+
+**Suite :** comparer le registre historique aux corrections des PR #55/#63 et aux contrôles juridiques #65, puis construire la matrice actualisée par fichier et SHA. Aucune fusion, publication ou intervention serveur.
