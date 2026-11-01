@@ -1,0 +1,24 @@
+name: Demo ateliers C11 sans IA
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'coordination/agents/**'
+      - '.github/workflows/demo-agents-c11.yml'
+permissions:
+  contents: read
+jobs:
+  demonstration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tests hors ligne
+        run: |
+          python3 -m py_compile coordination/agents/demo_c11.py
+          python3 -m unittest discover -s coordination/agents -p 'test_*.py'
+      - name: Produire un rapport de demonstration
+        run: python3 coordination/agents/demo_c11.py --sortie rapport-demo-c11.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rapport-demo-c11
+          path: rapport-demo-c11.json
