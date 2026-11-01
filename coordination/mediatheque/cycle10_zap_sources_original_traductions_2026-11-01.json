@@ -71,6 +71,54 @@
       "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
       "linked_fn_id": null,
       "create_fn": false
+    },
+    {
+      "id": "ZAP-DOC-006",
+      "kind": "Programme Escuelita original ES",
+      "date": "2013-03-17",
+      "url": "https://enlacezapatista.ezln.org.mx/2013/03/17/fechas-y-otras-cosas-para-la-escuelita-zapatista/",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_PR82_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
+    },
+    {
+      "id": "ZAP-DOC-007",
+      "kind": "Programme Escuelita traduction FR",
+      "date": "2013-03-19",
+      "url": "https://enlacezapatista.ezln.org.mx/2013/03/19/dates-et-autres-choses-pour-la-petite-ecole-zapatiste/",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_PR82_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
+    },
+    {
+      "id": "ZAP-DOC-008",
+      "kind": "Convocation EZLN 2025",
+      "date": "2025-06-02",
+      "url": "https://enlacezapatista.ezln.org.mx/2025/06/02/convocatoria-al-encuentro-de-resistencias-y-rebeldias-algunas-partes-del-todo/",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_PR82_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
+    },
+    {
+      "id": "ZAP-DOC-009",
+      "kind": "Communiqué EZLN vocabulaire institutionnel 2026",
+      "date": "2026-03-18",
+      "url": "https://enlacezapatista.ezln.org.mx/2026/03/18/el-condenado-y-las-hormigas-el-amor-y-el-desamor-segun-un-nino-zapatista/",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_PR82_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
     }
   ],
   "notes": [
@@ -78,5 +126,9 @@
     "GAL/ACGAZ 2023 et ACEGAZ 2026 : variantes datées, pas synonymes à normaliser silencieusement",
     "Les affirmations du mouvement ne démontrent pas leur application indépendante",
     "Aucune œuvre hébergée, aucune nouvelle FN créée"
-  ]
+  ],
+  "additional_source": {
+    "pr": 82,
+    "blob": "63bd8099073bf184c359c0ad546113c09bdb2636"
+  }
 }
