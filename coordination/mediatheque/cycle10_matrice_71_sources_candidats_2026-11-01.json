@@ -19,9 +19,9 @@
       "source_url_catalogue": "https://fr.wikisource.org/wiki/Discours_de_la_servitude_volontaire/%C3%89dition_1922/Discours",
       "rights_claim_catalogue": "texte historique dans le domaine public en France ; édition de 1922, appareil éditorial et illustrations à considérer séparément pour toute republication. Lien de consultation légale Wikisource.",
       "consultation_claim_catalogue": "A pour l’accès et l’attribution ; prudence sur les contributions éditoriales et la date de composition.",
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "WEB_PAGE_SOURCE_CONSULTEE_2026-11-01",
+      "url_check_c10": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
+      "rights_check_c10": "NON_VALIDÉ_JURIDIQUEMENT",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -43,9 +43,10 @@
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
       "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "url_status": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Page source accessible ; métadonnées et licence à interpréter selon fichier/édition, pas d'autorisation automatique de reproduction"
     },
     {
       "id": "FN-002",
@@ -54,9 +55,9 @@
       "source_url_catalogue": "https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain/Texte_entier",
       "rights_claim_catalogue": "œuvre historique du domaine public en France ; édition consultable gratuitement sur Wikisource, réutilisation de l’habillage du site régie séparément.",
       "consultation_claim_catalogue": "A pour texte intégral, auteur et date de l’édition.",
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "WEB_PAGE_SOURCE_CONSULTEE_2026-11-01",
+      "url_check_c10": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
+      "rights_check_c10": "NON_VALIDÉ_JURIDIQUEMENT",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -78,9 +79,10 @@
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
       "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "url_status": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Page source accessible ; métadonnées et licence à interpréter selon fichier/édition, pas d'autorisation automatique de reproduction"
     },
     {
       "id": "FN-003",
@@ -173,9 +175,9 @@
       "source_url_catalogue": "https://fr.wikisource.org/wiki/D%C3%A9claration_des_droits_de_la_femme_et_de_la_citoyenne",
       "rights_claim_catalogue": "texte historique du domaine public en France. Vérification A.",
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "WEB_PAGE_SOURCE_CONSULTEE_2026-11-01",
+      "url_check_c10": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
+      "rights_check_c10": "NON_VALIDÉ_JURIDIQUEMENT",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -197,9 +199,10 @@
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
       "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "url_status": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Page source accessible ; métadonnées et licence à interpréter selon fichier/édition, pas d'autorisation automatique de reproduction"
     },
     {
       "id": "FN-008",
@@ -376,9 +379,9 @@
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:Gay_and_Proud_(1970).webm",
       "rights_claim_catalogue": null,
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "WEB_PAGE_SOURCE_CONSULTEE_2026-11-01",
+      "url_check_c10": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
+      "rights_check_c10": "NON_VALIDÉ_JURIDIQUEMENT",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -400,9 +403,10 @@
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
       "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "url_status": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Page source accessible ; métadonnées et licence à interpréter selon fichier/édition, pas d'autorisation automatique de reproduction"
     },
     {
       "id": "FN-017",
@@ -556,9 +560,9 @@
       "source_url_catalogue": "https://fr.wikisource.org/wiki/La_Commune_(Michel)/Texte_entier",
       "rights_claim_catalogue": null,
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "WEB_PAGE_SOURCE_CONSULTEE_2026-11-01",
+      "url_check_c10": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
+      "rights_check_c10": "NON_VALIDÉ_JURIDIQUEMENT",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -580,9 +584,10 @@
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
       "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "url_status": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Page source accessible ; métadonnées et licence à interpréter selon fichier/édition, pas d'autorisation automatique de reproduction"
     },
     {
       "id": "FN-023",
@@ -988,9 +993,9 @@
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:Elephants_Dream_(2006).webm",
       "rights_claim_catalogue": "LICENCE LIBRE Creative Commons Attribution 2.5 (CC BY 2.5) explicitement attestée par le producteur et Wikimedia Commons pour le film et les fichiers de production, attribution requise, pas domaine public. Vérification A : auteur, production, date 2006, langue, accès et licence ; B : conditions spécifiques de sous-titres/traductions, crédits de projection ; C : film non visionné intégralement.",
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "WEB_PAGE_SOURCE_CONSULTEE_2026-11-01",
+      "url_check_c10": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
+      "rights_check_c10": "NON_VALIDÉ_JURIDIQUEMENT",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -1012,9 +1017,10 @@
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
       "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "url_status": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Page source accessible ; métadonnées et licence à interpréter selon fichier/édition, pas d'autorisation automatique de reproduction"
     },
     {
       "id": "FN-041",
@@ -1254,9 +1260,9 @@
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:Sintel_movie_-_Blender_Fondation.ogv",
       "rights_claim_catalogue": "https://commons.wikimedia.org/wiki/File:Sintel_movie_-_Blender_Fondation.ogv ; présentation officielle https://durian.blender.org/about/ (page officielle indexée mais ouverture directe momentanément indisponible lors de cette passe).",
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "WEB_PAGE_SOURCE_CONSULTEE_2026-11-01",
+      "url_check_c10": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
+      "rights_check_c10": "NON_VALIDÉ_JURIDIQUEMENT",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -1278,9 +1284,10 @@
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
       "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "url_status": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Page source accessible ; métadonnées et licence à interpréter selon fichier/édition, pas d'autorisation automatique de reproduction"
     },
     {
       "id": "FN-053",
@@ -1604,9 +1611,9 @@
       "source_url_catalogue": "https://www.noussommespartout.org/",
       "rights_claim_catalogue": "https://www.noussommespartout.org/presentation/ . Droits : textes PROTÉGÉS sous CC BY-NC-SA 4.0 (attribution, pas d'usage commercial, partage à l'identique), consultation gratuite ; PAS domaine public et PAS licence libre au sens strict à cause de NC ; code du site sous licence libre MIT, à distinguer des textes et de l'édition imprimée. Les contributions sont annoncées comme informées de la lecture publique et peuvent être retirées des futures é",
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "WEB_PAGE_SOURCE_CONSULTEE_2026-11-01",
+      "url_check_c10": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
+      "rights_check_c10": "NON_VALIDÉ_JURIDIQUEMENT",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -1628,9 +1635,10 @@
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
       "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "url_status": "PAGE_SOURCE_OUVERTE_C10_REPRISE_MESSAGERIE",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Page source accessible ; métadonnées et licence à interpréter selon fichier/édition, pas d'autorisation automatique de reproduction"
     },
     {
       "id": "FN-069",
@@ -1722,8 +1730,9 @@
     ],
     "selected": 12,
     "alias_count": 2,
-    "current_url_tests": 4,
-    "source_rights_mentions_checked": 4
+    "current_url_tests": 12,
+    "source_rights_mentions_checked": 4,
+    "selected_12_url_opened": 12
   },
   "quality_control": {
     "missing_original_notice": [
@@ -1748,12 +1757,14 @@
       "FN-067"
     ],
     "urls_present": 70,
-    "urls_currently_tested": 4,
+    "urls_currently_tested": 12,
     "author_edition_reverified": 0,
     "duplicates_preserved": [
       "FN-048",
       "FN-057"
     ],
-    "source_link_only": true
+    "source_link_only": true,
+    "selected_12_url_opened": 12,
+    "selected_12_all_opened_not_all_licensed": true
   }
 }
