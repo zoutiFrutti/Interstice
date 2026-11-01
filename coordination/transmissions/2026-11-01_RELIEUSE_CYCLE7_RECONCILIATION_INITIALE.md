@@ -108,3 +108,31 @@ Recherche GitHub effectuée : PR #67 **Juriste cycle 8**, PR #68 **Graphiste cyc
 5. Validation explicite de Zout pour les actes qui l'exigent.
 
 **Décision de coordination :** poursuivre le cycle 8 ; ne pas déclarer la première édition prête à publier. Les nouvelles PR et branches sont des contributions candidates, pas des travaux automatiquement reçus par les autres conversations.
+
+
+## Cycle 8 — Passe 3 : rapprochement des productions réelles, sans fusion
+**Contrôles GitHub** : comparaison `main...branche` et lecture des rapports exacts de La Lectrice, La Juriste et La Développeuse. Les quatre branches examinées sont **divergentes** de `main`, et leur nombre de commits en avance ne constitue pas un bilan de modifications exclusives du cycle 8.
+
+| Atelier | Branche | Pièce effectivement consultée | Conclusion |
+|---|---|---|---|
+| Lectrice | `atelier-lectrice/cycle8-qualite-20261101` | `coordination/transmissions/2026-11-01_LECTRICE_CYCLE8_LOTS_QA.md`, blob `01299b8241c970dcc709ae6bc50f1fa92f396b72` | Les 15 À CORRIGER = **12 Wiki + 3 historiques** ; les 15 de Graphiste #63 = **15 Wiki du premier tri**, listes non interchangeables. |
+| Juriste | `juriste/cycle8-matrice-risques-20261101` | `coordination/juriste/2026-11-01_CYCLE8_MATRICE_RISQUES_CORRECTIONS.md`, blob `51af4e26f734f8346e467790ff48140ba8617086` | Cinq blocages juridiques maintenus ; versions fondatrices candidates et P0 ouverts. |
+| Développeuse | `integration/cycle8-wiki-bibliotheque-p0-candidate-2026-11-01` | `edition-premiere/CYCLE8_P0_RAPPORT.md`, blob `1313d589fb9b8ca691a6fdad8e6417070ba6e637` | **Trois correctifs P0 candidats réversibles**, non appliqués ; PWA non démontrée ; navigation statique candidate. |
+| Graphiste | `design/graphiste-cycle8-integration-2026-11-01` | Comparaison de branche et description PR #68 | CSS d'intégration et rapport QA présents ; tests physiques de lecteurs d'écran non attestés. |
+
+### Correction de statut importante
+La Lectrice classe maintenant **ARCH-005, COL-003 et ASSO-007 « PRÊT À SOUMETTRE sous réserve »** sur les blobs respectifs `352fcb67462cf1552106c88888701624408ca689`, `64249e03f55ac29e4fb6bd48266990f3b982477a`, `93f4dca9e93df2b5f287607357f3be40c68c946a`. Ce sont des **versions nouvelles**, non des levées générales des réserves de source. Les **12 Wiki** du même lot restent À CORRIGER, et les **5 pages sensibles** restent BLOQUÉES. Ne pas modifier rétroactivement les comptes du registre cycle 2 ; constituer un **état cycle 8 séparé** : 14 prêts historiques + 3 nouveaux prêts sous réserve (sans doublon) ; 12 Wiki à corriger ; 5 bloqués. Ces nombres sont un **rapprochement documentaire** et non des validations de publication.
+
+### P0 technique : faits précis
+Rapport Développeuse : `submit-proposal` ACTIVE v2, `submit-resource` ACTIVE v1, `github-wiki-ingest` ACTIVE v5, les trois `verify_jwt=false` (l'ingestion GitHub comporterait un contrôle OIDC interne non audité). RPC `submit_wiki_article` et `review_wiki_article` SECURITY DEFINER : `authenticated EXECUTE=true`. Correctifs candidats : `edition-premiere/security-p0/submit-proposal-disabled.ts`, `submit-resource-disabled.ts`, `suspend-submit-wiki-article.sql`. Aucun déploiement ou test dynamique de production autorisé ou attesté. Les avertissements de sécurité ne prouvent pas tous une exploitation, mais imposent une revue et des essais sûrs avant ouverture.
+
+### Dossier de décisions Zout, ordre conseillé
+1. **Sécurité** : autorisation éventuelle d'un plan de test isolé et d'un déploiement serveur après revue des impacts et rollback. Ne pas exécuter en production sans autorisation explicite.
+2. **Textes fondateurs** : décision individuelle sur versions **intégrales** et SHA après lecture ; ne pas confondre approbation des amendements V2.6 avec adoption du manifeste.
+3. **Lot A** : 14 textes déjà prêts à soumettre, à examiner texte par texte.
+4. **Lot B** : trois historiques désormais prêts sous réserve ; 12 pages Wiki encore à corriger.
+5. **Lot C** : cinq pages sensibles à maintenir hors promotion tant que preuves, droits et avis spécialisés manquent.
+6. **ARCH-002 / ARCH-007** : visas éditoriaux conservés ; droits `A_VERIFIER` et `publication_authorized=false` selon le circuit d'édition candidate.
+
+### État des objectifs
+**Avancé** : inventaire exact, identification des cinq blocages, séparation des quinze lots, lecture des productions récentes, classement des trois dossiers historiques. **Non démontré** : serveur sécurisé, première édition fusionnée, droits médias complets, décisions individuelles sur textes intégraux, tests lecteurs d'écran réels, publication autorisée. Ne pas déclarer le cycle 8 clos sur ces bases.
