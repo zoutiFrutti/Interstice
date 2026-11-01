@@ -1,0 +1,18 @@
+{
+  "id": "DEMO-C11-001",
+  "type": "audit_references",
+  "ressources": [
+    {
+      "titre": "Ressource A",
+      "url": "https://example.org/article"
+    },
+    {
+      "titre": "Ressource A bis",
+      "url": "https://example.org/article/"
+    },
+    {
+      "titre": "Ressource B",
+      "url": ""
+    }
+  ]
+}
