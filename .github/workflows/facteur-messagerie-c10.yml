@@ -1,0 +1,24 @@
+name: Facteur messagerie C10
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: facteur-messagerie-c10
+  cancel-in-progress: false
+jobs:
+  distribuer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: Scanner les 17 boîtes et ouvrir les tickets manquants
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          MESSAGERIE_REF: coordination/cycle10-messagerie-v1-20261101
+        run: python3 coordination/messagerie/facteur.py
