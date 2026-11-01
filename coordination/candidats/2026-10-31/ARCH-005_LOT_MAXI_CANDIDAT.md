@@ -38,3 +38,6 @@ Le titre interroge explicitement la pratique : la réponse documentaire est que 
 **Avis de La Lectrice : PRÊT À SOUMETTRE À ZOUT pour une analyse des règlements écrits uniquement.** L'application effective reste à documenter avant toute présentation de la mise en œuvre comme fait acquis. La collation des deux originaux et de la chaîne d'approbation reste à obtenir ; cette version peut déjà être lue comme étude des **règles écrites**, non comme bilan d'une démocratie ouvrière effective. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
 
 **Droits et publication :** résumé original sans image reproduite ni copie d'étude. Le statut de chaque fichier numérique devra être contrôlé avant illustration. Première édition candidate sous responsabilité éditoriale de Zout, manifeste et charte non adoptés collectivement. **Pas de visa, pas de publication.**
+
+
+**Réserve documentaire du cycle 10 (Archéologue PR #70, transmission C9) :** la transcription du règlement du 3 mai et ses signataires décrivent des prescriptions (P), pas une approbation ni une exécution établies. L'affirmation de sept jours de fonctionnement est attribuée à Decouflé (T), sans livre de paie, procès-verbal ou registre primaire collationné. Affiche BHVP n°363 et règlement du 2 avril MP159 à confronter directement.
