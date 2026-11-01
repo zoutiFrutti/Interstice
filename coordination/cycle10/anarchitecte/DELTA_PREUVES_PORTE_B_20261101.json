@@ -1,0 +1,46 @@
+{
+  "status": "CANDIDAT_NON_PUBLIE",
+  "date": "2026-11-01",
+  "source_mediatheque": {
+    "branch": "coordination/mediatheque-cycle10-complet-20261101",
+    "blob": "bf6691345d4459349bb8ba0a810a39ac5fee77bb",
+    "record_count": 71,
+    "unique_ids": 71,
+    "aliases": {
+      "FN-048": "FN-022",
+      "FN-057": "FN-038"
+    }
+  },
+  "source_lectrice": {
+    "branch": "atelier-lectrice/cycle10-vingt-controles-20261101",
+    "blob": "ffd4f7878154d3b24b8231e35d1820c0e1796e98",
+    "scope": "20 versions candidates, statut individuel à conserver"
+  },
+  "source_biographe": {
+    "branch": "agent/biographe-cycle10-20261101",
+    "candidates": [
+      {
+        "id": "BIO-009",
+        "blob": "2d7fb44649ee78f41fb1e3474d6a59d39bb28d0c",
+        "status": "A_POURSUIVRE_ETAT_CIVIL"
+      },
+      {
+        "id": "BIO-012",
+        "blob": "710874d9d04d64b5c26c6a7435c8025bf32758c7",
+        "status": "CANDIDAT_DECISION_HUMAINE"
+      },
+      {
+        "id": "BIO-019",
+        "blob": "d5ca3fc167dcc8632ad2c95539e466fa4fb9ddac",
+        "status": "IDENTIFICATION_CIVILE_BLOQUEE"
+      }
+    ]
+  },
+  "rules": [
+    "Conserver tous les 139 IDs du mapping original",
+    "Les alias de Médiathèque sont proposition vérifiable et non suppression",
+    "Les états des fiches récentes ne remplacent le registre canonique que par réconciliation traçable",
+    "Aucun nouveau visa ou droit de reproduction"
+  ],
+  "decision": "Porte B dispose de matrices localisées; finalisation autorisée seulement après contrôles croisés et consolidation Relieuse"
+}
