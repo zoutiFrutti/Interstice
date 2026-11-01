@@ -22,6 +22,8 @@ jobs:
         run: python3 coordination/agents/rapport_c11.py
       - name: Simuler une file de missions
         run: python3 coordination/agents/mission_queue_c11.py
+      - name: Produire le tableau Relieuse
+        run: python3 coordination/agents/tableau_relieuse_c11.py
       - uses: actions/upload-artifact@v4
         with:
           name: rapport-demo-c11
@@ -29,3 +31,4 @@ jobs:
             rapport-demo-c11.json
             rapport-demo-c11.md
             file-missions-c11-rapport.json
+            tableau-relieuse-c11.md
