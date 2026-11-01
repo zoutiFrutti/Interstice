@@ -61,6 +61,6 @@ assert.deepEqual(screens.map(s => s.hidden), [true, false, true, true, true]);
 
 windowMock.location.hash = "#garbage";
 listeners.hashchange();
-assert.deepEqual(screens.map(s => s.hidden), [false, true, true, true]);
+assert.deepEqual(screens.map(s => s.hidden), [false, true, true, true, true]);
 assert.match(documentMock.title, /Accueil/);
 console.log("KONTON Control v0.7 : navigation, deep links, accès focus et retour accueil OK");
