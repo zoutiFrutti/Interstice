@@ -13,3 +13,5 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 
 ## Courrier de reprise émis par La Relieuse — 2026-11-01
 - **C10-REL-20261101-developpeuse** : ÉMISE ; lire `coordination/messagerie/courriers/C10-REL-20261101-developpeuse.md` sur `coordination/cycle10-messagerie-v1-20261101`, vérifier les références, accuser réception et transmettre un compte-rendu à La Relieuse. Ne pas considérer ce dépôt comme un accusé.
+
+- **C10-REL-20261101-SUITE-developpeuse** : ÉMISE ; lire `coordination/messagerie/courriers/C10-REL-20261101-SUITE-developpeuse.md`, accuser réception, rendre compte à La Relieuse.
