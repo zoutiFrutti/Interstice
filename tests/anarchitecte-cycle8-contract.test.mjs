@@ -58,3 +58,27 @@ test("known broken route has been corrected on the PR51 branch",()=>{
   assert.doesNotMatch(html,/href=["']wiki-mutualiser-materiel\.html/);
   assert.match(html,/href=["']wiki-ecologie-sociale-environnement\.html#axe5["']/);
 });
+
+test("all mapping rows correspond to real registry entries without renumbering",()=>{
+  const expected=[
+    ...registry.drive_fiches.map(x=>"drive:"+x.id),
+    ...registry.mediatheque_fn.map(x=>"fn:"+x.id),
+    ...registry.wiki_pages.map(x=>"wiki:"+x.path)
+  ].sort();
+  const actual=mapping.entries.map(x=>x.corpus+":"+x.key).sort();
+  assert.equal(mapping.entries.length,139);
+  assert.deepEqual(actual,expected);
+  for(const row of mapping.entries){
+    assert.equal(row.publication_authorized,false,
+      row.key+": mapping must not invent an authorization");
+  }
+  const expectedDuplicatePairs=[
+    ["FN-022","FN-048"],["FN-038","FN-057"]
+  ];
+  for(const [left,right] of expectedDuplicatePairs){
+    const first=mapping.entries.find(x=>x.key===left);
+    const second=mapping.entries.find(x=>x.key===right);
+    assert.equal(first?.duplicate_ref,right);
+    assert.equal(second?.duplicate_ref,left);
+  }
+});
