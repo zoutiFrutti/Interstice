@@ -1,0 +1,111 @@
+{
+  "version": "interstice-correspondances-v0.2-candidat",
+  "reference_blob": "f005414fc566cf020e2ac8931f4841e30ffde859",
+  "counts": {
+    "drive": 44,
+    "fn": 71,
+    "wiki": 24
+  },
+  "mapping_rules": [
+    {
+      "prefix": "BIO",
+      "count": 22,
+      "canonical_type": "biographie",
+      "route": "aucune nouvelle URL sans autorisation"
+    },
+    {
+      "prefix": "ASSO",
+      "count": 8,
+      "canonical_type": "organisation"
+    },
+    {
+      "prefix": "ARCH",
+      "count": 8,
+      "canonical_type": "archive"
+    },
+    {
+      "prefix": "COL",
+      "count": 2,
+      "canonical_type": "collectif"
+    },
+    {
+      "prefix": "EXP",
+      "count": 4,
+      "canonical_type": "experience"
+    },
+    {
+      "prefix": "FN",
+      "count": 71,
+      "canonical_type": "notice bibliographique",
+      "route": "bibliotheque.html, si publiée"
+    },
+    {
+      "prefix": "wiki-*",
+      "count": 24,
+      "canonical_type": "page thematique",
+      "route": "garder wiki-*.html"
+    }
+  ],
+  "folder_mismatch": [
+    {
+      "id": "ARCH-001",
+      "source_folder": "COL"
+    },
+    {
+      "id": "EXP-001",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "EXP-002",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "EXP-004",
+      "source_folder": "ASSO"
+    },
+    {
+      "id": "EXP-005",
+      "source_folder": "ASSO"
+    }
+  ],
+  "possible_duplicates": [
+    [
+      "FN-022",
+      "FN-048"
+    ],
+    [
+      "FN-038",
+      "FN-057"
+    ]
+  ],
+  "do_not_delete_ids": true,
+  "known_human_agreements": [
+    {
+      "id": "ARCH-002",
+      "decision": "ACCORD_EDITO_ZOUT",
+      "publication_authorized": false,
+      "rights_final": "A_VERIFIER"
+    },
+    {
+      "id": "ARCH-007",
+      "decision": "ACCORD_EDITO_ZOUT",
+      "publication_authorized": false,
+      "rights_final": "A_VERIFIER"
+    }
+  ],
+  "wiki_first_screening": {
+    "A_CORRIGER": 15,
+    "BLOQUEE": 9,
+    "VALIDABLE": 0
+  },
+  "paths_to_preserve": [
+    "wiki.html",
+    "bibliotheque.html",
+    "wiki-ecologie-sociale-environnement.html",
+    "wiki-decision-collective.html",
+    "wiki-socialismes-communismes-anarchismes-autogestion.html",
+    "wiki-capitalisme-classes-travail.html",
+    "wiki-politique-institutions-regimes.html"
+  ],
+  "note": "correspondance de conception; aucun document Drive ni source FN recopié, aucune route publique créée"
+}
