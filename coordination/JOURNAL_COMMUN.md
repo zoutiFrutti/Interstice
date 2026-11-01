@@ -370,3 +370,7 @@ Complément documentaire de La Biographe, [rapport de passes additionnelles](tra
 
 
 **BIO-009 Drive : localisation 1E73 vue 26/115 enregistrée (Cycle 8, 1er novembre 2026).** Complément réellement écrit puis relu dans le document Drive BIO-009 (ID 1UF54kCo7mwSIze66uNbo1ViEzRhAO4ptUjylBaJR5-o). Référence issue de WikiTree vers l'image du registre municipal, mais fac-similé non lu directement ; la réserve d'état civil reste explicite. Aucune modification du Wiki public ni visa éditorial.
+
+
+### Biographe Cycle 9 — Mme Delacour et Appert, La Marmite — 1er novembre 2026
+Michel Cordillot, *La Première Internationale en France (1864–1880)*, étude secondaire, signale que l'épouse du relieur Delacour assurait la cuisine des premiers temps et qu'un relieur Appert organisait le service ; **prénoms, salaires, actes originaux et éventuelle homonymie avec le photographe Appert non résolus**. Complément écrit et relu dans BIO-012 (SHA blob `1027ba8e47392dad41fbbe67331bbb618ba8e534`, commit `0f9258cf4d11d8fc397922c10af8e3e93a855c7f`) et BIO-009 Google Doc (contrôle de lecture effectué). Chronologie, références et limites dans [transmission Biographe Cycle 9](transmissions/2026-11-01_BIOGRAPHE_CYCLE9_MARMITE_IDENTITES.md), commit `f4503ae52c48f340dacfe17605d180432a001a40`. BIO-009 réserve d'état civil inchangée, BIO-019 et BIO-021 bloquées. Réception par La Relieuse non confirmée. Aucune fusion, publication, production ni visa de Zout.
