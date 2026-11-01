@@ -1615,3 +1615,10 @@ La Relieuse applique son propre prompt d'ouverture avant distribution des 16 pro
 ## 2026-11-01 — La Relieuse — contrôle de clôture C10 (NON CLÔTURABLE)
 
 Contrôle réel : recherche de 18 branches C10 (dont coordination et doublon Assistant), PR #75–78, lecture du protocole d'ouverture blob `20f9e4364e25c7f62865635d3b4825d205004631` et de `coordination/cycle10/archeologue/ARCH-005.md` blob `52f9299423eb639d4538ee9801db8371798a560e`. Registre provisoire `coordination/cycle10/REGISTRE_CLOTURE_PROVISOIRE_C10_2026-11-01.md` commit `00f7cded3c1dc41c22a078fecdbbfa96b6641cf5`, branche `coordination/cycle10-cloture-audit-20261101`. Les seize transmissions n'ont pas été toutes relues ni leurs tests vérifiés ; aucune mission n'est donc certifiée TERMINÉE par La Relieuse. PR #75 : trois blocages maintenus et deux corrections nécessaires. PR #76 : tests physiques lecteurs d'écran non réalisés. PR #77 : quatre fiches candidates ; originaux non entièrement collationnés. PR #78 : distinction 5 novembre original espagnol / 6 novembre traduction anglaise à préserver. Reprise exigée par objectif avec SHA et tests ; pas de report humain présumé. Aucun merge, publication ou changement de production.
+
+
+---
+
+## 2026-11-01 — La Relieuse — messagerie inter-ateliers V1 candidate
+
+Sur branche `coordination/cycle10-messagerie-v1-20261101`, création d'un protocole `coordination/messagerie/README.md`, index de huit transmissions préparées `coordination/messagerie/MESSAGES_C10.md`, portes `coordination/messagerie/DEPENDANCES_C10.md`, seize boîtes documentaires `coordination/messagerie/boites/*.md` et journal court `coordination/journaux/CYCLE10.md`. Tous les messages restent **ÉMIS** et non **REÇUS** : aucune notification automatique, aucune conversation externe activée, aucun accusé inventé. Historique du Journal commun conservé. Les vagues suivantes attendent la preuve de levée des dépendances ; le cycle 10 reste non clôturable. Aucun merge ni déploiement.
