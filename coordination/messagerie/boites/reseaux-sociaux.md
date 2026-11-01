@@ -15,3 +15,5 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 
 ## Point d'entrée V2
 À chaque « T'as du courrier », consulter cette boîte et `MESSAGES_C10.md` sur la branche `coordination/cycle10-messagerie-v1-20261101`, jamais uniquement sur sa branche personnelle. Signaler une erreur de lecture plutôt qu'une boîte vide. Accuser réception avec SHA.
+
+- **C10-REL-20261101-SUITE-reseaux-sociaux** : ÉMISE, consulter `coordination/messagerie/courriers/C10-REL-20261101-SUITE-reseaux-sociaux.md` sur branche centrale ; accusé non attesté.
