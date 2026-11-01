@@ -16,3 +16,6 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 
 ## Point d'entrée V2 — lecture centrale
 À chaque « T'as du courrier », lire cette boîte **sur `coordination/cycle10-messagerie-v1-20261101`**, puis `coordination/messagerie/MESSAGES_C10.md` et tous les courriers non traités référencés. Ne jamais conclure « boîte vide » après avoir consulté seulement la branche personnelle. Si cette branche centrale est inaccessible, signaler l'incident à La Relieuse. Réception uniquement après accusé daté avec SHA.
+
+## Activation explicite commune — 2026-11-01
+Lire `coordination/messagerie/PROTOCOLE_ACTIVATION_17_ATELIERS_C10.md` sur la branche centrale. Pour les courriers **ÉMISE** ci-dessus, faire une lecture réelle, accuser réception sur branche personnelle avec commit/blob, puis transmettre preuves et résultats à La Relieuse. L'activation de la boîte ne constitue **pas** une réception. En cas d'erreur d'accès, la signaler précisément.
