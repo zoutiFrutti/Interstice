@@ -4,7 +4,7 @@ Date : 2026-11-01. Émis par La Relieuse. **Document de référence candidat, no
 ## Commandes des ateliers
 - **T'as du courrier** : lire sa boîte et l'index, vérifier les SHA, accuser réception par commit, traiter les missions réalisables, écrire les transmissions nécessaires, mettre à jour le journal.
 - **Ok next** : reprendre l'état réel, consulter également les courriers, poursuivre les actions autorisées, effectuer plusieurs passes.
-- Un atelier peut écrire à n'importe quel autre atelier, à plusieurs destinataires ou à La Relieuse. Aucun passage obligé par La Lectrice ni par un relais central.
+- **Passage obligatoire par La Relieuse** : chaque atelier prépare les courriers destinés aux autres ateliers et les transmet à La Relieuse avec leurs preuves. La Relieuse vérifie la cohérence, les doublons, les dépendances et les contradictions, puis distribue les courriers validés dans les boîtes des destinataires. Les ateliers ne distribuent pas directement de courriers entre eux.
 - Un message ne devient REÇU qu'avec accusé vérifiable ; TRAITÉ qu'avec preuve de traitement. Éviter les doublons via ID unique. Toute branche isolée nécessite réconciliation explicite vers la branche de coordination.
 
 ## Commandes de La Relieuse
