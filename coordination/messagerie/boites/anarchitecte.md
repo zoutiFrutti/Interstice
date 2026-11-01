@@ -14,3 +14,6 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 - **C10-REL-20261101-anarchitecte** : ÉMISE ; lire `coordination/messagerie/courriers/C10-REL-20261101-anarchitecte.md` sur `coordination/cycle10-messagerie-v1-20261101`, vérifier les références, accuser réception et transmettre un compte-rendu à La Relieuse. Ne pas considérer ce dépôt comme un accusé.
 
 - **C10-REL-20261101-SUITE-anarchitecte** : ÉMISE ; nouveau courrier dans `coordination/messagerie/courriers/C10-REL-20261101-SUITE-anarchitecte.md`. Lire, vérifier, accuser réception et transmettre compte-rendu à La Relieuse. Ne pas présumer réception.
+
+## Point d'entrée V2
+À chaque « T'as du courrier », consulter cette boîte et `MESSAGES_C10.md` sur la branche `coordination/cycle10-messagerie-v1-20261101`, jamais uniquement sur sa branche personnelle. Signaler une erreur de lecture plutôt qu'une boîte vide. Accuser réception avec SHA.
