@@ -1601,3 +1601,10 @@ Proposition historique/scientifique de l'Archiviste examinée, avec trois axes E
 - `coordination/cycle9/DOSSIER_DECISIONS_ZOUT_C9_2026-11-01.md`, commit `855acaf01e0e4bd8a1206ab94686a807f7fffc86` ; décisions à réserver, accords déjà exprimés préservés.
 
 **État :** coordination candidate et rectification documentaire accomplies ; P0 serveur, intégration sur HEAD unique, licences et visas restent ouverts. Aucun test applicatif, accès de production, fusion, adoption ou publication réalisés par La Relieuse. La lecture de PR ne garantit pas que toutes les conversations ont été consultées ni que leurs auteurs ont reçu ce Journal.
+
+
+---
+
+## 2026-11-01 — La Relieuse — ouverture exécutée du cycle 10
+
+La Relieuse applique son propre prompt d'ouverture avant distribution des 16 prompts. Branche candidate `coordination/cycle10-ouverture-20261101`. Protocole et registre : `coordination/cycle10/PROTOCOLE_REGISTRE_OUVERTURE_C10_2026-11-01.md`, commit `4a87819a0943c76396b9acec918993269b3f7d25`. Contrôle des branches C9 et PR #71 (Juriste, cinq corrections sensibles candidates), #73 (Graphiste, intégration candidate), #74 (Éclaireuse, huit hypothèses), #69/#70 (recherches C8). Les missions C10 exigent des preuves et un statut de fin, pas seulement un rapport. La Relieuse clôturera après transmissions des seize ateliers, sans auto-déclenchement. Les tâches irréalisables restent BLOQUÉES ou DÉCISION HUMAINE, jamais TERMINÉES. Aucune fusion, publication ni modification de production. Limites : audit GitHub non exhaustif, conversations indépendantes non intégralement accessibles, CI et serveur non revalidés.
