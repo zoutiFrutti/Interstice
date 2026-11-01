@@ -1,0 +1,746 @@
+{
+  "schema": "interstice_mediatheque_cycle9_matrix_v1",
+  "date": "2026-11-01",
+  "status": "CANDIDAT_NON_PUBLIE",
+  "provenance": {
+    "catalogue": "Google Drive: Catalogue initial — Médiathèque des communs — v0.1",
+    "selection": "coordination/mediatheque/selection_premiere_edition_liens_candidats_2026-10-31.json",
+    "selection_blob_sha": "1e4040640d5e950d8ae5e90d524b067ec1958274"
+  },
+  "identifiers": [
+    {
+      "id": "FN-001",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-002",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-003",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-004",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-005",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-006",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-007",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-008",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-009",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-010",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-011",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-012",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-013",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-014",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-015",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-016",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-017",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-018",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-019",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-020",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-021",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-022",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-023",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-024",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-025",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-026",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-027",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-028",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-029",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-030",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-031",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-032",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-033",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-034",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-035",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-036",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-037",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-038",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-039",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-040",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-041",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-042",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-043",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-044",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-045",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-046",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-047",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-048",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-049",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-050",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-051",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-052",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-053",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-054",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-055",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-056",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-057",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-058",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-059",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-060",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-061",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-062",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-063",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-064",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-065",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-066",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-067",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-068",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-069",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-070",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    },
+    {
+      "id": "FN-071",
+      "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
+      "current_url_check": "NON_TESTE_CYCLE9",
+      "license_check": "NON_RECONTROLE_CYCLE9",
+      "publication_approved": false
+    }
+  ],
+  "aliases": {
+    "FN-048": "FN-022",
+    "FN-057": "FN-038"
+  },
+  "selection": [
+    {
+      "id": "FN-001",
+      "title": "Discours de la servitude volontaire",
+      "author": "Étienne de La Boétie",
+      "edition": "Discours de la servitude volontaire, texte posthume XVIe siècle ; édition Paul Bonnefon 1922",
+      "source_url": "https://fr.wikisource.org/wiki/Discours_de_la_servitude_volontaire/%C3%89dition_1922/Discours",
+      "rights_claim_from_prior_record": "Texte historique domaine public FR ; édition et annotations à distinguer",
+      "access_prior_record": "PAGE_OUVERTE_CE_CYCLE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "PAGE_DOCUMENTAIRE_OU_NOTICE_LUE_PAR_SECTIONS_PAS_INTEGRALE",
+      "article_connexe": "wiki-politique-institutions-regimes.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-002",
+      "title": "La Conquête du pain",
+      "author": "Pierre Kropotkine",
+      "edition": "La Conquête du pain, 1892 ; édition française Wikisource",
+      "source_url": "https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain/Texte_entier",
+      "rights_claim_from_prior_record": "Texte original domaine public FR ; notices et éditions à distinguer",
+      "access_prior_record": "PAGE_OUVERTE_CE_CYCLE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "PAGE_DOCUMENTAIRE_OU_NOTICE_LUE_PAR_SECTIONS_PAS_INTEGRALE",
+      "article_connexe": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-007",
+      "title": "Déclaration des droits de la femme et de la citoyenne",
+      "author": "Olympe de Gouges",
+      "edition": "Déclaration des droits de la femme et de la citoyenne, 1791 ; transcription Wikisource",
+      "source_url": "https://fr.wikisource.org/wiki/D%C3%A9claration_des_droits_de_la_femme_et_de_la_citoyenne",
+      "rights_claim_from_prior_record": "Texte ancien domaine public FR ; éventuelles éditions/crédits distincts",
+      "access_prior_record": "PAGE_OUVERTE_REVUE_PRECEDENTE_NON_RETESTEE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "PAGE_DOCUMENTAIRE_OU_NOTICE_LUE_PAR_SECTIONS_PAS_INTEGRALE",
+      "article_connexe": "wiki-feminismes-histoire-egalite.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-016",
+      "title": "Gay and Proud",
+      "author": "Lilli Vincenz",
+      "edition": "1970 ; film documentaire d’archives, anglais, 11 min 43 s",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gay_and_Proud_(1970).webm",
+      "rights_claim_from_prior_record": "Domaine public signalé par Commons, LOC « no known restrictions » ; réserver la portée territoriale et les droits annexes",
+      "access_prior_record": "PAGE_OUVERTE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "NOTICE_OU_PAGE_SEULEMENT_PAS_LECTURE_INTEGRALE",
+      "article_connexe": "wiki-egalite-genres-inclusivite.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-017",
+      "title": "Pepper&Carrot — épisode 26 : Les livres, c’est génial",
+      "author": "David Revoy ; crédits spécifiques de traduction sur la page",
+      "edition": "2018 ; bande dessinée web en français",
+      "source_url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
+      "rights_claim_from_prior_record": "CC BY 4.0 annoncée par l’éditeur/auteur ; conserver traduction et crédits",
+      "access_prior_record": "PAGE_OUVERTE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "PAGE_ET_TRANSCRIPTION_PARTIELLE",
+      "article_connexe": "wiki-culture-creation-acces-art.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-019",
+      "title": "Consensus Decision Making",
+      "author": "Seeds for Change",
+      "edition": "Consensus Decision Making, seconde édition 2020, guide PDF 80 p.",
+      "source_url": "https://seedsforchange.org.uk/downloads/consensus.pdf",
+      "rights_claim_from_prior_record": "Mention anti-copyright du collectif, conditions propres à contrôler ; pas une licence CC standard",
+      "access_prior_record": "PDF_80_PAGES_REPERE_CE_CYCLE_CAPTURE_INDISPONIBLE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "PAGE_DOCUMENTAIRE_OU_NOTICE_LUE_PAR_SECTIONS_PAS_INTEGRALE",
+      "article_connexe": "wiki-decision-collective.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-022",
+      "title": "La Commune (1898)",
+      "author": "Louise Michel",
+      "edition": "La Commune, Paris P.-V. Stock, 1898 ; transcription Wikisource",
+      "source_url": "https://fr.wikisource.org/wiki/La_Commune_(Michel)/Texte_entier",
+      "rights_claim_from_prior_record": "Texte historique domaine public FR ; distinction édition, illustrations et témoignage",
+      "access_prior_record": "PAGE_OUVERTE_CE_CYCLE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "PAGE_DOCUMENTAIRE_OU_NOTICE_LUE_PAR_SECTIONS_PAS_INTEGRALE",
+      "article_connexe": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-024",
+      "title": "The Seedkeepers",
+      "author": "Indigenous Community Video Collective — NE India",
+      "edition": "2015 ; documentaire communautaire, 4 min 53 s, Nagaland, Inde",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm",
+      "rights_claim_from_prior_record": "CC BY 3.0 indiquée dans la notice existante ; droits liés aux savoirs et aux personnes distincts",
+      "access_prior_record": "ACCES_NON_CONCLUANT",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "NOTICE_OU_PAGE_SEULEMENT_PAS_LECTURE_INTEGRALE",
+      "article_connexe": "wiki-ecologie-sociale-environnement.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-038",
+      "title": "Principes féministes de l’internet 2.0",
+      "author": "Association pour le progrès des communications (APC), collectif et traduction",
+      "edition": "Principes féministes de l’internet 2.0, 24 août 2016, page actualisée 2024",
+      "source_url": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20",
+      "rights_claim_from_prior_record": "CC BY 4.0 annoncée au catalogue APC, traduction et images à contrôler",
+      "access_prior_record": "PAGE_OUVERTE_CE_CYCLE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "PAGE_DOCUMENTAIRE_OU_NOTICE_LUE_PAR_SECTIONS_PAS_INTEGRALE",
+      "article_connexe": "wiki-liberte-numerique-ia-surveillance.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-040",
+      "title": "Elephants Dream",
+      "author": "Bassam Kurdali ; Orange Open Movie Team / Blender Foundation",
+      "edition": "2006 ; court-métrage 3D, anglais, fichier 10 min 58 s",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Elephants_Dream_(2006).webm",
+      "rights_claim_from_prior_record": "CC BY 2.5 explicite sur la fiche Commons du fichier",
+      "access_prior_record": "PAGE_OUVERTE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "NOTICE_OU_PAGE_SEULEMENT_PAS_LECTURE_INTEGRALE",
+      "article_connexe": "wiki-culture-creation-acces-art.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-052",
+      "title": "Sintel",
+      "author": "Colin Levy ; Durian Open Movie Project / Blender Foundation",
+      "edition": "2010 ; animation 3D, anglais, 14 min 48 s sur fichier Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sintel_movie_-_Blender_Fondation.ogv",
+      "rights_claim_from_prior_record": "CC BY 3.0 explicite sur la fiche Commons",
+      "access_prior_record": "PAGE_OUVERTE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "NOTICE_OU_PAGE_SEULEMENT_PAS_LECTURE_INTEGRALE",
+      "article_connexe": "wiki-culture-creation-acces-art.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    },
+    {
+      "id": "FN-068",
+      "title": "Nous sommes partout — sauvegarde n°1 / Suisse romande",
+      "author": "Collectif Nous sommes partout, témoignages nommés et anonymes",
+      "edition": "2021 ; recueil éditorial Abrüpt, 648 p. pour imprimé ; base web multilingue",
+      "source_url": "https://www.noussommespartout.org/",
+      "rights_claim_from_prior_record": "CC BY-NC-SA 4.0 annoncée pour textes ; licence MIT du code du site distincte ; pas de copie",
+      "access_prior_record": "PAGE_OUVERTE",
+      "access_cycle9": "NON_TESTE",
+      "consultation_level": "NOTICE_OU_PAGE_SEULEMENT_PAS_LECTURE_INTEGRALE",
+      "article_connexe": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "media_reproduction_allowed_by_cycle9_review": false,
+      "editorial_status": "CANDIDAT_RELECTURE",
+      "legal_status": "AVIS_JURISTE_REQUIS"
+    }
+  ],
+  "blocked": [
+    {
+      "id": "FN-005",
+      "title": "Sita Sings the Blues",
+      "reason": "VERSION_BLOQUEE : Ne pas présenter ce WebM comme le film musical complet ; questions d'appropriation culturelle."
+    },
+    {
+      "id": "FN-010",
+      "title": "Indígenas e quilombolas brasileiros contam sua história — Povo Gavião, parte 13",
+      "reason": "A_RETESTER_LIEN : Respect du contexte autochtone et des personnes filmées ; pas d’autorisation culturelle générale dérivée de la CC."
+    },
+    {
+      "id": "FN-032",
+      "title": "Ise ileke sinsin (Beads making)",
+      "reason": "A_RETESTER_LIEN : Ne pas extraire de savoir-faire sacré ni inférer des autorisations des participantes."
+    },
+    {
+      "id": "FN-044",
+      "title": "Dulce",
+      "reason": "CANDIDAT_LIEN_PROTEGE : Point de vue construit par l’équipe du film, accès effectif au flux non testé."
+    },
+    {
+      "id": "FN-051",
+      "title": "Jamais sans ma visseuse",
+      "reason": "BLOQUE_CONTROLE_DROITS_LECTEUR : Ne pas généraliser la gouvernance d’un groupe ; lecteur et permission de projection à vérifier."
+    },
+    {
+      "id": "FN-060",
+      "title": "Freedom or Fairness? (Mimi & Eunice, bande n°456)",
+      "reason": "CANDIDAT_LIEN_DROITS_A_CONFIRMER : Ni une théorie politique complète ni une preuve que liberté et justice s’opposent nécessairement."
+    },
+    {
+      "id": "FN-062",
+      "title": "Little Bear's Day / Un jour avec Petit Ours",
+      "reason": "A_RETESTER_LIEN : Ne pas dater l’original de 2018 ; l’audio cri signalé absent précédemment et pas reconfirmé aujourd’hui."
+    },
+    {
+      "id": "FN-071",
+      "title": "Superheroes on the Move: A Comic on Sustainable Mobility",
+      "reason": "BLOQUE_SOURCE_DROITS : Page en timeout et PDF non lu : licence spécifique, disponibilité et contenu à contrôler dans navigateur."
+    }
+  ],
+  "tests": {
+    "id_count": 71,
+    "unique_ids": 71,
+    "selected_count": 12,
+    "blocked_count": 8,
+    "alias_count": 2,
+    "urls_live_tested": 0,
+    "full_works_read_or_viewed": 0
+  }
+}
