@@ -406,3 +406,14 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
 .pr-inspect-form input { width:105px; min-height:44px; color:#f5f5f5; background:#111c29; border:1px solid #52647a; border-radius:8px; padding:9px; }
 .pr-inspect-form button { min-height:44px; }
 #pr-inspect-result .github-block { overflow-wrap:anywhere; }
+
+/* Cycle 10 reader */
+.app-navigation { grid-template-columns:repeat(5,minmax(0,1fr)); }
+.cycle-panel { padding:16px; }
+.cycle-panel h3 { margin:20px 0 9px; }
+.cycle-table { width:100%; border-collapse:collapse; font-size:.87rem; }
+.cycle-table td, .cycle-table th { text-align:left; padding:9px; border-bottom:1px solid #344355; overflow-wrap:anywhere; }
+.cycle-scroll { overflow-x:auto; }
+.cycle-command { display:flex; flex-wrap:wrap; gap:8px; padding:14px 0; }
+.cycle-command button { min-height:44px; }
+@media(max-width:680px){.app-navigation{grid-template-columns:repeat(5,minmax(0,1fr));}.nav-item{font-size:.64rem;}.nav-glyph{font-size:1.05rem;}}
