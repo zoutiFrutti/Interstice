@@ -242,3 +242,15 @@ Il s'agit d'améliorations autonomes à faible risque. Le pupitre des agents dem
 10. **Vérification/traçabilité** : tests automatisés et compilation Android contrôlés sur le SHA exact ; PR brouillon non fusionnée.
 
 **Invariants** : aucune action GitHub distante en écriture, aucun accès aux dépôts privés dans l'APK, aucun agent réel contrôlé depuis le téléphone, aucune publication du site Interstice. La validation visuelle sur Crosscall reste à faire.
+
+## V1.0 · Vérification directe d'une PR depuis le téléphone
+
+Le mode Android dispose désormais d'une vérification de PR publique dans l'onglet GitHub. Saisir un numéro de PR Interstice (39 par défaut), puis cliquer « Vérifier ».
+
+- Lecture GitHub authentiquement en GET public : état et titre de la PR, SHA exact du dernier commit, brouillon ou non, date de consultation.
+- Lecture des exécutions GitHub Actions filtrées par ce SHA exact. Seuls les résultats retournés avec ce même SHA sont affichés.
+- Si les exécutions sont absentes ou indisponibles, l'interface refuse de conclure à un succès ; une CI réussie ne vaut jamais approbation, fusion ou publication.
+- Limite : la réponse GitHub est plafonnée à 20 exécutions et ne certifie pas la couverture de tous les workflows. Les métadonnées peuvent changer entre les deux lectures.
+- Aucun jeton, aucun stockage persistant, aucun POST et aucune commande sur les agents. L'APK reste autonome et les dépôts privés restent inaccessibles.
+- L'inspecteur est fixé au dépôt public Interstice pour éviter toute fuite ou prétendue consultation privée.
+- Test automatique de l'inspecteur et de son intégration Android ajouté. Un essai sur le Crosscall est encore nécessaire.
