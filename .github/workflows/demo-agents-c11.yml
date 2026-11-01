@@ -24,6 +24,13 @@ jobs:
         run: python3 coordination/agents/mission_queue_c11.py
       - name: Produire le tableau Relieuse
         run: python3 coordination/agents/tableau_relieuse_c11.py
+      - name: Recuperer l'index central C10 (lecture seule)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -H "Accept: application/vnd.github.raw+json" \
+            "repos/${{ github.repository }}/contents/coordination/messagerie/MESSAGES_C10.md?ref=coordination%2Fcycle10-messagerie-v1-20261101" > index-messagerie-c10.md
+          python3 coordination/agents/index_messagerie_c11.py --entree index-messagerie-c10.md --ref coordination/cycle10-messagerie-v1-20261101
       - uses: actions/upload-artifact@v4
         with:
           name: rapport-demo-c11
@@ -32,3 +39,4 @@ jobs:
             rapport-demo-c11.md
             file-missions-c11-rapport.json
             tableau-relieuse-c11.md
+            tableau-courriers-c10.md
