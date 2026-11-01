@@ -6,4 +6,4 @@
 | C10-MSG-008 | REÇUE (copie de réception propre à La Biographe) | 2026-11-01, commit référencé ci-dessous | Contrat de preuves lu, trois fiches candidates et transmission C10 vérifiées |
 
 La réception ne signifie ni validation des sources non lues, ni adoption des décisions, ni traitement complet des objectifs. **Preuves du travail documentaire** : branche `agent/biographe-cycle10-20261101`, BIO-009 `2d7fb44649ee78f41fb1e3474d6a59d39bb28d0c`, BIO-012 `710874d9d04d64b5c26c6a7435c8025bf32758c7`, BIO-019 `d5ca3fc167dcc8632ad2c95539e466fa4fb9ddac`, transmission `ef6635d15de8802b2d3d0230e3b39ea77f79f0bc`.
-**Accusé GitHub :** à reporter dans le second commit, sans modifier l'index sur branche candidate de La Relieuse.
+**Accusé de réception initial vérifié :** commit `cfcd17c9bca9e25294fae3783fc528d27f8ec9e6`, blob `ae5a11601bf3666ff760d8814ec9818f1f4011c0`. Inscription de son identifiant dans la présente version sans toucher à la branche source.
