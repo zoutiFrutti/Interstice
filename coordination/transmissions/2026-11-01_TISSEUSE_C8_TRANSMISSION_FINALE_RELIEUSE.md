@@ -1,0 +1,33 @@
+# LA TISSEUSE — CYCLE 8 — TRANSMISSION DE REPRISE À LA RELIEUSE
+**1 novembre 2026 · état réel des modifications, sans validation humaine, sans fusion/publication.** Destinataires documentaires : La Relieuse, La Médiathèque, La Lectrice, L'Anarchitecte.
+
+## Reprise et conflits de branches contrôlés
+- PR [#43](https://github.com/zoutiFrutti/Interstice/pull/43) **ouverte** : branche `coordination/relieur-pilote-10-passes-20261030`, base main. Cette branche contient les transmissions Tisseuse.
+- PR [#41](https://github.com/zoutiFrutti/Interstice/pull/41) **ouverte**, branche `feat/initiatives-decouverte-mobile-2026-10-30` : `cartes-data.mjs` examiné. Il déclare explicitement « pilotage 100 % fictif » et six scénarios de démonstration ; **NE PAS y ajouter des initiatives réelles avant validation**. Ancres de carte aux centres de communes, pas aux lieux réels. Les modèles `kind` / `reading` n'ont pas été modifiés.
+- PR [#64](https://github.com/zoutiFrutti/Interstice/pull/64) : journal de réconciliation éditoriale cycle 7, et PR [#51](https://github.com/zoutiFrutti/Interstice/pull/51) contrat Anarchitecte, restent des branches **non fusionnées** au contrôle.
+- `coordination/JOURNAL_COMMUN.md` lu sur branche #43 (blob `dd65b0be79a32194dcf4894c5747cb5cc3b64568`) et branche #64 (blob `5275a1194b0ef11892e78296150a6fefcf834dcf`). **Ne pas recopier ni écraser les 100+ ko de journal divergents** : la branche #64 a un état éditorial plus avancé, notamment 24 Wiki et 34 items différenciés. Aucun accord de publication attribué.
+
+## Réalisations Tisseuse C8 réutilisées, non dupliquées
+1. [Index territorial et trois parcours](2026-11-01_TISSEUSE_C8_TIS001_INDEX_TERRITORIAL_CARTES_CANDIDATES.md) ; commit `0b83b7719053c5c5d72557b829bff9a6e3ef5262`, document `coordination/transmissions/2026-11-01_TISSEUSE_C8_TIS001_INDEX_TERRITORIAL_CARTES_CANDIDATES.md`. Dix entrées dont **Green Belt Movement hors zone** ; **neuf** entrées locales/régionales retenues pour index de carte candidat.
+2. [Reprise contradictoire](2026-11-01_TISSEUSE_C8_COMPLEMENT_VERIFICATIONS_ET_OBJECTIONS.md) ; commit `23610dfc5ccbee2bcc551ff32f3991c3e2a3668a`. Observations : changement de titulaires de bail à La Salvetat rapporté dans AG Terre de Liens 2026, 120 arbres plantés selon bilan 2025 ≠ survie vérifiée ; PTGE Tescou en processus ≠ gestion de l'eau aboutie ; VRAC adhésion/listes d'attente ; annonce de recrutement SCTL 32 h, candidature terminée ≠ embauche prouvée.
+3. [Contrat cartographique et mini-catalogue Médiathèque](2026-11-01_TISSEUSE_C8_CONTRAT_CARTES_ET_MEDIATHEQUE.md), commit `17caf07dcc82dd2a089ce2deb5691a27d2b8c1e5`.
+4. **Nouveau livrable réellement écrit et relu dans la présente reprise** : [index structuré à neuf entrées](2026-11-01_TISSEUSE_C8_INDEX_CANDIDAT.json), chemin `coordination/transmissions/2026-11-01_TISSEUSE_C8_INDEX_CANDIDAT.json`, commit `1eb671ca77d1e8541969a55b34450d5d78037696`, blob lu `55ae3aecc386af8e508fd78afff09f5d8a66a32f`.
+   **Tests réels** : validation par analyse JSON après lecture GitHub ; `entries.length=9`, tous les IDs uniques, chaque source en HTTPS, `interstice_partnership=false` et `public_listing_authorized=false` pour les neuf, `location_coordinates=null` partout. JSON valide. Aucune requête d'API, visite/itinéraire, test d'écran ou de backend réalisée.
+
+## Règle des relations et limites de preuve
+**R0** territoire voisin sans relation démontrée ; **R1** comparaison documentaire entre dossiers ; **R2** collaboration **extérieure** datée par les sources, par exemple chantier La Salvetat/partenaires externes en décembre 2025, réseau VRAC, relation foncière Terre de Liens. **R2 n'est JAMAIS une coopération avec Interstice.** Aucun R3 (« partenaire Interstice ») n'est établi.
+**Faits répertoriés** : sources publiques sur ferme, collectifs, réseaux alimentaires, jardins, réemploi, réparation, formation et foncier ; service actuellement disponible **non établi** pour la plupart. Ne pas transformer page web ancienne en horaire actuel. Aucun nom individuel ni adresse de domicile.
+
+**Fait négatif important** : le carnet nominatif des 12 anciennes pistes TIS-001 décrit dans `coordination/ateliers/rapports/tisseuse/015.md` n'a pas été rapproché ligne à ligne : absence de doublon **non prouvée**. Les clés `tis-c8-*` sont des clés temporaires dans un document interne, PAS de nouvelles fiches publiques ni d'IDs métier. Les cartes PR #41 restent fictives. Green Belt Movement demeure référence comparative internationale, hors index local.
+
+## Questions concrètes aux ateliers, sans présumer réception
+**La Relieuse** : (1) comparer cet index aux douze pistes du carnet séparé avant d'affecter des ID définitifs ; (2) préserver la distinction index interne / carte fictive / publication ; (3) conserver les statuts historiques EXP, TIS, ÉCO ; (4) demander l'accord explicite de Zout pour tout référencement réel ou publication. Réconciliation PR #43/#64 à réaliser humainement, sans merge ici.
+**La Médiathèque** : intégrer les *liens des sources*, non de nouvelles notices doublons ; attacher à chaque notice sa date de publication source, consultation, type (rapport public / opérateur / étude) et statut de droits ; pas d'image ni citation longue sans contrôle.
+**La Lectrice** : objections sur activité actuelle des collectifs du Testet, transfert de baux La Salvetat, résultats de plantation, portée IGEDD, annonce et embauche SCTL, conditions VRAC, caractère déclaratif des coopérations extérieures ; rien de ceci n'autorise à certifier une initiative « ouverte ».
+**L'Anarchitecte / Développeuse** : trois parcours purement documentaires, alternative textuelle/keyboard-first et source datée ; **aucune migration ni ajout dans `cartes-data.mjs`** tant que la décision et les tests d'accessibilité ne sont pas passés.
+
+## Réalisé / vérifié / restant / décisions indispensables
+**Réalisé** : quatre documents territoriaux C8, dont index JSON machine lisible, vérifiés ; lecture Journal commun à deux HEAD de coordination, PR #41, #43, #64 et branches principales.
+**Vérifié** : neuf enregistrements sans coordonnées ni partenariats, sources déclarées, statuts candidats, aucun ajout à production.
+**Restant (données/protocole)** : carnet 12 TIS non accessible ici, suivi d'activité en temps réel, sources indépendantes, attestations de collaborations, état des disponibilités et mesures d'accessibilité, test mobile/lecteurs d'écran, éventuelle traçabilité de licence photographique. **Ce sont des blocages réels, pas des tâches « finies ».**
+**Décision humaine indispensable** : Zout choisit précisément les notices à retenir, tranche le référencement, les éventuelles sollicitations, l'intégration carte et les droits ; aucun collectif humain constitué ni pouvoir des IA.
