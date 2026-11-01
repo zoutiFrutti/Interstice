@@ -1,0 +1,22 @@
+/* Cycle 8 : intégration opt-in, héritage inchangé des PR 50/57/59/61/63/66 */
+.interstice-fiche.graphiste-c8{max-width:1100px;margin:auto;padding:18px 22px;color:#e9e5db;font:19px/1.65 var(--font-reading,system-ui,sans-serif)}
+.graphiste-c8 *{box-sizing:border-box;min-width:0}
+.graphiste-c8 .c8-skip{position:absolute;left:-10000px;top:8px;background:#e9e5db;color:#101014;padding:12px}
+.graphiste-c8 .c8-skip:focus{left:8px;z-index:10}
+.graphiste-c8 h1,.graphiste-c8 h2,.graphiste-c8 h3{line-height:1.2;overflow-wrap:anywhere}
+.graphiste-c8 h1{font-size:clamp(36px,6vw,60px)}
+.graphiste-c8 .c8-nav{display:flex;flex-wrap:wrap;gap:10px;margin-block:20px}
+.graphiste-c8 .c8-nav a{min-height:48px;display:inline-flex;align-items:center;padding:10px 14px;border:1px solid #c5b7aa;border-radius:7px;background:#30282c;color:#fff}
+.graphiste-c8 .c8-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.graphiste-c8 .c8-card{border:1px solid #a99a90;background:#242126;border-radius:8px;padding:18px}
+.graphiste-c8 .c8-card[data-role="source"]{border-top:4px solid #e9e5db}
+.graphiste-c8 .c8-card[data-role="contradiction"]{border-left:5px solid #c5212c}
+.graphiste-c8 .c8-card[data-role="reserve"]{border:2px dashed #c1ada6}
+.graphiste-c8 .c8-card[data-role="media"]{border-left:5px solid #c5212c}
+.graphiste-c8 .c8-section{border-top:2px solid #a79b91;padding-block:23px}
+.graphiste-c8 .c8-note{font-size:16px;color:#fff0df}
+.graphiste-c8 a{color:#ffd0ca;overflow-wrap:anywhere;text-underline-offset:3px}
+.graphiste-c8 a:focus-visible,.graphiste-c8 summary:focus-visible{outline:3px solid #e9e5db;outline-offset:4px}
+.graphiste-c8 summary{min-height:44px;cursor:pointer}
+@media(max-width:650px){.interstice-fiche.graphiste-c8{padding:12px;font-size:18px}.graphiste-c8 .c8-grid{grid-template-columns:minmax(0,1fr)}.graphiste-c8 .c8-nav{display:grid;grid-template-columns:minmax(0,1fr)}}
+@media print{@page{size:A4;margin:15mm}html,body{background:#fff!important;color:#111!important}.interstice-fiche.graphiste-c8{font:11pt/1.5 Arial,sans-serif;color:#111!important;max-width:none;padding:0}.graphiste-c8 .c8-nav{display:none}.graphiste-c8 .c8-card{background:white!important;color:#111!important;border-color:#555!important;break-inside:avoid}.graphiste-c8 a,.graphiste-c8 .c8-note{color:#111!important}.graphiste-c8 h2,.graphiste-c8 h3{break-after:avoid}}
