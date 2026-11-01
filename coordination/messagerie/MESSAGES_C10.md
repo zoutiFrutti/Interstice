@@ -13,3 +13,11 @@
 | C10-MSG-008 | Relieuse | Tous les seize ateliers | Contrat de preuve C10, registre provisoire de clôture | P1 | ÉMISE | Envoyer pour chaque objectif chemin, commit, blob, test, statut et suite |
 
 **Important :** ce registre n'atteste aucune réception. Pour C10-MSG-008, chaque boîte doit accuser réception séparément ; un accusé global est interdit.
+
+## Extension de périmètre : 17e atelier
+
+| ID | De | À | Sujet / preuve | Priorité | État | Action |
+|---|---|---|---|---|---|---|
+| C10-VIG-001 | Relieuse | Vigie | `coordination/messagerie/courriers/C10-VIG-001.md` ; boîte `coordination/messagerie/boites/vigie.md` ; revue `coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md` | P1 | ÉMISE | Contrôler les travaux C0, VIG-001, rapport à La Relieuse |
+
+Le message C10-MSG-008 a été émis historiquement à seize ateliers ; il n'est **pas** rétrospectivement adressé à La Vigie. L'extension ne prouve aucune réception. Les courriers C10-REL et SUITE ne sont pas réconciliés ici.
