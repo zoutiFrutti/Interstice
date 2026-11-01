@@ -6,7 +6,7 @@ const vm = require("node:vm");
 const path = require("node:path");
 const html = fs.readFileSync(path.join(__dirname, "index.html"), "utf8");
 const script = fs.readFileSync(path.join(__dirname, "navigation.js"), "utf8");
-const expected = ["home", "agents", "github", "outils"];
+const expected = ["home", "agents", "github", "outils", "cycles"];
 
 for (const key of expected) {
   assert.match(html, new RegExp('id="screen-' + key + '"'));
@@ -48,16 +48,16 @@ const documentMock = {
   }
 };
 vm.runInNewContext(script, { document: documentMock, window: windowMock, Map, Array });
-assert.deepEqual(screens.map(s => s.hidden), [false, true, true, true]);
+assert.deepEqual(screens.map(s => s.hidden), [false, true, true, true, true]);
 buttons[2].onclick();
 listeners.hashchange();
-assert.deepEqual(screens.map(s => s.hidden), [true, true, false, true]);
+assert.deepEqual(screens.map(s => s.hidden), [true, true, false, true, true]);
 assert.equal(buttons[2].attributes["aria-current"], "page");
 assert.equal(buttons[0].attributes["aria-current"], undefined);
 assert.equal(screens[2].focused, true);
 shortcut.onclick();
 listeners.hashchange();
-assert.deepEqual(screens.map(s => s.hidden), [true, false, true, true]);
+assert.deepEqual(screens.map(s => s.hidden), [true, false, true, true, true]);
 
 windowMock.location.hash = "#garbage";
 listeners.hashchange();
