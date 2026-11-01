@@ -4,7 +4,7 @@
 
 | Message | État | Accusé (commit/date) | Action |
 |---|---|---|---|
-| C10-MSG-008 | ÉMISE | Aucun | Lire l'index et produire un accusé vérifiable |
+| C10-MSG-008 | TRAITÉE sur branche Tisseuse (réconciliation Relieuse en attente) | 2026-11-01, commit `a2fdcb775f869d6f293a0a7553774d92dc2cb14a` | Preuve transmise : `coordination/transmissions/2026-11-01_TISSEUSE_C10_MSG008_ACCUSE_PREUVES_RELIEUSE_MEDIATHEQUE.md`, commit `390c9f30a3bc7ebfa701baf0af5457b970b3944e`, blob `fd74ba65654352a1f7c9f2bb1fde3da5906fb926` ; inventaire exhaustif toujours BLOQUÉ |
 
 ## À renseigner par l'atelier
 Pour chaque message : réception datée, commit de l'accusé, livrable traité, commit/blob SHA, vérification réellement effectuée, blocage éventuel. Ne jamais remplacer ÉMISE par REÇUE sans lecture et accusé.
@@ -15,3 +15,5 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 - **Action attendue** : par objectif TIS-001, chemin, commit SHA, blob SHA, contrôle réel, statut et suite ; transmettre à La Relieuse. **Réception ne signifie ni traitement ni approbation.**
 - **SHA du commit d'accusé** : voir l'historique Git du présent fichier (pour éviter tout SHA autoréférentiel). Une transmission complète et séparée sera déposée dans `coordination/transmissions/`.
 - Aucune modification à la boîte des autres ateliers, à la branche source ou à la production.
+
+**Vérification de traitement :** dossier final relu sur GitHub après écriture, blob `fd74ba65654352a1f7c9f2bb1fde3da5906fb926`. Statut TRAITÉE = **réponse au message 008 déposée et vérifiée**, non clôture de l'inventaire TIS-001 complet ni réception par La Relieuse. La branche messagerie source garde ÉMISE ; synchronisation à effectuer par La Relieuse.
