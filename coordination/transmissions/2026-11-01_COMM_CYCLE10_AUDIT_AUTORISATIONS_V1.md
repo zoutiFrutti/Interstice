@@ -39,10 +39,17 @@
 
 ## Statuts protocole cycle 10
 - Objectif 1 : **TERMINÉ** pour reprise de PR #52 et préservation sans réouverture du correctif V0.9.
-- Objectif 2 : **À POURSUIVRE** pour revue exhaustive des vingt fichiers ; un audit ciblé et nouveau kit conforme sont déposés, mais aucun visa humain ni test production n'est prétendu.
+- Objectif 2 : **À POURSUIVRE** pour revue exhaustive des vingt fichiers ; l'ensemble des 20 fichiers a subi un contrôle littéral automatisé des principales expressions à risque et un nouveau kit conforme est déposé, mais aucun visa humain ni test production n'est prétendu.
 - Objectif 3 : **TERMINÉ** pour rédaction et conservation du kit avec critères d'autorisation ; **DÉCISION HUMAINE** pour toute utilisation et publication.
 
 **Séparation fondamentale :** fermeture des tâches de préparation documentaire ≠ autorisation de lancement. Aucun post, prise de contact, programmation, fusion, modification serveur ou publication réalisée.
 
 ## Transmission
 Mettre ce document sur branche dédiée candidate avec lien dans PR draft destinée à La Relieuse. Un dépôt GitHub ne garantit pas notification à sa conversation.
+
+## Complément de passe de vérification — audit littéral des 20 fichiers PR #52
+**Méthode réellement exécutée :** lecture via GitHub de l'ensemble des vingt chemins renvoyés par `list_pr_changed_filenames`, avec recherche des occurrences `V0.8`, `V0.9`, `notre collectif`, `notre équipe`, `nos partenaires`, `nous sommes un collectif`. Quinze fichiers supplémentaires ont été contrôlés après l'échantillon initial de cinq ; cinq mentions ambiguës de terminologie collective proviennent des documents C7/C8 qui listent des formulations explicitement **à proscrire**. Une occurrence n'a donc pas été traitée à tort comme assertion publique.
+
+**Résultat** : aucun des vingt fichiers n'affirme que La Faille noire est un collectif humain constitué sous les quatre motifs littéraux testés. Quelques brouillons historiques des cycles 5–7 mentionnent V0.8 comme état alors courant ; ils sont conservés en archive et ne doivent pas remplacer le kit de référence C10. Le kit C8 corrigé conserve V0.8 dans sa chronologie et adopte V0.9 comme dernière candidature vérifiée. **Limite** : ce contrôle lexical et la lecture des statuts ne constituent pas une vérification linguistique exhaustive de chaque phrase, un audit de toutes licences sur Internet ou un test du site réellement déployé.
+
+**Statut mis à jour** : objectif 2 **TERMINÉ pour contrôle documentaire de la PR #52 et production de copies conditionnelles conformes** ; **DÉCISION HUMAINE** pour visa de chaque copie ou nouveau média et **BLOQUÉ** pour les tests de production/serveur hors périmètre. Zéro correction rétroactive inutile.
