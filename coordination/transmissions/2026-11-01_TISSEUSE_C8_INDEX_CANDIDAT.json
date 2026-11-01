@@ -1,5 +1,5 @@
 {
-  "schema": "tis-c9-index-candidat-v1",
+  "schema": "tis-c10-inventaire-sources-v1",
   "verification_date": "2026-11-01",
   "status": "CANDIDAT_INTERNE",
   "entries": [
@@ -16,7 +16,17 @@
       "public_listing_authorized": false,
       "status_info": "Rapport IGEDD 23/05/2025 modifié 08/09/2025 ; scénario définitif non encore démontré par ce rapport",
       "source_checked_at": "2026-11-01",
-      "public_channel": "https://www.igedd.developpement-durable.gouv.fr/appui-a-l-aboutissement-du-projet-de-territoire-a4159.html"
+      "public_channel": "https://www.igedd.developpement-durable.gouv.fr/appui-a-l-aboutissement-du-projet-de-territoire-a4159.html",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "territoire et étude institutionnelle, pas organisation",
+      "existence": "rapport IGEDD publié 23/05/2025 modifié 08/09/2025",
+      "public_contact_url": "https://www.igedd.developpement-durable.gouv.fr/appui-a-l-aboutissement-du-projet-de-territoire-a4159.html",
+      "status_c10": "HISTORIQUE_ET_PROCESSUS",
+      "ambiguity": "Ne pas répertorier PTGE comme collectif du Testet ; activité actuelle du collectif non vérifiée"
     },
     {
       "id": "tis-c8-salvetat",
@@ -31,7 +41,18 @@
       "public_listing_authorized": false,
       "status_info": "Plantation de 120 arbres selon bilan opérateur décembre 2025 ; AG Terre de Liens 07/04/2026 signale des changements de titulaires de bail",
       "source_checked_at": "2026-11-01",
-      "secondary_source": "https://terredeliens.org/midi-pyrenees/hub-actus-midi-pyr%C3%A9n%C3%A9e%C3%A9s/retour-sur-notre-ag-2026-07-04-2026/"
+      "secondary_source": "https://terredeliens.org/midi-pyrenees/hub-actus-midi-pyr%C3%A9n%C3%A9e%C3%A9s/retour-sur-notre-ag-2026-07-04-2026/",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "ferme collective documentée",
+      "existence": "Fiche de ferme Terre de Liens, AG avril 2026, plantation décembre 2025",
+      "public_contact_url": "https://fermes.terredeliens.org/midi-pyrenees/fermes-de-la-r%C3%A9gion-midi-pyr%C3%A9n%C3%A9es/la-salvetat/",
+      "status_c10": "ACTIVITE_DOCUMENTAIRE_RECENTE",
+      "ambiguity": "Terre de Liens note des changements de titulaires de bail. Projet/décision de retenue d'eau ≠ construction vérifiée. Visites non confirmées",
+      "secondary_source_water": "https://ressources.terredeliens.org/les-ressources?collection=u_util_jquery_docs_upload&file=u_util_jquery_docs_upload&id=1341&task=download&xi=0"
     },
     {
       "id": "tis-c8-vrac",
@@ -47,7 +68,17 @@
       "status_info": "Adhésion sur liste d'attente, précommande et retrait sous deux semaines selon VRAC ; formulaire encore titré 2025",
       "source_checked_at": "2026-11-01",
       "public_contact": "contact-toulouse@vrac-asso.org",
-      "public_channel": "https://toulouse.vrac-asso.org/adherer-commander/"
+      "public_channel": "https://toulouse.vrac-asso.org/adherer-commander/",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "association locale d'achats groupés",
+      "existence": "Modalités et zones listées sur le site opérateur",
+      "public_contact_url": "https://toulouse.vrac-asso.org/adherer-commander/",
+      "status_c10": "SERVICE_CONDITIONNEL_DECRIT",
+      "ambiguity": "Liste d'attente ; formulaire 2025 encore affiché ; pas d'adhésion automatique"
     },
     {
       "id": "tis-c8-jardins",
@@ -62,7 +93,17 @@
       "public_listing_authorized": false,
       "status_info": "L'opérateur déclare 14 jardins accompagnés avec Toulouse depuis 2021 et une coopération départementale ; chiffres non audités",
       "source_checked_at": "2026-11-01",
-      "public_contact": "contact@partageonslesjardins.fr"
+      "public_contact": "contact@partageonslesjardins.fr",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "association et réseau de jardins",
+      "existence": "Depuis 2012, 14 jardins accompagnés avec Toulouse depuis 2021 selon opérateur",
+      "public_contact_url": "https://www.partageonslesjardins.fr/",
+      "status_c10": "RESEAU_DOCUMENTE",
+      "ambiguity": "Jardins individuels non tous ouverts ; accompagnement avec collectivités extérieur à Interstice"
     },
     {
       "id": "tis-c8-glanerie",
@@ -78,7 +119,18 @@
       "status_info": "Boutiques et horaires hebdomadaires publiés sur le site officiel consulté 01/11/2026 ; vérifier exceptions avant déplacement",
       "source_checked_at": "2026-11-01",
       "public_channel": "https://www.la-glanerie.org/",
-      "access_conditions": "Dépôts volontaires uniquement dans les points de collecte en déchetterie selon opérateur ; emploi d'insertion non garanti"
+      "access_conditions": "Dépôts volontaires uniquement dans les points de collecte en déchetterie selon opérateur ; emploi d'insertion non garanti",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "ressourcerie et boutiques physiques",
+      "existence": "Boutiques Toulouse/Blagnac listées, actualités 2026",
+      "public_contact_url": "https://www.la-glanerie.org/redistribuer",
+      "status_c10": "ACTIVITE_RECENTE_DECLARÉE",
+      "ambiguity": "Annonce nouveaux horaires de Blagnac à compter du 4 novembre contredit horaires de l'ancienne page ; vérifier avant visite. Épicerie solidaire encore en préparation selon publication juillet 2026",
+      "additional_source": "https://www.la-glanerie.org/actualites"
     },
     {
       "id": "tis-c8-velo",
@@ -94,7 +146,18 @@
       "status_info": "Site officiel annonce annulation ateliers 30 et 31/10/2026, reprise 04/11/2026 ; accès conditionné à adhésion ; horaire saisonnier à confirmer",
       "source_checked_at": "2026-11-01",
       "public_channel": "https://www.maisonduvelotoulouse.com/",
-      "access_conditions": "Atelier d'autoréparation avec bénévoles ; ne constitue pas prestation de réparation à la place de l'usager"
+      "access_conditions": "Atelier d'autoréparation avec bénévoles ; ne constitue pas prestation de réparation à la place de l'usager",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "association et atelier d'autoréparation",
+      "existence": "Atelier publié avec horaires et adhésion",
+      "public_contact_url": "https://www.maisonduvelotoulouse.com/informations-pratiques/",
+      "public_address": "12 boulevard Bonrepos, 31000 Toulouse (adresse de structure, non géolocalisée)",
+      "status_c10": "SERVICE_CONDITIONNEL_DECRIT",
+      "ambiguity": "Horaires été/hiver divergents selon pages officielles ; appeler avant déplacement ; bénévoles accompagnent sans réparer à la place"
     },
     {
       "id": "tis-c8-3pa",
@@ -110,7 +173,18 @@
       "status_info": "Bordanova à Lahage ; sessions de formation publiées 10–20/11 et 01–11/12/2026 ; dates annoncées, inscriptions et places non confirmées",
       "source_checked_at": "2026-11-01",
       "public_channel": "https://www.3paformation.fr/nos-formations/",
-      "public_contact": "contact@3paformation.fr"
+      "public_contact": "contact@3paformation.fr",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "association de formation et tiers-lieu",
+      "existence": "Sessions novembre/décembre 2026 publiées",
+      "public_contact_url": "https://www.3paformation.fr/contact/",
+      "public_address": "Lieu dit Bordeneuve, 31370 Lahage (adresse publique de structure, pas de marqueur GPS)",
+      "status_c10": "SESSIONS_ANNONCEES",
+      "ambiguity": "Visites le 11 à 11h déclarées avec inscription ; horaires non garantis, ne pas réserver à la place d'autrui"
     },
     {
       "id": "tis-c8-tdl",
@@ -124,7 +198,18 @@
       "interstice_partnership": false,
       "public_listing_authorized": false,
       "status_info": "Appui foncier régional documenté ; évolution des baux La Salvetat décrite dans AG Terre de Liens avril 2026",
-      "source_checked_at": "2026-11-01"
+      "source_checked_at": "2026-11-01",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "réseau régional d'accès au foncier",
+      "existence": "Antenne et actualités octobre 2026",
+      "public_contact_url": "https://terredeliens.org/midi-pyrenees/",
+      "public_address": "17 rue Valentin, 31400 Toulouse (siège public régional)",
+      "status_c10": "ACTIVITE_RECENTE_DECLARÉE",
+      "ambiguity": "Aucun foncier attribué automatiquement"
     },
     {
       "id": "tis-c8-sctl",
@@ -139,9 +224,22 @@
       "public_listing_authorized": false,
       "status_info": "Offre de poste 32 heures hebdomadaires publiée 08/09/2026 avec candidature close 09/10 ; pas de preuve d'embauche",
       "source_checked_at": "2026-11-01",
-      "secondary_source": "https://larzac.org/accueil/la-sctl-recherche-un-e-assistant-e-de-direction/"
+      "secondary_source": "https://larzac.org/accueil/la-sctl-recherche-un-e-assistant-e-de-direction/",
+      "checked_at_c10": "2026-11-01",
+      "source_evidence_level": "page opérateur / institution vérifiée, pas de contrôle terrain",
+      "public_contact_status": "lien public officiel, pas de sollicitation",
+      "visit_confirmed": false,
+      "partner_with_interstice": false,
+      "entity_type": "société civile de gestion foncière",
+      "existence": "Bail historique et offre de recrutement septembre 2026",
+      "public_contact_url": "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/",
+      "public_address": "Montredon, 12100 La Roque-Sainte-Marguerite (adresse publique de la structure)",
+      "status_c10": "STRUCTURE_ACTIVITE_ADMINISTRATIVE_DOCUMENTEE",
+      "ambiguity": "Statistiques de baux historiques non actualisées ; annonce 32 heures 2026 expirée ne prouve ni embauche ni terres libres"
     }
   ],
   "last_review": "cycle9",
-  "review_notes": "Sources consultées le 01/11/2026. Accès réel et disponibilité non garantis. Sources = déclarations publiques sauf rapport IGEDD."
+  "review_notes": "Sources consultées le 01/11/2026. Accès réel et disponibilité non garantis. Sources = déclarations publiques sauf rapport IGEDD.",
+  "cycle": 10,
+  "origin_12_notebook_reconciled": false
 }
