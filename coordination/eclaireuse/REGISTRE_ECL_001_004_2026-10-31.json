@@ -2,7 +2,7 @@
   "schema": "interstice-eclaireuse-candidate-v1",
   "date": "2026-10-31",
   "status": "CANDIDAT_NON_APPROUVE",
-  "last_cycle_handled": "cycle3_relieuse",
+  "last_cycle_handled": 8,
   "initiatives": [
     {
       "id": "ÉCL-001",
@@ -379,5 +379,37 @@
   ],
   "visas_added": 0,
   "publication_authorized": false,
-  "external_contacts_sent": 0
+  "external_contacts_sent": 0,
+  "cycle8_update": {
+    "date": "2026-11-01",
+    "basis": [
+      "coordination/JOURNAL_ECLAIREUSE.md",
+      "coordination/JOURNAL_COMMUN.md",
+      "coordination/transmissions/2026-11-01_ANARCHIVISTE_CYCLE7_CONFRONTATION_SOURCES.md"
+    ],
+    "verified_new_in_cycle8": [],
+    "reconciled_prior_findings": [
+      "CIC 2017 décentralisation annoncée et dissolution de fait alléguée: deux récits situés, pas preuve juridique",
+      "ARCH-005 règlement 3 mai 1871: norme non preuve de mise en œuvre",
+      "ÉCL-005 quatre épisodes Ramonet et crédits Autonomía zapatista déjà rectifiés au cycle 7"
+    ],
+    "unresolved": [
+      "BL00D.MONEY responsable, méthode, droits",
+      "CIC immatriculation et activité 2026",
+      "ÉCL-002 résultats matériels datés des 13 cas",
+      "ÉCL-005 doublons avec 71 notices, licences et droits de projection"
+    ],
+    "duplicate_avoided": [
+      "EJAtlas partagé ÉCL-001/003",
+      "recherche primaire ARCH-005 déjà faite par Anarchiviste",
+      "ÉCL-005 déjà dans journal, ne pas créer de nouveau numéro"
+    ],
+    "handoff": [
+      "Relieuse: prioriser sécurité PR65 rapportée par Juriste, sans confondre avec enquête ÉCL",
+      "Médiathèque: contrôle inventaire audiovisuel, éditions et droits",
+      "Tisseuse et Anarchiviste: registres CIC et résultats matériels, pas nouvelle fiche",
+      "Lectrice: séparer règle, exécution, interprétation et situation actuelle"
+    ],
+    "limits": "Réconciliation interne uniquement dans cette passe; aucune nouvelle source externe ou preuve juridique, aucune réception d'atelier attestée."
+  }
 }
