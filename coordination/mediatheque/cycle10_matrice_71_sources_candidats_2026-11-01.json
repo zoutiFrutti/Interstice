@@ -40,7 +40,12 @@
         "media_reproduction_allowed_by_cycle9_review": false,
         "editorial_status": "CANDIDAT_RELECTURE",
         "legal_status": "AVIS_JURISTE_REQUIS"
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-002",
@@ -70,7 +75,12 @@
         "media_reproduction_allowed_by_cycle9_review": false,
         "editorial_status": "CANDIDAT_RELECTURE",
         "legal_status": "AVIS_JURISTE_REQUIS"
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-003",
@@ -86,7 +96,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-004",
@@ -102,7 +117,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-005",
@@ -118,7 +138,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-006",
@@ -134,7 +159,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-007",
@@ -164,7 +194,12 @@
         "media_reproduction_allowed_by_cycle9_review": false,
         "editorial_status": "CANDIDAT_RELECTURE",
         "legal_status": "AVIS_JURISTE_REQUIS"
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-008",
@@ -180,7 +215,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-009",
@@ -196,7 +236,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-010",
@@ -212,7 +257,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-011",
@@ -228,7 +278,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-012",
@@ -244,7 +299,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-013",
@@ -260,11 +320,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-014",
-      "title_catalogue": "(Sobre)Vivências, Auarart Filmes, réalisation Gabriel Celestino et Leonidas Taschetto, 2018, documentaire portugais de 53 min 36. Pilier 8. Quatorze personnes LGBT évoquent vécu et discriminations. Intérêt : récit à la première pe",
+      "title_catalogue": "(Sobre)Vivências, Auarart Filmes, réalisation Gabriel Celestino et Leonidas Taschetto, 2018, documentaire portugais de 53 min 36. Pilier 8. Quatorze personnes LGBT évoque",
       "attribution_edition_catalogue": "FN-014 — (Sobre)Vivências, Auarart Filmes, réalisation Gabriel Celestino et Leonidas Taschetto, 2018, documentaire portugais de 53 min 36. Pilier 8. Quatorze personnes LGBT évoquent vécu et discriminations. Intérêt : récit à la première personne. Accès https://commons.wikimedia.org/wiki/File:Sobre_Viv%C3%AAncias_-_Document%C3%A1rio_LGBT.webm . CC BY 3.0 affichée MAIS Wikimedia Commons signale explicitement que la licence importée de YouTube attend encore une revue de validité. Niveau B ; ne pas republier sans nouvelle vérification.",
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:Sobre_Viv%C3%AAncias_-_Document%C3%A1rio_LGBT.webm",
       "rights_claim_catalogue": null,
@@ -276,11 +341,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-015",
-      "title_catalogue": "Queer the Campus: A Documentary, Samuel Klug, 2019, documentaire en anglais de 22 min 32. Piliers 8 et 1. Étudiant·es mobilisé·es pour la visibilité queer et les toilettes non genrées. Intérêt : exemple concret de mobilisation uni",
+      "title_catalogue": "Queer the Campus: A Documentary, Samuel Klug, 2019, documentaire en anglais de 22 min 32. Piliers 8 et 1. Étudiant·es mobilisé·es pour la visibilité queer et les toilette",
       "attribution_edition_catalogue": "FN-015 — Queer the Campus: A Documentary, Samuel Klug, 2019, documentaire en anglais de 22 min 32. Piliers 8 et 1. Étudiant·es mobilisé·es pour la visibilité queer et les toilettes non genrées. Intérêt : exemple concret de mobilisation universitaire. Accès https://commons.wikimedia.org/wiki/File:Queer_the_Campus-_A_Documentary.webm . CC BY 3.0 selon la fiche Wikimedia Commons ; niveau A pour disponibilité et métadonnées.",
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:Queer_the_Campus-_A_Documentary.webm",
       "rights_claim_catalogue": null,
@@ -292,11 +362,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-016",
-      "title_catalogue": "Gay and Proud, Lilli Vincenz, 1970, documentaire d'archives américain en anglais, 11 min 43. Pilier 8. Images de la marche Christopher Street Liberation Day du 28 juin 1970. Intérêt : source historique audiovisuelle. Accès https:/",
+      "title_catalogue": "Gay and Proud, Lilli Vincenz, 1970, documentaire d'archives américain en anglais, 11 min 43. Pilier 8. Images de la marche Christopher Street Liberation Day du 28 juin 19",
       "attribution_edition_catalogue": "FN-016 — Gay and Proud, Lilli Vincenz, 1970, documentaire d'archives américain en anglais, 11 min 43. Pilier 8. Images de la marche Christopher Street Liberation Day du 28 juin 1970. Intérêt : source historique audiovisuelle. Accès https://commons.wikimedia.org/wiki/File:Gay_and_Proud_(1970).webm . La Library of Congress indique aucune restriction connue ; Commons classe le fichier dans le domaine public. Vérifier juridiction et contexte pour usages complexes. Niveau A pour auteur, accès et déclaration institutionnelle ; réserve territoriale.",
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:Gay_and_Proud_(1970).webm",
       "rights_claim_catalogue": null,
@@ -322,7 +397,12 @@
         "media_reproduction_allowed_by_cycle9_review": false,
         "editorial_status": "CANDIDAT_RELECTURE",
         "legal_status": "AVIS_JURISTE_REQUIS"
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-017",
@@ -357,7 +437,12 @@
           "license": "CC BY 4.0, explicitement dans crédits épisode 26",
           "url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html"
         }
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-018",
@@ -373,11 +458,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "SOURCE_ORIGINALE_MANQUANTE",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_ABSENTE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-019",
-      "title_catalogue": "Consensus Decision Making, Seeds for Change, seconde édition 2020, guide collectif en anglais. Pilier 6. Expose consensus, objections, facilitation et dynamiques de groupe. Apport : pratique et limites d'une gouvernance horizontal",
+      "title_catalogue": "Consensus Decision Making, Seeds for Change, seconde édition 2020, guide collectif en anglais. Pilier 6. Expose consensus, objections, facilitation et dynamiques de group",
       "attribution_edition_catalogue": "FN-019 — Consensus Decision Making, Seeds for Change, seconde édition 2020, guide collectif en anglais. Pilier 6. Expose consensus, objections, facilitation et dynamiques de groupe. Apport : pratique et limites d'une gouvernance horizontale. Accès https://seedsforchange.org.uk/downloads/consensus.pdf . Conditions anti-copyright autorisant copie, adaptation et distribution tant que la version reste anti-copyright ; ce n'est pas une licence Creative Commons standard. Niveau A pour éditeur, édition et conditions indiquées.",
       "source_url_catalogue": "https://seedsforchange.org.uk/downloads/consensus.pdf",
       "rights_claim_catalogue": null,
@@ -408,11 +498,16 @@
           "license": "anti-copyright : copie/adaptation/distribution autorisées si œuvre finale reste anti-copyright, pas CC standard",
           "url": "https://seedsforchange.org.uk/downloads/consensus.pdf"
         }
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-020",
-      "title_catalogue": "Online Decision Making, Seeds for Change, seconde édition 2023, guide en anglais. Piliers 6 et 7. Décisions démocratiques à distance, accès des membres, limites d'outils numériques. Accès https://www.seedsforchange.org.uk/download",
+      "title_catalogue": "Online Decision Making, Seeds for Change, seconde édition 2023, guide en anglais. Piliers 6 et 7. Décisions démocratiques à distance, accès des membres, limites d'outils ",
       "attribution_edition_catalogue": "FN-020 — Online Decision Making, Seeds for Change, seconde édition 2023, guide en anglais. Piliers 6 et 7. Décisions démocratiques à distance, accès des membres, limites d'outils numériques. Accès https://www.seedsforchange.org.uk/downloads/onlinedecisions.pdf . Même régime anti-copyright explicite ; niveau A pour droits annoncés et édition. ",
       "source_url_catalogue": "https://www.seedsforchange.org.uk/downloads/onlinedecisions.pdf",
       "rights_claim_catalogue": null,
@@ -424,7 +519,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-021",
@@ -440,7 +540,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-022",
@@ -470,7 +575,12 @@
         "media_reproduction_allowed_by_cycle9_review": false,
         "editorial_status": "CANDIDAT_RELECTURE",
         "legal_status": "AVIS_JURISTE_REQUIS"
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-023",
@@ -486,11 +596,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-024",
-      "title_catalogue": "The Seedkeepers. Auteur/créateur crédité : Indigenous Community Video Collective - NE India. Date : 15 octobre 2015. Format : court métrage documentaire communautaire, vidéo WebM, 4 min 53 s. Langue de la bande sonore : non établi",
+      "title_catalogue": "The Seedkeepers. Auteur/créateur crédité : Indigenous Community Video Collective - NE India. Date : 15 octobre 2015. Format : court métrage documentaire communautaire, vi",
       "attribution_edition_catalogue": "FN-024 — The Seedkeepers. Auteur/créateur crédité : Indigenous Community Video Collective - NE India. Date : 15 octobre 2015. Format : court métrage documentaire communautaire, vidéo WebM, 4 min 53 s. Langue de la bande sonore : non établie par la fiche ; sous-titres disponibles en anglais, hindi, japonais, ukrainien et chinois (simplifié/traditionnel). Piliers de travail : 5 (écologie sociale et autonomie territoriale), 2 (entraide et solidarité), 7 (savoirs libres). Résumé original fondé sur la notice et NON sur un visionnage complet : des personnes du district de Phek, Nagaland (nord-est de l'Inde), préservent, entretiennent et diffusent des semences locales. Apport : récit produit par un",
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm",
       "rights_claim_catalogue": "licence Creative Commons Attribution 3.0 (CC BY 3.0) affichée, avec attribution au collectif ; la licence YouTube a été contrôlée par un réviseur Wikimedia le 3 décembre 2017. Réutilisation autorisée sous attribution selon cette licence, sous réserve des droits de tiers et du respect des personnes et savoirs représentés. Vérification : A pour métadonnées, fichier, sous-titres et licence revue ; C pour contenu intégral non visionné et consentement",
@@ -521,11 +636,16 @@
           "license": "CC BY 3.0 Unported ; revue de licence Commons datée 3 décembre 2017",
           "url": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm"
         }
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-025",
-      "title_catalogue": "Women at work - Chatpatit. Auteur/créateur crédité : Lek Ladki Abhiyan (Satara, Inde), en collaboration documentaire avec CIS-A2K selon la notice. Date : 8 mars 2021. Format : portrait documentaire court, vidéo WebM, 5 min 25 s. L",
+      "title_catalogue": "Women at work - Chatpatit. Auteur/créateur crédité : Lek Ladki Abhiyan (Satara, Inde), en collaboration documentaire avec CIS-A2K selon la notice. Date : 8 mars 2021. For",
       "attribution_edition_catalogue": "FN-025 — Women at work - Chatpatit. Auteur/créateur crédité : Lek Ladki Abhiyan (Satara, Inde), en collaboration documentaire avec CIS-A2K selon la notice. Date : 8 mars 2021. Format : portrait documentaire court, vidéo WebM, 5 min 25 s. Langue parlée : non précisée dans la notice consultée ; descriptif en anglais. Piliers de travail : 3 (autonomie matérielle et économique), 8 (égalité réelle, diversité et lutte contre les discriminations). Résumé original fondé sur la notice, sans visionnage intégral : portrait de Pushpa Ramesh Dangi, originaire du Rajasthan, ayant créé un commerce de snacks après son installation dans le district de Satara ; la notice décrit les obstacles sociaux et économ",
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:Women_at_work_-_Chatpatit.webm",
       "rights_claim_catalogue": "fichier publié par son auteur déclaré sous CC0 1.0, renonciation aux droits patrimoniaux dans la mesure permise par la loi ; ne pas confondre avec une œuvre ancienne tombée dans le domaine public. Respect des droits à l'image, de la dignité et des éventuels droits de tiers toujours nécessaire. Vérification : A pour date, auteur, fichier et déclaration CC0 sur Commons ; C pour contenu intégral, langue et consentements individuels non audités.",
@@ -537,7 +657,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-026",
@@ -553,7 +678,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-027",
@@ -569,7 +699,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-028",
@@ -585,11 +720,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-029",
-      "title_catalogue": "My Disillusionment in Russia (« Ma désillusion en Russie », traduction descriptive du titre, non édition française). Autrice : Emma Goldman (1869-1940). Publication originale : 1923, Doubleday, Page & Company. Type : récit politiq",
+      "title_catalogue": "My Disillusionment in Russia (« Ma désillusion en Russie », traduction descriptive du titre, non édition française). Autrice : Emma Goldman (1869-1940). Publication origi",
       "attribution_edition_catalogue": "FN-029 — My Disillusionment in Russia (« Ma désillusion en Russie », traduction descriptive du titre, non édition française). Autrice : Emma Goldman (1869-1940). Publication originale : 1923, Doubleday, Page & Company. Type : récit politique autobiographique et critique historique. Langue : anglais. Piliers confirmés : 6 (Autogestion et fédéralisme libertaire), 1 (Éducation populaire et émancipation). Résumé original établi à partir de la préface et des passages accessibles : partie de la Russie avec l'espoir d'une révolution émancipatrice, Goldman relate ses rencontres et observations entre 1920 et 1921, puis critique la concentration du pouvoir bolchevique et la répression de l'initiative ",
       "source_url_catalogue": "https://www.gutenberg.org/files/60315/60315-h/60315-h.htm",
       "rights_claim_catalogue": "https://www.gutenberg.org/ebooks/60315 . Statut juridique : texte original dans le domaine public aux États-Unis selon Project Gutenberg ; autrice décédée en 1940, protection patrimoniale ordinaire en France expirée, sous réserve des éventuels droits spécifiques d'édition, traduction ou annotation. Ce n'est PAS une licence libre : domaine public de l'œuvre originale. Vérification : A pour autrice, édition, date, accès direct, mention de domaine p",
@@ -601,11 +741,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-030",
-      "title_catalogue": "Direct Action (« De l'action directe »). Autrice : Voltairine de Cleyre (1866-1912). Conférence du 21 janvier 1912, texte paru dans Mother Earth en 1912, repris dans Selected Works of Voltairine de Cleyre (1914). Type : conférence",
+      "title_catalogue": "Direct Action (« De l'action directe »). Autrice : Voltairine de Cleyre (1866-1912). Conférence du 21 janvier 1912, texte paru dans Mother Earth en 1912, repris dans Sele",
       "attribution_edition_catalogue": "FN-030 — Direct Action (« De l'action directe »). Autrice : Voltairine de Cleyre (1866-1912). Conférence du 21 janvier 1912, texte paru dans Mother Earth en 1912, repris dans Selected Works of Voltairine de Cleyre (1914). Type : conférence / essai historique et politique. Langue de l'original : anglais. Piliers confirmés : 6 (Autogestion et fédéralisme libertaire), 2 (Entraide et solidarité), 1 (Éducation populaire et émancipation). Résumé original établi à partir du texte original et des notices : de Cleyre critique la réduction de l'action directe à la violence et décrit diverses pratiques où les personnes agissent ensemble sans déléguer d'abord leur pouvoir à une représentation politique ",
       "source_url_catalogue": "https://en.theanarchistlibrary.org/library/voltairine-de-cleyre-direct-action",
       "rights_claim_catalogue": null,
@@ -617,7 +762,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-031",
@@ -633,7 +783,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-032",
@@ -649,11 +804,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-033",
-      "title_catalogue": "Woman and Labour. Autrice : Olive Schreiner (1855-1920). Première publication : 1911. Format : essai féministe et critique socioéconomique. Langue : anglais. Piliers : 3 — Autonomie matérielle et économique",
+      "title_catalogue": "Woman and Labour. Autrice : Olive Schreiner (1855-1920). Première publication : 1911. Format : essai féministe et critique socioéconomique. Langue : anglais. Piliers : 3 ",
       "attribution_edition_catalogue": "FN-033 — Woman and Labour. Autrice : Olive Schreiner (1855-1920). Première publication : 1911. Format : essai féministe et critique socioéconomique. Langue : anglais. Piliers : 3 — Autonomie matérielle et économique ; 8 — Égalité réelle, diversité et lutte contre les discriminations ; renvoi 1 — Éducation populaire et émancipation. Résumé original établi à partir de l'introduction et de l'ouverture du chapitre V, avec table des matières consultée : Schreiner examine le travail historiquement accompli par les femmes et les transformations économiques qui ont restreint ou redéfini leur place ; elle défend l'accès à des activités sociales et productives et interroge les rôles attribués selon le",
       "source_url_catalogue": "https://www.gutenberg.org/files/1440/1440-h/1440-h.htm",
       "rights_claim_catalogue": "œuvre originale de 1911 dans le DOMAINE PUBLIC aux États-Unis (déclaration Project Gutenberg), et durée patrimoniale ordinaire expirée en France au vu du décès de l'autrice en 1920 ; attention aux droits des traductions, éditions récentes, images et marques de diffusion. Ce n'est ni une licence CC ni simplement une gratuité de consultation. Vérification A : autrice, date interne 1911, langue, accès direct, déclaration PG ; B : interprétation, sta",
@@ -665,11 +825,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-034",
-      "title_catalogue": "The Land of Little Rain. Autrice : Mary Austin (1868-1934). Première publication : octobre 1903. Format : récits et essais de nature / écriture de territoire. Langue : anglais. Piliers : 5 — Écologie sociale et autonomie territori",
+      "title_catalogue": "The Land of Little Rain. Autrice : Mary Austin (1868-1934). Première publication : octobre 1903. Format : récits et essais de nature / écriture de territoire. Langue : an",
       "attribution_edition_catalogue": "FN-034 — The Land of Little Rain. Autrice : Mary Austin (1868-1934). Première publication : octobre 1903. Format : récits et essais de nature / écriture de territoire. Langue : anglais. Piliers : 5 — Écologie sociale et autonomie territoriale ; 4 — Culture et création libres ; renvoi 8 — Égalité réelle, diversité et lutte contre les discriminations (lecture critique). Résumé original à partir de la préface, ouverture du premier essai et passages des sections « Shoshone Land » et « The Basket Maker » : Austin décrit les milieux arides de Californie et les liens entre saisons, eau, plantes, animaux, savoirs et manières d'habiter ; elle évoque aussi des personnes shoshones et paiutes, notamment",
       "source_url_catalogue": "https://www.gutenberg.org/files/365/365-h/365-h.htm",
       "rights_claim_catalogue": "original de 1903 dans le DOMAINE PUBLIC aux États-Unis selon Project Gutenberg, et durée patrimoniale ordinaire expirée en France au vu du décès de l'autrice en 1934 ; ne pas extrapoler aux traductions, illustrations ou éditions ultérieures. Vérification A : autrice, date, langue, accès direct, domaine public US ; B : interprétation et statut d'éléments éditoriaux ; C : lecture intégrale non effectuée. Passages effectivement consultés : préface, ",
@@ -681,7 +846,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-035",
@@ -697,7 +867,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-036",
@@ -713,7 +888,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-037",
@@ -729,7 +909,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-038",
@@ -764,7 +949,12 @@
           "license": "CC BY 4.0 par défaut sur site APC, sauf mention contraire",
           "url": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20"
         }
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-039",
@@ -780,7 +970,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-040",
@@ -810,7 +1005,12 @@
         "media_reproduction_allowed_by_cycle9_review": false,
         "editorial_status": "CANDIDAT_RELECTURE",
         "legal_status": "AVIS_JURISTE_REQUIS"
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-041",
@@ -826,7 +1026,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-042",
@@ -842,11 +1047,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-043",
-      "title_catalogue": "Better Practices in the Classroom: A Teaching Guidebook for Sustainable, Inclusive, and Equitable Learning from a Gender and Sexuality Studies Framework. Autrices : Natalie Kouri-Towe et Myloe Martel-Perry. Édition : 2 mai 2024, C",
+      "title_catalogue": "Better Practices in the Classroom: A Teaching Guidebook for Sustainable, Inclusive, and Equitable Learning from a Gender and Sexuality Studies Framework. Autrices : Natal",
       "attribution_edition_catalogue": "FN-043 — Better Practices in the Classroom: A Teaching Guidebook for Sustainable, Inclusive, and Equitable Learning from a Gender and Sexuality Studies Framework. Autrices : Natalie Kouri-Towe et Myloe Martel-Perry. Édition : 2 mai 2024, Concordia University Library, version révisée d'un guide de 2021. Type : guide pédagogique / livre numérique. Langue : anglais. Piliers officiels : 1 « Éducation populaire et émancipation » ; 8 « Égalité réelle, diversité et lutte contre les discriminations » ; secondairement 2 « Entraide et solidarité ». Résumé original fondé sur la table des matières et le chapitre effectivement consulté « Pedagogical Approaches » : guide d'animation de groupes d'apprentis",
       "source_url_catalogue": "https://opentextbooks.concordia.ca/teachingresource/",
       "rights_claim_catalogue": "LICENCE LIBRE Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0), sauf exceptions signalées ; ce n'est ni du domaine public ni une simple gratuité de consultation ; vérifier chaque image ou citation tierce avant adaptation. Niveau A : auteur, date, édition, langue, accès, licence principale ; niveau B : généralisation des pratiques et droits de contenus tiers ; niveau C : lecture intégrale NON effectuée. Sections consultées ",
@@ -858,7 +1068,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-044",
@@ -874,7 +1089,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-045",
@@ -890,11 +1110,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-046",
-      "title_catalogue": "Appels et statuts de l'Union des femmes pour la défense de Paris et les soins aux blessés (avril-mai 1871), organisation impulsée notamment par Nathalie Le Mel et Élisabeth Dmitrieff. Type : textes organisationnels, français",
+      "title_catalogue": "Appels et statuts de l'Union des femmes pour la défense de Paris et les soins aux blessés (avril-mai 1871), organisation impulsée notamment par Nathalie Le Mel et Élisabe",
       "attribution_edition_catalogue": "FN-046 — Appels et statuts de l'Union des femmes pour la défense de Paris et les soins aux blessés (avril-mai 1871), organisation impulsée notamment par Nathalie Le Mel et Élisabeth Dmitrieff. Type : textes organisationnels, français ; piliers 8, 3 et 6. Comités d'arrondissement coordonnés, entraide, soins, travail des femmes et revendications d'émancipation économique. Source critique et extraits de documents historiques : https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/1643-lunion-des-femmes-pour-la-defense-de-paris-et-les-soins-aux-blesses ; journaux d'époque dans Gallica : https://bnf.libguides.com/presse_medias/corpus . Ce qui a fonctio",
       "source_url_catalogue": "https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/1643-lunion-des-femmes-pour-la-defense-de-paris-et-les-soins-aux-blesses",
       "rights_claim_catalogue": null,
@@ -906,11 +1131,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-047",
-      "title_catalogue": "L’Urgence de ralentir, Philippe Borrel, 2014, documentaire 84 min, français, ARTE France / Cinétévé, d'après une idée originale de Noël Mamère. Piliers 3 autonomie matérielle, 5 écologie sociale, 6 autogestion (liens indirects), 1",
+      "title_catalogue": "L’Urgence de ralentir, Philippe Borrel, 2014, documentaire 84 min, français, ARTE France / Cinétévé, d'après une idée originale de Noël Mamère. Piliers 3 autonomie matéri",
       "attribution_edition_catalogue": "FN-047 — L’Urgence de ralentir, Philippe Borrel, 2014, documentaire 84 min, français, ARTE France / Cinétévé, d'après une idée originale de Noël Mamère. Piliers 3 autonomie matérielle, 5 écologie sociale, 6 autogestion (liens indirects), 1 éducation populaire. Des initiatives concrètes sont présentées : Barefoot College au Rajasthan (formation de femmes rurales à l'énergie solaire), monnaies locales à Bristol et Romans-sur-Isère, coopératives à Ithaca. Intérêt pour La Faille noire / Interstice : étudier comment des dispositifs locaux réduisent la dépendance au marché et redistribuent capacités et temps ; ne pas assimiler automatiquement ces initiatives à des fédérations anarchistes. Limites ",
       "source_url_catalogue": "https://boutique.arte.tv/detail/urgence_ralentir",
       "rights_claim_catalogue": "film protégé ; visionnage privé payant n'emporte pas droit de projection ou republication. Niveau A : réalisateur/date/durée/sources/accès ; B : efficacité des initiatives, accès gratuit ; C : film non visionné intégralement, description établie à partir des fiches officielles. Numérotation FN-047 provisoire dans la continuité de FN-046, sans présumer d'autres ajouts concurrents.",
@@ -922,11 +1152,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-048",
-      "title_catalogue": "Louise Michel, La Commune (1898). Texte de première main rédigé rétrospectivement par une participante de la Commune, institutrice, militante anarchiste. Édition originale Paris P.-V. Stock, 1898. Texte intégral consultable https:",
+      "title_catalogue": "Louise Michel, La Commune (1898). Texte de première main rédigé rétrospectivement par une participante de la Commune, institutrice, militante anarchiste. Édition original",
       "attribution_edition_catalogue": "29/10/2026 — FN-048 — Louise Michel, La Commune (1898). Texte de première main rédigé rétrospectivement par une participante de la Commune, institutrice, militante anarchiste. Édition originale Paris P.-V. Stock, 1898. Texte intégral consultable https://fr.wikisource.org/wiki/La_Commune_(Michel)/Texte_entier ; édition numérique https://classiques.uqam.ca/classiques/michel_louise/la_commune/la_commune.html . Lecture ciblée : avant-propos et début troisième partie sur le 18 mars ; l'autrice met en relation mobilisation populaire, défense de Paris et refus d'obéir aux autorités. Intérêt : voix d'une communarde, militantisme des femmes, éducation populaire et répression ; mise en regard FN-045 D",
       "source_url_catalogue": "https://fr.wikisource.org/wiki/La_Commune_(Michel)/Texte_entier",
       "rights_claim_catalogue": null,
@@ -938,7 +1173,12 @@
       "hosting_allowed": false,
       "alias_of": "FN-022",
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-049",
@@ -954,7 +1194,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-050",
@@ -970,7 +1215,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-051",
@@ -986,7 +1236,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-052",
@@ -1016,7 +1271,12 @@
         "media_reproduction_allowed_by_cycle9_review": false,
         "editorial_status": "CANDIDAT_RELECTURE",
         "legal_status": "AVIS_JURISTE_REQUIS"
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-053",
@@ -1032,7 +1292,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-054",
@@ -1048,7 +1313,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-055",
@@ -1064,7 +1334,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-056",
@@ -1080,7 +1355,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-057",
@@ -1096,7 +1376,12 @@
       "hosting_allowed": false,
       "alias_of": "FN-038",
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-058",
@@ -1112,7 +1397,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-059",
@@ -1128,7 +1418,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-060",
@@ -1144,7 +1439,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-061",
@@ -1160,7 +1460,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-062",
@@ -1176,7 +1481,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-063",
@@ -1192,11 +1502,16 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-064",
-      "title_catalogue": "Design Justice Network Principles / Principes de justice en design. Auteur collectif : Design Justice Network, élaboré par un groupe de participantes et participants à l'Allied Media Conference (2015), principes stabilisés en 2018",
+      "title_catalogue": "Design Justice Network Principles / Principes de justice en design. Auteur collectif : Design Justice Network, élaboré par un groupe de participantes et participants à l'",
       "attribution_edition_catalogue": "FN-064 — Design Justice Network Principles / Principes de justice en design. Auteur collectif : Design Justice Network, élaboré par un groupe de participantes et participants à l'Allied Media Conference (2015), principes stabilisés en 2018 ; traduction française créditée à Loraine Furter (date de traduction non confirmée). Type : texte collectif de dix principes, manifeste méthodologique, page web. Langues : anglais, français et autres traductions. Piliers V2.5 : 8 (Égalité réelle, diversité et lutte contre les discriminations), 6 (Autogestion, démocratie directe et fédéralisme libertaire), 7 (Savoirs libres, médiathèque et autonomie technologique).",
       "source_url_catalogue": "https://designjustice.org/french",
       "rights_claim_catalogue": "oeuvre PROTÉGÉE sous CC BY-ND 4.0, consultation gratuite et partage inchangé avec attribution autorisés ; PAS licence libre au sens strict car modifications interdites, PAS domaine public. La traduction française officielle est publiée sur le site du réseau, sans autoriser de nouvelles traductions dérivées. Vérification A : dix principes lus en français, auteur collectif, origine 2015, finalisation 2018, licence ; B : date précise de la traductio",
@@ -1208,7 +1523,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-065",
@@ -1224,7 +1544,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-066",
@@ -1240,7 +1565,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-067",
@@ -1256,7 +1586,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-068",
@@ -1286,7 +1621,12 @@
         "media_reproduction_allowed_by_cycle9_review": false,
         "editorial_status": "CANDIDAT_RELECTURE",
         "legal_status": "AVIS_JURISTE_REQUIS"
-      }
+      },
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-069",
@@ -1302,7 +1642,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-070",
@@ -1318,7 +1663,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     },
     {
       "id": "FN-071",
@@ -1334,7 +1684,12 @@
       "hosting_allowed": false,
       "alias_of": null,
       "selected_12": false,
-      "selected_metadata": null
+      "selected_metadata": null,
+      "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
+      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
+      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
     }
   ],
   "wikipedia_review": [
@@ -1364,5 +1719,36 @@
     "selected": 12,
     "alias_count": 2,
     "current_url_tests": 0
+  },
+  "quality_control": {
+    "missing_original_notice": [
+      "FN-018"
+    ],
+    "rights_without_structured_extract": [
+      "FN-010",
+      "FN-011",
+      "FN-014",
+      "FN-015",
+      "FN-016",
+      "FN-017",
+      "FN-018",
+      "FN-019",
+      "FN-020",
+      "FN-022",
+      "FN-023",
+      "FN-030",
+      "FN-046",
+      "FN-048",
+      "FN-065",
+      "FN-067"
+    ],
+    "urls_present": 70,
+    "urls_currently_tested": 0,
+    "author_edition_reverified": 0,
+    "duplicates_preserved": [
+      "FN-048",
+      "FN-057"
+    ],
+    "source_link_only": true
   }
 }
