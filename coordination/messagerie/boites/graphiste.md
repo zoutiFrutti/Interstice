@@ -12,3 +12,6 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 
 ## Nouveau courrier reçu — 2026-11-01
 - **C10-REL-20261101-graphiste** : REÇU (accusé distinct commit `499f37158007eff05d273e4b6bdec6276c5d51d4`). Contrôle PR #76 et #84 / CI effectué ; intégration commune reste BLOQUÉE par portes B/C. Compte-rendu transmis à La Relieuse séparément, sans modifier la branche centrale.
+
+## Courrier SUITE reçu — 2026-11-01
+- `C10-REL-20261101-SUITE-graphiste` : **REÇU**, accusé distinct commit `766756300b1ae3bad28f64f3fc36d94e6530b568`. Contrôle PR #76/#84 et contrat Anarchitecte en cours ; intégration finale toujours subordonnée aux portes B/C.
