@@ -387,7 +387,34 @@
       "coordination/JOURNAL_COMMUN.md",
       "coordination/transmissions/2026-11-01_ANARCHIVISTE_CYCLE7_CONFRONTATION_SOURCES.md"
     ],
-    "verified_new_in_cycle8": [],
+    "verified_new_in_cycle8": [
+      {
+        "topic": "ÉCL-005 Ramonet",
+        "finding": "Catalogue ARTE intégrale quatre épisodes, mais catalogue ARTE Distribution offre un montage initial international 3×52 min (2016), et ARTE boutique VOD 2×71 min/DVD 2×90 min; année de production catalogue boutique saison 1 2013 distincte des références de diffusion 2016. Toujours indiquer édition et provenance.",
+        "sources": [
+          "https://boutique.arte.tv/detail/ni-dieu-ni-maitre-une-histoire-de-l-anarchisme-integrale",
+          "https://distribution.arte.tv/fiche/NI_DIEU_NI_MAITRE",
+          "https://boutique.arte.tv/detail/ni-dieu-ni-maitre-histoire-anarchisme"
+        ],
+        "rights": "Catalogue de distribution liste droits TV/DVD/non-theatrical/internet/VOD; droits proposés ≠ licence accordée à Interstice"
+      },
+      {
+        "topic": "ÉCL-005 zapatisme",
+        "finding": "Crédits Juan E. García (réalisation) et Cristina Híjar González (scénario), durée 70 min, année 2008, confirmés dans catalogue culturel officiel",
+        "sources": [
+          "https://sic.cultura.gob.mx/ficha.php?table=produccion_cine&table_id=2349"
+        ],
+        "rights": "Aucune licence de copie ou projection identifiée"
+      },
+      {
+        "topic": "ÉCL-004 CIC",
+        "finding": "Bulletin CIC daté 31 décembre 2017 annonce décentralisation en trois biorégions en 2018 et renvoie à récit personnel; n'atteste pas existence juridique ou fonctionnement en 2026",
+        "sources": [
+          "https://cooperativa.cat/butlleti-cic-7-anys-lluita-indomable-apassionada.htm"
+        ],
+        "rights": "Citation brève et lien seulement, pas reproduction du contenu"
+      }
+    ],
     "reconciled_prior_findings": [
       "CIC 2017 décentralisation annoncée et dissolution de fait alléguée: deux récits situés, pas preuve juridique",
       "ARCH-005 règlement 3 mai 1871: norme non preuve de mise en œuvre",
@@ -410,6 +437,6 @@
       "Tisseuse et Anarchiviste: registres CIC et résultats matériels, pas nouvelle fiche",
       "Lectrice: séparer règle, exécution, interprétation et situation actuelle"
     ],
-    "limits": "Réconciliation interne uniquement dans cette passe; aucune nouvelle source externe ou preuve juridique, aucune réception d'atelier attestée."
+    "limits": "Contrôles web ciblés sur catalogues officiels ARTE, Secretaría de Cultura et archive CIC. Pas de visionnage, audit complet 71 notices, registre juridique CIC, contrôle des droits auprès des ayants droit, ni réception par ateliers."
   }
 }
