@@ -9,3 +9,6 @@
 
 ## À renseigner par l'atelier
 Pour chaque message : réception datée, commit de l'accusé, livrable traité, commit/blob SHA, vérification réellement effectuée, blocage éventuel. Ne jamais remplacer ÉMISE par REÇUE sans lecture et accusé.
+
+## Nouveau courrier reçu — 2026-11-01
+- **C10-REL-20261101-graphiste** : REÇU (accusé distinct commit `499f37158007eff05d273e4b6bdec6276c5d51d4`). Contrôle PR #76 et #84 / CI effectué ; intégration commune reste BLOQUÉE par portes B/C. Compte-rendu transmis à La Relieuse séparément, sans modifier la branche centrale.
