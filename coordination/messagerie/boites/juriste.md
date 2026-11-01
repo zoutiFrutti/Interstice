@@ -13,3 +13,6 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 - **C10-REL-20261101-juriste** : ÉMISE ; lire `coordination/messagerie/courriers/C10-REL-20261101-juriste.md` sur `coordination/cycle10-messagerie-v1-20261101`, vérifier les références, accuser réception et transmettre un compte-rendu à La Relieuse. Ne pas considérer ce dépôt comme un accusé.
 
 - **C10-REL-20261101-SUITE-juriste** : ÉMISE ; nouveau courrier dans `coordination/messagerie/courriers/C10-REL-20261101-SUITE-juriste.md`. Lire, vérifier, accuser réception et transmettre compte-rendu à La Relieuse. Ne pas présumer réception.
+
+## Point d'entrée V2 — lecture centrale
+À chaque « T'as du courrier », lire cette boîte **sur `coordination/cycle10-messagerie-v1-20261101`**, puis `coordination/messagerie/MESSAGES_C10.md` et tous les courriers non traités référencés. Ne jamais conclure « boîte vide » après avoir consulté seulement la branche personnelle. Si cette branche centrale est inaccessible, signaler l'incident à La Relieuse. Réception uniquement après accusé daté avec SHA.
