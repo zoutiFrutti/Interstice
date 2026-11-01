@@ -89,3 +89,22 @@ Source contrôlée : `coordination/cycle2/STATUTS_34_2026-10-31.json`, branche `
 **Décisions Zout :** aucune nouvelle décision enregistrée par cette passe. Les visas ARCH-002 et ARCH-007 portent uniquement sur leurs textes candidats aux SHA `f9f0b6edf09cf0e84fe7e46960f25df1a8e99dbb` et `372bfcee95f7bd4a1f37dfa9393264662050e9ba`, respectivement, sans droits médias ni autorisation de publication.
 
 **Suite :** comparer le registre historique aux corrections des PR #55/#63 et aux contrôles juridiques #65, puis construire la matrice actualisée par fichier et SHA. Aucune fusion, publication ou intervention serveur.
+
+
+## Cycle 8 — Passe 2 : actualisation des dépendances au 1er novembre
+Recherche GitHub effectuée : PR #67 **Juriste cycle 8**, PR #68 **Graphiste cycle 8**, branches `atelier-lectrice/cycle8-qualite-20261101` et `integration/cycle8-wiki-bibliotheque-p0-candidate-2026-11-01` repérées. Leur existence ne démontre ni intégration commune, ni approbation éditoriale, ni résolution P0.
+
+- **PR #67** : matrice juridique et contrôles read-only du backend ; les fonctions serveur demeurent signalées actives et le risque P0 reste ouvert. Aucune correction de production attestée.
+- **PR #68** : navigation candidate Wiki/Bibliothèque/biographies/enquêtes, CSS opt-in ; tests techniques décrits, lecteurs d'écran réels non exécutés.
+- **Lectrice cycle 8** : branche identifiée, contenu et état de correction à contrôler avant réconciliation.
+- **Intégration cycle 8** : branche candidate identifiée, provenance des fichiers, conflits et tests à auditer avant toute proposition de fusion.
+- **Matrice éditoriale** : registre cycle 2 de 34 éléments exact désormais retrouvé dans la passe précédente ; comparer ses SHA aux branches plus récentes plutôt que considérer les statuts figés.
+
+### Conditions de sortie non encore démontrées
+1. Suspension ou protection **côté serveur** et validation RGPD/LCEN.
+2. Tests d'intégration et de non-régression sur une base commune documentée.
+3. Contre-lecture effective des cinq pages sensibles et levée motivée des réserves, si possible.
+4. Concordance finale des textes fondateurs et décisions individuelles sur les versions exactes.
+5. Validation explicite de Zout pour les actes qui l'exigent.
+
+**Décision de coordination :** poursuivre le cycle 8 ; ne pas déclarer la première édition prête à publier. Les nouvelles PR et branches sont des contributions candidates, pas des travaux automatiquement reçus par les autres conversations.
