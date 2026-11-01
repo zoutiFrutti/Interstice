@@ -1,0 +1,32 @@
+{
+  "project": "rpqiwxkaiyokmxbhxfvh",
+  "restoration_requires_new_human_approval": true,
+  "edge": [
+    {
+      "name": "submit-proposal",
+      "activeVersion": 3,
+      "activeDigest": "7b73efc02989548badcf078fb9c2c7777bc09f867e1d7a5c5d1cbde0350da71c",
+      "rollbackVersion": 2,
+      "rollbackDigest": "5e9b2a9131209e3050e793355fa358e91b4166e48d9bfed2e6e51dd42f06f623"
+    },
+    {
+      "name": "submit-resource",
+      "activeVersion": 2,
+      "activeDigest": "9dedfc1c8a792b288c314c97269b52dd70373f506ded46023a50ab4e2cb30adc",
+      "rollbackVersion": 1,
+      "rollbackDigest": "4b6e9a3249835a0bf15b22c024fa41337b4ae55790a264e88a7cd4b61de1fd75"
+    }
+  ],
+  "rpc": {
+    "signature": "public.submit_wiki_article(text,text,text,text,text,boolean,boolean)",
+    "afterRevoke": {
+      "anon": false,
+      "authenticated": false
+    },
+    "hypotheticalRollback": {
+      "anon": false,
+      "authenticated": true
+    },
+    "restoreSql": "GRANT EXECUTE ON FUNCTION public.submit_wiki_article(text,text,text,text,text,boolean,boolean) TO authenticated;"
+  }
+}

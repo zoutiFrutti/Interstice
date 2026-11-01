@@ -1,0 +1,9 @@
+# Cycle 10 — Rapport 1 : audit P0 et protections internes
+**État consulté le 1er novembre 2026, lecture seule, projet Supabase Interstice uniquement.**
+- `submit-proposal` ACTIVE v3, digest `7b73efc02989548badcf078fb9c2c7777bc09f867e1d7a5c5d1cbde0350da71c`, handler de suspension déployé au Cycle 9. `submit-resource` ACTIVE v2, digest `9dedfc1c8a792b288c314c97269b52dd70373f506ded46023a50ab4e2cb30adc`, même principe. `verify_jwt=false` ne crée pas à lui seul de nouvelle écriture si le handler se borne à refuser.
+- `submit_wiki_article` SECURITY DEFINER avec EXECUTE `anon=false`, `authenticated=false` après migration du Cycle 9.
+- `is_moderator`, `moderate_proposal`, `moderate_resource`, `review_wiki_article` : SECURITY DEFINER, EXECUTE `authenticated=true`, `anon=false`. Code inspecté au Cycle 9 : fonction `is_moderator` interroge `moderator_accounts` via `auth.uid()`, les trois fonctions de modération l'appellent. Ce contrôle peut échouer face à une faille de rôles non testée ; pas de certification dynamique.
+- `github-wiki-ingest` ACTIVE v5, `verify_jwt=false`, validation GitHub OIDC interne observée précédemment, non éprouvée par des jetons négatifs réels.
+- Advisor Supabase : 4 alertes SECURITY DEFINER accessibles authenticated, 4 tables RLS sans politique. Cette dernière observation ne démontre pas à elle seule une fuite de données.
+- Droits, RLS, chemins : analyses antérieures des trois tables de contribution disponibles dans les rapports C6–C9 ; la suspension de soumission ne signifie pas que toute API ou Auth est sécurisée.
+**Preuve :** SQL metadata Supabase, liste Edge et advisors consultés cette passe ; aucun POST ni DDL en production. **Statut : TERMINÉ pour l'inventaire ciblé**, risque résiduel d'audit exhaustif et tests multi-comptes **BLOQUÉ** faute de staging isolé autorisé/opérationnel et de comptes factices.
