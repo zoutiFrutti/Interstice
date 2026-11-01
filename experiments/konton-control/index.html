@@ -18,6 +18,7 @@
   <script src="./ai-board.js" defer></script>
   <script src="./pwa.js" defer></script>
   <script src="./navigation.js" defer></script>
+  <script src="./cycles.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#screen-home">Aller au cockpit</a>
@@ -41,7 +42,29 @@
       <button class="nav-item" type="button" data-screen-target="agents" aria-controls="screen-agents"><span class="nav-glyph" aria-hidden="true">◆</span><span>Agents</span></button>
       <button class="nav-item" type="button" data-screen-target="github" aria-controls="screen-github"><span class="nav-glyph" aria-hidden="true">⌁</span><span>GitHub</span></button>
       <button class="nav-item" type="button" data-screen-target="outils" aria-controls="screen-outils"><span class="nav-glyph" aria-hidden="true">⚙</span><span>Outils</span></button>
+      <button class="nav-item" type="button" data-screen-target="cycles" aria-controls="screen-cycles"><span class="nav-glyph" aria-hidden="true">↻</span><span>Cycles</span></button>
     </nav>
+    <section class="screen screen-cycles" id="screen-cycles" data-screen="cycles" hidden tabindex="-1" aria-label="Coordination des cycles">
+      <div class="screen-title">
+        <p class="eyebrow">LA FAILLE NOIRE × INTERSTICE</p><h2>Courrier & cycles</h2>
+        <p>Lecture GitHub de la messagerie candidate C10. Un courrier émis n'est pas nécessairement reçu. Aucune commande ne pilote directement les conversations.</p>
+      </div>
+      <section class="panel cycle-panel">
+        <div class="panel-heading"><div><span class="eyebrow">CYCLE 10 · CANDIDAT</span><h2>Coordination</h2></div><span class="tiny-pill" id="cycle-state">Non consulté</span></div>
+        <button type="button" class="small-btn" id="cycle-refresh">Actualiser les preuves GitHub</button>
+        <p id="cycle-feedback" role="status" aria-live="polite">Aucune donnée chargée.</p>
+        <h3>Messages documentés</h3><div id="cycle-messages"></div>
+        <h3>Portes de lancement</h3><div id="cycle-gates"></div>
+        <h3>Relances des ateliers</h3><div id="cycle-order"></div>
+        <div class="cycle-command">
+          <button type="button" class="small-btn" id="cycle-mail">Copier : T'as du courrier</button>
+          <button type="button" class="small-btn" id="cycle-analyze">Copier : Analyse le cycle</button>
+          <button type="button" class="small-btn" id="cycle-continue">Copier : Continue le cycle</button>
+        </div>
+        <p class="subtle" id="cycle-copy-feedback" role="status"></p>
+        <p class="github-fineprint">Les commandes sont copiées uniquement. La réception doit être attestée par un accusé et SHA, la fin de cycle exige les preuves et la décision humaine. Cette interface ne clôture, ne publie et ne fusionne rien.</p>
+      </section>
+    </section>
     <section class="screen screen-home" id="screen-home" data-screen="home" tabindex="-1" aria-label="Accueil">
       <div class="home-hero">
         <p class="eyebrow">VUE D'ENSEMBLE</p>
