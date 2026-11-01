@@ -84,3 +84,20 @@ Calcul reproductible : `(9737 - 9295) / 9295 * 100 = 4,755 %` (arrondi à trois 
 **Sources et droits :** trois pages publiques du producteur de la statistique ; leur crédibilité est forte pour la date, le périmètre annoncé et la méthodologie officielle, mais elles ne remplacent ni les données élémentaires ni les voix des personnes concernées. Liens et paraphrases courtes seulement ; aucun tableau, graphique, média ou texte intégral tiers reproduit. Licence des fichiers ZIP non recontrôlée ici.
 
 **Conséquence éditoriale :** conserver les citations historiques avec leur millésime, ajouter un avertissement daté quand elles sont réutilisées, et ne modifier le taux du Wiki qu'après identification d'un indicateur comparable et relecture de la PR #32. Aucun changement du site, de la charte, du manifeste, de la sécurité ou des fichiers graphiques.
+
+
+---
+
+## Addendum du 1er novembre 2026 — borne de disponibilité de l'indicateur « atteintes à caractère raciste »
+
+**Question :** le rapport VRS 2026 permet-il de remplacer le taux historique de 3,5 % de plaintes après atteintes à caractère raciste en 2023 par une valeur révisée du *même indicateur* ?
+
+**Sources primaires réellement consultées le 1er novembre :**
+- SSMSI, [« Les atteintes à caractère raciste, xénophobe ou antireligieux en 2025 » (25 mars 2026)](https://statistiques.interieur.gouv.fr/ssmsi/publications/les-atteintes-caractere-raciste-xenophobe-ou-antireligieux-en-2025), avertissement ajouté après octobre 2026 : les taux de plainte de cette publication sont antérieurs à la révision ; la prochaine publication *thématique* intégrera les nouveaux taux. Son résumé conserve le 3,5 % **historique** pour les faits de 2023.
+- SSMSI, [rapport VRS 2026 (édition d'enquête 2025), pages 64–67, figure 4](https://statistiques.interieur.gouv.fr/ssmsi/files/ssmsi/2026-10/SSMSI_VRS_2026.pdf) : changement de traitement des non-réponses partielles ; tableau ancien/nouveau pour les grandes catégories de victimations, **pas de ligne autonome « atteintes à caractère raciste » dans cette figure**. La catégorie « discriminations » affiche 1 % pour 2023 et 2024 selon les deux méthodes, valeurs arrondies, mais son périmètre est différent.
+
+**Résultat et contradiction levée :** l'avertissement de la publication thématique et le tableau du rapport général sont compatibles. « Les séries révisées figurent dans VRS 2026 » ne signifie **pas** « le taux révisé propre aux atteintes racistes de 2023 y est directement publié ». La recherche textuelle du rapport n'a pas identifié un tableau dédié à ce sous-champ ; cela ne démontre pas l'inexistence de calculs dans les données détaillées non inspectées. Le 1 % « discriminations » **ne doit pas remplacer** le 3,5 % « atteintes racistes » : motifs, questionnaire, période et dénominateur doivent être harmonisés.
+
+**Avant / après documentaire :** avant, la note demandait seulement « extraire le taux révisé spécifique ». Après, elle documente la limite précise des sources publiques examinées et le renvoi explicite du producteur à une publication thématique future. Le 3,5 % doit rester identifié comme **ancienne estimation non actualisée**, sans correction numérique spéculative.
+
+**Droits et limites :** liens et synthèse originale, aucun graphique, tableau ou image du SSMSI reproduit ; licences des fichiers ZIP non vérifiées ; pas d'accès aux microdonnées, pas de test de tous les liens. **Aucun changement du Wiki ni approbation éditoriale.** Suite : rechercher une future publication thématique ou une table officielle exactement comparable ; à défaut, maintenir la réserve méthodologique. Transmettre à La Lectrice avant toute modification du HTML de la PR #32.
