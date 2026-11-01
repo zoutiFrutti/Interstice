@@ -1,0 +1,226 @@
+{
+  "schema_version": "interstice-documentaire-v0.4-c10-candidat",
+  "supersedes": "interstice-documentaire-v0.3-candidat",
+  "effective_status": "PROPOSITION_TECHNIQUE_NON_PUBLIEE",
+  "baseline": {
+    "registry_blob_sha": "f005414fc566cf020e2ac8931f4841e30ffde859",
+    "wiki": 24,
+    "drive": 44,
+    "fn": 71,
+    "keys_unique": 139,
+    "extra_research_prs": [
+      69,
+      70
+    ],
+    "source_mapping_blob": "0f8ad7c1cf5b02904233ea28c3643ee07d6df433"
+  },
+  "identity": {
+    "primary_key": [
+      "corpus",
+      "stable_key"
+    ],
+    "wiki_key": "existing relative HTML path",
+    "drive_key": "existing BIO/ASSO/ARCH/COL/EXP id",
+    "fn_key": "existing FN id",
+    "no_renumber": true,
+    "original_source_folder_preserved": true,
+    "aliases": {
+      "direction": "alias_to_canonical",
+      "never_delete_source_id": true,
+      "require_editorial_deduplication": true,
+      "duplicate_candidates": [
+        [
+          "FN-022",
+          "FN-048"
+        ],
+        [
+          "FN-038",
+          "FN-057"
+        ]
+      ]
+    }
+  },
+  "document_types": [
+    "wiki_page",
+    "biography",
+    "organization",
+    "archive",
+    "collective",
+    "experience",
+    "bibliographic_notice"
+  ],
+  "required_metadata": [
+    "corpus",
+    "stable_key",
+    "document_type",
+    "title",
+    "source_ref",
+    "source_version",
+    "editorial_review",
+    "rights_status",
+    "publication_permission",
+    "provenance",
+    "source_citations",
+    "contradictions",
+    "credits"
+  ],
+  "optional_metadata": [
+    "creator",
+    "language",
+    "territory",
+    "date_range",
+    "tags",
+    "source_folder",
+    "source_blob_sha",
+    "source_sha256",
+    "consultation_level",
+    "source_accessed_at",
+    "content_warnings",
+    "related"
+  ],
+  "source_citations_contract": {
+    "fields": [
+      "id",
+      "title",
+      "author_or_organization",
+      "date",
+      "url_or_archive_locator",
+      "primary_secondary_testimony",
+      "level_actually_consulted",
+      "rights_reproduction",
+      "source_snapshot_version"
+    ],
+    "restrictions": [
+      "no invented full-text reading",
+      "no implied permission from public URL",
+      "no copied private Drive link into public JSON"
+    ]
+  },
+  "credit_contract": {
+    "fields": [
+      "author",
+      "editor",
+      "translator",
+      "photographer",
+      "institution",
+      "license",
+      "license_evidence",
+      "media_specific_permissions"
+    ],
+    "rule": "credit and rights may differ per image, translation, text, and edition; unconfirmed is not approved"
+  },
+  "relations": {
+    "types": [
+      "documents",
+      "cites",
+      "refutes",
+      "person_in_organization",
+      "located_in",
+      "during_period",
+      "related_experience",
+      "duplicate_candidate",
+      "external_reference"
+    ],
+    "shape": [
+      "target_corpus",
+      "target_key",
+      "relation_type",
+      "source_citation_id",
+      "confidence",
+      "public_route_or_null"
+    ],
+    "rule": "a public_route may be nonnull only when target is existing, reviewed and explicitly publishable"
+  },
+  "workflow_states": {
+    "independent_axes": [
+      "editorial_review",
+      "human_text_approval",
+      "rights_status",
+      "publication_permission",
+      "collective_adoption"
+    ],
+    "rules": [
+      "ARCH-002 and ARCH-007 individual agreement does not authorize publication",
+      "existing public static HTML does not automatically mean its content was editorially approved",
+      "no current collective human body",
+      "proposals V2.6 and charters are not collectively adopted",
+      "no IA atelier grants publication permissions"
+    ]
+  },
+  "access": {
+    "default_public_export": "DENY",
+    "require_all": [
+      "exact source version",
+      "human authorization of publication of exact content",
+      "rights completed or approved text-only exclusion of media",
+      "review requirements satisfied",
+      "route allowed",
+      "no sensitive or private fields"
+    ],
+    "forbidden_public_exports": [
+      "source Drive private file identifiers",
+      "draft contents",
+      "private moderation notes",
+      "personal data",
+      "non-approved media"
+    ],
+    "server_prerequisite": "P0 server rights verification before enabling collection, moderation or publication"
+  },
+  "navigation": {
+    "existing_roots": [
+      "wiki.html",
+      "bibliotheque.html"
+    ],
+    "existing_wiki_pages": 24,
+    "critical_paths": [
+      "wiki.html#ecologie",
+      "wiki.html#democratie",
+      "wiki.html#cooperatives"
+    ],
+    "related_modules": [
+      "biographies",
+      "enquetes",
+      "luttes",
+      "territoires"
+    ],
+    "new_database": false,
+    "new_site": false
+  },
+  "migration": {
+    "execute": false,
+    "ddl": [],
+    "backend_operations": [],
+    "reversible_steps": [
+      "compare registry source/version and 139-key map",
+      "preserve original ids and source folders",
+      "resolve aliases only with reviewed evidence",
+      "compile only allowlisted public documents",
+      "verify static routes and anchors",
+      "retest P0 outside production"
+    ],
+    "rollback": "discard candidate generated index, preserve old routes and original keys",
+    "requires_manual_decisions": [
+      "visa de publication sur version exacte",
+      "droits par media/edition",
+      "arbitrage des paires FN"
+    ]
+  },
+  "crosswalk": {
+    "path": "coordination/cycle10/anarchitecte/MAPPING_C10_139.json",
+    "records_expected": 139,
+    "join_key": [
+      "corpus",
+      "canonical_key"
+    ],
+    "aliases_pending": [
+      [
+        "FN-022",
+        "FN-048"
+      ],
+      [
+        "FN-038",
+        "FN-057"
+      ]
+    ]
+  }
+}
