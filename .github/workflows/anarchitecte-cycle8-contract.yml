@@ -16,4 +16,4 @@ jobs:
         with:
           node-version: '22'
       - name: Test 139 references, veto editorial et 24 pages
-        run: node --test tests/anarchitecte-cycle8-contract.test.mjs
+        run: node --test tests/anarchitecte-cycle8-contract.test.mjs tests/anarchitecte-cycle9-schema.test.mjs
