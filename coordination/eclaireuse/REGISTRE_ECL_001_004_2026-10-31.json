@@ -424,7 +424,8 @@
       "BL00D.MONEY responsable, méthode, droits",
       "CIC immatriculation et activité 2026",
       "ÉCL-002 résultats matériels datés des 13 cas",
-      "ÉCL-005 doublons avec 71 notices, licences et droits de projection"
+      "ÉCL-005 doublons avec 71 notices, licences et droits de projection",
+      "CIC procès-verbal du 11 mars 2017, transferts budgétaires et comptes des biorégions"
     ],
     "duplicate_avoided": [
       "EJAtlas partagé ÉCL-001/003",
@@ -437,6 +438,43 @@
       "Tisseuse et Anarchiviste: registres CIC et résultats matériels, pas nouvelle fiche",
       "Lectrice: séparer règle, exécution, interprétation et situation actuelle"
     ],
-    "limits": "Contrôles web ciblés sur catalogues officiels ARTE, Secretaría de Cultura et archive CIC. Pas de visionnage, audit complet 71 notices, registre juridique CIC, contrôle des droits auprès des ayants droit, ni réception par ateliers."
+    "limits": "Contrôles web ciblés sur catalogues officiels ARTE, Secretaría de Cultura et archive CIC. Pas de visionnage, audit complet 71 notices, registre juridique CIC, contrôle des droits auprès des ayants droit, ni réception par ateliers.",
+    "additional_passes_2026_11_01": [
+      {
+        "id": "ECL004-CIC-2017",
+        "evidence": "Annonce CIC datée 1 mars 2017: fondation bioregion Est le 15 février, environ trente personnes issues de six noyaux/réseaux; première assemblée annoncée pour 11 mars, tenue NON prouvée",
+        "source": "https://cooperativa.cat/es-funda-la-bioregio-est-de-la-cic.htm",
+        "level": "source organisationnelle primaire, auto-déclaration contemporaine",
+        "impact": "corrige la réduction de la décentralisation à un simple projet fin 2017"
+      },
+      {
+        "id": "ECL004-CIC-2016",
+        "evidence": "Plan 2016 de décentralisation et annonce d'assemblée décembre 2016 envisagent transfert de budgets et responsabilités; plan ≠ preuve de transferts exécutés",
+        "sources": [
+          "https://cooperativa.cat/wp-content/uploads/2016/04/Pla-de-descentralitzaci%C3%B3-2016-11.pdf",
+          "https://cooperativa.cat/10-11-de-desembre-2a-assemblea-general-global-de-la-cic-i-jjaa-marxa-per-a-la-descentralitzacio.htm"
+        ],
+        "level": "programme interne et convocation",
+        "impact": "chercher comptes et PV budgétaires 2016-2018"
+      },
+      {
+        "id": "ECL005-ARTE-2013",
+        "evidence": "ARTE boutique indique année de production 2013 pour volume 1, diffusion/distribution catalogue 2016, saison 2 production 2023; distinguer production, diffusion et montage",
+        "sources": [
+          "https://boutique.arte.tv/detail/ni-dieu-ni-maitre-une-histoire-de-l-anarchisme-integrale",
+          "https://boutique.arte.tv/detail/ni-dieu-ni-maitre-histoire-anarchisme",
+          "https://boutique.arte.tv/detail/ni-dieu-ni-maitre-une-histoire-de-l-anarchisme-vol-2"
+        ],
+        "level": "métadonnées diffuseur",
+        "impact": "corriger notice et éviter date unique trompeuse"
+      },
+      {
+        "id": "ECL005-ARTE-DVD",
+        "evidence": "Catalogue ARTE DVD 2022/23 propose intégrale 3 DVD 6h37 et compléments, montage différent des VOD 2×71 min du volume 1",
+        "source": "https://medias.boutique.lab.arte.tv/prod/arte_boutique_dvds.pdf",
+        "level": "catalogue éditeur",
+        "impact": "noter version et durée avant attribution des archives"
+      }
+    ]
   }
 }
