@@ -1,0 +1,62 @@
+{
+  "schema": "graphiste-c10-integration-candidate-v1",
+  "state": "candidate_not_published",
+  "upstream": {
+    "graphiste_pr": 76,
+    "graphiste_head": "87b9eff2336f37b88ba9d45bfdda2d3a41390800",
+    "anarchitecte_branch": "atelier/anarchitecte-cycle10-20261101",
+    "contract_blob": "b4e2e56be6bb82c0fb14860aa083ea9011e0a89e",
+    "mapping_blob": "a02373657a552ebecf600fb54b8b5fe78bdedd69",
+    "schema_blob": "e2a94750f5ba1e7078c149d8d3eb1e3ab8bcdc55"
+  },
+  "routes": [
+    {
+      "kind": "wiki",
+      "href": "../wiki.html"
+    },
+    {
+      "kind": "bibliotheque",
+      "href": "../bibliotheque.html"
+    },
+    {
+      "kind": "biographies",
+      "href": "apercu-profils-historiques-biographies-2026-10-31.html"
+    },
+    {
+      "kind": "enquetes",
+      "href": "maquette-cycle9-integration-candidate.html"
+    }
+  ],
+  "component_styles": [
+    "../assets/graphiste-cycle8-integration.css",
+    "../assets/graphiste-cycle9-provenance.css"
+  ],
+  "status_fields": [
+    "adopte-individuel",
+    "candidat",
+    "corrige",
+    "reserve",
+    "bloque"
+  ],
+  "media": {
+    "rights_default": "unverified",
+    "publication_default": false,
+    "require": [
+      "source",
+      "credit",
+      "licence",
+      "decision"
+    ]
+  },
+  "constraints": [
+    "no_text_rewrite",
+    "no_alias_activation",
+    "no_private_records",
+    "no_publication"
+  ],
+  "pending": [
+    "B final editorial matrices",
+    "C common integration HEAD and security rollback",
+    "real screen reader physical tests"
+  ]
+}
