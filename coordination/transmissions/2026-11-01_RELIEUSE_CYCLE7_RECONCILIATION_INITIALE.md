@@ -136,3 +136,27 @@ Rapport Développeuse : `submit-proposal` ACTIVE v2, `submit-resource` ACTIVE v1
 
 ### État des objectifs
 **Avancé** : inventaire exact, identification des cinq blocages, séparation des quinze lots, lecture des productions récentes, classement des trois dossiers historiques. **Non démontré** : serveur sécurisé, première édition fusionnée, droits médias complets, décisions individuelles sur textes intégraux, tests lecteurs d'écran réels, publication autorisée. Ne pas déclarer le cycle 8 clos sur ces bases.
+
+
+## Cycle 8 — Passe 4 : contrôle croisé communication / graphisme / édition
+Pièces effectivement lues :
+- Communication `coordination/transmissions/2026-11-01_COMM_CYCLE8_KIT_PREMIERE_EDITION_CANDIDAT.md`, branche `atelier/communication-premiere-edition-20261031`, blob `8daf6869876d722ae33e9cf9ed31ab4b1788cd12` ; PR #52 mise à jour cycle 8.
+- Graphiste `coordination/transmissions/2026-11-01_GRAPHISTE_CYCLE8_INTEGRATION_QA.md`, branche `design/graphiste-cycle8-integration-2026-11-01`, blob `5646e9ea741d7adadf160d3bbb1fd1351c9234cd`.
+- Développeuse `edition-premiere/README.md`, branche `integration/cycle8-wiki-bibliotheque-p0-candidate-2026-11-01`, blob `aa0f0ecfd498d5d85b1b89e855e1e9797bdf5ee6`.
+
+### Contradiction documentaire nouvelle et action ciblée
+La présentation longue de la Responsable réseaux sociaux cite **Charte des communs V0.8** ; la Juriste du cycle 8 vérifie **V0.9 transitoire**, avec article 48, comme version candidate actuelle. **Correction à transmettre à la Responsable réseaux sociaux :** remplacer la référence V0.8 par « Charte des communs V0.9 transitoire, candidate, non adoptée », après contrôle du SHA et sans réécrire rétroactivement le texte V0.8. Aucune communication ne doit présenter les chartes comme des règles collectivement adoptées.
+
+### Compatibilité et réserves
+- Graphiste : couche opt-in `assets/graphiste-cycle8-integration.css` et maquette de navigation, dix profils et cinq statuts préservés ; les contrôles Chromium sont **annoncés** dans le rapport, verdict à confirmer par Actions sur HEAD exact ; VoiceOver/TalkBack/NVDA restent non testés physiquement.
+- Développeuse : le circuit de première édition exige double visa et droits vérifiés ; ARCH-002/007 restent exclus de publication si `rights_final=A_VERIFIER`. L'aperçu local est distinct d'un déploiement public.
+- Écart technique à surveiller : rapport cycle 8 indique PWA non démontrée ; ne pas annoncer une application installable ou hors ligne.
+- La publication d'un brouillon dans un dépôt GitHub accessible peut le rendre consultable, même sans lien dans la navigation ; éviter données confidentielles et témoignages non autorisés.
+
+### Dossier de convergence consolidé
+1. **Prêts à décision** : 14 du registre historique, plus 3 historiques nouvellement prêts sous réserve, sans promotion automatique.
+2. **À corriger** : 12 pages Wiki et référence V0.8 du kit communication.
+3. **Bloqués** : 5 pages sensibles, P0 serveur, droits médias et conditions de publication.
+4. **À contrôler** : SHA des trois textes fondateurs, CI d'intégration, tests d'accessibilité réels et provenance des contributions des ateliers historiques.
+
+Aucune branche fusionnée, aucun statut éditorial promu, aucune action serveur et aucune diffusion effectuée par La Relieuse.
