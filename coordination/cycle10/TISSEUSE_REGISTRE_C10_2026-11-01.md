@@ -1,0 +1,25 @@
+# La Tisseuse — registre de résultats C10, pour La Relieuse
+**Date : 1er novembre 2026 · branche candidate research/tisseuse-cycle10-tis001-20261101.** Aucune fusion, publication, contact, partenariat ou approbation humaine.
+Protocole repris : `coordination/cycle10/PROTOCOLE_REGISTRE_OUVERTURE_C10_2026-11-01.md` sur `coordination/cycle10-ouverture-20261101`, blob `20f9e4364e25c7f62865635d3b4825d205004631`.
+
+## Livrables et traçabilité
+- **Fiches candidat TIS, 9 entrées** : `coordination/transmissions/2026-11-01_TISSEUSE_C8_INDEX_CANDIDAT.json` (même fichier existant C8/C9, pas nouvel inventaire divergent), commit `06c71a4ae78995ef458094c03ee3e4317977089c`, blob après lecture `beec593209b1e165bbcfa4d97012323c8077a3ff`. Chaque entrée ajoute état de preuve, activité, réserve, coordonnées institutionnelles si elles sont publiées et canal de contact public. **Ces fiches ne couvrent PAS les douze lignes non accessibles du carnet TIS-001 historique**.
+- **Trois parcours, sources, contradictions, transmission Médiathèque/Relieuse** : `coordination/transmissions/2026-11-01_TISSEUSE_C10_PARCOURS_SOURCES_MEDIATHEQUE_RELIEUSE.md`, commit `2e80f9ca40195db09896d261902e0ed615305223`, blob `ff8b541a0edbb85610a2193f9ad8d8766fcaed5a`.
+- **Statut documentaire** : les pages publiques ont été examinées sur web le 01/11/2026 ; les horaires/places ne sont pas testés par appel ou visite. Corriger en priorité La Glanerie (annonce de nouveaux horaires à Blagnac à compter du 04/11/2026 vs ancienne page), et ne pas convertir la décision de retenue d'eau de La Salvetat en ouvrage achevé. Ne pas attribuer une organisation au rapport IGEDD Testet/Tescou.
+
+## Tests réellement exécutés
+Relecture des deux fichiers GitHub sur le HEAD candidat, parse JSON, et assertions structurales en mémoire : **10/10 réussies** : parse valide ; 9 lignes ; identifiants uniques ; sources et canaux publics renseignés ; date de vérification C10 sur les 9 ; aucune coordonnée GPS ; aucun partenariat Interstice ; aucune autorisation de référencement ; trois parcours présents ; destinations Médiathèque et Relieuse présentes. **Non testés** : disponibilité instantanée des lieux, validité HTTP de chaque URL en lot, droits photo, accessibilité clavier et lecteur d'écran du prototype, carte PR #41, dossier individuel du carnet TIS-001.
+
+## Tableau obligatoire
+| Objectif | preuve et test | statut au C10 | action restante précise |
+|---|---|---|---|
+| 1. Finaliser inventaire sourcé des initiatives **déjà recensées** | 9 fiches héritées de C9 consolidées sur le JSON ci-dessus ; parse et ID uniques réussis | **BLOQUÉ** pour l'inventaire exhaustif TIS-001 : carnet séparé des 12 fiches signalé par rapport 015, non accessible dans le dépôt ; inventaire des 9 fiches **TERMINÉ** dans son périmètre connu | La Relieuse/Zout doit rendre accessible le carnet nominatif séparé des 12 recherches en espace autorisé, puis comparer ligne à ligne avant tout nouvel identifiant ; ne pas divulguer contacts privés |
+| 2. Vérifier existence, dates, coordonnées publiques et parcours | sources par entrée, date de vérification 01/11, 3 parcours textuels ; tests dix assertions OK | **TERMINÉ** pour vérification **documentaire** des 9, parcours et coordonnées institutionnelles publiées ; activité physique ou horaires précis **BLOQUÉS par absence de contrôle terrain/temps réel** | Ne pas transformer la consultation du site en garantie d'ouverture ; éventuelle vérification de service avant visite nécessite mise à jour ultérieure, et contradictions d'horaires à surveiller |
+| 3. Transmettre ressources vérifiées à Médiathèque | dossier de transmission ci-dessus, écrit, lu, blob SHA vérifié ; liens sources/dates/types explicités | **TERMINÉ** pour **transmission GitHub** ; réception/traitement dans autre atelier **NON ATTESTÉS** | Médiathèque rapproche avec 71 notices FN et alias avant réutilisation ; La Relieuse reçoit lien de ce registre, peut constater la transmission, sans visa automatique |
+
+## Règle relationnelle
+Relations entre **structures externes** : coopération seulement si source décrit action commune et date. `R0` simple voisinage, `R1` comparaison documentaire, `R2` coopération entre tiers avec preuve ; **`R3` partenariat Interstice = zéro**. Les emails génériques et adresses de lieux publics ont été consignés **sans envoyer de message**. Aucun droit sur leurs noms/images présumé, aucune carte de production changée.
+
+## Destinataires, sans présumer accusé de réception
+**La Relieuse** : intégrer les résultats aux registres C10, signaler blocage du carnet initial et abstention de publication. **La Médiathèque** : conserver date source, date de contrôle, type de source et droit des médias, dédoublonner les notices avant toute entrée. **La Lectrice** : vérifier exceptions La Glanerie, document eau La Salvetat, portée du rapport IGEDD et absence de preuve d'accès universel.
+**Décisions réservées à Zout** : autoriser ou refuser partage du carnet original, d'éventuels contacts, des fiches publiques, des parcours destinés au public, des témoignages et de la fusion de branches. Aucun pouvoir décisionnaire d'atelier IA.
