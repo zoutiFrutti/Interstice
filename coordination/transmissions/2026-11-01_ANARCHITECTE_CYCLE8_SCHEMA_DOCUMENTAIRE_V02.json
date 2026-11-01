@@ -1,0 +1,142 @@
+{
+  "schema_version": "interstice-documentaire-v0.2-candidat",
+  "date": "2026-11-01",
+  "status": "CONTRAT_TECHNIQUE_NON_PUBLIE",
+  "authority": "Zout seul; ateliers IA sans pouvoir décisionnaire",
+  "source_register": {
+    "repo": "zoutiFrutti/Interstice",
+    "branch": "coordination/relieur-pilote-10-passes-20261030",
+    "blob_sha": "f005414fc566cf020e2ac8931f4841e30ffde859"
+  },
+  "corpora": [
+    {
+      "name": "drive",
+      "count": 44,
+      "prefixes": {
+        "BIO": 22,
+        "ASSO": 8,
+        "ARCH": 8,
+        "COL": 2,
+        "EXP": 4
+      },
+      "source": "Google Drive, originaux non répliqués"
+    },
+    {
+      "name": "fn",
+      "count": 71,
+      "prefix": "FN",
+      "source": "catalogue notices externes"
+    },
+    {
+      "name": "wiki",
+      "count": 24,
+      "source": "pages wiki-*.html existantes"
+    }
+  ],
+  "record_contract": {
+    "required": [
+      "stable_id_or_path",
+      "corpus",
+      "kind",
+      "title",
+      "source_locator",
+      "source_version",
+      "editorial_status",
+      "rights_status",
+      "publication_authorized",
+      "sources",
+      "contradictions",
+      "related"
+    ],
+    "optional": [
+      "source_folder",
+      "author",
+      "language",
+      "period",
+      "territory",
+      "categories",
+      "tags",
+      "consulted_at",
+      "source_read_level",
+      "source_blob_sha",
+      "source_sha256",
+      "human_editorial_decision",
+      "human_decision_evidence",
+      "credits",
+      "content_warnings"
+    ],
+    "relations": {
+      "fields": [
+        "target_id",
+        "relation_type",
+        "target_status",
+        "target_public_route"
+      ],
+      "types": [
+        "source_de",
+        "personne_associee",
+        "organisation_associee",
+        "evenement_lie",
+        "contradiction_de",
+        "comparaison",
+        "ressource_connexe"
+      ],
+      "rule": "target_public_route seulement si cible existante ET explicitement autorisée; sinon relation interne sans href"
+    },
+    "provenance": "source_folder conserve son sens historique et ne redéfinit pas le préfixe de l'ID"
+  },
+  "states": {
+    "separate_axes": [
+      "review_status",
+      "human_editorial_decision",
+      "rights_status",
+      "publication_authorized",
+      "collective_adoption"
+    ],
+    "rules": [
+      "ACCORD_EDITO_ZOUT n'implique ni droits finalisés ni publication",
+      "une page existante accessible sur main n'est pas automatiquement approuvée",
+      "V2.6 et chartes candidates non adoptées collectivement",
+      "status bloque, retire, candidat restent hors index de publication"
+    ]
+  },
+  "public_allowlist": {
+    "source": "edition-premiere/decisions.json et registre source, concordance par ID et empreinte",
+    "required_conditions": [
+      "decision humaine pour ID et version exacte",
+      "droits contrôlés ou aucun média",
+      "review complémentaire satisfaite",
+      "publication_authorized vrai, distinct de accord éditorial",
+      "route HTML existante et contrôlée"
+    ],
+    "deny_by_default": true
+  },
+  "security": {
+    "internal_documents": "ne jamais copier les fiches internes ou données sensibles vers HTML, JS, JSON, sitemap, aperçu public ou artefacts accessibles",
+    "server": "aucune modification RLS/RPC/Edge Function sans revue P0, tests autorisé/refusé et accord humain",
+    "moderation": "rôles de revue ne donnent pas pouvoir d'approbation ni accès production"
+  },
+  "routes": {
+    "wiki_home": "wiki.html",
+    "library": "bibliotheque.html",
+    "existing_wiki_pattern": "wiki-*.html",
+    "critical_paths": [
+      "wiki.html#ecologie",
+      "wiki.html#democratie",
+      "wiki.html#cooperatives"
+    ],
+    "new_platform": false,
+    "new_backend": false
+  },
+  "migration_plan": {
+    "database_ddl": [],
+    "server_migrations": [],
+    "static_actions": [
+      "reconciliation JSON/registre sans publier",
+      "gabarits existants PR50/57/63",
+      "index local uniquement alimenté à partir de allowlist après visa",
+      "réparer liens et tests d'ancres sur candidat",
+      "réconcilier les lots éditoriaux sans réécrire les textes"
+    ]
+  }
+}
