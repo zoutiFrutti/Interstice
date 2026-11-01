@@ -14,3 +14,6 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 - **C10-REL-20261101-assistant-anarchiviste** : ÉMISE. Lire `coordination/messagerie/courriers/C10-REL-20261101-assistant-anarchiviste.md` sur `coordination/cycle10-messagerie-v1-20261101`. Accuser réception après lecture, agir, puis transmettre compte-rendu et propositions de courriers à La Relieuse. Ne pas présumer réception.
 
 - **C10-REL-20261101-SUITE-assistant-anarchiviste** : ÉMISE ; nouveau courrier dans `coordination/messagerie/courriers/C10-REL-20261101-SUITE-assistant-anarchiviste.md`. Lire, vérifier, accuser réception et transmettre compte-rendu à La Relieuse. Ne pas présumer réception.
+
+## Point d'entrée V2
+À chaque « T'as du courrier », consulter cette boîte et `MESSAGES_C10.md` sur la branche `coordination/cycle10-messagerie-v1-20261101`, jamais uniquement sur sa branche personnelle. Signaler une erreur de lecture plutôt qu'une boîte vide. Accuser réception avec SHA.
