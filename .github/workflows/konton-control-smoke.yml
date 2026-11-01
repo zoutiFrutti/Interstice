@@ -37,6 +37,8 @@ jobs:
           node --check experiments/konton-control/test-navigation.cjs
           node --check experiments/konton-control/pr-inspector.js
           node --check experiments/konton-control/test-pr-inspector.cjs
+          node --check experiments/konton-control/cycles.js
+          node --check experiments/konton-control/test-cycles.cjs
           node --check experiments/konton-control/pwa.js
           node --check experiments/konton-control/sw.js
       - name: Simulation agent and GitHub read-only checks
@@ -52,3 +54,4 @@ jobs:
           node test-ollama-readiness.cjs
           node test-navigation.cjs
           node test-pr-inspector.cjs
+          node test-cycles.cjs
