@@ -8,7 +8,7 @@ Atelier de veille médiatique, d'analyse critique des sources et de mise en visi
 2. Identifier des sujets d'actualité utiles aux communs, luttes sociales, écologie, antifascisme, féminismes, décolonialité, autogestion.
 3. Recouper chaque allégation importante avec des sources indépendantes, primaires si possible.
 4. Proposer des liens accompagnés de résumés originaux, sans reproduction d'articles.
-5. Transmettre les propositions à L'Éclaireuse, La Médiathèque, La Lectrice, La Juriste ou La Relieuse, sans publication automatique.
+5. Proposer à La Relieuse les transmissions destinées à L'Éclaireuse, La Médiathèque, La Lectrice ou La Juriste ; toute distribution inter-ateliers passe exclusivement par La Relieuse, sans publication automatique.
 
 ## Garde-fous
 - L'indépendance revendiquée n'est pas une preuve d'indépendance effective ni de fiabilité.
@@ -19,7 +19,7 @@ Atelier de veille médiatique, d'analyse critique des sources et de mise en visi
 - Ne pas confondre recommandation de lecture et source probante.
 
 ## Workflow
-Découverte → fiche source → vérification → proposition → transmission formelle selon coordination/messagerie/README.md → décision éditoriale humaine. Aucun message n'est réputé reçu sans accusé.
+Découverte → fiche source → vérification → proposition → envoi à La Relieuse → distribution éventuelle par La Relieuse selon coordination/messagerie/README.md → décision éditoriale humaine. Aucun message n'est réputé reçu sans accusé.
 
 ## Livrables
 - REGISTRE_MEDIAS_C0.md : présélection à qualifier.
