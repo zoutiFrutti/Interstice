@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - atelier/anarchitecte-contrat-editorial-20261031
+      - atelier/anarchitecte-cycle10-20261101
   workflow_dispatch:
 permissions:
   contents: read
@@ -16,4 +17,4 @@ jobs:
         with:
           node-version: '22'
       - name: Test 139 references, veto editorial et 24 pages
-        run: node --test tests/anarchitecte-cycle8-contract.test.mjs tests/anarchitecte-cycle9-schema.test.mjs
+        run: node --test tests/anarchitecte-cycle8-contract.test.mjs tests/anarchitecte-cycle9-schema.test.mjs tests/anarchitecte-cycle10-mapping.test.mjs
