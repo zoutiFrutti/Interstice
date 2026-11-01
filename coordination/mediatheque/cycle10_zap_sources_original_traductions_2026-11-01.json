@@ -1,0 +1,82 @@
+{
+  "schema": "mediatheque_zap_sources_C10_v1",
+  "date": "2026-11-01",
+  "source_branch": "research/zapatiste-cycle10-20261101",
+  "source_blobs": [
+    "282de85d3abe324b94e986a26337ddae6f17db4c",
+    "a66a167262041de85b9bbf262b916516978dd514"
+  ],
+  "records": [
+    {
+      "id": "ZAP-DOC-001",
+      "kind": "Original espagnol",
+      "date": "2023-11-05",
+      "url": "https://enlacezapatista.ezln.org.mx/2023/11/05/cuarta-parte-y-primera-alerta-de-aproximacion-varias-muertes-necesarias/",
+      "claim": "Annonce MAREZ/JBG, Caracoles maintenus",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_DE_PR78_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
+    },
+    {
+      "id": "ZAP-DOC-002",
+      "kind": "Traduction anglaise de ZAP-DOC-001",
+      "date": "2023-11-06",
+      "url": "https://enlacezapatista.ezln.org.mx/2023/11/06/fourth-part-and-first-approach-alert-several-necessary-deaths/",
+      "claim": "Traduction, pas nouvel événement",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_DE_PR78_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
+    },
+    {
+      "id": "ZAP-DOC-003",
+      "kind": "Original espagnol nouvelle structure",
+      "date": "2023-11-12",
+      "url": "https://enlacezapatista.ezln.org.mx/2023/11/12/novena-parte-la-nueva-estructura-de-la-autonomia-zapatista/",
+      "claim": "GAL/CGAZ/ACGAZ selon texte 2023",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_DE_PR78_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
+    },
+    {
+      "id": "ZAP-DOC-004",
+      "kind": "Traduction française de ZAP-DOC-003",
+      "date": "2023-12-01",
+      "url": "https://enlacezapatista.ezln.org.mx/2023/12/01/neuvieme-partie-la-nouvelle-structure-de-lautonomie-zapatiste/",
+      "claim": "Traduction, pas décision du 1 décembre",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_DE_PR78_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
+    },
+    {
+      "id": "ZAP-DOC-005",
+      "kind": "Original espagnol commun et non-propriété",
+      "date": "2023-12-20",
+      "url": "https://enlacezapatista.ezln.org.mx/2023/12/20/vigesima-y-ultima-parte-el-comun-y-la-no-propiedad/",
+      "claim": "Proposition sur une partie des terres, pas pratique généralisée",
+      "source_type": "COMMUNIQUE_MOUVEMENT_PRIMAIRE",
+      "url_check": "REFERENCE_TRANSCRITE_DE_PR78_NON_RETESTEE",
+      "rights": "AUCUNE_AUTORISATION_REPRODUCTION_ETABLIE",
+      "read_level": "TRANSMISSION_ZAP_CONSULTEE_NON_LECTURE_INTEGRALE",
+      "linked_fn_id": null,
+      "create_fn": false
+    }
+  ],
+  "notes": [
+    "Les dates de traduction ne sont pas des dates de décision",
+    "GAL/ACGAZ 2023 et ACEGAZ 2026 : variantes datées, pas synonymes à normaliser silencieusement",
+    "Les affirmations du mouvement ne démontrent pas leur application indépendante",
+    "Aucune œuvre hébergée, aucune nouvelle FN créée"
+  ]
+}
