@@ -33,6 +33,8 @@ jobs:
           python3 coordination/agents/index_messagerie_c11.py --entree index-messagerie-c10.md --ref coordination/cycle10-messagerie-v1-20261101
       - name: Rapprocher les accuses verifies
         run: python3 coordination/agents/rapprochement_c11.py --index index-messagerie-c10.md --accuses coordination/agents/accuses_verifies_c10.json
+      - name: Preparer une demande de La Relieuse
+        run: python3 coordination/agents/demande_relieuse_c11.py --entree coordination/agents/exemple_demande_relieuse_c11.json
       - uses: actions/upload-artifact@v4
         with:
           name: rapport-demo-c11
@@ -43,3 +45,4 @@ jobs:
             tableau-relieuse-c11.md
             tableau-courriers-c10.md
             rapprochement-accuses-c10.md
+            mission-relieuse-c11.md
