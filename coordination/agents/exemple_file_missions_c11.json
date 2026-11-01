@@ -1,0 +1,28 @@
+{
+  "missions": [
+    {
+      "id": "C11-001",
+      "type": "audit_references",
+      "ressources": [
+        {
+          "titre": "Article 1",
+          "url": "https://example.org/a"
+        },
+        {
+          "titre": "Article 1 bis",
+          "url": "https://example.org/a/"
+        },
+        {
+          "titre": "Article 2",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "C11-002",
+      "type": "publication",
+      "publication": true,
+      "ressources": []
+    }
+  ]
+}
