@@ -10,6 +10,14 @@ Séparer **archive**, **messages**, **réceptions**, **dépendances** et **déci
 - `coordination/journaux/CYCLE10.md` : journal synthétique du cycle. Le Journal commun historique conserve les liens de clôture, pas les comptes rendus dupliqués.
 - `coordination/cycle10/REGISTRE_CLOTURE_PROVISOIRE_C10_2026-11-01.md` : audit de clôture, non final.
 
+## Règle V2 — lecture centrale obligatoire, indépendante de la branche locale
+
+**Point d'entrée unique pour les 17 ateliers :** `coordination/cycle10-messagerie-v1-20261101`. À chaque « T'as du courrier », « Ok next » ou reprise de cycle, l'atelier doit **lire explicitement sur cette branche** `coordination/messagerie/MESSAGES_C10.md`, `coordination/messagerie/boites/<atelier>.md`, puis **tous les courriers référencés non traités**. Ne jamais commencer par sa seule branche personnelle, `main`, ou une copie locale ancienne. Cette règle vaut aussi pour un atelier nouvellement créé.
+
+La branche personnelle sert aux accusés, livrables et rapports, pas de source canonique de réception. Si le fichier central est absent ou inaccessible : statut **BOÎTE CENTRALE INACCESSIBLE**, prévenir La Relieuse et ne pas conclure « pas de courrier ». Si la boîte existe mais ne référence pas un courrier attendu, contrôler l'index central et les courriers émis ; signaler la divergence. **Ne jamais annoncer boîte vide après n'avoir consulté qu'une branche locale.**
+
+La Relieuse vérifie avant toute relance : (1) existence du courrier sur la branche centrale, (2) référencement dans la boîte centrale, (3) entrée dans l'index central, (4) accusé sur la branche de l'atelier. Les quatre étapes sont distinctes. En cas de défaut, corriger la coordination avant d'affirmer la livraison. Les anciens courriers restent accessibles. Ce protocole documentaire ne crée pas de notification automatique ni de fusion de branches.
+
 ## Contrat d'une transmission
 ID `C10-MSG-NNN` unique ; date ISO ; atelier source ; destinataire(s) ; objet ; priorité P0/P1/P2 ; chemin + branche + commit SHA + blob SHA ; action attendue ; dépendances ; état `ÉMISE | REÇUE | TRAITÉE | BLOQUÉE` ; accusé de réception (qui, date, commit) ; preuve de traitement et résultat. **Une transmission sans accusé reste ÉMISE**, même si le fichier est visible dans GitHub. L'accusé ne signifie pas validation éditoriale.
 
