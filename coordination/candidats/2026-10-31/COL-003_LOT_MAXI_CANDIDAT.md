@@ -40,3 +40,6 @@ Le club, son journal et la photographie de Françoise André sont **trois types 
 **Avis de La Lectrice : PRÊT À SOUMETTRE À ZOUT — notice historique, sans bilan chiffré de présence ni identification photographique de réunion.** La collation des procès-verbaux **Ly 22** et des séances pertinentes est une recherche non achevée, sans laquelle aucun chiffre d'affluence ne peut être ajouté. Les chiffres « 4 000 participants » ou proportions de femmes restent délibérément exclus ; aucune image d'un autre club ne sert d'illustration. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
 
 **Droits :** synthèse originale, sans portrait ni reproduction de presse ; licence de chaque média à vérifier séparément. Manifeste V2.5 et charte critiques non adoptés collectivement. **Aucune validation humaine de Zout n'est attestée pour cette version. Les avis des ateliers IA sont consultatifs. Pas de publication.**
+
+
+**Réserve documentaire du cycle 10 (Archéologue PR #70) :** une notice BnF sur *Le Prolétaire* atteste le catalogage du journal, pas l'opinion de tout le club ; Ly 22 reste une piste de source non collationnée. Le rapprochement entre la citoyenne André et Françoise André du portrait PH22310 ne constitue pas une identification. Les chiffres d'affluence concurrents ne sont pas validés.
