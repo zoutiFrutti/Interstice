@@ -11,3 +11,6 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 
 ## Courrier de reprise — 2026-11-01
 - **C10-REL-20261101-anarchiviste-catalan** : ÉMISE. Lire `coordination/messagerie/courriers/C10-REL-20261101-anarchiviste-catalan.md` sur `coordination/cycle10-messagerie-v1-20261101`. Accuser réception après lecture, agir, puis transmettre compte-rendu et propositions de courriers à La Relieuse. Ne pas présumer réception.
+
+## Point d'entrée V2
+À chaque « T'as du courrier », consulter cette boîte et `MESSAGES_C10.md` sur la branche `coordination/cycle10-messagerie-v1-20261101`, jamais uniquement sur sa branche personnelle. Signaler une erreur de lecture plutôt qu'une boîte vide. Accuser réception avec SHA.
