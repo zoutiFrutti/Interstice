@@ -20,9 +20,12 @@ jobs:
         run: python3 coordination/agents/demo_c11.py --sortie rapport-demo-c11.json
       - name: Produire un rapport lisible
         run: python3 coordination/agents/rapport_c11.py
+      - name: Simuler une file de missions
+        run: python3 coordination/agents/mission_queue_c11.py
       - uses: actions/upload-artifact@v4
         with:
           name: rapport-demo-c11
           path: |
             rapport-demo-c11.json
             rapport-demo-c11.md
+            file-missions-c11-rapport.json
