@@ -31,6 +31,8 @@ jobs:
           gh api -H "Accept: application/vnd.github.raw+json" \
             "repos/${{ github.repository }}/contents/coordination/messagerie/MESSAGES_C10.md?ref=coordination%2Fcycle10-messagerie-v1-20261101" > index-messagerie-c10.md
           python3 coordination/agents/index_messagerie_c11.py --entree index-messagerie-c10.md --ref coordination/cycle10-messagerie-v1-20261101
+      - name: Rapprocher les accuses verifies
+        run: python3 coordination/agents/rapprochement_c11.py --index index-messagerie-c10.md --accuses coordination/agents/accuses_verifies_c10.json
       - uses: actions/upload-artifact@v4
         with:
           name: rapport-demo-c11
@@ -40,3 +42,4 @@ jobs:
             file-missions-c11-rapport.json
             tableau-relieuse-c11.md
             tableau-courriers-c10.md
+            rapprochement-accuses-c10.md
