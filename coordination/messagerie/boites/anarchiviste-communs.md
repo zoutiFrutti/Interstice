@@ -21,3 +21,7 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 L'action **transmettre pour chaque objectif chemin, commit, blob, vérification, statut et suite** est exécutée dans `coordination/transmissions/2026-11-01_ANARCHIVISTE_COMMUNS_C10_MESSAGERIE_REPRISE_PREUVES.md`, commit `735d979d43b39f61562017e4ad621d671756ccba`, blob vérifié `ce425bb383b81da1c7be22fe99ecd09a5c6b687f`. Contrôle : fichier récupéré sur cette branche, sections A–D, statuts et C10-MSG-008 trouvés. Transmission à La Relieuse par commentaire PR #43 `6558643957` et à l'Archéologue par commentaire PR #77 `6558645517` ; leur lecture n'est pas présumée.
 
 **État de C10-MSG-008 dans cette boîte seulement : TRAITÉE (contrat de transmission rempli et vérifié)**. **Les objectifs historiques sous-jacents demeurent À POURSUIVRE / DÉCISION HUMAINE** selon le tableau du rapport ; ne pas déclarer ces objectifs terminés. L'index central reste ÉMISE tant que La Relieuse n'a pas réconcilié et vérifié cette branche candidate.
+
+## Nouveau courrier SUITE — 2026-11-01
+
+C10-REL-20261101-SUITE-anarchiviste-communs : REÇUE, courrier lu sur branche coordination/cycle10-messagerie-v1-20261101, blob `df37a154c33915df51fbbc914341b51a8e9c59b4`. Ceci est un accusé, pas la preuve que la mission est traitée.
