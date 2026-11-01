@@ -19,3 +19,18 @@ Accusé relu sur `juriste/cycle10-messagerie-reprise-20261101` : `coordination/m
 
 ## Décision de coordination
 Porte A reste **ATTENTE** tant que les six blobs Juriste et la confrontation Lectrice ne sont pas attestés. La sous-opération Archéologue 4/4 est **TERMINÉE** ; aucune objection historique levée par ce seul contrôle.
+
+## Passe 11 — six contrôles Juriste effectivement vérifiés
+
+Les chemins exacts proviennent de la liste des fichiers modifiés de PR #75. Lecture directe sur `juriste/cycle10-verdicts-cinq-pages-20261101` ; **6/6 blobs identiques** aux empreintes de l'accusé :
+
+| Livrable | Blob vérifié | Verdict |
+|---|---|---|
+| `coordination/juriste/cycle10/CONTROLE_1_ENFANCE_2026-11-01.md` | `3c4d903d501e9899eb0475971facd8a169b4b370` | Blocage maintenu |
+| `coordination/juriste/cycle10/CONTROLE_2_MIGRATIONS_2026-11-01.md` | `9f0340011a6f4fec0611be0281fe32788387f0c1` | Correction nécessaire |
+| `coordination/juriste/cycle10/CONTROLE_3_LOGEMENT_2026-11-01.md` | `e2131973431dc50245350379aafbf4c98e73c099` | Correction nécessaire |
+| `coordination/juriste/cycle10/CONTROLE_4_POLICE_MEMOIRE_2026-11-01.md` | `b6f39faa050a7226eca9782de00c8ea5ec76934c` | Blocage maintenu |
+| `coordination/juriste/cycle10/CONTROLE_5_SANTE_2026-11-01.md` | `08902c8b75165be3a14740f8cba7c916808167e6` | Blocage maintenu |
+| `coordination/juriste/cycle10/MATRICE_JURIDIQUE_P0_C10_2026-11-01.md` | `5a8db168ebba41783a88dba5453b95d4ffb8204e` | Matrice candidate |
+
+**Sous-étape de vérification des fichiers : TERMINÉE (Juriste 6/6, Archéologue 4/4).** Porte A **ATTENTE** : confrontation indépendante avec La Lectrice, traitement des trois blocages et deux corrections. Aucune publication, fusion ou visa déduit de ces empreintes.
