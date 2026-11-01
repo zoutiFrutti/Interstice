@@ -7,6 +7,6 @@ Sources lues : `coordination/messagerie/README.md` blob `6ac46221b04c07a7e3b004f
 | C10-MSG-003 | REÇUE le 2026-11-01, lecture et comparaison de l'index effectuées | **À POURSUIVRE** : mapping 139 disponible, finalisation des alias/statuts impossible sans matrices finales | Porte B : Médiathèque (71 FN/alias), Lectrice (statuts), Biographe (fiches) |
 | C10-MSG-008 | REÇUE le 2026-11-01, protocole de preuve compris | **TRAITÉE pour la demande de preuves** lorsque la transmission du présent cycle est déposée avec SHAs vérifiés ; pas de clôture collective présumée | Aucune pour l'accusé, Relieuse pour consolidation |
 
-Accusé créé par le commit qui ajoute ce fichier. Le SHA exact de ce commit est consigné dans le commit ultérieur de contrôle et dans le commentaire à La Relieuse ; ne pas inventer un SHA auto-référent dans ce premier commit. **Ce fichier ne modifie ni l'index ni la boîte de la branche de La Relieuse.** La V1 ne notifie personne automatiquement.
+**Preuve de réception : commit `0db53fbebf8079c0bf388c4e8b6f288e3b44afc5`, fichier ajouté ; contrôle de présence par lecture GitHub, blob initial enregistré.** La mise à jour du fichier constitue un second commit, sans réécrire le courrier source. **Ce fichier ne modifie ni l'index ni la boîte de la branche de La Relieuse.** La V1 ne notifie personne automatiquement.
 
 Dossiers ÉCL, fiches FN, versions Lectrice et Biographe non promus au statut validé par simple présence GitHub. Les contenus restent non publiés.
