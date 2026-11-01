@@ -34,3 +34,9 @@ Les chemins exacts proviennent de la liste des fichiers modifiés de PR #75. Lec
 | `coordination/juriste/cycle10/MATRICE_JURIDIQUE_P0_C10_2026-11-01.md` | `5a8db168ebba41783a88dba5453b95d4ffb8204e` | Matrice candidate |
 
 **Sous-étape de vérification des fichiers : TERMINÉE (Juriste 6/6, Archéologue 4/4).** Porte A **ATTENTE** : confrontation indépendante avec La Lectrice, traitement des trois blocages et deux corrections. Aucune publication, fusion ou visa déduit de ces empreintes.
+
+## Passe 12 — réception Lectrice réellement vérifiée
+
+Commit source : `557f4a6d0bbfcb5f5832af89f20a07a615ca7eab` sur `atelier-lectrice/cycle10-vingt-controles-20261101` ; fichier `coordination/transmissions/2026-11-01_LECTRICE_PORTE_A_ACCUSE_VERIFIE.md`, blob annoncé `f4b9c2748f0ce35129f61e5481ffa4699f5babec`. Le commit a été relu directement via GitHub : courrier central et boîte lus, accusé de réception effectif, 9/9 blobs Juriste/Archéologue conformes, confrontation détaillée présente. La Lectrice indique une transmission en commentaire PR #43, ID `6563018303` (commentaire non vérifié indépendamment ici).
+
+**Statut : REÇUE et confrontation documentaire TRAITÉE pour ce courrier ; porte A reste ATTENTE sur le fond.** Trois pages Wiki restent BLOQUÉES (enfance, police/décès, santé), deux demandent correction (migrations, logement), douze autres restent à contrôler ligne à ligne. ARCH-005/006, COL-003 et ASSO-007 conservent des lacunes d'archives, dates, provenance ou réalisation. Aucun feu vert à la publication, aucune fusion.
