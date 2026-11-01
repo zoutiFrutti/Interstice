@@ -61,3 +61,6 @@ La version courte est **un résumé éditorial** et ne remplace pas la [version 
 **Références de provenance à conserver dans la longue version :** *Journal officiel* du 14 avril (Archives autonomies), Fondation Gabriel Péri, Le Moal (*Contretemps*), les notices Carnavalet 2020.0.36 / .154 / .155 / AFF5721, BHVP 2-AFF-003190, étude Eichner (1998), Rougerie, Dalotel. **Niveau de lecture :** originaux de presse et comptabilités non collationnés dans ce lot ; synthèse sans médias copiés.
 
 **Avis de La Lectrice : PRÊT À SOUMETTRE À ZOUT comme synthèse courte autonome, sans remplacement de la version longue ni datation définitive des statuts.** Avant tout arbitrage éditorial, vérifier les dates de *La Sociale* et les formulations qui pourraient laisser entendre une réalisation effective. **La version longue reste disponible et distincte**, sans écrasement et sans visa de Zout. **Première édition sous responsabilité éditoriale de Zout, non adoptée collectivement et non approuvée par Zout.**
+
+
+**Réserve documentaire du cycle 10 (Archéologue PR #70) :** l'affiche Carnavalet AFF5721, datée du 20 mai, convoque à une réunion le 21 mai à 13 h à la mairie du IVe ; elle ne prouve ni la tenue de la réunion, ni la constitution effective des chambres, ni l'ouverture et la rémunération des ateliers. Les dates de la presse et les versions longue/courte restent distinctes.
