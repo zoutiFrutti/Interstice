@@ -1566,3 +1566,20 @@ Proposition historique/scientifique de l'Archiviste examinée, avec trois axes E
 
 ## 2026-10-31 — Médiathèque — CYCLE 4, dossier ÉCL et renvois documentaires
 **Trois passes, candidates non publiques** : 11 ressources ÉCL-001/003 documentées, avec BL00D.MONEY identifiant et licence encore non confirmés et sans nouvelle notice EJAtlas ; 12 FN héritées sans changement d'identifiants ; 5 bibliographies courtes (écologie, démocratie, coopératives, contre-enquêtes, libertés) ; 4 propositions de renvois Wiki en place. [Rapport et sources](https://github.com/zoutiFrutti/Interstice/blob/coordination/relieur-pilote-10-passes-20261030/coordination/transmissions/2026-10-31_MEDIATHEQUE_CYCLE4_ECL_PARCOURS.md), commit `478adc7c170e86d6054cdb88d91dfaf2c4978650`. [La Relieuse — transmission déposée](https://github.com/zoutiFrutti/Interstice/blob/coordination/relieur-pilote-10-passes-20261030/coordination/RELIEUSE_DECISION_EDITORIALE_PRE_SORTIE_2026-10-31.md), commit `29f5b4337d1bd2601de8a40d9a797a85deed9544`. **No double corroboration Who Profits/AFSC sans vérifier sources amont.** Droits OpenCorporates/Transparency/EJAtlas différenciés. La Lectrice doit reprendre les objections ; aucune organisation partenaire, aucun média hébergé, aucune publication ni fusion.
+
+
+---
+
+## 2026-11-01 — La Relieuse — Cycle 8, convergence documentaire et audit transversal
+
+**Travail effectivement vérifié :** audit transversal des 17 ateliers enregistré sur la branche de coordination au commit `1c734bf8212673000f4a3f1e59dc930b719ae9f4`, fichier `coordination/audits/2026-11-01_CYCLE8_AUDIT_TRANSVERSAL_17_ATELIERS.md`. Transmissions de la Lectrice (blob `01299b8241c970dcc709ae6bc50f1fa92f396b72`), de la Juriste (blob `51af4e26f734f8346e467790ff48140ba8617086`), de la Développeuse (blob `1313d589fb9b8ca691a6fdad8e6417070ba6e637`), de la Graphiste (blob `5646e9ea741d7adadf160d3bbb1fd1351c9234cd`) et de la Responsable réseaux sociaux (blob `8daf6869876d722ae33e9cf9ed31ab4b1788cd12`) consultées. Les autres ateliers figurent dans l'audit avec niveau de preuve explicite ; pas de prétention de lecture exhaustive de toutes les conversations ou de tous les Drive.
+
+**Réconciliation éditoriale :** le premier tri des 24 Wiki (15 à corriger, 9 bloquées) est distinct du registre mixte ultérieur de 34 items (14 prêts à soumettre, 15 à corriger, 5 bloqués). Trois fiches historiques ARCH-005, COL-003, ASSO-007 sont désormais candidates prêtes **sous réserve** selon La Lectrice ; rapprochement indicatif 17 à soumettre, 12 Wiki à corriger, 5 bloqués. ARCH-002 et ARCH-007 conservent deux visas limités, sans droits médias validés ni autorisation de publication. Les 44 fiches Drive et 71 notices FN ne sont pas des publications automatiques.
+
+**Contradiction à transmettre :** le kit communication C8 mentionne encore la Charte des communs **V0.8**, tandis que le dossier juridique C8 examine la **V0.9 transitoire** (article 48) ; corriger la référence dans la branche source après vérification, sans présumer adoption. Le manifeste V2.6 et la charte éditoriale V0.1 restent candidats.
+
+**P0 non levé :** fonctions Supabase de contribution signalées actives côté serveur ; correctifs réversibles préparés par La Développeuse, non appliqués. Tests isolés, vérification des droits, autorisation humaine et rollback nécessaires avant déploiement. Graphiste : tests VoiceOver/TalkBack/NVDA physiques non exécutés ; PWA non démontrée.
+
+**Décisions réservées à Zout :** éventuelle adoption individuelle de textes fondateurs sur versions précises, visas par article, droits médias, autorisation distincte de publication et de changement de production. **Aucune fusion, publication, adoption collective, modification serveur ou communication externe.**
+
+**À poursuivre :** vérifier les derniers HEAD/CI de chaque atelier, collationner les originaux et licences, rapprocher les branches d'intégration, traiter les cinq pages sensibles et les douze corrections Wiki. Une transmission GitHub ne garantit pas sa réception automatique dans les conversations d'ateliers.
