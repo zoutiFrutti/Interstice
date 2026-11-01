@@ -2,6 +2,8 @@
 
 **Commande utilisateur pour chaque atelier :** `T'as du courrier` (aucun autre prompt à copier).
 
+**Règle anti-boîte vide :** chaque atelier doit relire sa boîte **sur la branche centrale** à chaque « T'as du courrier », même si sa branche personnelle ne contient aucun courrier. Si lecture impossible, signaler l'erreur, jamais « pas de courrier ». Consulter aussi l'index central. Voir `coordination/messagerie/README.md` (V2).
+
 **Branche de référence explicite :** `coordination/cycle10-messagerie-v1-20261101`. Chaque atelier connaît son rôle et doit lire `coordination/messagerie/boites/<role>.md`, puis le courrier C10-REL-20261101-<role> dans `coordination/messagerie/courriers/`. Ne pas présumer une fusion.
 
 ## Vague 1 — maintenant, sources et blocages P0
