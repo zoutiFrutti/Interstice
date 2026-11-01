@@ -41,3 +41,5 @@ Le titre interroge explicitement la pratique : la réponse documentaire est que 
 
 
 **Réserve documentaire du cycle 10 (Archéologue PR #70, transmission C9) :** la transcription du règlement du 3 mai et ses signataires décrivent des prescriptions (P), pas une approbation ni une exécution établies. L'affirmation de sept jours de fonctionnement est attribuée à Decouflé (T), sans livre de paie, procès-verbal ou registre primaire collationné. Affiche BHVP n°363 et règlement du 2 avril MP159 à confronter directement.
+
+**Contre-lecture supplémentaire C10 après réception C10-MSG-002 (ARCH-005 Archéologue, blob `52f9299423eb639d4538ee9801db8371798a560e`) :** la notice MP159 associe au règlement présenté comme daté du 2 avril une formule d'approbation attribuée à Frankel, tandis que sa désignation comme délégué au Travail est généralement placée vers les 20–21 avril. **Contradiction de datation ou d'attribution non résolue**, et non preuve d'un faux ni d'une approbation. Vérifier l'imprimé original, la nature de l'annotation et les procès-verbaux avant de dater l'aval. Le règlement du 3 mai reste un projet soumis à approbation, sans preuve d'exécution automatique.
