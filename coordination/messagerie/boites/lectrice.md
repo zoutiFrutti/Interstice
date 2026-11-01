@@ -14,3 +14,6 @@ Pour chaque message : réception datée, commit de l'accusé, livrable traité, 
 
 ## Courrier de reprise émis par La Relieuse — 2026-11-01
 - **C10-REL-20261101-lectrice** : ÉMISE ; lire `coordination/messagerie/courriers/C10-REL-20261101-lectrice.md` sur `coordination/cycle10-messagerie-v1-20261101`, vérifier les références, accuser réception et transmettre un compte-rendu à La Relieuse. Ne pas considérer ce dépôt comme un accusé.
+
+## Point d'entrée V2
+À chaque « T'as du courrier », consulter cette boîte et `MESSAGES_C10.md` sur la branche `coordination/cycle10-messagerie-v1-20261101`, jamais uniquement sur sa branche personnelle. Signaler une erreur de lecture plutôt qu'une boîte vide. Accuser réception avec SHA.
