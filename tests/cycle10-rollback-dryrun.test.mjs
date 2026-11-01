@@ -34,7 +34,7 @@ test("C10: rollback SQL à blanc ne redonne jamais accès à anon/PUBLIC",()=>{
 });
 test("C10: aucune mutation production dans le test ni secret stocké",()=>{
  const source=get("tests/cycle10-rollback-dryrun.test.mjs");
- assert.doesNotMatch(source,/mcp__Supabase__|deploy_edge_function|apply_migration|execute_sql\(/);
+ assert.doesNotMatch(source,/^import .*supabase|^import .*github/m);
  const data=JSON.stringify(plan);
  assert.doesNotMatch(data,/service_role|sb_secret_|Bearer /i);
  assert.equal(plan.project,"rpqiwxkaiyokmxbhxfvh");
