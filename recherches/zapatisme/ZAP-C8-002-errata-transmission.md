@@ -2,7 +2,7 @@
 2026-11-01 · Candidat documentaire, sans validation éditoriale.
 
 ## Errata vérifiée
-Le précédent fichier ZAP-C8-001 attribue « Cuarta Parte y Primera Alerta de Aproximación » au **6 novembre 2023** et fournit une URL /2023/11/06/. La publication espagnole consultée porte le **5 novembre 2023** : https://enlacezapatista.ezln.org.mx/2023/11/05/cuarta-parte-y-primera-alerta-de-aproximacion-varias-muertes-necesarias/ . Cette correction prime sur la date et l'URL du dossier précédent. Ne pas réutiliser l'URL du 6 sans vérification.
+Dans sa version initiale, désormais corrigée au cycle 9, ZAP-C8-001 attribuait « Cuarta Parte y Primera Alerta de Aproximación » au **6 novembre 2023** et fournit une URL /2023/11/06/. La publication espagnole consultée porte le **5 novembre 2023** : https://enlacezapatista.ezln.org.mx/2023/11/05/cuarta-parte-y-primera-alerta-de-aproximacion-varias-muertes-necesarias/ . Cette correction prime sur la date et l'URL du dossier précédent. Précision C10 : l'URL /2023/11/06/fourth-part-and-first-approach-alert-several-necessary-deaths/ est **valide**, mais correspond à la traduction anglaise datée du 6 novembre, non à l'original espagnol du 5. Ne pas qualifier ce lien anglais d'inexistant. Source : https://enlacezapatista.ezln.org.mx/2023/11/06/fourth-part-and-first-approach-alert-several-necessary-deaths/ .
 
 ## Contrôle croisé des originaux
 - Source du 5 novembre : MAREZ et JBG dissous, leurs nouveaux accords interdits ; accords antérieurs conservés jusqu'à expiration ; Caracoles maintenus mais fermés à l'extérieur jusqu'à nouvel avis. Ne pas écrire que les Caracoles ont été supprimés.
