@@ -411,9 +411,9 @@
       "source_url_catalogue": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
       "rights_claim_catalogue": null,
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "SOURCE_DIRECTE_WEB_C10",
+      "url_check_c10": "SOURCE_OUVERTE_C10",
+      "rights_check_c10": "MENTION_DE_DROITS_CONSTATEE_SOURCE_C10",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -439,10 +439,11 @@
         }
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
-      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "rights_status": "MENTION_SOURCE_VERIFIEE_REPRODUCTION_NON_AUTORISEE_SANS_REVUE",
+      "url_status": "SOURCE_OUVERTE_C10",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Crédits page épisode 26 et CC BY 4.0 ; traduction Valvin/CalimeroTeknik, corrections Midgard/David Revoy/Nicolas Artance"
     },
     {
       "id": "FN-018",
@@ -472,9 +473,9 @@
       "source_url_catalogue": "https://seedsforchange.org.uk/downloads/consensus.pdf",
       "rights_claim_catalogue": null,
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "SOURCE_DIRECTE_WEB_C10",
+      "url_check_c10": "SOURCE_OUVERTE_C10",
+      "rights_check_c10": "MENTION_DE_DROITS_CONSTATEE_SOURCE_C10",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -500,10 +501,11 @@
         }
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
-      "rights_status": "MENTION_DROITS_NON_EXTRAITE_CONTROLE_MANUEL_REQUIS",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "rights_status": "MENTION_SOURCE_VERIFIEE_REPRODUCTION_NON_AUTORISEE_SANS_REVUE",
+      "url_status": "SOURCE_OUVERTE_C10",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "PDF Seeds for Change 80 pages ouvert, conditions anti-copyright à vérifier juridiquement, pas licence CC"
     },
     {
       "id": "FN-020",
@@ -610,9 +612,9 @@
       "source_url_catalogue": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm",
       "rights_claim_catalogue": "licence Creative Commons Attribution 3.0 (CC BY 3.0) affichée, avec attribution au collectif ; la licence YouTube a été contrôlée par un réviseur Wikimedia le 3 décembre 2017. Réutilisation autorisée sous attribution selon cette licence, sous réserve des droits de tiers et du respect des personnes et savoirs représentés. Vérification : A pour métadonnées, fichier, sous-titres et licence revue ; C pour contenu intégral non visionné et consentement",
       "consultation_claim_catalogue": "A pour métadonnées, fichier, sous-titres et licence revue ; C pour contenu intégral non visionné et consentements culturels non audités. Source primaire : fiche Wikimedia Commons consultée le 29/10/2026.",
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "SOURCE_DIRECTE_WEB_C10",
+      "url_check_c10": "SOURCE_OUVERTE_C10",
+      "rights_check_c10": "MENTION_DE_DROITS_CONSTATEE_SOURCE_C10",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -638,10 +640,11 @@
         }
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
-      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "rights_status": "MENTION_SOURCE_VERIFIEE_REPRODUCTION_NON_AUTORISEE_SANS_REVUE",
+      "url_status": "SOURCE_OUVERTE_C10",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Commons CC BY 3.0 Unported, crédit Indigenous Community Video Collective - NE India, revue de licence 03/12/2017"
     },
     {
       "id": "FN-025",
@@ -923,9 +926,9 @@
       "source_url_catalogue": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20",
       "rights_claim_catalogue": "texte APC diffusé sous LICENCE LIBRE CC BY 4.0 selon pied de page « sauf mention contraire », sous réserve d'éléments de tiers ; ce n'est ni le domaine public ni simplement « gratuit ». Vérification A pour accès direct FR/EN, organisme, texte et licence du site ; B pour provenance précise de chaque traduction/illustration et réutilisation de tiers. Passages effectivement consultés : préambule, accès, gouvernance, économie, consentement, données p",
       "consultation_claim_catalogue": null,
-      "source_evidence": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
-      "url_check_c10": "NON_TESTE_C10",
-      "rights_check_c10": "NON_TESTE_C10",
+      "source_evidence": "SOURCE_DIRECTE_WEB_C10",
+      "url_check_c10": "SOURCE_OUVERTE_C10",
+      "rights_check_c10": "MENTION_DE_DROITS_CONSTATEE_SOURCE_C10",
       "full_read_or_view_c10": false,
       "hosting_allowed": false,
       "alias_of": null,
@@ -951,10 +954,11 @@
         }
       },
       "author_edition_status": "ATTRIBUTION_ET_EDITION_TRANSCRITES_DU_CATALOGUE_NON_RECONTROLEES",
-      "rights_status": "DECLARATION_CATALOGUE_NON_VERIFIEE_SUR_SOURCE",
-      "url_status": "URL_EXTRAITE_NON_TESTEE",
+      "rights_status": "MENTION_SOURCE_VERIFIEE_REPRODUCTION_NON_AUTORISEE_SANS_REVUE",
+      "url_status": "SOURCE_OUVERTE_C10",
       "reading_status": "AUCUNE_LECTURE_INTEGRALE_EFFECTUEE_C10",
-      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS"
+      "reproduction_status": "INTERDITE_SANS_REVUE_DE_DROITS",
+      "source_review_notes": "Texte français APC ouvert ; licence de site par défaut CC BY 4.0, exceptions/éléments tiers à vérifier"
     },
     {
       "id": "FN-039",
@@ -1718,7 +1722,8 @@
     ],
     "selected": 12,
     "alias_count": 2,
-    "current_url_tests": 0
+    "current_url_tests": 4,
+    "source_rights_mentions_checked": 4
   },
   "quality_control": {
     "missing_original_notice": [
@@ -1743,7 +1748,7 @@
       "FN-067"
     ],
     "urls_present": 70,
-    "urls_currently_tested": 0,
+    "urls_currently_tested": 4,
     "author_edition_reverified": 0,
     "duplicates_preserved": [
       "FN-048",
