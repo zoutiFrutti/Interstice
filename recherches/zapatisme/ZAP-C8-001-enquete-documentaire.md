@@ -10,7 +10,7 @@ Date : 2026-11-01. Atelier : Anarchiviste zapatiste. Statut : travail candidat, 
 - Décembre 2023 : proposition de terres de travail commun sans propriété attribuée.
 
 ## Sources primaires vérifiées
-1. EZLN, 6 novembre 2023, Fourth Part and First Approach Alert, https://enlacezapatista.ezln.org.mx/2023/11/06/fourth-part-and-first-approach-alert-several-necessary-deaths/ : suppression des anciennes instances ; maintien des accords antérieurs avec ONG jusqu'à expiration, impossibilité d'en conclure de nouveaux avec ces instances.
+1. EZLN, 5 novembre 2023, Cuarta Parte y Primera Alerta de Aproximación. Varias Muertes Necesarias, https://enlacezapatista.ezln.org.mx/2023/11/05/cuarta-parte-y-primera-alerta-de-aproximacion-varias-muertes-necesarias/ : suppression des anciennes instances ; maintien des accords antérieurs avec ONG jusqu'à expiration, impossibilité d'en conclure de nouveaux avec ces instances.
 2. EZLN, 12 novembre 2023, Novena Parte, https://enlacezapatista.ezln.org.mx/2023/11/12/novena-parte-la-nueva-estructura-de-la-autonomia-zapatista/ : GAL soumis aux assemblées, CGAZ coordination, ACGAZ zones ; annonce de milliers de GAL, non vérifiée indépendamment.
 3. Traduction française du communiqué précédent, publiée le 1er décembre 2023, https://enlacezapatista.ezln.org.mx/2023/12/01/neuvieme-partie-la-nouvelle-structure-de-lautonomie-zapatiste/ ; ne pas confondre date de traduction et date originale.
 4. EZLN, 20 décembre 2023, El Común y la No Propiedad, https://enlacezapatista.ezln.org.mx/2023/12/20/vigesima-y-ultima-parte-el-comun-y-la-no-propiedad/ : distinction travail familial, collectif, commun ; proposition portant sur une partie des terres récupérées, et non abolition générale de la propriété.
@@ -19,7 +19,7 @@ Date : 2026-11-01. Atelier : Anarchiviste zapatiste. Statut : travail candidat, 
 - La disparition des MAREZ/JBG ne signifie pas disparition de toute autonomie zapatiste : les communiqués décrivent leur remplacement.
 - Les nouvelles structures sont décrites par l'EZLN ; leur implantation effective en 2024-2026 reste à documenter par sources indépendantes.
 - La non-propriété est une proposition d'usage des terres récupérées ; ne pas l'assimiler à un changement général du droit foncier mexicain.
-- Les engagements ONG préexistants ne sont pas tous annulés : le texte du 6 novembre précise leur maintien jusqu'à échéance.
+- Les engagements ONG préexistants ne sont pas tous annulés : le texte du 5 novembre précise leur maintien jusqu'à échéance.
 - Ne pas assimiler les peuples autochtones et le mouvement zapatiste à l'anarchisme européen ; comparaison des mécanismes uniquement.
 
 ## Dossiers candidats
