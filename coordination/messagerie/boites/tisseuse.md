@@ -8,3 +8,6 @@
 
 ## À renseigner par l'atelier
 Pour chaque message : réception datée, commit de l'accusé, livrable traité, commit/blob SHA, vérification réellement effectuée, blocage éventuel. Ne jamais remplacer ÉMISE par REÇUE sans lecture et accusé.
+
+## Courrier de reprise — 2026-11-01
+- **C10-REL-20261101-tisseuse** : ÉMISE. Lire `coordination/messagerie/courriers/C10-REL-20261101-tisseuse.md` sur `coordination/cycle10-messagerie-v1-20261101`. Accuser réception après lecture, agir, puis transmettre compte-rendu et propositions de courriers à La Relieuse. Ne pas présumer réception.
