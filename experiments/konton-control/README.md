@@ -254,3 +254,19 @@ Le mode Android dispose désormais d'une vérification de PR publique dans l'ong
 - Aucun jeton, aucun stockage persistant, aucun POST et aucune commande sur les agents. L'APK reste autonome et les dépôts privés restent inaccessibles.
 - L'inspecteur est fixé au dépôt public Interstice pour éviter toute fuite ou prétendue consultation privée.
 - Test automatique de l'inspecteur et de son intégration Android ajouté. Un essai sur le Crosscall est encore nécessaire.
+
+
+## V1.1 · Coordination des ateliers, premier module Cycles
+
+Sources relues sur la branche candidate coordination/cycle10-messagerie-v1-20261101 : protocole README, index MESSAGES_C10 (huit lignes initialement ÉMISE), dépendances (cinq portes ATTENTE), ordre des seize ateliers en trois vagues, et protocole de commandes V2 candidat.
+
+**Attention à la contradiction de gouvernance :** la messagerie V1/V2 candidate impose que les ateliers transmettent leurs courriers à La Relieuse avant distribution. Or une consigne antérieure demandait de pouvoir écrire directement à tout atelier, individuellement ou à plusieurs. Ce point reste à décider par Zout : l'application ne fige aucune politique de distribution.
+
+Le module mobile Cycles affiche en lecture seule trois documents publics sur la branche candidate :
+- index des courriers C10 et statut documentaire, jamais une notification prouvée ;
+- portes A à E, conservées en ATTENTE tant que leurs preuves ne sont pas vérifiées ;
+- ordre de relance à seize ateliers. Les commandes T'as du courrier, Analyse le cycle et Continue le cycle sont proposées **en copie uniquement**, et ne déclenchent aucune conversation ni tâche distante.
+
+Ce n'est pas une messagerie en temps réel. L'application ne peut pas observer directement les chats distincts des ateliers, leur accusé de réception ni leur exécution. Elle ne transforme pas une PR, un fichier de boîte ou un délai écoulé en preuve de réception. Les autorisations de clôture, fusion, publication et adoption restent humaines. Les branches candidates ne sont jamais présumées fusionnées.
+
+Test statique : test-cycles.cjs. À venir : protocole arbitré, état par atelier avec preuves contrôlées, source d'authentification côté serveur et intégration de véritables commandes validées, sans accès indiscriminé aux comptes.
