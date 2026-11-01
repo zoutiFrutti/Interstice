@@ -1,0 +1,37 @@
+name: Lancer une mission C11
+on:
+  workflow_dispatch:
+    inputs:
+      mission_id:
+        description: "Identifiant de mission (lettres, chiffres, tirets)"
+        required: true
+        type: string
+      urls:
+        description: "URLs a controler, une par ligne (20 maximum)"
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  mission:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tests
+        run: python3 -m unittest discover -s coordination/agents -p 'test_*.py'
+      - name: Creer la mission
+        env:
+          MISSION_ID: ${{ inputs.mission_id }}
+          MISSION_URLS: ${{ inputs.urls }}
+        run: |
+          python3 coordination/agents/creer_mission_c11.py --id "$MISSION_ID" --urls "$MISSION_URLS"
+      - name: Executer la mission
+        run: |
+          python3 coordination/agents/mission_queue_c11.py --entree mission-utilisateur-c11.json --sortie rapport-mission-utilisateur-c11.json
+      - name: Conserver les resultats
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-mission-utilisateur-c11
+          path: |
+            mission-utilisateur-c11.json
+            rapport-mission-utilisateur-c11.json
