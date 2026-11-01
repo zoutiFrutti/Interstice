@@ -1,0 +1,115 @@
+{
+  "schema": "tis-c8-index-candidat-v1",
+  "verification_date": "2026-11-01",
+  "status": "CANDIDAT_INTERNE",
+  "entries": [
+    {
+      "id": "tis-c8-testet",
+      "territory": "Lisle-sur-Tarn / Tescou",
+      "name": "Testet / concertation sur l'eau",
+      "official_source": "https://www.igedd.developpement-durable.gouv.fr/appui-a-l-aboutissement-du-projet-de-territoire-a4159.html",
+      "published_at": "2025-05-23",
+      "relationship": "R1",
+      "limits": "rapport institutionnel ; activité du collectif non établie",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    },
+    {
+      "id": "tis-c8-salvetat",
+      "territory": "Monestiés, Tarn",
+      "name": "Les Chlorophy'liens / La Salvetat",
+      "official_source": "https://fermes.terredeliens.org/midi-pyrenees/fermes-de-la-r%C3%A9gion-midi-pyr%C3%A9n%C3%A9es/la-salvetat/",
+      "published_at": null,
+      "relationship": "R2_externe_chantier_2025",
+      "limits": "chantier terminé ; visite actuelle inconnue",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    },
+    {
+      "id": "tis-c8-vrac",
+      "territory": "Toulouse",
+      "name": "VRAC Toulouse",
+      "official_source": "https://toulouse.vrac-asso.org/adherer-commander/",
+      "published_at": null,
+      "relationship": "R2_reseau_VRAC",
+      "limits": "adhésion et liste d'attente ; disponibilité inconnue",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    },
+    {
+      "id": "tis-c8-jardins",
+      "territory": "Toulouse",
+      "name": "Partageons les Jardins",
+      "official_source": "https://www.partageonslesjardins.fr/",
+      "published_at": null,
+      "relationship": "R2_externe_declare",
+      "limits": "règles dépendantes de chaque jardin",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    },
+    {
+      "id": "tis-c8-glanerie",
+      "territory": "Toulouse / Blagnac",
+      "name": "La Glanerie",
+      "official_source": "https://www.la-glanerie.org/",
+      "published_at": null,
+      "relationship": "R0",
+      "limits": "horaires et services à vérifier",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    },
+    {
+      "id": "tis-c8-velo",
+      "territory": "Toulouse",
+      "name": "Maison du Vélo",
+      "official_source": "https://www.maisonduvelotoulouse.com/atelier-participatif-reparation/",
+      "published_at": null,
+      "relationship": "R0",
+      "limits": "adhésion et horaires à confirmer",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    },
+    {
+      "id": "tis-c8-3pa",
+      "territory": "Lahage",
+      "name": "3PA / Bordanova",
+      "official_source": "https://www.3paformation.fr/",
+      "published_at": null,
+      "relationship": "R0",
+      "limits": "inscriptions et places non confirmées",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    },
+    {
+      "id": "tis-c8-tdl",
+      "territory": "Occitanie",
+      "name": "Terre de Liens Midi-Pyrénées",
+      "official_source": "https://terredeliens.org/midi-pyrenees/",
+      "published_at": null,
+      "relationship": "R2_externe_salve",
+      "limits": "foncier disponible non établi",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    },
+    {
+      "id": "tis-c8-sctl",
+      "territory": "Larzac",
+      "name": "SCTL",
+      "official_source": "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/",
+      "published_at": null,
+      "relationship": "R1",
+      "limits": "terres et emplois disponibles non établis",
+      "location_coordinates": null,
+      "interstice_partnership": false,
+      "public_listing_authorized": false
+    }
+  ]
+}
