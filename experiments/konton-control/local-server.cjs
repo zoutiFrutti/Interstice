@@ -33,6 +33,7 @@ const assets = new Map([
   ["/index.html", ["index.html", "text/html; charset=utf-8"]],
   ["/app.js", ["app.js", "text/javascript; charset=utf-8"]],
   ["/github-status.js", ["github-status.js", "text/javascript; charset=utf-8"]],
+  ["/pr-inspector.js", ["pr-inspector.js", "text/javascript; charset=utf-8"]],
   ["/task-board.js", ["task-board.js", "text/javascript; charset=utf-8"]],
   ["/ai-board.js", ["ai-board.js", "text/javascript; charset=utf-8"]],
   ["/pwa.js", ["pwa.js", "text/javascript; charset=utf-8"]],
