@@ -474,6 +474,20 @@
         "source": "https://medias.boutique.lab.arte.tv/prod/arte_boutique_dvds.pdf",
         "level": "catalogue éditeur",
         "impact": "noter version et durée avant attribution des archives"
+      },
+      {
+        "id": "ECL004-CIC-2016-MINUTES",
+        "evidence": "Index CIC mentionne Acta de la 1a Assemblea General Global: assemblée le 14 mai 2016 à Mas Malleu, débats et accords sur plan de décentralisation initié octobre 2015; contenu intégral du PV non collationné",
+        "source": "https://cooperativa.cat/category/assemblea-bioregional",
+        "level": "notice d'archive interne attestant un compte rendu, pas preuve de transfert financier",
+        "impact": "corrige 'seulement projet' vers délibération tenue, exécution à documenter"
+      },
+      {
+        "id": "ECL005-CIC-AUDIOVISUAL",
+        "evidence": "Index audiovisuel CIC cite Poble Rebel, Projekt A et rencontre des coopératives intégrales 2017; métadonnées complètes, disponibilité et droits non vérifiés",
+        "source": "https://cooperativa.cat/category/audiovisuals",
+        "level": "index primaire de pistes, non fiches validées",
+        "impact": "transmettre au catalogue existant, sans créer de doublon"
       }
     ]
   }
