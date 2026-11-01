@@ -18,7 +18,11 @@ jobs:
           python3 -m unittest discover -s coordination/agents -p 'test_*.py'
       - name: Produire un rapport de demonstration
         run: python3 coordination/agents/demo_c11.py --sortie rapport-demo-c11.json
+      - name: Produire un rapport lisible
+        run: python3 coordination/agents/rapport_c11.py
       - uses: actions/upload-artifact@v4
         with:
           name: rapport-demo-c11
-          path: rapport-demo-c11.json
+          path: |
+            rapport-demo-c11.json
+            rapport-demo-c11.md
