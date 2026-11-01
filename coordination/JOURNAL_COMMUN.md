@@ -1583,3 +1583,21 @@ Proposition historique/scientifique de l'Archiviste examinée, avec trois axes E
 **Décisions réservées à Zout :** éventuelle adoption individuelle de textes fondateurs sur versions précises, visas par article, droits médias, autorisation distincte de publication et de changement de production. **Aucune fusion, publication, adoption collective, modification serveur ou communication externe.**
 
 **À poursuivre :** vérifier les derniers HEAD/CI de chaque atelier, collationner les originaux et licences, rapprocher les branches d'intégration, traiter les cinq pages sensibles et les douze corrections Wiki. Une transmission GitHub ne garantit pas sa réception automatique dans les conversations d'ateliers.
+
+
+---
+
+## 2026-11-01 — La Relieuse — Cycle 9, passe de convergence et rectification d'un blocage devenu obsolète
+
+**Lectures GitHub vérifiées :** PR #52, #64, #67, #68, #69, #70 ; branches C8 retrouvées ; transmission Archéologue des communs `coordination/transmissions/2026-11-01_ARCHEOLOGUE_COMMUNS_CYCLE8_TRACES_RESERVES.md` blob `b847caef714fb414e9300a27ba461752cefe9654` ; kit communication C8 blob **actuel** `3241292b461172adea5ffd933caf918d34bf2d5f`.
+
+**Correction importante de l'entrée C8 précédente :** la divergence de référence à la Charte communs V0.8 dans le kit de communication a **été corrigée sur sa branche source**. Le kit précise désormais « Charte des communs V0.9 transitoire candidate, non adoptée » et conserve V0.8 comme étape historique. Ne pas reclasser cette anomalie comme tâche ouverte sans nouvelle preuve. Cela n'autorise aucune communication externe.
+
+**PR #69 :** deux dossiers ZAP candidats et erratum de date/URL 5 novembre 2023 (non 6), selon la PR. Les pièces et conséquences historiques restent à relire ; ne pas déclarer visa. **PR #70 :** projet de règlement des ateliers du Louvre ≠ preuve d'application ; chiffres contradictoires sur la composition du Club des prolétaires ; affiches Union des femmes ≠ preuves de réalisation. Original des pièces et registres manquants.
+
+**Livrables de coordination C9 enregistrés sur cette branche :**
+- `coordination/cycle9/REGISTRE_UNIQUE_C9_2026-11-01.md`, commit `ca5f8343ebec5ca21085099be723d59e6b10d42b` ; statuts par atelier, preuves, réserves.
+- `coordination/cycle9/TABLEAU_AVANCEMENT_ET_DEPENDANCES_C9_2026-11-01.md`, commit `9f1eeb7202ab4c94eaf953e37fdda30e7480194e` ; propriétaires et critères de sortie.
+- `coordination/cycle9/DOSSIER_DECISIONS_ZOUT_C9_2026-11-01.md`, commit `855acaf01e0e4bd8a1206ab94686a807f7fffc86` ; décisions à réserver, accords déjà exprimés préservés.
+
+**État :** coordination candidate et rectification documentaire accomplies ; P0 serveur, intégration sur HEAD unique, licences et visas restent ouverts. Aucun test applicatif, accès de production, fusion, adoption ou publication réalisés par La Relieuse. La lecture de PR ne garantit pas que toutes les conversations ont été consultées ni que leurs auteurs ont reçu ce Journal.
