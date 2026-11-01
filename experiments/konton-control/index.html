@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
   <script src="./github-status.js" defer></script>
+  <script src="./pr-inspector.js" defer></script>
   <script src="./task-board.js" defer></script>
   <script src="./ai-board.js" defer></script>
   <script src="./pwa.js" defer></script>
@@ -81,6 +82,17 @@
         <button id="github-refresh" class="small-btn" type="button">Actualiser les données</button>
       </div>
       <p class="github-feedback" id="github-feedback" role="status" aria-live="polite">Lecture non démarrée.</p>
+      <section class="pr-inspector" aria-labelledby="pr-inspector-title">
+        <h3 id="pr-inspector-title">Vérifier une PR précise</h3>
+        <p class="subtle">Pour Interstice public : état, commit exact et CI liée à ce commit. Lecture uniquement, sans approbation.</p>
+        <form id="pr-inspect-form" class="pr-inspect-form">
+          <label for="pr-inspect-number">Numéro de PR</label>
+          <input id="pr-inspect-number" type="number" min="1" max="99999999" step="1" value="39" required inputmode="numeric">
+          <button id="pr-inspect-button" class="small-btn" type="submit">Vérifier</button>
+        </form>
+        <p id="pr-inspect-feedback" class="github-feedback" role="status" aria-live="polite">Aucune vérification lancée.</p>
+        <div id="pr-inspect-result" aria-label="Résultat de la vérification PR"></div>
+      </section>
       <div id="github-dashboard" class="github-dashboard" aria-label="Données GitHub de lecture seule"></div>
       <p class="github-fineprint">En mode web, seuls les dépôts publics sont consultables. Les dépôts privés nécessitent la passerelle locale, sans jeton dans le navigateur. Les états CI affichent des exécutions précises, pas une certification du projet.</p>
     </section>
