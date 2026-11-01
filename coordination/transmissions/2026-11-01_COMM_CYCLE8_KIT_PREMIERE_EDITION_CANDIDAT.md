@@ -23,7 +23,7 @@ Une notice de Médiathèque ne confère pas les droits sur une œuvre tierce. Un
 **Bio courte (profil, 200–300 caractères)** : « La Faille noire × Interstice : initiative individuelle de Zout. Wiki expérimental et recherches documentaires sur l'histoire, l'écologie, la démocratie et les communs. Textes et parcours en préparation. Aucun collectif constitué. »
 
 **Post court (sans promesse de lancement)** :
-« Interstice est un chantier documentaire, pas une institution déjà en place. Certaines pages Wiki et une Bibliothèque sont visibles dans le dépôt public. Les biographies, enquêtes et parcours critiques restent en préparation. Zout porte seul l'initiative pour l'instant. Notre méthode : sources, contradictions, crédits et possibilité de correction. Pas de date de lancement annoncée. »
+« Interstice est un chantier documentaire, pas une institution déjà en place. Certaines pages Wiki et une Bibliothèque sont visibles dans le dépôt public. Les biographies, enquêtes et parcours critiques restent en préparation. Zout porte seul l'initiative pour l'instant. La méthode proposée : sources, contradictions, crédits et possibilité de correction. Pas de date de lancement annoncée. »
 
 **Carrousel général (6 écrans textuels, non maquettés)** :
 1. « Une initiative individuelle, portée par Zout ».
@@ -34,7 +34,7 @@ Une notice de Médiathèque ne confère pas les droits sur une œuvre tierce. Un
 6. « Sources, contradictions, droits, sécurité et visa avant publication ».
 
 **Vidéo verticale : script 45–60 secondes, sans média externe** :
-« Qu'est-ce qu'Interstice ? Un projet de documentation porté aujourd'hui par une seule personne, Zout. Il cherche à relier des connaissances et des sources sur les luttes, l'écologie, la démocratie et les communs. Le Wiki expérimental possède déjà des pages et une bibliothèque dans son dépôt public. D'autres dossiers, notamment les enquêtes historiques et trois parcours critiques, sont encore en préparation. Notre méthode consiste à montrer d'où viennent les informations, ce qu'elles établissent et ce qu'elles ne permettent pas d'affirmer. Les textes fondateurs sont candidats, et aucune organisation collective n'est constituée. Les publications futures dépendront des vérifications, de la sécurité et de décisions humaines explicites. »
+« Qu'est-ce qu'Interstice ? Un projet de documentation porté aujourd'hui par une seule personne, Zout. Il cherche à relier des connaissances et des sources sur les luttes, l'écologie, la démocratie et les communs. Le Wiki expérimental possède déjà des pages et une bibliothèque dans son dépôt public. D'autres dossiers, notamment les enquêtes historiques et trois parcours critiques, sont encore en préparation. La méthode proposée consiste à montrer d'où viennent les informations, ce qu'elles établissent et ce qu'elles ne permettent pas d'affirmer. Les textes fondateurs sont candidats, et aucune organisation collective n'est constituée. Les publications futures dépendront des vérifications, de la sécurité et de décisions humaines explicites. »
 **Captions + transcription + sous-titres à produire avant tout export ; aucune voix, photographie ou musique tierce intégrée.**
 
 **Présentation Wiki (fiche)** : « Wiki expérimental de références et de pages thématiques ; contenu et navigation de première édition non intégralement validés. »
@@ -65,3 +65,6 @@ Piste Chipko : histoire située, femmes et communautés, pas de récit d'origine
 - Aucun chiffre d'audience, « ouverture des inscriptions », partenariat ou calendrier public sans preuve.
 
 **Nature du livrable : textes préparés pour La Relieuse et Zout ; aucun post envoyé.**
+
+## 7. Relecture corrective — 1er novembre 2026
+La formulation « notre méthode » a été remplacée dans les supports courts afin de ne pas impliquer une équipe humaine constituée. Il reste autorisé d'employer « nous » dans une citation historique explicite, jamais comme personne morale actuelle du projet. Pour les formats vidéo, chaque déclaration « publié » doit se rattacher à une URL de production réellement visitée et une fiche approuvée ; jusqu'alors rester sur « présent dans le dépôt ». La mention de « texte original » signifie une proposition rédactionnelle nouvelle, sans garantie de protection d'un éventuel extrait issu des sources. Tout support est non diffusé.
