@@ -123,8 +123,8 @@
     {
       "id": "FN-017",
       "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
-      "current_url_check": "NON_TESTE_CYCLE9",
-      "license_check": "NON_RECONTROLE_CYCLE9",
+      "current_url_check": "PAGE_OU_PDF_OUVERT_2026-11-01",
+      "license_check": "MENTION_SOURCE_CONTROLEE_2026-11-01",
       "publication_approved": false
     },
     {
@@ -137,8 +137,8 @@
     {
       "id": "FN-019",
       "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
-      "current_url_check": "NON_TESTE_CYCLE9",
-      "license_check": "NON_RECONTROLE_CYCLE9",
+      "current_url_check": "PAGE_OU_PDF_OUVERT_2026-11-01",
+      "license_check": "MENTION_SOURCE_CONTROLEE_2026-11-01",
       "publication_approved": false
     },
     {
@@ -172,8 +172,8 @@
     {
       "id": "FN-024",
       "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
-      "current_url_check": "NON_TESTE_CYCLE9",
-      "license_check": "NON_RECONTROLE_CYCLE9",
+      "current_url_check": "PAGE_OU_PDF_OUVERT_2026-11-01",
+      "license_check": "MENTION_SOURCE_CONTROLEE_2026-11-01",
       "publication_approved": false
     },
     {
@@ -270,8 +270,8 @@
     {
       "id": "FN-038",
       "catalogue_presence": "REPERÉ_DANS_CATALOGUE",
-      "current_url_check": "NON_TESTE_CYCLE9",
-      "license_check": "NON_RECONTROLE_CYCLE9",
+      "current_url_check": "PAGE_OU_PDF_OUVERT_2026-11-01",
+      "license_check": "MENTION_SOURCE_CONTROLEE_2026-11-01",
       "publication_approved": false
     },
     {
@@ -579,12 +579,17 @@
       "source_url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html",
       "rights_claim_from_prior_record": "CC BY 4.0 annoncée par l’éditeur/auteur ; conserver traduction et crédits",
       "access_prior_record": "PAGE_OUVERTE",
-      "access_cycle9": "NON_TESTE",
+      "access_cycle9": "PAGE_OU_PDF_OUVERT_2026-11-01",
       "consultation_level": "PAGE_ET_TRANSCRIPTION_PARTIELLE",
       "article_connexe": "wiki-culture-creation-acces-art.html",
       "media_reproduction_allowed_by_cycle9_review": false,
       "editorial_status": "CANDIDAT_RELECTURE",
-      "legal_status": "AVIS_JURISTE_REQUIS"
+      "legal_status": "LICENCE_SOURCE_CONSTATEE_DROITS_ANNEXES_A_VERIFIER",
+      "source_check_cycle9": {
+        "credit": "Traduction Valvin, CalimeroTeknik ; correction Midgard, David Revoy, Nicolas Artance",
+        "license": "CC BY 4.0, explicitement dans crédits épisode 26",
+        "url": "https://www.peppercarrot.com/fr/webcomic/ep26_Books-Are-Great.html"
+      }
     },
     {
       "id": "FN-019",
@@ -594,12 +599,17 @@
       "source_url": "https://seedsforchange.org.uk/downloads/consensus.pdf",
       "rights_claim_from_prior_record": "Mention anti-copyright du collectif, conditions propres à contrôler ; pas une licence CC standard",
       "access_prior_record": "PDF_80_PAGES_REPERE_CE_CYCLE_CAPTURE_INDISPONIBLE",
-      "access_cycle9": "NON_TESTE",
+      "access_cycle9": "PAGE_OU_PDF_OUVERT_2026-11-01",
       "consultation_level": "PAGE_DOCUMENTAIRE_OU_NOTICE_LUE_PAR_SECTIONS_PAS_INTEGRALE",
       "article_connexe": "wiki-decision-collective.html",
       "media_reproduction_allowed_by_cycle9_review": false,
       "editorial_status": "CANDIDAT_RELECTURE",
-      "legal_status": "AVIS_JURISTE_REQUIS"
+      "legal_status": "LICENCE_SOURCE_CONSTATEE_DROITS_ANNEXES_A_VERIFIER",
+      "source_check_cycle9": {
+        "credit": "Seeds for Change ; seconde édition 2020 ; 80 pages",
+        "license": "anti-copyright : copie/adaptation/distribution autorisées si œuvre finale reste anti-copyright, pas CC standard",
+        "url": "https://seedsforchange.org.uk/downloads/consensus.pdf"
+      }
     },
     {
       "id": "FN-022",
@@ -624,12 +634,17 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm",
       "rights_claim_from_prior_record": "CC BY 3.0 indiquée dans la notice existante ; droits liés aux savoirs et aux personnes distincts",
       "access_prior_record": "ACCES_NON_CONCLUANT",
-      "access_cycle9": "NON_TESTE",
+      "access_cycle9": "PAGE_OU_PDF_OUVERT_2026-11-01",
       "consultation_level": "NOTICE_OU_PAGE_SEULEMENT_PAS_LECTURE_INTEGRALE",
       "article_connexe": "wiki-ecologie-sociale-environnement.html",
       "media_reproduction_allowed_by_cycle9_review": false,
       "editorial_status": "CANDIDAT_RELECTURE",
-      "legal_status": "AVIS_JURISTE_REQUIS"
+      "legal_status": "LICENCE_SOURCE_CONSTATEE_DROITS_ANNEXES_A_VERIFIER",
+      "source_check_cycle9": {
+        "credit": "Indigenous Community Video Collective - NE India ; 15 octobre 2015 ; 4 min 53",
+        "license": "CC BY 3.0 Unported ; revue de licence Commons datée 3 décembre 2017",
+        "url": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm"
+      }
     },
     {
       "id": "FN-038",
@@ -639,12 +654,17 @@
       "source_url": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20",
       "rights_claim_from_prior_record": "CC BY 4.0 annoncée au catalogue APC, traduction et images à contrôler",
       "access_prior_record": "PAGE_OUVERTE_CE_CYCLE",
-      "access_cycle9": "NON_TESTE",
+      "access_cycle9": "PAGE_OU_PDF_OUVERT_2026-11-01",
       "consultation_level": "PAGE_DOCUMENTAIRE_OU_NOTICE_LUE_PAR_SECTIONS_PAS_INTEGRALE",
       "article_connexe": "wiki-liberte-numerique-ia-surveillance.html",
       "media_reproduction_allowed_by_cycle9_review": false,
       "editorial_status": "CANDIDAT_RELECTURE",
-      "legal_status": "AVIS_JURISTE_REQUIS"
+      "legal_status": "LICENCE_SOURCE_CONSTATEE_DROITS_ANNEXES_A_VERIFIER",
+      "source_check_cycle9": {
+        "credit": "APC, Principes féministes de l'internet 2.0 ; page FR",
+        "license": "CC BY 4.0 par défaut sur site APC, sauf mention contraire",
+        "url": "https://www.apc.org/fr/pubs/principes-feministes-de-linternet-20"
+      }
     },
     {
       "id": "FN-040",
@@ -740,7 +760,24 @@
     "selected_count": 12,
     "blocked_count": 8,
     "alias_count": 2,
-    "urls_live_tested": 0,
-    "full_works_read_or_viewed": 0
-  }
+    "urls_live_tested": 4,
+    "full_works_read_or_viewed": 0,
+    "licenses_source_checked": 4
+  },
+  "wikipedia_comparison": [
+    {
+      "topic": "Révolution sociale espagnole de 1936",
+      "url": "https://fr.wikipedia.org/wiki/Révolution_sociale_espagnole_de_1936",
+      "page_opened": true,
+      "coverage": "chronologie, Aragon, Catalogne, bibliographie",
+      "recommendation": "éviter article de synthèse redondant ; privilégier archives locales et sources commentées"
+    },
+    {
+      "topic": "Zapatisme",
+      "url": "https://fr.wikipedia.org/wiki/Zapatisme",
+      "page_opened": true,
+      "coverage": "autonomie, organisation, femmes, chronologie, bibliographie",
+      "recommendation": "éviter article général redondant ; parcours documentaire contextualisé"
+    }
+  ]
 }
