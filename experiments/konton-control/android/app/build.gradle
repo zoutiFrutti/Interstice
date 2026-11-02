@@ -10,8 +10,8 @@ android {
         applicationId 'fr.konton.control.preview'
         minSdk 26
         targetSdk 34
-        versionCode 11
-        versionName '1.1.0-preview'
+        versionCode 12
+        versionName '1.2.0-preview'
     }
 
     buildTypes {
@@ -36,7 +36,7 @@ dependencies {
 
 // Copy ONLY public/static frontend. No local server, private files, tokens or task histories.
 def webAssets = [
-    'index.html', 'styles.css', 'app.js', 'github-status.js', 'pr-inspector.js', 'cycles.js',
+    'index.html', 'styles.css', 'app.js', 'github-status.js', 'pr-inspector.js', 'cycles.js', 'workspaces.js',
     'task-board.js', 'ai-board.js', 'pwa.js', 'manifest.webmanifest',
     'sw.js', 'navigation.js', 'icons/konton-192.png', 'icons/konton-512.png'
 ]
