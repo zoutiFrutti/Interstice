@@ -1,0 +1,33 @@
+name: R4 Faille candidate verification
+on:
+  push:
+    branches: [integration/r4-dev-navigation-consolidee-candidate-20261102]
+  pull_request:
+    branches: [integration/r2-dev-navigation-faille-20261102]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verification:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check assets/faille-navigation.js
+      - run: node --test tests/r2-faille-navigation.test.mjs tests/r4-faille-navigation-regression.test.mjs
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - run: |
+          mkdir -p artifacts/faille
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/faille.log 2>&1 &
+          node --test tests/r2-faille-navigation.browser.test.mjs tests/r4-faille-navigation.browser.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r4-faille-captures
+          path: artifacts/faille/
+          if-no-files-found: warn
