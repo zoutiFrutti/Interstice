@@ -16,7 +16,7 @@
       "source": "Catalogue FN C10",
       "access_url": "https://commons.wikimedia.org/wiki/File:The_Seedkeepers.webm",
       "availability_claim": "Wikimedia Commons : fiche connue, accès courant non retesté",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "CC BY 3.0 annoncée dans catalogue, vérifier chaîne de droits",
       "rights_verified_for_reproduction": false,
@@ -27,7 +27,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "COMPLETER_FN_EXISTANTE",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "CATALOGUE_FN_ANTERIEUR_NON_RETESTE"
     },
     {
       "id": "C12-C-002",
@@ -39,7 +40,7 @@
       "source": "Catalogue FN C10",
       "access_url": "https://commons.wikimedia.org/wiki/File:Women_at_work_-_Chatpatit.webm",
       "availability_claim": "Wikimedia Commons : fiche connue, accès courant non retesté",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "CC0 1.0 déclaré sur fichier, vérification détaillée requise",
       "rights_verified_for_reproduction": false,
@@ -50,7 +51,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "COMPLETER_FN_EXISTANTE",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "CATALOGUE_FN_ANTERIEUR_NON_RETESTE"
     },
     {
       "id": "C12-C-003",
@@ -62,7 +64,7 @@
       "source": "Catalogue FN C10",
       "access_url": "https://boutique.arte.tv/detail/urgence_ralentir",
       "availability_claim": "Boutique ARTE, accès/achat et territoire non retestés",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "Tous droits réservés ; pas de droit d'hébergement",
       "rights_verified_for_reproduction": false,
@@ -73,7 +75,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "COMPLETER_FN_EXISTANTE",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "CATALOGUE_FN_ANTERIEUR_NON_RETESTE"
     },
     {
       "id": "C12-C-004",
@@ -85,7 +88,7 @@
       "source": "Catalogue FN C10",
       "access_url": "https://horscine.org/film/jamais-sans-ma-visseuse/",
       "availability_claim": "Page diffuseur cataloguée, lecture non retestée",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "CC BY-NC-ND annoncée, pas de modification ni hébergement autorisé par défaut",
       "rights_verified_for_reproduction": false,
@@ -96,7 +99,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "COMPLETER_FN_EXISTANTE",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "CATALOGUE_FN_ANTERIEUR_NON_RETESTE"
     },
     {
       "id": "C12-C-005",
@@ -108,7 +112,7 @@
       "source": "Catalogue FN C10",
       "access_url": "https://vimeo.com/304173357",
       "availability_claim": "Page Vimeo connue, vidéo non retestée",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "Œuvre protégée, aucune licence libre établie",
       "rights_verified_for_reproduction": false,
@@ -119,7 +123,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "COMPLETER_FN_EXISTANTE",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "CATALOGUE_FN_ANTERIEUR_NON_RETESTE"
     },
     {
       "id": "C12-C-006",
@@ -131,7 +136,7 @@
       "source": "ARTE officiel",
       "access_url": "https://www.arte.tv/fr/videos/107452-000-A/utopiaggia-un-reve-de-liberte-en-italie/",
       "availability_claim": "ARTE indique disponibilité jusqu'au 31/07/2030 ; non testée en lecture",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "Œuvre protégée, lien externe uniquement",
       "rights_verified_for_reproduction": false,
@@ -142,7 +147,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "RELIER_AVANT_CREER",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "PAGE_OFFICIELLE_CONSULTEE_RECHERCHE_2026_11_02"
     },
     {
       "id": "C12-C-007",
@@ -154,7 +160,7 @@
       "source": "ARTE officiel",
       "access_url": "https://www.arte.tv/fr/videos/121276-006-A/arte-regards/",
       "availability_claim": "ARTE indique disponibilité jusqu'au 22/03/2028 ; non testée en lecture",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "Œuvre protégée, lien externe uniquement",
       "rights_verified_for_reproduction": false,
@@ -165,7 +171,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "RELIER_AVANT_CREER",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "PAGE_OFFICIELLE_CONSULTEE_RECHERCHE_2026_11_02"
     },
     {
       "id": "C12-C-008",
@@ -177,7 +184,7 @@
       "source": "ARTE Boutique officiel",
       "access_url": "https://boutique.arte.tv/detail/direct-action",
       "availability_claim": "Boutique ARTE signale indisponible dans la région sur page consultée",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "Œuvre protégée, aucun droit de diffusion",
       "rights_verified_for_reproduction": false,
@@ -188,7 +195,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "RELIER_AVANT_CREER",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "PAGE_OFFICIELLE_CONSULTEE_RECHERCHE_2026_11_02"
     },
     {
       "id": "C12-C-009",
@@ -200,7 +208,7 @@
       "source": "ARTE officiel",
       "access_url": "https://www.arte.tv/digitalproductions/fr/the-last-town-2/",
       "availability_claim": "Page de présentation ARTE ; accès intégral à vérifier",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "Œuvre protégée, lien externe uniquement",
       "rights_verified_for_reproduction": false,
@@ -211,7 +219,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "RELIER_AVANT_CREER",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "PAGE_OFFICIELLE_CONSULTEE_RECHERCHE_2026_11_02"
     },
     {
       "id": "C12-C-010",
@@ -223,7 +232,7 @@
       "source": "ARTE officiel",
       "access_url": "https://www.arte.tv/fr/videos/123428-009-A/est-il-vrai-que-nous-avons-toujours-fait-greve/",
       "availability_claim": "ARTE indique disponibilité jusqu'au 10/12/2030 ; non testée en lecture",
-      "availability_checked_at": "2026-11-02",
+      "availability_checked_at": null,
       "playback_verified": false,
       "rights_known": "Œuvre protégée, lien externe uniquement",
       "rights_verified_for_reproduction": false,
@@ -234,7 +243,8 @@
       "hosting_allowed": false,
       "relation_to_existing": "RELIER_AVANT_CREER",
       "wikipedia_comparison": "NON_EFFECTUEE",
-      "thumbnail_reuse_allowed": false
+      "thumbnail_reuse_allowed": false,
+      "availability_evidence": "PAGE_OFFICIELLE_CONSULTEE_RECHERCHE_2026_11_02"
     }
   ],
   "technical_contract": {
