@@ -1,0 +1,25 @@
+name: R4 convergence Relieuse
+on:
+  push:
+    branches:
+      - integration/r4-convergence-relieuse-20261102
+  pull_request:
+    paths:
+      - 'assets/candidats/**'
+      - 'assets/archives/**'
+      - 'design-system/**'
+      - 'tests/r4-relieuse-convergence.test.mjs'
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntaxe JS
+        run: node --check assets/faille-navigation.js
+      - name: Contrats de convergence
+        run: node --test tests/r4-relieuse-convergence.test.mjs
