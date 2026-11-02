@@ -73,14 +73,31 @@ class ExecutantC15Test(unittest.TestCase):
         with self.assertRaises(ValueError):
             verifier(self.r)
 
+    def test_self_declared_json_permission_not_sufficient(self):
+        self.r["autorisation"]["ia_active"] = True
+        with self.assertRaises(PermissionError):
+            executer_local(self.r, opener=lambda *a, **k: self.fail("appel interdit"))
+
+    def test_cli_requires_environment_and_operator_flag(self):
+        import os
+        with tempfile.TemporaryDirectory() as tmp:
+            env = os.environ.copy()
+            env.pop("C15_LOCAL_EXECUTION_ENABLED", None)
+            p = subprocess.run([sys.executable, str(PROGRAM), "--entree", str(SOURCE),
+                                "--sortie", str(Path(tmp) / "result.json"),
+                                "--executer-local", "--autorisation-operateur"],
+                               env=env, capture_output=True, text=True, timeout=10)
+            self.assertNotEqual(p.returncode, 0)
+            self.assertIn("autorisation operateur", p.stderr)
+
     def test_local_disabled_fails_without_transport(self):
         with self.assertRaises(PermissionError):
-            executer_local(self.r, opener=lambda *a, **k: self.fail("appel réseau interdit"))
+            executer_local(self.r, operator_authorized=True, opener=lambda *a, **k: self.fail("appel réseau interdit"))
 
     def test_external_host_rejected(self):
         self.r["autorisation"]["ia_active"] = True
         with self.assertRaises(ValueError):
-            executer_local(self.r, url="http://192.168.1.10:11434",
+            executer_local(self.r, url="http://192.168.1.10:11434", operator_authorized=True,
                            opener=lambda *a, **k: self.fail("appel réseau interdit"))
 
     def test_local_mock_produces_candidate(self):
