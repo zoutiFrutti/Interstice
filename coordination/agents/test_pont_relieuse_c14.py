@@ -39,6 +39,15 @@ class PontC14Test(unittest.TestCase):
         self.assertIn("REFUSEE_ENTREE", msg)
         self.assertNotIn("ne pas afficher", msg)
 
+    def test_partial_refusal_is_never_reported_as_full_result(self):
+        mission = json.loads(EXEMPLE.read_text(encoding="utf-8"))
+        mission["taches"][1]["action"] = "publier"
+        mission["taches"][1]["entree"] = {}
+        msg = commentaire(event(body=json.dumps(mission)), "zoutiFrutti")
+        self.assertIn("RESULTAT_PARTIEL_BLOQUE", msg)
+        self.assertIn("REFUSEE_ACTION", msg)
+        self.assertIn("BLOQUEE_DEPENDANCE", msg)
+
     def test_nonpublic_refused(self):
         mission = json.loads(EXEMPLE.read_text(encoding="utf-8"))
         mission["classification"] = "CONFIDENTIEL"
