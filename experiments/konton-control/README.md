@@ -278,3 +278,9 @@ L'accueil propose maintenant trois espaces indépendants. **Interstice** conserv
 La navigation bloque les onglets Interstice lorsqu'un autre projet est sélectionné. La sélection ne stocke aucun secret et ne fait aucun appel vers Métro. Le code de lecture GitHub public reste volontairement limité à Interstice. Les commandes de démonstration restent des simulations, même dans Interstice. Ceci est un premier jalon de l'architecture multi-projets, **pas encore un gestionnaire dynamique de projets ni un moteur multi-projets**. Le contrat proposé est dans ARCHITECTURE_MULTIPROJETS_V2_CANDIDATE.md.
 
 Tests : test-workspaces.cjs et suites existantes via GitHub Actions. QA tactile Crosscall à réaliser. PR #39 brouillon, sans fusion ni publication.
+
+## V1.3 : installation parallèle sans conflit de signature
+
+La compilation GitHub Actions utilise une signature debug pouvant varier d'un build à l'autre. Sur Android, le même applicationId ne peut être mis à jour avec une signature différente. L'APK V1.3 utilise donc un **nouvel applicationId** `fr.konton.control.cockpit`, tandis que le namespace des classes Java reste `fr.konton.control.preview`. Cette séparation permet une installation à côté de l'ancien aperçu `fr.konton.control.preview` (mais ne permet pas de mettre directement à jour les anciennes installations). Aucune donnée n'est migrée : la démonstration n'a pas de stockage persistant. Conserver l'ancien APK si nécessaire et retirer l'ancienne application manuellement seulement après essai.
+
+Cette mesure est temporaire : les futures mises à jour du nouveau package auront aussi besoin d'une clé de signature stable protégée. Ne pas déclarer la signature debug stable et ne pas écraser de données utilisateur.
