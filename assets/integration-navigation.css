@@ -4,3 +4,6 @@
 
 /* Liens longs du Wiki : césure visible sans masquer le texte. */
 a{overflow-wrap:anywhere!important;word-break:break-word;white-space:normal!important}
+
+/* En-têtes éditoriaux adaptatifs, y compris les sous-titres longs. */
+header{flex-wrap:wrap;min-width:0;max-width:100%}header small{min-width:0;max-width:100%;white-space:normal!important;overflow-wrap:anywhere;word-break:break-word}
