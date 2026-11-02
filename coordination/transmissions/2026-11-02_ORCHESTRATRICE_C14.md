@@ -13,6 +13,8 @@ Statut : candidat technique, **sans fusion ni publication**.
 - `coordination/agents/test_orchestrateur_c14.py` : sécurité, chemins heureux,
   cycles et tests CLI.
 - `.github/workflows/orchestrateur-c14.yml` : CI sans secrets, sans écriture dans le dépôt.
+- `coordination/agents/pont_relieuse_c14.py` et tests : préparation du retour sur Issue avec garde-fou d'auteur, refus sans fuite et bilan partiel explicite.
+- `.github/workflows/relieuse-c14-issues.yml` : pont Issue publique du propriétaire vers exécution déterministe et commentaire anti-doublon (non actif avant fusion autorisée).
 - `coordination/agents/C14_CONTRAT_MOTEUR_MISSIONS.md` : limites et interfaces.
 
 ## Frontières maintenues
