@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas TIS-001 — prévisualisation documentaire interne</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui, sans-serif;line-height:1.5}
+body{max-width:64rem;margin:auto;padding:1rem}a{color:inherit;text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:3px solid #f80;outline-offset:3px}
+nav{display:flex;gap:1rem;flex-wrap:wrap}section{padding-block:1rem;border-top:1px solid}
+article{border:1px solid;border-radius:.5rem;margin:1rem 0;padding:1rem}
+small{display:block}ul{padding-left:1.5rem}button{font:inherit;padding:.4rem;cursor:pointer}
+</style></head><body>
+<header><h1>Atlas des communs — TIS-001</h1><p>Prévisualisation interne. Informations documentaires candidates, sans validation éditoriale, partenariat ou garantie d'accès. Aucun itinéraire de visite n'est calculé.</p><nav aria-label="Accès rapide"><a href="#parcours">Parcours de lecture</a><a href="#fiches">Fiches</a><a href="#sources">Provenance</a></nav></header>
+<main>
+<section id="parcours"><h2>Trois parcours de lecture</h2><div id="paths"><p>Chargement des parcours documentaires…</p></div></section>
+<section id="fiches"><h2>Ressources territoriales</h2><div id="entries"><p>Chargement des fiches…</p></div></section>
+<section id="sources"><h2>Provenance et réserves</h2><p>Le jeu de données est un candidat autonome, dérivé des recherches TIS. Il ne remplace pas l'Atlas officiel. Les liens externes sont ceux des sources, sans réutilisation de photos ou données de Transiscope.</p><p>Absence de la liste des douze recherches historiques : dédoublonnage exhaustif bloqué.</p></section>
+</main>
+<script type="module">
+const file="../transmissions/R1_TIS_ATLAS_DONNEES_CANDIDATES_20261102.json";
+const create=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
+const link=(text,url)=>{const a=create("a",text);a.href=url;a.rel="noopener noreferrer";return a;};
+fetch(file).then(r=>{if(!r.ok)throw new Error("Source introuvable");return r.json()}).then(data=>{
+ const by=new Map(data.entries.map(e=>[e.id,e]));
+ const paths=document.getElementById("paths");paths.replaceChildren();
+ for(const p of data.paths){
+  const article=create("article"),h=create("h3",p.title),ol=create("ol");
+  article.append(h,create("p","Parcours documentaire. Pas de trajet ni d'ouverture vérifiés."));
+  for(const id of p.steps){const e=by.get(id);if(!e)continue;const li=create("li");li.append(link(e.title,"#"+e.id),create("small",e.territory));ol.append(li)}
+  article.append(ol);paths.append(article);
+ }
+ const entries=document.getElementById("entries");entries.replaceChildren();
+ for(const e of data.entries){
+  const article=create("article");article.id=e.id;
+  article.append(create("h3",e.title),create("p","Type : "+e.kind+" | Territoire : "+e.territory),
+    create("p","Statut : candidat, non publié. Pas de partenariat Interstice."),
+    create("p","Réserve : "+e.access_conditions));
+  const p=create("p");p.append(link("Source publique et informations pratiques",e.canonical_url));article.append(p);
+  if(e.public_address)article.append(create("p","Adresse publiée par l'organisme : "+e.public_address));
+  if(e.public_email)article.append(create("p","Contact général public (aucune sollicitation effectuée) : "+e.public_email));
+  article.append(create("small","Dernière vérification documentaire : "+e.source_checked_at));
+  entries.append(article);
+ }
+}).catch(()=>{document.getElementById("paths").replaceChildren(create("p","Le fichier JSON candidat n'est pas accessible. Ouvrir les liens dans le dossier de transmission."));document.getElementById("entries").replaceChildren(create("p","Aucune donnée chargée. Ne pas interpréter cet échec comme une absence d'initiatives."));});
+</script></body></html>
