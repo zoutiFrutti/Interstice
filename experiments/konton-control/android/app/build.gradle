@@ -10,8 +10,8 @@ android {
         applicationId 'fr.konton.control.cockpit'
         minSdk 26
         targetSdk 34
-        versionCode 14
-        versionName '1.4.0-preview'
+        versionCode 15
+        versionName '1.5.0-preview'
     }
 
     buildTypes {
@@ -36,7 +36,7 @@ dependencies {
 
 // Copy ONLY public/static frontend. No local server, private files, tokens or task histories.
 def webAssets = [
-    'index.html', 'styles.css', 'app.js', 'github-status.js', 'pr-inspector.js', 'cycles.js', 'workspaces.js',
+    'index.html', 'styles.css', 'app.js', 'github-status.js', 'pr-inspector.js', 'cycles.js', 'workspaces.js', 'live-summary.js',
     'task-board.js', 'ai-board.js', 'pwa.js', 'manifest.webmanifest',
     'sw.js', 'navigation.js', 'icons/konton-192.png', 'icons/konton-512.png'
 ]
