@@ -29,6 +29,11 @@
   const nav = Array.from(document.querySelectorAll(".app-navigation [data-screen-target]"));
   const shortcuts = document.getElementById("workspace-links");
   const hero = document.querySelector(".screen-home .home-hero");
+  const brief = {
+    interstice: ["Travaux candidats sur GitHub ; ouvrir Courriers et cycles pour consulter les preuves.", "Les dépendances C10 doivent être vérifiées ; aucun feu vert présumé.", "Aucune décision synchronisée : vérifier les demandes de La Relieuse."],
+    metro: ["Conception en ateliers ; aucune progression synchronisée dans cette APK.", "Dépôt privé non connecté : blocages inconnus.", "Aucune demande de validation importée depuis les ateliers."],
+    personnel: ["Tu pilotes le développement ; aucun état de build synchronisé ici.", "Aucun rapport technique actualisé pour cet espace.", "Aucune file de décisions importée."]
+  };
   const metrics = document.querySelector(".screen-home .metrics");
   const status = document.querySelector(".screen-home .home-status-grid");
   function update(key) {
@@ -43,7 +48,12 @@
     document.getElementById("workspace-name").textContent = current.name;
     document.getElementById("workspace-lead").textContent = current.lead;
     document.getElementById("workspace-access").textContent = current.access;
-    [hero,metrics,status].forEach(node => { if(node) node.hidden = key !== "interstice"; });
+    ["brief-progress","brief-blockers","brief-decisions"].forEach((id,index) => {
+      document.getElementById(id).textContent = brief[key][index];
+    });
+    document.getElementById("brief-source").textContent = "Source : contexte connu, non actualisé. Ne constitue pas un suivi en temps réel.";
+
+    [hero,metrics,status].forEach(node => { if(node) node.hidden = true; });
     nav.forEach(button => {
       button.hidden = !current.screens.includes(button.dataset.screenTarget);
     });
