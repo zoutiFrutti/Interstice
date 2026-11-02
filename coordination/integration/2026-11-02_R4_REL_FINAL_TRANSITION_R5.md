@@ -31,3 +31,8 @@ Revenir au HEAD initial de la convergence `fb3c8470dccb5efbccf4849f0fca3a337491f
 
 ## Préparation R5 — sans nettoyage
 Première recherche GitHub : au moins 100 branches (pagination non épuisée) et 95 PR ouvertes dans le lot interrogé. Inventaire exhaustif, regroupement par chantiers et matrice des fusions **à faire** ; aucun merge ni suppression R5. Priorité aux doublons de branches R1–R4, puis aux contenus et contrats, en conservant identifiants, sources, droits, statuts et preuves.
+
+## Addendum de vérification
+- Workflow R4 sur HEAD `595d4fa33fdcd4cf72e07222b9bdea0108b8a552` : success, jobs `chromium` et `contracts` ; artefact captures présent.
+- Contrôle de destination ajouté dans `tests/r4-dev-cloture.browser.test.mjs` au commit `b6173f8c964f9418d82c916629d54bdc073d7b2f` : les cinq liens sont visités par Chromium, l'ancre Entraide et la navigation clavier sont contrôlées. **Résultat du workflow à vérifier** avant de conclure.
+- R5 : préinventaire complet 218 branches sur quatre pages, note `coordination/integration/2026-11-02_R5_PREINVENTAIRE_BRANCHES.md`.
