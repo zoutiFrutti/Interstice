@@ -6,6 +6,9 @@ on:
     paths:
       - 'coordination/agents/orchestrateur_c14.py'
       - 'coordination/agents/test_orchestrateur_c14.py'
+      - 'coordination/agents/test_pont_relieuse_c14.py'
+      - 'coordination/agents/pont_relieuse_c14.py'
+      - '.github/workflows/relieuse-c14-issues.yml'
       - 'coordination/agents/exemple_mission_c14.json'
       - '.github/workflows/orchestrateur-c14.yml'
 
@@ -18,8 +21,12 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Tests C14 hors ligne
-        run: python3 -m unittest discover -s coordination/agents -p 'test_orchestrateur_c14.py' -v
+        run: |
+          python3 -m unittest discover -s coordination/agents -p 'test_orchestrateur_c14.py' -v
+          python3 -m unittest discover -s coordination/agents -p 'test_pont_relieuse_c14.py' -v
       - name: Produire un rapport sur données fictives
         run: |
           python3 coordination/agents/orchestrateur_c14.py \
