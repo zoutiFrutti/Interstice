@@ -13,3 +13,6 @@ Réception locale datée 2026-11-01. Courrier lu sur coordination/cycle10-messag
 
 ## Réception C10-REL-20261102-RECONCILIATION-BIOGRAPHE
 Date : 2026-11-02. Lu sur `coordination/c10-relieuse-reconciliation-20261102` ; courrier blob `d4180077b72ea6dcdaa9f2da7d7215596104301b`. **REÇU localement**, sans modification ni notification de la boîte centrale. La transmission détaillée du 2 novembre et ses vérifications restent distinctes de ce simple accusé.
+
+## R1-BIO — Accusé de lecture du 2 novembre 2026
+Courrier effectivement lu par La Biographe après transmission de Zout, sur `coordination/reprise-generale-r1-20261102`, blob `5ef92d2d6c8386c3cfe9897f4c6a6f8ad172797a`. Les trois documents de méthode R1 ont été lus (blobs `5b7ef2fbdaaa88791bed86f00659fd8a76f44dd8`, `a9070cd99b775d169415e3c991074dced1c6ffab`, `4982d1d2501af5665729cc99400c5915e94a6eb0`). État : REÇU localement ; ce dépôt n'actualise pas la boîte centrale de La Relieuse et ne vaut pas exécution complète.
