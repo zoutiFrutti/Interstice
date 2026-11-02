@@ -68,7 +68,8 @@ test('R4 : liens alternatifs résolus, ancre Entraide et focus clavier',async()=
   assert.equal(links.length,5);
   for(const href of links){
    const response=await page.goto(href);
-   assert.equal(response.status(),200,href);
+   if(response)assert.equal(response.status(),200,href);
+   else assert.ok(href.includes('#')&&new URL(page.url()).pathname===new URL(href).pathname,'navigation sans requête réseau inattendue : '+href);
    if(href.includes('#entraide')){
     assert.equal(await page.locator('#entraide').count(),1);
     assert.equal(new URL(page.url()).hash,'#entraide');
