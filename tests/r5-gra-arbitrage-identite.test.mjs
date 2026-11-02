@@ -21,7 +21,7 @@ test("R5: actifs encore identiques aux archives, aucune substitution",()=>{
   assert.ok(existsSync(active)&&existsSync(archive));
   assert.equal(read(active),read(archive),active+" != archive");
  }
- for(const p of candidates){assert.ok(existsSync(p));assert.doesNotMatch(read(p),/<text\\b|<foreignObject\\b/,"texte ou intégration interdite dans le symbole");}
+ for(const p of candidates){assert.ok(existsSync(p));assert.doesNotMatch(read(p),/<text\b|<foreignObject\b/,"texte ou intégration interdite dans le symbole");}
 });
 
 test("R5: groupe base exactement identique, surcouche Interstice exclusive",()=>{
@@ -29,13 +29,13 @@ test("R5: groupe base exactement identique, surcouche Interstice exclusive",()=>
  assert.equal(common(a),common(b),"modification de la base partagée");
  assert.equal(a.includes('surcouche-interstice'),false);
  assert.equal((b.match(/id="surcouche-interstice"/g)||[]).length,1);
- const lines=a.match(/<g stroke="#e4e0d8"[\\s\\S]*?<\\/g>/)?.[0]??"";
- const branches=(lines.match(/<path\\b/g)||[]).length;
- const red=a.match(/<g stroke="#aa3032"[\\s\\S]*?<\\/g>/)?.[0]??"";
+ const lines=a.match(/<g stroke="#e4e0d8"[\s\S]*?<\/g>/)?.[0]??"";
+ const branches=(lines.match(/<path\b/g)||[]).length;
+ const red=a.match(/<g stroke="#aa3032"[\s\S]*?<\/g>/)?.[0]??"";
  assert.equal(branches,55,"réseau de craquelures inattendu");
- assert.equal((red.match(/<path\\b/g)||[]).length,17,"traînées rouges changées");
+ assert.equal((red.match(/<path\b/g)||[]).length,17,"traînées rouges changées");
  const overlay=b.split('<g id="surcouche-interstice"')[1]??"";
- const nodes=[...overlay.matchAll(/<circle[^>]+r="([\\d.]+)"[^>]*>/g)].map(m=>Number(m[1]));
+ const nodes=[...overlay.matchAll(/<circle[^>]+r="([\d.]+)"[^>]*>/g)].map(m=>Number(m[1]));
  assert.equal(nodes.filter(r=>r<10).length,30);
  assert.equal(nodes.filter(r=>r>=10).length,2,"grand point et halo");
  assert.ok(b.includes('cx="159" cy="156" r="17"'),"point majeur déplacé");
