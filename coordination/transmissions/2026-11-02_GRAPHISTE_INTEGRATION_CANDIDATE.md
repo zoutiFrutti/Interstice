@@ -21,3 +21,6 @@ Utiliser PR #128 comme **lot graphique isolé**, jamais comme adoption du schém
 
 ## État des objectifs
 1 inventaire : TERMINÉ documentaire ; 2 deux variantes : TERMINÉ candidates, choix Zout EN ATTENTE ; 3 gabarits : TERMINÉ structurel candidat, contenus/sources en attente ; 4 branche prête pour intégration Développeuse : À POURSUIVRE, aucun travail conjoint signé ou fusion prétendue ; 5 QA : À POURSUIVRE au-delà du run et essais physiques ; 6 preuves : fichiers/commits/blobs listés, captures non produites. P0 sécurité/justice/RGPD non levés, aucune publication.
+
+## Reprise QA après échec réel
+Run `41451744709` FAILED : débordement à 320 px, largeur document 342 px. CSS corrigé commit `d7258feb9f3c19ff0fd1e139199eabab7e84e520`, run `41451971440` SUCCESS. Captures Chromium 320/390/768/1280 et PDF A4 ajoutés aux tests commit `3bcc8931050e59ef355a7d51d717ca1824e484d9` ; upload artefact commit `ff43634456b1b2e8e2240dbae2fae4c916ab8ac2`, **CI success** https://github.com/zoutiFrutti/Interstice/actions/runs/41452104943. Artefact `graphiste-integration-captures-a4`, ID `13145855070`, taille 1 513 925 octets. Les captures sont produites et téléchargeables depuis GitHub Actions, mais inspection visuelle manuelle non revendiquée. Les tests de lecteurs d’écran physiques, écran réel, contraste exhaustif et zoom navigateur 400 % ne sont pas réalisés.
