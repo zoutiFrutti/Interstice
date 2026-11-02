@@ -22,3 +22,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .manifesto-preview::before{content:"";position:absolute;left:20px;top:22px;width:clamp(70px,10vw,116px);height:clamp(70px,10vw,116px);background:url("assets/logo-faille-noire.svg") center/contain no-repeat}
 @media(max-width:600px){header strong::before{width:40px;height:40px}.brand-identity img{width:88px;height:88px}.manifesto-preview{padding-left:22px;padding-top:120px}.manifesto-preview::before{top:12px}}
 @media print{header strong::before{print-color-adjust:exact;-webkit-print-color-adjust:exact}.brand-identity img{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+/* Accueil : l'identité Interstice domine la signature, pas l'inverse. */
+.hero .brand-identity{gap:clamp(16px,3vw,28px)}
+.hero .brand-identity img{width:clamp(112px,17vw,170px);height:auto;aspect-ratio:1;flex:none}
+.hero .brand-identity .brand-caption{font-size:clamp(29px,5.5vw,49px);line-height:1.05;letter-spacing:.04em}
+.hero .brand-identity .brand-caption span{display:block;margin-top:10px;font-size:clamp(12px,1.8vw,16px);line-height:1.4;letter-spacing:.07em}
+.hero h1{font-size:clamp(30px,4vw,46px);line-height:1.18;max-width:780px;letter-spacing:-.02em}
+@media(max-width:600px){.hero .brand-identity img{width:112px;height:112px}.hero .brand-identity .brand-caption{font-size:clamp(27px,7.4vw,38px)}}
