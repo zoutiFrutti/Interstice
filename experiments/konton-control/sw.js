@@ -1,9 +1,9 @@
 "use strict";
 // Cache only bundled interface files. Never cache private APIs or GitHub responses.
-const VERSION = "konton-control-shell-v14";
+const VERSION = "konton-control-shell-v15";
 const APP_SHELL = [
  "./", "./index.html", "./styles.css", "./app.js",
- "./github-status.js", "./pr-inspector.js", "./cycles.js", "./workspaces.js", "./task-board.js", "./ai-board.js", "./navigation.js",
+ "./github-status.js", "./pr-inspector.js", "./cycles.js", "./workspaces.js", "./live-summary.js", "./task-board.js", "./ai-board.js", "./navigation.js",
  "./pwa.js", "./manifest.webmanifest",
  "./icons/konton-192.png", "./icons/konton-512.png"
 ];
