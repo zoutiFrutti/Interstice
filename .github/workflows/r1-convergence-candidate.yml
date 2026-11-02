@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test tests/r1-frontend-navigation.test.mjs
+      - run: node --test tests/r1-frontend-navigation.test.mjs tests/r1-convergence-route-integrity.test.mjs
   chromium:
     runs-on: ubuntu-24.04
     timeout-minutes: 18
