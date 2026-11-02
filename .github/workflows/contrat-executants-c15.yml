@@ -1,0 +1,34 @@
+name: C15 - contrat executants IA inactifs
+
+on:
+  pull_request:
+    paths:
+      - 'coordination/agents/executant_c15.py'
+      - 'coordination/agents/test_executant_c15.py'
+      - 'coordination/agents/exemple_mission_c15.json'
+      - '.github/workflows/contrat-executants-c15.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Tester le contrat C15 sans connexion IA
+        run: |
+          python3 -m unittest discover -s coordination/agents -p 'test_executant_c15.py' -v
+          python3 coordination/agents/executant_c15.py \
+            --entree coordination/agents/exemple_mission_c15.json \
+            --sortie resultat-executant-c15.json
+      - name: Conserver le rapport de blocage
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-c15-sans-ia
+          path: resultat-executant-c15.json
+          retention-days: 7

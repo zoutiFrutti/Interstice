@@ -1,0 +1,18 @@
+{
+  "schema": "c15.v1",
+  "mission_id": "C15-DEMO-001",
+  "atelier": "lectrice",
+  "fournisseur": "ollama_local",
+  "modele": "qwen2.5-coder:7b",
+  "contenu": "Ceci est un exemple de texte public fictif destiné à un contrôle de relecture.",
+  "classification": "PUBLIC",
+  "autorisation": {
+    "ia_active": false,
+    "sortie_candidat_uniquement": true
+  },
+  "limites": {
+    "tokens_sortie_max": 800,
+    "appels_max": 1,
+    "cout_eur_max": 0
+  }
+}
