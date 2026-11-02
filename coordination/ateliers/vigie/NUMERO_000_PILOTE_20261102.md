@@ -8,36 +8,41 @@ Une information n'arrive jamais seule. Derrière une date d'ouverture, une manif
 
 La Faille noire assume une perspective libertaire, autogestionnaire, féministe, antiraciste, décoloniale et d'écologie sociale. Les faits, les propos attribués et **notre lecture** sont distingués. Les chartes et le manifeste adoptés prévalent sur ce brouillon.
 
-## À LA UNE — A69 : comment le chantier a repris après l'annulation de ses autorisations
-**Tarn · Aménagement · Justice · Libertés publiques**
+## À LA UNE — A69 : qui paie le passage en force, et qui décide encore ?
+**Tarn · Justice · Finances publiques · Transports · Écologie**
 
-Présenter l'A69 comme une autoroute simplement « contestée » escamote le nœud du dossier : le 27 février 2025, le tribunal administratif de Toulouse a annulé les autorisations environnementales du projet, jugeant insuffisamment démontrée la raison impérative d'intérêt public majeur invoquée pour déroger à la protection des espèces. Le chantier s'est arrêté. L'État et les concessionnaires ont contesté cette décision ; parallèlement, une proposition de loi a cherché à valider rétroactivement les autorisations. Le 28 mai 2025, la cour administrative d'appel de Toulouse a suspendu les effets du jugement, permettant la reprise du chantier. Puis, le 30 décembre 2025, la même cour a infirmé le jugement au fond ; le Conseil d'État a rejeté les pourvois le 29 juin 2026.
+L'A69 ne se résume ni à une manifestation ni à un chantier « controversé ». Elle révèle un enchaînement de décisions publiques, de recours et de dépenses qui mérite d'être lu dans son ensemble. Ce dossier **ne prétend pas révéler** les informations déjà établies par les journalistes de Mediacités, Basta! et d'autres rédactions : il cherche à les relier et à poser une question de contrôle démocratique.
 
-Cette séquence juridique ne commence pas en 2025. Le projet de liaison Castres–Toulouse a fait l'objet de décisions publiques successives, d'une concession, de recours, d'occupations et de mobilisations. En 2023 et 2024, les opposants ont dénoncé les abattages d'arbres, les atteintes aux milieux naturels et les opérations policières autour des occupations, notamment à la Crém'Arbre. Les partisans du projet mettent en avant le désenclavement et les temps de trajet ; ces arguments doivent être examinés à partir des études et données disponibles, non caricaturés.
+### De la contestation à la bataille judiciaire
+Le projet a été déclaré d'utilité publique en 2018, autorisé sur le plan environnemental en mars 2023, puis contesté par des associations, élus et riverains. En 2023-2024, mobilisations, occupations d'arbres et opérations de maintien de l'ordre ont accompagné l'avancée des travaux. Le 27 février 2025, le tribunal administratif de Toulouse a annulé les autorisations environnementales, faute de raison impérative d'intérêt public majeur justifiant les atteintes aux espèces protégées. L'État a immédiatement annoncé un appel et demandé un sursis ; une initiative parlementaire visait parallèlement une validation rétroactive des autorisations. Le 28 mai 2025, la cour administrative d'appel a accordé le sursis, permettant légalement la reprise. Elle a ensuite infirmé le jugement au fond le 30 décembre 2025, et le Conseil d'État a rejeté les pourvois le 29 juin 2026.
 
-### Ce que révèle la chronologie
-- **2018 :** déclaration d'utilité publique.
-- **2022–2023 :** concession à Atosca, autorisations environnementales et travaux.
-- **2023–2024 :** recours, occupations, manifestations et opérations de maintien de l'ordre.
-- **27 février 2025 :** annulation des autorisations par le tribunal administratif de Toulouse.
-- **Mars–mai 2025 :** appel de l'État, demande de sursis, initiative parlementaire de validation rétroactive ; adoption du texte au Sénat le 15 mai.
-- **28 mai 2025 :** sursis prononcé par la cour administrative d'appel ; reprise rendue juridiquement possible.
-- **30 décembre 2025 et 29 juin 2026 :** validation en appel, puis rejet des pourvois par le Conseil d'État.
+**Notre lecture :** les opposants parlent de « passage en force » à propos de la détermination politique à poursuivre le projet malgré l'annulation initiale. Cette qualification doit être attribuée, non confondue avec une reprise illégale : la reprise a été rendue possible par une décision judiciaire. Le sujet est aussi la temporalité du contrôle : quels effets irréversibles ont lieu avant qu'un recours soit définitivement jugé ?
 
-**Notre lecture.** Les opposants parlent de « passage en force » pour qualifier la détermination de l'exécutif et d'une partie du Parlement à relancer le projet après le jugement de février. Les actes à examiner sont précis : appel, demande de sursis, projet de validation législative, annonces de reprise. Il serait en revanche faux de dire que les travaux ont repris en juin 2025 au mépris d'une interdiction encore applicable : la cour avait entre-temps suspendu le jugement. La question politique demeure : que vaut un recours environnemental si une partie des atteintes contestées intervient avant que la justice ait définitivement statué ?
+### Le prix du chantier et le prix de l'usage
+Le 2 mars 2026, Mediacités a publié une enquête faisant état, à partir de documents obtenus par la rédaction, d'une **indemnité de 100 millions d'euros versée par l'État à Atosca** à la suite de l'arrêt du chantier. Ce chiffre doit être attribué à l'enquête et contrôlé auprès des pièces publiques disponibles ; il ne doit pas être présenté comme notre découverte. En septembre 2026, Mediacités a également rapporté un recours contre une délibération régionale prévoyant **11 millions d'euros** pour Atosca. En octobre, le même média a détaillé les tarifs annoncés : **20,40 € l'aller-retour Castres–Toulouse**, dont 17 € pour le tronçon A69, et leur présence antérieure dans le contrat de concession.
 
-**Notre apport envisagé :** reconstituer dans un seul dossier la chronologie des décisions, la temporalité des destructions, les mobilisations et le rôle des institutions, avec documents primaires et contradictions. Cette synthèse ne sera présentée comme originale qu'après une recherche systématique des enquêtes déjà publiées.
+**Question de La Vigie :** lorsque des dépenses publiques, des risques contractuels et un péage se cumulent, quels coûts reviennent réellement aux contribuables, aux usagers et aux collectivités ? Impossible de répondre sérieusement en additionnant des montants de périmètres différents. Il faut établir une comptabilité lisible, datée et sourcée.
 
-**Sources primaires :**
-- Tribunal administratif de Toulouse, 27 février 2025 : https://toulouse.tribunal-administratif.fr/decisions-de-justice/dernieres-decisions/a69-le-projet-autoroutier-est-annule-faute-de-necessite-imperieuse-a-le-realiser
-- Cour administrative d'appel, sursis du 28 mai 2025 : https://toulouse.cour-administrative-appel.fr/decisions-de-justice/dernieres-decisions/sursis-a-l-execution-des-jugements-d-annulation-des-autorisations-environnementales-pour-la-realisation-de-la-liaison-castres-toulouse-a680-et-a69
+### Une ouverture annoncée, pas encore constatée
+Le concessionnaire Atosca et la préfecture maintenaient fin octobre une ouverture au **6 novembre 2026**. Au 2 novembre, nous ne la décrivons pas comme effective.
+
+### Ce qui a déjà été enquêté : à lire avant nous
+- **Mediacités**, « A69 : une indemnité de 100 millions d'euros pour Atosca », 2 mars 2026, mis à jour le 6 mars : https://www.mediacites.fr/transport/a69/toulouse/2026/03/02/a69-une-indemnite-de-100-millions-deuros-pour-atosca/
+- **Mediacités**, « Les tarifs de l'A69 ne devraient être une surprise pour personne », 19 octobre 2026 : https://www.mediacites.fr/breve/toulouse/2026/10/19/les-tarifs-de-la69-ne-devraient-etre-une-surprise-pour-personne/
+- **Mediacités**, recours contre le financement régional, 7 septembre 2026 : https://www.mediacites.fr/breve/toulouse/2026/09/07/des-opposants-a-la69-veulent-empecher-la-region-occitanie-de-financer-atosca/
+- **Basta! / Rapports de force**, « Reprise du chantier de l'A69 : que se passe-t-il maintenant ? », 5 juin 2025 : https://basta.media/reprise-du-chantier-A69-que-se-passe-t-il-maintenant
+- **Mediacités**, retour sur le sursis et l'État, 28 mai 2025 : https://www.mediacites.fr/decryptage/toulouse/2025/05/28/autoroute-a69-la-justice-et-letat-main-dans-la-main-pour-rouvrir-le-chantier/
+
+### Sources institutionnelles pour contrôler la chronologie
+- Tribunal administratif, 27 février 2025 : https://toulouse.tribunal-administratif.fr/decisions-de-justice/dernieres-decisions/a69-le-projet-autoroutier-est-annule-faute-de-necessite-imperieuse-a-le-realiser
+- État, annonce d'appel, 27 février 2025 : https://www.ecologie.gouv.fr/presse/a69-entre-castres-toulouse-letat-va-faire-appel-decision-du-tribunal-administratif-toulouse
+- Cour administrative d'appel, 28 mai 2025 : https://toulouse.cour-administrative-appel.fr/decisions-de-justice/dernieres-decisions/sursis-a-l-execution-des-jugements-d-annulation-des-autorisations-environnementales-pour-la-realisation-de-la-liaison-castres-toulouse-a680-et-a69
 - Cour administrative d'appel, 30 décembre 2025 : https://toulouse.cour-administrative-appel.fr/decisions-de-justice/dernieres-decisions/a69-la-cour-juge-que-les-autorisations-delivrees-par-l-etat-pour-sa-realisation-sont-conformes-au-droit
 - Conseil d'État, 29 juin 2026 : https://www.conseil-etat.fr/actualites/autoroute-a69-le-conseil-d-etat-confirme-l-arret-de-la-caa-de-toulouse-autorisant-la-reprise-du-projet
-- Sénat, débat du 15 mai 2025 : https://www.senat.fr/seances/s202505/s20250515/s20250515004.html
 
-**Enquêtes et travaux antérieurs à confronter :** https://basta.media ; https://reporterre.net ; presse locale et décisions administratives. Ne pas prétendre à une enquête de terrain originale sans entretiens et vérifications propres.
+**Apport propre de cette édition :** mettre en regard **recours, calendrier du chantier, coût public allégué et péages**, avec des questions de contrôle et une traçabilité explicite des enquêtes préexistantes. Ce rapprochement éditorial n'est **pas** présenté comme une révélation exclusive.
 
-**Restent à vérifier :** situation du chantier au 2 novembre 2026, chronologie exhaustive des travaux et opérations policières, avis CNPN, alternatives de transport, coût et péages, arguments économiques, statut exact de la proposition de loi, éventuels autres contentieux.
+**À instruire avant publication :** documents originaux des indemnités et subventions, périmètre des financements, état du chantier, statut de la loi de validation, avis environnementaux, paroles des collectifs et défenseurs du projet, historique détaillé du maintien de l'ordre. Contrôle Lectrice et Juriste requis.
 
 ## ENQUÊTES À LIRE — À qui appartiennent les médias ?
 Acrimed et Le Monde diplomatique proposent une cartographie des liens de propriété des principaux médias français. Plutôt que la résumer comme si nous avions découvert ces liens, nous renvoyons à leur travail : https://www.monde-diplomatique.fr/cartes/PPA
