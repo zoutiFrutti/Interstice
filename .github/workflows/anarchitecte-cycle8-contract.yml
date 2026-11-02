@@ -5,6 +5,7 @@ on:
       - atelier/anarchitecte-contrat-editorial-20261031
       - atelier/anarchitecte-cycle10-20261101
       - atelier/anarchitecte-r1-reprise-20261102
+      - atelier/anarchitecte-integration-c03-20261102
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,4 +19,4 @@ jobs:
         with:
           node-version: '22'
       - name: Test 139 references, veto editorial et 24 pages
-        run: node --test tests/anarchitecte-cycle8-contract.test.mjs tests/anarchitecte-cycle9-schema.test.mjs tests/anarchitecte-cycle10-mapping.test.mjs tests/anarchitecte-c10-reconciliation-20261102.test.mjs tests/anarchitecte-r1-contract.test.mjs
+        run: node --test tests/anarchitecte-cycle8-contract.test.mjs tests/anarchitecte-cycle9-schema.test.mjs tests/anarchitecte-cycle10-mapping.test.mjs tests/anarchitecte-c10-reconciliation-20261102.test.mjs tests/anarchitecte-r1-contract.test.mjs tests/anarchitecte-integration-c03.test.mjs
