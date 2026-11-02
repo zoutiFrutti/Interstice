@@ -36,6 +36,7 @@ const assets = new Map([
   ["/pr-inspector.js", ["pr-inspector.js", "text/javascript; charset=utf-8"]],
   ["/cycles.js", ["cycles.js", "text/javascript; charset=utf-8"]],
   ["/workspaces.js", ["workspaces.js", "text/javascript; charset=utf-8"]],
+  ["/live-summary.js", ["live-summary.js", "text/javascript; charset=utf-8"]],
   ["/task-board.js", ["task-board.js", "text/javascript; charset=utf-8"]],
   ["/ai-board.js", ["ai-board.js", "text/javascript; charset=utf-8"]],
   ["/pwa.js", ["pwa.js", "text/javascript; charset=utf-8"]],
