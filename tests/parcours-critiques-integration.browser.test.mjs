@@ -17,6 +17,7 @@ test("parcours critiques : clavier, details, sources, retour, zoom et réseau lo
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),"horizontal overflow "+width);
     const nav=page.locator('#parcours-critiques a[href="#ecologie"]').first();
     await nav.focus();await page.keyboard.press("Enter");
+    await page.waitForURL("**/wiki.html#ecologie");
     assert.equal(new URL(page.url()).hash,"#ecologie");
     const details=page.locator("#ecologie details").first();
     assert.ok(await details.count()>0);
