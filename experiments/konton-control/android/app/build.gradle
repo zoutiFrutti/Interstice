@@ -7,11 +7,11 @@ android {
     compileSdk 35
 
     defaultConfig {
-        applicationId 'fr.konton.control.preview'
+        applicationId 'fr.konton.control.cockpit'
         minSdk 26
         targetSdk 34
-        versionCode 12
-        versionName '1.2.0-preview'
+        versionCode 13
+        versionName '1.3.0-preview'
     }
 
     buildTypes {
