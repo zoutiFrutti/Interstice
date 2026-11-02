@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync,existsSync} from 'node:fs';
+const pages=['index.html','wiki.html','bibliotheque.html','atlas.html','parcours.html','participer.html'];
+test('R4 references vers les deux logos candidats sans chemins morts',()=>{for(const page of pages){const html=readFileSync(page,'utf8');const matches=[...html.matchAll(/(?:src|href)=["']([^"']*logo-(?:interstice|faille-noire)\.svg)["']/g)];for(const m of matches){assert.ok(existsSync(m[1]),page+': manque '+m[1]);}console.log('R4_PAGE',page,'logos='+matches.length,'favicon='+/<link[^>]+rel=["']icon["']/.test(html));}});
+test('R4 chemins image CSS sans reference historique en production candidate',()=>{const css=readFileSync('style.css','utf8');assert.ok(css.includes('assets/logo-interstice.svg'));assert.ok(css.includes('assets/logo-faille-noire.svg'));assert.ok(!css.includes('.historique.svg'));});

@@ -1,0 +1,28 @@
+name: R4 Identité revue SVG et inventaire
+on:
+  push:
+    branches: [design/identite-faille-interstice-zoom-20261102]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  revue:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/r4-logos.log 2>&1 &
+          node --test tests/r4-identite-captures.test.mjs tests/r4-identite-pages.test.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r4-identite-svg-tailles-et-references
+          path: artifacts/graphiste-r4/
+          if-no-files-found: error
