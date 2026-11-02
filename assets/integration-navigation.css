@@ -1,3 +1,6 @@
 .integration-nav{display:flex;flex-wrap:wrap;gap:.5rem;padding:.8rem 1rem;background:#15191f;border-bottom:1px solid #555}.integration-nav a{display:inline-block;color:#fff;padding:.65rem .8rem;border:1px solid #777;border-radius:.5rem;text-decoration:none}.integration-nav a:hover,.integration-nav a:focus-visible{outline:3px solid #f09d54;outline-offset:2px;background:#28313b}main{max-width:1100px;margin-inline:auto}main a{overflow-wrap:anywhere}@media(max-width:420px){.integration-nav{gap:.3rem}.integration-nav a{font-size:.88rem;padding:.55rem}}@media print{.integration-nav{display:none}a{color:#000!important}body{background:#fff!important;color:#000!important}}
 /* Responsive : éviter les colonnes et formulaires plus larges que le viewport. */
 *,*::before,*::after{box-sizing:border-box}main,main>*{min-width:0;max-width:100%}.wiki-grid,.resource-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))!important}.wiki-search input,.library-tools input,.library-tools select{min-width:0;max-width:100%}main img,main iframe,main video{max-width:100%;height:auto}pre,code{overflow-wrap:anywhere}main{overflow-wrap:anywhere}
+
+/* Liens longs du Wiki : césure visible sans masquer le texte. */
+a{overflow-wrap:anywhere!important;word-break:break-word;white-space:normal!important}
