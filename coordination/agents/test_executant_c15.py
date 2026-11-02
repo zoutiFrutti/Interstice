@@ -114,7 +114,7 @@ class ExecutantC15Test(unittest.TestCase):
             calls.append((req.full_url, timeout))
             return MockResponse()
 
-        report = executer_local(self.r, opener=open_mock)
+        report = executer_local(self.r, operator_authorized=True, opener=open_mock)
         self.assertEqual(len(calls), 1)
         self.assertEqual(calls[0][0], "http://127.0.0.1:11434/api/generate")
         self.assertEqual(report["statut"], "ANALYSE_CANDIDATE")
@@ -125,7 +125,7 @@ class ExecutantC15Test(unittest.TestCase):
         self.r["autorisation"]["ia_active"] = True
         self.r["fournisseur"] = "api_distante"
         with self.assertRaises(ValueError):
-            executer_local(self.r, opener=lambda *a, **k: self.fail("appel réseau interdit"))
+            executer_local(self.r, operator_authorized=True, opener=lambda *a, **k: self.fail("appel réseau interdit"))
 
     def test_cli(self):
         with tempfile.TemporaryDirectory() as tmp:
