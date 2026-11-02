@@ -6,6 +6,7 @@ Ne fait aucun appel modèle. Le simulateur ne prétend pas produire une analyse.
 import argparse
 import hashlib
 import json
+import os
 import re
 import urllib.request
 from urllib.parse import urlsplit
@@ -82,9 +83,11 @@ def preparer(request):
     }
 
 
-def executer_local(request, url="http://127.0.0.1:11434", opener=None):
+def executer_local(request, url="http://127.0.0.1:11434", opener=None, operator_authorized=False):
     """Une seule requête Ollama, opt-in et uniquement vers loopback."""
     verifier(request)
+    if operator_authorized is not True:
+        raise PermissionError("Autorisation operateur hors mission absente")
     if not request["autorisation"]["ia_active"]:
         raise PermissionError("Activation humaine de l'IA locale manquante")
     if request["fournisseur"] != "ollama_local" or request["limites"]["cout_eur_max"] != 0:
@@ -106,7 +109,8 @@ def executer_local(request, url="http://127.0.0.1:11434", opener=None):
     endpoint = "http://127.0.0.1:11434/api/generate"
     req = urllib.request.Request(endpoint, data=payload, method="POST",
                                  headers={"Content-Type": "application/json"})
-    transport = opener or urllib.request.urlopen
+    # Aucune variable proxy issue de l environnement ne doit intercepter localhost.
+    transport = opener or urllib.request.build_opener(urllib.request.ProxyHandler({})).open
     with transport(req, timeout=60) as response:
         if response.headers.get("Content-Length") and int(response.headers["Content-Length"]) > 100000:
             raise ValueError("Réponse IA trop grande")
@@ -131,9 +135,12 @@ def main():
     p.add_argument("--entree", required=True)
     p.add_argument("--sortie", default="rapport-c15.json")
     p.add_argument("--executer-local", action="store_true")
+    p.add_argument("--autorisation-operateur", action="store_true", help="Consentement explicite hors fichier de mission")
     args = p.parse_args()
     request = json.loads(Path(args.entree).read_text(encoding="utf-8"))
-    report = executer_local(request) if args.executer_local else preparer(request)
+    if args.executer_local and not (args.autorisation_operateur and os.getenv("C15_LOCAL_EXECUTION_ENABLED") == "true"):
+        p.error("Execution locale refusee : autorisation operateur et environnement obligatoires")
+    report = executer_local(request, operator_authorized=args.autorisation_operateur) if args.executer_local else preparer(request)
     Path(args.sortie).write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"{report['mission_id']}: {report['statut']}, appels IA : {report['appels_effectues']}")
 
