@@ -22,3 +22,10 @@ Après consultation des captures et de la source raster, redessiner la géométr
 
 ## Coordination
 Relieuse : suivi P0/visa graphique Zout, registre des dépendances. Développeuse : relevé exact des références et future adaptation de caméra à la géométrie **approuvée**, tests réels clavier, lecteurs d’écran, tactile, performance, rollback. Toutes les interfaces publiques sont inchangées tant que la PR n’est pas fusionnée.
+
+## Passe corrective R4 — nouvelle déclinaison candidate
+- `assets/logo-faille-noire.svg` commit `aecc5fadcda22194fb0a304ed011b8da469a6613`, blob `ec068bdca1999bb132380d6182341e863ef4df65` : réseau de microfissures densifié, départs rouges dans les petites ramifications, grande fissure inchangée conceptuellement.
+- `assets/logo-interstice.svg` commit `1d85cac4f463da771e798830af0df309e5a44717`, blob `a577f915a61104d17712517ebfa55a3a0949cfb1` : reprise **octet pour octet** du groupe `<g id="base-identite">` et seule surcouche `surcouche-interstice` pour les connexions et le gros point rouge décentré.
+- Test ajouté `tests/r4-identite-captures.test.mjs` commit `c4fd1a4187969675426652470b6298a781badfc9` : compare le groupe base identitaire extrait des deux SVG et vérifie la surcouche exclusive.
+- Vérifier le workflow R4 sur SHA `c4fd1a4187969675426652470b6298a781badfc9` avant de conclure aux tests et récupérer l'artefact de 48/96/192/390px.
+- **Réserve persistante** : l'image raster validée par Zout n'a pas été vectorisée fidèlement à l'identique. Les nouveaux SVG sont une meilleure approximation, non une source officielle autorisée. Les fichiers archivés restent intacts ; aucune modification globale ou fusion. L'identité graphique demande encore une confrontation visuelle et un arbitrage Zout.
