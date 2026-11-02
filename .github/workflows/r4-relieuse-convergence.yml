@@ -23,3 +23,28 @@ jobs:
         run: node --check assets/faille-navigation.js
       - name: Contrats de convergence
         run: node --test tests/r4-relieuse-convergence.test.mjs
+  chromium:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer Chromium Playwright
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Vérification navigateur sur HEAD R4
+        run: |
+          mkdir -p artifacts/faille
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/faille.log 2>&1 &
+          node --test tests/r2-faille-navigation.browser.test.mjs tests/r4-dev-cloture.browser.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r4-relieuse-captures
+          path: artifacts/faille/
+          if-no-files-found: warn
