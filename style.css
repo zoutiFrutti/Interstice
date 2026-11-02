@@ -30,3 +30,5 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .hero .brand-identity .brand-caption span{display:block;margin-top:10px;font-size:clamp(12px,1.8vw,16px);line-height:1.4;letter-spacing:.07em}
 .hero h1{font-size:clamp(30px,4vw,46px);line-height:1.18;max-width:780px;letter-spacing:-.02em}
 @media(max-width:600px){.hero .brand-identity img{width:112px;height:112px}.hero .brand-identity .brand-caption{font-size:clamp(27px,7.4vw,38px)}}
+
+@media(max-width:360px){.hero .brand-identity{gap:12px}.hero .brand-identity img{width:94px;height:94px}.hero .brand-identity .brand-caption{font-size:25px;letter-spacing:.02em}.hero .brand-identity .brand-caption span{font-size:11px;letter-spacing:.02em}}
