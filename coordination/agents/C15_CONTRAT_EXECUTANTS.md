@@ -31,3 +31,7 @@ Ce premier exemple **bloque volontairement** tout appel. Une exécution Ollama r
 
 ## Passage vers C16
 Établir les permissions par atelier et les profils d'exécution, puis raccorder C14 à C15 dans un environnement séparé, avec authentification, budget agrégé et revue par La Relieuse. Faire relire les permissions par La Juriste, l'interface par La Développeuse, les statuts par L'Anarchitecte.
+
+## Verrou additionnel R1 (candidat)
+
+Même avec `autorisation.ia_active=true` dans le JSON, l'appel local exige une autorisation indépendante : `--executer-local --autorisation-operateur` **et** la variable d'environnement `C15_LOCAL_EXECUTION_ENABLED=true`. L'appel Python direct exige `operator_authorized=True`. Ce verrou réduit le risque d'exécution accidentelle, mais **ne constitue pas une authentification multi-utilisateurs**. Le transport Ollama désactive les proxys hérités. Aucun modèle réel n'a été exécuté pendant les tests R1.
