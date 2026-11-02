@@ -29,3 +29,20 @@ Relieuse : suivi P0/visa graphique Zout, registre des dépendances. Développeus
 - Test ajouté `tests/r4-identite-captures.test.mjs` commit `c4fd1a4187969675426652470b6298a781badfc9` : compare le groupe base identitaire extrait des deux SVG et vérifie la surcouche exclusive.
 - Vérifier le workflow R4 sur SHA `c4fd1a4187969675426652470b6298a781badfc9` avant de conclure aux tests et récupérer l'artefact de 48/96/192/390px.
 - **Réserve persistante** : l'image raster validée par Zout n'a pas été vectorisée fidèlement à l'identique. Les nouveaux SVG sont une meilleure approximation, non une source officielle autorisée. Les fichiers archivés restent intacts ; aucune modification globale ou fusion. L'identité graphique demande encore une confrontation visuelle et un arbitrage Zout.
+
+## Passe complémentaire — vérification des références en usage
+CI complète du précédent HEAD `1f094d866a574905b98cf60c2e8aa172b3f81634` : deux workflows SUCCESS, runs `41516296676` et `41516296732`, capturant candidats et historiques en 48/96/192/390 px.
+
+Inventaire ciblé réellement contrôlé sur la branche candidate :
+| Fichier | Logos HTML | Favicon direct |
+|---|---|---|
+| `index.html` | Interstice ×2 | Interstice SVG |
+| `wiki.html` | Interstice ×1 | Interstice SVG |
+| `bibliotheque.html` | Interstice ×1 | Interstice SVG |
+| `atlas.html` | Faille noire ×2 | aucun `<link rel="icon">` |
+| `parcours.html` | aucun logo direct | aucun `<link rel="icon">` |
+| `participer.html` | Interstice ×1 | Interstice SVG |
+| `style.css` | logos Interstice et Faille noire | CSS header et aperçu manifeste |
+
+Aucun `manifest.webmanifest` identifié à la racine dans la liste des fichiers source ; ne pas prétendre que les icônes PWA sont présentes ou mises à jour. Recherche globale du dépôt inclut des pages historiques et prototypes ; garder inventaire brut JSON séparé des références à modifier réellement. Les favicons manquants sont **constatés**, pas corrigés : arbitrage sur les nouveaux actifs et la PWA encore requis.
+Test de références `tests/r4-identite-pages.test.mjs` commit `078d975c12a52ddb7c0bcf6b1b684775683792b6` ; CI workflow étendu commit `cf3f81787ab8e634a455534a29ac484d58f9521a`.
