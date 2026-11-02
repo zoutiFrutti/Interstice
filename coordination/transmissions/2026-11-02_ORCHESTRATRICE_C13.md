@@ -14,7 +14,8 @@ Statut : **CANDIDAT TECHNIQUE — NE PAS FUSIONNER AUTOMATIQUEMENT**
 3. Masquage des détails d'erreur susceptibles de contenir des données sensibles.
 4. Tests de non-appel IA, autorisation, refus, succès candidat et échec.
 5. Concurrence par Issue, garde-fou anti-doublon des commentaires du bot.
-6. Contrat opératoire dans `coordination/agents/C13_CONTRAT_RETOUR_LECTRICE.md`.
+6. Enregistrement de `orchestratrice` dans la liste C11 des rôles admissibles (sans modifier le facteur C10 de 17 boîtes), avec test de normalisation.
+7. Contrat opératoire dans `coordination/agents/C13_CONTRAT_RETOUR_LECTRICE.md`.
 
 ## Ce qui n'est PAS réalisé
 - Aucune clé ni modèle IA configuré par cet atelier.
