@@ -54,6 +54,8 @@
     document.getElementById("brief-source").textContent = "Source : contexte connu, non actualisé. Ne constitue pas un suivi en temps réel.";
 
     [hero,metrics,status].forEach(node => { if(node) node.hidden = true; });
+    const refresh = document.getElementById("brief-refresh");
+    if (refresh) refresh.hidden = key !== "interstice";
     nav.forEach(button => {
       button.hidden = !current.screens.includes(button.dataset.screenTarget);
     });
