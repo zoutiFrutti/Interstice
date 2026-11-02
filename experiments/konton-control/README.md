@@ -270,3 +270,11 @@ Le module mobile Cycles affiche en lecture seule trois documents publics sur la 
 Ce n'est pas une messagerie en temps réel. L'application ne peut pas observer directement les chats distincts des ateliers, leur accusé de réception ni leur exécution. Elle ne transforme pas une PR, un fichier de boîte ou un délai écoulé en preuve de réception. Les autorisations de clôture, fusion, publication et adoption restent humaines. Les branches candidates ne sont jamais présumées fusionnées.
 
 Test statique : test-cycles.cjs. À venir : protocole arbitré, état par atelier avec preuves contrôlées, source d'authentification côté serveur et intégration de véritables commandes validées, sans accès indiscriminé aux comptes.
+
+## V1.2 · Sélecteur multi-projets Android (2026-11-02)
+
+L'accueil propose maintenant trois espaces indépendants. **Interstice** conserve la lecture GitHub publique et l'écran Cycles, coordonnés éditorialement par La Relieuse (L'Orchestratrice reste technique). **Métro : L'Entre-deux mondes** est présenté comme dépôt privé **non connecté** ; L'Architecte des mondes coordonne la création. **Mes applications** identifie Zout comme développeur, sans prétendre interroger les dépôts privés.
+
+La navigation bloque les onglets Interstice lorsqu'un autre projet est sélectionné. La sélection ne stocke aucun secret et ne fait aucun appel vers Métro. Le code de lecture GitHub public reste volontairement limité à Interstice. Les commandes de démonstration restent des simulations, même dans Interstice. Ceci est un premier jalon de l'architecture multi-projets, **pas encore un gestionnaire dynamique de projets ni un moteur multi-projets**. Le contrat proposé est dans ARCHITECTURE_MULTIPROJETS_V2_CANDIDATE.md.
+
+Tests : test-workspaces.cjs et suites existantes via GitHub Actions. QA tactile Crosscall à réaliser. PR #39 brouillon, sans fusion ni publication.
