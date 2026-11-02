@@ -8,7 +8,42 @@ Une information n'arrive jamais seule. Derrière une date d'ouverture, une manif
 
 La Faille noire assume une perspective libertaire, autogestionnaire, féministe, antiraciste, décoloniale et d'écologie sociale. Les faits, les propos attribués et **notre lecture** sont distingués. Les chartes et le manifeste adoptés prévalent sur ce brouillon.
 
-## À LA UNE — A69 : qui paie le passage en force, et qui décide encore ?
+## À LA UNE — Qui décide de la suite du mouvement ?
+**France · Lycées · Universités · Grève · Auto-organisation · 2 novembre 2026**
+
+La mobilisation commencée dans les lycées à la mi-septembre a rencontré, en octobre, des contestations plus larges autour du coût de la vie, des services publics et des salaires. La rentrée du 2 novembre ouvre une nouvelle phase : non seulement celle du nombre de blocages, mais celle des **formes de décision** qui permettront, ou non, de poursuivre le mouvement.
+
+### Des décisions différentes dans la jeunesse
+La coordination lycéenne nationale réunie le 29 octobre a annoncé vouloir maintenir la mobilisation. Les Lycéens! appellent à des blocages dès lundi ; l'Union syndicale lycéenne et l'Union étudiante privilégient une préparation le lundi et des blocages mardi. L'intersyndicale de la jeunesse (FAGE, Union étudiante, UNEF, USL) appelle à poursuivre malgré les annonces gouvernementales. Le 5 novembre est un horizon commun, sans effacer les divergences de tactique.
+
+### Ce que le gouvernement a proposé
+Le 26 octobre, le gouvernement a présenté un plafonnement progressif à 28 élèves des classes de seconde, des places supplémentaires dans le supérieur et une transformation envisagée de Parcoursup à l'horizon 2028, ainsi que des mesures sur les bâtiments scolaires. Des organisations lycéennes et étudiantes contestent les financements, les délais et le maintien de la sélection. Le 2 novembre, Reuters signale 41 lycées bloqués ou concernés par une tentative de blocage en début de matinée, contre plusieurs centaines avant les vacances : une photographie partielle à une heure donnée, non un bilan définitif.
+
+### Les appels syndicaux ne se confondent pas
+CFDT, CGT, FO, UNSA et FSU ont signé l'appel interprofessionnel du **5 novembre** pour les salaires, l'emploi et les services publics. La CGT demande des assemblées générales sur les lieux de travail pour discuter de la généralisation de la grève. La **CNT-SO**, organisation distincte de la CNT, appelle également à préparer le 5 novembre et à créer des cadres d'auto-organisation, comités de grève et caisses de solidarité. Il faut vérifier séparément les prises de position de chaque confédération, sans fabriquer un « appel unique » qui n'existe pas.
+
+### Notre question, plutôt qu'une énième chronique de manifestation
+**Qui décide de la suite ?** Une assemblée de lycée, une coordination nationale, une intersyndicale, une équipe syndicale d'entreprise et un ministère n'ont ni le même mandat, ni les mêmes leviers. Une enquête propre à La Vigie pourrait comparer les mécanismes de décision, la circulation des revendications et les moyens matériels de durer, sans supposer que toutes les personnes mobilisées défendent la même stratégie.
+
+**Notre lecture :** l'autogestion n'est pas un slogan à plaquer sur un mouvement. Elle se vérifie dans des pratiques concrètes : qui peut participer aux assemblées, voter, contester une décision, accéder aux informations, organiser une caisse, ou décider de reprendre le travail ou les cours ? Le regard de La Faille noire consiste à documenter ces questions et leurs contradictions, non à parler à la place des personnes mobilisées.
+
+### Sources et antériorité
+- Le Monde, 1er novembre, reportage sur les stratégies divergentes à la rentrée : https://www.lemonde.fr/societe/article/2026/11/01/mouvement-lyceen-les-incertitudes-de-la-rentree-scolaire-alors-que-la-jeunesse-mobilisee-veut-maintenir-la-pression_6804533_3224.html
+- Le Monde, 26 octobre, réactions à la réponse gouvernementale : https://www.lemonde.fr/politique/live/2026/10/26/en-direct-mouvement-lyceen-et-etudiant-edouard-geffray-le-ministre-de-l-education-nationale-annonce-un-plafonnement-des-classes-de-seconde-a-28-eleves-maximum_6800604_823448.html
+- LCP, revendications lycéennes : https://lcp.fr/actualites/blocage-des-lycees-quelles-sont-les-revendications-des-eleves-442989
+- CGT, appel et assemblées générales : https://www.cgt.fr/actualites/france/mobilisation/la-cgt-appelle-generaliser-la-greve-le-5-novembre
+- UNSA, appel intersyndical original : https://www.unsa.org/appel-a-la-mobilisation-pour-les-salaires-les-services-publics-lemploi-et-lindustrie/
+- CNT-SO, appel et cadres d'auto-organisation : https://cnt-so.org/article/greve-generale-du-24-octobre-au-5-novembre-on-se-mobilise-on-sorganise/
+- CNT-SO Éducation/Recherche, appel sectoriel : https://educ.cnt-so.org/article/pour-nos-salaires-contre-la-precarite-pour-un-plan-durgence-toutes-et-tous-en-greve-le-5-novembre-construisons-la-greve-generale/
+- VoxPublic, chronologie déjà publiée, à citer plutôt qu'à reproduire : https://www.voxpublic.org/CHRONOLOGIE-DES-MOBILISATIONS-ET-DES-REPONSES-INSTITUTIONNELLES.html?lang=fr
+
+**Ce que nous apportons :** un angle comparatif sur les lieux réels de décision et les formes d'organisation. **Ce qui manque avant publication :** documents originaux des AG et coordinations, position vérifiée de la CNT (distincte de CNT-SO), réponses officielles chiffrées et financées, témoignages contradictoires, bilan de la journée du 2 novembre, informations locales Tarn/Occitanie. Ce texte n'est pas un compte rendu de terrain.
+
+---
+
+## GRAND DOSSIER — A69, justice, financement et prix du passage
+
+### A69 : qui paie le passage en force, et qui décide encore ?
 **Tarn · Justice · Finances publiques · Transports · Écologie**
 
 L'A69 ne se résume ni à une manifestation ni à un chantier « controversé ». Elle révèle un enchaînement de décisions publiques, de recours et de dépenses qui mérite d'être lu dans son ensemble. Ce dossier **ne prétend pas révéler** les informations déjà établies par les journalistes de Mediacités, Basta! et d'autres rédactions : il cherche à les relier et à poser une question de contrôle démocratique.
