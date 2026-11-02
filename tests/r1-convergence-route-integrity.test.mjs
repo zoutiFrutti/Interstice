@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync,existsSync} from 'node:fs';
+const read=x=>readFileSync(x,'utf8');
+test('les deux variantes existent et conservent le logo SVG officiel',()=>{const p=read('integration-graphique/index.html');assert.match(p,/Variante A/);assert.match(p,/Variante B/);assert.equal((p.match(/logo-faille-noire\.svg/g)||[]).length,2);assert.ok(existsSync('assets/logo-faille-noire.svg'));});
+test('les accès graphiques amènent aux pages réellement disponibles',()=>{const p=read('integration-graphique/index.html');for(const dest of ['../index.html','../atlas.html','../parcours.html','../wiki.html','../bibliotheque.html'])assert.ok(p.includes('href="'+dest+'"'),dest);assert.match(p,/Ouvrir l’Atlas documentaire existant/);});
+test('aucune nouvelle collecte ou activation sensible',()=>{for(const file of ['integration-graphique/index.html','atlas.html','parcours.html'])assert.doesNotMatch(read(file),/<form\b|supabase\.co|fetch\s*\(/i,file);});
