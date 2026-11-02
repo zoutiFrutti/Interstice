@@ -58,3 +58,27 @@ test('R4 closure: two-pointer pinch changes camera and keeps links usable',async
   assert.equal(await page.locator('#rubriques a').count(),5);
  }finally{await browser.close()}
 });
+
+test('R4 : liens alternatifs résolus, ancre Entraide et focus clavier',async()=>{
+ const browser=await chromium.launch({args:['--no-sandbox']});
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:800},reducedMotion:'reduce'});
+  await page.goto(url);
+  const links=await page.locator('#rubriques a').evaluateAll(nodes=>nodes.map(n=>n.href));
+  assert.equal(links.length,5);
+  for(const href of links){
+   const response=await page.goto(href);
+   assert.equal(response.status(),200,href);
+   if(href.includes('#entraide')){
+    assert.equal(await page.locator('#entraide').count(),1);
+    assert.equal(new URL(page.url()).hash,'#entraide');
+   }
+  }
+  await page.goto(url);
+  await page.keyboard.press('Tab');
+  assert.equal(await page.evaluate(()=>document.activeElement?.getAttribute('href')),'#rubriques');
+  await page.locator('#rubriques a').first().focus();
+  await page.keyboard.press('Enter');
+  assert.match(page.url(),/wiki\.html$/);
+ }finally{await browser.close()}
+});
