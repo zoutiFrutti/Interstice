@@ -438,3 +438,14 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
   .workspace-option{min-height:61px;padding:10px 13px;gap:2px}
   .workspace-overview{padding:15px}
 }
+
+
+/* V1.4 control-room summary */
+.project-brief{margin:14px 0 18px}
+.project-brief h2{font-size:1.45rem;margin:4px 0 12px}
+.brief-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.brief-item{padding:18px;border:1px solid #344354;background:#14202b;border-radius:13px;min-height:147px}
+.brief-item h3{font-size:1rem;margin:0 0 9px;color:#eaf0f6}
+.brief-item p{font-size:.88rem;color:#c1cdd6;line-height:1.55;margin:0}
+.brief-provenance{font-size:.78rem;color:#b3c0ce;line-height:1.4;margin:10px 2px}
+@media(max-width:680px){.brief-grid{grid-template-columns:1fr;gap:8px}.brief-item{min-height:0;padding:15px}}
