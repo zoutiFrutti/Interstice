@@ -1,0 +1,30 @@
+name: R5 DEV accessibility candidate
+on:
+  push:
+    branches: [test/r5-dev-accessibilite-20261103]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check assets/faille-navigation.js
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - run: |
+          mkdir -p artifacts/faille
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/faille.log 2>&1 &
+          node --test tests/r5-dev-accessibilite.browser.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r5-dev-accessibilite-captures
+          path: artifacts/faille/
+          if-no-files-found: warn
