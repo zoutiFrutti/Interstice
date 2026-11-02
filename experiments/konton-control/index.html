@@ -19,6 +19,7 @@
   <script src="./pwa.js" defer></script>
   <script src="./navigation.js" defer></script>
   <script src="./cycles.js" defer></script>
+  <script src="./workspaces.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#screen-home">Aller au cockpit</a>
@@ -27,13 +28,13 @@
       <div class="brand">
         <div class="brand-mark" aria-hidden="true"><span class="brand-slash">/</span></div>
         <div>
-          <p class="eyebrow">CONSOLE D'AGENTS</p>
+          <p class="eyebrow">RÉGIE MULTI-PROJETS</p>
           <h1>KONTON <span>CONTROL</span></h1>
         </div>
       </div>
       <div class="topbar-meta">
         <span class="demo-chip"><span class="led led-amber" aria-hidden="true"></span> AGENTS EN DÉMO</span>
-        <span class="connection">V1.0 · Prototype Android</span>
+        <span class="connection">V1.2 · Multi-projets</span>
       </div>
     </header>
 
@@ -66,6 +67,24 @@
       </section>
     </section>
     <section class="screen screen-home" id="screen-home" data-screen="home" tabindex="-1" aria-label="Accueil">
+      <section class="workspace-picker" aria-label="Choisir un projet">
+        <p class="eyebrow">MES ESPACES · SÉPARÉS PAR PROJET</p>
+        <div class="workspace-choices" role="group" aria-label="Espaces de travail">
+          <button type="button" class="workspace-option selected" data-workspace="interstice" aria-pressed="true"><strong>Interstice</strong><span>La Relieuse · Public</span></button>
+          <button type="button" class="workspace-option" data-workspace="metro" aria-pressed="false"><strong>Métro</strong><span>L'Architecte des mondes · Privé</span></button>
+          <button type="button" class="workspace-option" data-workspace="personnel" aria-pressed="false"><strong>Mes applications</strong><span>Développement · Zout</span></button>
+        </div>
+      </section>
+      <section class="workspace-overview panel" aria-live="polite">
+        <h2 id="workspace-name">La Faille noire × Interstice</h2>
+        <p id="workspace-lead">Coordination : La Relieuse. L'Orchestratrice travaille sur le moteur technique, sans remplacer ta validation.</p>
+        <p id="workspace-access">GitHub public : lecture seule. Les ateliers de démonstration ne sont pas des conversations connectées.</p>
+        <div class="workspace-links" id="workspace-links">
+          <button type="button" class="small-btn" data-screen-target="cycles">Courriers et cycles</button>
+          <button type="button" class="small-btn" data-screen-target="github">GitHub public</button>
+        </div>
+      </section>
+
       <div class="home-hero">
         <p class="eyebrow">VUE D'ENSEMBLE</p>
         <h2>La régie dans la poche.</h2>
