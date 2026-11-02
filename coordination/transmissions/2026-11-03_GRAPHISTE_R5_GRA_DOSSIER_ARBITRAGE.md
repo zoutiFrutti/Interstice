@@ -73,3 +73,19 @@ Le rapport ne prétend pas que le CI est réussi ou que les captures existent av
 **Relieuse** : reporter la réserve P0, transmettre à Zout le comparateur, les captures effectives et le tableau de décision ; ne pas annoter « validé » en l'absence d'accord. **Développeuse** : ne pas adapter définitivement la géométrie interactive aux SVG R4 avant validation, ne remplacer aucun actif/favicons ni publier.
 
 **Rollback** : fermer la PR R5 sans fusion, et/ou revenir au HEAD R4 de départ `9f733122c7196622d31e7996d1d0b4eea987a14d`. Les dossiers `assets/archives/` et `assets/candidats/` restent conservés sur PR #141. Aucun changement sur `main` et aucune opération de production à annuler.
+
+
+### 8. Addendum CI réellement vérifié (03-11-2026)
+
+**Exécution de contrôle sur HEAD `538f59dddba1c3478a272b9f9beca729f41fc7af` :** [GitHub Actions R5-GRA, run 41544046807](https://github.com/zoutiFrutti/Interstice/actions/runs/41544046807), **completed / success**, 3 tests réussis sur 3, zéro échec. Contrat vérifié : archives égales aux actifs, base des deux candidats identique, overlay Interstice exclusif, contrôle de chemins et cercles. Visites Chromium à 320, 390, 768, 1280 px :
+
+| Largeur viewport | ScrollWidth document | Images décodées | Débordement global |
+|---:|---:|---:|---|
+| 320 px | 320 px | 10 / 10 | Aucun détecté |
+| 390 px | 390 px | 10 / 10 | Aucun détecté |
+| 768 px | 768 px | 10 / 10 | Aucun détecté |
+| 1280 px | 1280 px | 10 / 10 | Aucun détecté |
+
+**Artefact vérifié** : `r5-gra-comparatifs-320-390-768-1280-et-a4`, identifiant GitHub `13187244402`, taille 2 714 385 octets, non expiré au contrôle. Comprend quatre captures PNG (320/390/768/1280) et impression PDF A4 du comparateur.
+
+**Limites des preuves :** captures générées dans Chromium, sans lecture visuelle humaine certifiée ni comparaison pixel à pixel aux PNG approuvés (absents du dépôt). Pas de smartphone ou de tablette physique testés. La validation artistique reste bloquée en attente de la comparaison des sources exactes et de la décision personnelle de Zout. Ce nouvel addendum documentaire n'altère pas les SVG ni les tests ; le HEAD de la PR qui le contient doit être identifié distinctement de celui qui a produit l'artefact.
