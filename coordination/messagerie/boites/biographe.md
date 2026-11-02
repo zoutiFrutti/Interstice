@@ -10,3 +10,6 @@ La réception ne signifie ni validation des sources non lues, ni adoption des d�
 
 ## C10-REL-20261101-SUITE-biographe
 Réception locale datée 2026-11-01. Courrier lu sur coordination/cycle10-messagerie-v1-20261101 ; blob de source f3764f45926ee3fcbf3bf3608532d73c3707fd13. État REÇUE localement, pas encore TRAITÉE avant vérification du retour. Branches non fusionnées.
+
+## Réception C10-REL-20261102-RECONCILIATION-BIOGRAPHE
+Date : 2026-11-02. Lu sur `coordination/c10-relieuse-reconciliation-20261102` ; courrier blob `d4180077b72ea6dcdaa9f2da7d7215596104301b`. **REÇU localement**, sans modification ni notification de la boîte centrale. La transmission détaillée du 2 novembre et ses vérifications restent distinctes de ce simple accusé.
