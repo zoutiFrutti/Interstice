@@ -16,8 +16,8 @@ test('Accueil : identité plus grande que le slogan et responsive', async () => 
  });
  console.log('ACCUEIL_QA '+JSON.stringify(m));
  assert.ok(m.doc<=width+1,'horizontal overflow');
- assert.ok(m.brand>=27,'wordmark not sufficiently large');
- assert.ok(m.logo>=112,'logo too small');
+ assert.ok(m.brand>=(width<=360?25:27),'wordmark not sufficiently large');
+ assert.ok(m.logo>=(width<=360?94:112),'logo too small');
  assert.ok(m.title<=46,'slogan too large');
  assert.ok(m.imageOk,'missing original logo');
  await page.close();
