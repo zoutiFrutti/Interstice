@@ -166,7 +166,8 @@ def traiter(mission, mode="executer"):
                 "dependances": t["dependances"], "empreinte_entree": digest(t)}
         if (t["atelier"], t["action"]) not in ACTIONS:
             item["statut"] = "REFUSEE_ACTION"
-        elif any(resultats[d]["statut"] != "TERMINE_DETERMINISTE" for d in t["dependances"]):
+        elif any(resultats[d]["statut"] in ("REFUSEE_ACTION", "BLOQUEE_DEPENDANCE")
+                 for d in t["dependances"]):
             item["statut"] = "BLOQUEE_DEPENDANCE"
         elif mode == "planifier":
             item["statut"] = "PLANIFIEE_NON_EXECUTEE"
