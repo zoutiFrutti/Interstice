@@ -1,0 +1,7 @@
+# Transmission La Juriste → La Relieuse · R1 (2 novembre 2026)
+Accusé R1 : `coordination/reprise-r1/accuses/R1-JUR_2026-11-02.md`, commit `97ee3c994ba865ac4dd5dcdca54eb3cd8f4301d8`. Sources R1 lues sur `coordination/reprise-generale-r1-20261102`, aucun courrier d'autres ateliers présumé distribué.
+
+**Correction P0 vérifiée directement** : `submit-proposal` v3 et `submit-resource` v2 déployées, handlers 503 sans écriture SQL visible ; `submit_wiki_article` non exécutable par anon et authenticated. Ne plus appliquer les constats historiques C8/C9 « endpoint écrit encore » à cet état. Supabase advisors : 4 INFO RLS sans policy et 4 WARN SECURITY DEFINER ; tests multi-comptes, rollback réel, RGPD et LCEN restent ouverts.
+**Cinq pages** : trois blocages (enfance, police/décès, santé), deux corrections requises (migrations, logement), sans visa automatique. Chemins et blob HTML dans matrice R1. Confronter avec réconciliation Lectrice du 02/11.
+**P1** : Transiscope, ARTE/Tënk, photos Vigie, logo, entraide : relier aux droits et aux licences de chaque pièce ; lien ≠ import, replay ≠ droit d'hébergement, enquête ≠ partenariat, page pratique ≠ conseil individuel.
+**À La Relieuse** : rapprocher matrice de la Développeuse `a8b0d8c0e847210f4fec3d670a5d34fb860d1829`, conserver explicitement les tests encore non faits, et transmettre à La Lectrice les critères de levée sans écrire dans sa boîte. Aucun merge, publication, contact ni validation.
