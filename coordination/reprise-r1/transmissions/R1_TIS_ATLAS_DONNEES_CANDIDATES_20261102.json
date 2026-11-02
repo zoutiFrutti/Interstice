@@ -1,0 +1,233 @@
+{
+  "schema": "atlas-tis001-candidat-v1",
+  "created_at": "2026-11-02",
+  "origin_branch": "research/tisseuse-cycle10-tis001-20261101",
+  "origin_blob": "beec593209b1e165bbcfa4d97012323c8077a3ff",
+  "scope": "DOCUMENTAIRE_NON_PUBLIE",
+  "entries": [
+    {
+      "id": "tis-c8-testet",
+      "kind": "territoire",
+      "title": "Testet / concertation sur l'eau",
+      "territory": "Lisle-sur-Tarn / Tescou",
+      "canonical_url": "https://www.igedd.developpement-durable.gouv.fr/appui-a-l-aboutissement-du-projet-de-territoire-a4159.html",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": "2025-05-23",
+      "public_contact_url": "https://www.igedd.developpement-durable.gouv.fr/appui-a-l-aboutissement-du-projet-de-territoire-a4159.html",
+      "public_address": null,
+      "public_email": null,
+      "source_kind": "institution",
+      "access_conditions": "Ne pas répertorier PTGE comme collectif du Testet ; activité actuelle du collectif non vérifiée",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": "Territoire/rapport, pas une organisation"
+    },
+    {
+      "id": "tis-c8-salvetat",
+      "kind": "initiative",
+      "title": "Les Chlorophy'liens / La Salvetat",
+      "territory": "Monestiés, Tarn",
+      "canonical_url": "https://fermes.terredeliens.org/midi-pyrenees/fermes-de-la-r%C3%A9gion-midi-pyr%C3%A9n%C3%A9es/la-salvetat/",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": null,
+      "public_contact_url": "https://fermes.terredeliens.org/midi-pyrenees/fermes-de-la-r%C3%A9gion-midi-pyr%C3%A9n%C3%A9es/la-salvetat/",
+      "public_address": null,
+      "public_email": null,
+      "source_kind": "operateur",
+      "access_conditions": "Terre de Liens note des changements de titulaires de bail. Projet/décision de retenue d'eau ≠ construction vérifiée. Visites non confirmées",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": null
+    },
+    {
+      "id": "tis-c8-vrac",
+      "kind": "initiative",
+      "title": "VRAC Toulouse",
+      "territory": "Toulouse",
+      "canonical_url": "https://toulouse.vrac-asso.org/adherer-commander/",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": null,
+      "public_contact_url": "https://toulouse.vrac-asso.org/adherer-commander/",
+      "public_address": null,
+      "public_email": "contact-toulouse@vrac-asso.org",
+      "source_kind": "operateur",
+      "access_conditions": "Liste d'attente ; formulaire 2025 encore affiché ; pas d'adhésion automatique",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": null
+    },
+    {
+      "id": "tis-c8-jardins",
+      "kind": "reseau",
+      "title": "Partageons les Jardins",
+      "territory": "Toulouse",
+      "canonical_url": "https://www.partageonslesjardins.fr/",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": null,
+      "public_contact_url": "https://www.partageonslesjardins.fr/",
+      "public_address": null,
+      "public_email": "contact@partageonslesjardins.fr",
+      "source_kind": "operateur",
+      "access_conditions": "Jardins individuels non tous ouverts ; accompagnement avec collectivités extérieur à Interstice",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": null
+    },
+    {
+      "id": "tis-c8-glanerie",
+      "kind": "ressource",
+      "title": "La Glanerie",
+      "territory": "Toulouse / Blagnac",
+      "canonical_url": "https://www.la-glanerie.org/",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": null,
+      "public_contact_url": "https://www.la-glanerie.org/redistribuer",
+      "public_address": null,
+      "public_email": null,
+      "source_kind": "operateur",
+      "access_conditions": "Annonce nouveaux horaires de Blagnac à compter du 4 novembre contredit horaires de l'ancienne page ; vérifier avant visite. Épicerie solidaire encore en préparation selon publication juillet 2026",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": null
+    },
+    {
+      "id": "tis-c8-velo",
+      "kind": "ressource",
+      "title": "Maison du Vélo",
+      "territory": "Toulouse",
+      "canonical_url": "https://www.maisonduvelotoulouse.com/atelier-participatif-reparation/",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": null,
+      "public_contact_url": "https://www.maisonduvelotoulouse.com/informations-pratiques/",
+      "public_address": "12 boulevard Bonrepos, 31000 Toulouse (adresse de structure, non géolocalisée)",
+      "public_email": null,
+      "source_kind": "operateur",
+      "access_conditions": "Horaires été/hiver divergents selon pages officielles ; appeler avant déplacement ; bénévoles accompagnent sans réparer à la place",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": null
+    },
+    {
+      "id": "tis-c8-3pa",
+      "kind": "ressource",
+      "title": "3PA / Bordanova",
+      "territory": "Lahage",
+      "canonical_url": "https://www.3paformation.fr/",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": null,
+      "public_contact_url": "https://www.3paformation.fr/contact/",
+      "public_address": "Lieu dit Bordeneuve, 31370 Lahage (adresse publique de structure, pas de marqueur GPS)",
+      "public_email": "contact@3paformation.fr",
+      "source_kind": "operateur",
+      "access_conditions": "Visites le 11 à 11h déclarées avec inscription ; horaires non garantis, ne pas réserver à la place d'autrui",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": null
+    },
+    {
+      "id": "tis-c8-tdl",
+      "kind": "reseau",
+      "title": "Terre de Liens Midi-Pyrénées",
+      "territory": "Occitanie",
+      "canonical_url": "https://terredeliens.org/midi-pyrenees/",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": null,
+      "public_contact_url": "https://terredeliens.org/midi-pyrenees/",
+      "public_address": "17 rue Valentin, 31400 Toulouse (siège public régional)",
+      "public_email": null,
+      "source_kind": "operateur",
+      "access_conditions": "Aucun foncier attribué automatiquement",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": null
+    },
+    {
+      "id": "tis-c8-sctl",
+      "kind": "organisation",
+      "title": "SCTL",
+      "territory": "Larzac",
+      "canonical_url": "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/",
+      "source_checked_at": "2026-11-02",
+      "source_published_at": null,
+      "public_contact_url": "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/",
+      "public_address": "Montredon, 12100 La Roque-Sainte-Marguerite (adresse publique de la structure)",
+      "public_email": null,
+      "source_kind": "operateur",
+      "access_conditions": "Statistiques de baux historiques non actualisées ; annonce 32 heures 2026 expirée ne prouve ni embauche ni terres libres",
+      "relation_with_interstice": "AUCUNE",
+      "publication_state": "CANDIDAT",
+      "coordinates": null,
+      "rights": "A_VERIFIER",
+      "historical_note": null
+    }
+  ],
+  "paths": [
+    {
+      "id": "tis-p-eau-foncier",
+      "title": "Eau et foncier",
+      "kind": "lecture_documentaire",
+      "steps": [
+        "tis-c8-testet",
+        "tis-c8-salvetat",
+        "tis-c8-sctl"
+      ],
+      "wiki": [
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-decision-collective.html"
+      ],
+      "routing_verified": false
+    },
+    {
+      "id": "tis-p-alimentation",
+      "title": "Alimentation et mutualisation",
+      "kind": "lecture_documentaire",
+      "steps": [
+        "tis-c8-vrac",
+        "tis-c8-jardins",
+        "tis-c8-glanerie"
+      ],
+      "wiki": [
+        "wiki-autonomie-materielle-savoir-faire.html",
+        "wiki-capitalisme-classes-travail.html"
+      ],
+      "routing_verified": false
+    },
+    {
+      "id": "tis-p-apprentissage",
+      "title": "Réparer et transmettre",
+      "kind": "lecture_documentaire",
+      "steps": [
+        "tis-c8-velo",
+        "tis-c8-3pa",
+        "tis-c8-jardins"
+      ],
+      "wiki": [
+        "wiki-autonomie-materielle-savoir-faire.html",
+        "wiki-education-enfance-protection.html"
+      ],
+      "routing_verified": false
+    }
+  ],
+  "transiscope": {
+    "mode": "LIEN_EXTERNE_SEUL",
+    "import_authorized": false,
+    "api_verified": false
+  },
+  "note": "Aucune carte GPS, itinéraire, ouverture, visite ou coopération Interstice validée"
+}
