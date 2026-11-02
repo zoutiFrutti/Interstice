@@ -1,0 +1,730 @@
+{
+  "schema": "c10-anarchitecte-reconciliation-v1",
+  "date": "2026-11-02",
+  "status": "CANDIDAT_PORTE_B_NON_LEVEE",
+  "baseline": "coordination/cycle10/anarchitecte/MAPPING_C10_139.json",
+  "sources": {
+    "mediatheque": {
+      "branch": "coordination/mediatheque-cycle10-complet-20261101",
+      "path": "coordination/mediatheque/cycle10_matrice_71_sources_candidats_2026-11-01.json",
+      "blob": "bf6691345d4459349bb8ba0a810a39ac5fee77bb"
+    },
+    "lectrice": {
+      "branch": "atelier-lectrice/cycle10-vingt-controles-20261101",
+      "path": "coordination/transmissions/2026-11-01_LECTRICE_CYCLE10_MATRICE_20.md",
+      "blob": "ffd4f7878154d3b24b8231e35d1820c0e1796e98"
+    },
+    "biographe": {
+      "branch": "agent/biographe-cycle10-20261101",
+      "blobs": {
+        "BIO-009": "2d7fb44649ee78f41fb1e3474d6a59d39bb28d0c",
+        "BIO-012": "710874d9d04d64b5c26c6a7435c8025bf32758c7",
+        "BIO-019": "d5ca3fc167dcc8632ad2c95539e466fa4fb9ddac"
+      }
+    }
+  },
+  "fn": {
+    "count": 71,
+    "unique": 71,
+    "missing_original_notice": [
+      "FN-018"
+    ],
+    "urls_present": 70,
+    "urls_tested": 4,
+    "unverified_rights_ids": [
+      "FN-010",
+      "FN-011",
+      "FN-014",
+      "FN-015",
+      "FN-016",
+      "FN-017",
+      "FN-018",
+      "FN-019",
+      "FN-020",
+      "FN-022",
+      "FN-023",
+      "FN-030",
+      "FN-046",
+      "FN-048",
+      "FN-065",
+      "FN-067"
+    ],
+    "aliases_proposed": {
+      "FN-048": "FN-022",
+      "FN-057": "FN-038"
+    },
+    "aliases_active": {},
+    "records": [
+      {
+        "id": "FN-001",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-002",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-003",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-004",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-005",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-006",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-007",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-008",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-009",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-010",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-011",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-012",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-013",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-014",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-015",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-016",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-017",
+        "source_status": "SOURCE_DIRECTE_WEB_C10",
+        "url_status": "SOURCE_OUVERTE_C10",
+        "rights_status": "MENTION_DE_DROITS_CONSTATEE_SOURCE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-018",
+        "source_status": "FN-018_REFERENCE_SEULEMENT_CATALOGUE",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-019",
+        "source_status": "SOURCE_DIRECTE_WEB_C10",
+        "url_status": "SOURCE_OUVERTE_C10",
+        "rights_status": "MENTION_DE_DROITS_CONSTATEE_SOURCE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-020",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-021",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-022",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-023",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-024",
+        "source_status": "SOURCE_DIRECTE_WEB_C10",
+        "url_status": "SOURCE_OUVERTE_C10",
+        "rights_status": "MENTION_DE_DROITS_CONSTATEE_SOURCE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-025",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-026",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-027",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-028",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-029",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-030",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-031",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-032",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-033",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-034",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-035",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-036",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-037",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-038",
+        "source_status": "SOURCE_DIRECTE_WEB_C10",
+        "url_status": "SOURCE_OUVERTE_C10",
+        "rights_status": "MENTION_DE_DROITS_CONSTATEE_SOURCE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-039",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-040",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-041",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-042",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-043",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-044",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-045",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-046",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-047",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-048",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": "FN-022"
+      },
+      {
+        "id": "FN-049",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-050",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-051",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-052",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-053",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-054",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-055",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-056",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-057",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": "FN-038"
+      },
+      {
+        "id": "FN-058",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-059",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-060",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-061",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-062",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-063",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-064",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-065",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-066",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-067",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-068",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-069",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-070",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      },
+      {
+        "id": "FN-071",
+        "source_status": "CATALOGUE_DRIVE_NON_REVERIFIE_C10",
+        "url_status": "NON_TESTE_C10",
+        "rights_status": "NON_TESTE_C10",
+        "read_complete": false,
+        "hosting_allowed": false,
+        "alias_candidate": null
+      }
+    ]
+  },
+  "bio": [
+    {
+      "id": "BIO-009",
+      "candidate_status": "A_POURSUIVRE_ACTE_NAISSANCE",
+      "publication_authorized": false
+    },
+    {
+      "id": "BIO-012",
+      "candidate_status": "FICHE_CANDIDATE_TERMINEE_VISA_HUMAIN_ATTENDU",
+      "publication_authorized": false
+    },
+    {
+      "id": "BIO-019",
+      "candidate_status": "BLOQUEE_IDENTIFICATION_CIVILE",
+      "publication_authorized": false
+    }
+  ],
+  "lectrice": {
+    "twenty_file_matrix_source": true,
+    "scope": "20 versions de contenus candidats, pas 20 visas",
+    "application": "relecture manuelle des statuts par fichier sur HEAD intégré; aucun écrasement du mapping historique"
+  },
+  "gates": [
+    "sources originals FN-018",
+    "verification URL 66 notices restantes",
+    "droits édition/media FN",
+    "collation complète de 20 versions Lectrice et conflits Juriste",
+    "relecture biographie BIO-009 et identification BIO-019",
+    "décisions de Zout par version"
+  ],
+  "never_publish": true
+}
