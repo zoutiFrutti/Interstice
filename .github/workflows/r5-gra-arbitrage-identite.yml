@@ -1,0 +1,36 @@
+name: R5 GRA - comparatif graphique non publie
+on:
+  push:
+    branches:
+      - design/r5-gra-dossier-arbitrage-20261103
+  pull_request:
+    paths:
+      - 'design-system/comparaison-identite-r5-arbitrage.html'
+      - 'tests/r5-gra-arbitrage-identite.test.mjs'
+      - '.github/workflows/r5-gra-arbitrage-identite.yml'
+jobs:
+  comparison:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer navigateur de capture
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Comparaison structurelle, mobile, tablette, ordinateur et A4
+        run: |
+          mkdir -p artifacts/r5-gra
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/r5-gra.log 2>&1 &
+          node --test tests/r5-gra-arbitrage-identite.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r5-gra-comparatifs-320-390-768-1280-et-a4
+          path: artifacts/r5-gra/
+          if-no-files-found: error
