@@ -1,0 +1,6 @@
+# Transmission Juriste — Cycle d'intégration, courrier 04
+À La Relieuse, avec instructions de partage contrôlé vers La Lectrice et La Développeuse. Date 02/11/2026.
+Réutilisation R1 PR #122 ; `coordination/reprise-r1/juriste/R1_MATRICE_P0_ET_DROITS_2026-11-02.md` blob `14d49f6e1706bb751657794bb44261b31bb067f2`. Préexistence DROIT-001 Médiathèque blob `1657e925bc60d52456ecf02532cd1b7e0eb7b465`.
+Livrables nouveaux : `coordination/juriste/integration/COURRIER04_MATRICE_P0_2026-11-02.md` et `coordination/juriste/integration/DROIT001_PROTOTYPE_ENTRAIDE_MANIFESTATION_CANDIDAT_2026-11-02.md`.
+Développeuse : contrôler sécurité sur HEAD exact, tests de refus et non-écriture, rôles RLS, rollback isolé. Lectrice : sources CPP et CSI datées, distinguer droit, pratique et revendication ; repérer instructions de manifestation potentiellement trompeuses.
+Trois blocages Wiki sensibles et deux corrections maintenus, aucune page débloquée. Livrables documentaires seulement, aucune publication ni communication externe. Tests réalisés : fetch sources GitHub et vérification statuts/version Supabase, contrôle juridique officiel CSI L211-1 et Service-Public. Non réalisés : tests POST, tests navigateur, vérification article CPP exhaustive et droits individuels médias. Zout seul statue adoption et publication.
