@@ -1,0 +1,125 @@
+{
+  "version": "r1-resource-graph-v1-candidat",
+  "status": "NON_PUBLIE",
+  "counts": {
+    "wiki": 24,
+    "drive": 44,
+    "fn": 71
+  },
+  "types": {
+    "Resource": [
+      "corpus",
+      "stable_key",
+      "kind",
+      "title",
+      "source_refs",
+      "rights",
+      "access",
+      "editorial_state",
+      "canonical_url",
+      "alias_of"
+    ],
+    "SourceRef": [
+      "url",
+      "author",
+      "published_at",
+      "checked_at",
+      "kind",
+      "rights",
+      "verification"
+    ],
+    "Relation": [
+      "from_id",
+      "to_id",
+      "type",
+      "evidence_refs",
+      "state"
+    ],
+    "SituationEntry": [
+      "label_plain",
+      "resource_ids",
+      "territory_scope",
+      "review_due_at"
+    ],
+    "WorkAccess": [
+      "work_id",
+      "provider_url",
+      "terms",
+      "availability_checked_at"
+    ]
+  },
+  "identity": {
+    "key": [
+      "corpus",
+      "stable_key"
+    ],
+    "no_renumber": true
+  },
+  "aliases": {
+    "proposed": {
+      "FN-048": "FN-022",
+      "FN-057": "FN-038"
+    },
+    "active": {},
+    "preserve_all_ids": true
+  },
+  "routes": {
+    "retain_24_wiki": true,
+    "existing": [
+      "wiki.html",
+      "bibliotheque.html"
+    ],
+    "logo_is_view_not_id": true,
+    "accessible_text_index": true,
+    "new_site": false
+  },
+  "publication": {
+    "default": "DENY",
+    "rights_checked_individually": true,
+    "no_private_data_or_media_without_rights": true
+  },
+  "prototypes": [
+    {
+      "id": "A",
+      "status": "CONTRACT_ONLY",
+      "scope": "logo graph 4-6 existing resources + list view"
+    },
+    {
+      "id": "B",
+      "status": "CONTRACT_ONLY",
+      "scope": "offline printable dated territorial aid sheet without personal data"
+    },
+    {
+      "id": "C",
+      "status": "CONTRACT_ONLY",
+      "scope": "ten work notices with separate licensing and provider access"
+    }
+  ],
+  "gates": {
+    "p0": [
+      "staging rollback",
+      "five sensitive wiki legal reviews",
+      "server/privacy audit"
+    ],
+    "p1": [
+      "FN-018 missing original",
+      "59 untested nonselected URLs",
+      "16 rights fields missing extracted data",
+      "BIO-009 civil identity",
+      "BIO-019 identity",
+      "three sensitive wiki blocked",
+      "two sensitive wiki still need correction"
+    ]
+  },
+  "migration": {
+    "execute": false,
+    "sql": [],
+    "destructive": [],
+    "rollback": "restore original indexes and IDs"
+  },
+  "sources": {
+    "mediatheque_blob": "ab2b722767d5b96d4ce867ba854b6ee583b06063",
+    "biographe_blob": "a2efec14a32df62001b71b0abff164ab7be62183",
+    "lectrice_r1_blob": "f4e220c948526f20d5238a89de9d96bc3b221c96"
+  }
+}
