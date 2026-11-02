@@ -31,7 +31,7 @@ Branche `feature/r1-orchestratrice-audit-p0-20261102` **basée sur C15** (elle-m
 - Aucun changement sur les branches de La Développeuse, de L'Anarchitecte, de La Juriste ou de La Relieuse.
 
 ## Passe 4 — Tests
-Le statut de chaque CI est à examiner sur la PR R1 avant adoption. Tests prévus : `python3 -m unittest discover -s coordination/agents -p 'test_executant_c15.py' -v`. Les tests simulent Ollama, **aucun appel réel**. Test Linux/Ollama réel, tests multi-utilisateurs, étude des coûts et tests d'accès réseau local : **NON FAITS**.
+Sur le commit `c37ece6163503be8dce63f3d6eae76d8729d4bee`, workflow C15 run `41448191248` **SUCCESS**, tests C15 exécutés en CI sans appel Ollama réel. Suite C11 run `41448191231` lancée, état à vérifier sur SHA final. Le contrat C15 a ensuite été précisé sur un commit ultérieur. Tests prévus : `python3 -m unittest discover -s coordination/agents -p 'test_executant_c15.py' -v`. Les tests simulent Ollama, **aucun appel réel**. Test Linux/Ollama réel, tests multi-utilisateurs, étude des coûts et tests d'accès réseau local : **NON FAITS**.
 
 ## Passe 5 — Transmission et priorités
 - **TERMINÉ documentaire** : inventaire, lecture R1, identification du risque d'autorisation, correctif candidat.
