@@ -79,7 +79,7 @@ test('R4 : liens alternatifs résolus, ancre Entraide et focus clavier',async()=
   await page.keyboard.press('Tab');
   assert.equal(await page.evaluate(()=>document.activeElement?.getAttribute('href')),'#rubriques');
   await page.locator('#rubriques a').first().focus();
-  await page.keyboard.press('Enter');
+  await Promise.all([page.waitForURL(/wiki\.html$/),page.keyboard.press('Enter')]);
   assert.match(page.url(),/wiki\.html$/);
  }finally{await browser.close()}
 });
