@@ -40,3 +40,21 @@ test('R4 closure: keyboard, touch mode and direct deep link',async()=>{
   assert.equal(await page.locator('#map').getAttribute('viewBox'),'0 0 1000 1000');
  }finally{await browser.close()}
 });
+
+test('R4 closure: two-pointer pinch changes camera and keeps links usable',async()=>{
+ const browser=await chromium.launch({args:['--no-sandbox']});
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:800},hasTouch:true,isMobile:true,reducedMotion:'reduce'});
+  await page.goto(url);
+  await page.locator('#touch-mode').click();
+  const before=await page.locator('#map').getAttribute('viewBox');
+  const rect=await page.locator('#map').boundingBox();
+  const x=rect.x+rect.width/2,y=rect.y+rect.height/2;
+  const send=async(type,id,px)=>page.locator('#map').evaluate((el,a)=>{el.dispatchEvent(new PointerEvent(a.type,{bubbles:true,pointerId:a.id,pointerType:'touch',isPrimary:a.id===1,clientX:a.x,clientY:a.y}))},{type,id,x:px,y});
+  await send('pointerdown',1,x-30);await send('pointerdown',2,x+30);
+  await send('pointermove',2,x+70);
+  await send('pointerup',2,x+70);await send('pointerup',1,x-30);
+  assert.notEqual(await page.locator('#map').getAttribute('viewBox'),before);
+  assert.equal(await page.locator('#rubriques a').count(),5);
+ }finally{await browser.close()}
+});
