@@ -1,7 +1,7 @@
 name: R4 DEV closure verification
 on:
   push:
-    branches: [fix/r4-dev-cloture-validation-20261102]
+    branches: [fix/r4-dev-cloture-validation-20261102, integration/r4-convergence-relieuse-20261102]
   pull_request:
     branches: [integration/r4-convergence-relieuse-20261102]
   workflow_dispatch:
