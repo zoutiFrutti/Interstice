@@ -288,3 +288,7 @@ Cette mesure est temporaire : les futures mises à jour du nouveau package auron
 ## V1.4 : accueil régie lisible
 
 L'accueil affiche par espace trois rubriques : avance, blocages et décisions. Chaque contenu est **informatif, non synchronisé** ; aucune métrique n'est inventée. Les démonstrations et compteurs simulés de la page d'accueil sont masqués, mais restent disponibles dans l'écran Agents du projet Interstice. Le projet Métro et les applications restent sans accès privé ni donnée CI. La V1.4 ne change pas les permissions Android, ni le package ID V1.3 `fr.konton.control.cockpit`. Une signature stable reste nécessaire pour mettre à jour une installation V1.3 signée avec une autre clé de debug.
+
+## V1.5 : état GitHub réel, limité et vérifiable
+
+L'accueil Interstice propose une actualisation manuelle via l'API GitHub publique, sans jeton et sans écriture. Le bilan compte les 30 premières PR ouvertes retournées et les 20 exécutions CI récentes toutes branches confondues ; un nombre de CI réussies/échouées ne prouve ni le statut global du projet ni la fin des dépendances. Les arbitrages Zout ne sont pas synchronisés. En cas d'erreur réseau, l'interface ne conserve aucune fausse donnée vérifiée. Métro et Mes applications n'essaient pas d'accéder aux dépôts privés. L'identifiant Android `fr.konton.control.cockpit` ne change pas ; une signature debug différente peut encore empêcher une mise à jour sur l'installation actuelle.
