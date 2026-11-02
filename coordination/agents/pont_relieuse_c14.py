@@ -38,7 +38,9 @@ def commentaire(event, proprietaire):
         # Ne pas inclure la mission ou le détail technique dans le commentaire public.
         return (f"{MARKER}\n\n**REFUSEE_ENTREE** : JSON invalide, schéma refusé "
                 "ou dépendances incorrectes. Aucun résultat candidat.")
-    return (MARKER + "\n\n**C14 : RESULTAT_DETERMINISTE_CANDIDAT**\n\n"
+    statut = ("RESULTAT_PARTIEL_BLOQUE" if rapport["bilan"]["refusees"]
+              or rapport["bilan"]["bloquees"] else "RESULTAT_DETERMINISTE_CANDIDAT")
+    return (MARKER + f"\n\n**C14 : {statut}**\n\n"
             + markdown(rapport) + "\n\n*Ce rapport ne prouve ni exécution d'IA, "
             "ni consultation de sources, ni décision éditoriale.*")
 
