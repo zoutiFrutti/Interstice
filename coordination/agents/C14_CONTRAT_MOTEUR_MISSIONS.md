@@ -73,3 +73,22 @@ L'absence de résultat externe est explicite.
 5. Relieuse : arbitrages, revue et validation humaine avant fusion/publication.
 
 La boîte historique C10 et les conversations ChatGPT ne sont pas modifiées.
+
+## Pont GitHub préparé (non déployé)
+
+Le workflow \`.github/workflows/relieuse-c14-issues.yml\` est **candidat sur la PR** :
+il ne réagira aux Issues qu'après fusion autorisée sur \`main\`.
+
+Contrat d'entrée depuis la conversation La Relieuse :
+1. Créer une Issue publique par le compte propriétaire du dépôt.
+2. Titre commençant par \`[RELIEUSE-C14]\`.
+3. Corps = JSON **exactement conforme** au schéma C14 (pas de Markdown, pas de données privées).
+4. Le workflow filtre l'auteur, teste le code, exécute les seules fonctions locales autorisées.
+5. Il écrit un **unique commentaire** \`C14-ORCHESTRATRICE-RESULTAT\` dans l'Issue.
+6. Une relance ne doit pas produire un deuxième commentaire. Une mission corrigée nécessite une nouvelle Issue afin de préserver le journal.
+
+Le commentaire contient uniquement les identifiants de tâches, leur état, un bilan et
+une empreinte SHA-256 ; ni texte de ressource, ni détails des erreurs d'entrée.
+Les tests CLI de ce pont utilisent un événement GitHub **simulé** ; ils ne démontrent
+pas encore le succès du workflow sur une Issue réelle. La création d'Issue ne réveille
+aucune conversation ChatGPT.
