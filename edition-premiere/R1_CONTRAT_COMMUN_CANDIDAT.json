@@ -1,0 +1,73 @@
+{
+  "version": "r1-candidate",
+  "publish": false,
+  "write_enabled": false,
+  "entities": {
+    "Resource": [
+      "id",
+      "kind",
+      "title",
+      "summary_original",
+      "territory",
+      "dates",
+      "source_refs",
+      "rights",
+      "access",
+      "checked_at",
+      "editorial_state",
+      "evidence_state",
+      "canonical_url",
+      "alias_of"
+    ],
+    "SourceRef": [
+      "url",
+      "author",
+      "published_at",
+      "checked_at",
+      "kind",
+      "rights",
+      "verification"
+    ],
+    "Relation": [
+      "from_id",
+      "to_id",
+      "type",
+      "evidence_refs",
+      "state"
+    ],
+    "SituationEntry": [
+      "label_plain",
+      "resource_ids",
+      "territory_scope",
+      "review_due_at"
+    ],
+    "WorkAccess": [
+      "work_id",
+      "provider_url",
+      "terms",
+      "availability_checked_at"
+    ]
+  },
+  "rules": {
+    "stable_ids": true,
+    "aliases_need_editorial_review": true,
+    "relations_not_partnerships": true,
+    "publication_requires_separate_human_authorization": true,
+    "external_media_not_hosted": true,
+    "offline_ready": false
+  },
+  "prototypes": {
+    "A": {
+      "status": "CONTRACT_ONLY",
+      "description": "logo carte progressive, 4-6 ressources existantes, index texte"
+    },
+    "B": {
+      "status": "CONTRACT_ONLY",
+      "description": "fiche entraide mobile et imprimable, offline à prouver"
+    },
+    "C": {
+      "status": "CONTRACT_ONLY",
+      "description": "notices culturelles, pas de fichiers médias hébergés"
+    }
+  }
+}
