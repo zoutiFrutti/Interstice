@@ -41,6 +41,8 @@ jobs:
           node --check experiments/konton-control/test-cycles.cjs
           node --check experiments/konton-control/workspaces.js
           node --check experiments/konton-control/test-workspaces.cjs
+          node --check experiments/konton-control/live-summary.js
+          node --check experiments/konton-control/test-live-summary.cjs
           node --check experiments/konton-control/pwa.js
           node --check experiments/konton-control/sw.js
       - name: Simulation agent and GitHub read-only checks
@@ -58,3 +60,4 @@ jobs:
           node test-pr-inspector.cjs
           node test-cycles.cjs
           node test-workspaces.cjs
+          node test-live-summary.cjs
