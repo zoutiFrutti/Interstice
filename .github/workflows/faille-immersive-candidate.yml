@@ -1,0 +1,22 @@
+name: Faille immersive candidate checks
+on:
+  push:
+    branches:
+      - integration/r3-identite-navigation-immersive-candidate-20261102
+  pull_request:
+    paths:
+      - 'assets/faille-navigation*'
+      - 'design-system/faille-navigation-interactive.html'
+      - 'tests/faille-navigation-integration.test.mjs'
+jobs:
+  structural:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Structure and interaction contracts
+        run: node --test tests/faille-navigation-integration.test.mjs
