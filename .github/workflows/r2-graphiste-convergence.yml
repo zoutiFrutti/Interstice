@@ -1,0 +1,27 @@
+name: R2 Graphiste convergence QA
+on:
+  push:
+    branches: [design/r2-graphiste-assemblage-convergence-20261102]
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/r2.log 2>&1 &
+          node --test tests/graphiste-dev-frontend.test.mjs tests/graphiste-dev-accessibilite.test.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r2-graphiste-captures
+          path: artifacts/graphiste-dev/
+          if-no-files-found: warn
