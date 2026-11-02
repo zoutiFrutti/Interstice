@@ -20,6 +20,7 @@
   <script src="./navigation.js" defer></script>
   <script src="./cycles.js" defer></script>
   <script src="./workspaces.js" defer></script>
+  <script src="./live-summary.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#screen-home">Aller au cockpit</a>
@@ -34,7 +35,7 @@
       </div>
       <div class="topbar-meta">
         <span class="demo-chip"><span class="led led-amber" aria-hidden="true"></span> AGENTS EN DÉMO</span>
-        <span class="connection">V1.4 · Régie des projets</span>
+        <span class="connection">V1.5 · États GitHub réels</span>
       </div>
     </header>
 
@@ -93,6 +94,7 @@
           <article class="brief-item"><h3>Ce qui bloque</h3><p id="brief-blockers">Aucun registre de blocages actualisé.</p></article>
           <article class="brief-item"><h3>Mes décisions</h3><p id="brief-decisions">Aucune file de décisions connectée.</p></article>
         </div>
+        <button type="button" id="brief-refresh" class="small-btn">Actualiser les états GitHub</button>
         <p class="brief-provenance" id="brief-source">Source : vue locale informative. Pas de synchronisation automatique des ateliers.</p>
       </section>
       <div class="home-hero">
