@@ -1,0 +1,22 @@
+name: Passages Interstice prototype QA
+on:
+  push:
+    branches: [design/passages-interstice-prototype-20261102]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/passages.log 2>&1 &
+          node --test tests/passages-interstice-prototype.test.mjs
