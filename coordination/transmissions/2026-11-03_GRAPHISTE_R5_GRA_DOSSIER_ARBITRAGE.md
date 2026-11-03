@@ -89,3 +89,16 @@ Le rapport ne prétend pas que le CI est réussi ou que les captures existent av
 **Artefact vérifié** : `r5-gra-comparatifs-320-390-768-1280-et-a4`, identifiant GitHub `13187244402`, taille 2 714 385 octets, non expiré au contrôle. Comprend quatre captures PNG (320/390/768/1280) et impression PDF A4 du comparateur.
 
 **Limites des preuves :** captures générées dans Chromium, sans lecture visuelle humaine certifiée ni comparaison pixel à pixel aux PNG approuvés (absents du dépôt). Pas de smartphone ou de tablette physique testés. La validation artistique reste bloquée en attente de la comparaison des sources exactes et de la décision personnelle de Zout. Ce nouvel addendum documentaire n'altère pas les SVG ni les tests ; le HEAD de la PR qui le contient doit être identifié distinctement de celui qui a produit l'artefact.
+
+
+### 9. Retour de Zout — référence utilisateur Faille noire, 3 novembre 2026
+
+Zout a joint et désigné explicitement **« Le bon SVG pour le logo faille noire »**, fichier joint à la conversation **`logo_faille_noire_vectorise(2).svg`**. Cette identification est une **décision de référence artistique pour le seul symbole La Faille noire**, distincte de la validation des anciens SVG R4 et distincte d'une autorisation de publication ou d'activation.
+
+**Contrôle local des octets originaux :** fichier SVG valide, UTF-8, **216 933 octets**, `width=665`, `height=665`, `viewBox="0 0 665 665"`, empreinte **SHA-256 `7bd0cfe8cf984f421b2377802ef97a0df843158217ad569ddd838313d4e73cb6`**. Cinq éléments graphiques directs après le titre (fond pierre, chemins couleur matière, noir et rouge) ; absence de script, de référence HTTP externe, de `foreignObject` et d'événement `onload`. Son élément `<title>` porte encore la mention **« La Faille noire, vectorisation approchée »** : respecter néanmoins le choix de Zout, sans inventer de fidélité mathématique ou d'officialisation de la deuxième marque.
+
+**Point de traçabilité :** ce fichier original reste **joint dans la conversation**, **pas encore intégré comme blob GitHub** : ne pas inventer de chemin GitHub ni de SHA blob pour l'original ; distinguer son SHA-256 de son éventuel SHA Git futur. Il est disponible en copie originale et une prévisualisation locale a été rendue, sans altération du SVG source. Le comparateur GitHub R5 affiche encore les candidats R4 historiques, et devra être étendu lorsque le fichier utilisateur exact y sera importé avec vérification des octets.
+
+**Conséquence éditoriale** : le R4 Faille noire `ec068bdca1999bb132380d6182341e863ef4df65` n'est **plus la référence artistique prioritaire** : comparer désormais les futures retouches à **ce nouveau fichier explicitement fourni par Zout**. La référence et validation **d'Interstice** restent ouvertes. Ne pas prétendre que les bases des deux marques sont toujours identiques à ce nouveau SVG tant qu'une déclinaison Interstice partageant cette base n'a pas été conçue et testée.
+
+**Maintien des réserves techniques** : aucun remplacement de `assets/logo-faille-noire.svg`, aucun favicon, aucune fusion, aucun déploiement, aucune décision pour Interstice. La Relieuse doit utiliser l'empreinte SHA-256 ci-dessus et demander une intégration du SVG joint exact au dépôt avant tout arbitrage de remplacement, et non substituer le R4 provisoire.
