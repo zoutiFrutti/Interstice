@@ -15,7 +15,7 @@
 
 Les sept dimensions **préparée, transmise, reçue, commencée, livrée, contrôlée et validée** sont indépendantes. **Inconnu** signifie absence de preuve récupérée pendant cette passe, pas absence de travail. Les anciennes productions peuvent servir d'antériorité, jamais de preuve de réception des nouvelles missions.
 
-## Registre des 11 missions C03
+## Registre des 12 missions C03 (11 missions des ateliers + Orchestratrice)
 
 | Mission | Atelier(s) | P | Envoi | Réception | Livraison C03 courante | Dépendances | Blocage / prochaine action |
 |---|---|---|---|---|---|---|---|
@@ -31,12 +31,14 @@ Les sept dimensions **préparée, transmise, reçue, commencée, livrée, contr�
 | C03-TIS-03 | tisseuse | P1 | non attesté | non attestée | non attestée | C03-ANA-03, C03-JUR-03, C03-MED-03 | Territoires/relations R0-R3, partenariats non supposés ; suite : Relier fiches TIS existantes, sans coordonnées sensibles |
 | C03-TECH-02 | developpeuse, graphiste | P0 | non attesté | non attestée | non attestée | C03-ANA-03, C03-LEC-03, C03-JUR-03, C03-MED-03 | R6 5 destinations vs V2 4 portes ; QA tactile et lecteurs d'écran manquante ; suite : Revoir modules PR #161, URL historiques, logos et rendu non public |
 
+| C03-ORC-03 | orchestratrice | P0 | préparée | réception non attestée | livrable candidat vérifié PR #132 | C03-LEC-03, C03-ANA-03, C03-TECH-02 | Synthèse documentaire produite, mais visas des autres ateliers non démontrés ; suite : contrôle par La Relieuse |
+
 ## Tableau des ateliers, derniers rapports repérés
 
 | Rôle du dépôt | Mission(s) C03 | Dernière preuve repérée dans la passe | Branche et PR | Réserves |
 |---|---|---|---|---|
 | relieuse | Aucune attribution C03 dans ce registre | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| orchestratrice | Aucune attribution C03 dans ce registre | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
+| orchestratrice | C03-ORC-03 | [EV-ORC-03](./orchestratrice/05_TRANSMISSION_RELIEUSE.md) | feature/integration-c18-orchestratrice-suivi-20261102 · PR #132 | Livraison de l'Orchestratrice attestée par fichier et SHA, réception/validation par La Relieuse inconnues |
 | lectrice | C03-LEC-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
 | anarchitecte | C03-ANA-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
 | penseuse | C03-PEN-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
