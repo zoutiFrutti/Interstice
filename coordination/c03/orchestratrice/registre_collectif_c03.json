@@ -549,6 +549,58 @@
       "pr": null,
       "verified_at": "2026-11-03",
       "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-LECTRICE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "lectrice",
+      "branch": "atelier-lectrice/r6-controle-navigation-20261103",
+      "path": "coordination/transmissions/2026-11-03_LECTRICE_R6_AVIS_INDEPENDANT_NAVIGATION.md",
+      "commit_sha": "9e881a09669f9001b4ebd679924a630073e83afb",
+      "blob_sha": "96786f9a5f1c77f9ab5d05640f7b3525dd394a33",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Rapport antérieur retrouvé sur branche candidate; commit = HEAD de cette branche au relevé, aucune réception ou livraison C03-03 déduite."
+    },
+    {
+      "id": "EV-HIST-ECLAIREUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "eclaireuse",
+      "branch": "research/eclaireuse-c05-lacunes-20261103",
+      "path": "coordination/transmissions/2026-11-03_ECLAIREUSE_C05_RELIEUSE.md",
+      "commit_sha": "2c57015ab00139233d80b8e67b2e7744991b988c",
+      "blob_sha": "da5117630c062d5aad342582d385a4daa6b24b8e",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Rapport antérieur retrouvé sur branche candidate; commit = HEAD de cette branche au relevé, aucune réception ou livraison C03-03 déduite."
+    },
+    {
+      "id": "EV-HIST-ANARCHIVISTE_ZAPATISTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "anarchiviste-zapatiste",
+      "branch": "research/zapatiste-r1-20261102",
+      "path": "coordination/transmissions/2026-11-02_ZAP_R1_RELIEUSE.md",
+      "commit_sha": "f27aedea5d4fa1f32efa96ef254da9fbff5e6c25",
+      "blob_sha": "22990e710b7163cc9050be3d960a4ae9e8756670",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Rapport antérieur retrouvé sur branche candidate; commit = HEAD de cette branche au relevé, aucune réception ou livraison C03-03 déduite."
+    },
+    {
+      "id": "EV-HIST-RESEAUX_SOCIAUX",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "reseaux-sociaux",
+      "branch": "atelier/reseaux-integration-c17-20261102",
+      "path": "coordination/transmissions/2026-11-02_RESEAUX_C17_KIT_INTEGRATION_CANDIDAT.md",
+      "commit_sha": "7981d1f0297bf5461f48854ddd7c24a80a6400dd",
+      "blob_sha": "a14f9c33fefc44f1c298cde6d79bf6f6e7a1d0cb",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Rapport antérieur retrouvé sur branche candidate; commit = HEAD de cette branche au relevé, aucune réception ou livraison C03-03 déduite."
     }
   ],
   "comparaisons_sha": [
@@ -640,6 +692,30 @@
       "branch": "main",
       "path": "coordination/ateliers/vigie/DECISION_INTEGRATION_2026-11-01.md",
       "blob_sha": "5c421c330d3f3a6deb2e313dedec814a6d51fc2c",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "atelier-lectrice/r6-controle-navigation-20261103",
+      "path": "coordination/transmissions/2026-11-03_LECTRICE_R6_AVIS_INDEPENDANT_NAVIGATION.md",
+      "blob_sha": "96786f9a5f1c77f9ab5d05640f7b3525dd394a33",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "research/eclaireuse-c05-lacunes-20261103",
+      "path": "coordination/transmissions/2026-11-03_ECLAIREUSE_C05_RELIEUSE.md",
+      "blob_sha": "da5117630c062d5aad342582d385a4daa6b24b8e",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "research/zapatiste-r1-20261102",
+      "path": "coordination/transmissions/2026-11-02_ZAP_R1_RELIEUSE.md",
+      "blob_sha": "22990e710b7163cc9050be3d960a4ae9e8756670",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "atelier/reseaux-integration-c17-20261102",
+      "path": "coordination/transmissions/2026-11-02_RESEAUX_C17_KIT_INTEGRATION_CANDIDAT.md",
+      "blob_sha": "a14f9c33fefc44f1c298cde6d79bf6f6e7a1d0cb",
       "verified_at": "2026-11-03"
     }
   ],
