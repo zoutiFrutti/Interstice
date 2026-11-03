@@ -1,0 +1,283 @@
+{
+  "schema": "interstice_c05_podcast_inventory_v1",
+  "date": "2026-11-03",
+  "selection": "INVENTAIRE_NON_VALIDATION",
+  "podcasts": [
+    {
+      "id": "POD-001",
+      "title": "Radio Libertaire",
+      "producer": "Fédération anarchiste",
+      "languages": [
+        "fr"
+      ],
+      "subjects": [
+        "radio",
+        "anarchisme",
+        "histoire",
+        "débats"
+      ],
+      "official_or_directory_url": "https://www.radio-libertaire.org/podcast/z_commun/accueil.php",
+      "verification": "SITE_PRODUCTEUR_CONSULTE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    },
+    {
+      "id": "POD-002",
+      "title": "Femmes libres",
+      "producer": "Radio Libertaire",
+      "languages": [
+        "fr"
+      ],
+      "subjects": [
+        "féminismes",
+        "luttes sociales",
+        "discriminations"
+      ],
+      "official_or_directory_url": "https://www.anarchiste.info/radio/libertaire/emission/femmes-libres/presentation.html",
+      "verification": "PRESENTATION_EMISSION_CONSULTEE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    },
+    {
+      "id": "POD-003",
+      "title": "L'actualité des luttes",
+      "producer": "Collectif L'actualité des luttes / Fréquence Paris Plurielle",
+      "languages": [
+        "fr"
+      ],
+      "subjects": [
+        "grèves",
+        "logement",
+        "luttes sociales",
+        "anti-racisme"
+      ],
+      "official_or_directory_url": "https://actualitedesluttes.info/",
+      "verification": "SITE_PRODUCTEUR_CONSULTE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte",
+        "entraide",
+        "parcours"
+      ]
+    },
+    {
+      "id": "POD-004",
+      "title": "Gouinement Lundi",
+      "producer": "Les Ami·es de Gouinement Lundi",
+      "languages": [
+        "fr"
+      ],
+      "subjects": [
+        "féminismes",
+        "lesbianités",
+        "bisexualités",
+        "transidentités"
+      ],
+      "official_or_directory_url": "https://www.centrelgbtparis.org/associations-membres/gouinement-lundi",
+      "verification": "PRESENTATION_ASSOCIATION_CONSULTEE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    },
+    {
+      "id": "POD-005",
+      "title": "Anarchistisches Radio Berlin",
+      "producer": "A-Radio Berlin",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "subjects": [
+        "anarchisme international",
+        "antifascisme",
+        "luttes"
+      ],
+      "official_or_directory_url": "https://www.aradio-berlin.org/en/start/",
+      "verification": "SITE_PRODUCTEUR_CONSULTE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    },
+    {
+      "id": "POD-006",
+      "title": "Bad News",
+      "producer": "International Anarchist Radio Network / A-Radio Berlin",
+      "languages": [
+        "en"
+      ],
+      "subjects": [
+        "actualités libertaires internationales"
+      ],
+      "official_or_directory_url": "https://www.aradio-berlin.org/kontakt/",
+      "verification": "DESCRIPTION_RESEAU_CONSULTEE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    },
+    {
+      "id": "POD-007",
+      "title": "Channel Zero Network",
+      "producer": "Collectif de podcasts anarchistes",
+      "languages": [
+        "en"
+      ],
+      "subjects": [
+        "anarchisme",
+        "analyses",
+        "pratiques collectives"
+      ],
+      "official_or_directory_url": "https://channelzeronetwork.com/",
+      "verification": "SITE_RESEAU_CONSULTE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    },
+    {
+      "id": "POD-008",
+      "title": "The Final Straw Radio",
+      "producer": "The Final Straw Radio / Channel Zero",
+      "languages": [
+        "en"
+      ],
+      "subjects": [
+        "luttes internationales",
+        "anti-autoritarisme"
+      ],
+      "official_or_directory_url": "https://channelzeronetwork.com/authors/",
+      "verification": "DESCRIPTION_RESEAU_CONSULTEE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    },
+    {
+      "id": "POD-009",
+      "title": "The Beautiful Idea",
+      "producer": "Collectif The Beautiful Idea",
+      "languages": [
+        "en"
+      ],
+      "subjects": [
+        "mouvements autonomes",
+        "enquêtes",
+        "histoire"
+      ],
+      "official_or_directory_url": "https://channelzeronetwork.com/announcing-the-beautiful-idea-a-new-anarchist-podcast-on-front-line-struggles/",
+      "verification": "ANNONCE_PRODUCTEUR_CONSULTEE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    },
+    {
+      "id": "POD-010",
+      "title": "Lesbiennes à l'antenne",
+      "producer": "Émission sur La Clé des Ondes",
+      "languages": [
+        "fr"
+      ],
+      "subjects": [
+        "visibilité lesbienne",
+        "cultures et discriminations"
+      ],
+      "official_or_directory_url": "https://www.observatoiredelalesbophobie.org/rc-%C3%A9missions-de-radio",
+      "verification": "REPERTOIRE_ASSOCIATIF_CONSULTE",
+      "episode_audio_checked": false,
+      "feed_url": null,
+      "archive_policy": "CONSERVER_NOTICE_SI_EPISODE_DISPARAIT",
+      "licence": "NON_ETABLIE",
+      "hosting_allowed": false,
+      "editorial_state": "CANDIDAT_A_RELIRE",
+      "relation_state": "PROPOSITION_NON_PARTENARIAT",
+      "cross_links": [
+        "encyclopedie",
+        "carte"
+      ]
+    }
+  ],
+  "groups": [
+    "Radios et émissions libertaires",
+    "Féminismes et LGBTQIA+",
+    "Luttes sociales et entraide",
+    "Réseaux internationaux multilingues",
+    "Archives sonores et replays"
+  ],
+  "rights_rule": "LIENS EXTERNES SEULEMENT ; pas de copie, téléchargement ou hébergement de fichiers audio sans autorisation",
+  "tests": {
+    "count": 10,
+    "unique_ids": 10,
+    "unique_urls": 10,
+    "all_hosting_disabled": true
+  }
+}
