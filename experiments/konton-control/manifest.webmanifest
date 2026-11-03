@@ -1,0 +1,28 @@
+{
+  "name": "KONTON Control",
+  "short_name": "KONTON",
+  "description": "Console mobile locale et observatoire GitHub public. Les agents présentés en démo ne sont pas des services actifs.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b0f14",
+  "theme_color": "#0b0f14",
+  "lang": "fr",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "./icons/konton-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/konton-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

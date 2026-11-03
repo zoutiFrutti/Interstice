@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+"use strict";
+const assert=require("node:assert/strict");
+const fs=require("node:fs");
+const path=require("node:path");
+const html=fs.readFileSync(path.join(__dirname,"index.html"),"utf8");
+const script=fs.readFileSync(path.join(__dirname,"workspaces.js"),"utf8");
+const gradle=fs.readFileSync(path.join(__dirname,"android/app/build.gradle"),"utf8");
+const sw=fs.readFileSync(path.join(__dirname,"sw.js"),"utf8");
+for(const workspace of ["interstice","metro","personnel"]) assert.match(html,new RegExp('data-workspace="'+workspace+'"'));
+assert.match(html,/src="\.\/workspaces\.js"/);
+assert.match(gradle,/'workspaces\.js'/);
+assert.match(sw,/"\.\/workspaces\.js"/);
+assert.match(script,/coordinator|coordination|Coordination/i);
+assert.match(script,/screens: \["home"\]/);
+assert.doesNotMatch(script,/Authorization|Bearer|GH_TOKEN|GITHUB_TOKEN|localStorage|fetch\(/);
+assert.match(script,/location\.hash = "#home"/);
+for (const id of ["brief-progress","brief-blockers","brief-decisions","brief-source"]) assert.match(html,new RegExp('id="'+id+'"'));
+assert.match(script,/brief\[key\]\[index\]/);
+assert.match(script,/node.hidden = true/);
+console.log("KONTON V1.2 : trois projets, contrôle d'accès UI et assets Android/PWA OK");

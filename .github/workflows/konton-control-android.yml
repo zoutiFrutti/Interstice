@@ -1,0 +1,41 @@
+name: KONTON Control Android preview APK
+on:
+  pull_request:
+    paths:
+      - "experiments/konton-control/**"
+      - ".github/workflows/konton-control-android.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  android-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Android SDK
+        uses: android-actions/setup-android@v4
+      - name: Gradle 8.13
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.13"
+      - name: Assemble debug APK
+        working-directory: experiments/konton-control/android
+        run: gradle --no-daemon :app:assembleDebug
+      - name: Verify APK generated
+        run: test -s experiments/konton-control/android/app/build/outputs/apk/debug/app-debug.apk
+      - name: Upload APK (unsigned release, Android debug build)
+        uses: actions/upload-artifact@v4
+        with:
+          name: KONTON-Control-Android-Preview
+          path: experiments/konton-control/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 14
