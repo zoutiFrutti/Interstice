@@ -33,29 +33,31 @@ Les sept dimensions **préparée, transmise, reçue, commencée, livrée, contr�
 
 | C03-ORC-03 | orchestratrice | P0 | préparée | réception non attestée | livrable candidat vérifié PR #132 | C03-LEC-03, C03-ANA-03, C03-TECH-02 | Synthèse documentaire produite, mais visas des autres ateliers non démontrés ; suite : contrôle par La Relieuse |
 
-## Tableau des ateliers, derniers rapports repérés
+## Tableau des ateliers : dernière pièce identifiée dans cette passe
 
-| Rôle du dépôt | Mission(s) C03 | Dernière preuve repérée dans la passe | Branche et PR | Réserves |
-|---|---|---|---|---|
-| relieuse | Aucune attribution C03 dans ce registre | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| orchestratrice | C03-ORC-03 | [EV-ORC-03](./orchestratrice/05_TRANSMISSION_RELIEUSE.md) | feature/integration-c18-orchestratrice-suivi-20261102 · PR #132 | Livraison de l'Orchestratrice attestée par fichier et SHA, réception/validation par La Relieuse inconnues |
-| lectrice | C03-LEC-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| anarchitecte | C03-ANA-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| penseuse | C03-PEN-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| developpeuse | C03-TECH-02 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| graphiste | C03-TECH-02 | [EV-TECH-GRA](https://github.com/zoutiFrutti/Interstice/pull/161) | work/c02-v2-reconciliation-20261103 · PR #161 | Retour technique Graphiste publié en commentaire PR #161 ; absence de visa conjoint de Développeuse |
-| juriste | C03-JUR-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| archeologue | C03-ARC-03 | [EV-ARC-02](https://github.com/zoutiFrutti/Interstice/blob/research/archeologue-c03-par001-20261103/coordination/c03/archeologue/C03_ARC_02_OBJECTIONS_PAR001.md) | research/archeologue-c03-par001-20261103 · PR #162 | Antériorité C03-ARC-02, non preuve d'exécution de C03-ARC-03 |
-| anarchiviste-communs | C03-HIST-04 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| biographe | C03-HIST-04 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| anarchiviste-catalan | C03-CAT-03 | [EV-CAT-02](https://github.com/zoutiFrutti/Interstice/blob/recherche/anarchiviste-catalogne-c03-par002-20261103/recherche/catalogne/C03_CAT_PAR002_RECONCILIATION.md) | recherche/anarchiviste-catalogne-c03-par002-20261103 | Antériorité C03-CAT-02, pas une livraison C03-CAT-03 |
-| anarchiviste-zapatiste | C03-ZAP-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| mediatheque | C03-MED-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| tisseuse | C03-TIS-03 | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| eclaireuse | Aucune attribution C03 dans ce registre | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| vigie | Aucune attribution C03 dans ce registre | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| reseaux-sociaux | Aucune attribution C03 dans ce registre | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
-| assistant-anarchiviste | Aucune attribution C03 dans ce registre | Non retrouvé dans cette passe | À rapprocher | Aucune réception ou livraison présumée |
+**Le relevé couvre les 19 rôles.** Certaines pièces datent de C10, R1 ou C05 ; elles ne valent pas livraison des missions C03 en cours.
+
+| Rôle | Mission(s) C03 | Pièce retrouvée | Branche / PR | Commit de relevé | Blob (complet dans JSON) | État |
+|---|---|---|---|---|---|---|
+| relieuse | Rôle historique sans mission C03 attribuée | [2026-11-01_RELIEUSE_CYCLE7_RECONCILIATION_INITIALE.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-11-01_RELIEUSE_CYCLE7_RECONCILIATION_INITIALE.md) | main | 7344591fa7f0 | 6a2f9fac05db | Document historique, réception C03 inconnue |
+| orchestratrice | C03-ORC-03 | [05_TRANSMISSION_RELIEUSE.md](https://github.com/zoutiFrutti/Interstice/blob/feature/integration-c18-orchestratrice-suivi-20261102/coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md) | feature/integration-c18-orchestratrice-suivi-20261102 · #132 | 6fec697d47b5 | 4fbe39e79090 | Livrable Orchestratrice constaté, réception inconnue |
+| lectrice | C03-LEC-03 | [2026-11-03_LECTRICE_R6_AVIS_INDEPENDANT_NAVIGATION.md](https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/r6-controle-navigation-20261103/coordination/transmissions/2026-11-03_LECTRICE_R6_AVIS_INDEPENDANT_NAVIGATION.md) | atelier-lectrice/r6-controle-navigation-20261103 | 9e881a09669f | 96786f9a5f1c | Document historique, réception C03 inconnue |
+| anarchitecte | C03-ANA-03 | [ANARCHITECTE_REVUE_V0_018B_2026-10-31.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/ANARCHITECTE_REVUE_V0_018B_2026-10-31.md) | main | 7344591fa7f0 | 7cf9f4bf8696 | Document historique, réception C03 inconnue |
+| penseuse | C03-PEN-03 | [2026-11-01_PENSEUSE_CYCLE8_RELIEUSE_CONTROLES_EFFECTIFS.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_RELIEUSE_CONTROLES_EFFECTIFS.md) | main | 7344591fa7f0 | 2c85bc526c6b | Document historique, réception C03 inconnue |
+| developpeuse | C03-TECH-02 | [2026-11-03_DEVELOPPEUSE_R6_INT01_RECONCILIATION_DEPLOIEMENT.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-11-03_DEVELOPPEUSE_R6_INT01_RECONCILIATION_DEPLOIEMENT.md) | main | 7344591fa7f0 | db660a706678 | Document historique, réception C03 inconnue |
+| graphiste | C03-TECH-02 | [Commentaire PR #161](https://github.com/zoutiFrutti/Interstice/pull/161) | work/c02-v2-reconciliation-20261103 · #161 | 0b5fb49b612b | commentaire | Antériorité ou retour partiel, nouvelle mission non attestée |
+| juriste | C03-JUR-03 | [2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md) | main | 7344591fa7f0 | 2df0162aa851 | Document historique, réception C03 inconnue |
+| archeologue | C03-ARC-03 | [C03_ARC_02_OBJECTIONS_PAR001.md](https://github.com/zoutiFrutti/Interstice/blob/research/archeologue-c03-par001-20261103/coordination/c03/archeologue/C03_ARC_02_OBJECTIONS_PAR001.md) | research/archeologue-c03-par001-20261103 · #162 | 2e4a70615b35 | fa109c97909e | Antériorité ou retour partiel, nouvelle mission non attestée |
+| anarchiviste-communs | C03-HIST-04 | [2026-10-30_ANARCHIVISTE_VERS_RELIEUR_REPRISE_HISTORIQUE_PARTIELLE.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-30_ANARCHIVISTE_VERS_RELIEUR_REPRISE_HISTORIQUE_PARTIELLE.md) | main | 7344591fa7f0 | b6cdf98f51b7 | Document historique, réception C03 inconnue |
+| biographe | C03-HIST-04 | [2026-11-02_LES_VOIX_DE_L_OMBRE_BIOGRAPHE_P2.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/propositions/2026-11-02_LES_VOIX_DE_L_OMBRE_BIOGRAPHE_P2.md) | main | 7344591fa7f0 | 01381f793c3f | Document historique, réception C03 inconnue |
+| anarchiviste-catalan | C03-CAT-03 | [C03_CAT_PAR002_RECONCILIATION.md](https://github.com/zoutiFrutti/Interstice/blob/recherche/anarchiviste-catalogne-c03-par002-20261103/recherche/catalogne/C03_CAT_PAR002_RECONCILIATION.md) | recherche/anarchiviste-catalogne-c03-par002-20261103 | 2ed930219fa8 | 576657bebe13 | Antériorité ou retour partiel, nouvelle mission non attestée |
+| anarchiviste-zapatiste | C03-ZAP-03 | [2026-11-02_ZAP_R1_RELIEUSE.md](https://github.com/zoutiFrutti/Interstice/blob/research/zapatiste-r1-20261102/coordination/transmissions/2026-11-02_ZAP_R1_RELIEUSE.md) | research/zapatiste-r1-20261102 | f27aedea5d4f | 22990e710b71 | Document historique, réception C03 inconnue |
+| mediatheque | C03-MED-03 | [2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md) | main | 7344591fa7f0 | f66e7f91c8fa | Document historique, réception C03 inconnue |
+| tisseuse | C03-TIS-03 | [2026-10-31_TISSEUSE_ECO_TIS_001_INITIATIVES_ET_CAS.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-31_TISSEUSE_ECO_TIS_001_INITIATIVES_ET_CAS.md) | main | 7344591fa7f0 | 6d1ef709cff7 | Document historique, réception C03 inconnue |
+| eclaireuse | Rôle historique sans mission C03 attribuée | [2026-11-03_ECLAIREUSE_C05_RELIEUSE.md](https://github.com/zoutiFrutti/Interstice/blob/research/eclaireuse-c05-lacunes-20261103/coordination/transmissions/2026-11-03_ECLAIREUSE_C05_RELIEUSE.md) | research/eclaireuse-c05-lacunes-20261103 | 2c57015ab001 | da5117630c06 | Document historique, réception C03 inconnue |
+| vigie | Rôle historique sans mission C03 attribuée | [DECISION_INTEGRATION_2026-11-01.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/ateliers/vigie/DECISION_INTEGRATION_2026-11-01.md) | main | 7344591fa7f0 | 5c421c330d3f | Document historique, réception C03 inconnue |
+| reseaux-sociaux | Rôle historique sans mission C03 attribuée | [2026-11-02_RESEAUX_C17_KIT_INTEGRATION_CANDIDAT.md](https://github.com/zoutiFrutti/Interstice/blob/atelier/reseaux-integration-c17-20261102/coordination/transmissions/2026-11-02_RESEAUX_C17_KIT_INTEGRATION_CANDIDAT.md) | atelier/reseaux-integration-c17-20261102 | 7981d1f0297b | a14f9c33fefc | Document historique, réception C03 inconnue |
+| assistant-anarchiviste | Rôle historique sans mission C03 attribuée | [2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md](https://github.com/zoutiFrutti/Interstice/blob/main/coordination/transmissions/2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md) | main | 7344591fa7f0 | c96fead0080d | Document historique, réception C03 inconnue |
 
 ## Écarts prioritaires et garde-fous
 
