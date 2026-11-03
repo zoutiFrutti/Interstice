@@ -58,7 +58,7 @@ def check(data):
             "id", "type", "mission_id", "atelier", "branch", "path",
             "commit_sha", "blob_sha", "pr", "verified_at", "notes"}:
             raise ValueError("Champs preuve invalides")
-        if proof["id"] in proofids or proof["mission_id"] not in ids or (
+        if proof["id"] in proofids or (proof["mission_id"] is not None and proof["mission_id"] not in ids) or (
             proof["atelier"] not in roles) or proof["type"] not in (
             "fichier", "commentaire_pr", "accuse", "decision_zout"):
             raise ValueError("Preuve dupliquee, mission ou role inconnu")
