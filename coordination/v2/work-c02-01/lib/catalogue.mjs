@@ -100,6 +100,7 @@ export function validateBundle(bundle) {
       check(objectIds.has(id), `${path.id} : objection inconnue ${id}`);
       check(objections.find(object => object.id === id)?.parcours_ids.includes(path.id), `${path.id} : objection non réciproque`);
     }
+    check(path.relations?.length > 0, `${path.id} : aucune relation documentée`);
     for (const id of path.relations || []) check(relationIds.has(id), `${path.id} : relation inconnue ${id}`);
   }
   for (const relation of relations) {

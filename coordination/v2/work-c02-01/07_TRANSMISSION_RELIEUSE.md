@@ -1,7 +1,7 @@
 # Transmission à La Relieuse — WORK-C02-01
 
 ## Résultats concrets
-Production candidate de l’organigramme, sept fiches et matrice, registre de 219 objets, 18 relations typées, 30 réserves WORK et contrat de navigation. Préparation technique sans import public, avec schéma, modules et contrôles. Les données sont sourcées ; les trous restent visibles. Aucun article général redondant, aucun média ni texte tiers intégral ajouté.
+Production candidate de l’organigramme, sept fiches et matrice, registre de 219 objets, 19 relations typées, 30 réserves WORK et contrat de navigation. Préparation technique sans import public, avec schéma, modules et contrôles. Les données sont sourcées ; les trous restent visibles. Aucun article général redondant, aucun média ni texte tiers intégral ajouté.
 
 | Chantier | État | Limite |
 |---|---|---|

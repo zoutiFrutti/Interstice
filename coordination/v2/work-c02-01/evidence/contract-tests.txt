@@ -1,13 +1,13 @@
-✔ complete candidate graph has four doors, seven paths, provenance and closed publication (7.255631ms)
-✔ aliases resolve to one canonical object without deleting possible FN duplicates (3.789042ms)
-✔ ambiguous alias and duplicate canonical ID are rejected (6.096407ms)
-✔ lost provenance, unknown endpoints and fake historical relations are rejected (17.092129ms)
-✔ a fifth door, a missing step and an unreachable branch are rejected (17.884744ms)
-✔ PAR-005 cannot lose legal blocking, and one approval flag cannot publish WORK (21.225384ms)
-✔ every resource has exactly one known primary door (0.682351ms)
-✔ legacy fragments restore doors and transverse path index without changing URLs (1.012237ms)
-✔ branching and returning restores the actual prior step and then its origin door (0.724714ms)
-✔ deep links restore without fabricating browser history and all paths have resolvable entries (0.408787ms)
+✔ complete candidate graph has four doors, seven paths, provenance and closed publication (9.470743ms)
+✔ aliases resolve to one canonical object without deleting possible FN duplicates (5.098443ms)
+✔ ambiguous alias and duplicate canonical ID are rejected (9.059389ms)
+✔ lost provenance, unknown endpoints and fake historical relations are rejected (13.921485ms)
+✔ a fifth door, a missing step and an unreachable branch are rejected (10.821339ms)
+✔ PAR-005 cannot lose legal blocking, and one approval flag cannot publish WORK (10.878905ms)
+✔ every resource has exactly one known primary door (0.332267ms)
+✔ legacy fragments restore doors and transverse path index without changing URLs (0.953571ms)
+✔ branching and returning restores the actual prior step and then its origin door (0.6212ms)
+✔ deep links restore without fabricating browser history and all paths have resolvable entries (0.612497ms)
 ℹ tests 10
 ℹ suites 0
 ℹ pass 10
@@ -15,4 +15,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 288.381205
+ℹ duration_ms 482.489847

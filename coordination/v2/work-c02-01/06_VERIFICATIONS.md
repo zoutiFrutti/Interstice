@@ -9,7 +9,7 @@
 | File de relecture Wiki | 1 contribution valide | `node scripts/validate-wiki-review-queue.mjs` ; aucune publication |
 | Syntaxe navigation active | Conforme | `node --check assets/faille-navigation.js` |
 | Nouveau contrat WORK | 10/10 tests réussis | Identifiants/alias, relations, sources, quatre portes, sept PAR, bifurcations, retours, blocage juridique et absence de publication |
-| Données WORK | 219 ressources, 100 sources, 18 relations, 30 réserves | Toutes les références d’étapes, relations et objections se résolvent dans le lot ; champs inconnus conservés |
+| Données WORK | 219 ressources, 100 sources, 19 relations, 30 réserves | Toutes les références d’étapes, relations et objections se résolvent dans le lot ; champs inconnus conservés |
 | URL historiques et ancre Entraide | 32/32 présentes | Contrôle de fichiers et de l’ancre, pas requêtes HTTP vers la production |
 | Liens internes de 44 pages HTML existantes | 1 lien cassé préexistant repéré | Détail ci-dessous ; aucun lien public corrigé dans cette mission |
 | Schéma JSON candidat | JSON lisible et règles couvertes par le validateur métier | Pas de validation par une bibliothèque JSON Schema externe : absente de l’environnement |

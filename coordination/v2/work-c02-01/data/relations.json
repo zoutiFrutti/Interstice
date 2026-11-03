@@ -324,6 +324,22 @@
       "publication_authorized": false,
       "legacy_level": "R1",
       "cooperation_interstice": false
+    },
+    {
+      "id": "WORK-REL-014",
+      "from_id": "DROIT-001",
+      "to_id": "page:parcours.html",
+      "type": "complement_documentaire",
+      "label": "Le cadrage Entraide existant annonce la relecture juridique ; il ne constitue pas une fiche pratique validée.",
+      "source_refs": [
+        "repo:parcours.html"
+      ],
+      "parcours_ids": [
+        "PAR-005"
+      ],
+      "proof": "texte_du_cadrage_existant",
+      "state": "candidate",
+      "publication_authorized": false
     }
   ],
   "note": "Aucune filiation_revendiquee instanciée : preuve explicite non obtenue. Les liens de navigation entre étapes ne sont pas des relations historiques."

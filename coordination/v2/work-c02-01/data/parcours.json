@@ -526,7 +526,9 @@
       },
       "publication_authorized": false,
       "structure_status": "proposition_WORK_a_confronter_a_C02_VAL_02",
-      "relations": []
+      "relations": [
+        "WORK-REL-014"
+      ]
     },
     {
       "id": "PAR-006",
