@@ -59,7 +59,8 @@ def check(data):
             "commit_sha", "blob_sha", "pr", "verified_at", "notes"}:
             raise ValueError("Champs preuve invalides")
         if proof["id"] in proofids or proof["mission_id"] not in ids or (
-            proof["atelier"] not in roles):
+            proof["atelier"] not in roles) or proof["type"] not in (
+            "fichier", "commentaire_pr", "accuse", "decision_zout"):
             raise ValueError("Preuve dupliquee, mission ou role inconnu")
         proofids.add(proof["id"])
         for field in ("commit_sha", "blob_sha"):
@@ -71,11 +72,20 @@ def check(data):
             raise ValueError("Dependance inexistante ou autoreference")
         if not set(m["preuves_anterieures"] + m["preuves_mission"]).issubset(proofids):
             raise ValueError("Reference de preuve introuvable")
-        if m["etat"]["recue"] is True:
-            raise ValueError("Accuse non authentifie par ce registre : reception interdite")
-        if m["etat"]["validee"] is True:
-            raise ValueError("Validation non attestee : interdite")
-        if m["etat"]["livree"] is True and not m["preuves_mission"]:
+        if len(set(m["preuves_anterieures"] + m["preuves_mission"])) != len(
+                m["preuves_anterieures"] + m["preuves_mission"]):
+            raise ValueError("Preuve reutilisee en doublon")
+        local = [p for p in proofs if p["id"] in m["preuves_mission"]]
+        if any(p["mission_id"] != m["id"] or p["atelier"] not in m["ateliers"]
+               for p in local):
+            raise ValueError("Preuve de mission mal attribuee")
+        if m["etat"]["recue"] is True and not any(p["type"] == "accuse" for p in local):
+            raise ValueError("Reception sans accuse specifique")
+        if m["etat"]["validee"] is True and not any(
+                p["type"] == "decision_zout" for p in local):
+            raise ValueError("Validation sans decision de Zout")
+        if m["etat"]["livree"] is True and not any(
+                p["type"] in ("fichier", "commentaire_pr") for p in local):
             raise ValueError("Livraison sans preuve propre")
     comparisons = {}
     for item in data["comparaisons_sha"]:
