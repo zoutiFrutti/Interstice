@@ -36,3 +36,11 @@
 - #144 HEAD `ac41830d757e5c7811ca7d18d5aa6edde13f663f` : workflow « R5 GRA - comparatif graphique non publie » réussi (run 41544253498) et contrôles R4 réussis. Cela ne vaut pas visa artistique.
 - #145 : CI de la branche documentaire à confirmer sur son dernier HEAD.
 - La chaîne R1→R5 des PR #129, #133–#145 est explicitée par les SHA HEAD/BASE ; pas de clôture automatique des PR anciennes.
+
+## Addendum — qualification du lot 2
+- Matrice : `coordination/r5/MATRICE_LOT2_CONFORMITE_CONTRATS_2026-11-03.md`.
+- 12 PR de conformité/contrats qualifiées par métadonnées HEAD/BASE et SHA ; 5 branches comparées à R4 avec chemins différenciés.
+- Chaînes documentaires Juriste identifiées, pas de doublon déclaré.
+- #42 touche `script.js` et `ressources.js` : pas d'intégration de code sans tests et revue P0.
+- Orchestratrice : permissions/autorisation restent des conditions d'activation.
+- Décompte initial R5 : 99 PR ouvertes après création de #145, sous réserve de nouvelles contributions.
