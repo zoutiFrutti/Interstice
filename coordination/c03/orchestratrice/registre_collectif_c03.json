@@ -312,6 +312,33 @@
         "EV-TECH-GRA"
       ],
       "preuves_mission": []
+    },
+    {
+      "id": "C03-ORC-03",
+      "ateliers": [
+        "orchestratrice"
+      ],
+      "priorite": "P0",
+      "dependances": [
+        "C03-LEC-03",
+        "C03-ANA-03",
+        "C03-TECH-02"
+      ],
+      "blocage": "Synthèse documentaire produite mais rapprochement et visas des autres ateliers non démontrés",
+      "prochaine_action": "Relieuse : lire index, contrôler les preuves et décider des corrections à intégrer",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": true,
+        "livree": true,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": [
+        "EV-ORC-03"
+      ]
     }
   ],
   "preuves": [
@@ -353,6 +380,19 @@
       "pr": 161,
       "verified_at": "2026-11-03",
       "notes": "Retour technique Graphiste publié en commentaire PR #161 ; absence de visa conjoint de Développeuse"
+    },
+    {
+      "id": "EV-ORC-03",
+      "type": "fichier",
+      "mission_id": "C03-ORC-03",
+      "atelier": "orchestratrice",
+      "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+      "path": "coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md",
+      "commit_sha": "6fec697d47b573f536bfe97d90e5db5eb6b1fdac",
+      "blob_sha": "4fbe39e790901a4654bf05f201fb1f8d8dc52d4b",
+      "pr": 132,
+      "verified_at": "2026-11-03",
+      "notes": "Livrable de la présente mission sur PR #132, non reçu ni validé par La Relieuse"
     }
   ],
   "comparaisons_sha": [
@@ -366,6 +406,12 @@
       "branch": "recherche/anarchiviste-catalogne-c03-par002-20261103",
       "path": "recherche/catalogne/C03_CAT_PAR002_RECONCILIATION.md",
       "blob_sha": "576657bebe134f1add01ca3866602d021f484b14",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+      "path": "coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md",
+      "blob_sha": "4fbe39e790901a4654bf05f201fb1f8d8dc52d4b",
       "verified_at": "2026-11-03"
     }
   ],
