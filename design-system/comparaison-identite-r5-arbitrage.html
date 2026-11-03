@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>R5-GRA · Arbitrage des symboles · La Faille noire × Interstice</title>
+<meta name="description" content="Dossier graphique de comparaison des deux exports SVG R4, des historiques et des réserves en attente de Zout. Sans publication ni remplacement.">
+<style>
+:root{color-scheme:dark;--noir:#141416;--pierre:#343637;--ivoire:#f0ece3;--rouge:#b92229;--lien:#ffd1c7}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--noir);color:var(--ivoire);font:clamp(16px,1.3vw,19px)/1.55 system-ui,-apple-system,sans-serif}
+a{color:var(--lien);text-underline-offset:3px;overflow-wrap:anywhere}
+a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.skip{position:absolute;top:-110px;left:12px;padding:8px;background:#fff;color:#141416}.skip:focus{top:12px;z-index:9}
+main{max-width:1260px;margin:0 auto;padding:clamp(14px,3vw,34px)}
+header{border-bottom:3px solid var(--rouge);padding-bottom:18px}
+.kicker{font-size:.9rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#ffc9c8}
+h1{font-size:clamp(1.8rem,4.7vw,3.6rem);line-height:1.06;margin:.25em 0 .4em}
+h2{font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.24}
+h3{font-size:1.15rem}
+p,li{max-width:85ch}
+code{overflow-wrap:anywhere;word-break:break-word;white-space:normal}
+.table-scroll{min-width:0;}
+main,section,footer{min-width:0;max-width:100%}
+header p{max-width:76ch}
+nav ul{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
+nav a{display:inline-flex;align-items:center;min-height:48px;padding:9px 13px;border:1px solid #baa9a3;border-radius:6px;background:#30272a}
+section{scroll-margin-top:20px}
+.notice{padding:15px 19px;background:#292428;border-left:5px solid #ed8b90;margin:26px 0}
+.matrix{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.panel{min-width:0;border:1px solid #9b9592;background:#202023;padding:clamp(12px,2vw,20px);border-radius:8px}
+.panel h3{margin:0 0 8px}
+.panel .subtitle{font-size:.92rem;color:#e0d8d2;margin:0 0 12px}
+.asset{width:100%;min-height:0;display:block;background:#a5a5a2;object-fit:contain;aspect-ratio:1/1;border:1px solid #646565}
+.sizes{display:flex;flex-wrap:wrap;align-items:end;gap:14px;padding:12px 0 0}
+.sizes figure{margin:0;text-align:center}
+.sizes img{display:block;max-width:100%;height:auto;background:#a5a5a2;border:1px solid #aaa}
+.sizes figcaption{font-size:.81rem;color:#e9dcd4}
+label{font-weight:700}
+table{border-collapse:collapse;width:100%;min-width:670px}
+th,td{padding:12px;vertical-align:top;text-align:left;border:1px solid #706d6c}
+th{background:#3b3032}
+.table-scroll{max-width:100%;overflow:auto;outline-offset:3px}
+.table-scroll:focus-visible{outline:3px solid white}
+.status{font-weight:750;color:#ffd6a6}
+.details{border-top:1px solid #555;padding:16px 0}
+.steps{padding-left:24px}
+.summary{border-left:4px solid var(--rouge);padding-left:15px}
+small{color:#d5cecc}
+footer{border-top:1px solid #666;margin-top:35px;padding-top:18px}
+@media(max-width:700px){
+ .matrix{grid-template-columns:minmax(0,1fr)}
+ .sizes{gap:10px}
+ nav ul{display:grid;grid-template-columns:1fr}
+ nav a{width:100%}
+}
+@media print{
+ @page{size:A4;margin:13mm}
+ :root{color-scheme:light}
+ body{background:white;color:#101010;font:11pt/1.35 Arial,sans-serif}
+ a{color:#45120c}
+ h1{font-size:22pt}
+ nav,.skip{display:none}
+ .panel,.notice{color:#111;background:#fff;border:1px solid #777}
+ .matrix{grid-template-columns:1fr 1fr;gap:8px}
+ .panel{break-inside:avoid;padding:8px}
+ .panel h3{font-size:12pt}
+ .asset{max-height:65mm;min-height:0}
+ .sizes{display:none}
+ .table-scroll{overflow:visible}
+ table{min-width:0;font-size:8pt}
+ th,td{padding:5px;color:#111}
+ th{background:#ddd}
+ .status,.kicker,small,.panel .subtitle{color:#111}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#dossier">Aller directement au dossier</a>
+<main id="dossier">
+<header>
+<p class="kicker">La Faille noire × Interstice · R5-GRA · Décision artistique</p>
+<h1>Comparer, puis décider.<br>Pas l'inverse.</h1>
+<p>Les deux exports SVG R4 sont des <strong>candidats</strong>. Les anciens actifs restent en place. Cette page de dossier est isolée, sans nouvelle direction artistique, sans bascule de favicon, sans fusion ni publication.</p>
+<nav aria-label="Accès au dossier"><ul>
+<li><a href="#comparaison">Les quatre SVG</a></li>
+<li><a href="#criteres">Critères de fidélité</a></li>
+<li><a href="#arbitrage">Décision de Zout</a></li>
+<li><a href="#preuves">Preuves et rollback</a></li>
+</ul></nav>
+</header>
+<aside class="notice" aria-label="Réserve bloquante">
+<strong>Référence manquante pour une conformité définitive.</strong>
+Les recadrages raster approuvés par Zout, signalés comme deux images de 665 × 665 dans l'audit Graphiste R4, ne sont pas versionnés dans ce dépôt. Il est donc impossible d'affirmer une correspondance géométrique ou pixel à pixel avec la planche approuvée. Les anciens essais visuels d'octobre ne doivent pas être substitués à cette référence finale.
+</aside>
+<section id="comparaison" aria-labelledby="titre-comparaison">
+<h2 id="titre-comparaison">1. Comparaison directe des quatre SVG existants</h2>
+<p>Deux exports R4 et deux anciens actifs, affichés en même temps. Le fond pierre est celui du SVG candidat ; les anciens actifs conservent leur fond d'origine. Le rendu dépend de leur code réel, sans image de remplacement.</p>
+<div class="matrix">
+<article class="panel">
+<h3>La Faille noire · R4 candidate</h3>
+<p class="subtitle">Nouvelle géométrie proposée, non approuvée</p>
+<img class="asset" src="../assets/candidats/logo-faille-noire-r4.svg" alt="La Faille noire, SVG candidat R4 : cercle, fissure rouge et microfissures" width="300" height="300">
+<div class="sizes" aria-label="Tailles d'icônes du candidat La Faille noire">
+<figure><img src="../assets/candidats/logo-faille-noire-r4.svg" width="48" height="48" alt=""><figcaption>48 px</figcaption></figure>
+<figure><img src="../assets/candidats/logo-faille-noire-r4.svg" width="96" height="96" alt=""><figcaption>96 px</figcaption></figure>
+<figure><img src="../assets/candidats/logo-faille-noire-r4.svg" width="192" height="192" alt=""><figcaption>192 px</figcaption></figure>
+</div>
+</article>
+<article class="panel">
+<h3>Interstice · R4 candidat</h3>
+<p class="subtitle">Même base et surcouche de nœuds, non approuvée</p>
+<img class="asset" src="../assets/candidats/logo-interstice-r4.svg" alt="Interstice, SVG candidat R4 : même base, point central décentré et réseau de nœuds" width="300" height="300">
+<div class="sizes" aria-label="Tailles d'icônes du candidat Interstice">
+<figure><img src="../assets/candidats/logo-interstice-r4.svg" width="48" height="48" alt=""><figcaption>48 px</figcaption></figure>
+<figure><img src="../assets/candidats/logo-interstice-r4.svg" width="96" height="96" alt=""><figcaption>96 px</figcaption></figure>
+<figure><img src="../assets/candidats/logo-interstice-r4.svg" width="192" height="192" alt=""><figcaption>192 px</figcaption></figure>
+</div>
+</article>
+<article class="panel">
+<h3>La Faille noire · ancien actif</h3>
+<p class="subtitle">Archive immuable de la branche de convergence</p>
+<img class="asset" src="../assets/archives/logo-faille-noire-pre-r4.svg" alt="Ancien logo actif de La Faille noire, conservé pour retour arrière" width="300" height="300">
+</article>
+<article class="panel">
+<h3>Interstice · ancien actif</h3>
+<p class="subtitle">Archive immuable de la branche de convergence</p>
+<img class="asset" src="../assets/archives/logo-interstice-pre-r4.svg" alt="Ancien logo actif d'Interstice, conservé pour retour arrière" width="300" height="300">
+</article>
+</div>
+</section>
+<section id="criteres" aria-labelledby="titre-criteres">
+<h2 id="titre-criteres">2. Contrôles et écarts restants</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tableau des contrôles graphiques défilable horizontalement">
+<table><caption>Critères du mandat artistique de Zout, confrontés au code SVG et à l'audit R4</caption>
+<thead><tr><th scope="col">Élément</th><th scope="col">Constat sur les R4</th><th scope="col">Réserve / correction ciblée</th></tr></thead>
+<tbody>
+<tr><th scope="row">Même base</th><td>Groupe base-identite strictement identique entre les deux fichiers (vérification du contenu).</td><td>Conserver ce groupe commun et la surcouche distincte.</td></tr>
+<tr><th scope="row">Faille principale</th><td>Tracé rouge oblique, régulier dans son épaisseur.</td><td>Vérifier le contour accidenté et le sens sur les PNG approuvés avant toute retouche.</td></tr>
+<tr><th scope="row">Fissures secondaires</th><td>55 chemins ivoire dans la base, densification R4 confirmée.</td><td>À comparer avec les microcraquelures, irrégularités et grains du raster approuvé.</td></tr>
+<tr><th scope="row">Diffusion rouge</th><td>17 chemins secondaires rouges partiels, plus une surcouche rouge complète dans Interstice.</td><td>Revoir le gradient de propagation à partir de la faille ; éviter la coloration uniforme de tout le réseau.</td></tr>
+<tr><th scope="row">Point majeur</th><td>Centre (159,156), rayon 17 sur Interstice ; distance au centre de la fissure rouge ≈ 3,6 unités SVG.</td><td>Position approximativement dans la fissure, mais centre et diamètre exacts non confrontés au PNG validé.</td></tr>
+<tr><th scope="row">Points secondaires</th><td>30 petits cercles en surcouche Interstice. Une partie suit les chemins tracés.</td><td>Vérifier leur implantation sur les ramifications, la répartition et l'impression aux petites tailles.</td></tr>
+<tr><th scope="row">Fond et matière</th><td>R4 : pierre #a5a5a2, cercle noir et anneau ivoire plus géométriques que le rendu artisanal décrit.</td><td>Confronter la texture au raster ; ne pas inventer un motif distinct.</td></tr>
+<tr><th scope="row">Lettres et usages</th><td>Les symboles SVG ne contiennent pas de texte ; les anciens actifs/favicons restent inchangés dans R4.</td><td>Ne remplacer aucun chemin officiel sans visa de Zout.</td></tr>
+</tbody></table>
+</div>
+</section>
+<section id="arbitrage" aria-labelledby="titre-arbitrage">
+<h2 id="titre-arbitrage">3. Décision à prendre par Zout</h2>
+<p>Les trois réponses ci-dessous sont des <strong>options d'arbitrage</strong>, aucune n'est enregistrée ici. Il n'y a ni formulaire ni transmission automatique.</p>
+<ul class="steps">
+<li><strong>VALIDÉ :</strong> Zout approuve explicitement les deux SVG exacts et leurs SHA après confrontation avec les PNG de référence. Ne vaut pas ordre de déployer.</li>
+<li><strong>CORRECTIONS DEMANDÉES :</strong> Zout indique uniquement les différences de forme, densité, diffusion, point et nœuds à reprendre sur une nouvelle branche candidate.</li>
+<li><strong>REFUSÉ :</strong> garder les actifs historiques et les candidats en archive, sans substitution.</li>
+</ul>
+<p class="summary"><strong>Recommandation Graphiste :</strong> CORRECTIONS À EXAMINER / VALIDATION BLOQUÉE, tant que les deux recadrages approuvés ne sont pas confrontés aux exports R4. Ce constat n'est pas une décision de Zout.</p>
+</section>
+<section id="preuves" aria-labelledby="titre-preuves">
+<h2 id="titre-preuves">4. Sources, SHA et retour arrière</h2>
+<p><strong>Branche de référence : </strong><code>integration/r4-convergence-relieuse-20261102</code> ; PR #141, HEAD observé avant préparation : <code>9f733122c7196622d31e7996d1d0b4eea987a14d</code>. Source des SVG R4 : PR #137. Toute évolution ultérieure de ces branches exige un nouveau contrôle.</p>
+<ul>
+<li><a href="https://github.com/zoutiFrutti/Interstice/blob/integration/r4-convergence-relieuse-20261102/assets/candidats/logo-faille-noire-r4.svg">Candidat Faille noire R4</a> · blob <code>ec068bdca1999bb132380d6182341e863ef4df65</code>.</li>
+<li><a href="https://github.com/zoutiFrutti/Interstice/blob/integration/r4-convergence-relieuse-20261102/assets/candidats/logo-interstice-r4.svg">Candidat Interstice R4</a> · blob <code>a577f915a61104d17712517ebfa55a3a0949cfb1</code>.</li>
+<li><a href="https://github.com/zoutiFrutti/Interstice/blob/integration/r4-convergence-relieuse-20261102/assets/archives/logo-faille-noire-pre-r4.svg">Archive Faille noire</a> · blob <code>c5d545a762e0ae205b235cea6d17e2ec51d2eff7</code>.</li>
+<li><a href="https://github.com/zoutiFrutti/Interstice/blob/integration/r4-convergence-relieuse-20261102/assets/archives/logo-interstice-pre-r4.svg">Archive Interstice</a> · blob <code>7c863aa239462c82b5a5dbcf26e5981b9131b0e8</code>.</li>
+<li><a href="https://github.com/zoutiFrutti/Interstice/blob/design/identite-faille-interstice-zoom-20261102/coordination/transmissions/2026-11-02_GRAPHISTE_R4_AUDIT_IDENTITE.md">Audit Graphiste R4, écarts d'origine</a>.</li>
+</ul>
+<p><strong>Rollback :</strong> aucun remplacement n'a eu lieu sur cette branche R5 ; laisser les chemins actifs <code>assets/logo-faille-noire.svg</code> et <code>assets/logo-interstice.svg</code> intacts. Fermeture de la PR R5 sans merge = retour au périmètre R4. Les archives et les candidats demeurent conservés.</p>
+<p><small>Référence raster validée absente de GitHub : ne pas substituer une planche historique antérieure ni présenter les captures R5 comme preuve d'identité parfaite.</small></p>
+</section>
+<footer><p>La Graphiste · dossier R5-GRA · 3 novembre 2026 · Document de décision exclusivement, aucune validation enregistrée, aucune publication autorisée.</p></footer>
+</main>
+</body></html>
