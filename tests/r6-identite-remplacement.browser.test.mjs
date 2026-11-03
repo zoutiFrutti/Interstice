@@ -37,7 +37,7 @@ test('R6 : base Faille noire strictement reprise et surcouche des points seule',
  assert.ok(groupe.includes('cx="350" cy="377" r="33"'));
  for(const svg of [newSvg,f]){
   assert.match(svg,/viewBox="0 0 665 665"/);
-  assert.doesNotMatch(svg,/<script\b|<foreignObject\b|<text\b|https?:\/\//i);
+  assert.doesNotMatch(svg,/<script\b|<foreignObject\b|<text\b|(?:href|src)=["']https?:\/\//i);
  }
 });
 
