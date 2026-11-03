@@ -29,10 +29,11 @@ test('R6 : base Faille noire strictement reprise et surcouche des points seule',
  const original=src(root+'interstice-retrace-zout-original.svg');
  const groupe=original.match(/<g id="noeuds-cercles"[\s\S]*?<\/g>/)?.[0];
  assert.ok(groupe,'nœuds Interstice source manquants');
- const expected=f.replace('<title>La Faille noire, vectorisation approchée</title>','<title>Interstice</title><desc>Base graphique identique au logo La Faille noire validé par Zout, complétée par un point rouge central et les nœuds du réseau.</desc>').replace('</svg>',groupe+'</svg>');
  const newSvg=src('assets/logo-interstice.svg');
- assert.equal(newSvg,expected,'base Faille noire divergente ou nœuds remplacés');
- assert.equal(src('assets/identite/r6/candidats/interstice-base-commune-r6.svg'),newSvg);
+ assert.equal(newSvg,src('assets/identite/r6/candidats/interstice-ramifications-originales-gra02.svg'),'active SVG differs from artist-approved GRA02 candidate');
+ const common=f.replace('<title>La Faille noire, vectorisation approchée</title>','<title>Interstice</title><desc>Base graphique identique au logo La Faille noire validé par Zout, complétée par un point rouge central et les nœuds du réseau.</desc>').replace('</svg>','');
+ assert.ok(newSvg.startsWith(common),'approved Interstice does not preserve the Faille noire common base');
+ for(const id of ['r6-gra02-ramifications-originales','halo-rouge','faille-et-ramifications','eclats-rouges','noeuds-cercles'])assert.ok(newSvg.includes('id="'+id+'"'),id);
  assert.equal((groupe.match(/<circle\b/g)||[]).length,30,'nœuds candidats modifiés');
  assert.ok(groupe.includes('cx="350" cy="377" r="33"'));
  for(const svg of [newSvg,f]){
