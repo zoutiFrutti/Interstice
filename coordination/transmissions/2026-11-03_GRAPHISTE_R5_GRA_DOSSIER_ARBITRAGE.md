@@ -102,3 +102,19 @@ Zout a joint et désigné explicitement **« Le bon SVG pour le logo faille noir
 **Conséquence éditoriale** : le R4 Faille noire `ec068bdca1999bb132380d6182341e863ef4df65` n'est **plus la référence artistique prioritaire** : comparer désormais les futures retouches à **ce nouveau fichier explicitement fourni par Zout**. La référence et validation **d'Interstice** restent ouvertes. Ne pas prétendre que les bases des deux marques sont toujours identiques à ce nouveau SVG tant qu'une déclinaison Interstice partageant cette base n'a pas été conçue et testée.
 
 **Maintien des réserves techniques** : aucun remplacement de `assets/logo-faille-noire.svg`, aucun favicon, aucune fusion, aucun déploiement, aucune décision pour Interstice. La Relieuse doit utiliser l'empreinte SHA-256 ci-dessus et demander une intégration du SVG joint exact au dépôt avant tout arbitrage de remplacement, et non substituer le R4 provisoire.
+
+
+### 10. Retour de Zout — deux fichiers Interstice fournis, 3 novembre 2026
+
+Zout a désigné deux nouveaux fichiers joints comme étant **Interstice**, sans préciser lequel constitue l'export SVG final à activer. Ces deux originaux sont stockés en pièces jointes de conversation et **ne sont pas des blobs GitHub**.
+
+| Original joint | Octets | SHA-256 | Nature réellement vérifiée |
+|---|---:|---|---|
+| `interstice_retrace_vectoriel(1).svg` | 117 305 | `b73b35b50f9ac94c933467e71e0eeb2750006fa18d719279e9b8356397adfeef` | SVG 665×665, `viewBox 0 0 665 665` ; vrais chemins vectoriels (5 `path`), 32 `circle`, six groupes, pas d'image embarquée |
+| `interstice_logo_fidele(1).svg` | 345 206 | `659133e892072e91f61bb018421ea9d96ac4016f21da5aa4bfbc806efca82cf6` | SVG 665×665 contenant **une seule image JPEG embarquée en base64** ; aucun `path` ou `circle` SVG, donc **non vectorisé**, même si l'extension est `.svg` |
+
+Les deux documents sont XML lisibles ; aucun élément `script` identifié. Ne pas confondre le second avec un dessin vectoriel éditable ni affirmer que le premier correspond pixel à pixel au deuxième. **Le SVG de La Faille noire `logo_faille_noire_vectorise(2).svg`** a quant à lui un SHA-256 `7bd0cfe8cf984f421b2377802ef97a0df843158217ad569ddd838313d4e73cb6`, contient quatre chemins et un fond, sans `circle` ni groupe. La construction des fichiers Interstice n'est donc pas actuellement une simple surcouche SVG sur ce **fichier exact** de La Faille noire ; une base commune doit encore être démontrée, sans changer la silhouette approuvée.
+
+**Conséquence :** prendre `interstice_logo_fidele(1).svg` comme **référence de rendu raster embarqué** et `interstice_retrace_vectoriel(1).svg` comme **candidat vectoriel à comparer**, sous réserve du choix explicite de Zout sur les deux. Les deux fichiers sont reconnus comme références fournies par Zout, mais leur mise en production, fusion et substitution d'actifs **ne sont pas autorisées**. Les candidats R4 de PR #141 ne deviennent pas officiels.
+
+**Suite indispensable :** comparaison visuelle directe des deux Interstice, puis contrôle de la géométrie commune avec le fichier Faille noire retenu, et validation spécifique de chaque export et de son SHA avant activation.
