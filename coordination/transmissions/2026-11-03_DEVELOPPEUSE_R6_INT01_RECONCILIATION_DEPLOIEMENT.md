@@ -44,6 +44,8 @@ Le contrôle INT01 complémentaire vérifie les SHA des SVG effectivement servis
 
 Les erreurs de services externes sont consignées séparément ; la conformité des fichiers du site ne certifie pas leurs services distants. Aucun essai d'écriture dans une base de production.
 
+Après fusion, le même workflow s'exécute sur le commit main exact. Un job `production-smoke` attend que l'accueil, Parcours et les deux SVG servis correspondent aux octets attendus, puis exécute les cinq tests INT01 sur le site public : SHA, navigation et historique à six largeurs, absence de JavaScript à six largeurs, filtrage local et validation de formulaire vide, intégrité des ressources et fragments locaux. Il ne publie rien et n'envoie aucune contribution.
+
 ## Déploiement : mécanisme observé et prérequis
 
 - Métadonnées du dépôt : Pages activé, dépôt public, branche par défaut main.

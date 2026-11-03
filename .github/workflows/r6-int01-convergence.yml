@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [integration/r6-int01-reconciliation-20261103]
+    branches: [main, integration/r6-int01-reconciliation-20261103]
   workflow_dispatch:
 permissions:
   contents: read
@@ -68,4 +68,30 @@ jobs:
         with:
           name: r6-int01-evidence-${{ github.event.pull_request.head.sha || github.sha }}
           path: artifacts/
+          retention-days: 14
+  production-smoke:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: certify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      SITE_BASE_URL: https://zoutifrutti.github.io/Interstice/
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Wait for expected production files, read only
+        run: python3 scripts/r6-wait-production.py
+      - name: Install test browser
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify live Pages navigation, hashes and essential links
+        run: node --test tests/r6-int01-convergence.browser.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r6-int01-production-${{ github.sha }}
+          path: artifacts/r6-int01/
           retention-days: 14
