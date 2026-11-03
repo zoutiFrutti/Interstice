@@ -1,0 +1,409 @@
+{
+  "mission": "R6-INT-01",
+  "recorded_at": "2026-11-03T14:02:41.601205+01:00",
+  "reconciliation_branch": "integration/r6-int01-reconciliation-20261103",
+  "certified_r6_head": "df3692356b2309b77adf44e9cb1e68603edbb6cc",
+  "certified_integration_head": "0c4ddfcc8b7a52ac773c61706fd5b5e2bc4f8187",
+  "github_merge": "46ee7e8ee2c52e8d1baaad41f8e977e41b4f1311",
+  "merge_parents": [
+    "c613d9f896fe94144264f6e78b7ac07893a75c67",
+    "0c4ddfcc8b7a52ac773c61706fd5b5e2bc4f8187"
+  ],
+  "merge_tree": "17af7720ef9ee664bc50b54dc17285445d08ccf5",
+  "candidate_tree": "17af7720ef9ee664bc50b54dc17285445d08ccf5",
+  "preservation": {
+    "head": "46ee7e8ee2c52e8d1baaad41f8e977e41b4f1311",
+    "main": "c613d9f896fe94144264f6e78b7ac07893a75c67",
+    "r6": "df3692356b2309b77adf44e9cb1e68603edbb6cc",
+    "common_base": "7ff1f0a53554b9f63b19878906299da7fefe68e9",
+    "preserved_main_commits": [
+      "c613d9f896fe94144264f6e78b7ac07893a75c67",
+      "87fa0eabf02b2c80da24206aa2c34b94187cfa11",
+      "3cb8aa7db8847fda7867d7e9f3540ad78eced869",
+      "82cd273d811df1276d60680c41f2be1ad06a599a",
+      "5effc2b09fcd9d189fa7da8e37d1018bed655310",
+      "ace804e5be8953c70e167a6f5f353432bc87d9db",
+      "837964cdc01f3490c7232a84c1a7d012662701f4",
+      "a2f0ee6429194ee19bf0002f55944311fa8564e4",
+      "7c0659187688339c165a0a7d8460449d4a818792",
+      "260a5bc7f828ff5969904e4f23feb87aa8d62117",
+      "23a86c31ba981d3a6330048cb5624a3cc9117500",
+      "a146fad24639a4ddc4a2dbaede8eafbc96b1fefe",
+      "525bbdf2ee9b38d93f42f0aaed4b13bff36dea8f",
+      "a5a1ea399d55509341e71c367abf2cee182d5ee9",
+      "eb99aaf1b6e8b65ac020f42cf51e6eedd7b1f8e1",
+      "01ecc6a9566e78433afa724bd2c2097c32f76416",
+      "499f039a81dbd7c948ae0253abe3bc0d27f9b0d4"
+    ],
+    "preserved_main_files": [
+      {
+        "path": ".github/workflows/demo-agents-c11.yml",
+        "blob_sha": "39dea5519c6b0cc514d228ce89ad57b0e8832c8d",
+        "preserved": true
+      },
+      {
+        "path": ".github/workflows/facteur-messagerie-c10.yml",
+        "blob_sha": "da72dbb32b0363971390aa6e13b29b25b5f871a3",
+        "preserved": true
+      },
+      {
+        "path": ".github/workflows/lancer-mission-c11.yml",
+        "blob_sha": "54df47306e3b663c699a03463fd5ac6948139944",
+        "preserved": true
+      },
+      {
+        "path": ".github/workflows/lectrice-agent-c12.yml",
+        "blob_sha": "df199f0056c0780c992da55c0378470f2374256b",
+        "preserved": true
+      },
+      {
+        "path": ".github/workflows/pont-relieuse-lectrice-c12.yml",
+        "blob_sha": "a18e263972743a374e49fb07d9521efa9ace91b2",
+        "preserved": true
+      },
+      {
+        "path": "coordination/RELIEUSE_INTERFACE_CHATGPT.md",
+        "blob_sha": "781c454d256f5cc437533cfc86f51df22943aa0a",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/README.md",
+        "blob_sha": "c33f0b42683a89b27095d30853c4ade735211670",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/accuses_verifies_c10.json",
+        "blob_sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/creer_mission_c11.py",
+        "blob_sha": "1e8516c31b3c89ffb0cd5a4fefc067d5b685e168",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/demande_relieuse_c11.py",
+        "blob_sha": "a963a276c91b68b13025601ded79afe8e81019f8",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/demo_c11.py",
+        "blob_sha": "788d1fc771cb35e36356809613fc21e3691d78b1",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/exemple_demande_relieuse_c11.json",
+        "blob_sha": "d2fb9f0550571a4acf4d06b47cc4aed84c1e9219",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/exemple_file_missions_c11.json",
+        "blob_sha": "a2d758092edf6631170a48411864fea718a9f9cc",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/exemple_mission_c11.json",
+        "blob_sha": "f4938aff9e3e4c3ce7d238ef6e72a98f0c225e60",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/exemple_texte_lectrice_c12.txt",
+        "blob_sha": "8afe106250e57d35546056d91cc7657d28476cf1",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/index_messagerie_c11.py",
+        "blob_sha": "9e5c93b7728fcf8260b53dc9ee32995feb94dbb7",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/lectrice_agent_c12.py",
+        "blob_sha": "4fc240e60c3683377adc0b21cd6ff084ac1d458f",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/mission_queue_c11.py",
+        "blob_sha": "5b63aaf255b12c13570f23e94f0e89c5e5b816a7",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/pont_relieuse_c12.py",
+        "blob_sha": "ad8e4622f5d324af7cfa5879ca4bd65f411507be",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/rapport_c11.py",
+        "blob_sha": "c2b018004e6f10eb4959a74ba4d4ccc02107bbb4",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/rapprochement_c11.py",
+        "blob_sha": "8805a024a25aae1616d7f4c8641c6275d876dded",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/tableau_relieuse_c11.py",
+        "blob_sha": "d7267551b711c1db94a37684f1eade2f949ea5f8",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_creer_mission_c11.py",
+        "blob_sha": "a43a51fdbe5643faadd2dea46bacdcad707bdaa1",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_demande_relieuse_c11.py",
+        "blob_sha": "9b47c59df546548450c9803eb9fc1bd4d68d1007",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_demo_c11.py",
+        "blob_sha": "fe177bf488dd6fec215913f430f0a01c8549f5e1",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_index_messagerie_c11.py",
+        "blob_sha": "8aa5bf924b8a0a5fd663834e619f83ca8eeac5f0",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_lectrice_agent_c12.py",
+        "blob_sha": "85e00ca1ff235a320c316c8571e91c077fb907e4",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_mission_queue_c11.py",
+        "blob_sha": "87afe00e5c817af0e6d7421412bccd293359e6b2",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_pont_relieuse_c12.py",
+        "blob_sha": "23a00c9cc276130614252ca8c82b72301e994e8d",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_rapport_c11.py",
+        "blob_sha": "69e64daad3cceb5a57fe28e3f5633b89e7663fb4",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_rapprochement_c11.py",
+        "blob_sha": "d8a88e631dfd20f0a63efdfbb8f36c597d936c08",
+        "preserved": true
+      },
+      {
+        "path": "coordination/agents/test_tableau_relieuse_c11.py",
+        "blob_sha": "82b5e13a813d2fcc3f952175cee532d971bfab5b",
+        "preserved": true
+      },
+      {
+        "path": "coordination/messagerie/facteur.py",
+        "blob_sha": "900b489b2e62550d7b8db55851d8f477ccd3aa45",
+        "preserved": true
+      },
+      {
+        "path": "coordination/penseuse/CYCLE8_MATRICE_TRANSITION_ET_TESTS_DE_POUVOIR_2026-11-01.md",
+        "blob_sha": "fbcd031fcbf1971fcb5061fa892b2b02330dc28a",
+        "preserved": true
+      },
+      {
+        "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE7_CRITIQUE_POUVOIR_TRANSITION_COMPARAISONS.md",
+        "blob_sha": "be04130457fd4ae334f10d8a87b6181f7fcc3aab",
+        "preserved": true
+      },
+      {
+        "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_COMPLEMENT_VERIFICATION_V09_ART48.md",
+        "blob_sha": "dc3532551380d792c4f4546797bee7b7bcac4c38",
+        "preserved": true
+      },
+      {
+        "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_CONCORDANCE_POUVOIRS_RECOURS.md",
+        "blob_sha": "3d2086feedbe1b1a6e5204b7d4f5dd5f0671fe11",
+        "preserved": true
+      },
+      {
+        "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_RELIEUSE_CONTROLES_EFFECTIFS.md",
+        "blob_sha": "2c85bc526c6bf8984489766917f9afeb11a8a21a",
+        "preserved": true
+      }
+    ]
+  },
+  "rollback_rehearsal": {
+    "simulated_merge": "8e8ae638a8c223a0f57d8cb1370a1037c508e4bb",
+    "reverted_tree": "256f25cc69ca48e991e227bc57a5481ea23cade8",
+    "pre_main_tree": "256f25cc69ca48e991e227bc57a5481ea23cade8",
+    "identical": true,
+    "scope": "isolated local worktree, no production write"
+  },
+  "pages_preflight": {
+    "build_type": "legacy",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "https_enforced": true,
+    "cname": null,
+    "main_protected": false,
+    "rulesets": [],
+    "custom_deployment_secrets_required": false,
+    "custom_deployment_variables_required": false
+  },
+  "official_svg_sha256": {
+    "assets/logo-faille-noire.svg": "7bd0cfe8cf984f421b2377802ef97a0df843158217ad569ddd838313d4e73cb6",
+    "assets/logo-interstice.svg": "0fe365cd02a238bf4486f936683d194aab6a1ee2e62e2d5a2eaee9b72eff0453"
+  },
+  "http_production": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "43b6e09a9359ad0f39132ed093eccced34ec3066f797ec94da014d4231dfa3ac",
+      "matches_local": true
+    },
+    {
+      "path": "wiki.html",
+      "status": 200,
+      "sha256": "5592c2e87adc3a87db4ba43255318745915994f6f59b8e47f0e3233a78c4a41f",
+      "matches_local": true
+    },
+    {
+      "path": "bibliotheque.html",
+      "status": 200,
+      "sha256": "d5e861193a3f72fcec713aa6e879e9118000fa652921d9db22091797e7611a71",
+      "matches_local": true
+    },
+    {
+      "path": "atlas.html",
+      "status": 200,
+      "sha256": "688c3531bc77ea3ed286e5f7affa06b3b66a241df0e5ce32c96c5d7750bff0d2",
+      "matches_local": true
+    },
+    {
+      "path": "parcours.html",
+      "status": 200,
+      "sha256": "cf4c42bf9a50a65f53a2add90738c4e897666f742cdd1d880b04f7f0308d37c2",
+      "matches_local": true
+    },
+    {
+      "path": "design-system/faille-navigation-interactive.html",
+      "status": 200,
+      "sha256": "81c12df2b1e69aeef266478d846eeec8e9e4189f0157fb89963239f7f4d3df25",
+      "matches_local": true
+    },
+    {
+      "path": "assets/logo-faille-noire.svg",
+      "status": 200,
+      "sha256": "7bd0cfe8cf984f421b2377802ef97a0df843158217ad569ddd838313d4e73cb6",
+      "matches_local": true
+    },
+    {
+      "path": "assets/logo-interstice.svg",
+      "status": 200,
+      "sha256": "0fe365cd02a238bf4486f936683d194aab6a1ee2e62e2d5a2eaee9b72eff0453",
+      "matches_local": true
+    },
+    {
+      "path": "assets/identite/r6/candidats/interstice-ramifications-originales-gra02.svg",
+      "status": 200,
+      "sha256": "0fe365cd02a238bf4486f936683d194aab6a1ee2e62e2d5a2eaee9b72eff0453",
+      "matches_local": true
+    },
+    {
+      "path": "assets/faille-navigation.js",
+      "status": 200,
+      "sha256": "15ec450fd32a8f15542b4e0d26c431b4679999298598b33ea046f1718cde48cc",
+      "matches_local": true
+    },
+    {
+      "path": "assets/faille-navigation.css",
+      "status": 200,
+      "sha256": "8a8951cee6017514c29b1e17b6bcb50ba2bb15ce9fa5c33d397be00b84039d25",
+      "matches_local": true
+    }
+  ],
+  "premerge_actions": {
+    "INT01_PR": "https://github.com/zoutiFrutti/Interstice/actions/runs/41640022741",
+    "INT01_PUSH": "https://github.com/zoutiFrutti/Interstice/actions/runs/41640015036",
+    "R6": "https://github.com/zoutiFrutti/Interstice/actions/runs/41640022776",
+    "R4": "https://github.com/zoutiFrutti/Interstice/actions/runs/41640022880"
+  },
+  "pages_production_action": "https://github.com/zoutiFrutti/Interstice/actions/runs/41640478872",
+  "physical_tests": {
+    "phone": false,
+    "screen_readers": false,
+    "native_browser_zoom_400": false
+  },
+  "production_smoke": {
+    "action": "https://github.com/zoutiFrutti/Interstice/actions/runs/41640480206",
+    "head": "46ee7e8ee2c52e8d1baaad41f8e977e41b4f1311",
+    "tests": 5,
+    "passed": 5,
+    "failed": 0,
+    "resources_checked": 47,
+    "navigation": [
+      {
+        "width": 320,
+        "destinations": 5,
+        "reducedMotion": true,
+        "javascript": [],
+        "localLoading": [],
+        "externalLoading": []
+      },
+      {
+        "width": 390,
+        "destinations": 5,
+        "reducedMotion": true,
+        "javascript": [],
+        "localLoading": [],
+        "externalLoading": []
+      },
+      {
+        "width": 768,
+        "destinations": 5,
+        "reducedMotion": true,
+        "javascript": [],
+        "localLoading": [],
+        "externalLoading": []
+      },
+      {
+        "width": 1024,
+        "destinations": 5,
+        "reducedMotion": true,
+        "javascript": [],
+        "localLoading": [],
+        "externalLoading": []
+      },
+      {
+        "width": 1280,
+        "destinations": 5,
+        "reducedMotion": true,
+        "javascript": [],
+        "localLoading": [],
+        "externalLoading": []
+      },
+      {
+        "width": 1920,
+        "destinations": 5,
+        "reducedMotion": true,
+        "javascript": [],
+        "localLoading": [],
+        "externalLoading": []
+      }
+    ]
+  },
+  "residual_inventory": {
+    "before": {
+      "run": 41623267956,
+      "scanned": 83,
+      "prepared": 82,
+      "errors": 1
+    },
+    "after": {
+      "run": 41640480142,
+      "scanned": 241,
+      "prepared": 235,
+      "errors": 6
+    },
+    "synchronization": "skipped",
+    "cause": "not exposed by logs; not certified"
+  }
+}
