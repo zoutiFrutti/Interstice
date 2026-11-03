@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - design/r6-remplacement-logos-officiels-candidat-20261103
+      - integration/r6-dev03-logos-valides-20261103
   pull_request:
     paths:
       - 'assets/logo-*.svg'
