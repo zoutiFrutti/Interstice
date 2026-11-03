@@ -4,6 +4,7 @@ on:
     branches:
       - design/r6-remplacement-logos-officiels-candidat-20261103
       - integration/r6-dev03-logos-valides-20261103
+      - atelier/anarchitecte-r6-certification-20261103
   pull_request:
     paths:
       - 'assets/logo-*.svg'
@@ -33,6 +34,7 @@ jobs:
           python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/r6-http.log 2>&1 &
           node scripts/r6-inventaire-identite.mjs
           node --test tests/r6-identite-remplacement.browser.test.mjs
+          node --test tests/anarchitecte-r6-certification.test.mjs
       - if: always()
         uses: actions/upload-artifact@v4
         with:
