@@ -15,10 +15,18 @@ class CollectifTests(unittest.TestCase):
     def test_all_missions_roles_and_no_false_receipts(self):
         result = build(self.data)
         self.assertEqual(len(result["roles"]), 19)
-        self.assertEqual(len(result["missions"]), 11)
+        self.assertEqual(len(result["missions"]), 12)
         self.assertTrue(all(m["etat"]["recue"] is None for m in result["missions"]))
         self.assertFalse(any(m["etat"]["validee"] is True for m in result["missions"]))
         self.assertIn("C03-TECH-02", render(result))
+
+    def test_own_report_is_a_cited_delivery_not_an_ack(self):
+        result = build(self.data)
+        own = next(m for m in result["missions"] if m["id"] == "C03-ORC-03")
+        self.assertTrue(own["etat"]["livree"])
+        self.assertIsNone(own["etat"]["recue"])
+        self.assertFalse(own["etat"]["validee"])
+        self.assertEqual(own["preuves_mission"], ["EV-ORC-03"])
 
     def test_old_report_never_completes_new_mission(self):
         result = build(self.data)
