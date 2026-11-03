@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>R6 — Identité, comparatif à valider · La Faille noire × Interstice</title>
+<style>
+:root{color-scheme:dark;--bg:#101014;--fg:#f2eee5;--red:#d32725}*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:clamp(16px,1.25vw,19px)/1.55 system-ui,sans-serif}
+main{max-width:1200px;margin:auto;padding:clamp(12px,3vw,32px);min-width:0}
+a{color:#ffd2ca;overflow-wrap:anywhere;text-underline-offset:3px}a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+header{border-bottom:3px solid var(--red)}h1{font-size:clamp(1.9rem,4.6vw,3.4rem);line-height:1.12}h2{font-size:clamp(1.25rem,2.5vw,1.9rem);line-height:1.2}
+.notice{padding:13px 18px;background:#2b2527;border-left:4px solid #e98380}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}
+.card{background:#202024;border:1px solid #777;border-radius:8px;padding:clamp(12px,2.2vw,20px);min-width:0}
+.card img{display:block;width:100%;height:auto;max-width:665px;aspect-ratio:1/1;object-fit:contain;background:#bcb4ac}
+.card h3{margin:.5rem 0}p,li{overflow-wrap:anywhere}code{overflow-wrap:anywhere;white-space:normal}
+.sizes{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.sizes figure{margin:0;text-align:center;font-size:13px}
+.sizes img{height:auto;max-width:100%;border:1px solid #7a6e6b}
+.small{color:#ded9d2;font-size:.92rem}
+table{border-collapse:collapse;width:100%;min-width:620px}th,td{border:1px solid #777;padding:10px;text-align:left;vertical-align:top}th{background:#382b2b}
+.scroll{max-width:100%;overflow-x:auto}.scroll:focus-visible{outline:3px solid #fff}
+@media(max-width:700px){.cards{grid-template-columns:minmax(0,1fr)}}
+@media print{@page{size:A4;margin:12mm}body{background:#fff;color:#000;font:10pt/1.3 Arial,sans-serif}main{max-width:none;padding:0}.cards{grid-template-columns:1fr 1fr;gap:8px}.card{background:#fff;color:#000;border-color:#888;padding:6px;break-inside:avoid}.card img{max-height:70mm}.notice{color:#000;background:#fff}.sizes{display:none}table{min-width:0;font-size:8pt}th,td{padding:5px}th{background:#eee;color:#000}a{color:#000}}
+</style></head><body><main>
+<header><p>LA FAILLE NOIRE × INTERSTICE · R6 · COMPARAISON CANDIDATE</p>
+<h1>Deux logos. Une base. Une décision de Zout.</h1>
+<p>Les actifs du projet sont modifiés <strong>uniquement sur la branche R6 candidate</strong>. L'identité historique reste archivée. Aucun déploiement ni validation d'Interstice n'est présumé.</p></header>
+<section><h2>Comparaison visuelle des fichiers vérifiés</h2>
+<div class="notice"><strong>Écart graphique à arbitrer :</strong> l'Interstice harmonisé partage le dessin exact de La Faille noire, mais comporte moins de ramifications rouges visibles que le SVG Interstice fourni. La version « fidèle » est une image JPEG encapsulée en SVG, à utiliser seulement comme référence d'apparence.</div>
+<div class="cards">
+<article class="card"><h3>La Faille noire — SVG retenu par Zout</h3>
+<img src="../assets/logo-faille-noire.svg" alt="Logo de La Faille noire : cercle noir, anneau clair usé, faille rouge et fissures" width="665" height="665">
+<p class="small">Octets originaux, sans modification de dessin. SHA-256 : <code>7bd0cfe8cf984f421b2377802ef97a0df843158217ad569ddd838313d4e73cb6</code></p></article>
+<article class="card"><h3>Interstice — R6, base strictement commune</h3>
+<img src="../assets/logo-interstice.svg" alt="Candidat Interstice R6 : même faille que La Faille noire, nœuds rouges ajoutés et point principal" width="665" height="665">
+<p class="small">Base du logo précédent reprise à l'identique, nœuds de la source retracée en surcouche. <strong>Fidélité à confirmer visuellement.</strong></p></article>
+<article class="card"><h3>Interstice — SVG retracé fourni</h3>
+<img src="../assets/identite/r6/sources/interstice-retrace-zout-original.svg" alt="Version Interstice vectorisée fournie par Zout pour comparaison, à réseau rouge plus dense" width="665" height="665">
+<p class="small">Référence vectorielle de Zout, conservée sans retouche.</p></article>
+<article class="card"><h3>Interstice — référence visuelle fournie</h3>
+<img src="../assets/identite/r6/sources/interstice-reference-visuelle-zout-original.svg" alt="Référence d'apparence Interstice : image JPEG intégrée dans un fichier SVG" width="665" height="665">
+<p class="small">Ce fichier n'est pas réellement vectorisé ; conservation pour comparaison exclusivement.</p></article>
+<article class="card"><h3>La Faille noire — version historique</h3>
+<img src="../assets/archives/logo-faille-noire-pre-r6.svg" alt="Ancien symbole de La Faille noire, conservé pour retour arrière" width="665" height="665"></article>
+<article class="card"><h3>Interstice — version historique</h3>
+<img src="../assets/archives/logo-interstice-pre-r6.svg" alt="Ancien symbole d'Interstice, conservé pour retour arrière" width="665" height="665"></article>
+</div></section>
+<section><h2>Lisibilité des candidats aux petites tailles</h2><p>Affichage à taille réelle CSS ; les microfissures peuvent disparaître, mais le sens général doit rester reconnaissable.</p>
+<div class="cards"><article class="card"><h3>Faille noire</h3><div class="sizes">
+<figure><img src="../assets/logo-faille-noire.svg" width="32" height="32" alt=""><figcaption>32 px</figcaption></figure>
+<figure><img src="../assets/logo-faille-noire.svg" width="48" height="48" alt=""><figcaption>48 px</figcaption></figure>
+<figure><img src="../assets/logo-faille-noire.svg" width="64" height="64" alt=""><figcaption>64 px</figcaption></figure>
+<figure><img src="../assets/logo-faille-noire.svg" width="96" height="96" alt=""><figcaption>96 px</figcaption></figure>
+<figure><img src="../assets/logo-faille-noire.svg" width="192" height="192" alt=""><figcaption>192 px</figcaption></figure></div></article>
+<article class="card"><h3>Interstice R6</h3><div class="sizes">
+<figure><img src="../assets/logo-interstice.svg" width="32" height="32" alt=""><figcaption>32 px</figcaption></figure>
+<figure><img src="../assets/logo-interstice.svg" width="48" height="48" alt=""><figcaption>48 px</figcaption></figure>
+<figure><img src="../assets/logo-interstice.svg" width="64" height="64" alt=""><figcaption>64 px</figcaption></figure>
+<figure><img src="../assets/logo-interstice.svg" width="96" height="96" alt=""><figcaption>96 px</figcaption></figure>
+<figure><img src="../assets/logo-interstice.svg" width="192" height="192" alt=""><figcaption>192 px</figcaption></figure>
+</div></article></div></section>
+<section><h2>Arbitrage artistique</h2><div class="scroll" tabindex="0" role="region" aria-label="Tableau des décisions possibles">
+<table><caption>État des choix, sans formulaire ni enregistrement automatique</caption>
+<thead><tr><th scope="col">Élément</th><th scope="col">État réel</th><th scope="col">Action avant fusion</th></tr></thead>
+<tbody><tr><th scope="row">Faille noire</th><td>Source exacte désignée par Zout, SHA contrôlé</td><td>Confirmer la mise en production avec le lot complet</td></tr>
+<tr><th scope="row">Interstice</th><td>R6 partage la base graphique de Faille noire ; écart de densité des ramifications rouges avec la référence</td><td>Approbation de Zout sur ce rendu précis, ou correction ciblée</td></tr>
+<tr><th scope="row">Technique</th><td>Actifs remplacés sur branche R6 uniquement ; anciens archivés</td><td>Tests sur HEAD, écran physique si disponible, rollback</td></tr>
+<tr><th scope="row">Publication</th><td>Non autorisée</td><td>Décision distincte de Zout pour fusion et déploiement</td></tr></tbody></table></div></section>
+<footer><p><a href="comparaison-identite-r4.html">Comparer aussi les SVG R4 historiques</a>. Dossier de prévalidation artistique, sans diffusion.</p></footer>
+</main></body></html>

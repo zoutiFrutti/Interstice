@@ -1,0 +1,17 @@
+# Développeuse — navigation par la faille, R2
+Date : 2026-11-02. Branche candidate `integration/r2-dev-navigation-faille-20261102`. PR brouillon #139 dirigée vers `design/identite-faille-interstice-zoom-20261102`. Aucun merge/publication/déploiement.
+## Sources contrôlées
+PR #136 Graphiste R2 HEAD `d580b3f8dd13507964c9c397031aa87899c2bbec`, PR #137 identité/zoom HEAD `d6889d764b24d081692db8c9e3caf785f291ced3` ; `design-system/entree-faille-candidate.html` source. Le brief de La Graphiste dit explicitement que l'image source validée est une planche non encore versionnée : les SVG historiques restent inchangés. Ne pas déclarer les coordonnées des nouveaux nœuds comme la géométrie du nouveau logo.
+## Réalisation technique
+- `design-system/faille-navigation-interactive.html` : vrai SVG avec image vectorielle historique comme fond, cinq nœuds, flèches, lien direct vers Wiki, Médiathèque, Atlas, Parcours, Entraide (Entraide via `parcours.html#entraide` ; statut juridique non validé), boutons d'exploration et liste des rubriques utilisable sans script.
+- `assets/faille-navigation.js` : caméra par transformation de `viewBox`, focus avec transition de 650 ms, départ vers le point central après 800 ms, deep links `#wiki` etc., `pushState` et `popstate`, raccourcis, déplacement pointeur, zoom Ctrl+molette. Mode tactile libre et pinch activés **sur demande** ; hors mode, scroll/pinch natifs préservés. `prefers-reduced-motion` supprime transition et arrivée forcée.
+- `assets/faille-navigation.css` : taille responsive, contraste de focus, bouton 44 px, alternative liste. Aucun stockage utilisateur, aucun fetch ni service Supabase.
+- La page historique `design-system/entree-faille-candidate.html` et l'accueil `index.html` pointent vers la nouvelle carte, sans effacer la navigation classique.
+- Les flèches représentent **des rubriques du sommaire**, pas des relations documentaires R0–R3 ; la vraie géométrie des fissures dépend encore de l'export fidèle de La Graphiste.
+## Tests et métriques
+Workflow `.github/workflows/r2-faille-navigation.yml` : `node --check`, tests de structure, Playwright Chromium sur 320/390/1280 px ; zoom, clavier, hash, boutons, captures, tests d'absence de collecte. Les journaux du run contiennent `FAILLE_PERF` (octets transférés déclarés par Resource Timing lorsque disponibles, nombre de ressources). **Ces chiffres ne mesurent ni FPS ni consommation CPU sur appareil bas de gamme.** Après toute modification, seule la CI du HEAD exact fait foi.
+## Statuts / réserves
+**FONCTIONNEL candidat** : caméra, zoom, pan, 5 nœuds, navigation directe, boutons, historique, mode tactile opt-in. **STATIQUE** : SVG historique, placement de nœuds superposés au motif existant, connexions de sommaire. **BLOQUÉ Graphiste** : deux logos fidèles versionnés, remappage des nœuds et pictogrammes définitifs. **À POURSUIVRE** : tests tactiles physiques, VO/TalkBack/NVDA, zoom système 400 %, mesure sur téléphone modeste, non-régression complète sur les routes R2, trajet le long de fissures fidèles, persistance caméra hors sélection. **DÉCISION HUMAINE** : validation des actifs, association des rubriques et publication.
+Aucune écriture publique réactivée, migration SQL, opération production ou activation d'IA.
+## Rollback
+Retirer la nouvelle page et les trois ajouts JS/CSS/workflow de la branche candidate, puis retirer les deux liens d'entrée. Les contenus existants, les SVG officiels et les routes ne sont pas effacés. Aucun rollback de production n'est impliqué.

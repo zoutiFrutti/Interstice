@@ -1566,3 +1566,59 @@ Proposition historique/scientifique de l'Archiviste examinée, avec trois axes E
 
 ## 2026-10-31 — Médiathèque — CYCLE 4, dossier ÉCL et renvois documentaires
 **Trois passes, candidates non publiques** : 11 ressources ÉCL-001/003 documentées, avec BL00D.MONEY identifiant et licence encore non confirmés et sans nouvelle notice EJAtlas ; 12 FN héritées sans changement d'identifiants ; 5 bibliographies courtes (écologie, démocratie, coopératives, contre-enquêtes, libertés) ; 4 propositions de renvois Wiki en place. [Rapport et sources](https://github.com/zoutiFrutti/Interstice/blob/coordination/relieur-pilote-10-passes-20261030/coordination/transmissions/2026-10-31_MEDIATHEQUE_CYCLE4_ECL_PARCOURS.md), commit `478adc7c170e86d6054cdb88d91dfaf2c4978650`. [La Relieuse — transmission déposée](https://github.com/zoutiFrutti/Interstice/blob/coordination/relieur-pilote-10-passes-20261030/coordination/RELIEUSE_DECISION_EDITORIALE_PRE_SORTIE_2026-10-31.md), commit `29f5b4337d1bd2601de8a40d9a797a85deed9544`. **No double corroboration Who Profits/AFSC sans vérifier sources amont.** Droits OpenCorporates/Transparency/EJAtlas différenciés. La Lectrice doit reprendre les objections ; aucune organisation partenaire, aucun média hébergé, aucune publication ni fusion.
+
+
+---
+
+## 2026-11-01 — La Relieuse — Cycle 8, convergence documentaire et audit transversal
+
+**Travail effectivement vérifié :** audit transversal des 17 ateliers enregistré sur la branche de coordination au commit `1c734bf8212673000f4a3f1e59dc930b719ae9f4`, fichier `coordination/audits/2026-11-01_CYCLE8_AUDIT_TRANSVERSAL_17_ATELIERS.md`. Transmissions de la Lectrice (blob `01299b8241c970dcc709ae6bc50f1fa92f396b72`), de la Juriste (blob `51af4e26f734f8346e467790ff48140ba8617086`), de la Développeuse (blob `1313d589fb9b8ca691a6fdad8e6417070ba6e637`), de la Graphiste (blob `5646e9ea741d7adadf160d3bbb1fd1351c9234cd`) et de la Responsable réseaux sociaux (blob `8daf6869876d722ae33e9cf9ed31ab4b1788cd12`) consultées. Les autres ateliers figurent dans l'audit avec niveau de preuve explicite ; pas de prétention de lecture exhaustive de toutes les conversations ou de tous les Drive.
+
+**Réconciliation éditoriale :** le premier tri des 24 Wiki (15 à corriger, 9 bloquées) est distinct du registre mixte ultérieur de 34 items (14 prêts à soumettre, 15 à corriger, 5 bloqués). Trois fiches historiques ARCH-005, COL-003, ASSO-007 sont désormais candidates prêtes **sous réserve** selon La Lectrice ; rapprochement indicatif 17 à soumettre, 12 Wiki à corriger, 5 bloqués. ARCH-002 et ARCH-007 conservent deux visas limités, sans droits médias validés ni autorisation de publication. Les 44 fiches Drive et 71 notices FN ne sont pas des publications automatiques.
+
+**Contradiction à transmettre :** le kit communication C8 mentionne encore la Charte des communs **V0.8**, tandis que le dossier juridique C8 examine la **V0.9 transitoire** (article 48) ; corriger la référence dans la branche source après vérification, sans présumer adoption. Le manifeste V2.6 et la charte éditoriale V0.1 restent candidats.
+
+**P0 non levé :** fonctions Supabase de contribution signalées actives côté serveur ; correctifs réversibles préparés par La Développeuse, non appliqués. Tests isolés, vérification des droits, autorisation humaine et rollback nécessaires avant déploiement. Graphiste : tests VoiceOver/TalkBack/NVDA physiques non exécutés ; PWA non démontrée.
+
+**Décisions réservées à Zout :** éventuelle adoption individuelle de textes fondateurs sur versions précises, visas par article, droits médias, autorisation distincte de publication et de changement de production. **Aucune fusion, publication, adoption collective, modification serveur ou communication externe.**
+
+**À poursuivre :** vérifier les derniers HEAD/CI de chaque atelier, collationner les originaux et licences, rapprocher les branches d'intégration, traiter les cinq pages sensibles et les douze corrections Wiki. Une transmission GitHub ne garantit pas sa réception automatique dans les conversations d'ateliers.
+
+
+---
+
+## 2026-11-01 — La Relieuse — Cycle 9, passe de convergence et rectification d'un blocage devenu obsolète
+
+**Lectures GitHub vérifiées :** PR #52, #64, #67, #68, #69, #70 ; branches C8 retrouvées ; transmission Archéologue des communs `coordination/transmissions/2026-11-01_ARCHEOLOGUE_COMMUNS_CYCLE8_TRACES_RESERVES.md` blob `b847caef714fb414e9300a27ba461752cefe9654` ; kit communication C8 blob **actuel** `3241292b461172adea5ffd933caf918d34bf2d5f`.
+
+**Correction importante de l'entrée C8 précédente :** la divergence de référence à la Charte communs V0.8 dans le kit de communication a **été corrigée sur sa branche source**. Le kit précise désormais « Charte des communs V0.9 transitoire candidate, non adoptée » et conserve V0.8 comme étape historique. Ne pas reclasser cette anomalie comme tâche ouverte sans nouvelle preuve. Cela n'autorise aucune communication externe.
+
+**PR #69 :** deux dossiers ZAP candidats et erratum de date/URL 5 novembre 2023 (non 6), selon la PR. Les pièces et conséquences historiques restent à relire ; ne pas déclarer visa. **PR #70 :** projet de règlement des ateliers du Louvre ≠ preuve d'application ; chiffres contradictoires sur la composition du Club des prolétaires ; affiches Union des femmes ≠ preuves de réalisation. Original des pièces et registres manquants.
+
+**Livrables de coordination C9 enregistrés sur cette branche :**
+- `coordination/cycle9/REGISTRE_UNIQUE_C9_2026-11-01.md`, commit `ca5f8343ebec5ca21085099be723d59e6b10d42b` ; statuts par atelier, preuves, réserves.
+- `coordination/cycle9/TABLEAU_AVANCEMENT_ET_DEPENDANCES_C9_2026-11-01.md`, commit `9f1eeb7202ab4c94eaf953e37fdda30e7480194e` ; propriétaires et critères de sortie.
+- `coordination/cycle9/DOSSIER_DECISIONS_ZOUT_C9_2026-11-01.md`, commit `855acaf01e0e4bd8a1206ab94686a807f7fffc86` ; décisions à réserver, accords déjà exprimés préservés.
+
+**État :** coordination candidate et rectification documentaire accomplies ; P0 serveur, intégration sur HEAD unique, licences et visas restent ouverts. Aucun test applicatif, accès de production, fusion, adoption ou publication réalisés par La Relieuse. La lecture de PR ne garantit pas que toutes les conversations ont été consultées ni que leurs auteurs ont reçu ce Journal.
+
+
+---
+
+## 2026-11-01 — La Relieuse — ouverture exécutée du cycle 10
+
+La Relieuse applique son propre prompt d'ouverture avant distribution des 16 prompts. Branche candidate `coordination/cycle10-ouverture-20261101`. Protocole et registre : `coordination/cycle10/PROTOCOLE_REGISTRE_OUVERTURE_C10_2026-11-01.md`, commit `4a87819a0943c76396b9acec918993269b3f7d25`. Contrôle des branches C9 et PR #71 (Juriste, cinq corrections sensibles candidates), #73 (Graphiste, intégration candidate), #74 (Éclaireuse, huit hypothèses), #69/#70 (recherches C8). Les missions C10 exigent des preuves et un statut de fin, pas seulement un rapport. La Relieuse clôturera après transmissions des seize ateliers, sans auto-déclenchement. Les tâches irréalisables restent BLOQUÉES ou DÉCISION HUMAINE, jamais TERMINÉES. Aucune fusion, publication ni modification de production. Limites : audit GitHub non exhaustif, conversations indépendantes non intégralement accessibles, CI et serveur non revalidés.
+
+
+---
+
+## 2026-11-01 — La Relieuse — contrôle de clôture C10 (NON CLÔTURABLE)
+
+Contrôle réel : recherche de 18 branches C10 (dont coordination et doublon Assistant), PR #75–78, lecture du protocole d'ouverture blob `20f9e4364e25c7f62865635d3b4825d205004631` et de `coordination/cycle10/archeologue/ARCH-005.md` blob `52f9299423eb639d4538ee9801db8371798a560e`. Registre provisoire `coordination/cycle10/REGISTRE_CLOTURE_PROVISOIRE_C10_2026-11-01.md` commit `00f7cded3c1dc41c22a078fecdbbfa96b6641cf5`, branche `coordination/cycle10-cloture-audit-20261101`. Les seize transmissions n'ont pas été toutes relues ni leurs tests vérifiés ; aucune mission n'est donc certifiée TERMINÉE par La Relieuse. PR #75 : trois blocages maintenus et deux corrections nécessaires. PR #76 : tests physiques lecteurs d'écran non réalisés. PR #77 : quatre fiches candidates ; originaux non entièrement collationnés. PR #78 : distinction 5 novembre original espagnol / 6 novembre traduction anglaise à préserver. Reprise exigée par objectif avec SHA et tests ; pas de report humain présumé. Aucun merge, publication ou changement de production.
+
+
+---
+
+## 2026-11-01 — La Relieuse — messagerie inter-ateliers V1 candidate
+
+Sur branche `coordination/cycle10-messagerie-v1-20261101`, création d'un protocole `coordination/messagerie/README.md`, index de huit transmissions préparées `coordination/messagerie/MESSAGES_C10.md`, portes `coordination/messagerie/DEPENDANCES_C10.md`, seize boîtes documentaires `coordination/messagerie/boites/*.md` et journal court `coordination/journaux/CYCLE10.md`. Tous les messages restent **ÉMIS** et non **REÇUS** : aucune notification automatique, aucune conversation externe activée, aucun accusé inventé. Historique du Journal commun conservé. Les vagues suivantes attendent la preuve de levée des dépendances ; le cycle 10 reste non clôturable. Aucun merge ni déploiement.
