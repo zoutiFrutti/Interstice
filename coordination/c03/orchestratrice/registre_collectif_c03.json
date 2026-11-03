@@ -1,0 +1,731 @@
+{
+  "schema": "c03.collectif.v1",
+  "instantane": "2026-11-03",
+  "reference": {
+    "pr": 161,
+    "head_sha": "0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6",
+    "objets": 219,
+    "relations": 19,
+    "reserves_work": 30
+  },
+  "roles": [
+    "relieuse",
+    "orchestratrice",
+    "lectrice",
+    "anarchitecte",
+    "penseuse",
+    "developpeuse",
+    "graphiste",
+    "juriste",
+    "archeologue",
+    "anarchiviste-communs",
+    "biographe",
+    "anarchiviste-catalan",
+    "anarchiviste-zapatiste",
+    "mediatheque",
+    "tisseuse",
+    "eclaireuse",
+    "vigie",
+    "reseaux-sociaux",
+    "assistant-anarchiviste"
+  ],
+  "missions": [
+    {
+      "id": "C03-LEC-03",
+      "ateliers": [
+        "lectrice"
+      ],
+      "priorite": "P0",
+      "dependances": [
+        "C03-ANA-03",
+        "C03-PEN-03",
+        "C03-ARC-03",
+        "C03-CAT-03",
+        "C03-JUR-03",
+        "C03-MED-03"
+      ],
+      "blocage": "Confronter 35 objections C02 annoncées aux 30 WORK; versions exactes à retrouver",
+      "prochaine_action": "Relever objections, décisions, sources et SHA sans les fermer",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-ANA-03",
+      "ateliers": [
+        "anarchitecte"
+      ],
+      "priorite": "P0",
+      "dependances": [
+        "C03-LEC-03",
+        "C03-PEN-03",
+        "C03-MED-03",
+        "C03-TECH-02"
+      ],
+      "blocage": "219 objets et 19 relations candidats, types et identifiants à qualifier",
+      "prochaine_action": "Contrôler 4 portes, 7 PAR, alias, dépendances et relations typées",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-PEN-03",
+      "ateliers": [
+        "penseuse"
+      ],
+      "priorite": "P1",
+      "dependances": [
+        "C03-ANA-03",
+        "C03-LEC-03"
+      ],
+      "blocage": "Confusion possible comparaison/filiation, pouvoir informel, cas limites",
+      "prochaine_action": "Soumettre désaccords conceptuels avec identifiants précis",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-ARC-03",
+      "ateliers": [
+        "archeologue"
+      ],
+      "priorite": "P0",
+      "dependances": [
+        "C03-LEC-03",
+        "C03-ANA-03",
+        "C03-HIST-04"
+      ],
+      "blocage": "AFF5721, MP159, SHD Ly22 et originaux non collationnés",
+      "prochaine_action": "Réutiliser C03-ARC-02 PR #162, conserver WORK-COM ouverts",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [
+        "EV-ARC-02"
+      ],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-CAT-03",
+      "ateliers": [
+        "anarchiviste-catalan"
+      ],
+      "priorite": "P0",
+      "dependances": [
+        "C03-LEC-03",
+        "C03-ANA-03"
+      ],
+      "blocage": "Application locale et archives IISG non vérifiées",
+      "prochaine_action": "Réutiliser C03-CAT-02, éviter de dupliquer les six versions CAT",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [
+        "EV-CAT-02"
+      ],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-JUR-03",
+      "ateliers": [
+        "juriste"
+      ],
+      "priorite": "P0",
+      "dependances": [
+        "C03-LEC-03",
+        "C03-TECH-02"
+      ],
+      "blocage": "PAR-005 non publiable ; droits / données / santé",
+      "prochaine_action": "Documenter avis par SHA et conserver blocage pratique",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-HIST-04",
+      "ateliers": [
+        "biographe",
+        "anarchiviste-communs"
+      ],
+      "priorite": "P1",
+      "dependances": [
+        "C03-ARC-03",
+        "C03-LEC-03",
+        "C03-PEN-03"
+      ],
+      "blocage": "BIO-009/019/021/022 et Marmite : identités, rémunérations, continuité",
+      "prochaine_action": "Confronter WORK-COM-06/07 aux sources primaires sans fusion d'identités",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-MED-03",
+      "ateliers": [
+        "mediatheque"
+      ],
+      "priorite": "P1",
+      "dependances": [
+        "C03-LEC-03",
+        "C03-ANA-03"
+      ],
+      "blocage": "71 FN, FN-018 et alias/éditions/droits ; 219 objets du registre",
+      "prochaine_action": "Rapprocher inventaires et sélection des 7 PAR sans supprimer ID",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-ZAP-03",
+      "ateliers": [
+        "anarchiviste-zapatiste"
+      ],
+      "priorite": "P1",
+      "dependances": [
+        "C03-LEC-03",
+        "C03-PEN-03"
+      ],
+      "blocage": "Sources du mouvement et études indépendantes à distinguer",
+      "prochaine_action": "Reprendre ZAP-C10-001, traductions et WORK-ZAP-01/02/03",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-TIS-03",
+      "ateliers": [
+        "tisseuse"
+      ],
+      "priorite": "P1",
+      "dependances": [
+        "C03-ANA-03",
+        "C03-JUR-03",
+        "C03-MED-03"
+      ],
+      "blocage": "Territoires/relations R0-R3, partenariats non supposés",
+      "prochaine_action": "Relier fiches TIS existantes, sans coordonnées sensibles",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-TECH-02",
+      "ateliers": [
+        "developpeuse",
+        "graphiste"
+      ],
+      "priorite": "P0",
+      "dependances": [
+        "C03-ANA-03",
+        "C03-LEC-03",
+        "C03-JUR-03",
+        "C03-MED-03"
+      ],
+      "blocage": "R6 5 destinations vs V2 4 portes ; QA tactile et lecteurs d'écran manquante",
+      "prochaine_action": "Revoir modules PR #161, URL historiques, logos et rendu non public",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [
+        "EV-TECH-GRA"
+      ],
+      "preuves_mission": []
+    },
+    {
+      "id": "C03-ORC-03",
+      "ateliers": [
+        "orchestratrice"
+      ],
+      "priorite": "P0",
+      "dependances": [
+        "C03-LEC-03",
+        "C03-ANA-03",
+        "C03-TECH-02"
+      ],
+      "blocage": "Synthèse documentaire produite mais rapprochement et visas des autres ateliers non démontrés",
+      "prochaine_action": "Relieuse : lire index, contrôler les preuves et décider des corrections à intégrer",
+      "etat": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": true,
+        "livree": true,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "preuves_anterieures": [],
+      "preuves_mission": [
+        "EV-ORC-03"
+      ]
+    }
+  ],
+  "preuves": [
+    {
+      "id": "EV-ARC-02",
+      "type": "fichier",
+      "mission_id": "C03-ARC-03",
+      "atelier": "archeologue",
+      "branch": "research/archeologue-c03-par001-20261103",
+      "path": "coordination/c03/archeologue/C03_ARC_02_OBJECTIONS_PAR001.md",
+      "commit_sha": "2e4a70615b353008dd5a7121234987f77d51fe43",
+      "blob_sha": "fa109c97909e2382e0a8715d2d75cd7029385e85",
+      "pr": 162,
+      "verified_at": "2026-11-03",
+      "notes": "Antériorité C03-ARC-02, non preuve d'exécution de C03-ARC-03"
+    },
+    {
+      "id": "EV-CAT-02",
+      "type": "fichier",
+      "mission_id": "C03-CAT-03",
+      "atelier": "anarchiviste-catalan",
+      "branch": "recherche/anarchiviste-catalogne-c03-par002-20261103",
+      "path": "recherche/catalogne/C03_CAT_PAR002_RECONCILIATION.md",
+      "commit_sha": "2ed930219fa871081be58c5e7aba6bcbc3add670",
+      "blob_sha": "576657bebe134f1add01ca3866602d021f484b14",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Antériorité C03-CAT-02, pas une livraison C03-CAT-03"
+    },
+    {
+      "id": "EV-TECH-GRA",
+      "type": "commentaire_pr",
+      "mission_id": "C03-TECH-02",
+      "atelier": "graphiste",
+      "branch": "work/c02-v2-reconciliation-20261103",
+      "path": null,
+      "commit_sha": "0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6",
+      "blob_sha": null,
+      "pr": 161,
+      "verified_at": "2026-11-03",
+      "notes": "Retour technique Graphiste publié en commentaire PR #161 ; absence de visa conjoint de Développeuse"
+    },
+    {
+      "id": "EV-ORC-03",
+      "type": "fichier",
+      "mission_id": "C03-ORC-03",
+      "atelier": "orchestratrice",
+      "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+      "path": "coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md",
+      "commit_sha": "6fec697d47b573f536bfe97d90e5db5eb6b1fdac",
+      "blob_sha": "4fbe39e790901a4654bf05f201fb1f8d8dc52d4b",
+      "pr": 132,
+      "verified_at": "2026-11-03",
+      "notes": "Livrable de la présente mission sur PR #132, non reçu ni validé par La Relieuse"
+    },
+    {
+      "id": "EV-HIST-RELIEUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "relieuse",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-01_RELIEUSE_CYCLE7_RECONCILIATION_INITIALE.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "6a2f9fac05dbaed5c530897035e156371b267515",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-ANARCHITECTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "anarchitecte",
+      "branch": "main",
+      "path": "coordination/ANARCHITECTE_REVUE_V0_018B_2026-10-31.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "7cf9f4bf86960e9b3be5361fcc8907741d035792",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-PENSEUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "penseuse",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_RELIEUSE_CONTROLES_EFFECTIFS.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "2c85bc526c6bf8984489766917f9afeb11a8a21a",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-DEVELOPPEUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "developpeuse",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-03_DEVELOPPEUSE_R6_INT01_RECONCILIATION_DEPLOIEMENT.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "db660a7066780dd9d514b93194f0363ebc460c79",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-GRAPHISTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "graphiste",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-03_GRAPHISTE_R6_IDENTITE_REMPLACEMENT_CANDIDAT.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "d02e8b042c987a57bf23f2746f319f671b74ff4e",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-JURISTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "juriste",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "2df0162aa851a49f930b387ee3910af36c5f9d1f",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-ANARCHIVISTE_COMMUNS",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "anarchiviste-communs",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-30_ANARCHIVISTE_VERS_RELIEUR_REPRISE_HISTORIQUE_PARTIELLE.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "b6cdf98f51b7e43b834144388cd113fb097cfa1a",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-MEDIATHEQUE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "mediatheque",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "f66e7f91c8fa4684b41503ec470468d166b09696",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-TISSEUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "tisseuse",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_TISSEUSE_ECO_TIS_001_INITIATIVES_ET_CAS.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "6d1ef709cff7f9579b6f19055949ee8a23d603c6",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-ASSISTANT_ANARCHIVISTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "assistant-anarchiviste",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "c96fead0080dc38ea36bd1a2559eb63b258f6c7f",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-BIOGRAPHE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "biographe",
+      "branch": "main",
+      "path": "coordination/propositions/2026-11-02_LES_VOIX_DE_L_OMBRE_BIOGRAPHE_P2.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "01381f793c3f0feb8baa39aca1cba43a8919f1b1",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-VIGIE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "vigie",
+      "branch": "main",
+      "path": "coordination/ateliers/vigie/DECISION_INTEGRATION_2026-11-01.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "5c421c330d3f3a6deb2e313dedec814a6d51fc2c",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-LECTRICE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "lectrice",
+      "branch": "atelier-lectrice/r6-controle-navigation-20261103",
+      "path": "coordination/transmissions/2026-11-03_LECTRICE_R6_AVIS_INDEPENDANT_NAVIGATION.md",
+      "commit_sha": "9e881a09669f9001b4ebd679924a630073e83afb",
+      "blob_sha": "96786f9a5f1c77f9ab5d05640f7b3525dd394a33",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Rapport antérieur retrouvé sur branche candidate; commit = HEAD de cette branche au relevé, aucune réception ou livraison C03-03 déduite."
+    },
+    {
+      "id": "EV-HIST-ECLAIREUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "eclaireuse",
+      "branch": "research/eclaireuse-c05-lacunes-20261103",
+      "path": "coordination/transmissions/2026-11-03_ECLAIREUSE_C05_RELIEUSE.md",
+      "commit_sha": "2c57015ab00139233d80b8e67b2e7744991b988c",
+      "blob_sha": "da5117630c062d5aad342582d385a4daa6b24b8e",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Rapport antérieur retrouvé sur branche candidate; commit = HEAD de cette branche au relevé, aucune réception ou livraison C03-03 déduite."
+    },
+    {
+      "id": "EV-HIST-ANARCHIVISTE_ZAPATISTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "anarchiviste-zapatiste",
+      "branch": "research/zapatiste-r1-20261102",
+      "path": "coordination/transmissions/2026-11-02_ZAP_R1_RELIEUSE.md",
+      "commit_sha": "f27aedea5d4fa1f32efa96ef254da9fbff5e6c25",
+      "blob_sha": "22990e710b7163cc9050be3d960a4ae9e8756670",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Rapport antérieur retrouvé sur branche candidate; commit = HEAD de cette branche au relevé, aucune réception ou livraison C03-03 déduite."
+    },
+    {
+      "id": "EV-HIST-RESEAUX_SOCIAUX",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "reseaux-sociaux",
+      "branch": "atelier/reseaux-integration-c17-20261102",
+      "path": "coordination/transmissions/2026-11-02_RESEAUX_C17_KIT_INTEGRATION_CANDIDAT.md",
+      "commit_sha": "7981d1f0297bf5461f48854ddd7c24a80a6400dd",
+      "blob_sha": "a14f9c33fefc44f1c298cde6d79bf6f6e7a1d0cb",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Rapport antérieur retrouvé sur branche candidate; commit = HEAD de cette branche au relevé, aucune réception ou livraison C03-03 déduite."
+    }
+  ],
+  "comparaisons_sha": [
+    {
+      "branch": "research/archeologue-c03-par001-20261103",
+      "path": "coordination/c03/archeologue/C03_ARC_02_OBJECTIONS_PAR001.md",
+      "blob_sha": "fa109c97909e2382e0a8715d2d75cd7029385e85",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "recherche/anarchiviste-catalogne-c03-par002-20261103",
+      "path": "recherche/catalogne/C03_CAT_PAR002_RECONCILIATION.md",
+      "blob_sha": "576657bebe134f1add01ca3866602d021f484b14",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+      "path": "coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md",
+      "blob_sha": "4fbe39e790901a4654bf05f201fb1f8d8dc52d4b",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-01_RELIEUSE_CYCLE7_RECONCILIATION_INITIALE.md",
+      "blob_sha": "6a2f9fac05dbaed5c530897035e156371b267515",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/ANARCHITECTE_REVUE_V0_018B_2026-10-31.md",
+      "blob_sha": "7cf9f4bf86960e9b3be5361fcc8907741d035792",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_RELIEUSE_CONTROLES_EFFECTIFS.md",
+      "blob_sha": "2c85bc526c6bf8984489766917f9afeb11a8a21a",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-03_DEVELOPPEUSE_R6_INT01_RECONCILIATION_DEPLOIEMENT.md",
+      "blob_sha": "db660a7066780dd9d514b93194f0363ebc460c79",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-03_GRAPHISTE_R6_IDENTITE_REMPLACEMENT_CANDIDAT.md",
+      "blob_sha": "d02e8b042c987a57bf23f2746f319f671b74ff4e",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md",
+      "blob_sha": "2df0162aa851a49f930b387ee3910af36c5f9d1f",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-30_ANARCHIVISTE_VERS_RELIEUR_REPRISE_HISTORIQUE_PARTIELLE.md",
+      "blob_sha": "b6cdf98f51b7e43b834144388cd113fb097cfa1a",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md",
+      "blob_sha": "f66e7f91c8fa4684b41503ec470468d166b09696",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_TISSEUSE_ECO_TIS_001_INITIATIVES_ET_CAS.md",
+      "blob_sha": "6d1ef709cff7f9579b6f19055949ee8a23d603c6",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md",
+      "blob_sha": "c96fead0080dc38ea36bd1a2559eb63b258f6c7f",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/propositions/2026-11-02_LES_VOIX_DE_L_OMBRE_BIOGRAPHE_P2.md",
+      "blob_sha": "01381f793c3f0feb8baa39aca1cba43a8919f1b1",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/ateliers/vigie/DECISION_INTEGRATION_2026-11-01.md",
+      "blob_sha": "5c421c330d3f3a6deb2e313dedec814a6d51fc2c",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "atelier-lectrice/r6-controle-navigation-20261103",
+      "path": "coordination/transmissions/2026-11-03_LECTRICE_R6_AVIS_INDEPENDANT_NAVIGATION.md",
+      "blob_sha": "96786f9a5f1c77f9ab5d05640f7b3525dd394a33",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "research/eclaireuse-c05-lacunes-20261103",
+      "path": "coordination/transmissions/2026-11-03_ECLAIREUSE_C05_RELIEUSE.md",
+      "blob_sha": "da5117630c062d5aad342582d385a4daa6b24b8e",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "research/zapatiste-r1-20261102",
+      "path": "coordination/transmissions/2026-11-02_ZAP_R1_RELIEUSE.md",
+      "blob_sha": "22990e710b7163cc9050be3d960a4ae9e8756670",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "atelier/reseaux-integration-c17-20261102",
+      "path": "coordination/transmissions/2026-11-02_RESEAUX_C17_KIT_INTEGRATION_CANDIDAT.md",
+      "blob_sha": "a14f9c33fefc44f1c298cde6d79bf6f6e7a1d0cb",
+      "verified_at": "2026-11-03"
+    }
+  ],
+  "notes": [
+    "Statuts tri-état : true prouvé explicitement, false négatif explicitement connu, null inconnu",
+    "Preuves antérieures C03-ARC-02 et C03-CAT-02 non transférées à leurs nouvelles missions C03-ARC-03 et C03-CAT-03",
+    "Commentaires PR #161 = retour traçable du seul atelier Graphiste, pas visa TECH-02 de la Développeuse",
+    "La liste des rôles reprend C11 et ajoute Orchestratrice sans créer de boîte C10 supplémentaire",
+    "Données GitHub publiques : aucun texte sensible ni secret",
+    "Relevés des blobs ARC et CAT revérifiés par lecture GitHub le 3 novembre, non synchronisation automatique",
+    "Rôles = union des 17 boîtes C10, C11 et de l'Orchestratrice, sans nouvelle boîte historique"
+  ]
+}
