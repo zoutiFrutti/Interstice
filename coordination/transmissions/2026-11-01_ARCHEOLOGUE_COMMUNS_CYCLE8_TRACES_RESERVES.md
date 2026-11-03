@@ -1,0 +1,22 @@
+# Cycle 8 — Archéologue des communs — contrôle des traces (1 novembre 2026)
+
+**Statut : recherche candidate, sans visa éditorial, sans publication.** Sources de départ : dossiers Drive ARCH-005, ARCH-006, COL-003, ASSO-007 relus le 1/11. Cette note ne remplace pas leurs fiches et ne crée aucun nouvel identifiant de catalogue.
+
+## Constats documentaires et limites
+
+1. **Ateliers d'armes du Louvre, ARCH-005.** Deux documents datés du 2 avril et du 3 mai 1871 sont recensés. Le second est une proposition de règlement d'ouvriers (affiche BHVP n°363), avec élection et révocabilité des responsables, accès aux livres, rapports et registres. Ne pas déduire l'approbation ni l'application intégrale de sa publication au *Journal officiel* du 21 mai. La mention de Frankel dans la notice du 2 avril pose un problème chronologique à résoudre sur l'original. L'affirmation de « sept jours d'application » chez Decouflé et le récit des trois directeurs élus attribué à Rossel ne remplacent pas les registres. Pièces à demander : affiche MP159, original n°363, livres de paie, procès-verbaux du conseil, mémoires de Rossel. Sources : https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0001490635 ; https://macommunedeparis.com/2023/05/31/3-mai-1871-le-reglement-des-ateliers-du-louvre-suite/ .
+2. **Club des prolétaires, COL-003 / ARCH-006.** Quatre numéros du *Prolétaire* sont catalogués (10, 15, 19, 24 mai 1871), sans preuve que les articles expriment toutes les voix des réunions. Notice BnF https://catalogue.bnf.fr/ark:/12148/cb328445424 . La cote Ly 22 (SHD) est signalée pour les procès-verbaux ; elle n'a pas été consultée ici. Contradiction non résolue entre deux répartitions d'affluence (4 000 personnes dont 1 000 femmes / dont 3 000 femmes) : ne publier aucun chiffre de répartition sans séance et pièce primaire. Le Musée Carnavalet identifie sur PH22310 Françoise André épouse Humbert comme secrétaire ; son identité avec toute mention de « citoyenne André » reste à confirmer : https://parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/portrait-de-francoise-andre-epouse-humbert-membre-de-la-commune-1871 .
+3. **Union des femmes, ASSO-007.** Les affiches du 15, 18 et 20 mai attestent des appels, convocations et projets d'ateliers, non des inscriptions effectives, réunions tenues ou paiements. Ne pas confondre avec les ateliers abandonnés visés par le décret du 16 avril. Notices Carnavalet citées dans la fiche Drive : affiches n°331, 342 et 373. Rechercher registres d'arrondissement, comptes, mandats et procès-verbaux.
+4. **Survie et héritages.** La conservation d'un bâtiment, d'une affiche ou d'une photographie prouve la survie d'une trace, pas celle d'une organisation. Distinguer : continuité documentée / réappropriation explicite / ressemblance / rupture / indéterminé. Aucune filiation directe entre ces expériences et les collectifs contemporains n'est établie par les pièces relues.
+
+## Parcours candidats, sans itinéraire public validé
+
+- **Paris, assemblées et écriture** : Saint-Ambroise → archives Ly 22 → collections BnF du *Prolétaire* ; vérifier adresse actuelle et conditions de consultation avant visite.
+- **Paris, travail et production** : site historique du Louvre → affiches BHVP → pièces Carnavalet ; ne pas confondre les bâtiments présents avec la localisation exacte des bancs de travail de 1871.
+- **Territoires après la lutte** : Notre-Dame-des-Landes ; enquête foncière et matérielle distincte à ouvrir après croisement avec La Tisseuse, sans continuité supposée.
+
+## Transmission à La Relieuse
+
+**Faits documentés dans les fiches consultées :** existence des notices d'archives, des quatre numéros catalogués, des règlements et affiches décrits. **Hypothèses à garder ouvertes :** application complète du règlement, identité de la citoyenne André, chiffres d'affluence, ateliers réellement ouverts, continuités postérieures. **Limite de cette passe :** les originaux physiques et fac-similés n'ont pas tous été collationnés ; aucune nouvelle consultation d'archives sur place n'est revendiquée.
+
+**Demandes ciblées :** L'Anarchiviste des communs contrôle la pratique institutionnelle ; La Tisseuse contrôle les continuités territoriales ; la Médiathèque contrôle les cotes et droits. Aucun doublon de fiches. **Décision humaine :** choisir les dossiers à approfondir, autoriser éventuellement des demandes d'archives, puis visa éditorial explicite de Zout sur version exacte avant toute intégration publique.
