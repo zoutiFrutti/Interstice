@@ -29,3 +29,10 @@
 - Les intitulés seuls ne prouvent pas un doublon.
 - Aucun contenu candidat ne devient validé par une réussite CI.
 - Toute proposition de suppression doit citer la PR, le SHA, les fichiers uniques et l'accord de Zout.
+
+## Addendum : preuves du lot 1
+- Registre certifié de 14 PR : `coordination/r5/REGISTRE_HEAD_BASE_LOT1_2026-11-03.md` (HEAD, BASE et SHA contrôlés via métadonnées GitHub).
+- #143 HEAD `88175668422dbf373d948f9a1164c97961f12401` : workflow « R4 DEV closure verification » réussi (run 41543235241). **Aucune preuve fournie ici de succès du workflow R5 DEV dédié**.
+- #144 HEAD `ac41830d757e5c7811ca7d18d5aa6edde13f663f` : workflow « R5 GRA - comparatif graphique non publie » réussi (run 41544253498) et contrôles R4 réussis. Cela ne vaut pas visa artistique.
+- #145 : CI de la branche documentaire à confirmer sur son dernier HEAD.
+- La chaîne R1→R5 des PR #129, #133–#145 est explicitée par les SHA HEAD/BASE ; pas de clôture automatique des PR anciennes.
