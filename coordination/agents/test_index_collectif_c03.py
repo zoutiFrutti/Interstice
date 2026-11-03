@@ -28,6 +28,21 @@ class CollectifTests(unittest.TestCase):
         self.assertFalse(own["etat"]["validee"])
         self.assertEqual(own["preuves_mission"], ["EV-ORC-03"])
 
+    def test_all_19_roles_have_real_documentary_antecedents(self):
+        result = build(self.data)
+        self.assertEqual(len(result["roles"]), 19)
+        self.assertTrue(all(role["preuves"] for role in result["roles"]))
+        for role in result["roles"]:
+            self.assertTrue(all(p["commit_sha"] and p["blob_sha"] or
+                                p["type"] == "commentaire_pr" for p in role["preuves"]))
+
+    def test_historical_reports_do_not_infer_c03_delivery(self):
+        result = build(self.data)
+        lec = next(m for m in result["missions"] if m["id"] == "C03-LEC-03")
+        self.assertIsNone(lec["etat"]["recue"])
+        self.assertIsNone(lec["etat"]["livree"])
+        self.assertTrue(any(r["role"] == "lectrice" and r["preuves"] for r in result["roles"]))
+
     def test_old_report_never_completes_new_mission(self):
         result = build(self.data)
         arc = next(m for m in result["missions"] if m["id"] == "C03-ARC-03")
