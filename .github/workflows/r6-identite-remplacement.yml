@@ -10,6 +10,7 @@ on:
       - 'assets/archives/logo-*-pre-r6.svg'
       - 'design-system/comparaison-identite-r6.html'
       - 'tests/r6-identite-remplacement.browser.test.mjs'
+      - 'tests/r6-dev02-stabilisation.browser.test.mjs'
       - '.github/workflows/r6-identite-remplacement.yml'
 jobs:
   r6-identity:
@@ -31,7 +32,7 @@ jobs:
           mkdir -p artifacts/r6-identite
           python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/r6-http.log 2>&1 &
           node scripts/r6-inventaire-identite.mjs
-          node --test tests/r6-identite-remplacement.browser.test.mjs
+          node --test tests/r6-identite-remplacement.browser.test.mjs tests/r6-dev02-stabilisation.browser.test.mjs
       - if: always()
         uses: actions/upload-artifact@v4
         with:
