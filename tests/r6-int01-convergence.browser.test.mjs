@@ -160,3 +160,33 @@ test('INT01: catalogue filtering and empty proposal validation preserve client b
     assert.deepEqual(writes, [], 'Empty form must not submit');
   } finally { await browser.close(); }
 });
+
+test('INT01: essential pages have no broken local resource or fragment links', async () => {
+  const browser = await chromium.launch({args: ['--no-sandbox']});
+  const checked = new Map();
+  try {
+    const page = await browser.newPage({javaScriptEnabled: false});
+    for (const path of ['index.html', 'wiki.html', 'bibliotheque.html', 'atlas.html', 'parcours.html', 'participer.html', 'design-system/faille-navigation-interactive.html']) {
+      await page.goto(new URL(path, base).href);
+      const references = await page.locator('a[href],link[href],script[src],img[src]').evaluateAll(nodes => nodes.map(x => x.href || x.src));
+      for (const href of references) {
+        if (!href.startsWith(base)) continue;
+        const target = new URL(href);
+        const fragment = decodeURIComponent(target.hash.slice(1));
+        target.hash = '';
+        let content = checked.get(target.href);
+        if (content === undefined) {
+          const response = await page.request.get(target.href);
+          assert.equal(response.status(), 200, path + ' → ' + href);
+          content = target.pathname.endsWith('.html') ? await response.text() : '';
+          checked.set(target.href, content);
+        }
+        if (fragment && target.pathname.endsWith('.html')) {
+          const escaped = fragment.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          assert.match(content, new RegExp('\\bid=["\x27]' + escaped + '["\x27]'), path + ' → ' + href);
+        }
+      }
+    }
+    console.log('INT01_LOCAL_LINKS ' + JSON.stringify({resourcesChecked: checked.size}));
+  } finally { await browser.close(); }
+});

@@ -21,6 +21,8 @@ Conservation intégrale de la version main. Elle inclut toutes les fonctions de 
 
 Les 37 autres fichiers propres à main ne présentent aucun conflit ; leurs blobs sont préservés intégralement, tout comme celui du workflow résolu : 38/38. Ils couvrent les agents et tests C11/C12, les workflows, l'interface de La Relieuse, le facteur et les transmissions de La Penseuse. Le contrôle `scripts/r6-preservation-check.py` produit la liste des 17 commits et des 38 chemins avec leurs blobs dans l'artefact CI. L'ascendance des deux parents est vérifiée par Git.
 
+Une correction fonctionnelle minimale est ajoutée après un contrôle de 137 références locales : dans `parcours.html`, le lien Écologie pointait vers l'ancre absente `wiki.html#ecologie`. Il pointe désormais vers le dossier existant `wiki-ecologie-sociale-environnement.html`. Un contrôle des fichiers et fragments locaux des sept pages essentielles couvre cette anomalie. Aucun contenu éditorial ni logo n'est modifié.
+
 Aucune suppression d'archive, source, branche ou variante historique. Les retours Markdown à deux espaces préexistants sont conservés.
 
 ## Identité officielle
@@ -67,4 +69,10 @@ Après fusion GitHub, en cas de défaut de production : créer une branche depui
 
 ## Résultats finaux
 
-À compléter uniquement après preuves : HEAD réconcilié final, PR, CI sur ce HEAD, simulation de rollback, commit de fusion, production, SHA servis et contrôles post-déploiement. Aucune réussite de fusion ou publication n'est affirmée à ce stade.
+- PR de convergence réconciliée : https://github.com/zoutiFrutti/Interstice/pull/153. La PR #152 n'est pas fusionnée.
+- Premier HEAD réconcilié récupéré par Git : `b3b84e70de566db68ecb65d26cff1302dd6a3eff`, arbre `04e1727530cd2347c3b81c304ba138ad52f65902`, parents main et R6 exacts.
+- Sur ce HEAD : vérification locale renouvelée, 27 tests agents et 11 contrats Node réussis, 38 blobs et 17 commits main conservés ; tests navigateur et construction Jekyll du run https://github.com/zoutiFrutti/Interstice/actions/runs/41639613120 réussis. Les nouveaux tests de liens nécessitent un nouveau HEAD et une nouvelle CI.
+- Rollback effectivement simulé dans un worktree séparé sur ce premier HEAD : `git revert --no-commit -m 1 b3b84e70de566db68ecb65d26cff1302dd6a3eff`. L'arbre obtenu `256f25cc69ca48e991e227bc57a5481ea23cade8` est strictement identique au main préopération.
+- Site avant opération vérifié par HTTP et navigateur : accueil 200 ; anciens logos servis avec SHA Faille `6747a714279f50988dd6b9364c871c3d513f70e639033f62d1e497efcdc65241` et Interstice `50174acc597d424170bcb41c6541ce5894c1a6dab7cecf1f8df77128ee0f8f38`. Il s'agit de l'état antérieur, pas de R6 déployée.
+
+À compléter uniquement après preuves : HEAD réconcilié final, CI sur ce HEAD, commit de fusion, production, SHA servis et contrôles post-déploiement. Aucune réussite de fusion ou publication R6 n'est affirmée à ce stade.
