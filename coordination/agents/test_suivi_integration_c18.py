@@ -7,6 +7,7 @@ import unittest
 from pathlib import Path
 
 from suivi_integration_c18 import generate, markdown
+from test_index_collectif_c03 import CollectifTests  # Suite C03 réutilisée par CI C18
 
 EXAMPLE = Path(__file__).with_name("exemple_suivi_c18.json")
 SCRIPT = Path(__file__).with_name("suivi_integration_c18.py")
