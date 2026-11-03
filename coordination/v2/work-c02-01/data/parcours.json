@@ -1,0 +1,731 @@
+{
+  "version": "WORK-C02-01-candidate-1",
+  "parcours": [
+    {
+      "id": "PAR-001",
+      "title": "Commune de Paris",
+      "priority": "prioritaire",
+      "question": "Que peut-on établir des projets d’organisation du travail, de leurs décisions et de leurs réalisations pendant la Commune ?",
+      "steps": [
+        {
+          "id": "contexte",
+          "title": "Situer la Commune",
+          "resource_ids": [
+            "wiki-socialismes-communismes-anarchismes-autogestion.html",
+            "FN-045"
+          ],
+          "next_step_ids": [
+            "decret"
+          ],
+          "return_step_ids": []
+        },
+        {
+          "id": "decret",
+          "title": "Lire la décision du 16 avril",
+          "resource_ids": [
+            "ARCH-007"
+          ],
+          "next_step_ids": [
+            "travail"
+          ],
+          "return_step_ids": [
+            "contexte"
+          ]
+        },
+        {
+          "id": "travail",
+          "title": "Comparer projets et institutions",
+          "resource_ids": [
+            "ARCH-005",
+            "ASSO-007",
+            "ASSO-008"
+          ],
+          "next_step_ids": [
+            "club",
+            "personnes"
+          ],
+          "return_step_ids": [
+            "decret"
+          ]
+        },
+        {
+          "id": "club",
+          "title": "Clubs, presse et parole",
+          "resource_ids": [
+            "COL-003",
+            "ARCH-006"
+          ],
+          "next_step_ids": [
+            "personnes"
+          ],
+          "return_step_ids": [
+            "travail"
+          ]
+        },
+        {
+          "id": "personnes",
+          "title": "Personnes, signatures et incertitudes",
+          "resource_ids": [
+            "BIO-009",
+            "BIO-010",
+            "BIO-012",
+            "BIO-019"
+          ],
+          "next_step_ids": [],
+          "return_step_ids": [
+            "travail",
+            "club"
+          ]
+        }
+      ],
+      "bifurcations": [
+        "Depuis travail : approfondir La Marmite (1868) ou les projets de mai 1871 sans leur inventer une continuité.",
+        "Depuis club : revenir aux pièces et à leurs contradictions, plutôt que retenir un chiffre."
+      ],
+      "returns": [
+        "Retour à l’étape précédente ; à l’index documentaire ; vers PAR-004 par comparaison, PAR-006 sur les histoires de l’Union des femmes."
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "drive:ARCH-007",
+        "drive:ASSO-007",
+        "drive:ASSO-008"
+      ],
+      "objection_ids": [
+        "WORK-TR-01",
+        "WORK-TR-02",
+        "WORK-TR-03",
+        "WORK-TR-04",
+        "WORK-TR-05",
+        "WORK-COM-01",
+        "WORK-COM-02",
+        "WORK-COM-03",
+        "WORK-COM-04",
+        "WORK-COM-05",
+        "WORK-COM-06",
+        "WORK-COM-07"
+      ],
+      "validation": {
+        "technical": "non_applicable",
+        "documentary": "partiel",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "publication_authorized": false,
+      "structure_status": "proposition_WORK_a_confronter_a_C02_VAL_02",
+      "relations": [
+        "WORK-REL-001",
+        "WORK-REL-002",
+        "WORK-REL-003",
+        "WORK-REL-004",
+        "WORK-REL-005",
+        "WORK-REL-006"
+      ]
+    },
+    {
+      "id": "PAR-002",
+      "title": "Révolution sociale espagnole",
+      "priority": "prioritaire",
+      "question": "Comment distinguer les expériences de collectivisation, les organisations et les conflits dans l’Espagne révolutionnaire de 1936–1937 ?",
+      "steps": [
+        {
+          "id": "contexte",
+          "title": "Organisations et termes",
+          "resource_ids": [
+            "wiki-socialismes-communismes-anarchismes-autogestion.html"
+          ],
+          "next_step_ids": [
+            "catalogne"
+          ],
+          "return_step_ids": []
+        },
+        {
+          "id": "catalogne",
+          "title": "Catalogne : pratiques et décret",
+          "resource_ids": [
+            "CAT-001"
+          ],
+          "next_step_ids": [
+            "mai"
+          ],
+          "return_step_ids": [
+            "contexte"
+          ]
+        },
+        {
+          "id": "mai",
+          "title": "Mai 1937 et controverses",
+          "resource_ids": [
+            "CAT-006"
+          ],
+          "next_step_ids": [
+            "comparaison"
+          ],
+          "return_step_ids": [
+            "catalogne"
+          ]
+        },
+        {
+          "id": "comparaison",
+          "title": "Comparer les pouvoirs collectifs",
+          "resource_ids": [
+            "wiki-decision-collective.html"
+          ],
+          "next_step_ids": [],
+          "return_step_ids": [
+            "contexte",
+            "catalogne",
+            "mai"
+          ]
+        }
+      ],
+      "bifurcations": [
+        "Bifurcations Catalogne / Aragon / Murcie-Albacete réservées : dossiers territoriaux exacts à obtenir, aucune étape ni ressource inventée.",
+        "Revenir au texte normatif pour séparer décret et pratiques de terrain."
+      ],
+      "returns": [
+        "Retour au contexte ; à CAT-001 ; vers PAR-004 avec étiquette comparaison."
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "web:DOGC-302"
+      ],
+      "objection_ids": [
+        "WORK-TR-01",
+        "WORK-TR-02",
+        "WORK-TR-03",
+        "WORK-TR-04",
+        "WORK-TR-05",
+        "WORK-ESP-01",
+        "WORK-ESP-02",
+        "WORK-ESP-03",
+        "WORK-ESP-04"
+      ],
+      "validation": {
+        "technical": "non_applicable",
+        "documentary": "partiel",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "publication_authorized": false,
+      "structure_status": "proposition_WORK_a_confronter_a_C02_VAL_02",
+      "relations": [
+        "WORK-REL-007"
+      ]
+    },
+    {
+      "id": "PAR-003",
+      "title": "Écologie sociale",
+      "priority": "prioritaire",
+      "question": "Comment relier histoire des luttes, connaissances scientifiques et propositions d’organisation sans confondre leurs preuves ?",
+      "steps": [
+        {
+          "id": "question",
+          "title": "Poser les distinctions",
+          "resource_ids": [
+            "wiki-ecologie-sociale-environnement.html",
+            "ÉCO-001"
+          ],
+          "next_step_ids": [
+            "histoire",
+            "concepts",
+            "sciences"
+          ],
+          "return_step_ids": []
+        },
+        {
+          "id": "histoire",
+          "title": "Luttes et voix situées",
+          "resource_ids": [
+            "ECO-02",
+            "ECO-03",
+            "ECO-04",
+            "ECO-05"
+          ],
+          "next_step_ids": [
+            "concepts"
+          ],
+          "return_step_ids": [
+            "question"
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "Domination, communs et écologies",
+          "resource_ids": [
+            "ECO-07",
+            "ECO-08",
+            "ECO-09",
+            "ECO-10"
+          ],
+          "next_step_ids": [
+            "sciences"
+          ],
+          "return_step_ids": [
+            "question",
+            "histoire"
+          ]
+        },
+        {
+          "id": "sciences",
+          "title": "Études et limites des scénarios",
+          "resource_ids": [
+            "ECO-16",
+            "ECO-17",
+            "ECO-18"
+          ],
+          "next_step_ids": [
+            "territoires"
+          ],
+          "return_step_ids": [
+            "question",
+            "concepts"
+          ]
+        },
+        {
+          "id": "territoires",
+          "title": "Lire les situations territoriales",
+          "resource_ids": [
+            "tis-c8-sctl",
+            "FN-024"
+          ],
+          "next_step_ids": [],
+          "return_step_ids": [
+            "sciences",
+            "histoire"
+          ]
+        }
+      ],
+      "bifurcations": [
+        "Trois axes ÉCO-001A/B/C à l’intérieur du chantier existant ; libre circulation, pas de progression doctrinale.",
+        "Depuis sciences : retourner aux méthodes et incertitudes ; depuis territoires : distinguer déclaration et effets observés."
+      ],
+      "returns": [
+        "Retour à la page existante ; vers PAR-004 (règles des communs), PAR-006 (voix et travail) et PAR-007 (comparaison explicitement située)."
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "repo:coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md",
+        "drive:catalogue-FN"
+      ],
+      "objection_ids": [
+        "WORK-TR-01",
+        "WORK-TR-02",
+        "WORK-TR-03",
+        "WORK-TR-04",
+        "WORK-TR-05",
+        "WORK-ECO-01",
+        "WORK-ECO-02",
+        "WORK-ECO-03",
+        "WORK-AUT-03",
+        "WORK-ZAP-03"
+      ],
+      "validation": {
+        "technical": "non_applicable",
+        "documentary": "recevable_sous_reserves",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "publication_authorized": false,
+      "structure_status": "proposition_WORK_a_confronter_a_C02_VAL_02",
+      "relations": [
+        "WORK-REL-008",
+        "WORK-REL-013",
+        "WORK-REL-101",
+        "WORK-REL-102",
+        "WORK-REL-105",
+        "WORK-REL-106",
+        "WORK-REL-107"
+      ]
+    },
+    {
+      "id": "PAR-004",
+      "title": "Autogestion",
+      "priority": "prioritaire",
+      "question": "Qui peut réellement participer, décider et contester, et qui supporte le travail visible ou invisible ?",
+      "steps": [
+        {
+          "id": "cadre",
+          "title": "Décider et répartir les pouvoirs",
+          "resource_ids": [
+            "wiki-decision-collective.html",
+            "wiki-association-collegiale.html"
+          ],
+          "next_step_ids": [
+            "informel"
+          ],
+          "return_step_ids": []
+        },
+        {
+          "id": "informel",
+          "title": "Interroger les hiérarchies informelles",
+          "resource_ids": [
+            "FN-009",
+            "FN-019"
+          ],
+          "next_step_ids": [
+            "participation"
+          ],
+          "return_step_ids": [
+            "cadre"
+          ]
+        },
+        {
+          "id": "participation",
+          "title": "Accessibilité et travail invisible",
+          "resource_ids": [
+            "wiki-handicap-validisme-neurodiversite.html",
+            "wiki-lecture-croisee-travail-soin-pouvoir.html",
+            "FN-058"
+          ],
+          "next_step_ids": [
+            "experiences"
+          ],
+          "return_step_ids": [
+            "cadre",
+            "informel"
+          ]
+        },
+        {
+          "id": "experiences",
+          "title": "Comparer des expériences situées",
+          "resource_ids": [
+            "ASSO-008",
+            "ARCH-005",
+            "EXP-004",
+            "EXP-005"
+          ],
+          "next_step_ids": [],
+          "return_step_ids": [
+            "informel",
+            "participation"
+          ]
+        }
+      ],
+      "bifurcations": [
+        "Lire un cas historique ou contemporain : EXP-004/005 restent seulement signalés dans le registre ancien, pas relus ici.",
+        "Revenir aux personnes absentes et aux mécanismes de recours lorsque le fonctionnement prescrit paraît consensuel."
+      ],
+      "returns": [
+        "Retour à une question ou une source ; PAR-001/002/003/007 accessibles comme comparaisons, jamais comme filiation automatique."
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "drive:ASSO-008",
+        "drive:catalogue-FN"
+      ],
+      "objection_ids": [
+        "WORK-TR-01",
+        "WORK-TR-02",
+        "WORK-TR-03",
+        "WORK-TR-04",
+        "WORK-TR-05",
+        "WORK-COM-02",
+        "WORK-COM-06",
+        "WORK-ESP-02",
+        "WORK-AUT-01",
+        "WORK-AUT-02",
+        "WORK-AUT-03",
+        "WORK-ZAP-02"
+      ],
+      "validation": {
+        "technical": "non_applicable",
+        "documentary": "recevable_sous_reserves",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "publication_authorized": false,
+      "structure_status": "proposition_WORK_a_confronter_a_C02_VAL_02",
+      "relations": [
+        "WORK-REL-001",
+        "WORK-REL-002",
+        "WORK-REL-006",
+        "WORK-REL-009",
+        "WORK-REL-010",
+        "WORK-REL-012",
+        "WORK-REL-101",
+        "WORK-REL-102",
+        "WORK-REL-105",
+        "WORK-REL-106",
+        "WORK-REL-107"
+      ]
+    },
+    {
+      "id": "PAR-005",
+      "title": "Droits en manifestation",
+      "priority": "prioritaire",
+      "question": "Comment séparer les règles, leurs conditions d’application et les orientations vers une aide compétente ?",
+      "steps": [
+        {
+          "id": "perimetre",
+          "title": "Définir le périmètre documentaire",
+          "resource_ids": [
+            "DROIT-001"
+          ],
+          "next_step_ids": [
+            "sources"
+          ],
+          "return_step_ids": []
+        },
+        {
+          "id": "sources",
+          "title": "Examiner les références et objections",
+          "resource_ids": [
+            "DROIT-001"
+          ],
+          "next_step_ids": [
+            "relecture"
+          ],
+          "return_step_ids": [
+            "perimetre"
+          ]
+        },
+        {
+          "id": "relecture",
+          "title": "Relecture juridique et médicale — aucune fiche pratique diffusée",
+          "resource_ids": [
+            "DROIT-001"
+          ],
+          "next_step_ids": [],
+          "return_step_ids": [
+            "sources"
+          ]
+        }
+      ],
+      "bifurcations": [
+        "Avant / pendant / après : canevas documentaire à instruire, pas des consignes de conduite.",
+        "Toute sortie vers une fiche opérationnelle reste bloquée ; aucune permanence ou réponse garantie."
+      ],
+      "returns": [
+        "Retour à la bibliographie interne ; sortir du Parcours sans collecte de récit."
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "library:C02-VAL-04_Visa_juridique_PAR-005_2026-11-03.md"
+      ],
+      "objection_ids": [
+        "WORK-TR-01",
+        "WORK-TR-02",
+        "WORK-TR-03",
+        "WORK-TR-04",
+        "WORK-TR-05",
+        "WORK-DRO-01",
+        "WORK-DRO-02",
+        "WORK-DRO-03"
+      ],
+      "validation": {
+        "technical": "non_applicable",
+        "documentary": "bloque",
+        "legal": "bloque",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "publication_authorized": false,
+      "structure_status": "proposition_WORK_a_confronter_a_C02_VAL_02",
+      "relations": []
+    },
+    {
+      "id": "PAR-006",
+      "title": "Féminismes et luttes LGBTQIA+",
+      "priority": "progressif",
+      "question": "Comment lire des histoires distinctes, leurs convergences et leurs désaccords, à partir de voix situées ?",
+      "steps": [
+        {
+          "id": "histoires",
+          "title": "Histoires et catégories",
+          "resource_ids": [
+            "wiki-feminismes-histoire-egalite.html",
+            "wiki-egalite-genres-inclusivite.html"
+          ],
+          "next_step_ids": [
+            "commune",
+            "oeuvres"
+          ],
+          "return_step_ids": []
+        },
+        {
+          "id": "commune",
+          "title": "Organisation et signatures dans la Commune",
+          "resource_ids": [
+            "ASSO-007",
+            "BIO-010",
+            "BIO-019"
+          ],
+          "next_step_ids": [
+            "oeuvres"
+          ],
+          "return_step_ids": [
+            "histoires"
+          ]
+        },
+        {
+          "id": "oeuvres",
+          "title": "Voix, œuvres et contrepoints",
+          "resource_ids": [
+            "FN-015",
+            "FN-016",
+            "FN-055",
+            "FN-069"
+          ],
+          "next_step_ids": [
+            "pouvoir"
+          ],
+          "return_step_ids": [
+            "histoires",
+            "commune"
+          ]
+        },
+        {
+          "id": "pouvoir",
+          "title": "Travail, soin et pouvoir",
+          "resource_ids": [
+            "wiki-lecture-croisee-travail-soin-pouvoir.html",
+            "FN-009"
+          ],
+          "next_step_ids": [],
+          "return_step_ids": [
+            "histoires",
+            "oeuvres"
+          ]
+        }
+      ],
+      "bifurcations": [
+        "Entrées féminismes ou histoires LGBTQIA+ distinctes, sans les subordonner à une chronologie unique.",
+        "Biographies incertaines présentées comme problèmes documentaires internes ; pas de récit biographique reconstruit."
+      ],
+      "returns": [
+        "Retour aux histoires propres ; PAR-001 ou PAR-004 pour un croisement explicitement qualifié."
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "drive:catalogue-FN",
+        "library:C05-BIO-01_transmission_recherche_2026-11-03.md"
+      ],
+      "objection_ids": [
+        "WORK-TR-01",
+        "WORK-TR-02",
+        "WORK-TR-03",
+        "WORK-TR-04",
+        "WORK-TR-05",
+        "WORK-COM-07",
+        "WORK-ECO-03",
+        "WORK-AUT-02",
+        "WORK-FEM-01",
+        "WORK-FEM-02"
+      ],
+      "validation": {
+        "technical": "non_applicable",
+        "documentary": "partiel",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "publication_authorized": false,
+      "structure_status": "proposition_WORK_a_confronter_a_C02_VAL_02",
+      "relations": [
+        "WORK-REL-004",
+        "WORK-REL-005",
+        "WORK-REL-010",
+        "WORK-REL-011"
+      ]
+    },
+    {
+      "id": "PAR-007",
+      "title": "Zapatisme",
+      "priority": "progressif",
+      "question": "Comment suivre les transformations de l’autonomie zapatiste en distinguant paroles du mouvement, traductions et observations ?",
+      "steps": [
+        {
+          "id": "chronologie",
+          "title": "Chronologie et traductions",
+          "resource_ids": [
+            "ZAP-C10-001"
+          ],
+          "next_step_ids": [
+            "autonomie"
+          ],
+          "return_step_ids": []
+        },
+        {
+          "id": "autonomie",
+          "title": "Transformations après 2023",
+          "resource_ids": [
+            "ZAP-C10-001"
+          ],
+          "next_step_ids": [
+            "education"
+          ],
+          "return_step_ids": [
+            "chronologie"
+          ]
+        },
+        {
+          "id": "education",
+          "title": "Escuelita, commun et travail invisible",
+          "resource_ids": [
+            "ZAP-C10-001"
+          ],
+          "next_step_ids": [
+            "comparaisons"
+          ],
+          "return_step_ids": [
+            "chronologie",
+            "autonomie"
+          ]
+        },
+        {
+          "id": "comparaisons",
+          "title": "Comparaisons situées avec les autres Parcours",
+          "resource_ids": [
+            "wiki-decision-collective.html",
+            "wiki-ecologie-sociale-environnement.html"
+          ],
+          "next_step_ids": [],
+          "return_step_ids": [
+            "chronologie",
+            "autonomie"
+          ]
+        }
+      ],
+      "bifurcations": [
+        "Original espagnol / traduction : deux références distinctes ; retour au texte daté.",
+        "Éducation, terres et organisation : angles du dossier existant, pas de nouvelles fiches ZAP-001 à -009 prétendument constituées."
+      ],
+      "returns": [
+        "Retour au communiqué ; PAR-004 et PAR-003 en comparaison documentée ; pas d’itinéraire vers les communautés."
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "branch:recherches/zapatisme/ZAP-C10-001-chronologie-comparaison.md",
+        "web:ZAP-2026"
+      ],
+      "objection_ids": [
+        "WORK-TR-01",
+        "WORK-TR-02",
+        "WORK-TR-03",
+        "WORK-TR-04",
+        "WORK-TR-05",
+        "WORK-ZAP-01",
+        "WORK-ZAP-02",
+        "WORK-ZAP-03"
+      ],
+      "validation": {
+        "technical": "non_applicable",
+        "documentary": "partiel",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "publication_authorized": false,
+      "structure_status": "proposition_WORK_a_confronter_a_C02_VAL_02",
+      "relations": [
+        "WORK-REL-012",
+        "WORK-REL-013"
+      ]
+    }
+  ]
+}

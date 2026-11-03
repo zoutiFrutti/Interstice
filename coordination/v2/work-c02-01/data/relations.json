@@ -1,0 +1,330 @@
+{
+  "version": "WORK-C02-01-candidate-1",
+  "allowed_types": [
+    "fait_historique_atteste",
+    "filiation_revendiquee",
+    "comparaison",
+    "lien_conceptuel",
+    "complement_documentaire",
+    "controverse"
+  ],
+  "relations": [
+    {
+      "id": "WORK-REL-001",
+      "from_id": "ARCH-005",
+      "to_id": "ARCH-007",
+      "type": "comparaison",
+      "label": "Deux objets distincts concernant l’organisation du travail : comparaison, pas équivalence de textes",
+      "source_refs": [
+        "branch:coordination/cycle10/archeologue/ARCH-005.md",
+        "drive:ARCH-007"
+      ],
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-002",
+      "from_id": "ARCH-005",
+      "to_id": "ASSO-007",
+      "type": "comparaison",
+      "label": "Comparer les projets d’organisation ; aucune coopération démontrée",
+      "source_refs": [
+        "branch:coordination/cycle10/archeologue/ARCH-005.md",
+        "drive:ASSO-007"
+      ],
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-003",
+      "from_id": "ARCH-006",
+      "to_id": "COL-003",
+      "type": "fait_historique_atteste",
+      "label": "Presse associée au club selon notice BnF ; ne vaut pas mandat de chaque texte",
+      "source_refs": [
+        "branch:coordination/cycle10/archeologue/ARCH-006.md"
+      ],
+      "parcours_ids": [
+        "PAR-001"
+      ],
+      "proof": "notice_de_catalogue",
+      "state": "candidate",
+      "publication_authorized": false,
+      "evidence_scope": "Association documentaire rapportée ; contenu des quatre numéros non collationné."
+    },
+    {
+      "id": "WORK-REL-004",
+      "from_id": "ASSO-007",
+      "to_id": "ARCH-002",
+      "type": "complement_documentaire",
+      "label": "Affiche n°373 : convocation pour le 21 mai, pas preuve que la séance a eu lieu",
+      "source_refs": [
+        "drive:ASSO-007"
+      ],
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-006"
+      ],
+      "proof": "affiche_rapporte_dans_dossier",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-005",
+      "from_id": "BIO-019",
+      "to_id": "ASSO-007",
+      "type": "controverse",
+      "label": "Attribution du nom imprimé et identités distinctes à ne pas fusionner",
+      "source_refs": [
+        "library:C05-BIO-01_transmission_recherche_2026-11-03.md"
+      ],
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-006"
+      ],
+      "proof": "identite_contestee",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-006",
+      "from_id": "ASSO-008",
+      "to_id": "ASSO-007",
+      "type": "comparaison",
+      "label": "Organisation de 1868 / organisation de 1871 : continuité biographique ne prouve pas une filiation juridique",
+      "source_refs": [
+        "drive:ASSO-008",
+        "drive:ASSO-007"
+      ],
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-007",
+      "from_id": "CAT-001",
+      "to_id": "CAT-006",
+      "type": "complement_documentaire",
+      "label": "Dossiers espagnols à rapprocher après récupération des versions exactes",
+      "source_refs": [
+        "mandat:WORK-C02-01"
+      ],
+      "parcours_ids": [
+        "PAR-002"
+      ],
+      "proof": "rapprochement_documentaire_a_instruire",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-008",
+      "from_id": "ÉCO-001",
+      "to_id": "wiki-ecologie-sociale-environnement.html",
+      "type": "complement_documentaire",
+      "label": "Enrichissement proposé de la page existante par le chantier A/B/C",
+      "source_refs": [
+        "repo:coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
+      ],
+      "parcours_ids": [
+        "PAR-003"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-009",
+      "from_id": "FN-009",
+      "to_id": "FN-019",
+      "type": "lien_conceptuel",
+      "label": "Pouvoir informel et règles de décision : confronter les propositions",
+      "source_refs": [
+        "drive:catalogue-FN"
+      ],
+      "parcours_ids": [
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-010",
+      "from_id": "FN-058",
+      "to_id": "wiki-handicap-validisme-neurodiversite.html",
+      "type": "complement_documentaire",
+      "label": "Justice du handicap : contrepoint pour examiner l’accès aux collectifs",
+      "source_refs": [
+        "drive:catalogue-FN"
+      ],
+      "parcours_ids": [
+        "PAR-004",
+        "PAR-006"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-011",
+      "from_id": "FN-069",
+      "to_id": "wiki-feminismes-histoire-egalite.html",
+      "type": "complement_documentaire",
+      "label": "Déclaration féministe noire lesbienne située : ne représente pas tous les féminismes",
+      "source_refs": [
+        "drive:catalogue-FN"
+      ],
+      "parcours_ids": [
+        "PAR-006"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-012",
+      "from_id": "ZAP-C10-001",
+      "to_id": "wiki-decision-collective.html",
+      "type": "comparaison",
+      "label": "Comparer des formes d’autonomie sans parenté institutionnelle supposée",
+      "source_refs": [
+        "branch:recherches/zapatisme/ZAP-C10-001-chronologie-comparaison.md"
+      ],
+      "parcours_ids": [
+        "PAR-007",
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-013",
+      "from_id": "ZAP-C10-001",
+      "to_id": "ÉCO-001",
+      "type": "comparaison",
+      "label": "Comparer les questions du commun et des territoires avec leurs contextes propres",
+      "source_refs": [
+        "branch:recherches/zapatisme/ZAP-C10-001-chronologie-comparaison.md",
+        "repo:coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
+      ],
+      "parcours_ids": [
+        "PAR-007",
+        "PAR-003"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false
+    },
+    {
+      "id": "WORK-REL-101",
+      "from_id": "tis-c8-testet",
+      "to_id": "tis-c8-salvetat",
+      "type": "comparaison",
+      "label": "Comparaison éditoriale eau et foncier, aucune coopération démontrée",
+      "source_refs": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "parcours_ids": [
+        "PAR-003",
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false,
+      "legacy_level": "R1",
+      "cooperation_interstice": false
+    },
+    {
+      "id": "WORK-REL-102",
+      "from_id": "tis-c8-salvetat",
+      "to_id": "tis-c8-tdl",
+      "type": "complement_documentaire",
+      "label": "Association Terre de Liens Midi-Pyrénées impliquée dans la plantation de décembre 2025 à La Salvetat ; Foncière Terre de Liens propriétaire du foncier, entités distinctes",
+      "source_refs": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "parcours_ids": [
+        "PAR-003",
+        "PAR-004"
+      ],
+      "proof": "declaration_operateur_rapportee",
+      "state": "candidate",
+      "publication_authorized": false,
+      "legacy_level": "R2",
+      "cooperation_interstice": false
+    },
+    {
+      "id": "WORK-REL-105",
+      "from_id": "TIS-001-001",
+      "to_id": "TIS-001-006",
+      "type": "comparaison",
+      "label": "Comparaison apprentissage-réparation / réemploi textile, pas de coopération externe établie",
+      "source_refs": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "parcours_ids": [
+        "PAR-003",
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false,
+      "legacy_level": "R1",
+      "cooperation_interstice": false
+    },
+    {
+      "id": "WORK-REL-106",
+      "from_id": "tis-c8-sctl",
+      "to_id": "tis-c8-salvetat",
+      "type": "comparaison",
+      "label": "Comparaison de mécanismes de gestion foncière, pas de filiation institutionnelle",
+      "source_refs": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "parcours_ids": [
+        "PAR-003",
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false,
+      "legacy_level": "R1",
+      "cooperation_interstice": false
+    },
+    {
+      "id": "WORK-REL-107",
+      "from_id": "tis-c8-vrac",
+      "to_id": "EXP-002",
+      "type": "comparaison",
+      "label": "Comparaison achat groupé et caisse commune conventionnée de Montpellier, dispositifs distincts",
+      "source_refs": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "parcours_ids": [
+        "PAR-003",
+        "PAR-004"
+      ],
+      "proof": "interpretation_editoriale",
+      "state": "candidate",
+      "publication_authorized": false,
+      "legacy_level": "R1",
+      "cooperation_interstice": false
+    }
+  ],
+  "note": "Aucune filiation_revendiquee instanciée : preuve explicite non obtenue. Les liens de navigation entre étapes ne sont pas des relations historiques."
+}
