@@ -355,12 +355,27 @@
       "notes": "Retour technique Graphiste publié en commentaire PR #161 ; absence de visa conjoint de Développeuse"
     }
   ],
-  "comparaisons_sha": [],
+  "comparaisons_sha": [
+    {
+      "branch": "research/archeologue-c03-par001-20261103",
+      "path": "coordination/c03/archeologue/C03_ARC_02_OBJECTIONS_PAR001.md",
+      "blob_sha": "fa109c97909e2382e0a8715d2d75cd7029385e85",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "recherche/anarchiviste-catalogne-c03-par002-20261103",
+      "path": "recherche/catalogne/C03_CAT_PAR002_RECONCILIATION.md",
+      "blob_sha": "576657bebe134f1add01ca3866602d021f484b14",
+      "verified_at": "2026-11-03"
+    }
+  ],
   "notes": [
     "Statuts tri-état : true prouvé explicitement, false négatif explicitement connu, null inconnu",
     "Preuves antérieures C03-ARC-02 et C03-CAT-02 non transférées à leurs nouvelles missions C03-ARC-03 et C03-CAT-03",
     "Commentaires PR #161 = retour traçable du seul atelier Graphiste, pas visa TECH-02 de la Développeuse",
     "La liste des rôles reprend C11 et ajoute Orchestratrice sans créer de boîte C10 supplémentaire",
-    "Données GitHub publiques : aucun texte sensible ni secret"
+    "Données GitHub publiques : aucun texte sensible ni secret",
+    "Relevés des blobs ARC et CAT revérifiés par lecture GitHub le 3 novembre, non synchronisation automatique",
+    "Rôles = union des 17 boîtes C10, C11 et de l'Orchestratrice, sans nouvelle boîte historique"
   ]
 }
