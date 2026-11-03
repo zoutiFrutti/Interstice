@@ -393,6 +393,162 @@
       "pr": 132,
       "verified_at": "2026-11-03",
       "notes": "Livrable de la présente mission sur PR #132, non reçu ni validé par La Relieuse"
+    },
+    {
+      "id": "EV-HIST-RELIEUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "relieuse",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-01_RELIEUSE_CYCLE7_RECONCILIATION_INITIALE.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "6a2f9fac05dbaed5c530897035e156371b267515",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-ANARCHITECTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "anarchitecte",
+      "branch": "main",
+      "path": "coordination/ANARCHITECTE_REVUE_V0_018B_2026-10-31.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "7cf9f4bf86960e9b3be5361fcc8907741d035792",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-PENSEUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "penseuse",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_RELIEUSE_CONTROLES_EFFECTIFS.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "2c85bc526c6bf8984489766917f9afeb11a8a21a",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-DEVELOPPEUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "developpeuse",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-03_DEVELOPPEUSE_R6_INT01_RECONCILIATION_DEPLOIEMENT.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "db660a7066780dd9d514b93194f0363ebc460c79",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-GRAPHISTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "graphiste",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-03_GRAPHISTE_R6_IDENTITE_REMPLACEMENT_CANDIDAT.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "d02e8b042c987a57bf23f2746f319f671b74ff4e",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-JURISTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "juriste",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "2df0162aa851a49f930b387ee3910af36c5f9d1f",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-ANARCHIVISTE_COMMUNS",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "anarchiviste-communs",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-30_ANARCHIVISTE_VERS_RELIEUR_REPRISE_HISTORIQUE_PARTIELLE.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "b6cdf98f51b7e43b834144388cd113fb097cfa1a",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-MEDIATHEQUE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "mediatheque",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "f66e7f91c8fa4684b41503ec470468d166b09696",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-TISSEUSE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "tisseuse",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_TISSEUSE_ECO_TIS_001_INITIATIVES_ET_CAS.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "6d1ef709cff7f9579b6f19055949ee8a23d603c6",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-ASSISTANT_ANARCHIVISTE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "assistant-anarchiviste",
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "c96fead0080dc38ea36bd1a2559eb63b258f6c7f",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-BIOGRAPHE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "biographe",
+      "branch": "main",
+      "path": "coordination/propositions/2026-11-02_LES_VOIX_DE_L_OMBRE_BIOGRAPHE_P2.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "01381f793c3f0feb8baa39aca1cba43a8919f1b1",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
+    },
+    {
+      "id": "EV-HIST-VIGIE",
+      "type": "fichier",
+      "mission_id": null,
+      "atelier": "vigie",
+      "branch": "main",
+      "path": "coordination/ateliers/vigie/DECISION_INTEGRATION_2026-11-01.md",
+      "commit_sha": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "blob_sha": "5c421c330d3f3a6deb2e313dedec814a6d51fc2c",
+      "pr": null,
+      "verified_at": "2026-11-03",
+      "notes": "Document historique retrouvé sur main à ce SHA; le commit est le HEAD du relevé, pas nécessairement celui de rédaction. Ne prouve aucune livraison C03 en cours."
     }
   ],
   "comparaisons_sha": [
@@ -412,6 +568,78 @@
       "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
       "path": "coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md",
       "blob_sha": "4fbe39e790901a4654bf05f201fb1f8d8dc52d4b",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-01_RELIEUSE_CYCLE7_RECONCILIATION_INITIALE.md",
+      "blob_sha": "6a2f9fac05dbaed5c530897035e156371b267515",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/ANARCHITECTE_REVUE_V0_018B_2026-10-31.md",
+      "blob_sha": "7cf9f4bf86960e9b3be5361fcc8907741d035792",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_RELIEUSE_CONTROLES_EFFECTIFS.md",
+      "blob_sha": "2c85bc526c6bf8984489766917f9afeb11a8a21a",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-03_DEVELOPPEUSE_R6_INT01_RECONCILIATION_DEPLOIEMENT.md",
+      "blob_sha": "db660a7066780dd9d514b93194f0363ebc460c79",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-11-03_GRAPHISTE_R6_IDENTITE_REMPLACEMENT_CANDIDAT.md",
+      "blob_sha": "d02e8b042c987a57bf23f2746f319f671b74ff4e",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md",
+      "blob_sha": "2df0162aa851a49f930b387ee3910af36c5f9d1f",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-30_ANARCHIVISTE_VERS_RELIEUR_REPRISE_HISTORIQUE_PARTIELLE.md",
+      "blob_sha": "b6cdf98f51b7e43b834144388cd113fb097cfa1a",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md",
+      "blob_sha": "f66e7f91c8fa4684b41503ec470468d166b09696",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_TISSEUSE_ECO_TIS_001_INITIATIVES_ET_CAS.md",
+      "blob_sha": "6d1ef709cff7f9579b6f19055949ee8a23d603c6",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/transmissions/2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md",
+      "blob_sha": "c96fead0080dc38ea36bd1a2559eb63b258f6c7f",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/propositions/2026-11-02_LES_VOIX_DE_L_OMBRE_BIOGRAPHE_P2.md",
+      "blob_sha": "01381f793c3f0feb8baa39aca1cba43a8919f1b1",
+      "verified_at": "2026-11-03"
+    },
+    {
+      "branch": "main",
+      "path": "coordination/ateliers/vigie/DECISION_INTEGRATION_2026-11-01.md",
+      "blob_sha": "5c421c330d3f3a6deb2e313dedec814a6d51fc2c",
       "verified_at": "2026-11-03"
     }
   ],
