@@ -1,0 +1,43 @@
+name: R6 identity candidate — SVG remplacement et captures
+on:
+  push:
+    branches:
+      - design/r6-remplacement-logos-officiels-candidat-20261103
+      - integration/r6-dev03-logos-valides-20261103
+      - audit/r6-dev04-certification-20261103
+  pull_request:
+    paths:
+      - 'assets/logo-*.svg'
+      - 'assets/identite/r6/**'
+      - 'assets/archives/logo-*-pre-r6.svg'
+      - 'design-system/comparaison-identite-r6.html'
+      - 'tests/r6-identite-remplacement.browser.test.mjs'
+      - 'tests/r6-dev02-stabilisation.browser.test.mjs'
+      - '.github/workflows/r6-identite-remplacement.yml'
+jobs:
+  r6-identity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Chromium headless
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Contrats SVG, routes et captures multi-écrans
+        run: |
+          mkdir -p artifacts/r6-identite
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/r6-http.log 2>&1 &
+          node scripts/r6-inventaire-identite.mjs
+          node --test tests/r6-identite-remplacement.browser.test.mjs tests/r6-dev02-stabilisation.browser.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r6-identite-captures-320-1920-svgs-32-665-a4
+          path: artifacts/r6-identite/
+          if-no-files-found: warn

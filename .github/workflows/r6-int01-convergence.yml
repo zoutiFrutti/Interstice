@@ -1,0 +1,97 @@
+name: R6 INT01 reconciliation and Pages preflight
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, integration/r6-int01-reconciliation-20261103]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+concurrency:
+  group: r6-int01-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+jobs:
+  certify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Exact HEAD and preserved main ancestry
+        run: |
+          git rev-parse HEAD
+          git merge-base --is-ancestor c613d9f896fe94144264f6e78b7ac07893a75c67 HEAD
+          git merge-base --is-ancestor df3692356b2309b77adf44e9cb1e68603edbb6cc HEAD
+          python3 scripts/r6-preservation-check.py
+      - name: Read effective Pages configuration
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/r6-pages-preflight.py
+      - name: Agents and existing offline contracts
+        run: |
+          python3 -m unittest discover -s coordination/agents -p 'test_*.py'
+          python3 -m py_compile coordination/messagerie/facteur.py
+          node --check assets/faille-navigation.js
+          node --test tests/r1-frontend-navigation.test.mjs tests/r2-faille-navigation.test.mjs tests/r4-relieuse-convergence.test.mjs tests/wiki-handoff-idempotency.test.mjs tests/wiki-handoff-sql-contract.test.mjs
+          node scripts/validate-wiki-review-queue.mjs
+      - name: Build exactly as configured GitHub Pages, without deployment
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
+      - name: Install test browser
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test generated pages and official SVGs
+        run: |
+          mkdir -p artifacts/r6-identite artifacts/faille artifacts/r6-int01
+          mkdir -p "$RUNNER_TEMP/r6-site"
+          ln -s "$GITHUB_WORKSPACE/_site" "$RUNNER_TEMP/r6-site/Interstice"
+          python3 -m http.server 8000 --bind 127.0.0.1 --directory _site >"$RUNNER_TEMP/r6-http.log" 2>&1 &
+          root_server=$!
+          python3 -m http.server 8001 --bind 127.0.0.1 --directory "$RUNNER_TEMP/r6-site" >"$RUNNER_TEMP/r6-subpath-http.log" 2>&1 &
+          subpath_server=$!
+          trap 'kill "$root_server" "$subpath_server"' EXIT
+          node scripts/r6-inventaire-identite.mjs
+          node --test --test-concurrency=1 tests/r6-identite-remplacement.browser.test.mjs tests/r6-dev02-stabilisation.browser.test.mjs tests/r2-faille-navigation.browser.test.mjs tests/r4-dev-cloture.browser.test.mjs tests/r1-frontend-navigation.browser.test.mjs tests/graphiste-dev-frontend.test.mjs tests/graphiste-dev-accessibilite.test.mjs tests/graphiste-integration-20261102.test.mjs tests/entree-faille-candidate.test.mjs
+          SITE_BASE_URL=http://127.0.0.1:8001/Interstice/ node --test tests/r6-int01-convergence.browser.test.mjs
+      - name: Keep exact HEAD evidence and browser captures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r6-int01-evidence-${{ github.event.pull_request.head.sha || github.sha }}
+          path: artifacts/
+          retention-days: 14
+  production-smoke:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: certify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      SITE_BASE_URL: https://zoutifrutti.github.io/Interstice/
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Wait for expected production files, read only
+        run: python3 scripts/r6-wait-production.py
+      - name: Install test browser
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify live Pages navigation, hashes and essential links
+        run: node --test tests/r6-int01-convergence.browser.test.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r6-int01-production-${{ github.sha }}
+          path: artifacts/r6-int01/
+          retention-days: 14
