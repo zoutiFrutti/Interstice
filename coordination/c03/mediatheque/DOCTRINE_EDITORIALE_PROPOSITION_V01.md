@@ -1,6 +1,6 @@
 # Doctrine éditoriale — proposition de discussion V0.1
 
-**Statut : proposition à discuter avec Zout, non adoptée, non applicable automatiquement.** La validation éditoriale ne vaut jamais autorisation juridique ni décision de mise en ligne.
+**Statut : arbitrages éditoriaux de Zout adoptés le 2026-11-04 ; document candidat non publié, application technique et juridique non automatique.** La validation éditoriale ne vaut jamais autorisation juridique ni décision de mise en ligne.
 
 ## 1. Test de nécessité
 Avant de rédiger, vérifier les ressources existantes, dont Wikipédia, la bibliothèque FN, les dossiers de l'Encyclopédie et les sept Parcours. Choisir l'une des actions : RELIER si une source fiable couvre déjà correctement le sujet ; COMPLÉTER si une notice existante est perfectible ; CRÉER seulement si une lacune réelle et un apport original sont établis. Un article Wikipédia cohérent n'interdit pas une étude originale sourcée, une édition critique, un témoignage situé ou une comparaison de sources.
@@ -30,9 +30,10 @@ Conserver les identifiants historiques ; documenter les relations entre œuvres,
 - Prototype C : dix œuvres candidates, pas une sélection adoptée ; disponibilité des replays séparée de la notice pérenne.
 - PAR-005 : aucun guide pratique public sans validation spécialisée adaptée.
 
-## 8. Arbitrages à discuter
-A. Pour un sujet déjà traité par Wikipédia : renvoi par défaut, avec exception motivée pour apport distinct, ou autorisation d'une synthèse originale sans exigence d'apport supplémentaire ?
-B. Pour une fiche documentaire incomplète : conservation interne seulement, ou publication explicitement marquée incomplète après seuil minimal ?
-C. Qui signe le visa éditorial final : Zout seul au lancement, ou Zout avec relecture obligatoire d'un atelier indépendant pour les contenus sensibles ?
+## 8. Arbitrages adoptés par Zout (2026-11-04)
 
-**Aucune règle ci-dessus n'est encore approuvée.**
+1. **Wikipédia : RELIER par défaut.** Ne créer une notice ou un article que si son apport distinct est explicité (source primaire, édition, contradiction, contexte, analyse ou témoignage original). Documenter le lien vers l'article existant ; ne pas recopier son contenu.
+2. **Notice incomplète : publication conditionnelle possible.** Exiger au minimum identité du sujet/œuvre, titre, attribution quand elle est connue, source vérifiable, distinction des faits et lacunes, droits applicables et absence de risque sensible non traité. Afficher clairement les manques, une date de contrôle et un état de révision. Si l'identité ou la source est incertaine (ex. FN-018), conserver en interne ; cette décision ne l'autorise pas à être publiée.
+3. **Décision finale : Zout.** Pour les contenus sensibles, une relecture indépendante est obligatoire avant son visa ; une relecture par un atelier IA est une aide documentaire et ne remplace pas une expertise humaine adaptée lorsqu'elle est nécessaire (droit, santé, sécurité, personnes vivantes). Un avis défavorable motivé doit être traité, non masqué. Aucun agent ne publie automatiquement.
+
+**Portée : ces trois principes sont décidés, mais aucune notice, Parcours ou œuvre n'est validé ni autorisé à la publication par cette seule décision.**
