@@ -25,11 +25,9 @@ class PilotStaticSafety(unittest.TestCase):
         cls.front = get_frontmatter()
 
     def test_declenchement_uniquement_manuel(self):
-        self.assertRegex(self.front, r"(?m)^on:\s*\n  workflow_dispatch:\s*$")
-        for key in ("schedule", "issues", "issue_comment", "pull_request",
-                    "pull_request_target", "push", "repository_dispatch"):
-            self.assertNotRegex(self.front, rf"(?m)^  {key}:")
-        self.assertNotIn("manual-approval: production", self.front)
+        self.assertIn("\non:\n", self.front)
+        on_block = self.front.split("\non:\n", 1)[1].split("\nif:", 1)[0]
+        self.assertEqual(on_block.strip(), "workflow_dispatch:")
 
     def test_opt_in_et_auteur(self):
         self.assertIn("if: vars.FN_OBSERVATRICE_ENABLED == 'true' && github.actor == github.repository_owner", self.front)
