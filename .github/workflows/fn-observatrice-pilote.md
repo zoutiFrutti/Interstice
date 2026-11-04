@@ -21,7 +21,7 @@ tools:
   github:
     mode: local
     toolsets: [repos, issues, pull_requests, actions]
-    allowed-repos: current
+    allowed-repos: '${{ github.repository }}'
 safe-outputs:
   report-failed-jobs: false
 ---
