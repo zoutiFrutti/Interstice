@@ -1,4 +1,4 @@
-import {STATE_KEYS,FILTERS,parseRoute,filterMissions,summarize,prepareMission,validateSeed,ALLOWED_ROLES} from './model.mjs';
+import {STATE_KEYS,FILTERS,parseRoute,filterMissions,summarize,prepareMission,validateSeed,ALLOWED_ROLES,coordinationRows} from './model.mjs';
 
 const view=document.querySelector('#view'),status=document.querySelector('#status');
 let seed=null,query='',lastOverview='#missions';
@@ -44,12 +44,40 @@ function executionList(runs){
     meta.append(time,el('span','HEAD '+run.head.slice(0,12)),el('span','Événement : '+run.event));li.append(meta);list.append(li);
   }return list;
 }
+function coordinationTable(){
+  const section=el('section',undefined,'coordination-summary');
+  const h=el('h2','Tableau unique des missions');h.id='coordination-table-title';
+  const note=el('p','Responsable, PR et états issus du même instantané documentaire. Une PR apparentée ne prouve pas la livraison de la mission.','small muted');
+  const scroll=el('div',undefined,'coordination-table-scroll');
+  const table=el('table',undefined,'coordination-table');table.setAttribute('aria-labelledby','coordination-table-title');
+  const head=el('thead'),header=el('tr');
+  for(const label of ['Mission','Responsable(s)','PR reliées','État vérifiable','Blocage','Prochaine action']){
+    header.append(el('th',label));
+  }
+  head.append(header);table.append(head);
+  const body=el('tbody');
+  for(const m of coordinationRows(seed)){
+    const tr=el('tr'),id=el('td'),owner=el('td'),prs=el('td'),state=el('td'),block=el('td'),next=el('td');
+    id.append(link(m.id,'#mission/'+encodeURIComponent(m.id)));
+    owner.textContent=m.ateliers.map(nameOf).join(', ');
+    if(!m.prs.length)prs.append(el('span','Aucune PR propre attestée'));
+    for(const p of m.prs){
+      if(prs.childNodes.length)prs.append(document.createTextNode(' · '));
+      prs.append(external('#'+p.number+' ('+({livrable_documentaire:'livrable candidat',anteriorite:'antériorité',dependance_technique:'dépendance'}[p.nature])+')',p.reference.url));
+    }
+    state.textContent=m.status;block.textContent=m.blockage;next.textContent=m.nextAction;
+    tr.append(id,owner,prs,state,block,next);body.append(tr);
+  }
+  table.append(body);scroll.append(table);section.append(h,note,scroll);
+  return section;
+}
 function overview(route){
   lastOverview=location.hash||'#missions';const top=heading('Ce qui circule','LA FAILLE NOIRE × INTERSTICE','Les missions, les pièces déposées et les décisions qui restent à prendre.');
   top.append(link('Préparer une mission · simulation','#preparer','prepare-link'));view.append(top,summaryCards());
   const t=summarize(seed);
   view.append(el('p',t.declaredInProgress?`${t.declaredInProgress} commencement(s) déclaré(s), à confronter aux preuves.`:'Aucune activité en cours n’est attestée dans cette sélection. '+t.unknownProgress+' commencements restent inconnus. Ce constat ne signifie pas que les ateliers ne travaillent pas.','overview-note'));
   view.append(el('p','Registre documentaire du '+date(seed.source_snapshot)+' · relevé public du '+date(seed.observed_on)+' · '+t.declaredDeliveries+' livraison candidate documentée.','small muted'));
+  view.append(coordinationTable());
   const filters=el('nav',undefined,'filter-bar');filters.setAttribute('aria-label','Filtres des missions');
   const labels={toutes:'Toutes',blocages:'Blocages déclarés',controles:'Contrôles',decisions:'Décisions'};
   for(const f of FILTERS){const a=link(labels[f],'#missions?filtre='+f);a.setAttribute('aria-current',String(route.filter===f));filters.append(a);}view.append(filters);
