@@ -13,3 +13,11 @@ Sources principales : PR #132 HEAD `57a509257314d44cb15faf842395a21023e43335`, r
 Les logos référencés sont les deux fichiers officiels du dépôt. Ils ne sont pas redessinés. Les copies d’aperçu sont contrôlées par SHA-256 dans `checksums.json` et les tests.
 
 L’instantané ne se synchronise pas automatiquement. Un nouveau relevé doit conserver les inconnus, les réserves et les échecs techniques pertinents. Les données brutes de recherche, courriers et kits éditoriaux ne sont pas inclus dans le constructeur.
+
+## C05-ORC-01 : tableau unique, sans duplication de messagerie
+
+La vue **Ce qui circule** intègre désormais un tableau dérivé de `seed-public.json` avec mission, responsables, PR liées **typées** (livrable candidat / antériorité / dépendance technique), état de la source, blocage et prochaine action. Les autres vues et le contrat C11 restent inchangés. Aucun état reçu, validé ou exécuté n'est calculé depuis une PR.
+
+Le tableau ne se synchronise **pas** : il affiche la photographie publique et datée du registre C03. Il ne faut pas utiliser ses liens PR comme preuve d'un nouveau rapport ni comme instruction d'activation. Les missions non incluses dans cette démonstration sont consultables par l'index GitHub du registre, pas ajoutées sous forme de faux résultats. La lecture est accessible sur mobile avec tableau défilant et liens clavier. Aucune commande supplémentaire.
+
+La sécurité C12 sur `main` reste P0 : l'opt-in C13 de la PR #114 n'est pas fusionné. Le pilote #180 possède un lock GH-AW candidat mais aucune exécution d'agent ; la présence de variables ou de secrets n'est pas attestée. Ces changements ne branchent ni C12, ni C14, ni GH-AW à cette console.
