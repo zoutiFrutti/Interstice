@@ -255,7 +255,8 @@ test('Paysage Android simulé : gestes, cibles 44 px et défilement libéré',{t
     const touch=(type,points)=>cdp.send('Input.dispatchTouchEvent',
       {type,touchPoints:points.map(([x,y,id])=>({x,y,id}))});
     await touch('touchStart',[[x,y,0]]);await touch('touchMove',[[x+45,y+18,0]]);await touch('touchEnd',[]);
-    const dragged=await metrics(page);near(dragged.view_box[2]/before.view_box[2],1.12,.001);
+    // Still entry starts at the fitted map: panning must not trigger an animated retreat.
+    const dragged=await metrics(page);near(dragged.view_box[2]/before.view_box[2],1,.001);
     assert.notDeepEqual(dragged.view_box,before.view_box);
     await touch('touchStart',[[x-40,y,0],[x+40,y,1]]);
     await touch('touchMove',[[x-90,y,0],[x+90,y,1]]);await touch('touchEnd',[]);
