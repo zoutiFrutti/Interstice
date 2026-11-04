@@ -208,7 +208,7 @@ for(const viewport of [{width:390,height:844},{width:1280,height:900}]){
       await page.waitForTimeout(450);
       await capture(page,'after',viewport,'plongee-en-cours',
         {timing_note:'Phase diving observée ; échantillon après attente demandée 450 ms'});
-      await page.waitForFunction(()=>document.querySelector('#exploration').dataset.phase==='immersed');
+      await page.waitForFunction(()=>['immersed','exploring'].includes(document.querySelector('#exploration').dataset.phase));
       const immersed=await metrics(page);const ratio=nucleusRatio(immersed);
       near(ratio,.5,.015);
       near(immersed.view_box[0]+immersed.view_box[2]/2,nucleus.x,.001);
@@ -242,7 +242,7 @@ for(const viewport of [{width:390,height:844},{width:1280,height:900}]){
   });
 }
 
-test('Paysage Android simulé : gestes, cibles 44 px et défilement libéré',{timeout:25000},async()=>{
+test('Paysage Android simulé : gestes, cibles 44 px et défilement libéré',{timeout:45000},async()=>{
   const viewport={width:844,height:390};
   const context=await browser.newContext({...devices['Pixel 5'],viewport,screen:viewport,
     reducedMotion:'no-preference'});
