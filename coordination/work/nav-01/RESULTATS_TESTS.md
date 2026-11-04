@@ -1,12 +1,9 @@
-# WORK-NAV-01 — résultats
+# WORK-NAV-01 — vérifications
 
-Premier contrôle local : 7/7 tests Node passés (`node --test tests/nav01-camera.test.mjs`). Syntaxe des modules vérifiée. Construction de l’artefact statique réussie. Ouverture manuelle dans Chromium : entrée, quatre portes et lecteur latéral observés ; correction du défilement d’entrée et de la restauration de caméra.
+Référence complète déjà passée : [CI 41809013343](https://github.com/zoutiFrutti/Interstice/actions/runs/41809013343), commit `43d8452d1c8783977557faeb1a70e89d64c20e5d`. Huit tests purs et treize scénarios navigateur passent ; la suite R6 et son préflight Pages passent séparément sans déploiement.
 
-La suite navigateur est écrite et son exécution CI reste à constater à ce stade. Elle couvre 320, 390, 768, 1280 px, Android simulé Pixel 5 (CDP tactile, un/deux doigts), zoom/pan/recentrage, sélection, clavier, focus visible, arbre d’accessibilité, axe WCAG A/AA, mouvement réduit, HTML sans JS, historique, liens profonds et absence de débordement/erreurs JavaScript.
+La passe suivante contrôle une capture native du zoom 400 %, ses pixels et le chargement de même origine derrière un futur aperçu privé. La première capture Playwright à ce zoom était vide ; elle est rejetée. La capture CDP native montre correctement le lecteur, mais sa hauteur physique de 761 px diffère des 900 px émulés : l’assertion d’outil a été corrigée pour consigner la taille réellement capturée. Les résultats du nouveau HEAD restent à confirmer avant livraison.
 
-Le contrôle 400 % utilise le zoom réel Chromium `chrome.tabs.setZoom(4)`, contrôlé par `getZoom` et la largeur interne ; aucun `style.zoom`. Un échec du mécanisme est un test échoué, jamais transformé en réussite.
+Contrôles disponibles : 320/390/768/1280 px ; Android Pixel 5 simulé (CDP tactile), déplacement et pincement ; souris, molette, zoom et recentrage ; clavier/focus ; sept traversées et retours ; historique/rechargement/liens profonds ; HTML sans JavaScript ; mouvement réduit ; axe et arbre Chromium ; absence de débordement et d’erreurs JavaScript.
 
-Preuves générées par CI : `artifacts/nav01/HEAD.txt`, `evidence.json`, captures d’entrée, exploration et panneau aux quatre largeurs, Android simulé, 400 %, lecteur et sans JS. Les résultats effectifs et liens d’exécution seront ajoutés après lecture des journaux.
-
-Non réalisés : téléphone physique, TalkBack, VoiceOver, NVDA et validation artistique/ergonomique par Zout. L’arbre Chromium et axe ne remplacent pas ces essais. Les contenus et services R6 liés à l’extérieur ne sont pas recertifiés par cette mission.
-
+Hors validation : appareil Android physique, TalkBack, VoiceOver, NVDA et jugement artistique de Zout. Axe ne signale aucune violation A/AA dans la référence, mais laisse les contrastes sur le SVG à examiner. Les calculs de palette sont dans CONTRASTES.json ; ils ne certifient pas toutes les superpositions.

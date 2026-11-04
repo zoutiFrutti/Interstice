@@ -1,16 +1,26 @@
-# WORK-NAV-01 — matrice fonctionnelle candidate
+# WORK-NAV-01 — état fonctionnel
 
-| Usage | Réalisation | Limite |
+| Usage | Réalisation vérifiée | Limite |
 | --- | --- | --- |
-| Entrer | Faille noire officielle, transition par caméra, entrée immédiate alternative | Visa artistique Zout attendu |
-| Explorer | Déplacement libre, molette, boutons de zoom, flèches et Début | Pas de moteur 3D |
-| Tactile | Pointer Events : un doigt déplacement, deux doigts pincement ; bascule défilement de page | Simulation Android, pas d’appareil physique |
-| Choisir | Quatre portes natives HTML attachées aux ramifications | Aucun nouveau contenu éditorial publié |
-| Traverser | Sept chemins, étapes, bifurcations, retours aux portes et vue complète | Intitulés candidats #161 ; PAR-005 pratique fermé |
-| Lire | Manifestes publics dans un panneau ; liens vers leurs originaux | Autres ressources candidates fermées |
-| Se retrouver | Recentrage, historique, liens profonds, reprise de session | Stockage local optionnel, aucun suivi |
-| Accéder autrement | Liens textuels, lecteur sémantique, focus visible, mouvement réduit, HTML sans JS | TalkBack/VoiceOver/NVDA non testés physiquement |
-| Prévisualiser | Artefact statique séparé et aperçu local | URL HTTPS privée soumise à autorisation |
+| Entrer | Faille noire officielle, transition de caméra, alternative immédiate | Validation artistique Zout attendue |
+| Explorer | Déplacement libre, molette, zoom, recentrage, flèches et Début | Espace SVG, pas de 3D |
+| Tactile | Un doigt, pincement à deux doigts, sélection, mode défilement | Android Pixel 5 simulé ; aucun téléphone physique |
+| Choisir | Quatre portes HTML attachées aux ramifications | Aucun article bloqué ouvert |
+| Traverser | Sept chemins, étapes, bifurcations, retours aux portes et vue complète | Intitulés candidats #161 |
+| Lire | Deux manifestes publics dans un lecteur ; liens originaux conservés | Autres ressources candidates fermées |
+| Se retrouver | Historique, liens profonds, restauration après rechargement et reprise de session | Stockage local optionnel |
+| Accéder autrement | Clavier, focus, arbre d’accessibilité, mouvement réduit, liens sans JS | Pas de test humain TalkBack/VoiceOver/NVDA |
+| Afficher | 320, 390, 768, 1280 px et zoom navigateur réel 400 % | Contrastes sur image partiellement indécidables par axe |
+| Prévisualiser | Aperçu local et artefact statique indépendant | URL HTTPS privée à autoriser |
 
-Les Parcours sont des connexions de navigation, pas une cinquième porte. Le nœud manifeste est un accès au texte fondateur, pas une rubrique supplémentaire.
+| Parcours | Navigation | Publication éditoriale |
+| --- | --- | --- |
+| PAR-001 — Commune de Paris | Étapes, bifurcations et retours | Candidate, aucun visa final |
+| PAR-002 — Révolution sociale espagnole | Étapes, bifurcations et retours | Candidate, aucun visa final |
+| PAR-003 — Écologie sociale | Étapes, bifurcations et retours | Candidate, aucun visa final |
+| PAR-004 — Autogestion | Étapes, bifurcations et retours | Candidate, aucun visa final |
+| PAR-005 — Droits en manifestation | Connexion aux portes ; fiches pratiques fermées | Blocage juridique maintenu |
+| PAR-006 — Féminismes et luttes LGBTQIA+ | Chemin progressif, étapes et retours | Candidate, aucun visa final |
+| PAR-007 — Zapatisme | Chemin progressif, étapes et retours | Candidate, aucun visa final |
 
+Les Parcours ne constituent pas une cinquième porte. Le nœud manifeste donne accès au texte fondateur. Les connexions sont des itinéraires proposés, pas des relations historiques attestées.

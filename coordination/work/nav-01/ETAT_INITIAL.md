@@ -23,4 +23,3 @@ Fichiers effectivement lus : moteurs `assets/faille-navigation.js` et `assets/en
 Dépendances : application statique HTML/CSS/ES modules et SVG, sans paquet d’exécution. Tests : Node 22, Playwright 1.56.1 et axe 4.10.2, uniquement en QA. L’accès réseau de l’atelier ne permet pas d’installer Chromium ; exécution navigateur automatisée dans GitHub Actions, avec observation manuelle dans le navigateur de l’atelier.
 
 C12 : le déclenchement `issues.opened` de main reste un risque non résolu dans #163/#166. Aucun test par Issue, appel IA ou changement de workflow C12. Aucun changement d’index actif, de domaine, de configuration Pages ou de fichier existant.
-

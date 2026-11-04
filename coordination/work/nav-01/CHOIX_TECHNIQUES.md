@@ -1,18 +1,24 @@
 # WORK-NAV-01 — choix réalisés
 
-Base : caméra SVG viewBox R2/R6, réécrite en fonctions pures testables ; import du réducteur et des fragments de #161. Reprise de l’entrée #137 et des gestes pan/zoom #138/#141, sans leurs anciens dictionnaires de coordonnées. Accessibilité #143 : liens HTML natifs, focus, texte alternatif, mode défilement. Contrat #168 : identité officielle inchangée, quatre portes distinctes des marques décoratives, traversées transversales et manifeste accessible.
+Base : caméra SVG viewBox R2/R6 adaptée en fonctions pures testables ; fragments de #161. Socle HTML et liens historiques #135, entrée #137, gestes pan/zoom #138/#141, accessibilité #143, stabilisation #153. Contrat visuel #168 appliqué : identité officielle inchangée, quatre portes distinctes des marques décoratives, Parcours transversaux et manifestes accessibles.
 
-- `explorer.html` : entrée et représentation textuelle complète, utilisable sans module.
-- `assets/nav-01/camera.mjs` : conversion écran/espace, zoom ancré, limites.
-- `explorer.mjs` : un doigt pour déplacer, deux pour pincer, molette, flèches, +/−, Début, Échap, sélection et lecteur.
-- `graph-data.mjs` : quatre portes, sept questions et étapes candidates #161 ; aucune notice ni corps de ressource bloquée.
-- Historique navigateur = référence : fragments, position de caméra et porte d’origine. SessionStorage optionnel pour reprendre la vue, sans compte ni requête distante.
-- Cibles HTML gardées à 44 px minimum ; panneaux dans le flux sur mobile et au fort zoom. Liste indépendante pour qui ne souhaite pas déplacer l’espace.
-- Logos : fichiers canoniques externes inchangés ; effets de caméra et surcouche interactive séparés. Les lignes des traversées indiquent des possibilités de navigation, sans affirmer de filiation historique.
+| Composant | Responsabilité |
+| --- | --- |
+| `explorer.html` | Entrée, espace, liens natifs, alternative HTML sans module |
+| `assets/nav-01/camera.mjs` | Conversion écran/espace, zoom ancré, limites de caméra |
+| `explorer.mjs` | Gestes, clavier, sélection, lecteur, historique et reprise de position |
+| `graph-data.mjs` | Quatre portes, sept questions et intitulés d’étapes issus de #161 |
+| `navigation-state.mjs` | Lecture des fragments V2 et historiques, adaptée de #161 |
+| `scripts/build-nav-preview.mjs` | Artefact statique séparé, construit par liste autorisée |
 
-Deux documents autorisés dans le lecteur : les manifestes déjà publics V2.5 et archive V2.1, avec leurs réserves conservées. Les quatre index R6 existants sont des liens externes explicites. Le catalogue candidat reste fermé (`PUBLIC_RESOURCES=[]`). PAR-005 n’ouvre aucune étape pratique. Les six autres Parcours exposent uniquement les intitulés d’étapes, les bifurcations et retours ; leurs ressources restent fermées.
+Un doigt déplace la carte ; deux doigts pincent ; une bascule libère le défilement de page. Souris : glisser et molette. Clavier : flèches, +/−, Début, Échap, liens et boutons natifs. Les combinaisons Ctrl/Commande restent disponibles pour le navigateur.
 
-Aucun paquet applicatif supplémentaire. Artefact construit par liste de fichiers autorisés ; ni coordination, ni agent, ni catalogue éditorial, ni extension QA n’y entre. L’extension Chromium de test sert uniquement à `tabs.setZoom(4)` dans un profil jetable de CI ; elle n’est pas installée dans le navigateur de Zout.
+L’historique conserve fragment, caméra et porte d’origine, y compris après rechargement. SessionStorage est optionnel et sert uniquement à reprendre la dernière vue ; aucune position n’est envoyée au serveur. Les cibles HTML gardent une taille utile d’au moins 44 px. Les panneaux passent dans le flux sur mobile et au fort zoom. Une liste équivalente évite toute obligation de manipuler la carte. Les textes de surcouche ont un fond protecteur pendant les déplacements.
 
-Retour arrière : avant intégration, ne pas fusionner la PR et ne pas promouvoir l’artefact. Le site actif reste exactement R6. Une future intégration exige une décision distincte et son propre contrôle de déploiement ; aucun remplacement automatique d’`index.html` de main.
+Les deux SVG sont chargés comme fichiers externes, inchangés. La transition agit sur une copie de l’image et sur la caméra, sans modifier les tracés. Les lignes des Parcours indiquent des possibilités de navigation, sans affirmer de filiation historique.
 
+Deux documents autorisés dans le lecteur : manifestes publics V2.5 et archive V2.1, avec leurs réserves conservées. Le chargement reste limité à ces deux fichiers de même origine ; les cookies de cette origine permettent un futur hébergement privé. Les quatre index R6 sont des liens externes explicites. Le catalogue candidat demeure fermé (`PUBLIC_RESOURCES=[]`). PAR-005 n’ouvre aucune étape pratique. Les six autres Parcours montrent seulement les intitulés, bifurcations et retours ; leurs ressources restent fermées.
+
+Application sans dépendance supplémentaire. Playwright et axe ne servent qu’aux tests. L’extension Chromium de QA règle le zoom réel à 400 % dans un profil jetable ; elle n’est ni livrée dans l’artefact ni installée chez Zout.
+
+Retour arrière : avant intégration, ne pas fusionner la PR et ne pas promouvoir l’artefact. Le site actif reste R6. Aucune opération sur la production n’est nécessaire. Une future activation publique exige un mandat distinct.

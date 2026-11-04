@@ -177,7 +177,8 @@ async function renderDocument(id,version) {
   showPanel(spec.title,'La Faille noire / Texte fondateur',true);
   panelBody.setAttribute('aria-busy','true');panelBody.append(element('p','Ouverture du texte…'));
   try{
-    const response=await fetch(spec.file,{credentials:'omit'});
+    // Same-origin credentials keep the reader usable behind a private preview gate.
+    const response=await fetch(spec.file,{credentials:'same-origin'});
     if(!response.ok)throw new Error('document');
     const parsed=new DOMParser().parseFromString(await response.text(),'text/html');
     if(version!==panelVersion)return;

@@ -1,0 +1,53 @@
+{
+  "methode": "Luminance sRGB WCAG, couleurs CSS opaques ; pas une certification de toutes les superpositions du SVG",
+  "controles": [
+    {
+      "usage": "Texte / fond",
+      "texte": "#151311",
+      "fond": "#bcb4ac",
+      "ratio": 9.06,
+      "minimum": 4.5,
+      "conforme_palette": true
+    },
+    {
+      "usage": "Texte secondaire / fond",
+      "texte": "#49413c",
+      "fond": "#bcb4ac",
+      "ratio": 4.88,
+      "minimum": 4.5,
+      "conforme_palette": true
+    },
+    {
+      "usage": "Panneau de lecture",
+      "texte": "#151311",
+      "fond": "#f3eee6",
+      "ratio": 16.05,
+      "minimum": 4.5,
+      "conforme_palette": true
+    },
+    {
+      "usage": "Étiquette de nœud",
+      "texte": "#151311",
+      "fond": "#e5ded4",
+      "ratio": 13.88,
+      "minimum": 4.5,
+      "conforme_palette": true
+    },
+    {
+      "usage": "Rouge / commandes",
+      "texte": "#a21d18",
+      "fond": "#f3eee6",
+      "ratio": 6.67,
+      "minimum": 4.5,
+      "conforme_palette": true
+    },
+    {
+      "usage": "Focus / fond",
+      "texte": "#005e69",
+      "fond": "#bcb4ac",
+      "ratio": 3.66,
+      "minimum": 3,
+      "conforme_palette": true
+    }
+  ]
+}

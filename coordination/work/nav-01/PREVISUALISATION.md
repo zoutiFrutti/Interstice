@@ -1,4 +1,4 @@
-# WORK-NAV-01 — prévisualisation indépendante
+# WORK-NAV-01 — aperçu indépendant
 
 ## Reproduire
 
@@ -8,17 +8,20 @@ cd dist-nav
 python3 -m http.server 8080
 ```
 
-Ouvrir `http://localhost:8080/`. Un serveur HTTP est nécessaire pour les modules ; `file://` ne convient pas. Le même artefact fonctionne sous un préfixe de dépôt (testé sous `/Interstice/` en CI). `explorer.html` est aussi conservé dans l’artefact.
+Ouvrir `http://localhost:8080/`. Un serveur HTTP est nécessaire pour les modules ; `file://` ne convient pas. Le même artefact est testé sous le préfixe `/Interstice/`. L’adresse `explorer.html` reste également disponible.
 
-Construction par liste autorisée : modules, CSS, deux SVG officiels, deux manifestes déjà publics et leur style. Les quatre anciens index deviennent, dans l’aperçu seulement, des pages de compatibilité avec liens vers R6. Aucun contenu bloqué, catalogue V2 ou service externe embarqué. `checksums.json` permet de vérifier les sources copiées. Les anciens fichiers du dépôt ne sont pas remplacés.
+La construction copie exclusivement modules, CSS, deux SVG officiels, deux manifestes publics et leur style. Quatre pages de compatibilité conservent les anciens noms d’index et renvoient explicitement vers R6. Les fichiers historiques du dépôt sont inchangés. Un dossier de sortie contenant un fichier hors liste est refusé sans suppression.
 
-## HTTPS
+`checksums.json` contrôle les fichiers copiés. Aucun catalogue éditorial, agent, coordination, extension QA, secret ou ressource bloquée n’entre dans cet aperçu.
 
-Aucun environnement Sites existant n’a été trouvé le 4 novembre 2026. L’aperçu d’atelier tourne localement ; son adresse interne n’est pas une URL publique testable par Zout. Aucun déploiement n’a été fait.
+## URL HTTPS : autorisation nécessaire
 
-Proposition précise à autoriser après essais : créer un aperçu Sites privé nommé « Interstice — WORK-NAV-01 », y déposer exclusivement le dossier statique construit et conserver GitHub Pages, son domaine et main inchangés. L’URL réelle sera consignée après création et contrôle. Aucun nom d’URL n’est inventé à l’avance.
+Aucun environnement Sites existant n’a été trouvé le 4 novembre 2026. L’aperçu d’atelier est local ; son adresse interne ne constitue pas une URL publique testable par Zout. Aucun déploiement n’a été effectué.
+
+Action prête à autoriser : créer un aperçu Sites privé nommé **Interstice — WORK-NAV-01**, y déposer exclusivement ce dossier statique testé, puis contrôler l’entrée, le lecteur et les liens profonds derrière l’accès privé. GitHub Pages, son domaine et main restent inchangés. Consigner ensuite l’URL réellement créée ; aucune adresse n’est inventée avant cette étape.
 
 ## Captures et archive
 
-Le workflow `WORK NAV01 isolated navigation QA` produit un artefact téléchargeable `work-nav01-preview-and-evidence-<HEAD>` contenant `dist-nav/`, les captures et les résultats. Conservation CI : 14 jours. Le code permettant de tout reproduire reste dans la PR candidate.
+Le workflow `WORK NAV01 isolated navigation QA` produit l’artefact `work-nav01-preview-and-evidence-<HEAD>`, contenant `dist-nav/`, captures, résultats et `artifacts/nav01/HEAD.txt`. Conservation CI : 14 jours ; sources reproductibles conservées dans la PR.
 
+Les captures de ce dossier indiquent leur commit source dans `captures/SOURCE_HEAD.txt`. Les vues 390 px sont des simulations navigateur, jamais des photographies de téléphone. La capture 400 % doit montrer le viewport natif : une ancienne capture vide a été rejetée, le test interdit désormais ce résultat.

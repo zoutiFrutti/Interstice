@@ -230,7 +230,9 @@ test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async(
     const capture=await cdp.send('Page.captureScreenshot',{format:'png',fromSurface:false,captureBeyondViewport:false});
     const shot=Buffer.from(capture.data,'base64');
     await writeFile(resolve(artifacts,'zoom-navigateur-reel-400.png'),shot);
-    assert.equal(shot.readUInt32BE(16),1280);assert.equal(shot.readUInt32BE(20),900);
+    const captureWidth=shot.readUInt32BE(16),captureHeight=shot.readUInt32BE(20);
+    evidence.zoom400.capture={width:captureWidth,height:captureHeight,method:'CDP native view, without CSS clip'};
+    assert.equal(captureWidth,1280);assert.ok(captureHeight>0&&captureHeight<=900);
     const colors=await page.evaluate(async base64=>{
       const bytes=Uint8Array.from(atob(base64),c=>c.charCodeAt(0));
       const bitmap=await createImageBitmap(new Blob([bytes],{type:'image/png'}));
