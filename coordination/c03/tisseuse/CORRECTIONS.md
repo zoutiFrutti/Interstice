@@ -64,7 +64,7 @@ Lecture JSON de `resources.json`, `relations.json`, `parcours.json` et `sources.
 - **0** identifiant de ressource dupliqué, **0** cible de relation absente, **0** référence d'étape absente, **0** relation référencée par un Parcours mais inconnue du registre.
 - **1** alias déjà présent : `TIS-001-001.aliases=["tis-c8-velo"]` ; il ne produit pas une seconde ressource et ne résout pas l'état actuel de l'accueil.
 - **20/20** ressources TIS avec `coordinates:null` et `validation.publication:"non_autorisee"` ; **20/20** avec `external_url` au format HTTPS. Format HTTPS vérifié, **pas code HTTP de chaque URL ni conditions d'ouverture**.
-- **5/5** relations TIS référencent une pièce C05 existante dans `sources.json`, mais **0/5** ne référencent directement une URL externe de preuve dans leurs propres `source_refs` : défaut **de granularité de la provenance**, pas rupture des identifiants. Cette nuance remplace toute affirmation de « lien cassé ».
+- **5/5** relations TIS référencent une pièce C05 existante dans `sources.json`, mais **0/5** comportent une référence directe à une URL externe de preuve dans leurs propres `source_refs` : défaut **de granularité de la provenance**, pas rupture des identifiants. Cette nuance remplace toute affirmation de « lien cassé ».
 
 ### Corrections indispensables, prêtes à intégrer **après validation** dans #161
 
