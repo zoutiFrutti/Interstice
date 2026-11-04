@@ -1,0 +1,49 @@
+name: WORK NAV01 isolated navigation QA
+on:
+  pull_request:
+    paths:
+      - 'explorer.html'
+      - 'assets/nav-01/**'
+      - 'scripts/build-nav-preview.mjs'
+      - 'tests/nav01*'
+      - 'tests/nav01-zoom-extension/**'
+      - 'coordination/work/nav-01/**'
+      - '.github/workflows/work-nav01-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Camera, identities and editorial barriers
+        run: node --test tests/nav01-camera.test.mjs
+      - name: Build allow-listed static preview without deploying
+        run: node scripts/build-nav-preview.mjs
+      - name: Install test tools only
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx playwright install --with-deps chromium
+      - name: Responsive, simulated Android, keyboard, no-JS and real browser zoom
+        run: node --test tests/nav01.browser.test.mjs
+      - name: Preserve preview, screenshots and exact HEAD
+        if: always()
+        run: |
+          mkdir -p artifacts/nav01
+          git rev-parse HEAD > artifacts/nav01/HEAD.txt
+          git status --short > artifacts/nav01/working-tree.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: work-nav01-preview-and-evidence-${{ github.event.pull_request.head.sha }}
+          path: |
+            dist-nav/
+            artifacts/nav01/
+          retention-days: 14

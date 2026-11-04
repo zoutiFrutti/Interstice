@@ -1,0 +1,252 @@
+{
+  "base": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+  "prs": [
+    {
+      "number": 135,
+      "head": "69a4d41c68f68299d2a6227f146d6852ca8b50af",
+      "branch": "integration/r2-assemblage-graphiste-developpeuse-20261102",
+      "base": "f5b0e313f4a46af560f2674ddebdade2d3a33803",
+      "merged": false
+    },
+    {
+      "number": 137,
+      "head": "72c1edcda7336a893ab2b5d1485b3f53cc377366",
+      "branch": "design/identite-faille-interstice-zoom-20261102",
+      "base": "d580b3f8dd13507964c9c397031aa87899c2bbec",
+      "merged": false
+    },
+    {
+      "number": 138,
+      "head": "888015794b3ddbf4dddc1b43d2ba9af493971d09",
+      "branch": "integration/r3-identite-navigation-immersive-candidate-20261102",
+      "base": "f5b0e313f4a46af560f2674ddebdade2d3a33803",
+      "merged": false
+    },
+    {
+      "number": 141,
+      "head": "9f733122c7196622d31e7996d1d0b4eea987a14d",
+      "branch": "integration/r4-convergence-relieuse-20261102",
+      "base": "f5b0e313f4a46af560f2674ddebdade2d3a33803",
+      "merged": false
+    },
+    {
+      "number": 143,
+      "head": "2d4dbc40f14f498e07028131d59d298ac9ab4c9f",
+      "branch": "test/r5-dev-accessibilite-20261103",
+      "base": "9f733122c7196622d31e7996d1d0b4eea987a14d",
+      "merged": false
+    },
+    {
+      "number": 153,
+      "head": "0c4ddfcc8b7a52ac773c61706fd5b5e2bc4f8187",
+      "branch": "integration/r6-int01-reconciliation-20261103",
+      "base": "c613d9f896fe94144264f6e78b7ac07893a75c67",
+      "merged": true
+    },
+    {
+      "number": 161,
+      "head": "0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6",
+      "branch": "work/c02-v2-reconciliation-20261103",
+      "base": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "merged": false
+    },
+    {
+      "number": 163,
+      "head": "d9f771d5516048cfa2ad7639204443a10fb20f44",
+      "branch": "audit/c03-dev04-c12-v2-20261103",
+      "base": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "merged": false
+    },
+    {
+      "number": 168,
+      "head": "4ae8afef9604fa55d3dda6c1400b8b8c139317c9",
+      "branch": "atelier/graphiste-c03-gra03-contrat-v2-20261103",
+      "base": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "merged": false
+    },
+    {
+      "number": 132,
+      "head": "57a509257314d44cb15faf842395a21023e43335",
+      "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+      "base": "c613d9f896fe94144264f6e78b7ac07893a75c67",
+      "merged": false
+    },
+    {
+      "number": 166,
+      "head": "16b5e034d5df14caf38cf1188c5f8112dc9c553c",
+      "branch": "juriste/c03-jur-04-c12-par005-20261103",
+      "base": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "merged": false
+    }
+  ],
+  "files": [
+    {
+      "pr": 168,
+      "path": "coordination/c03/graphiste/CONTRAT_VISUEL.md",
+      "ref": "4ae8afef9604fa55d3dda6c1400b8b8c139317c9",
+      "sha": "cc6d36c52c3265ee733e59158f2df3ba4fcc5516"
+    },
+    {
+      "pr": 168,
+      "path": "coordination/c03/graphiste/ETATS_INTERFACE.md",
+      "ref": "4ae8afef9604fa55d3dda6c1400b8b8c139317c9",
+      "sha": "19b3df671883bf12e60fa53e8f2f5abd9bdbfaeb"
+    },
+    {
+      "pr": 168,
+      "path": "coordination/c03/graphiste/ACCESSIBILITE.md",
+      "ref": "4ae8afef9604fa55d3dda6c1400b8b8c139317c9",
+      "sha": "92b56b862953db8a96b1cd063d1ec0e6ec437ba4"
+    },
+    {
+      "pr": 168,
+      "path": "coordination/c03/graphiste/COMPOSANTS_R6.md",
+      "ref": "4ae8afef9604fa55d3dda6c1400b8b8c139317c9",
+      "sha": "9e75ef4d5f0360ca691ef45888e9cb50c4ccb73e"
+    },
+    {
+      "pr": 163,
+      "path": "coordination/c03/developpeuse/CONTRAT_NAVIGATION_V2.md",
+      "ref": "d9f771d5516048cfa2ad7639204443a10fb20f44",
+      "sha": "0a2ab0152d434aadd6f76e11c4b126f3466c9064"
+    },
+    {
+      "pr": 163,
+      "path": "coordination/c03/developpeuse/AUDIT_C12.md",
+      "ref": "d9f771d5516048cfa2ad7639204443a10fb20f44",
+      "sha": "0385319956e14d107424fd98999733dd045bd061"
+    },
+    {
+      "pr": 163,
+      "path": "coordination/c03/developpeuse/CORRECTIF_SECURITE_CANDIDAT.md",
+      "ref": "d9f771d5516048cfa2ad7639204443a10fb20f44",
+      "sha": "88a1e16d0534f82a2052b5153dd49586d3ce9333"
+    },
+    {
+      "pr": 132,
+      "path": "coordination/c03/INDEX_TRANSMISSIONS.md",
+      "ref": "57a509257314d44cb15faf842395a21023e43335",
+      "sha": "ac8dc7ee0a00417e6e5bed39c7eafff49a83fb50"
+    },
+    {
+      "pr": 132,
+      "path": "coordination/c03/orchestratrice/02_CONTRAT_RAPPORTS.md",
+      "ref": "57a509257314d44cb15faf842395a21023e43335",
+      "sha": "b3f68b210055e32de0d8741b2b43ded0be3a92a8"
+    },
+    {
+      "pr": 137,
+      "path": "assets/entree-faille-candidate.js",
+      "ref": "72c1edcda7336a893ab2b5d1485b3f53cc377366",
+      "sha": "191dbb454c4524102968aa32dda868c7f1a6a632"
+    },
+    {
+      "pr": 138,
+      "path": "assets/faille-navigation.js",
+      "ref": "888015794b3ddbf4dddc1b43d2ba9af493971d09",
+      "sha": "bdadce29a8468d5417f816bfd1abaf5639de9f78"
+    },
+    {
+      "pr": 141,
+      "path": "assets/faille-navigation.js",
+      "ref": "9f733122c7196622d31e7996d1d0b4eea987a14d",
+      "sha": "d6107e1b82c50a683fe7f85f93549bfd8c20617c"
+    },
+    {
+      "pr": 143,
+      "path": "tests/r5-dev-accessibilite.browser.test.mjs",
+      "ref": "2d4dbc40f14f498e07028131d59d298ac9ab4c9f",
+      "sha": "9bc237ca6542581c9c0fd61609f5c3f1379f7ff1"
+    }
+  ],
+  "comparisons": [
+    {
+      "pr": 135,
+      "head": "69a4d41c68f68299d2a6227f146d6852ca8b50af",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 106,
+      "common": "69a4d41c68f68299d2a6227f146d6852ca8b50af"
+    },
+    {
+      "pr": 137,
+      "head": "72c1edcda7336a893ab2b5d1485b3f53cc377366",
+      "status": "diverged",
+      "ahead": 24,
+      "behind": 90,
+      "common": "d6889d764b24d081692db8c9e3caf785f291ced3"
+    },
+    {
+      "pr": 138,
+      "head": "888015794b3ddbf4dddc1b43d2ba9af493971d09",
+      "status": "diverged",
+      "ahead": 5,
+      "behind": 86,
+      "common": "256bf93379b3882e32827cbda706e2ceeaf63749"
+    },
+    {
+      "pr": 141,
+      "head": "9f733122c7196622d31e7996d1d0b4eea987a14d",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 43,
+      "common": "9f733122c7196622d31e7996d1d0b4eea987a14d"
+    },
+    {
+      "pr": 143,
+      "head": "2d4dbc40f14f498e07028131d59d298ac9ab4c9f",
+      "status": "diverged",
+      "ahead": 5,
+      "behind": 43,
+      "common": "9f733122c7196622d31e7996d1d0b4eea987a14d"
+    },
+    {
+      "pr": 153,
+      "head": "0c4ddfcc8b7a52ac773c61706fd5b5e2bc4f8187",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 2,
+      "common": "0c4ddfcc8b7a52ac773c61706fd5b5e2bc4f8187"
+    },
+    {
+      "pr": 161,
+      "head": "0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6",
+      "status": "ahead",
+      "ahead": 2,
+      "behind": 0,
+      "common": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    },
+    {
+      "pr": 163,
+      "head": "d9f771d5516048cfa2ad7639204443a10fb20f44",
+      "status": "ahead",
+      "ahead": 6,
+      "behind": 0,
+      "common": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    },
+    {
+      "pr": 168,
+      "head": "4ae8afef9604fa55d3dda6c1400b8b8c139317c9",
+      "status": "ahead",
+      "ahead": 5,
+      "behind": 0,
+      "common": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    },
+    {
+      "pr": 132,
+      "head": "57a509257314d44cb15faf842395a21023e43335",
+      "status": "diverged",
+      "ahead": 26,
+      "behind": 340,
+      "common": "c613d9f896fe94144264f6e78b7ac07893a75c67"
+    },
+    {
+      "pr": 166,
+      "head": "16b5e034d5df14caf38cf1188c5f8112dc9c553c",
+      "status": "ahead",
+      "ahead": 5,
+      "behind": 0,
+      "common": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    }
+  ]
+}
