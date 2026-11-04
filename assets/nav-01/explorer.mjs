@@ -212,7 +212,7 @@ function renderRoute({focus=true, animate=true, keepCamera=false}={}) {
   const isEntry=state.kind==='entry';entry.hidden=!isEntry;app.hidden=isEntry;
   document.body.dataset.view=isEntry?'entry':'space';
   $('#directory-details').open=false;
-  if(isEntry){panel.hidden=true;$('#resume-entry').hidden=!lastView;return;}
+  if(isEntry){panel.hidden=true;orientationStarted=false;delete stage.dataset.dive;delete stage.dataset.orienting;$('#resume-entry').hidden=!lastView;return;}
   panel.hidden=true;panelBody.removeAttribute('aria-busy');
   for(const node of nodes)node.removeAttribute('aria-current');
   $('#open-paths').setAttribute('aria-expanded','false');drawPaths(state.kind==='parcours'?state.id:null);
@@ -258,8 +258,12 @@ function enter(animated) {
   go('#exploration',{animate:false});
   window.scrollTo({top:0,behavior:'instant'});
   const r=rect();const fit=fitCamera(r.width,r.height);
+  // Start in the artwork's central red node, not in the full-map menu.
+  // Minimum camera span is 180 world units; this is a candidate visual scale.
+  stage.dataset.dive='true';
+  delete stage.dataset.orienting;
   camera={...fit,span:fit.span*1.25};paint();
-  moveTo({...fit,span:fit.span*.9},animated);
+  moveTo({cx:525,cy:568,span:180},animated);
   if(animated&&!reduced.matches)app.animate([{opacity:.15},{opacity:1}],{duration:420,easing:'ease-out'});
   if(veil){
     const passage=veil.animate([{transform:'scale(1)',opacity:1},{transform:'scale(3.2)',opacity:0}],{duration:680,easing:'cubic-bezier(.2,.6,.3,1)'});
@@ -299,6 +303,17 @@ for(const [selector,factor] of [['#zoom-in',.76],['#zoom-out',1/.76]])$(selector
 $('#pan-mode').addEventListener('click',()=>{
   panEnabled=!panEnabled;stage.dataset.pan=String(panEnabled);$('#pan-mode').setAttribute('aria-pressed',String(panEnabled));$('#pan-mode').textContent=panEnabled?'Déplacer la carte':'Défiler la page';announce(panEnabled?'Déplacement de la carte activé.':'Défilement de la page activé.');
 });
+// First deliberate movement opens the view a little and lets existing door labels emerge.
+let orientationStarted=false;
+function beginOrientation() {
+  if(stage.dataset.dive!=='true'||orientationStarted)return;
+  orientationStarted=true;
+  delete stage.dataset.dive;
+  stage.dataset.orienting='true';
+  const next={...camera,span:Math.min(camera.span*1.65,4200)};
+  moveTo(next,!reduced.matches);
+  announce('Les directions apparaissent. Déplacez-vous pour explorer.');
+}
 const pointers=new Map();let gesture=null;let dragged=false;
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 function startGesture(){
@@ -309,7 +324,7 @@ function startGesture(){
 }
 stage.addEventListener('pointerdown',event=>{
   if(!panEnabled||event.button!==0||event.target.closest('a,button'))return;
-  stopAnimation();returnView=snapshot();pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});stage.setPointerCapture(event.pointerId);dragged=false;startGesture();
+  beginOrientation();stopAnimation();returnView=snapshot();pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});stage.setPointerCapture(event.pointerId);dragged=false;startGesture();
 });
 stage.addEventListener('pointermove',event=>{
   if(!pointers.has(event.pointerId)||!gesture)return;
@@ -328,12 +343,12 @@ stage.addEventListener('pointermove',event=>{
 function release(event){if(!pointers.has(event.pointerId))return;pointers.delete(event.pointerId);startGesture();if(!pointers.size){stage.classList.remove('is-dragging');persist();if(dragged)announce('Position mémorisée pour cette session.');}}
 stage.addEventListener('pointerup',release);stage.addEventListener('pointercancel',release);
 stage.addEventListener('wheel',event=>{
-  if(!panEnabled||event.ctrlKey||event.metaKey)return;event.preventDefault();returnView=snapshot();stopAnimation();camera=zoomAt(camera,rect(),Math.exp(event.deltaY*.0015),event.clientX,event.clientY);paint();persist();
+  if(!panEnabled||event.ctrlKey||event.metaKey)return;event.preventDefault();beginOrientation();returnView=snapshot();stopAnimation();camera=zoomAt(camera,rect(),Math.exp(event.deltaY*.0015),event.clientX,event.clientY);paint();persist();
 },{passive:false});
 stage.addEventListener('keydown',event=>{
   if(event.target!==stage||event.ctrlKey||event.metaKey||event.altKey)return;
   const commands=['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','=','-','Home','0'];if(!commands.includes(event.key))return;
-  event.preventDefault();returnView=snapshot();stopAnimation();const r=rect();
+  event.preventDefault();beginOrientation();returnView=snapshot();stopAnimation();const r=rect();
   if(event.key==='Home'||event.key==='0'){fullView(false);return;}
   if(['+','=','-'].includes(event.key))camera=zoomAt(camera,r,event.key==='-'?1.25:.8,r.left+r.width/2,r.top+r.height/2);
   else {const dx=event.key==='ArrowLeft'?55:event.key==='ArrowRight'?-55:0,dy=event.key==='ArrowUp'?55:event.key==='ArrowDown'?-55:0;camera=panBy(camera,r,dx,dy);}
