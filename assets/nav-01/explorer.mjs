@@ -260,10 +260,19 @@ function enter(animated) {
   const r=rect();const fit=fitCamera(r.width,r.height);
   // Start in the artwork's central red node, not in the full-map menu.
   // Minimum camera span is 180 world units; this is a candidate visual scale.
-  stage.dataset.dive='true';
-  delete stage.dataset.orienting;
-  camera={...fit,span:fit.span*1.25};paint();
-  moveTo({cx:525,cy:568,span:180},animated);
+  // Reduced-motion and explicit still entry remain immediately navigable.
+  if (!animated || reduced.matches) {
+    orientationStarted=false;
+    delete stage.dataset.dive;
+    delete stage.dataset.orienting;
+    moveTo(fit,false);
+  } else {
+    orientationStarted=false;
+    stage.dataset.dive='true';
+    delete stage.dataset.orienting;
+    camera={...fit,span:fit.span*1.25};paint();
+    moveTo({cx:525,cy:568,span:180},true);
+  }
   if(animated&&!reduced.matches)app.animate([{opacity:.15},{opacity:1}],{duration:420,easing:'ease-out'});
   if(veil){
     const passage=veil.animate([{transform:'scale(1)',opacity:1},{transform:'scale(3.2)',opacity:0}],{duration:680,easing:'cubic-bezier(.2,.6,.3,1)'});
