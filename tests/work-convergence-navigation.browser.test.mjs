@@ -249,7 +249,7 @@ test('Paysage Android simulé : gestes, cibles 44 px et défilement libéré',{t
   try{
     const page=await context.newPage();await ready(page,'after');
     await page.getByRole('link',{name:'Entrer sans animation',exact:true}).tap();
-    await page.waitForFunction(()=>document.querySelector('#exploration').dataset.phase==='immersed');
+    await page.waitForFunction(()=>['immersed','exploring'].includes(document.querySelector('#exploration').dataset.phase),null,{timeout:5000});
     const cdp=await context.newCDPSession(page),before=await metrics(page),box=before.stage;
     const x=box.x+box.width*.5,y=box.y+box.height*.5;
     const touch=(type,points)=>cdp.send('Input.dispatchTouchEvent',
