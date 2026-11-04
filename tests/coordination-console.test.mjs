@@ -5,7 +5,7 @@ import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-import {validateSeed,summarize,parseRoute,prepareMission,filterMissions,STATE_KEYS,ALLOWED_ROLES} from '../coordination-console/model.mjs';
+import {validateSeed,summarize,parseRoute,prepareMission,filterMissions,STATE_KEYS,ALLOWED_ROLES,coordinationRows} from '../coordination-console/model.mjs';
 const seed=JSON.parse(await readFile(new URL('../coordination-console/seed-public.json',import.meta.url),'utf8'));
 
 test('données publiques, états indépendants et inconnus conservés',()=>{
@@ -23,6 +23,27 @@ test('recherche et liens profonds, sans interpolation de code',()=>{
   assert.equal(filterMissions(seed,'toutes','C03-ORC-03').length,1);assert.equal(filterMissions(seed,'toutes','inexistant-xyz').length,0);
   assert.equal(filterMissions(seed,'controles').length,8);assert.deepEqual(parseRoute('#mission/C03-JUR-03'),{view:'mission',id:'C03-JUR-03',filter:'toutes'});
   assert.equal(parseRoute('#%E0%A4%A').view,'missions');assert.equal(parseRoute('#mission/<script>').view,'missions');
+});
+test('tableau unique : PR typées, sans réception ou mission exécutée inférée',()=>{
+  const rows=coordinationRows(seed);
+  assert.equal(rows.length,seed.missions.length);
+  const arc=rows.find(m=>m.id==='C03-ARC-03');
+  assert.equal(arc.prs[0].number,162);
+  assert.equal(arc.prs[0].nature,'anteriorite');
+  assert.equal(arc.states.recue,null);
+  assert.equal(arc.status,'Avancement non attesté');
+  const orc=rows.find(m=>m.id==='C03-ORC-03');
+  assert.equal(orc.prs[0].nature,'livrable_documentaire');
+  assert.equal(orc.status,'Livrable candidat');
+  assert.equal(orc.states.validee,false);
+  const jur=rows.find(m=>m.id==='C03-JUR-03');
+  assert.equal(jur.prs.length,0);
+  assert.match(jur.blockage,/PAR-005/);
+  assert.ok(rows.every(m=>m.nextAction.length>0 && m.ateliers.length>0));
+  const invalid=structuredClone(seed);invalid.mission_prs.push({...invalid.mission_prs[0]});
+  assert.throws(()=>validateSeed(invalid),/dupliqué/);
+  const unknown=structuredClone(seed);unknown.mission_prs[0].number=999999;
+  assert.throws(()=>validateSeed(unknown),/qualifié/);
 });
 test('préparation strictement conforme au normaliseur C11 réel',()=>{
   const input={id:'DEMO-C11-LOCAL',objectif:'  Comparer les références, sans envoyer.  ',ateliers:['lectrice','mediatheque']};
