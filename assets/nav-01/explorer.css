@@ -997,3 +997,7 @@ button:disabled {
 @media(prefers-reduced-motion:reduce) {
   .stage[data-orienting="true"] .node { opacity:1; }
 }
+
+/* C06 candidate status: readable without treating an editorial stage as a visa. */
+.candidate-path-status{display:block;font-size:.75rem;font-weight:450;line-height:1.4;opacity:.9;max-width:100%;}
+.walk-badge{max-width:100%;white-space:normal;line-height:1.45;}
