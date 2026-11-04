@@ -56,3 +56,28 @@ Le lien documentaire AFF5721/ARCH-002 peut désormais être proposé avec une pr
 **Aucune consultation nécessaire à ce stade :** les décisions sont dictées par les limites documentaires. Transformer une hypothèse en certitude, ou publier une personne composite, n'est pas une option éditoriale recevable. Les choix futurs de présentation des notices peuvent attendre l'avis contradictoire de La Lectrice et les pièces nominatives.
 
 **Statut :** travail documentaire livré dans PR #170, toujours brouillon. Son dépôt GitHub n'atteste pas une lecture par La Relieuse ni La Lectrice. Aucun merge ni publication.
+
+
+## C06-BIO-01 — Vérification de clôture du 4 novembre 2026
+
+**Références contrôlées sur leurs versions actuelles** : PR #170 HEAD `dd02ce248271526251ca2ca87a06fb84db0d000e`, PR #162 HEAD `5587237fd69cf37d4922665f9db423302762d8ad`, PR #184 HEAD `223c4a7c696d1b8b04d28b24cd87633399f67b58`. La base de #184 est #161, non `main`. Lecture de `C06_ARC_01_RECONCILIATION_FINALE.md`, `C05_LEC_01_DECISION_ET_CORRECTIONS.md`, PAR-001/004/006 et `data/relations.json` sur leurs branches respectives.
+
+### État individuel vérifié
+| BIO | État de clôture candidate | Résultat et preuve encore manquante |
+|---|---|---|
+| 009 Nathalie Le Mel | **INCERTAINE SUR DATE EXACTE** | Variantes 24 août 1826 / 26 août 1827 dans notices secondaires ; acte Brest 1E73 vue 26/115 à collationner. Participation à La Marmite et Union des femmes documentable mais travail de caisse/paie non démontré sur registres. |
+| 019 Blanche Lefebvre | **BLOQUÉE** | Nom « BLANCHE LEFEVRE » dans transcription AFF5721 ; Rougerie parle de modiste ; ne pas l'assimiler à femme Lefèvre blanchisseuse ni à Victorine Gorget. Origine civile et mort non vérifiées. |
+| 021 Joséphine Dulimbert / Dulembert | **BLOQUÉE** | Graphie, identité, contribution personnelle au *Moniteur des citoyennes* et activité de Montparnasse non établies par exemplaires contemporains signés. La répétition d'une attribution secondaire ne confirme rien. |
+| 022 Anne-Marie Ménand / Marie-Louise Ménan | **INCERTAINE SUR IDENTITÉ CIVILE** | Naissance à Saint-Séglin et variantes de prénom à vérifier par original ; décès Auberive 14 novembre 1872 selon Audin, registre non vu ; condamnation et légende accusatoire de portrait ne démontrent pas le fait matériel reproché. |
+
+### Compatibilité avec la Lectrice (#184) et L'Archéologue (#162)
+- **REL-005 BIO-019→ASSO-007** : reclassement `complement_documentaire` justifié à l'échelle d'un nom présent sur une archive ; l'étiquette `controverse` faisait courir le risque d'inventer un débat sur l'identité. Le lien n'atteste pas le métier ni la mort.
+- **REL-006 ASSO-008→ASSO-007** : simple comparaison entre sociétés distinctes ; ni continuité juridique ni travail réalisé par une même personne automatiquement attesté.
+- **PAR-001** : les quatre BIO peuvent nourrir une enquête interne ; ne pas rendre BIO-019/021 accessibles en biographie publique. **PAR-004** : les statuts de La Marmite ne prouvent pas paies, heures, remboursements ni division concrète des tâches. **PAR-006** : l'étape Commune reste contextuelle et les récits féministes hétérogènes.
+- **Nuance de provenance REL-004** : `data/relations.json` sur #184 indique « ARCH-002 : métadonnées Drive seulement, corps non lu ». Cette phrase est **inexacte pour le périmètre de vérification de La Biographe du 4 novembre** : le document Drive ARCH-002 (`1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k`) a été ouvert et son corps lu. Il se présente explicitement comme l'affiche n°373 du 20 mai 1871, Musée Carnavalet AFF5721, avec les sept noms et la convocation du 21 mai. Pour le périmètre propre de La Lectrice, sa mention « non recollationnée » demeure une limitation de méthode recevable. **Proposition de formulation à #184** : « Correspondance ARCH-002 ↔ AFF5721 vérifiée par lecture du dossier Drive par La Biographe, sans collation de l'original ; provenance et concordance de la version exportée à contrôler ; séance du 21 mai non établie ». Ne pas modifier #184 sans relecture de La Lectrice.
+- **WORK-COM-06/07** : restent **OUVERTES**. Les autres objections historiques mentionnées par L'Archéologue ne sont pas closes par cette vérification biographique. Aucune licence iconographique attestée par cette passe.
+- Zout a déjà choisi dans #184 la **présentation A des sept Parcours candidats avec statut explicite**, PAR-005 bloqué. **Ne pas relancer ce choix** et ne pas convertir cette décision en visa de publication.
+
+**Verdict C06** : aucune nouvelle preuve primaire qui débloque BIO-019 ou BIO-021 ; BIO-009 et BIO-022 présentables comme sujets de recherches avec réserves, pas comme identités civiles intégralement certifiées. Une divergence de métadonnées documentaires est désormais localisée pour REL-004, et sa rectification est proposée. Pas de questionnaire : aucun nouveau choix éditorial réel indépendant des preuves. Aucun fichier de #161, #162, #184, de main ou de Wiki publié n'a été changé.
+
+**Livraison** : registre documentaire candidat dans PR #170, soumis à La Lectrice et La Relieuse ; enregistrement GitHub n'atteste pas de leur réception effective.
