@@ -68,3 +68,23 @@ Les SHA ci-dessous sont les **blobs GitHub réellement relus** sur la branche de
 3. Conserver les bifurcations géographiques **en texte complet**, y compris les objets sans géométrie, et ne débloquer publication qu'après décision de Zout.
 
 **Aucune fusion, déploiement, correction du registre #161, prise de contact, dépôt d'Issue d'activation, publication ni approbation.**
+
+---
+
+## Complément C05-TIS-01 — Consolidation territoriale du 04/11/2026
+
+**Nouvelle mission P2, exécutée en passe unique, sans modification du registre ni de la navigation.** Les HEAD de PR #161 et #173 (avant cette passe) ont été contrôlés et n'avaient pas évolué. [Complément de corrections et incertitudes](./CORRECTIONS.md#c05-tis-01--passe-unique-de-consolidation-du-04112026).
+
+**Résultat vérifié par lecture des quatre fichiers JSON de #161 :** 219 ressources, 20 objets TIS, 7 Parcours, 19 relations dont 5 territoriales ; aucun ID dupliqué, aucune référence de relation/étape absente, aucun `coordinates` non nul parmi les 20, aucune autorisation de publication de ces vingt, et un seul alias `tis-c8-velo` lié à `TIS-001-001`. Tous les vingt liens externes sont formellement HTTPS ; **aucun test HTTP exhaustif** des vingt destinations.
+
+**Corrections indispensables ordonnées** :
+1. **P1 provenance** : pour les cinq relations territoriales `WORK-REL-101/102/105/106/107`, compléter les `SourceRef` individuelles avec URLs de pièces primaires, date et origine sans perdre la référence C05. **R2** uniquement pour coopération extérieure datée Salvetat/Terre de Liens/CEN, 120 arbres plantés selon l'organisateur, effet écologique indépendamment mesuré inconnu ; **R3=0**.
+2. **P1 temporalité** : `availability:inventaire_tisseuse_lu` représente un inventaire relu et **non l'activité actuelle**. Conserver les limites historiques L'R de Rien (camion arrêté 2018), Hors-Loge (dernière trace citée 2023), Sous les Toiles (édition juillet 2026 passée) et La Glanerie (nouveaux horaires Blagnac annoncés à compter du 04/11/2026).
+3. **P0 protection** : ne pas géocoder automatiquement le Testet, les fermes, les collectifs, les territoires zapatistes ou les dossiers Entraide ; aucune fiche de lieu d'aide active ni de permanence déduite, PAR-005 toujours bloqué.
+4. **P1 navigation** : préserver les sept Parcours V2 et les trois circuits TIS comme bifurcations textuelles. Maintenir quatre portes principales et aucune duplication Carte/Encyclopédie/Médiathèque/Entraide.
+
+**Incertitudes :** conditions d'accueil et horaires réels non vérifiés sur le terrain ; surfaces 3PA contradictoires ; termes originaux du bail SCTL non revus ; droits, accessibilité et disponibilité des vingt lieux non certifiés ; source d'opérateur ≠ évaluation indépendante. Aucun avis/accord d'autre atelier ou de Zout reçu pendant ce contrôle.
+
+**Aucun questionnaire requis** : la mission présente un contrôle documentaire et des corrections sans intégration, publicité, relation extérieure ni choix territorial irréversible. Les décisions humaines restent nécessaires si une version publique, une règle de localisation, des contacts ou une politique d'annuaire sont ultérieurement envisagés.
+
+**État C05** : contrôles documentaires réalisés ; corrections proposées dans PR brouillon #173 ; intégration dans PR #161 **non réalisée**, publication **interdite**, fusion **non réalisée**. Ceci n'est ni une demande de validation implicite ni un accusé de lecture d'autres conversations.
