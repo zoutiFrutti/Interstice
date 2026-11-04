@@ -246,7 +246,7 @@ button:disabled {
   fill:none;
   stroke:#28211c;
   stroke-width:2;
-  opacity:.55;
+  opacity:.18;
   vector-effect:non-scaling-stroke;
 }
 .world .walk-line {
@@ -258,7 +258,7 @@ button:disabled {
   vector-effect:non-scaling-stroke;
 }
 .world .walk-line.dim {
-  opacity:.14;
+  opacity:.045;
 }
 .world .walk-line.active {
   stroke-width:5;
@@ -433,6 +433,7 @@ button:disabled {
   border-radius:4px;
   box-shadow:0 10px 45px #2119112b;
   padding:22px;
+  background:rgba(243,238,230,.97);
   z-index:7;
   cursor:auto;
 }
@@ -672,6 +673,8 @@ button:disabled {
   .space-note strong {
     font-size:22px;
   }
+  .space-note { background:rgba(188,180,172,.85); }
+  .node .node-label { box-shadow:none; }
   .space-note .desktop-hint {
     display:none;
   }
