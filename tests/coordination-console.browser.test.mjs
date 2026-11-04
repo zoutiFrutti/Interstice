@@ -31,7 +31,33 @@ async function ready(page,hash=''){
   page.on('pageerror',error=>evidence.errors.push(error.message));
   page.on('console',m=>{if(m.type()==='error')evidence.errors.push(m.text());});
   page.on('request',r=>{if(/^https?:/.test(r.url())&&!r.url().startsWith(base))evidence.externalRequests.push(r.url());});
-  await page.goto(base+hash);await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));
+  await page.goto(base+hash);await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));await waitForView(page,hash);
+}
+// A changed URL does not mean the subsequent hashchange render has completed.
+// Observe a heading and structure belonging to the destination before assertions.
+async function waitForView(page,hash=''){
+  await page.waitForURL(base+hash);
+  const kind=(/^#([^/?]+)/.exec(hash)||[])[1]||'missions';
+  if(kind==='mission'){
+    const id=hash.slice('#mission/'.length).split('?')[0];
+    await page.locator('.breadcrumb').getByText(id,{exact:true}).waitFor({state:'visible'});
+    await page.locator('h1.mission-detail-title').waitFor({state:'visible'});
+    await page.locator('.state-grid').waitFor({state:'visible'});
+  }else if(kind==='ateliers'){
+    await page.getByRole('heading',{name:'Les ateliers',exact:true}).waitFor({state:'visible'});
+    await page.locator('.profile').first().waitFor({state:'visible'});
+  }else if(kind==='preuves'){
+    await page.getByRole('heading',{name:'Ce qui est attesté',exact:true}).waitFor({state:'visible'});
+    await page.locator('.execution-list li').first().waitFor({state:'visible'});
+  }else if(kind==='preparer'){
+    await page.getByRole('heading',{name:'Préparer, sans envoyer',exact:true}).waitFor({state:'visible'});
+    await page.locator('#prepare-form').waitFor({state:'visible'});
+  }else{
+    await page.getByRole('heading',{name:'Ce qui circule',exact:true}).waitFor({state:'visible'});
+    await page.locator('#mission-search').waitFor({state:'visible'});
+    const filter=new URLSearchParams(hash.split('?')[1]||'').get('filtre')||'toutes';
+    await page.waitForFunction(href=>document.querySelector('.filter-bar a[aria-current="true"]')?.getAttribute('href')===href,'#missions?filtre='+filter);
+  }
 }
 async function overflow(page){const d=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));assert.ok(d.scroll<=d.width+1,JSON.stringify(d));return d;}
 async function capture(page,file,options={}){
@@ -47,19 +73,16 @@ for(const width of [320,390,768,1280])test(`console ${width}px : vues, filtres, 
   try{
     await ready(page);assert.equal(await page.locator('.mission-card').count(),8);await overflow(page);
     if([390,1280].includes(width))await capture(page,`coord-home-${width}.png`);
-    await page.getByRole('link',{name:'Contrôles',exact:true}).click();assert.equal(new URL(page.url()).hash,'#missions?filtre=controles');
-    await page.getByRole('searchbox',{name:'Chercher une mission ou un atelier'}).fill('C03-ORC-03');assert.equal(await page.locator('.mission-card').count(),1);
+    await page.getByRole('link',{name:'Contrôles',exact:true}).click();await waitForView(page,'#missions?filtre=controles');assert.equal(new URL(page.url()).hash,'#missions?filtre=controles');
+    await page.getByRole('searchbox',{name:'Chercher une mission ou un atelier'}).fill('C03-ORC-03');await page.waitForFunction(()=>document.querySelectorAll('.mission-card').length===1);assert.equal(await page.locator('.mission-card').count(),1);
     await page.locator('.mission-card[data-id="C03-ORC-03"]').click();
-    // Hash navigation schedules the render in a subsequent browser task.
-    // Keep the seven-state assertion, but observe the destination after it renders.
-    await page.waitForURL(base+'#mission/C03-ORC-03');
-    await page.locator('.state-item').first().waitFor({state:'visible'});
+    await waitForView(page,'#mission/C03-ORC-03');
     assert.equal(await page.locator('.state-item').count(),7);assert.match(await page.locator('[data-state="recue"]').innerText(),/Inconnu/);assert.match(await page.locator('[data-state="livree"]').innerText(),/Oui, déclaré/);assert.match(await page.locator('[data-state="validee"]').innerText(),/Non dans la source/);
     await overflow(page);if(width===390)await capture(page,'coord-mission-390.png');
-    const route=page.url();await page.reload();await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));assert.equal(page.url(),route);assert.equal(await page.locator('.state-item').count(),7);
-    await page.getByRole('link',{name:/02 Les ateliers|Les ateliers/,exact:false}).first().click();await page.locator('.profile').first().waitFor({state:'visible'});assert.equal(await page.locator('.profile').count(),19);assert.equal(await page.locator('.no-activity').count(),19);await overflow(page);
+    const route=page.url();await page.reload();await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));await waitForView(page,new URL(route).hash);assert.equal(page.url(),route);assert.equal(await page.locator('.state-item').count(),7);
+    await page.getByRole('link',{name:/02 Les ateliers|Les ateliers/,exact:false}).first().click();await waitForView(page,'#ateliers');assert.equal(await page.locator('.profile').count(),19);assert.equal(await page.locator('.no-activity').count(),19);await overflow(page);
     if(width===390)await capture(page,'coord-ateliers-390.png');
-    await page.getByRole('link',{name:/Les preuves/,exact:false}).first().click();assert.ok(await page.getByText('Échec technique',{exact:true}).count()>0);await overflow(page);
+    await page.getByRole('link',{name:/Les preuves/,exact:false}).first().click();await waitForView(page,'#preuves');assert.ok(await page.getByText('Échec technique',{exact:true}).count()>0);await overflow(page);
   }finally{await page.context().close();}
 });
 
@@ -69,6 +92,7 @@ test('simulation C11 : brouillon en mémoire, aucune commande active',async()=>{
     await ready(page,'#preparer');assert.equal(await page.locator('#draft-atelier option').count(),17);assert.equal(await page.getByRole('button',{name:'Déclencher une exécution',exact:true}).isEnabled(),false);
     await page.getByLabel('Identifiant de démonstration').fill('DEMO-CONSOLE-001');await page.getByLabel('Objectif du brouillon').fill('Comparer deux références publiques, sans envoyer.');
     await page.getByRole('button',{name:'Générer le brouillon local'}).click();
+    await page.locator('#draft-output:not([hidden])').waitFor({state:'visible'});
     assert.match(await page.locator('#draft-output').innerText(),/rien envoyé/);const json=JSON.parse(await page.locator('#draft-output pre').innerText());assert.equal(json.statut,'A_FAIRE');assert.equal(json.execution_ateliers,'NON_DECLENCHEE');assert.deepEqual(json.ateliers,['lectrice']);
     await overflow(page);await capture(page,'coord-preparer-390.png');
     await page.getByLabel('Identifiant de démonstration').fill('<script>');await page.getByRole('button',{name:'Générer le brouillon local'}).click();assert.match(await page.locator('#prepare-error').innerText(),/Identifiant/);
@@ -78,7 +102,7 @@ test('simulation C11 : brouillon en mémoire, aucune commande active',async()=>{
 test('Android simulé : portrait et paysage, tactile et défilement de page libre',async()=>{
   const c=await browser.newContext({...devices['Pixel 5'],viewport:{width:390,height:844},reducedMotion:'reduce'});const page=await c.newPage();
   try{
-    await ready(page);await page.locator('.mission-card[data-id="C03-JUR-03"]').tap();assert.equal(new URL(page.url()).hash,'#mission/C03-JUR-03');
+    await ready(page);await page.locator('.mission-card[data-id="C03-JUR-03"]').tap();await waitForView(page,'#mission/C03-JUR-03');assert.equal(new URL(page.url()).hash,'#mission/C03-JUR-03');
     const cdp=await c.newCDPSession(page);await page.evaluate(()=>scrollTo(0,0));
     await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:180,y:650,id:1}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:180,y:280,id:1}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
     await page.waitForFunction(()=>scrollY>0);assert.equal(await page.locator('body').evaluate(e=>getComputedStyle(e).touchAction),'auto');
@@ -90,18 +114,18 @@ test('clavier, focus visible, historique, arbre accessible et mouvement réduit'
   const page=await contextPage({viewport:{width:1280,height:900},reducedMotion:'reduce'});
   try{
     await ready(page);await page.keyboard.press('Tab');assert.equal(await page.locator('.skip').evaluate(e=>document.activeElement===e),true);await page.keyboard.press('Enter');assert.equal(await page.locator('#main').evaluate(e=>document.activeElement===e),true);
-    await page.locator('.mission-card[data-id="C03-LEC-03"]').focus();assert.equal(await page.locator('.mission-card[data-id="C03-LEC-03"]').evaluate(e=>getComputedStyle(e).outlineStyle),'solid');await page.keyboard.press('Enter');await page.waitForURL(base+'#mission/C03-LEC-03');
-    await page.goBack();await page.waitForURL(base);await page.locator('.mission-card').first().waitFor({state:'visible'});assert.equal(await page.locator('.mission-card').count(),8);
+    await page.locator('.mission-card[data-id="C03-LEC-03"]').focus();assert.equal(await page.locator('.mission-card[data-id="C03-LEC-03"]').evaluate(e=>getComputedStyle(e).outlineStyle),'solid');await page.keyboard.press('Enter');await waitForView(page,'#mission/C03-LEC-03');
+    await page.goBack();await waitForView(page);assert.equal(await page.locator('.mission-card').count(),8);
     const cdp=await page.context().newCDPSession(page);await cdp.send('Accessibility.enable');const tree=await cdp.send('Accessibility.getFullAXTree');assert.ok(tree.nodes.some(n=>n.role?.value==='navigation'));assert.ok(tree.nodes.some(n=>n.role?.value==='heading'&&n.name?.value==='Ce qui circule'));
     assert.equal(await page.evaluate(()=>document.getAnimations().length),0);await axe(page,'vue générale');
-    await page.goto(base+'#mission/C03-ORC-03');await page.waitForFunction(()=>document.querySelectorAll('.state-item').length===7);await axe(page,'détail de mission');
-    await page.goto(base+'#preparer');await page.waitForFunction(()=>document.querySelector('#prepare-form'));await axe(page,'formulaire de simulation');
+    await page.goto(base+'#mission/C03-ORC-03');await waitForView(page,'#mission/C03-ORC-03');await axe(page,'détail de mission');
+    await page.goto(base+'#preparer');await waitForView(page,'#preparer');await axe(page,'formulaire de simulation');
   }finally{await page.context().close();}
 });
 
 test('HTML sans JavaScript : profils, missions et liens sources disponibles',async()=>{
   const c=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:800}});const page=await c.newPage();
-  try{await page.goto(base);assert.equal(await page.locator('#missions li').count(),8);assert.equal(await page.locator('#ateliers li').count(),19);await page.getByRole('link',{name:/Les ateliers/}).click();assert.equal(new URL(page.url()).hash,'#ateliers');await overflow(page);await capture(page,'coord-sans-js-320.png');}finally{await c.close();}
+  try{await page.goto(base);assert.equal(await page.locator('#missions li').count(),8);assert.equal(await page.locator('#ateliers li').count(),19);await page.getByRole('link',{name:/Les ateliers/}).click();await page.waitForURL(base+'#ateliers');await page.locator('#ateliers').waitFor({state:'visible'});assert.equal(new URL(page.url()).hash,'#ateliers');await overflow(page);await capture(page,'coord-sans-js-320.png');}finally{await c.close();}
 });
 
 test('zoom navigateur natif 400 % et reflow, sans style.zoom',async()=>{
