@@ -49,25 +49,25 @@
       "id": "WORK-REL-003",
       "from_id": "ARCH-006",
       "to_id": "COL-003",
-      "type": "fait_historique_atteste",
-      "label": "Presse associée au club selon notice BnF ; ne vaut pas mandat de chaque texte",
+      "type": "complement_documentaire",
+      "label": "La BnF répertorie Le Prolétaire, journal du 11e arrondissement ; son association avec COL-003 est rapportée par une matrice de recherche, non démontrée par la notice de catalogue seule. Aucun mandat collectif de chaque article établi.",
       "source_refs": [
         "branch:coordination/cycle10/archeologue/ARCH-006.md"
       ],
       "parcours_ids": [
         "PAR-001"
       ],
-      "proof": "notice_de_catalogue",
+      "proof": "notice_de_catalogue_et_rapprochement_secondaire",
       "state": "candidate",
       "publication_authorized": false,
-      "evidence_scope": "Association documentaire rapportée ; contenu des quatre numéros non collationné."
+      "evidence_scope": "La notice BnF établit l'existence du périodique et ses numéros ; les liens institutionnels au club demandent des pièces supplémentaires."
     },
     {
       "id": "WORK-REL-004",
       "from_id": "ASSO-007",
       "to_id": "ARCH-002",
       "type": "complement_documentaire",
-      "label": "Affiche n°373 : convocation pour le 21 mai, pas preuve que la séance a eu lieu",
+      "label": "Correspondance candidate de l'archive ARCH-002 avec l'affiche n°373 Carnavalet AFF5721 : non recollationnée ; la notice atteste une convocation pour le 21 mai, pas la tenue de la réunion.",
       "source_refs": [
         "drive:ASSO-007"
       ],
@@ -75,16 +75,17 @@
         "PAR-001",
         "PAR-006"
       ],
-      "proof": "affiche_rapporte_dans_dossier",
+      "proof": "correspondance_archive_non_verifiee",
       "state": "candidate",
-      "publication_authorized": false
+      "publication_authorized": false,
+      "evidence_scope": "ARCH-002 : métadonnées Drive seulement, corps non lu. Ne pas publier ni présenter l'identification d'ID comme attestée."
     },
     {
       "id": "WORK-REL-005",
       "from_id": "BIO-019",
       "to_id": "ASSO-007",
-      "type": "controverse",
-      "label": "Attribution du nom imprimé et identités distinctes à ne pas fusionner",
+      "type": "complement_documentaire",
+      "label": "Nom imprimé sur une archive de l'Union des femmes ; identification de la personne BIO-019 non stabilisée. Une incertitude nominative n'est pas en elle-même une controverse historique.",
       "source_refs": [
         "library:C05-BIO-01_transmission_recherche_2026-11-03.md"
       ],
@@ -92,16 +93,17 @@
         "PAR-001",
         "PAR-006"
       ],
-      "proof": "identite_contestee",
+      "proof": "identification_biographique_incertaine",
       "state": "candidate",
-      "publication_authorized": false
+      "publication_authorized": false,
+      "evidence_scope": "Le nom dans l'affiche ne confirme pas les autres éléments biographiques ni la fusion d'identités."
     },
     {
       "id": "WORK-REL-006",
       "from_id": "ASSO-008",
       "to_id": "ASSO-007",
       "type": "comparaison",
-      "label": "Organisation de 1868 / organisation de 1871 : continuité biographique ne prouve pas une filiation juridique",
+      "label": "Comparaison de La Marmite (1868) et de l'Union des femmes (1871), sans supposer identité des membres, coopération ni continuité juridique.",
       "source_refs": [
         "drive:ASSO-008",
         "drive:ASSO-007"
