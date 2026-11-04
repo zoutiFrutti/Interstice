@@ -964,3 +964,36 @@ button:disabled {
     display:block;
   }
 }
+
+/* C04 entry: the official artwork remains a referenced, unmodified SVG. */
+.threshold-logo-link {
+  position:relative;
+  display:block;
+  width:min(83vw,72svh,660px);
+  max-width:100%;
+  min-height:44px;
+  text-decoration:none;
+  outline-offset:6px;
+}
+.threshold-logo-link .threshold-logo { width:100%; height:auto; }
+.threshold-enter {
+  position:absolute;
+  left:50%;top:51%;transform:translate(-50%,-50%);
+  color:var(--light);background:#151311aa;
+  padding:7px 11px;border-radius:3px;
+  font:500 11px/1.4 ui-monospace,monospace;
+  letter-spacing:.2em;text-transform:lowercase;
+  pointer-events:none;
+}
+.threshold-logo-link:hover .threshold-enter,.threshold-logo-link:focus-visible .threshold-enter { background:var(--ink); }
+/* During the first camera movement, reveal orientation labels without adding new sections. */
+.stage[data-dive="true"] .node { opacity:0;pointer-events:none; }
+.stage[data-dive="true"] .space-note { opacity:0; }
+.stage[data-dive="true"] .world .branch-line { opacity:.08; }
+.stage[data-dive="true"] .world .walk-line { opacity:0; }
+.stage[data-dive="true"] .map-controls { opacity:.8; }
+.stage[data-orienting="true"] .node { opacity:.48; }
+.stage[data-orienting="true"] .node .node-label { background:#e5ded4a6; }
+@media(prefers-reduced-motion:reduce) {
+  .stage[data-orienting="true"] .node { opacity:1; }
+}
