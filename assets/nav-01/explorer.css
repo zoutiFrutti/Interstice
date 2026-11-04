@@ -799,6 +799,33 @@ button:disabled {
   }
 }
 
+/* NAV-02-GRA P0-B: preserve a location marker while reading on small screens.
+   This is a reversible, CSS-only candidate; verify sticky behavior at 400% zoom. */
+@media(max-width:768px) {
+  .panel {
+    overflow:visible;
+  }
+  .panel .panel-crumb {
+    position:sticky;
+    top:0;
+    z-index:2;
+    margin:-18px -20px 14px;
+    padding:12px 56px 12px 20px;
+    background:var(--light);
+    border-bottom:2px solid var(--red);
+  }
+  .panel .panel-crumb::before {
+    content:"●";
+    color:var(--red);
+    padding-right:9px;
+  }
+  .panel .panel-close {
+    position:sticky;
+    top:8px;
+    z-index:3;
+    background:var(--light);
+  }
+}
 /* NAV-02-GRA: spatial reading context without changing the official artwork. */
 .panel .spatial-context {
   padding:10px 12px;
