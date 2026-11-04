@@ -123,10 +123,15 @@ function renderDoor(id) {
   const door = DOORS.find(door=>door.id===id); if (!door) return;
   showPanel(door.title,'Porte '+door.number+' / Interstice');
   panelBody.append(element('p',door.description));
-  const source = link('Consulter l’index R6 existant ↗','https://zoutifrutti.github.io/Interstice/'+door.legacy,'external');
-  source.target='_blank';source.rel='noopener noreferrer';panelBody.append(source);
-  panelBody.append(element('h3','Des chemins passent par ici'));
+  const spatial = element('p','Vous êtes dans la faille, à la porte « '+door.short+' ». Les traversées ci-dessous relient cette porte aux autres espaces.','spatial-context');
+  panelBody.append(spatial);
+  panelBody.append(element('h3','Suivre une ramification'));
   panelBody.append(pathList(PARCOURS.filter(path=>path.doors.includes(id)).map(path=>path.id)));
+  const source = link('Consulter l’index R6 existant ↗','https://zoutifrutti.github.io/Interstice/'+door.legacy,'external');
+  source.target='_blank';source.rel='noopener noreferrer';
+  const archive = element('div',undefined,'legacy-access');
+  archive.append(element('p','Accès à l’index existant'),source);
+  panelBody.append(archive);
   if (id==='entraide') panelBody.append(element('p','Les fiches de droits en manifestation restent indisponibles pendant leur revue juridique et médicale.','notice'));
   panelBody.append(returnActions());
 }
