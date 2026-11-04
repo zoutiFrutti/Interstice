@@ -50,6 +50,10 @@ for(const width of [320,390,768,1280])test(`console ${width}px : vues, filtres, 
     await page.getByRole('link',{name:'Contrôles',exact:true}).click();assert.equal(new URL(page.url()).hash,'#missions?filtre=controles');
     await page.getByRole('searchbox',{name:'Chercher une mission ou un atelier'}).fill('C03-ORC-03');assert.equal(await page.locator('.mission-card').count(),1);
     await page.locator('.mission-card[data-id="C03-ORC-03"]').click();
+    // Hash navigation schedules the render in a subsequent browser task.
+    // Keep the seven-state assertion, but observe the destination after it renders.
+    await page.waitForURL(base+'#mission/C03-ORC-03');
+    await page.locator('.state-item').first().waitFor({state:'visible'});
     assert.equal(await page.locator('.state-item').count(),7);assert.match(await page.locator('[data-state="recue"]').innerText(),/Inconnu/);assert.match(await page.locator('[data-state="livree"]').innerText(),/Oui, déclaré/);assert.match(await page.locator('[data-state="validee"]').innerText(),/Non dans la source/);
     await overflow(page);if(width===390)await capture(page,'coord-mission-390.png');
     const route=page.url();await page.reload();await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));assert.equal(page.url(),route);assert.equal(await page.locator('.state-item').count(),7);

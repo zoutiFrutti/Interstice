@@ -14,4 +14,6 @@ La suite navigateur comporte **10 scénarios écrits, à exécuter en CI** : 320
 
 Les captures et `evidence.json` seront produits dans `artifacts/coordination-console/`, avec SHA et viewport par capture. Aucun de ces scénarios n’est déclaré réussi avant lecture de la CI. Aucun téléphone physique, TalkBack, VoiceOver ou NVDA n’a été testé.
 
+Premier passage CI réel : [41854724639](https://github.com/zoutiFrutti/Interstice/actions/runs/41854724639), HEAD `3e616fd1d42c97f1744b5aadbdae388cb258e905`. Les 7 tests Node réussissent ; 6/10 scénarios navigateur réussissent. Les quatre largeurs échouent à la même assertion immédiate de comptage des sept états, avant la tâche navigateur `hashchange`. Les tests de détail par lien profond et tactile passent, et aucune erreur JavaScript n’est relevée. Correction du test : attendre l’URL et le premier état rendu, puis conserver toutes les assertions des sept états et de leurs valeurs. Nouvelle CI à exécuter, aucune réussite anticipée.
+
 L’accès privé doit être assuré par l’hébergement authentifié de plateforme. Cette démonstration ne contient ni faux écran de connexion ni mot de passe JavaScript ; son bandeau conserve le statut non opérationnel même sous un accès privé.
