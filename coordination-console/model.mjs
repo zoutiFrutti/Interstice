@@ -24,6 +24,25 @@ export function summarize(seed){
     unknownProgress:missions.filter(m=>m.states.commencee===null).length,reserves:missions.filter(m=>m.reserves.length).length,
     controlsUnattested:missions.filter(m=>m.states.controle_effectue!==true).length,notValidated:missions.filter(m=>m.states.validee!==true).length};
 }
+// Tableau de coordination, dérivé uniquement des champs source, sans réconcilier
+// abusivement réception, contrôle technique et visa éditorial.
+export function coordinationRows(seed){
+  const refs=new Map(seed.references.map(pr=>[pr.number,pr]));
+  return seed.missions.map(m=>{
+    const prs=(seed.mission_prs||[]).filter(link=>link.mission_id===m.id)
+      .map(link=>({...link,reference:refs.get(link.number)}));
+    const status=m.states.validee===true?'Validation déclarée (preuve à contrôler)':
+      m.states.livree===true?'Livrable candidat':
+      m.states.controle_effectue===true?'Contrôle déclaré':
+      m.states.commencee===true?'Travail commencé déclaré':
+      m.states.recue===true?'Réception attestée dans la source':
+      m.states.transmise===true?'Transmise dans la source':'Avancement non attesté';
+    return {id:m.id,ateliers:m.ateliers,priority:m.priority,prs,status,
+      blockage:m.reserves.join(' ; ')||'Aucun blocage renseigné',
+      nextAction:m.objective,source:m.state_provenance?.source||seed.source_registry.url,
+      states:m.states};
+  });
+}
 export function prepareMission(input){
   if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).some(k=>!['id','objectif','ateliers'].includes(k)))throw new Error('Champs non admis par cette simulation.');
   const{id,objectif,ateliers}=input;
@@ -36,6 +55,19 @@ export function validateSeed(seed){
   if(seed?.public_only!==true||seed.mode!=='DEMONSTRATION_SANS_BACKEND')throw new Error('Données publiques de démonstration requises.');
   for(const key of ['external_writes_enabled','ai_execution_enabled','issue_creation_enabled'])if(seed.controls?.[key]!==false)throw new Error('Commande externe interdite.');
   if(new Set(seed.missions.map(m=>m.id)).size!==seed.missions.length)throw new Error('Mission dupliquée.');
+  const missionIds=new Set(seed.missions.map(m=>m.id));
+  const refs=new Set(seed.references.map(p=>p.number));
+  if(!Array.isArray(seed.mission_prs))throw new Error('Rattachements PR absents.');
+  const keys=new Set();
+  for(const p of seed.mission_prs){
+    if(!missionIds.has(p.mission_id)||!refs.has(p.number)
+       ||!['livrable_documentaire','anteriorite','dependance_technique'].includes(p.nature))
+      throw new Error('Lien mission/PR non qualifié.');
+    const k=p.mission_id+':'+p.number;
+    if(keys.has(k))throw new Error('Lien mission/PR dupliqué.');
+    keys.add(k);
+  }
+
   for(const m of seed.missions){
     if(Object.keys(m.states).length!==STATE_KEYS.length||STATE_KEYS.some(k=>![true,false,null].includes(m.states[k])))throw new Error('États ternaires manquants.');
     if(m.states.recue===true&&!m.deliverables.some(p=>p.type==='accuse'))throw new Error('Réception sans accusé spécifique.');
