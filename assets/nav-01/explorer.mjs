@@ -320,7 +320,9 @@ function beginOrientation() {
   delete stage.dataset.dive;
   stage.dataset.orienting='true';
   const next={...camera,span:Math.min(camera.span*1.65,4200)};
-  moveTo(next,!reduced.matches);
+  // The pointerdown handler immediately cancels camera animations to begin a gesture.
+  // Commit the retreat synchronously so that the first movement actually reveals directions.
+  moveTo(next,false);
   announce('Les directions apparaissent. Déplacez-vous pour explorer.');
 }
 const pointers=new Map();let gesture=null;let dragged=false;
