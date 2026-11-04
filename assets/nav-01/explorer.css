@@ -798,6 +798,97 @@ button:disabled {
     transition:none!important;
   }
 }
+
+/* NAV-02-GRA: navigation cues remain distinct from the official SVG artwork. */
+.world .branch-line {
+  stroke:#494039;
+  stroke-width:1.25;
+  opacity:.25;
+  stroke-dasharray:3 9;
+}
+.node .orb {
+  box-shadow:0 0 0 4px #bcb4acbb;
+}
+.node .node-label {
+  background:#e5ded4e8;
+  box-shadow:none;
+}
+.node[aria-current="true"] .node-label,
+.node:focus-visible .node-label {
+  background:var(--light);
+  border-color:var(--ink);
+}
+.panel {
+  border-left:3px solid var(--red);
+}
+.panel .panel-crumb {
+  display:block;
+  padding-bottom:10px;
+  border-bottom:1px solid #c8b9aa;
+}
+.panel-links a {
+  border:0;
+  border-bottom:1px solid #c8b9aa;
+  border-radius:0;
+  padding-left:4px;
+  padding-right:4px;
+}
+@media(max-width:768px) {
+  .space-note {
+    max-width:130px;
+    padding:5px;
+  }
+  .space-note strong {
+    font-size:17px;
+    line-height:1.12;
+  }
+  .node {
+    width:108px;
+    gap:3px;
+  }
+  .node .node-label {
+    padding:3px 4px;
+    font-size:10px;
+  }
+  .map-controls {
+    padding:2px;
+    gap:0;
+  }
+  .map-controls button {
+    padding:5px 6px;
+  }
+  .map-controls .pan-label {
+    max-width:none;
+    font-size:10px;
+  }
+  .panel,.panel.wide {
+    border-left:3px solid var(--red);
+    padding-top:18px;
+  }
+}
+@media(max-width:390px) {
+  .map-controls {
+    display:grid;
+    grid-template-columns:44px 44px minmax(44px,1fr) 44px minmax(80px,1.2fr);
+    width:calc(100% - 24px);
+  }
+  .map-controls button {
+    min-width:44px;
+    min-height:44px;
+  }
+  .map-controls #pan-mode {
+    grid-column:1 / 4;
+    justify-self:stretch;
+  }
+  .map-controls #restore-view {
+    grid-column:4 / 6;
+    justify-self:stretch;
+  }
+  .space-note .eyebrow {
+    display:none;
+  }
+}
+
 @media print {
   .threshold,.stage,.map-controls,.top-actions,.appbar,.map-meta,.panel-close {
     display:none;
