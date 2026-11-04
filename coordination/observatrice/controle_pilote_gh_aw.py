@@ -39,6 +39,7 @@ class PilotStaticSafety(unittest.TestCase):
         self.assertRegex(self.front, r"(?m)^  bash: false$")
         self.assertRegex(self.front, r"(?m)^  cli-proxy: false$")
         self.assertIn("allowed-repos: '${{ github.repository }}'", self.front)
+        self.assertIn('min-integrity: approved', self.front)
 
     def test_pas_de_safe_output_public(self):
         self.assertRegex(self.front, r"(?m)^safe-outputs:\s*\n  report-failed-jobs: false$")
