@@ -334,8 +334,17 @@ function startGesture(){
   else gesture=null;
 }
 stage.addEventListener('pointerdown',event=>{
-  if(!panEnabled||event.button!==0||event.target.closest('a,button'))return;
-  beginOrientation();stopAnimation();returnView=snapshot();pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});stage.setPointerCapture(event.pointerId);dragged=false;startGesture();
+  if(!panEnabled||event.button!==0)return;
+  const control=event.target.closest('a,button');
+  if(control&&event.pointerType!=='touch')return;
+  // A touch starting on a spatial link can become a two-finger pinch.
+  // Preserve ordinary taps on links by capturing only free-space gestures or multi-touch.
+  if(!control||pointers.size)beginOrientation();
+  stopAnimation();returnView=snapshot();
+  if(!pointers.size)dragged=false;
+  pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});
+  if(!control||pointers.size>1)for(const id of pointers.keys())stage.setPointerCapture(id);
+  startGesture();
 });
 stage.addEventListener('pointermove',event=>{
   if(!pointers.has(event.pointerId)||!gesture)return;
