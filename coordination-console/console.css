@@ -1005,3 +1005,14 @@ footer>a {
 .profile-mark,.technical-result {
   background:var(--pale);
 }
+
+/* C05-ORC-01 : synthèse accessible, même source que les trois vues existantes. */
+.coordination-summary{margin-block:1.5rem 2rem}
+.coordination-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;border:1px solid var(--line,#c6c6c6);border-radius:0.75rem}
+.coordination-table{border-collapse:collapse;width:100%;min-width:850px;font-size:0.87rem}
+.coordination-table th,.coordination-table td{padding:0.72rem 0.8rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line,#c6c6c6);overflow-wrap:anywhere}
+.coordination-table th{font-weight:700;background:var(--surface,#f4f4f4)}
+.coordination-table tr:last-child td{border-bottom:0}
+.coordination-table td:first-child{font-weight:650;white-space:nowrap}
+.coordination-table a:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+@media(max-width:700px){.coordination-table-scroll{border-radius:0.4rem}.coordination-summary>p{max-width:66ch}}
