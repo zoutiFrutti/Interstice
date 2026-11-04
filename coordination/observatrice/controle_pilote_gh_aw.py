@@ -43,6 +43,9 @@ class PilotStaticSafety(unittest.TestCase):
 
     def test_pas_de_safe_output_public(self):
         self.assertIn("safe-outputs:\n  create-issue: false\n  report-failed-jobs: false\n  report-failure-as-issue: false", self.front)
+        for expected in ("report-incomplete: false", "report-missing-tool:", "report-missing-data:"):
+            self.assertIn(expected, self.front)
+        self.assertGreaterEqual(self.front.count("create-issue: false"), 3)
         for key in ("add-comment", "create-pull-request",
                     "push-to-pull-request-branch", "upload-assets"):
             self.assertNotRegex(self.front, rf"(?m)^  {key}:")
