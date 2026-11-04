@@ -3,7 +3,7 @@
 
 | ID | Proposition litigieuse | État | Preuve nécessaire |
 |---|---|---|---|
-| HIST-01 | BIO-009 née 24 ou 26 août 1826 ; prénom Perrine Natalie et variantes | **OUVERT** | Lecture directe naissance Brest 1E73 vue 26/115, état civil et tables, cotes datées |
+| HIST-01 | BIO-009 : 24 août 1826 (Audin et notices) vs 26 août 1827 (publication régionale) ; prénoms Perrine Natalie et graphies | **OUVERT** | Lecture directe naissance Brest 1E73 vue 26/115, état civil et tables, cotes datées |
 | HIST-02 | Fonctions de Le Mel dans comptabilité/relais de La Marmite | **OUVERT** | Registres comptables et documents de direction, signatures datées ; attribuer études secondaires |
 | HIST-03 | Société La Marmite de 1894 = société de 1868 | **NON DÉMONTRÉ** | Statuts et chaîne juridique d'enregistrement/reprise ; comparer au lieu d'assimiler |
 | HIST-04 | Préscriptions de participation = rémunérations et autogestion effective | **NON DÉMONTRÉ** | Paie, listes de travaux, voix des employées, remboursements, votes, horaires |
@@ -17,7 +17,7 @@
 | HIST-12 | BIO-022 morte à Auberive le 14 novembre 1872 ; jamais en Guyane | **ÉTUDE SECONDAIRE SOLIDE, registre non vu** | Registre d'écrou/décès à Auberive, archives Haute-Marne ; vérifier séquence de commutation |
 | HIST-13 | BIO-022 « incendiaire » | **ACCUSATION / QUALIFICATION JUDICIAIRE, PAS FAIT INDÉPENDANT** | Archives pénales, témoignages contradictoires ; inscription album hostile n'est pas preuve |
 | HIST-14 | AFF5721 signature = séance effective du 21 mai | **NON PROUVÉ** | PV mairie IVe, contexte militaire et témoignages |
-| HIST-15 | ASSO-007 → ARCH-002 identifie AFF5721 sans conflit | **À VÉRIFIER** | Lire version canonique ARCH-002 et inventaire ; C03-ARC-03 conteste le raccord |
+| HIST-15 | ASSO-007 → ARCH-002 : dossier Drive ARCH-002 consulté et identifié comme AFF5721 | **CONFIRMÉ À L'ÉCHELLE DU DOSSIER DRIVE, INTÉGRATION À CONTRÔLER** | Vérifier que la version exportée sur branche future correspond à la version Drive ; la convocation ne prouve pas la tenue de la réunion |
 | HIST-16 | 35 objections C02 sont toutes résolues par PR #161 | **FAUX EN L'ÉTAT** | Fichiers originaux complets et matrice 35 vs 30 |
 | HIST-17 | Sources iconographiques réutilisables automatiquement | **NON ÉTABLI** | Droits sur chaque numérisation, crédit et statut du cliché ; aucune image copiée |
 
