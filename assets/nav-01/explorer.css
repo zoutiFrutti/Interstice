@@ -258,7 +258,7 @@ button:disabled {
   vector-effect:non-scaling-stroke;
 }
 .world .walk-line.dim {
-  opacity:.14;
+  opacity:.045;
 }
 .world .walk-line.active {
   stroke-width:5;
@@ -433,6 +433,7 @@ button:disabled {
   border-radius:4px;
   box-shadow:0 10px 45px #2119112b;
   padding:22px;
+  background:rgba(243,238,230,.97);
   z-index:7;
   cursor:auto;
 }
@@ -798,28 +799,88 @@ button:disabled {
     transition:none!important;
   }
 }
-@media print {
-  .threshold,.stage,.map-controls,.top-actions,.appbar,.map-meta,.panel-close {
-    display:none;
-  }
-  .exploration,.panel,.directory,[data-fallback] {
-    display:block!important;
-  }
-  .panel {
-    position:static;
-    width:100%;
-    max-height:none;
-    box-shadow:none;
-    border:0;
-  }
-  body {
-    background:white;
-    color:black;
-  }
-  .directory details {
-    display:block;
-  }
-  .directory-content {
-    display:block;
-  }
+
+
+/* WORK-CONVERGENCE-01: one spatial layer, retaining NAV02 reading order and context. */
+.threshold { padding:18px 4vw; }
+.threshold-center { padding:8px 0; gap:8px; }
+.entry-portal { display:block; position:relative; border-radius:50%; text-decoration:none; }
+.threshold-logo { width:min(92vw,82svh,840px); height:auto; }
+.portal-word { position:absolute; bottom:17%; left:50%; transform:translateX(-50%); color:#f3eee6; font-size:12px; letter-spacing:.22em; text-shadow:0 1px 5px #000; padding:12px; }
+.threshold .quiet-link { font-size:11px; color:var(--muted); }
+.identity-passage { position:fixed; inset:0; background:var(--paper); z-index:25; display:grid; place-items:center; pointer-events:none; }
+.passage-symbol { position:absolute; width:min(92vw,82svh,840px); height:auto; }
+.passage-name { position:absolute; bottom:9%; font-size:clamp(20px,4vw,40px); letter-spacing:.25em; font-weight:450; }
+.appbar { position:absolute; z-index:11; left:18px; right:18px; top:12px; padding:0; min-height:44px; border:0; pointer-events:none; }
+.appbar a { pointer-events:auto; }
+.brand { font-size:12px; color:var(--light); background:#151311df; padding:0 7px; min-height:44px; }
+.brand img { width:32px; height:32px; }
+.appbar-right .candidate { display:none; }
+.appbar-right a { font-size:11px; background:var(--paper); padding:0 8px; }
+.space-title { position:absolute; top:57px; left:0; max-width:calc(100vw - 36px); background:#f3eee6ed; padding:7px 10px; border-left:2px solid var(--red); font-size:11px; letter-spacing:.03em; }
+.exploration[data-reading="false"] .space-title { background:#bcb4acdf; border-color:#74675d; }
+.stage { height:100svh; min-height:520px; }
+.world .guide-line,.world .branch-line { display:none; }
+.world .walk-line.dim { display:none; }
+.world .walk-line.active { stroke:#f3eee6; stroke-width:2; stroke-dasharray:3 8; opacity:.85; }
+.node { width:120px; max-width:34vw; min-height:44px; gap:5px; padding:9px 4px; font-size:11px; font-weight:450; }
+.node .orb { width:12px; height:12px; font-size:0; background:var(--red); border:1px solid #f3eee6; box-shadow:0 0 0 5px #a21d182e; }
+.node .node-label { background:#171310e8; color:var(--light); border:0; border-radius:0; box-shadow:none; padding:4px 7px; }
+.node[aria-current="true"] .orb,.node:focus-visible .orb { box-shadow:0 0 0 8px #f3eee6b3; transform:scale(1.15); }
+.node:focus-visible { outline-color:var(--focus); box-shadow:0 0 0 7px var(--light); }
+.manifest-node .orb { background:var(--light); }
+.step-node { width:100px; }
+.step-node .orb { width:26px; height:26px; font-size:11px; color:var(--light); background:#151311df; }
+.step-node .node-label { opacity:0; }
+.step-node:hover .node-label,.step-node:focus-visible .node-label,.step-node[aria-current="true"] .node-label { opacity:1; }
+.directions { position:absolute; inset:0; pointer-events:none; z-index:4; }
+.directions a { position:absolute; transform:translate(-50%,-50%); pointer-events:auto; color:var(--light); background:#151311d9; text-decoration:none; min-height:44px; padding:9px 8px; display:flex; align-items:center; gap:6px; max-width:36vw; font-size:11px; line-height:1.3; letter-spacing:.035em; }
+.directions a span { display:inline-block; transform:rotate(var(--bearing)); font-size:18px; }
+.directions a:hover,.directions a:focus-visible { background:var(--ink); outline-color:var(--light); }
+.space-note { left:20px; top:auto; bottom:85px; padding:4px 7px; background:#bcb4acdf; font-size:10px; max-width:180px; }
+.space-note strong { margin:0; font-size:11px; letter-spacing:0; }
+.space-note .eyebrow,.space-note .desktop-hint { display:none; }
+.top-actions { left:18px; right:auto; top:auto; bottom:22px; gap:3px; }
+.top-actions button { border:0; background:#f3eee6ed; font-size:11px; padding:8px 7px; }
+.map-controls { left:auto; right:18px; bottom:22px; padding:0; gap:0; border:0; border-radius:0; background:#f3eee6ed; display:grid; grid-template-columns:repeat(3,44px); width:auto; max-width:calc(100% - 36px); }
+.map-controls #zoom-value { position:absolute; width:1px; height:1px; clip-path:inset(50%); overflow:hidden; }
+.map-controls #back-view,.map-controls #pan-mode,.map-controls #restore-view { display:none; }
+.map-controls button { min-height:44px; min-width:44px; font-size:20px; padding:5px; }
+.exploration.tools-open .map-controls { z-index:13; bottom:78px; grid-template-columns:repeat(5,44px); background:var(--light); border:1px solid #74675d; padding:6px; }
+.exploration.tools-open #back-view,.exploration.tools-open #pan-mode,.exploration.tools-open #restore-view { display:block; font-size:12px; }
+.exploration.tools-open #pan-mode { grid-column:span 4; max-width:none; }
+.panel,.panel.wide { top:auto; bottom:82px; right:18px; width:min(360px,calc(100% - 36px)); max-height:58svh; border:0; border-left:2px solid var(--red); border-radius:0; background:#f3eee6f5; box-shadow:0 5px 25px #15131126; padding:20px; overflow:auto; }
+.panel.wide { width:min(540px,calc(100% - 36px)); }
+.panel h2 { font-size:24px; }
+.panel .panel-crumb { display:block; position:sticky; top:-20px; background:var(--light); z-index:2; padding:10px 42px 10px 0; border-bottom:1px solid #c8b9aa; }
+.panel .panel-close { position:sticky; top:0; z-index:3; background:var(--light); }
+.panel .spatial-context { padding:8px 10px; border-left:2px solid var(--red); background:#e9dfd3; font-size:12px; }
+.panel .legacy-access { margin-top:18px; padding-top:10px; border-top:1px solid #c8b9aa; }
+.panel .legacy-access p { font-size:11px; color:var(--muted); margin:0; }
+.panel-links a { border:0; border-bottom:1px solid #c8b9aa; border-radius:0; padding:8px 0; }
+.map-meta { font-size:10px; }
+@media(max-width:768px) {
+ .appbar { left:12px; right:12px; top:8px; }
+ .brand { font-size:10px; letter-spacing:.06em; }
+ .space-title { max-width:calc(100vw - 24px); top:52px; }
+ .top-actions { left:12px; bottom:18px; }
+ .map-controls { right:12px; bottom:18px; grid-template-columns:repeat(3,44px); width:auto; }
+ .map-controls #pan-mode,.map-controls #restore-view { grid-column:auto; }
+ .exploration.tools-open .map-controls #pan-mode { grid-column:span 4; }
+ .panel,.panel.wide { position:absolute; left:12px; right:12px; top:auto; bottom:78px; width:calc(100% - 24px); max-height:42svh; padding:18px; overflow:auto; border-width:0 0 0 2px; }
+ .panel .panel-crumb { top:-18px; }
+ .space-note { left:12px; bottom:76px; max-width:160px; }
+ .threshold-bottom { font-size:10px; }
 }
+@media(max-height:420px) {
+ .threshold { min-height:560px; }
+ .threshold-logo { width:min(68vw,380px); }
+ .stage { height:100svh; min-height:0; }
+ .panel,.panel.wide { position:relative; left:auto; right:auto; top:auto; bottom:auto; width:100%; max-height:none; }
+ .panel .panel-crumb { top:0; }
+ .appbar { position:absolute; }
+}
+@media(prefers-reduced-motion:reduce) { .identity-passage { display:none; } }
+@media print { .threshold,.stage,.map-controls,.top-actions,.appbar,.map-meta,.panel-close {display:none} .exploration,.panel,.directory,[data-fallback]{display:block!important} .panel{position:static;width:100%;max-height:none;box-shadow:none;border:0} body{background:white;color:black} .directory-content{display:block} }
+
+.exploration[data-reading="true"] .directions { display:none; }

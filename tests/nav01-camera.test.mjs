@@ -8,7 +8,16 @@ import {createHash} from 'node:crypto';
 import {fitCamera,project,worldPoint,zoomAt,panBy,constrain,validCamera} from '../assets/nav-01/camera.mjs';
 import {DOORS,PARCOURS,BUNDLE,PUBLIC_RESOURCES} from '../assets/nav-01/graph-data.mjs';
 import {readFragment} from '../assets/nav-01/navigation-state.mjs';
+import {NUCLEUS,diveCamera,retreat,edgeCue,stepLayout} from '../assets/nav-01/spatial.mjs';
 const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-8,`${a} ≠ ${b}`);
+for(const [width,height] of [[320,844],[390,844],[768,1024],[1280,900],[844,390]])test(`plongée 50 %, recul et directions : ${width}×${height}`,()=>{
+  const camera=diveCamera(width,height);close(2*NUCLEUS.r*width/camera.span,Math.min(width,height)*.5);
+  const back=retreat(camera);close(back.span,camera.span*1.12);
+  for(const door of DOORS){const cue=edgeCue(camera,width,height,door);assert.ok(cue.x>=0&&cue.x<=width);assert.ok(cue.y>=0&&cue.y<=height);}
+});
+test('étapes spatiales locales, uniques ; aucune ressource éditoriale ajoutée',()=>{
+  for(const path of PARCOURS){const points=stepLayout(path,DOORS);assert.equal(points.length,path.steps.length);assert.equal(new Set(points.map(p=>p.id)).size,points.length);assert.ok(points.every(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)));}
+});
 
 for(const width of [320,390,768,1280])test(`projection, pan et zoom ancré : ${width}px`,()=>{
   const rect={width,height:640,left:17,top:73};const camera=fitCamera(width,rect.height);
