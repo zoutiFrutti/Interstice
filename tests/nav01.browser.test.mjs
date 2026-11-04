@@ -77,6 +77,7 @@ for(const width of [320,390,768,1280])test(`entrée, portes, zoom, recentrage et
     await overflow(page);await page.screenshot({path:resolve(artifacts,`porte-${width}.png`),fullPage:true});
     await page.getByRole('button',{name:'Fermer le panneau'}).click();
     assert.equal(await page.locator('#panel').isVisible(),false);
+    assert.equal(await page.evaluate(()=>scrollY),0,'Fermer le lecteur ramène à l’espace');
     await page.getByRole('button',{name:'Voir tous les liens ↓'}).click();
     assert.equal(await page.locator('#directory-details').getAttribute('open'),'');
     assert.equal(await page.locator('#textual a[href^="#porte/"]').count(),4);
@@ -195,11 +196,13 @@ test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async(
     await page.locator('#panel a[href="#parcours/PAR-004"]').click();
     assert.match(await page.locator('#panel-title').innerText(),/Autogestion/);
     evidence.zoom400={chromeZoom:zoom,...await overflow(page),devicePixelRatio:await page.evaluate(()=>devicePixelRatio),method:'chrome.tabs.setZoom, profil Chromium jetable'};
-    await page.screenshot({path:resolve(artifacts,'zoom-navigateur-reel-400.png'),fullPage:true});await axe(page,'zoom navigateur réel 400 %');
+    // Full-page capture resizes the layout viewport in Chromium at native zoom.
+    // Keep the real physical viewport; verify its pixel dimensions as evidence.
+    const shot=await page.screenshot({path:resolve(artifacts,'zoom-navigateur-reel-400.png'),fullPage:false});
+    assert.equal(shot.readUInt32BE(16),1280);assert.equal(shot.readUInt32BE(20),900);
+    await axe(page,'zoom navigateur réel 400 %');
   }finally{await context.close();}
 });
-
-test('absence d’erreurs JavaScript dans les scénarios précédents',()=>assert.deepEqual(evidence.errors,[]));
 
 test('entrée animée : traversée et caméra opérationnelles, puis animation terminée',async()=>{
   const page=await testPage({viewport:{width:1280,height:900},reducedMotion:'no-preference'});
@@ -211,3 +214,5 @@ test('entrée animée : traversée et caméra opérationnelles, puis animation t
     assert.ok(numbers(await camera(page)).every(Number.isFinite));
   }finally{await page.context().close();}
 });
+
+test('absence d’erreurs JavaScript dans tous les scénarios précédents',()=>assert.deepEqual(evidence.errors,[]));

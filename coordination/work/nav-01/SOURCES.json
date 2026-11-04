@@ -157,6 +157,18 @@
       "path": "tests/r5-dev-accessibilite.browser.test.mjs",
       "ref": "2d4dbc40f14f498e07028131d59d298ac9ab4c9f",
       "sha": "9bc237ca6542581c9c0fd61609f5c3f1379f7ff1"
+    },
+    {
+      "pr": 135,
+      "path": "coordination/integration/2026-11-02_ASSEMBLAGE_GRAPHISTE_DEV_PASSE1.md",
+      "ref": "69a4d41c68f68299d2a6227f146d6852ca8b50af",
+      "sha": "fea4ff0ff97317724a8c536c9d4aaebab8bd88a2"
+    },
+    {
+      "pr": 166,
+      "path": "coordination/c03/juriste/AVIS_SECURITE_C12.md",
+      "ref": "16b5e034d5df14caf38cf1188c5f8112dc9c553c",
+      "sha": "51f474e0ce15fc3412bd5ce43e81e6da5d58ddf9"
     }
   ],
   "comparisons": [

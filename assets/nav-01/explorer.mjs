@@ -279,6 +279,7 @@ $('#close-panel').addEventListener('click',()=>{
   go('#exploration',{camera:restore,animate:false,focus:false});
   const target=lastFocusedNode?document.querySelector('.node[data-door="'+lastFocusedNode+'"]'):null;
   if(target&&!target.hidden)target.focus({preventScroll:true});else stage.focus({preventScroll:true});
+  window.scrollTo({top:app.offsetTop,behavior:'instant'});
 });
 $('#open-paths').addEventListener('click',()=>go('#traversees'));
 $('#show-textual').addEventListener('click',showTextual);
