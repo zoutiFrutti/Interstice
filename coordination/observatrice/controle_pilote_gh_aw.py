@@ -38,7 +38,7 @@ class PilotStaticSafety(unittest.TestCase):
         self.assertNotRegex(self.front, r"(?m)^\s*[\w-]+:\s*write\s*$")
         self.assertRegex(self.front, r"(?m)^  bash: false$")
         self.assertRegex(self.front, r"(?m)^  cli-proxy: false$")
-        self.assertRegex(self.front, r"(?m)^    allowed-repos: current$")
+        self.assertRegex(self.front, r"(?m)^    allowed-repos: '${{ github.repository }}'$")
 
     def test_pas_de_safe_output_public(self):
         self.assertRegex(self.front, r"(?m)^safe-outputs:\s*\n  report-failed-jobs: false$")
