@@ -356,8 +356,16 @@ function startGesture(){
   else gesture=null;
 }
 stage.addEventListener('pointerdown',event=>{
-  if(!panEnabled||event.button!==0||event.target.closest('a,button'))return;
-  beginExploration();stopAnimation();returnView=snapshot();pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});stage.setPointerCapture(event.pointerId);dragged=false;startGesture();
+  if(!pointers.size)dragged=false;
+  if(!panEnabled||event.button!==0)return;
+  const control=event.target.closest('a,button');
+  if(control&&event.pointerType!=='touch')return;
+  if(!control||pointers.size)beginExploration();
+  stopAnimation();returnView=snapshot();pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});
+  // Track a touch over a node too: a second finger must still be able to pinch.
+  // A stationary single touch keeps the native link click and its normal target.
+  if(!control||pointers.size>1)for(const id of pointers.keys())stage.setPointerCapture(id);
+  startGesture();
 });
 stage.addEventListener('pointermove',event=>{
   if(!pointers.has(event.pointerId)||!gesture)return;
@@ -368,13 +376,20 @@ stage.addEventListener('pointermove',event=>{
     const mx=(ps[0].x+ps[1].x)/2,my=(ps[0].y+ps[1].y)/2;
     camera=constrain({span,cx:gesture.anchor.x-((mx-r.left)/r.width-.5)*span,cy:gesture.anchor.y-((my-r.top)/r.height-.5)*span*r.height/r.width});dragged=true;
   }else if(gesture.kind==='pan'&&ps.length===1){
-    const dx=ps[0].x-gesture.x,dy=ps[0].y-gesture.y;if(Math.hypot(dx,dy)>5)dragged=true;
+    const dx=ps[0].x-gesture.x,dy=ps[0].y-gesture.y;
+    if(Math.hypot(dx,dy)>5){
+      if(!dragged){const before=camera.span;beginExploration();if(camera.span!==before)gesture.camera={...camera};}
+      dragged=true;stage.setPointerCapture(event.pointerId);
+    }
     camera=panBy(gesture.camera,r,dx,dy);
   }
   stage.classList.toggle('is-dragging',dragged);paint();
 });
 function release(event){if(!pointers.has(event.pointerId))return;pointers.delete(event.pointerId);startGesture();if(!pointers.size){stage.classList.remove('is-dragging');persist();if(dragged)announce('Position mémorisée pour cette session.');}}
 stage.addEventListener('pointerup',release);stage.addEventListener('pointercancel',release);
+stage.addEventListener('click',event=>{
+  if(dragged&&event.detail>0){event.preventDefault();event.stopImmediatePropagation();dragged=false;}
+},true);
 stage.addEventListener('wheel',event=>{
   if(!panEnabled||event.ctrlKey||event.metaKey)return;event.preventDefault();beginExploration();returnView=snapshot();stopAnimation();camera=zoomAt(camera,rect(),Math.exp(event.deltaY*.0015),event.clientX,event.clientY);paint();persist();
 },{passive:false});

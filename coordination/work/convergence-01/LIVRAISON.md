@@ -13,3 +13,5 @@ Le lock officiel GH-AW est livré dans PR180 via API Contents Work autorisée, b
 Contrôles locaux caméra/spatial :14/14. Contrôles console :7/7. Les suites navigateur et les captures sur le HEAD de convergence restent en cours ; leurs résultats effectifs seront ajoutés après lecture de la CI. Aucun avis artistique de Zout n’est présumé.
 
 Aperçu isolé préparé avec accès plateforme limité au seul propriétaire ; URL réelle à consigner après déploiement privé vérifié. Ni main Interstice, ni GitHub Pages, ni domaine public modifiés. Retour arrière : ne pas promouvoir ces branches ; retirer seulement la version d’aperçu via son historique si nécessaire, sans suppression d’archives.
+
+Correction concurrente d3c1cff conservée : l’entrée sans animation et le mouvement réduit ouvrent directement la vue entière, sans caméra automatique. La plongée et le recul de12% concernent le mode animé. Le pincement suit désormais aussi un doigt posé sur un nœud, sans supprimer le clic natif d’un toucher immobile.

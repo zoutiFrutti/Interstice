@@ -161,5 +161,9 @@
     "C17 retrouvé est un kit éditorial, pas un moteur",
     "Source C18 déclarative ne prouve pas réception ni exécution actuelle"
   ],
-  "public_deployment": false
+  "public_deployment": false,
+  "concurrent_update_preserved": {
+    "commit": "d3c1cff6e7b89ea5c73ac8018e41b6fdcc2a7b51",
+    "behavior": "Vue entière sans animation ou avec prefers-reduced-motion ; plongée forte réservée au mode animé"
+  }
 }

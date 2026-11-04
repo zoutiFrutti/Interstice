@@ -58,9 +58,9 @@ for(const width of [320,390,768,1280])test(`entrée, portes, zoom, recentrage et
     assert.equal(new URL(page.url()).hash,'#exploration');assert.equal(await page.evaluate(()=>scrollY),0);
     const original=numbers(await camera(page));
     await page.getByRole('button',{name:'Zoom avant',exact:true}).click();
-    assert.ok(numbers(await camera(page))[2]<original[2]);
+    const zoomed=numbers(await camera(page));assert.ok(zoomed[2]<original[2]);
     await page.getByRole('button',{name:'Vue entière',exact:true}).click();
-    const full=numbers(await camera(page));assert.ok(full[2]>original[2]);
+    const full=numbers(await camera(page));assert.ok(full[2]>zoomed[2]);
     if(width===1280){
       const box=await page.locator('#space').boundingBox();const x=box.x+box.width/2,y=box.y+box.height/2;
       const before=await camera(page);await page.mouse.move(x,y);await page.mouse.down();await page.mouse.move(x+40,y+25,{steps:4});await page.mouse.up();
@@ -201,7 +201,7 @@ test('réduction des animations : entrée et caméra immédiates',async()=>{
   try{
     await ready(page);await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
     assert.equal(await page.evaluate(()=>document.getAnimations().length),0);
-    await page.locator('.node[data-door="entraide"]').click();
+    await page.getByRole('link',{name:'Entraide',exact:true}).click();
     assert.equal(await page.evaluate(()=>document.getAnimations().length),0);await axe(page,'mobile / mouvement réduit');
   }finally{await page.context().close();}
 });

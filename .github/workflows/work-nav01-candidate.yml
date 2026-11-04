@@ -51,6 +51,15 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Responsive, simulated Android, keyboard, no-JS and real browser zoom
         run: node --test tests/nav01.browser.test.mjs
+      - name: Existing R6 contracts and browser navigation, without deployment
+        run: |
+          python3 -m unittest discover -s coordination/agents -p 'test_*.py'
+          node --test tests/r1-frontend-navigation.test.mjs tests/r2-faille-navigation.test.mjs tests/r4-relieuse-convergence.test.mjs tests/wiki-handoff-idempotency.test.mjs tests/wiki-handoff-sql-contract.test.mjs
+          python3 -m http.server 8000 --bind 127.0.0.1 > artifacts/nav01/r6-server.log 2>&1 &
+          nav_r6_pid=$!
+          trap 'kill "$nav_r6_pid" 2>/dev/null || true' EXIT
+          curl --fail --silent --retry 3 --retry-delay 1 --retry-connrefused --output /dev/null http://127.0.0.1:8000/
+          node --test tests/r6-dev02-stabilisation.browser.test.mjs
       - name: Before and after immersive convergence, spatial nodes and landscape touch
         run: node --test tests/work-convergence-navigation.browser.test.mjs
       - name: Preserve preview, screenshots and exact HEAD
