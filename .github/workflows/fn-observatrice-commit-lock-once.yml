@@ -1,0 +1,63 @@
+name: FN Observatrice - depot temporaire du lock compile
+
+on:
+  pull_request:
+    types: [synchronize]
+    paths:
+      - '.github/workflows/fn-observatrice-commit-lock-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  deposer-lock-uniquement-branche-candidate:
+    if: >-
+      github.event.pull_request.number == 180 &&
+      github.event.pull_request.user.login == github.repository_owner &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.head.ref == 'work/fn-observatrice-gh-aw-pilote-20261104'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Recuperer la branche candidate uniquement
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+          persist-credentials: true
+      - name: Verrouiller le HEAD exact de la PR
+        env:
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
+        run: test "$(git rev-parse HEAD)" = "$EXPECTED_SHA"
+      - name: Installer le compilateur officiel
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh extension install github/gh-aw
+      - name: Compiler sans moteur IA
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh aw compile fn-observatrice-pilote
+      - name: Verifier zero permission d'ecriture dans le lock
+        run: |
+          python3 - <<'PY'
+          import pathlib, re
+          p = pathlib.Path('.github/workflows/fn-observatrice-pilote.lock.yml')
+          s = p.read_text(encoding='utf-8')
+          if 'workflow_dispatch:' not in s:
+              raise SystemExit('workflow_dispatch absent')
+          if re.search(r'(?m)^\s*(?:contents|issues|pull-requests|checks|actions|statuses|packages|deployments|id-token):\s*write\s*$', s):
+              raise SystemExit('PERMISSION WRITE DETECTEE : aucun push')
+          if "FN_OBSERVATRICE_ENABLED" not in s:
+              raise SystemExit('Opt-in manquant : aucun push')
+          print('Lock compile : aucune permission write / opt-in present.')
+          PY
+      - name: Deposer uniquement le lock sur la branche de PR
+        env:
+          TARGET_REF: refs/heads/work/fn-observatrice-gh-aw-pilote-20261104
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .github/workflows/fn-observatrice-pilote.lock.yml
+          git diff --cached --quiet && exit 0
+          git commit -m 'build(gh-aw): ajouter le lock compile du pilote Observatrice'
+          git push origin "HEAD:$TARGET_REF"
