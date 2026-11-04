@@ -799,6 +799,27 @@ button:disabled {
   }
 }
 
+/* NAV-02-GRA: spatial reading context without changing the official artwork. */
+.panel .spatial-context {
+  padding:10px 12px;
+  border-left:2px solid var(--red);
+  background:#e9dfd3;
+  font-size:12px;
+  line-height:1.5;
+}
+.panel .legacy-access {
+  margin-top:20px;
+  padding-top:12px;
+  border-top:1px solid #c8b9aa;
+}
+.panel .legacy-access p {
+  margin:0 0 4px;
+  font-size:11px;
+  color:var(--muted);
+}
+.panel .legacy-access .external {
+  text-decoration:underline;
+}
 /* NAV-02-GRA: navigation cues remain distinct from the official SVG artwork. */
 .world .branch-line {
   stroke:#494039;
