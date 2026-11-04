@@ -37,13 +37,17 @@ jobs:
           const base='7344591fa7f0f4f6951ea273525039cf2cb9982a';
           git('merge-base','--is-ancestor',base,'HEAD');
           const changes=git('diff','--name-status','--diff-filter=MDRT',base,'HEAD');
-          const security=new Set(['.github/workflows/pont-relieuse-lectrice-c12.yml','coordination/agents/pont_relieuse_c12.py','coordination/agents/demande_relieuse_c11.py','coordination/agents/test_demande_relieuse_c11.py','coordination/agents/test_pont_relieuse_c12.py']);
-          const forbidden=changes.split('\n').filter(Boolean).filter(line=>!security.has(line.split('\t')[1]));
-          if(forbidden.length)throw new Error('Fichier initial modifié hors durcissement C13 : '+forbidden.join(','));
+          const {readFileSync}=await import('node:fs');
+          const manifest=JSON.parse(readFileSync('coordination/work/c07/C13_EXCEPTIONS.json','utf8'));
+          const security={...manifest.blobs,...manifest.qa_blobs};
+          const forbidden=changes.split('\n').filter(Boolean).filter(line=>{
+            const path=line.split('\t')[1];return security[path]!==git('rev-parse','HEAD:'+path);
+          });
+          if(forbidden.length)throw new Error('Fichier initial modifié hors patch exact C13 : '+forbidden.join(','));
           const count=git('ls-tree','-r','--name-only',base).split('\n').length;
           mkdirSync('artifacts/nav01',{recursive:true});
-          writeFileSync('artifacts/nav01/preservation.json',JSON.stringify({base,head:git('rev-parse','HEAD'),originals:count,unchanged:count},null,2));
-          console.log('Préservation : '+count+'/'+count+' fichiers, main ancêtre du HEAD.');
+          writeFileSync('artifacts/nav01/preservation.json',JSON.stringify({base,head:git('rev-parse','HEAD'),originals:count,unchanged:count-changes.split("\n").filter(Boolean).length,reviewed_exceptions:changes.split("\n").filter(Boolean)},null,2));
+          console.log('Préservation : '+count+' fichiers contrôlés ; seuls les blobs exacts du durcissement C13 et de son contrôle QA sont admis.');
           JS
       - name: Build allow-listed static preview without deploying
         run: node scripts/build-nav-preview.mjs

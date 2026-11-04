@@ -16,11 +16,13 @@ for parent in (main, r6):
 base = git("merge-base", main, r6)
 paths = git("diff", "--name-only", base, main).splitlines()
 records = []
+manifest = json.loads(Path("coordination/work/c07/C13_EXCEPTIONS.json").read_text()) if Path("coordination/work/c07/C13_EXCEPTIONS.json").exists() else {}
+exceptions = {**manifest.get("blobs", {}), **manifest.get("qa_blobs", {})}
 for path in paths:
     before = git("rev-parse", main + ":" + path)
     after = git("rev-parse", "HEAD:" + path)
-    assert before == after, "main file changed: " + path
-    records.append({"path": path, "blob_sha": before, "preserved": True})
+    assert before == after or exceptions.get(path) == after, "main file changed outside exact C13 patch: " + path
+    records.append({"path": path, "blob_sha": before, "preserved": before == after, "security_patch_c13": before != after})
 commits = git("rev-list", r6 + ".." + main).splitlines()
 summary = {"head": git("rev-parse", "HEAD"), "main": main, "r6": r6, "common_base": base,
            "preserved_main_commits": commits, "preserved_main_files": records}

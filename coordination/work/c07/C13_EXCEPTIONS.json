@@ -1,0 +1,15 @@
+{
+  "source_pr": 114,
+  "source_sha": "f7811d3875d2fd39b7b37226d40ae9fb22c66a56",
+  "blobs": {
+    ".github/workflows/pont-relieuse-lectrice-c12.yml": "47678fc2d5942aca5f795176ccdbed794111873a",
+    "coordination/agents/pont_relieuse_c12.py": "4945f3f5d2c570a486083f305c5829bd68be5707",
+    "coordination/agents/demande_relieuse_c11.py": "2f6e57bae431a2fb5f4dc41c336891a2260aed66",
+    "coordination/agents/test_demande_relieuse_c11.py": "4752fce0dd75d23ef333fded4a0013c35e96c5d2",
+    "coordination/agents/test_pont_relieuse_c12.py": "53cdf24a759ae9786fbbc07e7dc29ceb12bc2c69"
+  },
+  "qa_blobs": {
+    "scripts/r6-preservation-check.py": "94df9cb405d98e7c6f555379e015b7f7634f711f"
+  },
+  "qa_reason": "Adapter le contrôle historique à l’intégration explicite C13; les fichiers du site et les logos restent strictement inchangés."
+}

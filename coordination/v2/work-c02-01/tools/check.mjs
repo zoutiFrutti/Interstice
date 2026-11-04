@@ -10,12 +10,15 @@ const bundle = loadBundle();
 const contract = validateBundle(bundle);
 const preservation = JSON.parse(readFileSync(new URL('../data/main-preservation.json', import.meta.url)));
 const changed = [];
+const securityPath=resolve(root,'coordination/work/c07/C13_EXCEPTIONS.json');
+const manifest=existsSync(securityPath)?JSON.parse(readFileSync(securityPath,'utf8')):{};
+const security={...manifest.blobs,...manifest.qa_blobs};
 for (const blob of preservation.blobs) {
   const file = resolve(root, blob.path);
   if (!existsSync(file)) { changed.push(blob.path); continue; }
   const bytes = readFileSync(file);
   const hash = createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
-  if (hash !== blob.sha) changed.push(blob.path);
+  if (hash !== blob.sha && security[blob.path] !== hash) changed.push(blob.path);
 }
 const idsOf = text => new Set([...text.matchAll(/\bid\s*=\s*["']([^"']+)["']/g)].map(match => match[1]));
 const historicalFailures = [];
@@ -40,6 +43,6 @@ for (const path of pages) {
     else if (anchor && target.endsWith('.html') && !idsOf(readFileSync(target, 'utf8')).has(anchor)) preexistingBrokenLinks.push({from: path, href, reason: 'ancre_absente'});
   }
 }
-const result = {base_commit: preservation.base_commit,contract,preservation:{blobs:preservation.blobs.length,changed},historical_routes:{checked:bundle.navigation.historical_routes.length,failures:historicalFailures},source_paths:{unresolved:unresolvedSources},internal_link_inventory:{pages:pages.length,preexisting_broken_links:preexistingBrokenLinks},limits:['Liens externes non tous ouverts','Aucun visa documentaire ou juridique produit par ce contrôle','Aucun test matériel de lecteur d’écran ou tactile V2']};
+const result = {base_commit: preservation.base_commit,contract,preservation:{blobs:preservation.blobs.length,changed,security_exceptions:security},historical_routes:{checked:bundle.navigation.historical_routes.length,failures:historicalFailures},source_paths:{unresolved:unresolvedSources},internal_link_inventory:{pages:pages.length,preexisting_broken_links:preexistingBrokenLinks},limits:['Liens externes non tous ouverts','Aucun visa documentaire ou juridique produit par ce contrôle','Aucun test matériel de lecteur d’écran ou tactile V2']};
 console.log(JSON.stringify(result,null,2));
 if (changed.length || historicalFailures.length || unresolvedSources.length) process.exitCode = 1;
