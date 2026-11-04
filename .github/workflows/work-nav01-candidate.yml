@@ -37,7 +37,7 @@ jobs:
           const base='7344591fa7f0f4f6951ea273525039cf2cb9982a';
           git('merge-base','--is-ancestor',base,'HEAD');
           const changes=git('diff','--name-status','--diff-filter=MDRT',base,'HEAD');
-          const security=new Set(['.github/workflows/pont-relieuse-lectrice-c12.yml','coordination/agents/pont_relieuse_c12.py','coordination/agents/demande_relieuse_c11.py','coordination/agents/test_demande_relieuse_c11.py']);
+          const security=new Set(['.github/workflows/pont-relieuse-lectrice-c12.yml','coordination/agents/pont_relieuse_c12.py','coordination/agents/demande_relieuse_c11.py','coordination/agents/test_demande_relieuse_c11.py','coordination/agents/test_pont_relieuse_c12.py']);
           const forbidden=changes.split('\n').filter(Boolean).filter(line=>!security.has(line.split('\t')[1]));
           if(forbidden.length)throw new Error('Fichier initial modifié hors durcissement C13 : '+forbidden.join(','));
           const count=git('ls-tree','-r','--name-only',base).split('\n').length;
