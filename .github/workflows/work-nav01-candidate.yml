@@ -6,6 +6,7 @@ on:
       - 'assets/nav-01/**'
       - 'scripts/build-nav-preview.mjs'
       - 'tests/nav01*'
+      - 'tests/work-convergence-navigation.browser.test.mjs'
       - 'tests/nav01-zoom-extension/**'
       - 'coordination/work/nav-01/**'
       - '.github/workflows/work-nav01-candidate.yml'
@@ -50,6 +51,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Responsive, simulated Android, keyboard, no-JS and real browser zoom
         run: node --test tests/nav01.browser.test.mjs
+      - name: Before and after immersive convergence, spatial nodes and landscape touch
+        run: node --test tests/work-convergence-navigation.browser.test.mjs
       - name: Preserve preview, screenshots and exact HEAD
         if: always()
         run: |

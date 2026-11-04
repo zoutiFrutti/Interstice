@@ -97,6 +97,7 @@ test('historique, bifurcations, liens profonds, restauration après rechargement
     assert.ok(await page.locator('#panel a').filter({hasText:/Continuer|Bifurquer/}).count()>0);
     const route=page.url();await page.reload();await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));
     assert.equal(page.url(),route);assert.match(await page.locator('#panel-body').innerText(),/encore en relecture/);
+    await page.getByRole('button',{name:'Repères',exact:true}).click();
     await page.getByRole('button',{name:'Revenir à la vue précédente',exact:true}).click();
     await page.waitForURL(base+'#parcours/PAR-001');
     await page.goBack();await page.waitForURL(base+'#porte/encyclopedie');
@@ -144,7 +145,7 @@ test('les sept traversées relient les portes et gardent leurs retours',async()=
     const titles=['Commune de Paris','Révolution sociale espagnole','Écologie sociale','Autogestion','Droits en manifestation','Féminismes et luttes LGBTQIA+','Zapatisme'];
     for(let index=0;index<titles.length;index++){
       const id='PAR-'+String(index+1).padStart(3,'0');
-      await page.getByRole('button',{name:'Les traversées',exact:true}).click();
+      await page.getByRole('button',{name:'Traversées',exact:true}).click();
       await page.locator('#panel a[href="#parcours/'+id+'"]').click();
       assert.equal(await page.locator('#panel-title').innerText(),titles[index]);
       assert.equal(await page.locator('.walk-line.active').count(),1);
@@ -175,6 +176,7 @@ test('Android simulé : glissement, pincement à deux doigts et défilement alte
     await page.getByRole('button',{name:'Vue entière',exact:true}).click();
     await page.locator('.node[data-door="carte"]').tap();assert.match(await page.locator('#panel-title').innerText(),/Carte/);
     await page.getByRole('button',{name:'Fermer le panneau'}).tap();
+    await page.getByRole('button',{name:'Repères',exact:true}).tap();
     await page.getByRole('button',{name:'Déplacer la carte',exact:true}).tap();assert.equal(await page.locator('#pan-mode').getAttribute('aria-pressed'),'false');
     assert.equal(await page.locator('#space').evaluate(e=>getComputedStyle(e).touchAction),'pan-y');
     await page.screenshot({path:resolve(artifacts,'android-simulation.png'),fullPage:true});await overflow(page);
@@ -216,7 +218,7 @@ test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async(
     },base);
     assert.ok(Math.abs(zoom-4)<1e-10);await page.waitForFunction(()=>innerWidth<=330);
     assert.equal(await page.evaluate(()=>document.documentElement.style.zoom),'');
-    await page.getByRole('button',{name:'Les traversées',exact:true}).click();
+    await page.getByRole('button',{name:'Traversées',exact:true}).click();
     await page.locator('#panel a[href="#parcours/PAR-004"]').click();
     assert.match(await page.locator('#panel-title').innerText(),/Autogestion/);
     evidence.zoom400={chromeZoom:zoom,...await overflow(page),devicePixelRatio:await page.evaluate(()=>devicePixelRatio),method:'chrome.tabs.setZoom, profil Chromium jetable'};
@@ -250,7 +252,7 @@ test('entrée animée : traversée et caméra opérationnelles, puis animation t
   const page=await testPage({viewport:{width:1280,height:900},reducedMotion:'no-preference'});
   try{
     await ready(page);await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
-    await page.waitForFunction(()=>document.getAnimations().length===0);
+    await page.waitForFunction(()=>document.querySelector('#exploration').dataset.phase==='immersed');
     assert.equal(await page.locator('#entree').isVisible(),false);
     assert.equal(await page.locator('#space').isVisible(),true);assert.equal(await page.evaluate(()=>scrollY),0);
     assert.ok(numbers(await camera(page)).every(Number.isFinite));

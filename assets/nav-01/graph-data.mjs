@@ -4,8 +4,8 @@ export const DOORS = [
     "id": "encyclopedie",
     "title": "Encyclopédie des communs",
     "short": "Encyclopédie",
-    "x": 160,
-    "y": 190,
+    "x": 388,
+    "y": 305,
     "number": "01",
     "legacy": "wiki.html",
     "description": "Des histoires, des idées et des pratiques à mettre en relation."
@@ -14,8 +14,8 @@ export const DOORS = [
     "id": "mediatheque",
     "title": "Médiathèque des communs",
     "short": "Médiathèque",
-    "x": 850,
-    "y": 240,
+    "x": 749,
+    "y": 392,
     "number": "02",
     "legacy": "bibliotheque.html",
     "description": "Des textes, des œuvres et des sources pour prolonger le chemin."
@@ -24,8 +24,8 @@ export const DOORS = [
     "id": "carte",
     "title": "Carte des communs",
     "short": "Carte des communs",
-    "x": 150,
-    "y": 765,
+    "x": 350,
+    "y": 677,
     "number": "03",
     "legacy": "atlas.html",
     "description": "Des territoires et des expériences à situer, avec leurs contextes."
@@ -34,8 +34,8 @@ export const DOORS = [
     "id": "entraide",
     "title": "Entraide",
     "short": "Entraide",
-    "x": 850,
-    "y": 785,
+    "x": 693,
+    "y": 641,
     "number": "04",
     "legacy": "parcours.html#entraide",
     "description": "Des ressources pour faire ensemble. Les fiches pratiques en relecture restent fermées."

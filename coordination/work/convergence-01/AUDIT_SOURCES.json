@@ -1,0 +1,165 @@
+{
+  "mission": "WORK-CONVERGENCE-01",
+  "main": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+  "initial_refs": [
+    {
+      "pr": 114,
+      "head": "f7811d3875d2fd39b7b37226d40ae9fb22c66a56",
+      "branch": "feature/c13-orchestratrice-guardrails-20261102",
+      "base": "c613d9f896fe94144264f6e78b7ac07893a75c67",
+      "status": "diverged",
+      "ahead": 9,
+      "behind": 340,
+      "common_ancestor": "c613d9f896fe94144264f6e78b7ac07893a75c67"
+    },
+    {
+      "pr": 115,
+      "head": "e139a1286c361b85aacd62413475f26878595911",
+      "branch": "feature/c14-orchestratrice-moteur-missions-20261102",
+      "base": "c613d9f896fe94144264f6e78b7ac07893a75c67",
+      "status": "diverged",
+      "ahead": 17,
+      "behind": 340,
+      "common_ancestor": "c613d9f896fe94144264f6e78b7ac07893a75c67"
+    },
+    {
+      "pr": 132,
+      "head": "57a509257314d44cb15faf842395a21023e43335",
+      "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+      "base": "c613d9f896fe94144264f6e78b7ac07893a75c67",
+      "status": "diverged",
+      "ahead": 26,
+      "behind": 340,
+      "common_ancestor": "c613d9f896fe94144264f6e78b7ac07893a75c67"
+    },
+    {
+      "pr": 135,
+      "head": "69a4d41c68f68299d2a6227f146d6852ca8b50af",
+      "branch": "integration/r2-assemblage-graphiste-developpeuse-20261102",
+      "base": "f5b0e313f4a46af560f2674ddebdade2d3a33803",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 106,
+      "common_ancestor": "69a4d41c68f68299d2a6227f146d6852ca8b50af"
+    },
+    {
+      "pr": 137,
+      "head": "72c1edcda7336a893ab2b5d1485b3f53cc377366",
+      "branch": "design/identite-faille-interstice-zoom-20261102",
+      "base": "d580b3f8dd13507964c9c397031aa87899c2bbec",
+      "status": "diverged",
+      "ahead": 24,
+      "behind": 90,
+      "common_ancestor": "d6889d764b24d081692db8c9e3caf785f291ced3"
+    },
+    {
+      "pr": 138,
+      "head": "888015794b3ddbf4dddc1b43d2ba9af493971d09",
+      "branch": "integration/r3-identite-navigation-immersive-candidate-20261102",
+      "base": "f5b0e313f4a46af560f2674ddebdade2d3a33803",
+      "status": "diverged",
+      "ahead": 5,
+      "behind": 86,
+      "common_ancestor": "256bf93379b3882e32827cbda706e2ceeaf63749"
+    },
+    {
+      "pr": 141,
+      "head": "9f733122c7196622d31e7996d1d0b4eea987a14d",
+      "branch": "integration/r4-convergence-relieuse-20261102",
+      "base": "f5b0e313f4a46af560f2674ddebdade2d3a33803",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 43,
+      "common_ancestor": "9f733122c7196622d31e7996d1d0b4eea987a14d"
+    },
+    {
+      "pr": 161,
+      "head": "0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6",
+      "branch": "work/c02-v2-reconciliation-20261103",
+      "base": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "status": "ahead",
+      "ahead": 2,
+      "behind": 0,
+      "common_ancestor": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    },
+    {
+      "pr": 174,
+      "head": "01811690ae5dbd8bef4db2100395feea77a55431",
+      "branch": "work/nav-immersive-convergence-01",
+      "base": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "status": "ahead",
+      "ahead": 9,
+      "behind": 0,
+      "common_ancestor": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    },
+    {
+      "pr": 176,
+      "head": "fd879d63d4964d527632c364c2f124cb5dc3af41",
+      "branch": "atelier/nav02-gra-revue-artistique-20261104",
+      "base": "01811690ae5dbd8bef4db2100395feea77a55431",
+      "status": "ahead",
+      "ahead": 18,
+      "behind": 0,
+      "common_ancestor": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    },
+    {
+      "pr": 179,
+      "head": "bb1d4e3e5a5e113867edb5482a2b6f833f897517",
+      "branch": "feature/nav02-dev-visual-localized-20261104",
+      "base": "01811690ae5dbd8bef4db2100395feea77a55431",
+      "status": "ahead",
+      "ahead": 10,
+      "behind": 0,
+      "common_ancestor": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    },
+    {
+      "pr": 180,
+      "head": "6db16cca56e4202cbc9ae22386b161a0f2b7bffd",
+      "branch": "work/fn-observatrice-gh-aw-pilote-20261104",
+      "base": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "status": "ahead",
+      "ahead": 19,
+      "behind": 0,
+      "common_ancestor": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    },
+    {
+      "pr": 181,
+      "head": "38a69c4f1f2253bbd3f161578918d1018486ccf3",
+      "branch": "feature/c04-dev01-nav-reconciliation-20261104",
+      "base": "01811690ae5dbd8bef4db2100395feea77a55431",
+      "status": "ahead",
+      "ahead": 18,
+      "behind": 0,
+      "common_ancestor": "7344591fa7f0f4f6951ea273525039cf2cb9982a"
+    }
+  ],
+  "frontend_base": {
+    "pr": 181,
+    "head": "38a69c4f1f2253bbd3f161578918d1018486ccf3",
+    "inherits": 174
+  },
+  "new_coordination": {
+    "pr": 183,
+    "branch": "work/coordination-console-demo-01",
+    "public_data_only": true
+  },
+  "ghaw": {
+    "pr": 180,
+    "head_after_delivery": "b01ad5a27cac4ff3b3d204ec73f92fc9c68808ac",
+    "official_lock_blob": "ca2293cda641e9513cd529fe9ebefba670eb2ef4",
+    "activated": false
+  },
+  "sources_read": [
+    "PR176/181 assets/nav-01/explorer.css et explorer.mjs",
+    "PR176 coordination/c04/graphiste/C04-GRA-01_CONVERGENCE.md",
+    "PR174 modules HTML/caméra/registre/navigation/tests/build",
+    "PR180 source GH-AW, lock officiel, précontrôles et compilation",
+    "Contrats C10-C18 et registreC03, détails dans sources-coordination.json"
+  ],
+  "limits": [
+    "C16 non retrouvé dans le périmètre examiné, ne pas inventer de contrat",
+    "C17 retrouvé est un kit éditorial, pas un moteur",
+    "Source C18 déclarative ne prouve pas réception ni exécution actuelle"
+  ],
+  "public_deployment": false
+}
