@@ -1,6 +1,8 @@
 import {DOORS, PARCOURS, BUNDLE, DOCUMENTS, PUBLIC_RESOURCES} from './graph-data.mjs';
 import {readFragment} from './navigation-state.mjs';
 import {fitCamera, constrain, viewBox, project, worldPoint, zoomAt, panBy, validCamera} from './camera.mjs';
+import {parcoursStatus} from './parcours-status.mjs';
+import {candidateResourceIds} from './step-resources.mjs';
 import {diveCamera,retreat,edgeCue,stepLayout} from './spatial.mjs';
 
 const $ = selector => document.querySelector(selector);
@@ -105,6 +107,7 @@ function focusPath(id,step,animate){
   moveTo({cx,cy,span},animate);
 }
 function fullView(animate = true) {
+  beginExploration();
   returnView = snapshot();
   const r = rect(); moveTo(fitCamera(r.width,r.height),animate);
   announce('Vue entière. Les quatre portes sont accessibles.');
@@ -130,7 +133,7 @@ function pathList(ids = PARCOURS.map(path => path.id)) {
   const list = element('div',undefined,'panel-links');
   for (const path of PARCOURS.filter(path => ids.includes(path.id))) {
     const a = link('','#parcours/'+path.id);
-    a.append(element('span',path.id.slice(4),'path-number'),element('span',path.title)); list.append(a);
+    a.append(element('span',path.id.slice(4),'path-number'),element('span',path.title),element('small',parcoursStatus(path),'path-status')); list.append(a);
   }
   return list;
 }
@@ -167,7 +170,7 @@ function renderPath(id, stepId = null) {
   const path=PARCOURS.find(path=>path.id===id);if(!path)return;
   const step=stepId ? path.steps.find(step=>step.id===stepId) : null;
   showPanel(step?step.title:path.title,(step?path.title+' / ':'Traversée / ')+path.id);
-  panelBody.append(element('span','Chemin candidat','walk-badge'),element('p',path.question));
+  panelBody.append(element('span',parcoursStatus(path),'walk-badge'),element('p',path.question));
   const crossing=element('div',undefined,'panel-actions');
   for(const doorId of path.doors){const d=DOORS.find(door=>door.id===doorId);crossing.append(link(d.short,'#porte/'+d.id));}
   panelBody.append(crossing);
@@ -175,6 +178,7 @@ function renderPath(id, stepId = null) {
     panelBody.append(element('p','Les fiches pratiques restent fermées. Leur revue juridique et médicale est nécessaire avant toute diffusion.','notice'),returnActions());return;
   }
   if(step){
+    panelBody.append(element('p',String(candidateResourceIds(path.id,step.id).length)+' références candidates · accès fermé','candidate-count'));
     panelBody.append(element('p','Cette étape décrit une entrée de lecture. Les ressources éditoriales associées sont encore en relecture et restent fermées.','notice'));
     const actions=element('div',undefined,'panel-actions');
     for(const next of step.next_step_ids){const target=path.steps.find(s=>s.id===next);actions.append(link((step.next_step_ids.length>1?'Bifurquer : ':'Continuer : ')+target.title,'#parcours/'+id+'/'+next));}
@@ -290,6 +294,7 @@ function clearPassage(){
 }
 function beginExploration(){
   clearPassage();
+  app.dataset.orienting='false';
   if(firstExploration){stopAnimation();if(!reduced.matches)camera=retreat(camera);firstExploration=false;paint();}
   app.dataset.phase='exploring';
 }
@@ -325,7 +330,7 @@ document.addEventListener('click',event=>{
   if(a.dataset.document){event.preventDefault();go('#document/'+a.dataset.document);return;}
   const href=a.getAttribute('href');
   if(href==='#textual'){event.preventDefault();showTextual();return;}
-  if(href?.startsWith('#')){event.preventDefault();go(href);}
+  if(href?.startsWith('#')){event.preventDefault();beginExploration();go(href);}
 });
 $('#close-panel').addEventListener('click',()=>{
   const restore=returnView?.camera||camera;

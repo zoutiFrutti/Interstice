@@ -884,3 +884,5 @@ button:disabled {
 @media print { .threshold,.stage,.map-controls,.top-actions,.appbar,.map-meta,.panel-close {display:none} .exploration,.panel,.directory,[data-fallback]{display:block!important} .panel{position:static;width:100%;max-height:none;box-shadow:none;border:0} body{background:white;color:black} .directory-content{display:block} }
 
 .exploration[data-reading="true"] .directions { display:none; }
+
+.path-status{display:block;color:var(--muted,#c8c2bc);font-size:.76rem;line-height:1.4}.candidate-count{font-size:.85rem}

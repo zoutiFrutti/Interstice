@@ -1,0 +1,44 @@
+name: C14 Relieuse vers moteur de missions
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: relieuse-c14-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  mission-publique:
+    if: startsWith(github.event.issue.title, '[RELIEUSE-C14]') && github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Vérifications locales, sans IA
+        run: |
+          python3 -m unittest discover -s coordination/agents -p 'test_orchestrateur_c14.py' -v
+          python3 -m unittest discover -s coordination/agents -p 'test_pont_relieuse_c14.py' -v
+      - name: Préparer la réponse
+        id: reponse
+        run: python3 coordination/agents/pont_relieuse_c14.py
+      - name: Publier un accusé sur l'Issue, sans doublon
+        if: steps.reponse.outputs.should_comment == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          previous="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --paginate \
+            --jq '.[] | select(.user.login == "github-actions[bot]") | .body')"
+          if grep -Fq '<!-- C14-ORCHESTRATRICE-RESULTAT -->' <<< "$previous"; then
+            echo 'Un résultat C14 est déjà présent : pas de doublon.'
+          else
+            gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" \
+              --body-file commentaire-orchestratrice-c14.md
+          fi

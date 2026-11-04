@@ -1,0 +1,1169 @@
+{
+  "schema": "interstice.coordination.public-demo.v1",
+  "mode": "DEMONSTRATION_SANS_BACKEND",
+  "public_only": true,
+  "observed_on": "2026-11-04",
+  "source_snapshot": "2026-11-03",
+  "freshness_note": "Instantané public et daté ; aucune synchronisation automatique ni activité d’atelier déduite.",
+  "controls": {
+    "external_writes_enabled": false,
+    "ai_execution_enabled": false,
+    "issue_creation_enabled": false,
+    "preparation": "simulation_locale_uniquement"
+  },
+  "source_registry": {
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+    "commit": "57a509257314d44cb15faf842395a21023e43335",
+    "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+    "schema": "c03.collectif.v1"
+  },
+  "status_fields": [
+    "preparee",
+    "transmise",
+    "recue",
+    "commencee",
+    "livree",
+    "controle_effectue",
+    "validee"
+  ],
+  "status_labels": {
+    "preparee": "Préparée",
+    "transmise": "Transmise",
+    "recue": "Reçue",
+    "commencee": "Commencée",
+    "livree": "Livrée",
+    "controle_effectue": "Contrôlée",
+    "validee": "Validée"
+  },
+  "status_legend": {
+    "true": "Oui dans la source déclarative ; examiner sa preuve",
+    "false": "Non dans la source",
+    "null": "Inconnu / non attesté"
+  },
+  "status_order_is_not_progression": true,
+  "ateliers": [
+    {
+      "id": "relieuse",
+      "name": "La Relieuse",
+      "domain": "Coordination, rapprochement des preuves et arbitrages à soumettre à Zout.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": []
+    },
+    {
+      "id": "orchestratrice",
+      "name": "L’Orchestratrice",
+      "domain": "Contrats d’exécution et orchestration technique candidate.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/02_CONTRAT_RAPPORTS.md",
+      "registered_missions": [
+        "C03-ORC-03"
+      ]
+    },
+    {
+      "id": "lectrice",
+      "name": "La Lectrice",
+      "domain": "Contrôle indépendant des arguments, sources et rédaction.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-LEC-03"
+      ]
+    },
+    {
+      "id": "anarchitecte",
+      "name": "L’Anarchitecte",
+      "domain": "Architecture documentaire, alias, identifiants et relations.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-ANA-03"
+      ]
+    },
+    {
+      "id": "penseuse",
+      "name": "La Penseuse",
+      "domain": "Concepts, philosophie et cohérence des textes.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-PEN-03"
+      ]
+    },
+    {
+      "id": "developpeuse",
+      "name": "La Développeuse",
+      "domain": "Code, tests, sécurité, retour arrière et intégration technique.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-TECH-02"
+      ]
+    },
+    {
+      "id": "graphiste",
+      "name": "La Graphiste",
+      "domain": "Expérience visuelle, accessibilité et représentation prudente des données.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-TECH-02"
+      ]
+    },
+    {
+      "id": "juriste",
+      "name": "La Juriste",
+      "domain": "Droit, risques, droits médias et autorisations.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-JUR-03"
+      ]
+    },
+    {
+      "id": "archeologue",
+      "name": "L’Archéologue",
+      "domain": "Provenance, archives originales et confrontation des pièces.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-ARC-03"
+      ]
+    },
+    {
+      "id": "anarchiviste-communs",
+      "name": "L’Anarchiviste des communs",
+      "domain": "Histoire des communs, contextes et continuités.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-HIST-04"
+      ]
+    },
+    {
+      "id": "biographe",
+      "name": "La Biographe",
+      "domain": "Identités, trajectoires et chronologies des personnes.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-HIST-04"
+      ]
+    },
+    {
+      "id": "anarchiviste-catalan",
+      "name": "L’Anarchiviste catalan",
+      "domain": "Histoire et sources locales de Catalogne et d’Espagne.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-CAT-03"
+      ]
+    },
+    {
+      "id": "anarchiviste-zapatiste",
+      "name": "L’Anarchiviste zapatiste",
+      "domain": "Histoire, traductions et sources zapatistes.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-ZAP-03"
+      ]
+    },
+    {
+      "id": "mediatheque",
+      "name": "La Médiathèque",
+      "domain": "Catalogage, dédoublonnage, conservation et ressources.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-MED-03"
+      ]
+    },
+    {
+      "id": "tisseuse",
+      "name": "La Tisseuse",
+      "domain": "Acteurs, réseaux et ancrages territoriaux.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": [
+        "C03-TIS-03"
+      ]
+    },
+    {
+      "id": "eclaireuse",
+      "name": "L’Éclaireuse",
+      "domain": "Idées, prospective et enquêtes exploratoires.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": []
+    },
+    {
+      "id": "vigie",
+      "name": "La Vigie",
+      "domain": "Veille médiatique, critique des financements et sources contemporaines.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": []
+    },
+    {
+      "id": "reseaux-sociaux",
+      "name": "Réseaux sociaux",
+      "domain": "Adaptation des formats et circulation publique sous validation.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": []
+    },
+    {
+      "id": "assistant-anarchiviste",
+      "name": "Assistant de l’Anarchiviste",
+      "domain": "Sources primaires, inventaires et soutien documentaire.",
+      "activity": null,
+      "activity_label": "Activité non attestée",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "registered_missions": []
+    }
+  ],
+  "missions": [
+    {
+      "id": "C03-LEC-03",
+      "objective": "Relever objections, décisions, sources et SHA sans les fermer",
+      "objective_source": "prochaine_action du registre C03",
+      "ateliers": [
+        "lectrice"
+      ],
+      "priority": "P0",
+      "dependencies": [
+        "C03-ANA-03",
+        "C03-PEN-03",
+        "C03-ARC-03",
+        "C03-CAT-03",
+        "C03-JUR-03",
+        "C03-MED-03"
+      ],
+      "dependency_semantics": "Liens de coordination déclarés ; ne pas les transformer en DAG d’exécution.",
+      "states": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "state_provenance": {
+        "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+        "commit": "57a509257314d44cb15faf842395a21023e43335",
+        "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+        "source_date": "2026-11-03",
+        "observed_on": "2026-11-04",
+        "kind": "declaration_documentaire",
+        "note": "Inconnu ne signifie pas absence de travail ; aucune réception ni validation nouvelle déduite."
+      },
+      "deliverables": [],
+      "prior_evidence": [],
+      "reserves": [
+        "Confronter 35 objections C02 annoncées aux 30 WORK; versions exactes à retrouver"
+      ],
+      "human_decisions": [
+        "Contrôle des preuves et décision humaine nécessaires avant tout état validé."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "commit": "57a509257314d44cb15faf842395a21023e43335",
+          "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "blob": "321786c6f2b5138753abdfebcf930feb956d2170"
+        }
+      ]
+    },
+    {
+      "id": "C03-ANA-03",
+      "objective": "Contrôler 4 portes, 7 PAR, alias, dépendances et relations typées",
+      "objective_source": "prochaine_action du registre C03",
+      "ateliers": [
+        "anarchitecte"
+      ],
+      "priority": "P0",
+      "dependencies": [
+        "C03-LEC-03",
+        "C03-PEN-03",
+        "C03-MED-03",
+        "C03-TECH-02"
+      ],
+      "dependency_semantics": "Liens de coordination déclarés ; ne pas les transformer en DAG d’exécution.",
+      "states": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "state_provenance": {
+        "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+        "commit": "57a509257314d44cb15faf842395a21023e43335",
+        "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+        "source_date": "2026-11-03",
+        "observed_on": "2026-11-04",
+        "kind": "declaration_documentaire",
+        "note": "Inconnu ne signifie pas absence de travail ; aucune réception ni validation nouvelle déduite."
+      },
+      "deliverables": [],
+      "prior_evidence": [],
+      "reserves": [
+        "219 objets et 19 relations candidats, types et identifiants à qualifier"
+      ],
+      "human_decisions": [
+        "Contrôle des preuves et décision humaine nécessaires avant tout état validé."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "commit": "57a509257314d44cb15faf842395a21023e43335",
+          "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "blob": "321786c6f2b5138753abdfebcf930feb956d2170"
+        }
+      ]
+    },
+    {
+      "id": "C03-ARC-03",
+      "objective": "Réutiliser C03-ARC-02 PR #162, conserver WORK-COM ouverts",
+      "objective_source": "prochaine_action du registre C03",
+      "ateliers": [
+        "archeologue"
+      ],
+      "priority": "P0",
+      "dependencies": [
+        "C03-LEC-03",
+        "C03-ANA-03",
+        "C03-HIST-04"
+      ],
+      "dependency_semantics": "Liens de coordination déclarés ; ne pas les transformer en DAG d’exécution.",
+      "states": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "state_provenance": {
+        "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+        "commit": "57a509257314d44cb15faf842395a21023e43335",
+        "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+        "source_date": "2026-11-03",
+        "observed_on": "2026-11-04",
+        "kind": "declaration_documentaire",
+        "note": "Inconnu ne signifie pas absence de travail ; aucune réception ni validation nouvelle déduite."
+      },
+      "deliverables": [],
+      "prior_evidence": [
+        {
+          "id": "EV-ARC-02",
+          "type": "fichier",
+          "mission_id": "C03-ARC-03",
+          "atelier": "archeologue",
+          "branch": "research/archeologue-c03-par001-20261103",
+          "path": "coordination/c03/archeologue/C03_ARC_02_OBJECTIONS_PAR001.md",
+          "commit_sha": "2e4a70615b353008dd5a7121234987f77d51fe43",
+          "blob_sha": "fa109c97909e2382e0a8715d2d75cd7029385e85",
+          "pr": 162,
+          "verified_at": "2026-11-03",
+          "notes": "Antériorité C03-ARC-02, non preuve d'exécution de C03-ARC-03",
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/2e4a70615b353008dd5a7121234987f77d51fe43/coordination/c03/archeologue/C03_ARC_02_OBJECTIONS_PAR001.md",
+          "verified_in_this_pass": false,
+          "current_mission_delivery": false,
+          "warning": "Antériorité C03-ARC-02, non preuve d'exécution de C03-ARC-03",
+          "observed_on": null
+        }
+      ],
+      "reserves": [
+        "AFF5721, MP159, SHD Ly22 et originaux non collationnés"
+      ],
+      "human_decisions": [
+        "Contrôle des preuves et décision humaine nécessaires avant tout état validé."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "commit": "57a509257314d44cb15faf842395a21023e43335",
+          "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "blob": "321786c6f2b5138753abdfebcf930feb956d2170"
+        }
+      ]
+    },
+    {
+      "id": "C03-CAT-03",
+      "objective": "Réutiliser C03-CAT-02, éviter de dupliquer les six versions CAT",
+      "objective_source": "prochaine_action du registre C03",
+      "ateliers": [
+        "anarchiviste-catalan"
+      ],
+      "priority": "P0",
+      "dependencies": [
+        "C03-LEC-03",
+        "C03-ANA-03"
+      ],
+      "dependency_semantics": "Liens de coordination déclarés ; ne pas les transformer en DAG d’exécution.",
+      "states": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "state_provenance": {
+        "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+        "commit": "57a509257314d44cb15faf842395a21023e43335",
+        "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+        "source_date": "2026-11-03",
+        "observed_on": "2026-11-04",
+        "kind": "declaration_documentaire",
+        "note": "Inconnu ne signifie pas absence de travail ; aucune réception ni validation nouvelle déduite."
+      },
+      "deliverables": [],
+      "prior_evidence": [
+        {
+          "id": "EV-CAT-02",
+          "type": "fichier",
+          "mission_id": "C03-CAT-03",
+          "atelier": "anarchiviste-catalan",
+          "branch": "recherche/anarchiviste-catalogne-c03-par002-20261103",
+          "path": "recherche/catalogne/C03_CAT_PAR002_RECONCILIATION.md",
+          "commit_sha": "2ed930219fa871081be58c5e7aba6bcbc3add670",
+          "blob_sha": "576657bebe134f1add01ca3866602d021f484b14",
+          "pr": null,
+          "verified_at": "2026-11-03",
+          "notes": "Antériorité C03-CAT-02, pas une livraison C03-CAT-03",
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/2ed930219fa871081be58c5e7aba6bcbc3add670/recherche/catalogne/C03_CAT_PAR002_RECONCILIATION.md",
+          "verified_in_this_pass": false,
+          "current_mission_delivery": false,
+          "warning": "Antériorité C03-CAT-02, pas une livraison C03-CAT-03",
+          "observed_on": null
+        }
+      ],
+      "reserves": [
+        "Application locale et archives IISG non vérifiées"
+      ],
+      "human_decisions": [
+        "Contrôle des preuves et décision humaine nécessaires avant tout état validé."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "commit": "57a509257314d44cb15faf842395a21023e43335",
+          "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "blob": "321786c6f2b5138753abdfebcf930feb956d2170"
+        }
+      ]
+    },
+    {
+      "id": "C03-JUR-03",
+      "objective": "Documenter avis par SHA et conserver blocage pratique",
+      "objective_source": "prochaine_action du registre C03",
+      "ateliers": [
+        "juriste"
+      ],
+      "priority": "P0",
+      "dependencies": [
+        "C03-LEC-03",
+        "C03-TECH-02"
+      ],
+      "dependency_semantics": "Liens de coordination déclarés ; ne pas les transformer en DAG d’exécution.",
+      "states": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "state_provenance": {
+        "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+        "commit": "57a509257314d44cb15faf842395a21023e43335",
+        "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+        "source_date": "2026-11-03",
+        "observed_on": "2026-11-04",
+        "kind": "declaration_documentaire",
+        "note": "Inconnu ne signifie pas absence de travail ; aucune réception ni validation nouvelle déduite."
+      },
+      "deliverables": [],
+      "prior_evidence": [],
+      "reserves": [
+        "PAR-005 non publiable ; droits / données / santé"
+      ],
+      "human_decisions": [
+        "Contrôle des preuves et décision humaine nécessaires avant tout état validé."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "commit": "57a509257314d44cb15faf842395a21023e43335",
+          "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "blob": "321786c6f2b5138753abdfebcf930feb956d2170"
+        }
+      ]
+    },
+    {
+      "id": "C03-MED-03",
+      "objective": "Rapprocher inventaires et sélection des 7 PAR sans supprimer ID",
+      "objective_source": "prochaine_action du registre C03",
+      "ateliers": [
+        "mediatheque"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "C03-LEC-03",
+        "C03-ANA-03"
+      ],
+      "dependency_semantics": "Liens de coordination déclarés ; ne pas les transformer en DAG d’exécution.",
+      "states": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "state_provenance": {
+        "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+        "commit": "57a509257314d44cb15faf842395a21023e43335",
+        "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+        "source_date": "2026-11-03",
+        "observed_on": "2026-11-04",
+        "kind": "declaration_documentaire",
+        "note": "Inconnu ne signifie pas absence de travail ; aucune réception ni validation nouvelle déduite."
+      },
+      "deliverables": [],
+      "prior_evidence": [],
+      "reserves": [
+        "71 FN, FN-018 et alias/éditions/droits ; 219 objets du registre"
+      ],
+      "human_decisions": [
+        "Contrôle des preuves et décision humaine nécessaires avant tout état validé."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "commit": "57a509257314d44cb15faf842395a21023e43335",
+          "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "blob": "321786c6f2b5138753abdfebcf930feb956d2170"
+        }
+      ]
+    },
+    {
+      "id": "C03-TECH-02",
+      "objective": "Revoir modules PR #161, URL historiques, logos et rendu non public",
+      "objective_source": "prochaine_action du registre C03",
+      "ateliers": [
+        "developpeuse",
+        "graphiste"
+      ],
+      "priority": "P0",
+      "dependencies": [
+        "C03-ANA-03",
+        "C03-LEC-03",
+        "C03-JUR-03",
+        "C03-MED-03"
+      ],
+      "dependency_semantics": "Liens de coordination déclarés ; ne pas les transformer en DAG d’exécution.",
+      "states": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": null,
+        "livree": null,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "state_provenance": {
+        "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+        "commit": "57a509257314d44cb15faf842395a21023e43335",
+        "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+        "source_date": "2026-11-03",
+        "observed_on": "2026-11-04",
+        "kind": "declaration_documentaire",
+        "note": "Inconnu ne signifie pas absence de travail ; aucune réception ni validation nouvelle déduite."
+      },
+      "deliverables": [],
+      "prior_evidence": [
+        {
+          "id": "EV-TECH-GRA",
+          "type": "commentaire_pr",
+          "mission_id": "C03-TECH-02",
+          "atelier": "graphiste",
+          "branch": "work/c02-v2-reconciliation-20261103",
+          "path": null,
+          "commit_sha": "0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6",
+          "blob_sha": null,
+          "pr": 161,
+          "verified_at": "2026-11-03",
+          "notes": "Retour technique Graphiste publié en commentaire PR #161 ; absence de visa conjoint de Développeuse",
+          "url": "https://github.com/zoutiFrutti/Interstice/pull/161",
+          "verified_in_this_pass": false,
+          "current_mission_delivery": false,
+          "warning": "Retour technique Graphiste publié en commentaire PR #161 ; absence de visa conjoint de Développeuse",
+          "observed_on": null
+        }
+      ],
+      "reserves": [
+        "R6 5 destinations vs V2 4 portes ; QA tactile et lecteurs d'écran manquante"
+      ],
+      "human_decisions": [
+        "Contrôle des preuves et décision humaine nécessaires avant tout état validé."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "commit": "57a509257314d44cb15faf842395a21023e43335",
+          "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "blob": "321786c6f2b5138753abdfebcf930feb956d2170"
+        }
+      ]
+    },
+    {
+      "id": "C03-ORC-03",
+      "objective": "Relieuse : lire index, contrôler les preuves et décider des corrections à intégrer",
+      "objective_source": "prochaine_action du registre C03",
+      "ateliers": [
+        "orchestratrice"
+      ],
+      "priority": "P0",
+      "dependencies": [
+        "C03-LEC-03",
+        "C03-ANA-03",
+        "C03-TECH-02"
+      ],
+      "dependency_semantics": "Liens de coordination déclarés ; ne pas les transformer en DAG d’exécution.",
+      "states": {
+        "preparee": true,
+        "transmise": null,
+        "recue": null,
+        "commencee": true,
+        "livree": true,
+        "controle_effectue": null,
+        "validee": false
+      },
+      "state_provenance": {
+        "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+        "commit": "57a509257314d44cb15faf842395a21023e43335",
+        "blob": "321786c6f2b5138753abdfebcf930feb956d2170",
+        "source_date": "2026-11-03",
+        "observed_on": "2026-11-04",
+        "kind": "declaration_documentaire",
+        "note": "Inconnu ne signifie pas absence de travail ; aucune réception ni validation nouvelle déduite."
+      },
+      "deliverables": [
+        {
+          "id": "EV-ORC-03",
+          "type": "fichier",
+          "mission_id": "C03-ORC-03",
+          "atelier": "orchestratrice",
+          "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+          "path": "coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md",
+          "commit_sha": "6fec697d47b573f536bfe97d90e5db5eb6b1fdac",
+          "blob_sha": "4fbe39e790901a4654bf05f201fb1f8d8dc52d4b",
+          "pr": 132,
+          "verified_at": "2026-11-03",
+          "notes": "Livrable de la présente mission sur PR #132, non reçu ni validé par La Relieuse",
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/6fec697d47b573f536bfe97d90e5db5eb6b1fdac/coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md",
+          "verified_in_this_pass": true,
+          "current_mission_delivery": true,
+          "warning": "Livrable de la présente mission sur PR #132, non reçu ni validé par La Relieuse",
+          "observed_on": "2026-11-04"
+        }
+      ],
+      "prior_evidence": [],
+      "reserves": [
+        "Synthèse documentaire produite mais rapprochement et visas des autres ateliers non démontrés"
+      ],
+      "human_decisions": [
+        "Contrôle des preuves et décision humaine nécessaires avant tout état validé."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "commit": "57a509257314d44cb15faf842395a21023e43335",
+          "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+          "blob": "321786c6f2b5138753abdfebcf930feb956d2170"
+        }
+      ]
+    }
+  ],
+  "known_mission_ids": [
+    "C03-LEC-03",
+    "C03-ANA-03",
+    "C03-PEN-03",
+    "C03-ARC-03",
+    "C03-CAT-03",
+    "C03-JUR-03",
+    "C03-HIST-04",
+    "C03-MED-03",
+    "C03-ZAP-03",
+    "C03-TIS-03",
+    "C03-TECH-02",
+    "C03-ORC-03"
+  ],
+  "executions": [
+    {
+      "id": 41838387136,
+      "name": "R6 INT01 reconciliation and Pages preflight",
+      "head": "6db16cca56e4202cbc9ae22386b161a0f2b7bffd",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "created_at": "2026-11-04T13:28:19Z",
+      "updated_at": "2026-11-04T13:29:56Z",
+      "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41838387136",
+      "scope": "ghaw"
+    },
+    {
+      "id": 41838387045,
+      "name": "FN Observatrice - compilation GH-AW candidate sans IA",
+      "head": "6db16cca56e4202cbc9ae22386b161a0f2b7bffd",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "created_at": "2026-11-04T13:28:19Z",
+      "updated_at": "2026-11-04T13:28:30Z",
+      "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41838387045",
+      "scope": "ghaw"
+    },
+    {
+      "id": 41816119041,
+      "name": "Facteur messagerie C10",
+      "head": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "schedule",
+      "created_at": "2026-11-04T10:44:03Z",
+      "updated_at": "2026-11-04T10:44:22Z",
+      "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41816119041",
+      "scope": "c10"
+    },
+    {
+      "id": 41810806408,
+      "name": "R6 INT01 reconciliation and Pages preflight",
+      "head": "01811690ae5dbd8bef4db2100395feea77a55431",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "created_at": "2026-11-04T09:55:52Z",
+      "updated_at": "2026-11-04T09:57:26Z",
+      "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41810806408",
+      "scope": "nav01"
+    },
+    {
+      "id": 41810806407,
+      "name": "WORK NAV01 isolated navigation QA",
+      "head": "01811690ae5dbd8bef4db2100395feea77a55431",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "created_at": "2026-11-04T09:55:52Z",
+      "updated_at": "2026-11-04T09:57:05Z",
+      "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41810806407",
+      "scope": "nav01"
+    },
+    {
+      "id": 41727087199,
+      "name": "R6 INT01 reconciliation and Pages preflight",
+      "head": "57a509257314d44cb15faf842395a21023e43335",
+      "status": "completed",
+      "conclusion": "failure",
+      "event": "pull_request",
+      "created_at": "2026-11-03T22:01:44Z",
+      "updated_at": "2026-11-03T22:02:09Z",
+      "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41727087199",
+      "scope": "c18"
+    },
+    {
+      "id": 41727087195,
+      "name": "C18 suivi integration hors ligne",
+      "head": "57a509257314d44cb15faf842395a21023e43335",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "created_at": "2026-11-03T22:01:44Z",
+      "updated_at": "2026-11-03T22:01:58Z",
+      "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41727087195",
+      "scope": "c18"
+    },
+    {
+      "id": 41727087218,
+      "name": "Demo ateliers C11 sans IA",
+      "head": "57a509257314d44cb15faf842395a21023e43335",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "created_at": "2026-11-03T22:01:44Z",
+      "updated_at": "2026-11-03T22:01:54Z",
+      "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41727087218",
+      "scope": "c18"
+    }
+  ],
+  "references": [
+    {
+      "number": 181,
+      "title": "C04-DEV-01 · Réconciliation NAV-02 Graphiste et Développeuse",
+      "head": "38a69c4f1f2253bbd3f161578918d1018486ccf3",
+      "branch": "feature/c04-dev01-nav-reconciliation-20261104",
+      "updated_at": "2026-11-04T13:20:17Z",
+      "created_at": "2026-11-04T13:20:17Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/181"
+    },
+    {
+      "number": 180,
+      "title": "[FN-ORC] Pilote Observatrice GH-AW — préparation sécurisée, sans exécution",
+      "head": "6db16cca56e4202cbc9ae22386b161a0f2b7bffd",
+      "branch": "work/fn-observatrice-gh-aw-pilote-20261104",
+      "updated_at": "2026-11-04T13:28:48Z",
+      "created_at": "2026-11-04T13:04:35Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/180"
+    },
+    {
+      "number": 179,
+      "title": "NAV-02-DEV · corrections visuelles localisées candidates, dépend de #174",
+      "head": "bb1d4e3e5a5e113867edb5482a2b6f833f897517",
+      "branch": "feature/nav02-dev-visual-localized-20261104",
+      "updated_at": "2026-11-04T13:59:55Z",
+      "created_at": "2026-11-04T12:33:41Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/179"
+    },
+    {
+      "number": 176,
+      "title": "NAV-02-GRA — revue artistique ciblée de la PR #174",
+      "head": "fd879d63d4964d527632c364c2f124cb5dc3af41",
+      "branch": "atelier/nav02-gra-revue-artistique-20261104",
+      "updated_at": "2026-11-04T13:59:41Z",
+      "created_at": "2026-11-04T10:10:35Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/176"
+    },
+    {
+      "number": 174,
+      "title": "WORK-NAV-01 · Navigation immersive candidate, quatre portes et traversées",
+      "head": "01811690ae5dbd8bef4db2100395feea77a55431",
+      "branch": "work/nav-immersive-convergence-01",
+      "updated_at": "2026-11-04T13:59:52Z",
+      "created_at": "2026-11-04T09:22:29Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/174"
+    },
+    {
+      "number": 132,
+      "title": "[Orchestratrice] C18 : suivi documentaire sans accusés inventés",
+      "head": "57a509257314d44cb15faf842395a21023e43335",
+      "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+      "updated_at": "2026-11-03T22:03:16Z",
+      "created_at": "2026-11-02T13:40:23Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/132"
+    },
+    {
+      "number": 115,
+      "title": "[Orchestratrice] C14 : premier ordonnanceur de missions et dépendances hors ligne",
+      "head": "e139a1286c361b85aacd62413475f26878595911",
+      "branch": "feature/c14-orchestratrice-moteur-missions-20261102",
+      "updated_at": "2026-11-02T09:51:12Z",
+      "created_at": "2026-11-02T09:46:57Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/115"
+    },
+    {
+      "number": 114,
+      "title": "[Orchestratrice] C13 : sécuriser le pont Relieuse → Lectrice et son retour",
+      "head": "f7811d3875d2fd39b7b37226d40ae9fb22c66a56",
+      "branch": "feature/c13-orchestratrice-guardrails-20261102",
+      "updated_at": "2026-11-02T11:00:05Z",
+      "created_at": "2026-11-02T09:17:50Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/114"
+    },
+    {
+      "number": 162,
+      "title": "C03-ARC-02 : objections historiques PAR-001, PR #161",
+      "head": "2e4a70615b353008dd5a7121234987f77d51fe43",
+      "branch": "research/archeologue-c03-par001-20261103",
+      "updated_at": "2026-11-03T21:17:00Z",
+      "created_at": "2026-11-03T21:00:00Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/162"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "C13-ACTIVATION",
+      "title": "Ne pas activer le pont IA sans autorisation distincte",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/f7811d3875d2fd39b7b37226d40ae9fb22c66a56/coordination/agents/C13_CONTRAT_RETOUR_LECTRICE.md",
+      "condition": "Opt-in, budget, contrôle Juriste et choix du modèle ; PR #114 non fusionnée."
+    },
+    {
+      "id": "C03-VALIDATION",
+      "title": "Contrôler et arbitrer les livrables candidats",
+      "source": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/04_PLAN_INTEGRATION.md",
+      "condition": "Aucune validation automatique par CI, Issue ou présence d’une PR."
+    }
+  ],
+  "warnings": [
+    "19 profils documentés ne sont ni 19 agents actifs ni 19 boîtes C10 : il existe 17 boîtes historiques.",
+    "C03-ORC-03 dispose d’un fichier de livraison revérifié ; réception et contrôle restent inconnus, validation non accordée dans le registre.",
+    "Les preuves d’anciennes missions ne clôturent pas les missions nouvelles.",
+    "C13 et C14 sont candidats non fusionnés. C14 exécute des fonctions déterministes, aucune IA.",
+    "C12 sur main peut tenter un appel à partir d’une Issue si les secrets/modèle existent ; présence des secrets non vérifiée, aucune Issue de test créée.",
+    "Le pilote Observatrice relève de PR #180, pas d’une nouvelle boîte C10 ni d’un atelier C03 réputé actif.",
+    "C16 : aucun contrat retrouvé dans les arbres et branches examinés ; le passage vers C16 reste proposé par C15.",
+    "C17 retrouvé désigne un kit éditorial Réseaux sociaux, pas un moteur d’orchestration.",
+    "Les exécutions Actions ci-dessous sont des preuves techniques, pas des validations éditoriales."
+  ],
+  "preparation_example": {
+    "kind": "simulation_locale",
+    "source": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/agents/demande_relieuse_c11.py",
+    "input": {
+      "id": "DEMO-C11-LOCAL",
+      "objectif": "Simulation locale de préparation, non envoyée.",
+      "ateliers": [
+        "lectrice"
+      ]
+    },
+    "expected_normalized": {
+      "id": "DEMO-C11-LOCAL",
+      "objectif": "Simulation locale de préparation, non envoyée.",
+      "ateliers": [
+        "lectrice"
+      ],
+      "statut": "A_FAIRE",
+      "origine": "RELIEUSE_CHATGPT",
+      "decision_humaine_requise": true,
+      "execution_ateliers": "NON_DECLENCHEE"
+    },
+    "allowed_role_ids": [
+      "relieuse",
+      "lectrice",
+      "mediatheque",
+      "biographe",
+      "anarchitecte",
+      "developpeuse",
+      "juriste",
+      "graphiste",
+      "vigie",
+      "tisseuse",
+      "eclaireuse",
+      "anarchiviste-catalan",
+      "anarchiviste-zapatiste",
+      "anarchiviste-communs",
+      "archeologue",
+      "reseaux-sociaux",
+      "assistant-anarchiviste"
+    ],
+    "limitation": "Le normaliseur C11 de main ne connaît ni penseuse ni orchestratrice ; le registre documentaire de 19 rôles ne modifie pas cette liste."
+  },
+  "mission_prs": [
+    {
+      "mission_id": "C03-ORC-03",
+      "number": 132,
+      "nature": "livrable_documentaire",
+      "note": "Index C03 candidate, reception non attestee"
+    },
+    {
+      "mission_id": "C03-ARC-03",
+      "number": 162,
+      "nature": "anteriorite",
+      "note": "ARC-02 antecedent, pas livraison ARC-03"
+    },
+    {
+      "mission_id": "C03-TECH-02",
+      "number": 181,
+      "nature": "dependance_technique",
+      "note": "Convergence navigation candidate, pas visa TECH-02"
+    }
+  ],
+  "coordination_explanation": "Liens PR qualifiés : livraison, antériorité ou dépendance. Les autres missions ne reçoivent aucune PR propre inventée. Source statique datée, non synchronisée.",
+  "c07_execution": {
+    "schema": "c07.execution.v1",
+    "mission_id": "C07-DEMO-001",
+    "mission_hash": "137a27843ff2cd6add332048bfbddf5ed432bd94f76808c2b0cfc8e5df2c158d",
+    "status": "TERMINE_TECHNIQUE",
+    "report": {
+      "schema": "c14.result.v1",
+      "mission_id": "C07-DEMO-001",
+      "empreinte_mission": "137a27843ff2cd6add332048bfbddf5ed432bd94f76808c2b0cfc8e5df2c158d",
+      "mode": "executer",
+      "ordre_execution": [
+        "MED-001",
+        "LEC-001",
+        "REL-001"
+      ],
+      "taches": [
+        {
+          "id": "MED-001",
+          "atelier": "mediatheque",
+          "action": "doublons_urls",
+          "dependances": [],
+          "empreinte_entree": "d0a5a4923b27ce9b769edfeac26fa83e72cbf472d62b4daefa3af9401e32250b",
+          "resultat": {
+            "ressources_examinees": 3,
+            "doublons_url_probables": [
+              {
+                "premiere": 1,
+                "seconde": 2
+              }
+            ],
+            "verification_semantique_effectuee": false
+          },
+          "empreinte_resultat": "ac9ff5c5e5fde5773a792d93648e95a45e68a8add3de4ea0890fbb9d8077ee81",
+          "statut": "TERMINE_DETERMINISTE"
+        },
+        {
+          "id": "LEC-001",
+          "atelier": "lectrice",
+          "action": "controle_urls",
+          "dependances": [],
+          "empreinte_entree": "21b3e22b549ab65744b8bdaaeb828ae3d01419bdaf17d390917c85617d312934",
+          "resultat": {
+            "ressources_examinees": 3,
+            "urls_absentes": [
+              3
+            ],
+            "urls_invalides": [],
+            "urls_visitees": 0
+          },
+          "empreinte_resultat": "6b8582a0e5642e5d4b59e0408bfc5c5509a97c25720c21b364751624380f485c",
+          "statut": "TERMINE_DETERMINISTE"
+        },
+        {
+          "id": "REL-001",
+          "atelier": "relieuse",
+          "action": "consolider",
+          "dependances": [
+            "MED-001",
+            "LEC-001"
+          ],
+          "empreinte_entree": "f293fa3217109da6b8d7c31312765c64157ad282c9512e78baa6d83adda7c968",
+          "resultat": {
+            "ateliers_rapportes": [
+              "mediatheque",
+              "lectrice"
+            ],
+            "taches_sources": [
+              "MED-001",
+              "LEC-001"
+            ],
+            "controle_editorial_effectue": false,
+            "validation_humaine_requise": true
+          },
+          "empreinte_resultat": "fa82fc4d6fb66bfc2f63c13feec6e40f5060acca55caa2504126e908b76fcf9e",
+          "statut": "TERMINE_DETERMINISTE"
+        }
+      ],
+      "bilan": {
+        "terminees_deterministes": 3,
+        "refusees": 0,
+        "bloquees": 0,
+        "planifiees": 0
+      },
+      "limites": [
+        "Aucun appel IA, web ou exécution ChatGPT",
+        "Aucune source consultée",
+        "Aucune écriture GitHub, fusion, publication ni décision éditoriale",
+        "Origine RELIEUSE_CHATGPT déclarative, non authentifiée par ce fichier"
+      ]
+    },
+    "report_hash": "606070a8fcd4098e0894a2f1712c4473a43b9410d9a66baf7d6cc6941d66413f",
+    "editorial_approval": false,
+    "external_ai_called": false,
+    "github_writes": false,
+    "history": [
+      {
+        "seq": 1,
+        "action": "EXECUTION_C14",
+        "at": "2026-11-04T20:52:34.540043+00:00",
+        "previous": null,
+        "report_hash": "606070a8fcd4098e0894a2f1712c4473a43b9410d9a66baf7d6cc6941d66413f",
+        "hash": "63658f4d938e2a27a440d25d5108504e8a5d3773a89d4f59f391beb512eb145b"
+      },
+      {
+        "seq": 2,
+        "action": "DEMANDE_VALIDATION",
+        "at": "2026-11-04T20:52:34.540064+00:00",
+        "previous": "63658f4d938e2a27a440d25d5108504e8a5d3773a89d4f59f391beb512eb145b",
+        "report_hash": "606070a8fcd4098e0894a2f1712c4473a43b9410d9a66baf7d6cc6941d66413f",
+        "hash": "7f631a278aff8ddb08dcedb02d9d7385365f5d12ab34dc8bf67a40395575b08d"
+      },
+      {
+        "seq": 3,
+        "action": "DECISION_HUMAINE",
+        "at": "2026-11-04T20:52:34.540100+00:00",
+        "previous": "7f631a278aff8ddb08dcedb02d9d7385365f5d12ab34dc8bf67a40395575b08d",
+        "decision": "reprendre",
+        "actor_declared": "TEST_SYNTHETIQUE_PAS_UN_VISA_ZOUT",
+        "report_hash": "606070a8fcd4098e0894a2f1712c4473a43b9410d9a66baf7d6cc6941d66413f",
+        "hash": "52079ac239382a6a82f9f514c7eaa51f3efded76d74f420eaf45df35942da77b"
+      },
+      {
+        "seq": 4,
+        "action": "REPRISE_CONSOLIDATION",
+        "at": "2026-11-04T20:52:34.540109+00:00",
+        "previous": "52079ac239382a6a82f9f514c7eaa51f3efded76d74f420eaf45df35942da77b",
+        "artifact_hash": "606070a8fcd4098e0894a2f1712c4473a43b9410d9a66baf7d6cc6941d66413f",
+        "hash": "8858959c2e2618c323f6251527b9c503f52435627315105401cbe69e42786a40"
+      }
+    ],
+    "artifacts": [
+      {
+        "kind": "rapport_candidat",
+        "sha256": "606070a8fcd4098e0894a2f1712c4473a43b9410d9a66baf7d6cc6941d66413f"
+      }
+    ],
+    "question": {
+      "id": "validation-resultat",
+      "prompt": "Que faire de ce contrôle technique ?",
+      "recommended": "reprendre",
+      "options": [
+        "reprendre",
+        "revoir",
+        "arreter"
+      ],
+      "target": "conversation de l’atelier : transfert automatique indisponible"
+    },
+    "demonstration": true,
+    "human_decision_simulated": true
+  }
+}

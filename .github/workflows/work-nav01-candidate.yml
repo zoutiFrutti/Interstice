@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '22'
       - name: Camera, identities and editorial barriers
-        run: node --test tests/nav01-camera.test.mjs
+        run: node --test tests/nav01-camera.test.mjs tests/c06-ana-status-bridge.test.mjs tests/nav02-resource-bridge.test.mjs tests/c07-bundle.test.mjs
       - name: Preserve every file from main
         run: |
           node --input-type=module <<'JS'
@@ -37,7 +37,9 @@ jobs:
           const base='7344591fa7f0f4f6951ea273525039cf2cb9982a';
           git('merge-base','--is-ancestor',base,'HEAD');
           const changes=git('diff','--name-status','--diff-filter=MDRT',base,'HEAD');
-          if(changes)throw new Error('Un fichier initial a changé : '+changes);
+          const security=new Set(['.github/workflows/pont-relieuse-lectrice-c12.yml','coordination/agents/pont_relieuse_c12.py','coordination/agents/demande_relieuse_c11.py','coordination/agents/test_demande_relieuse_c11.py']);
+          const forbidden=changes.split('\n').filter(Boolean).filter(line=>!security.has(line.split('\t')[1]));
+          if(forbidden.length)throw new Error('Fichier initial modifié hors durcissement C13 : '+forbidden.join(','));
           const count=git('ls-tree','-r','--name-only',base).split('\n').length;
           mkdirSync('artifacts/nav01',{recursive:true});
           writeFileSync('artifacts/nav01/preservation.json',JSON.stringify({base,head:git('rev-parse','HEAD'),originals:count,unchanged:count},null,2));

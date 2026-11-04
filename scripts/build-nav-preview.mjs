@@ -10,6 +10,7 @@ const output=resolve(process.argv[2] || resolve(root,'dist-nav'));
 if(output===root)throw new Error('Le dossier de sortie doit être séparé des sources');
 await mkdir(output,{recursive:true});
 const files=['explorer.html','assets/logo-faille-noire.svg','assets/logo-interstice.svg','style.css','manifeste.html','manifeste-v2-5.html',
+  'assets/nav-01/parcours-status.mjs','assets/nav-01/step-resources.mjs',
   'assets/nav-01/explorer.css','assets/nav-01/explorer.mjs','assets/nav-01/spatial.mjs','assets/nav-01/camera.mjs','assets/nav-01/graph-data.mjs','assets/nav-01/navigation-state.mjs'];
 const allowed=new Set([...files,'index.html','README.txt','checksums.json',...DOORS.map(door=>door.legacy.split('#')[0])]);
 const allowedDirs=new Set(['assets','assets/nav-01']);
