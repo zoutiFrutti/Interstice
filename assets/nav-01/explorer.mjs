@@ -297,8 +297,8 @@ function enter(animated) {
   clearPassage();go('#exploration',{animate:false});
   window.scrollTo({top:0,behavior:'instant'});
   const r=rect(),destination=diveCamera(r.width,r.height);
-  firstExploration=true;
-  if(!animated||reduced.matches){moveTo(destination,false);app.dataset.phase='immersed';return;}
+  firstExploration=animated&&!reduced.matches;
+  if(!firstExploration){moveTo(fitCamera(r.width,r.height),false);app.dataset.phase='exploring';return;}
   app.dataset.phase='identity';app.dataset.entryStarted=String(performance.now());
   passage=element('div',undefined,'identity-passage');passage.setAttribute('aria-hidden','true');
   const faille=element('img',undefined,'passage-symbol');faille.src='assets/logo-faille-noire.svg';faille.alt='';
