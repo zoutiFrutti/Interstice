@@ -1,5 +1,5 @@
 // Isolated, allow-listed static artifact. Never copies the candidate content catalogue.
-import {mkdir, readFile, writeFile, copyFile} from 'node:fs/promises';
+import {mkdir, readFile, writeFile, copyFile, readdir} from 'node:fs/promises';
 import {resolve, dirname, relative} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
@@ -11,6 +11,16 @@ if(output===root)throw new Error('Le dossier de sortie doit être séparé des s
 await mkdir(output,{recursive:true});
 const files=['explorer.html','assets/logo-faille-noire.svg','assets/logo-interstice.svg','style.css','manifeste.html','manifeste-v2-5.html',
   'assets/nav-01/explorer.css','assets/nav-01/explorer.mjs','assets/nav-01/camera.mjs','assets/nav-01/graph-data.mjs','assets/nav-01/navigation-state.mjs'];
+const allowed=new Set([...files,'index.html','README.txt','checksums.json',...DOORS.map(door=>door.legacy.split('#')[0])]);
+const allowedDirs=new Set(['assets','assets/nav-01']);
+async function checkOutput(directory,prefix=''){
+  for(const item of await readdir(directory,{withFileTypes:true})){
+    const path=prefix+item.name;
+    if(item.isDirectory()&&allowedDirs.has(path))await checkOutput(resolve(directory,item.name),path+'/');
+    else if(!item.isFile()||!allowed.has(path))throw new Error('Sortie contenant un fichier hors liste : '+path+' ; choisir un dossier vide. Aucun fichier supprimé.');
+  }
+}
+await checkOutput(output);
 const hashes={};
 for(const file of files){
   await mkdir(dirname(resolve(output,file)),{recursive:true});

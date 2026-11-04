@@ -116,6 +116,7 @@ function returnActions(path = null) {
   if (path) actions.append(link('Revenir au parcours','#parcours/'+path.id));
   if (originDoor) actions.append(link('Retour à '+DOORS.find(door=>door.id===originDoor).short,'#porte/'+originDoor));
   actions.append(link('Vue complète','#exploration'));
+  actions.append(link('Manifeste V2.5','#document/manifeste'),link('Archive V2.1','#document/archive'));
   return actions;
 }
 function renderDoor(id) {
@@ -320,10 +321,10 @@ stage.addEventListener('pointermove',event=>{
 function release(event){if(!pointers.has(event.pointerId))return;pointers.delete(event.pointerId);startGesture();if(!pointers.size){stage.classList.remove('is-dragging');persist();if(dragged)announce('Position mémorisée pour cette session.');}}
 stage.addEventListener('pointerup',release);stage.addEventListener('pointercancel',release);
 stage.addEventListener('wheel',event=>{
-  if(!panEnabled)return;event.preventDefault();returnView=snapshot();stopAnimation();camera=zoomAt(camera,rect(),Math.exp(event.deltaY*.0015),event.clientX,event.clientY);paint();persist();
+  if(!panEnabled||event.ctrlKey||event.metaKey)return;event.preventDefault();returnView=snapshot();stopAnimation();camera=zoomAt(camera,rect(),Math.exp(event.deltaY*.0015),event.clientX,event.clientY);paint();persist();
 },{passive:false});
 stage.addEventListener('keydown',event=>{
-  if(event.target!==stage)return;
+  if(event.target!==stage||event.ctrlKey||event.metaKey||event.altKey)return;
   const commands=['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','=','-','Home','0'];if(!commands.includes(event.key))return;
   event.preventDefault();returnView=snapshot();stopAnimation();const r=rect();
   if(event.key==='Home'||event.key==='0'){fullView(false);return;}

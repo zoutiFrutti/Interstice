@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import {readFile,writeFile,mkdtemp} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
 import {createHash} from 'node:crypto';
 import {fitCamera,project,worldPoint,zoomAt,panBy,constrain,validCamera} from '../assets/nav-01/camera.mjs';
 import {DOORS,PARCOURS,BUNDLE,PUBLIC_RESOURCES} from '../assets/nav-01/graph-data.mjs';
@@ -43,4 +46,11 @@ test('SVG officiels inchangés à l’octet',async()=>{
     const content=await readFile(new URL('../assets/logo-'+name+'.svg',import.meta.url));
     assert.equal(createHash('sha256').update(content).digest('hex'),sha);
   }
+});
+test('le constructeur refuse une sortie contenant un contenu hors liste',async()=>{
+  const output=await mkdtemp(join(tmpdir(),'nav01-output-'));
+  await writeFile(join(output,'non-autorise.txt'),'fixture de test');
+  const result=spawnSync(process.execPath,['scripts/build-nav-preview.mjs',output],{encoding:'utf8'});
+  assert.notEqual(result.status,0);assert.match(result.stderr,/fichier hors liste/);
+  assert.equal(await readFile(join(output,'non-autorise.txt'),'utf8'),'fixture de test');
 });

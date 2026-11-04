@@ -45,7 +45,7 @@ async function overflow(page){
 }
 async function axe(page,label){
   const report=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
-  evidence.accessibility.push({label,violations:report.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)})),incomplete:report.incomplete.map(v=>v.id)});
+  evidence.accessibility.push({label,violations:report.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)})),incomplete:report.incomplete.map(v=>({id:v.id,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))}))});
   assert.deepEqual(report.violations.map(v=>v.id),[],label);
 }
 
@@ -61,6 +61,14 @@ for(const width of [320,390,768,1280])test(`entrée, portes, zoom, recentrage et
     assert.ok(numbers(await camera(page))[2]<original[2]);
     await page.getByRole('button',{name:'Vue entière',exact:true}).click();
     const full=numbers(await camera(page));assert.ok(full[2]>original[2]);
+    if(width===1280){
+      const box=await page.locator('#space').boundingBox();const x=box.x+box.width/2,y=box.y+box.height/2;
+      const before=await camera(page);await page.mouse.move(x,y);await page.mouse.down();await page.mouse.move(x+40,y+25,{steps:4});await page.mouse.up();
+      assert.notEqual(await camera(page),before);
+      const beforeWheel=await camera(page);await page.mouse.wheel(0,-120);
+      await page.waitForFunction(previous=>document.querySelector('#world').getAttribute('viewBox')!==previous,beforeWheel);
+      await page.getByRole('button',{name:'Vue entière',exact:true}).click();
+    }
     assert.equal(await page.locator('.node[data-door]:visible').count(),4);
     await page.screenshot({path:resolve(artifacts,`exploration-${width}.png`),fullPage:true});
     await page.locator('.node[data-door="mediatheque"]').click();
@@ -108,6 +116,8 @@ test('clavier, focus visible, représentations accessibles et manifestes',async(
     await ready(page);await axe(page,'entrée');
     await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).focus();await page.keyboard.press('Enter');
     assert.equal(await page.locator('#space').evaluate(e=>document.activeElement===e),true);
+    const span=numbers(await camera(page))[2];await page.keyboard.press('Control+Equal');
+    assert.equal(numbers(await camera(page))[2],span,'Le raccourci du navigateur ne doit pas zoomer la carte');
     const old=await camera(page);await page.keyboard.press('ArrowLeft');assert.notEqual(await camera(page),old);
     await page.keyboard.press('+');await page.keyboard.press('Home');
     await page.keyboard.press('Tab');
@@ -190,3 +200,14 @@ test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async(
 });
 
 test('absence d’erreurs JavaScript dans les scénarios précédents',()=>assert.deepEqual(evidence.errors,[]));
+
+test('entrée animée : traversée et caméra opérationnelles, puis animation terminée',async()=>{
+  const page=await testPage({viewport:{width:1280,height:900},reducedMotion:'no-preference'});
+  try{
+    await ready(page);await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
+    await page.waitForFunction(()=>document.getAnimations().length===0);
+    assert.equal(await page.locator('#entree').isVisible(),false);
+    assert.equal(await page.locator('#space').isVisible(),true);assert.equal(await page.evaluate(()=>scrollY),0);
+    assert.ok(numbers(await camera(page)).every(Number.isFinite));
+  }finally{await page.context().close();}
+});

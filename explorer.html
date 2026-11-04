@@ -1,9 +1,249 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="robots" content="noindex,nofollow"><meta name="description" content="Explorer Interstice par les ramifications de la Faille noire."><title>Les passages · Interstice</title><link rel="icon" href="assets/logo-interstice.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/nav-01/explorer.css"><script type="module" src="assets/nav-01/explorer.mjs"></script></head>
-<body><a class="skip" href="#textual">Explorer avec la liste de liens</a>
-<section class="threshold" id="entree" aria-labelledby="entry-title"><div class="threshold-top"><strong>LA FAILLE NOIRE</strong><span class="candidate">Aperçu candidat</span></div><div class="threshold-center"><img class="threshold-logo" src="assets/logo-faille-noire.svg" width="665" height="665" alt="Symbole officiel de La Faille noire"><p class="eyebrow">Un passage vers</p><h1 id="entry-title">INTERSTICE</h1><p class="threshold-sub">Des savoirs, des communs. Plusieurs chemins.</p><div class="entry-actions"><a class="enter" href="#exploration" data-enter="animate">Entrer dans la faille <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#exploration" data-enter="still">Entrer sans animation</a></div><button id="resume-entry" hidden>Retrouver ma dernière vue</button></div><div class="threshold-bottom"><a href="manifeste-v2-5.html" data-document="manifeste">Lire le manifeste</a><a class="entry-mark" href="#textual"><img src="assets/logo-interstice.svg" width="38" height="38" alt="Symbole officiel Interstice"><span>Explorer par les liens</span></a></div></section>
-<main id="exploration" class="exploration" tabindex="-1"><header class="appbar"><a class="brand" href="#entree" data-home><img src="assets/logo-interstice.svg" width="39" height="39" alt=""><span>INTERSTICE</span></a><span class="space-title" id="location-label">Dans la faille</span><div class="appbar-right"><a class="manifest-short" href="manifeste-v2-5.html" data-document="manifeste">Le manifeste ↗</a><span class="candidate">Version candidate</span></div></header>
-<div class="map-wrap"><div id="space" class="stage" tabindex="0" role="region" aria-label="Espace des quatre portes. Glisser pour se déplacer ; flèches au clavier, plus et moins pour zoomer, touche Début pour recentrer." data-pan="true"><svg id="world" class="world" viewBox="-110 -110 1220 1220" aria-hidden="true" focusable="false"><g class="landscape"><path class="guide-line" d="M-400 500H1400M500-500V1600M-300-200L1350 1350M-300 1300L1400-300"/><image href="assets/logo-interstice.svg" x="0" y="0" width="1000" height="1000"/><g id="branches"><path class="branch-line" d="M525 568C430 410 310 170 160 190M525 568C665 420 790 370 850 240M525 568C410 610 330 830 150 765M525 568C710 630 690 880 850 785M525 568C600 800 380 930 500 900"/></g><g id="walk-lines"></g></g></svg><div class="node-layer" id="nodes"><a class="node" data-door="encyclopedie" href="#porte/encyclopedie" style="left:16.0%;top:19.0%"><span class="orb" aria-hidden="true">01</span><span class="node-label">Encyclopédie des communs</span></a><a class="node" data-door="mediatheque" href="#porte/mediatheque" style="left:85.0%;top:24.0%"><span class="orb" aria-hidden="true">02</span><span class="node-label">Médiathèque des communs</span></a><a class="node" data-door="carte" href="#porte/carte" style="left:15.0%;top:76.5%"><span class="orb" aria-hidden="true">03</span><span class="node-label">Carte des communs</span></a><a class="node" data-door="entraide" href="#porte/entraide" style="left:85.0%;top:78.5%"><span class="orb" aria-hidden="true">04</span><span class="node-label">Entraide</span></a><a class="node manifest-node" data-point="manifeste" href="manifeste-v2-5.html" data-document="manifeste" style="left:50%;top:91%"><span class="orb" aria-hidden="true">↗</span><span class="node-label">Le manifeste</span></a></div><div class="space-note"><span class="eyebrow">Les passages</span><strong>Suivez une<br>ramification.</strong><span class="desktop-hint">Glisser pour se déplacer.<br>Molette pour zoomer.</span></div></div>
-<div class="top-actions" id="top-actions" hidden><button id="open-paths" type="button" aria-expanded="false" aria-controls="panel">Les traversées <span aria-hidden="true">↗</span></button></div><div class="map-controls" id="map-controls" hidden aria-label="Commandes de déplacement"><button id="back-view" type="button" aria-label="Revenir à la vue précédente">←</button><button class="zoom" id="zoom-out" type="button" aria-label="Zoom arrière">−</button><output id="zoom-value" aria-label="Niveau de zoom">100 %</output><button class="zoom" id="zoom-in" type="button" aria-label="Zoom avant">+</button><button id="recenter" type="button">Vue entière</button><button id="pan-mode" class="pan-label" type="button" aria-pressed="true">Déplacer la carte</button><button id="restore-view" type="button" aria-label="Retrouver la position mémorisée">↶</button></div><aside id="panel" class="panel" aria-labelledby="panel-title" hidden><button id="close-panel" class="panel-close" type="button" aria-label="Fermer le panneau">×</button><p id="panel-crumb" class="panel-crumb"></p><h2 id="panel-title" tabindex="-1"></h2><div id="panel-body"></div></aside></div>
-<div class="map-meta"><p id="live-status" role="status" aria-live="polite" aria-atomic="true">Quatre portes, plusieurs chemins.</p><button id="show-textual" type="button" hidden>Voir tous les liens ↓</button><span class="desktop-hint">Flèches · + / − · Début</span></div></main>
-<section class="directory" id="textual" tabindex="-1" aria-labelledby="textual-title"><details id="directory-details" open><summary id="textual-title">Tous les accès, sans déplacer la carte <span aria-hidden="true">↘</span></summary><div class="directory-content"><div><h2>Les quatre portes</h2><ul><li><a href="#porte/encyclopedie">Encyclopédie des communs</a></li><li><a href="#porte/mediatheque">Médiathèque des communs</a></li><li><a href="#porte/carte">Carte des communs</a></li><li><a href="#porte/entraide">Entraide</a></li></ul><h3>La Faille noire, le projet fondateur</h3><p><a href="manifeste-v2-5.html" data-document="manifeste">Manifeste V2.5</a> · <a href="manifeste.html" data-document="archive">Archive V2.1</a></p></div><div><h2>Les sept traversées</h2><ul><li><a href="#parcours/PAR-001">Commune de Paris</a></li><li><a href="#parcours/PAR-002">Révolution sociale espagnole</a></li><li><a href="#parcours/PAR-003">Écologie sociale</a></li><li><a href="#parcours/PAR-004">Autogestion</a></li><li><a href="#parcours/PAR-005">Droits en manifestation</a></li><li><a href="#parcours/PAR-006">Féminismes et luttes LGBTQIA+</a></li><li><a href="#parcours/PAR-007">Zapatisme</a></li></ul><p class="muted">Chemins candidats en préparation. Les ressources en relecture ne sont pas ouvertes dans cet aperçu.</p></div></div></details><noscript><p>Sans JavaScript, les accès ci-dessous et les manifestes restent utilisables.</p><style>#directory-details>.directory-content{display:grid}</style></noscript><div class="fallback-cards" data-fallback><section id="porte/encyclopedie"><h2>Encyclopédie des communs</h2><p>Des histoires, des idées et des pratiques à mettre en relation.</p><a href="https://zoutifrutti.github.io/Interstice/wiki.html" target="_blank" rel="noopener noreferrer">Consulter l’index R6 existant ↗</a></section><section id="porte/mediatheque"><h2>Médiathèque des communs</h2><p>Des textes, des œuvres et des sources pour prolonger le chemin.</p><a href="https://zoutifrutti.github.io/Interstice/bibliotheque.html" target="_blank" rel="noopener noreferrer">Consulter l’index R6 existant ↗</a></section><section id="porte/carte"><h2>Carte des communs</h2><p>Des territoires et des expériences à situer, avec leurs contextes.</p><a href="https://zoutifrutti.github.io/Interstice/atlas.html" target="_blank" rel="noopener noreferrer">Consulter l’index R6 existant ↗</a></section><section id="porte/entraide"><h2>Entraide</h2><p>Des ressources pour faire ensemble. Les fiches pratiques en relecture restent fermées.</p><a href="https://zoutifrutti.github.io/Interstice/parcours.html#entraide" target="_blank" rel="noopener noreferrer">Consulter l’index R6 existant ↗</a></section><section id="parcours/PAR-001"><h2>Commune de Paris</h2><p>Que peut-on établir des projets d’organisation du travail, de leurs décisions et de leurs réalisations pendant la Commune ?</p><p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p></section><section id="parcours/PAR-002"><h2>Révolution sociale espagnole</h2><p>Comment distinguer les expériences de collectivisation, les organisations et les conflits dans l’Espagne révolutionnaire de 1936–1937 ?</p><p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p></section><section id="parcours/PAR-003"><h2>Écologie sociale</h2><p>Comment relier histoire des luttes, connaissances scientifiques et propositions d’organisation sans confondre leurs preuves ?</p><p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p></section><section id="parcours/PAR-004"><h2>Autogestion</h2><p>Qui peut réellement participer, décider et contester, et qui supporte le travail visible ou invisible ?</p><p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p></section><section id="parcours/PAR-005"><h2>Droits en manifestation</h2><p>Comment séparer les règles, leurs conditions d’application et les orientations vers une aide compétente ?</p><p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p></section><section id="parcours/PAR-006"><h2>Féminismes et luttes LGBTQIA+</h2><p>Comment lire des histoires distinctes, leurs convergences et leurs désaccords, à partir de voix situées ?</p><p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p></section><section id="parcours/PAR-007"><h2>Zapatisme</h2><p>Comment suivre les transformations de l’autonomie zapatiste en distinguant paroles du mouvement, traductions et observations ?</p><p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p></section></div></section><footer class="footer"><span>Interstice · Un projet de La Faille noire</span><span>Les idées circulent. Les personnes restent protégées.</span></footer></body></html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Explorer Interstice par les ramifications de la Faille noire.">
+<title>Les passages · Interstice</title>
+<link rel="icon" href="assets/logo-interstice.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/nav-01/explorer.css">
+<script type="module" src="assets/nav-01/explorer.mjs">
+</script>
+</head>
+<body>
+<a class="skip" href="#textual">Explorer avec la liste de liens</a>
+<section class="threshold" id="entree" aria-labelledby="entry-title">
+<div class="threshold-top">
+<strong>LA FAILLE NOIRE</strong>
+<span class="candidate">Aperçu candidat</span>
+</div>
+<div class="threshold-center">
+<img class="threshold-logo" src="assets/logo-faille-noire.svg" width="665" height="665" alt="Symbole officiel de La Faille noire">
+<p class="eyebrow">Un passage vers</p>
+<h1 id="entry-title">INTERSTICE</h1>
+<p class="threshold-sub">Des savoirs, des communs. Plusieurs chemins.</p>
+<div class="entry-actions">
+<a class="enter" href="#exploration" data-enter="animate">Entrer dans la faille <span aria-hidden="true">↗</span>
+</a>
+<a class="quiet-link" href="#exploration" data-enter="still">Entrer sans animation</a>
+</div>
+<button id="resume-entry" hidden>Retrouver ma dernière vue</button>
+</div>
+<div class="threshold-bottom">
+<span>
+<a href="manifeste-v2-5.html" data-document="manifeste">Lire le manifeste</a> · <a href="manifeste.html" data-document="archive">Archive V2.1</a>
+</span>
+<a class="entry-mark" href="#textual">
+<img src="assets/logo-interstice.svg" width="38" height="38" alt="Symbole officiel Interstice">
+<span>Explorer par les liens</span>
+</a>
+</div>
+</section>
+<main id="exploration" class="exploration" tabindex="-1">
+<h1 class="screen-reader">Explorer Interstice</h1>
+<header class="appbar">
+<a class="brand" href="#entree" data-home>
+<img src="assets/logo-interstice.svg" width="39" height="39" alt="">
+<span>INTERSTICE</span>
+</a>
+<span class="space-title" id="location-label">Dans la faille</span>
+<div class="appbar-right">
+<a class="manifest-short" href="manifeste-v2-5.html" data-document="manifeste">Le manifeste ↗</a>
+<span class="candidate">Version candidate</span>
+</div>
+</header>
+<div class="map-wrap">
+<div id="space" class="stage" tabindex="0" role="region" aria-label="Espace des quatre portes. Glisser pour se déplacer ; flèches au clavier, plus et moins pour zoomer, touche Début pour recentrer." data-pan="true">
+<svg id="world" class="world" viewBox="-110 -110 1220 1220" aria-hidden="true" focusable="false">
+<g class="landscape">
+<path class="guide-line" d="M-400 500H1400M500-500V1600M-300-200L1350 1350M-300 1300L1400-300"/>
+<image href="assets/logo-interstice.svg" x="0" y="0" width="1000" height="1000"/>
+<g id="branches">
+<path class="branch-line" d="M525 568C430 410 310 170 160 190M525 568C665 420 790 370 850 240M525 568C410 610 330 830 150 765M525 568C710 630 690 880 850 785M525 568C600 800 380 930 500 900"/>
+</g>
+<g id="walk-lines">
+</g>
+</g>
+</svg>
+<div class="node-layer" id="nodes">
+<a class="node" data-door="encyclopedie" href="#porte/encyclopedie" style="left:16.0%;top:19.0%">
+<span class="orb" aria-hidden="true">01</span>
+<span class="node-label">Encyclopédie des communs</span>
+</a>
+<a class="node" data-door="mediatheque" href="#porte/mediatheque" style="left:85.0%;top:24.0%">
+<span class="orb" aria-hidden="true">02</span>
+<span class="node-label">Médiathèque des communs</span>
+</a>
+<a class="node" data-door="carte" href="#porte/carte" style="left:15.0%;top:76.5%">
+<span class="orb" aria-hidden="true">03</span>
+<span class="node-label">Carte des communs</span>
+</a>
+<a class="node" data-door="entraide" href="#porte/entraide" style="left:85.0%;top:78.5%">
+<span class="orb" aria-hidden="true">04</span>
+<span class="node-label">Entraide</span>
+</a>
+<a class="node manifest-node" data-point="manifeste" href="manifeste-v2-5.html" data-document="manifeste" style="left:50%;top:91%">
+<span class="orb" aria-hidden="true">↗</span>
+<span class="node-label">Le manifeste</span>
+</a>
+</div>
+<div class="space-note">
+<span class="eyebrow">Les passages</span>
+<strong>Suivez une<br>ramification.</strong>
+<span class="desktop-hint">Glisser pour se déplacer.<br>Molette pour zoomer.</span>
+</div>
+</div>
+<div class="top-actions" id="top-actions" hidden>
+<button id="open-paths" type="button" aria-expanded="false" aria-controls="panel">Les traversées <span aria-hidden="true">↗</span>
+</button>
+</div>
+<div class="map-controls" id="map-controls" hidden role="group" aria-label="Commandes de déplacement">
+<button id="back-view" type="button" aria-label="Revenir à la vue précédente">←</button>
+<button class="zoom" id="zoom-out" type="button" aria-label="Zoom arrière">−</button>
+<output id="zoom-value" aria-label="Niveau de zoom" aria-live="off">100 %</output>
+<button class="zoom" id="zoom-in" type="button" aria-label="Zoom avant">+</button>
+<button id="recenter" type="button">Vue entière</button>
+<button id="pan-mode" class="pan-label" type="button" aria-pressed="true">Déplacer la carte</button>
+<button id="restore-view" type="button" aria-label="Retrouver la position mémorisée">↶</button>
+</div>
+<aside id="panel" class="panel" aria-labelledby="panel-title" hidden>
+<button id="close-panel" class="panel-close" type="button" aria-label="Fermer le panneau">×</button>
+<p id="panel-crumb" class="panel-crumb">
+</p>
+<h2 id="panel-title" tabindex="-1">
+</h2>
+<div id="panel-body">
+</div>
+</aside>
+</div>
+<div class="map-meta">
+<p id="live-status" role="status" aria-live="polite" aria-atomic="true">Quatre portes, plusieurs chemins.</p>
+<button id="show-textual" type="button" hidden>Voir tous les liens ↓</button>
+<span class="desktop-hint">Flèches · + / − · Début</span>
+</div>
+</main>
+<section class="directory" id="textual" tabindex="-1" aria-labelledby="textual-title">
+<details id="directory-details" open>
+<summary id="textual-title">Tous les accès, sans déplacer la carte <span aria-hidden="true">↘</span>
+</summary>
+<div class="directory-content">
+<div>
+<h2>Les quatre portes</h2>
+<ul>
+<li>
+<a href="#porte/encyclopedie">Encyclopédie des communs</a>
+</li>
+<li>
+<a href="#porte/mediatheque">Médiathèque des communs</a>
+</li>
+<li>
+<a href="#porte/carte">Carte des communs</a>
+</li>
+<li>
+<a href="#porte/entraide">Entraide</a>
+</li>
+</ul>
+<h3>La Faille noire, le projet fondateur</h3>
+<p>
+<a href="manifeste-v2-5.html" data-document="manifeste">Manifeste V2.5</a> · <a href="manifeste.html" data-document="archive">Archive V2.1</a>
+</p>
+</div>
+<div>
+<h2>Les sept traversées</h2>
+<ul>
+<li>
+<a href="#parcours/PAR-001">Commune de Paris</a>
+</li>
+<li>
+<a href="#parcours/PAR-002">Révolution sociale espagnole</a>
+</li>
+<li>
+<a href="#parcours/PAR-003">Écologie sociale</a>
+</li>
+<li>
+<a href="#parcours/PAR-004">Autogestion</a>
+</li>
+<li>
+<a href="#parcours/PAR-005">Droits en manifestation</a>
+</li>
+<li>
+<a href="#parcours/PAR-006">Féminismes et luttes LGBTQIA+</a>
+</li>
+<li>
+<a href="#parcours/PAR-007">Zapatisme</a>
+</li>
+</ul>
+<p class="muted">Chemins candidats en préparation. Les ressources en relecture ne sont pas ouvertes dans cet aperçu.</p>
+</div>
+</div>
+</details>
+<noscript>
+<p>Sans JavaScript, les accès ci-dessous et les manifestes restent utilisables.</p>
+<style>#directory-details>.directory-content{display:grid}</style>
+</noscript>
+<div class="fallback-cards" data-fallback>
+<section id="porte/encyclopedie">
+<h2>Encyclopédie des communs</h2>
+<p>Des histoires, des idées et des pratiques à mettre en relation.</p>
+<a href="https://zoutifrutti.github.io/Interstice/wiki.html" target="_blank" rel="noopener noreferrer">Consulter l’index R6 existant ↗</a>
+</section>
+<section id="porte/mediatheque">
+<h2>Médiathèque des communs</h2>
+<p>Des textes, des œuvres et des sources pour prolonger le chemin.</p>
+<a href="https://zoutifrutti.github.io/Interstice/bibliotheque.html" target="_blank" rel="noopener noreferrer">Consulter l’index R6 existant ↗</a>
+</section>
+<section id="porte/carte">
+<h2>Carte des communs</h2>
+<p>Des territoires et des expériences à situer, avec leurs contextes.</p>
+<a href="https://zoutifrutti.github.io/Interstice/atlas.html" target="_blank" rel="noopener noreferrer">Consulter l’index R6 existant ↗</a>
+</section>
+<section id="porte/entraide">
+<h2>Entraide</h2>
+<p>Des ressources pour faire ensemble. Les fiches pratiques en relecture restent fermées.</p>
+<a href="https://zoutifrutti.github.io/Interstice/parcours.html#entraide" target="_blank" rel="noopener noreferrer">Consulter l’index R6 existant ↗</a>
+</section>
+<section id="parcours/PAR-001">
+<h2>Commune de Paris</h2>
+<p>Que peut-on établir des projets d’organisation du travail, de leurs décisions et de leurs réalisations pendant la Commune ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-002">
+<h2>Révolution sociale espagnole</h2>
+<p>Comment distinguer les expériences de collectivisation, les organisations et les conflits dans l’Espagne révolutionnaire de 1936–1937 ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-003">
+<h2>Écologie sociale</h2>
+<p>Comment relier histoire des luttes, connaissances scientifiques et propositions d’organisation sans confondre leurs preuves ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-004">
+<h2>Autogestion</h2>
+<p>Qui peut réellement participer, décider et contester, et qui supporte le travail visible ou invisible ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-005">
+<h2>Droits en manifestation</h2>
+<p>Comment séparer les règles, leurs conditions d’application et les orientations vers une aide compétente ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-006">
+<h2>Féminismes et luttes LGBTQIA+</h2>
+<p>Comment lire des histoires distinctes, leurs convergences et leurs désaccords, à partir de voix situées ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-007">
+<h2>Zapatisme</h2>
+<p>Comment suivre les transformations de l’autonomie zapatiste en distinguant paroles du mouvement, traductions et observations ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+</div>
+</section>
+<footer class="footer">
+<span>Interstice · Un projet de La Faille noire</span>
+<span>Les idées circulent. Les personnes restent protégées.</span>
+</footer>
+</body>
+</html>
