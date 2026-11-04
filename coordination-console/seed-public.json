@@ -915,6 +915,17 @@
       "merged": false,
       "draft": true,
       "url": "https://github.com/zoutiFrutti/Interstice/pull/114"
+    },
+    {
+      "number": 162,
+      "title": "C03-ARC-02 : objections historiques PAR-001, PR #161",
+      "head": "2e4a70615b353008dd5a7121234987f77d51fe43",
+      "branch": "research/archeologue-c03-par001-20261103",
+      "updated_at": "2026-11-03T21:17:00Z",
+      "created_at": "2026-11-03T21:00:00Z",
+      "merged": false,
+      "draft": true,
+      "url": "https://github.com/zoutiFrutti/Interstice/pull/162"
     }
   ],
   "decisions": [
@@ -983,5 +994,26 @@
       "assistant-anarchiviste"
     ],
     "limitation": "Le normaliseur C11 de main ne connaît ni penseuse ni orchestratrice ; le registre documentaire de 19 rôles ne modifie pas cette liste."
-  }
+  },
+  "mission_prs": [
+    {
+      "mission_id": "C03-ORC-03",
+      "number": 132,
+      "nature": "livrable_documentaire",
+      "note": "Index C03 candidate, reception non attestee"
+    },
+    {
+      "mission_id": "C03-ARC-03",
+      "number": 162,
+      "nature": "anteriorite",
+      "note": "ARC-02 antecedent, pas livraison ARC-03"
+    },
+    {
+      "mission_id": "C03-TECH-02",
+      "number": 181,
+      "nature": "dependance_technique",
+      "note": "Convergence navigation candidate, pas visa TECH-02"
+    }
+  ],
+  "coordination_explanation": "Liens PR qualifiés : livraison, antériorité ou dépendance. Les autres missions ne reçoivent aucune PR propre inventée. Source statique datée, non synchronisée."
 }
