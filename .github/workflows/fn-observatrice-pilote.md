@@ -27,6 +27,11 @@ safe-outputs:
   create-issue: false
   report-failed-jobs: false
   report-failure-as-issue: false
+  report-incomplete: false
+  report-missing-tool:
+    create-issue: false
+  report-missing-data:
+    create-issue: false
 ---
 
 # La Faille noire - Observatrice technique pilote
