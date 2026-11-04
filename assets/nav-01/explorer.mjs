@@ -1,5 +1,6 @@
 import {DOORS, PARCOURS, BUNDLE, DOCUMENTS, PUBLIC_RESOURCES} from './graph-data.mjs';
 import {readFragment} from './navigation-state.mjs';
+import {candidateResourceIds, authorizedResourceLinks} from './step-resources.mjs';
 import {fitCamera, constrain, viewBox, project, worldPoint, zoomAt, panBy, validCamera} from './camera.mjs';
 
 const $ = selector => document.querySelector(selector);
@@ -147,7 +148,14 @@ function renderPath(id, stepId = null) {
     panelBody.append(element('p','Les fiches pratiques restent fermées. Leur revue juridique et médicale est nécessaire avant toute diffusion.','notice'),returnActions());return;
   }
   if(step){
-    panelBody.append(element('p','Cette étape décrit une entrée de lecture. Les ressources éditoriales associées sont encore en relecture et restent fermées.','notice'));
+    const candidateIds = candidateResourceIds(id, step.id);
+    const authorizedLinks = authorizedResourceLinks(id, step.id);
+    panelBody.append(element('p',candidateIds.length + ' référence(s) documentaires candidates associées à cette étape. Aucun contenu non visé n’est accessible ici.','notice'));
+    if(authorizedLinks.length){
+      const approved = element('ul',undefined,'approved-resource-links');
+      for(const item of authorizedLinks){const li=element('li');li.append(link(item.title,item.url));approved.append(li);}
+      panelBody.append(approved);
+    }
     const actions=element('div',undefined,'panel-actions');
     for(const next of step.next_step_ids){const target=path.steps.find(s=>s.id===next);actions.append(link((step.next_step_ids.length>1?'Bifurquer : ':'Continuer : ')+target.title,'#parcours/'+id+'/'+next));}
     for(const back of step.return_step_ids){const target=path.steps.find(s=>s.id===back);actions.append(link('Revenir : '+target.title,'#parcours/'+id+'/'+back));}
