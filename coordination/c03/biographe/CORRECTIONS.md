@@ -6,7 +6,7 @@
 
 **Texte candidat :** « L'Union des femmes rassemble des travailleuses et militantes dont les signatures apparaissent sur des appels et convocations conservés. L'affiche n°373, datée du 20 mai 1871 (Carnavalet AFF5721), annonce une réunion à la mairie du IVe le 21 mai ; elle n'atteste pas que cette réunion ait été tenue. Les noms imprimés ne suffisent pas à établir l'auteur de chaque texte ni la participation à chaque séance. »
 
-**Relation typée à corriger :** `ASSO-007 → ARCH-002` : vérifier d'abord que **ARCH-002 désigne exactement AFF5721** dans la version canonique ; jusqu'alors `SOURCE_A_VERIFIER`, pas `complement_documentaire` garanti. La branche C03-ARC-03 de l'Archéologue signale ce point.
+**Relation typée à corriger :** `ASSO-007 → ARCH-002` : le dossier **ARCH-002 dans Drive, lu directement le 4 novembre 2026**, désigne explicitement l'affiche n°373, inventaire **AFF5721**. La relation peut donc être qualifiée `complement_documentaire` **dans ce périmètre vérifié**, avec statut `CANDIDAT_EXPORT_A_CONTROLER` pour toute version du Parcours. La convocation n'est pas une preuve de réunion tenue. La branche C03-ARC-03 de l'Archéologue signale ce point.
 
 **BIO-019 :** remplacer la formule « Blanche Lefebvre, blanchisseuse au lavoir » par « Blanche Lefebvre est imprimée parmi les signataires de la convocation du 20 mai 1871 ; Jacques Rougerie la décrit comme modiste. Une autre femme dite Lefèvre, blanchisseuse, est documentée par les études ; l'identifier à Blanche n'est pas fondé. Une attribution à Victorine Gorget est rapportée mais non établie sur acte original. » Ne pas fixer les dates ni le décès par simple indexation muséale.
 
@@ -27,7 +27,7 @@
 
 **Neutralisation importante :** BIO-019 demeure une entrée **d'incertitude documentaire**, pas un personnage raconté comme une biographie stabilisée. BIO-021 ne doit pas recevoir d'attribution individuelle d'œuvres sans source originale. BIO-022 peut illustrer la **fabrique documentaire de la répression** (jugement, album photographique hostile, notice historique) sans présenter une condamnation comme preuve indépendante d'incendie.
 
-**Relation ASSO-007 → ARCH-002 :** même réserve d'identification AFF5721 ; respecter les sept noms imprimés de l'affiche, pas en déduire une représentation de toutes les ouvrières. Ne pas aligner les histoires féministes et LGBTQIA+ sur une origine unique ni présumer qu'une communarde défendait des positions contemporaines.
+**Relation ASSO-007 → ARCH-002 :** relation d'identification AFF5721 **confirmée par lecture du dossier Drive ARCH-002**, mais vérifier la version exportée et respecter les sept noms imprimés de l'affiche, pas en déduire une représentation de toutes les ouvrières. Ne pas aligner les histoires féministes et LGBTQIA+ sur une origine unique ni présumer qu'une communarde défendait des positions contemporaines.
 
 ## Risques avant intégration
 1. Collation des versions exactes de PAR-001/004/006 et source réelle du lien ARCH-002.
