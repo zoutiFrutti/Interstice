@@ -13,7 +13,7 @@ const panelTitle = $('#panel-title');
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const storageKey = 'interstice.nav01.view.v1';
 const nodes = [...document.querySelectorAll('.node')];
-const points = new Map([...DOORS.map(door => [door.id, door]), ['manifeste', {x:500,y:1050}]]);
+const points = new Map([...DOORS.map(door => [door.id, door]), ['manifeste', {x:500,y:900}]]);
 let camera = fitCamera(stage.clientWidth || 1280, stage.clientHeight || 700);
 let activeRoute = '#entree';
 let originDoor = null;
@@ -352,6 +352,6 @@ for(const id of ['map-controls','top-actions','show-textual'])$('#'+id).hidden=f
 activeRoute=location.hash||'#entree';
 const restored=history.state?.nav01;
 if(validSnapshot(restored)){camera={...restored.camera};originDoor=restored.originDoor||null;}
-history.replaceState({nav01:snapshot(),nav01depth:0},'');
+history.replaceState({nav01:snapshot(),nav01depth:history.state?.nav01depth||0},'');
 renderRoute({focus:activeRoute!=='#entree',animate:false,keepCamera:validSnapshot(restored)});
 if(location.hash==='#textual')showTextual();

@@ -31,6 +31,9 @@ after(async()=>{
 });
 const camera=page=>page.locator('#world').getAttribute('viewBox');
 const numbers=value=>value.split(' ').map(Number);
+async function testPage(options){
+  const context=await browser.newContext(options);return context.newPage();
+}
 async function ready(page,fragment=''){
   page.on('pageerror',error=>evidence.errors.push(error.message));
   page.on('console',message=>{if(message.type()==='error')evidence.errors.push(message.text());});
@@ -47,7 +50,7 @@ async function axe(page,label){
 }
 
 for(const width of [320,390,768,1280])test(`entrée, portes, zoom, recentrage et repli textuel — ${width}px`,async()=>{
-  const page=await browser.newPage({viewport:{width,height:844},reducedMotion:'reduce'});
+  const page=await testPage({viewport:{width,height:844},reducedMotion:'reduce'});
   try{
     await ready(page);await overflow(page);
     await page.screenshot({path:resolve(artifacts,`entree-${width}.png`),fullPage:true});
@@ -71,11 +74,11 @@ for(const width of [320,390,768,1280])test(`entrée, portes, zoom, recentrage et
     assert.equal(await page.locator('#textual a[href^="#porte/"]').count(),4);
     assert.equal(await page.locator('#textual a[href^="#parcours/"]').count(),7);
     evidence.widths.push({width,...await overflow(page)});
-  }finally{await page.close();}
+  }finally{await page.context().close();}
 });
 
 test('historique, bifurcations, liens profonds, restauration après rechargement',async()=>{
-  const page=await browser.newPage({viewport:{width:1280,height:900},reducedMotion:'reduce'});
+  const page=await testPage({viewport:{width:1280,height:900},reducedMotion:'reduce'});
   try{
     await ready(page,'#exploration');await page.locator('#space').focus();await page.keyboard.press('ArrowRight');
     const previous=await camera(page);await page.locator('.node[data-door="encyclopedie"]').click();
@@ -85,7 +88,10 @@ test('historique, bifurcations, liens profonds, restauration après rechargement
     assert.ok(await page.locator('#panel a').filter({hasText:/Continuer|Bifurquer/}).count()>0);
     const route=page.url();await page.reload();await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));
     assert.equal(page.url(),route);assert.match(await page.locator('#panel-body').innerText(),/encore en relecture/);
-    await page.goBack();await page.goBack();await page.goBack();
+    await page.getByRole('button',{name:'Revenir à la vue précédente',exact:true}).click();
+    await page.waitForURL(base+'#parcours/PAR-001');
+    await page.goBack();await page.waitForURL(base+'#porte/encyclopedie');
+    await page.goBack();await page.waitForURL(base+'#exploration');
     assert.equal(new URL(page.url()).hash,'#exploration');assert.equal(await camera(page),previous);
     for(const [legacy,title] of [['#wiki','Encyclopédie'],['#bibliotheque','Médiathèque'],['#atlas','Carte'],['#entraide','Entraide']]){
       await page.goto(base+legacy);assert.match(await page.locator('#panel-title').innerText(),new RegExp(title));
@@ -93,11 +99,11 @@ test('historique, bifurcations, liens profonds, restauration après rechargement
     await page.goto(base+'#parcours/PAR-007');assert.match(await page.locator('#panel-title').innerText(),/Zapatisme/);
     await page.goto(base+'#parcours/PAR-005');assert.match(await page.locator('#panel-body').innerText(),/fiches pratiques restent fermées/);
     assert.equal(await page.locator('#panel .step-list').count(),0);
-  }finally{await page.close();}
+  }finally{await page.context().close();}
 });
 
 test('clavier, focus visible, représentations accessibles et manifestes',async()=>{
-  const page=await browser.newPage({viewport:{width:1280,height:900},reducedMotion:'reduce'});
+  const page=await testPage({viewport:{width:1280,height:900},reducedMotion:'reduce'});
   try{
     await ready(page);await axe(page,'entrée');
     await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).focus();await page.keyboard.press('Enter');
@@ -117,7 +123,7 @@ test('clavier, focus visible, représentations accessibles et manifestes',async(
     assert.match(await page.locator('#panel-body').innerText(),/non adoptée collectivement/);
     await axe(page,'lecteur manifeste');
     await page.screenshot({path:resolve(artifacts,'manifeste-1280.png'),fullPage:true});
-  }finally{await page.close();}
+  }finally{await page.context().close();}
 });
 
 test('Android simulé : glissement, pincement à deux doigts et défilement alternatif',async()=>{
@@ -154,13 +160,13 @@ test('sans JavaScript : quatre portes, sept chemins et deux manifestes',async()=
 });
 
 test('réduction des animations : entrée et caméra immédiates',async()=>{
-  const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+  const page=await testPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
   try{
     await ready(page);await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
     assert.equal(await page.evaluate(()=>document.getAnimations().length),0);
     await page.locator('.node[data-door="entraide"]').click();
     assert.equal(await page.evaluate(()=>document.getAnimations().length),0);await axe(page,'mobile / mouvement réduit');
-  }finally{await page.close();}
+  }finally{await page.context().close();}
 });
 
 test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async()=>{
@@ -173,7 +179,7 @@ test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async(
       const tabs=await chrome.tabs.query({});const tab=tabs.find(tab=>tab.url?.startsWith(base));if(!tab)throw new Error('Onglet de test absent');
       await chrome.tabs.setZoom(tab.id,4);return chrome.tabs.getZoom(tab.id);
     },base);
-    assert.equal(zoom,4);await page.waitForFunction(()=>innerWidth<=330);
+    assert.ok(Math.abs(zoom-4)<1e-10);await page.waitForFunction(()=>innerWidth<=330);
     assert.equal(await page.evaluate(()=>document.documentElement.style.zoom),'');
     await page.getByRole('button',{name:'Les traversées',exact:true}).click();
     await page.locator('#panel a[href="#parcours/PAR-004"]').click();
