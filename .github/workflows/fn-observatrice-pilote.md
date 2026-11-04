@@ -24,7 +24,9 @@ tools:
     allowed-repos: '${{ github.repository }}'
     min-integrity: approved
 safe-outputs:
+  create-issue: false
   report-failed-jobs: false
+  report-failure-as-issue: false
 ---
 
 # La Faille noire - Observatrice technique pilote
