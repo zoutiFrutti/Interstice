@@ -220,10 +220,26 @@ test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async(
     await page.locator('#panel a[href="#parcours/PAR-004"]').click();
     assert.match(await page.locator('#panel-title').innerText(),/Autogestion/);
     evidence.zoom400={chromeZoom:zoom,...await overflow(page),devicePixelRatio:await page.evaluate(()=>devicePixelRatio),method:'chrome.tabs.setZoom, profil Chromium jetable'};
-    // Full-page capture resizes the layout viewport in Chromium at native zoom.
-    // Keep the real physical viewport; verify its pixel dimensions as evidence.
-    const shot=await page.screenshot({path:resolve(artifacts,'zoom-navigateur-reel-400.png'),fullPage:false});
+    // Use the native viewport without Playwright's CSS-coordinate screenshot clip.
+    // Its clip is incorrect at browser zoom after scrolling to a reading panel.
+    const cdp=await context.newCDPSession(page);
+    const metrics=await cdp.send('Page.getLayoutMetrics');
+    evidence.zoom400.viewport=metrics.cssVisualViewport;
+    const heading=await page.locator('#panel-title').boundingBox();
+    assert.ok(heading.y>=0&&heading.y<await page.evaluate(()=>innerHeight),'Titre dans le viewport à 400 %');
+    const capture=await cdp.send('Page.captureScreenshot',{format:'png',fromSurface:false,captureBeyondViewport:false});
+    const shot=Buffer.from(capture.data,'base64');
+    await writeFile(resolve(artifacts,'zoom-navigateur-reel-400.png'),shot);
     assert.equal(shot.readUInt32BE(16),1280);assert.equal(shot.readUInt32BE(20),900);
+    const colors=await page.evaluate(async base64=>{
+      const bytes=Uint8Array.from(atob(base64),c=>c.charCodeAt(0));
+      const bitmap=await createImageBitmap(new Blob([bytes],{type:'image/png'}));
+      const canvas=new OffscreenCanvas(bitmap.width,bitmap.height),ctx=canvas.getContext('2d');
+      ctx.drawImage(bitmap,0,0);const pixels=ctx.getImageData(0,0,bitmap.width,bitmap.height).data;
+      const distinct=new Set();for(let i=0;i<pixels.length;i+=4*17){distinct.add(pixels[i]+','+pixels[i+1]+','+pixels[i+2]);if(distinct.size>20)break;}
+      return distinct.size;
+    },capture.data);
+    evidence.zoom400.screenshotColors=colors;assert.ok(colors>10,'La capture doit montrer le lecteur, pas une surface vide');
     await axe(page,'zoom navigateur réel 400 %');
   }finally{await context.close();}
 });
