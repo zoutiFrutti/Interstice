@@ -51,3 +51,43 @@ Le choix d'implémentation de nouveaux champs appartient à **C03-ANA-03** et à
 **Terminé documentaire :** comparaison 20 TIS/7 Parcours/5 relations territoriales de #161, trois bifurcations TIS conservées, demandes de correction par cible et source. **À revoir** : activité actuelle des lieux avant usage de service ; droits, fiches historiques et limites de preuve R2. **Bloqué pour publication** : visa Zout, PAR-005, localisations, sécurité et QA de rendu. Les 35 objections C02 et 30 réserves WORK ne sont pas déclarées résolues.
 
 **Aucune correction n'est appliquée au registre de PR #161 dans cette mission.** Les visas et la future intégration sont des décisions de La Relieuse, des ateliers responsables et de Zout.
+
+---
+
+## C05-TIS-01 — Passe unique de consolidation du 04/11/2026
+
+**Objet :** contrôle postérieur à la PR #173, sur les HEAD réellement relevés le 04/11/2026 : PR #161 `0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6`, PR #173 avant consolidation `1dd2694fed35a973bebbde4a78c1ed5689809f8b`. Aucun de ces objets n'est publié, fusionné ou validé.
+
+### Vérifications structurées réellement exécutées
+Lecture JSON de `resources.json`, `relations.json`, `parcours.json` et `sources.json` sur #161, avec contrôles de clés en mémoire (aucune CI ou suite applicative exécutée).
+- **219** ressources ; **20** objets TIS (`19 kind=initiative`, `1 kind=notice_territoriale`) ; **7** Parcours ; **19** relations globales, **5** touchant TIS.
+- **0** identifiant de ressource dupliqué, **0** cible de relation absente, **0** référence d'étape absente, **0** relation référencée par un Parcours mais inconnue du registre.
+- **1** alias déjà présent : `TIS-001-001.aliases=["tis-c8-velo"]` ; il ne produit pas une seconde ressource et ne résout pas l'état actuel de l'accueil.
+- **20/20** ressources TIS avec `coordinates:null` et `validation.publication:"non_autorisee"` ; **20/20** avec `external_url` au format HTTPS. Format HTTPS vérifié, **pas code HTTP de chaque URL ni conditions d'ouverture**.
+- **5/5** relations TIS référencent une pièce C05 existante dans `sources.json`, mais **0/5** ne référencent directement une URL externe de preuve dans leurs propres `source_refs` : défaut **de granularité de la provenance**, pas rupture des identifiants. Cette nuance remplace toute affirmation de « lien cassé ».
+
+### Corrections indispensables, prêtes à intégrer **après validation** dans #161
+
+**P1-A, relation et provenance** (reprend COR-01/02/14) : conserver `WORK-REL-101/102/105/106/107` et leurs types ; inscrire dans `source_refs` des identifiants `SourceRef` **ajoutés à `data/sources.json`** avec URL exacte, éditeur, date de publication connue et date de contrôle. Ne pas insérer une URL brute qui violerait les conventions de schéma ; suivre les clés réellement retenues par L'Anarchitecte. En particulier `WORK-REL-102` doit dire : *chantier de plantation de décembre 2025 organisé par Terre de Liens Midi-Pyrénées et CEN Occitanie, avec appui technique Arbres et Paysages Tarnais, selon la déclaration de Terre de Liens publiée le 16/12/2025 (mise à jour 17/12)*. R2 limité à cet événement, survie des arbres inconnue ; `cooperation_interstice:false`.
+
+**P1-B, sémantique d'activité** (COR-03/06/07) : ne plus utiliser `availability:"inventaire_tisseuse_lu"` comme seul indicateur auprès de l'interface. Valeur = **contrôle documentaire**, distinct de l'accueil et des horaires. Identifier explicitement :
+- `tis-c8-testet` : bassin et rapport IGEDD, aucun « collectif actif » ou visite déduit ;
+- `TIS-001-006` : ancien camion arrêté en 2018 ; la boutique 2026 est un autre service déclaré ;
+- `TIS-001-009` : dernière trace du carnet 2023, activité en 2026 non établie ;
+- `TIS-001-011` : festival tenu en juillet 2026, édition passée ; association et programmation future distinctes ;
+- `tis-c8-glanerie` : [annonce opérateur publiée le 26/10](https://www.la-glanerie.org/actualites), nouveaux horaires Blagnac **prévus à compter du 04/11/2026** ; publication du texte et entrée en vigueur ne valent pas visite sur place le même jour.
+- `TIS-001-002` : [page Afev Albi](https://afev.org/occitanie/albi) accessible au contrôle ; elle décrit une antenne, des horaires de bureau et des actions éducatives, **pas capacité de prise en charge ni accord avec Interstice**.
+
+**P0-C, anti-faux-partenariat / confidentialité** (COR-04/05/12/15/16) : conserver **R3=0**, `publication_authorized:false`, `coordinates:null`. Les 20 objets restent documentaires, **non 20 lieux d'accueil actifs**. Pas d'auto-géocodage à partir d'une adresse publique ; aucune adresse privée ou lieu de rassemblement exposés. `PAR-005` conserve ses blocages, aucune permanence ou service juridico-médical attribué à une association TIS. Alias `tis-c8-velo` préservé, sans seconde carte ni suppression d'ID. Aucun contenu réel n'est injecté dans les données fictives de PR #41.
+
+**P1-D, navigation** (COR-09/10/11/13) : les sept Parcours restent exactement `PAR-001..007`. Les trois anciens circuits TIS sont des **renvois de lecture optionnels** pour PAR-003 et PAR-004, en liste textuelle avec période et statut, pas des itinéraires garantis ni de nouveaux Parcours. Les dossiers `EXP` gardent la porte Encyclopédie, `DROIT` gardent Entraide, `FN` Médiathèque, TIS Carte. Les territoires de Catalogne, Aragon, Murcie-Albacete et Chiapas restent situés et différenciés, sans localisation sensible.
+
+### Incertitudes maintenues après le contrôle
+- Statut d'accueil actuel, accessibilité PMR, modalités d'adhésion, horaires exceptionnels, finances/activité réelles de la plupart des vingt notices : **non vérifiés sur place**.
+- Écologie : plantation attestée par son organisateur ≠ taux de survie indépendant. SCTL : actes de baux originaux non revus. 3PA : divergence documentaire sur la superficie de Bordanova non résolue.
+- Patrimoine historique : Catalogne / Aragon / Murcie-Albacete, historiques de Paris et communautés zapatistes nécessitent contrôle des sources de leurs ateliers ; aucune filiation européenne/chiapanèque inférée.
+- `SourceRef` aujourd'hui = provenance compilation C05, pas preuve détaillée par relation ; **ne pas dire que la source n'existe pas**.
+- Aucun contrôle réseau des vingt liens externes, test automatisé applicatif, test navigateur, observation terrain ni réception de revue des autres ateliers.
+
+### Arbitrages
+**Aucun arbitrage humain territorial irréversible n'est nécessaire pour cette passe documentaire :** la conservation des identifiants, les relations R1/R2 et le refus de R3 découlent des preuves déjà présentes ; les corrections sont proposées et non publiées. Une décision de Zout sera nécessaire **au moment d'autoriser une intégration publique, une règle de géolocalisation, un contact ou une nouvelle politique d'annuaire**, mais aucune de ces décisions n'est sollicitée par C05-TIS-01.
