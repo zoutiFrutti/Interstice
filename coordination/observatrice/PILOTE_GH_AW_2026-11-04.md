@@ -1,7 +1,7 @@
 # La Faille noire - premiere mise en place GH-AW (candidat)
 
 Date : 2026-11-04. Mission : FN-ORC / Observatrice technique pilote.
-Statut : **PREPARE, NON COMPILÉ, NON EXECUTE, NON AUTORISE**.
+Statut : **SOURCE PREPAREE, COMPILATION GH-AW VERIFIEE EN CI, LOCK NON DEPOSE SUR LA BRANCHE, AGENT NON EXECUTE / NON AUTORISE**.
 
 ## Finalite
 
@@ -10,7 +10,7 @@ Preparer une premiere lecture assistee par IA du travail de La Faille noire, ent
 Un unique fichier source d'agent est ajoute :
 - .github/workflows/fn-observatrice-pilote.md
 
-Ce fichier seul **n'est pas un workflow Actions executable** : GH-AW requiert sa compilation par `gh aw compile` en fichier `.github/workflows/fn-observatrice-pilote.lock.yml`. Le compilateur n'a pas ete execute pour ce lot, le lock est volontairement absent. Ne pas pretendre que le pilote fonctionne avant sa compilation et son essai reel.
+La compilation par `gh aw compile` a **reussi sur GitHub Actions**, sans appel de modele IA. Le fichier `.github/workflows/fn-observatrice-pilote.lock.yml` est fourni **comme artefact de CI**, pas encore commite dans la PR : l'agent reste non executable depuis la branche. Ne pas confondre compilation, depot du lock, activation et execution.
 
 ## Reemploi du projet, sans dupliquer la messagerie
 
@@ -59,7 +59,8 @@ Aucune PR precedente n'est fusionnee par ce travail. Les references GitHub reste
 
 ## Points bloques a la date du mandat
 
-- Aucun binaire `gh-aw` disponible et aucun `.lock.yml` compile dans cette livraison.
+- Compilateur GH-AW v1.0.1 execute avec succes dans GitHub Actions, fichier lock genere et audite. Il reste absent de la branche PR #180 : GitHub a refuse son push automatise faute de permission speciale `workflows` pour le jeton GitHub App.
+- Le travail de depot temporaire, limite a la branche candidate, a ete **retire du depot** apres cet echec. Il ne reste aucune action CI de push automatisable.
 - Pas d'acces confirme aux secrets, aux quotas du fournisseur, ni a un compte Copilot payant.
 - Le pont C12 reste sans opt-in independant sur main lors de cette verification ; son correctif C13 n'est pas fusionne.
 - C18 #132 et C14 #115 sont des PR candidates. Leur existence ne vaut pas validation.
@@ -73,3 +74,19 @@ Documentation GH-AW :
 - https://github.github.com/gh-aw/reference/auth/
 
 Aucun changement a main, aucune fusion, aucun deploiement ni appel de modele n'a ete effectue par ce dossier.
+
+
+## Resultats verifies du 4 novembre : compilation cloud en lecture seule
+
+- **CI compilation reussie** : https://github.com/zoutiFrutti/Interstice/actions/runs/41837698790
+- Artefact officiel de compilation : https://github.com/zoutiFrutti/Interstice/actions/runs/41837698790 (fichier ZIP `fn-observatrice-gh-aw-lock-non-active`).
+- Source finale avec `safe-outputs.create-issue: false`, `report-failed-jobs: false`, `report-failure-as-issue: false`, `report-incomplete: false` et absence de creation d'Issues pour les rapports de données/outils manquants.
+- Inspection YAML du lock produit par gh-aw v1.0.1 : jobs `activation`, `agent`, `conclusion`, `detection`, `safe_outputs`. Aucun n'a de permission `write`. Seul `workflow_dispatch` est declare ; activation conditionnee par `FN_OBSERVATRICE_ENABLED == true` et l'acteur proprietaire du depot.
+- **Tentative de depot du lock depuis GitHub Actions** : https://github.com/zoutiFrutti/Interstice/actions/runs/41838170283 ; echec lors du push avec le refus explicite `refusing to allow a GitHub App to create or update workflow ... without workflows permission`. La compilation et les controles du lock y ont reussi ; le push a echoue.
+- Le workflow temporaire qui possedait `contents: write` a ete retire de la branche par commit ulterieur. Le workflow de compilation restant est **en lecture seule**, sans modele IA ni secrets fournisseur.
+
+### Blocage precis pour la suite
+
+Le fichier lock genere doit etre ajoute a la branche de PR #180 **par un outil ou un compte effectivement autorise a modifier les workflows**. Le garde-fou GitHub ne doit pas etre contourne ni affaibli. Le fichier existe et peut etre telecharge comme artefact CI ; il ne doit pas etre reconstitue a la main.
+
+Le fournisseur et les frais IA restent a examiner separément. Aucun appel de modele, aucune activation du pilote, aucune fusion et aucune publication n'ont ete effectues. C12 reste independamment a securiser via la PR #114.
