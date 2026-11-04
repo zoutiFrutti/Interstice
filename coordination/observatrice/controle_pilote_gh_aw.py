@@ -42,7 +42,7 @@ class PilotStaticSafety(unittest.TestCase):
         self.assertIn('min-integrity: approved', self.front)
 
     def test_pas_de_safe_output_public(self):
-        self.assertRegex(self.front, r"(?m)^safe-outputs:\s*\n  report-failed-jobs: false$")
+        self.assertIn("safe-outputs:\\n  create-issue: false\\n  report-failed-jobs: false\\n  report-failure-as-issue: false", self.front)
         for key in ("create-issue", "add-comment", "create-pull-request",
                     "push-to-pull-request-branch", "upload-assets"):
             self.assertNotRegex(self.front, rf"(?m)^  {key}:")
