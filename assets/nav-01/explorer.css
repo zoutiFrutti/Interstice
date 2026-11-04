@@ -258,7 +258,7 @@ button:disabled {
   vector-effect:non-scaling-stroke;
 }
 .world .walk-line.dim {
-  opacity:.14;
+  opacity:.045;
 }
 .world .walk-line.active {
   stroke-width:5;
@@ -433,6 +433,7 @@ button:disabled {
   border-radius:4px;
   box-shadow:0 10px 45px #2119112b;
   padding:22px;
+  background:rgba(243,238,230,.97);
   z-index:7;
   cursor:auto;
 }
@@ -851,7 +852,7 @@ button:disabled {
 .world .branch-line {
   stroke:#494039;
   stroke-width:1.25;
-  opacity:.25;
+  opacity:.18;
   stroke-dasharray:3 9;
 }
 .node .orb {
@@ -885,6 +886,7 @@ button:disabled {
   .space-note {
     max-width:130px;
     padding:5px;
+    background:rgba(188,180,172,.85);
   }
   .space-note strong {
     font-size:17px;
