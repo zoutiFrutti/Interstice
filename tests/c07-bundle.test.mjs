@@ -21,3 +21,10 @@ test('every shipped module dependency exists; blocked catalogue stays outside ar
  assert.match(src,/dataset\.orienting='false'/);
  assert.match(src,/parcoursStatus\(path\)/);
 });
+
+test('all seven statuses survive without JavaScript, including explicit PAR-005 block',async()=>{
+ const html=await readFile('explorer.html','utf8');
+ const {PARCOURS_STATUSES}=await import('../assets/nav-01/parcours-status.mjs');
+ for(const label of Object.values(PARCOURS_STATUSES))assert.ok(html.includes(label));
+ assert.match(html,/BLOQUÉ · contrôles juridique et sanitaire nécessaires/);
+});

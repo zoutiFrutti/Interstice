@@ -1,6 +1,9 @@
 import copy
 import json
 import unittest
+import subprocess
+import tempfile
+import sys
 from pathlib import Path
 from reunification_c07 import start, decide, verify
 
@@ -50,3 +53,22 @@ class C07Tests(unittest.TestCase):
         state['history'][0]['action'] = 'fausse'
         with self.assertRaises(ValueError):
             verify(state)
+
+    def test_cli_checkpoint_deduplicates_and_resumes_across_processes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            state_path = Path(directory)/'state.json'
+            base = [sys.executable, str(ROOT/'reunification_c07.py')]
+            args = ['start', '--state', str(state_path), '--mission', str(ROOT/'exemple_mission_c14.json'),
+                    '--registry', str(ROOT.parent/'c03/orchestratrice/registre_collectif_c03.json')]
+            subprocess.run(base + args, check=True, capture_output=True)
+            before = state_path.read_bytes()
+            second = subprocess.run(base + args, check=True, capture_output=True, text=True)
+            self.assertIn('DOUBLON_REFUSE', second.stdout)
+            self.assertEqual(before, state_path.read_bytes())
+            state = json.loads(before)
+            subprocess.run(base + ['decide', '--state', str(state_path), '--decision', 'reprendre',
+                                  '--actor', 'TEST_SYNTHETIQUE', '--report-hash', state['report_hash']],
+                           check=True, capture_output=True)
+            state = json.loads(state_path.read_text())
+            verify(state)
+            self.assertEqual(state['status'], 'TERMINE_TECHNIQUE')
