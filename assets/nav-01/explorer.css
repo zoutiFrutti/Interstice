@@ -310,7 +310,7 @@ button:disabled {
 }
 .node .node-label {
   padding:4px 8px;
-  background:#e5ded4ed;
+  background:#e5ded4;
   border:1px solid #9b8e82;
   border-radius:2px;
   box-shadow:0 2px 12px #63524314;
@@ -328,6 +328,8 @@ button:disabled {
   color:var(--ink);
 }
 .space-note {
+  background:var(--paper);
+  padding:8px;
   position:absolute;
   left:24px;
   top:22px;

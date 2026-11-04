@@ -137,6 +137,30 @@ test('clavier, focus visible, représentations accessibles et manifestes',async(
   }finally{await page.context().close();}
 });
 
+test('les sept traversées relient les portes et gardent leurs retours',async()=>{
+  const page=await testPage({viewport:{width:1280,height:900},reducedMotion:'reduce'});
+  try{
+    await ready(page,'#exploration');
+    const titles=['Commune de Paris','Révolution sociale espagnole','Écologie sociale','Autogestion','Droits en manifestation','Féminismes et luttes LGBTQIA+','Zapatisme'];
+    for(let index=0;index<titles.length;index++){
+      const id='PAR-'+String(index+1).padStart(3,'0');
+      await page.getByRole('button',{name:'Les traversées',exact:true}).click();
+      await page.locator('#panel a[href="#parcours/'+id+'"]').click();
+      assert.equal(await page.locator('#panel-title').innerText(),titles[index]);
+      assert.equal(await page.locator('.walk-line.active').count(),1);
+      assert.ok(await page.locator('#panel a[href^="#porte/"]').count()>=2);
+      if(id==='PAR-005'){
+        assert.equal(await page.locator('#panel a[href^="#parcours/PAR-005/"]').count(),0);
+      }else{
+        await page.locator('#panel .step-list a').first().click();
+        assert.ok(new URL(page.url()).hash.startsWith('#parcours/'+id+'/'));
+        await page.locator('#panel a[href="#parcours/'+id+'"]').click();
+        assert.equal(await page.locator('#panel-title').innerText(),titles[index]);
+      }
+    }
+  }finally{await page.context().close();}
+});
+
 test('Android simulé : glissement, pincement à deux doigts et défilement alternatif',async()=>{
   const context=await browser.newContext({...devices['Pixel 5'],reducedMotion:'reduce'});const page=await context.newPage();
   try{
