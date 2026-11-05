@@ -19,6 +19,10 @@ Les quatre portes sont sur un **même plan fonctionnel**, sans page préalable o
 
 Les espaces documentaires sont directement consultables. Les sept Parcours restent dans les données avec leurs relations, statuts, réserves et renvois, mais secondaires dans la navigation. **PAR-005 : BLOQUÉ**, ni publication ni déblocage par CI.
 
+### Atlas des communs : composante principale de l’Encyclopédie
+
+**Décision D-C09-011 (Zout, 5 novembre 2026)** : l’**Atlas des communs**, anciennement **Carte des communs**, appartient aux **éléments principaux de l’Encyclopédie des communs** (ancien Wiki). Il garde sa propre identité, sa carte interactive et ses fonctionnalités de découverte des lieux, collectifs, initiatives, ressources et réseaux. Il **ne constitue pas une cinquième porte**. Des liens contextuels vers Faire Ensemble sont possibles pour relier découverte et action, sans rendre Faire Ensemble obligatoire. Ne pas assimiler l’Atlas à un simple article, ne pas supprimer les anciennes données, fonctionnalités ou URL ; l’état d’implémentation reste à vérifier.
+
 ## 3. Consultation et identité
 
 - Fenêtres de lecture plus grandes, adaptatives **4:3 ou 16:9** selon les contenus, légèrement plus transparentes ; contraste, lisibilité, clavier, mobile, lecteurs d'écran et réduction des mouvements doivent être contrôlés, pas présumés.
