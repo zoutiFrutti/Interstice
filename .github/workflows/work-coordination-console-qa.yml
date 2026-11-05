@@ -1,0 +1,46 @@
+name: WORK coordination console read-only QA
+on:
+  pull_request:
+    paths:
+      - 'coordination-console/**'
+      - 'scripts/build-coordination-preview.mjs'
+      - 'tests/coordination-console*'
+      - 'tests/coordination-console-zoom-extension/**'
+      - '.github/workflows/work-coordination-console-qa.yml'
+permissions:
+  contents: read
+jobs:
+  console:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Public data, independent states and non-administration barriers
+        run: node --test tests/coordination-console.test.mjs
+      - name: Build isolated allow-listed static artifact
+        run: node scripts/build-coordination-preview.mjs
+      - name: Install QA tools only
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx playwright install --with-deps chromium
+      - name: Responsive, simulated Android, keyboard, no-JS and real browser zoom
+        run: node --test tests/coordination-console.browser.test.mjs
+      - name: Record exact tested HEAD
+        if: always()
+        run: |
+          mkdir -p artifacts/coordination-console
+          git rev-parse HEAD > artifacts/coordination-console/HEAD.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coordination-console-preview-and-evidence-${{ github.event.pull_request.head.sha }}
+          path: |
+            dist-coordination/
+            artifacts/coordination-console/
+          retention-days: 14
