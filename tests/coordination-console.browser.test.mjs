@@ -149,7 +149,7 @@ test('zoom navigateur natif 400 % et reflow, sans style.zoom',async()=>{
 });
 
 test('actualisation GitHub demandée : commit courant, artefact et panne explicite (API simulée)',async()=>{
-  const page=await testPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+  const page=await contextPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
   const requests=[],head='a'.repeat(40);let invalid=false;
   try{
     await page.route('https://api.github.com/repos/zoutiFrutti/Interstice/**',async route=>{
