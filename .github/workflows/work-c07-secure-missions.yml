@@ -48,6 +48,10 @@ jobs:
       - run: python3 -m unittest discover -s coordination/agents -p 'test_*.py' -v
       - name: Execute synthetic approval and resumption without network or AI
         run: python3 coordination/agents/demo_c07.py artifacts/c07/demo.json
+      - name: Execute bounded checks on all real candidate catalogue records, awaiting human review
+        env:
+          C07_SOURCE_SHA: ${{ github.event.pull_request.head.sha }}
+        run: python3 coordination/agents/catalogue_c07.py --output artifacts/c07/catalogue
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

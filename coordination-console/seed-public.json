@@ -1165,5 +1165,26 @@
     },
     "demonstration": true,
     "human_decision_simulated": true
+  },
+  "c07_catalogue": {
+    "schema": "c07.catalogue-proof.v1",
+    "observed_at": "2026-11-05T06:16:21.716694+00:00",
+    "source_commit": null,
+    "source_sha256": "a0b71396417ba16dced8dff920f59464d9d59c3cf1100eb09e8a850650b4a65a",
+    "resources_checked": 219,
+    "batches": 8,
+    "tasks_completed": 24,
+    "canonical_url_present": 29,
+    "canonical_url_absent": 190,
+    "global_probable_duplicate_groups": [],
+    "status": "ATTENTE_VALIDATION",
+    "editorial_approval": false,
+    "external_ai_called": false,
+    "limits": [
+      "Contrôle de métadonnées uniquement ; aucune URL visitée",
+      "Une URL canonique absente ne prouve pas une lacune : des dossiers sont internes",
+      "Doublon URL probable ne vaut pas équivalence d’édition, alias validé ou suppression",
+      "Aucune réserve historique, juridique, sanitaire ou de droits levée"
+    ]
   }
 }

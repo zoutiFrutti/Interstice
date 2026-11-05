@@ -80,9 +80,20 @@ function overview(route){
   view.append(el('p',t.declaredInProgress?`${t.declaredInProgress} commencement(s) déclaré(s), à confronter aux preuves.`:'Aucune activité en cours n’est attestée dans cette sélection. '+t.unknownProgress+' commencements restent inconnus. Ce constat ne signifie pas que les ateliers ne travaillent pas.','overview-note'));
   view.append(el('p','Registre documentaire du '+date(seed.source_snapshot)+' · relevé public du '+date(seed.observed_on)+' · '+t.declaredDeliveries+' livraison candidate documentée.','small muted'));
   view.append(coordinationTable());
+  if(seed.c07_catalogue){
+    const proof=seed.c07_catalogue, section=el('section',undefined,'overview-note');
+    section.append(el('h2','Contrôle automatique du registre réel'),
+      el('p',proof.resources_checked+' objets · '+proof.batches+' lots · '+proof.tasks_completed+' tâches exécutées sans IA'),
+      el('p','État : '+proof.status+' · relevé du '+date(proof.observed_at)),
+      el('p',proof.canonical_url_present+' URL canoniques renseignées ; '+proof.canonical_url_absent+' absentes du champ. Des dossiers sont internes : ce nombre ne signifie pas autant d’erreurs.'),
+      el('p','Empreinte de la source : '+proof.source_sha256));
+    for(const limit of proof.limits)section.append(el('p',limit));
+    section.append(el('p','Aucune décision humaine, publication ou validation éditoriale déduite de ces contrôles. Les résultats complets sont conservés dans les artefacts C07.'));
+    view.append(section);
+  }
   if(seed.c07_execution){
     const proof=seed.c07_execution, section=el('section',undefined,'overview-note');
-    section.append(el('h2','Mission automatique sans IA · preuve C07'),el('p',proof.mission_id+' · '+proof.status+' · '+proof.report.bilan.terminees_deterministes+' tâches exécutées'),el('p','Médiathèque : doublons URL. Lectrice : format des URL. Relieuse : consolidation. Aucun site consulté.'),el('p','La décision de reprise est simulée dans ce test. Aucun visa de Zout, aucune publication.'),el('p','Empreinte du résultat : '+proof.report_hash));
+    section.append(el('h2','Test de validation · décision simulée'),el('p',proof.mission_id+' · '+proof.status+' · '+proof.report.bilan.terminees_deterministes+' tâches exécutées'),el('p','Médiathèque : doublons URL. Lectrice : format des URL. Relieuse : consolidation. Aucun site consulté.'),el('p','La décision de reprise est simulée dans ce test. Aucun visa de Zout, aucune publication.'),el('p','Empreinte du résultat : '+proof.report_hash));
     const list=el('ol');for(const event of proof.history)list.append(el('li',event.action+' · '+date(event.at)));section.append(list);view.append(section);
   }
 
