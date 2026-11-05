@@ -68,3 +68,11 @@ Sur `3017ba99dc05801c09f3ecfa4561ebbb577eb59c`, les 32 tests purs CI et 15 scén
 - Vérifications locales D : 11 tests Python du catalogue/reprise et 14 contrôles Node console/observateur réussis ; constructeur console réussi. Ajout d’un scénario navigateur pour les décomptes et la distinction choix/attente/publication, à examiner en CI sur le commit D exact.
 - Vérification des octets : données ressources/relations/WORK/Parcours, deux manifestes de lots et file éditoriale inchangés depuis la candidate initiale auditée ; règle Wikipédia maintenue, aucun nouvel article créé. Aucun corps privé, original d’archive, droit ou disponibilité de média prétendu vérifié.
 - Questions pour la pause D : présentation des ressources en attente spécialisée dans l’aperçu privé, puis mode d’essai final. Avant E : examiner les CI exactes, sans merge, agent ni service payant.
+
+## PASSERELLE-WORK-C01 — décisions QCM 4 et finalisation E, 5 novembre 2026
+
+- Décisions directes : rubrique « En attente spécialisée », identifiant et motif pour les neuf ressources ; actualisation du Site HTTPS propriétaire existant pour essais Android et iPad. Pas de publication publique, merge, service payant ou agent.
+- HEAD D contrôlé : `e843e5a4b9ba5fa4e93cd8f521fffb52692b0ad5`, neuf workflows réussis. Console : 14 tests Node et 12 scénarios navigateur ; C07 : 111 tests Python ; certification R6 réussie. Publication et mission autorisée non exécutées.
+- Le constructeur du hub privé affiche les neuf motifs échappés sans lien de contenu. Les trois tests de file éditoriale et de manifeste passent localement, dont la vérification des neuf entrées sans ouverture et le refus des pages modifiées.
+- Site existant retrouvé : `faille-interstice-convergence-01`, accès propriétaire seul vérifié avant modification ; source privée ouverte au commit `3a98f7204ef7fd59937a7c6762870907e4743cd0`. Les dix fiches Commune construites et leurs manifestes seront conservés à l’octet, ainsi que les sources privées et leurs réserves.
+- L’actualisation et son résultat effectif restent à vérifier après ce commit. Le compte rendu de clôture doit donner le HEAD réellement testé et la version privée effectivement déployée ; aucune réussite anticipée ici. Les appareils physiques et lecteurs d’écran réels ne sont pas certifiés par les tests automatisés.

@@ -30,6 +30,13 @@ test('private hub reports only actual pages and refuses a modified built page',a
  const nav=await mkdtemp(join(tmpdir(),'real-review-hub-'));
  let progress=await buildReviewHub(nav);
  assert.equal(progress.prepared_private,0);assert.equal(progress.awaiting_editorial_choice,0);
+ const hub=await readFile(join(nav,'relectures/index.html'),'utf8');
+ const section=hub.match(/<section id="attente-specialisee">([\s\S]*?)<\/section>/)?.[1];
+ assert.ok(section);assert.equal((section.match(/<li>/g)||[]).length,9);
+ const escape=x=>x.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+ for(const held of (await currentQueue()).held){assert.ok(section.includes('<strong>'+held.id+'</strong>'));assert.ok(section.includes(escape(held.reason)));}
+ assert.doesNotMatch(section,/<a[\s>]|href=|iframe|data-resource/);
+ assert.equal(progress.held,9);assert.equal(progress.publication_authorized,false);
  // Deliberately simulated content, not a real documentary dossier.
  const batch={id:'lot-commune-02',audience:'owner_private',publication_authorized:false,human_visa:'PENDING',prepared_on:'SIMULATION',items:[{id:'ARCH-003',title:'Fixture',intro:'Aucun contenu réel',distinct_contribution:'Démonstration du contrôle',source_sha256:'a'.repeat(64),source_revision:'simulated',sections:[{title:'Fixture',paragraphs:['Texte synthétique']}],reserves:['Aucun visa réel'],sources:[{label:'Fixture',url:'https://example.org',access:'SIMULÉ'}]}]};
  const directory=join(nav,'relecture-commune-02');

@@ -90,3 +90,7 @@ Les noms des quatre portes gardent des fonds plus légers et une graisse plus fi
 ## 11. Ergonomie C01 — décisions du QCM 3
 
 Sur ordinateur, les grandes fenêtres restent **sur le côté**, afin de garder une partie de la faille visible. Les liens vers les outils restent **directs**, avec leur statut expérimental visible. Ces choix maintiennent le placement et la présentation déjà préparés ; ils ne valident aucun envoi ni nouvelle collecte. Sources : `D-WORK-C01-Q3-01` et `D-WORK-C01-Q3-02`.
+
+## 12. Finalisation privée C01 — décisions du QCM 4
+
+Les neuf ressources en attente spécialisée sont présentées dans une rubrique dédiée, avec identifiant et motif, sans ouvrir leurs contenus. L’aperçu HTTPS propriétaire existant peut être actualisé pour les essais sur Android et iPad ; son audience reste privée. Cette autorisation ne concerne ni GitHub Pages, ni une publication publique, ni un visa éditorial. Sources : `D-WORK-C01-Q4-01` et `D-WORK-C01-Q4-02`.

@@ -70,3 +70,10 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 | --- | --- | --- | --- |
 | `D-WORK-C01-Q3-01` | Conserver les grandes fenêtres sur le côté sur ordinateur, pour garder une partie de la faille visible | Réponse QCM 3 dans PASSERELLE-WORK-C01 | Maintient le placement candidat ; petits écrans et faible hauteur gardent le reflow accessible |
 | `D-WORK-C01-Q3-02` | Conserver les liens directs vers les outils avec un statut expérimental visible | Même réponse QCM 3 | Accessibilité des liens ≠ validation d’envoi, activation d’un service ou autorisation de collecte |
+
+## QCM 4 — finalisation C01, 5 novembre 2026
+
+| ID | Décision directe de Zout | Source | Portée / limite |
+| --- | --- | --- | --- |
+| `D-WORK-C01-Q4-01` | Présenter les neuf ressources dans une rubrique « En attente spécialisée », avec identifiant et motif | Réponse QCM 4 dans PASSERELLE-WORK-C01 | Aucun contenu bloqué ouvert, aucun visa levé |
+| `D-WORK-C01-Q4-02` | Actualiser l’aperçu HTTPS privé existant pour les essais Android et iPad | Même réponse QCM 4 | Site propriétaire existant uniquement ; aucune publication publique, fusion, activation d’agent ou dépense ; essai physique à réaliser par Zout |
