@@ -207,10 +207,11 @@ function renderPath(id, stepId = null) {
     panelBody.append(element('p','Les fiches pratiques restent fermées. Leur revue juridique et médicale est nécessaire avant toute diffusion.','notice'),returnActions());return;
   }
   // Marker is inserted only in the owner-private Site, never in the generic preview.
-  if(id==='PAR-001'&&document.documentElement.dataset.privateReview==='lot-commune-01'){
-    const review=link('Relire le lot Commune — cinq fiches candidates','relecture/index.html?retour='+encodeURIComponent(activeRoute));
+  if(id==='PAR-001'&&['lot-commune-01','editorial-private'].includes(document.documentElement.dataset.privateReview)){
+    const hub=document.documentElement.dataset.privateReview==='editorial-private';
+    const review=link(hub?'Relire les lots — Commune en priorité':'Relire le lot Commune — cinq fiches candidates',(hub?'relectures/index.html':'relecture/index.html')+'?retour='+encodeURIComponent(activeRoute));
     review.addEventListener('click',()=>{stopAnimation();persist();});
-    panelBody.append(element('p','Un premier lot de cinq textes est disponible en relecture privée. Les choix éditoriaux et les visas de publication sont indiqués dans le lot.','notice'),review);
+    panelBody.append(element('p','Les textes sont préparés par lots de cinq maximum. Les choix éditoriaux et les réserves sont indiqués dans chaque lot.','notice'),review);
   }
   const related={
     'PAR-003':['wiki-ecologie-sociale-environnement'],

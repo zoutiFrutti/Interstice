@@ -8,7 +8,9 @@ if (typeof document !== 'undefined') {
   if (fragment) for (const link of document.querySelectorAll('[data-return]')) link.href=readingReturn(fragment);
   for(const link of document.querySelectorAll('a[href]:not([data-return])')) {
     const url=new URL(link.href,location.href);
-    if(fragment && url.origin===location.origin && url.pathname.startsWith(new URL('.',location.href).pathname) && url.pathname.endsWith('.html')) {
+    const navRoot=new URL('../',location.href).pathname;
+    const localReader=url.pathname.startsWith(navRoot)&&/^(?:lectures|relectures|relecture(?:-[a-z0-9-]+)?)\/[^/]+\.html$/.test(url.pathname.slice(navRoot.length));
+    if(fragment && url.origin===location.origin && localReader) {
       url.searchParams.set('retour',fragment);link.href=url.href;
     }
   }

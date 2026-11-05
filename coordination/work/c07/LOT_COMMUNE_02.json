@@ -1,0 +1,41 @@
+{
+  "id": "lot-commune-02",
+  "audience": "owner_private",
+  "human_visa": "PENDING",
+  "human_visa_scope": "publication",
+  "publication_authorized": false,
+  "prepared_on": "2026-11-05",
+  "editorial_status": "PENDING",
+  "items": [
+    {
+      "id": "ARCH-003",
+      "source_sha256": "738fa642eae3d0a318ca378d32c8aa91d96a74945bd0cdfcbdf131e8b74b14df",
+      "editorial_status": "PENDING",
+      "publication_visa": "PENDING"
+    },
+    {
+      "id": "ARCH-004",
+      "source_sha256": "4276ebce58c2e7567c2f38023394b471647d35900cafeca659238497d45b5fe0",
+      "editorial_status": "PENDING",
+      "publication_visa": "PENDING"
+    },
+    {
+      "id": "ARCH-005",
+      "source_sha256": "2df9438aae01b04b0267b5b6818eaff1917abe3e9fd4b6a601d610fa1f413a72",
+      "editorial_status": "PENDING",
+      "publication_visa": "PENDING"
+    },
+    {
+      "id": "ARCH-007",
+      "source_sha256": "21da4262ea9c0e42e78d338980a70e436481738537e9549d7eac5a807ed06249",
+      "editorial_status": "PENDING",
+      "publication_visa": "PENDING"
+    },
+    {
+      "id": "COL-003",
+      "source_sha256": "5884eb66f491776f23ad966788df47342af2860a568660573fdcf17f38fd5f67",
+      "editorial_status": "PENDING",
+      "publication_visa": "PENDING"
+    }
+  ]
+}

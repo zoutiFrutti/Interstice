@@ -42,3 +42,11 @@ Le choix est enregistré comme **RETAINED_WITH_RESERVATIONS**, pour la candidate
 Le statut doit être revu si ce contenu change : le constructeur refuse d'appliquer une ancienne décision à un texte, une réserve ou une source modifiés. Ce contrôle de cohérence ne prétend pas authentifier une personne ; l'origine humaine est la réponse effectivement reçue dans cette conversation.
 Les réserves documentaires et les interdictions de publication restent indépendantes de ce choix. Le champ human_visa: PENDING est conservé pour compatibilité et explicitement qualifié comme visa de **publication** ; le choix éditorial reçu n'est plus présenté comme en attente.
 Aucun dossier supplémentaire, image, lecteur externe ou contenu bloqué n'est ouvert par cette décision.
+
+## Extension à tout le corpus — demande directe « On fait pareil avec tout ? »
+Le même processus est appliqué à l'ensemble des objets du registre : récupération des travaux existants, vérification et comparaison documentaire, préparation privée par lots de cinq maximum, réserves visibles, choix groupé de Zout lié à la version, aucune publication automatique.
+Le registre de traitement EDITORIAL_QUEUE.json répartit les 219 identifiants sans doublon : 24 pages R6 existantes, neuf objets en attente ciblée et 38 lots de cinq maximum. C'est une file de traitement, pas 219 textes terminés.
+Les attentes ciblées concernent FN-018, BIO-019, BIO-021, DROIT-001, DROIT-002 et les paires FN-022/FN-048 et FN-038/FN-057. Les quatre derniers ne sont ni supprimés ni fusionnés ; comparaison d'édition à faire. PAR-005 demeure bloqué.
+Lot Commune 02 préparé en privé : ARCH-003, ARCH-004, ARCH-005, ARCH-007 et COL-003. Aucun choix éditorial de Zout n'est encore attribué à ce lot.
+Les 176 objets restant dans les lots suivants sont marqués à préparer, sans lecture de corps ni qualité éditoriale présumée. Le lecteur de lots refuse un identifiant qui n'appartient pas au lot enregistré.
+L'index privé n'annonce un lot disponible qu'après lecture de son manifeste et contrôle des empreintes des pages réellement présentes. Les données Drive et leurs corps demeurent dans le dépôt propriétaire du Site. Aucun ajout de contenus privés dans le constructeur générique ou les artefacts publics.
