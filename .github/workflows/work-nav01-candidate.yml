@@ -5,6 +5,7 @@ on:
       - 'explorer.html'
       - 'assets/nav-01/**'
       - 'scripts/build-nav-preview.mjs'
+      - 'scripts/reading/**'
       - 'tests/nav01*'
       - 'tests/work-convergence-navigation.browser.test.mjs'
       - 'tests/nav01-zoom-extension/**'
@@ -27,7 +28,7 @@ jobs:
         with:
           node-version: '22'
       - name: Camera, identities and editorial barriers
-        run: node --test tests/nav01-camera.test.mjs tests/c06-ana-status-bridge.test.mjs tests/nav02-resource-bridge.test.mjs tests/c07-bundle.test.mjs
+        run: node --test tests/nav01-camera.test.mjs tests/c06-ana-status-bridge.test.mjs tests/nav02-resource-bridge.test.mjs tests/c07-bundle.test.mjs tests/nav01-reading.test.mjs
       - name: Preserve every file from main
         run: |
           node --input-type=module <<'JS'

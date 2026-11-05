@@ -282,3 +282,48 @@ test('entrée animée : traversée et caméra opérationnelles, puis animation t
 });
 
 test('absence d’erreurs JavaScript dans tous les scénarios précédents',()=>assert.deepEqual(evidence.errors,[]));
+
+test('lecture complète : retour exact à la caméra, renvois internes et bouton navigateur',async()=>{
+ const page=await testPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+ try{
+  await ready(page,'#porte/encyclopedie');
+  await page.getByRole('button',{name:'Zoom avant',exact:true}).click();
+  const saved=await camera(page);
+  await page.locator('.reading-introductions details').filter({has:page.locator('summary',{hasText:'Écologie sociale et crise environnementale'})}).locator('summary').click();
+  const detail=page.locator('.reading-introductions details[open]');
+  await detail.getByRole('link',{name:'Lire le texte complet',exact:true}).click();
+  await page.waitForURL('**/lectures/wiki-ecologie-sociale-environnement.html?*');
+  assert.ok((await page.locator('main').innerText()).length>7000);
+  await overflow(page);await axe(page,'Lecture dédiée 390px');
+  await page.screenshot({path:resolve(artifacts,'lecture-ecologie-390.png'),fullPage:true});
+  await page.locator('header [data-return]').click();
+  await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));
+  assert.equal(new URL(page.url()).hash,'#porte/encyclopedie');
+  assert.equal(await camera(page),saved);
+  await page.locator('.reading-introductions details').first().locator('summary').click();
+  await page.locator('.reading-introductions details[open]').getByRole('link',{name:'Lire le texte complet'}).click();
+  await page.goBack();await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));
+  assert.equal(await camera(page),saved);
+ }finally{await page.context().close();}
+});
+test('textes complets sans JavaScript ; médias sans chargement tiers et PAR-005 fermé',async()=>{
+ const page=await testPage({javaScriptEnabled:false,viewport:{width:320,height:844}});
+ try{
+  await page.goto(base+'lectures/index.html');
+  assert.equal(await page.locator('main li').count(),24);
+  await page.getByRole('link',{name:'Écologie sociale et crise environnementale.'}).click();
+  assert.ok((await page.locator('main').innerText()).length>7000);await overflow(page);
+  await page.locator('header [data-return]').click();assert.equal(new URL(page.url()).hash,'#porte/encyclopedie');
+ }finally{await page.context().close();}
+ const media=await testPage({reducedMotion:'reduce'});
+ try{
+  const external=[];media.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
+  await media.goto(base+'lectures/FN-051.html?retour=%23porte%2Fmediatheque');
+  assert.equal(await media.locator('iframe,video,audio').count(),0);
+  assert.deepEqual(external,[]);await media.screenshot({path:resolve(artifacts,'notice-fn051.png'),fullPage:true});
+  await media.locator('header [data-return]').click();
+  assert.equal(new URL(media.url()).hash,'#porte/mediatheque');
+  await ready(media,'#parcours/PAR-005');
+  assert.equal(await media.locator('#panel a[href*="lectures/"]').count(),0);
+ }finally{await media.context().close();}
+});

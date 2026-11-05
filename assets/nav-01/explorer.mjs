@@ -1,3 +1,5 @@
+import {READINGS} from './reading-catalogue.mjs';
+import {MEDIA} from './media-catalogue.mjs';
 import {DOORS, PARCOURS, BUNDLE, DOCUMENTS, PUBLIC_RESOURCES} from './graph-data.mjs';
 import {readFragment} from './navigation-state.mjs';
 import {fitCamera, constrain, viewBox, project, worldPoint, zoomAt, panBy, validCamera} from './camera.mjs';
@@ -145,6 +147,31 @@ function returnActions(path = null) {
   actions.append(link('Manifeste V2.5','#document/manifeste'),link('Archive V2.1','#document/archive'));
   return actions;
 }
+function fullReadingLink(item) {
+  const a=link('Lire le texte complet','lectures/'+item.id+'.html?retour='+encodeURIComponent(activeRoute));
+  a.addEventListener('click',()=>{stopAnimation();persist();});return a;
+}
+function readingIntroductions(items=READINGS) {
+  const group=element('section',undefined,'reading-introductions');
+  group.append(element('h3','Lire dans le prolongement de la faille'));
+  group.append(element('p','Textes R6 existants : leurs sources, réserves et besoins de relecture sont conservés. Les dossiers bloqués restent fermés.','notice'));
+  for(const item of items) {
+    const detail=element('details'),summary=element('summary',item.title);
+    detail.append(summary,element('p',item.intro),element('small',item.status),fullReadingLink(item));group.append(detail);
+  }
+  return group;
+}
+function mediaIntroductions() {
+  const group=element('section');group.append(element('h3','Œuvres et documentaires'));
+  group.append(element('p','Dix notices candidates sourcées. Aucun lecteur externe intégré sans autorisation vérifiée.','notice'));
+  for(const item of MEDIA) {
+    const detail=element('details'),summary=element('summary',item.title);
+    const a=link('Ouvrir la notice sourcée','lectures/'+item.id+'.html?retour='+encodeURIComponent(activeRoute));
+    a.addEventListener('click',()=>{stopAnimation();persist();});
+    detail.append(summary,element('p',item.format+' · '+item.license+' · droits à revérifier'),a);group.append(detail);
+  }
+  return group;
+}
 function renderDoor(id) {
   const door = DOORS.find(door=>door.id===id); if (!door) return;
   showPanel(door.title,'Porte '+door.number+' / Interstice');
@@ -153,6 +180,8 @@ function renderDoor(id) {
   panelBody.append(spatial);
   panelBody.append(element('h3','Suivre une ramification'));
   panelBody.append(pathList(PARCOURS.filter(path=>path.doors.includes(id)).map(path=>path.id)));
+  if(id==='encyclopedie')panelBody.append(readingIntroductions());
+  if(id==='mediatheque')panelBody.append(mediaIntroductions());
   const source = link('Consulter l’index R6 existant ↗','https://zoutifrutti.github.io/Interstice/'+door.legacy,'external');
   source.target='_blank';source.rel='noopener noreferrer';
   const archive = element('div',undefined,'legacy-access');
@@ -177,6 +206,12 @@ function renderPath(id, stepId = null) {
   if(path.blocked_practical){
     panelBody.append(element('p','Les fiches pratiques restent fermées. Leur revue juridique et médicale est nécessaire avant toute diffusion.','notice'),returnActions());return;
   }
+  const related={
+    'PAR-003':['wiki-ecologie-sociale-environnement'],
+    'PAR-004':['wiki-decision-collective','wiki-socialismes-communismes-anarchismes-autogestion','wiki-lecture-croisee-travail-soin-pouvoir'],
+    'PAR-006':['wiki-feminismes-histoire-egalite','wiki-patriarcat-histoire-mecanismes','wiki-egalite-genres-inclusivite']
+  }[id]||[];
+  if(related.length)panelBody.append(readingIntroductions(READINGS.filter(item=>related.includes(item.id))));
   if(step){
     panelBody.append(element('p',String(candidateResourceIds(path.id,step.id).length)+' références candidates · accès fermé','candidate-count'));
     panelBody.append(element('p','Cette étape décrit une entrée de lecture. Les ressources éditoriales associées sont encore en relecture et restent fermées.','notice'));
@@ -432,9 +467,11 @@ if(PUBLIC_RESOURCES.length!==0)throw new Error('Le catalogue candidat doit reste
 document.documentElement.classList.add('enhanced');
 for(const id of ['map-controls','top-actions','show-textual','directions'])$('#'+id).hidden=false;
 activeRoute=location.hash||'#entree';
-const restored=history.state?.nav01;
+const readingBack=new URLSearchParams(location.search).get('retour')==='lecture'&&lastView?.route===activeRoute;
+const restored=readingBack?lastView:history.state?.nav01;
 if(validSnapshot(restored)){camera={...restored.camera};originDoor=restored.originDoor||null;}
 history.replaceState({nav01:snapshot(),nav01depth:history.state?.nav01depth||0},'');
 renderRoute({focus:activeRoute!=='#entree',animate:false,keepCamera:validSnapshot(restored)});
+if(readingBack)history.replaceState({...history.state,nav01:snapshot()},'',location.pathname+location.hash);
 if(location.hash==='#textual')showTextual();
 
