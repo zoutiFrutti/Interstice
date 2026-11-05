@@ -45,6 +45,8 @@ Les deux fichiers en `coordination/` sont **proposés dans la présente PR**, et
 
 Chaque dimension prend `oui / non / inconnu` avec preuve, auteur, date, branche, chemin, commit et blob si disponibles. Les trois dernières portent des actes distincts : **décision humaine**, **merge GitHub autorisé**, **publication effectivement constatée et autorisée**. Un résultat de CI ne vaut ni reçu, ni validation, ni intégration, ni publication. **BLOQUE**, `ATTENTE`, `OBJECTION_OUVERTE` sont des attributs transversaux, pas des étapes accomplies. La préparation documentaire C10/C18 peut conserver ses codes antérieurs, avec une table de correspondance explicite, sans migration destructrice.
 
+**Table de correspondance opérationnelle sans migration destructive :** `coordination/c03/orchestratrice/C09_CORRESPONDANCE_ETATS.md`. Les anciennes valeurs C10/C18 ne sont pas promues automatiquement vers un statut plus fort.
+
 ## 6. Contrat des journaux d'ateliers
 
 Chemin préférentiel : `coordination/c03/<slug>/JOURNAL_SYNCHRONISATION.md` **si le dossier C03 existe**. Sinon un chemin propre déjà établi dans le dépôt doit être gardé et référencé par l'index ; ne créer ni rôle ni journal fictif. Les boîtes C10 (`coordination/messagerie/boites/<slug>.md`) restent des boîtes de messages, pas les journaux de suivi ; `coordination/JOURNAL_COMMUN.md` reste archive partagée.
