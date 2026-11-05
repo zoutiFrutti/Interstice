@@ -43,7 +43,7 @@ class C09ReferenceTests(unittest.TestCase):
         self.assertTrue(self.result(reference=text)["erreurs"])
 
     def test_atlas_remains_inside_encyclopedie(self):
-        text = self.reference.replace("Atlas des communs", "Carte autonome", 1)
+        text = self.reference.replace("Atlas des communs", "Carte autonome")
         self.assertTrue(self.result(reference=text)["erreurs"])
 
     def test_additional_role_does_not_break_future_cycles(self):
