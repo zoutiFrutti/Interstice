@@ -360,9 +360,9 @@ test('C01 direct documents precede closed secondary paths, and Atlas stays insid
   assert.equal(await page.locator('#panel a[href*="relecture/"]').count(),0,'Aucun lot privé dans la construction générique');
   assert.equal(await page.locator('#panel a[href^="https://zoutifrutti.github.io/Interstice/archives"]').count(),0,'Aucun index public inventé');
   // A pre-C09 session may remember the removed standalone Carte door.
-  await page.evaluate(()=>sessionStorage.setItem('interstice.nav01.view.v1',JSON.stringify({version:1,route:'#parcours/PAR-001',camera:{cx:500,cy:500,span:1220},originDoor:'carte'})));
+  await page.addInitScript(()=>sessionStorage.setItem('interstice.nav01.view.v1',JSON.stringify({version:1,route:'#parcours/PAR-001',camera:{cx:500,cy:500,span:1220},originDoor:'carte'})));
   await page.goto(base+'?retour=lecture#parcours/PAR-001');
-  assert.equal(await page.locator('#panel a[href="#porte/encyclopedie"]').count(),2,'L’ancienne origine Carte est restaurée dans l’Encyclopédie');
+  assert.equal(await page.getByRole('link',{name:'Retour à Encyclopédie',exact:true}).getAttribute('href'),'#porte/encyclopedie','L’ancienne origine Carte est restaurée dans l’Encyclopédie');
   await page.goto(base+'#porte/faire-ensemble');
   assert.equal(await page.locator('#panel-title').innerText(),'Faire Ensemble');
   assert.equal(await page.locator('#panel a[href="https://zoutifrutti.github.io/Interstice/parcours.html#entraide"]').count(),1);

@@ -40,3 +40,7 @@ Sources à lire : `coordination/REFERENTIEL_VIVANT.md`, `coordination/REGISTRE_D
 - Vérification locale : construction isolée et 42 contrôles Node réussis (navigation, étapes, confidentialité des lots, lecteurs, catalogue, contrats). Les sources R6 ont été reconstituées à l’octet et leurs blobs vérifiés. Chromium absent ; téléchargement local échoué ; aucun résultat navigateur local inventé. CI navigateur à examiner sur le commit exact de cette séquence.
 - Concurrence détectée : `ea24bfa7895dd6aa822b99f8c5346c32026f7202` ajoute seulement la note C09 ci-dessus dans la boîte. Cette note est conservée ici ; la boîte revient au blob historique, sans élargir les exceptions C13.
 - Pause QCM 2 avant la séquence C. Réception graphique et appareils physiques non validés ; aucun merge, déploiement ou agent activé.
+
+### Vérification navigateur intermédiaire
+
+Sur `3017ba99dc05801c09f3ecfa4561ebbb577eb59c`, les 32 tests purs CI et 15 scénarios navigateur existants passent. Le nouveau scénario de restauration utilise d’abord une fixture sessionStorage écrasée par le gestionnaire pagehide de la page précédente ; corriger l’injection à l’initialisation du document et vérifier explicitement le lien de retour attendu. Ce résultat intermédiaire n’est pas présenté comme une suite verte ; les comparaisons de convergence n’ont pas encore été exécutées sur ce commit.
