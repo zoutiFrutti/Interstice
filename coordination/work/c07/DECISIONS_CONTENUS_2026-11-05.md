@@ -35,3 +35,10 @@ Les textes Drive restent dans le dépôt source propriétaire du Site privé, pa
 Le générateur de relecture est distinct du constructeur générique : aucun corps Drive ni dossier bloqué ajouté à dist-nav. Le marqueur de lien de relecture est inséré uniquement dans le HTML du Site propriétaire. Ce marqueur ne constitue pas un contrôle d’accès : la confidentialité dépend du contrôle d’accès propriétaire vérifié avant déploiement.
 Aucune sélection dans un QCM antérieur ne vaut visa sur ces nouvelles versions. Le QCM du lot doit porter sur les cinq textes lisibles et sur leurs réserves ; ni la preuve historique, ni les droits, ni une publication publique ne sont validés par la CI.
 BIO-012 relie la biographie encyclopédique existante au lieu de la dupliquer. ASSO-007 et les archives sont traitées sous l'angle des preuves, de l'organisation et des limites des documents.
+
+## Choix du lot Commune 01 — réponse directe de Zout
+Zout a sélectionné les cinq fiches présentées, avec leurs réserves conservées : ASSO-008, ASSO-007, ARCH-002, ARCH-006 et BIO-012.
+Le choix est enregistré comme **RETAINED_WITH_RESERVATIONS**, pour la candidate privée uniquement. Chaque décision référence l'empreinte de la page présentée dans le Site source f5be593c5bf61b0ccd05848e9c037adb308e2686 et celle du contenu éditorial (titre, introduction, angle, corps, réserves, sources et provenance).
+Le statut doit être revu si ce contenu change : le constructeur refuse d'appliquer une ancienne décision à un texte, une réserve ou une source modifiés. Ce contrôle de cohérence ne prétend pas authentifier une personne ; l'origine humaine est la réponse effectivement reçue dans cette conversation.
+Les réserves documentaires et les interdictions de publication restent indépendantes de ce choix. Le champ human_visa: PENDING est conservé pour compatibilité et explicitement qualifié comme visa de **publication** ; le choix éditorial reçu n'est plus présenté comme en attente.
+Aucun dossier supplémentaire, image, lecteur externe ou contenu bloqué n'est ouvert par cette décision.
