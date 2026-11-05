@@ -163,6 +163,7 @@ async function readRoute(page,version,viewport){
   await page.getByRole('link',{name:'Retour à Encyclopédie',exact:true}).click();await settled(page);
   assert.equal(new URL(page.url()).hash,'#porte/encyclopedie');
   await capture(page,version,viewport,'retour-porte');
+  if(version==='after')await page.locator('#panel .secondary-paths>summary').click();
   await page.locator('#panel a[href="#parcours/PAR-005"]').click();await settled(page);
   assert.match(await page.locator('#panel-body').innerText(),/fiches pratiques restent fermées/);
   assert.equal(await page.locator('.step-node').count(),0);
