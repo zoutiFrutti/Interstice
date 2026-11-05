@@ -7,7 +7,8 @@ permissions:
   issues: write
 jobs:
   lectrice:
-    if: startsWith(github.event.issue.title, '[RELIEUSE-LECTRICE]') && github.event.issue.user.login == github.repository_owner
+    # Arrêt d'urgence C12 autorisé par Zout le 2026-11-05. Aucun job ne peut démarrer.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
