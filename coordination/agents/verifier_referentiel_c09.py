@@ -52,11 +52,13 @@ def verify(reference, decisions, directory, root=None):
     if len(ids) < 10 or len(ids) != len(set(ids)) or any(
         not DECISION_PATTERN.fullmatch(x) for x in ids):
         errors.append("Identifiants de decisions absents ou dupliques")
+    if "D-C09-011" in ids and ("Atlas des communs" not in reference or "cinquième porte" not in reference):
+        errors.append("Decision Atlas D-C09-011 absente du referentiel")
     if any(len(r) != 5 or not r[2] or not r[4] for r in rows):
         errors.append("Provenance ou reserves manquantes")
     roles = ROLE_PATTERN.findall(directory)
-    if len(roles) != 19 or len(set(roles)) != len(roles):
-        errors.append("Liste de 19 roles non unique")
+    if len(roles) < 19 or len(set(roles)) != len(roles):
+        errors.append("Annuaire initial de 19 roles incomplet ou non unique")
     if root is not None:
         expected = [
             "coordination/JOURNAL_COMMUN.md",
