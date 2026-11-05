@@ -98,3 +98,8 @@ Les neuf ressources en attente spécialisée sont présentées dans une rubrique
 ## 13. Suite de C01 — décisions du QCM 5
 
 Zout ouvre un cycle ciblé sur les outils Faire Ensemble. Les liens directs et statuts visibles restent acquis ; l’état réel de suspension doit être distingué d’une simple expérimentation. Une reprise d’interface ne vaut ni autorisation de réactiver les envois ni ouverture d’un canal privé. Le prochain cycle documentaire priorisera FN-018 et les doublons, sans lever leurs blocages. Sources : `D-WORK-C01-Q5-01` et `D-WORK-C01-Q5-02`.
+
+
+## Proposition de cohérence R01–R10 — non adoptée (5 novembre 2026)
+
+L'Orchestratrice intègre la fonction de contradiction critique précédemment nommée « La Démolisseuse », **sans rôle distinct ni agent supplémentaire**. Le [contrat candidat](c03/orchestratrice/CONTRAT_CONTRE_AUDIT_INTEGRE_2026-11-05.md) et les [dix règles R01–R10 proposées à La Relieuse](c03/orchestratrice/CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md) sont **à arbitrer** ; ce renvoi **n'adopte aucune règle** et n'ajoute aucune décision au registre. Les sources de vérité, journaux et boîtes existants sont conservés.
