@@ -56,3 +56,17 @@ test('human retention is bound to the reviewed version; publication remains pend
   await assert.rejects(()=>buildEditorialReview(changed,dir),/Décision éditoriale/);
  }
 });
+test('unchecked item is preserved as not selected, never retained or left awaiting the same choice',async()=>{
+ const {editorialContentHash}=await import('../scripts/build-editorial-review.mjs');
+ const {buildReviewHub}=await import('../scripts/build-review-hub.mjs');
+ const b=fixture(),item=b.items[0];
+ b.editorial_decisions=[{id:item.id,status:'NOT_SELECTED_THIS_REVIEW',scope:'candidate_private_editorial_only',source:'zout_direct_conversation',recorded_on:'2026-11-05',reviewed_page_sha256:'c'.repeat(64),content_sha256:editorialContentHash(item)}];
+ const nav=await mkdtemp(join(tmpdir(),'unchecked-review-'));
+ const m=await buildEditorialReview(b,join(nav,'relecture'));
+ assert.equal(m.retained_count,0);assert.equal(m.not_selected_count,1);assert.equal(m.pending_count,0);
+ assert.equal(m.items[0].editorial_status,'NOT_SELECTED_THIS_REVIEW');assert.equal(m.publication_authorized,false);
+ const html=await readFile(join(nav,'relecture',item.id+'.html'),'utf8');
+ assert.match(html,/NON SÉLECTIONNÉE DANS CE LOT/);assert.match(html,/Réserves à conserver/);
+ const hub=await buildReviewHub(nav);
+ assert.equal(hub.editorially_retained,0);assert.equal(hub.not_selected_this_review,1);assert.equal(hub.awaiting_editorial_choice,0);
+});

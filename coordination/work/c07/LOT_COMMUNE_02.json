@@ -5,37 +5,97 @@
   "human_visa_scope": "publication",
   "publication_authorized": false,
   "prepared_on": "2026-11-05",
-  "editorial_status": "PENDING",
+  "editorial_status": "CHOICES_RECORDED",
   "items": [
     {
       "id": "ARCH-003",
       "source_sha256": "738fa642eae3d0a318ca378d32c8aa91d96a74945bd0cdfcbdf131e8b74b14df",
-      "editorial_status": "PENDING",
-      "publication_visa": "PENDING"
+      "editorial_status": "NOT_SELECTED_THIS_REVIEW",
+      "publication_visa": "PENDING",
+      "editorial_decision": {
+        "id": "ARCH-003",
+        "status": "NOT_SELECTED_THIS_REVIEW",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "selection_basis": "not_checked_in_submitted_multiselect",
+        "reviewed_site_source_commit": "e5c5df8e7383314adbf0be653fbfba73d7e7a8d1",
+        "reviewed_page_sha256": "669c662866bb8807878daef0e258d4c9b5e50954b030f5c8f9056304d6391806",
+        "content_sha256": "16b0f632fe63352544b5e3188cbc8f96cba945c7cc60ad6fedc831264aae08ff"
+      }
     },
     {
       "id": "ARCH-004",
       "source_sha256": "4276ebce58c2e7567c2f38023394b471647d35900cafeca659238497d45b5fe0",
-      "editorial_status": "PENDING",
-      "publication_visa": "PENDING"
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "editorial_decision": {
+        "id": "ARCH-004",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "selection_basis": "checked_in_submitted_multiselect",
+        "reviewed_site_source_commit": "e5c5df8e7383314adbf0be653fbfba73d7e7a8d1",
+        "reviewed_page_sha256": "00cd1463c351b623242cde4ba8b13376146a4c68e33d2b834425e2e24d59b6dc",
+        "content_sha256": "26f827fc389fd147a4fce4207dbb29707d060e5b84033d528b070a433ec4edc7"
+      }
     },
     {
       "id": "ARCH-005",
       "source_sha256": "2df9438aae01b04b0267b5b6818eaff1917abe3e9fd4b6a601d610fa1f413a72",
-      "editorial_status": "PENDING",
-      "publication_visa": "PENDING"
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "editorial_decision": {
+        "id": "ARCH-005",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "selection_basis": "checked_in_submitted_multiselect",
+        "reviewed_site_source_commit": "e5c5df8e7383314adbf0be653fbfba73d7e7a8d1",
+        "reviewed_page_sha256": "84536eea303a061e31eec504bfacd104798ebbae2af989b795f23fc571b82563",
+        "content_sha256": "9267a7598f90aaf5dc66767d8831a5c501ae1e78b14bc0ac829c58e8a57ad404"
+      }
     },
     {
       "id": "ARCH-007",
       "source_sha256": "21da4262ea9c0e42e78d338980a70e436481738537e9549d7eac5a807ed06249",
-      "editorial_status": "PENDING",
-      "publication_visa": "PENDING"
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "editorial_decision": {
+        "id": "ARCH-007",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "selection_basis": "checked_in_submitted_multiselect",
+        "reviewed_site_source_commit": "e5c5df8e7383314adbf0be653fbfba73d7e7a8d1",
+        "reviewed_page_sha256": "816230b4ebef4506e5070cd23106f7a19fa484d380c24ca4e5dca266e58ebabe",
+        "content_sha256": "7bff31fc9bd6a8d7e446f7f4e54bc7d8972cd44074a0427f0743c4eb990f0be8"
+      }
     },
     {
       "id": "COL-003",
       "source_sha256": "5884eb66f491776f23ad966788df47342af2860a568660573fdcf17f38fd5f67",
-      "editorial_status": "PENDING",
-      "publication_visa": "PENDING"
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "editorial_decision": {
+        "id": "COL-003",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "selection_basis": "checked_in_submitted_multiselect",
+        "reviewed_site_source_commit": "e5c5df8e7383314adbf0be653fbfba73d7e7a8d1",
+        "reviewed_page_sha256": "0aaa331df8c4b97043c9a0374851046e5d8b258145e68e7d04e69761ebe39e01",
+        "content_sha256": "4ce4fcdd7e5dd045e5714c812d3c2a18718516047c947ca84a3a1b07906325af"
+      }
     }
-  ]
+  ],
+  "retained_count": 4,
+  "not_selected_count": 1,
+  "pending_editorial_count": 0,
+  "decision_recorded_on": "2026-11-05",
+  "decision_source": "zout_direct_conversation"
 }

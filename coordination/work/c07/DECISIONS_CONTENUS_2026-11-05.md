@@ -50,3 +50,9 @@ Les attentes ciblées concernent FN-018, BIO-019, BIO-021, DROIT-001, DROIT-002 
 Lot Commune 02 préparé en privé : ARCH-003, ARCH-004, ARCH-005, ARCH-007 et COL-003. Aucun choix éditorial de Zout n'est encore attribué à ce lot.
 Les 176 objets restant dans les lots suivants sont marqués à préparer, sans lecture de corps ni qualité éditoriale présumée. Le lecteur de lots refuse un identifiant qui n'appartient pas au lot enregistré.
 L'index privé n'annonce un lot disponible qu'après lecture de son manifeste et contrôle des empreintes des pages réellement présentes. Les données Drive et leurs corps demeurent dans le dépôt propriétaire du Site. Aucun ajout de contenus privés dans le constructeur générique ou les artefacts publics.
+
+## Résultat du QCM Commune 02
+Réponse directe de Zout : ARCH-004, ARCH-005, ARCH-007 et COL-003 retenues éditorialement, avec leurs réserves, pour la candidate privée.
+ARCH-003 n'a pas été cochée dans la réponse soumise. Elle est enregistrée **NOT_SELECTED_THIS_REVIEW**, conservée pour reprise : ni supprimée, ni retenue automatiquement, ni rejetée définitivement. Aucun motif historique ou politique ne lui est attribué.
+Les cinq résultats sont liés aux empreintes de contenu et aux pages présentées dans le Site source e5c5df8e7383314adbf0be653fbfba73d7e7a8d1. Le lot n'est plus annoncé comme attendant le même choix.
+Au total des deux lots : neuf fiches retenues avec réserves, une non sélectionnée dans son lot et conservée. Les 176 autres objets des lots restent à préparer. Publication et visas spécialisés demeurent séparés, aucun transfert vers main ou Pages.
