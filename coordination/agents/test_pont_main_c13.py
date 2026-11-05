@@ -34,6 +34,13 @@ class BridgeIntegrationTest(unittest.TestCase):
         self.assertEqual(output, "should_comment=true\n")
         self.assertIn("BLOQUEE_AUTORISATION", comment)
 
+    def test_uppercase_true_does_not_authorize_ai(self):
+        proc, output, comment = self.run_event(
+            "[RELIEUSE-LECTRICE] Démo", "Texte historique a verifier soigneusement.", enabled="TRUE")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        self.assertEqual(output, "should_comment=true\\n")
+        self.assertIn("BLOQUEE_AUTORISATION", comment)
+
     def test_untrusted_issue_is_ignored(self):
         proc, output, comment = self.run_event("[RELIEUSE-LECTRICE] Démo", "Texte historique a verifier soigneusement.", login="intrus")
         self.assertEqual(proc.returncode, 0, proc.stderr)
