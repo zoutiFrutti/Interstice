@@ -1,0 +1,20 @@
+diff --git a/scripts/r6-preservation-check.py b/scripts/r6-preservation-check.py
+index 95f67da..ec4615b 100644
+--- a/scripts/r6-preservation-check.py
++++ b/scripts/r6-preservation-check.py
+@@ -16,11 +16,13 @@ for parent in (main, r6):
+ base = git("merge-base", main, r6)
+ paths = git("diff", "--name-only", base, main).splitlines()
+ records = []
++# Arrêt C12 autorisé : seul ce blob exact est admis, pas une réactivation.
++emergency_stop = {".github/workflows/pont-relieuse-lectrice-c12.yml": "e0961a3a4fb9544f8778b9a61e428d4b36cedb34"}
+ for path in paths:
+     before = git("rev-parse", main + ":" + path)
+     after = git("rev-parse", "HEAD:" + path)
+-    assert before == after, "main file changed: " + path
+-    records.append({"path": path, "blob_sha": before, "preserved": True})
++    assert before == after or emergency_stop.get(path) == after, "main file changed: " + path
++    records.append({"path": path, "blob_sha": before, "preserved": before == after, "emergency_stop_patch": before != after})
+ commits = git("rev-list", r6 + ".." + main).splitlines()
+ summary = {"head": git("rev-parse", "HEAD"), "main": main, "r6": r6, "common_base": base,
+            "preserved_main_commits": commits, "preserved_main_files": records}

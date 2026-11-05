@@ -2,8 +2,8 @@
   "source_pr": 114,
   "source_sha": "f7811d3875d2fd39b7b37226d40ae9fb22c66a56",
   "blobs": {
-    ".github/workflows/pont-relieuse-lectrice-c12.yml": "47678fc2d5942aca5f795176ccdbed794111873a",
-    "coordination/agents/pont_relieuse_c12.py": "4945f3f5d2c570a486083f305c5829bd68be5707",
+    ".github/workflows/pont-relieuse-lectrice-c12.yml": "60f80a7a48174c3b839115088f8a9627c5b0f8c3",
+    "coordination/agents/pont_relieuse_c12.py": "b2864f91f5fc16ac8a68a865737a3907fd1aea00",
     "coordination/agents/demande_relieuse_c11.py": "2f6e57bae431a2fb5f4dc41c336891a2260aed66",
     "coordination/agents/test_demande_relieuse_c11.py": "4752fce0dd75d23ef333fded4a0013c35e96c5d2",
     "coordination/agents/test_pont_relieuse_c12.py": "53cdf24a759ae9786fbbc07e7dc29ceb12bc2c69"
@@ -11,5 +11,15 @@
   "qa_blobs": {
     "scripts/r6-preservation-check.py": "94df9cb405d98e7c6f555379e015b7f7634f711f"
   },
-  "qa_reason": "Adapter le contrôle historique à l’intégration explicite C13; les fichiers du site et les logos restent strictement inchangés."
+  "qa_reason": "Adapter le contrôle historique à l’intégration explicite C13; les fichiers du site et les logos restent strictement inchangés.",
+  "reviewed_updates": {
+    "mission": "WORK-C08-B",
+    "candidate_source_sha": "52e396c876f0920d583c3a86808858313d8b078a",
+    "emergency_source_sha": "df73c5dabf47a0b73d2b55f0346c7006d485dd98",
+    "paths": [
+      ".github/workflows/pont-relieuse-lectrice-c12.yml",
+      "coordination/agents/pont_relieuse_c12.py"
+    ],
+    "reason": "Conserver le blocage inconditionnel C12 de main avec les gardes C13 candidates ; reconnaître le durcissement existant qui exige exactement true. Aucun élargissement des chemins autorisés."
+  }
 }

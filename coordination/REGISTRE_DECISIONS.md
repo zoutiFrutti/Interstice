@@ -105,3 +105,9 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 **Remplacement d'état :** `D-C09-RULES-02` demeure dans l'historique comme instruction de révision désormais **satisfaite et dépassée** par `D-C09-RULES-03/04/05`. Les dix règles R01–R10 sont maintenant adoptées par décision explicite de Zout ; les sept règles de `D-C09-RULES-01` restent inchangées.
 
 **Provenance :** réponse explicite de Zout à la consultation QCM R05/R08/R10, 5 novembre 2026. Inscription uniquement dans la candidate PR #186 ; aucune fusion, publication, activation d'agent, nouvelle PR, nouveau rôle ni dépense.
+
+## WORK-C08 — clarification de Zout, QCM 1, 5 novembre 2026
+
+| ID | Décision directe | Source | Portée |
+| --- | --- | --- | --- |
+| `D-WORK-C08-Q1-01` | Le mandat C08 reprenait un ancien état : conserver les versions révisées adoptées de R05, R08 et R10 | Réponse directe de Zout au QCM 1 de WORK-C08 | Confirme `D-C09-RULES-03/04/05` ; ne rouvre pas le fond des dix règles, ne vaut ni suppression concrète ni activation |

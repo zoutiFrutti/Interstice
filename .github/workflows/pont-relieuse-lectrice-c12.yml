@@ -10,7 +10,9 @@ concurrency:
   cancel-in-progress: false
 jobs:
   lectrice:
-    if: startsWith(github.event.issue.title, '[RELIEUSE-LECTRICE]') && github.event.issue.user.login == github.repository_owner
+    # C08 : conserver l'arrêt d'urgence de main (df73c5d), même après convergence.
+    # Une réactivation exige une autorisation explicite ; les gardes C13 restent conservées.
+    if: ${{ false && startsWith(github.event.issue.title, '[RELIEUSE-LECTRICE]') && github.event.issue.user.login == github.repository_owner }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

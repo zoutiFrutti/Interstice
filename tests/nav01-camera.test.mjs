@@ -9,6 +9,28 @@ import {fitCamera,project,worldPoint,zoomAt,panBy,constrain,validCamera} from '.
 import {DOORS,PARCOURS,BUNDLE,PUBLIC_RESOURCES} from '../assets/nav-01/graph-data.mjs';
 import {readFragment} from '../assets/nav-01/navigation-state.mjs';
 import {NUCLEUS,diveCamera,retreat,edgeCue,stepLayout} from '../assets/nav-01/spatial.mjs';
+test('C08 keeps the emergency stop and exact reviewed C13 exceptions',async()=>{
+  const root=new URL('../',import.meta.url);
+  const workflow=await readFile(new URL('.github/workflows/pont-relieuse-lectrice-c12.yml',root),'utf8');
+  assert.match(workflow,/^    if: \$\{\{ false && startsWith\(github\.event\.issue\.title, '\[RELIEUSE-LECTRICE\]'\) && github\.event\.issue\.user\.login == github\.repository_owner \}\}$/m);
+  assert.match(workflow,/timeout-minutes: 5/);
+  assert.match(workflow,/LECTRICE_AI_ENABLED: \$\{\{ vars\.LECTRICE_AI_ENABLED \}\}/);
+  assert.match(workflow,/C13-LECTRICE-RESULTAT/);
+  const manifest=JSON.parse(await readFile(new URL('coordination/work/c07/C13_EXCEPTIONS.json',root),'utf8'));
+  assert.deepEqual(Object.keys(manifest.blobs).sort(),[
+    '.github/workflows/pont-relieuse-lectrice-c12.yml',
+    'coordination/agents/demande_relieuse_c11.py',
+    'coordination/agents/pont_relieuse_c12.py',
+    'coordination/agents/test_demande_relieuse_c11.py',
+    'coordination/agents/test_pont_relieuse_c12.py'
+  ]);
+  assert.deepEqual(Object.keys(manifest.qa_blobs),['scripts/r6-preservation-check.py']);
+  assert.equal(manifest.reviewed_updates.emergency_source_sha,'df73c5dabf47a0b73d2b55f0346c7006d485dd98');
+  for(const [path,expected] of Object.entries({...manifest.blobs,...manifest.qa_blobs})){
+    const bytes=await readFile(new URL(path,root));
+    assert.equal(createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex'),expected,path);
+  }
+});
 const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-8,`${a} ≠ ${b}`);
 for(const [width,height] of [[320,844],[390,844],[768,1024],[1280,900],[844,390]])test(`plongée 50 %, recul et directions : ${width}×${height}`,()=>{
   const camera=diveCamera(width,height);close(2*NUCLEUS.r*width/camera.span,Math.min(width,height)*.5);

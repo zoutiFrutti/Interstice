@@ -113,3 +113,7 @@ Zout ouvre un cycle ciblé sur les outils Faire Ensemble. Les liens directs et s
 L'ancienne instruction de révision `D-C09-RULES-02` est conservée comme historique dépassé, et non comme statut actuel. **Les dix règles R01–R10 sont adoptées** sur la candidate #186 ; les sept premières adoptées demeurent inchangées.
 
 L’Orchestratrice intègre la fonction critique précédemment appelée « La Démolisseuse », sans rôle distinct : l'annuaire conserve **19 rôles**. Sources : [contrat de contre-audit intégré](c03/orchestratrice/CONTRAT_CONTRE_AUDIT_INTEGRE_2026-11-05.md), [premier contre-audit et règles](c03/orchestratrice/CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md), registre des décisions. Ces modifications sont documentées sur la **candidate PR #186** ; elles ne prouvent ni fusion sur `main`, ni publication, ni activation d'agent, ni dépense.
+
+## WORK-C08 — clarification de version, QCM 1
+
+Le 5 novembre 2026, Zout confirme que le mandat C08 reprenait un ancien état de R05/R08/R10. Les formulations révisées adoptées du registre restent applicables : suppression après contrôle et autorisation ; construction progressive avec les personnes participantes ; simplification déclenchée par un problème réel, sans rapport obligatoire. Source : `D-WORK-C08-Q1-01`. Aucun nouvel arbitrage de fond.
