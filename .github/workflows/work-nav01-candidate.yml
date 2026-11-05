@@ -1,0 +1,66 @@
+name: WORK NAV01 isolated navigation QA
+on:
+  pull_request:
+    paths:
+      - 'explorer.html'
+      - 'assets/nav-01/**'
+      - 'scripts/build-nav-preview.mjs'
+      - 'tests/nav01*'
+      - 'tests/nav01-zoom-extension/**'
+      - 'coordination/work/nav-01/**'
+      - '.github/workflows/work-nav01-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  navigation:
+    # Playwright 1.56.1 supports Ubuntu 24.04; do not follow the moving latest image.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Camera, identities and editorial barriers
+        run: node --test tests/nav01-camera.test.mjs
+      - name: Preserve every file from main
+        run: |
+          node --input-type=module <<'JS'
+          import {execFileSync} from 'node:child_process';
+          import {mkdirSync,writeFileSync} from 'node:fs';
+          const git=(...args)=>execFileSync('git',args,{encoding:'utf8'}).trim();
+          const base='7344591fa7f0f4f6951ea273525039cf2cb9982a';
+          git('merge-base','--is-ancestor',base,'HEAD');
+          const changes=git('diff','--name-status','--diff-filter=MDRT',base,'HEAD');
+          if(changes)throw new Error('Un fichier initial a changé : '+changes);
+          const count=git('ls-tree','-r','--name-only',base).split('\n').length;
+          mkdirSync('artifacts/nav01',{recursive:true});
+          writeFileSync('artifacts/nav01/preservation.json',JSON.stringify({base,head:git('rev-parse','HEAD'),originals:count,unchanged:count},null,2));
+          console.log('Préservation : '+count+'/'+count+' fichiers, main ancêtre du HEAD.');
+          JS
+      - name: Build allow-listed static preview without deploying
+        run: node scripts/build-nav-preview.mjs
+      - name: Install test tools only
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx playwright install --with-deps chromium
+      - name: Responsive, simulated Android, keyboard, no-JS and real browser zoom
+        run: node --test tests/nav01.browser.test.mjs
+      - name: Preserve preview, screenshots and exact HEAD
+        if: always()
+        run: |
+          mkdir -p artifacts/nav01
+          git rev-parse HEAD > artifacts/nav01/HEAD.txt
+          git status --short > artifacts/nav01/working-tree.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: work-nav01-preview-and-evidence-${{ github.event.pull_request.head.sha }}
+          path: |
+            dist-nav/
+            artifacts/nav01/
+          retention-days: 14
