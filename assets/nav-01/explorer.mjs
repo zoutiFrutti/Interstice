@@ -98,7 +98,7 @@ function focusCamera(point,span,r){
   const overlay=!panel.hidden&&getComputedStyle(panel).position==='absolute'?panel.getBoundingClientRect():null;
   if(overlay){
     const left=overlay.left-r.left,top=overlay.top-r.top;
-    if(left>=220)x=Math.min(r.width*.35,left-100);
+    if(left>=220)x=Math.min(r.width*.35,left-140);
     else y=Math.max(130,Math.min(r.height*.35,top-60));
   }
   return {cx:point.x+(.5-x/r.width)*span,cy:point.y+(.5-y/r.height)*span*r.height/r.width,span};
