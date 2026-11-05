@@ -64,3 +64,34 @@ Ces arrêts sont des **propositions**, pas des suppressions autorisées. La reli
 Consultation GitHub : PR #114/#115/#116/#126/#132/#161/#186/#188 ; workflow C12 sur main et #186 ; référentiel, annuaire, journal et index C03. Les affirmations sur Supabase proviennent de la transmission WORK #186 et **n'ont pas été vérifiées de manière indépendante** dans cette passe. Aucune source externe ni retour utilisateur nouveau ; aucun audit de sécurité exhaustif, test multi-comptes, déploiement ou migration.
 
 **À La Relieuse :** décider des cinq suites ; soumettre les dix règles R01–R10 en tant que **PROPOSITIONS**, sans les déclarer adoptées.
+
+
+## Transmission des règles R01–R10 à La Relieuse
+
+**État de toutes ces règles : PROPOSÉE, EN ATTENTE DE TRAITEMENT PAR LA RELIEUSE ET D'ARBITRAGE AU BESOIN.** Elles ne sont pas inscrites comme décisions adoptées dans `coordination/REGISTRE_DECISIONS.md`.
+
+| ID | Proposition de règle | Effet pratique à contrôler |
+|---|---|---|
+| **R01** | Droit permanent à la contradiction | Possibilité de rouvrir un choix, avec preuves et respect des responsabilités |
+| **R02** | Aucune validation circulaire | Plusieurs IA issues d'une même source ne sont pas des validations indépendantes |
+| **R03** | Preuves avant réussite déclarée | Montrer tests, versions, usages ou sources avant « opérationnel » |
+| **R04** | Priorité à l'utilité humaine | Faire Ensemble réel avant embellissement ou pure administration, sauf sécurité/accessibilité |
+| **R05** | Droit à la suppression | Examiner coût et valeur d'un agent, document, service ou automatisme avant reconduction |
+| **R06** | Aucune inflation automatique des rôles | Mutualiser d'abord ; aucun vingtième rôle « Démolisseuse » |
+| **R07** | Audit critique des automatisations | Déclencheur, permissions, coût, secret, garde-fous, logs, arrêt/rollback |
+| **R08** | Cohérence politique vérifiable | Examiner pouvoirs de décider, participer, modérer, contester et sortir |
+| **R09** | États de production distincts | Proposé, commencé, testé, vérifié, intégré, publié et utilisé sont indépendants |
+| **R10** | Simplification continue | Chaque cycle majeur propose une suppression, une fusion ou un allègement argumenté |
+
+### Modification minimale du registre existant, soumise à validation
+
+- Conserver **19 rôles documentés**, pas 20 ; aucun dossier `demolisseuse/`, aucun nouveau workflow et aucune nouvelle boîte C10.
+- Dans `coordination/REFERENTIEL_VIVANT.md`, ajouter **un seul renvoi** au présent dossier avec l'étiquette `PROPOSITIONS R01–R10 NON ADOPTÉES`. Le registre des décisions ne reçoit aucun nouvel arbitrage présumé.
+- Dans `coordination/c03/orchestratrice/JOURNAL_SYNCHRONISATION.md`, conserver **une entrée de delta** indiquant absorption de la fonction, preuves consultées et restrictions. Éviter de recopier ces deux documents.
+- La Relieuse pourra, après examen, inscrire les règles acceptées dans la source de vérité existante, avec identifiant, décision et périmètre ; les règles rejetées restent traçables sans être actives.
+
+### Transmission synthétique
+
+**Décisions attendues** : (1) priorité du contrôle P0 C12 sur `main` ; (2) choix d'une unique candidate #186 et sort de #188/#132 après comparaison ; (3) traitement ou rejet explicite des règles R01–R10. Pas de demande de création d'agent.
+
+**Statut** : contre-audit et prompt produits en candidate ; **aucune règle adoptée automatiquement**, aucune fonction logicielle activée, aucune preuve d'usage humain complet de Faire Ensemble.
