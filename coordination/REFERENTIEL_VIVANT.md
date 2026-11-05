@@ -104,6 +104,12 @@ Zout ouvre un cycle ciblé sur les outils Faire Ensemble. Les liens directs et s
 
 **R01, R02, R03, R04, R06, R07 et R09 sont ADOPTÉES** par décision explicite de Zout (`D-C09-RULES-01` dans `coordination/REGISTRE_DECISIONS.md`). Leur application suit leurs formulations documentées dans le contre-audit intégré de L’Orchestratrice : contradiction permanente, interdiction des validations circulaires entre IA, preuves avant déclarations de réussite, priorité à l'utilité humaine et à Faire Ensemble, absence d'inflation automatique des rôles, audit des automatisations/permissions/coûts, et distinction stricte des états de réalisation.
 
-**R05, R08 et R10 restent PROPOSÉES, À RETRAVAILLER AVANT ADOPTION**, conformément à `D-C09-RULES-02`. Leur formulation actuelle n'est pas normative. La Relieuse recueille une rédaction révisée et ne la considère pas adoptée sans nouvel arbitrage explicite de Zout.
+**R05, R08 et R10 sont désormais ADOPTÉES dans leurs formulations révisées**, par décision explicite de Zout (`D-C09-RULES-03/04/05` dans le registre) :
+
+- **R05 — Suppression après contrôle :** avant toute suppression définitive d'un agent, outil, document, automatisation ou procédure inutile, vérifier les dépendances, conserver les preuves utiles et obtenir une autorisation humaine explicite. Cette règle n'autorise aucune suppression particulière.
+- **R08 — Construction progressive avec les personnes participantes :** Zout conserve les décisions actuelles. À mesure que de véritables personnes participent, elles définissent ensemble droits, responsabilités, décisions, contestations et recours. Aucun collectif ni transfert de pouvoir n'est présumé déjà constitué.
+- **R10 — Simplification sur problème constaté :** une duplication, un blocage ou une lourdeur déclenche une correction ciblée, sans rapport de simplification obligatoire ni nouvelle procédure.
+
+L'ancienne instruction de révision `D-C09-RULES-02` est conservée comme historique dépassé, et non comme statut actuel. **Les dix règles R01–R10 sont adoptées** sur la candidate #186 ; les sept premières adoptées demeurent inchangées.
 
 L’Orchestratrice intègre la fonction critique précédemment appelée « La Démolisseuse », sans rôle distinct : l'annuaire conserve **19 rôles**. Sources : [contrat de contre-audit intégré](c03/orchestratrice/CONTRAT_CONTRE_AUDIT_INTEGRE_2026-11-05.md), [premier contre-audit et règles](c03/orchestratrice/CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md), registre des décisions. Ces modifications sont documentées sur la **candidate PR #186** ; elles ne prouvent ni fusion sur `main`, ni publication, ni activation d'agent, ni dépense.
