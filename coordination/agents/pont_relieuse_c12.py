@@ -57,7 +57,7 @@ def main():
     with open(os.environ["GITHUB_EVENT_PATH"], encoding="utf-8") as file:
         event = json.load(file)
     owner = os.environ["GITHUB_REPOSITORY"].split("/")[0]
-    enabled = os.getenv("LECTRICE_AI_ENABLED", "").lower() == "true"
+    enabled = os.getenv("LECTRICE_AI_ENABLED", "") == "true"
     comment = result_comment(event, owner, os.getenv("OPENAI_API_KEY", ""),
                              os.getenv("OPENAI_MODEL", ""), enabled=enabled)
     if comment is None:
