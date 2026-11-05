@@ -84,3 +84,12 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 | --- | --- | --- | --- |
 | `D-WORK-C01-Q5-01` | Ouvrir un cycle consacré aux outils Faire Ensemble | Réponse au QCM 5 dans PASSERELLE-WORK-C01 | Contrôles et corrections sur la candidate #186 ; aucune autorisation implicite de collecte, réactivation serveur, fusion ou publication publique |
 | `D-WORK-C01-Q5-02` | Pour le prochain cycle documentaire, traiter FN-018 et les doublons en priorité | Même réponse QCM 5 | Clarifier identités bibliographiques et éditions sans ouvrir les contenus bloqués ; cycle documentaire différé pendant Faire Ensemble |
+
+## Arbitrage R01–R10 — décision directe de Zout, 5 novembre 2026
+
+| ID | Décision | Statut | Portée et réserve |
+| --- | --- | --- | --- |
+| `D-C09-RULES-01` | Adopter **R01, R02, R03, R04, R06, R07 et R09** du contre-audit intégré de L’Orchestratrice | `DECIDEE` | Droit à la contradiction ; absence de validation circulaire entre IA ; preuves avant réussite ; priorité à l'utilité humaine/Faire Ensemble ; pas d'inflation automatique des rôles ; audit des automatisations, permissions et coûts ; distinction des états. Application documentaire candidate sur #186, sans fusion ni déploiement implicite. |
+| `D-C09-RULES-02` | **Retravailler R05, R08 et R10 avant toute adoption** | `DECIDEE` (instruction de révision) ; règles `PROPOSITION` | Aucune adoption tacite de R05, R08 ou R10. Proposer formulations révisées à Zout avant validation. |
+
+**Provenance :** réponse explicite de Zout à La Passerelle, 5 novembre 2026, à la consultation de La Relieuse sur R01–R10. Source des libellés : `coordination/c03/orchestratrice/CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md`. Aucune création de rôle, PR, registre, fusion, publication, activation d'agent ou dépense autorisée par cette décision.
