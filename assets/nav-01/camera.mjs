@@ -1,6 +1,8 @@
 // SVG camera derived from the R2/R6 viewBox engine; no DOM or network.
 export const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 export function fitCamera(width, height) {
+  // QCM 2: closer portrait-phone overview; entry dive keeps its own geometry.
+  if(width<=600 && height>width)return {cx:350000/665,cy:377000/665,span:Math.max(700,Math.min(900,width*760/390))};
   return {cx: 500, cy: 500, span: Math.max(1220, 1180 * width / height)};
 }
 export function constrain(camera) {

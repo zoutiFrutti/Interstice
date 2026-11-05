@@ -369,3 +369,62 @@ test('C01 direct documents precede closed secondary paths, and Atlas stays insid
   await axe(page,'C01 Faire Ensemble');
  }finally{await page.context().close();}
 });
+
+
+test('C01 C: enlarged mobile, readable fine labels, adaptive windows and preserved tool entry points',async()=>{
+ const source=await readFile('index.html','utf8');
+ for(const id of ['propositions','proposer','besoin','partage','categorie','lieu'])assert.ok(source.includes('id="'+id+'"'),'Entrée R6 existante : '+id);
+ for(const viewport of [{width:390,height:844},{width:768,height:1024},{width:1280,height:900}]){
+  const context=await browser.newContext({viewport,reducedMotion:'reduce',hasTouch:viewport.width<1000,isMobile:viewport.width<1000});
+  const page=await context.newPage();
+  try{
+   await ready(page,'#exploration');
+   const map=await page.locator('#space').boundingBox(),view=numbers(await camera(page));
+   if(viewport.width===390){
+    assert.ok(1000*map.width/view[2]>map.width,'Cercle agrandi et bords explorables');
+    await page.screenshot({path:resolve(artifacts,'c01-c-mobile-390.png'),fullPage:true});
+   }
+   const style=await page.locator('.node[data-door]').first().evaluate(n=>({weight:getComputedStyle(n).fontWeight,bg:getComputedStyle(n.querySelector('.node-label')).backgroundColor}));
+   assert.equal(style.weight,'400');assert.match(style.bg,/0\.87/);
+   await axe(page,'C01 C vue '+viewport.width);
+   await page.locator('.node[data-door="entraide"]').click();
+   const panel=await page.locator('#panel').boundingBox();
+   if(viewport.width>=768)assert.ok(Math.abs(panel.width/panel.height-4/3)<.01,'Fenêtre 4:3');
+   else assert.ok(panel.height>viewport.height*.55,'Fenêtre mobile plus grande avec reflow');
+   assert.equal(await page.locator('#panel .collective-tools a').count(),3);
+   assert.equal(await page.locator('#panel .collective-tools a[target="_blank"][rel="noopener noreferrer"]').count(),3);
+   const tools=await page.locator('#panel .collective-tools a').evaluateAll(links=>links.map(a=>a.href));
+   assert.deepEqual(tools,['https://zoutifrutti.github.io/Interstice/index.html#propositions','https://zoutifrutti.github.io/Interstice/index.html#proposer','https://zoutifrutti.github.io/Interstice/participer.html']);
+   await axe(page,'C01 C outils '+viewport.width);await overflow(page);
+   await page.screenshot({path:resolve(artifacts,'c01-c-outils-'+viewport.width+'.png'),fullPage:true});
+   // Check only native opening and caller state. No live backend or proposal is contacted.
+   await context.route('https://zoutifrutti.github.io/Interstice/**',route=>route.fulfill({status:200,contentType:'text/html',body:'<!doctype html><html lang="fr"><title>Fixture de navigation — aucun backend appelé</title><p>Destination simulée pour le contrôle du retour.</p></html>'}));
+   const before=await camera(page),route=page.url();
+   const opened=context.waitForEvent('page');await page.locator('#panel .collective-tools a').first().click();const popup=await opened;await popup.waitForLoadState();
+   assert.equal(new URL(popup.url()).hash,'#propositions');await popup.close();assert.equal(page.url(),route);assert.equal(await camera(page),before);
+   await page.getByRole('button',{name:'Fermer le panneau'}).click();
+   await page.getByRole('link',{name:'Le manifeste ↗',exact:true}).click();await page.waitForSelector('#panel .reading');
+   const wide=await page.locator('#panel').boundingBox();
+   if(viewport.width>=768)assert.ok(Math.abs(wide.width/wide.height-16/9)<.01,'Fenêtre 16:9');
+   await axe(page,'C01 C lecture '+viewport.width);await overflow(page);
+   await page.screenshot({path:resolve(artifacts,'c01-c-lecture-'+viewport.width+'.png'),fullPage:true});
+  }finally{await context.close();}
+ }
+});
+
+test('C01 C: iPad profile touch, visible native step, focus and escape with larger reader',async()=>{
+ const context=await browser.newContext({...devices['iPad Mini'],reducedMotion:'reduce'}),page=await context.newPage();
+ try{
+  await ready(page,'#exploration');
+  await page.locator('.node[data-door="encyclopedie"]').tap();
+  await page.locator('#panel .secondary-paths>summary').tap();
+  await page.locator('#panel a[href="#parcours/PAR-001"]').tap();
+  const step=page.locator('.step-node[data-step="step:PAR-001/contexte"]');
+  assert.equal(await step.isVisible(),true,'L’étape native reste visible au-dessus du lecteur');
+  await step.tap();assert.equal(new URL(page.url()).hash,'#parcours/PAR-001/contexte');
+  assert.equal(await page.locator('#panel-title').evaluate(n=>document.activeElement===n),true);
+  await page.keyboard.press('Escape');assert.equal(await page.locator('#panel').isVisible(),false);
+  await axe(page,'iPad simulé Chromium');await overflow(page);
+  await page.screenshot({path:resolve(artifacts,'c01-c-ipad-simulation.png'),fullPage:true});
+ }finally{await context.close();}
+});

@@ -54,3 +54,12 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 - PR #186, branche `work/c07-reunification-20261104`, `coordination/work/c07/DECISIONS_CONTENUS_2026-11-05.md` (blob `674b2ac4081c53648dfa0f6c1f75c350269965c9`).
 - PR #132, `coordination/c03/INDEX_TRANSMISSIONS.md` (blob `ac8dc7ee0a00417e6e5bed39c7eafff49a83fb50`) ; les états anciens sont des constats **datés**, pas un accusé nouveau.
 - `coordination/JOURNAL_COMMUN.md` sur main (blob `161fe5e4ae8127cd1a4bd6284d3d68100b03ebeb`), archive maintenue.
+
+## Décisions PASSERELLE-WORK-C01 — 5 novembre 2026
+
+| ID | Décision directe de Zout | Source | Portée / limite |
+| --- | --- | --- | --- |
+| `D-WORK-C01-Q1-01` | Continuer sur la candidate unique PR #186, avec vérification du HEAD avant chaque écriture | Réponse au QCM 1 dans PASSERELLE-WORK-C01, 5 novembre 2026 | Pas de branche candidate parallèle, de fusion ni de publication |
+| `D-WORK-C01-Q1-02` | Reprendre les six documents de #188 dans cette candidate | Même réponse QCM 1 | Blobs de #188 repris initialement à l’identique ; reprises ultérieures liées aux décisions explicites, sans fusion des PR |
+| `D-WORK-C01-Q2-01` | Agrandir le cercle dans la vue d’ensemble sur téléphone, avec déplacement pour explorer ses bords | Réponse au QCM 2 dans PASSERELLE-WORK-C01, 5 novembre 2026 | Précise le cadrage mobile ; logos officiels, plongée et point central inchangés ; ne supprime aucun accès |
+| `D-WORK-C01-Q2-02` | Alléger les fonds et affiner les libellés des quatre portes ; revérifier le contraste | Même réponse QCM 2 | Précise le traitement visuel proposé au QCM 2 ; garde les noms, la grille, l’égalité des portes, des cibles accessibles et du texte lisible |

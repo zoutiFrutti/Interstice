@@ -80,3 +80,9 @@ Les journaux sont mis à jour sur **branche propre et PR brouillon**, sans touch
 ## 9. À ne plus redemander
 
 Ne pas rouvrir à chaque cycle les noms des quatre portes, leur grille 2 × 2 et leur égalité, les logos officiels, la place secondaire des Parcours et le blocage PAR-005. Une nouvelle version qui change **réellement** la décision ou le contenu peut nécessiter une confirmation, documentée précisément.
+
+## 10. Précisions visuelles C01 — décisions de Zout du 5 novembre 2026
+
+Le QCM 2 précise le cadrage de la **vue d’ensemble sur téléphone** : cercle agrandi, bords explorables par déplacement. Le fichier SVG, le point central et les temporisations de la plongée ne sont pas modifiés par ce choix.
+
+Les noms des quatre portes gardent des fonds plus légers et une graisse plus fine, avec contraste à revérifier et cibles accessibles conservées. Il ne s’agit ni d’une nouvelle hiérarchie des portes ni d’une suppression de leurs libellés. Sources : `D-WORK-C01-Q2-01` et `D-WORK-C01-Q2-02` dans le registre.

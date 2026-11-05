@@ -76,3 +76,15 @@ test('C01 equal 2 × 2 doors and Atlas aliases preserve historical access',()=>{
   assert.deepEqual(readFragment('#porte/archives',BUNDLE),{kind:'door',id:'archives'});
   assert.equal(PARCOURS.flatMap(p=>p.steps).length,29);
 });
+
+
+test('QCM 2 enlarges portrait-phone overview without changing desktop or tablet geometry',()=>{
+ for(const width of [320,390,430,600]){
+  const camera=fitCamera(width,844);
+  assert.ok(1000*width/camera.span>1000*width/1220,'Le cercle est plus grand que le cadrage précédent');
+  assert.ok(1000*width/camera.span>width,'Les bords du cercle peuvent être explorés par déplacement');
+  for(const door of DOORS){const p=project(camera,width,844,door);assert.ok(p.x>=28&&p.x<=width-28,'Les quatre accès restent atteignables');}
+ }
+ assert.deepEqual(fitCamera(768,1024),{cx:500,cy:500,span:1220});
+ assert.deepEqual(fitCamera(1280,900),{cx:500,cy:500,span:1180*1280/900});
+});

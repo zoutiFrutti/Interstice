@@ -496,3 +496,10 @@ export const BUNDLE = {parcours: PARCOURS, navigation: NAVIGATION};
 export const PUBLIC_RESOURCES = Object.freeze([]);
 export const DOCUMENTS = Object.freeze({manifeste: {title:"Le manifeste V2.5", file:"manifeste-v2-5.html"}, archive: {title:"Le manifeste V2.1 — archive", file:"manifeste.html"}});
 
+
+// Existing public R6 entry points, checked against main 7344591. No backend is embedded.
+export const COLLECTIVE_TOOLS = Object.freeze([
+  {title:'Consulter les propositions',url:'https://zoutifrutti.github.io/Interstice/index.html#propositions'},
+  {title:'Préparer une proposition',url:'https://zoutifrutti.github.io/Interstice/index.html#proposer'},
+  {title:'Participer au projet',url:'https://zoutifrutti.github.io/Interstice/participer.html'}
+]);

@@ -903,3 +903,32 @@ button:disabled {
 .atlas-entry { margin:20px 0; padding:12px 14px; border:1px solid #b6a99b; }
 .atlas-entry h3 { margin-top:0; }
 @media(max-width:768px) { .node[data-door] { width:126px; font-size:12px; } }
+
+/* QCM 2: lighter backgrounds and finer labels, retaining opaque text and 44 px targets. */
+.node[data-door] { font-weight:400; }
+.node[data-door] .node-label { color:var(--ink); background:rgb(243 238 230 / 87%); padding:5px 7px; }
+.directions a { color:var(--ink); background:rgb(243 238 230 / 87%); font-weight:400; letter-spacing:.01em; }
+.directions a:hover,.directions a:focus-visible { color:var(--ink); background:var(--light); outline-color:var(--focus); }
+/* Larger reading windows. Exact ratios fit tablets/desktops; phones and short views reflow. */
+.panel,.panel.wide {
+ --panel-width:min(720px,calc(100vw - 48px),calc((100svh - 160px) * 4 / 3));
+ width:var(--panel-width);height:calc(var(--panel-width) * 3 / 4);aspect-ratio:4 / 3;
+ max-height:calc(100svh - 160px);left:auto;right:18px;bottom:78px;
+ background:rgb(243 238 230 / 93%);scrollbar-gutter:stable;overflow-wrap:anywhere;
+}
+.panel.wide {
+ --panel-width:min(960px,calc(100vw - 48px),calc((100svh - 160px) * 16 / 9));
+ height:calc(var(--panel-width) * 9 / 16);aspect-ratio:16 / 9;
+}
+.panel summary { min-height:44px; }
+@media(min-width:601px) and (max-width:768px) {
+ .panel,.panel.wide {right:12px;--panel-width:min(720px,calc(100vw - 24px),calc((100svh - 160px) * 4 / 3));}
+ .panel.wide {--panel-width:min(960px,calc(100vw - 24px),calc((100svh - 160px) * 16 / 9));}
+}
+@media(max-width:600px) {
+ .panel,.panel.wide {left:12px;right:12px;width:calc(100% - 24px);height:min(70svh,calc(100svh - 270px));max-height:calc(100svh - 270px);aspect-ratio:auto;}
+}
+@media(max-height:420px) {
+ .panel,.panel.wide {position:relative;left:auto;right:auto;bottom:auto;width:100%;height:auto;max-height:none;aspect-ratio:auto;}
+}
+@media print {.panel,.panel.wide{position:static;width:100%;height:auto;max-height:none;aspect-ratio:auto;overflow:visible}}

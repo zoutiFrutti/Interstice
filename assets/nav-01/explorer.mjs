@@ -1,6 +1,6 @@
 import {READINGS} from './reading-catalogue.mjs';
 import {MEDIA} from './media-catalogue.mjs';
-import {DOORS, PARCOURS, BUNDLE, DOCUMENTS, PUBLIC_RESOURCES} from './graph-data.mjs';
+import {DOORS, PARCOURS, BUNDLE, DOCUMENTS, PUBLIC_RESOURCES, COLLECTIVE_TOOLS} from './graph-data.mjs';
 import {readFragment} from './navigation-state.mjs';
 import {fitCamera, constrain, viewBox, project, worldPoint, zoomAt, panBy, validCamera} from './camera.mjs';
 import {parcoursStatus} from './parcours-status.mjs';
@@ -92,28 +92,36 @@ function moveTo(next, animate = true, duration = 580, complete = null) {
   };
   animation = requestAnimationFrame(tick);
 }
+// Keep the selected native target in the visible map area beside/above the reader.
+function focusCamera(point,span,r){
+  let x=r.width*.5,y=r.height*.5;
+  const overlay=!panel.hidden&&getComputedStyle(panel).position==='absolute'?panel.getBoundingClientRect():null;
+  if(overlay){
+    const left=overlay.left-r.left,top=overlay.top-r.top;
+    if(left>=220)x=Math.min(r.width*.35,left-100);
+    else y=Math.max(130,Math.min(r.height*.35,top-60));
+  }
+  return {cx:point.x+(.5-x/r.width)*span,cy:point.y+(.5-y/r.height)*span*r.height/r.width,span};
+}
 function focusPoint(id, animate = true) {
   const point = points.get(id); if (!point) return;
   const r = rect();
   const span = Math.max(620,Math.min(camera.span,fitCamera(r.width,r.height).span*.65));
-  // Keep a selected door clear of the desktop reading panel.
-  const offset = r.width > 768 && r.height > 420 ? span * .15 : 0;
-  const vertical=r.width<=768&&r.height>420?span*r.height/r.width*.15:0;
-  moveTo({cx:point.x+offset,cy:point.y+vertical,span},animate);
+  moveTo(focusCamera(point,span,r),animate);
 }
 function focusPath(id,step,animate){
   if(step){focusPoint('step:'+id+'/'+step,animate);return;}
   const path=PARCOURS.find(path=>path.id===id),places=path.doors.map(id=>points.get(id)),r=rect();
   const span=Math.max(860,780*r.width/r.height);
-  const cx=places.reduce((n,p)=>n+p.x,0)/places.length+(r.width>768?span*.13:0);
-  const cy=places.reduce((n,p)=>n+p.y,0)/places.length+(r.width<=768?span*r.height/r.width*.15:0);
-  moveTo({cx,cy,span},animate);
+  const start=points.get('step:'+id+'/'+path.steps[0].id);
+  const center=start||{x:places.reduce((n,p)=>n+p.x,0)/places.length,y:places.reduce((n,p)=>n+p.y,0)/places.length};
+  moveTo(focusCamera(center,span,r),animate);
 }
 function fullView(animate = true) {
   beginExploration();
   returnView = snapshot();
   const r = rect(); moveTo(fitCamera(r.width,r.height),animate);
-  announce('Vue entière. Les quatre portes sont accessibles.');
+  announce('Vue d’ensemble. Les quatre portes sont accessibles ; déplacez la carte pour explorer les bords.');
 }
 function routeState(route) {
   if (route === '#entree' || !route) return {kind:'entry'};
@@ -123,7 +131,7 @@ function routeState(route) {
 }
 function showPanel(title, crumb, wide = false) {
   app.dataset.reading='true';
-  panel.hidden = false; panel.classList.toggle('wide',wide);
+  panel.hidden = false; panel.classList.toggle('wide',wide);panel.dataset.format=wide?'16:9':'4:3';
   panelTitle.textContent = title; $('#panel-crumb').textContent = crumb;
   panelBody.replaceChildren(); delete panelBody.dataset.section; $('#open-paths').setAttribute('aria-expanded',String(activeRoute==='#traversees'||activeRoute==='#parcours'));
 }
@@ -182,6 +190,15 @@ function renderDoor(id, section = null) {
     atlas.append(element('h3','Atlas des communs'),element('p','Explorer les lieux, les initiatives et les réseaux documentés.'),link('Ouvrir l’Atlas existant ↗','https://zoutifrutti.github.io/Interstice/atlas.html','external'));
     panelBody.append(atlas,readingIntroductions());
     if(section==='atlas')panelBody.dataset.section='atlas';else delete panelBody.dataset.section;
+  }
+  if(id==='entraide'){
+    const tools=element('section',undefined,'collective-tools');tools.append(element('h3','Propositions et participation'));
+    tools.append(element('p','Retrouver les propositions et les moyens de participer dans le prototype existant. L’envoi d’une proposition reste expérimental.'));
+    const links=element('div',undefined,'panel-links');
+    for(const tool of COLLECTIVE_TOOLS){
+      const a=link(tool.title+' ↗',tool.url,'external');a.target='_blank';a.rel='noopener noreferrer';links.append(a);
+    }
+    tools.append(links);panelBody.append(tools);
   }
   if(id==='mediatheque')panelBody.append(mediaIntroductions());
   if(id==='archives'){
