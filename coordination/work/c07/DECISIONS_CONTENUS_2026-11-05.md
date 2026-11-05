@@ -24,3 +24,14 @@ Ces choix règlent la présentation et la préparation dans l'aperçu privé. Il
 ## Vérification
 Tests purs : retours limités à la navigation locale ; exclusion des corps bloqués ; nettoyage du HTML actif ; empreintes des sources ; aucune intégration média automatique.
 Tests navigateur ajoutés à NAV : lecture mobile, audit axe, retour caméra exact et retour navigateur, lecture sans JS, aucune requête média tierce. Les résultats CI sont à consulter sur le HEAD courant de la PR #186, pas à déduire du présent document.
+
+## Réponses suivantes de Zout — lot Commune
+- Priorité : Commune de Paris, sans retirer les autres ensembles du programme.
+- Fictions, animations et BD conservées aux côtés des documentaires, avec format explicite et justification de leur intérêt.
+- Visa humain demandé par lots de cinq fiches maximum, réserves et décisions regroupées dans un QCM.
+
+Premier lot préparé : ASSO-008 (La Marmite), ASSO-007 (Union des femmes), ARCH-002 (affiche 373), ARCH-006 (Le Prolétaire), BIO-012 (Varlin, angle coopération et réseaux).
+Les textes Drive restent dans le dépôt source propriétaire du Site privé, pas dans ce dépôt public. Le manifeste public ne contient que les identifiants, empreintes sources et états en attente.
+Le générateur de relecture est distinct du constructeur générique : aucun corps Drive ni dossier bloqué ajouté à dist-nav. Le marqueur de lien de relecture est inséré uniquement dans le HTML du Site propriétaire. Ce marqueur ne constitue pas un contrôle d’accès : la confidentialité dépend du contrôle d’accès propriétaire vérifié avant déploiement.
+Aucune sélection dans un QCM antérieur ne vaut visa sur ces nouvelles versions. Le QCM du lot doit porter sur les cinq textes lisibles et sur leurs réserves ; ni la preuve historique, ni les droits, ni une publication publique ne sont validés par la CI.
+BIO-012 relie la biographie encyclopédique existante au lieu de la dupliquer. ASSO-007 et les archives sont traitées sous l'angle des preuves, de l'organisation et des limites des documents.

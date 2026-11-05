@@ -6,7 +6,7 @@ export function readingReturn(fragment) {
 if (typeof document !== 'undefined') {
   const fragment = new URLSearchParams(location.search).get('retour');
   if (fragment) for (const link of document.querySelectorAll('[data-return]')) link.href=readingReturn(fragment);
-  for(const link of document.querySelectorAll('main a[href]')) {
+  for(const link of document.querySelectorAll('a[href]:not([data-return])')) {
     const url=new URL(link.href,location.href);
     if(fragment && url.origin===location.origin && url.pathname.startsWith(new URL('.',location.href).pathname) && url.pathname.endsWith('.html')) {
       url.searchParams.set('retour',fragment);link.href=url.href;

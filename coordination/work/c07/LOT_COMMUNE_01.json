@@ -1,0 +1,34 @@
+{
+  "id": "lot-commune-01",
+  "audience": "owner_private",
+  "human_visa": "PENDING",
+  "publication_authorized": false,
+  "prepared_on": "2026-11-05",
+  "items": [
+    {
+      "id": "ASSO-008",
+      "source_sha256": "bb9c235d77891bc868d2d3a03635cda108b0e9ffe9039df1300037b9fa0cca4e",
+      "human_visa": "PENDING"
+    },
+    {
+      "id": "ASSO-007",
+      "source_sha256": "901d801f16c8c3a83f02a0a1c39e2c0eea52876a2ced9b607e9608292a167c87",
+      "human_visa": "PENDING"
+    },
+    {
+      "id": "ARCH-002",
+      "source_sha256": "4189be35eb2dd4d038e78d313f9d5187eadf26bb2139a634474e7247fd51c8c9",
+      "human_visa": "PENDING"
+    },
+    {
+      "id": "ARCH-006",
+      "source_sha256": "07167b13115229c1abef8e2def305fbb3a6b6d53c97cfd6846f6826d43c0ffb4",
+      "human_visa": "PENDING"
+    },
+    {
+      "id": "BIO-012",
+      "source_sha256": "060a6c3149f16daa5fe6df072e9639915d300f2494876f038c1a17614e868e1b",
+      "human_visa": "PENDING"
+    }
+  ]
+}

@@ -168,7 +168,7 @@ function mediaIntroductions() {
     const detail=element('details'),summary=element('summary',item.title);
     const a=link('Ouvrir la notice sourcée','lectures/'+item.id+'.html?retour='+encodeURIComponent(activeRoute));
     a.addEventListener('click',()=>{stopAnimation();persist();});
-    detail.append(summary,element('p',item.format+' · '+item.license+' · droits à revérifier'),a);group.append(detail);
+    detail.append(summary,element('p',item.format+' · '+item.license+' · droits à revérifier'),element('p','Intérêt éditorial proposé : '+item.interest),a);group.append(detail);
   }
   return group;
 }
@@ -205,6 +205,12 @@ function renderPath(id, stepId = null) {
   panelBody.append(crossing);
   if(path.blocked_practical){
     panelBody.append(element('p','Les fiches pratiques restent fermées. Leur revue juridique et médicale est nécessaire avant toute diffusion.','notice'),returnActions());return;
+  }
+  // Marker is inserted only in the owner-private Site, never in the generic preview.
+  if(id==='PAR-001'&&document.documentElement.dataset.privateReview==='lot-commune-01'){
+    const review=link('Relire le lot Commune — cinq fiches candidates','relecture/index.html?retour='+encodeURIComponent(activeRoute));
+    review.addEventListener('click',()=>{stopAnimation();persist();});
+    panelBody.append(element('p','Un premier lot de cinq textes est prêt pour une relecture privée. Visa humain en attente.','notice'),review);
   }
   const related={
     'PAR-003':['wiki-ecologie-sociale-environnement'],
