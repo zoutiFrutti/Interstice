@@ -27,10 +27,13 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 | `D-C07-005` | Lot Commune 02 : ARCH-004, ARCH-005, ARCH-007 et COL-003 retenues avec réserves ; ARCH-003 **non sélectionnée dans ce lot**, conservée | Même source C07 (section résultat Commune 02) | Attente du même vote du lot 02 | Pas de rejet historique définitif ni publication |
 | `D-C07-006` | Réutiliser Wikipédia si l'article couvre déjà correctement un sujet, plutôt que dupliquer sa synthèse | Décision éditoriale réaffirmée dans les travaux C07 et précédents ; date initiale non attestée ici | Duplication encyclopédique systématique | Contrôler cas par cas les lacunes réelles |
 
+| `D-C09-011` | **L’Atlas des communs (ancienne Carte des communs) est un élément principal de l’Encyclopédie des communs**, et non une cinquième porte ; il conserve sa carte interactive, son identité et ses fonctionnalités | Décision directe de Zout dans l’échange C09-OBS-01, 5 novembre 2026 | Ancienne Carte des communs comme porte autonome ; hypothèse d’un Atlas uniquement transversal | Liens possibles vers Faire Ensemble ; ne pas supprimer l’Atlas ni présumer son implémentation ou sa publication |
+
 ## Index des remplacements / obsolescences
 
 - `Entraide` → `Faire Ensemble` **alias historique uniquement**, aucun outil retiré.
 - `Wiki` → `Encyclopédie des communs` comme intitulé officiel.
+- `Carte des communs` (ancienne porte) → **Atlas des communs**, élément principal de l’Encyclopédie des communs ; la carte interactive et ses fonctionnalités restent à préserver.
 - `Archives` / `Archives des savoirs communs` → `Archives des communs`.
 - « Mettre Faire Ensemble visuellement et fonctionnellement au-dessus » → **OBSOLÈTE** ; la position haut gauche ne donne aucune prééminence d'accès.
 - « Les sept Parcours constituent la navigation principale » → **OBSOLÈTE**, Parcours secondaires.
