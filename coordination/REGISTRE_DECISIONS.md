@@ -93,3 +93,15 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 | `D-C09-RULES-02` | **Retravailler R05, R08 et R10 avant toute adoption** | `DECIDEE` (instruction de révision) ; règles `PROPOSITION` | Aucune adoption tacite de R05, R08 ou R10. Proposer formulations révisées à Zout avant validation. |
 
 **Provenance :** réponse explicite de Zout à La Passerelle, 5 novembre 2026, à la consultation de La Relieuse sur R01–R10. Source des libellés : `coordination/c03/orchestratrice/CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md`. Aucune création de rôle, PR, registre, fusion, publication, activation d'agent ou dépense autorisée par cette décision.
+
+## Adoption définitive des formulations révisées R05, R08 et R10 — 5 novembre 2026
+
+| ID | Décision directe de Zout | Statut | Limites |
+| --- | --- | --- | --- |
+| `D-C09-RULES-03` | **R05 adoptée : suppression après contrôle.** Avant de supprimer définitivement un agent, outil, document, automatisation ou procédure devenu inutile, vérifier ses dépendances, conserver les preuves utiles et obtenir l'autorisation humaine explicite. | `DECIDEE` | Ne vaut pas autorisation de suppression concrète. |
+| `D-C09-RULES-04` | **R08 adoptée : construction progressive avec les personnes participantes.** Zout conserve les décisions actuelles. À mesure que des personnes participent réellement à Interstice, elles définissent ensemble leurs droits, responsabilités, modalités de décision, contestations et recours. | `DECIDEE` | Ne prétend pas qu'un collectif ou une délégation de pouvoir existe déjà. |
+| `D-C09-RULES-05` | **R10 adoptée : simplification déclenchée par un problème réel.** Une duplication, un blocage ou une lourdeur constatée déclenche une correction ciblée. Aucun rapport de simplification obligatoire. | `DECIDEE` | Ne crée ni cycle, ni registre, ni procédure supplémentaires. |
+
+**Remplacement d'état :** `D-C09-RULES-02` demeure dans l'historique comme instruction de révision désormais **satisfaite et dépassée** par `D-C09-RULES-03/04/05`. Les dix règles R01–R10 sont maintenant adoptées par décision explicite de Zout ; les sept règles de `D-C09-RULES-01` restent inchangées.
+
+**Provenance :** réponse explicite de Zout à la consultation QCM R05/R08/R10, 5 novembre 2026. Inscription uniquement dans la candidate PR #186 ; aucune fusion, publication, activation d'agent, nouvelle PR, nouveau rôle ni dépense.
