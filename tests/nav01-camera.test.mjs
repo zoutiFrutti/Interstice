@@ -63,3 +63,16 @@ test('le constructeur refuse une sortie contenant un contenu hors liste',async()
   assert.notEqual(result.status,0);assert.match(result.stderr,/fichier hors liste/);
   assert.equal(await readFile(join(output,'non-autorise.txt'),'utf8'),'fixture de test');
 });
+
+// C01 acceptance: the four equal branches replace the old standalone Carte door.
+test('C01 equal 2 × 2 doors and Atlas aliases preserve historical access',()=>{
+  assert.deepEqual(DOORS.map(d=>d.title),['Faire Ensemble','Encyclopédie des communs','Archives des communs','Médiathèque']);
+  const [first,second,third,fourth]=DOORS;
+  assert.equal(first.y,second.y);assert.equal(third.y,fourth.y);
+  assert.equal(first.x,third.x);assert.equal(second.x,fourth.x);
+  assert.ok(first.x<second.x&&first.y<third.y);
+  for(const fragment of ['#atlas','#porte/carte','#porte/atlas'])assert.deepEqual(readFragment(fragment,BUNDLE),{kind:'door',id:'encyclopedie',section:'atlas'});
+  for(const fragment of ['#entraide','#porte/entraide','#faire-ensemble','#porte/faire-ensemble'])assert.deepEqual(readFragment(fragment,BUNDLE),{kind:'door',id:'entraide'});
+  assert.deepEqual(readFragment('#porte/archives',BUNDLE),{kind:'door',id:'archives'});
+  assert.equal(PARCOURS.flatMap(p=>p.steps).length,29);
+});

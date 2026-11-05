@@ -81,9 +81,18 @@ for(const width of [320,390,768,1280])test(`entrée, portes, zoom, recentrage et
       await page.getByRole('button',{name:'Vue entière',exact:true}).click();
     }
     assert.equal(await page.locator('.node[data-door]:visible').count(),4);
+    const grid=await page.locator('.node[data-door]').evaluateAll(nodes=>nodes.map(n=>{
+      const b=n.getBoundingClientRect();return {name:n.textContent.trim().replace(/\s+/g,' '),x:b.x+b.width/2,y:b.y+b.height/2,width:b.width,height:b.height};
+    }));
+    assert.deepEqual(grid.map(d=>d.name),['01 Faire Ensemble','02 Encyclopédie des communs','03 Archives des communs','04 Médiathèque']);
+    assert.ok(Math.abs(grid[0].y-grid[1].y)<1&&Math.abs(grid[2].y-grid[3].y)<1,'Deux rangées alignées');
+    assert.ok(Math.abs(grid[0].x-grid[2].x)<1&&Math.abs(grid[1].x-grid[3].x)<1,'Deux colonnes alignées');
+    assert.ok(grid[0].x+grid[0].width/2<grid[1].x-grid[1].width/2,'Les portes ne se recouvrent pas');
+    assert.ok(grid.every(d=>Math.abs(d.width-grid[0].width)<1&&d.height>=44),'Même largeur et cibles accessibles');
+
     await page.screenshot({path:resolve(artifacts,`exploration-${width}.png`),fullPage:true});
     await page.locator('.node[data-door="mediatheque"]').click();
-    assert.equal(await page.locator('#panel-title').innerText(),'Médiathèque des communs');
+    assert.equal(await page.locator('#panel-title').innerText(),'Médiathèque');
     assert.equal(await page.locator('#panel-title').evaluate(e=>document.activeElement===e),true);
     await overflow(page);await page.screenshot({path:resolve(artifacts,`porte-${width}.png`),fullPage:true});
     await page.getByRole('button',{name:'Fermer le panneau'}).click();
@@ -102,6 +111,7 @@ test('historique, bifurcations, liens profonds, restauration après rechargement
   try{
     await ready(page,'#exploration');await page.locator('#space').focus();await page.keyboard.press('ArrowRight');
     const previous=await camera(page);await page.locator('.node[data-door="encyclopedie"]').click();
+    await page.locator('#panel .secondary-paths>summary').click();
     await page.locator('#panel a[href="#parcours/PAR-001"]').click();
     const first=await page.locator('#panel .step-list a').first().getAttribute('href');
     await page.locator('#panel .step-list a').first().click();assert.equal(new URL(page.url()).hash,first);
@@ -114,7 +124,7 @@ test('historique, bifurcations, liens profonds, restauration après rechargement
     await page.goBack();await page.waitForURL(base+'#porte/encyclopedie');
     await page.goBack();await page.waitForURL(base+'#exploration');
     assert.equal(new URL(page.url()).hash,'#exploration');assert.equal(await camera(page),previous);
-    for(const [legacy,title] of [['#wiki','Encyclopédie'],['#bibliotheque','Médiathèque'],['#atlas','Carte'],['#entraide','Entraide']]){
+    for(const [legacy,title] of [['#wiki','Encyclopédie'],['#bibliotheque','Médiathèque'],['#atlas','Encyclopédie'],['#entraide','Faire Ensemble']]){
       await page.goto(base+legacy);assert.match(await page.locator('#panel-title').innerText(),new RegExp(title));
     }
     await page.goto(base+'#parcours/PAR-007');assert.match(await page.locator('#panel-title').innerText(),/Zapatisme/);
@@ -134,13 +144,13 @@ test('clavier, focus visible, représentations accessibles et manifestes',async(
     const old=await camera(page);await page.keyboard.press('ArrowLeft');assert.notEqual(await camera(page),old);
     await page.keyboard.press('+');await page.keyboard.press('Home');
     await page.keyboard.press('Tab');
-    assert.equal(await page.locator('.node[data-door="encyclopedie"]').evaluate(e=>e===document.activeElement&&getComputedStyle(e).outlineStyle==='solid'),true);
-    await page.keyboard.press('Enter');assert.match(await page.locator('#panel-title').innerText(),/Encyclopédie/);
+    assert.equal(await page.locator('.node[data-door="entraide"]').evaluate(e=>e===document.activeElement&&getComputedStyle(e).outlineStyle==='solid'),true);
+    await page.keyboard.press('Enter');assert.match(await page.locator('#panel-title').innerText(),/Faire Ensemble/);
     await page.keyboard.press('Escape');assert.equal(await page.locator('#panel').isVisible(),false);
     await axe(page,'exploration');
     const cdp=await page.context().newCDPSession(page);await cdp.send('Accessibility.enable');
     const tree=await cdp.send('Accessibility.getFullAXTree');
-    for(const name of ['Encyclopédie des communs','Médiathèque des communs','Carte des communs','Entraide'])assert.ok(tree.nodes.some(n=>n.role?.value==='link'&&n.name?.value===name),name);
+    for(const name of ['Faire Ensemble','Encyclopédie des communs','Archives des communs','Médiathèque'])assert.ok(tree.nodes.some(n=>n.role?.value==='link'&&n.name?.value===name),name);
     await page.getByRole('link',{name:'Le manifeste ↗',exact:true}).click();
     await page.waitForFunction(()=>document.querySelector('#panel-body .reading'));
     assert.match(await page.locator('#panel-body').innerText(),/non adoptée collectivement/);
@@ -185,7 +195,7 @@ test('Android simulé : glissement, pincement à deux doigts et défilement alte
     await touch('touchStart',[[x-45,y,0],[x+45,y,1]]);await touch('touchMove',[[x-85,y-12,0],[x+85,y+12,1]]);await touch('touchEnd',[]);
     assert.ok(numbers(await camera(page))[2]<before[2]);
     await page.getByRole('button',{name:'Vue entière',exact:true}).click();
-    await page.locator('.node[data-door="carte"]').tap();assert.match(await page.locator('#panel-title').innerText(),/Carte/);
+    await page.locator('.node[data-door="archives"]').tap();assert.match(await page.locator('#panel-title').innerText(),/Archives/);
     await page.getByRole('button',{name:'Fermer le panneau'}).tap();
     await page.getByRole('button',{name:'Repères',exact:true}).tap();
     await page.getByRole('button',{name:'Déplacer la carte',exact:true}).tap();assert.equal(await page.locator('#pan-mode').getAttribute('aria-pressed'),'false');
@@ -212,7 +222,7 @@ test('réduction des animations : entrée et caméra immédiates',async()=>{
   try{
     await ready(page);await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
     assert.equal(await page.evaluate(()=>document.getAnimations().length),0);
-    await page.getByRole('link',{name:'Entraide',exact:true}).click();
+    await page.getByRole('link',{name:'Faire Ensemble',exact:true}).click();
     assert.equal(await page.evaluate(()=>document.getAnimations().length),0);await axe(page,'mobile / mouvement réduit');
   }finally{await page.context().close();}
 });
@@ -326,4 +336,36 @@ test('textes complets sans JavaScript ; médias sans chargement tiers et PAR-005
   await ready(media,'#parcours/PAR-005');
   assert.equal(await media.locator('#panel a[href*="lectures/"]').count(),0);
  }finally{await media.context().close();}
+});
+
+
+
+test('C01 direct documents precede closed secondary paths, and Atlas stays inside the Encyclopaedia',async()=>{
+ const page=await testPage({viewport:{width:768,height:1024},reducedMotion:'reduce'});
+ try{
+  for(const fragment of ['#atlas','#porte/carte','#porte/atlas']){
+   await ready(page,fragment);
+   assert.equal(await page.locator('#panel-title').innerText(),'Encyclopédie des communs');
+   assert.equal(await page.locator('#panel .atlas-entry h3').innerText(),'Atlas des communs');
+   assert.equal(await page.locator('#panel .secondary-paths').getAttribute('open'),null);
+   assert.equal(await page.locator('.node[data-door="carte"]').count(),0);
+  }
+  await page.goto(base+'#porte/encyclopedie');
+  assert.equal(await page.locator('#panel .reading-introductions').count(),1);
+  assert.equal(await page.locator('#panel .secondary-paths').getAttribute('open'),null);
+  assert.equal(await page.locator('#panel-body').evaluate(e=>e.querySelector('.reading-introductions').compareDocumentPosition(e.querySelector('.secondary-paths'))&Node.DOCUMENT_POSITION_FOLLOWING),4);
+  await page.goto(base+'#porte/archives');
+  assert.equal(await page.locator('#panel-title').innerText(),'Archives des communs');
+  assert.equal(await page.locator('#panel a[href="#document/archive"]').count(),2);
+  assert.equal(await page.locator('#panel a[href*="relecture/"]').count(),0,'Aucun lot privé dans la construction générique');
+  assert.equal(await page.locator('#panel a[href^="https://zoutifrutti.github.io/Interstice/archives"]').count(),0,'Aucun index public inventé');
+  // A pre-C09 session may remember the removed standalone Carte door.
+  await page.evaluate(()=>sessionStorage.setItem('interstice.nav01.view.v1',JSON.stringify({version:1,route:'#parcours/PAR-001',camera:{cx:500,cy:500,span:1220},originDoor:'carte'})));
+  await page.goto(base+'?retour=lecture#parcours/PAR-001');
+  assert.equal(await page.locator('#panel a[href="#porte/encyclopedie"]').count(),2,'L’ancienne origine Carte est restaurée dans l’Encyclopédie');
+  await page.goto(base+'#porte/faire-ensemble');
+  assert.equal(await page.locator('#panel-title').innerText(),'Faire Ensemble');
+  assert.equal(await page.locator('#panel a[href="https://zoutifrutti.github.io/Interstice/parcours.html#entraide"]').count(),1);
+  await axe(page,'C01 Faire Ensemble');
+ }finally{await page.context().close();}
 });

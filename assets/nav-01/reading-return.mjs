@@ -1,6 +1,6 @@
 // Fixed same-origin return: never accept an arbitrary URL from query parameters.
 export function readingReturn(fragment) {
-  return /^#(?:exploration|traversees|porte\/(?:encyclopedie|mediatheque|carte|entraide)|parcours\/PAR-00[1-7](?:\/[a-zA-Z0-9_-]+)?)$/.test(fragment || '')
+  return /^#(?:exploration|traversees|porte\/(?:encyclopedie|mediatheque|carte|entraide|archives|faire-ensemble|atlas)|parcours\/PAR-00[1-7](?:\/[a-zA-Z0-9_-]+)?)$/.test(fragment || '')
     ? '../index.html?retour=lecture'+fragment : '../index.html#porte/encyclopedie';
 }
 if (typeof document !== 'undefined') {

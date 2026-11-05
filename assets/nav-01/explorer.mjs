@@ -34,6 +34,7 @@ let lastView = null;
 try { lastView = JSON.parse(sessionStorage.getItem(storageKey)); } catch { /* storage optional */ }
 const validSnapshot = value => value?.version === 1 && validCamera(value.camera) && typeof value.route === 'string' && value.route.startsWith('#');
 if (!validSnapshot(lastView)) lastView = null;
+const originDoorId = id => id==='carte'?'encyclopedie':DOORS.some(door=>door.id===id)?id:null;
 
 const element = (tag, text, className) => {
   const node = document.createElement(tag);
@@ -124,7 +125,7 @@ function showPanel(title, crumb, wide = false) {
   app.dataset.reading='true';
   panel.hidden = false; panel.classList.toggle('wide',wide);
   panelTitle.textContent = title; $('#panel-crumb').textContent = crumb;
-  panelBody.replaceChildren(); $('#open-paths').setAttribute('aria-expanded',String(activeRoute==='#traversees'||activeRoute==='#parcours'));
+  panelBody.replaceChildren(); delete panelBody.dataset.section; $('#open-paths').setAttribute('aria-expanded',String(activeRoute==='#traversees'||activeRoute==='#parcours'));
 }
 function panelFocus() {
   panel.scrollTop=0;
@@ -172,22 +173,35 @@ function mediaIntroductions() {
   }
   return group;
 }
-function renderDoor(id) {
+function renderDoor(id, section = null) {
   const door = DOORS.find(door=>door.id===id); if (!door) return;
   showPanel(door.title,'Porte '+door.number+' / Interstice');
   panelBody.append(element('p',door.description));
-  const spatial = element('p','Vous êtes dans la faille, à la porte « '+door.short+' ». Les traversées ci-dessous relient cette porte aux autres espaces.','spatial-context');
-  panelBody.append(spatial);
-  panelBody.append(element('h3','Suivre une ramification'));
-  panelBody.append(pathList(PARCOURS.filter(path=>path.doors.includes(id)).map(path=>path.id)));
-  if(id==='encyclopedie')panelBody.append(readingIntroductions());
+  if(id==='encyclopedie'){
+    const atlas=element('section',undefined,'atlas-entry');atlas.id='atlas-entry';
+    atlas.append(element('h3','Atlas des communs'),element('p','Explorer les lieux, les initiatives et les réseaux documentés.'),link('Ouvrir l’Atlas existant ↗','https://zoutifrutti.github.io/Interstice/atlas.html','external'));
+    panelBody.append(atlas,readingIntroductions());
+    if(section==='atlas')panelBody.dataset.section='atlas';else delete panelBody.dataset.section;
+  }
   if(id==='mediatheque')panelBody.append(mediaIntroductions());
-  const source = link('Consulter l’index R6 existant ↗','https://zoutifrutti.github.io/Interstice/'+door.legacy,'external');
-  source.target='_blank';source.rel='noopener noreferrer';
-  const archive = element('div',undefined,'legacy-access');
-  archive.append(element('p','Accès à l’index existant'),source);
-  panelBody.append(archive);
-  if (id==='entraide') panelBody.append(element('p','Les fiches de droits en manifestation restent indisponibles pendant leur revue juridique et médicale.','notice'));
+  if(id==='archives'){
+    panelBody.append(link('Lire le manifeste V2.1 — archive','#document/archive','external'),element('p','Les dossiers candidats restent fermés tant que leurs visas ne sont pas réunis.','notice'));
+    if(['lot-commune-01','editorial-private'].includes(document.documentElement.dataset.privateReview)){
+      const hub=document.documentElement.dataset.privateReview==='editorial-private';
+      const review=link('Consulter les lots en relecture',(hub?'relectures/index.html':'relecture/index.html')+'?retour='+encodeURIComponent(activeRoute),'external');
+      review.addEventListener('click',()=>{stopAnimation();persist();});panelBody.append(review);
+    }
+  }
+  if(id!=='archives'){
+    const source = link('Consulter l’index existant ↗','https://zoutifrutti.github.io/Interstice/'+door.legacy,'external');
+    source.target='_blank';source.rel='noopener noreferrer';
+    const archive = element('div',undefined,'legacy-access');
+    archive.append(element('p',id==='entraide'?'Retrouver les outils et accès existants':'Accès à l’index existant'),source);panelBody.append(archive);
+  }
+  if(id==='entraide')panelBody.append(element('p','Les fiches de droits en manifestation restent indisponibles pendant leur revue juridique et médicale.','notice'));
+  const secondary=element('details',undefined,'secondary-paths');
+  secondary.append(element('summary','Parcours secondaires'),pathList(PARCOURS.filter(path=>path.doors.includes(id)||id==='archives').map(path=>path.id)));
+  panelBody.append(secondary);
   panelBody.append(returnActions());
 }
 function renderPathIndex() {
@@ -303,7 +317,7 @@ function renderRoute({focus=true, animate=true, keepCamera=false}={}) {
   if(state.kind==='door'){
     originDoor=state.id;lastFocusedNode=state.id;
     document.querySelector('.node[data-door="'+state.id+'"]').setAttribute('aria-current','true');
-    renderDoor(state.id);$('#location-label').textContent=DOORS.find(d=>d.id===state.id).short;
+    renderDoor(state.id,state.section);$('#location-label').textContent=DOORS.find(d=>d.id===state.id).short;
     if(!keepCamera)focusPoint(state.id,animate);
   }else if(state.kind==='parcours_index'){
     renderPathIndex();$('#location-label').textContent='Les traversées';
@@ -317,7 +331,7 @@ function renderRoute({focus=true, animate=true, keepCamera=false}={}) {
     $('#location-label').textContent='Dans la faille';announce('Quatre portes, plusieurs chemins.');
     if(!keepCamera){const r=rect();moveTo(fitCamera(r.width,r.height),animate);}
   }
-  if(!panel.hidden&&focus)panelFocus();
+  if(!panel.hidden&&focus){panelFocus();if(state.section==='atlas')panel.scrollTop=Math.max(0,$('#atlas-entry').offsetTop-panelTitle.offsetTop);}
   else if(focus)stage.focus({preventScroll:true});
 }
 function go(route,{animate=true,camera:restored=null,replace=false,focus=true}={}) {
@@ -462,7 +476,7 @@ stage.addEventListener('focusin',event=>{
 });
 addEventListener('popstate',event=>{
   clearPassage();stopAnimation();activeRoute=location.hash||'#entree';
-  const saved=event.state?.nav01;if(validSnapshot(saved)){camera={...saved.camera};originDoor=saved.originDoor||null;}
+  const saved=event.state?.nav01;if(validSnapshot(saved)){camera={...saved.camera};originDoor=originDoorId(saved.originDoor);}
   renderRoute({animate:false,keepCamera:validSnapshot(saved)});persist();
 });
 addEventListener('pagehide',persist);
@@ -476,9 +490,10 @@ for(const id of ['map-controls','top-actions','show-textual','directions'])$('#'
 activeRoute=location.hash||'#entree';
 const readingBack=new URLSearchParams(location.search).get('retour')==='lecture'&&lastView?.route===activeRoute;
 const restored=readingBack?lastView:history.state?.nav01;
-if(validSnapshot(restored)){camera={...restored.camera};originDoor=restored.originDoor||null;}
+if(validSnapshot(restored)){camera={...restored.camera};originDoor=originDoorId(restored.originDoor);}
 history.replaceState({nav01:snapshot(),nav01depth:history.state?.nav01depth||0},'');
 renderRoute({focus:activeRoute!=='#entree',animate:false,keepCamera:validSnapshot(restored)});
 if(readingBack)history.replaceState({...history.state,nav01:snapshot()},'',location.pathname+location.hash);
 if(location.hash==='#textual')showTextual();
+
 

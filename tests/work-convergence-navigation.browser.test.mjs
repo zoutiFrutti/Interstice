@@ -136,6 +136,7 @@ async function readRoute(page,version,viewport){
   assert.equal(await page.locator('#panel-title').innerText(),'Encyclopédie des communs');
   assert.match(await page.locator('#location-label').innerText(),/Encyclopédie/);
   await capture(page,version,viewport,'porte-encyclopedie');
+  if(version==='after')await page.locator('#panel .secondary-paths>summary').click();
   await page.locator('#panel a[href="#parcours/PAR-001"]').click();await settled(page);
   assert.equal(await page.locator('#panel-title').innerText(),'Commune de Paris');
   await capture(page,version,viewport,'traversee-par001');
@@ -289,3 +290,4 @@ test('Paysage Android simulé : gestes, cibles 44 px et défilement libéré',{t
 });
 
 test('Aucune erreur JavaScript dans la comparaison et le paysage',()=>assert.deepEqual(evidence.errors,[]));
+

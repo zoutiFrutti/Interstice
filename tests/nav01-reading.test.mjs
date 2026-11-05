@@ -11,6 +11,7 @@ import {readingReturn} from '../assets/nav-01/reading-return.mjs';
 test('reader return cannot become an external or executable URL',()=>{
  for(const value of ['https://attacker.test','#porte/unknown','//attacker.test','javascript:alert(1)','#parcours/PAR-005/../../secrets',null])
   assert.equal(readingReturn(value),'../index.html#porte/encyclopedie');
+ for(const id of ['archives','faire-ensemble','atlas','carte','entraide'])assert.equal(readingReturn('#porte/'+id),'../index.html?retour=lecture#porte/'+id);
  assert.equal(readingReturn('#porte/mediatheque'),'../index.html?retour=lecture#porte/mediatheque');
  assert.equal(readingReturn('#parcours/PAR-003/ECO-01'),'../index.html?retour=lecture#parcours/PAR-003/ECO-01');
 });

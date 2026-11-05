@@ -1,44 +1,44 @@
-// UI architecture from PR161 0b5fb49; no editorial resource bodies or publication approvals.
+// C09 branch layout over PR161: no editorial resource bodies or publication approvals.
 export const DOORS = [
+  {
+    "id": "entraide",
+    "title": "Faire Ensemble",
+    "short": "Faire Ensemble",
+    "x": 300,
+    "y": 330,
+    "number": "01",
+    "legacy": "parcours.html#entraide",
+    "description": "Se rencontrer, partager des moyens et construire des initiatives communes."
+  },
   {
     "id": "encyclopedie",
     "title": "Encyclopédie des communs",
     "short": "Encyclopédie",
-    "x": 388,
-    "y": 305,
-    "number": "01",
+    "x": 750,
+    "y": 330,
+    "number": "02",
     "legacy": "wiki.html",
-    "description": "Des histoires, des idées et des pratiques à mettre en relation."
+    "description": "Des histoires, des idées et des pratiques à explorer, avec l’Atlas des communs."
+  },
+  {
+    "id": "archives",
+    "title": "Archives des communs",
+    "short": "Archives",
+    "x": 300,
+    "y": 790,
+    "number": "03",
+    "legacy": "archives.html",
+    "description": "Retrouver les documents, leurs provenances et leurs limites de consultation."
   },
   {
     "id": "mediatheque",
-    "title": "Médiathèque des communs",
+    "title": "Médiathèque",
     "short": "Médiathèque",
-    "x": 749,
-    "y": 392,
-    "number": "02",
-    "legacy": "bibliotheque.html",
-    "description": "Des textes, des œuvres et des sources pour prolonger le chemin."
-  },
-  {
-    "id": "carte",
-    "title": "Carte des communs",
-    "short": "Carte des communs",
-    "x": 350,
-    "y": 677,
-    "number": "03",
-    "legacy": "atlas.html",
-    "description": "Des territoires et des expériences à situer, avec leurs contextes."
-  },
-  {
-    "id": "entraide",
-    "title": "Entraide",
-    "short": "Entraide",
-    "x": 693,
-    "y": 641,
+    "x": 750,
+    "y": 790,
     "number": "04",
-    "legacy": "parcours.html#entraide",
-    "description": "Des ressources pour faire ensemble. Les fiches pratiques en relecture restent fermées."
+    "legacy": "bibliotheque.html",
+    "description": "Des textes, des œuvres et des sources pour prolonger les découvertes."
   }
 ];
 export const DOOR_IDS = DOORS.map(door => door.id);
@@ -102,8 +102,7 @@ export const PARCOURS = [
     "editorial_state": "candidate_non_visee",
     "doors": [
       "encyclopedie",
-      "mediatheque",
-      "carte"
+      "mediatheque"
     ]
   },
   {
@@ -155,7 +154,6 @@ export const PARCOURS = [
     "editorial_state": "candidate_non_visee",
     "doors": [
       "encyclopedie",
-      "carte",
       "mediatheque"
     ]
   },
@@ -221,7 +219,6 @@ export const PARCOURS = [
     "editorial_state": "candidate_non_visee",
     "doors": [
       "mediatheque",
-      "carte",
       "encyclopedie"
     ]
   },
@@ -274,8 +271,7 @@ export const PARCOURS = [
     "editorial_state": "candidate_non_visee",
     "doors": [
       "encyclopedie",
-      "entraide",
-      "carte"
+      "entraide"
     ]
   },
   {
@@ -420,7 +416,6 @@ export const PARCOURS = [
     "blocked_practical": false,
     "editorial_state": "candidate_non_visee",
     "doors": [
-      "carte",
       "encyclopedie",
       "mediatheque"
     ]
@@ -438,7 +433,8 @@ export const NAVIGATION = {
     },
     "atlas": {
       "kind": "door",
-      "id": "carte"
+      "id": "encyclopedie",
+      "section": "atlas"
     },
     "entraide": {
       "kind": "door",
@@ -460,7 +456,8 @@ export const NAVIGATION = {
     },
     "porte/carte": {
       "kind": "door",
-      "id": "carte"
+      "id": "encyclopedie",
+      "section": "atlas"
     },
     "porte/entraide": {
       "kind": "door",
@@ -471,9 +468,31 @@ export const NAVIGATION = {
     },
     "traversees": {
       "kind": "parcours_index"
+    },
+    "porte/atlas": {
+      "kind": "door",
+      "id": "encyclopedie",
+      "section": "atlas"
+    },
+    "archives": {
+      "kind": "door",
+      "id": "archives"
+    },
+    "porte/archives": {
+      "kind": "door",
+      "id": "archives"
+    },
+    "faire-ensemble": {
+      "kind": "door",
+      "id": "entraide"
+    },
+    "porte/faire-ensemble": {
+      "kind": "door",
+      "id": "entraide"
     }
   }
 };
 export const BUNDLE = {parcours: PARCOURS, navigation: NAVIGATION};
 export const PUBLIC_RESOURCES = Object.freeze([]);
 export const DOCUMENTS = Object.freeze({manifeste: {title:"Le manifeste V2.5", file:"manifeste-v2-5.html"}, archive: {title:"Le manifeste V2.1 — archive", file:"manifeste.html"}});
+

@@ -893,3 +893,13 @@ button:disabled {
 .reading-introductions summary,#panel-body section>details>summary{cursor:pointer;font-weight:600}
 .reading-introductions small{display:block;margin:.5rem 0}
 .reading-introductions a{display:inline-block;padding:.5rem 0}
+
+
+/* PASSERELLE-WORK-C01: equal doors in a 2 × 2 spatial grid. */
+.node[data-door] { width:156px; max-width:34vw; min-height:78px; font-size:13px; font-weight:550; }
+.node[data-door] .node-label { display:grid; place-items:center; min-height:44px; width:100%; padding:7px 9px; }
+.secondary-paths { margin-top:24px; border-top:1px solid #c8b9aa; padding-top:12px; }
+.secondary-paths>summary { cursor:pointer; min-height:44px; font-size:13px; }
+.atlas-entry { margin:20px 0; padding:12px 14px; border:1px solid #b6a99b; }
+.atlas-entry h3 { margin-top:0; }
+@media(max-width:768px) { .node[data-door] { width:126px; font-size:12px; } }
