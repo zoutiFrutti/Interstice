@@ -8,7 +8,7 @@ import {validateSeed} from '../coordination-console/model.mjs';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..'),source=resolve(root,'coordination-console');
 const output=resolve(process.argv[2]||resolve(root,'dist-coordination'));
 if(output===root||output===source)throw new Error('Sortie séparée requise');
-const files=['index.html','console.css','console.mjs','model.mjs','seed-public.json'];
+const files=['index.html','console.css','console.mjs','model.mjs','github-observer.mjs','seed-public.json'];
 const allowed=new Set([...files,'assets/logo-faille-noire.svg','assets/logo-interstice.svg','README.txt','checksums.json']);
 await mkdir(output,{recursive:true});
 async function inspect(directory,prefix=''){

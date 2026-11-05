@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'coordination/agents/**'
+      - 'coordination-console/github-observer.mjs'
+      - 'scripts/observe-c07.mjs'
+      - 'tests/c07-github-observer.test.mjs'
       - 'coordination/c03/orchestratrice/**'
       - '.github/workflows/work-c07-secure-missions.yml'
   workflow_dispatch:
@@ -28,6 +31,7 @@ on:
 permissions:
   contents: read
   actions: read
+  pull-requests: read
 concurrency:
   group: c07-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false
@@ -44,7 +48,15 @@ jobs:
       - run: python3 -m unittest discover -s coordination/agents -p 'test_*.py' -v
       - name: Execute synthetic approval and resumption without network or AI
         run: python3 coordination/agents/demo_c07.py artifacts/c07/demo.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Observe real candidate HEAD, runs and result artifacts (read-only)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/observe-c07.mjs artifacts/c07/github-observation.json
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: c07-offline-proof-${{ github.event.pull_request.head.sha }}
           path: artifacts/c07/
@@ -56,6 +68,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Verify checkpoint source before restoring any data
+        if: inputs.previous_run != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PRIOR_RUN: ${{ inputs.previous_run }}
+        run: |
+          case "$PRIOR_RUN" in ''|*[!0-9]*) echo 'Invalid run ID'; exit 1;; esac
+          mkdir -p checkpoint-source
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$PRIOR_RUN" > checkpoint-source/run.json
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$PRIOR_RUN/artifacts?per_page=100" > checkpoint-source/artifacts.json
+          python3 coordination/agents/verify_checkpoint_c07.py
       - name: Restore a prior checkpoint, never code from artifacts
         if: inputs.previous_run != ''
         uses: actions/download-artifact@v4

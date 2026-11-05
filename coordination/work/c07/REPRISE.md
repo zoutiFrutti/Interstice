@@ -6,7 +6,7 @@ Branche : `work/c07-reunification-20261104` ; PR principale #186. Ne fermer aucu
 
 https://faille-interstice-convergence-01.graciouscrust.chatgpt.site
 
-Se connecter avec le compte ChatGPT propriétaire. L’aperçu est isolé de Pages, sans données privées du registre documentaire, avec deux manifestes déjà publics. `/nav/` : immersion ; `/coordination/` : instantané documentaire daté et preuve synthétique C07. Le contrôle physique Crosscall/TalkBack et la réception artistique restent à faire par Zout.
+Se connecter avec le compte ChatGPT propriétaire. L’aperçu est isolé de Pages, sans données privées du registre documentaire, avec deux manifestes déjà publics. `/nav/` : immersion ; `/coordination/` : instantané documentaire daté, preuve synthétique C07 et lecture des états GitHub sur demande. Le contrôle physique Crosscall/TalkBack et la réception artistique restent à faire par Zout.
 
 ## Classement des PR sources
 
@@ -25,7 +25,7 @@ Se connecter avec le compte ChatGPT propriétaire. L’aperçu est isolé de Pag
 | #115, #132 | Moteur déterministe C14 et registre C18 repris | Aucun réveil automatique de conversation |
 | #163 | Audits technique et sécurité conservés | Ne vaut pas un visa de la candidate |
 | #180 | Source GH-AW, lock officiel et contrôle de compilation conservés | Fournisseur, quotas et autorisation IA non configurés |
-| #183 | Console réutilisée, avec preuve C07 exécutée sans IA | Instantané daté, pas tableau temps réel |
+| #183 | Console réutilisée, avec preuve C07 exécutée sans IA | Registre daté ; contrôles GitHub actualisables en lecture seule |
 
 Les SHA exacts de chaque source sont dans SOURCES.json. Les anciennes PR restent ouvertes. L’intégration documentaire conserve des propositions contradictoires ; seule #184 corrige le registre candidat. Les propositions historiques non démontrées ne deviennent pas des faits. La règle de non-redondance Wikipédia reste applicable avant tout nouvel article. Les anciennes recherches de L’Éclaireuse héritées du dépôt restent des pistes, pas des visas.
 
@@ -59,3 +59,13 @@ Tous les fichiers du site public et les SVG restent inchangés. C13 change cinq 
 3. Choisir et autoriser un moteur IA et ses conditions de coût/confidentialité avant activation ; conserver le mode sans IA jusque-là.
 4. Clore les réserves historiques, juridiques, sanitaires et de droits par preuve ou visa distinct. Aucun conseil pratique PAR-005.
 5. Toute fusion ou activation publique demande une instruction explicite distincte.
+
+## Complément du 5 novembre — suivi réel et reprise contrôlée
+
+La console dispose d’« Actualiser les états GitHub ». Ce bouton lit les métadonnées publiques de #186 : HEAD actuel, derniers runs par workflow sur ce HEAD, conclusions et artefacts C07 avec expiration. Il n’utilise ni clé ni cookie GitHub et n’envoie aucune mission. Une panne ou une limite API affiche INCONNU ; un ancien succès n’est pas conservé comme résultat actuel. Les 19 profils et les statuts documentaires restent indépendants de ces contrôles. Les résultats d’un agent IA ne sont jamais déduits d’une CI.
+
+Le workflow C07 récupère également ce relevé réel avec un jeton GitHub en lecture seule et le conserve dans `github-observation.json`, avec la preuve déterministe. Cette collecte récupère des références de commits, runs et artefacts existants ; aucun modèle n’est exécuté.
+
+Avant toute reprise manuelle, la provenance du checkpoint est désormais contrôlée : dépôt, propriétaire/acteur de relance, déclencheur manuel, workflow, branche, même commit, succès du run, artefact unique et non expiré. Un checkpoint d’un autre workflow, d’une PR ou d’une ancienne version du code est refusé avant téléchargement. Le checkpoint lui-même doit conserver le rapport, son empreinte, la mission, ses interdictions sensibles et un état compatible avec le journal.
+
+Les tests réseau simulés sont explicitement nommés comme tels. La collecte réelle en CI constitue une preuve séparée. Le dispatch manuel reste préparé, sans activation sur main. Les API disponibles ne permettent toujours pas de transmettre automatiquement des décisions aux anciennes conversations ni de les réveiller.

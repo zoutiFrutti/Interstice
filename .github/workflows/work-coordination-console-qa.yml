@@ -5,6 +5,7 @@ on:
       - 'coordination-console/**'
       - 'scripts/build-coordination-preview.mjs'
       - 'tests/coordination-console*'
+      - 'tests/c07-github-observer.test.mjs'
       - 'tests/coordination-console-zoom-extension/**'
       - '.github/workflows/work-coordination-console-qa.yml'
 permissions:
@@ -22,7 +23,7 @@ jobs:
         with:
           node-version: '22'
       - name: Public data, independent states and non-administration barriers
-        run: node --test tests/coordination-console.test.mjs
+        run: node --test tests/coordination-console.test.mjs tests/c07-github-observer.test.mjs
       - name: Build isolated allow-listed static artifact
         run: node scripts/build-coordination-preview.mjs
       - name: Install QA tools only

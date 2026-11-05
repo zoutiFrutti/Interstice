@@ -66,7 +66,7 @@ test('sortie hors liste refusée sans suppression',async()=>{
 });
 test('artefact limité à l’app publique, avec SVG officiels inchangés et HTML sans JS',async()=>{
   const output=await mkdtemp(join(tmpdir(),'coord-safe-'));const run=spawnSync(process.execPath,['scripts/build-coordination-preview.mjs',output],{encoding:'utf8'});assert.equal(run.status,0,run.stderr);
-  const names=await readdir(output);assert.deepEqual(names.sort(),['README.txt','assets','checksums.json','console.css','console.mjs','index.html','model.mjs','seed-public.json'].sort());
+  const names=await readdir(output);assert.deepEqual(names.sort(),['README.txt','assets','checksums.json','console.css','console.mjs','index.html','model.mjs','github-observer.mjs','seed-public.json'].sort());
   const html=await readFile(join(output,'index.html'),'utf8');assert.match(html,/C03-ORC-03/);assert.match(html,/sans JavaScript|Sans JavaScript/);assert.match(html,/Réception|réception|Reçue/);
   for(const [name,sha] of [['faille-noire','7bd0cfe8cf984f421b2377802ef97a0df843158217ad569ddd838313d4e73cb6'],['interstice','0fe365cd02a238bf4486f936683d194aab6a1ee2e62e2d5a2eaee9b72eff0453']])assert.equal(createHash('sha256').update(await readFile(join(output,'assets/logo-'+name+'.svg'))).digest('hex'),sha);
 });

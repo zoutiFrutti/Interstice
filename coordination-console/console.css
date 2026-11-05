@@ -1016,3 +1016,5 @@ footer>a {
 .coordination-table td:first-child{font-weight:650;white-space:nowrap}
 .coordination-table a:focus-visible{outline:3px solid currentColor;outline-offset:3px}
 @media(max-width:700px){.coordination-table-scroll{border-radius:0.4rem}.coordination-summary>p{max-width:66ch}}
+
+.github-observation{overflow-wrap:anywhere}.github-observation button{min-height:44px;padding:.65rem .9rem;font:inherit;cursor:pointer}.github-observation li{margin-block:.45rem}

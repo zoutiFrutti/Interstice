@@ -1,7 +1,9 @@
 import {STATE_KEYS,FILTERS,parseRoute,filterMissions,summarize,prepareMission,validateSeed,ALLOWED_ROLES,coordinationRows} from './model.mjs';
 
+import {observeCandidate} from './github-observer.mjs';
+
 const view=document.querySelector('#view'),status=document.querySelector('#status');
-let seed=null,query='',lastOverview='#missions';
+let seed=null,query='',lastOverview='#missions',githubObservation=null;
 const el=(tag,text,className)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;return node;};
 const link=(label,href,className='')=>{const node=el('a',label,className);node.href=href;return node;};
 function external(label,href,className=''){
@@ -170,11 +172,47 @@ function preparation(){
   });
   view.append(external('Contrat C11 : normaliseur présent sur main ↗',seed.preparation_example.source));
 }
+function githubSection(){
+  const section=el('section',undefined,'github-observation overview-note');
+  section.id='github-observation';
+  const title=el('h2','État GitHub de la candidate');
+  const refresh=el('button','Actualiser les états GitHub');refresh.type='button';
+  const output=el('div');output.id='github-observation-result';output.setAttribute('aria-live','polite');
+  const paint=observation=>{
+    output.replaceChildren();
+    if(!observation){output.append(el('p','Non vérifié dans cette session. Actualisez pour lire le commit et les contrôles actuels.'));return;}
+    output.append(external('PR #186 · commit '+observation.head.slice(0,12),observation.pr_url),
+      el('p','Lecture GitHub du '+date(observation.observed_at)+' · ces contrôles ne valident aucun contenu éditorial.'));
+    if(!observation.complete)output.append(el('p','Relevé partiel : tous les contrôles ne sont pas représentés.'));
+    if(!observation.runs.length)output.append(el('p','Aucune exécution attestée pour ce commit.'));
+    const list=el('ul');
+    for(const run of observation.runs){
+      const state=run.status==='completed'?(run.conclusion==='success'?'Réussi':run.conclusion==='failure'?'Échec':run.conclusion||'Conclusion inconnue'):'En attente ou en cours · '+run.status;
+      const item=el('li');item.append(external(run.name+' · '+state,run.url));list.append(item);
+    }output.append(list);
+    const proofs=el('ul');
+    for(const artifact of observation.artifacts){const item=el('li');
+      item.append(artifact.expired?el('span',artifact.name+' · artefact expiré'):external('Résultat récupérable : '+artifact.name,artifact.url));proofs.append(item);}
+    output.append(el('p','Artefacts C07 : '+observation.artifact_state),proofs);
+  };
+  paint(githubObservation);
+  refresh.addEventListener('click',async()=>{
+    refresh.disabled=true;output.replaceChildren(el('p','Lecture des métadonnées publiques GitHub…'));
+    try{githubObservation=await observeCandidate();paint(githubObservation);}
+    catch(error){
+      output.replaceChildren(el('p','État actuel INCONNU · '+(error.code||'ECHEC_TECHNIQUE')+'. Aucun ancien succès ne vaut résultat actuel.'));
+      if(githubObservation)output.append(el('p','Dernier relevé conservé en mémoire : '+date(githubObservation.observed_at)+', commit '+githubObservation.head.slice(0,12)+'.'));
+    }finally{refresh.disabled=false;}
+  });
+  section.append(title,el('p','Lecture seule, sans connexion GitHub ni déclenchement d’atelier. Le registre documentaire reste distinct des exécutions techniques.'),refresh,output);
+  view.append(section);
+}
 function render({focus=true}={}){
   if(!seed)return;const route=parseRoute(location.hash);view.replaceChildren();
   const active=route.view==='mission'||route.view==='preparer'?'missions':route.view;
   for(const a of document.querySelectorAll('[data-view]')){if(a.dataset.view===active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}
   if(route.view==='ateliers')ateliers();else if(route.view==='preuves')preuves();else if(route.view==='mission')missionDetail(route.id);else if(route.view==='preparer')preparation();else overview(route);
+  if(['missions','preuves'].includes(route.view))githubSection();
   if(focus){
     const title=view.querySelector('h1');title?.focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});
     if(title&&title.getBoundingClientRect().top>innerHeight*.7)title.scrollIntoView({block:'start',behavior:'instant'});

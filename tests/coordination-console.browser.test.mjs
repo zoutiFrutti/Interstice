@@ -148,6 +148,34 @@ test('zoom navigateur natif 400 % et reflow, sans style.zoom',async()=>{
   }finally{await c.close();}
 });
 
-test('aucune erreur JavaScript, écriture ou API externe pendant les interactions',()=>{
+test('actualisation GitHub demandée : commit courant, artefact et panne explicite (API simulée)',async()=>{
+  const page=await testPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+  const requests=[],head='a'.repeat(40);let invalid=false;
+  try{
+    await page.route('https://api.github.com/repos/zoutiFrutti/Interstice/**',async route=>{
+      const request=route.request();requests.push({url:request.url(),method:request.method()});
+      let body;
+      if(request.url().endsWith('/pulls/186'))body=invalid?{}:{number:186,base:{repo:{full_name:'zoutiFrutti/Interstice',private:false}},head:{sha:head,ref:'work/c07-reunification-20261104',repo:{full_name:'zoutiFrutti/Interstice'}}};
+      else if(request.url().includes('/actions/runs?'))body={total_count:1,workflow_runs:[{id:12,workflow_id:20,name:'C07 secure deterministic missions - no AI',head_sha:head,head_branch:'work/c07-reunification-20261104',status:'completed',conclusion:'success'}]};
+      else body={total_count:1,artifacts:[{id:30,name:'preuve-c07',expired:false,workflow_run:{head_sha:head}}]};
+      await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(body),headers:{'access-control-allow-origin':'*'}});
+    });
+    await page.goto(base+'#preuves');await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));
+    const section=page.locator('#github-observation');
+    assert.match(await section.innerText(),/Non vérifié/);
+    await section.getByRole('button',{name:'Actualiser les états GitHub'}).click();
+    await section.getByRole('link',{name:'Résultat récupérable : preuve-c07'}).waitFor({state:'visible'});
+    assert.match(await section.innerText(),/commit aaaaaaaaaaaa/);
+    assert.equal(requests.length,3);assert.ok(requests.every(r=>r.method==='GET'));
+    await overflow(page);await axe(page,'observation GitHub mobile, réponses simulées');
+    await capture(page,'coord-github-observation-fixture-390.png');
+    invalid=true;await section.getByRole('button',{name:'Actualiser les états GitHub'}).click();
+    await page.waitForFunction(()=>document.querySelector('#github-observation-result').textContent.includes('INCONNU'));
+    assert.doesNotMatch(await section.innerText(),/C07 secure deterministic missions - no AI · Réussi/);
+    evidence.githubObservationFixture={mocked:true,requests,staleSuccessCleared:true};
+  }finally{await page.context().close();}
+});
+
+test('aucune erreur JavaScript, écriture ou API externe sans actualisation demandée',()=>{
   assert.deepEqual(evidence.errors,[]);assert.deepEqual(evidence.externalRequests,[]);assert.deepEqual(evidence.nonGetRequests,[]);
 });

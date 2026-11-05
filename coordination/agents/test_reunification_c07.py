@@ -72,3 +72,13 @@ class C07Tests(unittest.TestCase):
             state = json.loads(state_path.read_text())
             verify(state)
             self.assertEqual(state['status'], 'TERMINE_TECHNIQUE')
+
+    def test_core_checkpoint_tampering_cannot_be_validated_or_saved(self):
+        from reunification_c07 import save
+        for field, value in [('status', 'TERMINE_TECHNIQUE'), ('editorial_approval', True),
+                             ('mission_id', 'FAKE-MISSION'), ('history', [])]:
+            state = start(self.mission, self.registry)
+            state[field] = value
+            with self.assertRaises(ValueError):verify(state)
+            with tempfile.TemporaryDirectory() as directory:
+                with self.assertRaises(ValueError):save(Path(directory)/'state.json', state)

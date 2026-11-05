@@ -21,14 +21,46 @@ def event(state, action, **values):
 
 
 def verify(state):
+    if not isinstance(state, dict) or state.get('schema') != SCHEMA:
+        raise ValueError('Schéma inconnu')
+    if any(state.get(key) is not False for key in ('editorial_approval', 'external_ai_called', 'github_writes')):
+        raise ValueError('Autorisation sensible interdite dans ce checkpoint')
+    report = state.get('report')
+    if (not isinstance(report, dict) or report.get('schema') != 'c14.result.v1'
+            or digest(report) != state.get('report_hash')
+            or report.get('empreinte_mission') != state.get('mission_hash')
+            or report.get('mission_id') != state.get('mission_id')):
+        raise ValueError('Rapport ou mission altéré')
+    history = state.get('history')
+    if not isinstance(history, list) or not 2 <= len(history) <= 256:
+        raise ValueError('Journal absent ou trop long')
     previous = None
-    for index, record in enumerate(state['history'], 1):
+    for index, record in enumerate(history, 1):
         values = {k: v for k, v in record.items() if k != 'hash'}
         if record['seq'] != index or record['previous'] != previous or digest(values) != record['hash']:
             raise ValueError('Journal altéré')
         previous = record['hash']
-    if state['schema'] != SCHEMA:
-        raise ValueError('Schéma inconnu')
+    actions = [r['action'] for r in history]
+    prefix = ['EXECUTION_C14', 'DEMANDE_VALIDATION']
+    expected = {'ATTENTE_VALIDATION': prefix,
+                'TERMINE_TECHNIQUE': prefix + ['DECISION_HUMAINE', 'REPRISE_CONSOLIDATION'],
+                'A_REVOIR': prefix + ['DECISION_HUMAINE', 'A_REVOIR'],
+                'ARRETEE': prefix + ['DECISION_HUMAINE', 'ARRETEE']}
+    if state.get('status') not in expected or actions != expected[state['status']]:
+        raise ValueError('État incompatible avec le journal')
+    for record in history:
+        for field in ('report_hash', 'artifact_hash'):
+            if field in record and record[field] != state['report_hash']:
+                raise ValueError('Décision non liée au rapport')
+    if len(history) == 4:
+        decision = {'TERMINE_TECHNIQUE': 'reprendre', 'A_REVOIR': 'revoir', 'ARRETEE': 'arreter'}
+        if history[2].get('decision') != decision[state['status']]:
+            raise ValueError('Décision incompatible avec la reprise')
+        if not history[2].get('actor_declared'):
+            raise ValueError('Acteur de décision absent')
+    if state['status'] == 'TERMINE_TECHNIQUE' and state.get('artifacts') != [
+            {'kind': 'rapport_candidat', 'sha256': state['report_hash']}]:
+        raise ValueError('Artefact de reprise altéré')
 
 
 def start(mission, registry, stopped=False):
@@ -76,6 +108,7 @@ def decide(state, decision, actor, report_hash, stopped=False):
 
 
 def save(path, state):
+    verify(state)
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     fd, name = tempfile.mkstemp(prefix='.c07-', dir=path.parent)
@@ -89,6 +122,13 @@ def save(path, state):
     finally:
         if os.path.exists(name):
             os.unlink(name)
+
+
+def load_json(path, limit=250000):
+    path = Path(path)
+    if path.stat().st_size > limit:
+        raise ValueError('Checkpoint ou mission trop volumineux')
+    return json.loads(path.read_text())
 
 
 def main():
@@ -107,9 +147,9 @@ def main():
         fcntl.flock(lock, fcntl.LOCK_EX)
         stopped = os.environ.get('ATELIERS_EMERGENCY_STOP', 'false') != 'false'
         if args.action == 'start':
-            mission = json.loads(Path(args.mission).read_text())
+            mission = load_json(args.mission, 50000)
             if path.exists():
-                old = json.loads(path.read_text())
+                old = load_json(path)
                 verify(old)
                 if old['mission_hash'] != digest(mission):
                     raise ValueError('ID/état existant avec une autre entrée')
@@ -117,7 +157,7 @@ def main():
                 return
             state = start(mission, json.loads(Path(args.registry).read_text()), stopped)
         else:
-            state = json.loads(path.read_text())
+            state = load_json(path)
             verify(state)
             if args.action == 'decide':
                 state = decide(state, args.decision, args.actor, args.report_hash, stopped)
