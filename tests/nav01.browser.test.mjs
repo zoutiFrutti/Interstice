@@ -262,7 +262,11 @@ test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async(
 test('entrée animée : traversée et caméra opérationnelles, puis animation terminée',async()=>{
   const page=await testPage({viewport:{width:1280,height:900},reducedMotion:'no-preference'});
   try{
-    await ready(page);await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
+    await ready(page);
+    const entryLogo=await page.locator('.threshold-logo').boundingBox();
+    await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
+    const transitionLogo=await page.locator('.passage-symbol').first().boundingBox();
+    assert.ok(transitionLogo&&Math.abs(transitionLogo.x-entryLogo.x)<1&&Math.abs(transitionLogo.y-entryLogo.y)<1&&Math.abs(transitionLogo.width-entryLogo.width)<1,'Le fondu garde le logo au même endroit, sans saut de taille');
     await page.waitForFunction(()=>document.querySelector('#exploration').dataset.phase==='immersed');
     const elapsed=await page.evaluate(()=>performance.now()-Number(document.querySelector('#exploration').dataset.entryStarted));
     assert.ok(elapsed>=2100,'La transition conserve le rythme ralenti demandé');

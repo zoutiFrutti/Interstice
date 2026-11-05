@@ -299,6 +299,7 @@ function beginExploration(){
   app.dataset.phase='exploring';
 }
 function enter(animated) {
+  const sourceBox=$('.threshold-logo').getBoundingClientRect();
   clearPassage();go('#exploration',{animate:false});
   window.scrollTo({top:0,behavior:'instant'});
   const r=rect(),destination=diveCamera(r.width,r.height);
@@ -306,6 +307,9 @@ function enter(animated) {
   if(!firstExploration){moveTo(fitCamera(r.width,r.height),false);app.dataset.phase='exploring';return;}
   app.dataset.phase='identity';app.dataset.entryStarted=String(performance.now());
   passage=element('div',undefined,'identity-passage');passage.setAttribute('aria-hidden','true');
+  passage.style.setProperty('--entry-logo-x',(sourceBox.x+sourceBox.width/2)+'px');
+  passage.style.setProperty('--entry-logo-y',(sourceBox.y+sourceBox.height/2)+'px');
+  passage.style.setProperty('--entry-logo-size',sourceBox.width+'px');
   const faille=element('img',undefined,'passage-symbol');faille.src='assets/logo-faille-noire.svg';faille.alt='';
   const interstice=element('img',undefined,'passage-symbol');interstice.src='assets/logo-interstice.svg';interstice.alt='';
   const name=element('strong','INTERSTICE','passage-name');passage.append(faille,interstice,name);document.body.append(passage);
