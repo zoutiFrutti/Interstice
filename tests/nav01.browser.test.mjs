@@ -265,8 +265,9 @@ test('entrée animée : traversée et caméra opérationnelles, puis animation t
     await ready(page);
     const entryLogo=await page.locator('.threshold-logo').boundingBox();
     await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
-    const transitionLogo=await page.locator('.passage-symbol').first().boundingBox();
-    assert.ok(transitionLogo&&Math.abs(transitionLogo.x-entryLogo.x)<1&&Math.abs(transitionLogo.y-entryLogo.y)<1&&Math.abs(transitionLogo.width-entryLogo.width)<1,'Le fondu garde le logo au même endroit, sans saut de taille');
+    const transitionLogos=await page.locator('.passage-symbol').evaluateAll(images=>images.map(image=>{const r=image.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height};}));
+    assert.equal(transitionLogos.length,2);
+    assert.ok(transitionLogos.every(image=>Math.abs(image.x-entryLogo.x)<1&&Math.abs(image.y-entryLogo.y)<1&&Math.abs(image.width-entryLogo.width)<1&&Math.abs(image.height-entryLogo.height)<1),'Les deux symboles du fondu restent superposés, même avant la fin du chargement');
     await page.waitForFunction(()=>document.querySelector('#exploration').dataset.phase==='immersed');
     const elapsed=await page.evaluate(()=>performance.now()-Number(document.querySelector('#exploration').dataset.entryStarted));
     assert.ok(elapsed>=2100,'La transition conserve le rythme ralenti demandé');
