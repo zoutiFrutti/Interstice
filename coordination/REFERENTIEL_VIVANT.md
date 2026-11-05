@@ -100,6 +100,10 @@ Les neuf ressources en attente spécialisée sont présentées dans une rubrique
 Zout ouvre un cycle ciblé sur les outils Faire Ensemble. Les liens directs et statuts visibles restent acquis ; l’état réel de suspension doit être distingué d’une simple expérimentation. Une reprise d’interface ne vaut ni autorisation de réactiver les envois ni ouverture d’un canal privé. Le prochain cycle documentaire priorisera FN-018 et les doublons, sans lever leurs blocages. Sources : `D-WORK-C01-Q5-01` et `D-WORK-C01-Q5-02`.
 
 
-## Proposition de cohérence R01–R10 — non adoptée (5 novembre 2026)
+## R01–R10 — arbitrage de Zout du 5 novembre 2026
 
-L'Orchestratrice intègre la fonction de contradiction critique précédemment nommée « La Démolisseuse », **sans rôle distinct ni agent supplémentaire**. Le [contrat candidat](c03/orchestratrice/CONTRAT_CONTRE_AUDIT_INTEGRE_2026-11-05.md) et les [dix règles R01–R10 proposées à La Relieuse](c03/orchestratrice/CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md) sont **à arbitrer** ; ce renvoi **n'adopte aucune règle** et n'ajoute aucune décision au registre. Les sources de vérité, journaux et boîtes existants sont conservés.
+**R01, R02, R03, R04, R06, R07 et R09 sont ADOPTÉES** par décision explicite de Zout (`D-C09-RULES-01` dans `coordination/REGISTRE_DECISIONS.md`). Leur application suit leurs formulations documentées dans le contre-audit intégré de L’Orchestratrice : contradiction permanente, interdiction des validations circulaires entre IA, preuves avant déclarations de réussite, priorité à l'utilité humaine et à Faire Ensemble, absence d'inflation automatique des rôles, audit des automatisations/permissions/coûts, et distinction stricte des états de réalisation.
+
+**R05, R08 et R10 restent PROPOSÉES, À RETRAVAILLER AVANT ADOPTION**, conformément à `D-C09-RULES-02`. Leur formulation actuelle n'est pas normative. La Relieuse recueille une rédaction révisée et ne la considère pas adoptée sans nouvel arbitrage explicite de Zout.
+
+L’Orchestratrice intègre la fonction critique précédemment appelée « La Démolisseuse », sans rôle distinct : l'annuaire conserve **19 rôles**. Sources : [contrat de contre-audit intégré](c03/orchestratrice/CONTRAT_CONTRE_AUDIT_INTEGRE_2026-11-05.md), [premier contre-audit et règles](c03/orchestratrice/CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md), registre des décisions. Ces modifications sont documentées sur la **candidate PR #186** ; elles ne prouvent ni fusion sur `main`, ni publication, ni activation d'agent, ni dépense.
