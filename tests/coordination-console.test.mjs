@@ -70,3 +70,18 @@ test('artefact limité à l’app publique, avec SVG officiels inchangés et HTM
   const html=await readFile(join(output,'index.html'),'utf8');assert.match(html,/C03-ORC-03/);assert.match(html,/sans JavaScript|Sans JavaScript/);assert.match(html,/Réception|réception|Reçue/);
   for(const [name,sha] of [['faille-noire','7bd0cfe8cf984f421b2377802ef97a0df843158217ad569ddd838313d4e73cb6'],['interstice','0fe365cd02a238bf4486f936683d194aab6a1ee2e62e2d5a2eaee9b72eff0453']])assert.equal(createHash('sha256').update(await readFile(join(output,'assets/logo-'+name+'.svg'))).digest('hex'),sha);
 });
+
+
+test('C01 documentary snapshot keeps exact inputs, reserves and publication separate',async()=>{
+ const proof=seed.c07_catalogue,inventory=proof.documentary_inventory;
+ assert.match(proof.source_commit,/^[a-f0-9]{40}$/);
+ assert.equal(inventory.thematic_objections,36);assert.equal(inventory.transverse_reserves,6);
+ assert.equal(inventory.work_reserves,30);assert.equal(inventory.documentary_relations,19);assert.equal(inventory.fn_notices,71);
+ assert.equal(inventory.held_resources,9);assert.equal(inventory.retained_with_reservations,9);assert.equal(inventory.not_selected_in_review,1);
+ assert.equal(inventory.new_publication_authorizations,0);assert.equal(inventory.par005_blocked,true);
+ for(const [path,hash] of Object.entries(inventory.sources))assert.equal(createHash('sha256').update(await readFile(path)).digest('hex'),hash,path);
+ const fake=structuredClone(seed);fake.c07_catalogue.documentary_inventory.new_publication_authorizations=1;
+ assert.throws(()=>validateSeed(fake),/interdit/);
+ const blocked=structuredClone(seed);blocked.c07_catalogue.documentary_inventory.par005_blocked=false;
+ assert.throws(()=>validateSeed(blocked),/interdit/);
+});

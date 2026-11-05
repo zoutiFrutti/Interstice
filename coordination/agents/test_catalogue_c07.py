@@ -1,8 +1,10 @@
 import copy
 import json
 import unittest
+import tempfile
+import shutil
 from pathlib import Path
-from catalogue_c07 import examine
+from catalogue_c07 import examine, documentary_inventory, DOCUMENTARY_PATHS
 from reunification_c07 import verify
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -36,3 +38,33 @@ class CatalogueTests(unittest.TestCase):
     def test_invalid_metadata_and_duplicate_ids_rejected(self):
         for entries in [[{'id':'one'},{'id':'one'}], [{'id':'one','canonical_url':42}]]:
             with self.assertRaises(ValueError):examine(json.dumps({'resources':entries}).encode(), self.registry)
+
+    def test_documentary_inventory_keeps_separate_reserves_and_human_choices(self):
+        result = documentary_inventory(ROOT)
+        self.assertEqual((result['thematic_objections'],result['transverse_reserves']), (36,6))
+        self.assertEqual((result['work_reserves'],result['documentary_relations'],result['fn_notices']), (30,19,71))
+        self.assertEqual((result['parcours'],result['steps']), (7,29))
+        self.assertEqual(result['retained_with_reservations'],9)
+        self.assertEqual(result['not_selected_in_review'],1)
+        self.assertEqual(result['new_publication_authorizations'],0)
+        self.assertTrue(result['par005_blocked'])
+        self.assertEqual(len(result['sources']),8)
+        self.assertEqual(result['held_resources'],9)
+
+    def test_documentary_inventory_refuses_lost_notice_or_fake_publication(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for path in DOCUMENTARY_PATHS.values():
+                target = root/path;target.parent.mkdir(parents=True,exist_ok=True)
+                shutil.copyfile(ROOT/path,target)
+            resource = root/DOCUMENTARY_PATHS['resources']
+            original = json.loads(resource.read_text())
+            missing = copy.deepcopy(original)
+            missing['resources'] = [r for r in missing['resources'] if r['id'] != 'FN-048']
+            resource.write_text(json.dumps(missing))
+            with self.assertRaises(ValueError):documentary_inventory(root)
+            resource.write_text(json.dumps(original))
+            lot = root/DOCUMENTARY_PATHS['commune01']
+            fake = json.loads(lot.read_text());fake['publication_authorized'] = True
+            lot.write_text(json.dumps(fake))
+            with self.assertRaises(ValueError):documentary_inventory(root)

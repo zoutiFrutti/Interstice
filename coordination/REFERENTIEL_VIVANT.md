@@ -86,3 +86,7 @@ Ne pas rouvrir à chaque cycle les noms des quatre portes, leur grille 2 × 2 et
 Le QCM 2 précise le cadrage de la **vue d’ensemble sur téléphone** : cercle agrandi, bords explorables par déplacement. Le fichier SVG, le point central et les temporisations de la plongée ne sont pas modifiés par ce choix.
 
 Les noms des quatre portes gardent des fonds plus légers et une graisse plus fine, avec contraste à revérifier et cibles accessibles conservées. Il ne s’agit ni d’une nouvelle hiérarchie des portes ni d’une suppression de leurs libellés. Sources : `D-WORK-C01-Q2-01` et `D-WORK-C01-Q2-02` dans le registre.
+
+## 11. Ergonomie C01 — décisions du QCM 3
+
+Sur ordinateur, les grandes fenêtres restent **sur le côté**, afin de garder une partie de la faille visible. Les liens vers les outils restent **directs**, avec leur statut expérimental visible. Ces choix maintiennent le placement et la présentation déjà préparés ; ils ne valident aucun envoi ni nouvelle collecte. Sources : `D-WORK-C01-Q3-01` et `D-WORK-C01-Q3-02`.

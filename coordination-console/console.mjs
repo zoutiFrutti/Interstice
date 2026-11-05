@@ -81,12 +81,20 @@ function overview(route){
   view.append(el('p','Registre documentaire du '+date(seed.source_snapshot)+' · relevé public du '+date(seed.observed_on)+' · '+t.declaredDeliveries+' livraison candidate documentée.','small muted'));
   view.append(coordinationTable());
   if(seed.c07_catalogue){
-    const proof=seed.c07_catalogue, section=el('section',undefined,'overview-note');
+    const proof=seed.c07_catalogue, section=el('section',undefined,'overview-note');section.id='catalogue-proof';
     section.append(el('h2','Contrôle automatique du registre réel'),
       el('p',proof.resources_checked+' objets · '+proof.batches+' lots · '+proof.tasks_completed+' tâches exécutées sans IA'),
       el('p','État : '+proof.status+' · relevé du '+date(proof.observed_at)),
       el('p',proof.canonical_url_present+' URL canoniques renseignées ; '+proof.canonical_url_absent+' absentes du champ. Des dossiers sont internes : ce nombre ne signifie pas autant d’erreurs.'),
       el('p','Empreinte de la source : '+proof.source_sha256));
+    if(proof.source_commit)section.append(external('Données contrôlées : '+proof.source_commit.slice(0,12)+' ↗','https://github.com/zoutiFrutti/Interstice/tree/'+proof.source_commit));
+    const inventory=proof.documentary_inventory;
+    if(inventory){
+      section.append(el('h3','Réserves documentaires conservées'),
+        el('p',inventory.thematic_objections+' objections thématiques + '+inventory.transverse_reserves+' réserves transversales · '+inventory.work_reserves+' réserves WORK · '+inventory.documentary_relations+' relations · '+inventory.fn_notices+' notices FN'),
+        el('p',inventory.retained_with_reservations+' fiches retenues avec réserves ; '+inventory.not_selected_in_review+' non sélectionnée dans ce lot. Aucun nouveau visa de publication.'),
+        el('p',inventory.held_resources+' ressources en attente spécialisée. PAR-005 reste bloqué. Les choix éditoriaux, les droits et la publication sont contrôlés séparément.'));
+    }
     for(const limit of proof.limits)section.append(el('p',limit));
     section.append(el('p','Aucune décision humaine, publication ou validation éditoriale déduite de ces contrôles. Les résultats complets sont conservés dans les artefacts C07.'));
     view.append(section);

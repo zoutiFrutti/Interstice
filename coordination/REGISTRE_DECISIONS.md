@@ -63,3 +63,10 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 | `D-WORK-C01-Q1-02` | Reprendre les six documents de #188 dans cette candidate | Même réponse QCM 1 | Blobs de #188 repris initialement à l’identique ; reprises ultérieures liées aux décisions explicites, sans fusion des PR |
 | `D-WORK-C01-Q2-01` | Agrandir le cercle dans la vue d’ensemble sur téléphone, avec déplacement pour explorer ses bords | Réponse au QCM 2 dans PASSERELLE-WORK-C01, 5 novembre 2026 | Précise le cadrage mobile ; logos officiels, plongée et point central inchangés ; ne supprime aucun accès |
 | `D-WORK-C01-Q2-02` | Alléger les fonds et affiner les libellés des quatre portes ; revérifier le contraste | Même réponse QCM 2 | Précise le traitement visuel proposé au QCM 2 ; garde les noms, la grille, l’égalité des portes, des cibles accessibles et du texte lisible |
+
+## QCM 3 — ergonomie C01, 5 novembre 2026
+
+| ID | Décision directe de Zout | Source | Portée / limite |
+| --- | --- | --- | --- |
+| `D-WORK-C01-Q3-01` | Conserver les grandes fenêtres sur le côté sur ordinateur, pour garder une partie de la faille visible | Réponse QCM 3 dans PASSERELLE-WORK-C01 | Maintient le placement candidat ; petits écrans et faible hauteur gardent le reflow accessible |
+| `D-WORK-C01-Q3-02` | Conserver les liens directs vers les outils avec un statut expérimental visible | Même réponse QCM 3 | Accessibilité des liens ≠ validation d’envoi, activation d’un service ou autorisation de collecte |

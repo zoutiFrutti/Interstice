@@ -74,5 +74,14 @@ export function validateSeed(seed){
     if(m.states.validee===true&&!m.deliverables.some(p=>p.type==='decision_zout'))throw new Error('Validation sans décision humaine.');
     if(m.dependencies.some(id=>!seed.known_mission_ids.includes(id)))throw new Error('Dépendance inconnue.');
   }
+  const inventory=seed.c07_catalogue?.documentary_inventory;
+  if(inventory){
+    if(inventory.schema!=='c01.documentary-inventory.v1'||!/^[a-f0-9]{40}$/.test(seed.c07_catalogue.source_commit||''))throw new Error('Source documentaire versionnée requise.');
+    for(const key of ['thematic_objections','transverse_reserves','work_reserves','documentary_relations','fn_notices','parcours','steps','retained_with_reservations','not_selected_in_review','held_resources'])
+      if(!Number.isSafeInteger(inventory[key])||inventory[key]<0)throw new Error('Décompte documentaire invalide.');
+    if(inventory.new_publication_authorizations!==0||inventory.par005_blocked!==true)throw new Error('Visa de publication ou déblocage interdit.');
+    const hashes=Object.values(inventory.sources||{});
+    if(hashes.length!==8||hashes.some(hash=>!/^[a-f0-9]{64}$/.test(hash)))throw new Error('Empreintes documentaires absentes.');
+  }
   return seed;
 }

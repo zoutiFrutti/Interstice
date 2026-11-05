@@ -4,7 +4,7 @@
   "public_only": true,
   "observed_on": "2026-11-04",
   "source_snapshot": "2026-11-03",
-  "freshness_note": "Instantané public et daté ; aucune synchronisation automatique ni activité d’atelier déduite.",
+  "freshness_note": "Instantané C03 public et daté ; aucune activité d’atelier déduite. Le contrôle structurel C01 du catalogue est daté séparément ; le bouton GitHub lit les états techniques actuels sur demande.",
   "controls": {
     "external_writes_enabled": false,
     "ai_execution_enabled": false,
@@ -1168,8 +1168,8 @@
   },
   "c07_catalogue": {
     "schema": "c07.catalogue-proof.v1",
-    "observed_at": "2026-11-05T06:16:21.716694+00:00",
-    "source_commit": null,
+    "observed_at": "2026-11-05T13:15:07.069565+00:00",
+    "source_commit": "91f42ff0009b40b78b7c8a84dcc46f1d0e2ca696",
     "source_sha256": "a0b71396417ba16dced8dff920f59464d9d59c3cf1100eb09e8a850650b4a65a",
     "resources_checked": 219,
     "batches": 8,
@@ -1185,6 +1185,40 @@
       "Une URL canonique absente ne prouve pas une lacune : des dossiers sont internes",
       "Doublon URL probable ne vaut pas équivalence d’édition, alias validé ou suppression",
       "Aucune réserve historique, juridique, sanitaire ou de droits levée"
-    ]
+    ],
+    "documentary_inventory": {
+      "schema": "c01.documentary-inventory.v1",
+      "thematic_objections": 36,
+      "transverse_reserves": 6,
+      "work_reserves": 30,
+      "work_states": {
+        "ouverte": 27,
+        "bloquee": 3
+      },
+      "documentary_relations": 19,
+      "fn_notices": 71,
+      "parcours": 7,
+      "steps": 29,
+      "new_publication_authorizations": 0,
+      "retained_with_reservations": 9,
+      "not_selected_in_review": 1,
+      "par005_blocked": true,
+      "held_resources": 9,
+      "sources": {
+        "coordination/v2/work-c02-01/data/resources.json": "a0b71396417ba16dced8dff920f59464d9d59c3cf1100eb09e8a850650b4a65a",
+        "coordination/v2/work-c02-01/data/relations.json": "37f975bd454fbee98634e1fcfb37cf3373629e4709734658a8f007a3ceca5435",
+        "coordination/v2/work-c02-01/data/objections.json": "3455111aa98942a383a7b537c7037dca1f4ffb3d21c2c195b959c1f40f4bd325",
+        "coordination/v2/work-c02-01/data/parcours.json": "41b66a0046e322a34229040d5c5cffed4c1ac72dc8d92651717e1d07a10cb2a6",
+        "coordination/c03/lectrice/MATRICE_35_OBJECTIONS.md": "ddd851363f681055b7ac8bfb91f257fb4f9064db56cf120cd2468b7f7cad744b",
+        "coordination/work/c07/LOT_COMMUNE_01.json": "5d1c347cd57304d507932db0a5846c6964d72b1ccb9c4670fc220d51f1bdcc32",
+        "coordination/work/c07/LOT_COMMUNE_02.json": "5014f4cc415fb053617814dd1cc42d688bdbad931709ffca0aeb2220a01bfcdc",
+        "coordination/work/c07/EDITORIAL_QUEUE.json": "c7dc9c45d75b54e287316cb26598bc75837aa0f58978a6c79c400112d1886d28"
+      },
+      "limits": [
+        "Contrôle structurel des métadonnées ; aucun fait historique validé",
+        "Choix éditorial, droits et visa de publication restent distincts",
+        "Les six réserves transversales s’ajoutent aux 36 objections thématiques"
+      ]
+    }
   }
 }

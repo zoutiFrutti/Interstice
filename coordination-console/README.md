@@ -21,3 +21,11 @@ La vue **Ce qui circule** intègre désormais un tableau dérivé de `seed-publi
 Le tableau ne se synchronise **pas** : il affiche la photographie publique et datée du registre C03. Il ne faut pas utiliser ses liens PR comme preuve d'un nouveau rapport ni comme instruction d'activation. Les missions non incluses dans cette démonstration sont consultables par l'index GitHub du registre, pas ajoutées sous forme de faux résultats. La lecture est accessible sur mobile avec tableau défilant et liens clavier. Aucune commande supplémentaire.
 
 La sécurité C12 sur `main` reste P0 : l'opt-in C13 de la PR #114 n'est pas fusionné. Le pilote #180 possède un lock GH-AW candidat mais aucune exécution d'agent ; la présence de variables ou de secrets n'est pas attestée. Ces changements ne branchent ni C12, ni C14, ni GH-AW à cette console.
+
+## C01 — relevé structurel distinct des états d’ateliers
+
+La console existante est réutilisée. Le relevé C03 du 3/4 novembre conserve ses états déclaratifs et inconnus ; le contrôle du catalogue du 5 novembre possède sa propre date, son commit de données et les empreintes de huit sources. Il dénombre 36 objections thématiques **plus six réserves transversales**, 30 WORK (27 ouvertes, trois bloquées), 19 relations et 71 FN, sans fermer aucune réserve.
+
+Le champ `c07_catalogue.documentary_inventory` est produit par le contrôle déterministe C07 existant. Les neuf fiches Commune retenues avec réserves restent distinctes d’ARCH-003 non sélectionnée dans ce lot ; aucune n’est autorisée à être publiée par ce relevé. Le constructeur générique n’embarque aucun corps Drive ni lot privé.
+
+Le bouton « Actualiser les états GitHub » lit les contrôles techniques courants de #186 en lecture seule ; il ne réécrit pas l’instantané documentaire et ne crée ni réception, activité, décision humaine ou publication. Le relevé structurel et la démonstration synthétique C07 sont présentés séparément, y compris dans le repli sans JavaScript pour le relevé.

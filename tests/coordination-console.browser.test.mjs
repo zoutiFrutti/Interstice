@@ -176,6 +176,21 @@ test('actualisation GitHub demandée : commit courant, artefact et panne explici
   }finally{await page.context().close();}
 });
 
+test('C01 D: documentary snapshot preserves reserves, human choices and publication distinction',async()=>{
+ const context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'}),page=await context.newPage();
+ try{
+  await ready(page,'#missions');const proof=page.locator('#catalogue-proof');
+  const text=await proof.innerText();
+  assert.match(text,/36 objections thématiques \+ 6 réserves transversales/);
+  assert.match(text,/30 réserves WORK · 19 relations · 71 notices FN/);
+  assert.match(text,/9 fiches retenues avec réserves/);assert.match(text,/9 ressources en attente spécialisée/);
+  assert.match(text,/Aucun nouveau visa de publication/);assert.match(text,/PAR-005 reste bloqué/);
+  assert.equal(await proof.locator('a[href="https://github.com/zoutiFrutti/Interstice/tree/91f42ff0009b40b78b7c8a84dcc46f1d0e2ca696"]').count(),1);
+  await overflow(page);await axe(page,'C01 D inventaire documentaire');
+  await capture(page,'coord-c01-d-inventory-390.png');
+ }finally{await context.close();}
+});
+
 test('aucune erreur JavaScript, écriture ou API externe sans actualisation demandée',()=>{
   assert.deepEqual(evidence.errors,[]);assert.deepEqual(evidence.externalRequests,[]);assert.deepEqual(evidence.nonGetRequests,[]);
 });
