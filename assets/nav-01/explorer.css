@@ -1,6 +1,7 @@
 :root {
   color-scheme:light;
   --paper:#cfc5b9;
+  --entry-size:min(92vw,max(128px,calc(100svh - 224px)),840px);
   --ink:#151311;
   --muted:#49413c;
   --red:#a21d18;
@@ -802,14 +803,16 @@ button:disabled {
 
 
 /* WORK-CONVERGENCE-01: one spatial layer, retaining NAV02 reading order and context. */
-.threshold { padding:18px 4vw; }
-.threshold-center { padding:8px 0; gap:8px; }
-.entry-portal { display:block; position:relative; border-radius:50%; text-decoration:none; }
-.threshold-logo { width:min(92vw,82svh,840px); height:auto; }
-.portal-word { position:absolute; bottom:17%; left:50%; transform:translateX(-50%); color:#f3eee6; font-size:12px; letter-spacing:.22em; text-shadow:0 1px 5px #000; padding:12px; }
+.threshold { padding:18px 4vw; row-gap:12px; overflow:visible; }
+.threshold-center { display:flex; flex-direction:column; justify-content:center; align-items:center; padding:8px 0; gap:16px; min-width:0; }
+.entry-portal { display:block; position:relative; flex:none; width:var(--entry-size); aspect-ratio:1; border-radius:0; text-decoration:none; }
+/* Mask only the SVG matte's one-pixel seam; the complete square image stays in flow. */
+.entry-portal::after { content:""; position:absolute; inset:0; border:1px solid var(--paper); pointer-events:none; }
+.threshold-logo { display:block; width:100%; height:auto; }
+.portal-word { position:absolute; top:56.691729%; left:52.631579%; transform:translate(-50%,-50%); color:#f3eee6; font-size:12px; letter-spacing:.22em; text-shadow:0 1px 5px #000; padding:12px; }
 .threshold .quiet-link { font-size:11px; color:var(--muted); }
 .identity-passage { position:fixed; inset:0; background:var(--paper); z-index:25; display:grid; place-items:center; pointer-events:none; }
-.passage-symbol { position:absolute; width:min(92vw,82svh,840px); height:auto; }
+.passage-symbol { position:absolute; width:var(--entry-size); height:auto; }
 .passage-name { position:absolute; bottom:9%; font-size:clamp(20px,4vw,40px); letter-spacing:.25em; font-weight:450; }
 .appbar { position:absolute; z-index:11; left:18px; right:18px; top:12px; padding:0; min-height:44px; border:0; pointer-events:none; }
 .appbar a { pointer-events:auto; }
@@ -873,8 +876,7 @@ button:disabled {
  .threshold-bottom { font-size:10px; }
 }
 @media(max-height:420px) {
- .threshold { min-height:560px; }
- .threshold-logo { width:min(68vw,380px); }
+ .threshold { min-height:100svh; }
  .stage { height:100svh; min-height:0; }
  .panel,.panel.wide { position:relative; left:auto; right:auto; top:auto; bottom:auto; width:100%; max-height:none; }
  .panel .panel-crumb { top:0; }

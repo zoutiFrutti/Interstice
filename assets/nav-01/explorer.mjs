@@ -309,15 +309,15 @@ function enter(animated) {
   const faille=element('img',undefined,'passage-symbol');faille.src='assets/logo-faille-noire.svg';faille.alt='';
   const interstice=element('img',undefined,'passage-symbol');interstice.src='assets/logo-interstice.svg';interstice.alt='';
   const name=element('strong','INTERSTICE','passage-name');passage.append(faille,interstice,name);document.body.append(passage);
-  faille.animate([{opacity:1},{opacity:0}],{duration:650,fill:'forwards'});
-  interstice.animate([{opacity:0},{opacity:1}],{duration:650,fill:'forwards'});
-  name.animate([{opacity:0},{opacity:1}],{duration:650,fill:'forwards'});
+  faille.animate([{opacity:1},{opacity:0}],{duration:800,fill:'forwards'});
+  interstice.animate([{opacity:0},{opacity:1}],{duration:800,fill:'forwards'});
+  name.animate([{opacity:0},{opacity:1}],{duration:800,fill:'forwards'});
   entryTimer=setTimeout(()=>{
     entryTimer=null;app.dataset.phase='diving';
     const veil=passage;
-    if(veil)veil.animate([{opacity:1},{opacity:0}],{duration:320,fill:'forwards'}).finished.then(()=>{veil.remove();if(passage===veil)passage=null;},()=>{});
-    moveTo(destination,true,1150,()=>{app.dataset.phase='immersed';announce('Au cœur de la faille. Les directions indiquent les quatre portes.');});
-  },700);
+    if(veil)veil.animate([{opacity:1},{opacity:0}],{duration:400,fill:'forwards'}).finished.then(()=>{veil.remove();if(passage===veil)passage=null;},()=>{});
+    moveTo(destination,true,1400,()=>{app.dataset.phase='immersed';announce('Au cœur de la faille. Les directions indiquent les quatre portes.');});
+  },850);
 }
 function showTextual() {
   if(entry.hidden===false)go('#exploration',{animate:false,focus:false});

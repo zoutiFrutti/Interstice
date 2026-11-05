@@ -53,6 +53,17 @@ for(const width of [320,390,768,1280])test(`entrée, portes, zoom, recentrage et
   const page=await testPage({viewport:{width,height:844},reducedMotion:'reduce'});
   try{
     await ready(page);await overflow(page);
+    const entryLayout=await page.evaluate(()=>{
+      const image=document.querySelector('.threshold-logo').getBoundingClientRect();
+      const quiet=document.querySelector('.threshold .quiet-link').getBoundingClientRect();
+      const word=document.querySelector('.portal-word').getBoundingClientRect();
+      return {image:{top:image.top,bottom:image.bottom,width:image.width,height:image.height},gap:quiet.top-image.bottom,
+        center:{x:(word.x+word.width/2-image.x)/image.width,y:(word.y+word.height/2-image.y)/image.height},viewport:innerHeight};
+    });
+    assert.ok(Math.abs(entryLayout.image.width-entryLayout.image.height)<1,'Le logo conserve son carré entier');
+    assert.ok(entryLayout.image.top>=0&&entryLayout.image.bottom<=entryLayout.viewport,'Le logo entier tient dans la vue initiale');
+    assert.ok(entryLayout.gap>=15,'Le lien sans animation ne recouvre pas le logo');
+    assert.ok(Math.abs(entryLayout.center.x-350/665)<.002&&Math.abs(entryLayout.center.y-377/665)<.002,'Entrer est sur le point central du logo');
     await page.screenshot({path:resolve(artifacts,`entree-${width}.png`),fullPage:true});
     await page.getByRole('link',{name:'Entrer sans animation',exact:true}).click();
     assert.equal(new URL(page.url()).hash,'#exploration');assert.equal(await page.evaluate(()=>scrollY),0);
@@ -253,6 +264,9 @@ test('entrée animée : traversée et caméra opérationnelles, puis animation t
   try{
     await ready(page);await page.getByRole('link',{name:'Entrer dans la faille',exact:true}).click();
     await page.waitForFunction(()=>document.querySelector('#exploration').dataset.phase==='immersed');
+    const elapsed=await page.evaluate(()=>performance.now()-Number(document.querySelector('#exploration').dataset.entryStarted));
+    assert.ok(elapsed>=2100,'La transition conserve le rythme ralenti demandé');
+    evidence.entryMotion={elapsed_ms:elapsed,physical_device_tested:false};
     assert.equal(await page.locator('#entree').isVisible(),false);
     assert.equal(await page.locator('#space').isVisible(),true);assert.equal(await page.evaluate(()=>scrollY),0);
     assert.ok(numbers(await camera(page)).every(Number.isFinite));
