@@ -1,6 +1,6 @@
 import {READINGS} from './reading-catalogue.mjs';
 import {MEDIA} from './media-catalogue.mjs';
-import {DOORS, PARCOURS, BUNDLE, DOCUMENTS, PUBLIC_RESOURCES, COLLECTIVE_TOOLS} from './graph-data.mjs';
+import {DOORS, PARCOURS, BUNDLE, DOCUMENTS, PUBLIC_RESOURCES, COLLECTIVE_TOOLS, COLLECTIVE_TOOLS_NOTICE} from './graph-data.mjs';
 import {readFragment} from './navigation-state.mjs';
 import {fitCamera, constrain, viewBox, project, worldPoint, zoomAt, panBy, validCamera} from './camera.mjs';
 import {parcoursStatus} from './parcours-status.mjs';
@@ -195,10 +195,12 @@ function renderDoor(id, section = null) {
   }
   if(id==='entraide'){
     const tools=element('section',undefined,'collective-tools');tools.append(element('h3','Propositions et participation'));
-    tools.append(element('p','Retrouver les propositions et les moyens de participer dans le prototype existant. L’envoi d’une proposition reste expérimental.'));
-    const links=element('div',undefined,'panel-links');
+    tools.append(element('p',COLLECTIVE_TOOLS_NOTICE,'notice'));
+    const links=element('ul',undefined,'panel-links collective-tool-list');
     for(const tool of COLLECTIVE_TOOLS){
-      const a=link(tool.title+' ↗',tool.url,'external');a.target='_blank';a.rel='noopener noreferrer';links.append(a);
+      const item=element('li'),description=element('p',tool.status+' — '+tool.detail,'tool-status');description.id='collective-tool-'+tool.id;
+      const a=link(tool.title+' ↗',tool.url,'external');a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-describedby',description.id);
+      item.append(a,description);links.append(item);
     }
     tools.append(links);panelBody.append(tools);
   }

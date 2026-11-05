@@ -932,3 +932,7 @@ button:disabled {
  .panel,.panel.wide {position:relative;left:auto;right:auto;bottom:auto;width:100%;height:auto;max-height:none;aspect-ratio:auto;}
 }
 @media print {.panel,.panel.wide{position:static;width:100%;height:auto;max-height:none;aspect-ratio:auto;overflow:visible}}
+
+/* Dated tool statuses remain visible beside each historical entry point. */
+.collective-tool-list { list-style:none; padding:0; }
+.collective-tool-list .tool-status { font-size:12px; margin:0 0 8px; }

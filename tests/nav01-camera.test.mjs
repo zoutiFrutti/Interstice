@@ -88,3 +88,17 @@ test('QCM 2 enlarges portrait-phone overview without changing desktop or tablet 
  assert.deepEqual(fitCamera(768,1024),{cx:500,cy:500,span:1220});
  assert.deepEqual(fitCamera(1280,900),{cx:500,cy:500,span:1180*1280/900});
 });
+
+test('Faire Ensemble dated suspension is explicit with or without JavaScript; original URLs remain accessible',async()=>{
+ const {COLLECTIVE_TOOLS,COLLECTIVE_TOOLS_NOTICE,COLLECTIVE_TOOLS_OBSERVED_ON}=await import('../assets/nav-01/graph-data.mjs');
+ const html=await readFile(new URL('../explorer.html',import.meta.url),'utf8');
+ assert.equal(COLLECTIVE_TOOLS_OBSERVED_ON,'2026-11-05');
+ assert.ok(html.includes(COLLECTIVE_TOOLS_NOTICE));
+ assert.equal(COLLECTIVE_TOOLS.length,3);
+ for(const tool of COLLECTIVE_TOOLS){
+  assert.ok(html.includes('href="'+tool.url+'"'));
+  assert.ok(html.includes('aria-describedby="textual-tool-'+tool.id+'"'));
+  assert.ok(html.includes(tool.status+' — '+tool.detail));
+ }
+ assert.equal(COLLECTIVE_TOOLS.find(t=>t.id==='proposer').status,'Envois suspendus');
+});

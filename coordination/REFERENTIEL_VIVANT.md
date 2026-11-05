@@ -94,3 +94,7 @@ Sur ordinateur, les grandes fenêtres restent **sur le côté**, afin de garder 
 ## 12. Finalisation privée C01 — décisions du QCM 4
 
 Les neuf ressources en attente spécialisée sont présentées dans une rubrique dédiée, avec identifiant et motif, sans ouvrir leurs contenus. L’aperçu HTTPS propriétaire existant peut être actualisé pour les essais sur Android et iPad ; son audience reste privée. Cette autorisation ne concerne ni GitHub Pages, ni une publication publique, ni un visa éditorial. Sources : `D-WORK-C01-Q4-01` et `D-WORK-C01-Q4-02`.
+
+## 13. Suite de C01 — décisions du QCM 5
+
+Zout ouvre un cycle ciblé sur les outils Faire Ensemble. Les liens directs et statuts visibles restent acquis ; l’état réel de suspension doit être distingué d’une simple expérimentation. Une reprise d’interface ne vaut ni autorisation de réactiver les envois ni ouverture d’un canal privé. Le prochain cycle documentaire priorisera FN-018 et les doublons, sans lever leurs blocages. Sources : `D-WORK-C01-Q5-01` et `D-WORK-C01-Q5-02`.

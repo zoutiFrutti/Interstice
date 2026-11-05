@@ -393,6 +393,12 @@ test('C01 C: enlarged mobile, readable fine labels, adaptive windows and preserv
    if(viewport.width>=768)assert.ok(Math.abs(panel.width/panel.height-4/3)<.01,'Fenêtre 4:3');
    else assert.ok(panel.height>viewport.height*.55,'Fenêtre mobile plus grande avec reflow');
    assert.equal(await page.locator('#panel .collective-tools a').count(),3);
+   assert.equal(await page.locator('#panel .collective-tools .tool-status').count(),3);
+   assert.match(await page.locator('#panel .collective-tools .notice').innerText(),/envois.*suspendus/);
+   for(const a of await page.locator('#panel .collective-tools a').all()){
+    const description=await a.getAttribute('aria-describedby');
+    assert.ok(description);assert.equal(await page.locator('#'+description).isVisible(),true);
+   }
    assert.equal(await page.locator('#panel .collective-tools a[target="_blank"][rel="noopener noreferrer"]').count(),3);
    const tools=await page.locator('#panel .collective-tools a').evaluateAll(links=>links.map(a=>a.href));
    assert.deepEqual(tools,['https://zoutifrutti.github.io/Interstice/index.html#propositions','https://zoutifrutti.github.io/Interstice/index.html#proposer','https://zoutifrutti.github.io/Interstice/participer.html']);

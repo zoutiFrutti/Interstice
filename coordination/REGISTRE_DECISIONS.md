@@ -77,3 +77,10 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 | --- | --- | --- | --- |
 | `D-WORK-C01-Q4-01` | Présenter les neuf ressources dans une rubrique « En attente spécialisée », avec identifiant et motif | Réponse QCM 4 dans PASSERELLE-WORK-C01 | Aucun contenu bloqué ouvert, aucun visa levé |
 | `D-WORK-C01-Q4-02` | Actualiser l’aperçu HTTPS privé existant pour les essais Android et iPad | Même réponse QCM 4 | Site propriétaire existant uniquement ; aucune publication publique, fusion, activation d’agent ou dépense ; essai physique à réaliser par Zout |
+
+## QCM 5 — reprise après finalisation C01, 5 novembre 2026
+
+| ID | Décision directe de Zout | Source | Portée / limite |
+| --- | --- | --- | --- |
+| `D-WORK-C01-Q5-01` | Ouvrir un cycle consacré aux outils Faire Ensemble | Réponse au QCM 5 dans PASSERELLE-WORK-C01 | Contrôles et corrections sur la candidate #186 ; aucune autorisation implicite de collecte, réactivation serveur, fusion ou publication publique |
+| `D-WORK-C01-Q5-02` | Pour le prochain cycle documentaire, traiter FN-018 et les doublons en priorité | Même réponse QCM 5 | Clarifier identités bibliographiques et éditions sans ouvrir les contenus bloqués ; cycle documentaire différé pendant Faire Ensemble |

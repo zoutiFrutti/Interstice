@@ -497,9 +497,12 @@ export const PUBLIC_RESOURCES = Object.freeze([]);
 export const DOCUMENTS = Object.freeze({manifeste: {title:"Le manifeste V2.5", file:"manifeste-v2-5.html"}, archive: {title:"Le manifeste V2.1 — archive", file:"manifeste.html"}});
 
 
-// Existing public R6 entry points, checked against main 7344591. No backend is embedded.
+// Historical R6 URLs are preserved. Statuses are a dated read-only observation,
+// not an automatic service probe or permission to reopen collection.
+export const COLLECTIVE_TOOLS_OBSERVED_ON = '2026-11-05';
+export const COLLECTIVE_TOOLS_NOTICE = 'Les formulaires historiques restent consultables, mais les envois de propositions, de ressources et d’articles sont actuellement suspendus. N’y saisis pas de données personnelles.';
 export const COLLECTIVE_TOOLS = Object.freeze([
-  {title:'Consulter les propositions',url:'https://zoutifrutti.github.io/Interstice/index.html#propositions'},
-  {title:'Préparer une proposition',url:'https://zoutifrutti.github.io/Interstice/index.html#proposer'},
-  {title:'Participer au projet',url:'https://zoutifrutti.github.io/Interstice/participer.html'}
+  {id:'propositions',title:'Consulter les propositions',url:'https://zoutifrutti.github.io/Interstice/index.html#propositions',status:'Propositions déjà publiées',detail:'Accès à la liste publique ; aucune nouvelle publication automatique.'},
+  {id:'proposer',title:'Préparer une proposition',url:'https://zoutifrutti.github.io/Interstice/index.html#proposer',status:'Envois suspendus',detail:'Le formulaire historique est visible ; il ne peut pas enregistrer de nouvelle proposition actuellement.'},
+  {id:'participer',title:'Participer au projet',url:'https://zoutifrutti.github.io/Interstice/participer.html',status:'Informations sur le projet',detail:'Les formulaires reliés à cette page restent soumis à la suspension des envois.'}
 ]);
