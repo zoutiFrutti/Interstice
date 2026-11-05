@@ -268,10 +268,13 @@ test('entrée animée : traversée et caméra opérationnelles, puis animation t
     const transitionLogos=await page.locator('.passage-symbol').evaluateAll(images=>images.map(image=>{const r=image.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height};}));
     assert.equal(transitionLogos.length,2);
     assert.ok(transitionLogos.every(image=>Math.abs(image.x-entryLogo.x)<1&&Math.abs(image.y-entryLogo.y)<1&&Math.abs(image.width-entryLogo.width)<1&&Math.abs(image.height-entryLogo.height)<1),'Les deux symboles du fondu restent superposés, même avant la fin du chargement');
+    await page.waitForFunction(()=>document.querySelector('#exploration').dataset.phase==='diving');
+    const beforeDive=await page.evaluate(()=>performance.now()-Number(document.querySelector('#exploration').dataset.entryStarted));
+    assert.ok(beforeDive>=2800,'Interstice reste visible deux secondes supplémentaires avant la plongée');
     await page.waitForFunction(()=>document.querySelector('#exploration').dataset.phase==='immersed');
     const elapsed=await page.evaluate(()=>performance.now()-Number(document.querySelector('#exploration').dataset.entryStarted));
-    assert.ok(elapsed>=2100,'La transition conserve le rythme ralenti demandé');
-    evidence.entryMotion={elapsed_ms:elapsed,physical_device_tested:false};
+    assert.ok(elapsed>=4500,'La plongée respecte la vitesse réduite de 20 %');
+    evidence.entryMotion={before_dive_ms:beforeDive,elapsed_ms:elapsed,physical_device_tested:false};
     assert.equal(await page.locator('#entree').isVisible(),false);
     assert.equal(await page.locator('#space').isVisible(),true);assert.equal(await page.evaluate(()=>scrollY),0);
     assert.ok(numbers(await camera(page)).every(Number.isFinite));

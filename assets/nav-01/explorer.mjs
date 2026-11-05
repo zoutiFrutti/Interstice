@@ -320,8 +320,8 @@ function enter(animated) {
     entryTimer=null;app.dataset.phase='diving';
     const veil=passage;
     if(veil)veil.animate([{opacity:1},{opacity:0}],{duration:400,fill:'forwards'}).finished.then(()=>{veil.remove();if(passage===veil)passage=null;},()=>{});
-    moveTo(destination,true,1400,()=>{app.dataset.phase='immersed';announce('Au cœur de la faille. Les directions indiquent les quatre portes.');});
-  },850);
+    moveTo(destination,true,1750,()=>{app.dataset.phase='immersed';announce('Au cœur de la faille. Les directions indiquent les quatre portes.');});
+  },2850);
 }
 function showTextual() {
   if(entry.hidden===false)go('#exploration',{animate:false,focus:false});
