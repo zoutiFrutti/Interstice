@@ -28,9 +28,9 @@ class C09ReferenceTests(unittest.TestCase):
         result = self.result()
         self.assertEqual(result["erreurs"], [])
         self.assertEqual(result["portes"], 4)
-        self.assertEqual(result["roles"], 19)
+        self.assertGreaterEqual(result["roles"], 19)
         self.assertEqual(result["etats"], 9)
-        self.assertEqual(result["decisions"], 17)
+        self.assertGreaterEqual(result["decisions"], 17)
 
     def test_wrong_door_is_rejected(self):
         text = self.reference.replace("Haut gauche | **Faire Ensemble**",
@@ -41,6 +41,14 @@ class C09ReferenceTests(unittest.TestCase):
         text = self.reference.replace("Haut droite | **Encyclopédie des communs**",
                                       "Haut droite | **Médiathèque**", 1)
         self.assertTrue(self.result(reference=text)["erreurs"])
+
+    def test_atlas_remains_inside_encyclopedie(self):
+        text = self.reference.replace("Atlas des communs", "Carte autonome", 1)
+        self.assertTrue(self.result(reference=text)["erreurs"])
+
+    def test_additional_role_does_not_break_future_cycles(self):
+        extra = "| "+chr(96)+"futur-atelier"+chr(96)+" | "+chr(96)+"coordination/JOURNAL_COMMUN.md"+chr(96)+" | **non créé** | Rôle fictif uniquement pour test de structure |"
+        self.assertEqual(self.result(directory=self.directory+"\n"+extra)["erreurs"], [])
 
     def test_missing_status_is_rejected(self):
         text = self.reference.replace("RECUE_ATTESTEE", "RECUE_PRESUMEE", 1)
