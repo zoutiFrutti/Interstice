@@ -75,7 +75,9 @@ function paint() {
   for(const cue of document.querySelectorAll('[data-direction]')){
     const value=edgeCue(camera,box.width,box.height,points.get(cue.dataset.direction));
     cue.style.left=value.x+'px';cue.style.top=value.y+'px';cue.style.setProperty('--bearing',value.angle+'deg');
-    cue.hidden=value.inView;
+    const nativeDoor=document.querySelector('.node[data-door="'+cue.dataset.direction+'"]');
+    // Edge cues must never cover a reachable native door in the closer phone view.
+    cue.hidden=value.inView||!!(nativeDoor&&!nativeDoor.hidden);
   }
   $('#zoom-value').value = Math.round(fitCamera(box.width,box.height).span / camera.span * 100) + ' %';
 }

@@ -81,6 +81,7 @@ for(const width of [320,390,768,1280])test(`entrée, portes, zoom, recentrage et
       await page.getByRole('button',{name:'Vue entière',exact:true}).click();
     }
     assert.equal(await page.locator('.node[data-door]:visible').count(),4);
+    assert.equal(await page.locator('[data-direction]:visible').count(),0,'Pas de repère superposé aux portes visibles');
     const grid=await page.locator('.node[data-door]').evaluateAll(nodes=>nodes.map(n=>{
       const b=n.getBoundingClientRect();return {name:n.textContent.trim().replace(/\s+/g,' '),x:b.x+b.width/2,y:b.y+b.height/2,width:b.width,height:b.height};
     }));
