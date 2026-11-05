@@ -56,3 +56,19 @@
 ## Règle des futures entrées
 
 Chaque entrée comporte date, ID, mandat, fichiers réellement lus, preuves, travail nouveau, objections, changements **depuis la dernière entrée**, résultats vérifiés, blocages, décisions sollicitées et lien de transmission. Les décisions sont ajoutées au registre central sans réécrire cette histoire.
+
+
+## Delta C09-ORCH — fusion de la fonction critique, 5 novembre 2026
+
+**Mandat explicite de Zout reçu dans cette conversation :** absorber la fonction « La Démolisseuse » dans L'Orchestratrice. **Aucun rôle supplémentaire créé** ; l'annuaire conserve ses 19 rôles documentés. La conversation dédiée peut être supprimée par Zout ; GitHub n'atteste pas la suppression d'une conversation.
+
+- Contrat de travail et prompt : [CONTRAT_CONTRE_AUDIT_INTEGRE_2026-11-05.md](./CONTRAT_CONTRE_AUDIT_INTEGRE_2026-11-05.md).
+- Premier contre-audit + transmission R01–R10 : [CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md](./CONTRE_AUDIT_INITIAL_ET_TRANSMISSION_2026-11-05.md).
+- **R01–R10 sont PROPOSÉES, non adoptées**. Aucun changement silencieux de `REGISTRE_DECISIONS.md` ni du nombre d'agents.
+- **P0 maintenu** : pont C12 sur `main` non protégé par l'opt-in candidat #114 ; existence des secrets non vérifiée.
+- **P1 usage** : envois Faire Ensemble suspendus selon la PR #186 ; fonctionnement social de bout en bout non démontré.
+- **P1 duplication** : #188 recouvre des fichiers de #186 ; #132 est une source d'index déjà reprise. Ne pas ouvrir une nouvelle PR critique.
+- **État des preuves** : lecture GitHub des PR #114/#115/#116/#126/#132/#161/#186/#188 et workflows C12 ; constats Supabase repris de #186, **non contre-vérifiés ici** ; aucun test utilisateur nouveau.
+- **Transmis documentalement à La Relieuse** via ce dossier candidat : lecture effective, adoption ou décision de Zout **non attestées**.
+
+**Suite attendue** : La Relieuse examine les dix règles, le P0 C12, le statut de Faire Ensemble et la rationalisation des PR. La fonction critique participe aux interventions normales de L'Orchestratrice, sans audit cyclique autonome.
