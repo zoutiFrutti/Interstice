@@ -48,3 +48,13 @@ La purge SQL vise la base active et les seuls événements initiaux autorisés. 
 ### Information visiteur à préparer avant ouverture
 
 « Les propositions du pilote sont relues par Zout avant toute publication. Une proposition non traitée est conservée 30 jours maximum. N’y indique pas de coordonnées ni d’informations personnelles sensibles. » Ce texte est un projet : ne pas l’afficher comme garantie actuelle tant que la purge, sa cadence, les informations complètes et le parcours de retrait ne sont pas opérationnels et validés.
+
+### Concurrence — reprise WORK-C11 du 6 novembre 2026
+
+Le candidat exige maintenant READ COMMITTED et une FK immédiate validée. Après les verrous parents, il verrouille les événements existants avec FOR UPDATE NOWAIT ; une trace occupée fait échouer la transaction sans suppression. Cela vise aussi une modification concurrente de submitted en trace humaine. Aucun droit distant supplémentaire n'est accordé : la lecture des seuls privilèges SQL a confirmé UPDATE pour service_role sur moderation_events ; les fixtures reproduisent ce droit. Les deux anciens tests PGlite supplémentaires contrôlent le refus d'un snapshot ancien et d'une FK différée, soit 17 tests locaux.
+
+`purge-concurrency.test.mjs` utilise plusieurs connexions PostgreSQL et exige une base **neuve**, exclusivement 127.0.0.1:55439/interstice_purge_test, avec opt-in INTERSTICE_PURGE_LOCAL_TEST=1 et mot de passe synthétique fixé dans le service CI. Il refuse toute table publique préexistante et n'accepte aucune URL ou clé Supabase. La CI NAV existante fournit un PostgreSQL 17.6 jetable ; les chemins du lot pilote déclenchent désormais ce contrôle.
+
+Sept scénarios : modération UPDATE en cours, événement humain INSERT en cours, lots concurrents disjoints, modération après suppression, reproduction de la cascade sur le SQL immuable 3ef0d20, protection du même scénario dans la candidate, refus REPEATABLE READ. Le SQL antérieur est rejoué sous un autre nom uniquement dans la base de test. Les fixtures reproduisent les mécanismes utiles ; elles ne certifient pas le parcours réel moderate_proposal ou le compte de Zout.
+
+L'environnement local ne permet pas de changer d'utilisateur pour démarrer le serveur natif : ces sept essais doivent être qualifiés sur les résultats CI, et non présentés comme exécutés localement. Les tests PGlite locaux et la vérification syntaxique passent. Les protections restent candidates ; aucun effet distant, cron ou ouverture de formulaire. Références techniques : https://www.postgresql.org/docs/17/transaction-iso.html et https://www.postgresql.org/docs/17/explicit-locking.html .

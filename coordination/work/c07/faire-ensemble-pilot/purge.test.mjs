@@ -25,7 +25,7 @@ before(async()=>{
   create trigger fixture_initial_audit after insert on public.proposals
    for each row execute function public.fixture_initial_audit();
   grant select,insert,update,delete on public.proposals to service_role;
-  grant select,insert on public.moderation_events to service_role;
+  grant select,insert,update on public.moderation_events to service_role;
  `);
  await db.exec(sql);
 });
@@ -139,4 +139,15 @@ test('nouveau declencheur DELETE sur le journal refuse',async()=>{
   try{assert.deepEqual(await plan('false,100,true'),{planned_count:1,submitted_events:1,deleted_count:1,simulated:false});}
   finally{await db.exec('reset role;');}
   assert.equal(await count('moderation_events'),0);
+ });
+
+ test('snapshot ancien refuse meme pour une simulation',async()=>{
+  await db.exec('begin isolation level repeatable read;');
+  try{await assert.rejects(plan(),/READ COMMITTED/);}finally{await db.exec('rollback;');}
+ });
+ test('FK differee refusee avant toute suppression',async()=>{
+  await seed();
+  await db.exec('alter table public.moderation_events alter constraint moderation_events_proposal_id_fkey deferrable initially deferred;');
+  try{await assert.rejects(plan('false,100,true'),/dependencies changed/);assert.equal(await count('proposals'),1);}
+  finally{await db.exec('alter table public.moderation_events alter constraint moderation_events_proposal_id_fkey not deferrable;');}
  });

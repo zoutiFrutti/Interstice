@@ -59,6 +59,11 @@ begin
   if p_dry_run is null or p_limit is null or p_limit < 1 or p_limit > 100 then
     raise exception 'Explicit mode and batch size 1..100 required';
   end if;
+  -- Les lectures suivantes doivent voir les traces validees avant chaque commande.
+  -- Un snapshot ancien pourrait masquer une moderation deja validee.
+  if current_setting('transaction_isolation') <> 'read committed' then
+    raise exception 'Purge requires READ COMMITTED isolation' using errcode = '0A000';
+  end if;
   -- Le schema a pu evoluer depuis l'audit : refuser toute nouvelle cascade/effet DELETE.
   if exists (
     select 1 from pg_catalog.pg_constraint c
@@ -66,6 +71,7 @@ begin
       and c.confrelid in ('public.proposals'::regclass,'public.moderation_events'::regclass)
       and not (c.confrelid = 'public.proposals'::regclass
         and c.conrelid = 'public.moderation_events'::regclass and c.confdeltype = 'c'
+        and not c.condeferrable and c.convalidated
         and c.conkey = array[(select a.attnum from pg_catalog.pg_attribute a
           where a.attrelid = c.conrelid and a.attname = 'proposal_id')]
         and c.confkey = array[(select a.attnum from pg_catalog.pg_attribute a
@@ -92,6 +98,11 @@ begin
     order by p.created_at, p.id
     limit p_limit for update of p skip locked
   ) q;
+  -- Le verrou parent bloque les nouveaux evenements via la FK immediate.
+  -- Verrouiller aussi les traces existantes : une modification de submitted
+  -- ne doit jamais disparaitre dans la cascade. Refuser sans attendre si occupe.
+  perform 1 from public.moderation_events e where e.proposal_id = any(v_ids)
+    for update of e nowait;
   select count(*)::integer into v_events from public.moderation_events e
     where e.proposal_id = any(v_ids);
   if not p_dry_run then
