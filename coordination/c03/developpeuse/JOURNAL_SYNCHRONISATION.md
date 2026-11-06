@@ -162,3 +162,13 @@ Correction d’organisation : les 2922 octets ajoutés sont repris intégralemen
 Contrôles locaux : 50 tests NAV et 126 tests agents réussis. Les contrôles de préservation NAV/C02 et R6 sont vérifiés à part sur le commit final. Le YAML C12 main au SHA df73c5d a été relu : blob e0961a3, garde if:false maintenue. Aucune nouvelle exécution distante n’est anticipée ici.
 
 Point d’interruption C08 conservé : purge uniquement préparée et testée localement (14 tests PostgreSQL WASM, 50 NAV, 126 agents), non publiée et non appliquée. Checkpoint Git LOCAL 7fc4e8802e830c1e630a276de3e1a97d82ddb3be, basé sur b5ab786 ; espace de travail C08 conservé séparément. Ce checkpoint n’est ni un commit de #186 ni un déploiement. Il contient la décision 30 jours, le marqueur des futurs dépôts, simulation et blocage de la cascade du journal initial. Toute reprise nécessite rapprochement avec le HEAD courant et décision sur cette cascade avant exécution. Aucun compte ni contenu privé réel lu.
+
+## WORK-C11 — correction QA autorisée après la première pause
+
+Choix A de Zout, D-WORK-C11-QA-01. Le HEAD 73eebf0 a rétabli NAV et C02 : huit workflows réussis, nouvel échec R6 42217636461 / job 127891516033, scénario INT01 clavier/historique, ligne 88 : fragment vide immédiatement après Entrée au lieu de #parcours. Le code et la page de navigation n’ont pas changé depuis b5ab786. Hypothèse de synchronisation du miroir d’URL Playwright ; causalité non définitivement établie, car le scénario initial réussit aussi localement.
+
+Correction : attendre conditionnellement le fragment attendu avec page.waitForURL en parallèle de l’appui Entrée, puis conserver exactement l’assertion initiale. Une seule empreinte QA supplémentaire, ab32243392991efcfb96fea09a7d227c89b9c087, pour ce seul test ; les cinq exceptions sécurité et l’empreinte QA antérieure restent inchangées. La garde NAV exige exactement deux chemins QA et leurs empreintes. Aucune exception pour une boîte ou un fichier du site.
+
+Proposition testée avant la décision : cinq scénarios R6 réussis sur sources statiques locales, Playwright 1.56.1, six largeurs ; dernier essai avec toutes les sorties réseau externes bloquées. Pas de nouvelle construction Jekyll locale ni d’essai physique. Des lectures publiques automatiques ont échoué au réseau dans l’essai initial ; aucune soumission ou donnée privée lue. Les réussites locales ne sont pas une nouvelle preuve CI distante.
+
+La préparation de purge C08 reste au checkpoint local 7fc4e8802e830c1e630a276de3e1a97d82ddb3be, sans application ni suppression. Main, C12, les SVG, le corpus, les réserves et les formulaires actifs restent inchangés par cette correction. Vérifier les tests de préservation et la CI sur le nouveau HEAD exact avant de poursuivre la finition.

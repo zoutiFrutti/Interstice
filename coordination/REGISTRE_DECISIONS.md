@@ -129,3 +129,9 @@ Les trois choix A intermédiaires de Zout ont autorisé la préparation document
 | --- | --- | --- | --- |
 | `D-WORK-C08-PILOT-01` | Préparer d’abord les seules propositions d’entraide | Réponse directe « 1a 2a » de Zout à la pause Faire Ensemble | Ressources et articles restent suspendus ; aucune réactivation ni collecte autorisée |
 | `D-WORK-C08-PILOT-02` | Zout assure la modération du pilote | Même réponse directe « 1a 2a » | Désigne la personne de relecture ; ne prouve ni permissions du compte ni essai réel de modération |
+
+## WORK-C11 — correction QA ciblée, 6 novembre 2026
+
+| ID | Décision directe | Source | Portée |
+| --- | --- | --- | --- |
+| `D-WORK-C11-QA-01` | Appliquer l’attente conditionnelle dans le test R6 et autoriser uniquement son empreinte QA exacte | Choix A de Zout après le premier bilan C11 | Seul tests/r6-int01-convergence.browser.test.mjs, blob ab32243392991efcfb96fea09a7d227c89b9c087 ; mêmes assertions et destinations ; aucune exception pour la boîte Développeuse, aucun changement du site ou des logos |

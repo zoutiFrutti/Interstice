@@ -24,7 +24,9 @@ test('C08 keeps the emergency stop and exact reviewed C13 exceptions',async()=>{
     'coordination/agents/test_demande_relieuse_c11.py',
     'coordination/agents/test_pont_relieuse_c12.py'
   ]);
-  assert.deepEqual(Object.keys(manifest.qa_blobs),['scripts/r6-preservation-check.py']);
+  assert.deepEqual(Object.keys(manifest.qa_blobs),['scripts/r6-preservation-check.py','tests/r6-int01-convergence.browser.test.mjs']);
+  assert.equal(manifest.qa_reviewed_updates.decision_id,'D-WORK-C11-QA-01');
+  assert.equal(manifest.qa_reviewed_updates.approved_blob,'ab32243392991efcfb96fea09a7d227c89b9c087');
   assert.equal(manifest.reviewed_updates.emergency_source_sha,'df73c5dabf47a0b73d2b55f0346c7006d485dd98');
   for(const [path,expected] of Object.entries({...manifest.blobs,...manifest.qa_blobs})){
     const bytes=await readFile(new URL(path,root));

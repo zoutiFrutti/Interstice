@@ -9,7 +9,8 @@
     "coordination/agents/test_pont_relieuse_c12.py": "53cdf24a759ae9786fbbc07e7dc29ceb12bc2c69"
   },
   "qa_blobs": {
-    "scripts/r6-preservation-check.py": "94df9cb405d98e7c6f555379e015b7f7634f711f"
+    "scripts/r6-preservation-check.py": "94df9cb405d98e7c6f555379e015b7f7634f711f",
+    "tests/r6-int01-convergence.browser.test.mjs": "ab32243392991efcfb96fea09a7d227c89b9c087"
   },
   "qa_reason": "Adapter le contrôle historique à l’intégration explicite C13; les fichiers du site et les logos restent strictement inchangés.",
   "reviewed_updates": {
@@ -21,5 +22,14 @@
       "coordination/agents/pont_relieuse_c12.py"
     ],
     "reason": "Conserver le blocage inconditionnel C12 de main avec les gardes C13 candidates ; reconnaître le durcissement existant qui exige exactement true. Aucun élargissement des chemins autorisés."
+  },
+  "qa_reviewed_updates": {
+    "mission": "WORK-C11",
+    "decision_id": "D-WORK-C11-QA-01",
+    "candidate_source_sha": "73eebf0d5e15c4a04f6bda3740214c58c42fe4ca",
+    "path": "tests/r6-int01-convergence.browser.test.mjs",
+    "original_blob": "423b37b1566871552afdb675aab28c5d53908bf4",
+    "approved_blob": "ab32243392991efcfb96fea09a7d227c89b9c087",
+    "reason": "Attendre le fragment attendu après Entrée avant la même assertion. Aucun changement de destination, assertion, code applicatif ou SVG. Autorisation directe de Zout, choix A."
   }
 }
