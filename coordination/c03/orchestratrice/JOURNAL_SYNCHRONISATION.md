@@ -76,3 +76,17 @@ Chaque entrée comporte date, ID, mandat, fichiers réellement lus, preuves, tra
 ## Annotation de reprise WORK-C08 — 6 novembre 2026
 
 Le delta C09 ci-dessus est historique : ses règles proposées ont ensuite été adoptées par Zout (registre D-C09-RULES-01/03/04/05, confirmé D-WORK-C08-Q1-01) ; son risque C12 précède l’arrêt d’urgence main df73c5d. Ces lignes ne sont ni effacées ni présentées comme le statut courant. Phase C autorisée : table C09 reprise sans migration C18 ; vérificateur adapté aux familles d’identifiants du registre actuel. Sources #188 ed0c18a et candidate #186 9cd4f7d. Détails et résultats de tests dans le journal existant de La Développeuse ; aucune réception effective de La Relieuse présumée.
+
+
+## Delta C10-ORC-01 — 6 novembre 2026
+
+**Mission :** fiabilisation des ateliers sans activer l'IA ; état candidat. Ce journal relie deux pièces plutôt que les recopier :
+
+- [État vérifiable et registre des blocages](./C10_ORC_01_ETAT_BLOCAGES_2026-11-06.md).
+- [Protocole de reprise après interruption Work](./C10_ORC_01_REPRISE_WORK_2026-11-06.md).
+
+**Point décisif vérifié :** `main` au HEAD `df73c5dabf47a0b73d2b55f0346c7006d485dd98`, pont C12 blob `e0961a3a4fb9544f8778b9a61e428d4b36cedb34` : arrêt d'urgence du job en place ; #186 conserve également cette interdiction sur sa candidate. L'ancien diagnostic « job non verrouillé actuellement sur main » est **obsolète** depuis la désactivation autorisée, même si les secrets et autres chemins restent à auditer.
+
+**Écarts principaux :** contrat de neuf états C09 contre sept champs documentaires C03/console ; accusé C11 fondé sur contrôle déclaratif ; acteur C07 non authentifié par sa chaîne ; GH-AW compilé sans modèle exécuté ; base #188 obsolète face au HEAD courant #186.
+
+**Statuts :** rapport et protocole candidats déposés ; réception La Relieuse non attestée ; validation, fusion, publication et activation non autorisées. Pas de rôle, nouvelle boîte, automation ou service.
