@@ -31,6 +31,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Test candidate purge in isolated PostgreSQL WASM, no Supabase
+        run: |
+          npm ci --prefix coordination/work/c07/faire-ensemble-pilot --ignore-scripts --no-audit --no-fund
+          node --test coordination/work/c07/faire-ensemble-pilot/purge.test.mjs
       - name: Camera, identities and editorial barriers
         run: node --test tests/nav01-camera.test.mjs tests/c06-ana-status-bridge.test.mjs tests/nav02-resource-bridge.test.mjs tests/c07-bundle.test.mjs tests/nav01-reading.test.mjs tests/nav01-editorial-review.test.mjs tests/nav01-editorial-queue.test.mjs tests/nav01-faire-ensemble-pilot.test.mjs
       - name: Preserve every file from main

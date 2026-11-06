@@ -46,9 +46,11 @@ for(const [label,opts,status] of [
  ['limite de cadence',{allowed:false},429],['limiteur indisponible',{rateError:'synthetic'},503],['écriture refusée',{insertError:'synthetic'},503]
 ])test(label,async()=>{const a=setup('true',opts);assert.equal((await a.handler(a.request())).status,status);});
 test('réception simulée : pending seulement, aucune publication',async()=>{
- const a=setup('true');const r=await a.handler(a.request());assert.equal(r.status,202);
+ const a=setup('true');const r=await a.handler(a.request({need:'Un outil',category:'Matériel et ressources',
+  pilot_cohort:'client-forged',created_at:'2000-01-01'}));assert.equal(r.status,202);
  assert.equal((await r.json()).ok,true);assert.equal(a.writes.length,1);
- assert.equal(a.writes[0].table,'proposals');assert.equal(a.writes[0].value.status,'pending');
+ assert.equal(a.writes[0].table,'proposals');assert.equal(a.writes[0].value.pilot_cohort,'c08-fe-proposals-v1');assert.equal(a.writes[0].value.status,'pending');
+ assert.equal(a.writes[0].value.created_at,undefined);
  assert.deepEqual(a.calls,['claim_submission_slot']);
 });
 test('patch applicable au seul frontend propositions, confirmé avant reset',async()=>{

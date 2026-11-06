@@ -172,3 +172,11 @@ Correction : attendre conditionnellement le fragment attendu avec page.waitForUR
 Proposition testée avant la décision : cinq scénarios R6 réussis sur sources statiques locales, Playwright 1.56.1, six largeurs ; dernier essai avec toutes les sorties réseau externes bloquées. Pas de nouvelle construction Jekyll locale ni d’essai physique. Des lectures publiques automatiques ont échoué au réseau dans l’essai initial ; aucune soumission ou donnée privée lue. Les réussites locales ne sont pas une nouvelle preuve CI distante.
 
 La préparation de purge C08 reste au checkpoint local 7fc4e8802e830c1e630a276de3e1a97d82ddb3be, sans application ni suppression. Main, C12, les SVG, le corpus, les réserves et les formulaires actifs restent inchangés par cette correction. Vérifier les tests de préservation et la CI sur le nouveau HEAD exact avant de poursuivre la finition.
+
+## WORK-C11 — reprise de purge après décision A, 6 novembre 2026
+
+Base distante vérifiée b90c84a3d443a8e0bd0107f5d42889ebb05dec9b. Checkpoint local 7fc4e88 repris sélectivement ; conflit d'ajouts dans le registre résolu en conservant les décisions C08 et C11. D-WORK-C11-PURGE-01 consigne le choix direct A de Zout : préparer l'effacement des seules nouvelles propositions non traitées du futur pilote avec leurs événements initiaux submitted. Aucun autre événement de modération admis, aucune application distante ou autorisation d'exécution réelle.
+
+Script candidat en schéma privé, SECURITY INVOKER, simulation par défaut, paramètre explicite pour la cascade, lots 1..100 ; aucune planification. Marqueur serveur immuable, aucun reclassement des archives. Les critères sont revérifiés lors du DELETE. Dépendance locale PGlite 0.5.15 verrouillée ; CI NAV existante complétée pour ces seuls essais isolés, sans connexion Supabase.
+
+Tests locaux : 15/15 PostgreSQL WASM (dont exécution service_role sur fixtures, refus des rôles publics, cascade explicite, frontière 720 h, états traités exclus), 50/50 NAV, 126/126 agents ; contrôle C02 sans changement historique non autorisé. Aucun essai multi-session ni preuve d'une cadence effective à 30 jours. Deno/SDK, concurrence réelle, supervision, sauvegardes/journaux/empreintes IP et visa juridique restent à traiter avant ouverture. La suppression SQL locale est exclusivement synthétique. SVG et réserves inchangés.

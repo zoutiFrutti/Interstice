@@ -14,9 +14,37 @@ Le filtre de coordonnées n’identifie pas toutes les données personnelles : l
 
 ## Avant toute ouverture, éléments encore manquants
 
-1. Définir la durée des propositions non traitées et l’information affichée. Une purge candidate doit être bornée au pilote et aux données/états définis ; aucune suppression d’existant autorisée.
+1. Durée décidée : 30 jours pour les nouvelles propositions non traitées du pilote (D-WORK-C08-PILOT-03). La purge ci-dessous est préparée et simulée ; aucune suppression d’existant ni application distante autorisée. L’information destinée aux visiteurs reste à finaliser avant ouverture.
 2. Vérifier le parcours de Zout avec un compte de test explicitement autorisé et des données fictives, puis le refus de publication par un autre compte. Les permissions de fonction seules ne suffisent pas.
 3. Vérifier Deno/SDK, les migrations et contrôles serveur réels, la provenance des en-têtes anti-abus, les erreurs réseau et le retour à l’arrêt. Ces tests locaux ne certifient pas l’infrastructure.
 4. Soumettre le lot et les messages à la revue juridique/éditoriale existante. Obtenir une autorisation explicite pour le handler, ses paramètres et son déploiement exact. Aucune réactivation ne découle des deux choix de périmètre/modérateur.
 
 Les ressources, articles, coordonnées privées, annuaire et relais privé restent hors du pilote. L’aperçu et main restent inchangés. Ne jamais remplacer les handlers actifs par ce candidat pendant un simple test.
+
+## Purge candidate — 6 novembre 2026
+
+`purge-candidate.sql` est un **script candidat, pas une migration appliquée**. Les seules lectures Supabase de cette passe portent sur les métadonnées : colonnes, contraintes, déclencheurs et fonctions. Ni corps de proposition, ni identité, ni liste d’identifiants réels consultés. La colonne `pilot_cohort` et le schéma `interstice_fe_pilot` sont absents de la base réelle au relevé ; rien n’y a été ajouté.
+
+Le futur handler marque ses nouveaux dépôts `c08-fe-proposals-v1`, indépendamment du corps envoyé par le visiteur. Le script candidat conserve NULL pour toutes les anciennes lignes, interdit tout marquage rétroactif et toute modification ultérieure de l’horodatage pilote. L’horodatage d’un nouveau dépôt marqué est fixé par le serveur. Aucun ancien dépôt n’est assimilé au pilote par sa seule date.
+
+La fonction privée `interstice_fe_pilot.purge_pending()` est en simulation par défaut : elle renvoie seulement le nombre de propositions éligibles, le nombre de leurs événements initiaux, le nombre supprimé (zéro en simulation), et le mode. Aucun corps, identifiant ou nom n’est renvoyé. Elle reste réservée à la maintenance, SECURITY INVOKER, sans privilège API anon/authenticated ni nouveau rôle. Les lots sont bornés à 100, verrouillés avec SKIP LOCKED. Les publications, rejets, retraits, traces de traitement, dates de modération ou publication non nulles sont exclus.
+
+Seuil : plus de 720 heures depuis la création serveur (30 fois 24 h), en UTC ; à la frontière exacte rien n’est encore purgé. **Aucune planification n’est installée** : l’éligibilité après 30 jours ne garantit pas encore l’effacement effectif à cette date. La cadence et la supervision seront à rendre opérationnelles avant ouverture du pilote.
+
+### Cascade du journal : préparation autorisée, exécution non autorisée
+
+Le schéma réel comporte `moderation_events.proposal_id → proposals.id ON DELETE CASCADE`. Le dépôt crée automatiquement un événement `submitted`. Une suppression de parent effacerait donc ce journal initial. Le candidat compte ces événements en simulation et refuse l’exécution si leur suppression n’est pas explicitement autorisée. Les propositions avec toute autre trace de traitement sont exclues même avec ce paramètre. Toute nouvelle dépendance, règle ou déclencheur DELETE inconnu bloque le plan : pas de cascade silencieuse vers de nouvelles archives.
+
+Aucune suppression réelle ne sera lancée par la CI. La branche d’exécution a été éprouvée seulement sur des fixtures synthétiques locales. Décision D-WORK-C11-PURGE-01 : Zout a choisi A le 6 novembre 2026, autorisant la préparation de la suppression avec les seuls événements initiaux submitted. Le paramètre explicite reste requis : cette décision ne vaut ni autorisation de suppression réelle, ni application du schéma à Supabase. Toute autre trace de modération exclut toujours la proposition. La revue juridique reste nécessaire.
+
+### Preuves et limites
+
+Dépendance de test PostgreSQL WASM PGlite épinglée (package.json et lockfile), sans accès au réseau ou à Supabase depuis le test. `npm ci --prefix coordination/work/c07/faire-ensemble-pilot --ignore-scripts` puis `node --test coordination/work/c07/faire-ensemble-pilot/purge.test.mjs`. Les fixtures reproduisent les champs utiles, contraintes de statut, RLS et cascade constatés ; elles ne prétendent pas copier toute la base. Le vieillissement des fixtures désactive le seul garde local le temps de leur insertion ; aucune protection distante n’est modifiée.
+
+Les tests portent sur la simulation, la frontière de 30 jours, les anciens dépôts, tous les états protégés, les traces humaines, la cascade refusée puis l’exécution explicite dans la base fictive, les lots et leur reprise, les paramètres invalides, l’immutabilité, les rôles et l’évolution du schéma. Pas d’essai multi-session des courses entre modération et purge, ni test sur l’instance Supabase, ni test réel de sauvegarde/restauration.
+
+La purge SQL vise la base active et les seuls événements initiaux autorisés. Elle ne promet pas l’effacement de sauvegardes, caches ou journaux du fournisseur. Les empreintes anti-abus suivent une finalité distincte ; aucune durée ni suppression n’en est décidée par ce lot. Ces points et l’information des personnes doivent être examinés dans les visas existants avant ouverture.
+
+### Information visiteur à préparer avant ouverture
+
+« Les propositions du pilote sont relues par Zout avant toute publication. Une proposition non traitée est conservée 30 jours maximum. N’y indique pas de coordonnées ni d’informations personnelles sensibles. » Ce texte est un projet : ne pas l’afficher comme garantie actuelle tant que la purge, sa cadence, les informations complètes et le parcours de retrait ne sont pas opérationnels et validés.

@@ -135,3 +135,16 @@ Les trois choix A intermédiaires de Zout ont autorisé la préparation document
 | ID | Décision directe | Source | Portée |
 | --- | --- | --- | --- |
 | `D-WORK-C11-QA-01` | Appliquer l’attente conditionnelle dans le test R6 et autoriser uniquement son empreinte QA exacte | Choix A de Zout après le premier bilan C11 | Seul tests/r6-int01-convergence.browser.test.mjs, blob ab32243392991efcfb96fea09a7d227c89b9c087 ; mêmes assertions et destinations ; aucune exception pour la boîte Développeuse, aucun changement du site ou des logos |
+
+## WORK-C08 — conservation et préparation de purge, 6 novembre 2026
+
+| ID | Décision directe | Source | Portée |
+| --- | --- | --- | --- |
+| `D-WORK-C08-PILOT-03` | 30 jours maximum pour les nouvelles propositions du pilote restées non traitées | Réponse au QCM interactif du 6 novembre 2026 | Ne concerne pas les publications, archives ou données existantes ; aucune suppression exécutée |
+| `D-WORK-C08-PURGE-01` | Préparer la purge du pilote | Instruction directe « C’est parti pour la purge », dans la continuité du plan de préparation | Schéma candidat, simulation et tests locaux ; aucune application Supabase ni suppression réelle dans cette passe |
+
+## WORK-C11 — purge du futur pilote, 6 novembre 2026
+
+| ID | Décision directe | Source | Portée |
+| --- | --- | --- | --- |
+| `D-WORK-C11-PURGE-01` | Préparer la suppression des nouvelles propositions non traitées après 30 jours avec leurs événements initiaux submitted | Choix direct « A » de Zout après le bilan b90c84a et le QCM de cascade | Préparation candidate uniquement ; toute autre trace de modération exclut la proposition ; aucun ancien dépôt, aucune application distante ni suppression réelle ; revue juridique et autorisation de version avant ouverture |

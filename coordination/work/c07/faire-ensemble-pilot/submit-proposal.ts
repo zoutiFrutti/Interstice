@@ -40,7 +40,7 @@ Deno.serve(async req=>{
  const {data:allowed,error:throttleError}=await db.rpc("claim_submission_slot",{p_fingerprint:fingerprint});
  if(throttleError)return reply({error:"Service temporairement indisponible"},503);
  if(!allowed)return reply({error:"Une proposition maximum toutes les dix minutes."},429);
- const {error}=await db.from("proposals").insert({need_text:need||null,offer_text:offer||null,area_text:area||null,category,status:"pending"});
+ const {error}=await db.from("proposals").insert({need_text:need||null,offer_text:offer||null,area_text:area||null,category,pilot_cohort:"c08-fe-proposals-v1",status:"pending"});
  if(error)return reply({error:"Enregistrement impossible"},503);
  return reply({ok:true,message:"Proposition reçue. Elle attend une vérification avant publication."},202);
 });
