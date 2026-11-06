@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: '22'
       - name: Camera, identities and editorial barriers
-        run: node --test tests/nav01-camera.test.mjs tests/c06-ana-status-bridge.test.mjs tests/nav02-resource-bridge.test.mjs tests/c07-bundle.test.mjs tests/nav01-reading.test.mjs tests/nav01-editorial-review.test.mjs tests/nav01-editorial-queue.test.mjs
+        run: node --test tests/nav01-camera.test.mjs tests/c06-ana-status-bridge.test.mjs tests/nav02-resource-bridge.test.mjs tests/c07-bundle.test.mjs tests/nav01-reading.test.mjs tests/nav01-editorial-review.test.mjs tests/nav01-editorial-queue.test.mjs tests/nav01-faire-ensemble-pilot.test.mjs
       - name: Preserve every file from main
         run: |
           node --input-type=module <<'JS'

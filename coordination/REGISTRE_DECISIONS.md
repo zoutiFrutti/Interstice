@@ -122,3 +122,10 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 | `D-WORK-C08-PHASEC-01` | Reprendre la phase C et les apports préparés de #188/#189 dans #186, sans écraser les décisions récentes, puis retester | Choix A direct de Zout, 6 novembre 2026, après preuve CI 9/9 | Corrections candidates seulement ; aucune publication, réactivation d’envoi, activation IA ou levée de réserve |
 
 Les trois choix A intermédiaires de Zout ont autorisé la préparation documentaire de #188, puis FN-018/doublons, puis #189. Résultats dans le compte rendu unique de #186 ; aucune adoption d’alias définitif ni autorisation de publication ne découle de ces choix. Les questions historiques ci-dessus restent datées : le risque C12 décrit avant l’arrêt df73c5d n’est pas l’état actuel.
+
+## WORK-C08 — pilote Faire Ensemble, 6 novembre 2026
+
+| ID | Décision directe | Source | Portée |
+| --- | --- | --- | --- |
+| `D-WORK-C08-PILOT-01` | Préparer d’abord les seules propositions d’entraide | Réponse directe « 1a 2a » de Zout à la pause Faire Ensemble | Ressources et articles restent suspendus ; aucune réactivation ni collecte autorisée |
+| `D-WORK-C08-PILOT-02` | Zout assure la modération du pilote | Même réponse directe « 1a 2a » | Désigne la personne de relecture ; ne prouve ni permissions du compte ni essai réel de modération |

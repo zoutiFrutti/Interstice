@@ -121,3 +121,15 @@ Sur `3017ba99dc05801c09f3ecfa4561ebbb577eb59c`, les 32 tests purs CI et 15 scén
 **Conservation :** workflows et permissions non modifiés ; C12 reste arrêté. SVG, sources documentaires JSON, réserves, attentes spécialisées et PAR-005 inchangés. FN-018 et alias candidats non débloqués. Pas de fusion, déploiement, collecte, contact externe, activation IA ni dépense. Les compléments bibliographiques FN et interpros sont des preuves préparées dans le compte rendu #186, pas des visas.
 
 **Limites :** dossier interpros encore candidat ; recoupement historique et plus-value Wikipédia à compléter. L’aperçu privé n’est pas actualisé par ce commit et ne représente pas automatiquement la nouvelle candidate. Aucune validation artistique, juridique, physique Android/iPad, TalkBack ou VoiceOver déduite des tests. Pause avant tout nouveau lot important.
+
+## WORK-C08 — pilote Faire Ensemble, décisions 1a/2a, 6 novembre 2026
+
+Zout retient les propositions seules et assure la modération ; D-WORK-C08-PILOT-01/02 ajoutées au registre existant. Ressources/articles et envois réels restent fermés. Le choix définit le lot à préparer, pas un déploiement.
+
+Préparation dans `coordination/work/c07/faire-ensemble-pilot/` : handler propositions réutilisé de #13 6eaf127, arrêt fermé par défaut avant lecture du corps/DB ; dépendance npm épinglée à la version 2.119.0 observée, sans téléchargement/exécution du SDK. Patch frontend limité à script.js depuis #42 347f31c avec protection contre les faux accusés ; non appliqué au fichier historique. Notice du lot, limites et conditions de reprise dans son README, sans nouveau registre ou système.
+
+Quinze tests hors réseau ajoutés à la CI NAV existante, sans nouvelle permission ni déclencheur : fermeture par défaut/valeurs non autorisées, absence de lecture ou DB en arrêt, méthodes, origine, taille annoncée/réelle, JSON, coordonnées, IP absente, limiteur, erreur DB et réception simulée seulement pending. Patch appliqué dans un dossier temporaire pour contrôler refus de fausse réception, conservation du texte et double clic. Aucun envoi ni compte réel utilisé.
+
+Local : 50/50 tests déterministes NAV (35 existants + 15 pilote), 126/126 tests agents ; C09 OK, 39 décisions et 19 rôles. Les 26 tests de la passe précédente restent des contrôles des sources PR #13/#42 dans une extraction temporaire ; les 15 nouveaux assurent la couverture du lot présent. C02/R6 puis CI du nouveau HEAD à contrôler séparément.
+
+Limites : pas de Deno/SDK réel ni parcours multi-rôles ; dépendances serveur, en-têtes anti-abus, durée de conservation/purge, information et visas encore à compléter. Le filtre de coordonnées ne suffit pas à garantir l’absence de données personnelles. Pas de réactivation de variable, permission, handler Supabase, C12, site ou main. Les sources JSON, SVG et réserves demeurent inchangés. Pause sur les décisions nouvelles seulement après résultat de la CI.
