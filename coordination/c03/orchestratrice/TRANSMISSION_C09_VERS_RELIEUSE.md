@@ -50,3 +50,7 @@ Les deux premiers étaient **absents** de `main`, de la branche #186, de #132 et
 Dépendances : La Relieuse (revue de l'autorité du référentiel), Anarchitecte / Graphiste (contrôle de disposition, interface et accessibilité), Juriste / Développeuse (P0 C12), Lectrice (contradictions), autres ateliers (journaux au fil des contributions réelles).
 
 **Aucun merge, aucun déploiement, aucune activation IA, aucun contact externe et aucune dépense.**
+
+## Annotation WORK-C08 — 6 novembre 2026
+
+Les constats ci-dessus décrivent la création initiale de C09 et ne sont pas une photographie actuelle de #186. Le référentiel, le registre et le journal y ont depuis été repris et enrichis ; C12 main est arrêté sur df73c5d. Reprise complémentaire de la table d’états et du vérificateur depuis #188 ed0c18a, avec adaptation à l’ensemble des décisions existantes ; aucune migration d’exécution. Voir registre et journal Développeuse C08 pour l’état présent ; aucune fusion ni réception humaine attestée par ce document.

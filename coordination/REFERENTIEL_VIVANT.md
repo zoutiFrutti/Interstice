@@ -45,6 +45,8 @@ Les deux fichiers en `coordination/` sont **proposés dans la présente PR**, et
 
 Chaque dimension prend `oui / non / inconnu` avec preuve, auteur, date, branche, chemin, commit et blob si disponibles. Les trois dernières portent des actes distincts : **décision humaine**, **merge GitHub autorisé**, **publication effectivement constatée et autorisée**. Un résultat de CI ne vaut ni reçu, ni validation, ni intégration, ni publication. **BLOQUE**, `ATTENTE`, `OBJECTION_OUVERTE` sont des attributs transversaux, pas des étapes accomplies. La préparation documentaire C10/C18 peut conserver ses codes antérieurs, avec une table de correspondance explicite, sans migration destructrice.
 
+**Correspondance documentaire C09 :** [neuf dimensions et états historiques](c03/orchestratrice/C09_CORRESPONDANCE_ETATS.md). Aucun champ ni état C18 n’est migré automatiquement.
+
 ## 6. Contrat des journaux d'ateliers
 
 Chemin préférentiel : `coordination/c03/<slug>/JOURNAL_SYNCHRONISATION.md` **si le dossier C03 existe**. Sinon un chemin propre déjà établi dans le dépôt doit être gardé et référencé par l'index ; ne créer ni rôle ni journal fictif. Les boîtes C10 (`coordination/messagerie/boites/<slug>.md`) restent des boîtes de messages, pas les journaux de suivi ; `coordination/JOURNAL_COMMUN.md` reste archive partagée.
@@ -117,3 +119,9 @@ L’Orchestratrice intègre la fonction critique précédemment appelée « La D
 ## WORK-C08 — clarification de version, QCM 1
 
 Le 5 novembre 2026, Zout confirme que le mandat C08 reprenait un ancien état de R05/R08/R10. Les formulations révisées adoptées du registre restent applicables : suppression après contrôle et autorisation ; construction progressive avec les personnes participantes ; simplification déclenchée par un problème réel, sans rapport obligatoire. Source : `D-WORK-C08-Q1-01`. Aucun nouvel arbitrage de fond.
+
+## WORK-C08 — état de sécurité et convergence, 6 novembre 2026
+
+Le relevé C09 de la section 8 est historique : C12 sur main est arrêté par `if: false` au commit `df73c5dabf47a0b73d2b55f0346c7006d485dd98`. La candidate #186 conserve cet arrêt inconditionnel devant les gardes C13 ; aucune réactivation autorisée. Le rapprochement d’historique `9cd4f7d` a supprimé le conflit sans changer les fichiers ; neuf workflows distants ont réussi sur ce SHA exact. Une nouvelle écriture exige une nouvelle preuve CI.
+
+Zout autorise la phase C : reprise ciblée de #188 et #189 dans #186, sans fusion des PR, publication, modification des logos ou levée de réserve. Les décisions récentes sont conservées ; voir `D-WORK-C08-PHASEC-01` et le journal de La Développeuse.

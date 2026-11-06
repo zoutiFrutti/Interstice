@@ -72,3 +72,7 @@ Chaque entrée comporte date, ID, mandat, fichiers réellement lus, preuves, tra
 - **Transmis documentalement à La Relieuse** via ce dossier candidat : lecture effective, adoption ou décision de Zout **non attestées**.
 
 **Suite attendue** : La Relieuse examine les dix règles, le P0 C12, le statut de Faire Ensemble et la rationalisation des PR. La fonction critique participe aux interventions normales de L'Orchestratrice, sans audit cyclique autonome.
+
+## Annotation de reprise WORK-C08 — 6 novembre 2026
+
+Le delta C09 ci-dessus est historique : ses règles proposées ont ensuite été adoptées par Zout (registre D-C09-RULES-01/03/04/05, confirmé D-WORK-C08-Q1-01) ; son risque C12 précède l’arrêt d’urgence main df73c5d. Ces lignes ne sont ni effacées ni présentées comme le statut courant. Phase C autorisée : table C09 reprise sans migration C18 ; vérificateur adapté aux familles d’identifiants du registre actuel. Sources #188 ed0c18a et candidate #186 9cd4f7d. Détails et résultats de tests dans le journal existant de La Développeuse ; aucune réception effective de La Relieuse présumée.

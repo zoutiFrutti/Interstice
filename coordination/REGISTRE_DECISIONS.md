@@ -111,3 +111,14 @@ Champs : `id`, `date` (précise ou `date_non_attestee`), `autorite`, `libelle`, 
 | ID | Décision directe | Source | Portée |
 | --- | --- | --- | --- |
 | `D-WORK-C08-Q1-01` | Le mandat C08 reprenait un ancien état : conserver les versions révisées adoptées de R05, R08 et R10 | Réponse directe de Zout au QCM 1 de WORK-C08 | Confirme `D-C09-RULES-03/04/05` ; ne rouvre pas le fond des dix règles, ne vaut ni suppression concrète ni activation |
+
+## WORK-C08 — décisions de reprise consignées le 6 novembre 2026
+
+| ID | Décision directe | Source | Portée |
+| --- | --- | --- | --- |
+| `D-WORK-C08-Q2-01` | Conserver le patch R6 préparé dans #186 ; main reste inchangé | Réponse directe de Zout au QCM 2 C08, 5 novembre 2026 | Ni application du patch sur main, ni fusion ni déploiement |
+| `D-WORK-C08-Q2-02` | Attendre une preuve CI du HEAD exact avant convergence | Même réponse directe au QCM 2 | Condition satisfaite sur 9cd4f7d par neuf workflows SUCCESS ; toute nouvelle écriture nécessite ses propres contrôles |
+| `D-WORK-C08-CI-01` | Autoriser le rapprochement d’historique sur #186 en conservant exactement ses fichiers | Choix A direct dans la pause de résolution du conflit C12, 5 novembre 2026 | Réalisé par 9cd4f7d, parents 91a4516 et df73c5d ; aucune fusion de PR ni écriture main |
+| `D-WORK-C08-PHASEC-01` | Reprendre la phase C et les apports préparés de #188/#189 dans #186, sans écraser les décisions récentes, puis retester | Choix A direct de Zout, 6 novembre 2026, après preuve CI 9/9 | Corrections candidates seulement ; aucune publication, réactivation d’envoi, activation IA ou levée de réserve |
+
+Les trois choix A intermédiaires de Zout ont autorisé la préparation documentaire de #188, puis FN-018/doublons, puis #189. Résultats dans le compte rendu unique de #186 ; aucune adoption d’alias définitif ni autorisation de publication ne découle de ces choix. Les questions historiques ci-dessus restent datées : le risque C12 décrit avant l’arrêt df73c5d n’est pas l’état actuel.
