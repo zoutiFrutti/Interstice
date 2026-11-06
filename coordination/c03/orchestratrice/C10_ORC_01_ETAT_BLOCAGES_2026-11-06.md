@@ -62,3 +62,25 @@ Aucune nouvelle fonctionnalité, automation ou procédure de messagerie n'est ju
 
 ## Ce que nous devrions peut-être arrêter de faire
 Revalider en cascade les mêmes déclarations IA ; créer des registres de registres ; confondre test déterministe et décision Zout ; rouvrir C12 pour tester une interface ; multiplier les consoles sans fonction réellement disponible pour les utilisateurs.
+
+
+## 7. Vérification du registre C03 réellement versionné : anomalie supplémentaire
+
+Relecture directe de `coordination/c03/orchestratrice/registre_collectif_c03.json`, blob `321786c6f2b5138753abdfebcf930feb956d2170`, sur la candidate #186 :
+
+| Champ C03 | Oui | Non | Inconnu |
+|---|---:|---:|---:|
+| `preparee` | 12 | 0 | 0 |
+| `transmise` | 0 | 0 | 12 |
+| `recue` | 0 | 0 | 12 |
+| `commencee` | 1 | 0 | 11 |
+| `livree` | 1 | 0 | 11 |
+| `controle_effectue` | 0 | 0 | 12 |
+| `validee` | 0 | **12** | 0 |
+
+- Seule la mission **C03-ORC-03** porte une preuve de livraison propre, `EV-ORC-03` ; ce fichier et son commit sont attribuables à la production documentaire, pas à la réception de La Relieuse.
+- Les autres onze mandats sont déclarés préparés ; l'index les mentionne, mais la ligne `preparee=true` ne porte pas partout un acte individuel d'émission et sa provenance. Elle ne peut pas être convertie sans réserve en **DEMANDEE=true**.
+- Les douze `validee=false` expriment vraisemblablement une politique de non-validation automatique, **pas une preuve historique que chaque validation humaine a été explicitement refusée ou qu'aucune décision ne s'est produite**. Le contrat C09 exige dans ce cas `null` / INCONNU.
+- **ORC-B10 (P1, nouveau)** : préparer une correction candidate avec migration non destructive de `validee=false` vers `null` pour les seules lignes sans négation documentée, et accompagner le changement par tests des vues C18/C03/console. Ne pas exécuter de migration silencieuse ni créer de validation positive.
+
+**Conséquence :** la présence d'un commit et d'une preuve générale ne suffit pas à justifier la valeur de chaque dimension. La validation humaine est un acte par mission, document et version, pas un défaut d'interface.
