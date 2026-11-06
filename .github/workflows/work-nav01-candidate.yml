@@ -52,6 +52,13 @@ jobs:
         env:
           INTERSTICE_PURGE_LOCAL_TEST: '1'
         run: node --test coordination/work/c07/faire-ensemble-pilot/purge-concurrency.test.mjs
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.5.6
+      - name: Deno types and real SDK with denied network and environment
+        run: |
+          deno check --no-config --no-lock --no-remote --node-modules-dir=manual coordination/work/c07/faire-ensemble-pilot/submit-proposal.ts
+          deno test --no-config --no-lock --no-remote --node-modules-dir=manual --deny-net --deny-env coordination/work/c07/faire-ensemble-pilot/submit-proposal.deno-test.ts
       - name: Camera, identities and editorial barriers
         run: node --test tests/nav01-camera.test.mjs tests/c06-ana-status-bridge.test.mjs tests/nav02-resource-bridge.test.mjs tests/c07-bundle.test.mjs tests/nav01-reading.test.mjs tests/nav01-editorial-review.test.mjs tests/nav01-editorial-queue.test.mjs tests/nav01-faire-ensemble-pilot.test.mjs
       - name: Preserve every file from main

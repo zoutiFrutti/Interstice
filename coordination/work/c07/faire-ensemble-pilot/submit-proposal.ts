@@ -3,9 +3,9 @@
 import {createClient} from "npm:@supabase/supabase-js@2.119.0";
 const origin="https://zoutifrutti.github.io";
 const cors={"Access-Control-Allow-Origin":origin,"Access-Control-Allow-Methods":"POST, OPTIONS","Access-Control-Allow-Headers":"content-type","Vary":"Origin"};
-const reply=(obj,status=200)=>new Response(JSON.stringify(obj),{status,headers:{...cors,"Content-Type":"application/json","Cache-Control":"no-store"}});
+const reply=(obj: unknown,status=200)=>new Response(JSON.stringify(obj),{status,headers:{...cors,"Content-Type":"application/json","Cache-Control":"no-store"}});
 // Refuse un corps trop grand pendant la lecture, sans le charger intégralement.
-async function readBoundedBody(req,maxBytes){
+async function readBoundedBody(req: Request,maxBytes: number){
  const reader=req.body?.getReader();if(!reader)return "";
  const chunks=[];let size=0;
  try{while(true){const {done,value}=await reader.read();if(done)break;
@@ -22,7 +22,7 @@ Deno.serve(async req=>{
  if(Deno.env.get("FAIRE_ENSEMBLE_PROPOSALS_ENABLED")!=="true")return reply({error:"Contributions temporairement suspendues"},503);
  if(req.headers.get("origin")!==origin)return reply({error:"Origine non autorisée"},403);
  if(Number(req.headers.get("content-length")||0)>7000)return reply({error:"Message trop long"},413);
- let d;try{d=JSON.parse(await readBoundedBody(req,7000))}catch(e){return reply({error:e?.message==="BODY_TOO_LARGE"?"Message trop long":"Format invalide"},e?.message==="BODY_TOO_LARGE"?413:400)}
+ let d;try{d=JSON.parse(await readBoundedBody(req,7000))}catch(e){const message=e instanceof Error?e.message:"";return reply({error:message==="BODY_TOO_LARGE"?"Message trop long":"Format invalide"},message==="BODY_TOO_LARGE"?413:400)}
  if(!d||typeof d!=="object"||Array.isArray(d))return reply({error:"Format invalide"},400);
  if(d.website)return reply({ok:true,message:"Proposition reçue pour examen."},202);
  const need=typeof d.need==="string"?d.need.trim():"",offer=typeof d.offer==="string"?d.offer.trim():"",area=typeof d.area==="string"?d.area.trim():"",category=typeof d.category==="string"?d.category.trim():"Idées et projets";

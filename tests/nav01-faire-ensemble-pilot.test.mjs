@@ -5,6 +5,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
 import vm from 'node:vm';
+import {stripTypeScriptTypes} from 'node:module';
 import {webcrypto} from 'node:crypto';
 
 const root=new URL('../',import.meta.url);
@@ -14,7 +15,7 @@ const origin='https://zoutifrutti.github.io';
 function setup(flag,options={}){
  let handler;const writes=[],calls=[];
  const env={FAIRE_ENSEMBLE_PROPOSALS_ENABLED:flag,SUPABASE_URL:'https://example.test',SUPABASE_SERVICE_ROLE_KEY:'synthetic-test-key'};
- vm.runInNewContext(source.replace(/^import .*;\n/m,''),{
+ vm.runInNewContext(stripTypeScriptTypes(source.replace(/^import .*;\n/m,'')),{
   Deno:{env:{get:k=>env[k]},serve:h=>handler=h},
   createClient:()=>({rpc:async(name,args)=>{calls.push(name);return {data:options.allowed!==false,error:options.rateError||null};},
    from:table=>({insert:async value=>{writes.push({table,value});return {error:options.insertError||null};}})}),
