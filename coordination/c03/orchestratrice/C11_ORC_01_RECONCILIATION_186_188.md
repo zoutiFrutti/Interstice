@@ -101,3 +101,16 @@ Le vérificateur C09 existant `coordination/agents/verifier_referentiel_c09.py` 
 - L'audit n'ouvre pas GitHub, n'émet aucun courrier, ne dépense rien et ne déclenche aucun workflow IA.
 
 Une première CI du code ajouté a trouvé une indentation invalide (`33e6c25`, tests C07/C11/C02 rouges). Correction déposée au commit `7995d279969d7c111dc2c0b6a49688e7274b2abb`. **Le HEAD définitif et les résultats des neuf vérifications suivantes doivent être contrôlés à nouveau après le dépôt de cette note.** Ne pas présenter les premiers échecs comme un succès ni généraliser les précédents succès au nouveau code.
+
+
+## 10. Correction ciblée de préservation C10 (contribution concurrente)
+
+Pendant la présente mission, un atelier a ajouté une note `C11-DEV-01` dans `coordination/messagerie/boites/developpeuse.md` sur #186. Le contrôle historique WORK-C02 et NAV01 a ensuite échoué à cause du changement de cette boîte : ce n'était pas une erreur de la comparaison #188, mais une violation réelle du contrat de préservation.
+
+- **Pièce reçue :** boîte modifiée, blob `09c64dc476d01fca7e4e2b3b6575d03c2cebeed0`, avec 1 959 caractères de compte rendu C11 supplémentaires.
+- **Conservation :** transfert intégral du compte rendu dans le journal déjà existant `coordination/c03/developpeuse/JOURNAL_SYNCHRONISATION.md`, avec sa provenance, commit `a58934b54de28cd1904f09406a6f6dcf6edfe0a7` et nouveau blob `2a1e4917a3714396fe2535a1d807133d9ca26365`.
+- **Restauration :** boîte C10 exactement identique à `main`, blob `e070737aab1ddbb13d85a92967310f2914b4101d`, commit `3494d4e379f0ef2f74e3fe3516d93469118ae09c`.
+- **Portée :** aucune nouvelle boîte, aucune suppression du rapport, aucune réception déduite du déplacement. Les affirmations techniques du rapport Développeuse restent **celles de l'atelier**, pas une nouvelle vérification indépendante par L'Orchestratrice.
+- **Validation :** les contrôles du nouveau HEAD sont à consulter ; un test vert sur un autre HEAD ne suffit pas.
+
+Cette correction évite de résoudre un conflit documentaire en effaçant le travail d'un autre atelier.
