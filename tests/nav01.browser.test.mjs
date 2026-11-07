@@ -233,7 +233,7 @@ test('zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom',async(
   const context=await chromium.launchPersistentContext(profile,{channel:'chromium',headless:true,viewport:{width:1280,height:900},reducedMotion:'reduce',args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`]});
   try{
     const page=await context.newPage();await ready(page,'#exploration');
-    const worker=context.serviceWorkers()[0]||await context.waitForEvent('serviceworker');
+    const worker=context.serviceWorkers().find(w=>w.url().startsWith('chrome-extension://')) || await context.waitForEvent('serviceworker',{predicate:w=>w.url().startsWith('chrome-extension://')});
     const zoom=await worker.evaluate(async base=>{
       const tabs=await chrome.tabs.query({});const tab=tabs.find(tab=>tab.url?.startsWith(base));if(!tab)throw new Error('Onglet de test absent');
       await chrome.tabs.setZoom(tab.id,4);return chrome.tabs.getZoom(tab.id);
