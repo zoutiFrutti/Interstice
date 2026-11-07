@@ -551,6 +551,8 @@
     "no_contacts": true,
     "no_publication": true,
     "no_geo_inference": true,
-    "unvalidated": false
+    "human_validated": false,
+    "published": false,
+    "partnerships_assumed": false
   }
 }
