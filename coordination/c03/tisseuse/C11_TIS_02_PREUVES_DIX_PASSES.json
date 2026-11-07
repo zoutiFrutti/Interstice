@@ -1,0 +1,556 @@
+{
+  "mission": "C11-TIS-02 dix passes",
+  "checked_on": "2026-11-07",
+  "reference_heads": {
+    "pr161": "0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6",
+    "pr173_start": "68d8e2c72b9171be85d0ea7a59194e2db8132ba5",
+    "pr41": "e6817ec274b858a62b4918bfc22faa01d79b354d",
+    "pr186": "33e6c25cefe5b431e59b2fa0c201bee02678fc58"
+  },
+  "facts": {
+    "registry_count": 219,
+    "tis_count": 20,
+    "parcours_count": 7,
+    "step_count": 29,
+    "relation_count": 19,
+    "territorial_relations": [
+      {
+        "id": "WORK-REL-101",
+        "legacy_level": "R1",
+        "proof_type": "interpretation_editoriale"
+      },
+      {
+        "id": "WORK-REL-102",
+        "legacy_level": "R2",
+        "proof_type": "declaration_operateur_rapportee"
+      },
+      {
+        "id": "WORK-REL-105",
+        "legacy_level": "R1",
+        "proof_type": "interpretation_editoriale"
+      },
+      {
+        "id": "WORK-REL-106",
+        "legacy_level": "R1",
+        "proof_type": "interpretation_editoriale"
+      },
+      {
+        "id": "WORK-REL-107",
+        "legacy_level": "R1",
+        "proof_type": "interpretation_editoriale"
+      }
+    ],
+    "geolocated": 0,
+    "r3_attested": 0
+  },
+  "passes": [
+    {
+      "number": "01",
+      "topic": "Vérification des HEAD et reprise sans perte",
+      "finding": "PR #173 au SHA 68d8e2c72b9171be85d0ea7a59194e2db8132ba5 lors de cette passe ; PR #161 SHA 0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6, PR #41 e6817ec274b858a62b4918bfc22faa01d79b354d ; PR #186 relue au SHA 33e6c25cefe5b431e59b2fa0c201bee02678fc58. Toutes demeurent candidates en brouillon. Aucun merge ni rebase."
+    },
+    {
+      "number": "02",
+      "topic": "Inventaire et identifiants des vingt notices",
+      "finding": "219 objets globaux ; 20 objets TIS (19 initiatives et 1 notice de bassin) ; 20 IDs distincts ; le seul alias historique tis-c8-velo renvoie à TIS-001-001. Répartition : Haute-Garonne 5, Tarn 4, Tarn-et-Garonne 4, Aveyron 5, bassin Tescou 1, réseau ancienne région Midi-Pyrénées 1. Aucun doublon nouveau à créer."
+    },
+    {
+      "number": "03",
+      "topic": "R0–R3 et cinq liens probants",
+      "finding": "WORK-REL-101/105/106/107 sont R1 comparaisons, WORK-REL-102 R2 ponctuel (Terre de Liens/CEN, plantation décembre 2025 selon organisateur), R0 peut qualifier proximité sans arête nouvelle, R3 0. Cinq relations renvoient à la même source C05 résoluble : provenance réelle, mais précision primaire insuffisante. Ajouter les liens/date par SourceRef, sans déduire partenariat avec Interstice."
+    },
+    {
+      "number": "04",
+      "topic": "Intégrité des sept Parcours",
+      "finding": "Sept Parcours, 29 étapes vérifiées. Zéro ID de ressource absent, relation inconnue ou lien next/return vers une étape manquante. Une seule entrée TIS est dans les étapes actuelles : tis-c8-sctl dans PAR-003/territoires. PAR-004 mentionne les relations TIS mais n'en a aucune dans ses étapes. Les anciennes trois traversées TIS restent des suggestions, pas des PAR-008 à PAR-010."
+    },
+    {
+      "number": "05",
+      "topic": "Carte des communs / Atlas existant",
+      "finding": "main/atlas.html est une page documentaire sans les vingt fiches intégrées ; ses variantes A/B autour du logo sont des accès de navigation, pas un graphe R0–R3. Ne pas projeter les relations comme filiation ni lier les fiches non visées. Garder liste de territoires sans géométrie et liens éditoriaux désactivés avant visa."
+    },
+    {
+      "number": "06",
+      "topic": "Carte des possibles / code déjà développé",
+      "finding": "PR #41 : cartes-core.mjs n'affiche que isDemo===true et source.type===simulation ; cartes-data.mjs définit des centres de communes réservés aux scénarios fictifs, cartes-map.mjs les dessine. Les trois statuts fictifs repere/referencement_accepte/cooperation_convenue ne sont ni R0–R3 ni consentement d'acteurs réels. Ne pas supprimer ce garde pour brancher 20 TIS."
+    },
+    {
+      "number": "07",
+      "topic": "Faire Ensemble : interface avec besoins et offres",
+      "finding": "PR #186 : le pilote de propositions est non déployé et fermé par défaut via FAIRE_ENSEMBLE_PROPOSALS_ENABLED. Un dépôt futur va en pending ; catégories besoin/offre ≠ fiches associatives ni disponibilités documentées. Zéro proposition à attribuer automatiquement aux vingt organismes ; aucune activation ni contact."
+    },
+    {
+      "number": "08",
+      "topic": "Territoires hors découpages administratifs et confidentialité",
+      "finding": "20/20 coordonnées nulles, publication non autorisée ; Tescou = bassin, Larzac = plateau/SCTL distincts, Terre de Liens = réseau multi-départements, VRAC/jardins/Glanerie = multi-sites. Chiapas, Catalogne, Aragon et Murcie-Albacete doivent conserver périodes et territoires propres, sans GPS communautaire. La disponibilité de géométrie ne doit jamais être obligatoire pour la liste."
+    },
+    {
+      "number": "09",
+      "topic": "Sources contemporaines et contradictions concrètes",
+      "finding": "3PA/Bordanova : pages officielles contradictoires sur la superficie : accueil 3 ha, rapport annuel 2024 10 ha, pages lieu/qui sommes-nous 13 ha. Conserver trois versions et dates avant toute valeur de synthèse. La Glanerie : horaires Blagnac affichés sur boutique, non preuve d'ouverture sans exception. Afev Albi : organisme/mentorat déclaré, aucune capacité individuelle garantie. Maison du Vélo : horaires par service sur page pratique ; préciser la rubrique, ne pas extrapoler. Hors-Loge : dernière trace trouvée 2023 ; Sous les Toiles édition juillet 2026 terminée. La Salvetat : plantation 120 arbres annoncée par l'organisateur, pas survie mesurée."
+    },
+    {
+      "number": "10",
+      "topic": "Anti-doublon, intégration candidate et arbitrages",
+      "finding": "Liaisons textuelles Carte → Encyclopédie → Parcours ; garder primary_door carte pour les 20 TIS ; EXP-001/002/004/005 classés encyclopedie dans #161, mais audit NAV #177 suggère carte : désaccord encore ouvert. Les circuits TIS vers PAR-003/004 exigent choix éditorial antérieur non reçu. Les droits, retrait, géolocalisation et avis Juriste/Lectrice sont prérequis de publication, pas du catalogue candidat. Rien à fusionner automatiquement."
+    }
+  ],
+  "sources": {
+    "3pa_accueil": "https://www.3paformation.fr/",
+    "3pa_qui": "https://www.3paformation.fr/qui-sommes-nous/",
+    "3pa_lieu": "https://www.3paformation.fr/notre-tiers-lieu-bordanova/",
+    "3pa_rapport_2024": "https://www.3paformation.fr/wp-content/uploads/2025/07/2024_Rapport-dactivite_3PA_compressed-1.pdf",
+    "glanerie_boutiques": "https://www.la-glanerie.org/redistribuer",
+    "afev_albi": "https://afev.org/occitanie/albi",
+    "maison_velo": "https://www.maisonduvelotoulouse.com/informations-pratiques/",
+    "hors_loge": "https://horsloge.blogspot.com/",
+    "sous_les_toiles": "https://festivalsouslestoiles.fr/",
+    "salvetat_plantation": "https://terredeliens.org/midi-pyrenees/hub-actus-midi-pyr%C3%A9n%C3%A9e%C3%A9s/un-chantier-de-plantation-agroforesti%C3%A8re-sur-une-ferme-16-12-2025/"
+  },
+  "records": [
+    {
+      "id": "TIS-001-001",
+      "title": "La Maison du Vélo",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Haute-Garonne",
+        "locality_or_scope": "Toulouse"
+      },
+      "aliases": [
+        "tis-c8-velo"
+      ],
+      "source_url": "https://www.maisonduvelotoulouse.com/atelier-participatif-reparation/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "réparation / transmission",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : aucun service offert via Interstice",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": [
+        "WORK-REL-105"
+      ]
+    },
+    {
+      "id": "TIS-001-002",
+      "title": "Afev Albi",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn",
+        "locality_or_scope": "Albi"
+      },
+      "aliases": [],
+      "source_url": "https://afev.org/occitanie/albi",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "mentorat / éducation",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : mineurs, autorisations et capacités",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-003",
+      "title": "MJC Rabastens-Couffouleux",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn",
+        "locality_or_scope": "Rabastens / Couffouleux"
+      },
+      "aliases": [],
+      "source_url": "https://www.mjcrabastenscouffouleux.fr/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "MJC / culture",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : inscriptions non vérifiées",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-004",
+      "title": "MJC de Gaillac",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn",
+        "locality_or_scope": "Gaillac"
+      },
+      "aliases": [],
+      "source_url": "https://www.gaillac.fr/mon-quotidien/enfance-jeunesse/maison-des-jeunes-et-de-la-culture-mjc/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "MJC / culture",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : inscriptions non vérifiées",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-005",
+      "title": "Le Pigeonnier",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn-et-Garonne",
+        "locality_or_scope": "Laguépie"
+      },
+      "aliases": [],
+      "source_url": "https://www.laguepie.fr/associations/culturelles-animations-loisirs/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "café associatif",
+      "faire_ensemble_documentary_only": "oui : archives",
+      "not_an_offer_reason": "non : ouverture non confirmée",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-006",
+      "title": "L’R de Rien",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn-et-Garonne",
+        "locality_or_scope": "Laguépie"
+      },
+      "aliases": [],
+      "source_url": "https://www.lrderien.org/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "réemploi textile",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : ancien camion clos",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": [
+        "WORK-REL-105"
+      ]
+    },
+    {
+      "id": "TIS-001-007",
+      "title": "P’tite Lumière et Cie",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn-et-Garonne",
+        "locality_or_scope": "Laguépie"
+      },
+      "aliases": [],
+      "source_url": "https://www.laguepie.fr/associations/culturelles-animations-loisirs/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "culture associative",
+      "faire_ensemble_documentary_only": "oui : archives",
+      "not_an_offer_reason": "non : activité non confirmée",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-008",
+      "title": "Lenga Viva",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn-et-Garonne",
+        "locality_or_scope": "Laguépie"
+      },
+      "aliases": [],
+      "source_url": "https://www.lengaviva.com/universite-occitane-2026/?lang=fr",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "langue occitane",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : pas de session proposée",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-009",
+      "title": "Hors-Loge",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Aveyron",
+        "locality_or_scope": "Najac"
+      },
+      "aliases": [],
+      "source_url": "https://horsloge.blogspot.com/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "histoire de lieu autonome",
+      "faire_ensemble_documentary_only": "oui : archives",
+      "not_an_offer_reason": "non : activité depuis 2023 inconnue",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-010",
+      "title": "L’Atelier de Najac",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Aveyron",
+        "locality_or_scope": "Najac"
+      },
+      "aliases": [],
+      "source_url": "https://najac.fr/associations/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "réemploi",
+      "faire_ensemble_documentary_only": "oui : archives",
+      "not_an_offer_reason": "non : service non confirmé",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-011",
+      "title": "Sous les Toiles",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Aveyron",
+        "locality_or_scope": "Najac"
+      },
+      "aliases": [],
+      "source_url": "https://festivalsouslestoiles.fr/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "festival / culture",
+      "faire_ensemble_documentary_only": "oui : événement passé",
+      "not_an_offer_reason": "non : festival terminé",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "TIS-001-012",
+      "title": "Les Hauts Parleurs",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Aveyron",
+        "locality_or_scope": "Villefranche-de-Rouergue"
+      },
+      "aliases": [],
+      "source_url": "https://leshautsparleurs.com/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "café culturel",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : accueil non garanti",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "tis-c8-testet",
+      "title": "Testet / bassin du Tescou",
+      "kind": "notice_territoriale",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn et au-delà du seul lieu",
+        "locality_or_scope": "Bassin du Tescou / secteur du Testet"
+      },
+      "aliases": [],
+      "source_url": "https://www.igedd.developpement-durable.gouv.fr/appui-a-l-aboutissement-du-projet-de-territoire-a4159.html",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "bassin hydrographique / lutte",
+      "faire_ensemble_documentary_only": "oui : territoire",
+      "not_an_offer_reason": "non : n'est pas un organisme",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": [
+        "WORK-REL-101"
+      ]
+    },
+    {
+      "id": "tis-c8-salvetat",
+      "title": "La Salvetat / Les Chlorophy’liens",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Tarn",
+        "locality_or_scope": "Monestiés"
+      },
+      "aliases": [],
+      "source_url": "https://fermes.terredeliens.org/midi-pyrenees/fermes-de-la-r%C3%A9gion-midi-pyr%C3%A9n%C3%A9es/la-salvetat/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "ferme / foncier",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : aucune disponibilité foncière",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": [
+        "WORK-REL-101",
+        "WORK-REL-102",
+        "WORK-REL-106"
+      ]
+    },
+    {
+      "id": "tis-c8-vrac",
+      "title": "VRAC Toulouse",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Haute-Garonne",
+        "locality_or_scope": "Toulouse Métropole (réseau de quartiers)"
+      },
+      "aliases": [],
+      "source_url": "https://toulouse.vrac-asso.org/adherer-commander/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "achats groupés",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : éligibilité et retraits à confirmer",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": [
+        "WORK-REL-107"
+      ]
+    },
+    {
+      "id": "tis-c8-jardins",
+      "title": "Partageons les Jardins",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Haute-Garonne",
+        "locality_or_scope": "Département (dont Toulouse)"
+      },
+      "aliases": [],
+      "source_url": "https://www.partageonslesjardins.fr/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "réseau de jardins",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : pas de parcelle ouverte présumée",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "tis-c8-glanerie",
+      "title": "La Glanerie",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Haute-Garonne",
+        "locality_or_scope": "Toulouse et Blagnac"
+      },
+      "aliases": [],
+      "source_url": "https://www.la-glanerie.org/redistribuer",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "recyclerie / réemploi",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : pas de stock ni créneau garanti",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "tis-c8-3pa",
+      "title": "3PA / Bordanova",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Haute-Garonne",
+        "locality_or_scope": "Lahage"
+      },
+      "aliases": [],
+      "source_url": "https://www.3paformation.fr/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "formation / tiers-lieu",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : aucune place garantie",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": []
+    },
+    {
+      "id": "tis-c8-tdl",
+      "title": "Terre de Liens Midi-Pyrénées",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Territoire de l’ancienne région Midi-Pyrénées",
+        "locality_or_scope": "Périmètre régional multi-départements"
+      },
+      "aliases": [],
+      "source_url": "https://terredeliens.org/midi-pyrenees/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "gestion foncière / réseau",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : foncier indisponible non vérifié",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": [
+        "WORK-REL-102"
+      ]
+    },
+    {
+      "id": "tis-c8-sctl",
+      "title": "Société civile des terres du Larzac (SCTL)",
+      "kind": "initiative",
+      "territory": {
+        "country": "France",
+        "region": "Occitanie",
+        "department_scope": "Aveyron",
+        "locality_or_scope": "Plateau du Larzac (plusieurs communes)"
+      },
+      "aliases": [],
+      "source_url": "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/",
+      "coordinates": null,
+      "publication_authorized": false,
+      "classification": "foncier / baux",
+      "faire_ensemble_documentary_only": "oui : lecture",
+      "not_an_offer_reason": "non : aucun droit d'installation",
+      "documentation_status": "candidat_sous_reserves",
+      "interstice_partnership_evidence": "aucune",
+      "relation_ids": [
+        "WORK-REL-106"
+      ]
+    }
+  ],
+  "guards": {
+    "no_contacts": true,
+    "no_publication": true,
+    "no_geo_inference": true,
+    "unvalidated": false
+  }
+}
