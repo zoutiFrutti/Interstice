@@ -101,3 +101,8 @@ Le delta C09 ci-dessus est historique : ses règles proposées ont ensuite été
 **Décisions préservées :** R01–R10 adoptées selon le registre courant ; #186 candidate unique ; arrêt C12 sur main toujours présent au relevé ; aucune validation historique réinterprétée. **Écart ouvert** : les douze `validee=false` du snapshot C03 ne représentent pas à eux seuls douze refus humains attestés.
 
 **Correction candidate ciblée** : deux tests ajoutés au vérificateur C09 existant, aucun nouveau validateur ni changement du registre C03. Tests CI du HEAD final à contrôler séparément. La prochaine action de La Relieuse est de vérifier cette matrice puis décider du sort de #188 ; réception et arbitrage non attestés.
+
+
+### Addendum C11-ORC-01 : contre-vérification des valeurs C03
+
+Ajout d'un **audit C09 en lecture seule** au vérificateur déjà présent, et trois tests ciblés, pour empêcher les faux états `INTEGREE`/`PUBLIEE` et signaler les `validee=false` sans négation prouvée. La première exécution a relevé une erreur d'indentation introduite pendant le travail ; correction au commit `7995d279969d7c111dc2c0b6a49688e7274b2abb`. Le statut CI n'est acquis que sur le HEAD final vérifié. Aucune écriture dans le registre source ni dans `main`.
