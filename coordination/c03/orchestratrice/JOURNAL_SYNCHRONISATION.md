@@ -90,3 +90,14 @@ Le delta C09 ci-dessus est historique : ses règles proposées ont ensuite été
 **Écarts principaux :** contrat de neuf états C09 contre sept champs documentaires C03/console ; accusé C11 fondé sur contrôle déclaratif ; acteur C07 non authentifié par sa chaîne ; GH-AW compilé sans modèle exécuté ; base #188 obsolète face au HEAD courant #186.
 
 **Statuts :** rapport et protocole candidats déposés ; réception La Relieuse non attestée ; validation, fusion, publication et activation non autorisées. Pas de rôle, nouvelle boîte, automation ou service.
+
+
+## Delta C11-ORC-01 — 7 novembre 2026
+
+**Mandat P0 :** comparer les HEAD et fichiers réels de #186/#188, préserver les neuf dimensions C09 et les décisions récentes, sans fusion ni agent. **Pièce canonique** : [C11_ORC_01_RECONCILIATION_186_188.md](./C11_ORC_01_RECONCILIATION_186_188.md).
+
+**Relevé comparatif de départ :** #186 `c7a8d41214e79e0b038d744152b9bfabb74ae08d` ; #188 `ed0c18a5332e731095e65ef34bb2ea43defc78b1`. Arbres : **756 fichiers identiques**, 35 chemins divergents, **aucun fichier propre à #188** ; trois apports C09 déjà présents dans #186, correspondance des états au même blob, script et tests de #186 plus récents.
+
+**Décisions préservées :** R01–R10 adoptées selon le registre courant ; #186 candidate unique ; arrêt C12 sur main toujours présent au relevé ; aucune validation historique réinterprétée. **Écart ouvert** : les douze `validee=false` du snapshot C03 ne représentent pas à eux seuls douze refus humains attestés.
+
+**Correction candidate ciblée** : deux tests ajoutés au vérificateur C09 existant, aucun nouveau validateur ni changement du registre C03. Tests CI du HEAD final à contrôler séparément. La prochaine action de La Relieuse est de vérifier cette matrice puis décider du sort de #188 ; réception et arbitrage non attestés.
