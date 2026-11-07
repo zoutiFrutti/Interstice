@@ -106,3 +106,8 @@ Le delta C09 ci-dessus est historique : ses règles proposées ont ensuite été
 ### Addendum C11-ORC-01 : contre-vérification des valeurs C03
 
 Ajout d'un **audit C09 en lecture seule** au vérificateur déjà présent, et trois tests ciblés, pour empêcher les faux états `INTEGREE`/`PUBLIEE` et signaler les `validee=false` sans négation prouvée. La première exécution a relevé une erreur d'indentation introduite pendant le travail ; correction au commit `7995d279969d7c111dc2c0b6a49688e7274b2abb`. Le statut CI n'est acquis que sur le HEAD final vérifié. Aucune écriture dans le registre source ni dans `main`.
+
+
+### Correction de préservation C10 pendant C11-ORC-01
+
+Un atelier a ajouté une note C11-DEV-01 dans la boîte C10 de La Développeuse. Les jobs de préservation WORK-C02/NAV01 l'ont légitimement refusée. Le contenu a été conservé à l'identique dans le journal existant de La Développeuse au commit `a58934b54de28cd1904f09406a6f6dcf6edfe0a7` ; la boîte a été restaurée au blob historique `e070737aab1ddbb13d85a92967310f2914b4101d` par le commit `3494d4e379f0ef2f74e3fe3516d93469118ae09c`. Détail et limites dans la matrice C11. Ne pas assimiler la note transférée à un accusé, ni l'audit automatisé à une décision humaine.
