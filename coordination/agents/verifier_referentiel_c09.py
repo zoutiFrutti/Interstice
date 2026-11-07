@@ -121,7 +121,7 @@ def audit_etats_c03(data):
     output = []
     for mission in data["missions"]:
         states = mission["etat"]
-        local = [evidence[pid] for pid in mission["preuves_mission"]]
+        local = [evidence[pid] for pid in mission["preuves_mission"]
                  if pid in evidence and evidence[pid].get("mission_id") == mission["id"]]
         def matching(kind):
             return any(p.get("type") == kind and p.get("commit_sha") for p in local)
