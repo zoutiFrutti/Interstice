@@ -187,4 +187,7 @@ $("map-zoom-in").addEventListener("click",()=>cartography.zoomBy(.3));
 $("map-zoom-out").addEventListener("click",()=>cartography.zoomBy(-.3));
 $("map-zoom-reset").addEventListener("click",()=>cartography.resetZoom());
 $("map-clear-commune").addEventListener("click",()=>{commune.value="";drawList();});
-const initial=new URLSearchParams(location.search).get("initiative");if(initial)showDetail(initial);else showList();
+const params=new URLSearchParams(location.search);
+const requestedReading=params.get("lecture");
+if(["communs","possibles"].includes(requestedReading))setReading(requestedReading);
+const initial=params.get("initiative");if(initial)showDetail(initial);else showList();
