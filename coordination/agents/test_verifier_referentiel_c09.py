@@ -108,5 +108,39 @@ class C09ReferenceTests(unittest.TestCase):
         self.assertIn("Wiki", self.reference)
 
 
+    def test_nine_state_contract_has_distinct_evidence_requirements(self):
+        """Contrat documentaire : n'infere pas un evenement depuis un titre."""
+        import re
+        contract = (ROOT/"coordination/c03/orchestratrice/C09_CORRESPONDANCE_ETATS.md").read_text(encoding="utf-8")
+        names = ("DEMANDEE", "ENVOYEE", "RECUE_ATTESTEE", "COMMENCEE",
+                 "LIVRABLE_CANDIDAT", "VERIFIEE", "VALIDEE_HUMAINEMENT",
+                 "INTEGREE", "PUBLIEE")
+        rows = [line for line in contract.splitlines() if line.startswith("| `")]
+        parsed = [re.match(r"\\| `([A-Z_]+)`", line).group(1)
+                  for line in rows if re.match(r"\\| `([A-Z_]+)`", line)]
+        self.assertEqual(parsed, list(names))
+        for name in names:
+            row = next(line for line in rows if line.startswith("| `"+name+"`"))
+            cols = [part.strip() for part in row.strip("|").split("|")]
+            self.assertGreaterEqual(len(cols), 4)
+            self.assertTrue(cols[-1])
+        self.assertIn("conserver `INCONNU`", contract)
+        self.assertIn("`false` désigne une négation explicitement vérifiée", contract)
+
+    def test_legacy_register_does_not_prove_eight_or_nine_states(self):
+        """Le snapshot C03 n'est pas une preuve de merge ou de publication."""
+        import json
+        data = json.loads((ROOT/"coordination/c03/orchestratrice/registre_collectif_c03.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(data["missions"]), 12)
+        self.assertEqual(len(data["roles"]), 19)
+        seven = {"preparee", "transmise", "recue", "commencee", "livree",
+                 "controle_effectue", "validee"}
+        self.assertTrue(all(set(m["etat"]) == seven for m in data["missions"]))
+        self.assertTrue(all(m["etat"]["recue"] is None for m in data["missions"]))
+        self.assertTrue(all(m["etat"]["validee"] is not True for m in data["missions"]))
+        self.assertFalse(any("integree" in m["etat"] or "publiee" in m["etat"]
+                             for m in data["missions"]))
+
+
 if __name__ == "__main__":
     unittest.main()
