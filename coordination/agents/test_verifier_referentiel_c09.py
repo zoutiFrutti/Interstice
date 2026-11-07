@@ -116,8 +116,8 @@ class C09ReferenceTests(unittest.TestCase):
                  "LIVRABLE_CANDIDAT", "VERIFIEE", "VALIDEE_HUMAINEMENT",
                  "INTEGREE", "PUBLIEE")
         rows = [line for line in contract.splitlines() if line.startswith("| `")]
-        parsed = [re.match(r"\\| `([A-Z_]+)`", line).group(1)
-                  for line in rows if re.match(r"\\| `([A-Z_]+)`", line)]
+        parsed = [re.match(r"\| `([A-Z_]+)`", line).group(1)
+                  for line in rows if re.match(r"\| `([A-Z_]+)`", line)]
         self.assertEqual(parsed, list(names))
         for name in names:
             row = next(line for line in rows if line.startswith("| `"+name+"`"))
