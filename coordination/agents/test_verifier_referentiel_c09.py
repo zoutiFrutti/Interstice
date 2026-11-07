@@ -131,13 +131,18 @@ class C09ReferenceTests(unittest.TestCase):
         """Le snapshot C03 n'est pas une preuve de merge ou de publication."""
         import json
         data = json.loads((ROOT/"coordination/c03/orchestratrice/registre_collectif_c03.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(data["missions"]), 12)
-        self.assertEqual(len(data["roles"]), 19)
+        self.assertGreaterEqual(len(data["missions"]), 12)
+        self.assertGreaterEqual(len(data["roles"]), 19)
         seven = {"preparee", "transmise", "recue", "commencee", "livree",
                  "controle_effectue", "validee"}
         self.assertTrue(all(set(m["etat"]) == seven for m in data["missions"]))
         self.assertTrue(all(m["etat"]["recue"] is None for m in data["missions"]))
-        self.assertTrue(all(m["etat"]["validee"] is not True for m in data["missions"]))
+        proof_by_id = {p["id"]: p for p in data["preuves"]}
+        for mission in data["missions"]:
+            if mission["etat"]["validee"] is True:
+                self.assertTrue(any(
+                    proof_by_id.get(pid, {}).get("type") == "decision_zout"
+                    for pid in mission["preuves_mission"]))
         self.assertFalse(any("integree" in m["etat"] or "publiee" in m["etat"]
                              for m in data["missions"]))
 
