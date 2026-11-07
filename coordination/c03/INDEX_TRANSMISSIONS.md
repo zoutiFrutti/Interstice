@@ -2,6 +2,15 @@
 
 **Point d’entrée de La Relieuse.** Relevé documentaire du 3 novembre 2026, **branche candidate de la PR #132**. Les contenus référencés ne sont ni fusionnés ni publiés. Ce document n’atteste pas l'ouverture automatique des conversations.
 
+## Dernière reprise coordonnée — 7 novembre 2026
+
+**Ce tableau C03 reste un instantané du 3 novembre et ne doit pas être lu comme l'état courant des ateliers.** La candidate consolidée est désormais [la PR #186](https://github.com/zoutiFrutti/Interstice/pull/186), non fusionnée ; #188 est une branche documentaire plus ancienne et redondante.
+
+- [Réconciliation effective #186/#188 et les neuf dimensions C09](./orchestratrice/C11_ORC_01_RECONCILIATION_186_188.md) : comparaison des SHA de blobs, écarts, décisions conservées et contrôles.
+- [Journal de L'Orchestratrice](./orchestratrice/JOURNAL_SYNCHRONISATION.md) : derniers deltas, notamment la conservation du travail Développeuse hors boîte C10.
+- **Sécurité actuelle** : le pont IA C12 sur `main` a été arrêté par garde inconditionnelle. L'audit C03 de début novembre qui le décrivait sans verrou est une pièce historique, non une photographie de la sécurité actuelle.
+- Les neuf états sont un **contrat de lecture**, pas neuf événements attestés ; `validee=false` sans acte négatif est signalé par le vérificateur C09 en lecture seule. Aucune migration du snapshot n'a été réalisée.
+
 ## À lire en premier
 
 - [Registre collectif JSON](./orchestratrice/registre_collectif_c03.json), source structurée et datée des missions, rôles, preuves et relevés SHA.
