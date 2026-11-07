@@ -88,3 +88,16 @@ Les **35 chemins divergents** incluent aussi workflows C12/NAV, fichiers de navi
 Comparer sans fin des copies identiques, promouvoir une déclaration de script au rang de décision humaine et entretenir plusieurs branches documentaires obsolètes. Le besoin central est une **reprise fiable, non une nouvelle messagerie**.
 
 **Transmission à La Relieuse :** aucune réception attestée par le dépôt de ce rapport ; demander uniquement arbitrage sur le nettoyage des `false` historiques et sur le sort de #188 après revue. Aucune fusion, aucun service, aucun agent externe activé.
+
+
+## 9. Passe supplémentaire : contrôle contradictoire non destructif
+
+Le vérificateur C09 existant `coordination/agents/verifier_referentiel_c09.py` a reçu une fonction **`audit_etats_c03(data)`**, exclusivement en mémoire, qui restitue neuf dimensions sans migration du registre C03. Les tests correspondants ont été ajoutés à `test_verifier_referentiel_c09.py`, pas dans un nouveau système :
+
+- `INTEGREE` et `PUBLIEE` restent **INCONNUES** en absence de preuves individuelles de merge ou de publication.
+- `validee=false` apparaît comme `NEGATION_SANS_PREUVE`, non comme refus humain certifié ; cette annotation **n'écrase pas** la valeur historique.
+- La présence d'un document propre à `C03-ORC-03` peut être `PIECE_CANDIDATE`, sans inférer une réception ou une approbation.
+- Une `validee=true` insérée sans preuve de décision ne reçoit que `DECLARATION_A_CONTROLER` : ce contrôle n'authentifie pas Zout.
+- L'audit n'ouvre pas GitHub, n'émet aucun courrier, ne dépense rien et ne déclenche aucun workflow IA.
+
+Une première CI du code ajouté a trouvé une indentation invalide (`33e6c25`, tests C07/C11/C02 rouges). Correction déposée au commit `7995d279969d7c111dc2c0b6a49688e7274b2abb`. **Le HEAD définitif et les résultats des neuf vérifications suivantes doivent être contrôlés à nouveau après le dépôt de cette note.** Ne pas présenter les premiers échecs comme un succès ni généraliser les précédents succès au nouveau code.
