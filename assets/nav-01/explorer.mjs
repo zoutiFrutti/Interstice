@@ -189,7 +189,7 @@ function renderDoor(id, section = null) {
   panelBody.append(element('p',door.description));
   if(id==='encyclopedie'){
     const atlas=element('section',undefined,'atlas-entry');atlas.id='atlas-entry';
-    atlas.append(element('h3','Atlas des communs'),element('p','Explorer les lieux, les initiatives et les réseaux documentés.'),link('Ouvrir l’Atlas existant ↗','https://zoutifrutti.github.io/Interstice/atlas.html','external'));
+    atlas.append(element('h3','Atlas des communs'),element('p','Explorer les lieux, les initiatives et les réseaux documentés.'),link('Ouvrir l’Atlas existant ↗','atlas.html'));
     panelBody.append(atlas,readingIntroductions());
     if(section==='atlas')panelBody.dataset.section='atlas';else delete panelBody.dataset.section;
   }
