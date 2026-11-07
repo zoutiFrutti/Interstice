@@ -1,0 +1,117 @@
+name: WORK NAV01 isolated navigation QA
+on:
+  pull_request:
+    paths:
+      - 'explorer.html'
+      - 'assets/nav-01/**'
+      - 'scripts/build-nav-preview.mjs'
+      - 'scripts/reading/**'
+      - 'scripts/build-editorial-review.mjs'
+      - 'scripts/editorial-queue.mjs'
+      - 'scripts/build-review-hub.mjs'
+      - 'coordination/work/c07/EDITORIAL_QUEUE.json'
+      - 'tests/nav01*'
+      - 'tests/work-convergence-navigation.browser.test.mjs'
+      - 'tests/nav01-zoom-extension/**'
+      - 'coordination/work/nav-01/**'
+      - 'coordination/work/c07/faire-ensemble-pilot/**'
+      - '.github/workflows/work-nav01-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  navigation:
+    # Playwright 1.56.1 supports Ubuntu 24.04; do not follow the moving latest image.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    services:
+      purge-postgres:
+        image: postgres:17.6
+        env:
+          POSTGRES_DB: interstice_purge_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: synthetic-ci-only
+        ports:
+          - 55439:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d interstice_purge_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test candidate purge in isolated PostgreSQL WASM, no Supabase
+        run: |
+          npm ci --prefix coordination/work/c07/faire-ensemble-pilot --ignore-scripts --no-audit --no-fund
+          node --test coordination/work/c07/faire-ensemble-pilot/purge.test.mjs
+      - name: Concurrent purge and moderation in disposable PostgreSQL, no Supabase
+        env:
+          INTERSTICE_PURGE_LOCAL_TEST: '1'
+        run: node --test coordination/work/c07/faire-ensemble-pilot/purge-concurrency.test.mjs
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.5.6
+      - name: Deno types and real SDK with denied network and environment
+        run: |
+          deno check --no-config --no-lock --no-remote --node-modules-dir=manual coordination/work/c07/faire-ensemble-pilot/submit-proposal.ts
+          deno test --no-config --no-lock --no-remote --node-modules-dir=manual --deny-net --deny-env coordination/work/c07/faire-ensemble-pilot/submit-proposal.deno-test.ts
+      - name: Camera, identities and editorial barriers
+        run: node --test tests/nav01-camera.test.mjs tests/c06-ana-status-bridge.test.mjs tests/nav02-resource-bridge.test.mjs tests/c07-bundle.test.mjs tests/nav01-reading.test.mjs tests/nav01-editorial-review.test.mjs tests/nav01-editorial-queue.test.mjs tests/nav01-faire-ensemble-pilot.test.mjs
+      - name: Preserve every file from main
+        run: |
+          node --input-type=module <<'JS'
+          import {execFileSync} from 'node:child_process';
+          import {mkdirSync,writeFileSync} from 'node:fs';
+          const git=(...args)=>execFileSync('git',args,{encoding:'utf8'}).trim();
+          const base='7344591fa7f0f4f6951ea273525039cf2cb9982a';
+          git('merge-base','--is-ancestor',base,'HEAD');
+          const changes=git('diff','--name-status','--diff-filter=MDRT',base,'HEAD');
+          const {readFileSync}=await import('node:fs');
+          const manifest=JSON.parse(readFileSync('coordination/work/c07/C13_EXCEPTIONS.json','utf8'));
+          const security={...manifest.blobs,...manifest.qa_blobs};
+          const forbidden=changes.split('\n').filter(Boolean).filter(line=>{
+            const path=line.split('\t')[1];return security[path]!==git('rev-parse','HEAD:'+path);
+          });
+          if(forbidden.length)throw new Error('Fichier initial modifié hors patch exact C13 : '+forbidden.join(','));
+          const count=git('ls-tree','-r','--name-only',base).split('\n').length;
+          mkdirSync('artifacts/nav01',{recursive:true});
+          writeFileSync('artifacts/nav01/preservation.json',JSON.stringify({base,head:git('rev-parse','HEAD'),originals:count,unchanged:count-changes.split("\n").filter(Boolean).length,reviewed_exceptions:changes.split("\n").filter(Boolean)},null,2));
+          console.log('Préservation : '+count+' fichiers contrôlés ; seuls les blobs exacts du durcissement C13 et de son contrôle QA sont admis.');
+          JS
+      - name: Build allow-listed static preview without deploying
+        run: node scripts/build-nav-preview.mjs
+      - name: Install test tools only
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx playwright install --with-deps chromium
+      - name: Responsive, simulated Android, keyboard, no-JS and real browser zoom
+        run: node --test tests/nav01.browser.test.mjs
+      - name: Existing R6 contracts and browser navigation, without deployment
+        run: |
+          python3 -m unittest discover -s coordination/agents -p 'test_*.py'
+          node --test tests/r1-frontend-navigation.test.mjs tests/r2-faille-navigation.test.mjs tests/r4-relieuse-convergence.test.mjs tests/wiki-handoff-idempotency.test.mjs tests/wiki-handoff-sql-contract.test.mjs
+          python3 -m http.server 8000 --bind 127.0.0.1 > artifacts/nav01/r6-server.log 2>&1 &
+          nav_r6_pid=$!
+          trap 'kill "$nav_r6_pid" 2>/dev/null || true' EXIT
+          curl --fail --silent --retry 3 --retry-delay 1 --retry-connrefused --output /dev/null http://127.0.0.1:8000/
+          node --test tests/r6-dev02-stabilisation.browser.test.mjs
+      - name: Before and after immersive convergence, spatial nodes and landscape touch
+        run: node --test tests/work-convergence-navigation.browser.test.mjs
+      - name: Preserve preview, screenshots and exact HEAD
+        if: always()
+        run: |
+          mkdir -p artifacts/nav01
+          git rev-parse HEAD > artifacts/nav01/HEAD.txt
+          git status --short > artifacts/nav01/working-tree.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: work-nav01-preview-and-evidence-${{ github.event.pull_request.head.sha }}
+          path: |
+            dist-nav/
+            artifacts/nav01/
+          retention-days: 14

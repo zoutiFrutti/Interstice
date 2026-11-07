@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 ROLES = {"relieuse","lectrice","mediatheque","biographe","anarchitecte","developpeuse",
-         "juriste","graphiste","vigie","tisseuse","eclaireuse",
+         "juriste","graphiste","vigie","tisseuse","eclaireuse","orchestratrice",
          "anarchiviste-catalan","anarchiviste-zapatiste","anarchiviste-communs",
          "archeologue","reseaux-sociaux","assistant-anarchiviste"}
 
@@ -20,7 +20,7 @@ def normalize(data):
     if not isinstance(title,str) or not 3 <= len(title.strip()) <= 2000:
         raise ValueError("Objectif invalide")
     roles=data.get("ateliers",[])
-    if not isinstance(roles,list) or not roles or len(roles)>17 or any(r not in ROLES for r in roles):
+    if not isinstance(roles,list) or not roles or len(roles)>len(ROLES) or any(r not in ROLES for r in roles):
         raise ValueError("Ateliers invalides")
     if len(set(roles)) != len(roles):
         raise ValueError("Atelier duplique")
