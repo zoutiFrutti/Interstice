@@ -108,6 +108,47 @@ def verify(reference, decisions, directory, root=None):
                        "SHA GitHub et PR externes non verifies par ce programme"]}
 
 
+def audit_etats_c03(data):
+    """Lecture contradictoire et non destructive des neuf états C09."""
+    mapping = (("DEMANDEE", "preparee"), ("ENVOYEE", "transmise"),
+               ("RECUE_ATTESTEE", "recue"), ("COMMENCEE", "commencee"),
+               ("LIVRABLE_CANDIDAT", "livree"), ("VERIFIEE", "controle_effectue"),
+               ("VALIDEE_HUMAINEMENT", "validee"), ("INTEGREE", None),
+               ("PUBLIEE", None))
+    if not isinstance(data, dict) or not isinstance(data.get("missions"), list) or not isinstance(data.get("preuves"), list):
+        raise ValueError("Registre C03 invalide")
+    evidence = {p["id"]: p for p in data["preuves"]}
+    output = []
+    for mission in data["missions"]:
+        states = mission["etat"]
+        local = [evidence[pid] for pid in mission["preuves_mission"]]
+                 if pid in evidence and evidence[pid].get("mission_id") == mission["id"]]
+        def matching(kind):
+            return any(p.get("type") == kind and p.get("commit_sha") for p in local)
+        reconciled = {}
+        for name, source in mapping:
+            value = states.get(source) if source else None
+            if value is True and name == "LIVRABLE_CANDIDAT" and matching("fichier"):
+                verdict = "PIECE_CANDIDATE"
+            elif value is True and name == "RECUE_ATTESTEE" and matching("accuse"):
+                verdict = "PREUVE_DECLAREE_A_CONTROLER"
+            elif value is True and name == "VALIDEE_HUMAINEMENT" and matching("decision_zout"):
+                verdict = "DECISION_DECLAREE_A_AUTHENTIFIER"
+            elif value is True:
+                verdict = "DECLARATION_A_CONTROLER"
+            elif value is False:
+                verdict = "NEGATION_SANS_PREUVE"
+            else:
+                verdict = "INCONNU"
+            reconciled[name] = {"source": source, "valeur_historique": value,
+                                "statut_controle": verdict}
+        output.append({"mission_id": mission["id"], "dimensions": reconciled})
+    return {"schema": "c09.audit-etats.v1", "missions": output,
+            "lecture_seule": True,
+            "limites": ["Les pièces déclarées ne sont pas une authentification humaine",
+                        "Aucun merge ni publication inféré du C03"]}
+
+
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--root",type=Path,default=Path("."))
