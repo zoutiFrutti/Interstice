@@ -146,6 +146,44 @@ class C09ReferenceTests(unittest.TestCase):
         self.assertFalse(any("integree" in m["etat"] or "publiee" in m["etat"]
                              for m in data["missions"]))
 
+    def test_c03_read_only_nine_state_audit_is_conservative(self):
+        import json
+        from verifier_referentiel_c09 import audit_etats_c03
+        source = json.loads((ROOT/"coordination/c03/orchestratrice/registre_collectif_c03.json").read_text(encoding="utf-8"))
+        before = json.dumps(source, sort_keys=True)
+        report = audit_etats_c03(source)
+        self.assertEqual(len(report["missions"]), len(source["missions"]))
+        self.assertTrue(report["lecture_seule"])
+        for row in report["missions"]:
+            self.assertEqual(len(row["dimensions"]), 9)
+            self.assertEqual(row["dimensions"]["INTEGREE"]["statut_controle"], "INCONNU")
+            self.assertEqual(row["dimensions"]["PUBLIEE"]["statut_controle"], "INCONNU")
+            self.assertEqual(row["dimensions"]["VALIDEE_HUMAINEMENT"]["statut_controle"],
+                             "NEGATION_SANS_PREUVE")
+        self.assertEqual(before, json.dumps(source, sort_keys=True))
+
+    def test_c03_read_only_audit_cannot_authenticate_a_fake_decision(self):
+        import copy
+        import json
+        from verifier_referentiel_c09 import audit_etats_c03
+        source = json.loads((ROOT/"coordination/c03/orchestratrice/registre_collectif_c03.json").read_text(encoding="utf-8"))
+        mutated = copy.deepcopy(source)
+        mutated["missions"][0]["etat"]["validee"] = True
+        result = audit_etats_c03(mutated)
+        self.assertEqual(result["missions"][0]["dimensions"]["VALIDEE_HUMAINEMENT"]["statut_controle"],
+                         "DECLARATION_A_CONTROLER")
+
+    def test_c03_observed_delivery_does_not_imply_received_or_published(self):
+        import json
+        from verifier_referentiel_c09 import audit_etats_c03
+        data = json.loads((ROOT/"coordination/c03/orchestratrice/registre_collectif_c03.json").read_text(encoding="utf-8"))
+        report = audit_etats_c03(data)
+        own = next(row for row in report["missions"] if row["mission_id"] == "C03-ORC-03")
+        self.assertEqual(own["dimensions"]["LIVRABLE_CANDIDAT"]["statut_controle"], "PIECE_CANDIDATE")
+        self.assertEqual(own["dimensions"]["RECUE_ATTESTEE"]["statut_controle"], "INCONNU")
+        self.assertEqual(own["dimensions"]["PUBLIEE"]["statut_controle"], "INCONNU")
+
+
 
 if __name__ == "__main__":
     unittest.main()
