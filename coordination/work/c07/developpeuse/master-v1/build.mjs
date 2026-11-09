@@ -16,7 +16,7 @@ const expected=Object.freeze({
  'navigation.json':'c154891466df8465e06bf3dd04436c94118ecff4'
 });
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
-const gitBlob=bytes=>createHash('sha1').update(Buffer.concat([Buffer.from('blob '+bytes.length+'\\0'),bytes])).digest('hex');
+const gitBlob=bytes=>createHash('sha1').update(Buffer.concat([Buffer.from('blob '+bytes.length+'\0'),bytes])).digest('hex');
 const unique=(xs,label)=>{const ids=xs.map(x=>x.id);if(new Set(ids).size!==ids.length)throw Error('Duplicate '+label);return new Map(xs.map(x=>[x.id,x]));};
 const sort=(a,b)=>a<b?-1:a>b?1:0;
 const stable=x=>JSON.stringify(x,(_k,v)=>v&&typeof v==='object'&&!Array.isArray(v)?Object.fromEntries(Object.keys(v).sort(sort).map(k=>[k,v[k]])):v);
