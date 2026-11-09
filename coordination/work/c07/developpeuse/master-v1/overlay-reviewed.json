@@ -1,0 +1,37 @@
+{
+  "schema_version": "c07-reviewed-overlay/1",
+  "med": {
+    "blob": "dc695cecf288791ff71203415329df023b58c556",
+    "coverage": 219,
+    "missing_canonical_url": 190,
+    "internal_candidates": 185,
+    "missing_locator": 1,
+    "duplicate_conflicts": 4
+  },
+  "jur": {
+    "blob": "787fb845db3582c43678bd0925a479700474475f",
+    "legal_unreviewed": 217,
+    "legal_blocked": 2,
+    "publication_denied": 219,
+    "scope": "avis_cible_sans_visa"
+  },
+  "decisions": {
+    "privacy_default": "UNREVIEWED",
+    "publish_default": false,
+    "fn018": "unresolved",
+    "duplicate_pairs": [
+      [
+        "FN-022",
+        "FN-048"
+      ],
+      [
+        "FN-038",
+        "FN-057"
+      ]
+    ],
+    "atlas_geometry_release": false,
+    "interstice_r3": false
+  },
+  "per_id": {},
+  "note": "Aucune décision par ID n'est inférée de la prose MED/JUR. La couverture est contrôlée séparément; zéro visa."
+}
