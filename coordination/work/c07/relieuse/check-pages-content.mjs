@@ -4,7 +4,7 @@ import {readFile, readdir, lstat} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const here=resolve(fileURLToPath(new URL('.', import.meta.url)));
-const base=resolve(here,'../../../../..');
+const base=resolve(here,'../../../..');
 const locatorRe=/docs\.google\.com\/document\/d\/([a-zA-Z0-9_-]{15,})/;
 export function sensitiveDocumentIds(register) {
   const ids=new Set();
