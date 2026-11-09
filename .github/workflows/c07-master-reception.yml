@@ -7,6 +7,7 @@ on:
       - 'coordination/work/c07/developpeuse/master-v1/**'
       - 'coordination/work/c07/relieuse/check-pages-boundary*'
       - 'coordination/work/c07/relieuse/check-pages-content*'
+      - 'coordination/work/c07/relieuse/lec03-status-reception.test.mjs'
       - '.github/workflows/c07-master-reception.yml'
   workflow_dispatch:
 permissions:
@@ -31,6 +32,8 @@ jobs:
           git rev-parse HEAD
           node --test coordination/work/c07/developpeuse/master-v1/test.mjs
           node coordination/work/c07/developpeuse/master-v1/build.mjs
+      - name: Check editorial state isolation and held dossiers
+        run: node --test coordination/work/c07/relieuse/lec03-status-reception.test.mjs
       - name: Assert boundary-gate unit tests
         run: node --test coordination/work/c07/relieuse/check-pages-boundary.test.mjs
       - name: Assert sensitive content gate with synthetic cases
