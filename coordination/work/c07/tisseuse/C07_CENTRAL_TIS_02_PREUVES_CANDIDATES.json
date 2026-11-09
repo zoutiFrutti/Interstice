@@ -1,0 +1,889 @@
+{
+  "schema_description": "C07-TIS-02 review overlay, NOT Atlas runtime payload; human-review required; candidate only",
+  "version": "2026-11-09",
+  "repository": "zoutiFrutti/Interstice",
+  "branch": "work/c07-reunification-20261104",
+  "pr": 186,
+  "authoritative_registry": {
+    "resources": "coordination/v2/work-c02-01/data/resources.json",
+    "resources_sha": "66957e1b223f05642dcd69479ac48d0394797802",
+    "relations": "coordination/v2/work-c02-01/data/relations.json",
+    "relations_sha": "b59d03362798947ee7e31202b0466848bf5627e7",
+    "integrated_into_registry": false
+  },
+  "counts": {
+    "total_records": 24,
+    "tis": 20,
+    "exp": 4,
+    "real_coordinates_usable": 0,
+    "interstice_partnerships_verified": 0,
+    "publication_approved": 0
+  },
+  "guardrails": [
+    "Do not import directly in Atlas",
+    "Do not interpolate or infer coordinates from URLs or text",
+    "Do not display 'open now' without date-specific verification",
+    "Keep EXP-003 undetermined: absent from checked C02 registry, Drive name search and GitHub main code search",
+    "Do not alter PR 41 fictional examples",
+    "Do not infer an Interstice partnership from R2 between third parties"
+  ],
+  "records": [
+    {
+      "id": "EXP-001",
+      "title": "Freegan Pony — cantine participative et récupération alimentaire",
+      "kind": "experience",
+      "existing_primary_door": "encyclopedie",
+      "aliases": [],
+      "territory_scope_in_existing_registry": null,
+      "geo_source_field_state": "field_absent_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "branch:coordination/transmissions/2026-11-01_ANARCHITECTE_CYCLE8_TABLE_CORRESPONDANCE_V02.json",
+        "drive-meta:EXP-001"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "historical_experience",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "dossier_drive_lu_2026_11_09",
+          "url": "https://docs.google.com/document/d/1JgNnqon3EqMfDrE1NueCIfm9ECjkYouG9KQReXosqxo/edit",
+          "limited_claim": "Dossier historique Paris 2015–2019 ; ne pas reprendre une adresse comme lieu actif",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "EXP-002",
+      "title": "Caisse alimentaire commune de Montpellier — recherche critique",
+      "kind": "experience",
+      "existing_primary_door": "encyclopedie",
+      "aliases": [],
+      "territory_scope_in_existing_registry": null,
+      "geo_source_field_state": "field_absent_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "branch:coordination/transmissions/2026-11-01_ANARCHITECTE_CYCLE8_TABLE_CORRESPONDANCE_V02.json",
+        "drive-meta:EXP-002"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "dossier_drive_lu_2026_11_09",
+          "url": "https://docs.google.com/document/d/1jCWq-1OWW3y8GSViWSM26zClzsIhuCr16hDaf1FVxH4/edit",
+          "limited_claim": "Expérimentation de caisse Montpellier, indicateurs datés et déclarés ; aucune liste de points de vente importée",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [
+        {
+          "id": "WORK-REL-107",
+          "declared_level": "R1",
+          "graph_type": "comparaison",
+          "interstice_cooperation": false
+        }
+      ],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "EXP-004",
+      "title": "Mondragón — fédération coopérative et démocratie économique",
+      "kind": "experience",
+      "existing_primary_door": "encyclopedie",
+      "aliases": [],
+      "territory_scope_in_existing_registry": null,
+      "geo_source_field_state": "field_absent_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "branch:coordination/transmissions/2026-11-01_ANARCHITECTE_CYCLE8_TABLE_CORRESPONDANCE_V02.json",
+        "drive-meta:EXP-004"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "dossier_drive_lu_2026_11_09",
+          "url": "https://docs.google.com/document/d/1qIwYtVa4Sj5xWQTExW4xhI5x7565tin8-G48CoTz834/edit",
+          "limited_claim": "Réseau coopératif du Pays basque et international ; sociétaires distincts des salariés ; aucun lieu unique",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "EXP-005",
+      "title": "Barcelona en Comú et Decidim — démocratie et limites numériques",
+      "kind": "experience",
+      "existing_primary_door": "encyclopedie",
+      "aliases": [],
+      "territory_scope_in_existing_registry": null,
+      "geo_source_field_state": "field_absent_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "branch:coordination/transmissions/2026-11-01_ANARCHITECTE_CYCLE8_TABLE_CORRESPONDANCE_V02.json",
+        "drive-meta:EXP-005"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "historical_experience",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "dossier_drive_lu_2026_11_09",
+          "url": "https://docs.google.com/document/d/1lNF43lEs25htaZZgBpX21Llpz3urbXiI6TalBCPu6yY/edit",
+          "limited_claim": "Gouvernement municipal 2015–2023, mouvement Barcelona en Comú et outil Decidim distincts",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-001",
+      "title": "La Maison du Vélo",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [
+        "tis-c8-velo"
+      ],
+      "territory_scope_in_existing_registry": "Toulouse",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "page_operateur_sans_date_evenement",
+          "url": "https://www.maisonduvelotoulouse.com/atelier-participatif-reparation/",
+          "limited_claim": "Atelier participatif décrit ; fonctionnement un jour donné non établi",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [
+        {
+          "id": "WORK-REL-105",
+          "declared_level": "R1",
+          "graph_type": "comparaison",
+          "interstice_cooperation": false
+        }
+      ],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-002",
+      "title": "Afev Albi",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Albi",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "2026_operator_and_press_activity_evidence",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "site_operateur_sans_date_evenement",
+          "url": "https://afev.org/occitanie/albi",
+          "limited_claim": "Antenne et mentorat décrits",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "presse_2026_09_03",
+          "url": "https://www.ladepeche.fr/2026/09/03/afev-albi-lassociation-recherche-300-benevoles-pour-lannee-2026-2027-13515830.php",
+          "limited_claim": "Recrutement bénévoles annoncé pour 2026-2027 ; nombre annoncé, non audité",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-003",
+      "title": "MJC Rabastens-Couffouleux",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Rabastens / Couffouleux",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "recent_2026_programme_publication",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "publication_operateur_2026_07_23",
+          "url": "https://mjcrabastenscouffouleux.fr/category/activites/",
+          "limited_claim": "Bulletin d'inscription et saison 2026-2027 publiés ; aucune place ni accueil du jour garantis",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-004",
+      "title": "MJC de Gaillac",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Gaillac",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "dated_2026_municipal_agenda",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "agenda_municipal_2026_10_01",
+          "url": "https://www.gaillac.fr/agenda/concert-solidaire-avec-la-mano-libre/",
+          "limited_claim": "MJC annoncée comme lieu d'événement le 6 novembre 2026",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "agenda_municipal_2026_10_01",
+          "url": "https://www.gaillac.fr/agenda/denature/",
+          "limited_claim": "Exposition programmée du 30 novembre au 18 décembre 2026 ; programmation ≠ réalisation future garantie",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-005",
+      "title": "Le Pigeonnier",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Laguépie",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "recent_public_announcement_not_onsite",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "annonce_municipale_2026_01_14",
+          "url": "https://www.intramuros.org/laguepie/actualites/780526",
+          "limited_claim": "Ouverture d'un café-cantine associatif annoncée pour le 24 janvier 2026 ; réalisation et ouverture actuelle non vérifiées",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-006",
+      "title": "L’R de Rien",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Laguépie",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "recent_operator_activity_announcement_and_historical_cessation",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "site_operateur_historique_2018",
+          "url": "https://www.lrderien.org/l-association/projet/category/l-association",
+          "limited_claim": "Camion-atelier arrêté en 2018 ; cet arrêt ne vaut pas clôture de l'association",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "agenda_operateur_2026_03_20",
+          "url": "https://www.lrderien.org/",
+          "limited_claim": "Horaires de boutique associative publiés pour 2026 ; activité le jour même non vérifiée",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "agenda_operateur_2026_06_25",
+          "url": "https://www.lrderien.org/",
+          "limited_claim": "Portes ouvertes du 22 juillet 2026 annoncées",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [
+        {
+          "id": "WORK-REL-105",
+          "declared_level": "R1",
+          "graph_type": "comparaison",
+          "interstice_cooperation": false
+        }
+      ],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-007",
+      "title": "P’tite Lumière et Cie",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Laguépie",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "recent_operator_activity_announcement",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "actualite_operateur_2026_10_09",
+          "url": "https://www.ptitelumiereetcie.fr/",
+          "limited_claim": "Programmation Les Jeudis de la Ruche et activités de La Ruche Créative en 2026 décrites ; ne pas assimiler siège et lieu public",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "radio_2026_10_29",
+          "url": "https://www.cfmradio.fr/laguepie--ptite-lumiere-et-cie-",
+          "limited_claim": "Interview sur campagne de financement du 26/10 au 07/12/2026 ; datation externe",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-008",
+      "title": "Lenga Viva",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Laguépie",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "programme_operateur_2026",
+          "url": "https://www.lengaviva.com/universite-occitane-2026/?lang=fr",
+          "limited_claim": "Programme Université occitane 2026 présent ; aucune session actuelle déduite",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-009",
+      "title": "Hors-Loge",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Najac",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "last_2023_evidence_no_current_proof",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "site_historique_2023_09_06",
+          "url": "https://horsloge.blogspot.com/",
+          "limited_claim": "Dernier billet relevé en septembre 2023 ; aucune preuve pour 2026 et aucune preuve de fermeture",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-010",
+      "title": "L’Atelier de Najac",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Najac",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "annuaire_municipal_sans_date_activite",
+          "url": "https://najac.fr/associations/",
+          "limited_claim": "L'Atelier de Najac est mentionné dans l'annuaire ; horaires et activité 2026 non attestés",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-011",
+      "title": "Sous les Toiles",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Najac",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "historical_event_completed_2026",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "site_festival_edition_2026",
+          "url": "https://festivalsouslestoiles.fr/",
+          "limited_claim": "18e édition datée du 6 au 10 juillet 2026 ; événement passé, prochaine édition inconnue",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "site_festival_geometries_contradictoires",
+          "url": "https://festivalsouslestoiles.fr/infos/",
+          "limited_claim": "Deux jeux de coordonnées différents affichés pour le site sur une page officielle : aucune géolocalisation retenue",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "TIS-001-012",
+      "title": "Les Hauts Parleurs",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Villefranche-de-Rouergue",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "programmation_operateur_2026_02_02",
+          "url": "https://leshautsparleurs.com/category/programmation/",
+          "limited_claim": "Publication de programmation de février 2026 ; ouverture le 9 novembre non constatée",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "tis-c8-testet",
+      "title": "Testet / bassin du Tescou",
+      "kind": "notice_territoriale",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Bassin du Tescou / secteur du Testet",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_territory_not_organization",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "rapport_institutionnel_2025",
+          "url": "https://www.igedd.developpement-durable.gouv.fr/appui-a-l-aboutissement-du-projet-de-territoire-a4159.html",
+          "limited_claim": "Projet de territoire et bassin du Tescou ; notice géographique et politique, pas collectif en activité",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [
+        {
+          "id": "WORK-REL-101",
+          "declared_level": "R1",
+          "graph_type": "comparaison",
+          "interstice_cooperation": false
+        }
+      ],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "tis-c8-salvetat",
+      "title": "La Salvetat / Les Chlorophy’liens",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Monestiés",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "publication_organisateur_2025_12_16",
+          "url": "https://terredeliens.org/midi-pyrenees/hub-actus-midi-pyr%C3%A9n%C3%A9e%C3%A9s/un-chantier-de-plantation-agroforesti%C3%A8re-sur-une-ferme-16-12-2025/",
+          "limited_claim": "Plantation 120 arbres rapportée par Terre de Liens avec le CEN Occitanie ; survie et effets non mesurés ici",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [
+        {
+          "id": "WORK-REL-101",
+          "declared_level": "R1",
+          "graph_type": "comparaison",
+          "interstice_cooperation": false
+        },
+        {
+          "id": "WORK-REL-102",
+          "declared_level": "R2",
+          "graph_type": "complement_documentaire",
+          "interstice_cooperation": false
+        },
+        {
+          "id": "WORK-REL-106",
+          "declared_level": "R1",
+          "graph_type": "comparaison",
+          "interstice_cooperation": false
+        }
+      ],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "tis-c8-vrac",
+      "title": "VRAC Toulouse",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Toulouse Métropole (réseau de quartiers)",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "actualite_operateur_2026",
+          "url": "https://toulouse.vrac-asso.org/actualites/",
+          "limited_claim": "Recrutement annoncé en 2026 et existence de rapports ; activité de chaque distribution non garantie",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [
+        {
+          "id": "WORK-REL-107",
+          "declared_level": "R1",
+          "graph_type": "comparaison",
+          "interstice_cooperation": false
+        }
+      ],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "tis-c8-jardins",
+      "title": "Partageons les Jardins",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Département (dont Toulouse)",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "site_operateur_sans_datation_2026",
+          "url": "https://www.partageonslesjardins.fr/",
+          "limited_claim": "Réseau de jardins cité dans C05 ; aucune preuve datée de l'ouverture d'un jardin précis ajoutée ici",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "tis-c8-glanerie",
+      "title": "La Glanerie",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Toulouse et Blagnac",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "operator_posted_hours_current_not_onsite",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "actualite_operateur_2026_10_26",
+          "url": "https://www.la-glanerie.org/actualites",
+          "limited_claim": "Nouveaux horaires Blagnac annoncés à compter du 4 novembre",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "page_operateur_consultee_2026_11_09",
+          "url": "https://www.la-glanerie.org/redistribuer",
+          "limited_claim": "Les horaires Blagnac sont effectivement repris dans la page des boutiques, sans vérification physique",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "tis-c8-3pa",
+      "title": "3PA / Bordanova",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Lahage",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "contradictory_primary_sources",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "site_operateur_conflit_surface",
+          "url": "https://www.3paformation.fr/",
+          "limited_claim": "Page d'accueil indique 3 hectares pour Bordanova",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "site_operateur_conflit_surface",
+          "url": "https://www.3paformation.fr/notre-tiers-lieu-bordanova/",
+          "limited_claim": "Page détaillée indique 13 hectares pour Bordanova : contradiction non résolue",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "tis-c8-tdl",
+      "title": "Terre de Liens Midi-Pyrénées",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Périmètre régional multi-départements",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "publication_organisateur_2025_12_16",
+          "url": "https://terredeliens.org/midi-pyrenees/hub-actus-midi-pyr%C3%A9n%C3%A9e%C3%A9s/un-chantier-de-plantation-agroforesti%C3%A8re-sur-une-ferme-16-12-2025/",
+          "limited_claim": "Association Terre de Liens Midi-Pyrénées impliquée dans le chantier, différente de Foncière Terre de Liens",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        },
+        {
+          "evidence_kind": "fiche_ferme_operateur",
+          "url": "https://fermes.terredeliens.org/midi-pyrenees/fermes-de-la-r%C3%A9gion-midi-pyr%C3%A9n%C3%A9es/la-salvetat/",
+          "limited_claim": "Propriété foncière attribuée à la Foncière par l'opérateur ; ne pas inférer du foncier disponible",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [
+        {
+          "id": "WORK-REL-102",
+          "declared_level": "R2",
+          "graph_type": "complement_documentaire",
+          "interstice_cooperation": false
+        }
+      ],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    },
+    {
+      "id": "tis-c8-sctl",
+      "title": "Société civile des terres du Larzac (SCTL)",
+      "kind": "initiative",
+      "existing_primary_door": "carte",
+      "aliases": [],
+      "territory_scope_in_existing_registry": "Plateau du Larzac (plusieurs communes)",
+      "geo_source_field_state": "null_in_registry",
+      "coordinate_value_emitted": false,
+      "source_refs_preserved": [
+        "library:INTERSTICE_C05_TIS_01_inventaire_relations_candidat.json"
+      ],
+      "source_refs_resolution_note": "overlay_only_no_registry_write",
+      "activity_status_for_atlas": "documented_scope_not_current_opening_verified",
+      "activity_now_onsite_verified": false,
+      "evidence": [
+        {
+          "evidence_kind": "site_operateur_sans_date_2026",
+          "url": "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/",
+          "limited_claim": "Gestion foncière du plateau décrite ; pas de bail individuel ou disponibilité certifiés",
+          "consultation_recorded_at": "2026-11-09",
+          "perimeter": "operator_or_institution_claim_unless_stated_otherwise"
+        }
+      ],
+      "existing_graph_relations": [
+        {
+          "id": "WORK-REL-106",
+          "declared_level": "R1",
+          "graph_type": "comparaison",
+          "interstice_cooperation": false
+        }
+      ],
+      "interstice_partnership_attested": false,
+      "publication_authorized": false,
+      "recommended_atlas_representation": "documentary_text_only_no_pin",
+      "documentary_legal_status": "requires_review"
+    }
+  ]
+}
