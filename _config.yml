@@ -1,0 +1,21 @@
+# INTERSTICE C07: candidate Pages allowlist-by-exclusion.
+# Root public HTML/CSS/JS and assets/ remain available.
+# Everything below is internal source or unapproved for this site build.
+exclude:
+  - .github
+  - apercu-graphiste-35
+  - coordination
+  - coordination-console
+  - design-system
+  - docs
+  - edition-premiere
+  - integration-graphique
+  - propositions
+  - recherche
+  - scripts
+  - supabase
+  - tests
+  - README.md
+  - METHODE_EDITORIALE_SOURCES.md
+  - TESTS_CIRCUIT_CONTRIBUTIONS_WIKI.md
+  - WIKI_APPROFONDISSEMENTS.md
