@@ -3,6 +3,7 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - '_config.yml'
       - 'coordination/work/c07/developpeuse/master-v1/**'
       - 'coordination/work/c07/relieuse/check-pages-boundary*'
       - '.github/workflows/c07-master-reception.yml'
