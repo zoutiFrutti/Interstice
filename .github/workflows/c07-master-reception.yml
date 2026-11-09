@@ -6,6 +6,7 @@ on:
       - '_config.yml'
       - 'coordination/work/c07/developpeuse/master-v1/**'
       - 'coordination/work/c07/relieuse/check-pages-boundary*'
+      - 'coordination/work/c07/relieuse/check-pages-content*'
       - '.github/workflows/c07-master-reception.yml'
   workflow_dispatch:
 permissions:
@@ -32,6 +33,8 @@ jobs:
           node coordination/work/c07/developpeuse/master-v1/build.mjs
       - name: Assert boundary-gate unit tests
         run: node --test coordination/work/c07/relieuse/check-pages-boundary.test.mjs
+      - name: Assert sensitive content gate with synthetic cases
+        run: node --test coordination/work/c07/relieuse/check-pages-content.test.mjs
       - name: Reproduce Pages output without publishing
         uses: actions/jekyll-build-pages@v1
         with:
@@ -39,3 +42,5 @@ jobs:
           destination: ./_site
       - name: Block unexpected internal folders in actual Pages output
         run: node coordination/work/c07/relieuse/check-pages-boundary.mjs ./_site
+      - name: Block known internal Drive locators inside allowed Pages files
+        run: node coordination/work/c07/relieuse/check-pages-content.mjs ./_site
