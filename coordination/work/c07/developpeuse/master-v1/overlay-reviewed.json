@@ -1,7 +1,7 @@
 {
   "schema_version": "c07-reviewed-overlay/1",
   "med": {
-    "blob": "dc695cecf288791ff71203415329df023b58c556",
+    "blob": "509b7961210e71650be293ceba03cac1224ae5ef",
     "coverage": 219,
     "missing_canonical_url": 190,
     "internal_candidates": 185,

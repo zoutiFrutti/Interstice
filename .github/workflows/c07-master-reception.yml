@@ -7,6 +7,9 @@ on:
       - 'coordination/v2/work-c02-01/data/resources.json'
       - 'coordination/v2/work-c02-01/data/sources.json'
       - 'coordination/work/c07/developpeuse/master-v1/**'
+      - 'coordination/work/c07/mediatheque/C07_MED_01B_MATRICE_219.md'
+      - 'coordination/work/c07/relieuse/check-med-matrix.test.mjs'
+      - 'coordination/work/c07/relieuse/check-public-tree-baseline.mjs'
       - 'coordination/work/c07/relieuse/check-pages-boundary*'
       - 'coordination/work/c07/relieuse/check-pages-content*'
       - 'coordination/work/c07/relieuse/check-public-locators*'
@@ -33,6 +36,10 @@ jobs:
         run: |
           node --test coordination/work/c07/relieuse/audit-public-tree.test.mjs
           node coordination/work/c07/relieuse/audit-public-tree.mjs
+      - name: Check MED matrix preservation and private locator removal
+        run: node --test coordination/work/c07/relieuse/check-med-matrix.test.mjs
+      - name: Reject growth of unresolved links in public Git
+        run: node coordination/work/c07/relieuse/check-public-tree-baseline.mjs
       - name: Fail if C02 registries contain direct Drive or Docs links
         run: node coordination/work/c07/relieuse/check-public-locators.mjs
       - name: Verify public registry gate unit tests

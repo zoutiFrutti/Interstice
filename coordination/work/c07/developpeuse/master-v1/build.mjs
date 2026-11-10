@@ -30,7 +30,7 @@ export function loadSnapshot(directory=root){
  return out;
 }
 export function buildMaster(bundle,overlay){
- if(overlay.schema_version!=='c07-reviewed-overlay/1'||overlay.med.blob!=='dc695cecf288791ff71203415329df023b58c556'||overlay.jur.blob!=='787fb845db3582c43678bd0925a479700474475f')throw Error('Review overlay version mismatch');
+ if(overlay.schema_version!=='c07-reviewed-overlay/1'||overlay.med.blob!=='509b7961210e71650be293ceba03cac1224ae5ef'||overlay.jur.blob!=='787fb845db3582c43678bd0925a479700474475f')throw Error('Review overlay version mismatch');
  const resources=bundle.resources.resources,sources=bundle.sources.sources,relations=bundle.relations.relations,objections=bundle.objections.objections,parcours=bundle.parcours.parcours;
  if(overlay.med.coverage!==219||overlay.med.missing_canonical_url!==190||overlay.med.internal_candidates!==185||overlay.med.missing_locator!==1||overlay.med.duplicate_conflicts!==4||overlay.jur.legal_unreviewed!==217||overlay.jur.legal_blocked!==2||overlay.jur.publication_denied!==219)throw Error('Review coverage mismatch');
  if(resources.filter(r=>!r.canonical_url).length!==190)throw Error('MED canonical coverage mismatch');
