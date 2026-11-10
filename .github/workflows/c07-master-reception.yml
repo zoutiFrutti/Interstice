@@ -4,6 +4,11 @@ on:
     branches: [main]
     paths:
       - '_config.yml'
+      - 'index.html'
+      - 'candidat.html'
+      - 'archives.html'
+      - 'assets/candidat.css'
+      - 'coordination/work/c07/relieuse/check-candidate-site.test.mjs'
       - 'coordination/v2/work-c02-01/data/resources.json'
       - 'coordination/v2/work-c02-01/data/sources.json'
       - 'coordination/work/c07/developpeuse/master-v1/**'
@@ -57,6 +62,8 @@ jobs:
         run: node --test coordination/work/c07/relieuse/check-pages-boundary.test.mjs
       - name: Assert sensitive content gate with synthetic cases
         run: node --test coordination/work/c07/relieuse/check-pages-content.test.mjs
+      - name: Check candidate navigation and safe doors
+        run: node --test coordination/work/c07/relieuse/check-candidate-site.test.mjs
       - name: Reproduce Pages output without publishing
         uses: actions/jekyll-build-pages@v1
         with:
