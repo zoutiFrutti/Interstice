@@ -10,6 +10,7 @@ on:
       - 'coordination/work/c07/relieuse/check-pages-boundary*'
       - 'coordination/work/c07/relieuse/check-pages-content*'
       - 'coordination/work/c07/relieuse/check-public-locators*'
+      - 'coordination/work/c07/relieuse/audit-public-tree*'
       - 'coordination/work/c07/relieuse/lec03-status-reception.test.mjs'
       - '.github/workflows/c07-master-reception.yml'
   workflow_dispatch:
@@ -28,6 +29,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Inspect full public Git tree, counts only (audit, not a release approval)
+        run: |
+          node --test coordination/work/c07/relieuse/audit-public-tree.test.mjs
+          node coordination/work/c07/relieuse/audit-public-tree.mjs
       - name: Fail if C02 registries contain direct Drive or Docs links
         run: node coordination/work/c07/relieuse/check-public-locators.mjs
       - name: Verify public registry gate unit tests
