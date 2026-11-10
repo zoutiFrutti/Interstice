@@ -389,7 +389,7 @@
     {
       "id": "drive:catalogue-FN",
       "origin": "drive",
-      "locator": "https://drive.google.com/file/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "Catalogue initial — Médiathèque des communs — v0.1",
@@ -401,7 +401,7 @@
     {
       "id": "drive:ASSO-008",
       "origin": "drive",
-      "locator": "https://drive.google.com/file/d/1q9b6Ofk7rWSxMaltddYVkG3bGPrcWHtV4UI1gyHQ9YM",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-008 — La Marmite — coopérative ouvrière 1868",
@@ -413,7 +413,7 @@
     {
       "id": "drive:ARCH-007",
       "origin": "drive",
-      "locator": "https://drive.google.com/file/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-007 — Décret du 16 avril 1871 sur les ateliers abandonnés — enquête, coopératives et limites",
@@ -425,7 +425,7 @@
     {
       "id": "drive:ASSO-007",
       "origin": "drive",
-      "locator": "https://drive.google.com/file/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-007 — Union des femmes de la Commune — mémoire organisationnelle",
@@ -845,7 +845,7 @@
     {
       "id": "drive-meta:ASSO-007",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-007 — Union des femmes de la Commune — mémoire organisationnelle",
@@ -856,7 +856,7 @@
     {
       "id": "drive-meta:EXP-005",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1lNF43lEs25htaZZgBpX21Llpz3urbXiI6TalBCPu6yY/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "EXP-005 — Barcelona en Comú et Decidim — démocratie et limites numériques",
@@ -867,7 +867,7 @@
     {
       "id": "drive-meta:EXP-002",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1jCWq-1OWW3y8GSViWSM26zClzsIhuCr16hDaf1FVxH4/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "EXP-002 — Caisse alimentaire commune de Montpellier — recherche critique",
@@ -878,7 +878,7 @@
     {
       "id": "drive-meta:EXP-001",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1JgNnqon3EqMfDrE1NueCIfm9ECjkYouG9KQReXosqxo/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "EXP-001 — Freegan Pony — cantine participative et récupération alimentaire",
@@ -889,7 +889,7 @@
     {
       "id": "drive-meta:EXP-004",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1qIwYtVa4Sj5xWQTExW4xhI5x7565tin8-G48CoTz834/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "EXP-004 — Mondragón — fédération coopérative et démocratie économique",
@@ -900,7 +900,7 @@
     {
       "id": "drive-meta:ASSO-008",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1q9b6Ofk7rWSxMaltddYVkG3bGPrcWHtV4UI1gyHQ9YM/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-008 — La Marmite — coopérative ouvrière 1868",
@@ -911,7 +911,7 @@
     {
       "id": "drive-meta:ASSO-006",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1Up9RptQB5ASQaOaupgxJbAxCbjFwkey7lpkLUOHCfUE/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-006 — Phyllis Wheatley Club de Buffalo — recherche",
@@ -922,7 +922,7 @@
     {
       "id": "drive-meta:ASSO-001",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1CZO3B8wR1Iw0lQxFwStkwPZCGBJswJR6QmzQjr-qz9A/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-001 — White Rose Mission and Industrial Association — fiche candidate",
@@ -933,7 +933,7 @@
     {
       "id": "drive-meta:ASSO-002",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1QuoTzzfQ_ggvXN3TYaUOmjPoDHLks9HuVBTaz6OKXfs/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-002 — Woman's Loyal Union — fiche candidate",
@@ -944,7 +944,7 @@
     {
       "id": "drive-meta:ASSO-003",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1VNd5tMiebQPbSxHty2xjMTNwyu6LIPz4WPcy5hPZwBo/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-003 — Equal Suffrage League de Brooklyn — candidate",
@@ -955,7 +955,7 @@
     {
       "id": "drive-meta:ASSO-004",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1qL3PIH5VMHQpa1qMhwsxOoxzBBU9Gg6WdWgLQh_KQk8/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-004 — Lincoln Settlement House — fiche candidate",
@@ -966,7 +966,7 @@
     {
       "id": "drive-meta:ASSO-005",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1GW1HlKA0aT8YfZ2iSjZ7FnoDoxLByjsza0o5VTyIUdU/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ASSO-005 — Niagara Movement — histoire critique",
@@ -977,7 +977,7 @@
     {
       "id": "drive-meta:ARCH-005",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/13FO7BOajhiOt0bxcp00_Efng43xNA42qfkLnr9AmwGs/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-005 — Règlements des ateliers d'armes du Louvre (2 avril et 3 mai 1871) — étude comparative",
@@ -988,7 +988,7 @@
     {
       "id": "drive-meta:ARCH-006",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-006 — Le Prolétaire (journal du Club des prolétaires, mai 1871) — fiche candidate",
@@ -999,7 +999,7 @@
     {
       "id": "drive-meta:ARCH-004",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/13q2UVdWu1YCHMeU1bc78LKOK7dD6qqYsziLAc30p1Fo/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-004 — Appel aux ouvrières n°342 (18 mai 1871) — fédération productive",
@@ -1010,7 +1010,7 @@
     {
       "id": "drive-meta:ARCH-003",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/12ab5MPTFdZXAS7oUdagWh5oqC3YONZNiJL0j29uwbrE/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-003 — Affiche n°331 (15 mai 1871) — inscriptions des ouvrières",
@@ -1021,7 +1021,7 @@
     {
       "id": "drive-meta:ARCH-008",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1DcdQac1i1QZXkmMd5PaX63GtH63wHM6fuPMObZjsAN4/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-008 — Manifeste du 6 mai 1871 de l’Union des femmes — défense, travail et conflit autour de la paix",
@@ -1032,7 +1032,7 @@
     {
       "id": "drive-meta:ARCH-007",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-007 — Décret du 16 avril 1871 sur les ateliers abandonnés — enquête, coopératives et limites",
@@ -1043,7 +1043,7 @@
     {
       "id": "drive-meta:ARCH-002",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-002 — Affiche n°373 (20 mai 1871) — chambres syndicales des ouvrières",
@@ -1054,7 +1054,7 @@
     {
       "id": "drive-meta:COL-001",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1Q7Lcl2rDNafWvEuUChF4kykFAjykb2iC_dHfo-RsygM/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "COL-001 — Femmes de New York et Brooklyn et Southern Horrors (1892)",
@@ -1065,7 +1065,7 @@
     {
       "id": "drive-meta:COL-003",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1dCYjWceGFmzbR7GSAoK_r5z5OvwmT4j-ZI-NS7R4_LI/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "COL-003 — Club des prolétaires — assemblées de la Commune",
@@ -1076,7 +1076,7 @@
     {
       "id": "drive-meta:ARCH-001",
       "origin": "drive",
-      "locator": "https://docs.google.com/document/d/1uq0QL27hyJ4LwsnVm4FmZvdGecNeNz1kg62sAbPGlos/edit?usp=drivesdk",
+      "locator": null,
       "checked_at": "2026-11-03",
       "primary_material_consulted": false,
       "title": "ARCH-001 — Lettre de 1907 et Mary Eato Lydia Smith — recherche",

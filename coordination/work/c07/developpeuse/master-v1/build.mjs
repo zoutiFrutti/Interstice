@@ -8,8 +8,8 @@ const here=dirname(fileURLToPath(import.meta.url));
 const root=resolve(here,'../../../../..');
 const data='coordination/v2/work-c02-01/data/';
 const expected=Object.freeze({
- 'resources.json':'66957e1b223f05642dcd69479ac48d0394797802',
- 'sources.json':'02d709a3e2ae4db764f894a87e6a25a769199143',
+ 'resources.json':'ba88b78064921a2232ac0000e71f2120d5fa500b',
+ 'sources.json':'726fa0e1d8961548498bd1db72cd418057e2f54b',
  'relations.json':'b59d03362798947ee7e31202b0466848bf5627e7',
  'objections.json':'a91b1c0092b252a0e7c2f8eebe67f555dd1d679d',
  'parcours.json':'be242baf409d0715bc870af68c15f75ae4ae770a',

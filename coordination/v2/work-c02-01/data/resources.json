@@ -27,7 +27,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "COL",
-      "dossier_locator": "https://docs.google.com/document/d/1uq0QL27hyJ4LwsnVm4FmZvdGecNeNz1kg62sAbPGlos/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ARCH-002",
@@ -54,7 +54,7 @@
       "legacy_human_approval": "ACCORD_EDITO_ZOUT",
       "original_folder": "ARCH",
       "subsection": "archives_organisations_et_lieux",
-      "dossier_locator": "https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ARCH-003",
@@ -80,7 +80,7 @@
       "legacy_review": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ARCH",
-      "dossier_locator": "https://docs.google.com/document/d/12ab5MPTFdZXAS7oUdagWh5oqC3YONZNiJL0j29uwbrE/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ARCH-004",
@@ -107,7 +107,7 @@
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ARCH",
       "subsection": "archives_organisations_et_lieux",
-      "dossier_locator": "https://docs.google.com/document/d/13q2UVdWu1YCHMeU1bc78LKOK7dD6qqYsziLAc30p1Fo/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ARCH-005",
@@ -135,7 +135,7 @@
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ARCH",
       "subsection": "archives_organisations_et_lieux",
-      "dossier_locator": "https://docs.google.com/document/d/13FO7BOajhiOt0bxcp00_Efng43xNA42qfkLnr9AmwGs/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ARCH-006",
@@ -163,7 +163,7 @@
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ARCH",
       "subsection": "archives_organisations_et_lieux",
-      "dossier_locator": "https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ARCH-007",
@@ -191,7 +191,7 @@
       "legacy_human_approval": "ACCORD_EDITO_ZOUT",
       "original_folder": "ARCH",
       "subsection": "archives_organisations_et_lieux",
-      "dossier_locator": "https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ARCH-008",
@@ -217,7 +217,7 @@
       "legacy_review": "RELU_SOURCES_RESERVES_PASSES_MULTITHEMATIQUES",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ARCH",
-      "dossier_locator": "https://docs.google.com/document/d/1DcdQac1i1QZXkmMd5PaX63GtH63wHM6fuPMObZjsAN4/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ASSO-001",
@@ -243,7 +243,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1CZO3B8wR1Iw0lQxFwStkwPZCGBJswJR6QmzQjr-qz9A/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ASSO-002",
@@ -269,7 +269,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1QuoTzzfQ_ggvXN3TYaUOmjPoDHLks9HuVBTaz6OKXfs/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ASSO-003",
@@ -295,7 +295,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1VNd5tMiebQPbSxHty2xjMTNwyu6LIPz4WPcy5hPZwBo/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ASSO-004",
@@ -321,7 +321,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1qL3PIH5VMHQpa1qMhwsxOoxzBBU9Gg6WdWgLQh_KQk8/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ASSO-005",
@@ -347,7 +347,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1GW1HlKA0aT8YfZ2iSjZ7FnoDoxLByjsza0o5VTyIUdU/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ASSO-006",
@@ -373,7 +373,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1Up9RptQB5ASQaOaupgxJbAxCbjFwkey7lpkLUOHCfUE/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ASSO-007",
@@ -402,7 +402,7 @@
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
       "subsection": "archives_organisations_et_lieux",
-      "dossier_locator": "https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "ASSO-008",
@@ -430,7 +430,7 @@
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
       "subsection": "archives_organisations_et_lieux",
-      "dossier_locator": "https://docs.google.com/document/d/1q9b6Ofk7rWSxMaltddYVkG3bGPrcWHtV4UI1gyHQ9YM/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "BIO-001",
@@ -1028,7 +1028,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "COL",
-      "dossier_locator": "https://docs.google.com/document/d/1Q7Lcl2rDNafWvEuUChF4kykFAjykb2iC_dHfo-RsygM/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "COL-003",
@@ -1056,7 +1056,7 @@
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "COL",
       "subsection": "archives_organisations_et_lieux",
-      "dossier_locator": "https://docs.google.com/document/d/1dCYjWceGFmzbR7GSAoK_r5z5OvwmT4j-ZI-NS7R4_LI/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "EXP-001",
@@ -1082,7 +1082,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1JgNnqon3EqMfDrE1NueCIfm9ECjkYouG9KQReXosqxo/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "EXP-002",
@@ -1108,7 +1108,7 @@
       "legacy_review": "PREMIERE_LECTURE_DOCUMENTAIRE_RESERVES_OUVERTES",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1jCWq-1OWW3y8GSViWSM26zClzsIhuCr16hDaf1FVxH4/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "EXP-004",
@@ -1134,7 +1134,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1qIwYtVa4Sj5xWQTExW4xhI5x7565tin8-G48CoTz834/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "EXP-005",
@@ -1160,7 +1160,7 @@
       "legacy_review": "INVENTORIE_NON_REL_U",
       "legacy_human_approval": "A_FAIRE",
       "original_folder": "ASSO",
-      "dossier_locator": "https://docs.google.com/document/d/1lNF43lEs25htaZZgBpX21Llpz3urbXiI6TalBCPu6yY/edit?usp=drivesdk"
+      "dossier_locator": null
     },
     {
       "id": "FN-001",

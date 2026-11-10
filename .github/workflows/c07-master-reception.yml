@@ -4,9 +4,12 @@ on:
     branches: [main]
     paths:
       - '_config.yml'
+      - 'coordination/v2/work-c02-01/data/resources.json'
+      - 'coordination/v2/work-c02-01/data/sources.json'
       - 'coordination/work/c07/developpeuse/master-v1/**'
       - 'coordination/work/c07/relieuse/check-pages-boundary*'
       - 'coordination/work/c07/relieuse/check-pages-content*'
+      - 'coordination/work/c07/relieuse/check-public-locators*'
       - 'coordination/work/c07/relieuse/lec03-status-reception.test.mjs'
       - '.github/workflows/c07-master-reception.yml'
   workflow_dispatch:
@@ -25,6 +28,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Fail if C02 registries contain direct Drive or Docs links
+        run: node coordination/work/c07/relieuse/check-public-locators.mjs
+      - name: Verify public registry gate unit tests
+        run: node --test coordination/work/c07/relieuse/check-public-locators.test.mjs
       - name: Assert exact candidate and internal-only master
         shell: bash
         run: |
@@ -45,5 +52,5 @@ jobs:
           destination: ./_site
       - name: Block unexpected internal folders in actual Pages output
         run: node coordination/work/c07/relieuse/check-pages-boundary.mjs ./_site
-      - name: Block known internal Drive locators inside allowed Pages files
+      - name: Block direct Google file URLs inside allowed Pages files
         run: node coordination/work/c07/relieuse/check-pages-content.mjs ./_site
