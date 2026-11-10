@@ -73,3 +73,10 @@ jobs:
         run: node coordination/work/c07/relieuse/check-pages-boundary.mjs ./_site
       - name: Block direct Google file URLs inside allowed Pages files
         run: node coordination/work/c07/relieuse/check-pages-content.mjs ./_site
+      - name: Keep a downloadable offline candidate for human review (no deployment)
+        uses: actions/upload-artifact@v4
+        with:
+          name: interstice-c07-site-candidat
+          path: ./_site/
+          retention-days: 14
+          if-no-files-found: error

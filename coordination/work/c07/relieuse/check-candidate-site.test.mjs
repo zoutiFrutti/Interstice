@@ -5,10 +5,9 @@ import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'../../../..');
 const read=p=>readFileSync(resolve(root,p),'utf8');
-test('C07 candidate entry exists without replacing the historical homepage',()=>{
- const html=read('index.html');
- assert.match(html,/href="candidat\.html"/);
- assert.match(html,/id="liste-propositions"/);
+test('C07 candidate is separate and the historical homepage stays intact',()=>{
+ assert.equal(read('index.html').includes('id="liste-propositions"'),true);
+ assert.equal(existsSync(resolve(root,'candidat.html')),true);
 });
 test('Four doors, atlas and seven paths are discoverable from candidate',()=>{
  const html=read('candidat.html');

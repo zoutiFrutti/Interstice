@@ -8,7 +8,8 @@ Le `index.html` de `main` et de C07 était identique, encore orienté « Wiki / 
 - `candidat.html` : point d'audit, quatre portes ordonnées Faire Ensemble / Encyclopédie / Archives / Médiathèque, Atlas et Parcours transversaux, entrée immersive facultative, avertissements et liens réels.
 - `archives.html` : porte Archives avec accès à des pages existantes, sans déverrouiller les dossiers réservés.
 - `assets/candidat.css` : interface lisible mobile/clavier, SVG officiels inchangés.
-- `index.html` : bandeau de découverte prioritaire, contenu historique, sections, formulaire et scripts préservés. Les sous-pages conservent provisoirement leurs anciens menus.
+- `index.html` : **retour au blob historique strictement intact** pour respecter la barrière C13. La page candidate autonome est `candidat.html` ; les sous-pages conservent provisoirement leurs anciens menus.
+- Le workflow C07 fournit un artefact statique téléchargeable, contrôlé avant empaquetage et sans déploiement.
 - Tests de présence de la navigation, de la porte Archives et des interdictions de publication ajoutés au workflow C07.
 
 ## À réceptionner
