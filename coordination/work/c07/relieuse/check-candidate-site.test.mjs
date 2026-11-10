@@ -29,3 +29,15 @@ test('Candidate does not enable data submission or editorial approval',()=>{
  assert.match(html,/aucune migration ni publication/i);
  assert.doesNotMatch(html,/<form\b/i);
 });
+
+test('Candidate submenus point to real source pages and keep historic labels explicit',()=>{
+ const html=read('candidat.html');
+ for(const id of ['classement-faire-ensemble','classement-encyclopedie','classement-archives','classement-mediatheque'])assert.ok(html.includes('id="'+id+'"'),id);
+ for(const href of [...html.matchAll(/href="([^"]+)"/g)].map(x=>x[1])) {
+   if(href.startsWith('https:')||href.startsWith('#'))continue;
+   const [path,frag]=href.split('#');
+   assert.equal(existsSync(resolve(root,path)),true,href);
+   if(path==='archives.html'&&frag)assert.ok(read(path).includes('id="'+frag+'"'),href);
+ }
+ assert.match(html,/ancien intitulé « Wiki »/);
+});
