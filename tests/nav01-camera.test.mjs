@@ -22,8 +22,11 @@ test('C08 keeps the emergency stop and exact reviewed C13 exceptions',async()=>{
     'coordination/agents/demande_relieuse_c11.py',
     'coordination/agents/pont_relieuse_c12.py',
     'coordination/agents/test_demande_relieuse_c11.py',
-    'coordination/agents/test_pont_relieuse_c12.py'
+    'coordination/agents/test_pont_relieuse_c12.py',
+    'manifeste-v2-5.html'
   ]);
+  assert.equal(manifest.c07_security_privacy_exception?.expected_blob,'a0666733cf60062c6d4b8fab586490568f24d8c5');
+  assert.equal(manifest.c07_security_privacy_exception?.publication_authorized,false);
   assert.deepEqual(Object.keys(manifest.qa_blobs),['scripts/r6-preservation-check.py','tests/r6-int01-convergence.browser.test.mjs']);
   assert.equal(manifest.qa_reviewed_updates.decision_id,'D-WORK-C11-QA-01');
   assert.equal(manifest.qa_reviewed_updates.approved_blob,'ab32243392991efcfb96fea09a7d227c89b9c087');
