@@ -1,10 +1,11 @@
 # INTERSTICE — ENTR-001 · Entourage, proposition de référencement externe
 
-**Date de réception et de recherche :** 2026-11-11  
+**Date de réception et de recherche :** 2026-11-11
+**Arbitrage complémentaire de Zout :** ressources purement numériques hors Carte des possibles, même sans épingle.  
 **Émettrice :** La Penseuse (proposition transmise par Zout)  
 **Responsable de coordination :** La Relieuse  
 **Statut :** **CANDIDAT DOCUMENTAIRE / REPÉRÉ**, non validé pour référencement public.  
-**Périmètre :** La Carte des possibles → Faire Ensemble (liens de navigation **proposés**, non codés).  
+**Périmètre :** référencement documentaire externe à envisager depuis **Faire Ensemble** uniquement. **Hors Carte des possibles (carte ET liste)** ; aucun lien de navigation codé.  
 **Interdits :** pas de publication, contact, partenariat, synchronisation, ajout au site public ou modification du référentiel maître.
 
 ## 1. Objet et distinction des statuts
@@ -13,8 +14,8 @@
 - **Ressource proposée :** application mobile gratuite **Entourage**, portée par l'association française Entourage.
 - **URL canonique de consultation :** https://site.entourage.social/application
 - **Famille proposée :** `ressource` externe (outil d'entraide), catégorie **Entraide et solidarité de proximité**.
-- **Projection envisagée :** Carte des possibles, en **vue liste**, avec lien contextuel depuis la porte Faire Ensemble.
-- **Géométrie publique :** **aucune** ; on référence une application nationale, **pas** une adresse de permanence ou une personne.
+- **Projection envisagée :** référence documentaire ou lien contextuel **depuis Faire Ensemble**, à l'intérieur de la structure existante, sans création de nouvelle porte ou rubrique. **Exclu de La Carte des possibles, y compris de sa vue liste.**
+- **Géométrie publique :** **aucune** ; une application ou un site, sans point d'accueil public vérifiable, ne doit pas recevoir de marqueur géographique. **L'adresse du siège social n'est pas un lieu d'accueil.** Cette fiche n'est pas un objet cartographique.
 - **Portée géographique documentée :** accès annoncé partout en France ; existence vérifiée d'une antenne toulousaine en Occitanie.
 - **Qualification idéologique / technique :** ni « commun numérique » ni « autogéré » ni « partenaire d'Interstice » ; aucun label d'alignement politique.
 
@@ -52,7 +53,7 @@ Sources internes de travail :
 - `coordination/TISSEUSE_CADRAGE_COOPERATIONS_ANNUAIRE_2026-10-30.md` : distinguer `REPÉRÉ`, `RÉFÉRENCEMENT ACCEPTÉ`, `COOPÉRATION CONVENUE`.
 - `METHODE_EDITORIALE_SOURCES.md` : ne pas dupliquer Wikipédia, vérifier les sources, indiquer l'apport propre à Interstice.
 
-**Correspondance documentaire proposée** (non importée) :
+**Correspondance documentaire proposée** (non importée) : ce bloc est une fiche de recherche interne, **pas** un `publicItem` des deux cartes. Le vocabulaire `kind` est descriptif seulement et n'autorise aucun export vers les cartes.
 
 ```yaml
 dossier_candidat: ENTR-001
@@ -67,11 +68,12 @@ source:
 status: documented_with_reservations
 publication: private_draft
 visibility_map: false
+visibility_cartes_possibles: false
 location:
   level: none
   publicGeometry: null
 relatedIds: []
-proposed_projection: "Carte des possibles > Faire Ensemble"
+proposed_projection: "Faire Ensemble — lien documentaire externe candidat (hors cartes)"
 relationship: repere
 partnership: false
 personal_data_import: false
@@ -87,12 +89,12 @@ Les clés de cette projection sont **proposées**, pas une démonstration de com
 
 **La Tisseuse** : rechercher une couverture territoriale réellement vérifiable hors Toulouse en Occitanie. Aucun contact à Entourage ou ses bénévoles sans nouvelle autorisation humaine.
 
-**L'Anarchitecte / La Développeuse** : vérifier le mapping avec le référentiel C07, sans création de doublon, sans migration, sans import, et conserver la fiche hors export public.
+**L'Anarchitecte / La Développeuse** : vérifier les règles de non-projection vers **les deux cartes et leur liste**, ainsi que le mapping documentaire C07 sans créer de doublon, sans migration ni import, et conserver la fiche hors export public.
 
 **La Relieuse** : préserver le dossier candidat comme **référence documentaire unique**, présenter un éventuel visa de référencement à Zout après contrôles nécessaires.
 
 ## 6. Arbitrage réservé
 
-**Proposition recevable pour étude documentaire.** Ne pas attribuer à Entourage les statuts de commun numérique, autogestion, partenaire ni organisation affiliée. Ne pas mettre à jour les fiches publiques ni les cartes. **Aucun visa humain de publication n'a été donné.**
+**Proposition recevable pour étude documentaire hors cartes.** La Carte des possibles vise les besoins, propositions, projets et initiatives qu'elle peut effectivement situer ou contextualiser territorialement ; un simple site ou une application sans accueil physique public n'a pas à y être ajouté, même dans sa liste associée, par commodité technique. Examiner uniquement un lien d'outil extérieur depuis Faire Ensemble, sans créer d'architecture. Ne pas attribuer à Entourage les statuts de commun numérique, autogestion, partenaire ni organisation affiliée. Ne pas mettre à jour les fiches publiques ni les cartes. **Aucun visa humain de publication n'a été donné.**
 
 Sources consultées le 2026-11-11. Ce dossier n'implique aucune relation réelle avec l'association Entourage.
