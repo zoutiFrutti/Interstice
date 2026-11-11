@@ -105,7 +105,7 @@ remarques_confidentialite:
 
 **Répartition candidate** : La Juriste valide dates/règles/exceptions et jurisprudences ; La Lectrice teste formulations à risque et situations des personnes ; La Relieuse enregistre les deux dossiers, identifie validations humaines et organise les versions poche/détaillée/orientation. La Tisseuse peut seulement repérer services humains sur sources officielles, sans accréditation ni partenariat. **Aucune réception automatique par ces conversations**.
 
-**Catalogue Médiathèque enrichi et relu** : https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit
+**Catalogue Médiathèque enrichi et relu** : source-reservee:DRV-017
 
 **Portée** : contribution documentaire candidate, non revue par juriste humaine, aucun fichier de personnes, aucune permanence juridique, aucun appel à témoignage, aucune fusion, aucun site/fiche publique déployé ni modification du manifeste.
 

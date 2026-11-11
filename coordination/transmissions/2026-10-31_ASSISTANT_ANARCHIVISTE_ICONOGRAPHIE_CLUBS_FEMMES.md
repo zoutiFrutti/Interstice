@@ -22,7 +22,7 @@ Historiographie à consulter en profondeur, **non lue intégralement** : Gay L. 
 - **Droits** : les notices Paris Musées affichent CC0 pour la gravure Daudenarde et la lithographie Schérer. Vérifier le statut exact des fichiers D.2627–D.2629 avant toute réutilisation. Historiographie contemporaine protégée. Aucun média reproduit ou téléchargé.
 
 ## Modifications et limites d'exécution
-- **1 fiche existante enrichie et relue** : COL-003 Club des prolétaires, section comparative explicitement externe à ce club : https://docs.google.com/document/d/1dCYjWceGFmzbR7GSAoK_r5z5OvwmT4j-ZI-NS7R4_LI/edit .
+- **1 fiche existante enrichie et relue** : COL-003 Club des prolétaires, section comparative explicitement externe à ce club : source-reservee:DRV-018 .
 - **0 fiche nouvelle**. Aucun doublon trouvé pour les termes « Saint-Germain-l'Auxerrois », « D.2627 », « Daniel Vierge » dans COL-003, Journal Wiki, catalogue et suivi Médiathèque, et Journal commun GitHub au contrôle.
 - **Écriture du journal Wiki tentée deux fois et bloquée par le connecteur** ; le présent document assure une trace alternative. Journal commun GitHub lu mais non modifié.
 - **Inventaire global NON recompté** ; les 44 candidats précédemment annoncés ne sont pas revalidés aujourd'hui.

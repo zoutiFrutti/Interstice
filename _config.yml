@@ -1,0 +1,14 @@
+# Security candidate: exclude internal working documents from legacy Pages.
+# Existing root pages, Markdown documents, assets and navigation stay available.
+exclude:
+  - .github
+  - apercu-graphiste-35
+  - coordination
+  - docs
+  - edition-premiere
+  - propositions
+  - scripts
+  - supabase
+  - tests
+  - artifacts
+  - node_modules

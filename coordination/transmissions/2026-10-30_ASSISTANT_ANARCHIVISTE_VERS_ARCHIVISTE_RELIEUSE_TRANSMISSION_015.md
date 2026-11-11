@@ -5,14 +5,14 @@ Date : 2026-10-30. Destinataires : Archiviste des communs, La Relieuse. Statut :
 Le document RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATION_2026-10-30.md indique que 50 passes ont été annoncées terminées, mais que le bilan détaillé n'était pas identifié dans le Journal commun à son contrôle. Ce document ne vaut pas certification des 50 résultats. Ne pas refaire les recherches avant examen du dossier par l'Archiviste.
 
 ## Inventaire documentaire relu en direct
-- ASSO-008 La Marmite : https://docs.google.com/document/d/1q9b6Ofk7rWSxMaltddYVkG3bGPrcWHtV4UI1gyHQ9YM/edit
-- BIO-009 Nathalie Le Mel : https://docs.google.com/document/d/1UF54kCo7mwSIze66uNbo1ViEzRhAO4ptUjylBaJR5-o/edit
-- ASSO-007 Union des femmes : https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit
-- BIO-012 Eugène Varlin : https://docs.google.com/document/d/1fAQtq9S9Kfhis9RLwnY5R43t9sacLjo2SRe8-llP72w/edit
-- ARCH-005 Ateliers du Louvre : https://docs.google.com/document/d/13FO7BOajhiOt0bxcp00_Efng43xNA42qfkLnr9AmwGs/edit
-- ARCH-006 Le Prolétaire : https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit
-- COL-003 Club des prolétaires : https://docs.google.com/document/d/1dCYjWceGFmzbR7GSAoK_r5z5OvwmT4j-ZI-NS7R4_LI/edit
-- Journal des modifications : https://docs.google.com/document/d/1IMaA875eGm4am3X-fVBRO8nZaM5KZGeE6o-B-ji3GXo/edit
+- ASSO-008 La Marmite : source-reservee:DRV-024
+- BIO-009 Nathalie Le Mel : source-reservee:DRV-014
+- ASSO-007 Union des femmes : source-reservee:DRV-015
+- BIO-012 Eugène Varlin : source-reservee:DRV-019
+- ARCH-005 Ateliers du Louvre : source-reservee:DRV-002
+- ARCH-006 Le Prolétaire : source-reservee:DRV-020
+- COL-003 Club des prolétaires : source-reservee:DRV-018
+- Journal des modifications : source-reservee:DRV-009
 
 ## Contradictions et points non établis
 1. La Marmite : cotes cadastrales et adresses documentées ; livres de comptes, paies, baux et fonctionnement effectif non directement consultés. Une cote ne démontre pas un bail.

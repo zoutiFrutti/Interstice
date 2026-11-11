@@ -30,11 +30,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Build candidate inventory from GitHub main
+      - name: Build candidate inventory from PR head or existing main source
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REF_NAME: main
+          WIKI_SOURCE_REF: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'main' }}
         run: node scripts/inventory-wiki-markdown.mjs
+      - name: Refuse reserved locators in the exported inventory
+        run: node scripts/security/public-boundary.mjs content artifacts
       - name: Synchronize private editorial staging on main
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: node scripts/submit-wiki-inventory.mjs
