@@ -1,0 +1,33 @@
+name: Render R7 JPEG candidate
+on:
+  push:
+    branches:
+      - work/r7-interstice-depuis-logo-officiel-20261111
+    paths:
+      - .github/workflows/render-r7-candidate.yml
+      - assets/candidats/interstice-r7-depuis-faille-noire.svg
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render exact SVG to JPEG
+        run: |
+          python -m pip install --quiet cairosvg pillow
+          python - <<'PY'
+          import cairosvg, io
+          from PIL import Image
+          source='assets/candidats/interstice-r7-depuis-faille-noire.svg'
+          dest='assets/candidats/interstice-r7-depuis-faille-noire.jpg'
+          png=cairosvg.svg2png(url=source,output_width=1330,output_height=1330)
+          Image.open(io.BytesIO(png)).convert('RGB').save(dest,quality=96,subsampling=0)
+          print('JPEG saved:',dest)
+          PY
+      - name: Commit rendered JPEG to candidate branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/candidats/interstice-r7-depuis-faille-noire.jpg
+          git diff --cached --quiet || (git commit -m 'Render Interstice R7 candidate JPEG' && git push)
