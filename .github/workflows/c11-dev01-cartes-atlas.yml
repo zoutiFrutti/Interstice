@@ -1,0 +1,27 @@
+name: C11 DEV01 maps Atlas doors candidate QA
+on:
+  pull_request:
+    paths:
+      - 'atlas.html'
+      - 'explorer.html'
+      - 'decouvrir-initiatives.html'
+      - 'initiatives-*.mjs'
+      - 'cartes-*.mjs'
+      - 'cartes*.css'
+      - 'tests/c11-dev01-cartes-atlas.test.mjs'
+      - '.github/workflows/c11-dev01-cartes-atlas.yml'
+permissions:
+  contents: read
+jobs:
+  integration:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Integration contract - no deployment, network or secrets
+        run: node --test tests/c11-dev01-cartes-atlas.test.mjs
