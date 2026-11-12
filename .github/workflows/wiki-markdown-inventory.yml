@@ -1,6 +1,12 @@
 name: Wiki Markdown inventory (archive stage)
 on:
   workflow_dispatch:
+    inputs:
+      sync_private_staging:
+        description: 'Synchroniser le stockage editorial prive (main uniquement)'
+        required: false
+        default: false
+        type: boolean
   pull_request:
     paths:
       - 'scripts/inventory-wiki-markdown.mjs'
@@ -38,7 +44,7 @@ jobs:
       - name: Refuse reserved locators in the exported inventory
         run: node scripts/security/public-boundary.mjs content artifacts
       - name: Synchronize private editorial staging on main
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.sync_private_staging == true
         run: node scripts/submit-wiki-inventory.mjs
       - name: Store inventory for editorial ingest
         uses: actions/upload-artifact@v4
