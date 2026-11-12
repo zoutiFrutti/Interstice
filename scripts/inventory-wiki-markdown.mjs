@@ -2,6 +2,7 @@
 // Inventaire deterministe des fiches Markdown. Sans identite d'auteur inventee.
 import {createHash} from 'node:crypto';
 import {writeFileSync,mkdirSync} from 'node:fs';
+import {hasReservedLocator} from './security/public-boundary.mjs';
 const owner='zoutiFrutti', repo='Interstice';
 const ref=process.env.WIKI_SOURCE_REF || 'main';
 const token=process.env.GITHUB_TOKEN;
@@ -25,6 +26,7 @@ for(const file of files) {
   const raw=await get(api+'/contents/'+file.path.split('/').map(encodeURIComponent).join('/')+'?ref='+encodeURIComponent(ref));
   if(raw.encoding!=='base64'||!raw.content) throw Error('source non textuelle');
   const body=Buffer.from(raw.content.replace(/\s/g,''),'base64').toString('utf8');
+  if(hasReservedLocator(body)) throw Error('Source documentaire reservee: export refuse');
   const title=(body.match(/^#\s+(.+)$/m)||[])[1]?.trim()||file.path.split('/').pop().replace(/\.md$/i,'').replace(/_/g,' ');
   const atelier=(file.path.match(/(?:^|\/)(PENSEUR|LECTEUR|ARCHIVISTE|MEDIATHEQUE|BIOGRAPH|JURISTE|ORGANISATEUR)/i)||[])[1]||'a_classer';
   const sources=[...new Set([...body.matchAll(/https?:\/\/[^\s)>\]]+/g)].map(x=>x[0]))].slice(0,100);

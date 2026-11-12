@@ -4,7 +4,7 @@
 > **STATUT : DOCUMENT DE TRAVAIL NON ADOPTÉ.** Aucun collectif constitué, aucune assemblée, aucun mandat, aucune procédure de recours ni aucune structure fédérale ne sont présumés exister. Ce document ne modifie pas le manifeste V2.3, les statuts éventuels ni le site public. Chaque article doit être débattu. Les règles qui engagent juridiquement une éventuelle association devront être articulées avec ses statuts.
 
 **Atelier responsable de la proposition :** Le Juriste.  
-**Source politique :** « La Faille noire — Manifeste V2.3 unifié — version de travail du 29 octobre 2026 », Google Drive : https://docs.google.com/document/d/1GtqpLRiK9-dDwYja5yP0D2GOvuPiv2r3WZ_uAGSltig/edit  
+**Source politique :** « La Faille noire — Manifeste V2.3 unifié — version de travail du 29 octobre 2026 », Google Drive : source-reservee:DRV-007\
 **État du manifeste :** travail non adopté. Orientations V2.4 : séparer principes, intentions à court terme et futurs possibles.
 
 ## A. Périmètre et méthode

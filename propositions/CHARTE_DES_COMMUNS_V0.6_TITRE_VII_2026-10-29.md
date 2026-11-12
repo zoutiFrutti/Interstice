@@ -1,7 +1,7 @@
 # La Faille noire / Interstice — Complément de Charte, Titre VII
 ## Proposition V0.6 · Articles 36 à 39 · 29 octobre 2026
 
-**STATUT : DOCUMENT DE TRAVAIL NON ADOPTÉ.** Ce complément ne constitue ni une fédération, ni « La Commune », ni une convention juridiquement signée. Il complète la [Charte V0.4](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md) et le [Titre V V0.5](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.5_TITRE_V_2026-10-29.md). Référence éditoriale : [Manifeste V2.5 consolidé](https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit), non adopté.
+**STATUT : DOCUMENT DE TRAVAIL NON ADOPTÉ.** Ce complément ne constitue ni une fédération, ni « La Commune », ni une convention juridiquement signée. Il complète la [Charte V0.4](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md) et le [Titre V V0.5](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.5_TITRE_V_2026-10-29.md). Référence éditoriale : [Manifeste V2.5 consolidé](source-reservee:DRV-021), non adopté.
 
 ### Article 36 — Autonomie des collectifs et absence de tutelle
 

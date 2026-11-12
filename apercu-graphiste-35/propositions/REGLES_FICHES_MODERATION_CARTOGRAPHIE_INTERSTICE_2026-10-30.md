@@ -2,7 +2,7 @@
 ## B. Règles de fonctionnement proposées pour la cartographie citoyenne
 **30 octobre 2026 · Atelier du Juriste · BROUILLON NON ADOPTÉ**
 
-**Références :** [analyse des risques](https://github.com/zoutiFrutti/Interstice/blob/main/docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md) ; [Manifeste V2.5 non adopté](https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit). Ne remplace ni la charte constitutive en construction ni la charte éditoriale Wiki existante.
+**Références :** [analyse des risques](https://github.com/zoutiFrutti/Interstice/blob/main/docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md) ; [Manifeste V2.5 non adopté](source-reservee:DRV-021). Ne remplace ni la charte constitutive en construction ni la charte éditoriale Wiki existante.
 
 ### 1. Séparer référencement, documentation et affinités
 

@@ -11,7 +11,7 @@
 
 - [A · Risques juridiques et garanties de lancement](https://github.com/zoutiFrutti/Interstice/blob/main/docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md)
 - [B · Fiches, publication, correction, modération, recours et pratiques descriptives](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md)
-- [Référence éditoriale V2.5 non adoptée](https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit)
+- [Référence éditoriale V2.5 non adoptée](source-reservee:DRV-021)
 
 ### Ce qui existe réellement (contrôle en lecture seule)
 
