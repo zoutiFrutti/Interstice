@@ -105,7 +105,7 @@ dialog button {background:#62342f;border:1px solid #e5c9b6;border-radius:8px;pad
 (() => {
   'use strict';
   const details = document.querySelector('#door-details');
-  const nodes = [...document.querySelectorAll('.node[data-point]')];
+  const nodes = [...document.querySelectorAll('.node[data-door]')];
   // Tertiary links are published, existing destinations only. They are not imported C07 cards.
   const routes = Object.freeze({
     '1': {
