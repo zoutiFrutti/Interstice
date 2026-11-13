@@ -1,0 +1,23 @@
+name: NAV7 candidate isolated checks
+on:
+  push:
+    branches:
+      - work/nav7-accessible-prototype-20261113
+    paths:
+      - nav7-candidate.html
+      - tests/nav7-candidate.test.mjs
+      - .github/workflows/nav7-candidate-check.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  nav7-candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate NAV7 contract, links and fallback
+        run: node --test tests/nav7-candidate.test.mjs
