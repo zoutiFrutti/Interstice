@@ -57,3 +57,19 @@ Lecture **effective après écriture GitHub**, depuis la branche candidate :
 5. Définir les sous-menus tertiaires avec les données réellement autorisées.
 
 **Statut final : CANDIDAT FONCTIONNEL PARTIEL, CONTRÔLÉ STATIQUEMENT, NON VALIDÉ GRAPHIQUEMENT, NON INTÉGRÉ, NON PUBLIÉ.**
+
+## Complément · 13 novembre 2026, cycle de reprise des points tertiaires
+
+**Nouveau commit candidat :** `db7f2a9576aa872c361bfc28bc5400076018fa8b`, puis corrections de tests `3cb6a0b9fe041ccf998b3ed18ce7c37968d1168b` et `1bf20ebc4b3ebee2af5b130d986ada8def172afc`.
+
+- **15 accès tertiaires contextuels** configurés, uniquement vers des chemins et ancres publiques préexistants. Répartition : trois liens pour Faire Ensemble, Atlas, Encyclopédie, Archives et Médiathèque.
+- **Vigie : zéro sous-menu fictif**. Aucun droit de publication inféré de sa présence parmi les six portes.
+- Les liens sont créés comme éléments natifs `<a>` avec un repère graphique `span` décoratif `aria-hidden="true"`, sans rôle interactif mensonger sur les points dessinés.
+- Aucun SVG officiel R6 modifié ; le nouveau panneau est une étape **fonctionnelle**, pas la géométrie finale des points tertiaires dans la fissure.
+- Un test Node ciblé vérifie les quinze destinations et leurs ancres lorsque présentes. Une faute d'échappement dans son expression régulière, introduite pendant la rédaction, a été corrigée dans le dernier commit ci-dessus.
+- **Relecture effective par l'API GitHub :** 15 couples titre/lien trouvés, 15 fichiers/ancres existants sur la branche, 0 lien inconnu dans le périmètre testé, six groupes `submenus` détectés. Ce contrôle n'exécute pas le test Node ni le navigateur.
+- **CI toujours non attestée pour ce HEAD** : l'API disponible pour récupérer les runs d'un commit ne retourne que les runs liés à des PR, et aucun n'a été récupéré pour cette branche sans PR. Ne pas déclarer une suite verte.
+
+**Reste à valider :** rendu graphique avec vraie capture Zout, placement exact du bouton 7, emplacement des petits points tertiaires sur le dessin, compatibilité avec NAV7 intégré à C07, essai clavier/tactile en navigateur et tests GitHub Actions sur HEAD réel.
+
+**Aucune fusion, PR, activation, publication, suppression ou import de données.**
