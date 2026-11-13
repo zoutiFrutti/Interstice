@@ -47,3 +47,23 @@ test('NAV7 Chromium : navigation sans JS et fidélité du dessin SVG',async()=>{
     assert.equal(await page.locator('a[href="manifeste-v2-5.html"]').count()>0,true);
   }finally{await browser.close()}
 });
+
+test('NAV7 Chromium : activation clavier, Escape et focus accessible',async()=>{
+  const browser=await chromium.launch({args:['--no-sandbox']});
+  try{
+    const page=await browser.newPage({reducedMotion:'reduce',viewport:{width:1280,height:900}});
+    await page.goto(url);
+    await page.locator('button[data-point="4"]').focus();
+    await page.keyboard.press('Enter');
+    assert.equal(await page.locator('#door-details h2').innerText(),'Encyclopédie des communs');
+    assert.equal(await page.locator('button[data-point="4"]').getAttribute('aria-pressed'),'true');
+    await page.locator('#manifest-open').focus();
+    await page.keyboard.press('Enter');
+    assert.equal(await page.locator('#manifest-dialog[open]').count(),1);
+    await page.keyboard.press('Escape');
+    assert.equal(await page.locator('#manifest-dialog[open]').count(),0);
+    await page.locator('#reset').focus();
+    await page.keyboard.press('Enter');
+    assert.equal(await page.locator('button[data-door][aria-pressed="true"]').count(),0);
+  }finally{await browser.close()}
+});
