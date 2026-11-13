@@ -30,7 +30,7 @@ test('SVG R7-B réel, vectoriel, six pôles et zones tactiles alignées',()=>{
   assert.match(source,/src="assets\/identite\/r7\/nav7\/interstice-r7-b-base\.svg"/);
   const svg=readFileSync(resolve(root,rel),'utf8');
   assert.match(svg,/viewBox="0 0 665 665"/);
-  assert.doesNotMatch(svg,/<image\\b|data:image\\//);
+  assert.ok(!svg.includes('<image')&&!svg.includes('data:image/'),'SVG should not embed raster imagery');
   for(const [number,label] of expected){
     const id=number.padStart(2,'0');
     const grp=new RegExp('<g id="r7-porte-'+id+'"[^>]*>[\\s\\S]*?<circle cx="(\\d+)" cy="(\\d+)"');
