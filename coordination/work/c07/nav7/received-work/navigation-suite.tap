@@ -1,0 +1,33 @@
+✔ six NAV7 doors, seven candidate statuses and 29 connected steps (2.788515ms)
+✔ PAR-005 remains blocked (0.561202ms)
+✔ C08 keeps the emergency stop and exact reviewed C13 exceptions (18.76281ms)
+✔ plongée 50 %, recul et directions : 320×844 (0.963677ms)
+✔ plongée 50 %, recul et directions : 390×844 (0.332169ms)
+✔ plongée 50 %, recul et directions : 768×1024 (0.260921ms)
+✔ plongée 50 %, recul et directions : 1280×900 (0.235924ms)
+✔ plongée 50 %, recul et directions : 844×390 (0.216255ms)
+✔ étapes spatiales locales, uniques ; aucune ressource éditoriale ajoutée (0.635514ms)
+✔ projection, pan et zoom ancré : 320px (0.603236ms)
+✔ projection, pan et zoom ancré : 390px (0.308693ms)
+✔ projection, pan et zoom ancré : 768px (0.265028ms)
+✔ projection, pan et zoom ancré : 1280px (0.270756ms)
+✔ camera bornée, sans valeur non finie dans les vues restaurées (0.339018ms)
+✔ six portes, sept Parcours ; aucun contenu candidat ouvert (1.378899ms)
+✔ SVG officiels inchangés à l’octet (13.640964ms)
+✔ le constructeur refuse une sortie contenant un contenu hors liste (86.705081ms)
+✔ NAV7 six source-circle positions and Atlas aliases preserve historical access (0.409124ms)
+✔ QCM 2 enlarges portrait-phone overview without changing desktop or tablet geometry (0.187331ms)
+✔ Faire Ensemble dated suspension is explicit with or without JavaScript; original URLs remain accessible (1.399761ms)
+✔ reader return cannot become an external or executable URL (1.487192ms)
+✔ 24 complete existing texts, 10 sourced notices; no blocked bodies or automatic players (236.466299ms)
+✔ reader sanitizer drops active content and preserves real source links and anchors (32.578596ms)
+✔ 29 candidate steps match the existing navigation without orphan keys (3.707875ms)
+✔ all editorial resources remain inaccessible without human publication visas (0.761593ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 443.26369

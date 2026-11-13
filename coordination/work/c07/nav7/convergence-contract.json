@@ -1,0 +1,476 @@
+{
+  "schema": "interstice/nav7-c07-convergence/1",
+  "revision": 2,
+  "status": "candidate_not_published",
+  "source": {
+    "navigation_commit": "4cdad619edd387bfb748ab27475156c77ffc322c",
+    "c07_commit": "3c21d7d8b4179adff6ce45b71efc9eb9f32bafcd",
+    "work_local_commit_reported": "7d61a53",
+    "work_local_commit_verified": "7d61a53449832a38870df30f855123e4a0b20c59",
+    "work_local_artifact_received": true,
+    "work_manifest_sha256": "b128b39132528695f67dde0f53989d45f61536c1ae658ec0a14113481bbdece7",
+    "work_preview_status": "native_deployment_and_owner_only_access_verified; browser_content_not_authenticated"
+  },
+  "canonical_navigation": "explorer.html",
+  "compatibility_entry": "nav7-candidate.html",
+  "coordinate_system": {
+    "viewbox": [
+      0,
+      0,
+      665,
+      665
+    ],
+    "source": "assets/identite/r7/candidats/interstice-r7-b1-candidate.svg",
+    "anchor_source": "assets/logo-interstice.svg",
+    "provenance": "C2 annotated Zout capture received and inspected again in C19",
+    "capture_sha256": "b03f59b994c9e637166de145f882cb8bd5fb1e5cafdd12ce5e77a034822c8c0f"
+  },
+  "primary_ports": [
+    {
+      "point": 1,
+      "id": "entraide",
+      "title": "Faire Ensemble",
+      "coordinates": [
+        258,
+        203
+      ],
+      "current_link": "parcours.html#entraide",
+      "submenus": [
+        {
+          "slug": "decouvrir",
+          "title": "Découvrir",
+          "route": "#porte/entraide/decouvrir",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "participer",
+          "title": "Participer",
+          "route": "#porte/entraide/participer",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "proposer",
+          "title": "Proposer",
+          "route": "#porte/entraide/proposer",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "mutualiser",
+          "title": "Mutualiser",
+          "route": "#porte/entraide/mutualiser",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "droits",
+          "title": "Droits pratiques",
+          "route": "#porte/entraide/droits",
+          "state": "navigation_only_no_visa"
+        }
+      ]
+    },
+    {
+      "point": 2,
+      "id": "atlas",
+      "title": "Atlas des communs",
+      "coordinates": [
+        397,
+        178
+      ],
+      "current_link": "atlas.html",
+      "submenus": [
+        {
+          "slug": "initiatives",
+          "title": "Initiatives documentées",
+          "route": "#porte/atlas/initiatives",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "territoires",
+          "title": "Territoires et mémoires",
+          "route": "#porte/atlas/territoires",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "experiences",
+          "title": "Expériences et pratiques",
+          "route": "#porte/atlas/experiences",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "pistes",
+          "title": "Pistes à explorer",
+          "route": "#porte/atlas/pistes",
+          "state": "navigation_only_no_visa"
+        }
+      ]
+    },
+    {
+      "point": 3,
+      "id": "vigie",
+      "title": "La Vigie de la Faille",
+      "coordinates": [
+        498,
+        261
+      ],
+      "current_link": null,
+      "submenus": [
+        {
+          "slug": "enquetes",
+          "title": "Enquêtes approfondies",
+          "route": "#porte/vigie/enquetes",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "articles",
+          "title": "Articles",
+          "route": "#porte/vigie/articles",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "breves",
+          "title": "Brèves",
+          "route": "#porte/vigie/breves",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "publications",
+          "title": "Archives des publications",
+          "route": "#porte/vigie/publications",
+          "state": "navigation_only_no_visa"
+        }
+      ]
+    },
+    {
+      "point": 4,
+      "id": "encyclopedie",
+      "title": "Encyclopédie des communs",
+      "coordinates": [
+        233,
+        450
+      ],
+      "current_link": "wiki.html",
+      "submenus": [
+        {
+          "slug": "histoire",
+          "title": "Histoire et luttes",
+          "route": "#porte/encyclopedie/histoire",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "idees",
+          "title": "Idées, pouvoirs et autogestion",
+          "route": "#porte/encyclopedie/idees",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "droits",
+          "title": "Droits et émancipations",
+          "route": "#porte/encyclopedie/droits",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "ecologie",
+          "title": "Écologie",
+          "route": "#porte/encyclopedie/ecologie",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "habitat",
+          "title": "Habitat et lieux autonomes",
+          "route": "#porte/encyclopedie/habitat",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "culture",
+          "title": "Culture et savoir-faire",
+          "route": "#porte/encyclopedie/culture",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "personnes",
+          "title": "Personnes",
+          "route": "#porte/encyclopedie/personnes",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "organisations",
+          "title": "Organisations",
+          "route": "#porte/encyclopedie/organisations",
+          "state": "navigation_only_no_visa"
+        }
+      ]
+    },
+    {
+      "point": 5,
+      "id": "archives",
+      "title": "Archives des communs",
+      "coordinates": [
+        333,
+        593
+      ],
+      "current_link": "archives.html",
+      "submenus": [
+        {
+          "slug": "documents",
+          "title": "Documents historiques",
+          "route": "#porte/archives/documents",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "presse",
+          "title": "Presse et publications",
+          "route": "#porte/archives/presse",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "fonds",
+          "title": "Fonds et collections",
+          "route": "#porte/archives/fonds",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "memoires",
+          "title": "Mémoires et témoignages",
+          "route": "#porte/archives/memoires",
+          "state": "navigation_only_no_visa"
+        }
+      ]
+    },
+    {
+      "point": 6,
+      "id": "mediatheque",
+      "title": "Médiathèque des communs",
+      "coordinates": [
+        461,
+        426
+      ],
+      "current_link": "bibliotheque.html",
+      "submenus": [
+        {
+          "slug": "textes",
+          "title": "Livres et textes",
+          "route": "#porte/mediatheque/textes",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "films",
+          "title": "Films et vidéos",
+          "route": "#porte/mediatheque/films",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "graphiques",
+          "title": "BD et arts graphiques",
+          "route": "#porte/mediatheque/graphiques",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "audio",
+          "title": "Audio",
+          "route": "#porte/mediatheque/audio",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "etudes",
+          "title": "Études et outils",
+          "route": "#porte/mediatheque/etudes",
+          "state": "navigation_only_no_visa"
+        },
+        {
+          "slug": "sites-portails",
+          "title": "Sites et portails",
+          "route": "#porte/mediatheque/sites-portails",
+          "state": "navigation_only_no_visa"
+        }
+      ]
+    }
+  ],
+  "manifesto": {
+    "point": 7,
+    "coordinates": [
+      272,
+      354
+    ],
+    "source_r6_node": true,
+    "display": "in_space_reading_panel",
+    "route": "#document/manifeste",
+    "direct_link": "manifeste-v2-5.html",
+    "not_a_port": true
+  },
+  "legacy_quicklinks": [
+    {
+      "id": "legacy-nav7-01",
+      "point": 1,
+      "door": "entraide",
+      "submenu": "decouvrir",
+      "title": "Propositions publiques",
+      "href": "index.html#propositions",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-02",
+      "point": 1,
+      "door": "entraide",
+      "submenu": "proposer",
+      "title": "Proposer une idée",
+      "href": "index.html#proposer",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "suspended"
+    },
+    {
+      "id": "legacy-nav7-03",
+      "point": 1,
+      "door": "entraide",
+      "submenu": "participer",
+      "title": "Décider ensemble",
+      "href": "wiki-decision-collective.html",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-04",
+      "point": 2,
+      "door": "atlas",
+      "submenu": "pistes",
+      "title": "Sources de l’Atlas",
+      "href": "atlas.html#atlas-sources",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-05",
+      "point": 2,
+      "door": "atlas",
+      "submenu": "territoires",
+      "title": "Cartes et symboles",
+      "href": "atlas.html#cartes-logo",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-06",
+      "point": 2,
+      "door": "atlas",
+      "submenu": "experiences",
+      "title": "Parcours transversaux",
+      "href": "parcours.html",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-07",
+      "point": 4,
+      "door": "encyclopedie",
+      "submenu": "idees",
+      "title": "Décision collective",
+      "href": "wiki-decision-collective.html",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-08",
+      "point": 4,
+      "door": "encyclopedie",
+      "submenu": "ecologie",
+      "title": "Écologie sociale",
+      "href": "wiki-ecologie-sociale-environnement.html",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-09",
+      "point": 4,
+      "door": "encyclopedie",
+      "submenu": "habitat",
+      "title": "Habiter et droit à la ville",
+      "href": "wiki-logement-habitat-droit-ville.html",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-10",
+      "point": 5,
+      "door": "archives",
+      "submenu": "memoires",
+      "title": "Squats et lieux autonomes",
+      "href": "squats-et-lieux-autonomes.html",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-11",
+      "point": 5,
+      "door": "archives",
+      "submenu": "memoires",
+      "title": "Habitat : références existantes",
+      "href": "wiki-logement-habitat-droit-ville.html",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-12",
+      "point": 5,
+      "door": "archives",
+      "submenu": "fonds",
+      "title": "Bibliothèque publique",
+      "href": "bibliotheque.html",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-13",
+      "point": 6,
+      "door": "mediatheque",
+      "submenu": "*",
+      "title": "Rechercher une ressource",
+      "href": "bibliotheque.html#search",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-14",
+      "point": 6,
+      "door": "mediatheque",
+      "submenu": "*",
+      "title": "Explorer les ressources",
+      "href": "bibliotheque.html#resources",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "not_applicable"
+    },
+    {
+      "id": "legacy-nav7-15",
+      "point": 6,
+      "door": "mediatheque",
+      "submenu": "*",
+      "title": "Proposer une référence",
+      "href": "bibliotheque.html#resource-form",
+      "origin_status": "existing_public_r6_not_new_visa",
+      "collection_state": "suspended"
+    }
+  ],
+  "documentary_gates": {
+    "work_c07_schema": "c07-master-projection/1",
+    "master_objects": 219,
+    "publishing_authorized": false,
+    "public_card_projection": "none",
+    "PAR_005": "blocked",
+    "allow_unreviewed_docs": false
+  },
+  "received_work_counts": {
+    "files": 135,
+    "html_pages": 87,
+    "submenus": 31,
+    "texts": 24,
+    "candidate_media_notices": 10,
+    "previous_deterministic_tests": 84,
+    "previous_browser_scenarios": 26
+  },
+  "rules": [
+    "Do not infer Work artifacts from report-only claims",
+    "Do not import or publish C07 objects, raw documents or private locators",
+    "Preserve all six point assignments and the distinct Manifesto point",
+    "Preserve existing public URLs and original SVG files",
+    "No merge, Pages deployment or production publishing without distinct authorization"
+  ]
+}

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Explorer Interstice par les ramifications de la Faille noire.">
+<title>Les passages · Interstice</title>
+<link rel="icon" href="assets/identite/r7/candidats/interstice-r7-b1-miniature-candidate.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/nav-01/explorer.css">
+<script type="module" src="assets/nav-01/explorer.mjs">
+</script>
+</head>
+<body>
+<a class="skip" href="#textual">Explorer avec la liste de liens</a>
+<section class="threshold" id="entree" aria-labelledby="entry-title">
+<div class="threshold-top"><strong>LA FAILLE NOIRE</strong><span class="candidate">Aperçu candidat</span></div>
+<div class="threshold-center">
+<h1 id="entry-title" class="screen-reader">La Faille noire — entrer dans Interstice</h1>
+<a class="entry-portal" href="#exploration" data-enter="animate" aria-label="Entrer dans la faille">
+<img class="threshold-logo" src="assets/logo-faille-noire.svg" width="665" height="665" alt="Symbole officiel de La Faille noire">
+<span class="portal-word" aria-hidden="true">Entrer</span></a>
+<a class="quiet-link" href="#exploration" data-enter="still">Entrer sans animation</a>
+<button id="resume-entry" hidden>Retrouver ma dernière vue</button>
+</div>
+<div class="threshold-bottom"><span><a href="manifeste-v2-5.html" data-document="manifeste">Manifeste V2.5</a> · <a href="manifeste.html" data-document="archive">Archive V2.1</a></span><a class="entry-mark" href="#textual"><img src="assets/identite/r7/candidats/interstice-r7-b1-miniature-candidate.svg" width="38" height="38" alt="Interstice — miniature R7 de la candidate"><span>Explorer par les liens</span></a></div>
+</section>
+<main id="exploration" class="exploration" tabindex="-1">
+<h1 class="screen-reader">Explorer Interstice</h1>
+<header class="appbar">
+<a class="brand" href="#entree" data-home>
+<img src="assets/identite/r7/candidats/interstice-r7-b1-miniature-candidate.svg" width="39" height="39" alt="">
+<span>INTERSTICE</span>
+</a>
+<span class="space-title" id="location-label">Dans la faille</span>
+<div class="appbar-right">
+<a class="manifest-short" href="manifeste-v2-5.html" data-document="manifeste">Le manifeste ↗</a>
+<span class="candidate">Version candidate</span>
+</div>
+</header>
+<div class="map-wrap">
+<div id="space" class="stage" tabindex="0" role="region" aria-label="Espace des six portes. Glisser pour se déplacer ; flèches au clavier, plus et moins pour zoomer, touche Début pour recentrer." data-pan="true">
+<svg id="world" class="world" viewBox="-110 -110 1220 1220" aria-hidden="true" focusable="false">
+<g class="landscape">
+<path class="guide-line" d="M-400 500H1400M500-500V1600M-300-200L1350 1350M-300 1300L1400-300"/>
+<image href="assets/identite/r7/candidats/interstice-r7-b1-candidate.svg" x="0" y="0" width="1000" height="1000"/>
+<g id="branches" hidden>
+<path class="branch-line" d="M525 568C430 410 310 170 160 190M525 568C665 420 790 370 850 240M525 568C410 610 330 830 150 765M525 568C710 630 690 880 850 785M525 568C600 800 380 930 500 900"/>
+</g>
+<g id="walk-lines">
+</g>
+</g>
+</svg>
+<div class="node-layer" id="nodes">
+<a class="node" data-door="entraide" href="#porte/entraide" aria-label="Faire Ensemble" aria-controls="panel" aria-expanded="false"><span class="orb" aria-hidden="true">01</span><span class="node-label">Faire Ensemble</span></a>
+<a class="node" data-door="atlas" href="#porte/atlas" aria-label="Atlas des communs" aria-controls="panel" aria-expanded="false"><span class="orb" aria-hidden="true">02</span><span class="node-label">Atlas</span></a>
+<a class="node" data-door="vigie" href="#porte/vigie" aria-label="La Vigie de la Faille" aria-controls="panel" aria-expanded="false"><span class="orb" aria-hidden="true">03</span><span class="node-label">La Vigie</span></a>
+<a class="node" data-door="encyclopedie" href="#porte/encyclopedie" aria-label="Encyclopédie des communs" aria-controls="panel" aria-expanded="false"><span class="orb" aria-hidden="true">04</span><span class="node-label">Encyclopédie</span></a>
+<a class="node" data-door="archives" href="#porte/archives" aria-label="Archives des communs" aria-controls="panel" aria-expanded="false"><span class="orb" aria-hidden="true">05</span><span class="node-label">Archives</span></a>
+<a class="node" data-door="mediatheque" href="#porte/mediatheque" aria-label="Médiathèque des communs" aria-controls="panel" aria-expanded="false"><span class="orb" aria-hidden="true">06</span><span class="node-label">Médiathèque</span></a>
+<a class="node manifest-node" data-point="manifeste" href="manifeste-v2-5.html" data-document="manifeste" aria-label="Manifeste" aria-controls="panel"><span class="orb" aria-hidden="true">7</span><span class="node-label">Manifeste</span></a>
+<a class="node centre-node" data-point="centre" href="#exploration" aria-label="Revenir à la vue complète des six portes"><span class="screen-reader">Vue complète</span></a>
+</div>
+<nav id="directions" class="directions" aria-label="Directions dans la faille" hidden>
+<a href="#porte/entraide" data-direction="entraide" aria-label="Faire Ensemble"><span aria-hidden="true">↗</span> Faire Ensemble</a>
+<a href="#porte/atlas" data-direction="atlas" aria-label="Atlas des communs"><span aria-hidden="true">↗</span> Atlas</a>
+<a href="#porte/vigie" data-direction="vigie" aria-label="La Vigie de la Faille"><span aria-hidden="true">↗</span> La Vigie</a>
+<a href="#porte/encyclopedie" data-direction="encyclopedie" aria-label="Encyclopédie des communs"><span aria-hidden="true">↗</span> Encyclopédie</a>
+<a href="#porte/archives" data-direction="archives" aria-label="Archives des communs"><span aria-hidden="true">↗</span> Archives</a>
+<a href="#porte/mediatheque" data-direction="mediatheque" aria-label="Médiathèque des communs"><span aria-hidden="true">↗</span> Médiathèque</a>
+</nav>
+<svg id="tertiary-connections" class="tertiary-connections" aria-hidden="true" focusable="false"><g id="tertiary-lines"></g></svg>
+<nav id="submenu-space" class="submenu-space" aria-label="Sous-menus dans l’espace" hidden></nav>
+<div class="space-note">
+<span class="eyebrow">Les passages</span>
+<strong>Suivez une ramification.</strong>
+<span class="desktop-hint">Glisser pour se déplacer.<br>Molette pour zoomer.</span>
+</div>
+</div>
+<div class="top-actions" id="top-actions" hidden>
+<button id="open-paths" type="button" aria-expanded="false" aria-controls="panel">Traversées <span aria-hidden="true">↗</span>
+</button><button id="tools-toggle" aria-expanded="false" aria-controls="map-controls">Repères</button>
+</div>
+<div class="map-controls" id="map-controls" hidden role="group" aria-label="Commandes de déplacement">
+<button id="back-view" type="button" aria-label="Revenir à la vue précédente">←</button>
+<button class="zoom" id="zoom-out" type="button" aria-label="Zoom arrière">−</button>
+<output id="zoom-value" aria-label="Niveau de zoom" aria-live="off">100 %</output>
+<button class="zoom" id="zoom-in" type="button" aria-label="Zoom avant">+</button>
+<button id="recenter" type="button" aria-label="Vue entière" title="Vue entière">◎</button>
+<button id="pan-mode" class="pan-label" type="button" aria-pressed="true">Déplacer la carte</button>
+<button id="restore-view" type="button" aria-label="Retrouver la position mémorisée">↶</button>
+</div>
+<aside id="panel" class="panel" aria-labelledby="panel-title" hidden>
+<button id="close-panel" class="panel-close" type="button" aria-label="Fermer le panneau">×</button>
+<p id="panel-crumb" class="panel-crumb">
+</p>
+<h2 id="panel-title" tabindex="-1">
+</h2>
+<div id="panel-body">
+</div>
+</aside>
+</div>
+<div class="map-meta">
+<p id="live-status" role="status" aria-live="polite" aria-atomic="true">Six portes, plusieurs chemins.</p>
+<button id="show-textual" type="button" hidden>Voir tous les liens ↓</button>
+<span class="desktop-hint">Flèches · + / − · Début</span>
+</div>
+</main>
+<section class="directory" id="textual" tabindex="-1" aria-labelledby="textual-title">
+<details id="directory-details" open>
+<summary id="textual-title">Tous les accès, sans déplacer la carte <span aria-hidden="true">↘</span>
+</summary>
+<div class="directory-content">
+<div>
+<h2>Les six portes</h2>
+<ul>
+<li><a href="#porte/entraide">Faire Ensemble</a></li>
+<li><a href="#porte/atlas">Atlas des communs</a></li>
+<li><a href="#porte/vigie">La Vigie de la Faille</a></li>
+<li><a href="#porte/encyclopedie">Encyclopédie des communs</a></li>
+<li><a href="#porte/archives">Archives des communs</a></li>
+<li><a href="#porte/mediatheque">Médiathèque des communs</a></li>
+</ul>
+<h3>La Faille noire, le projet fondateur</h3>
+<p>
+<a href="manifeste-v2-5.html" data-document="manifeste">Manifeste V2.5</a> · <a href="manifeste.html" data-document="archive">Archive V2.1</a>
+</p>
+</div>
+<div>
+<h2>Parcours secondaires · sept traversées</h2>
+<ul>
+<li>
+<a href="#parcours/PAR-001">Commune de Paris</a>
+<small class="path-status">En préparation · sources historiques en vérification</small>
+</li>
+<li>
+<a href="#parcours/PAR-002">Révolution sociale espagnole</a>
+<small class="path-status">En préparation · archives et interprétations à vérifier</small>
+</li>
+<li>
+<a href="#parcours/PAR-003">Écologie sociale</a>
+<small class="path-status">En préparation · structure examinée sous réserves</small>
+</li>
+<li>
+<a href="#parcours/PAR-004">Autogestion</a>
+<small class="path-status">En préparation · structure examinée sous réserves</small>
+</li>
+<li>
+<a href="#parcours/PAR-005">Droits en manifestation</a>
+<small class="path-status">BLOQUÉ · contrôles juridique et sanitaire nécessaires</small>
+</li>
+<li>
+<a href="#parcours/PAR-006">Féminismes et luttes LGBTQIA+</a>
+<small class="path-status">En préparation · identités et éditions à vérifier</small>
+</li>
+<li>
+<a href="#parcours/PAR-007">Zapatisme</a>
+<small class="path-status">En préparation · traductions et sources à vérifier</small>
+</li>
+</ul>
+<p class="muted">Chemins candidats en préparation. Les ressources en relecture ne sont pas ouvertes dans cet aperçu.</p>
+</div>
+</div>
+</details>
+<noscript>
+<p>Sans JavaScript, les accès ci-dessous et les manifestes restent utilisables.</p>
+<style>#directory-details>.directory-content{display:grid}</style>
+</noscript>
+<div class="fallback-cards" data-fallback>
+<section id="porte/entraide"><details class="fallback-submenus" open><summary>Sous-menus</summary><section id="porte/entraide/decouvrir"><h3>Découvrir</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/entraide/participer"><h3>Participer</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/entraide/proposer"><h3>Proposer</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/entraide/mutualiser"><h3>Mutualiser</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/entraide/droits"><h3>Droits pratiques</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section></details><h2>Faire Ensemble</h2><p>Se rencontrer, partager des moyens et construire des initiatives communes.</p><span id="porte/faire-ensemble"></span><span id="faire-ensemble"></span><span id="entraide"></span><section class="collective-tools"><h3>Propositions et participation</h3><p class="notice">Les formulaires historiques restent consultables, mais les envois de propositions, de ressources et d’articles sont actuellement suspendus. N’y saisis pas de données personnelles.</p><ul class="panel-links collective-tool-list"><li><a href="https://zoutifrutti.github.io/Interstice/index.html#propositions" target="_blank" rel="noopener noreferrer" aria-describedby="textual-tool-propositions">Consulter les propositions ↗</a><p class="tool-status" id="textual-tool-propositions">Propositions déjà publiées — Accès à la liste publique ; aucune nouvelle publication automatique.</p></li><li><a href="https://zoutifrutti.github.io/Interstice/index.html#proposer" target="_blank" rel="noopener noreferrer" aria-describedby="textual-tool-proposer">Préparer une proposition ↗</a><p class="tool-status" id="textual-tool-proposer">Envois suspendus — Le formulaire historique est visible ; il ne peut pas enregistrer de nouvelle proposition actuellement.</p></li><li><a href="https://zoutifrutti.github.io/Interstice/participer.html" target="_blank" rel="noopener noreferrer" aria-describedby="textual-tool-participer">Participer au projet ↗</a><p class="tool-status" id="textual-tool-participer">Informations sur le projet — Les formulaires reliés à cette page restent soumis à la suspension des envois.</p></li></ul></section><p>Les fiches pratiques en relecture restent fermées.</p><a href="https://zoutifrutti.github.io/Interstice/parcours.html#entraide" target="_blank" rel="noopener noreferrer">Consulter l’index existant ↗</a></section>
+<section id="porte/encyclopedie"><details class="fallback-submenus" open><summary>Sous-menus</summary><section id="porte/encyclopedie/histoire"><h3>Histoire et luttes</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/encyclopedie/idees"><h3>Idées, pouvoirs et autogestion</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/encyclopedie/droits"><h3>Droits et émancipations</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/encyclopedie/ecologie"><h3>Écologie</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/encyclopedie/habitat"><h3>Habitat et lieux autonomes</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/encyclopedie/culture"><h3>Culture et savoir-faire</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/encyclopedie/personnes"><h3>Personnes</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/encyclopedie/organisations"><h3>Organisations</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section></details><h2>Encyclopédie des communs</h2><p>Des histoires, des idées et des pratiques à explorer, avec l’Atlas des communs.</p><p><a href="lectures/index.html">Lire les 24 textes R6 existants</a></p><a href="wiki.html">Consulter l’index existant ↗</a></section>
+<section id="porte/atlas"><details class="fallback-submenus" open><summary>Sous-menus</summary><section id="porte/atlas/initiatives"><h3>Initiatives documentées</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/atlas/territoires"><h3>Territoires et mémoires</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/atlas/experiences"><h3>Expériences et pratiques</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/atlas/pistes"><h3>Pistes à explorer</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section></details><span id="porte/carte"></span><span id="atlas"></span><h2>Atlas des communs</h2><p>Porte indépendante. Les localisations sensibles et les dossiers non autorisés restent fermés.</p><a href="atlas.html">Consulter l’Atlas documentaire existant</a></section>
+<section id="porte/vigie"><details class="fallback-submenus" open><summary>Sous-menus</summary><section id="porte/vigie/enquetes"><h3>Enquêtes approfondies</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/vigie/articles"><h3>Articles</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/vigie/breves"><h3>Brèves</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/vigie/publications"><h3>Archives des publications</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section></details><span id="vigie"></span><h2>La Vigie de la Faille</h2><p>Enquêtes, articles, brèves et archives des publications. Les travaux candidats restent en relecture ; aucune enquête interne n’est diffusée ici.</p></section>
+<section id="porte/archives"><details class="fallback-submenus" open><summary>Sous-menus</summary><section id="porte/archives/documents"><h3>Documents historiques</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/archives/presse"><h3>Presse et publications</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/archives/fonds"><h3>Fonds et collections</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/archives/memoires"><h3>Mémoires et témoignages</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section></details><h2>Archives des communs</h2><p>Retrouver les documents, leurs provenances et leurs limites de consultation.</p><p><a href="manifeste.html">Lire le manifeste V2.1 — archive</a></p><p>Les dossiers candidats restent fermés tant que leurs visas ne sont pas réunis.</p></section>
+<section id="porte/mediatheque"><details class="fallback-submenus" open><summary>Sous-menus</summary><section id="porte/mediatheque/textes"><h3>Livres et textes</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/mediatheque/films"><h3>Films et vidéos</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/mediatheque/graphiques"><h3>BD et arts graphiques</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/mediatheque/audio"><h3>Audio</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/mediatheque/etudes"><h3>Études et outils</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés.</p></section><section id="porte/mediatheque/sites-portails"><h3>Sites et portails</h3><p>Rubrique candidate ; les contenus non autorisés restent fermés. Le catalogue existant reste accessible ci-dessous.</p></section></details><h2>Médiathèque</h2><p>Des textes, des œuvres et des sources pour prolonger les découvertes.</p><a href="https://zoutifrutti.github.io/Interstice/bibliotheque.html" target="_blank" rel="noopener noreferrer">Consulter l’index existant ↗</a></section>
+<section id="parcours/PAR-001">
+<p class="walk-badge">En préparation · sources historiques en vérification</p>
+<h2>Commune de Paris</h2>
+<p>Que peut-on établir des projets d’organisation du travail, de leurs décisions et de leurs réalisations pendant la Commune ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-002">
+<p class="walk-badge">En préparation · archives et interprétations à vérifier</p>
+<h2>Révolution sociale espagnole</h2>
+<p>Comment distinguer les expériences de collectivisation, les organisations et les conflits dans l’Espagne révolutionnaire de 1936–1937 ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-003">
+<p class="walk-badge">En préparation · structure examinée sous réserves</p>
+<h2>Écologie sociale</h2>
+<p>Comment relier histoire des luttes, connaissances scientifiques et propositions d’organisation sans confondre leurs preuves ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-004">
+<p class="walk-badge">En préparation · structure examinée sous réserves</p>
+<h2>Autogestion</h2>
+<p>Qui peut réellement participer, décider et contester, et qui supporte le travail visible ou invisible ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-005">
+<p class="walk-badge">BLOQUÉ · contrôles juridique et sanitaire nécessaires</p>
+<h2>Droits en manifestation</h2>
+<p>Comment séparer les règles, leurs conditions d’application et les orientations vers une aide compétente ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-006">
+<p class="walk-badge">En préparation · identités et éditions à vérifier</p>
+<h2>Féminismes et luttes LGBTQIA+</h2>
+<p>Comment lire des histoires distinctes, leurs convergences et leurs désaccords, à partir de voix situées ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+<section id="parcours/PAR-007">
+<p class="walk-badge">En préparation · traductions et sources à vérifier</p>
+<h2>Zapatisme</h2>
+<p>Comment suivre les transformations de l’autonomie zapatiste en distinguant paroles du mouvement, traductions et observations ?</p>
+<p>Parcours candidat en relecture. Aucun contenu bloqué n’est diffusé ici.</p>
+</section>
+</div>
+</section>
+<footer class="footer">
+<span>Interstice · Un projet de La Faille noire</span>
+<span>Les idées circulent. Les personnes restent protégées.</span>
+</footer>
+</body>
+</html>

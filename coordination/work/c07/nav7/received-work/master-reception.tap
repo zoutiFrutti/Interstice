@@ -1,0 +1,23 @@
+✔ 219 canonical IDs and independent linked registries (19.63862ms)
+✔ privacy fail closed for all records including adversarial injected fields (8.645959ms)
+✔ stable deterministic checksums and no mutation (21.655618ms)
+✔ fail-closed invalid join and rollback without writes (14.975831ms)
+✔ blocked historic items and separate visa axes (8.477367ms)
+✔ C07 candidate is separate and the historical homepage stays intact (1.548995ms)
+✔ Four doors, atlas and seven paths are discoverable from candidate (0.637507ms)
+✔ Archive door exists and does not expose internal file locators (0.725519ms)
+✔ Candidate does not enable data submission or editorial approval (0.670527ms)
+✔ Candidate submenus point to real source pages and keep historic labels explicit (1.508395ms)
+✔ LEC03: all 219 IDs allocated once, held never mixed into batches (10.426111ms)
+✔ LEC03: selected editorial lots never become publication visas (0.450376ms)
+✔ LEC03: blocked dossiers and legacy human editorial agreement cannot publish (15.081039ms)
+✔ LEC03: priority archives remain legally unreviewed and content unverified (16.42058ms)
+✔ LEC03: injection of apparently approved historic statuses cannot open a public card (2.260984ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 229.690381

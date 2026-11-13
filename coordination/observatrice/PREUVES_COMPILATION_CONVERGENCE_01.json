@@ -1,0 +1,224 @@
+{
+  "mission": "WORK-CONVERGENCE-01",
+  "scope": "Vérification en lecture et tests hors IA après dépôt autorisé du lock par Work",
+  "checked_at": "2026-11-04",
+  "pull_request": {
+    "number": 180,
+    "url": "https://github.com/zoutiFrutti/Interstice/pull/180",
+    "branch": "work/fn-observatrice-gh-aw-pilote-20261104",
+    "head": "b5cd15ea7de3c35075adcb19ae18d65c465fcc6d",
+    "compiled_lock_present": true,
+    "presence_evidence": "GitHub Contents GET at b5cd15ea7de3c35075adcb19ae18d65c465fcc6d verified blob ca2293cda641e9513cd529fe9ebefba670eb2ef4"
+  },
+  "compilation": {
+    "run": 41852755476,
+    "job": 126653143911,
+    "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41852755476",
+    "head": "b5cd15ea7de3c35075adcb19ae18d65c465fcc6d",
+    "conclusion": "success",
+    "compiler": "v1.0.1",
+    "engine": "gemini",
+    "engine_version": "0.64.0",
+    "strict": true,
+    "performed_model_call": false,
+    "warning_count_per_compile": 1
+  },
+  "artifact": {
+    "id": 13337020326,
+    "name": "fn-observatrice-gh-aw-lock-non-active",
+    "expires_at": "2026-11-11T14:57:37Z",
+    "zip_sha256": "17eb19d8d61209aaf3c0111bf03999388635edba34557dbc018e1f72afc4da99",
+    "lock_path": ".github/workflows/fn-observatrice-pilote.lock.yml",
+    "lock_bytes": 129493,
+    "lock_sha256": "75347e4b70a0b92889e84e5276477c6fd8cea5665ce743db2cb056415e088410",
+    "lock_git_blob_sha1": "ca2293cda641e9513cd529fe9ebefba670eb2ef4",
+    "reconstructed_or_edited": false,
+    "byte_identical_to_committed_lock": true,
+    "byte_identical_to_initial_compilation": true
+  },
+  "generated_safety": {
+    "trigger": "workflow_dispatch only",
+    "activation_if": "vars.FN_OBSERVATRICE_ENABLED == 'true' && github.actor == github.repository_owner",
+    "global_permissions": {},
+    "job_permissions": {
+      "activation": {
+        "actions": "read",
+        "contents": "read"
+      },
+      "agent": {
+        "actions": "read",
+        "contents": "read",
+        "issues": "read",
+        "pull-requests": "read"
+      },
+      "conclusion": {
+        "actions": "read"
+      },
+      "detection": {
+        "contents": "read"
+      },
+      "safe_outputs": {}
+    },
+    "write_permissions_found": [],
+    "github_tool_count": 29,
+    "safeoutput_tools": [
+      "noop",
+      "report_missing_data",
+      "report_missing_tool"
+    ],
+    "secret_names_only": [
+      "COPILOT_GITHUB_TOKEN",
+      "GEMINI_API_KEY",
+      "GH_AW_DEFAULT_OTLP_ENDPOINT",
+      "GH_AW_DEFAULT_OTLP_HEADERS",
+      "GH_AW_GITHUB_MCP_SERVER_TOKEN",
+      "GH_AW_GITHUB_TOKEN",
+      "GITHUB_TOKEN"
+    ],
+    "existing_secret_values_inspected": false,
+    "threat_detection_engine": "copilot",
+    "threat_detection_enabled": true
+  },
+  "warnings": [
+    {
+      "id": "engine_deprecated",
+      "observed": "The gemini engine is deprecated in favor of the experimental agy engine.",
+      "status": "Compatibility/provider decision required before activation; no engine changed here",
+      "current_status": "Remaining review item before activation"
+    },
+    {
+      "id": "detection_engine_fallback",
+      "observed": "Threat detection does not support the custom engine \"gemini\", so it runs on the built-in \"copilot\" engine instead, which requires that engine's credentials.",
+      "status": "COPILOT_GITHUB_TOKEN and provider/cost review required before activation; no secret configured",
+      "current_status": "Remaining review item before activation"
+    },
+    {
+      "id": "restricted_secret_diff",
+      "observed": "safe update mode detected unapproved changes; New restricted secret(s): GEMINI_API_KEY",
+      "status": "GEMINI_API_KEY remains a generated reference. Configuration and values not inspected.",
+      "current_status": "Historical warning at initial compilation only; not emitted by current b5 compilation"
+    },
+    {
+      "id": "optional_otlp_references",
+      "observed": "Generated lock references GH_AW_DEFAULT_OTLP_ENDPOINT and GH_AW_DEFAULT_OTLP_HEADERS.",
+      "status": "Existing settings not inspected; review destinations before activation",
+      "current_status": "Remaining review item before activation"
+    }
+  ],
+  "offline_tests": [
+    {
+      "suite": "PilotStaticSafety",
+      "passed": 5,
+      "failed": 0,
+      "source_head": "b5cd15ea7de3c35075adcb19ae18d65c465fcc6d",
+      "evidence": "B5_STATIC_TESTS.txt"
+    },
+    {
+      "suite": "CompiledLockSafety",
+      "passed": 5,
+      "failed": 0,
+      "source_head": "b5cd15ea7de3c35075adcb19ae18d65c465fcc6d",
+      "target_sha256": "75347e4b70a0b92889e84e5276477c6fd8cea5665ce743db2cb056415e088410",
+      "evidence": "B5_LOCK_TESTS.txt",
+      "dependencies": "Python3 standard library only"
+    },
+    {
+      "suite": "C13 BridgeIntegrationTest",
+      "passed": 3,
+      "failed": 0,
+      "source_head": "f7811d3875d2fd39b7b37226d40ae9fb22c66a56",
+      "evidence": "C13_OFFLINE_TESTS.txt",
+      "scope": "Separate C13 candidate, local event fixtures, no Issue, no network/model"
+    }
+  ],
+  "c12_c13": {
+    "main_risk": "C12 issues.opened lacks independent opt-in on main; secrets/model configuration unknown",
+    "c13_pull_request": 114,
+    "c13_head": "f7811d3875d2fd39b7b37226d40ae9fb22c66a56",
+    "c13_status": "draft, not merged",
+    "safety_not_implied_by_pilot_tests": true
+  },
+  "activation": {
+    "authorized": false,
+    "agent_triggered_by_task": false,
+    "provider_secrets_configured": false,
+    "budget_checked": false,
+    "paid_execution_performed": false
+  },
+  "previous_compilation": {
+    "run": 41838387045,
+    "job": 126603184321,
+    "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41838387045",
+    "head": "6db16cca56e4202cbc9ae22386b161a0f2b7bffd",
+    "conclusion": "success",
+    "compiler": "v1.0.1",
+    "engine": "gemini",
+    "engine_version": "0.64.0",
+    "strict": true,
+    "performed_model_call": false
+  },
+  "initial_artifact": {
+    "id": 13325649356,
+    "name": "fn-observatrice-gh-aw-lock-non-active",
+    "expires_at": "2026-11-11T13:28:27Z",
+    "zip_sha256": "697ccd10a186a9c2c9b7167dc6e0bb7db07404f801228c13eb55cfe4eb9adea3",
+    "lock_path": ".github/workflows/fn-observatrice-pilote.lock.yml",
+    "lock_bytes": 129493,
+    "lock_sha256": "75347e4b70a0b92889e84e5276477c6fd8cea5665ce743db2cb056415e088410",
+    "lock_git_blob_sha1": "ca2293cda641e9513cd529fe9ebefba670eb2ef4",
+    "reconstructed_or_edited": false
+  },
+  "historical_actions_refusal": {
+    "run": 41838170283,
+    "job": 126602424059,
+    "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41838170283",
+    "conclusion": "failure",
+    "exact_reason": "refusing to allow a GitHub App to create or update workflow `.github/workflows/fn-observatrice-pilote.lock.yml` without `workflows` permission",
+    "missing_permission": "GitHub App workflows write (in addition to repository content write)",
+    "temporary_push_workflow_removed": true,
+    "permission_reconfigured_by_task": false,
+    "alternative_transport_attempted_by_task": false,
+    "authentication_context": "GitHub Actions job-scoped GITHUB_TOKEN, not the ChatGPT Work GitHub connection",
+    "workflow_path": ".github/workflows/fn-observatrice-commit-lock-once.yml",
+    "workflow_ref": "0fc28683682b5cbfbe908a3ce70efa06bab0608a",
+    "workflow_blob_sha": "767ee4d47be19f9390fe9dfc9ea3a291886fd2a0",
+    "evidence": {
+      "declared_permissions": {
+        "contents": "write"
+      },
+      "checkout_persist_credentials": true,
+      "checkout_custom_token": false,
+      "compile_gh_token": "${{ github.token }}",
+      "push_auth": "Git credentials persisted by actions/checkout@v4",
+      "checkout_default_token_reference": "https://raw.githubusercontent.com/actions/checkout/11d5960a326750d5838078e36cf38b85af677262/action.yml",
+      "checkout_default_token": "${{ github.token }}"
+    },
+    "work_connection_permission_status": "Resolved for repository delivery: the existing Work connection standard Contents API succeeded at b5cd15ea7de3c35075adcb19ae18d65c465fcc6d. The Actions token refusal remains specific to that old job.",
+    "resolved_for_required_repository_delivery": true
+  },
+  "repository_lock_delivery": {
+    "status": "committed_and_verified",
+    "path": ".github/workflows/fn-observatrice-pilote.lock.yml",
+    "commit": "b5cd15ea7de3c35075adcb19ae18d65c465fcc6d",
+    "blob_sha": "ca2293cda641e9513cd529fe9ebefba670eb2ef4",
+    "authentication_context": "Existing authorized GitHub ChatGPT Work connection; standard Contents API succeeded",
+    "write_result_reported_by": "Parent Work agent; immutable resulting blob independently fetched and verified here",
+    "actions_token_permissions_changed": false,
+    "permission_bypass": false,
+    "agent_activation": false
+  },
+  "source_blobs_at_delivered_head": {
+    ".github/workflows/fn-observatrice-pilote.md": "3a127a6c115a6529173e8c7487f9f3d02960d43d",
+    ".github/workflows/fn-observatrice-pilote.lock.yml": "ca2293cda641e9513cd529fe9ebefba670eb2ef4",
+    "coordination/observatrice/controle_pilote_gh_aw.py": "724af031877e49b65319880e1d8e420425d87435",
+    ".github/workflows/fn-gh-aw-compilation-check.yml": "8299e60e38316c204e36fbf68409e8c44d039a24",
+    ".github/workflows/pont-relieuse-lectrice-c12.yml": "a18e263972743a374e49fb07d9521efa9ace91b2"
+  },
+  "r6_verification": {
+    "run": 41852755473,
+    "url": "https://github.com/zoutiFrutti/Interstice/actions/runs/41852755473",
+    "head": "b5cd15ea7de3c35075adcb19ae18d65c465fcc6d",
+    "conclusion": "success",
+    "scope": "Existing preflight/tests, no production deployment"
+  }
+}

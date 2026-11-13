@@ -1,0 +1,41 @@
+{
+  "schema": "c14.v1",
+  "mission_id": "C14-DEMO-001",
+  "origine": "RELIEUSE_CHATGPT",
+  "classification": "PUBLIC",
+  "taches": [
+    {
+      "id": "REL-001",
+      "atelier": "relieuse",
+      "action": "consolider",
+      "dependances": ["MED-001", "LEC-001"],
+      "entree": {}
+    },
+    {
+      "id": "MED-001",
+      "atelier": "mediatheque",
+      "action": "doublons_urls",
+      "dependances": [],
+      "entree": {
+        "ressources": [
+          {"titre": "Archive publique A", "url": "https://example.org/archive"},
+          {"titre": "Archive publique B", "url": "https://EXAMPLE.ORG/archive/"},
+          {"titre": "Reference à compléter", "url": ""}
+        ]
+      }
+    },
+    {
+      "id": "LEC-001",
+      "atelier": "lectrice",
+      "action": "controle_urls",
+      "dependances": [],
+      "entree": {
+        "ressources": [
+          {"titre": "Archive publique A", "url": "https://example.org/archive"},
+          {"titre": "Archive publique B", "url": "https://EXAMPLE.ORG/archive/"},
+          {"titre": "Reference à compléter", "url": ""}
+        ]
+      }
+    }
+  ]
+}

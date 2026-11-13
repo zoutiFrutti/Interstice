@@ -1,0 +1,29 @@
+{
+  "schema": "c18.v1",
+  "livrables": [
+    {
+      "id": "R1-ORC",
+      "atelier": "orchestratrice",
+      "etat": "PREPARE",
+      "branche": "coordination/reprise-generale-r1-20261102",
+      "commit_sha": null,
+      "chemin": "coordination/reprise-r1/courriers/R1-ORC.md",
+      "blob_sha": null,
+      "test": "non execute",
+      "dependances": [],
+      "reserve": "Etat du registre historique : courrier prepare"
+    },
+    {
+      "id": "C15-TEST",
+      "atelier": "orchestratrice",
+      "etat": "CONTROLE_TECHNIQUE",
+      "branche": "feature/r1-orchestratrice-audit-p0-20261102",
+      "commit_sha": "dcef468e5c5a2936ba0a807f08cdfb944a422067",
+      "chemin": "coordination/agents/test_executant_c15.py",
+      "blob_sha": null,
+      "test": "CI 41448268599",
+      "dependances": [],
+      "reserve": "Aucune execution de modele reel"
+    }
+  ]
+}
