@@ -6,6 +6,7 @@ on:
     paths:
       - nav7-candidate.html
       - tests/nav7-candidate.test.mjs
+      - tests/nav7-interactions.test.mjs
       - .github/workflows/nav7-candidate-check.yml
   workflow_dispatch:
 permissions:
@@ -20,4 +21,4 @@ jobs:
         with:
           node-version: '22'
       - name: Validate NAV7 contract, links and fallback
-        run: node --test tests/nav7-candidate.test.mjs
+        run: node --test tests/nav7-candidate.test.mjs tests/nav7-interactions.test.mjs
