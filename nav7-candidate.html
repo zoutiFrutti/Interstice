@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Interstice · NAV7, prototype de navigation non publié</title>
+<style>
+:root {color-scheme:dark; --bg:#211c1b; --text:#f3e9e0; --accent:#e6332a; --surface:#322b28; --outline:#ead6c3}
+* {box-sizing:border-box}
+body {margin:0;background:var(--bg);color:var(--text);font:1rem/1.55 system-ui,-apple-system,sans-serif}
+a {color:#ffe2d5} a:hover,a:focus-visible{text-decoration-thickness:3px}
+button {font:inherit;cursor:pointer;color:inherit}
+:focus-visible {outline:3px solid #ffe6a6;outline-offset:4px}
+.skip {position:absolute;left:1rem;top:-10rem;padding:.5rem;background:#fff;color:#000;z-index:10}
+.skip:focus {top:1rem}
+header,main,footer {max-width:1050px;margin:auto;padding:1rem}
+header {display:flex;gap:1rem;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header p {margin:0;color:#dcc5b5}
+h1 {font-size:clamp(1.5rem,4vw,2.4rem);line-height:1.2}
+.notice {padding:.8rem 1rem;border-left:3px solid #b85a51;background:#342725}
+.layout {display:grid;grid-template-columns:minmax(0,665px) minmax(240px,1fr);gap:1rem;align-items:start}
+.stage {position:relative;width:100%;aspect-ratio:1/1;isolation:isolate}
+.stage img {display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.node {position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);width:clamp(42px,6.5vw,58px);height:clamp(42px,6.5vw,58px);border:2px solid rgba(255,230,214,.95);border-radius:50%;background:rgba(28,17,16,.82);box-shadow:0 0 0 4px rgba(8,8,8,.40);display:grid;place-items:center;z-index:2}
+.node::after {content:"";display:block;width:10px;height:10px;background:var(--accent);border-radius:50%}
+.node[aria-pressed="true"] {outline:3px solid #ffc4a4;background:#743027}
+.node:hover {background:#66332e}
+.node .visually-hidden {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.center {position:absolute;left:52.63%;top:56.69%;width:52px;height:52px;transform:translate(-50%,-50%);border:2px solid #f7d5bd;border-radius:50%;background:rgba(31,17,17,.85);z-index:3}
+.center::after {content:"";display:block;width:20px;height:20px;border-radius:50%;background:var(--accent);margin:auto}
+#door-details {background:var(--surface);padding:1.1rem;border:1px solid #736157;border-radius:12px;min-height:9rem}
+#door-details h2 {margin-top:0}
+#door-details a {display:inline-block;padding:.4rem .7rem;background:#563a35;border-radius:8px}
+.manifest {margin-top:1rem;display:flex;align-items:center;gap:1rem;padding:1rem;border:1px solid #78665e;border-radius:12px}
+.manifest button {border-radius:999px;border:2px solid #f1d5c4;background:#4c2827;min-height:54px;min-width:54px}
+.manifest p {margin:0}
+.direct {margin-top:1.2rem}
+.direct ul {padding-left:1.4rem;columns:2}
+.direct li {break-inside:avoid;margin-bottom:.4rem}
+dialog {width:min(95vw,920px);height:min(90vh,820px);border:2px solid #dbc6b8;border-radius:14px;background:#29221f;color:var(--text);padding:1rem}
+dialog::backdrop {background:rgba(0,0,0,.82)}
+dialog header {padding:0;max-width:none}
+dialog iframe {width:100%;height:calc(100% - 5.5rem);background:#fff;border:0}
+dialog button {background:#62342f;border:1px solid #e5c9b6;border-radius:8px;padding:.45rem .8rem}
+.muted {color:#d6bfb1;font-size:.9rem}
+@media (max-width:780px) {.layout {grid-template-columns:1fr}.direct ul {columns:1}.center {width:44px;height:44px}}
+@media (prefers-reduced-motion:reduce) {*,*::before,*::after {animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header><strong>INTERSTICE · NAV7</strong><a href="index.html">Retour au site actuel</a></header>
+<main id="contenu">
+<h1>Six portes, un accès au Manifeste</h1>
+<p class="notice"><strong>Prototype technique isolé.</strong> Il réutilise le logo R6 authentique comme fond, sans le modifier. Les six positions sont reprises des coordonnées R7 candidates, encore à confronter à la capture de Zout. La position exacte du point 7 dans le logo n'est pas simulée : son contrôle fonctionnel est provisoirement présenté sous le dessin. Aucun contenu réservé n'est accessible.</p>
+<div class="layout">
+<section class="stage" aria-label="Choisir une des six portes sur la constellation">
+<img src="assets/logo-interstice.svg" alt="" width="665" height="665">
+<button class="node" style="--x:38.80%;--y:30.53%" type="button" data-point="1" data-door="Faire Ensemble" aria-label="Point 1 : Faire Ensemble" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">Faire Ensemble</span></button>
+<button class="node" style="--x:59.70%;--y:26.77%" type="button" data-point="2" data-door="Atlas des communs" aria-label="Point 2 : Atlas des communs" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">Atlas des communs</span></button>
+<button class="node" style="--x:74.89%;--y:39.25%" type="button" data-point="3" data-door="La Vigie de la Faille" aria-label="Point 3 : La Vigie de la Faille" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">La Vigie de la Faille</span></button>
+<button class="node" style="--x:69.32%;--y:64.06%" type="button" data-point="4" data-door="Encyclopédie des communs" aria-label="Point 4 : Encyclopédie des communs" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">Encyclopédie des communs</span></button>
+<button class="node" style="--x:50.08%;--y:89.17%" type="button" data-point="5" data-door="Archives des communs" aria-label="Point 5 : Archives des communs" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">Archives des communs</span></button>
+<button class="node" style="--x:35.04%;--y:67.67%" type="button" data-point="6" data-door="Médiathèque des communs" aria-label="Point 6 : Médiathèque des communs" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">Médiathèque des communs</span></button>
+<button class="center" id="reset" type="button" aria-label="Revenir à la vue complète et fermer le panneau de la porte"><span class="visually-hidden">Retour à la vue complète</span></button>
+</section>
+<aside>
+<section id="door-details" aria-live="polite" aria-atomic="true" tabindex="-1">
+<h2>Explorer</h2><p>Sélectionne un point ou utilise les liens directs ci-dessous.</p>
+</section>
+<div class="manifest">
+<button type="button" data-point="7" id="manifest-open" aria-label="Point 7 : ouvrir le Manifeste">7</button>
+<p><strong>Manifeste</strong><br><span class="muted">Accès temporaire hors dessin tant que le point 7 original n'est pas localisé sans ambiguïté.</span></p>
+</div>
+</aside>
+</div>
+<nav class="direct" aria-label="Navigation textuelle sans animation">
+<h2>Accès directs</h2>
+<ul>
+<li><a href="index.html#propositions">Faire Ensemble : propositions existantes</a></li>
+<li><a href="atlas.html">Atlas des communs</a></li>
+<li><span>La Vigie de la Faille : porte en préparation, aucun article débloqué</span></li>
+<li><a href="wiki.html">Encyclopédie des communs</a></li>
+<li><a href="squats-et-lieux-autonomes.html">Archives : dossier public existant</a></li>
+<li><a href="bibliotheque.html">Médiathèque : bibliothèque actuelle</a></li>
+<li><a href="manifeste-v2-5.html">Manifeste V2.5 (accès direct)</a></li>
+</ul>
+</nav>
+<p class="muted">Les intitulés des portes et les liens vers des pages préexistantes ne constituent ni une publication de nouvelles fiches ni une validation de leurs dossiers internes. Prototype sans dépendance réseau externe.</p>
+</main>
+<dialog id="manifest-dialog" aria-labelledby="manifest-title">
+<header><h2 id="manifest-title">Manifeste · version publique existante</h2><button type="button" id="manifest-close">Fermer</button></header>
+<p><a href="manifeste-v2-5.html">Ouvrir le Manifeste directement</a></p>
+<iframe title="Lecture du Manifeste V2.5" data-src="manifeste-v2-5.html"></iframe>
+</dialog>
+<footer class="muted">NAV7 · essai local uniquement · pas de fusion ni déploiement</footer>
+<script>
+(() => {
+  'use strict';
+  const details = document.querySelector('#door-details');
+  const nodes = [...document.querySelectorAll('.node[data-point]')];
+  const routes = Object.freeze({
+    '1': {title:'Faire Ensemble',href:'index.html#propositions',label:'Voir les propositions existantes',note:'Aucune nouvelle proposition privée n’est exposée.'},
+    '2': {title:'Atlas des communs',href:'atlas.html',label:'Ouvrir l’Atlas existant',note:'Aucune géométrie supplémentaire ni adresse sensible.'},
+    '3': {title:'La Vigie de la Faille',href:null,label:null,note:'Porte en préparation. Pas de page Vigie publique vérifiée ni de publication automatique.'},
+    '4': {title:'Encyclopédie des communs',href:'wiki.html',label:'Ouvrir l’Encyclopédie existante',note:'Les 219 fiches candidates restent fermées.'},
+    '5': {title:'Archives des communs',href:'squats-et-lieux-autonomes.html',label:'Lire un dossier public existant',note:'Ce lien ne déverrouille pas les archives candidates.'},
+    '6': {title:'Médiathèque des communs',href:'bibliotheque.html',label:'Ouvrir la bibliothèque actuelle',note:'Les notices sans visa restent fermées.'}
+  });
+  const reset = () => {
+    nodes.forEach(b => b.setAttribute('aria-pressed','false'));
+    details.replaceChildren();
+    const h=document.createElement('h2');h.textContent='Explorer';
+    const p=document.createElement('p');p.textContent='Sélectionne un point ou utilise les liens directs ci-dessous.';
+    details.append(h,p);
+  };
+  for(const b of nodes) b.addEventListener('click',() => {
+    const route=routes[b.dataset.point];
+    nodes.forEach(n=>n.setAttribute('aria-pressed',n===b?'true':'false'));
+    details.replaceChildren();
+    const h=document.createElement('h2');h.textContent=route.title;
+    const p=document.createElement('p');p.textContent=route.note;
+    details.append(h,p);
+    if(route.href){const a=document.createElement('a');a.href=route.href;a.textContent=route.label;details.append(a)}
+    details.focus({preventScroll:true});
+  });
+  document.querySelector('#reset').addEventListener('click',reset);
+  const dlg=document.querySelector('#manifest-dialog');
+  const iframe=dlg.querySelector('iframe');
+  document.querySelector('#manifest-open').addEventListener('click',()=>{
+    if(!iframe.src)iframe.src=iframe.dataset.src;
+    if(typeof dlg.showModal==='function')dlg.showModal();
+    else window.location.assign('manifeste-v2-5.html');
+  });
+  document.querySelector('#manifest-close').addEventListener('click',()=>dlg.close());
+})();
+</script>
+</body>
+</html>
