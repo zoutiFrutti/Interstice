@@ -39,6 +39,39 @@ test('Retour central explicite, état aria-pressed mis à jour et secours sans a
   assert.match(source,/<nav class="direct" aria-label="Navigation textuelle sans animation"/);
   assert.match(source,/<a class="skip" href="#contenu">/);
 });
+
+test('Points tertiaires : uniquement des liens réels, sans inventer de porte Vigie',()=>{
+  assert.equal((source.match(/submenus:\\[/g)||[]).length,6);
+  assert.match(source,/'3':\s*\{[\s\S]*?submenus:\s*\[\s*\]/);
+  const expectedSubmenus=[
+    ['Propositions publiques','index.html#propositions'],
+    ['Proposer une idée','index.html#proposer'],
+    ['Décider ensemble','wiki-decision-collective.html'],
+    ['Sources de l’Atlas','atlas.html#atlas-sources'],
+    ['Cartes et symboles','atlas.html#cartes-logo'],
+    ['Parcours transversaux','parcours.html'],
+    ['Décision collective','wiki-decision-collective.html'],
+    ['Écologie sociale','wiki-ecologie-sociale-environnement.html'],
+    ['Habiter et droit à la ville','wiki-logement-habitat-droit-ville.html'],
+    ['Squats et lieux autonomes','squats-et-lieux-autonomes.html'],
+    ['Habitat : références existantes','wiki-logement-habitat-droit-ville.html'],
+    ['Bibliothèque publique','bibliotheque.html'],
+    ['Rechercher une ressource','bibliotheque.html#search'],
+    ['Explorer les ressources','bibliotheque.html#resources'],
+    ['Proposer une référence','bibliotheque.html#resource-form']
+  ];
+  assert.equal(expectedSubmenus.length,15);
+  for(const [label,href] of expectedSubmenus){
+    assert.ok(source.includes(`['${label}','${href}']`),`missing submenu: ${label}`);
+    const [file,fragment] = href.split('#');
+    const actual=readFileSync(resolve(root,file),'utf8');
+    if(fragment) assert.ok(actual.includes(`id="${fragment}"`),`missing anchor ${href}`);
+  }
+  assert.match(source,/const dot=document\.createElement\('span'\)/);
+  assert.match(source,/dot\.setAttribute\('aria-hidden','true'\)/);
+  assert.doesNotMatch(source,/\['[^']+','(?:coordination|supabase|docs)\//);
+});
+
 test('Aucun fichier interdit : pas de nouveau catalogue ni exposition de liens de sources Drive',()=>{
   assert.match(source,/<meta name="robots" content="noindex,nofollow">/);
   assert.doesNotMatch(source,/https?:\/\/(?:drive|docs)\.google\.com/i);
