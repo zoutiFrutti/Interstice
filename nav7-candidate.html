@@ -22,15 +22,15 @@ h1 {font-size:clamp(1.5rem,4vw,2.4rem);line-height:1.2}
 .layout {display:grid;grid-template-columns:minmax(0,665px) minmax(240px,1fr);gap:1rem;align-items:start}
 .stage {position:relative;width:100%;aspect-ratio:1/1;isolation:isolate}
 .stage img {display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
-.node {position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);width:clamp(42px,6.5vw,58px);height:clamp(42px,6.5vw,58px);border:2px solid rgba(255,230,214,.95);border-radius:50%;background:rgba(28,17,16,.82);box-shadow:0 0 0 4px rgba(8,8,8,.40);display:grid;place-items:center;z-index:2}
-.node::after {content:"";display:block;width:10px;height:10px;background:var(--accent);border-radius:50%}
-.node[aria-pressed="true"] {outline:3px solid #ffc4a4;background:#743027}
-.node:hover {background:#66332e}
+.node {position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);width:clamp(42px,6.5vw,58px);height:clamp(42px,6.5vw,58px);border:2px solid transparent;border-radius:50%;background:transparent;display:grid;place-items:center;z-index:2}
+.node::after {content:"";display:none}
+.node[aria-pressed="true"] {border-color:#ffc4a4;background:rgba(36,21,19,.25);box-shadow:0 0 0 3px #36201e}
+.node:hover {border-color:#ffe1c5;background:rgba(36,21,19,.15)}
 .node .visually-hidden {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-.manifest-node {width:clamp(50px,7.5vw,66px);height:clamp(50px,7.5vw,66px);border-width:3px;border-color:#ffe1c5;background:rgba(49,19,17,.92)}
-.manifest-node::after {width:15px;height:15px}
-.center {position:absolute;left:52.63%;top:56.69%;width:52px;height:52px;transform:translate(-50%,-50%);border:2px solid #f7d5bd;border-radius:50%;background:rgba(31,17,17,.85);z-index:3}
-.center::after {content:"";display:block;width:20px;height:20px;border-radius:50%;background:var(--accent);margin:auto}
+.manifest-node {width:clamp(50px,7.5vw,66px);height:clamp(50px,7.5vw,66px);border-width:3px;border-color:transparent;background:transparent}
+.manifest-node:hover,.manifest-node:focus-visible {border-color:#ffe1c5}
+.center {position:absolute;left:52.63%;top:56.69%;width:52px;height:52px;transform:translate(-50%,-50%);border:2px solid transparent;border-radius:50%;background:transparent;z-index:3}
+.center:hover,.center:focus-visible {border-color:#ffe1c5;background:rgba(30,18,18,.20)}
 #door-details {background:var(--surface);padding:1.1rem;border:1px solid #736157;border-radius:12px;min-height:9rem}
 #door-details h2 {margin-top:0}
 #door-details a {display:inline-block;padding:.4rem .7rem;background:#563a35;border-radius:8px}
