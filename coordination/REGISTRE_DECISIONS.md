@@ -152,10 +152,10 @@ Les trois choix A intermédiaires de Zout ont autorisé la préparation document
 
 ## WORK — réception privée C18 et convergence C19 · 13 novembre 2026
 
-| ID | Provenance humaine | Exécution et limites |
-| --- | --- | --- |
-| D-WORK-C18-PRIVATE-01 | Réponse directe A de Zout au QCM C17 : héberger la candidate exacte en aperçu privé, réservé au propriétaire | Exécutée avant C19 : version 1, déploiement appgdep_6af71d49b2c48191a629614941025067 réussi, source d'hébergement 96838d0edb7fede5e9af1c2080347ccf84f2162d. Paquet C17 135 fichiers, manifeste b128b39132528695f67dde0f53989d45f61536c1ae658ec0a14113481bbdece7. Aucun merge main, nouveau visa ou changement de partage. État relu en C19 : propriétaire seul, zéro autre utilisateur/groupe/visiteur externe. |
-| D-WORK-C19-LOCAL-01 | Mission directe de Zout « REPRISE DE LA CONVERGENCE C07 × NAV7 », cinq passes puis QCM ; aucune nouvelle publication ou fusion autorisée | Work récupéré ; réunion locale de 7d61a53 et 4cdad619 avec C07 conservé. 31 rubriques, 15 raccourcis, un seul espace actif ; 24 textes inchangés et visas séparés, maître fermé. Rapport courant : coordination/work/c07/nav7/RECEPTION_CONVERGENCE_A_2026-11-13.md. |
+| ID | Décision directe | Source | Portée |
+| --- | --- | --- | --- |
+| `D-WORK-C18-PRIVATE-01` | Héberger la candidate exacte en aperçu privé, réservé au propriétaire | Réponse directe A de Zout au QCM C17 | Exécutée avant C19 : version 1, déploiement appgdep_6af71d49b2c48191a629614941025067 réussi, source d'hébergement 96838d0edb7fede5e9af1c2080347ccf84f2162d. Paquet C17 135 fichiers, manifeste b128b39132528695f67dde0f53989d45f61536c1ae658ec0a14113481bbdece7. Aucun merge main, nouveau visa ou changement de partage. État relu en C19 : propriétaire seul, zéro autre utilisateur/groupe/visiteur externe. |
+| `D-WORK-C19-LOCAL-01` | Reprise de la convergence C07 × NAV7, cinq passes puis QCM ; aucune nouvelle publication ou fusion autorisée | Mission directe de Zout « REPRISE DE LA CONVERGENCE C07 × NAV7 » | Work récupéré ; réunion locale de 7d61a53 et 4cdad619 avec C07 conservé. 31 rubriques, 15 raccourcis, un seul espace actif ; 24 textes inchangés et visas séparés, maître fermé. Rapport courant : coordination/work/c07/nav7/RECEPTION_CONVERGENCE_A_2026-11-13.md. |
 
 Réconciliation technique de provenance : la capture authentique de Zout et le contrat Work déjà appliqué placent 4 à gauche, 6 à droite et 7 près du centre. Les valeurs contraires de la première réception 4cdad619 sont conservées comme observation historique dans contract-received-4cdad619.json ; elles ne deviennent pas une nouvelle décision humaine. Révision 2 du contrat alignée sur les sources reçues. Aucun nouveau vote déduit.
 
