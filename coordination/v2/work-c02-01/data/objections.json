@@ -1,0 +1,665 @@
+{
+  "version": "WORK-C02-01-candidate-1",
+  "scope": "Registre WORK des réserves effectivement lues ; ne remplace pas les 35 objections C02-VAL-01 non récupérées.",
+  "objections": [
+    {
+      "id": "WORK-TR-01",
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-002",
+        "PAR-003",
+        "PAR-004",
+        "PAR-005",
+        "PAR-006",
+        "PAR-007"
+      ],
+      "question": "Versions intégrales C02-RECON-01/02, C02-VAL-01/02 non récupérées comme fichiers canoniques",
+      "missing_evidence": "Fichiers exacts, versions et 35 lignes d’objections de La Lectrice, confrontation ligne à ligne",
+      "owners": [
+        "La Relieuse",
+        "La Lectrice",
+        "L’Anarchitecte",
+        "La Penseuse"
+      ],
+      "source_refs": [
+        "contexte:C02"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Fichiers exacts, versions et 35 lignes d’objections de La Lectrice, confrontation ligne à ligne",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-TR-02",
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-002",
+        "PAR-003",
+        "PAR-004",
+        "PAR-005",
+        "PAR-006",
+        "PAR-007"
+      ],
+      "question": "Le registre ancien 139 clés documente des métadonnées, pas 139 corps de dossiers validés",
+      "missing_evidence": "Collation des dossiers historiques et des éditions FN, notamment FN-018",
+      "owners": [
+        "L’Anarchitecte",
+        "La Médiathèque"
+      ],
+      "source_refs": [
+        "branch:coordination/transmissions/2026-11-01_ANARCHITECTE_CYCLE8_TABLE_CORRESPONDANCE_V02.json",
+        "drive:catalogue-FN"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Collation des dossiers historiques et des éditions FN, notamment FN-018",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-TR-03",
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-002",
+        "PAR-003",
+        "PAR-004",
+        "PAR-005",
+        "PAR-006",
+        "PAR-007"
+      ],
+      "question": "Deux paires FN restent des doublons possibles ; aucun alias arbitré",
+      "missing_evidence": "Comparer œuvre/édition/langue/licence pour FN-022/048 et FN-038/057 ; décision de conserver les identifiants",
+      "owners": [
+        "La Médiathèque",
+        "La Relieuse"
+      ],
+      "source_refs": [
+        "branch:coordination/transmissions/2026-11-01_ANARCHITECTE_CYCLE8_TABLE_CORRESPONDANCE_V02.json",
+        "drive:catalogue-FN"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Comparer œuvre/édition/langue/licence pour FN-022/048 et FN-038/057 ; décision de conserver les identifiants",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-TR-04",
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-002",
+        "PAR-003",
+        "PAR-004",
+        "PAR-005",
+        "PAR-006",
+        "PAR-007"
+      ],
+      "question": "Une présence dans main ou une licence déclarée ne vaut pas visa de publication V2",
+      "missing_evidence": "Visa par version exacte, contrôle des droits et décision distincte de Zout",
+      "owners": [
+        "La Lectrice",
+        "La Juriste",
+        "Zout"
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Visa par version exacte, contrôle des droits et décision distincte de Zout",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-TR-05",
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-002",
+        "PAR-003",
+        "PAR-004",
+        "PAR-005",
+        "PAR-006",
+        "PAR-007"
+      ],
+      "question": "R6 conserve cinq nœuds, V2 exige quatre portes et des Parcours transversaux",
+      "missing_evidence": "Future intégration séparée après accord, QA navigateur et conservation des liens",
+      "owners": [
+        "La Développeuse",
+        "La Graphiste"
+      ],
+      "source_refs": [
+        "repo:assets/faille-navigation.js",
+        "repo:design-system/faille-navigation-interactive.html"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Future intégration séparée après accord, QA navigateur et conservation des liens",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-COM-01",
+      "parcours_ids": [
+        "PAR-001"
+      ],
+      "question": "Convocation du 21 mai 1871 ≠ réunion effectivement tenue",
+      "missing_evidence": "AFF5721, procès-verbal mairie IVe, contexte du 21 mai ; ne pas combler l’absence de PV",
+      "owners": [
+        "L’Archéologue",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "branch:coordination/cycle10/archeologue/ASSO-007.md",
+        "drive:ASSO-007",
+        "web:AFF5721"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "AFF5721, procès-verbal mairie IVe, contexte du 21 mai ; ne pas combler l’absence de PV",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-COM-02",
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-004"
+      ],
+      "question": "Décret du 16 avril, projet Louvre du 3 mai et exécution matérielle sont trois niveaux distincts",
+      "missing_evidence": "Texte officiel, approbation, paies, comptes, mandats et élection effectivement attestés",
+      "owners": [
+        "L’Archéologue",
+        "L’Anarchiviste des communs"
+      ],
+      "source_refs": [
+        "branch:coordination/cycle10/archeologue/ARCH-005.md",
+        "drive:ARCH-007"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Texte officiel, approbation, paies, comptes, mandats et élection effectivement attestés",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-COM-03",
+      "parcours_ids": [
+        "PAR-001"
+      ],
+      "question": "MP159 daté 2 avril et qualité de Frankel : contradiction conservée",
+      "missing_evidence": "Original MP159, affiche n°363 et PV de désignation ; ne choisir aucune hypothèse sans pièce",
+      "owners": [
+        "L’Archéologue",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "branch:coordination/cycle10/archeologue/ARCH-005.md"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "desaccord",
+      "resolution_condition": "Original MP159, affiche n°363 et PV de désignation ; ne choisir aucune hypothèse sans pièce",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-COM-04",
+      "parcours_ids": [
+        "PAR-001"
+      ],
+      "question": "Club : affluence et identité de la citoyenne André non établies",
+      "missing_evidence": "SHD Ly22, folios et séances datées ; 4000/1000/3000 suspendus, pas de fusion nominative",
+      "owners": [
+        "L’Archéologue",
+        "La Biographe"
+      ],
+      "source_refs": [
+        "branch:coordination/cycle10/archeologue/COL-003.md"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "desaccord",
+      "resolution_condition": "SHD Ly22, folios et séances datées ; 4000/1000/3000 suspendus, pas de fusion nominative",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-COM-05",
+      "parcours_ids": [
+        "PAR-001"
+      ],
+      "question": "Le Prolétaire : quatre numéros signalés ≠ corpus entièrement lu ou mandat du club",
+      "missing_evidence": "Collation des numéros, manchettes, signatures et rapports au club",
+      "owners": [
+        "L’Archéologue"
+      ],
+      "source_refs": [
+        "branch:coordination/cycle10/archeologue/ARCH-006.md"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Collation des numéros, manchettes, signatures et rapports au club",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-COM-06",
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-004"
+      ],
+      "question": "La Marmite : prescriptions, travail invisible, rémunérations et sorties à séparer",
+      "missing_evidence": "Comptes, salaires, remboursements ; société de 1894 ≠ continuité juridique prouvée de celle de 1868",
+      "owners": [
+        "L’Anarchiviste des communs",
+        "La Biographe"
+      ],
+      "source_refs": [
+        "drive:ASSO-008"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Comptes, salaires, remboursements ; société de 1894 ≠ continuité juridique prouvée de celle de 1868",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-COM-07",
+      "parcours_ids": [
+        "PAR-001",
+        "PAR-006"
+      ],
+      "question": "Identités BIO-019/021 bloquées ; BIO-009/022 incertaines",
+      "missing_evidence": "Originaux nominatifs ; conserver les fiches et les désaccords sans les fusionner",
+      "owners": [
+        "La Biographe",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "library:C05-BIO-01_transmission_recherche_2026-11-03.md"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Originaux nominatifs ; conserver les fiches et les désaccords sans les fusionner",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ESP-01",
+      "parcours_ids": [
+        "PAR-002"
+      ],
+      "question": "CAT-001/CAT-006 signalés mais corps non récupérés",
+      "missing_evidence": "Obtenir les versions et sources exactes ; ne présenter aucune fiche CAT comme relue",
+      "owners": [
+        "L’Anarchiviste catalan",
+        "La Relieuse"
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "library:INTERSTICE_C05_ANC_01_RAPPORT_DOCUMENTAIRE_2026-11-03.md"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Obtenir les versions et sources exactes ; ne présenter aucune fiche CAT comme relue",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ESP-02",
+      "parcours_ids": [
+        "PAR-002",
+        "PAR-004"
+      ],
+      "question": "CNT, FAI, POUM et collectivités/régions ne sont pas un acteur unique",
+      "missing_evidence": "Sources nominatives et territoriales ; Catalogne, Aragon, Murcie-Albacete séparés",
+      "owners": [
+        "L’Anarchiviste catalan",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Sources nominatives et territoriales ; Catalogne, Aragon, Murcie-Albacete séparés",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ESP-03",
+      "parcours_ids": [
+        "PAR-002"
+      ],
+      "question": "Collectivisations et décret du 24 octobre 1936 ne se confondent pas",
+      "missing_evidence": "Collation du décret, publication au DOGC du 28 octobre, champ industriel/commercial et chronologies locales",
+      "owners": [
+        "L’Anarchiviste catalan"
+      ],
+      "source_refs": [
+        "web:DOGC-302",
+        "mandat:WORK-C02-01"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Collation du décret, publication au DOGC du 28 octobre, champ industriel/commercial et chronologies locales",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ESP-04",
+      "parcours_ids": [
+        "PAR-002"
+      ],
+      "question": "Mai 1937 : conserver chronologie, responsabilités et controverses",
+      "missing_evidence": "Sources CNT/FAI/POUM, gouvernement, témoignages et études contradictoires, attribution des affirmations",
+      "owners": [
+        "L’Anarchiviste catalan",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "desaccord",
+      "resolution_condition": "Sources CNT/FAI/POUM, gouvernement, témoignages et études contradictoires, attribution des affirmations",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ECO-01",
+      "parcours_ids": [
+        "PAR-003"
+      ],
+      "question": "ÉCO-001A/B/C sont des axes du chantier, pas trois articles validés",
+      "missing_evidence": "Intégration proposée dans la page existante après sélection et contrelecture, sans nouveau doublon",
+      "owners": [
+        "L’Anarchiviste des communs",
+        "La Penseuse",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "repo:coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Intégration proposée dans la page existante après sélection et contrelecture, sans nouveau doublon",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ECO-02",
+      "parcours_ids": [
+        "PAR-003"
+      ],
+      "question": "Résultats scientifiques, interprétations et propositions politiques distincts",
+      "missing_evidence": "Méthodes, échelles, incertitudes GIEC/Scarborough/Li ; ne pas produire de prescription alimentaire universelle",
+      "owners": [
+        "La Médiathèque",
+        "La Penseuse"
+      ],
+      "source_refs": [
+        "drive:catalogue-FN",
+        "repo:coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Méthodes, échelles, incertitudes GIEC/Scarborough/Li ; ne pas produire de prescription alimentaire universelle",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ECO-03",
+      "parcours_ids": [
+        "PAR-003",
+        "PAR-006"
+      ],
+      "question": "Chipko/Green Belt : ne pas effacer les participantes ni essentialiser les femmes",
+      "missing_evidence": "Voix concernées, archives, données indépendantes ; bilans opérateur ≠ effets mesurés",
+      "owners": [
+        "La Biographe",
+        "La Tisseuse",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "library:INTERSTICE_C05_ANC_01_RAPPORT_DOCUMENTAIRE_2026-11-03.md",
+        "drive:catalogue-FN"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Voix concernées, archives, données indépendantes ; bilans opérateur ≠ effets mesurés",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-AUT-01",
+      "parcours_ids": [
+        "PAR-004"
+      ],
+      "question": "Pouvoirs informels et coût de participation à documenter",
+      "missing_evidence": "FN-009/FN-019 et contrepoints ; cas concrets, rotation, recours et personnes absentes",
+      "owners": [
+        "La Penseuse",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "drive:catalogue-FN",
+        "repo:coordination/PENSEUR_ETUDE_38_POUVOIR_INVISIBLE_INTERMEDIATION_2026-10-30.md"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "FN-009/FN-019 et contrepoints ; cas concrets, rotation, recours et personnes absentes",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-AUT-02",
+      "parcours_ids": [
+        "PAR-004",
+        "PAR-006"
+      ],
+      "question": "Travail invisible, handicap et participation inégale",
+      "missing_evidence": "Modalités accessibles, soin, rémunération, temps disponible ; tests avec personnes sans collecte de dossiers individuels",
+      "owners": [
+        "La Penseuse",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "drive:catalogue-FN",
+        "repo:wiki-handicap-validisme-neurodiversite.html"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Modalités accessibles, soin, rémunération, temps disponible ; tests avec personnes sans collecte de dossiers individuels",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-AUT-03",
+      "parcours_ids": [
+        "PAR-004",
+        "PAR-003"
+      ],
+      "question": "Aucune filiation automatique Commune/Espagne/Zapatisme/initiatives actuelles",
+      "missing_evidence": "Preuve explicite pour toute filiation ; sinon comparaison datée avec différences",
+      "owners": [
+        "La Lectrice",
+        "Les ateliers historiques"
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Preuve explicite pour toute filiation ; sinon comparaison datée avec différences",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-DRO-01",
+      "parcours_ids": [
+        "PAR-005"
+      ],
+      "question": "Avis juridique défavorable du 3 novembre : blocage pratique maintenu",
+      "missing_evidence": "Nouvel avis explicite sur chaque version finale, puis décision Zout",
+      "owners": [
+        "La Juriste",
+        "Zout"
+      ],
+      "source_refs": [
+        "library:C02-VAL-04_Visa_juridique_PAR-005_2026-11-03.md"
+      ],
+      "severity": "P0",
+      "state": "bloquee",
+      "category": "reserve",
+      "resolution_condition": "Nouvel avis explicite sur chaque version finale, puis décision Zout",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-DRO-02",
+      "parcours_ids": [
+        "PAR-005"
+      ],
+      "question": "Fouilles, GAV, nasse, visage, recours : conditions et exceptions manquantes",
+      "missing_evidence": "Reprendre les dix corrections de la transmission C02-VAL-04 et les 12 objections L001 existantes",
+      "owners": [
+        "La Juriste",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "library:C02-VAL-04_Transmission_a_la_Relieuse_2026-11-03.md",
+        "repo:coordination/mediatheque/DROIT-001_BIBLIO_MANIFESTATIONS_CONTROLES_GAV_2026-10-31.md"
+      ],
+      "severity": "P0",
+      "state": "bloquee",
+      "category": "reserve",
+      "resolution_condition": "Reprendre les dix corrections de la transmission C02-VAL-04 et les 12 objections L001 existantes",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-DRO-03",
+      "parcours_ids": [
+        "PAR-005"
+      ],
+      "question": "Gaz/foule : aucune validation médicale des gestes",
+      "missing_evidence": "Relecture santé compétente, impression/mobile/hors ligne ; aucune instruction médicale ajoutée ici",
+      "owners": [
+        "Professionnelle ou professionnel de santé",
+        "La Développeuse"
+      ],
+      "source_refs": [
+        "library:C02-VAL-04_Transmission_a_la_Relieuse_2026-11-03.md"
+      ],
+      "severity": "P0",
+      "state": "bloquee",
+      "category": "reserve",
+      "resolution_condition": "Relecture santé compétente, impression/mobile/hors ligne ; aucune instruction médicale ajoutée ici",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-FEM-01",
+      "parcours_ids": [
+        "PAR-006"
+      ],
+      "question": "Histoires féministes et LGBTQIA+ propres, convergences et désaccords",
+      "missing_evidence": "Sélection plurielle située, pas de récit unique de progrès ni équivalence des luttes",
+      "owners": [
+        "La Médiathèque",
+        "La Biographe",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "mandat:WORK-C02-01",
+        "drive:catalogue-FN"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Sélection plurielle située, pas de récit unique de progrès ni équivalence des luttes",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-FEM-02",
+      "parcours_ids": [
+        "PAR-006"
+      ],
+      "question": "Disponibilité, traductions et droits des œuvres à revoir",
+      "missing_evidence": "Éditions exactes FN-015/016/055/069, voix concernées, aucun extrait ou média reproduit",
+      "owners": [
+        "La Médiathèque",
+        "La Juriste"
+      ],
+      "source_refs": [
+        "drive:catalogue-FN"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Éditions exactes FN-015/016/055/069, voix concernées, aucun extrait ou média reproduit",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ZAP-01",
+      "parcours_ids": [
+        "PAR-007"
+      ],
+      "question": "Original du 5 novembre 2023 ≠ traduction anglaise du 6 ; 12 novembre ≠ traduction française du 1 décembre",
+      "missing_evidence": "Conserver dates, langues, auteur, texte et traduction séparés",
+      "owners": [
+        "L’Anarchiviste zapatiste",
+        "La Médiathèque"
+      ],
+      "source_refs": [
+        "branch:recherches/zapatisme/ZAP-C10-001-chronologie-comparaison.md"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Conserver dates, langues, auteur, texte et traduction séparés",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ZAP-02",
+      "parcours_ids": [
+        "PAR-007",
+        "PAR-004"
+      ],
+      "question": "Architecture post-2023 mouvante ; ACGAZ/ACEGAZ à dater",
+      "missing_evidence": "Note espagnole du 18 mars 2026 relue ; recherche des évolutions ultérieures et effets pratiques encore requise",
+      "owners": [
+        "L’Anarchiviste zapatiste",
+        "La Lectrice"
+      ],
+      "source_refs": [
+        "branch:recherches/zapatisme/ZAP-C10-001-chronologie-comparaison.md",
+        "web:ZAP-2026"
+      ],
+      "severity": "P1",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Note espagnole du 18 mars 2026 relue ; recherche des évolutions ultérieures et effets pratiques encore requise",
+      "publication_blocking": true
+    },
+    {
+      "id": "WORK-ZAP-03",
+      "parcours_ids": [
+        "PAR-007",
+        "PAR-003"
+      ],
+      "question": "Sources du mouvement ≠ mesure indépendante ; pas de filiation européenne présumée",
+      "missing_evidence": "Observations sûres, sources indépendantes, traductions contrôlées ; pas de localisation sensible",
+      "owners": [
+        "L’Anarchiviste zapatiste",
+        "La Tisseuse"
+      ],
+      "source_refs": [
+        "branch:recherches/zapatisme/ZAP-C10-001-chronologie-comparaison.md",
+        "mandat:WORK-C02-01"
+      ],
+      "severity": "P0",
+      "state": "ouverte",
+      "category": "reserve",
+      "resolution_condition": "Observations sûres, sources indépendantes, traductions contrôlées ; pas de localisation sensible",
+      "publication_blocking": true
+    }
+  ]
+}

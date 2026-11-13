@@ -1,12 +1,13 @@
-# Security candidate: exclude internal working documents from legacy Pages.
-# Existing root pages, Markdown documents, assets and navigation stay available.
+# Local C07/main convergence: retain published root pages and internal exclusions.
 exclude:
   - .github
   - apercu-graphiste-35
   - coordination
+  - coordination-console
   - docs
   - edition-premiere
   - propositions
+  - recherche
   - scripts
   - supabase
   - tests

@@ -1,0 +1,672 @@
+{
+  "version": 1,
+  "scope": "metadata_queue_not_completed_articles",
+  "max_batch_size": 5,
+  "total": 219,
+  "publication_authorized": false,
+  "blocked_paths": [
+    "PAR-005"
+  ],
+  "existing": [
+    {
+      "id": "wiki-antifascisme-histoire-et-mecanismes.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-antiracisme-histoires-droits.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-association-collegiale.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-autonomie-materielle-savoir-faire.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-capitalisme-classes-travail.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-culture-creation-acces-art.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-decision-collective.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-ecologie-sociale-environnement.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-education-enfance-protection.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-egalite-fiches.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-egalite-genres-inclusivite.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-feminismes-histoire-egalite.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-financements-culture-spectacle.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-frontieres-migrations-colonialisme.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-handicap-validisme-neurodiversite.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-justice-prisons-abolitionnisme.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-liberte-numerique-ia-surveillance.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-logement-habitat-droit-ville.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-patriarcat-histoire-mecanismes.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-police-deces-memoire.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-politique-institutions-regimes.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    },
+    {
+      "id": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "state": "R6_EXISTING",
+      "publication_status_unchanged": true
+    }
+  ],
+  "held": [
+    {
+      "id": "BIO-019",
+      "state": "HELD",
+      "reason": "Identité bloquée ; rectificatif et preuves nécessaires"
+    },
+    {
+      "id": "BIO-021",
+      "state": "HELD",
+      "reason": "Identité et attributions bloquées"
+    },
+    {
+      "id": "FN-018",
+      "state": "HELD",
+      "reason": "Identité bibliographique non établie"
+    },
+    {
+      "id": "FN-022",
+      "state": "HELD",
+      "reason": "Comparer éditions avec FN-048, sans fusion automatique"
+    },
+    {
+      "id": "FN-038",
+      "state": "HELD",
+      "reason": "Comparer langue, édition et droits avec FN-057"
+    },
+    {
+      "id": "FN-048",
+      "state": "HELD",
+      "reason": "Comparer éditions avec FN-022, sans fusion automatique"
+    },
+    {
+      "id": "FN-057",
+      "state": "HELD",
+      "reason": "Comparer langue, édition et droits avec FN-038"
+    },
+    {
+      "id": "DROIT-001",
+      "state": "HELD",
+      "reason": "Revue juridique et sanitaire nécessaire ; PAR-005 bloqué"
+    },
+    {
+      "id": "DROIT-002",
+      "state": "HELD",
+      "reason": "Revue juridique et visa nécessaires"
+    }
+  ],
+  "batches": [
+    {
+      "id": "lot-commune-01",
+      "label": "Commune · Lot 01",
+      "directory": "relecture",
+      "route": "#parcours/PAR-001",
+      "resource_ids": [
+        "ASSO-008",
+        "ASSO-007",
+        "ARCH-002",
+        "ARCH-006",
+        "BIO-012"
+      ]
+    },
+    {
+      "id": "lot-commune-02",
+      "label": "Commune · Lot 02",
+      "directory": "relecture-commune-02",
+      "route": "#parcours/PAR-001",
+      "resource_ids": [
+        "ARCH-003",
+        "ARCH-004",
+        "ARCH-005",
+        "ARCH-007",
+        "COL-003"
+      ]
+    },
+    {
+      "id": "lot-corpus-01",
+      "label": "Corpus · Lot 01",
+      "directory": "relecture-corpus-01",
+      "route": "#traversees",
+      "resource_ids": [
+        "ARCH-001",
+        "ARCH-008",
+        "ASSO-001",
+        "ASSO-002",
+        "ASSO-003"
+      ]
+    },
+    {
+      "id": "lot-corpus-02",
+      "label": "Corpus · Lot 02",
+      "directory": "relecture-corpus-02",
+      "route": "#traversees",
+      "resource_ids": [
+        "ASSO-004",
+        "ASSO-005",
+        "ASSO-006",
+        "BIO-001",
+        "BIO-002"
+      ]
+    },
+    {
+      "id": "lot-corpus-03",
+      "label": "Corpus · Lot 03",
+      "directory": "relecture-corpus-03",
+      "route": "#traversees",
+      "resource_ids": [
+        "BIO-003",
+        "BIO-004",
+        "BIO-005",
+        "BIO-006",
+        "BIO-007"
+      ]
+    },
+    {
+      "id": "lot-corpus-04",
+      "label": "Corpus · Lot 04",
+      "directory": "relecture-corpus-04",
+      "route": "#traversees",
+      "resource_ids": [
+        "BIO-008",
+        "BIO-009",
+        "BIO-010",
+        "BIO-011",
+        "BIO-013"
+      ]
+    },
+    {
+      "id": "lot-corpus-05",
+      "label": "Corpus · Lot 05",
+      "directory": "relecture-corpus-05",
+      "route": "#traversees",
+      "resource_ids": [
+        "BIO-014",
+        "BIO-015",
+        "BIO-016",
+        "BIO-017",
+        "BIO-018"
+      ]
+    },
+    {
+      "id": "lot-corpus-06",
+      "label": "Corpus · Lot 06",
+      "directory": "relecture-corpus-06",
+      "route": "#traversees",
+      "resource_ids": [
+        "BIO-020",
+        "BIO-022",
+        "COL-001",
+        "CAT-001",
+        "CAT-006"
+      ]
+    },
+    {
+      "id": "lot-corpus-07",
+      "label": "Corpus · Lot 07",
+      "directory": "relecture-corpus-07",
+      "route": "#traversees",
+      "resource_ids": [
+        "ZAP-C10-001",
+        "FN-001",
+        "FN-002",
+        "FN-003",
+        "FN-004"
+      ]
+    },
+    {
+      "id": "lot-corpus-08",
+      "label": "Corpus · Lot 08",
+      "directory": "relecture-corpus-08",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-005",
+        "FN-006",
+        "FN-007",
+        "FN-008",
+        "FN-009"
+      ]
+    },
+    {
+      "id": "lot-corpus-09",
+      "label": "Corpus · Lot 09",
+      "directory": "relecture-corpus-09",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-010",
+        "FN-011",
+        "FN-012",
+        "FN-013",
+        "FN-014"
+      ]
+    },
+    {
+      "id": "lot-corpus-10",
+      "label": "Corpus · Lot 10",
+      "directory": "relecture-corpus-10",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-015",
+        "FN-016",
+        "FN-017",
+        "FN-019",
+        "FN-020"
+      ]
+    },
+    {
+      "id": "lot-corpus-11",
+      "label": "Corpus · Lot 11",
+      "directory": "relecture-corpus-11",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-021",
+        "FN-023",
+        "FN-024",
+        "FN-025",
+        "FN-026"
+      ]
+    },
+    {
+      "id": "lot-corpus-12",
+      "label": "Corpus · Lot 12",
+      "directory": "relecture-corpus-12",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-027",
+        "FN-028",
+        "FN-029",
+        "FN-030",
+        "FN-031"
+      ]
+    },
+    {
+      "id": "lot-corpus-13",
+      "label": "Corpus · Lot 13",
+      "directory": "relecture-corpus-13",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-032",
+        "FN-033",
+        "FN-034",
+        "FN-035",
+        "FN-036"
+      ]
+    },
+    {
+      "id": "lot-corpus-14",
+      "label": "Corpus · Lot 14",
+      "directory": "relecture-corpus-14",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-037",
+        "FN-039",
+        "FN-040",
+        "FN-041",
+        "FN-042"
+      ]
+    },
+    {
+      "id": "lot-corpus-15",
+      "label": "Corpus · Lot 15",
+      "directory": "relecture-corpus-15",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-043",
+        "FN-044",
+        "FN-045",
+        "FN-046",
+        "FN-047"
+      ]
+    },
+    {
+      "id": "lot-corpus-16",
+      "label": "Corpus · Lot 16",
+      "directory": "relecture-corpus-16",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-049",
+        "FN-050",
+        "FN-051",
+        "FN-052",
+        "FN-053"
+      ]
+    },
+    {
+      "id": "lot-corpus-17",
+      "label": "Corpus · Lot 17",
+      "directory": "relecture-corpus-17",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-054",
+        "FN-055",
+        "FN-056",
+        "FN-058",
+        "FN-059"
+      ]
+    },
+    {
+      "id": "lot-corpus-18",
+      "label": "Corpus · Lot 18",
+      "directory": "relecture-corpus-18",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-060",
+        "FN-061",
+        "FN-062",
+        "FN-063",
+        "FN-064"
+      ]
+    },
+    {
+      "id": "lot-corpus-19",
+      "label": "Corpus · Lot 19",
+      "directory": "relecture-corpus-19",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-065",
+        "FN-066",
+        "FN-067",
+        "FN-068",
+        "FN-069"
+      ]
+    },
+    {
+      "id": "lot-corpus-20",
+      "label": "Corpus · Lot 20",
+      "directory": "relecture-corpus-20",
+      "route": "#traversees",
+      "resource_ids": [
+        "FN-070",
+        "FN-071",
+        "page:atlas.html",
+        "TIS-001-001",
+        "TIS-001-002"
+      ]
+    },
+    {
+      "id": "lot-corpus-21",
+      "label": "Corpus · Lot 21",
+      "directory": "relecture-corpus-21",
+      "route": "#traversees",
+      "resource_ids": [
+        "TIS-001-003",
+        "TIS-001-004",
+        "TIS-001-005",
+        "TIS-001-006",
+        "TIS-001-007"
+      ]
+    },
+    {
+      "id": "lot-corpus-22",
+      "label": "Corpus · Lot 22",
+      "directory": "relecture-corpus-22",
+      "route": "#traversees",
+      "resource_ids": [
+        "TIS-001-008",
+        "TIS-001-009",
+        "TIS-001-010",
+        "TIS-001-011",
+        "TIS-001-012"
+      ]
+    },
+    {
+      "id": "lot-corpus-23",
+      "label": "Corpus · Lot 23",
+      "directory": "relecture-corpus-23",
+      "route": "#traversees",
+      "resource_ids": [
+        "tis-c8-3pa",
+        "tis-c8-glanerie",
+        "tis-c8-jardins",
+        "tis-c8-salvetat",
+        "tis-c8-sctl"
+      ]
+    },
+    {
+      "id": "lot-corpus-24",
+      "label": "Corpus · Lot 24",
+      "directory": "relecture-corpus-24",
+      "route": "#traversees",
+      "resource_ids": [
+        "tis-c8-tdl",
+        "tis-c8-testet",
+        "tis-c8-vrac",
+        "ÉCO-001",
+        "ECO-01"
+      ]
+    },
+    {
+      "id": "lot-corpus-25",
+      "label": "Corpus · Lot 25",
+      "directory": "relecture-corpus-25",
+      "route": "#traversees",
+      "resource_ids": [
+        "ECO-02",
+        "ECO-03",
+        "ECO-04",
+        "ECO-05",
+        "ECO-06"
+      ]
+    },
+    {
+      "id": "lot-corpus-26",
+      "label": "Corpus · Lot 26",
+      "directory": "relecture-corpus-26",
+      "route": "#traversees",
+      "resource_ids": [
+        "ECO-07",
+        "ECO-08",
+        "ECO-09",
+        "ECO-10",
+        "ECO-11"
+      ]
+    },
+    {
+      "id": "lot-corpus-27",
+      "label": "Corpus · Lot 27",
+      "directory": "relecture-corpus-27",
+      "route": "#traversees",
+      "resource_ids": [
+        "ECO-12",
+        "ECO-13",
+        "ECO-14",
+        "ECO-15",
+        "ECO-16"
+      ]
+    },
+    {
+      "id": "lot-corpus-28",
+      "label": "Corpus · Lot 28",
+      "directory": "relecture-corpus-28",
+      "route": "#traversees",
+      "resource_ids": [
+        "ECO-17",
+        "ECO-18",
+        "ECO-20",
+        "EXP-001",
+        "EXP-002"
+      ]
+    },
+    {
+      "id": "lot-corpus-29",
+      "label": "Corpus · Lot 29",
+      "directory": "relecture-corpus-29",
+      "route": "#traversees",
+      "resource_ids": [
+        "EXP-004",
+        "EXP-005",
+        "legacy:ressources:1",
+        "legacy:ressources:10",
+        "legacy:ressources:11"
+      ]
+    },
+    {
+      "id": "lot-corpus-30",
+      "label": "Corpus · Lot 30",
+      "directory": "relecture-corpus-30",
+      "route": "#traversees",
+      "resource_ids": [
+        "legacy:ressources:12",
+        "legacy:ressources:13",
+        "legacy:ressources:14",
+        "legacy:ressources:15",
+        "legacy:ressources:16"
+      ]
+    },
+    {
+      "id": "lot-corpus-31",
+      "label": "Corpus · Lot 31",
+      "directory": "relecture-corpus-31",
+      "route": "#traversees",
+      "resource_ids": [
+        "legacy:ressources:17",
+        "legacy:ressources:18",
+        "legacy:ressources:19",
+        "legacy:ressources:2",
+        "legacy:ressources:20"
+      ]
+    },
+    {
+      "id": "lot-corpus-32",
+      "label": "Corpus · Lot 32",
+      "directory": "relecture-corpus-32",
+      "route": "#traversees",
+      "resource_ids": [
+        "legacy:ressources:21",
+        "legacy:ressources:22",
+        "legacy:ressources:23",
+        "legacy:ressources:24",
+        "legacy:ressources:25"
+      ]
+    },
+    {
+      "id": "lot-corpus-33",
+      "label": "Corpus · Lot 33",
+      "directory": "relecture-corpus-33",
+      "route": "#traversees",
+      "resource_ids": [
+        "legacy:ressources:26",
+        "legacy:ressources:27",
+        "legacy:ressources:28",
+        "legacy:ressources:29",
+        "legacy:ressources:3"
+      ]
+    },
+    {
+      "id": "lot-corpus-34",
+      "label": "Corpus · Lot 34",
+      "directory": "relecture-corpus-34",
+      "route": "#traversees",
+      "resource_ids": [
+        "legacy:ressources:30",
+        "legacy:ressources:4",
+        "legacy:ressources:5",
+        "legacy:ressources:6",
+        "legacy:ressources:7"
+      ]
+    },
+    {
+      "id": "lot-corpus-35",
+      "label": "Corpus · Lot 35",
+      "directory": "relecture-corpus-35",
+      "route": "#traversees",
+      "resource_ids": [
+        "legacy:ressources:8",
+        "legacy:ressources:9",
+        "page:bibliotheque.html",
+        "page:parcours.html",
+        "page:squats-et-lieux-autonomes.html"
+      ]
+    },
+    {
+      "id": "lot-corpus-36",
+      "label": "Corpus · Lot 36",
+      "directory": "relecture-corpus-36",
+      "route": "#traversees",
+      "resource_ids": [
+        "page:wiki.html"
+      ]
+    }
+  ],
+  "catalogue_sha256": "33a59a9fa1002888540bb2830c0b7ecef01d9a4e490ca9803be65c9747502721"
+}
