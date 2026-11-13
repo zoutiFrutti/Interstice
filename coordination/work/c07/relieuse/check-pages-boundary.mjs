@@ -2,7 +2,7 @@
 import { lstat, readdir } from 'node:fs/promises';
 import { resolve, relative, sep } from 'node:path';
 
-const forbidden = /^(?:coordination|docs|\.github|recherche|scripts|tests|propositions|\.git)(?:\/|$)/i;
+const forbidden = /^(?:coordination|coordination-console|docs|\.github|apercu-graphiste-35|edition-premiere|artifacts|node_modules|supabase|recherche|scripts|tests|propositions|\.git)(?:\/|$)/i;
 export async function inspectSite(siteRoot) {
   const root=resolve(siteRoot);
   const status=await lstat(root);

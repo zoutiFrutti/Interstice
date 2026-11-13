@@ -23,6 +23,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Reserved documentary sources and security contracts
+        run: |
+          node scripts/security/public-boundary.mjs source .
+          node --test tests/security-public-boundary.test.mjs
       - name: Exact HEAD and preserved main ancestry
         run: |
           git rev-parse HEAD
@@ -45,6 +49,8 @@ jobs:
         with:
           source: .
           destination: ./_site
+      - name: Refuse reserved sources and working documents in Pages output
+        run: node scripts/security/public-boundary.mjs pages _site
       - name: Install test browser
         run: |
           npm install --no-save --ignore-scripts playwright@1.56.1
@@ -61,7 +67,7 @@ jobs:
           trap 'kill "$root_server" "$subpath_server"' EXIT
           node scripts/r6-inventaire-identite.mjs
           node --test --test-concurrency=1 tests/r6-identite-remplacement.browser.test.mjs tests/r6-dev02-stabilisation.browser.test.mjs tests/r2-faille-navigation.browser.test.mjs tests/r4-dev-cloture.browser.test.mjs tests/r1-frontend-navigation.browser.test.mjs tests/graphiste-dev-frontend.test.mjs tests/graphiste-dev-accessibilite.test.mjs tests/graphiste-integration-20261102.test.mjs tests/entree-faille-candidate.test.mjs
-          SITE_BASE_URL=http://127.0.0.1:8001/Interstice/ node --test tests/r6-int01-convergence.browser.test.mjs
+          SITE_BASE_URL=http://127.0.0.1:8001/Interstice/ node --test tests/r6-int01-convergence.browser.test.mjs tests/security-pages-output.browser.test.mjs
       - name: Keep exact HEAD evidence and browser captures
         if: always()
         uses: actions/upload-artifact@v4

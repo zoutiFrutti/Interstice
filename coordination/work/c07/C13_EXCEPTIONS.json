@@ -7,10 +7,10 @@
     "coordination/agents/demande_relieuse_c11.py": "2f6e57bae431a2fb5f4dc41c336891a2260aed66",
     "coordination/agents/test_demande_relieuse_c11.py": "4752fce0dd75d23ef333fded4a0013c35e96c5d2",
     "coordination/agents/test_pont_relieuse_c12.py": "53cdf24a759ae9786fbbc07e7dc29ceb12bc2c69",
-    "manifeste-v2-5.html": "a0666733cf60062c6d4b8fab586490568f24d8c5"
+    "manifeste-v2-5.html": "2875e47c2ce3746311cb06f66b44dc337dea193c"
   },
   "qa_blobs": {
-    "scripts/r6-preservation-check.py": "94df9cb405d98e7c6f555379e015b7f7634f711f",
+    "scripts/r6-preservation-check.py": "74e26c73fe0f618aa94ad7056bc926d555e596af",
     "tests/r6-int01-convergence.browser.test.mjs": "ab32243392991efcfb96fea09a7d227c89b9c087"
   },
   "qa_reason": "Adapter le contrôle historique à l’intégration explicite C13; les fichiers du site et les logos restent strictement inchangés.",
@@ -40,5 +40,18 @@
     "reason": "Retirer uniquement la redirection d'une page publique vers un document de travail Google Drive. Ne modifie pas le contenu du manifeste, les liens internes ni les SVG.",
     "status": "candidate_requires_human_review",
     "publication_authorized": false
-  }
+  },
+  "local_reconciliations": [
+    {
+      "cycle": 15,
+      "main": "80ce56adfb9c3bc3275844b2847eac717b433aa5",
+      "c07": "55d79259ecc1b4788d7ba2be2b49767b827b6018",
+      "scope": "candidate_local_only",
+      "previous_expected_blobs": {
+        "manifeste-v2-5.html": "a0666733cf60062c6d4b8fab586490568f24d8c5",
+        "scripts/r6-preservation-check.py": "94df9cb405d98e7c6f555379e015b7f7634f711f"
+      },
+      "reason": "Preserve published main manifest privacy label and reconcile existing preservation checker; exception path sets unchanged. C12/C13 candidate workflow remains unconditionally false and opt-in guards retained. No publication or activation authorized."
+    }
+  ]
 }

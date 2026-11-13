@@ -21,7 +21,7 @@ for (const filename of readdirSync(queue).filter(x => x.endsWith('.json'))) {
   if (doc.schema_version !== 1 || doc.status !== 'needs_review' || doc.status_scope !== 'github_documentary_queue_only') issues.push(filename+': statut de file interdit');
   if (doc.editorial_approval !== false || doc.publication_status !== 'not_published') issues.push(filename+': approbation ou publication non autorisee');
   if (doc.supabase_submission_id !== null) issues.push(filename+': reference Supabase non verifiee');
-  if (!Array.isArray(doc.sources) || doc.sources.length === 0 || !doc.sources.every(s => typeof s === 'string' && s.startsWith('https://'))) issues.push(filename+': sources absentes ou invalides');
+  if (!Array.isArray(doc.sources) || doc.sources.length === 0 || !doc.sources.every(s => typeof s === 'string' && (s.startsWith('https://') || /^source-reservee:DRV-\d{3}$/.test(s)))) issues.push(filename+': sources absentes ou invalides');
   if (!Array.isArray(doc.review_requirements) || doc.review_requirements.length === 0) issues.push(filename+': controles de relecture absents');
   if (!Array.isArray(doc.review_history) || !doc.review_history.length) issues.push(filename+': historique absent');
   const source = doc.source_document;

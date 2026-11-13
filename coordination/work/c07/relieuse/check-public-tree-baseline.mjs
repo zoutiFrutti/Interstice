@@ -1,12 +1,12 @@
 // Candidate-only monotonicity gate: not a privacy certificate.
-// Only the five explicit synthetic fixture URLs may remain after cycle 2.
+// No direct fixture URL in source: construct synthetic URLs at runtime.
 import {pathToFileURL} from 'node:url';
 import {resolve} from 'node:path';
 import {audit} from './audit-public-tree.mjs';
 import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
 import {directPrivateLink} from './check-public-locators.mjs';
-const baseline=5;
+const baseline=0;
 const fixtures={
  'coordination/work/c07/relieuse/audit-public-tree.test.mjs':new Set(['EXAMPLEPRIVATEID123456','OTHERPRIVATEID987654']),
  'coordination/work/c07/relieuse/check-pages-content.test.mjs':new Set(['EXAMPLE_PRIVATE_DOC_12345']),
