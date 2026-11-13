@@ -16,6 +16,8 @@ on:
       - 'tests/nav01-zoom-extension/**'
       - 'coordination/work/nav-01/**'
       - 'coordination/work/c07/relieuse/check-reviewed-preservation*'
+      - 'coordination/REGISTRE_DECISIONS.md'
+      - 'coordination/agents/test_c20_work_decision_rows.py'
       - 'coordination/work/c07/faire-ensemble-pilot/**'
       - '.github/workflows/work-nav01-candidate.yml'
 permissions:
