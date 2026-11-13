@@ -41,7 +41,7 @@ test('Retour central explicite, état aria-pressed mis à jour et secours sans a
 });
 
 test('Points tertiaires : uniquement des liens réels, sans inventer de porte Vigie',()=>{
-  assert.equal((source.match(/submenus:\\[/g)||[]).length,6);
+  assert.equal((source.match(/submenus:\[/g)||[]).length,6);
   assert.match(source,/'3':\s*\{[\s\S]*?submenus:\s*\[\s*\]/);
   const expectedSubmenus=[
     ['Propositions publiques','index.html#propositions'],
