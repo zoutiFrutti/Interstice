@@ -3,11 +3,14 @@ on:
   push:
     branches:
       - work/nav7-accessible-prototype-20261113
+      - work/c07-nav7-convergence-candidate-20261113
     paths:
       - nav7-candidate.html
       - tests/nav7-candidate.test.mjs
       - tests/nav7-interactions.test.mjs
       - tests/nav7-browser.test.mjs
+      - tests/nav7-convergence.test.mjs
+      - coordination/work/c07/nav7/convergence-contract.json
       - .github/workflows/nav7-candidate-check.yml
   workflow_dispatch:
 permissions:
@@ -22,7 +25,7 @@ jobs:
         with:
           node-version: '22'
       - name: Validate NAV7 contract, links and fallback
-        run: node --test tests/nav7-candidate.test.mjs tests/nav7-interactions.test.mjs
+        run: node --test tests/nav7-candidate.test.mjs tests/nav7-interactions.test.mjs tests/nav7-convergence.test.mjs
       - name: Installer Chromium pour tests navigateur isolés
         run: |
           npm install --no-save --no-package-lock playwright@1.56.1
