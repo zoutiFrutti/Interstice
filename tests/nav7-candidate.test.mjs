@@ -14,7 +14,7 @@ const expected=[
   ['5','Archives des communs'],
   ['6','Médiathèque des communs']
 ];
-const targetPages=['index.html','atlas.html','wiki.html','squats-et-lieux-autonomes.html','bibliotheque.html','manifeste-v2-5.html','assets/logo-interstice.svg','assets/identite/r7/nav7/interstice-r7-b-base.svg'];
+const targetPages=['index.html','atlas.html','wiki.html','squats-et-lieux-autonomes.html','bibliotheque.html','manifeste-v2-5.html','assets/logo-interstice.svg','assets/identite/r7/nav7/interstice-r7-nav7-candidate.svg'];
 
 test('Six boutons de porte distincts exactement, ordre décidé',()=>{
   const tags=[...source.matchAll(/<button\b[^>]*class="node"[^>]*>/g)].map(m=>m[0]);
@@ -25,9 +25,9 @@ test('Six boutons de porte distincts exactement, ordre décidé',()=>{
     assert.match(tags.find(tag=>tag.includes(`data-point="${id}"`)),/aria-label=/);
   }
 });
-test('SVG R7-B réel, vectoriel, six pôles et zones tactiles alignées',()=>{
-  const rel='assets/identite/r7/nav7/interstice-r7-b-base.svg';
-  assert.match(source,/src="assets\/identite\/r7\/nav7\/interstice-r7-b-base\.svg"/);
+test('SVG NAV7 derivé de R7-B, sept noeuds vectoriels et six zones de portes alignées',()=>{
+  const rel='assets/identite/r7/nav7/interstice-r7-nav7-candidate.svg';
+  assert.match(source,/src="assets\/identite\/r7\/nav7\/interstice-r7-nav7-candidate\.svg"/);
   const svg=readFileSync(resolve(root,rel),'utf8');
   assert.match(svg,/viewBox="0 0 665 665"/);
   assert.ok(!svg.includes('<image')&&!svg.includes('data:image/'),'SVG should not embed raster imagery');
@@ -42,7 +42,7 @@ test('SVG R7-B réel, vectoriel, six pôles et zones tactiles alignées',()=>{
     assert.ok(Math.abs(Number(btn[2])-Number(point[2])/665*100)<0.02,'vertical coordinate mismatch '+number);
     assert.ok(svg.includes('id="r7-porte-'+id+'-tertiaires"'),'missing tertiary geometry '+number);
   }
-  assert.match(source,/point 7 dans le dessin n'est pas simulée/);
+  assert.match(source,/Le point 7 est placé sur le nœud existant/);
 });
 
 test('Manifeste bouton 7 et lien direct existant',()=>{
@@ -53,7 +53,7 @@ test('Manifeste bouton 7 et lien direct existant',()=>{
   assert.ok(existsSync(resolve(root,'manifeste-v2-5.html')));
   assert.equal((source.match(/id="manifest-open"/g)||[]).length,1);
   assert.match(source,/<button class="node manifest-node" style="--x:33[.]08%;--y:49[.]17%"[^>]*data-point="7" id="manifest-open"/);
-  const svg=readFileSync(resolve(root,'assets/identite/r7/nav7/interstice-r7-b-base.svg'),'utf8');
+  const svg=readFileSync(resolve(root,'assets/identite/r7/nav7/interstice-r7-nav7-candidate.svg'),'utf8');
   assert.ok(svg.includes('<circle cx="220" cy="327" r="10"'),'point 7 must be an original R6 node');
   assert.ok(Math.abs(33.08-220/665*100)<0.02 && Math.abs(49.17-327/665*100)<0.02,'point 7 should match its original node');
 });
