@@ -91,3 +91,21 @@ Ce complément **remplace les réserves historiques ci-dessus sur l'impossibilit
 **Tests navigateur et tests Node réels** : non attestés. Le dépôt GitHub n'est pas récupérable depuis le terminal de contrôle de cette conversation (résolution réseau refusée). Les assertions de contenu/GitHub sont des vérifications statiques, **pas** une CI verte. Reprendre l'essai sur un runner GitHub et examiner son résultat exact avant toute acceptation.
 
 **Statut :** nouveau candidat SVG authentique, positions 1–7 cohérentes avec la capture, liens conservés, **non intégré à main, non déployé, non publié**.
+
+## Complément · correction fonctionnelle et essais candidats (cycle suivant, 13 novembre 2026)
+
+**Bug reproductible par lecture du code :** la sélection des portes utilisait `document.querySelectorAll('.node[data-point]')`, qui capturait également le bouton `data-point="7"`. Un clic sur Manifeste appelait alors `routes['7']` (absent), avant l'ouverture du dialogue, et déclenchait une erreur JavaScript. Corrigé en sélectionnant uniquement `'.node[data-door]'`.
+
+**Amélioration graphique sans changement de SVG :** zones tactiles superposées devenues transparentes hors sélection/survol/focus, afin de ne pas cacher les nœuds et fissures du vrai SVG candidat. Les contrastes et états de focus sont conservés ; la restitution visuelle et le contrôle tactile réel restent à éprouver.
+
+**Tests ajoutés :**
+- `tests/nav7-candidate.test.mjs` : nouvelle assertion de non-régression sur le sélecteur excluant le point 7.
+- `tests/nav7-interactions.test.mjs` : exécute le script inline réellement présent dans la page dans un faux DOM Node isolé ; vérifie l'ouverture/fermeture du Manifeste, la sélection des six portes, les trois liens tertiaires sur chacune des cinq portes qui en possèdent et le retour au centre.
+- `tests/nav7-browser.test.mjs` : scénarios Chromium à taille mobile (390×844 et 375×812), avec et sans JS, ouverture de dialogue, clics et chargement du vrai SVG.
+- `.github/workflows/nav7-candidate-check.yml` : `node --test` sur les deux suites sans navigateur, installation Playwright/Chromium sur runner isolé, puis exécution des scénarios navigateur. Branche NAV7 seule, permission `contents: read`, **aucun déploiement**.
+
+**Vérification effectivement réalisée lors de cette reprise :** le script inline exact de la branche a été exécuté dans un isolate V8 avec un DOM simulé distinct du fichier de test ajouté. Cinq scénarios ont passé sans erreur : bouton 7 ouvrant le dialogue, fermeture, porte 1 affichant trois tertiaires, porte Vigie ne fabriquant aucun lien et retour au centre. Le SHA HTML contrôlé à ce stade était `8450eeb3819036af82a172d9650c5d953c41f9e9`.
+
+**Non encore attesté :** exécution distante du workflow sur le HEAD le plus récent ; Chromium réel, captures, tactile et lecteurs d'écran. Les API disponibles ne remontent pas les runs de push en branche sans PR, et l'accès réseau direct à GitHub depuis le terminal local échoue. Le test navigateur est donc **écrit et connecté**, pas déclaré réussi.
+
+**Respect du mandat :** aucune fusion, PR ouverte, publication, migration, activation de données privées, modification des SVG sources ni suppression. La branche demeure **candidate isolée**. Les 219 objets internes restent fermés. La fidélité artistique B1 et le placement graphique des tertiaires autour des nœuds restent à valider séparément.
