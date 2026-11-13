@@ -1,0 +1,14 @@
+[
+  {
+    "path": "browser-attempt-real400.tap",
+    "raw_sha256": "cc1a5d54d8488ab6b28120ac820139c5c6987cf65c2877bed0f56e2d7575f79b",
+    "stored_sha256": "4f9526f0f208aaccd9246c9e6b7ea7f00dc8697bcd13eaa6379d8a00602dd68f",
+    "normalization": "trailing whitespace only; failures retained; raw logs retained privately"
+  },
+  {
+    "path": "browser-intermediate-selector.tap",
+    "raw_sha256": "081ae27e2274ab17bd51489d6fe489dcc82b9f852f5239e7818e55d51b2e7f1a",
+    "stored_sha256": "51bba61df6faed091e14a7515a759f52641e87c6addcc352d7b1746fc29c99ac",
+    "normalization": "trailing whitespace only; failures retained; raw logs retained privately"
+  }
+]

@@ -1,0 +1,27 @@
+name: WORK C02 candidate contract (no publication)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'coordination/v2/work-c02-01/**'
+      - 'coordination/work/c07/relieuse/check-reviewed-preservation*'
+      - '.github/workflows/work-c02-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  candidate-contract:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check candidate contract and preserve all existing files
+        run: |
+          node --test coordination/v2/work-c02-01/tests/contract.test.mjs coordination/work/c07/relieuse/check-reviewed-preservation.test.mjs
+          node coordination/v2/work-c02-01/tools/check.mjs
+          node -e "JSON.parse(require('node:fs').readFileSync('coordination/v2/work-c02-01/schema/v2.schema.json','utf8'))"

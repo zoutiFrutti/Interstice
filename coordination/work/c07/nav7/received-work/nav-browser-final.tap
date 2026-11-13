@@ -1,0 +1,34 @@
+✔ entrée, portes, zoom, recentrage et repli textuel — 320px (820.595164ms)
+✔ entrée, portes, zoom, recentrage et repli textuel — 390px (589.664251ms)
+✔ entrée, portes, zoom, recentrage et repli textuel — 768px (717.240366ms)
+✔ entrée, portes, zoom, recentrage et repli textuel — 1280px (831.87769ms)
+✔ historique, bifurcations, liens profonds, restauration après rechargement (586.995871ms)
+✔ clavier, focus visible, représentations accessibles et manifestes (2291.279482ms)
+✔ les sept traversées relient les portes et gardent leurs retours (1031.812266ms)
+✔ Android simulé : glissement, pincement à deux doigts et défilement alternatif (700.998804ms)
+✔ sans JavaScript : six portes, sept chemins et deux manifestes (30226.008975ms)
+✔ réduction des animations : entrée et caméra immédiates (793.695123ms)
+✔ entrée animée : traversée et caméra opérationnelles, puis animation terminée (4777.668363ms)
+✔ absence d’erreurs JavaScript dans tous les scénarios précédents (0.3537ms)
+✔ lecture complète : retour exact à la caméra, renvois internes et bouton navigateur (1522.45565ms)
+✔ textes complets sans JavaScript ; médias sans chargement tiers et PAR-005 fermé (479.627438ms)
+✔ NAV7 Atlas is independent and historic aliases remain reachable (177.49753ms)
+✔ C01 C: enlarged mobile, readable fine labels, adaptive windows and preserved tool entry points (7054.199572ms)
+✔ C01 C: iPad profile touch, visible native step, focus and escape with larger reader (1059.696016ms)
+✔ NAV7 exact source anchors, no overlapping primary targets and separate manifesto (279.337168ms)
+✔ NAV7 activated tertiary menus preserve direct links, history and closed catalogue (874.91171ms)
+✔ NAV7 no-JavaScript direct tertiary links and six independent doors (227.410895ms)
+✔ NAV7 spatial submenu targets and reader separation — 320px (641.708789ms)
+✔ NAV7 spatial submenu targets and reader separation — 390px (562.09222ms)
+✔ NAV7 spatial submenu targets and reader separation — 768px (630.28325ms)
+✔ NAV7 spatial submenu targets and reader separation — 1280px (796.484748ms)
+✔ NAV7 spatial keyboard entry, Sites et portails direct URL, resize and escape (1086.414908ms)
+✔ NAV7 candidate uses selected B1 and adopted miniature while official assets stay intact (137.591304ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 59376.631539

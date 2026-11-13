@@ -1,0 +1,30 @@
+{
+  "origin": "C17 logs received, not rerun by receipt",
+  "checks": [
+    {
+      "path": "coordination/work/c07/nav7/received-work/navigation-suite.tap",
+      "sha256": "0c0c84be99f1f9c409c70847d4ee62768cc0f731ff56908e41432eb5a3ff927a",
+      "passed": 25,
+      "executed_in_current_cycle": false
+    },
+    {
+      "path": "coordination/work/c07/nav7/received-work/additional-suite.tap",
+      "sha256": "43bacb45b4cc54e8ce3daed4dca2c48e26cf5ee2cc6941ab2b2ecd89130a56ed",
+      "passed": 44,
+      "executed_in_current_cycle": false
+    },
+    {
+      "path": "coordination/work/c07/nav7/received-work/master-reception.tap",
+      "sha256": "88f9cc76da49485dd75059d87eb792d27a87c407396bf8b618ca8eff3a10e909",
+      "passed": 15,
+      "executed_in_current_cycle": false
+    },
+    {
+      "path": "coordination/work/c07/nav7/received-work/nav-browser-final.tap",
+      "sha256": "4209dd166bdb0b9d2d77efdb21af0e44133f39db0df05cd9237a36a833697968",
+      "passed": 26,
+      "executed_in_current_cycle": false
+    }
+  ],
+  "real_400_percent_browser_zoom_verified": false
+}

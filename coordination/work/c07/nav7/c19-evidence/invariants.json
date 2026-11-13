@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "path": ".github/workflows/wiki-markdown-inventory.yml",
+      "unchanged_from": "80ce56adfb9c3bc3275844b2847eac717b433aa5",
+      "sha256": "bd0c94807be52d5d78e089c0eeaf3a3a3f9e408dbe5a70ed451b74891fd05364"
+    },
+    {
+      "path": "assets/logo-faille-noire.svg",
+      "unchanged_from": "80ce56adfb9c3bc3275844b2847eac717b433aa5",
+      "sha256": "7bd0cfe8cf984f421b2377802ef97a0df843158217ad569ddd838313d4e73cb6"
+    },
+    {
+      "path": "assets/logo-interstice.svg",
+      "unchanged_from": "80ce56adfb9c3bc3275844b2847eac717b433aa5",
+      "sha256": "0fe365cd02a238bf4486f936683d194aab6a1ee2e62e2d5a2eaee9b72eff0453"
+    },
+    {
+      "path": "coordination/v2/work-c02-01/data/resources.json",
+      "unchanged_from": "3c21d7d8b4179adff6ce45b71efc9eb9f32bafcd",
+      "sha256": "33a59a9fa1002888540bb2830c0b7ecef01d9a4e490ca9803be65c9747502721"
+    },
+    {
+      "path": "coordination/v2/work-c02-01/data/sources.json",
+      "unchanged_from": "3c21d7d8b4179adff6ce45b71efc9eb9f32bafcd",
+      "sha256": "8e6c827b92153b7232d49e0a4e509c627169df20b82e664374ba13b97d3472b6"
+    },
+    {
+      "path": "coordination/v2/work-c02-01/data/relations.json",
+      "unchanged_from": "3c21d7d8b4179adff6ce45b71efc9eb9f32bafcd",
+      "sha256": "37f975bd454fbee98634e1fcfb37cf3373629e4709734658a8f007a3ceca5435"
+    },
+    {
+      "path": "coordination/v2/work-c02-01/data/objections.json",
+      "unchanged_from": "3c21d7d8b4179adff6ce45b71efc9eb9f32bafcd",
+      "sha256": "3455111aa98942a383a7b537c7037dca1f4ffb3d21c2c195b959c1f40f4bd325"
+    },
+    {
+      "path": "coordination/v2/work-c02-01/data/parcours.json",
+      "unchanged_from": "3c21d7d8b4179adff6ce45b71efc9eb9f32bafcd",
+      "sha256": "41b66a0046e322a34229040d5c5cffed4c1ac72dc8d92651717e1d07a10cb2a6"
+    },
+    {
+      "path": "coordination/v2/work-c02-01/data/navigation.json",
+      "unchanged_from": "3c21d7d8b4179adff6ce45b71efc9eb9f32bafcd",
+      "sha256": "e3aa2a39067b5d1d1c22d2986997dc8f2824285bf9809210e386c03da9ac744b"
+    }
+  ],
+  "private_import_not_invoked": true,
+  "master_inputs_unchanged": true
+}

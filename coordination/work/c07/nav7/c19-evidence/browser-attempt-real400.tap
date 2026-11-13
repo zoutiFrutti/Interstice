@@ -1,0 +1,83 @@
+✔ entrée, portes, zoom, recentrage et repli textuel — 320px (2672.794556ms)
+✔ entrée, portes, zoom, recentrage et repli textuel — 390px (1395.174059ms)
+✔ entrée, portes, zoom, recentrage et repli textuel — 768px (1173.30619ms)
+✔ entrée, portes, zoom, recentrage et repli textuel — 1280px (1511.024895ms)
+✔ historique, bifurcations, liens profonds, restauration après rechargement (1107.128071ms)
+✔ clavier, focus visible, représentations accessibles et manifestes (5033.198197ms)
+✔ les sept traversées relient les portes et gardent leurs retours (3418.845507ms)
+✔ Android simulé : glissement, pincement à deux doigts et défilement alternatif (1384.315959ms)
+✔ sans JavaScript : six portes, sept chemins et deux manifestes (30394.872673ms)
+✔ réduction des animations : entrée et caméra immédiates (1755.735553ms)
+✖ zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom (202.476271ms)
+✔ entrée animée : traversée et caméra opérationnelles, puis animation terminée (5289.907621ms)
+✔ absence d’erreurs JavaScript dans tous les scénarios précédents (0.540481ms)
+✔ lecture complète : retour exact à la caméra, renvois internes et bouton navigateur (3678.344369ms)
+✔ textes complets sans JavaScript ; médias sans chargement tiers et PAR-005 fermé (953.02407ms)
+✔ NAV7 Atlas is independent and historic aliases remain reachable (509.157225ms)
+✔ C01 C: enlarged mobile, readable fine labels, adaptive windows and preserved tool entry points (14640.087051ms)
+✔ C01 C: iPad profile touch, visible native step, focus and escape with larger reader (3143.366411ms)
+✔ NAV7 exact source anchors, no overlapping primary targets and separate manifesto (2629.422235ms)
+✔ NAV7 activated tertiary menus preserve direct links, history and closed catalogue (8612.310291ms)
+✔ NAV7 no-JavaScript direct tertiary links and six independent doors (3218.732116ms)
+✔ NAV7 spatial submenu targets and reader separation — 320px (3518.890983ms)
+✔ NAV7 spatial submenu targets and reader separation — 390px (5559.735478ms)
+✔ NAV7 spatial submenu targets and reader separation — 768px (8165.782329ms)
+✔ NAV7 spatial submenu targets and reader separation — 1280px (5094.831467ms)
+✔ NAV7 spatial keyboard entry, Sites et portails direct URL, resize and escape (5783.908205ms)
+✔ NAV7 candidate uses selected B1 and adopted miniature while official assets stay intact (577.919626ms)
+file:///workspace/scratch/a1e800ee9a27/private-cycle19/unified/tests/nav7-browser.test.mjs:9
+before(async()=>{server=createServer(async(req,res)=>{try{const path=resolve(root,decodeURIComponent(new URL(req.url,'http://local').pathname).slice(1)));if(!path.startsWith(root+'/'))throw Error('invalid path');const mime={'.html':'text/html','.mjs':'text/javascript','.css':'text/css','.svg':'image/svg+xml'};res.writeHead(200,{'Content-Type':mime[extname(path)]||'text/plain'}).end(await readFile(path));}catch{res.writeHead(404).end();}});await new Promise(r=>server.listen(0,'127.0.0.1',r));base='http://127.0.0.1:'+server.address().port;browser=await chromium.launch();});
+                                                                                                                                                        ^
+
+SyntaxError: Unexpected token ')'
+    at compileSourceTextModule (node:internal/modules/esm/utils:319:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:89:18)
+    at #translate (node:internal/modules/esm/loader:438:20)
+    at afterLoad (node:internal/modules/esm/loader:506:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:511:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:564:36)
+    at afterResolve (node:internal/modules/esm/loader:611:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:617:12)
+    at node:internal/modules/esm/loader:636:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:370:14)
+
+Node.js v24.22.1
+✖ tests/nav7-browser.test.mjs (194.342256ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 26
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122584.527889
+
+✖ failing tests:
+
+test at tests/nav01.browser.test.mjs:231:1
+✖ zoom navigateur réel 400 % via chrome.tabs.setZoom, sans CSS zoom (202.476271ms)
+  browserType.launchPersistentContext: Target page, context or browser has been closed
+  Browser logs:
+
+  <launching> /home/agent/.cache/ms-playwright/chromium-1194/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-extensions-except=/workspace/scratch/a1e800ee9a27/private-cycle19/unified/tests/nav01-zoom-extension --load-extension=/workspace/scratch/a1e800ee9a27/private-cycle19/unified/tests/nav01-zoom-extension --user-data-dir=/tmp/interstice-nav01-zyfg9P --remote-debugging-pipe about:blank
+  <launched> pid=284
+  [pid=284][err] [284:284:1113/175911.135204:FATAL:chrome/browser/process_singleton_posix.cc:292] Check failed: . socket() failed: Operation not permitted (1)
+  [pid=284][err] [1113/175911.135638:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+  Call log:
+  [2m  - <launching> /home/agent/.cache/ms-playwright/chromium-1194/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-extensions-except=/workspace/scratch/a1e800ee9a27/private-cycle19/unified/tests/nav01-zoom-extension --load-extension=/workspace/scratch/a1e800ee9a27/private-cycle19/unified/tests/nav01-zoom-extension --user-data-dir=/tmp/interstice-nav01-zyfg9P --remote-debugging-pipe about:blank[22m
+  [2m  - <launched> pid=284[22m
+  [2m  - [pid=284][err] [284:284:1113/175911.135204:FATAL:chrome/browser/process_singleton_posix.cc:292] Check failed: . socket() failed: Operation not permitted (1)[22m
+  [2m  - [pid=284][err] [1113/175911.135638:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+  [2m  - [pid=284] <gracefully close start>[22m
+  [2m  - [pid=284] <kill>[22m
+  [2m  - [pid=284] <will force kill>[22m
+  [2m  - [pid=284] <process did exit: exitCode=null, signal=SIGABRT>[22m
+  [2m  - [pid=284] starting temporary directories cleanup[22m
+  [2m  - [pid=284] finished temporary directories cleanup[22m
+  [2m  - [pid=284] <gracefully close end>[22m
+
+      at async TestContext.<anonymous> (/workspace/scratch/a1e800ee9a27/private-cycle19/unified/tests/nav01.browser.test.mjs:233:17)
+
+test at tests/nav7-browser.test.mjs:1:1
+✖ tests/nav7-browser.test.mjs (194.342256ms)
+  'test failed'

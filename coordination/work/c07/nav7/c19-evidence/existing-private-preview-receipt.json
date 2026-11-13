@@ -1,0 +1,19 @@
+{
+  "project_id": "appgprj_6af71d0d31608191adecfc8edc484fe1",
+  "version": 1,
+  "source_commit": "96838d0edb7fede5e9af1c2080347ccf84f2162d",
+  "deployment_id": "appgdep_6af71d49b2c48191a629614941025067",
+  "status": "succeeded",
+  "archive_sha256": "a3b3e3f44ff83a7539d296b49c471ff712a1ca85f2a98c5374104d30d19cace1",
+  "archive_files_including_hosting_manifest": 136,
+  "content_files": 135,
+  "access_mode": "custom",
+  "owner_count": 1,
+  "other_users": 0,
+  "external_visitors": 0,
+  "groups": 0,
+  "access_revision": 1,
+  "rechecked_in_C19": true,
+  "authenticated_browser_content_rechecked": false,
+  "deployment_executed_in_C19": false
+}

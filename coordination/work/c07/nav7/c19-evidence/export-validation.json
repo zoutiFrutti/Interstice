@@ -1,0 +1,11 @@
+{
+  "files": 140,
+  "html": 88,
+  "missing_local_targets": 0,
+  "known_sensitive_id_hits": 0,
+  "old_c17_paths_preserved": 135,
+  "forms_statically_disabled": 7,
+  "official_logos_unchanged": true,
+  "excluded_work_directories_absent": true,
+  "manifest_sha256": "b810dfbeda164b833dedd80220738521cd6eec0be42fc26508f698fee614034c"
+}

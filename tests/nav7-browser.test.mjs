@@ -1,69 +1,15 @@
-// Test Chromium de la page candidate locale, sans déploiement, ni requête externe.
-import test from 'node:test';
+// Actual canonical DOM through the former entry; no public network or deployment.
+import test,{before,after} from 'node:test';
 import assert from 'node:assert/strict';
-import {resolve,dirname} from 'node:path';
-import {pathToFileURL,fileURLToPath} from 'node:url';
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {resolve,extname} from 'node:path';
 import {chromium} from 'playwright';
+const root=resolve('dist-nav');let server,browser,base;
+before(async()=>{server=createServer(async(req,res)=>{try{const path=resolve(root,decodeURIComponent(new URL(req.url,'http://local').pathname).slice(1));if(!path.startsWith(root+'/'))throw Error('invalid path');const mime={'.html':'text/html','.mjs':'text/javascript','.css':'text/css','.svg':'image/svg+xml'};res.writeHead(200,{'Content-Type':mime[extname(path)]||'text/plain'}).end(await readFile(path));}catch{res.writeHead(404).end();}});await new Promise(r=>server.listen(0,'127.0.0.1',r));base='http://127.0.0.1:'+server.address().port;browser=await chromium.launch();});
+after(async()=>{await browser?.close();await new Promise(r=>server?.close(r));});
+test('Old NAV7 address opens the canonical selected category and scoped real shortcut',async()=>{const page=await browser.newPage({reducedMotion:'reduce'});try{await page.goto(base+'/nav7-candidate.html#porte/encyclopedie/ecologie');await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));await page.locator('.legacy-quicklinks a').waitFor();assert.equal(new URL(page.url()).pathname,'/explorer.html');assert.equal(await page.locator('.legacy-quicklinks a').count(),1);assert.equal(await page.locator('.legacy-quicklinks a').getAttribute('href'),'https://zoutifrutti.github.io/Interstice/wiki-ecologie-sociale-environnement.html');}finally{await page.close();}});
+test('Vigie opens candidate categories without generating a public dossier shortcut',async()=>{const page=await browser.newPage({reducedMotion:'reduce',viewport:{width:390,height:844}});try{await page.goto(base+'/nav7-candidate.html#porte/vigie/enquetes');await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));assert.equal(await page.locator('#panel-title').innerText(),'La Vigie de la Faille');assert.equal(await page.locator('.legacy-quicklinks a').count(),0);assert.equal(await page.locator('#panel-body').getAttribute('data-section'),'enquetes');}finally{await page.close();}});
+test('Without JS the preserved entry offers six real doors, manifesto and the fifteen shortcuts',async()=>{const page=await browser.newPage({javaScriptEnabled:false});try{await page.goto(base+'/nav7-candidate.html');assert.equal(await page.locator('nav a').count(),6);assert.equal(await page.locator('main section a').count(),15);assert.equal(await page.locator('a[href="manifeste-v2-5.html"]').count(),1);}finally{await page.close();}});
 
-const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
-const url=pathToFileURL(resolve(root,'nav7-candidate.html')).href;
-
-test('NAV7 Chromium : six portes, Manifeste modal et réinitialisation',async()=>{
-  const browser=await chromium.launch({args:['--no-sandbox']});
-  try{
-    const page=await browser.newPage({reducedMotion:'reduce',viewport:{width:390,height:844}});
-    const exceptions=[];
-    page.on('pageerror',error=>exceptions.push(error.message));
-    await page.goto(url);
-    await assert.equal(await page.locator('.node[data-door]').count(),6);
-    await assert.equal(await page.locator('#manifest-open').count(),1);
-    await page.locator('button[data-point="1"]').click();
-    assert.equal(await page.locator('#door-details h2').innerText(),'Faire Ensemble');
-    assert.equal(await page.locator('#door-details .submenus a').count(),3);
-    await page.locator('button[data-point="3"]').click();
-    assert.equal(await page.locator('#door-details h2').innerText(),'La Vigie de la Faille');
-    assert.equal(await page.locator('#door-details .submenus a').count(),0);
-    await page.locator('#reset').click();
-    assert.equal(await page.locator('#door-details h2').innerText(),'Explorer');
-    assert.equal(await page.locator('button[data-door][aria-pressed="true"]').count(),0);
-    await page.locator('#manifest-open').click();
-    await page.locator('#manifest-dialog').waitFor({state:'visible'});
-    assert.equal(await page.locator('#manifest-dialog[open]').count(),1);
-    assert.equal(await page.locator('#manifest-dialog iframe').getAttribute('src'),'manifeste-v2-5.html');
-    await page.locator('#manifest-close').click();
-    assert.equal(await page.locator('#manifest-dialog[open]').count(),0);
-    assert.deepEqual(exceptions,[]);
-  }finally{await browser.close()}
-});
-
-test('NAV7 Chromium : navigation sans JS et fidélité du dessin SVG',async()=>{
-  const browser=await chromium.launch({args:['--no-sandbox']});
-  try{
-    const page=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
-    await page.goto(url);
-    assert.equal(await page.locator('.direct a').count(),6);
-    assert.equal(await page.locator('.stage img').getAttribute('src'),'assets/identite/r7/nav7/interstice-r7-nav7-candidate.svg');
-    assert.equal(await page.locator('.stage img').evaluate(img=>img.complete&&img.naturalWidth>0),true);
-    assert.equal(await page.locator('a[href="manifeste-v2-5.html"]').count()>0,true);
-  }finally{await browser.close()}
-});
-
-test('NAV7 Chromium : activation clavier, Escape et focus accessible',async()=>{
-  const browser=await chromium.launch({args:['--no-sandbox']});
-  try{
-    const page=await browser.newPage({reducedMotion:'reduce',viewport:{width:1280,height:900}});
-    await page.goto(url);
-    await page.locator('button[data-point="4"]').focus();
-    await page.keyboard.press('Enter');
-    assert.equal(await page.locator('#door-details h2').innerText(),'Encyclopédie des communs');
-    assert.equal(await page.locator('button[data-point="4"]').getAttribute('aria-pressed'),'true');
-    await page.locator('#manifest-open').focus();
-    await page.keyboard.press('Enter');
-    assert.equal(await page.locator('#manifest-dialog[open]').count(),1);
-    await page.keyboard.press('Escape');
-    assert.equal(await page.locator('#manifest-dialog[open]').count(),0);
-    await page.locator('#reset').focus();
-    await page.keyboard.press('Enter');
-    assert.equal(await page.locator('button[data-door][aria-pressed="true"]').count(),0);
-  }finally{await browser.close()}
-});
+test('Faire Ensemble keeps all shortcut destinations without duplicating its existing proposition tools',async()=>{const page=await browser.newPage({reducedMotion:'reduce'});try{await page.goto(base+'/nav7-candidate.html#porte/entraide');await page.waitForFunction(()=>document.documentElement.classList.contains('enhanced'));assert.equal(await page.locator('.legacy-quicklinks a').count(),1);assert.equal(await page.locator('.legacy-quicklinks a').getAttribute('href'),'https://zoutifrutti.github.io/Interstice/wiki-decision-collective.html');assert.equal(await page.locator('#panel-body .collective-tool-list a').count(),3);}finally{await page.close();}});

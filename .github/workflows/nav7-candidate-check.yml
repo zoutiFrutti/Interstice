@@ -6,6 +6,9 @@ on:
       - work/c07-nav7-convergence-candidate-20261113
     paths:
       - nav7-candidate.html
+      - explorer.html
+      - assets/nav-01/**
+      - assets/identite/r7/**
       - tests/nav7-candidate.test.mjs
       - tests/nav7-interactions.test.mjs
       - tests/nav7-browser.test.mjs
@@ -17,7 +20,7 @@ permissions:
   contents: read
 jobs:
   nav7-candidate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
@@ -26,6 +29,8 @@ jobs:
           node-version: '22'
       - name: Validate NAV7 contract, links and fallback
         run: node --test tests/nav7-candidate.test.mjs tests/nav7-interactions.test.mjs tests/nav7-convergence.test.mjs
+      - name: Build isolated unified navigation
+        run: node scripts/build-nav-preview.mjs
       - name: Installer Chromium pour tests navigateur isolés
         run: |
           npm install --no-save --no-package-lock playwright@1.56.1

@@ -1,0 +1,594 @@
+import {quickLinksFor, quickLinkHref} from './legacy-quick-links.mjs';
+import {READINGS} from './reading-catalogue.mjs';
+import {MEDIA} from './media-catalogue.mjs';
+import {DOORS, PARCOURS, BUNDLE, DOCUMENTS, PUBLIC_RESOURCES, COLLECTIVE_TOOLS, COLLECTIVE_TOOLS_NOTICE, NAV7_ANCHORS, SUBMENUS, CANDIDATE_ARTWORK} from './graph-data.mjs';
+import {readFragment} from './navigation-state.mjs';
+import {fitCamera, constrain, viewBox, project, worldPoint, zoomAt, panBy, validCamera} from './camera.mjs';
+import {parcoursStatus} from './parcours-status.mjs';
+import {candidateResourceIds} from './step-resources.mjs';
+import {diveCamera,retreat,edgeCue,stepLayout,tertiaryLayout} from './spatial.mjs';
+
+const $ = selector => document.querySelector(selector);
+const stage = $('#space');
+const world = $('#world');
+const entry = $('#entree');
+const app = $('#exploration');
+const panel = $('#panel');
+const panelBody = $('#panel-body');
+const panelTitle = $('#panel-title');
+const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+const storageKey = 'interstice.nav01.view.v1';
+let nodes = [...document.querySelectorAll('.node')];
+const points = new Map([...DOORS.map(door => [door.id, door]), ['manifeste', NAV7_ANCHORS.manifeste], ['centre',NAV7_ANCHORS.centre]]);
+let passage=null;
+let entryTimer=null;
+let firstExploration=false;
+let camera = fitCamera(stage.clientWidth || 1280, stage.clientHeight || 700);
+let activeRoute = '#entree';
+let originDoor = null;
+let animation = null;
+let returnView = null;
+let panelVersion = 0;
+let panEnabled = true;
+let lastFocusedNode = null;
+let lastView = null;
+let tertiaryDoor=null;
+try { lastView = JSON.parse(sessionStorage.getItem(storageKey)); } catch { /* storage optional */ }
+const validSnapshot = value => value?.version === 1 && validCamera(value.camera) && typeof value.route === 'string' && value.route.startsWith('#');
+if (!validSnapshot(lastView)) lastView = null;
+const originDoorId = id => id==='carte'?'atlas':DOORS.some(door=>door.id===id)?id:null;
+
+const element = (tag, text, className) => {
+  const node = document.createElement(tag);
+  if (text !== undefined) node.textContent = text;
+  if (className) node.className = className;
+  return node;
+};
+function link(text, href, className = '') {
+  const node = element('a', text, className); node.href = href; return node;
+}
+function snapshot() { return {version:1, route:activeRoute, camera:{...camera}, originDoor}; }
+function stopAnimation() { if (animation !== null) cancelAnimationFrame(animation); animation = null; }
+function rect() { return stage.getBoundingClientRect(); }
+function announce(text) { $('#live-status').textContent = text; }
+function persist() {
+  if (activeRoute === '#entree') return;
+  const value = snapshot();
+  try { sessionStorage.setItem(storageKey, JSON.stringify(value)); } catch { /* no account or storage prerequisite */ }
+  lastView = value;
+  history.replaceState({...history.state, nav01:value}, '');
+}
+function paint() {
+  camera = constrain(camera);
+  const box = rect();
+  if (!box.width || !box.height) return;
+  const v = viewBox(camera, box.width, box.height);
+  const overlay=!panel.hidden&&getComputedStyle(panel).position==='absolute'?panel.getBoundingClientRect():null;
+  world.setAttribute('viewBox', [v.x,v.y,v.width,v.height].map(x => x.toFixed(4)).join(' '));
+  for (const node of nodes) {
+    const id = node.dataset.step || node.dataset.door || node.dataset.point;
+    const point = points.get(id);
+    if(!point)continue;
+    const p = project(camera, box.width, box.height, point);
+    node.style.left = p.x + 'px'; node.style.top = p.y + 'px';
+    const covered=overlay&&p.x+box.left>overlay.left-45&&p.x+box.left<overlay.right+45&&p.y+box.top>overlay.top-35&&p.y+box.top<overlay.bottom+35;
+    node.hidden = (covered||p.x < 28 || p.x > box.width - 28 || p.y < 65 || p.y > box.height - 70) && document.activeElement !== node;
+  }
+  for(const cue of document.querySelectorAll('[data-direction]')){
+    const value=edgeCue(camera,box.width,box.height,points.get(cue.dataset.direction));
+    cue.style.left=value.x+'px';cue.style.top=value.y+'px';cue.style.setProperty('--bearing',value.angle+'deg');
+    const nativeDoor=document.querySelector('.node[data-door="'+cue.dataset.direction+'"]');
+    // Edge cues must never cover a reachable native door in the closer phone view.
+    cue.hidden=value.inView||!!(nativeDoor&&!nativeDoor.hidden);
+  }
+  $('#zoom-value').value = Math.round(fitCamera(box.width,box.height).span / camera.span * 100) + ' %';
+  paintTertiaries();
+}
+function syncTertiaries(state){
+  const nav=$('#submenu-space');
+  const id=state.kind==='door'?state.id:null;
+  app.dataset.tertiary=String(!!id);nav.hidden=!id;
+  if(id!==tertiaryDoor){
+    tertiaryDoor=id;nav.replaceChildren();$('#tertiary-lines').replaceChildren();
+    for(const [i,[slug,title]] of (SUBMENUS[id]||[]).entries()){
+      const a=link('','#porte/'+id+'/'+slug,'tertiary-node');
+      a.dataset.submenu=slug;a.setAttribute('aria-label',(i+1)+'. '+title);
+      const dot=element('span',undefined,'orb'),number=element('span',String(i+1),'tertiary-index'),label=element('span',title,'tertiary-label');
+      for(const child of [dot,number,label])child.setAttribute('aria-hidden','true');
+      a.append(dot,number,label);nav.append(a);
+    }
+  }
+  for(const node of nav.children){
+    if(node.dataset.submenu===state.section)node.setAttribute('aria-current','page');
+    else node.removeAttribute('aria-current');
+  }
+}
+function paintTertiaries(){
+  if(!tertiaryDoor||panel.hidden)return;
+  const r=rect(),b=panel.getBoundingClientRect();
+  const overlay=getComputedStyle(panel).position==='absolute'?{left:b.left-r.left,top:b.top-r.top}:null;
+  const anchor=project(camera,r.width,r.height,points.get(tertiaryDoor));
+  const layout=tertiaryLayout({width:r.width,height:r.height,anchor,count:SUBMENUS[tertiaryDoor].length,panel:overlay});
+  const nav=$('#submenu-space');nav.dataset.layout=layout.mode;
+  for(const [i,node] of [...nav.children].entries()){
+    const point=layout.points[i];node.style.left=point.x+'px';node.style.top=point.y+'px';
+    node.style.setProperty('--label-shift',(Math.max(80,Math.min(r.width-80,point.x))-point.x)+'px');
+    node.dataset.labelBelow=String(point.y<160);
+  }
+  const svg=$('#tertiary-connections');svg.setAttribute('viewBox',`0 0 ${r.width} ${r.height}`);
+  const lines=$('#tertiary-lines');
+  while(lines.children.length>layout.points.length)lines.lastChild.remove();
+  while(lines.children.length<layout.points.length)lines.append(document.createElementNS('http://www.w3.org/2000/svg','path'));
+  for(const [i,line] of [...lines.children].entries())line.setAttribute('d',`M${anchor.x},${anchor.y} L${layout.points[i].x},${layout.points[i].y}`);
+}
+function moveTo(next, animate = true, duration = 580, complete = null) {
+  stopAnimation();
+  next = constrain(next);
+  if (!animate || reduced.matches) { camera = next; paint(); persist();complete?.(); return; }
+  const from = {...camera}; const start = performance.now();
+  const tick = now => {
+    const t = Math.min(1,(now-start)/duration); const ease = 1-Math.pow(1-t,3);
+    camera = {cx:from.cx+(next.cx-from.cx)*ease,cy:from.cy+(next.cy-from.cy)*ease,span:from.span+(next.span-from.span)*ease};
+    paint();
+    if (t < 1) animation = requestAnimationFrame(tick); else { animation = null; persist();complete?.(); }
+  };
+  animation = requestAnimationFrame(tick);
+}
+// Keep the selected native target in the visible map area beside/above the reader.
+function focusCamera(point,span,r){
+  let x=r.width*.5,y=r.height*.5;
+  const overlay=!panel.hidden&&getComputedStyle(panel).position==='absolute'?panel.getBoundingClientRect():null;
+  if(overlay){
+    const left=overlay.left-r.left,top=overlay.top-r.top;
+    if(left>=220)x=Math.min(r.width*.35,left-140);
+    else y=Math.max(130,Math.min(r.height*.35,top-60));
+  }
+  if(tertiaryDoor){
+    const b=overlay?{left:overlay.left-r.left,top:overlay.top-r.top}:null;
+    const layout=tertiaryLayout({width:r.width,height:r.height,anchor:{x,y},count:SUBMENUS[tertiaryDoor].length,panel:b});
+    x=layout.center.x;y=layout.center.y;
+  }
+  return {cx:point.x+(.5-x/r.width)*span,cy:point.y+(.5-y/r.height)*span*r.height/r.width,span};
+}
+function focusPoint(id, animate = true) {
+  const point = points.get(id); if (!point) return;
+  const r = rect();
+  const span = Math.max(620,Math.min(camera.span,fitCamera(r.width,r.height).span*.65));
+  moveTo(focusCamera(point,span,r),animate);
+}
+function focusPath(id,step,animate){
+  if(step){focusPoint('step:'+id+'/'+step,animate);return;}
+  const path=PARCOURS.find(path=>path.id===id),places=path.doors.map(id=>points.get(id)),r=rect();
+  const span=Math.max(860,780*r.width/r.height);
+  const start=points.get('step:'+id+'/'+path.steps[0].id);
+  const center=start||{x:places.reduce((n,p)=>n+p.x,0)/places.length,y:places.reduce((n,p)=>n+p.y,0)/places.length};
+  moveTo(focusCamera(center,span,r),animate);
+}
+function fullView(animate = true) {
+  beginExploration();
+  returnView = snapshot();
+  const r = rect(); moveTo(fitCamera(r.width,r.height),animate);
+  announce('Vue d’ensemble. Les six portes sont accessibles ; déplacez la carte pour explorer les bords.');
+}
+function routeState(route) {
+  if (route === '#entree' || !route) return {kind:'entry'};
+  const doc = /^#document\/(manifeste|archive)$/.exec(route);
+  if (doc) return {kind:'document', id:doc[1]};
+  return readFragment(route,BUNDLE);
+}
+function showPanel(title, crumb, wide = false) {
+  app.dataset.reading='true';
+  panel.hidden = false; panel.classList.toggle('wide',wide);panel.dataset.format=wide?'16:9':'4:3';
+  panelTitle.textContent = title; $('#panel-crumb').textContent = crumb;
+  panelBody.replaceChildren(); delete panelBody.dataset.section; $('#open-paths').setAttribute('aria-expanded',String(activeRoute==='#traversees'||activeRoute==='#parcours'));
+}
+function panelFocus() {
+  panel.scrollTop=0;
+  panelTitle.focus({preventScroll:true});
+  if (matchMedia('(max-height: 420px)').matches) panel.scrollIntoView({block:'start',behavior:reduced.matches?'instant':'smooth'});
+}
+function pathList(ids = PARCOURS.map(path => path.id)) {
+  const list = element('div',undefined,'panel-links');
+  for (const path of PARCOURS.filter(path => ids.includes(path.id))) {
+    const a = link('','#parcours/'+path.id);
+    a.append(element('span',path.id.slice(4),'path-number'),element('span',path.title),element('small',parcoursStatus(path),'path-status')); list.append(a);
+  }
+  return list;
+}
+function returnActions(path = null) {
+  const actions = element('div',undefined,'panel-actions');
+  if (path) actions.append(link('Revenir au parcours','#parcours/'+path.id));
+  if (originDoor) actions.append(link('Retour à '+DOORS.find(door=>door.id===originDoor).short,'#porte/'+originDoor));
+  actions.append(link('Vue complète','#exploration'));
+  actions.append(link('Manifeste V2.5','#document/manifeste'),link('Archive V2.1','#document/archive'));
+  return actions;
+}
+function fullReadingLink(item) {
+  const a=link('Lire le texte complet','lectures/'+item.id+'.html?retour='+encodeURIComponent(activeRoute));
+  a.addEventListener('click',()=>{stopAnimation();persist();});return a;
+}
+function readingIntroductions(items=READINGS) {
+  const group=element('section',undefined,'reading-introductions');
+  group.append(element('h3','Lire dans le prolongement de la faille'));
+  group.append(element('p','Textes R6 existants : leurs sources, réserves et besoins de relecture sont conservés. Les dossiers bloqués restent fermés.','notice'));
+  for(const item of items) {
+    const detail=element('details'),summary=element('summary',item.title);
+    detail.append(summary,element('p',item.intro),element('small',item.status),fullReadingLink(item));group.append(detail);
+  }
+  return group;
+}
+function mediaIntroductions() {
+  const group=element('section');group.append(element('h3','Œuvres et documentaires'));
+  group.append(element('p','Dix notices candidates sourcées. Aucun lecteur externe intégré sans autorisation vérifiée.','notice'));
+  for(const item of MEDIA) {
+    const detail=element('details'),summary=element('summary',item.title);
+    const a=link('Ouvrir la notice sourcée','lectures/'+item.id+'.html?retour='+encodeURIComponent(activeRoute));
+    a.addEventListener('click',()=>{stopAnimation();persist();});
+    detail.append(summary,element('p',item.format+' · '+item.license+' · droits à revérifier'),element('p','Intérêt éditorial proposé : '+item.interest),a);group.append(detail);
+  }
+  return group;
+}
+function renderDoor(id, section = null) {
+  const door = DOORS.find(door=>door.id===id); if (!door) return;
+  showPanel(door.title,'Porte '+door.number+' / Interstice');
+  panelBody.append(element('p',door.description));
+  const subnav=element('nav',undefined,'tertiary-menu');subnav.setAttribute('aria-label','Sous-menus — '+door.title);
+  const spatial=element('button','Parcourir les points','explore-submenu-points');spatial.type='button';spatial.setAttribute('aria-controls','submenu-space');
+  spatial.addEventListener('click',()=>$('#submenu-space a')?.focus({preventScroll:true}));
+  panelBody.append(spatial);
+  for(const [i,[slug,title]] of (SUBMENUS[id]||[]).entries()){
+    const a=link((i+1)+'. '+title,'#porte/'+id+'/'+slug,'tertiary-link');
+    if(section===slug)a.setAttribute('aria-current','page');
+    subnav.append(a);
+  }
+  panelBody.append(subnav);
+  const selected=(SUBMENUS[id]||[]).find(([slug])=>slug===section);
+  if(selected){
+    const current=element('section',undefined,'submenu-state');
+    current.append(element('h3',selected[1]),element('p','Rubrique candidate. Les contenus non autorisés restent fermés. Les accès existants restent disponibles ci-dessous.','notice'));
+    panelBody.append(current);panelBody.dataset.section=section;
+  }
+  const shortcuts=quickLinksFor(id,section).filter(item=>id!=='entraide'||!COLLECTIVE_TOOLS.some(tool=>tool.url===quickLinkHref(item)));
+  if(shortcuts.length){
+    const group=element('section',undefined,'legacy-quicklinks');group.append(element('h3','Accès existants'));
+    const list=element('ul');
+    for(const item of shortcuts){const row=element('li'),a=link(item.title,quickLinkHref(item));a.dataset.legacyQuicklink=item.id;row.append(a);if(item.collection_state==='suspended')row.append(element('small',' — envois suspendus'));list.append(row);}
+    group.append(list);panelBody.append(group);
+  }
+  if(id==='atlas')panelBody.append(element('p','Les lieux et les relations restent soumis à vérification. Aucun emplacement sensible n’est exposé.','notice'),link('Consulter l’Atlas documentaire existant','atlas.html'));
+  if(id==='vigie')panelBody.append(element('p','Les enquêtes en travail restent en relecture. Aucun corpus interne ni brouillon n’est chargé ici.','notice'));
+  if(id==='encyclopedie'){
+    const atlas=element('section',undefined,'atlas-entry');atlas.id='atlas-entry';
+    atlas.append(element('h3','Atlas des communs'),element('p','Explorer les lieux, les initiatives et les réseaux documentés.'),link('Ouvrir l’Atlas existant ↗','atlas.html'));
+    panelBody.append(atlas,readingIntroductions());
+    if(section==='atlas')panelBody.dataset.section='atlas';else if(!selected)delete panelBody.dataset.section;
+  }
+  if(id==='entraide'){
+    const tools=element('section',undefined,'collective-tools');tools.append(element('h3','Propositions et participation'));
+    tools.append(element('p',COLLECTIVE_TOOLS_NOTICE,'notice'));
+    const links=element('ul',undefined,'panel-links collective-tool-list');
+    for(const tool of COLLECTIVE_TOOLS){
+      const item=element('li'),description=element('p',tool.status+' — '+tool.detail,'tool-status');description.id='collective-tool-'+tool.id;
+      const a=link(tool.title+' ↗',tool.url,'external');a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-describedby',description.id);
+      item.append(a,description);links.append(item);
+    }
+    tools.append(links);panelBody.append(tools);
+  }
+  if(id==='mediatheque')panelBody.append(mediaIntroductions());
+  if(id==='archives'){
+    panelBody.append(link('Lire le manifeste V2.1 — archive','#document/archive','external'),element('p','Les dossiers candidats restent fermés tant que leurs visas ne sont pas réunis.','notice'));
+    if(['lot-commune-01','editorial-private'].includes(document.documentElement.dataset.privateReview)){
+      const hub=document.documentElement.dataset.privateReview==='editorial-private';
+      const review=link('Consulter les lots en relecture',(hub?'relectures/index.html':'relecture/index.html')+'?retour='+encodeURIComponent(activeRoute),'external');
+      review.addEventListener('click',()=>{stopAnimation();persist();});panelBody.append(review);
+    }
+  }
+  if(id!=='archives'&&door.legacy){
+    const source = link('Consulter l’index existant ↗','https://zoutifrutti.github.io/Interstice/'+door.legacy,'external');
+    source.target='_blank';source.rel='noopener noreferrer';
+    const archive = element('div',undefined,'legacy-access');
+    archive.append(element('p',id==='entraide'?'Retrouver les outils et accès existants':'Accès à l’index existant'),source);panelBody.append(archive);
+  }
+  if(id==='entraide')panelBody.append(element('p','Les fiches de droits en manifestation restent indisponibles pendant leur revue juridique et médicale.','notice'));
+  const secondary=element('details',undefined,'secondary-paths');
+  secondary.append(element('summary','Parcours secondaires'),pathList(PARCOURS.filter(path=>path.doors.includes(id)||id==='archives').map(path=>path.id)));
+  panelBody.append(secondary);
+  panelBody.append(returnActions());
+}
+function renderPathIndex() {
+  showPanel('Les traversées','Sept chemins / Six portes');
+  panelBody.append(element('p','On peut entrer par une histoire, un territoire, une œuvre. Ces chemins relient les portes sans imposer un ordre unique.'));
+  panelBody.append(pathList(),element('p','Parcours candidats en préparation. Les ressources en relecture ne sont pas diffusées dans cet aperçu.','notice'),returnActions());
+}
+function renderPath(id, stepId = null) {
+  const path=PARCOURS.find(path=>path.id===id);if(!path)return;
+  const step=stepId ? path.steps.find(step=>step.id===stepId) : null;
+  showPanel(step?step.title:path.title,(step?path.title+' / ':'Traversée / ')+path.id);
+  panelBody.append(element('span',parcoursStatus(path),'walk-badge'),element('p',path.question));
+  const crossing=element('div',undefined,'panel-actions');
+  for(const doorId of path.doors){const d=DOORS.find(door=>door.id===doorId);crossing.append(link(d.short,'#porte/'+d.id));}
+  panelBody.append(crossing);
+  if(path.blocked_practical){
+    panelBody.append(element('p','Les fiches pratiques restent fermées. Leur revue juridique et médicale est nécessaire avant toute diffusion.','notice'),returnActions());return;
+  }
+  // Marker is inserted only in the owner-private Site, never in the generic preview.
+  if(id==='PAR-001'&&['lot-commune-01','editorial-private'].includes(document.documentElement.dataset.privateReview)){
+    const hub=document.documentElement.dataset.privateReview==='editorial-private';
+    const review=link(hub?'Relire les lots — Commune en priorité':'Relire le lot Commune — cinq fiches candidates',(hub?'relectures/index.html':'relecture/index.html')+'?retour='+encodeURIComponent(activeRoute));
+    review.addEventListener('click',()=>{stopAnimation();persist();});
+    panelBody.append(element('p','Les textes sont préparés par lots de cinq maximum. Les choix éditoriaux et les réserves sont indiqués dans chaque lot.','notice'),review);
+  }
+  const related={
+    'PAR-003':['wiki-ecologie-sociale-environnement'],
+    'PAR-004':['wiki-decision-collective','wiki-socialismes-communismes-anarchismes-autogestion','wiki-lecture-croisee-travail-soin-pouvoir'],
+    'PAR-006':['wiki-feminismes-histoire-egalite','wiki-patriarcat-histoire-mecanismes','wiki-egalite-genres-inclusivite']
+  }[id]||[];
+  if(related.length)panelBody.append(readingIntroductions(READINGS.filter(item=>related.includes(item.id))));
+  if(step){
+    panelBody.append(element('p',String(candidateResourceIds(path.id,step.id).length)+' références candidates · accès fermé','candidate-count'));
+    panelBody.append(element('p','Cette étape décrit une entrée de lecture. Les ressources éditoriales associées sont encore en relecture et restent fermées.','notice'));
+    const actions=element('div',undefined,'panel-actions');
+    for(const next of step.next_step_ids){const target=path.steps.find(s=>s.id===next);actions.append(link((step.next_step_ids.length>1?'Bifurquer : ':'Continuer : ')+target.title,'#parcours/'+id+'/'+next));}
+    for(const back of step.return_step_ids){const target=path.steps.find(s=>s.id===back);actions.append(link('Revenir : '+target.title,'#parcours/'+id+'/'+back));}
+    panelBody.append(actions,returnActions(path));
+  }else{
+    const list=element('ol',undefined,'step-list');
+    for(const step of path.steps){const li=element('li');li.append(link(step.title,'#parcours/'+id+'/'+step.id));list.append(li);}
+    panelBody.append(list,element('p','Étapes de navigation proposées. Aucun article, archive, conseil pratique ou notice bloquée n’est ouvert ici.','notice'),returnActions());
+  }
+}
+function safeDocumentTree(source) {
+  const allowed=new Set(['H1','H2','H3','H4','P','UL','OL','LI','STRONG','EM','BLOCKQUOTE','SECTION','ARTICLE','BR','SMALL']);
+  const fragment=document.createDocumentFragment();
+  const append=(from,to)=>{
+    for(const child of from.childNodes){
+      if(child.nodeType===Node.TEXT_NODE){to.append(document.createTextNode(child.textContent));continue;}
+      if(child.nodeType!==Node.ELEMENT_NODE||['SCRIPT','STYLE','FORM','NAV','HEADER','FOOTER','BUTTON'].includes(child.tagName))continue;
+      if(allowed.has(child.tagName)){const clean=document.createElement(child.tagName.toLowerCase());append(child,clean);to.append(clean);}
+      else if(child.tagName==='A'){
+        const text=element('span',child.textContent);to.append(text);
+      }else append(child,to);
+    }
+  };append(source,fragment);return fragment;
+}
+async function renderDocument(id,version) {
+  const spec=DOCUMENTS[id];if(!spec)return;
+  showPanel(spec.title,'La Faille noire / Texte fondateur',true);
+  panelBody.setAttribute('aria-busy','true');panelBody.append(element('p','Ouverture du texte…'));
+  try{
+    // Same-origin credentials keep the reader usable behind a private preview gate.
+    const response=await fetch(spec.file,{credentials:'same-origin'});
+    if(!response.ok)throw new Error('document');
+    const parsed=new DOMParser().parseFromString(await response.text(),'text/html');
+    if(version!==panelVersion)return;
+    const reader=element('div',undefined,'reading');reader.append(safeDocumentTree(parsed.querySelector('main')||parsed.body));
+    const direct=link('Ouvrir le document original ↗',spec.file,'external');
+    panelBody.replaceChildren(reader,direct,returnActions());
+  }catch{
+    if(version!==panelVersion)return;
+    panelBody.replaceChildren(element('p','Le texte ne peut pas être ouvert dans ce panneau.'),link('Lire le document original',spec.file),returnActions());
+  }finally{if(version===panelVersion)panelBody.removeAttribute('aria-busy');}
+}
+function drawPaths(selected = null) {
+  $('#walk-lines').replaceChildren();
+  for(const old of document.querySelectorAll('.step-node'))old.remove();
+  for(const key of points.keys())if(key.startsWith('step:'))points.delete(key);
+  const selectedPath=PARCOURS.find(path=>path.id===selected);
+  if(selectedPath&&!selectedPath.blocked_practical){
+    const positions=stepLayout(selectedPath,DOORS);
+    for(const [index,position] of positions.entries()){
+      const step=selectedPath.steps[index];points.set(position.id,position);
+      const node=link('','#parcours/'+selected+'/'+step.id,'node step-node');
+      node.dataset.step=position.id;node.setAttribute('aria-label','Étape '+(index+1)+' : '+step.title);
+      if(activeRoute.endsWith('/'+step.id))node.setAttribute('aria-current','true');
+      node.append(element('span',String(index+1).padStart(2,'0'),'orb'),element('span',step.title,'node-label'));$('#nodes').append(node);
+    }
+  }
+  nodes=[...document.querySelectorAll('.node')];
+  for(const path of PARCOURS){
+    if(path.blocked_practical && selected!==path.id)continue;
+    const ps=path.doors.map(id=>points.get(id));
+    if(ps.length<2)continue;
+    let d='M'+ps[0].x+' '+ps[0].y;
+    for(let i=1;i<ps.length;i++)d+=' Q'+(500+(i%2?70:-70))+' '+(350+i*130)+' '+ps[i].x+' '+ps[i].y;
+    const line=document.createElementNS('http://www.w3.org/2000/svg','path');line.setAttribute('d',d);line.setAttribute('class','walk-line '+(selected===path.id?'active':'dim'));line.dataset.path=path.id;$('#walk-lines').append(line);
+  }
+}
+function renderRoute({focus=true, animate=true, keepCamera=false}={}) {
+  panelVersion++; const version=panelVersion;
+  const state=routeState(activeRoute);
+  const isEntry=state.kind==='entry';entry.hidden=!isEntry;app.hidden=isEntry;
+  syncTertiaries(state);
+  document.body.dataset.view=isEntry?'entry':'space';
+  $('#directory-details').open=false;
+  if(isEntry){panel.hidden=true;$('#resume-entry').hidden=!lastView;return;}
+  panel.hidden=true;app.dataset.reading='false';panelBody.removeAttribute('aria-busy');
+  for(const node of nodes){node.removeAttribute('aria-current');if(node.dataset.door)node.setAttribute('aria-expanded','false');}
+  $('#open-paths').setAttribute('aria-expanded','false');drawPaths(state.kind==='parcours'?state.id:null);
+  paint();
+  if(state.kind==='door'){
+    originDoor=state.id;lastFocusedNode=state.id;
+    document.querySelector('.node[data-door="'+state.id+'"]').setAttribute('aria-current','true');
+    document.querySelector('.node[data-door="'+state.id+'"]').setAttribute('aria-expanded','true');
+    renderDoor(state.id,state.section);$('#location-label').textContent=DOORS.find(d=>d.id===state.id).short;
+    if(!keepCamera)focusPoint(state.id,animate);
+  }else if(state.kind==='parcours_index'){
+    renderPathIndex();$('#location-label').textContent='Les traversées';
+  }else if(state.kind==='parcours'){
+    const explicitStep=/^#parcours\/PAR-\d{3}\//.test(activeRoute);
+    renderPath(state.id,explicitStep?state.stepId:null);$('#location-label').textContent=PARCOURS.find(p=>p.id===state.id).title;
+    if(!keepCamera)focusPath(state.id,explicitStep?state.stepId:null,animate);
+  }else if(state.kind==='document'){
+    renderDocument(state.id,version);$('#location-label').textContent='La Faille noire';
+  }else{
+    $('#location-label').textContent='Dans la faille';announce('Six portes, plusieurs chemins.');
+    if(!keepCamera){const r=rect();moveTo(fitCamera(r.width,r.height),animate);}
+  }
+  if(!panel.hidden&&focus){panelFocus();if(state.section==='atlas'&&$('#atlas-entry'))panel.scrollTop=Math.max(0,$('#atlas-entry').offsetTop-panelTitle.offsetTop);}
+  else if(focus)stage.focus({preventScroll:true});
+  paintTertiaries();
+}
+function go(route,{animate=true,camera:restored=null,replace=false,focus=true}={}) {
+  clearPassage();app.dataset.phase='exploring';
+  persist();returnView=snapshot();
+  const depth=(history.state?.nav01depth||0)+(replace?0:1);
+  activeRoute=route;
+  if(restored&&validCamera(restored)){stopAnimation();camera={...restored};}
+  const value=snapshot();
+  history[replace?'replaceState':'pushState']({nav01:value,nav01depth:depth},'',route);
+  renderRoute({focus,animate,keepCamera:!!restored});persist();
+}
+function clearPassage(){
+  if(entryTimer!==null)clearTimeout(entryTimer);entryTimer=null;
+  if(passage){for(const animation of passage.getAnimations({subtree:true}))animation.cancel();passage.remove();passage=null;}
+}
+function beginExploration(){
+  clearPassage();
+  app.dataset.orienting='false';
+  if(firstExploration){stopAnimation();if(!reduced.matches)camera=retreat(camera);firstExploration=false;paint();}
+  app.dataset.phase='exploring';
+}
+function enter(animated) {
+  const sourceBox=$('.threshold-logo').getBoundingClientRect();
+  clearPassage();go('#exploration',{animate:false});
+  window.scrollTo({top:0,behavior:'instant'});
+  const r=rect(),destination=diveCamera(r.width,r.height);
+  firstExploration=animated&&!reduced.matches;
+  if(!firstExploration){moveTo(fitCamera(r.width,r.height),false);app.dataset.phase='exploring';return;}
+  app.dataset.phase='identity';app.dataset.entryStarted=String(performance.now());
+  passage=element('div',undefined,'identity-passage');passage.setAttribute('aria-hidden','true');
+  passage.style.setProperty('--entry-logo-x',(sourceBox.x+sourceBox.width/2)+'px');
+  passage.style.setProperty('--entry-logo-y',(sourceBox.y+sourceBox.height/2)+'px');
+  passage.style.setProperty('--entry-logo-size',sourceBox.width+'px');
+  const faille=element('img',undefined,'passage-symbol');faille.src='assets/logo-faille-noire.svg';faille.alt='';
+  const interstice=element('img',undefined,'passage-symbol');interstice.src=CANDIDATE_ARTWORK;interstice.alt='';
+  const name=element('strong','INTERSTICE','passage-name');passage.append(faille,interstice,name);document.body.append(passage);
+  faille.animate([{opacity:1},{opacity:0}],{duration:800,fill:'forwards'});
+  interstice.animate([{opacity:0},{opacity:1}],{duration:800,fill:'forwards'});
+  name.animate([{opacity:0},{opacity:1}],{duration:800,fill:'forwards'});
+  entryTimer=setTimeout(()=>{
+    entryTimer=null;app.dataset.phase='diving';
+    const veil=passage;
+    if(veil)veil.animate([{opacity:1},{opacity:0}],{duration:400,fill:'forwards'}).finished.then(()=>{veil.remove();if(passage===veil)passage=null;},()=>{});
+    moveTo(destination,true,1750,()=>{app.dataset.phase='immersed';announce('Au cœur de la faille. Les directions indiquent les six portes.');});
+  },2850);
+}
+function showTextual() {
+  if(entry.hidden===false)go('#exploration',{animate:false,focus:false});
+  $('#directory-details').open=true;$('#textual').focus({preventScroll:true});$('#textual').scrollIntoView({behavior:reduced.matches?'instant':'smooth',block:'start'});
+}
+document.addEventListener('click',event=>{
+  const a=event.target.closest('a');if(!a||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||event.button!==0)return;
+  if(a.dataset.enter){event.preventDefault();enter(a.dataset.enter==='animate');return;}
+  if(a.hasAttribute('data-home')){event.preventDefault();go('#entree');entry.scrollIntoView();return;}
+  if(a.dataset.document){event.preventDefault();lastFocusedNode='document:'+a.dataset.document;go('#document/'+a.dataset.document);return;}
+  if(a.dataset.point==='centre'){event.preventDefault();go('#exploration');fullView();return;}
+  const href=a.getAttribute('href');
+  if(href==='#textual'){event.preventDefault();showTextual();return;}
+  if(href?.startsWith('#')){event.preventDefault();beginExploration();go(href);}
+});
+$('#close-panel').addEventListener('click',()=>{
+  const restore=returnView?.camera||camera;
+  go('#exploration',{camera:restore,animate:false,focus:false});
+  const target=lastFocusedNode?.startsWith('document:')?document.querySelector('.manifest-node'):lastFocusedNode?document.querySelector('.node[data-door="'+lastFocusedNode+'"]'):null;
+  if(target&&!target.hidden)target.focus({preventScroll:true});else stage.focus({preventScroll:true});
+  window.scrollTo({top:app.offsetTop,behavior:'instant'});
+});
+$('#open-paths').addEventListener('click',()=>go('#traversees'));
+$('#tools-toggle').addEventListener('click',()=>{const open=app.classList.toggle('tools-open');$('#tools-toggle').setAttribute('aria-expanded',String(open));});
+$('#show-textual').addEventListener('click',showTextual);
+$('#recenter').addEventListener('click',()=>fullView());
+$('#back-view').addEventListener('click',()=>{if(history.state?.nav01depth>0)history.back();else go('#exploration',{replace:true});});
+$('#restore-view').addEventListener('click',()=>{const value=returnView||lastView;if(value)go(value.route,{camera:value.camera,animate:false});});
+$('#resume-entry').addEventListener('click',()=>{if(lastView)go(lastView.route,{camera:lastView.camera,animate:false});});
+for(const [selector,factor] of [['#zoom-in',.76],['#zoom-out',1/.76]])$(selector).addEventListener('click',()=>{
+  returnView=snapshot();stopAnimation();const r=rect();moveTo(zoomAt(camera,r,factor,r.left+r.width/2,r.top+r.height/2),false);announce('Zoom '+$('#zoom-value').value);
+});
+$('#pan-mode').addEventListener('click',()=>{
+  panEnabled=!panEnabled;stage.dataset.pan=String(panEnabled);$('#pan-mode').setAttribute('aria-pressed',String(panEnabled));$('#pan-mode').textContent=panEnabled?'Déplacer la carte':'Défiler la page';announce(panEnabled?'Déplacement de la carte activé.':'Défilement de la page activé.');
+});
+const pointers=new Map();let gesture=null;let dragged=false;
+const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
+function startGesture(){
+  const ps=[...pointers.values()];
+  if(ps.length===1)gesture={kind:'pan',camera:{...camera},x:ps[0].x,y:ps[0].y};
+  else if(ps.length>=2){const mid={x:(ps[0].x+ps[1].x)/2,y:(ps[0].y+ps[1].y)/2};gesture={kind:'pinch',camera:{...camera},distance:distance(ps[0],ps[1]),anchor:worldPoint(camera,rect(),mid.x,mid.y)};}
+  else gesture=null;
+}
+stage.addEventListener('pointerdown',event=>{
+  if(!pointers.size)dragged=false;
+  if(!panEnabled||event.button!==0)return;
+  const control=event.target.closest('a,button');
+  if(control&&event.pointerType!=='touch')return;
+  if(!control||pointers.size)beginExploration();
+  stopAnimation();returnView=snapshot();pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});
+  // Track a touch over a node too: a second finger must still be able to pinch.
+  // A stationary single touch keeps the native link click and its normal target.
+  if(!control||pointers.size>1)for(const id of pointers.keys())stage.setPointerCapture(id);
+  startGesture();
+});
+stage.addEventListener('pointermove',event=>{
+  if(!pointers.has(event.pointerId)||!gesture)return;
+  pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});const ps=[...pointers.values()];const r=rect();
+  if(gesture.kind==='pinch'&&ps.length>=2){
+    const d=distance(ps[0],ps[1]);if(d<10||gesture.distance<10)return;
+    const span=constrain({...camera,span:gesture.camera.span*gesture.distance/d}).span;
+    const mx=(ps[0].x+ps[1].x)/2,my=(ps[0].y+ps[1].y)/2;
+    camera=constrain({span,cx:gesture.anchor.x-((mx-r.left)/r.width-.5)*span,cy:gesture.anchor.y-((my-r.top)/r.height-.5)*span*r.height/r.width});dragged=true;
+  }else if(gesture.kind==='pan'&&ps.length===1){
+    const dx=ps[0].x-gesture.x,dy=ps[0].y-gesture.y;
+    if(Math.hypot(dx,dy)>5){
+      if(!dragged){const before=camera.span;beginExploration();if(camera.span!==before)gesture.camera={...camera};}
+      dragged=true;stage.setPointerCapture(event.pointerId);
+    }
+    camera=panBy(gesture.camera,r,dx,dy);
+  }
+  stage.classList.toggle('is-dragging',dragged);paint();
+});
+function release(event){if(!pointers.has(event.pointerId))return;pointers.delete(event.pointerId);startGesture();if(!pointers.size){stage.classList.remove('is-dragging');persist();if(dragged)announce('Position mémorisée pour cette session.');}}
+stage.addEventListener('pointerup',release);stage.addEventListener('pointercancel',release);
+stage.addEventListener('click',event=>{
+  if(dragged&&event.detail>0){event.preventDefault();event.stopImmediatePropagation();dragged=false;}
+},true);
+stage.addEventListener('wheel',event=>{
+  if(!panEnabled||event.ctrlKey||event.metaKey)return;event.preventDefault();beginExploration();returnView=snapshot();stopAnimation();camera=zoomAt(camera,rect(),Math.exp(event.deltaY*.0015),event.clientX,event.clientY);paint();persist();
+},{passive:false});
+stage.addEventListener('keydown',event=>{
+  if(event.target!==stage||event.ctrlKey||event.metaKey||event.altKey)return;
+  const commands=['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','=','-','Home','0'];if(!commands.includes(event.key))return;
+  event.preventDefault();if(event.key.startsWith('Arrow'))beginExploration();returnView=snapshot();stopAnimation();const r=rect();
+  if(event.key==='Home'||event.key==='0'){fullView(false);return;}
+  if(['+','=','-'].includes(event.key))camera=zoomAt(camera,r,event.key==='-'?1.25:.8,r.left+r.width/2,r.top+r.height/2);
+  else {const dx=event.key==='ArrowLeft'?55:event.key==='ArrowRight'?-55:0,dy=event.key==='ArrowUp'?55:event.key==='ArrowDown'?-55:0;camera=panBy(camera,r,dx,dy);}
+  paint();persist();
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&entry.hidden){if(!panel.hidden)$('#close-panel').click();else fullView(false);}});
+stage.addEventListener('focusin',event=>{
+  const node=event.target.closest('.node');if(!node)return;
+  const id=node.dataset.step||node.dataset.door||node.dataset.point,point=points.get(id);if(!point)return;
+  const r=rect(),p=project(camera,r.width,r.height,point);
+  if(p.x<50||p.x>r.width-50||p.y<80||p.y>r.height-80)focusPoint(id,false);
+});
+addEventListener('popstate',event=>{
+  clearPassage();stopAnimation();activeRoute=location.hash||'#entree';
+  const saved=event.state?.nav01;if(validSnapshot(saved)){camera={...saved.camera};originDoor=originDoorId(saved.originDoor);}
+  renderRoute({animate:false,keepCamera:validSnapshot(saved)});persist();
+});
+addEventListener('pagehide',persist);
+new ResizeObserver(()=>{if(!app.hidden)paint();}).observe(stage);
+reduced.addEventListener('change',()=>{if(reduced.matches){clearPassage();stopAnimation();paint();}});
+
+// Progressive enhancement happens only after all module imports succeeded.
+if(PUBLIC_RESOURCES.length!==0)throw new Error('Le catalogue candidat doit rester fermé');
+document.documentElement.classList.add('enhanced');
+for(const id of ['map-controls','top-actions','show-textual','directions'])$('#'+id).hidden=false;
+activeRoute=location.hash||'#entree';
+const readingBack=new URLSearchParams(location.search).get('retour')==='lecture'&&lastView?.route===activeRoute;
+const restored=readingBack?lastView:history.state?.nav01;
+if(validSnapshot(restored)){camera={...restored.camera};originDoor=originDoorId(restored.originDoor);}
+history.replaceState({nav01:snapshot(),nav01depth:history.state?.nav01depth||0},'');
+renderRoute({focus:activeRoute!=='#entree',animate:false,keepCamera:validSnapshot(restored)});
+if(readingBack)history.replaceState({...history.state,nav01:snapshot()},'',location.pathname+location.hash);
+if(location.hash==='#textual')showTextual();
+
+

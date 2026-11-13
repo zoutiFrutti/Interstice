@@ -1,0 +1,191 @@
+[
+  {
+    "pr": 114,
+    "sha": "f7811d3875d2fd39b7b37226d40ae9fb22c66a56",
+    "branch": "feature/c13-orchestratrice-guardrails-20261102",
+    "base": "main",
+    "title": "[Orchestratrice] C13 : sécuriser le pont Relieuse → Lectrice et son retour"
+  },
+  {
+    "pr": 115,
+    "sha": "e139a1286c361b85aacd62413475f26878595911",
+    "branch": "feature/c14-orchestratrice-moteur-missions-20261102",
+    "base": "main",
+    "title": "[Orchestratrice] C14 : premier ordonnanceur de missions et dépendances hors ligne"
+  },
+  {
+    "pr": 132,
+    "sha": "57a509257314d44cb15faf842395a21023e43335",
+    "branch": "feature/integration-c18-orchestratrice-suivi-20261102",
+    "base": "main",
+    "title": "[Orchestratrice] C18 : suivi documentaire sans accusés inventés"
+  },
+  {
+    "pr": 161,
+    "sha": "0b5fb49b612bcb906126bf3cf9d58f13d9fac0d6",
+    "branch": "work/c02-v2-reconciliation-20261103",
+    "base": "main",
+    "title": "[WORK-C02-01] V2 candidate : documents, registre et contrats isolés"
+  },
+  {
+    "pr": 162,
+    "sha": "5587237fd69cf37d4922665f9db423302762d8ad",
+    "branch": "research/archeologue-c03-par001-20261103",
+    "base": "research/archeologue-communs-c05-20261103",
+    "title": "C03-ARC-02 : objections historiques PAR-001, PR #161"
+  },
+  {
+    "pr": 163,
+    "sha": "d9f771d5516048cfa2ad7639204443a10fb20f44",
+    "branch": "audit/c03-dev04-c12-v2-20261103",
+    "base": "main",
+    "title": "[C03-DEV-04] Audit P0 pont C12, diagnostic CI R6 et contrat V2 candidat"
+  },
+  {
+    "pr": 164,
+    "sha": "5f0320c13c34941b5acfbc09d306991840d54d09",
+    "branch": "audit/c03-anarchitecte-registre-contrat-20261103",
+    "base": "main",
+    "title": "[Anarchitecte C03-ANA-03] Contrôle registre V2 et contrat collectif C03"
+  },
+  {
+    "pr": 165,
+    "sha": "6c96958a6bd02cf2e12c672322494eaa02da01d5",
+    "branch": "recherche/anarchiviste-catalogne-c03-par002-20261103",
+    "base": "main",
+    "title": "[C03-CAT-03] Réconciliation CAT-001/CAT-006 et corrections candidates PAR-002"
+  },
+  {
+    "pr": 166,
+    "sha": "16b5e034d5df14caf38cf1188c5f8112dc9c553c",
+    "branch": "juriste/c03-jur-04-c12-par005-20261103",
+    "base": "main",
+    "title": "[Juriste C03-JUR-04] Sécurité C12, risques RGPD et réserves PAR-005"
+  },
+  {
+    "pr": 167,
+    "sha": "84c02bf3161c1bfe12959d2f2a36cf014013c7f2",
+    "branch": "review/c03-lectrice-03-objections-20261103",
+    "base": "main",
+    "title": "[C03-LEC-03] Lectrice : 36 objections C02, 30 WORK et 19 relations — rapport candidat"
+  },
+  {
+    "pr": 168,
+    "sha": "4ae8afef9604fa55d3dda6c1400b8b8c139317c9",
+    "branch": "atelier/graphiste-c03-gra03-contrat-v2-20261103",
+    "base": "main",
+    "title": "C03-GRA-03 — contrat visuel et navigation V2 (Graphiste, documentaire)"
+  },
+  {
+    "pr": 169,
+    "sha": "30423e7976073ebab43de4c19d35eed318c50b60",
+    "branch": "atelier-penseuse/c03-pen-03-avis-conceptuel-20261103",
+    "base": "main",
+    "title": "[C03-PEN-03] Penseuse — avis conceptuel et matrice des 19 relations"
+  },
+  {
+    "pr": 170,
+    "sha": "31d4dc7429a67820a2bc7519bce6acd4041cc329",
+    "branch": "research/c03-biographe-hist04-20261103",
+    "base": "main",
+    "title": "[C03-HIST-04] Biographe : identités et incertitudes Commune"
+  },
+  {
+    "pr": 171,
+    "sha": "2e6a8947ff70965ad812d7b7d0cf1eec99d56848",
+    "branch": "coordination/c03-mediatheque-reconciliation-20261103",
+    "base": "work/c02-v2-reconciliation-20261103",
+    "title": "[C03-MED-03] Réconciliation 71 FN / registre 219 et sept Parcours"
+  },
+  {
+    "pr": 172,
+    "sha": "41f844dae1de959327b4ba6caa8959fef037d78c",
+    "branch": "research/zapatiste-c03-par007-20261103",
+    "base": "research/zapatiste-r1-20261102",
+    "title": "[C03-ZAP-03] Réconciliation PAR-007, sources et objections"
+  },
+  {
+    "pr": 173,
+    "sha": "a3a0f07c590389b165c78a80552929de8c4f4818",
+    "branch": "research/tisseuse-c03-territoires-20261103",
+    "base": "main",
+    "title": "[C03-TIS-03] Territoires, preuves R0–R3 et bifurcations des sept Parcours"
+  },
+  {
+    "pr": 174,
+    "sha": "01811690ae5dbd8bef4db2100395feea77a55431",
+    "branch": "work/nav-immersive-convergence-01",
+    "base": "main",
+    "title": "WORK-NAV-01 · Navigation immersive candidate, quatre portes et traversées"
+  },
+  {
+    "pr": 176,
+    "sha": "fd879d63d4964d527632c364c2f124cb5dc3af41",
+    "branch": "atelier/nav02-gra-revue-artistique-20261104",
+    "base": "work/nav-immersive-convergence-01",
+    "title": "NAV-02-GRA — revue artistique ciblée de la PR #174"
+  },
+  {
+    "pr": 177,
+    "sha": "a0973f444aee3493a04e8eff6fca5b389ce6cd1c",
+    "branch": "audit/nav-02-ana-coherence-20261104",
+    "base": "main",
+    "title": "[Anarchitecte NAV-02-ANA] Audit portes et Parcours PR174"
+  },
+  {
+    "pr": 178,
+    "sha": "925d8959b02cdcd574727856504e6018dacfaf02",
+    "branch": "feature/nav02-resource-bridge-candidate-20261104",
+    "base": "work/nav-immersive-convergence-01",
+    "title": "[NAV-02] Pont documentaire candidat des 29 étapes, fermé par défaut"
+  },
+  {
+    "pr": 179,
+    "sha": "bb1d4e3e5a5e113867edb5482a2b6f833f897517",
+    "branch": "feature/nav02-dev-visual-localized-20261104",
+    "base": "work/nav-immersive-convergence-01",
+    "title": "NAV-02-DEV · corrections visuelles localisées candidates, dépend de #174"
+  },
+  {
+    "pr": 180,
+    "sha": "b01ad5a27cac4ff3b3d204ec73f92fc9c68808ac",
+    "branch": "work/fn-observatrice-gh-aw-pilote-20261104",
+    "base": "main",
+    "title": "[FN-ORC] Pilote Observatrice GH-AW — préparation sécurisée, sans exécution"
+  },
+  {
+    "pr": 181,
+    "sha": "45232845463c5303629d3dfc35f461768db50193",
+    "branch": "feature/c04-dev01-nav-reconciliation-20261104",
+    "base": "work/nav-immersive-convergence-01",
+    "title": "C04-DEV-01 · Réconciliation NAV-02 Graphiste et Développeuse"
+  },
+  {
+    "pr": 182,
+    "sha": "c4f87abf75119d3e1927ece352efcde37d122eb1",
+    "branch": "feature/c04-entry-dive-20261104",
+    "base": "feature/c04-dev01-nav-reconciliation-20261104",
+    "title": "C04 · Entrée par le logo et plongée caméra dans le centre de la faille"
+  },
+  {
+    "pr": 183,
+    "sha": "80de177d16dd4f0c1860b8dba24ba510b59dc10b",
+    "branch": "work/coordination-console-demo-01",
+    "base": "main",
+    "title": "WORK-CONVERGENCE-01 · Console de coordination sûre, démonstration mobile"
+  },
+  {
+    "pr": 184,
+    "sha": "223c4a7c696d1b8b04d28b24cd87633399f67b58",
+    "branch": "review/c05-lectrice-01-corrections-20261104",
+    "base": "work/c02-v2-reconciliation-20261103",
+    "title": "[C05-LEC-01] Corrections documentaires et décision A, sans ouverture de contenus"
+  },
+  {
+    "pr": 185,
+    "sha": "9d823ec4a74e0bc470a5d2c1f40cc07970998d36",
+    "branch": "feature/c06-ana-01-status-bridge-20261104",
+    "base": "feature/c04-entry-dive-20261104",
+    "title": "[C06-ANA-01] Sept statuts candidats et pont documentaire fermé"
+  }
+]

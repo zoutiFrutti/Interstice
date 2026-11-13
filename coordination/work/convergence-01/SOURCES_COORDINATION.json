@@ -1,0 +1,170 @@
+[
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/c03/orchestratrice/registre_collectif_c03.json",
+    "sha": "321786c6f2b5138753abdfebcf930feb956d2170",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/registre_collectif_c03.json"
+  },
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/c03/orchestratrice/02_CONTRAT_RAPPORTS.md",
+    "sha": "b3f68b210055e32de0d8741b2b43ded0be3a92a8",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/02_CONTRAT_RAPPORTS.md"
+  },
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/agents/suivi_integration_c18.py",
+    "sha": "6ba03c21f57155fb4c5a39d989900fafcec95f42",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/agents/suivi_integration_c18.py"
+  },
+  {
+    "pr": 114,
+    "ref": "f7811d3875d2fd39b7b37226d40ae9fb22c66a56",
+    "path": "coordination/agents/C13_CONTRAT_RETOUR_LECTRICE.md",
+    "sha": "9eae466c2a14c0fa5b87d7f2955a2167908fdbcd",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/f7811d3875d2fd39b7b37226d40ae9fb22c66a56/coordination/agents/C13_CONTRAT_RETOUR_LECTRICE.md"
+  },
+  {
+    "pr": 115,
+    "ref": "e139a1286c361b85aacd62413475f26878595911",
+    "path": "coordination/agents/C14_CONTRAT_MOTEUR_MISSIONS.md",
+    "sha": "c219ba55bf12ff956b700087a9e0f6773ef5f71f",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/e139a1286c361b85aacd62413475f26878595911/coordination/agents/C14_CONTRAT_MOTEUR_MISSIONS.md"
+  },
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/c03/orchestratrice/03_DEPENDANCES.md",
+    "sha": "bfb3a60caf3afc73ff5efa0037ac0b47dfa028e1",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/03_DEPENDANCES.md"
+  },
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md",
+    "sha": "4fbe39e790901a4654bf05f201fb1f8d8dc52d4b",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/05_TRANSMISSION_RELIEUSE.md"
+  },
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/agents/index_collectif_c03.py",
+    "sha": "b181943b4123f084779e84aa469ea19043d8cb72",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/agents/index_collectif_c03.py"
+  },
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/c03/orchestratrice/01_AUDIT_MESSAGERIE.md",
+    "sha": "bd15d89b353bd82764c032639f1243313c09b8ef",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/01_AUDIT_MESSAGERIE.md"
+  },
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/c03/orchestratrice/04_PLAN_INTEGRATION.md",
+    "sha": "d749617b5f0b6e2af3228d92388f855eecdc78f8",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/orchestratrice/04_PLAN_INTEGRATION.md"
+  },
+  {
+    "pr": 116,
+    "ref": "dac43f10d881af355da4a2214bd222b8e7ff4e39",
+    "path": "coordination/agents/C15_CONTRAT_EXECUTANTS.md",
+    "sha": "6901bf74d3f685e1b454fc8941e0c1b7c2757023",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/dac43f10d881af355da4a2214bd222b8e7ff4e39/coordination/agents/C15_CONTRAT_EXECUTANTS.md"
+  },
+  {
+    "pr": 132,
+    "ref": "57a509257314d44cb15faf842395a21023e43335",
+    "path": "coordination/c03/INDEX_TRANSMISSIONS.md",
+    "sha": "ac8dc7ee0a00417e6e5bed39c7eafff49a83fb50",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/57a509257314d44cb15faf842395a21023e43335/coordination/c03/INDEX_TRANSMISSIONS.md"
+  },
+  {
+    "pr": null,
+    "ref": "7981d1f0297bf5461f48854ddd7c24a80a6400dd",
+    "path": "coordination/transmissions/2026-11-02_RESEAUX_C17_KIT_INTEGRATION_CANDIDAT.md",
+    "sha": "a14f9c33fefc44f1c298cde6d79bf6f6e7a1d0cb",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7981d1f0297bf5461f48854ddd7c24a80a6400dd/coordination/transmissions/2026-11-02_RESEAUX_C17_KIT_INTEGRATION_CANDIDAT.md"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/messagerie/README.md",
+    "sha": "b0474237941f94869404c0508d60f0f753979509",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/messagerie/README.md"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/messagerie/FACTEUR_AUTOMATIQUE_C10.md",
+    "sha": "827c26b37baf7641aad03c3eeae435ef1fc4470b",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/messagerie/FACTEUR_AUTOMATIQUE_C10.md"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/messagerie/facteur.py",
+    "sha": "900b489b2e62550d7b8db55851d8f477ccd3aa45",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/messagerie/facteur.py"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/agents/README.md",
+    "sha": "c33f0b42683a89b27095d30853c4ade735211670",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/agents/README.md"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/agents/creer_mission_c11.py",
+    "sha": "1e8516c31b3c89ffb0cd5a4fefc067d5b685e168",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/agents/creer_mission_c11.py"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/agents/demande_relieuse_c11.py",
+    "sha": "a963a276c91b68b13025601ded79afe8e81019f8",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/agents/demande_relieuse_c11.py"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/agents/mission_queue_c11.py",
+    "sha": "5b63aaf255b12c13570f23e94f0e89c5e5b816a7",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/agents/mission_queue_c11.py"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+    "sha": "33e06044fb44cc14e80edf334091eff90140a08f",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": ".github/workflows/facteur-messagerie-c10.yml",
+    "sha": "da72dbb32b0363971390aa6e13b29b25b5f871a3",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/.github/workflows/facteur-messagerie-c10.yml"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": ".github/workflows/pont-relieuse-lectrice-c12.yml",
+    "sha": "a18e263972743a374e49fb07d9521efa9ace91b2",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/.github/workflows/pont-relieuse-lectrice-c12.yml"
+  },
+  {
+    "pr": null,
+    "ref": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+    "path": "coordination/agents/pont_relieuse_c12.py",
+    "sha": "ad8e4622f5d324af7cfa5879ca4bd65f411507be",
+    "url": "https://github.com/zoutiFrutti/Interstice/blob/7344591fa7f0f4f6951ea273525039cf2cb9982a/coordination/agents/pont_relieuse_c12.py"
+  }
+]

@@ -1,0 +1,436 @@
+{
+  "texts": [
+    {
+      "id": "wiki-antifascisme-histoire-et-mecanismes",
+      "title": "Antifascisme, histoire et défense des libertés.",
+      "source": "wiki-antifascisme-histoire-et-mecanismes.html",
+      "sha256": "973ef990f7baac36a4eabef59707bd484153c6bfe8b1a69376dc5c0272998889",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-antifascisme-histoire-et-mecanismes.html"
+    },
+    {
+      "id": "wiki-antiracisme-histoires-droits",
+      "title": "Comprendre le racisme.Documenter l'égalité.",
+      "source": "wiki-antiracisme-histoires-droits.html",
+      "sha256": "696cc81c2ea401984072bf3862d4480411f794a1149e42d163fdd3d4fe6a2b08",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-antiracisme-histoires-droits.html"
+    },
+    {
+      "id": "wiki-association-collegiale",
+      "title": "Créer une association collégiale",
+      "source": "wiki-association-collegiale.html",
+      "sha256": "ee061a8b90cac614c1bb0e6754661bb0e1eabd5b28f7e3f5108e26a88f66745c",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-association-collegiale.html"
+    },
+    {
+      "id": "wiki-autonomie-materielle-savoir-faire",
+      "title": "Autonomie matérielle et savoir-faire.",
+      "source": "wiki-autonomie-materielle-savoir-faire.html",
+      "sha256": "26a843c7d03f96e203c1d7162677f10df4ee021766898f4ab8552140518d2d44",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-autonomie-materielle-savoir-faire.html"
+    },
+    {
+      "id": "wiki-capitalisme-classes-travail",
+      "title": "Capitalisme, classes sociales et monde du travail.",
+      "source": "wiki-capitalisme-classes-travail.html",
+      "sha256": "c2d6bb7b866a8cd28a80296073a14aec1ce684ff811670257d600b9797085d81",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-capitalisme-classes-travail.html"
+    },
+    {
+      "id": "wiki-culture-creation-acces-art",
+      "title": "Culture, création et accès à l’art.",
+      "source": "wiki-culture-creation-acces-art.html",
+      "sha256": "78d29fb6aeb34cdae45949cc579e352fe87a00d69377758de6cd287255525692",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-culture-creation-acces-art.html"
+    },
+    {
+      "id": "wiki-decision-collective",
+      "title": "Décider ensemble.",
+      "source": "wiki-decision-collective.html",
+      "sha256": "bd924776110ece2941bde9ab84a975068b8424677a72be53fc5b7dd499291f36",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-decision-collective.html"
+    },
+    {
+      "id": "wiki-ecologie-sociale-environnement",
+      "title": "Écologie sociale et crise environnementale.",
+      "source": "wiki-ecologie-sociale-environnement.html",
+      "sha256": "65759c6f70ffeb774bf2887ab5b721bef9c789fb14c1b17fdb9ee0e576ec4851",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-ecologie-sociale-environnement.html"
+    },
+    {
+      "id": "wiki-education-enfance-protection",
+      "title": "Éducation, enfance et protection.",
+      "source": "wiki-education-enfance-protection.html",
+      "sha256": "a23f0d3d93d196eb5668b0bb00e5a844a7332751e6ae6afea2503137f8150e6d",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-education-enfance-protection.html"
+    },
+    {
+      "id": "wiki-egalite-fiches",
+      "title": "Égalité, genres et inclusivité.",
+      "source": "wiki-egalite-fiches.html",
+      "sha256": "ce4fe8b4400667ac3dcd3e972616d57dbbd7d6338fbac3ef1592908f3c5e121a",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-egalite-fiches.html"
+    },
+    {
+      "id": "wiki-egalite-genres-inclusivite",
+      "title": "Égalité, genres et inclusivité.",
+      "source": "wiki-egalite-genres-inclusivite.html",
+      "sha256": "d431ee846ad2f3f54aaeeb7734576a15deeb8f562c4c8f5035d1c6c6892e0633",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-egalite-genres-inclusivite.html"
+    },
+    {
+      "id": "wiki-feminismes-histoire-egalite",
+      "title": "Féminismes : comprendre, transmettre, documenter.",
+      "source": "wiki-feminismes-histoire-egalite.html",
+      "sha256": "0825356a373eb5d2cc8b86d485b3ab0375d32dcc2207cbd54ad54d19bab4f4ec",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-feminismes-histoire-egalite.html"
+    },
+    {
+      "id": "wiki-financements-culture-spectacle",
+      "title": "Financer la création, la diffusion et les tournées.",
+      "source": "wiki-financements-culture-spectacle.html",
+      "sha256": "942f34b0d3c9d1b3685e38ea6ce65abc33ab384a5224c2572e2f588fd0051f02",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-financements-culture-spectacle.html"
+    },
+    {
+      "id": "wiki-frontieres-migrations-colonialisme",
+      "title": "Frontières, migrations et colonialisme.",
+      "source": "wiki-frontieres-migrations-colonialisme.html",
+      "sha256": "2bc26ea09d0a2376e93ab5240de8ef11cf6223d3bc76d2ed87e8abbdfbaf7c3b",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-frontieres-migrations-colonialisme.html"
+    },
+    {
+      "id": "wiki-handicap-validisme-neurodiversite",
+      "title": "Handicap, validisme et neurodiversité.",
+      "source": "wiki-handicap-validisme-neurodiversite.html",
+      "sha256": "b4c5da1c366fd1f8f2bd03bee691812a55f357a59b74f6ca694ed15f940adbd7",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-handicap-validisme-neurodiversite.html"
+    },
+    {
+      "id": "wiki-justice-prisons-abolitionnisme",
+      "title": "Justice, prisons et abolitionnisme pénal.",
+      "source": "wiki-justice-prisons-abolitionnisme.html",
+      "sha256": "c4edd4313cda000254c1b8a0e13641a99d94d19380b643c5360881fed1b6505e",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-justice-prisons-abolitionnisme.html"
+    },
+    {
+      "id": "wiki-lecture-croisee-travail-soin-pouvoir",
+      "title": "Qui fait vivre les communs ?",
+      "source": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "sha256": "521772e60a2ff0c20a2594a747059adf7b91d9c4c8c33d6994d4bfccf8eb5dfa",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-lecture-croisee-travail-soin-pouvoir.html"
+    },
+    {
+      "id": "wiki-liberte-numerique-ia-surveillance",
+      "title": "Libertés numériques, surveillance et intelligence artificielle.",
+      "source": "wiki-liberte-numerique-ia-surveillance.html",
+      "sha256": "52c279b50660f42f70615b6ad8046fe4de908c46aa22a14e85d2c9f27e27ecc2",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-liberte-numerique-ia-surveillance.html"
+    },
+    {
+      "id": "wiki-logement-habitat-droit-ville",
+      "title": "Logement, habitat et droit à la ville",
+      "source": "wiki-logement-habitat-droit-ville.html",
+      "sha256": "0fabf197754c866f75672763414cde147fe5f718cc69fb2e2d5699c9cebe94a3",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-logement-habitat-droit-ville.html"
+    },
+    {
+      "id": "wiki-patriarcat-histoire-mecanismes",
+      "title": "Le patriarcat : histoire, pouvoirs et mécanismes.",
+      "source": "wiki-patriarcat-histoire-mecanismes.html",
+      "sha256": "9edeee0956c46530b160a9f28dabb5d1edb04ff04f7a3b3ade91640d25e7ac98",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-patriarcat-histoire-mecanismes.html"
+    },
+    {
+      "id": "wiki-police-deces-memoire",
+      "title": "Police, décès et mémoire.",
+      "source": "wiki-police-deces-memoire.html",
+      "sha256": "0b1f8e386bb8638bedc99f876446e3df82da2a89612d4cc7f5df5789b0260cb9",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-police-deces-memoire.html"
+    },
+    {
+      "id": "wiki-politique-institutions-regimes",
+      "title": "Qui gouverne ? Comment le pouvoir s'organise.",
+      "source": "wiki-politique-institutions-regimes.html",
+      "sha256": "7496091d6f4300abad783bbe5d9d08cc4eefcda9303e25203895f882ab411be8",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-politique-institutions-regimes.html"
+    },
+    {
+      "id": "wiki-sante-psychiatrie-autonomie-soins",
+      "title": "Santé, psychiatrie et autonomie des soins.",
+      "source": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "sha256": "b958df277f8c8203cb0997d428068e0552d3d9f253defa2e1ca9448b8265218c",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "bloquee",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-sante-psychiatrie-autonomie-soins.html"
+    },
+    {
+      "id": "wiki-socialismes-communismes-anarchismes-autogestion",
+      "title": "Socialismes, communismes, anarchismes et autogestion.",
+      "source": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "sha256": "ca4507c7bbcd6af005424c4a578169ea1464c4b6e86a29b6c813fc1cc53065ec",
+      "main_identical": true,
+      "editorial_state": "Texte R6 existant · réserves et relecture conservées",
+      "c07_validation": {
+        "technical": "non_applicable",
+        "documentary": "a_reconcilier",
+        "legal": "non_examine",
+        "publication": "non_autorisee",
+        "political": "non_evaluee"
+      },
+      "legal_review": "not_reexamined_by_technical_receipt",
+      "new_publication_visa": false,
+      "work_reader_path": "lectures/wiki-socialismes-communismes-anarchismes-autogestion.html"
+    }
+  ]
+}

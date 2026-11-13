@@ -84,7 +84,10 @@ test('INT01: all destinations, keyboard focus, history, deep links and reduced m
           const focus = await node.evaluate(x => ({style: getComputedStyle(x).outlineStyle, width: getComputedStyle(x).outlineWidth}));
           assert.notEqual(focus.style, 'none', id + ' focus missing');
           assert.notEqual(focus.width, '0px', id + ' focus width');
-          await page.keyboard.press('Enter');
+          await Promise.all([
+            page.waitForURL(url => url.hash === '#' + id),
+            page.keyboard.press('Enter'),
+          ]);
           assert.equal(new URL(page.url()).hash, '#' + id);
           assert.match(await page.locator('#selection').innerText(), new RegExp(label));
           assert.equal(await page.locator('#selection a').getAttribute('href'), '../' + path);
