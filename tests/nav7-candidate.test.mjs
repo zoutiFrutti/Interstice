@@ -54,7 +54,9 @@ test('Manifeste bouton 7 et lien direct existant',()=>{
   assert.equal((source.match(/id="manifest-open"/g)||[]).length,1);
   assert.match(source,/<button class="node manifest-node" style="--x:33[.]08%;--y:49[.]17%"[^>]*data-point="7" id="manifest-open"/);
   const svg=readFileSync(resolve(root,'assets/identite/r7/nav7/interstice-r7-nav7-candidate.svg'),'utf8');
-  assert.ok(svg.includes('<circle cx="220" cy="327" r="10"'),'point 7 must be an original R6 node');
+  const officialR6=readFileSync(resolve(root,'assets/logo-interstice.svg'),'utf8');
+  assert.ok(officialR6.includes('<circle cx="220" cy="327" r="10"'),'point 7 must come from an original R6 node');
+  assert.ok(svg.includes('<circle cx="220" cy="327" r="11.5"'),'derived R7 must display a slightly bigger seventh point');
   assert.ok(Math.abs(33.08-220/665*100)<0.02 && Math.abs(49.17-327/665*100)<0.02,'point 7 should match its original node');
 });
 test('Retour central explicite, état aria-pressed mis à jour et secours sans animation',()=>{
