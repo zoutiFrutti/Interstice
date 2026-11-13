@@ -441,7 +441,7 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 
 **Sujet :** articulation entre droit d'objection, consensus et coût politique de l'immobilisme ; mise en réseau des études critiques n°14–18.
 
-**Sources réellement consultées :** journal commun GitHub (présente version) ; analyse croisée Drive FN-009 Jo Freeman × FN-019 Seeds for Change, document `1YVpe_PEIblubEKPL0fSHNT5Cdm4yLUlJxl1l-K7jis8` ; manifeste V2.5 vérifié précédemment, référence éditoriale non adoptée.
+**Sources réellement consultées :** journal commun GitHub (présente version) ; analyse croisée Drive FN-009 Jo Freeman × FN-019 Seeds for Change, document `source-reservee:DRV-052` ; manifeste V2.5 vérifié précédemment, référence éditoriale non adoptée.
 
 **Connaissances existantes identifiées :** lectures déjà réalisées sur blocage, élites informelles, cadrage des propositions et information asymétrique ; travaux juridiques signalés dans le journal (note, Charte V0.4, trois simulations), non relus intégralement dans cette passe ; Médiathèque a déjà traité Mies/Illich/Federici et Arendt/Goldman/Federici. Éviter les doublons.
 
