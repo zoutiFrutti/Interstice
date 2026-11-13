@@ -1,0 +1,136 @@
+{
+  "schema": "interstice/nav7-c07-convergence/1",
+  "status": "candidate_not_published",
+  "source": {
+    "navigation_branch": "work/nav7-accessible-prototype-20261113",
+    "work_local_commit_reported": "7d61a53",
+    "work_local_artifact_received": false,
+    "work_local_artifact_sha256": null,
+    "work_preview_status": "reported_private_not_independently_inspected"
+  },
+  "coordinate_system": {
+    "viewbox": [
+      0,
+      0,
+      665,
+      665
+    ],
+    "source": "assets/identite/r7/nav7/interstice-r7-nav7-candidate.svg"
+  },
+  "primary_ports": [
+    {
+      "point": 1,
+      "title": "Faire Ensemble",
+      "coordinates": [
+        258,
+        203
+      ],
+      "current_link": "index.html#propositions",
+      "submenus": [
+        "index.html#propositions",
+        "index.html#proposer",
+        "wiki-decision-collective.html"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Atlas des communs",
+      "coordinates": [
+        397,
+        178
+      ],
+      "current_link": "atlas.html",
+      "submenus": [
+        "atlas.html#atlas-sources",
+        "atlas.html#cartes-logo",
+        "parcours.html"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "La Vigie de la Faille",
+      "coordinates": [
+        498,
+        261
+      ],
+      "current_link": null,
+      "submenus": []
+    },
+    {
+      "point": 4,
+      "title": "Encyclopédie des communs",
+      "coordinates": [
+        461,
+        426
+      ],
+      "current_link": "wiki.html",
+      "submenus": [
+        "wiki-decision-collective.html",
+        "wiki-ecologie-sociale-environnement.html",
+        "wiki-logement-habitat-droit-ville.html"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Archives des communs",
+      "coordinates": [
+        333,
+        593
+      ],
+      "current_link": "squats-et-lieux-autonomes.html",
+      "submenus": [
+        "squats-et-lieux-autonomes.html",
+        "wiki-logement-habitat-droit-ville.html",
+        "bibliotheque.html"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Médiathèque des communs",
+      "coordinates": [
+        233,
+        450
+      ],
+      "current_link": "bibliotheque.html",
+      "submenus": [
+        "bibliotheque.html#search",
+        "bibliotheque.html#resources",
+        "bibliotheque.html#resource-form"
+      ]
+    }
+  ],
+  "manifesto": {
+    "point": 7,
+    "coordinates": [
+      220,
+      327
+    ],
+    "source_r6_node": true,
+    "display": "dialog",
+    "direct_link": "manifeste-v2-5.html",
+    "not_a_port": true
+  },
+  "documentary_gates": {
+    "work_c07_schema": "c07-master-projection/1",
+    "master_objects": 219,
+    "publishing_authorized": false,
+    "public_card_projection": "none",
+    "PAR_005": "blocked",
+    "allow_unreviewed_docs": false
+  },
+  "work_claims_unverified": {
+    "files": 135,
+    "html_pages": 87,
+    "submenus": 31,
+    "texts": 24,
+    "deterministic_tests": 84,
+    "browser_scenarios": 26
+  },
+  "rules": [
+    "Do not infer Work artifacts from report-only claims",
+    "Do not import or publish C07 objects, raw documents or private locators",
+    "Preserve all six point assignments and the distinct Manifesto point",
+    "Preserve existing public URLs and original SVG files",
+    "No merge, Pages deployment or production publishing without distinct authorization"
+  ]
+}
