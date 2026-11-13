@@ -14,7 +14,7 @@ const expected=[
   ['5','Archives des communs'],
   ['6','Médiathèque des communs']
 ];
-const targetPages=['index.html','atlas.html','wiki.html','squats-et-lieux-autonomes.html','bibliotheque.html','manifeste-v2-5.html','assets/logo-interstice.svg'];
+const targetPages=['index.html','atlas.html','wiki.html','squats-et-lieux-autonomes.html','bibliotheque.html','manifeste-v2-5.html','assets/logo-interstice.svg','assets/identite/r7/nav7/interstice-r7-b-base.svg'];
 
 test('Six boutons de porte distincts exactement, ordre décidé',()=>{
   const tags=[...source.matchAll(/<button\b[^>]*class="node"[^>]*>/g)].map(m=>m[0]);
@@ -25,6 +25,26 @@ test('Six boutons de porte distincts exactement, ordre décidé',()=>{
     assert.match(tags.find(tag=>tag.includes(`data-point="${id}"`)),/aria-label=/);
   }
 });
+test('SVG R7-B réel, vectoriel, six pôles et zones tactiles alignées',()=>{
+  const rel='assets/identite/r7/nav7/interstice-r7-b-base.svg';
+  assert.match(source,/src="assets\/identite\/r7\/nav7\/interstice-r7-b-base\.svg"/);
+  const svg=readFileSync(resolve(root,rel),'utf8');
+  assert.match(svg,/viewBox="0 0 665 665"/);
+  assert.doesNotMatch(svg,/<image\\b|data:image\\//);
+  for(const [number,label] of expected){
+    const id=number.padStart(2,'0');
+    const grp=new RegExp('<g id="r7-porte-'+id+'"[^>]*>[\\s\\S]*?<circle cx="(\\d+)" cy="(\\d+)"');
+    const point=svg.match(grp);
+    assert.ok(point,'SVG missing pole '+number);
+    const btn=source.match(new RegExp('<button class="node" style="--x:([0-9.]+)%;--y:([0-9.]+)%"[^>]*data-point="'+number+'"[^>]*data-door="'+label+'"'));
+    assert.ok(btn,'button missing or wrong position '+number);
+    assert.ok(Math.abs(Number(btn[1])-Number(point[1])/665*100)<0.02,'horizontal coordinate mismatch '+number);
+    assert.ok(Math.abs(Number(btn[2])-Number(point[2])/665*100)<0.02,'vertical coordinate mismatch '+number);
+    assert.ok(svg.includes('id="r7-porte-'+id+'-tertiaires"'),'missing tertiary geometry '+number);
+  }
+  assert.match(source,/point 7 dans le dessin n'est pas simulée/);
+});
+
 test('Manifeste bouton 7 et lien direct existant',()=>{
   assert.match(source,/<button\b[^>]*data-point="7"[^>]*id="manifest-open"/);
   assert.match(source,/<dialog id="manifest-dialog"/);
