@@ -6,7 +6,7 @@ Ces situations sont fictives. Aucun organe disciplinaire ni mandat de sécurité
 Références :
 - Note A : https://github.com/zoutiFrutti/Interstice/blob/main/docs/NOTE_JURIDIQUE_PROTECTION_RECOURS_2026-10-29.md
 - Charte V0.4 : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md
-- Manifeste V2.5, non adopté : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit
+- Manifeste V2.5, non adopté : source-reservee:DRV-021
 
 ## Cas 1. Signalement impliquant une personne fondatrice
 

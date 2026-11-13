@@ -8,3 +8,12 @@ test('group counts without disclosing Google Doc identifiers or file names',()=>
  assert.equal(JSON.stringify(result).includes('EXAMPLEPRIVATEID'),false);
  assert.equal(JSON.stringify(result).includes('a.md'),false);
 });
+
+// A real link cannot replace a test fixture while preserving the ceiling count.
+import {allowedFixtures} from './check-public-tree-baseline.mjs';
+test('only explicit fixture identities in their exact test files may remain',()=>{
+ const url='https://'+('docs'+'.google.com/document/d/')+'SYNTHETIC_NEW_RESOURCE_12345';
+ assert.equal(allowedFixtures([['index.html',url]]).accepted,false);
+ assert.equal(allowedFixtures([['coordination/work/c07/relieuse/check-pages-content.test.mjs',url]]).accepted,false);
+ assert.equal(allowedFixtures([['coordination/work/c07/relieuse/check-pages-content.test.mjs','https://'+('docs'+'.google.com/document/d/')+'EXAMPLE_PRIVATE_DOC_12345']]).accepted,true);
+});

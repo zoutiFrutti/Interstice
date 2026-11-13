@@ -4,7 +4,7 @@
 > **STATUT : DOCUMENT DE TRAVAIL NON ADOPTÉ.** Aucun collectif constitué, aucune assemblée, aucun mandat, aucune procédure de recours ni aucune structure fédérale ne sont présumés exister. Ce document ne modifie pas le manifeste V2.3, les statuts éventuels ni le site public. Chaque article doit être débattu. Les règles qui engagent juridiquement une éventuelle association devront être articulées avec ses statuts.
 
 **Atelier responsable de la proposition :** Le Juriste.  
-**Référence éditoriale actuelle :** « La Faille noire — Manifeste V2.5 consolidé », version du 29 octobre 2026, Google Drive : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit . **Archives :** V2.3 https://docs.google.com/document/d/1GtqpLRiK9-dDwYja5yP0D2GOvuPiv2r3WZ_uAGSltig/edit et V0.1 de la charte https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md .  
+**Référence éditoriale actuelle :** « La Faille noire — Manifeste V2.5 consolidé », version du 29 octobre 2026, Google Drive : source-reservee:DRV-021 . **Archives :** V2.3 source-reservee:DRV-007 et V0.1 de la charte https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md .\
 **État de la V2.5 :** référence éditoriale de travail validée sur le plan éditorial, **jamais adoptée collectivement**. Elle distingue principes, initiatives immédiates et futurs possibles, et ajoute « La vigilance envers nos propres pouvoirs ». Toutes les clauses de la charte restent des **propositions non opposables tant qu'elles ne sont pas adoptées et intégrées aux règles pertinentes**.
 
 ## Historique de la révision

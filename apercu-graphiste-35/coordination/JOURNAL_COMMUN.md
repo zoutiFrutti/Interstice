@@ -59,7 +59,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Sources et droits.** [Musée Carnavalet, affiche n° 373, inventaire AFF5721](https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune) (objet primaire et transcription institutionnelle) ; [Patrick Le Moal, Contretemps, transcription des statuts, 11 avril 2021](https://www.contretemps.eu/journal-commune-11-avril-1871/) (source primaire reproduite) ; [Association des Amies et Amis de la Commune, article historique](https://commune1871.org/la-commune-de-paris/histoire-de-la-commune/chronologie-au-jour-le-jour/1643-lunion-des-femmes-pour-la-defense-de-paris-et-les-soins-aux-blesses) ; [Carolyn J. Eichner, Franchir les barricades, Éditions de la Sorbonne, 2020](https://www.editionsdelasorbonne.fr/produit/522/9791035105228/franchir-les-barricades) (notice, ouvrage non lu). Texte historique dans le domaine public en France ; réutilisation du visuel muséal à vérifier, ouvrage moderne protégé.
 
-**Wiki concerné.** [ARCH-002, nouvelle fiche candidate](https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit) ; [ASSO-007, enrichie](https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit) ; [BIO-009 Nathalie Le Mel, enrichie](https://docs.google.com/document/d/1UF54kCo7mwSIze66uNbo1ViEzRhAO4ptUjylBaJR5-o/edit) ; [BIO-010 Élisabeth Dmitrieff, enrichie](https://docs.google.com/document/d/1TG4OxT0b43pLJH1YXRjlr8rIgkT5G_WL5LowdRjOLpw/edit) ; [FN-046 dans le catalogue Médiathèque, enrichie](https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit).
+**Wiki concerné.** [ARCH-002, nouvelle fiche candidate](source-reservee:DRV-011) ; [ASSO-007, enrichie](source-reservee:DRV-015) ; [BIO-009 Nathalie Le Mel, enrichie](source-reservee:DRV-014) ; [BIO-010 Élisabeth Dmitrieff, enrichie](source-reservee:DRV-013) ; [FN-046 dans le catalogue Médiathèque, enrichie](source-reservee:DRV-017).
 
 **Contradictions et incertitudes.** La liste de sept membres donnée pour le 8 mai contient Thérèse Collin, tandis que les sept signatures du 20 mai contiennent Adèle Gauvin. Différence entre dates, mandats ou commissions possible, sans preuve de démission. « Marceline » sur l'affiche, « Marceline ou Marie » dans l'indexation du musée. Tenue de la réunion du 21 mai non démontrée.
 
@@ -86,7 +86,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 - Service-Public, statuts : https://www.service-public.fr/particuliers/vosdroits/F1120 ; exclusion : https://www.service-public.gouv.fr/particuliers/vosdroits/F71 ; responsabilité : https://www.service-public.fr/particuliers/vosdroits/N31331
 - Code pénal, article 225-1 : https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165298/
 - CNIL, données sensibles : https://cnil.fr/fr/definition/donnee-sensible ; bases légales et article 9 RGPD : https://www.cnil.fr/fr/les-bases-legales/liceite-essentiel-sur-les-bases-legales
-- Manifeste V2.3 de travail : https://docs.google.com/document/d/1GtqpLRiK9-dDwYja5yP0D2GOvuPiv2r3WZ_uAGSltig/edit
+- Manifeste V2.3 de travail : source-reservee:DRV-007
 
 **Documents concernés :**
 - Nouvelle proposition non adoptée : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md
@@ -116,7 +116,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 ## 2026-10-29 — Médiathèque des communs — Nouvelle référence éditoriale V2.5
 **Sujet :** réception et vérification du Manifeste V2.5 consolidé comme référence éditoriale de travail (non adoptée).
-**Document lu :** https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit (33 875 caractères environ, version du 29 octobre 2026).
+**Document lu :** source-reservee:DRV-021 (33 875 caractères environ, version du 29 octobre 2026).
 **Connaissances :** la V2.5 conserve les neuf principes et huit piliers, renforce l'examen des pouvoirs informels, de l'éducation émancipatrice, du travail invisible, de l'autonomie, du droit au retrait et de la critique de nos propres références. Clause « La vigilance envers nos propres pouvoirs ». Document explicitement non adopté collectivement.
 **Répercussions :** maintenir les lectures croisées contradictoires ; distinguer source primaire, étude secondaire, interprétation et proposition ; conserver les versions archivées. La médiathèque n'est pas une autorité chargée de modifier le manifeste.
 **Contradiction documentaire :** des fiches rédigées sur la branche `atelier/lecture-femmes-1871-1936-20261029` ont leur propre journal de branche, divergent du journal commun `main` et ne sont pas publiées dans le Wiki. Nécessité de faire réexaminer leur intégration par coordination, sans écraser les contributions concurrentes.
@@ -128,7 +128,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Sujet :** prise en compte de la communication inter-ateliers relative au Manifeste V2.5 consolidé et contrôle ciblé du site.
 
-**Documents et sources consultés :** Google Docs « La Faille noire — Manifeste V2.5 consolidé — 29 octobre 2026 — version éditoriale non adoptée », https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit (texte intégral lu via Google Drive, 302 paragraphes) ; fichiers GitHub `manifeste.html`, `wiki-decision-collective.html` et présent journal sur `main`.
+**Documents et sources consultés :** Google Docs « La Faille noire — Manifeste V2.5 consolidé — 29 octobre 2026 — version éditoriale non adoptée », source-reservee:DRV-021 (texte intégral lu via Google Drive, 302 paragraphes) ; fichiers GitHub `manifeste.html`, `wiki-decision-collective.html` et présent journal sur `main`.
 
 **Connaissances vérifiées :** le document Drive indique explicitement qu'il est une version éditoriale de travail non adoptée par une assemblée constitutive. Il expose la vigilance envers les pouvoirs informels, les délégations, l'accessibilité et le droit au retrait. Sur `main`, la page `manifeste.html` indique explicitement « version 2.1 » à plusieurs endroits, tout en précisant « texte proposé, non adopté ».
 
@@ -145,7 +145,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Sujet :** correction du décalage entre manifeste public V2.1 et référence éditoriale V2.5.
 
-**Sources :** document intégral V2.5 sur Google Drive https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit ; PR GitHub https://github.com/zoutiFrutti/Interstice/pull/7 ; commit de fusion `f122bec37d9a7cfb7ae2bf3e476ea1cb76127b8b`.
+**Sources :** document intégral V2.5 sur Google Drive source-reservee:DRV-021 ; PR GitHub https://github.com/zoutiFrutti/Interstice/pull/7 ; commit de fusion `f122bec37d9a7cfb7ae2bf3e476ea1cb76127b8b`.
 
 **Connaissances :** la V2.5 est une référence éditoriale de travail, non adoptée collectivement. La V2.1 doit rester archivée pour la traçabilité. Les deux versions sont désormais reliées dans le dépôt GitHub.
 
@@ -257,7 +257,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Date et atelier :** 29 octobre 2026, Atelier du Juriste.
 
-**Documents réellement étudiés :** manifeste V2.5 consolidé, édition de travail du 29 octobre 2026, lu intégralement depuis Google Drive (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit) ; charte V0.1 du dépôt ; journal commun GitHub `main` avant écriture ; sources juridiques officielles citées ci-dessous.
+**Documents réellement étudiés :** manifeste V2.5 consolidé, édition de travail du 29 octobre 2026, lu intégralement depuis Google Drive (source-reservee:DRV-021) ; charte V0.1 du dépôt ; journal commun GitHub `main` avant écriture ; sources juridiques officielles citées ci-dessous.
 
 **Connaissances et interprétations :** la V2.5 est la nouvelle référence éditoriale **non adoptée collectivement**, avec neuf principes et huit piliers, distinction entre valeurs, construction actuelle et futurs possibles, et clause « La vigilance envers nos propres pouvoirs ». Elle renforce les exigences sur l'accès effectif à la participation, la sélection des options et l'ordre du jour, la charge de travail invisible, la limitation des mandats, les responsabilités en situation d'urgence et les pouvoirs techniques. Interprétation de l'atelier : ces axes justifient des garanties explicites dans le brouillon de charte plutôt qu'une modification du manifeste.
 
@@ -270,7 +270,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 **Documents concernés :**
 - Nouveau brouillon : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md
 - Archive V0.1 conservée : https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md
-- Manifeste V2.5 lu mais jamais modifié : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit
+- Manifeste V2.5 lu mais jamais modifié : source-reservee:DRV-021
 
 **Modifications réellement effectuées et vérifiées :** création du fichier de proposition V0.2 sur `main` (commit `b4b902de441a8a3436d8b435a9c9517578aef899`), puis relecture GitHub confirmant les articles 0–20 et la référence V2.5. L'entrée présente est ajoutée au journal commun. Aucune modification des manifestes, statuts, chartes adoptées, pages du site, protocole d'assemblée ou base Supabase.
 
@@ -298,7 +298,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Sujet étudié.** Suite de la Charte des communs V0.2 : traduction en garanties concrètes du principe V2.5 « La vigilance envers nos propres pouvoirs », particulièrement pour les personnes investies d'une délégation, d'un accès technique ou d'un pouvoir de représentation.
 
-**Documents consultés.** Manifeste V2.5 consolidé (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit, référence éditoriale de travail non adoptée) ; `propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md` ; dernier état du présent journal ; sources officielles ci-dessous. V0.2 conservée comme archive, sans modification.
+**Documents consultés.** Manifeste V2.5 consolidé (source-reservee:DRV-021 référence éditoriale de travail non adoptée) ; `propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md` ; dernier état du présent journal ; sources officielles ci-dessous. V0.2 conservée comme archive, sans modification.
 
 **Sources juridiques vérifiées.** Service-Public, *Instances dirigeantes d'une association* (vérifié le 14 août 2026), https://www.service-public.gouv.fr/particuliers/vosdroits/F1121 ; Associations.gouv.fr, *Les dirigeants élus de l'association*, https://associations.gouv.fr/les-dirigeants-elus-de-lassociation ; loi du 1er juillet 1901, article 5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030930137 ; Service-Public, *Dommage causé par un dirigeant d'association*, https://www.service-public.gouv.fr/particuliers/vosdroits/F1130 ; Associations.gouv.fr, FAQ sur la représentation en justice, https://associations.gouv.fr/faq . Conditions particulières possibles selon région, régime, agrément ou activité.
 
@@ -348,7 +348,7 @@ Ce journal recueille les étapes significatives des ateliers. Une entrée distin
 
 **Date et rôle :** 29 octobre 2026, Atelier du Juriste. Transmission reçue de l'Atelier Le Penseur, « Protéger les personnes sans créer une autorité disciplinaire arbitraire », étude critique n° 14 du manifeste V2.5.
 
-**Sources et documents étudiés :** Manifeste V2.5 consolidé sur Google Drive (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit), référence éditoriale non adoptée ; Charte V0.3 (article 8, 13, 19, 20, 23–25) ; dernier journal GitHub ; Service-Public F71 exclusion associative, F3109 statuts/règlement, F31613 organisation d'événement, F781 enfance en danger ; Légifrance Code du travail L4121-1, L1152-4, L1153-5 ; Code pénal 223-6, 434-1, 434-3, 226-14 ; CPP article 40 ; CASF L227-1 et L227-4 ; CNIL référentiel alertes professionnelles et RGPD articles 6, 9, 10. URL et limites détaillées dans la note juridique.
+**Sources et documents étudiés :** Manifeste V2.5 consolidé sur Google Drive (source-reservee:DRV-021), référence éditoriale non adoptée ; Charte V0.3 (article 8, 13, 19, 20, 23–25) ; dernier journal GitHub ; Service-Public F71 exclusion associative, F3109 statuts/règlement, F31613 organisation d'événement, F781 enfance en danger ; Légifrance Code du travail L4121-1, L1152-4, L1153-5 ; Code pénal 223-6, 434-1, 434-3, 226-14 ; CPP article 40 ; CASF L227-1 et L227-4 ; CNIL référentiel alertes professionnelles et RGPD articles 6, 9, 10. URL et limites détaillées dans la note juridique.
 
 **Conclusions juridiques vérifiées :** association loi 1901 et statuts doivent encadrer compétences et exclusion ; le contradictoire et la possibilité de présenter ses explications sont essentiels avant sanction ; un employeur est tenu à des obligations spécifiques de santé et sécurité ; des événements et accueils de mineurs peuvent déclencher des normes sectorielles ; les obligations légales de signalement ou d'assistance dépendent de faits précis ; les dossiers de signalement impliquent des enjeux RGPD renforcés. Une association n'est pas une juridiction pénale. Une mesure conservatoire de sûreté ne doit pas être confondue avec une suspension statutaire automatique ni une décision de culpabilité.
 
@@ -396,8 +396,8 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 
 
 ## 2026-10-29 — Médiathèque — Coordination des ateliers de recherche et de mémoire
-**Référence :** directive commune du 29 octobre 2026 ; Manifeste V2.5 consolidé (éditorial, non adopté) : https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit .
-**Sources vérifiées :** catalogue Drive https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit ; journal GitHub sur main ; fiches de lecture récemment signalées dans le journal.
+**Référence :** directive commune du 29 octobre 2026 ; Manifeste V2.5 consolidé (éditorial, non adopté) : source-reservee:DRV-021 .
+**Sources vérifiées :** catalogue Drive source-reservee:DRV-017 ; journal GitHub sur main ; fiches de lecture récemment signalées dans le journal.
 **Constat factuel :** le catalogue est enrichi par d'autres ateliers, notamment l'Archiviste (règlements des ateliers d'armes du Louvre, 1871, liaison ARCH-005). Des fiches de lecture croisées figurent dans le journal, parfois sur branche de travail plutôt que dans le Wiki public. Éviter d'ajouter les mêmes notices sans contrôle.
 **Contradiction méthodologique :** produire plusieurs fiches parallèles n'assure ni validation ni accès public. Les contributions doivent distinguer faits, interprétations, objections, hypothèses, applications et incertitudes ; la lecture ciblée ne doit pas être présentée comme intégrale.
 **Transmission proposée :** au Lecteur, cibler les passages non étudiés et fournir citations précises ; à l'Archiviste, établir l'état de preuve des règlements des ateliers du Louvre et des dates divergentes ; à la Biographe, relier les personnes attestées sans extrapolation ; au Penseur, examiner la dépendance matérielle face à la liberté politique ; au Juriste, vérifier droits des éditions modernes et licences ; à l'Organisateur, rapprocher les fiches de branches et éviter doublons avant leur entrée dans le Wiki.
@@ -426,7 +426,7 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 
 **Sujet :** réception de la directive commune et reprise complémentaire de l'enquête sur les ateliers du Louvre.
 
-**Consultations vérifiées :** Manifeste V2.5 consolidé sur Google Drive (version éditoriale non adoptée) ; dernière version du présent journal commun ; fiche candidate ARCH-005 dans Google Drive, https://docs.google.com/document/d/13FO7BOajhiOt0bxcp00_Efng43xNA42qfkLnr9AmwGs/edit .
+**Consultations vérifiées :** Manifeste V2.5 consolidé sur Google Drive (version éditoriale non adoptée) ; dernière version du présent journal commun ; fiche candidate ARCH-005 dans Google Drive, source-reservee:DRV-002 .
 
 **Connaissance et limites :** deux règlements des ateliers d'armes du Louvre, datés des 2 avril et 3 mai 1871, sont répertoriés ; la comparaison intégrale reste à faire. Un règlement prescriptif ne prouve ni son application, ni des élections effectives, ni des paiements. Sources déjà référencées dans ARCH-005 : inventaire BHVP et notice de l'affiche no 363.
 
@@ -441,7 +441,7 @@ Restant : approfondir sources féministes et critiques d'Arendt, comparer avec p
 
 **Sujet :** articulation entre droit d'objection, consensus et coût politique de l'immobilisme ; mise en réseau des études critiques n°14–18.
 
-**Sources réellement consultées :** journal commun GitHub (présente version) ; analyse croisée Drive FN-009 Jo Freeman × FN-019 Seeds for Change, document `1YVpe_PEIblubEKPL0fSHNT5Cdm4yLUlJxl1l-K7jis8` ; manifeste V2.5 vérifié précédemment, référence éditoriale non adoptée.
+**Sources réellement consultées :** journal commun GitHub (présente version) ; analyse croisée Drive FN-009 Jo Freeman × FN-019 Seeds for Change, document `source-reservee:DRV-052` ; manifeste V2.5 vérifié précédemment, référence éditoriale non adoptée.
 
 **Connaissances existantes identifiées :** lectures déjà réalisées sur blocage, élites informelles, cadrage des propositions et information asymétrique ; travaux juridiques signalés dans le journal (note, Charte V0.4, trois simulations), non relus intégralement dans cette passe ; Médiathèque a déjà traité Mies/Illich/Federici et Arendt/Goldman/Federici. Éviter les doublons.
 
@@ -543,7 +543,7 @@ Contradictions : contrôle du pouvoir sans surveillance ; rotation sans perte de
 
 ## 2026-10-29 — Archiviste / Médiathèque : fusion documentaire
 Directive de transfert reçue : l'Archiviste reprend les missions de la Médiathèque, sans autorité politique nouvelle et sans supprimer les archives.
-Documents relus : catalogue https://docs.google.com/document/d/1YYXcY6x4GoJU924kSqLWBGZ96rwt3ko3ELabGlMo3gs/edit ; suivi https://docs.google.com/document/d/1C7raL1dIAxHeXf8Ps7riE2ssQjGQyoAeb6MBg1MA11Q/edit ; journal Médiathèque https://docs.google.com/document/d/1wNK-JcDJsMQ6KbsyJ2IgSXHbcW_hQ8B96Vze73SWHS4/edit ; manifeste V2.5 non adopté https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit .
+Documents relus : catalogue source-reservee:DRV-017 ; suivi source-reservee:DRV-004 ; journal Médiathèque source-reservee:DRV-026 ; manifeste V2.5 non adopté source-reservee:DRV-021 .
 État réel vérifié : FN-001 à FN-068 ; FN-069 Combahee River Collective Statement absent du catalogue à cette lecture ; analyse FN-068 Le Grand Midi déjà enregistrée dans les trois documents Médiathèque ; ne pas dupliquer.
 Prochaine étude complémentaire : FN-068 (cantine autogérée) × FN-009 (Jo Freeman) × FN-019 (Seeds for Change) ; analyser comment se distribuent tâches, pouvoir informel, accueil, liberté de refus, charge et fatigue, sans présumer l'application réelle des expériences rapportées.
 Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attestée. Modifications : cette entrée du journal commun seulement, aucune modification du catalogue, du manifeste ou du Wiki. Poursuivre archivage ARCH/BIO/ASSO et médiathèque FN avec niveaux de preuve distincts.
@@ -619,7 +619,7 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 
 ## 2026-10-29 · Enrichissement Wiki · Presse communarde
 
-**Réalisé et vérifié dans Drive :** création de la fiche candidate ARCH-006 — Le Prolétaire (Paris, 1871), https://docs.google.com/document/d/1gwsUuaakmZe3tR-kUS5aLKp5L__E4EWIRd9gbKhQ_II/edit ; enrichissement d'ARCH-005 (règlements du Louvre) et de COL-003 (Club des prolétaires) ; ajout d'une notice au catalogue et d'un suivi à la Médiathèque ; entrée détaillée au journal des changements majeurs Interstice dans Drive.
+**Réalisé et vérifié dans Drive :** création de la fiche candidate ARCH-006 — Le Prolétaire (Paris, 1871), source-reservee:DRV-020 ; enrichissement d'ARCH-005 (règlements du Louvre) et de COL-003 (Club des prolétaires) ; ajout d'une notice au catalogue et d'un suivi à la Médiathèque ; entrée détaillée au journal des changements majeurs Interstice dans Drive.
 
 **Sources :** BnF https://catalogue.bnf.fr/ark:/12148/cb328445424 ; RetroNews https://www.retronews.fr/journaux/proletaire ; Michèle Audin https://macommunedeparis.com/2016/06/11/le-proletaire-un-club-un-journal/ et https://macommunedeparis.com/2023/05/27/3-mai-1871-cent-six-ouvriers-redigent-un-reglement-de-leur-atelier/ .
 
@@ -632,7 +632,7 @@ Transmissions à proposer au Lecteur et à l'Organisateur ; réception non attes
 
 ## 2026-10-29 · Atelier du Juriste — Passe Titre V, propriété, finances et retrait
 
-**Documents lus :** Manifeste V2.5 consolidé du 29 octobre 2026, référence éditoriale non adoptée (https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit) ; Charte V0.4 sur GitHub, spécialement Titres IV et VI ; journal commun consulté avant écriture.
+**Documents lus :** Manifeste V2.5 consolidé du 29 octobre 2026, référence éditoriale non adoptée (source-reservee:DRV-021) ; Charte V0.4 sur GitHub, spécialement Titres IV et VI ; journal commun consulté avant écriture.
 
 **Question juridique :** comment distinguer propriété juridique, financement, utilisation, administration et pouvoir politique, et organiser comptes, travail, sortie et restitution sans créer de privilèges matériels ou effacer les droits des personnes et des tiers ?
 
@@ -730,9 +730,9 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 
 ## 2026-10-30 · Archéologue des communs · Décret du 16 avril 1871 et travail coopératif
 **Documents Drive créés ou enrichis, vérifiés après écriture :**
-- ARCH-007 (nouvelle fiche candidate, classée dans Wiki - Histoire et mémoires) : https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit
-- BIO-015 Augustin Avrial (enrichie) : https://docs.google.com/document/d/1T8Tc2zQJisKn7DMWnAPPKtDn7DmPUCyNb7xcA4ne_Ic/edit
-- ARCH-004 Appel aux ouvrières (enrichie) : https://docs.google.com/document/d/13q2UVdWu1YCHMeU1bc78LKOK7dD6qqYsziLAc30p1Fo/edit
+- ARCH-007 (nouvelle fiche candidate, classée dans Wiki - Histoire et mémoires) : source-reservee:DRV-005
+- BIO-015 Augustin Avrial (enrichie) : source-reservee:DRV-012
+- ARCH-004 Appel aux ouvrières (enrichie) : source-reservee:DRV-003
 - Catalogue et suivi Médiathèque, journal Biographies et journal des changements majeurs Interstice actualisés et relus.
 
 **Sources :** BnF Journal officiel de la Commune (https://catalogue.bnf.fr/ark:/12148/cb328020920), transcription du décret du 16 avril (https://gabrielperi.fr/commune-de-paris/decret-de-convocation-des-chambres-syndicales-ouvrieres-16-avril-1871/), étude Robi Morder 2014 (https://autogestion.asso.fr/16-avril-1871-un-decret-de-principe-de-la-commune/), éphéméride historique (https://www.commune1871.org/la-commune-de-paris/histoire-de-la-commune/commune-1871-ephemeride/1207-commune-1871-ephemeride-16-avril-la-requisition-des-ateliers-abandonnes).
@@ -745,7 +745,7 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 
 
 ### Complément du 30 octobre 2026 · Correction des métadonnées de Nathalie Le Mel
-**Écritures Drive supplémentaires :** BIO-009 (https://docs.google.com/document/d/1UF54kCo7mwSIze66uNbo1ViEzRhAO4ptUjylBaJR5-o/edit) et ARCH-002 (https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit), plus catalogue et suivi Médiathèque et journaux Drive.
+**Écritures Drive supplémentaires :** BIO-009 (source-reservee:DRV-014) et ARCH-002 (source-reservee:DRV-011), plus catalogue et suivi Médiathèque et journaux Drive.
 
 **Anomalie vérifiée :** l'indexation de l'affiche Carnavalet AFF5721 donne « Nathalie Le Mel (1826-1871) », alors que la notice d'autorité BnF donne un décès en 1921. Le nom reste bien présent dans la transcription de l'affiche du 20 mai 1871. Sources : https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/republique-francaise-ndeg-373-liberte-egalite-fraternite-ndeg-373-commune ; https://data.bnf.fr/fr/ark:/12148/cb13169483s.pdf .
 
@@ -758,7 +758,7 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 
 **Périmètre contrôlé :** quatre dossiers Drive Wiki (Histoire et mémoires, Biographies, Associations et organisations, Collectifs et réseaux), catalogue et suivi Médiathèque, journal des changements majeurs. Inventaire direct : 43 fiches candidates uniques (22 BIO, 8 ASSO, 4 EXP, 2 COL, 7 ARCH) ; journal de l'atelier des biographies exclu.
 
-**Écritures confirmées et relues :** trois fiches existantes enrichies, sans doublon ni nouvelle fiche : [ASSO-007 Union des femmes](https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit), [BIO-018 Aline Jacquier](https://docs.google.com/document/d/1Vyq5ZyzImnrl9UIACDutLYNAacUt8VLUWfZcA0JlHkk/edit), [ARCH-007 décret du 16 avril](https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit). Catalogue et suivi de la Médiathèque, ainsi que journal des changements majeurs, enrichis et relus après écriture.
+**Écritures confirmées et relues :** trois fiches existantes enrichies, sans doublon ni nouvelle fiche : [ASSO-007 Union des femmes](source-reservee:DRV-015), [BIO-018 Aline Jacquier](source-reservee:DRV-016), [ARCH-007 décret du 16 avril](source-reservee:DRV-005). Catalogue et suivi de la Médiathèque, ainsi que journal des changements majeurs, enrichis et relus après écriture.
 
 **Sources :** Carolyn J. Eichner, « To Assure the Reign of Work and Justice » (1998), PDF consulté avec passages ciblés, https://journals.univie.ac.at/index.php/oezg/article/view/5799/5730 ; affiches Carnavalet n°342 (AFF3543) et n°373 (AFF5721) ; Fondation Gabriel Péri, transcription du décret et renvoi au JO du 25 avril ; deux notices de l'Association des Amies et Amis de la Commune pour les dates divergentes 15 et 18 mai.
 
@@ -774,10 +774,10 @@ Depuis la branche propre PR #29, script `tests/sql/wiki-handoff-concurrency.sh` 
 **Périmètre vérifié :** quatre dossiers Wiki Drive, catalogue et suivi Médiathèque, journal des modifications. Inventaire : 22 BIO + 8 ASSO + 4 EXP + 2 COL + 7 ARCH = **43 fiches candidates uniques** ; journaux et notices FN hors décompte.
 
 **Travail réellement écrit et relu dans Drive :** 4 fiches existantes enrichies, 0 créée :
-- ASSO-007 (Union des femmes) : https://docs.google.com/document/d/1VGqnT2WnZFcAK8vV-qTedvBAupvR-UVsWkcQ7RsVxAg/edit
-- ARCH-002 (affiche n°373 et réunion du 21 mai) : https://docs.google.com/document/d/1PFDkD9peH97M3O3nhSFsjZgPX6ec8S7mNNPmT_lfm-k/edit
-- BIO-018 (Aline Jacquier, délégation du XVIIe et métiers du livre) : https://docs.google.com/document/d/1Vyq5ZyzImnrl9UIACDutLYNAacUt8VLUWfZcA0JlHkk/edit
-- ARCH-007 (décret et atelier confisqué) : https://docs.google.com/document/d/1CFgqsrbZIY4r0SFvt5nS0Dwsth2FoTkw1Gf9_yptZ3o/edit
+- ASSO-007 (Union des femmes) : source-reservee:DRV-015
+- ARCH-002 (affiche n°373 et réunion du 21 mai) : source-reservee:DRV-011
+- BIO-018 (Aline Jacquier, délégation du XVIIe et métiers du livre) : source-reservee:DRV-016
+- ARCH-007 (décret et atelier confisqué) : source-reservee:DRV-005
 
 **Sources croisées :** affiche originale n°373, notice Musée Carnavalet https://parismuseescollections.paris.fr/de/node/651845 ; Jacques Rougerie https://commune1871-rougerie.fr/les-femmes-de-1871,fr,8,58.html et https://commune1871-rougerie.fr/la-premiere-internationale_2,fr,8,75.html ; Alain Dalotel https://www.commune1871.org/association/qui-sommes-nous/bulletins-trimestriels/1488-la-barricade-des-femmes .
 

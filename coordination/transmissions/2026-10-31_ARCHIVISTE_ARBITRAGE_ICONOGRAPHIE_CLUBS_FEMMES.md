@@ -1,7 +1,7 @@
 # LA FAILLE NOIRE × INTERSTICE
 ## Arbitrage de l'Archiviste — Iconographie des clubs et parole politique des femmes (mai 1871)
 **31 octobre 2026 · Statut : DOSSIER ICONOGRAPHIQUE AUTONOME DE RECHERCHE CANDIDAT, NON publication.** 
-**Transmission examinée :** [Assistant de l'Anarchiviste, corpus iconographique](2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md) ; vérification en place de [COL-003 — Club des prolétaires](https://docs.google.com/document/d/1dCYjWceGFmzbR7GSAoK_r5z5OvwmT4j-ZI-NS7R4_LI/edit). Aucune fusion, publication, création d'article Wiki ni modification du manifeste/gouvernance.
+**Transmission examinée :** [Assistant de l'Anarchiviste, corpus iconographique](2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md) ; vérification en place de [COL-003 — Club des prolétaires](source-reservee:DRV-018). Aucune fusion, publication, création d'article Wiki ni modification du manifeste/gouvernance.
 
 ## 1. Arbitrage
 

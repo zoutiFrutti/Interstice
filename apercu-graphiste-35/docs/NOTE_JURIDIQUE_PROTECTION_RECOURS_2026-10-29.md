@@ -3,7 +3,7 @@
 **Atelier :** Le Juriste · **Date :** 29 octobre 2026 · **Statut :** étude juridique de travail, **ni avis professionnel individualisé ni règle adoptée**.
 
 **Saisine :** transmission de l'Atelier Le Penseur, « Étude critique n° 14 : protéger les personnes sans créer une autorité disciplinaire arbitraire ».
-**Référence politique lue :** [Manifeste V2.5 consolidé](https://docs.google.com/document/d/1hvs1qcQouyEPnP0met4Ch_FusSHTKS9tkKaY2WWSotk/edit), validé éditorialement, non adopté.
+**Référence politique lue :** [Manifeste V2.5 consolidé](source-reservee:DRV-021), validé éditorialement, non adopté.
 **Continuité documentaire :** [Charte V0.3 non adoptée](https://github.com/zoutiFrutti/Interstice/blob/main/propositions/CHARTE_DES_COMMUNS_V0.3_2026-10-29.md), notamment articles 8, 13, 19, 20, 23–25. Ne présumer ni association existante, ni instance de protection instituée.
 
 ## Résumé exécutif
