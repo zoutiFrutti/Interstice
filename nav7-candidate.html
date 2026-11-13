@@ -32,6 +32,12 @@ h1 {font-size:clamp(1.5rem,4vw,2.4rem);line-height:1.2}
 #door-details {background:var(--surface);padding:1.1rem;border:1px solid #736157;border-radius:12px;min-height:9rem}
 #door-details h2 {margin-top:0}
 #door-details a {display:inline-block;padding:.4rem .7rem;background:#563a35;border-radius:8px}
+.submenus {margin-top:1rem;padding-top:.75rem;border-top:1px solid #736157}
+.submenus h3 {font-size:1rem;margin:.1rem 0 .65rem}
+.submenus ul {list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.submenus li {max-width:100%}
+#door-details .submenus a {display:inline-flex;align-items:center;gap:.5rem;min-height:44px;max-width:100%;overflow-wrap:anywhere}
+.submenus .subdot {flex:none;display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--accent);border:1px solid #fff2e6}
 .manifest {margin-top:1rem;display:flex;align-items:center;gap:1rem;padding:1rem;border:1px solid #78665e;border-radius:12px}
 .manifest button {border-radius:999px;border:2px solid #f1d5c4;background:#4c2827;min-height:54px;min-width:54px}
 .manifest p {margin:0}
@@ -53,7 +59,7 @@ dialog button {background:#62342f;border:1px solid #e5c9b6;border-radius:8px;pad
 <header><strong>INTERSTICE · NAV7</strong><a href="index.html">Retour au site actuel</a></header>
 <main id="contenu">
 <h1>Six portes, un accès au Manifeste</h1>
-<p class="notice"><strong>Prototype technique isolé.</strong> Il réutilise le logo R6 authentique comme fond, sans le modifier. Les six positions sont reprises des coordonnées R7 candidates, encore à confronter à la capture de Zout. La position exacte du point 7 dans le logo n'est pas simulée : son contrôle fonctionnel est provisoirement présenté sous le dessin. Aucun contenu réservé n'est accessible.</p>
+<p class="notice"><strong>Prototype technique isolé.</strong> Il réutilise le logo R6 authentique comme fond, sans le modifier. Les six positions sont reprises des coordonnées R7 candidates, encore à confronter à la capture de Zout. Les points tertiaires fonctionnels apparaissent dans le panneau de la porte sélectionnée, sans prétendre fixer leur emplacement graphique final. La position exacte du point 7 dans le logo n'est pas simulée : son contrôle fonctionnel est provisoirement présenté sous le dessin. Aucun contenu réservé n'est accessible.</p>
 <div class="layout">
 <section class="stage" aria-label="Choisir une des six portes sur la constellation">
 <img src="assets/logo-interstice.svg" alt="" width="665" height="665">
@@ -100,13 +106,38 @@ dialog button {background:#62342f;border:1px solid #e5c9b6;border-radius:8px;pad
   'use strict';
   const details = document.querySelector('#door-details');
   const nodes = [...document.querySelectorAll('.node[data-point]')];
+  // Tertiary links are published, existing destinations only. They are not imported C07 cards.
   const routes = Object.freeze({
-    '1': {title:'Faire Ensemble',href:'index.html#propositions',label:'Voir les propositions existantes',note:'Aucune nouvelle proposition privée n’est exposée.'},
-    '2': {title:'Atlas des communs',href:'atlas.html',label:'Ouvrir l’Atlas existant',note:'Aucune géométrie supplémentaire ni adresse sensible.'},
-    '3': {title:'La Vigie de la Faille',href:null,label:null,note:'Porte en préparation. Pas de page Vigie publique vérifiée ni de publication automatique.'},
-    '4': {title:'Encyclopédie des communs',href:'wiki.html',label:'Ouvrir l’Encyclopédie existante',note:'Les 219 fiches candidates restent fermées.'},
-    '5': {title:'Archives des communs',href:'squats-et-lieux-autonomes.html',label:'Lire un dossier public existant',note:'Ce lien ne déverrouille pas les archives candidates.'},
-    '6': {title:'Médiathèque des communs',href:'bibliotheque.html',label:'Ouvrir la bibliothèque actuelle',note:'Les notices sans visa restent fermées.'}
+    '1': {
+      title:'Faire Ensemble',href:'index.html#propositions',label:'Voir les propositions existantes',
+      note:'Aucune nouvelle proposition privée n’est exposée.',
+      submenus:[['Propositions publiques','index.html#propositions'],['Proposer une idée','index.html#proposer'],['Décider ensemble','wiki-decision-collective.html']]
+    },
+    '2': {
+      title:'Atlas des communs',href:'atlas.html',label:'Ouvrir l’Atlas existant',
+      note:'Aucune géométrie supplémentaire ni adresse sensible.',
+      submenus:[['Sources de l’Atlas','atlas.html#atlas-sources'],['Cartes et symboles','atlas.html#cartes-logo'],['Parcours transversaux','parcours.html']]
+    },
+    '3': {
+      title:'La Vigie de la Faille',href:null,label:null,
+      note:'Porte en préparation. Pas de page Vigie publique vérifiée ni de publication automatique.',
+      submenus:[]
+    },
+    '4': {
+      title:'Encyclopédie des communs',href:'wiki.html',label:'Ouvrir l’Encyclopédie existante',
+      note:'Les 219 fiches candidates restent fermées.',
+      submenus:[['Décision collective','wiki-decision-collective.html'],['Écologie sociale','wiki-ecologie-sociale-environnement.html'],['Habiter et droit à la ville','wiki-logement-habitat-droit-ville.html']]
+    },
+    '5': {
+      title:'Archives des communs',href:'squats-et-lieux-autonomes.html',label:'Lire un dossier public existant',
+      note:'Ce lien ne déverrouille pas les archives candidates.',
+      submenus:[['Squats et lieux autonomes','squats-et-lieux-autonomes.html'],['Habitat : références existantes','wiki-logement-habitat-droit-ville.html'],['Bibliothèque publique','bibliotheque.html']]
+    },
+    '6': {
+      title:'Médiathèque des communs',href:'bibliotheque.html',label:'Ouvrir la bibliothèque actuelle',
+      note:'Les notices sans visa restent fermées.',
+      submenus:[['Rechercher une ressource','bibliotheque.html#search'],['Explorer les ressources','bibliotheque.html#resources'],['Proposer une référence','bibliotheque.html#resource-form']]
+    }
   });
   const reset = () => {
     nodes.forEach(b => b.setAttribute('aria-pressed','false'));
@@ -123,6 +154,19 @@ dialog button {background:#62342f;border:1px solid #e5c9b6;border-radius:8px;pad
     const p=document.createElement('p');p.textContent=route.note;
     details.append(h,p);
     if(route.href){const a=document.createElement('a');a.href=route.href;a.textContent=route.label;details.append(a)}
+    if(route.submenus.length){
+      const section=document.createElement('section');section.className='submenus';
+      const heading=document.createElement('h3');heading.textContent='Points tertiaires : accès contextuels existants';
+      const list=document.createElement('ul');
+      for(const [label,href] of route.submenus){
+        const item=document.createElement('li');
+        const link=document.createElement('a');link.href=href;
+        const dot=document.createElement('span');dot.className='subdot';dot.setAttribute('aria-hidden','true');
+        const name=document.createElement('span');name.textContent=label;
+        link.append(dot,name);item.append(link);list.append(item);
+      }
+      section.append(heading,list);details.append(section);
+    }
     details.focus({preventScroll:true});
   });
   document.querySelector('#reset').addEventListener('click',reset);
