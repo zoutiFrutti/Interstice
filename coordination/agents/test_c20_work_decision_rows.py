@@ -16,6 +16,7 @@ class C20WorkDecisionRowsTests(unittest.TestCase):
     def test_recent_work_decisions_conform_to_existing_registry_parser(self):
         text = DECISIONS.read_text(encoding="utf-8")
         ids, errors = decision_rows(text)
+        self.assertEqual(errors, [], f"Entire registry format must conform: {errors}")
         for ident in ("D-WORK-C18-PRIVATE-01", "D-WORK-C19-LOCAL-01"):
             self.assertEqual(ids.count(ident), 1, ident)
             self.assertFalse(
