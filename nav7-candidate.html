@@ -27,6 +27,8 @@ h1 {font-size:clamp(1.5rem,4vw,2.4rem);line-height:1.2}
 .node[aria-pressed="true"] {outline:3px solid #ffc4a4;background:#743027}
 .node:hover {background:#66332e}
 .node .visually-hidden {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.manifest-node {width:clamp(50px,7.5vw,66px);height:clamp(50px,7.5vw,66px);border-width:3px;border-color:#ffe1c5;background:rgba(49,19,17,.92)}
+.manifest-node::after {width:15px;height:15px}
 .center {position:absolute;left:52.63%;top:56.69%;width:52px;height:52px;transform:translate(-50%,-50%);border:2px solid #f7d5bd;border-radius:50%;background:rgba(31,17,17,.85);z-index:3}
 .center::after {content:"";display:block;width:20px;height:20px;border-radius:50%;background:var(--accent);margin:auto}
 #door-details {background:var(--surface);padding:1.1rem;border:1px solid #736157;border-radius:12px;min-height:9rem}
@@ -59,7 +61,7 @@ dialog button {background:#62342f;border:1px solid #e5c9b6;border-radius:8px;pad
 <header><strong>INTERSTICE · NAV7</strong><a href="index.html">Retour au site actuel</a></header>
 <main id="contenu">
 <h1>Six portes, un accès au Manifeste</h1>
-<p class="notice"><strong>Prototype technique isolé.</strong> Il affiche une copie identique du SVG vectoriel R7-B candidat, construite sur les sources R6. Les logos officiels restent inchangés. Les zones tactiles des six portes reprennent exactement les coordonnées du SVG R7-B candidat, toujours à confronter à la capture annotée originale de Zout. Le SVG montre les points tertiaires candidats et les quinze liens fonctionnels restent dans le panneau contextuel de leur porte, sans faire passer ces points dessinés pour des boutons individuels. La position exacte du point 7 dans le dessin n'est pas simulée : son contrôle fonctionnel est provisoirement présenté sous le dessin. Aucun contenu réservé n'est accessible.</p>
+<p class="notice"><strong>Prototype technique isolé.</strong> Il affiche une copie identique du SVG vectoriel R7-B candidat, construite sur les sources R6. Les logos officiels restent inchangés. Les zones tactiles des six portes reprennent exactement les coordonnées du SVG R7-B candidat, toujours à confronter à la capture annotée originale de Zout. Le SVG montre les points tertiaires candidats et les quinze liens fonctionnels restent dans le panneau contextuel de leur porte, sans faire passer ces points dessinés pour des boutons individuels. Le point 7 est placé sur le nœud existant (220,327), identifié sur la capture originale annotée de Zout ; il ne forme pas une septième porte documentaire. Aucun contenu réservé n'est accessible.</p>
 <div class="layout">
 <section class="stage" aria-label="Choisir une des six portes sur la constellation">
 <img src="assets/identite/r7/nav7/interstice-r7-b-base.svg" alt="" width="665" height="665" decoding="async">
@@ -69,16 +71,14 @@ dialog button {background:#62342f;border:1px solid #e5c9b6;border-radius:8px;pad
 <button class="node" style="--x:69.32%;--y:64.06%" type="button" data-point="4" data-door="Encyclopédie des communs" aria-label="Point 4 : Encyclopédie des communs" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">Encyclopédie des communs</span></button>
 <button class="node" style="--x:50.08%;--y:89.17%" type="button" data-point="5" data-door="Archives des communs" aria-label="Point 5 : Archives des communs" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">Archives des communs</span></button>
 <button class="node" style="--x:35.04%;--y:67.67%" type="button" data-point="6" data-door="Médiathèque des communs" aria-label="Point 6 : Médiathèque des communs" aria-pressed="false" aria-controls="door-details"><span class="visually-hidden">Médiathèque des communs</span></button>
+<button class="node manifest-node" style="--x:33.08%;--y:49.17%" type="button" data-point="7" id="manifest-open" aria-label="Point 7 : ouvrir le Manifeste"><span class="visually-hidden">Manifeste</span></button>
 <button class="center" id="reset" type="button" aria-label="Revenir à la vue complète et fermer le panneau de la porte"><span class="visually-hidden">Retour à la vue complète</span></button>
 </section>
 <aside>
 <section id="door-details" aria-live="polite" aria-atomic="true" tabindex="-1">
 <h2>Explorer</h2><p>Sélectionne un point ou utilise les liens directs ci-dessous.</p>
 </section>
-<div class="manifest">
-<button type="button" data-point="7" id="manifest-open" aria-label="Point 7 : ouvrir le Manifeste">7</button>
-<p><strong>Manifeste</strong><br><span class="muted">Accès temporaire hors dessin tant que le point 7 original n'est pas localisé sans ambiguïté.</span></p>
-</div>
+<p class="muted">Le point 7 du dessin ouvre le Manifeste. Il reprend le nœud existant (220,327) identifié sur la capture originale annotée, sans ajouter de nouvelle branche.</p>
 </aside>
 </div>
 <nav class="direct" aria-label="Navigation textuelle sans animation">
