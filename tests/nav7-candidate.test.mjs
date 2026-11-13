@@ -45,6 +45,11 @@ test('SVG NAV7 derivé de R7-B, sept noeuds vectoriels et six zones de portes al
   assert.match(source,/Le point 7 est placé sur le nœud existant/);
 });
 
+test('Le point 7 ne reçoit jamais le gestionnaire des portes 1 à 6',()=>{
+  assert.match(source,/querySelectorAll\('\.node\[data-door\]'\)/);
+  assert.doesNotMatch(source,/querySelectorAll\('\.node\[data-point\]'\)/);
+  assert.match(source,/document\.querySelector\('#manifest-open'\)\.addEventListener\('click'/);
+});
 test('Manifeste bouton 7 et lien direct existant',()=>{
   assert.match(source,/<button\b[^>]*data-point="7"[^>]*id="manifest-open"/);
   assert.match(source,/<dialog id="manifest-dialog"/);
