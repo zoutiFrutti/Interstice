@@ -52,7 +52,7 @@ test('Manifeste bouton 7 et lien direct existant',()=>{
   assert.match(source,/<a href="manifeste-v2-5\.html">Manifeste V2\.5/);
   assert.ok(existsSync(resolve(root,'manifeste-v2-5.html')));
   assert.equal((source.match(/id="manifest-open"/g)||[]).length,1);
-  assert.match(source,/<button class="node manifest-node" style="--x:33\\.08%;--y:49\\.17%"[^>]*data-point="7" id="manifest-open"/);
+  assert.match(source,/<button class="node manifest-node" style="--x:33[.]08%;--y:49[.]17%"[^>]*data-point="7" id="manifest-open"/);
   const svg=readFileSync(resolve(root,'assets/identite/r7/nav7/interstice-r7-b-base.svg'),'utf8');
   assert.ok(svg.includes('<circle cx="220" cy="327" r="10"'),'point 7 must be an original R6 node');
   assert.ok(Math.abs(33.08-220/665*100)<0.02 && Math.abs(49.17-327/665*100)<0.02,'point 7 should match its original node');
