@@ -1,0 +1,189 @@
+{
+  "schema": "interstice/c25-r6-01-source-review/1",
+  "reviewed_on": "2026-11-14",
+  "branch": "integration/c25-tech-private-editorial-review-20261114",
+  "source_scope": "Five exact HTML files from C25-R6-01, read and section-inventoried; targeted external spot-check only, not full line-by-line source verification",
+  "source_decision": "D-C25-ED-01",
+  "publication_authorized": false,
+  "human_editorial_approval": false,
+  "wiki_method": "Prefer links to well-covered Wikipedia articles; originality must be demonstrated for situated communal practice, evidence, territorial action or collaborative open research",
+  "items": [
+    {
+      "id": "wiki-antifascisme-histoire-et-mecanismes",
+      "status": "initial_review_done_not_approved",
+      "proposal": "retain_candidate_as_specific_methods_and_critical_sources_if_reworked_else_link_wikipedia",
+      "wikipedia": [
+        "https://fr.wikipedia.org/wiki/Antifascisme"
+      ],
+      "observations": [
+        "HTML has seven main sections: definitions, historical chronology, mechanisms, nonviolent civic responses, critical review, references.",
+        "Source already distinguishes historical fascism and broader extreme right and warns against simplistic causal generalizations.",
+        "Wikipedia already has a substantive historical article: duplicating a general encyclopedia history is unwarranted.",
+        "Source includes USHMM, Mémorial de la Shoah, Council of Europe and academic/publishing starting points."
+      ],
+      "required": [
+        "Define distinctive Interstice value: documented collective historical verification, primary archival contributions and open questions.",
+        "Validate historical statements point-by-point, especially claimed named resource and role of women and minority resistance, before editorial visa.",
+        "Add actual historical local/collective case studies or prefer link to Wikipedia, keeping reference pathways.",
+        "Clarify contemporary usage of political labels with attributed criteria and the difference between nonviolent advocacy and historical resistance."
+      ],
+      "external_checked": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Antifascisme",
+          "result": "Topic thoroughly treated; no automatic replacement for source-specific contextual research"
+        }
+      ]
+    },
+    {
+      "id": "wiki-antiracisme-histoires-droits",
+      "status": "initial_review_done_not_approved",
+      "proposal": "retain_as_actionable_method_and_rights_portal_after_sources; avoid duplicating_general_wikipedia",
+      "wikipedia": [
+        "https://fr.wikipedia.org/wiki/Racisme",
+        "https://fr.wikipedia.org/wiki/Antiracisme"
+      ],
+      "observations": [
+        "HTML has nine sections covering concepts, history, everyday experiences, statistical methods, rights, testimony and avenues of contribution.",
+        "The article distinguishes recorded incidents, victimization, criminal convictions and underreporting; a useful nonduplicative methodological angle.",
+        "The 2024 SSMSI 9,350 crimes/delicts figure is supported by the CNCDH report for 2024, published 2025.",
+        "The CNCDH report about 2025 was published June 2026 and separately records 9,737 incidents in 2025; avoid mislabelling reports by publication year."
+      ],
+      "required": [
+        "Explicitly disambiguate CNCDH rapport sur l'année 2024 (published 2025) and rapport sur l'année 2025 (published 2026).",
+        "If discussing recent trends, consider 2025 (9,737) with separate year, definition and denominator, not silently substituting for 2024.",
+        "For each legal remedy provide a current jurisdiction, date and official source; require legal review.",
+        "Consent and anonymization workflow for testimonies before any collection; no operational activation."
+      ],
+      "external_checked": [
+        {
+          "url": "https://www.cncdh.fr/publications/rapport-2024-sur-la-lutte-contre-le-racisme-lantisemitisme-et-la-xenophobie",
+          "result": "2024 figure 9,350 confirmed"
+        },
+        {
+          "url": "https://www.cncdh.fr/publications/lutte-contre-le-racisme-lantisemitisme-et-la-xenophobie-la-cncdh-publie-son-rapport",
+          "result": "Report covering 2025, released June 2026, 9,737"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Racisme",
+          "result": "Comprehensive topic"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Antiracisme",
+          "result": "Historical and practical coverage"
+        }
+      ]
+    },
+    {
+      "id": "wiki-autonomie-materielle-savoir-faire",
+      "status": "initial_review_done_not_approved",
+      "proposal": "keep_as_specific_commons_howto_portal_but_not_technical_instruction_yet",
+      "wikipedia": [
+        "https://fr.wikipedia.org/wiki/Low-tech",
+        "https://fr.wikipedia.org/wiki/Fab_lab"
+      ],
+      "observations": [
+        "HTML has eleven sections and multiple topic lists under repair, workshops, energy, water, habitat and knowledge transfer.",
+        "Repeated 'Documentation technique détaillée et relecture à compléter' signals a directory of future fiches rather than verified step-by-step procedures.",
+        "Source explicitly warns about electrical qualifications, safe water use and not representing DIY solutions as automatically safe.",
+        "Wikipedia covers concepts such as low-tech and Fab labs; Interstice's justified niche could be safe, reproducible, peer-reviewed community practices."
+      ],
+      "required": [
+        "No operational how-to for power, structural safety, drinking water, gas, wiring or food safety until qualified validation and measurements.",
+        "Use citations and precise dates from relevant regulators for water reuse, electrical safety, urban planning and insurance.",
+        "Add one complete concrete low-risk pilot with bill of materials, measurements, source and test limits before claiming a reusable tutorial.",
+        "Recheck each 'resource de départ' for its exact relevance: generic organizations' homepages are not proof of technical assertions."
+      ],
+      "external_checked": [
+        {
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F31481",
+          "result": "Rainwater not drinking/cooking; official restriction as stated in the article; usage context to be versioned"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Low-tech",
+          "result": "General overview exists"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Fab_lab",
+          "result": "General overview exists"
+        }
+      ]
+    },
+    {
+      "id": "wiki-capitalisme-classes-travail",
+      "status": "initial_review_done_not_approved",
+      "proposal": "link_wikipedia_for_general_theory; retain_practical_worker_commons_modules_after_sourcing",
+      "wikipedia": [
+        "https://fr.wikipedia.org/wiki/Capitalisme",
+        "https://fr.wikipedia.org/wiki/Histoire_du_capitalisme"
+      ],
+      "observations": [
+        "HTML has eleven sections: terms, labor history, poverty and inequality, labor law, alternative economic forms and practical exercises.",
+        "The 2024 figures 15.4% poverty, about 9.8 million persons and median monthly standard of living EUR 2,228 were verified against Insee Première 2117 published July 2026.",
+        "The article correctly warns that median standard of living is not median salary and identifies limits of the household survey population.",
+        "Numerous entries are expressly marked 'Bibliographie spécialisée à compléter' and cannot be treated as independently verified."
+      ],
+      "required": [
+        "Keep the Insee reference direct and clearly attach data year 2024, publication year 2026, geographical/household scope and unit-of-consumption methodology.",
+        "Do not reproduce another general encyclopedia overview without added concrete value: worker self-management, workplace inquiry, reading financial statements and wage documentation.",
+        "Date labor-law references to precise articles and verify applicability for organization size and sector.",
+        "Distinguish normative anticapitalist perspectives from descriptive evidence and competing economic models."
+      ],
+      "external_checked": [
+        {
+          "url": "https://www.insee.fr/fr/statistiques/9019316",
+          "result": "15.4%; 9.8 million; EUR 2,228 level of living median validated for 2024"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Capitalisme",
+          "result": "General theory already covered"
+        }
+      ]
+    },
+    {
+      "id": "wiki-culture-creation-acces-art",
+      "status": "initial_review_done_not_approved",
+      "proposal": "retain_specific_cultural_commons_and_spectacle_workers_portal_after_dated_verification",
+      "wikipedia": [
+        "https://fr.wikipedia.org/wiki/Droits_culturels",
+        "https://fr.wikipedia.org/wiki/Culture_libre"
+      ],
+      "observations": [
+        "HTML has thirteen main sections and 31 initial topical notices plus a specific directory for French artists and intermittents.",
+        "Primary work and legal concerns are highlighted: annexes 8/10, artistic labor, licenses, access, co-production and sharing.",
+        "France Travail confirms the 507-hour/12-month threshold as one, not the only, condition for unemployment benefits; annexes 8/10 are not interchangeable.",
+        "UNESCO Convention on diversity of cultural expressions adopted 20 October 2005, source confirmed."
+      ],
+      "required": [
+        "Before editorial approval, retest individual organization URLs, aid conditions, eligibility and service dates; a home page alone does not prove each practical claim.",
+        "Separate paid employment and volunteering, rights and permissions; rights of musicians and images remain to be examined per actual resource.",
+        "Support each of 31 capsules with claim-level sources or reclassify openly as an incomplete directory of research questions.",
+        "Link general Wikipedia concepts and reserve Interstice's original contribution for cooperative production tools, artist/technician rights and reproducible processes."
+      ],
+      "external_checked": [
+        {
+          "url": "https://www.francetravail.fr/spectacle/spectacle--intermittents/beneficier-regime-spectacle.html",
+          "result": "Annex 8 technicians and 10 artists, 507 hours in 12 months plus additional conditions confirmed"
+        },
+        {
+          "url": "https://www.unesco.org/fr/legal-affairs/convention-protection-and-promotion-diversity-cultural-expressions",
+          "result": "Convention date and scope confirmed"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Droits_culturels",
+          "result": "General concept covered"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Culture_libre",
+          "result": "General concept covered"
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "Full verification of all hyperlinks and each individual assertion",
+    "Professional legal/safety review where appropriate",
+    "Editorial human decision on whether each fiche deserves an original Interstice article rather than only Wikipedia links",
+    "Evidence that private preview code matches Git SHA before treating Android acceptance as final"
+  ],
+  "statuses_unchanged": true
+}
