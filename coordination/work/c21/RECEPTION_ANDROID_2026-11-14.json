@@ -1,0 +1,142 @@
+{
+  "schema": "interstice/c21-android-manual-reception/1",
+  "captured_at": "2026-11-14",
+  "report_kind": "direct_user_manual_test",
+  "reviewer": "project_owner",
+  "environment": "Android; precise device model, browser and build identifier not supplied in this report",
+  "target": "owner-private Work preview Interstice (declared by user)",
+  "build_identity_verified": false,
+  "source_commit_of_tested_preview": null,
+  "tests": [
+    {
+      "key": "entry_logo",
+      "domain": "entree",
+      "statement": "Logo La Faille noire affiché correctement",
+      "result": "reported_pass"
+    },
+    {
+      "key": "entry_dive",
+      "domain": "entree",
+      "statement": "Toucher le logo déclenche la plongée immersive",
+      "result": "reported_pass"
+    },
+    {
+      "key": "entry_first_motion",
+      "domain": "entree",
+      "statement": "Premier mouvement déclenche le dézoom et l'exploration",
+      "result": "reported_pass"
+    },
+    {
+      "key": "entry_reset",
+      "domain": "entree",
+      "statement": "Retour à la vue générale accessible",
+      "result": "reported_pass"
+    },
+    {
+      "key": "doors_visible",
+      "domain": "portes",
+      "statement": "Six points principaux et leurs noms visibles",
+      "result": "reported_pass"
+    },
+    {
+      "key": "doors_correct",
+      "domain": "portes",
+      "statement": "Six points ouvrent les six rubriques attendues",
+      "result": "reported_pass"
+    },
+    {
+      "key": "panels_readable",
+      "domain": "portes",
+      "statement": "Panneaux lisibles sur téléphone sans texte coupé",
+      "result": "reported_pass"
+    },
+    {
+      "key": "doors_switch",
+      "domain": "portes",
+      "statement": "Fermeture et ouverture d'autres portes sans blocage",
+      "result": "reported_pass"
+    },
+    {
+      "key": "tertiary_touch",
+      "domain": "sous_menus",
+      "statement": "Points tertiaires visibles et utilisables au doigt",
+      "result": "reported_pass"
+    },
+    {
+      "key": "tertiary_31",
+      "domain": "sous_menus",
+      "statement": "31 sous-rubriques accessibles et cohérentes",
+      "result": "reported_pass"
+    },
+    {
+      "key": "manifesto_point7",
+      "domain": "sous_menus",
+      "statement": "Point 7 ouvre le Manifeste",
+      "result": "reported_pass"
+    },
+    {
+      "key": "links_back",
+      "domain": "sous_menus",
+      "statement": "Liens et retours fonctionnels",
+      "result": "reported_pass"
+    },
+    {
+      "key": "r7_b1_visual",
+      "domain": "graphisme",
+      "statement": "Rendu R7-B1 attendu, fissures et propagation rouge",
+      "result": "reported_pass"
+    },
+    {
+      "key": "pan_zoom",
+      "domain": "graphisme",
+      "statement": "Déplacement et zoom sans mouvements incontrôlés",
+      "result": "reported_pass"
+    },
+    {
+      "key": "android_text_zoom",
+      "domain": "graphisme",
+      "statement": "Lisibilité avec agrandissement de l'affichage Android",
+      "result": "reported_pass"
+    },
+    {
+      "key": "screen_rotation",
+      "domain": "graphisme",
+      "statement": "Utilisable en portrait et paysage",
+      "result": "reported_pass"
+    }
+  ],
+  "passed_reported": 16,
+  "failed_reported": 0,
+  "not_checked_reported": 0,
+  "user_notes": "Aucune.",
+  "conclusions": {
+    "navigation_ux": "accepted_by_user_for_tested_preview",
+    "visual_r7_b1": "accepted_by_user_for_tested_preview",
+    "editorial_publication_visa": false,
+    "license_or_privacy_visa": false,
+    "technical_exact_build_validation": false,
+    "merge_or_deployment_authorization": false
+  },
+  "ci_evidence": {
+    "commit": "586e91067216a1bd96e34c30ffca5f104fda192b",
+    "workflows": [
+      {
+        "run_id": 43505336605,
+        "name": "Demo ateliers C11 sans IA",
+        "conclusion": "success"
+      },
+      {
+        "run_id": 43505336610,
+        "name": "C07 secure deterministic missions - no AI",
+        "conclusion": "success"
+      },
+      {
+        "run_id": 43505336765,
+        "name": "WORK NAV01 isolated navigation QA",
+        "conclusion": "success"
+      }
+    ],
+    "limitation": "CI concerns branch C20 commit, not necessarily identical to the preview manually tested"
+  },
+  "next": "Confirm exact preview version and branch hash by owner-side Work UI, keep PR #198 as draft and main untouched"
+}
