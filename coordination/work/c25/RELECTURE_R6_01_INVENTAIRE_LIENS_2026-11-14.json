@@ -1,0 +1,474 @@
+{
+  "schema": "interstice/c25-r6-01-link-review/2",
+  "scope": "all external hrefs inventoried; only explicitly marked links individually checked; not a full link health audit",
+  "checked_at": "2026-11-14",
+  "items": [
+    {
+      "id": "wiki-antifascisme-histoire-et-mecanismes",
+      "source": "wiki-antifascisme-histoire-et-mecanismes.html",
+      "links": [
+        {
+          "url": "https://encyclopedia.ushmm.org/content/en/article/fascism-1",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.cresppa.cnrs.fr/publications/extreme-droite-le-grand-peril/",
+          "status": "page_checked",
+          "note": "Cresppa bibliographic record by Ugo Palheta and Tommy, September 2026; not direct evidence for every general claim"
+        },
+        {
+          "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/antifascism",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.cambridge.org/core/books/abs/french-and-spanish-popular-fronts/introduction/294C373EBCA475D65D6FC7E565E8F02D",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://encyclopedia.ushmm.org/content/en/article/benito-mussolini-1",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.nationalww2museum.org/war/articles/king-victor-emmanuel-iii-italy",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://encyclopedia.ushmm.org/content/en/article/the-nazi-rise-to-power",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.memorialdelashoah.org/archives-et-documentation/le-centre-de-documentation/histoire-du-cdjc.html",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/ressources-historiques/seconde-guerre-mondiale/resister/resistance-interieure-5",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/ressources-historiques/seconde-guerre-mondiale/resister/resistance-interieure-18",
+          "status": "fetch_timeout",
+          "note": "Could not assess page content from URL; not evidence of a dead link"
+        },
+        {
+          "url": "https://www.coe.int/en/web/european-commission-against-racism-and-intolerance/about",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://encyclopedia.ushmm.org/content/en/article/hitler-comes-to-power",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.coe.int/en/web/european-commission-against-racism-and-intolerance/recommendation-no.15",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://home-affairs.ec.europa.eu/policies/internal-security/counter-terrorism-and-radicalisation/prevention-radicalisation_en",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.coe.int/en/web/combating-hate-speech/recommendation-on-combating-hate-speech",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.memorialdelashoah.org/le-memorial/qui-sommes-nous/histoire-du-memorial-de-la-shoah.html",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/issues",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        }
+      ],
+      "repeated_source_placeholders": 0
+    },
+    {
+      "id": "wiki-antiracisme-histoires-droits",
+      "source": "wiki-antiracisme-histoires-droits.html",
+      "links": [
+        {
+          "url": "https://www.cncdh.fr/publications/rapport-2024-sur-la-lutte-contre-le-racisme-lantisemitisme-et-la-xenophobie",
+          "status": "page_checked",
+          "note": "2024 count 9,350 in 2025-published annual report; 2025-published figures not necessarily final time-series"
+        },
+        {
+          "url": "https://www.interieur.gouv.fr/actualites/communiques-de-presse/atteintes-a-caractere-raciste-xenophobe-ou-antireligieux-en-2024",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.cncdh.fr/actualite/lutte-contre-le-racisme-lantisemitisme-et-la-xenophobie-la-cncdh-publie-son-rapport-2025",
+          "status": "page_checked",
+          "note": "2025 report published June 2026; do not confuse year of data and year of publication"
+        },
+        {
+          "url": "https://www.defenseurdesdroits.fr/jeunesses-et-discriminations-fondees-sur-lorigine-repondre-limperatif-degalite-1070",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.defenseurdesdroits.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://memoire-esclavage.org/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.histoire-immigration.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.memorialdelashoah.org/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.defenseurdesdroits.fr/contribution-du-defenseur-des-droits-au-rapport-2024-de-la-cncdh-1097",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.coe.int/en/web/european-commission-against-racism-and-intolerance",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.service-public.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.cncdh.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.unesco.org/en/no-racism-no-discrimination",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/issues",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        }
+      ],
+      "repeated_source_placeholders": 0
+    },
+    {
+      "id": "wiki-autonomie-materielle-savoir-faire",
+      "source": "wiki-autonomie-materielle-savoir-faire.html",
+      "links": [
+        {
+          "url": "https://www.inrs.fr/risques/electriques/habilitation-electrique-foire-aux-questions",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F31481",
+          "status": "page_checked_historical_caution",
+          "note": "Official page had 2023 verification date and references 2024 decree; must check legal updates before operational instructions"
+        },
+        {
+          "url": "https://www.repaircafe.org/fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://ressourceries.info/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://agirpourlatransition.ademe.fr/particuliers/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.inrs.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://fabfoundation.org/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.latelierpaysan.org/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://wiki.lowtechlab.org/wiki/Accueil",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.anses.fr/fr",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.inrae.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.cnil.fr/fr",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://economie-circulaire.ademe.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/main/WIKI_APPROFONDISSEMENTS.md",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        }
+      ],
+      "repeated_source_placeholders": 35
+    },
+    {
+      "id": "wiki-capitalisme-classes-travail",
+      "source": "wiki-capitalisme-classes-travail.html",
+      "links": [
+        {
+          "url": "https://www.insee.fr/fr/statistiques/9019316",
+          "status": "page_checked",
+          "note": "Insee Première 2117 published 9 July 2026: poverty 15.4%; 9.8m; 2,228 EUR median level of living"
+        },
+        {
+          "url": "https://plato.stanford.edu/entries/socialism/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://plato.stanford.edu/entries/marx/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.ilo.org/topics-and-sectors/fundamental-principles-and-rights-work",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.insee.fr/fr/statistiques/8574681",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.oecd.org/en/topics/income-inequality.html",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://travail-emploi.gouv.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://drees.solidarites-sante.gouv.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://ica.coop/fr/coop%C3%A9ratives/identite-cooperative",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.avise.org/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/main/WIKI_APPROFONDISSEMENTS.md",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/issues",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        }
+      ],
+      "repeated_source_placeholders": 32
+    },
+    {
+      "id": "wiki-culture-creation-acces-art",
+      "source": "wiki-culture-creation-acces-art.html",
+      "links": [
+        {
+          "url": "https://www.unesco.org/fr/legal-affairs/convention-protection-and-promotion-diversity-cultural-expressions",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.francetravail.fr/spectacle/spectacle--intermittents/beneficier-regime-spectacle.html",
+          "status": "page_checked",
+          "note": "507 hours in preceding 12 months is one condition among several; annexes 8 vs 10 differ"
+        },
+        {
+          "url": "https://www.ameli.fr/assure/droits-demarches/vie-professionnelle-retraite/emploi-independant-non-salarie/artiste-auteur",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.culture.gouv.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.culture.gouv.fr/thematiques/developpement-culturel/culture-et-handicap",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.artcena.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.inpi.fr/comprendre-la-propriete-intellectuelle/le-droit-dauteur",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.ademe.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://creativecommons.org/licenses/?lang=fr",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://cnm.fr/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.francetravail.fr/spectacle/spectacle--intermittents.html",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://cultureetspectacle.francetravail.fr/je-me-forme-ou-je-travaille/clap-talents",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.audiens.org/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.matermittentes.com/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://synptac-cgt.com/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.guso.fr/information/accueil",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.afdas.com/particulier/connaitre-les-dispositifs-et-les-modalites-dacces-a-la-formation/intermittents-du-spectacle-et-de-laudiovisuel.html",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.artcena.fr/programme-et-services/permanences-et-rendez-vous-individuels",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.artcena.fr/publications-telechargeables/guides-pratiques",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://federation-octopus.org/la-federation/les-adherents/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.fnas.net/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://www.cpnefsv.org/",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/blob/main/WIKI_APPROFONDISSEMENTS.md",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        },
+        {
+          "url": "https://github.com/zoutiFrutti/Interstice/issues",
+          "status": "not_checked",
+          "note": "No authenticated link resolution in C25 pass2"
+        }
+      ],
+      "repeated_source_placeholders": 31
+    }
+  ],
+  "evidence_discrepancies": [
+    {
+      "id": "CNCDH-2024-VINTAGE",
+      "source_item": "wiki-antiracisme-histoires-droits",
+      "older_source": "https://www.cncdh.fr/publications/rapport-2024-sur-la-lutte-contre-le-racisme-lantisemitisme-et-la-xenophobie",
+      "older_value": 9350,
+      "older_report_data_year": 2024,
+      "older_report_publication_year": 2025,
+      "newer_source": "https://www.cncdh.fr/communique-de-presse/racisme-antisemitisme-et-xenophobie-la-tolerance-resiste-mais-les-actes",
+      "newer_report_publication_year": 2026,
+      "newer_2024_reference": 9295,
+      "newer_2025_value": 9737,
+      "issue": "2024 comparator revised (or changed series) across report vintages: verify SSMSI revision note and comparable definitions before changing historical figure or calculating trend",
+      "status": "open_critical_source_reconciliation"
+    }
+  ],
+  "permissions": {
+    "publication": false,
+    "edit_public_html": false,
+    "activate_form": false,
+    "merge_main": false
+  }
+}
