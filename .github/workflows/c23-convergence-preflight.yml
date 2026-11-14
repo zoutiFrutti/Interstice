@@ -1,0 +1,97 @@
+name: C23 unified candidate preflight - no deployment
+on:
+  pull_request:
+    branches:
+      - work/c21-android-visual-reception-20261114
+    paths:
+      - .github/workflows/c23-convergence-preflight.yml
+      - tests/c22-reception-contract.test.mjs
+      - coordination/work/c23/**
+      - coordination/work/c21/**
+      - coordination/REGISTRE_DECISIONS.md
+  push:
+    branches:
+      - work/c23-convergence-final-candidate-20261114
+    paths:
+      - .github/workflows/c23-convergence-preflight.yml
+      - tests/c22-reception-contract.test.mjs
+      - coordination/work/c23/**
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  contracts:
+    name: Reception, navigation and historical contracts
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Human Android receipt is not a publication visa
+        run: node --test tests/c22-reception-contract.test.mjs
+      - name: All registered human decisions have valid format
+        run: python3 -m unittest discover -s coordination/agents -p 'test_*.py'
+      - name: NAV7, C07 and inherited R6 offline contracts
+        run: |
+          node --test tests/nav7-candidate.test.mjs tests/nav7-interactions.test.mjs tests/nav7-convergence.test.mjs
+          node --test coordination/work/c07/developpeuse/master-v1/test.mjs
+          node --test tests/security-public-boundary.test.mjs
+      - name: Verify source files before any export
+        run: node scripts/security/public-boundary.mjs source .
+      - name: Preserve original files and reviewed checkpoints
+        run: |
+          python3 scripts/r6-preservation-check.py
+          node --test coordination/work/c07/relieuse/check-reviewed-preservation.test.mjs
+  navigation-browser:
+    name: Isolated candidate Chromium smoke
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build isolated preview locally, not hosted
+        run: node scripts/build-nav-preview.mjs
+      - name: Install pinned Chromium
+        run: |
+          npm install --no-save --ignore-scripts --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Exercise NAV7 and final convergence in browser
+        run: |
+          node --test tests/nav7-browser.test.mjs
+          node --test tests/work-convergence-navigation.browser.test.mjs
+  pages-security:
+    name: Rendered Pages privacy boundary (no upload)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run Pages boundary unit tests
+        run: |
+          node --test coordination/work/c07/relieuse/check-pages-boundary.test.mjs
+          node --test coordination/work/c07/relieuse/check-pages-content.test.mjs
+      - name: Build with GitHub Pages Jekyll without publishing
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
+      - name: Block internal files and sensitive content in rendered output
+        run: |
+          node coordination/work/c07/relieuse/check-pages-boundary.mjs ./_site
+          node coordination/work/c07/relieuse/check-pages-content.mjs ./_site
+          node scripts/security/public-boundary.mjs pages ./_site
