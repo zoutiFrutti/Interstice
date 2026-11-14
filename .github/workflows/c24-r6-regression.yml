@@ -1,0 +1,64 @@
+name: C24 R6 legacy regression on unified candidate - no deployment
+on:
+  push:
+    branches:
+      - work/c24-r6-regression-candidate-20261114
+    paths:
+      - .github/workflows/c24-r6-regression.yml
+      - coordination/work/c24/**
+  pull_request:
+    branches:
+      - work/c23-convergence-final-candidate-20261114
+    paths:
+      - .github/workflows/c24-r6-regression.yml
+      - coordination/work/c24/**
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  legacy-r6-regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify R6 ancestry, source privacy and preservation
+        run: |
+          git rev-parse HEAD
+          git merge-base --is-ancestor c613d9f896fe94144264f6e78b7ac07893a75c67 HEAD
+          git merge-base --is-ancestor df3692356b2309b77adf44e9cb1e68603edbb6cc HEAD
+          node scripts/security/public-boundary.mjs source .
+          python3 scripts/r6-preservation-check.py
+      - name: Render local Pages output without publishing
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
+      - name: Check generated files before browser test
+        run: |
+          node scripts/security/public-boundary.mjs pages ./_site
+          node coordination/work/c07/relieuse/check-pages-boundary.mjs ./_site
+          node coordination/work/c07/relieuse/check-pages-content.mjs ./_site
+      - name: Install pinned browser, no deploy
+        run: |
+          npm install --no-save --ignore-scripts --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test R6 identity and browser regressions against locally served Pages
+        run: |
+          mkdir -p artifacts/r6-identite artifacts/faille artifacts/r6-int01
+          mkdir -p "$RUNNER_TEMP/r6-site"
+          ln -s "$GITHUB_WORKSPACE/_site" "$RUNNER_TEMP/r6-site/Interstice"
+          python3 -m http.server 8000 --bind 127.0.0.1 --directory _site > "$RUNNER_TEMP/r6-http.log" 2>&1 &
+          root_server=$!
+          python3 -m http.server 8001 --bind 127.0.0.1 --directory "$RUNNER_TEMP/r6-site" > "$RUNNER_TEMP/r6-subpath-http.log" 2>&1 &
+          subpath_server=$!
+          trap 'kill "$root_server" "$subpath_server"' EXIT
+          node scripts/r6-inventaire-identite.mjs
+          node --test --test-concurrency=1 tests/r6-identite-remplacement.browser.test.mjs tests/r6-dev02-stabilisation.browser.test.mjs tests/r2-faille-navigation.browser.test.mjs tests/r4-dev-cloture.browser.test.mjs tests/r1-frontend-navigation.browser.test.mjs tests/graphiste-dev-frontend.test.mjs tests/graphiste-dev-accessibilite.test.mjs tests/graphiste-integration-20261102.test.mjs tests/entree-faille-candidate.test.mjs
+          SITE_BASE_URL=http://127.0.0.1:8001/Interstice/ node --test tests/r6-int01-convergence.browser.test.mjs tests/security-pages-output.browser.test.mjs
