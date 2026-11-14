@@ -15,7 +15,7 @@
   "batches": [
     {
       "id": "C25-R6-01",
-      "kind": "source_reconciliation_only",
+      "kind": "initial_source_read_and_targeted_external_spotcheck",
       "publication_authorized": false,
       "items": [
         {
@@ -26,7 +26,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "initial_review_done_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -44,7 +44,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "initial_review_done_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -62,7 +62,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "initial_review_done_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -80,7 +80,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "initial_review_done_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -98,7 +98,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "initial_review_done_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -108,7 +108,8 @@
             "human-editorial-decision"
           ]
         }
-      ]
+      ],
+      "review_evidence": "coordination/work/c25/RELECTURE_R6_01_PREMIERE_PASSE_2026-11-14.json"
     },
     {
       "id": "C25-R6-02",
