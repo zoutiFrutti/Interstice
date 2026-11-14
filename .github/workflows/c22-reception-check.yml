@@ -1,0 +1,34 @@
+name: C22 reception contract - isolated no deploy
+on:
+  push:
+    branches:
+      - work/c21-android-visual-reception-20261114
+    paths:
+      - tests/c22-reception-contract.test.mjs
+      - coordination/work/c21/**
+      - coordination/work/c07/nav7/convergence-contract.json
+      - .github/workflows/c22-reception-check.yml
+  pull_request:
+    branches:
+      - work/c20-ci-registre-reception-20261113
+    paths:
+      - tests/c22-reception-contract.test.mjs
+      - coordination/work/c21/**
+      - coordination/work/c07/nav7/convergence-contract.json
+      - .github/workflows/c22-reception-check.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reception:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check exactly reported Android reception and closed publishing gates
+        run: node --test tests/c22-reception-contract.test.mjs
