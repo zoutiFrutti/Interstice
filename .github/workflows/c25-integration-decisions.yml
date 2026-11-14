@@ -7,6 +7,8 @@ on:
       - .github/workflows/c25-integration-decisions.yml
       - tests/c25-decision-review-gates.test.mjs
       - coordination/work/c25/**
+      - coordination/work/c27/**
+      - tests/c27-private-html-candidates.test.mjs
       - coordination/REGISTRE_DECISIONS.md
   pull_request:
     branches:
@@ -15,10 +17,13 @@ on:
       - .github/workflows/c25-integration-decisions.yml
       - tests/c25-decision-review-gates.test.mjs
       - coordination/work/c25/**
+      - coordination/work/c27/**
+      - tests/c27-private-html-candidates.test.mjs
       - coordination/REGISTRE_DECISIONS.md
   workflow_dispatch:
 permissions:
   contents: read
+  pages: read
 jobs:
   private-decisions:
     runs-on: ubuntu-24.04
@@ -31,8 +36,29 @@ jobs:
         with:
           node-version: '22'
       - name: Verify human decisions and reserved source-backed review batches
-        run: node --test tests/c25-decision-review-gates.test.mjs tests/c22-reception-contract.test.mjs
+        run: node --test tests/c25-decision-review-gates.test.mjs tests/c22-reception-contract.test.mjs tests/c27-private-html-candidates.test.mjs
       - name: Verify entire historical decisions register with existing C09 parser
         run: python3 -m unittest discover -s coordination/agents -p 'test_*.py'
       - name: Verify no private source path is authorized for Pages
         run: node scripts/security/public-boundary.mjs source .
+
+  pages-boundary-c27:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build pages locally without deployment
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
+      - name: Refuse private C27 HTML in rendered Pages output
+        run: |
+          test ! -d ./_site/coordination/work/c27
+          node coordination/work/c07/relieuse/check-pages-boundary.mjs ./_site
+          node coordination/work/c07/relieuse/check-pages-content.mjs ./_site
