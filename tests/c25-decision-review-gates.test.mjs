@@ -33,7 +33,7 @@ test('every queued R6 text is a source-identical item with no new visa',()=>{
       assert.equal(o.c07_validation.documentary,'a_reconcilier');
       assert.equal(o.c07_validation.publication,'non_autorisee');
       assert.equal(o.sha256,i.source_sha256);
-      assert.equal(i.read_status,'not_yet_read_for_C25');
+      assert.equal(i.read_status,b.id==='C25-R6-01'?'initial_review_done_not_approved':'not_yet_read_for_C25');
     }
   }
 });
@@ -47,4 +47,21 @@ test('nine blocked source texts remain excluded and 219 master objects not publi
   assert.equal(overlay.jur.publication_denied,219);
   assert.equal(status.c07_public_cards,0);
   assert.equal(status.public_deployment_authorized,false);
+});
+
+test('five real initial reviews have source-matched IDs and no editorial visa',()=>{
+  const r=JSON.parse(read('coordination/work/c25/RELECTURE_R6_01_PREMIERE_PASSE_2026-11-14.json'));
+  const expected=queue.batches[0].items.map(x=>x.id).sort();
+  assert.deepEqual(r.items.map(x=>x.id).sort(),expected);
+  assert.equal(r.items.length,5);
+  assert.equal(r.publication_authorized,false);
+  assert.equal(r.human_editorial_approval,false);
+  assert.equal(r.statuses_unchanged,true);
+  for(const x of r.items){
+    assert.equal(x.status,'initial_review_done_not_approved');
+    assert.ok(x.external_checked.length>=1);
+    assert.ok(x.required.length>=2);
+    assert.ok(x.observations.length>=2);
+  }
+  assert.equal(queue.batches[0].review_evidence,'coordination/work/c25/RELECTURE_R6_01_PREMIERE_PASSE_2026-11-14.json');
 });
