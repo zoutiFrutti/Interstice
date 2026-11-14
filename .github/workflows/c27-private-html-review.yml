@@ -1,0 +1,49 @@
+name: C27 private editorial HTML candidates - no deploy
+on:
+  push:
+    branches:
+      - integration/c25-tech-private-editorial-review-20261114
+    paths:
+      - coordination/work/c27/**
+      - tests/c27-private-html-candidates.test.mjs
+      - .github/workflows/c27-private-html-review.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  candidate-preservation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check all ten candidate HTML preserve original bytes
+        run: node --test tests/c27-private-html-candidates.test.mjs tests/c25-decision-review-gates.test.mjs
+      - name: Keep private sources out of public tree
+        run: node scripts/security/public-boundary.mjs source .
+  jekyll-private-boundary:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build locally only
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
+      - name: Confirm C27 candidates absent from Pages output
+        run: |
+          test ! -e ./_site/coordination/work/c27/html-candidates/wiki-ecologie-sociale-environnement.html
+          test ! -d ./_site/coordination/work/c27
+          node coordination/work/c07/relieuse/check-pages-boundary.mjs ./_site
+          node coordination/work/c07/relieuse/check-pages-content.mjs ./_site
