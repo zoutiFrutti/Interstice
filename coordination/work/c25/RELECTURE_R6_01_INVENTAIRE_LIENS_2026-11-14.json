@@ -462,7 +462,14 @@
       "newer_2024_reference": 9295,
       "newer_2025_value": 9737,
       "issue": "2024 comparator revised (or changed series) across report vintages: verify SSMSI revision note and comparable definitions before changing historical figure or calculating trend",
-      "status": "open_critical_source_reconciliation"
+      "status": "open_critical_source_reconciliation",
+      "primary_source_2024": "https://statistiques.interieur.gouv.fr/ssmsi/publications/info-rapide-ndeg49-les-atteintes-caractere-raciste-xenophobe-ou-antireligieux-en-2024",
+      "primary_source_2025": "https://statistiques.interieur.gouv.fr/ssmsi/publications/les-atteintes-caractere-raciste-xenophobe-ou-antireligieux-en-2025",
+      "primary_2025_interstats_2024_comparator": 9295,
+      "primary_2024_release_rounded": 9400,
+      "primary_2025_release_2025_total": 9737,
+      "source_comparison": "Primary SSMSI annual releases show 2024 initial rounded ~9,400 (2025 release) and precise 9,295 as 2024 comparator (2026 release). No verified note explaining difference in detailed crime/delict counts.",
+      "warning": "SSMSI October 2026 VRS complaint-rate methodology revision is NOT evidence for changes to recorded police crime counts; do not conflate."
     }
   ],
   "permissions": {
