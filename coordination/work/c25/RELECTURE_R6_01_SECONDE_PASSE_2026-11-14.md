@@ -23,6 +23,16 @@ Mais dans le communiqué du **rapport sur l'année 2025**, publié en **juin 202
 
 **Conclusion : deux millésimes documentaires donnent des références différentes pour 2024 (9 350 versus 9 295).** Il faut vérifier auprès du SSMSI si cela vient d'une révision des données ou d'un autre périmètre. **Ne pas déclarer une cause certaine sans note méthodologique.** Correction candidate proposée, à soumettre à relecture : « 9 350 dans le rapport publié en 2025 ; chiffre de comparaison 2024 révisé/présenté à 9 295 dans le rapport publié en 2026 » avec liens et réserve sur la raison de l'écart. Le mot « révisé » doit rester conditionnel tant que la cause n'est pas vérifiée. Ne pas mettre automatiquement à jour le HTML.
 
+### Recoupement ajouté : publications primaires du SSMSI
+
+La publication SSMSI du **14 mars 2025** sur les faits de 2024 annonce **environ 9 400 crimes et délits**, arrondis :
+https://statistiques.interieur.gouv.fr/ssmsi/publications/info-rapide-ndeg49-les-atteintes-caractere-raciste-xenophobe-ou-antireligieux-en-2024
+
+Celle du **25 mars 2026** sur les faits de 2025 donne **9 737 crimes et délits en 2025**, et sa comparaison détaillée retient **9 295 pour 2024** :
+https://statistiques.interieur.gouv.fr/ssmsi/publications/les-atteintes-caractere-raciste-xenophobe-ou-antireligieux-en-2025
+
+Le chiffre initial **9 350** reste explicitement documenté par la CNCDH 2024. L'écart entre la valeur précise de cette édition et la comparaison de la nouvelle édition est réel ; l'explication causale **n'a pas été trouvée** à ce stade. Attention : le SSMSI mentionne une révision d'octobre 2026 concernant **la méthode des taux de plainte de l'enquête VRS**, ce qui **ne prouve pas** que l'écart des décomptes policiers vient de cette révision. Ne pas les confondre.
+
 ## Cinq fiches : suites ciblées
 
 | Fiche | URL distinctes | Points encore ouverts |
