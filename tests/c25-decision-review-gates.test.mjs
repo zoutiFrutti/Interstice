@@ -65,3 +65,25 @@ test('five real initial reviews have source-matched IDs and no editorial visa',(
   }
   assert.equal(queue.batches[0].review_evidence,'coordination/work/c25/RELECTURE_R6_01_PREMIERE_PASSE_2026-11-14.json');
 });
+
+test('second pass inventories exact external URL occurrences without pretending all were checked',()=>{
+  const p='coordination/work/c25/RELECTURE_R6_01_INVENTAIRE_LIENS_2026-11-14.json';
+  const inventory=JSON.parse(read(p));
+  assert.equal(inventory.items.length,5);
+  assert.deepEqual(inventory.items.map(x=>x.id).sort(),queue.batches[0].items.map(x=>x.id).sort());
+  const total=inventory.items.reduce((n,x)=>n+x.links.length,0);
+  const checked=inventory.items.reduce((n,x)=>n+x.links.filter(y=>y.status!=='not_checked').length,0);
+  assert.equal(total,82);
+  assert.equal(checked,7);
+  assert.equal(inventory.permissions.publication,false);
+  assert.equal(inventory.permissions.edit_public_html,false);
+  assert.equal(inventory.permissions.merge_main,false);
+  assert.equal(queue.batches[0].second_pass_evidence.inventory,p);
+  assert.equal(queue.batches[0].second_pass_evidence.publication_authorized,false);
+  const divergence=inventory.evidence_discrepancies.find(x=>x.id==='CNCDH-2024-VINTAGE');
+  assert.ok(divergence);
+  assert.equal(divergence.older_value,9350);
+  assert.equal(divergence.newer_2024_reference,9295);
+  assert.equal(divergence.newer_2025_value,9737);
+  assert.equal(divergence.status,'open_critical_source_reconciliation');
+});
