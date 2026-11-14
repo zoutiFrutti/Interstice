@@ -1,0 +1,407 @@
+{
+  "schema": "interstice/c25-private-review-queue/1",
+  "status": "candidate_work_plan_not_review_results",
+  "recorded": "2026-11-14",
+  "decision_id": "D-C25-ED-01",
+  "source": "coordination/work/c07/nav7/received-work/readings.json",
+  "source_git_blob": "46158b68bdbd17b26e1097b6c06314a52615e9bd",
+  "scope": {
+    "existing_r6_texts": 24,
+    "eligible_for_initial_reconciliation": 15,
+    "blocked_documentary": 9,
+    "c07_master_objects_unpublished": 219,
+    "media_notices_candidate": 10
+  },
+  "batches": [
+    {
+      "id": "C25-R6-01",
+      "kind": "initial_source_read_and_targeted_external_spotcheck",
+      "publication_authorized": false,
+      "items": [
+        {
+          "id": "wiki-antifascisme-histoire-et-mecanismes",
+          "title": "Antifascisme, histoire et défense des libertés.",
+          "source": "wiki-antifascisme-histoire-et-mecanismes.html",
+          "source_sha256": "973ef990f7baac36a4eabef59707bd484153c6bfe8b1a69376dc5c0272998889",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ]
+        },
+        {
+          "id": "wiki-antiracisme-histoires-droits",
+          "title": "Comprendre le racisme.Documenter l'égalité.",
+          "source": "wiki-antiracisme-histoires-droits.html",
+          "source_sha256": "696cc81c2ea401984072bf3862d4480411f794a1149e42d163fdd3d4fe6a2b08",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ]
+        },
+        {
+          "id": "wiki-autonomie-materielle-savoir-faire",
+          "title": "Autonomie matérielle et savoir-faire.",
+          "source": "wiki-autonomie-materielle-savoir-faire.html",
+          "source_sha256": "26a843c7d03f96e203c1d7162677f10df4ee021766898f4ab8552140518d2d44",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ]
+        },
+        {
+          "id": "wiki-capitalisme-classes-travail",
+          "title": "Capitalisme, classes sociales et monde du travail.",
+          "source": "wiki-capitalisme-classes-travail.html",
+          "source_sha256": "c2d6bb7b866a8cd28a80296073a14aec1ce684ff811670257d600b9797085d81",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ]
+        },
+        {
+          "id": "wiki-culture-creation-acces-art",
+          "title": "Culture, création et accès à l’art.",
+          "source": "wiki-culture-creation-acces-art.html",
+          "source_sha256": "78d29fb6aeb34cdae45949cc579e352fe87a00d69377758de6cd287255525692",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ]
+        }
+      ],
+      "review_evidence": "coordination/work/c25/RELECTURE_R6_01_PREMIERE_PASSE_2026-11-14.json",
+      "second_pass_evidence": {
+        "inventory": "coordination/work/c25/RELECTURE_R6_01_INVENTAIRE_LIENS_2026-11-14.json",
+        "report": "coordination/work/c25/RELECTURE_R6_01_SECONDE_PASSE_2026-11-14.md",
+        "scope": "82 URL slots inventoried across 5 documents, 7 targeted URL controls/attempts, not full verification",
+        "key_issue": "CNCDH 2024 figure 9350 old vintage versus 9295 newer comparator; causal explanation pending",
+        "publication_authorized": false
+      }
+    },
+    {
+      "id": "C25-R6-02",
+      "kind": "source_read_and_private_candidate_amendments",
+      "publication_authorized": false,
+      "items": [
+        {
+          "id": "wiki-ecologie-sociale-environnement",
+          "title": "Écologie sociale et crise environnementale.",
+          "source": "wiki-ecologie-sociale-environnement.html",
+          "source_sha256": "65759c6f70ffeb774bf2887ab5b721bef9c789fb14c1b17fdb9ee0e576ec4851",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/01-ecologie-sociale.md"
+        },
+        {
+          "id": "wiki-egalite-fiches",
+          "title": "Égalité, genres et inclusivité.",
+          "source": "wiki-egalite-fiches.html",
+          "source_sha256": "ce4fe8b4400667ac3dcd3e972616d57dbbd7d6338fbac3ef1592908f3c5e121a",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/02-egalite-fiches.md"
+        },
+        {
+          "id": "wiki-egalite-genres-inclusivite",
+          "title": "Égalité, genres et inclusivité.",
+          "source": "wiki-egalite-genres-inclusivite.html",
+          "source_sha256": "d431ee846ad2f3f54aaeeb7734576a15deeb8f562c4c8f5035d1c6c6892e0633",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/03-egalite-portail.md"
+        },
+        {
+          "id": "wiki-feminismes-histoire-egalite",
+          "title": "Féminismes : comprendre, transmettre, documenter.",
+          "source": "wiki-feminismes-histoire-egalite.html",
+          "source_sha256": "0825356a373eb5d2cc8b86d485b3ab0375d32dcc2207cbd54ad54d19bab4f4ec",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/04-feminismes.md"
+        },
+        {
+          "id": "wiki-handicap-validisme-neurodiversite",
+          "title": "Handicap, validisme et neurodiversité.",
+          "source": "wiki-handicap-validisme-neurodiversite.html",
+          "source_sha256": "b4c5da1c366fd1f8f2bd03bee691812a55f357a59b74f6ca694ed15f940adbd7",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/05-handicap.md"
+        }
+      ],
+      "review_status": "first_editorial_pass_completed_no_visa"
+    },
+    {
+      "id": "C25-R6-03",
+      "kind": "source_read_and_private_candidate_amendments",
+      "publication_authorized": false,
+      "items": [
+        {
+          "id": "wiki-justice-prisons-abolitionnisme",
+          "title": "Justice, prisons et abolitionnisme pénal.",
+          "source": "wiki-justice-prisons-abolitionnisme.html",
+          "source_sha256": "c4edd4313cda000254c1b8a0e13641a99d94d19380b643c5360881fed1b6505e",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/06-prisons.md"
+        },
+        {
+          "id": "wiki-liberte-numerique-ia-surveillance",
+          "title": "Libertés numériques, surveillance et intelligence artificielle.",
+          "source": "wiki-liberte-numerique-ia-surveillance.html",
+          "source_sha256": "52c279b50660f42f70615b6ad8046fe4de908c46aa22a14e85d2c9f27e27ecc2",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/07-liberte-numerique.md"
+        },
+        {
+          "id": "wiki-patriarcat-histoire-mecanismes",
+          "title": "Le patriarcat : histoire, pouvoirs et mécanismes.",
+          "source": "wiki-patriarcat-histoire-mecanismes.html",
+          "source_sha256": "9edeee0956c46530b160a9f28dabb5d1edb04ff04f7a3b3ade91640d25e7ac98",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/08-patriarcat.md"
+        },
+        {
+          "id": "wiki-politique-institutions-regimes",
+          "title": "Qui gouverne ? Comment le pouvoir s'organise.",
+          "source": "wiki-politique-institutions-regimes.html",
+          "source_sha256": "7496091d6f4300abad783bbe5d9d08cc4eefcda9303e25203895f882ab411be8",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/09-institutions.md"
+        },
+        {
+          "id": "wiki-socialismes-communismes-anarchismes-autogestion",
+          "title": "Socialismes, communismes, anarchismes et autogestion.",
+          "source": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+          "source_sha256": "ca4507c7bbcd6af005424c4a578169ea1464c4b6e86a29b6c813fc1cc53065ec",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/10-socialismes.md"
+        }
+      ],
+      "review_status": "first_editorial_pass_completed_no_visa"
+    }
+  ],
+  "blocked_not_queued": [
+    {
+      "id": "wiki-association-collegiale",
+      "title": "Créer une association collégiale",
+      "source": "wiki-association-collegiale.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-decision-collective",
+      "title": "Décider ensemble.",
+      "source": "wiki-decision-collective.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-education-enfance-protection",
+      "title": "Éducation, enfance et protection.",
+      "source": "wiki-education-enfance-protection.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-financements-culture-spectacle",
+      "title": "Financer la création, la diffusion et les tournées.",
+      "source": "wiki-financements-culture-spectacle.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-frontieres-migrations-colonialisme",
+      "title": "Frontières, migrations et colonialisme.",
+      "source": "wiki-frontieres-migrations-colonialisme.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-lecture-croisee-travail-soin-pouvoir",
+      "title": "Qui fait vivre les communs ?",
+      "source": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-logement-habitat-droit-ville",
+      "title": "Logement, habitat et droit à la ville",
+      "source": "wiki-logement-habitat-droit-ville.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-police-deces-memoire",
+      "title": "Police, décès et mémoire.",
+      "source": "wiki-police-deces-memoire.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-sante-psychiatrie-autonomie-soins",
+      "title": "Santé, psychiatrie et autonomie des soins.",
+      "source": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    }
+  ],
+  "reserved_media": {
+    "count": 10,
+    "status": "not_queued_until_source_and_rights_verified"
+  },
+  "required_approval": "specific human visa per item after evidence-based review",
+  "none_published_or_newly_authorized": true,
+  "c26_status": {
+    "completed_passes": 10,
+    "actual_source_html_read": 10,
+    "private_candidate_amendments": 10,
+    "source_documents_modified": 0,
+    "approval_granted": 0,
+    "status": "first_pass_completed_not_editorially_approved"
+  }
+}

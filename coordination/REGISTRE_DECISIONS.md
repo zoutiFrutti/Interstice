@@ -160,3 +160,13 @@ Les trois choix A intermédiaires de Zout ont autorisé la préparation document
 Réconciliation technique de provenance : la capture authentique de Zout et le contrat Work déjà appliqué placent 4 à gauche, 6 à droite et 7 près du centre. Les valeurs contraires de la première réception 4cdad619 sont conservées comme observation historique dans contract-received-4cdad619.json ; elles ne deviennent pas une nouvelle décision humaine. Révision 2 du contrat alignée sur les sources reçues. Aucun nouveau vote déduit.
 
 Q1 transfert/CI/PR, Q2 affichage des outils Médiathèque, Q3 distinction des deux titres Égalité, Q4 mise à jour séparée de l'aperçu privé : en attente, aucune option présélectionnée. Historique et autorisations précédentes conservés.
+
+## C25 — Intégration technique, publication et relecture éditoriale · 14 novembre 2026
+
+| ID | Décision directe | Source | Portée |
+| --- | --- | --- | --- |
+| `D-C25-INT-01` | **Option A :** consolider C07 → C24 dans une branche d'intégration distincte de `main` | Réponse directe de Zout aux trois décisions « intégration technique A ; publication A ; contenus B » | Autorise la préparation de la candidate technique unique, les contrôles et corrections ciblées dans sa branche ; **aucune fusion vers `main`**, aucune mise en ligne, aucun changement des SVG validés ou permissions |
+| `D-C25-PUB-01` | **Option A :** maintenir le site en privé | Même réponse directe de Zout, 14 novembre 2026 | Aucune publication, aucun redéploiement de l'aperçu ou GitHub Pages, aucune extension des accès ; une future mise en ligne nécessite une décision et une autorisation d'exécution spécifiques |
+| `D-C25-ED-01` | **Option B :** lancer la préparation de relectures éditoriales par lots | Même réponse directe de Zout, 14 novembre 2026 | Autorise tri, fiches de relecture, confrontation des sources/Wikipédia, identification des droits et blocages ; **aucun visa automatique** ; 219 objets C07 non autorisés, neuf textes R6 au statut documentaire bloqué et dix notices médias candidates demeurent fermés à la publication |
+
+**Condition commune :** un contrôle technique réussi n'est pas une validation éditoriale ou juridique. La réception Android 16/16 concerne l'aperçu privé testé dont le SHA reste non établi. Les états `candidat`, `vérifié`, `validé humainement`, `intégré` et `publié` ne se substituent pas les uns aux autres.
