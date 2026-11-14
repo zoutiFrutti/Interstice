@@ -109,7 +109,14 @@
           ]
         }
       ],
-      "review_evidence": "coordination/work/c25/RELECTURE_R6_01_PREMIERE_PASSE_2026-11-14.json"
+      "review_evidence": "coordination/work/c25/RELECTURE_R6_01_PREMIERE_PASSE_2026-11-14.json",
+      "second_pass_evidence": {
+        "inventory": "coordination/work/c25/RELECTURE_R6_01_INVENTAIRE_LIENS_2026-11-14.json",
+        "report": "coordination/work/c25/RELECTURE_R6_01_SECONDE_PASSE_2026-11-14.md",
+        "scope": "82 URL slots inventoried across 5 documents, 7 targeted URL controls/attempts, not full verification",
+        "key_issue": "CNCDH 2024 figure 9350 old vintage versus 9295 newer comparator; causal explanation pending",
+        "publication_authorized": false
+      }
     },
     {
       "id": "C25-R6-02",
