@@ -33,7 +33,7 @@ test('every queued R6 text is a source-identical item with no new visa',()=>{
       assert.equal(o.c07_validation.documentary,'a_reconcilier');
       assert.equal(o.c07_validation.publication,'non_autorisee');
       assert.equal(o.sha256,i.source_sha256);
-      assert.equal(i.read_status,b.id==='C25-R6-01'?'initial_review_done_not_approved':'not_yet_read_for_C25');
+      assert.equal(i.read_status,b.id==='C25-R6-01'?'initial_review_done_not_approved':'draft_correction_prepared_not_approved');
     }
   }
 });
@@ -86,4 +86,30 @@ test('second pass inventories exact external URL occurrences without pretending 
   assert.equal(divergence.newer_2024_reference,9295);
   assert.equal(divergence.newer_2025_value,9737);
   assert.equal(divergence.status,'open_critical_source_reconciliation');
+});
+
+test('C26: ten unique substantive source-linked private amendments, no publication visa',()=>{
+  const batches=queue.batches.slice(1);
+  const items=batches.flatMap(b=>b.items);
+  assert.equal(items.length,10);
+  assert.equal(queue.c26_status.completed_passes,10);
+  assert.equal(queue.c26_status.private_candidate_amendments,10);
+  assert.equal(queue.c26_status.source_documents_modified,0);
+  assert.equal(queue.c26_status.approval_granted,0);
+  const amendmentPaths=items.map(x=>x.draft_correction);
+  assert.equal(new Set(amendmentPaths).size,10);
+  for(const b of batches){
+    assert.equal(b.publication_authorized,false);
+    assert.equal(b.review_status,'first_editorial_pass_completed_no_visa');
+  }
+  for(const item of items){
+    assert.equal(item.read_status,'draft_correction_prepared_not_approved');
+    assert.ok(item.draft_correction.startsWith('coordination/work/c26/corrections-privees/'));
+    const md=read(item.draft_correction);
+    assert.ok(md.includes(item.id+'.html'),item.id);
+    assert.ok(md.includes('## Texte de remplacement candidat'),item.id);
+    assert.ok(md.includes('## Modification concrète préparée'),item.id);
+    assert.ok(md.includes('## Contrôle restant'),item.id);
+    assert.ok(md.includes('Publication : NON'),item.id);
+  }
 });
