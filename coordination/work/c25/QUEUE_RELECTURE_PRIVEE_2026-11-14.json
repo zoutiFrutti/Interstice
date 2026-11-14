@@ -120,7 +120,7 @@
     },
     {
       "id": "C25-R6-02",
-      "kind": "source_reconciliation_only",
+      "kind": "source_read_and_private_candidate_amendments",
       "publication_authorized": false,
       "items": [
         {
@@ -131,7 +131,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -139,7 +139,8 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/01-ecologie-sociale.md"
         },
         {
           "id": "wiki-egalite-fiches",
@@ -149,7 +150,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -157,7 +158,8 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/02-egalite-fiches.md"
         },
         {
           "id": "wiki-egalite-genres-inclusivite",
@@ -167,7 +169,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -175,7 +177,8 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/03-egalite-portail.md"
         },
         {
           "id": "wiki-feminismes-histoire-egalite",
@@ -185,7 +188,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -193,7 +196,8 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/04-feminismes.md"
         },
         {
           "id": "wiki-handicap-validisme-neurodiversite",
@@ -203,7 +207,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -211,13 +215,15 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/05-handicap.md"
         }
-      ]
+      ],
+      "review_status": "first_editorial_pass_completed_no_visa"
     },
     {
       "id": "C25-R6-03",
-      "kind": "source_reconciliation_only",
+      "kind": "source_read_and_private_candidate_amendments",
       "publication_authorized": false,
       "items": [
         {
@@ -228,7 +234,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -236,7 +242,8 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/06-prisons.md"
         },
         {
           "id": "wiki-liberte-numerique-ia-surveillance",
@@ -246,7 +253,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -254,7 +261,8 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/07-liberte-numerique.md"
         },
         {
           "id": "wiki-patriarcat-histoire-mecanismes",
@@ -264,7 +272,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -272,7 +280,8 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/08-patriarcat.md"
         },
         {
           "id": "wiki-politique-institutions-regimes",
@@ -282,7 +291,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -290,7 +299,8 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/09-institutions.md"
         },
         {
           "id": "wiki-socialismes-communismes-anarchismes-autogestion",
@@ -300,7 +310,7 @@
           "documentary_before": "a_reconcilier",
           "legal_before": "non_examine",
           "publication_before": "non_autorisee",
-          "read_status": "not_yet_read_for_C25",
+          "read_status": "draft_correction_prepared_not_approved",
           "required_checks": [
             "exact-source-and-date",
             "wikipedia-non-duplication",
@@ -308,9 +318,11 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/10-socialismes.md"
         }
-      ]
+      ],
+      "review_status": "first_editorial_pass_completed_no_visa"
     }
   ],
   "blocked_not_queued": [
@@ -383,5 +395,13 @@
     "status": "not_queued_until_source_and_rights_verified"
   },
   "required_approval": "specific human visa per item after evidence-based review",
-  "none_published_or_newly_authorized": true
+  "none_published_or_newly_authorized": true,
+  "c26_status": {
+    "completed_passes": 10,
+    "actual_source_html_read": 10,
+    "private_candidate_amendments": 10,
+    "source_documents_modified": 0,
+    "approval_granted": 0,
+    "status": "first_pass_completed_not_editorially_approved"
+  }
 }
