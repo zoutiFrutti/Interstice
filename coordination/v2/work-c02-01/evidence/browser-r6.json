@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-03",
+  "scope": "Copie locale des fichiers R6 de main, pas de rendu V2",
+  "method": "Chromium via navigateur de contrôle ; observation DOM et activation au clavier",
+  "selections": [
+    {"label":"Wiki","key":"Enter","fragment":"#wiki","href":"../wiki.html","status_observed":true},
+    {"label":"Médiathèque","key":"Enter","fragment":"#bibliotheque","href":"../bibliotheque.html","status_observed":true},
+    {"label":"Atlas","key":"Enter","fragment":"#atlas","href":"../atlas.html","status_observed":true},
+    {"label":"Parcours","key":"Enter","fragment":"#parcours","href":"../parcours.html","status_observed":true},
+    {"label":"Entraide","key":"Enter","fragment":"#entraide","href":"../parcours.html#entraide","status_observed":true}
+  ],
+  "browser_back": {"from":"#entraide","restored_status":"Parcours","passed":true},
+  "deep_link_entraide": {"selection_restored":true,"destination_anchor_present":true,"heading":"Entraide","legal_blocking_notice_present":true},
+  "observed_viewport": {"width":1363,"document_scroll_width":1348},
+  "not_tested": ["lecteur d’écran matériel","tactile réel","zoom navigateur 400 %","JavaScript désactivé","émulation reduced motion","rendu V2"]
+}

@@ -5,11 +5,16 @@ on:
 permissions:
   contents: read
   issues: write
+concurrency:
+  group: relieuse-lectrice-${{ github.event.issue.number }}
+  cancel-in-progress: false
 jobs:
   lectrice:
-    # Arrêt d'urgence C12 autorisé par Zout le 2026-11-05. Aucun job ne peut démarrer.
-    if: ${{ false }}
+    # C08 : conserver l'arrêt d'urgence de main (df73c5d), même après convergence.
+    # Une réactivation exige une autorisation explicite ; les gardes C13 restent conservées.
+    if: ${{ false && startsWith(github.event.issue.title, '[RELIEUSE-LECTRICE]') && github.event.issue.user.login == github.repository_owner }}
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - name: Tests
@@ -19,10 +24,17 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          LECTRICE_AI_ENABLED: ${{ vars.LECTRICE_AI_ENABLED }}
         run: python3 coordination/agents/pont_relieuse_c12.py
-      - name: Retourner le resultat dans l'issue
+      - name: Retourner le resultat dans l'issue, sans doublon
         if: steps.traiter.outputs.should_comment == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-        run: gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file commentaire-lectrice-c12.md
+        run: |
+          previous="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --paginate --jq '.[] | select(.user.login == "github-actions[bot]") | .body')"
+          if grep -Fq '<!-- C13-LECTRICE-RESULTAT -->' <<< "$previous"; then
+            echo 'Résultat déjà présent : pas de commentaire supplémentaire.'
+          else
+            gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file commentaire-lectrice-c12.md
+          fi

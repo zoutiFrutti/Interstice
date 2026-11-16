@@ -63,5 +63,7 @@ for(const unsafe of [false,true])test('inventaire documentaire hors réseau : '+
 test('le contrôle export précède tout envoi et ne change pas les permissions CI',async()=>{
   const workflow=await readFile('.github/workflows/wiki-markdown-inventory.yml','utf8');
   assert.ok(workflow.indexOf('public-boundary.mjs content artifacts')<workflow.indexOf('node scripts/submit-wiki-inventory.mjs'));
-  const disabled=await readFile('.github/workflows/pont-relieuse-lectrice-c12.yml','utf8');assert.match(disabled,/if: \$\{\{ false \}\}/);
+  const disabled=await readFile('.github/workflows/pont-relieuse-lectrice-c12.yml','utf8');assert.ok(disabled.includes("    if: ${{ false }}") || disabled.includes("    if: ${{ false && startsWith(github.event.issue.title, '[RELIEUSE-LECTRICE]') && github.event.issue.user.login == github.repository_owner }}"));
 });
+
+for(const area of ['coordination-console','recherche'])test('reject internal C07 directory: '+area,()=>temporary(async dir=>{await mkdir(join(dir,area));await writeFile(join(dir,area,'data.json'),'{}');assert.equal((await inspectExport(dir)).accepted,false);}));

@@ -6,7 +6,7 @@ import {resolve, join, relative} from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const fingerprints = new Set(JSON.parse(await readFile(new URL('./reserved-id-sha256.json', import.meta.url))));
-const internal = new Set(['.git','.github','apercu-graphiste-35','coordination','docs','edition-premiere','propositions','scripts','supabase','tests','artifacts','node_modules']);
+const internal = new Set(['.git','.github','apercu-graphiste-35','coordination','coordination-console','recherche','docs','edition-premiere','propositions','scripts','supabase','tests','artifacts','node_modules']);
 const resource = /(?:docs|drive)\.google\.com\//i;
 const hash = value => createHash('sha256').update(value).digest('hex');
 // All 64 examined identifiers are 44 characters; include embedded occurrences.

@@ -1,0 +1,99 @@
+{
+  "id": "lot-commune-01",
+  "audience": "owner_private",
+  "human_visa": "PENDING",
+  "publication_authorized": false,
+  "prepared_on": "2026-11-05",
+  "items": [
+    {
+      "id": "ASSO-008",
+      "source_sha256": "bb9c235d77891bc868d2d3a03635cda108b0e9ffe9039df1300037b9fa0cca4e",
+      "human_visa": "PENDING",
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "retention_decision": {
+        "id": "ASSO-008",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "reviewed_site_source_commit": "f5be593c5bf61b0ccd05848e9c037adb308e2686",
+        "reviewed_page_sha256": "c39b5122b369d386b6ebe1c0fe2d50e1cb1a3e96560e0f8c96a9e6d09440030a",
+        "content_sha256": "9cfbd0386341bb61844def6f9dac91fe470490c705810ab78558e681e766ec1b"
+      }
+    },
+    {
+      "id": "ASSO-007",
+      "source_sha256": "901d801f16c8c3a83f02a0a1c39e2c0eea52876a2ced9b607e9608292a167c87",
+      "human_visa": "PENDING",
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "retention_decision": {
+        "id": "ASSO-007",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "reviewed_site_source_commit": "f5be593c5bf61b0ccd05848e9c037adb308e2686",
+        "reviewed_page_sha256": "5e8b83f48284ee4f145310770db10598720522ecd95633adc2f9d70290823fa3",
+        "content_sha256": "6c9ea307480dc384b5ddfa7ffbfd0b338c8a7437775327d503aed8aa2275eb0c"
+      }
+    },
+    {
+      "id": "ARCH-002",
+      "source_sha256": "4189be35eb2dd4d038e78d313f9d5187eadf26bb2139a634474e7247fd51c8c9",
+      "human_visa": "PENDING",
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "retention_decision": {
+        "id": "ARCH-002",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "reviewed_site_source_commit": "f5be593c5bf61b0ccd05848e9c037adb308e2686",
+        "reviewed_page_sha256": "245daa52548d96e56472cb3fa2f8ff6b0673934c1829a4940d74afb823aa5e71",
+        "content_sha256": "11d9d6f5e2b9327ca5ed13cee2ab7546f57342d82a0d0dbcd601893923faf98b"
+      }
+    },
+    {
+      "id": "ARCH-006",
+      "source_sha256": "07167b13115229c1abef8e2def305fbb3a6b6d53c97cfd6846f6826d43c0ffb4",
+      "human_visa": "PENDING",
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "retention_decision": {
+        "id": "ARCH-006",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "reviewed_site_source_commit": "f5be593c5bf61b0ccd05848e9c037adb308e2686",
+        "reviewed_page_sha256": "ebd44e178b78563f73a2b3effeffd3a7dd91d1a96d81bda02993c51c7a6eddc5",
+        "content_sha256": "41473bbfb4ca104537860f6a22f5871eba91dca91b737650b6508a63e8b8b93c"
+      }
+    },
+    {
+      "id": "BIO-012",
+      "source_sha256": "060a6c3149f16daa5fe6df072e9639915d300f2494876f038c1a17614e868e1b",
+      "human_visa": "PENDING",
+      "editorial_status": "RETAINED_WITH_RESERVATIONS",
+      "publication_visa": "PENDING",
+      "retention_decision": {
+        "id": "BIO-012",
+        "status": "RETAINED_WITH_RESERVATIONS",
+        "scope": "candidate_private_editorial_only",
+        "source": "zout_direct_conversation",
+        "recorded_on": "2026-11-05",
+        "reviewed_site_source_commit": "f5be593c5bf61b0ccd05848e9c037adb308e2686",
+        "reviewed_page_sha256": "4b5f786ee86a2b2791b360c7f74176d82bea0fe266224c9ec42ccd8ebd04ca48",
+        "content_sha256": "e32ae3b6560699ad197fd614b68eaa9c422d4b9d3c4ee4f935672da8fcb6361a"
+      }
+    }
+  ],
+  "editorial_status": "RETAINED_WITH_RESERVATIONS",
+  "human_visa_scope": "publication",
+  "publication_visa": "PENDING",
+  "decision_recorded_on": "2026-11-05",
+  "decision_source": "zout_direct_conversation"
+}

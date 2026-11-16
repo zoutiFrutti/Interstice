@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Démonstration sûre du suivi documentaire des ateliers de La Faille noire × Interstice.">
+  <title>Ce qui circule · La Faille noire × Interstice</title>
+  <link rel="icon" href="assets/logo-faille-noire.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="console.css">
+  <script type="module" src="console.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="masthead">
+    <a href="#missions" class="identity" aria-label="La Faille noire × Interstice — vue des missions">
+      <img src="assets/logo-faille-noire.svg" width="54" height="54" alt="">
+      <span>LA FAILLE NOIRE <span class="identity-cross">×</span> INTERSTICE<small>LES ATELIERS · COORDINATION</small></span>
+    </a>
+    <span class="demo-mark">Démonstration sans backend</span>
+  </header>
+  <div class="workspace">
+    <nav class="navigation" aria-label="Vues de coordination">
+      <a href="#missions" data-view="missions"><span aria-hidden="true">01</span> Ce qui circule</a>
+      <a href="#ateliers" data-view="ateliers"><span aria-hidden="true">02</span> Les ateliers</a>
+      <a href="#preuves" data-view="preuves"><span aria-hidden="true">03</span> Les preuves</a>
+    </nav>
+    <main id="main" tabindex="-1">
+      <p class="safety-note"><strong>Données publiques. Commandes inactives.</strong> Ceci n’est pas un poste d’administration opérationnel.</p>
+      <div id="view">
+        <!-- PUBLIC-FALLBACK -->
+      </div>
+      <p id="status" class="live" role="status" aria-live="polite"></p>
+    </main>
+  </div>
+  <footer>
+    <img src="assets/logo-interstice.svg" width="28" height="28" alt="Symbole officiel Interstice">
+    <p>Initiative de Zout · Un registre n’est pas une activité attestée.<br>La lecture d’un fichier ne vaut ni réception ni validation.</p>
+    <a href="https://github.com/zoutiFrutti/Interstice/pull/132" target="_blank" rel="noopener noreferrer">Registre collectif C18 ↗</a>
+  </footer>
+</body>
+</html>

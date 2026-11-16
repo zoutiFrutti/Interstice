@@ -1,0 +1,38 @@
+{
+  "base_commit": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+  "contract": {
+    "resources": 219,
+    "aliases": 3,
+    "parcours": 7,
+    "relations": 19,
+    "objections": 30,
+    "sources": 100,
+    "public_resources": 0
+  },
+  "preservation": {
+    "blobs": 524,
+    "changed": []
+  },
+  "historical_routes": {
+    "checked": 32,
+    "failures": []
+  },
+  "source_paths": {
+    "unresolved": []
+  },
+  "internal_link_inventory": {
+    "pages": 44,
+    "preexisting_broken_links": [
+      {
+        "from": "wiki-autonomie-materielle-savoir-faire.html",
+        "href": "wiki-mutualiser-materiel.html",
+        "reason": "fichier_absent"
+      }
+    ]
+  },
+  "limits": [
+    "Liens externes non tous ouverts",
+    "Aucun visa documentaire ou juridique produit par ce contrôle",
+    "Aucun test matériel de lecteur d’écran ou tactile V2"
+  ]
+}

@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {resolve,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'../../../..');
+const f=p=>readFileSync(resolve(root,p),'utf8');
+test('C07 MED matrix has 219 stable IDs and no direct private Drive document links',()=>{
+ const med=f('coordination/work/c07/mediatheque/C07_MED_01B_MATRICE_219.md');
+ const rows=med.split('\n').filter(x=>x.startsWith('| ')&&!x.startsWith('| ID ')&&!x.startsWith('|---')&&!x.startsWith('| ---')).map(x=>x.split('|')[1].trim());
+ assert.equal(rows.length,219);
+ assert.equal(new Set(rows).size,219);
+ const ids=JSON.parse(f('coordination/v2/work-c02-01/data/resources.json')).resources.map(r=>r.id).sort();
+ assert.deepEqual(rows.slice().sort(),ids);
+ assert.doesNotMatch(med,/(?:docs\.google\.com\/(?:document|spreadsheets|presentation)\/d\/|drive\.google\.com\/(?:file\/d\/|open\?id=))[A-Za-z0-9_-]{8,}/i);
+ assert.equal((med.match(/Source Drive réservée \(lien direct retiré du dépôt public\)/g)||[]).length,22);
+ const overlay=JSON.parse(f('coordination/work/c07/developpeuse/master-v1/overlay-reviewed.json'));
+ assert.equal(overlay.med.blob,'509b7961210e71650be293ceba03cac1224ae5ef');
+ assert.equal(overlay.med.coverage,219);
+});

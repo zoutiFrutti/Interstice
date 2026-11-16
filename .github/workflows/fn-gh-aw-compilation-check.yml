@@ -1,0 +1,47 @@
+name: FN Observatrice - compilation GH-AW candidate sans IA
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/fn-observatrice-pilote.md'
+      - '.github/workflows/fn-gh-aw-compilation-check.yml'
+      - 'coordination/observatrice/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fn-observatrice-gh-aw-compile-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  compiler-sans-ia:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Checkout sans credentials persistants
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Controle statique local (aucun modele)
+        run: python3 coordination/observatrice/controle_pilote_gh_aw.py
+      - name: Installer seulement l'extension officielle GH-AW
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh extension install github/gh-aw
+      - name: Compiler GH-AW en local (pas d'appel de modele)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh aw compile fn-observatrice-pilote --no-emit
+          gh aw compile fn-observatrice-pilote
+          test -s .github/workflows/fn-observatrice-pilote.lock.yml
+      - name: Sauvegarder le lock compile comme artefact de CI seulement
+        uses: actions/upload-artifact@v4
+        with:
+          name: fn-observatrice-gh-aw-lock-non-active
+          path: .github/workflows/fn-observatrice-pilote.lock.yml
+          if-no-files-found: error
+          retention-days: 7

@@ -1,0 +1,2106 @@
+{
+  "base_commit": "7344591fa7f0f4f6951ea273525039cf2cb9982a",
+  "tree_sha": "205dfa683658589500b6d4e05cf1245002e0dcd7",
+  "blobs": [
+    {
+      "path": ".github/workflows/demo-agents-c11.yml",
+      "sha": "39dea5519c6b0cc514d228ce89ad57b0e8832c8d"
+    },
+    {
+      "path": ".github/workflows/entree-faille-candidate.yml",
+      "sha": "853fa46fbef8618baef27300e8a23262d4fbf4cb"
+    },
+    {
+      "path": ".github/workflows/facteur-messagerie-c10.yml",
+      "sha": "da72dbb32b0363971390aa6e13b29b25b5f871a3"
+    },
+    {
+      "path": ".github/workflows/graphiste-integration-20261102.yml",
+      "sha": "dec080cab993b2c4b87c717fb66cdddfdb69355b"
+    },
+    {
+      "path": ".github/workflows/lancer-mission-c11.yml",
+      "sha": "54df47306e3b663c699a03463fd5ac6948139944"
+    },
+    {
+      "path": ".github/workflows/lectrice-agent-c12.yml",
+      "sha": "df199f0056c0780c992da55c0378470f2374256b"
+    },
+    {
+      "path": ".github/workflows/pont-relieuse-lectrice-c12.yml",
+      "sha": "a18e263972743a374e49fb07d9521efa9ace91b2"
+    },
+    {
+      "path": ".github/workflows/r1-frontend-candidate.yml",
+      "sha": "6f7ff41e2d03e21370a124d0098b4b44257e5770"
+    },
+    {
+      "path": ".github/workflows/r2-faille-navigation.yml",
+      "sha": "9375e093b23e917ff23d6d717b2d5f4a14b68f7c"
+    },
+    {
+      "path": ".github/workflows/r2-graphiste-convergence.yml",
+      "sha": "3d505123fbc7973c60d353c59d791e652317de4f"
+    },
+    {
+      "path": ".github/workflows/r4-dev-cloture.yml",
+      "sha": "c3a0d025b606c3f0dec5028b1ee446ac82df970a"
+    },
+    {
+      "path": ".github/workflows/r4-relieuse-convergence.yml",
+      "sha": "4027fb5da5da3720b5bd1ddecbea5e4c4cd37ce8"
+    },
+    {
+      "path": ".github/workflows/r6-identite-remplacement.yml",
+      "sha": "88495f770fdb86c5935fee2e11b51bdbf6c4bada"
+    },
+    {
+      "path": ".github/workflows/r6-int01-convergence.yml",
+      "sha": "d6f3df0c9853405b8d4e5f80edf8661b1e134217"
+    },
+    {
+      "path": ".github/workflows/wiki-markdown-inventory.yml",
+      "sha": "6cd7146bbd8712b2796b70684f5c2f063f739678"
+    },
+    {
+      "path": ".github/workflows/wiki-review-queue.yml",
+      "sha": "a113111d0d41e15903850f8530d9c93330b0ac1f"
+    },
+    {
+      "path": "METHODE_EDITORIALE_SOURCES.md",
+      "sha": "029eba410d20d54fb91ced562bcbde6fdff317bf"
+    },
+    {
+      "path": "README.md",
+      "sha": "c3506bf3051122257eac2ed6ab11619308c20b34"
+    },
+    {
+      "path": "TESTS_CIRCUIT_CONTRIBUTIONS_WIKI.md",
+      "sha": "659330d0e03f4d4fd7e6ac3b591a51a1ef2c3aef"
+    },
+    {
+      "path": "WIKI_APPROFONDISSEMENTS.md",
+      "sha": "adef393fedbe3b29c6998b79339d2d29e27ee046"
+    },
+    {
+      "path": "apercu-graphiste-35/.github/workflows/lancement-v0-smoke.yml",
+      "sha": "2fb882e063a1ecd2983e674e53a836a1a1224177"
+    },
+    {
+      "path": "apercu-graphiste-35/.github/workflows/wiki-markdown-inventory.yml",
+      "sha": "6cd7146bbd8712b2796b70684f5c2f063f739678"
+    },
+    {
+      "path": "apercu-graphiste-35/.github/workflows/wiki-review-queue.yml",
+      "sha": "a113111d0d41e15903850f8530d9c93330b0ac1f"
+    },
+    {
+      "path": "apercu-graphiste-35/METHODE_EDITORIALE_SOURCES.md",
+      "sha": "029eba410d20d54fb91ced562bcbde6fdff317bf"
+    },
+    {
+      "path": "apercu-graphiste-35/README.md",
+      "sha": "c3506bf3051122257eac2ed6ab11619308c20b34"
+    },
+    {
+      "path": "apercu-graphiste-35/TESTS_CIRCUIT_CONTRIBUTIONS_WIKI.md",
+      "sha": "659330d0e03f4d4fd7e6ac3b591a51a1ef2c3aef"
+    },
+    {
+      "path": "apercu-graphiste-35/WIKI_APPROFONDISSEMENTS.md",
+      "sha": "adef393fedbe3b29c6998b79339d2d29e27ee046"
+    },
+    {
+      "path": "apercu-graphiste-35/assets/fonts/AtkinsonHyperlegibleNext-OFL.txt",
+      "sha": "88955733b80000358ef3e5521f3369b276e066a9"
+    },
+    {
+      "path": "apercu-graphiste-35/assets/fonts/BarlowCondensed-OFL.txt",
+      "sha": "2f22ba6ca4dbc12145ae40b14c3368f387cba0e2"
+    },
+    {
+      "path": "apercu-graphiste-35/assets/fonts/atkinson-next-latin-ext-variable.woff2",
+      "sha": "d2b4185e21f2db89ae40cea53740afe54cdbf4a7"
+    },
+    {
+      "path": "apercu-graphiste-35/assets/fonts/atkinson-next-latin-variable.woff2",
+      "sha": "a9ca4bd6ffda7092b397871cd3b5ad38a372046d"
+    },
+    {
+      "path": "apercu-graphiste-35/assets/fonts/barlow-condensed-latin-700.woff2",
+      "sha": "3726e9dccc00171c2b54534fc148d5dc5dcfddf7"
+    },
+    {
+      "path": "apercu-graphiste-35/assets/fonts/barlow-condensed-latin-ext-700.woff2",
+      "sha": "02f926eead439c496594e509794af3f417f63408"
+    },
+    {
+      "path": "apercu-graphiste-35/assets/logo-faille-noire.svg",
+      "sha": "c5d545a762e0ae205b235cea6d17e2ec51d2eff7"
+    },
+    {
+      "path": "apercu-graphiste-35/assets/logo-interstice.svg",
+      "sha": "7c863aa239462c82b5a5dbcf26e5981b9131b0e8"
+    },
+    {
+      "path": "apercu-graphiste-35/bibliotheque.html",
+      "sha": "79770c51a6f348768bbde26dc908d0d0326c0a94"
+    },
+    {
+      "path": "apercu-graphiste-35/charte-contributions-wiki.html",
+      "sha": "aea3ff5626a2e755fd88aff949d890e91fee4f08"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/DIAGNOSTIC_ECRITURE_2026-10-29.md",
+      "sha": "1861855e863fb02c93fbcc49225d358c6bcac57f"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/GRAPHISTE_TRANSMISSION_007_LANCEMENT_V0_2026-10-30.md",
+      "sha": "affcc100688251d58418e44b036af4f5f64f73ed"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/GRAPHISTE_TRANSMISSION_010_LISIBILITE_2026-10-30.md",
+      "sha": "20ef7bdc10ad368bde33e1a336d5b9a96a8aa79c"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/JOURNAL_COMMUN.md",
+      "sha": "c1bc396491b859aa1173c73cd60d4826027d0361"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/JURISTE_PASSE_20261029_V06.md",
+      "sha": "3b474f677998e25fa5c694ef2d47e96c2e2ffdb1"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/JURISTE_TRANSMISSION_CARTOGRAPHIE_2026-10-30.md",
+      "sha": "3f5008a37808c60dbabe4439842e346694bca0f7"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_ETUDE_24_RECOURS_MISE_EN_CAUSE_2026-10-29.md",
+      "sha": "c9509e1c82a27a08c85845596be90683513e9ae1"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_ETUDE_25_CAPTURE_MAJORITAIRE_2026-10-29.md",
+      "sha": "ac3ac4d401d6f1e4872c35165986742df80c6d59"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_ETUDE_26_PROTECTION_ET_DISSIDENCE_2026-10-29.md",
+      "sha": "fa8180b66ef8d9b6e1b6ea1ea936e5c4a010b4d0"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_ETUDE_27_JUSTICE_SANS_MOYENS_2026-10-29.md",
+      "sha": "f7b8acf31f880f1ed85afd70337f3570ea182075"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_ETUDE_28_MUTUALISATION_SANS_TUTELLE_2026-10-29.md",
+      "sha": "0a10bf089c627a4ee034cf16addc9eae932aabf4"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_ETUDE_31_PROUDHON_FEDERATION_2026-10-30.md",
+      "sha": "28be2bed24d09463201811122d24cd1f40d17f95"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_ETUDE_32_ANDRE_LEO_PROUDHON_2026-10-30.md",
+      "sha": "da7c743f95b59ff76196b841630dea7c3631ec7f"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_FN069_ARCHIVES_CROISEES_2026-10-29.md",
+      "sha": "31a4d3ce04da75a9ef9f6e42608e6cf0198011f0"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_FN069_FN009_LECTURE_CIBLEE_2026-10-29.md",
+      "sha": "483389cddc425b51ae5702074cf40a44c01bd15e"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/PENSEUR_MEDIATHEQUE_ETUDES_14_23_2026-10-29.md",
+      "sha": "6bbb55e57fc94bb34d2bf5f310e0bd2290519848"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/propositions/lecture-mies-illich-federici-20261029.md",
+      "sha": "c264c6be1b9ab6e0c818b204a0816544b00fdc55"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/propositions/lecture-pateman-arendt-goldman-federici.md",
+      "sha": "5930c9d649c9065631051e94d31cd0f051018f37"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/propositions/lecture-pateman-mills-contrat-domination.md",
+      "sha": "60b3f8729588cb0d4e7893fb4b002bd3be53e786"
+    },
+    {
+      "path": "apercu-graphiste-35/coordination/wiki-review-queue/fn069-penseur-archives-croisees-2026-10-29.json",
+      "sha": "7a459c749c1080ee868b52edbec19504561931e4"
+    },
+    {
+      "path": "apercu-graphiste-35/docs/AUDIT_CONTRIBUTIONS_SUPABASE_2026-10-29.md",
+      "sha": "20885cfd5bd149260a85bbe93084e3ac08ba6c9b"
+    },
+    {
+      "path": "apercu-graphiste-35/docs/CAS_PRATIQUES_PROTECTION_RECOURS_2026-10-29.md",
+      "sha": "bd53085f07fea5937075f3732c802034650ac6f4"
+    },
+    {
+      "path": "apercu-graphiste-35/docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md",
+      "sha": "02ec2d6ec433d463216feaf83fb3267c2b402b14"
+    },
+    {
+      "path": "apercu-graphiste-35/docs/NOTE_JURIDIQUE_PROTECTION_RECOURS_2026-10-29.md",
+      "sha": "ece3d859a0720975c8dd6a93a6ed9c7caf8af556"
+    },
+    {
+      "path": "apercu-graphiste-35/docs/proposals/wiki-document-handoffs-schema.sql",
+      "sha": "91ec688dc024d9c349ee1d8c3c9f983b6bbdb68f"
+    },
+    {
+      "path": "apercu-graphiste-35/docs/proposals/wiki-github-production-rpc.sql",
+      "sha": "8bfae0f11febf86a7b6c0dd8f6ab71d308a14460"
+    },
+    {
+      "path": "apercu-graphiste-35/docs/proposals/wiki-github-staging-schema.sql",
+      "sha": "c6a73cdf4e61be5ad8701424f053efef8369771f"
+    },
+    {
+      "path": "apercu-graphiste-35/docs/wiki-github-synchronisation.md",
+      "sha": "768ef2c7002b5419595cc2469ec284fc866218ee"
+    },
+    {
+      "path": "apercu-graphiste-35/habitat-dossier-dalo.html",
+      "sha": "e29256272f6b1b5de635e83d56bfb6c2ffebe861"
+    },
+    {
+      "path": "apercu-graphiste-35/habitat-dossier-foncier-solidaire.html",
+      "sha": "e407a78d3183a1e8b937212ddb0e30185ffac37f"
+    },
+    {
+      "path": "apercu-graphiste-35/habitat-dossier-friches.html",
+      "sha": "abeeb10546797c0486ae62d55eee217da6e97f95"
+    },
+    {
+      "path": "apercu-graphiste-35/habitat-dossier-gouvernance.html",
+      "sha": "7af4b0c99e5b72a2d81deb5eff37937de4ab2f0f"
+    },
+    {
+      "path": "apercu-graphiste-35/habitat-dossier-lieux-collectifs.html",
+      "sha": "ba7280d01fc817074e8aa9434e3c508a5a86bb0f"
+    },
+    {
+      "path": "apercu-graphiste-35/habitat-dossier-participatif.html",
+      "sha": "bb4aeabf3be3fd6dea7df178a64f18031417409b"
+    },
+    {
+      "path": "apercu-graphiste-35/index.html",
+      "sha": "87aa3aa012c2504d85cf0b4c9653c347592a6c24"
+    },
+    {
+      "path": "apercu-graphiste-35/manifeste-v2-5.html",
+      "sha": "bee432d2af61f09503736d40b0a00d6735872269"
+    },
+    {
+      "path": "apercu-graphiste-35/manifeste.html",
+      "sha": "160f2c400a21923c5cbc8ee29fa2ae8ed92d224d"
+    },
+    {
+      "path": "apercu-graphiste-35/moderation.html",
+      "sha": "149f2ededb2cfc376a90e7cb10a0b52d89f86a9f"
+    },
+    {
+      "path": "apercu-graphiste-35/moderation.js",
+      "sha": "bb6a24e1a49f73ab155feafa17fab5876d28d286"
+    },
+    {
+      "path": "apercu-graphiste-35/participer.html",
+      "sha": "1020048117edf56fef7968e0a92608e886ac5fa7"
+    },
+    {
+      "path": "apercu-graphiste-35/proposer-article.html",
+      "sha": "87ed25a91ea1cab4594cd8bb92ca651e5c582d5b"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md",
+      "sha": "b5d18b140dabd3cc457e3c5c46a3d30a3f719db6"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md",
+      "sha": "59b91eea144969ac28465b9605fa415543ed527a"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.3_2026-10-29.md",
+      "sha": "89b166658e53a190c73b52e54991d8cb6c3ab6c1"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md",
+      "sha": "853f78082e1d1dc146f29e4300a0673080e92537"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.5_TITRE_V_2026-10-29.md",
+      "sha": "9a140b1cee50357fea6fb2d2887bfd29abbb6f33"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_IX_2026-10-29.md",
+      "sha": "5ab483465d871215c68a228d2a546d20072c426e"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_IX_SUITE_2026-10-29.md",
+      "sha": "4f26e7a4179a71dd53e730064de828e96b3bf83a"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_VIII_2026-10-29.md",
+      "sha": "0a0199170a8554e97d309c9cc3174604dcc70790"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_VII_2026-10-29.md",
+      "sha": "5c0e414349989759c0583fa6676645ed49982d3e"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/ETAT_V06_JURISTE_20261029.md",
+      "sha": "322cc17095b010c2d7fcc6e35f09891d59465b8b"
+    },
+    {
+      "path": "apercu-graphiste-35/propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md",
+      "sha": "92baca30ffeadd109fe244df47cc99e8332f25ea"
+    },
+    {
+      "path": "apercu-graphiste-35/ressources-data.js",
+      "sha": "727901f17f51348488a211f9173993bec6445bbc"
+    },
+    {
+      "path": "apercu-graphiste-35/ressources.js",
+      "sha": "e9a2dafd93003c244c357433f14f3a7e421d6c86"
+    },
+    {
+      "path": "apercu-graphiste-35/revue-articles-wiki.html",
+      "sha": "85f3aaa73e4f451549e5483488e8657d2f6c925a"
+    },
+    {
+      "path": "apercu-graphiste-35/script.js",
+      "sha": "7cfc5fcf362f7246ca334a1f4bc6287fdedc4207"
+    },
+    {
+      "path": "apercu-graphiste-35/scripts/inventory-wiki-markdown.mjs",
+      "sha": "bee96056b37d1fe7c9738cc14a1d0a65ecc5d1d6"
+    },
+    {
+      "path": "apercu-graphiste-35/scripts/prepare-wiki-review-draft.mjs",
+      "sha": "37047e8385f20d5c3eab5a4d527ff5f493b891b8"
+    },
+    {
+      "path": "apercu-graphiste-35/scripts/reconcile-wiki-handoff.mjs",
+      "sha": "debd98f847ee66b98fb60d3e7a85626970533fd1"
+    },
+    {
+      "path": "apercu-graphiste-35/scripts/submit-wiki-inventory.mjs",
+      "sha": "b95bb8187dc2969d5c5b06ce2a6f3ea356617257"
+    },
+    {
+      "path": "apercu-graphiste-35/scripts/validate-wiki-review-queue.mjs",
+      "sha": "d70ef5e40d60a3b0a966c8144b0b6881d1994f53"
+    },
+    {
+      "path": "apercu-graphiste-35/squats-et-lieux-autonomes.html",
+      "sha": "9a0ed1ef0ab9e87f0c6a8fdb61af17a19ceac09c"
+    },
+    {
+      "path": "apercu-graphiste-35/style.css",
+      "sha": "16214149aa1716dd791f3e307d27e2c1560e84a4"
+    },
+    {
+      "path": "apercu-graphiste-35/supabase/functions/github-wiki-ingest/index.ts",
+      "sha": "889b36d18712eff67e028736ec0c06f24a45f51a"
+    },
+    {
+      "path": "apercu-graphiste-35/tests/lancement-v0-smoke.mjs",
+      "sha": "7ec07df9a5d39bcb7c348ebad9562c7c70d42120"
+    },
+    {
+      "path": "apercu-graphiste-35/tests/sql/wiki-handoff-concurrency.sh",
+      "sha": "f9404069c50209fd1d6c56236d80902d214dcbf5"
+    },
+    {
+      "path": "apercu-graphiste-35/tests/sql/wiki-handoff-integration.sql",
+      "sha": "f336f739ec20236591b91f0ff1d32b408418aa96"
+    },
+    {
+      "path": "apercu-graphiste-35/tests/wiki-handoff-idempotency.test.mjs",
+      "sha": "568b5abaff4ed87d1c69f41c776b986d086f1944"
+    },
+    {
+      "path": "apercu-graphiste-35/tests/wiki-handoff-sql-contract.test.mjs",
+      "sha": "c70ead6f553af079a252fa9cfd61810db29b7041"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-antifascisme-histoire-et-mecanismes.html",
+      "sha": "6910542c3f29fb32730296e902bf71f77b2330a6"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-antiracisme-histoires-droits.html",
+      "sha": "6c1081910a0499e2c9646da1f3d75218dcbc2ee8"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-association-collegiale.html",
+      "sha": "b88bf26d1a06287ab89a7b92351c896a4e574a2a"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-autonomie-materielle-savoir-faire.html",
+      "sha": "6c1a93727bc9e63e9d076b6a9a0a1abfb004f2eb"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-capitalisme-classes-travail.html",
+      "sha": "db754eed38c3e02104418800366cae31e90d183c"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-culture-creation-acces-art.html",
+      "sha": "4a71182424035d1696cc9d2b948c3b948fb91923"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-decision-collective.html",
+      "sha": "e09926e74720a2b89ae78065544805c169cb3776"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-ecologie-sociale-environnement.html",
+      "sha": "dd6e149ad8d44b5db5180a800730617b116369f1"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-education-enfance-protection.html",
+      "sha": "931fc198127b9073b3ae513f63bf2dcdaaf177e1"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-egalite-fiches.html",
+      "sha": "083fbae5c37a87b32fd5c86c3da350c425f64c85"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-egalite-genres-inclusivite.html",
+      "sha": "9ca5e5d2e1e83dfeed3669034c48e9ddc86b0646"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-feminismes-histoire-egalite.html",
+      "sha": "69789f5f665cdae4d85061293c9ecb2dcb13c919"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-financements-culture-spectacle.html",
+      "sha": "030b75d277e09c3bc7e971d90d8ca5f1c18e7329"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-frontieres-migrations-colonialisme.html",
+      "sha": "eefa8c327980c6747dca58e14c5b9c9f61e895b9"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-handicap-validisme-neurodiversite.html",
+      "sha": "ac20430979cc5d741d00867ca0fcfb4b70ea19ec"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-justice-prisons-abolitionnisme.html",
+      "sha": "165d2f325fb98cd6680db3da66e71f2b5068d1f3"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "sha": "206f4d999dcfe12bb5d487830ad7cf02edf66780"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-liberte-numerique-ia-surveillance.html",
+      "sha": "cc3245d9497fbe6130dd7e5c631ca387e906cdb3"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-logement-habitat-droit-ville.html",
+      "sha": "2e85a0a0da0e4648eb14fdc46080d754f0117f7f"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-patriarcat-histoire-mecanismes.html",
+      "sha": "0fc8ab4206b930b6100efa085b790e16d4429e45"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-police-deces-memoire.html",
+      "sha": "562b8897552216ffcbdb6e968a76aa6e6b1b8e78"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-politique-institutions-regimes.html",
+      "sha": "86facb7f05895d8234086d2fcee651d4e08bf486"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-sante-psychiatrie-autonomie-soins.html",
+      "sha": "4cf6f1f1cf209c7617bbf7a6e86f0e5c362e57f5"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "sha": "4aa9dc92b5d864aeee3424d2a77f99abc0690afc"
+    },
+    {
+      "path": "apercu-graphiste-35/wiki.html",
+      "sha": "9adbf3ecf24a7ebd84c80f2a6da400be0b9e66c5"
+    },
+    {
+      "path": "assets/archives/logo-faille-noire-pre-r4.svg",
+      "sha": "c5d545a762e0ae205b235cea6d17e2ec51d2eff7"
+    },
+    {
+      "path": "assets/archives/logo-faille-noire-pre-r6.svg",
+      "sha": "c5d545a762e0ae205b235cea6d17e2ec51d2eff7"
+    },
+    {
+      "path": "assets/archives/logo-interstice-pre-r4.svg",
+      "sha": "7c863aa239462c82b5a5dbcf26e5981b9131b0e8"
+    },
+    {
+      "path": "assets/archives/logo-interstice-pre-r6.svg",
+      "sha": "7c863aa239462c82b5a5dbcf26e5981b9131b0e8"
+    },
+    {
+      "path": "assets/candidats/logo-faille-noire-r4.svg",
+      "sha": "ec068bdca1999bb132380d6182341e863ef4df65"
+    },
+    {
+      "path": "assets/candidats/logo-interstice-r4.svg",
+      "sha": "a577f915a61104d17712517ebfa55a3a0949cfb1"
+    },
+    {
+      "path": "assets/entree-faille-candidate.css",
+      "sha": "6408a0060b06d6959c4223825d213dd1fcc7f56a"
+    },
+    {
+      "path": "assets/faille-navigation.css",
+      "sha": "ef2ca3a0ff3ef3c9be681acc9f58a1cd38c16295"
+    },
+    {
+      "path": "assets/faille-navigation.js",
+      "sha": "739e01e3d4ab2afafa1ce19e7e89d49c191b5591"
+    },
+    {
+      "path": "assets/graphiste-dev-convergence.css",
+      "sha": "9e6f04b4cf6524138a316bd2fc1ec958b3f41bef"
+    },
+    {
+      "path": "assets/identite/r6/candidats/interstice-base-commune-r6.svg",
+      "sha": "dfce62b9fc3a064c2a22c1bad047e200f538f8b4"
+    },
+    {
+      "path": "assets/identite/r6/candidats/interstice-ramifications-originales-gra02.svg",
+      "sha": "1e19320bcedb445175427dba92b229b7ee10d651"
+    },
+    {
+      "path": "assets/identite/r6/sources/interstice-reference-visuelle-zout-original.svg",
+      "sha": "a8646e604fd088cb6ded5fde0ec5b77b790f9f2d"
+    },
+    {
+      "path": "assets/identite/r6/sources/interstice-retrace-zout-original.svg",
+      "sha": "43598c91cf69e0144497672881ba7a2be3eb081b"
+    },
+    {
+      "path": "assets/identite/r6/sources/logo-faille-noire-zout-original.svg",
+      "sha": "72695015804e76abc0f61369ab0da7ea540ba1a2"
+    },
+    {
+      "path": "assets/integration-navigation.css",
+      "sha": "65a3da2f77c5aae19cf9aa2d94c90c915bbc7c9f"
+    },
+    {
+      "path": "assets/logo-faille-noire.svg",
+      "sha": "72695015804e76abc0f61369ab0da7ea540ba1a2"
+    },
+    {
+      "path": "assets/logo-interstice.svg",
+      "sha": "1e19320bcedb445175427dba92b229b7ee10d651"
+    },
+    {
+      "path": "atlas.html",
+      "sha": "072c2e10316b26bc3129616184d82f2f0b601b87"
+    },
+    {
+      "path": "bibliotheque.html",
+      "sha": "4d59e1522b91183da17dd2f7e8341cc45647c0f2"
+    },
+    {
+      "path": "charte-contributions-wiki.html",
+      "sha": "aea3ff5626a2e755fd88aff949d890e91fee4f08"
+    },
+    {
+      "path": "coordination/ANARCHITECTE_CONTRAT_CARTES_013_2026-10-30.md",
+      "sha": "9794e3cd3d45274f39d41df14ee96aad26db9265"
+    },
+    {
+      "path": "coordination/ANARCHITECTE_CONTRAT_INTEGRATION_FONDS_ECOLOGIQUE_2026-10-31.md",
+      "sha": "41fca238fb74815112ddebdf3431c6cb8c940e45"
+    },
+    {
+      "path": "coordination/ANARCHITECTE_CONTRAT_TECHNIQUE_ACCES_DROITS_2026-10-31.md",
+      "sha": "3d8221e3b0ad0e8a9eb08d0b74fc11440bd785b8"
+    },
+    {
+      "path": "coordination/ANARCHITECTE_CRITERES_ACCEPTATION_39_58_2026-10-30.md",
+      "sha": "2bdf55898ec3ac5761c31dedceb673535323e9ed"
+    },
+    {
+      "path": "coordination/ANARCHITECTE_REVUE_V0_018B_2026-10-31.md",
+      "sha": "7cf9f4bf86960e9b3be5361fcc8907741d035792"
+    },
+    {
+      "path": "coordination/ANARCHITECTE_TRANSMISSION_014_TESTS_CARTES_2026-10-30.md",
+      "sha": "b3d51e66f8ea71e7368f71047da8fa7db9c8ee41"
+    },
+    {
+      "path": "coordination/DIAGNOSTIC_ECRITURE_2026-10-29.md",
+      "sha": "1861855e863fb02c93fbcc49225d358c6bcac57f"
+    },
+    {
+      "path": "coordination/JOURNAL_COMMUN.md",
+      "sha": "161fe5e4ae8127cd1a4bd6284d3d68100b03ebeb"
+    },
+    {
+      "path": "coordination/JURISTE_PASSE_20261029_V06.md",
+      "sha": "3b474f677998e25fa5c694ef2d47e96c2e2ffdb1"
+    },
+    {
+      "path": "coordination/JURISTE_TRANSMISSION_CARTOGRAPHIE_2026-10-30.md",
+      "sha": "2759bfd85533e92f7c85984970abe15d32cc990e"
+    },
+    {
+      "path": "coordination/JURISTE_TRANSMISSION_COMMUNE_ACCES_AUX_DROITS_2026-10-31.md",
+      "sha": "3b4a53e2ed35e07f84f4c8d9b833a2271f07ef5a"
+    },
+    {
+      "path": "coordination/PENSEUR_AVIS_CONTRADICTOIRE_WIKI_CANDIDATS_01_02_2026-10-30.md",
+      "sha": "08066c1902c24d0fbc32d0557e106badf27165e8"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDES_39_58_CYCLE_AUTONOMIE_COMMUNS_2026-10-30.md",
+      "sha": "2e42689e8f5ea806671183b8dc720e00cb13fb60"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDES_60_79_VINGT_PASSES_CARTES_COMMUNS_POSSIBLES_2026-10-30.md",
+      "sha": "d08a17c2ea771fcb3700fc4bbfbe5222ee1696a9"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_24_RECOURS_MISE_EN_CAUSE_2026-10-29.md",
+      "sha": "c9509e1c82a27a08c85845596be90683513e9ae1"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_25_CAPTURE_MAJORITAIRE_2026-10-29.md",
+      "sha": "ac3ac4d401d6f1e4872c35165986742df80c6d59"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_26_PROTECTION_ET_DISSIDENCE_2026-10-29.md",
+      "sha": "fa8180b66ef8d9b6e1b6ea1ea936e5c4a010b4d0"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_27_JUSTICE_SANS_MOYENS_2026-10-29.md",
+      "sha": "f7b8acf31f880f1ed85afd70337f3570ea182075"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_28_MUTUALISATION_SANS_TUTELLE_2026-10-29.md",
+      "sha": "0a10bf089c627a4ee034cf16addc9eae932aabf4"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_31_PROUDHON_FEDERATION_2026-10-30.md",
+      "sha": "28be2bed24d09463201811122d24cd1f40d17f95"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_32_ANDRE_LEO_PROUDHON_2026-10-30.md",
+      "sha": "da7c743f95b59ff76196b841630dea7c3631ec7f"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_37_BESOIN_ACTION_COMMUNE_2026-10-30.md",
+      "sha": "3ece597b03d1eab8621c2a707238e4bd1d242417"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_38_POUVOIR_INVISIBLE_INTERMEDIATION_2026-10-30.md",
+      "sha": "512900f2fe7fee6cd7be4091249f8b366e720c9f"
+    },
+    {
+      "path": "coordination/PENSEUR_ETUDE_59_PROTOCOLE_ARBITRAGE_RESSOURCES_RARES_2026-10-30.md",
+      "sha": "e864d412fec739a132a471042f48c4bdb2d967d4"
+    },
+    {
+      "path": "coordination/PENSEUR_FEUILLE_DE_ROUTE_ETUDES_39_58_2026-10-30.md",
+      "sha": "a20570941206479a1b11f50749cc2a9bc89e4a74"
+    },
+    {
+      "path": "coordination/PENSEUR_FN069_ARCHIVES_CROISEES_2026-10-29.md",
+      "sha": "31a4d3ce04da75a9ef9f6e42608e6cf0198011f0"
+    },
+    {
+      "path": "coordination/PENSEUR_FN069_FN009_LECTURE_CIBLEE_2026-10-29.md",
+      "sha": "483389cddc425b51ae5702074cf40a44c01bd15e"
+    },
+    {
+      "path": "coordination/PENSEUR_MEDIATHEQUE_ETUDES_14_23_2026-10-29.md",
+      "sha": "6bbb55e57fc94bb34d2bf5f310e0bd2290519848"
+    },
+    {
+      "path": "coordination/PENSEUR_RELECTURE_CRITIQUE_ETUDES_39_58_PASSES_01_10_2026-10-30.md",
+      "sha": "543ef54b31e46b49bdd718397d934939055521ae"
+    },
+    {
+      "path": "coordination/PENSEUR_TRANSMISSION_013_DIX_PASSES_CARTES_COMMUNS_POSSIBLES_2026-10-30.md",
+      "sha": "5f97bcc75d19455706b4968ab5eabb542aa25475"
+    },
+    {
+      "path": "coordination/PENSEUSE_TRANSMISSION_015_30_PASSES_CRITIQUES_APPLIQUEES_2026-10-30.md",
+      "sha": "a8418b9954989dd64621b2cf0f0b6d23ff84b489"
+    },
+    {
+      "path": "coordination/PROPOSITION_MEDIATHEQUE_VIVANTE_SELECTION_HEBDOMADAIRE_2026-10-30.md",
+      "sha": "a7881461182034fd09b9dc90ffd448d42b827a10"
+    },
+    {
+      "path": "coordination/RELIEUR_CLARIFICATION_ORGANISATION_2026-10-30.md",
+      "sha": "fb1f827d59372d13da812c307833f0bc59a58bb4"
+    },
+    {
+      "path": "coordination/RELIEUR_FEUILLE_DE_ROUTE_PUBLICATION_WIKI_V0_2026-10-30.md",
+      "sha": "2fee2cb1ee7e1a2b9bd3ece299ca122f96789ba3"
+    },
+    {
+      "path": "coordination/RELIEUR_SUIVI_ETUDES_39_58_2026-10-30.md",
+      "sha": "3bc733d2391a894a66a2d583055ae5ef2e346309"
+    },
+    {
+      "path": "coordination/RELIEUR_TRANSMISSION_013_CARTES_COMMUNS_POSSIBLES_PRIORITES_2026-10-30.md",
+      "sha": "57d2f1a54b91356b9d039d9d3c9cd4b3c55fb440"
+    },
+    {
+      "path": "coordination/RELIEUR_TRANSMISSION_014_REPRISE_20_PASSES_2026-10-30.md",
+      "sha": "d68c5c2f2742931923769140d3913e3decb98191"
+    },
+    {
+      "path": "coordination/RELIEUSE_ARCHITECTURE_MESSAGERIE_GITHUB_ATELIERS_V0_2026-10-30.md",
+      "sha": "6da55312df64eebf96b910cc83a2d220156e3d95"
+    },
+    {
+      "path": "coordination/RELIEUSE_INTERFACE_CHATGPT.md",
+      "sha": "781c454d256f5cc437533cfc86f51df22943aa0a"
+    },
+    {
+      "path": "coordination/RELIEUSE_TRANSMISSION_015_CYCLE_30_PASSES_ET_ORCHESTRATION_2026-10-30.md",
+      "sha": "62ec43c7a388510fe7dc1ff69755a59d628a77bb"
+    },
+    {
+      "path": "coordination/TISSEUSE_CADRAGE_COOPERATIONS_ANNUAIRE_2026-10-30.md",
+      "sha": "81bacb34f216d45c20a27dd37953cccda52e93e7"
+    },
+    {
+      "path": "coordination/TIS_001_PREPARATION_BILAN_PARTIEL_2026-10-30.md",
+      "sha": "c448c8ac48d177e686b9d475ae568f918021ab12"
+    },
+    {
+      "path": "coordination/agents/README.md",
+      "sha": "c33f0b42683a89b27095d30853c4ade735211670"
+    },
+    {
+      "path": "coordination/agents/accuses_verifies_c10.json",
+      "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c"
+    },
+    {
+      "path": "coordination/agents/creer_mission_c11.py",
+      "sha": "1e8516c31b3c89ffb0cd5a4fefc067d5b685e168"
+    },
+    {
+      "path": "coordination/agents/demande_relieuse_c11.py",
+      "sha": "a963a276c91b68b13025601ded79afe8e81019f8"
+    },
+    {
+      "path": "coordination/agents/demo_c11.py",
+      "sha": "788d1fc771cb35e36356809613fc21e3691d78b1"
+    },
+    {
+      "path": "coordination/agents/exemple_demande_relieuse_c11.json",
+      "sha": "d2fb9f0550571a4acf4d06b47cc4aed84c1e9219"
+    },
+    {
+      "path": "coordination/agents/exemple_file_missions_c11.json",
+      "sha": "a2d758092edf6631170a48411864fea718a9f9cc"
+    },
+    {
+      "path": "coordination/agents/exemple_mission_c11.json",
+      "sha": "f4938aff9e3e4c3ce7d238ef6e72a98f0c225e60"
+    },
+    {
+      "path": "coordination/agents/exemple_texte_lectrice_c12.txt",
+      "sha": "8afe106250e57d35546056d91cc7657d28476cf1"
+    },
+    {
+      "path": "coordination/agents/index_messagerie_c11.py",
+      "sha": "9e5c93b7728fcf8260b53dc9ee32995feb94dbb7"
+    },
+    {
+      "path": "coordination/agents/lectrice_agent_c12.py",
+      "sha": "4fc240e60c3683377adc0b21cd6ff084ac1d458f"
+    },
+    {
+      "path": "coordination/agents/mission_queue_c11.py",
+      "sha": "5b63aaf255b12c13570f23e94f0e89c5e5b816a7"
+    },
+    {
+      "path": "coordination/agents/pont_relieuse_c12.py",
+      "sha": "ad8e4622f5d324af7cfa5879ca4bd65f411507be"
+    },
+    {
+      "path": "coordination/agents/rapport_c11.py",
+      "sha": "c2b018004e6f10eb4959a74ba4d4ccc02107bbb4"
+    },
+    {
+      "path": "coordination/agents/rapprochement_c11.py",
+      "sha": "8805a024a25aae1616d7f4c8641c6275d876dded"
+    },
+    {
+      "path": "coordination/agents/tableau_relieuse_c11.py",
+      "sha": "d7267551b711c1db94a37684f1eade2f949ea5f8"
+    },
+    {
+      "path": "coordination/agents/test_creer_mission_c11.py",
+      "sha": "a43a51fdbe5643faadd2dea46bacdcad707bdaa1"
+    },
+    {
+      "path": "coordination/agents/test_demande_relieuse_c11.py",
+      "sha": "9b47c59df546548450c9803eb9fc1bd4d68d1007"
+    },
+    {
+      "path": "coordination/agents/test_demo_c11.py",
+      "sha": "fe177bf488dd6fec215913f430f0a01c8549f5e1"
+    },
+    {
+      "path": "coordination/agents/test_index_messagerie_c11.py",
+      "sha": "8aa5bf924b8a0a5fd663834e619f83ca8eeac5f0"
+    },
+    {
+      "path": "coordination/agents/test_lectrice_agent_c12.py",
+      "sha": "85e00ca1ff235a320c316c8571e91c077fb907e4"
+    },
+    {
+      "path": "coordination/agents/test_mission_queue_c11.py",
+      "sha": "87afe00e5c817af0e6d7421412bccd293359e6b2"
+    },
+    {
+      "path": "coordination/agents/test_pont_relieuse_c12.py",
+      "sha": "23a00c9cc276130614252ca8c82b72301e994e8d"
+    },
+    {
+      "path": "coordination/agents/test_rapport_c11.py",
+      "sha": "69e64daad3cceb5a57fe28e3f5633b89e7663fb4"
+    },
+    {
+      "path": "coordination/agents/test_rapprochement_c11.py",
+      "sha": "d8a88e631dfd20f0a63efdfbb8f36c597d936c08"
+    },
+    {
+      "path": "coordination/agents/test_tableau_relieuse_c11.py",
+      "sha": "82b5e13a813d2fcc3f952175cee532d971bfab5b"
+    },
+    {
+      "path": "coordination/ateliers/REVUE_17_ATELIERS_C10_2026-11-01.md",
+      "sha": "33e06044fb44cc14e80edf334091eff90140a08f"
+    },
+    {
+      "path": "coordination/ateliers/rapports/tisseuse/015.md",
+      "sha": "95d830ace60246a5d95835051004ebf82835ba59"
+    },
+    {
+      "path": "coordination/ateliers/rapports/tisseuse/ACCES_AUX_DROITS_2026-10-31.md",
+      "sha": "910a450a2c5d0afb7a7db9abc583912f7b31c065"
+    },
+    {
+      "path": "coordination/ateliers/rapports/tisseuse/BRETAGNE_NANTES_2026-10-31.md",
+      "sha": "53f88001d8bf41c80d30e94590ca7b22e72e70c8"
+    },
+    {
+      "path": "coordination/ateliers/vigie/DECISION_INTEGRATION_2026-11-01.md",
+      "sha": "5c421c330d3f3a6deb2e313dedec814a6d51fc2c"
+    },
+    {
+      "path": "coordination/audits/2026-11-01_CYCLE8_AUDIT_TRANSVERSAL_17_ATELIERS.md",
+      "sha": "bd691d9ea9695e2ef385660eda3eaa0c2fbdd39c"
+    },
+    {
+      "path": "coordination/audits/C10_ANALYSE_2026-11-01_PASSE_02.md",
+      "sha": "13be43f86bcc8f0bf44b077692bbc10fed72c5f5"
+    },
+    {
+      "path": "coordination/audits/C10_ANALYSE_2026-11-01_PASSE_03.md",
+      "sha": "ca8a5175203427d3e2c6ffa359c23b7b22a0177a"
+    },
+    {
+      "path": "coordination/audits/C10_ANALYSE_RECEPTIONS_2026-11-01_PASSE_05.md",
+      "sha": "98b241b02c2b8d68dfac2589f71322603fd16522"
+    },
+    {
+      "path": "coordination/audits/C10_MESSAGERIE_ANTI_BOITE_VIDE_2026-11-01.md",
+      "sha": "0bb9616d9e284a5e37c37d914187f9c53801c8a7"
+    },
+    {
+      "path": "coordination/cycle10/AUDIT_REPRISE_TRANSVERSALE_PASSAGES_VIGIE_2026-11-02.md",
+      "sha": "18cd8ae9e8ab71a47ad0365622478b9e0623e80d"
+    },
+    {
+      "path": "coordination/cycle10/AXES_TRANSVERSAUX_ARCHITECTURE_COMMUNE_2026-11-02.md",
+      "sha": "136164d5ca7e0cfae390e0bb5696fc444b235831"
+    },
+    {
+      "path": "coordination/cycle10/AXES_TRANSVERSAUX_AUDIT_EXISTANT_2026-11-02.md",
+      "sha": "52cbd3945ad259da43db37500e7d3b8e4610c6c4"
+    },
+    {
+      "path": "coordination/cycle10/AXES_TRANSVERSAUX_FEUILLE_ROUTE_ARBITRAGES_2026-11-02.md",
+      "sha": "17eaf1bf44f98300b3db36b84f1b83be24a2da3b"
+    },
+    {
+      "path": "coordination/cycle10/CHANTIER_PASSAGES_INTERSTICE_P1_2026-11-02.md",
+      "sha": "3a4dfef77a22f7aedc96f87e4af8462ee5af7eae"
+    },
+    {
+      "path": "coordination/cycle10/PASSAGES_DIRECTION_LOGO_CARTOGRAPHIE_2026-11-02.md",
+      "sha": "7060005e92c09bccf2b480e42915d708b4fcf2a9"
+    },
+    {
+      "path": "coordination/cycle10/PROTOCOLE_REGISTRE_OUVERTURE_C10_2026-11-01.md",
+      "sha": "20f9e4364e25c7f62865635d3b4825d205004631"
+    },
+    {
+      "path": "coordination/cycle10/REGISTRE_CLOTURE_PROVISOIRE_C10_2026-11-01.md",
+      "sha": "97c693488d39948600310e68e5b46fda61be0d28"
+    },
+    {
+      "path": "coordination/cycle10/RELIEUSE_REPRISE_PREUVES_2026-11-02.md",
+      "sha": "81360dac6466e73c9e0ddc060f6f4cd226587fce"
+    },
+    {
+      "path": "coordination/cycle8/DOSSIER_DECISIONS_ZOUT_2026-11-01.md",
+      "sha": "5d28caad895d8e7f2ff9fcdb1187da17d943f85e"
+    },
+    {
+      "path": "coordination/cycle8/ETAT_INTEGRATION_ET_TESTS_2026-11-01.md",
+      "sha": "7ee93c55ad05ed44d731cf9fcefd71a182ddb2fc"
+    },
+    {
+      "path": "coordination/cycle9/2026-11-01_BILAN_CYCLE8_ET_MANDATS_CYCLE9.md",
+      "sha": "d4ffbdb78cd4f5ad472d37309a01378af3465d94"
+    },
+    {
+      "path": "coordination/cycle9/DOSSIER_DECISIONS_ZOUT_C9_2026-11-01.md",
+      "sha": "a7d7fc8924318f5e898cef9c725ad4b79f76a39f"
+    },
+    {
+      "path": "coordination/cycle9/REGISTRE_UNIQUE_C9_2026-11-01.md",
+      "sha": "c5756284686ce0720894d587ceac637a265b343a"
+    },
+    {
+      "path": "coordination/cycle9/TABLEAU_AVANCEMENT_ET_DEPENDANCES_C9_2026-11-01.md",
+      "sha": "df19b10500b3b1964279f12123171be4a1fd238f"
+    },
+    {
+      "path": "coordination/integration/2026-11-02_ASSEMBLAGE_GRAPHISTE_DEV_PASSE1.md",
+      "sha": "fea4ff0ff97317724a8c536c9d4aaebab8bd88a2"
+    },
+    {
+      "path": "coordination/integration/2026-11-02_R4_REL_CONVERGENCE_ET_ROLLBACK.md",
+      "sha": "84bd876b19cbd2707fb898cd1941c5d9ef4efae1"
+    },
+    {
+      "path": "coordination/integration/2026-11-02_R4_REL_FINAL_TRANSITION_R5.md",
+      "sha": "e64e8e379029c628db1cd41e96ab558d6fe3e43f"
+    },
+    {
+      "path": "coordination/integration/2026-11-02_R5_PREINVENTAIRE_BRANCHES.md",
+      "sha": "fa8b8d97552bff240747477b4c2da4483a9a8853"
+    },
+    {
+      "path": "coordination/integration/2026-11-03_R4_CLOTURE_TECHNIQUE_CONDITIONNELLE.md",
+      "sha": "39519c14f31ad95125474fd77ab88488f65b532e"
+    },
+    {
+      "path": "coordination/journaux/C10_CONTINUE_2026-11-01_PASSE_04.md",
+      "sha": "e11095f3588e3d2fa6ed8e2dc2f45d5f30277757"
+    },
+    {
+      "path": "coordination/journaux/CYCLE10.md",
+      "sha": "543422483e45eed5826df68a9b79ac05dc8f993a"
+    },
+    {
+      "path": "coordination/mediatheque-selection-018-A.json",
+      "sha": "82eb2f84eeec01292f0eadf0bb60448dad65c7d1"
+    },
+    {
+      "path": "coordination/mediatheque/DROIT-001_BIBLIO_MANIFESTATIONS_CONTROLES_GAV_2026-10-31.md",
+      "sha": "1657e925bc60d52456ecf02532cd1b7e0eb7b465"
+    },
+    {
+      "path": "coordination/mediatheque/DROIT-002_BIBLIO_LOGEMENT_EXPULSIONS_AIDES_2026-10-31.md",
+      "sha": "4d0f4f757d1ab23ac8b69f2a11a69ee61dec8106"
+    },
+    {
+      "path": "coordination/messagerie/ARCHITECTURE_AGENTS_CLOUD_C11.md",
+      "sha": "0ea1f9ba5d78a583fc0c3bb3a84c16f251d8b626"
+    },
+    {
+      "path": "coordination/messagerie/BUDGET_AGENTS_CLOUD_C11.md",
+      "sha": "86f24c0f851a6398cf6a5ba678ed7cc7e810aced"
+    },
+    {
+      "path": "coordination/messagerie/CONTROLE_C10_PASSE08.md",
+      "sha": "83165a81563956a62550270ec80c602420ac19c7"
+    },
+    {
+      "path": "coordination/messagerie/DEPENDANCES_C10.md",
+      "sha": "30f2c0cc6a027e9b4708c1989a5028864e29c9ed"
+    },
+    {
+      "path": "coordination/messagerie/FACTEUR_AUTOMATIQUE_C10.md",
+      "sha": "827c26b37baf7641aad03c3eeae435ef1fc4470b"
+    },
+    {
+      "path": "coordination/messagerie/MESSAGES_C10.md",
+      "sha": "291ac1b38086df535b62ababc92278017123bb30"
+    },
+    {
+      "path": "coordination/messagerie/ORDRE_RELANCE_C10_2026-11-01.md",
+      "sha": "fb16661c7ef1ea973595abfd6a69365f0bcd8705"
+    },
+    {
+      "path": "coordination/messagerie/PILOTE_AGENTS_C11_PLAN.md",
+      "sha": "dd0577a5c5b35dcb5d1c87a0e8a17e2fc10d3e15"
+    },
+    {
+      "path": "coordination/messagerie/PORTE_A_PREUVES_C10_2026-11-01.md",
+      "sha": "1fe61bd7874f1040db698341889a45ea48147a4e"
+    },
+    {
+      "path": "coordination/messagerie/PROTOCOLE_ACTIVATION_17_ATELIERS_C10.md",
+      "sha": "8e9041cb6068d4ae8941b4fe40d80c57d0670c65"
+    },
+    {
+      "path": "coordination/messagerie/PROTOCOLE_COMMANDES_V2_CANDIDAT.md",
+      "sha": "3cb10531c980b95249dc6f15745c38f8cd8184fe"
+    },
+    {
+      "path": "coordination/messagerie/RAPPROCHEMENT_C10_PASSE06.md",
+      "sha": "61ab72bb2d57f624d4e3d0f109ece2916b4f192b"
+    },
+    {
+      "path": "coordination/messagerie/RAPPROCHEMENT_C10_PASSE07.md",
+      "sha": "360adb91019c96045f389fb8dd42df9a319f48f8"
+    },
+    {
+      "path": "coordination/messagerie/RAPPROCHEMENT_C10_PASSE09.md",
+      "sha": "de37a349b9324a2e093d2b8598bc7c22dcc53a90"
+    },
+    {
+      "path": "coordination/messagerie/README.md",
+      "sha": "b0474237941f94869404c0508d60f0f753979509"
+    },
+    {
+      "path": "coordination/messagerie/RELANCE_C10_2026-11-01.md",
+      "sha": "0e136e5f87089a298b89c72b23a494ae9c3a3990"
+    },
+    {
+      "path": "coordination/messagerie/boites/anarchitecte.md",
+      "sha": "609488d184f3e97f93ac91c8d7bf3f3e411aff2f"
+    },
+    {
+      "path": "coordination/messagerie/boites/anarchiviste-catalan.md",
+      "sha": "bb9e7f676a6116fd6807693102b764df0ad81884"
+    },
+    {
+      "path": "coordination/messagerie/boites/anarchiviste-communs.md",
+      "sha": "0b8e5db078534e51e85b3c735788b22fa76404ac"
+    },
+    {
+      "path": "coordination/messagerie/boites/anarchiviste-zapatiste.md",
+      "sha": "afb8ddb9e587c9ab6e6a109f0583acad1534ac89"
+    },
+    {
+      "path": "coordination/messagerie/boites/archeologue.md",
+      "sha": "4ea873b619eec6efbe1699098a719195b4ebcd47"
+    },
+    {
+      "path": "coordination/messagerie/boites/assistant-anarchiviste.md",
+      "sha": "b881adcd04fddded9858af1d1735231294a92c37"
+    },
+    {
+      "path": "coordination/messagerie/boites/biographe.md",
+      "sha": "6ae5dbc9569cd6b750c1ff6570e8b56c210ac192"
+    },
+    {
+      "path": "coordination/messagerie/boites/developpeuse.md",
+      "sha": "e070737aab1ddbb13d85a92967310f2914b4101d"
+    },
+    {
+      "path": "coordination/messagerie/boites/eclaireuse.md",
+      "sha": "0a475fb5f7bf9a2cd5a1307c3a0cace07fdb3528"
+    },
+    {
+      "path": "coordination/messagerie/boites/graphiste.md",
+      "sha": "8202fae1b512bf73652da9435660a1154d2eae4f"
+    },
+    {
+      "path": "coordination/messagerie/boites/juriste.md",
+      "sha": "76ad04167dfabe830aaa287fb48068004f9ff6fd"
+    },
+    {
+      "path": "coordination/messagerie/boites/lectrice.md",
+      "sha": "34057938f469a237e08da167d24640487802f221"
+    },
+    {
+      "path": "coordination/messagerie/boites/mediatheque.md",
+      "sha": "2905da661136c24cfd4ad29e3ba2940be76ad669"
+    },
+    {
+      "path": "coordination/messagerie/boites/penseuse.md",
+      "sha": "e5c107424efb2e03222665af0034feb783e3f269"
+    },
+    {
+      "path": "coordination/messagerie/boites/reseaux-sociaux.md",
+      "sha": "ec203d0eb5d5330b649c5b45b726292a3947f8ed"
+    },
+    {
+      "path": "coordination/messagerie/boites/tisseuse.md",
+      "sha": "d1ef9ed39be05dbc4c5f6a83a783176775d44f34"
+    },
+    {
+      "path": "coordination/messagerie/boites/vigie.md",
+      "sha": "896b400ed4c3d4fc1063eafbb2846d7cf5a2fafb"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-PORTE-A-LECTRICE.md",
+      "sha": "0d2571884425dbae229ee35bb0bcef160be5c164"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-anarchitecte.md",
+      "sha": "48f3eec79b9ef267d9afce9f4bc30e83516f1591"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-anarchiviste-catalan.md",
+      "sha": "ff80d49a9e5d142427091b0448c90927e09dfc72"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-anarchiviste-communs.md",
+      "sha": "df37a154c33915df51fbbc914341b51a8e9c59b4"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-anarchiviste-zapatiste.md",
+      "sha": "87d4a2b06011750a76c1b2abc853acf689c2db33"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-archeologue.md",
+      "sha": "ae6e37c5761c6910828f8987575d4d48f7f3435a"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-assistant-anarchiviste.md",
+      "sha": "e92c9fc0a3661da3bb581efd20f23266fd0f36e9"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-biographe.md",
+      "sha": "f3764f45926ee3fcbf3bf3608532d73c3707fd13"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-developpeuse.md",
+      "sha": "1803de7dda52f659804c92267c6891db9e382e70"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-eclaireuse.md",
+      "sha": "8b7bd5f71f40597ca0edb50f85f18c0296d8b421"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-graphiste.md",
+      "sha": "c88b4c3e402c23f7dfa613e6e815119aeb09d720"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-juriste.md",
+      "sha": "6e3c50914d42a17c273cb05f5f8bb745d7ad3de2"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-lectrice.md",
+      "sha": "6d4348b20f61d6476bc56291422f1d3eeb4cfab0"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-mediatheque.md",
+      "sha": "980803b031693fdafc3efd40a8d4d675d235a6a2"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-penseuse.md",
+      "sha": "4da4297b329d3fabef1b06d4302cf60766494186"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-reseaux-sociaux.md",
+      "sha": "abfe13cf934eae6ccd4025c72086a848eadc606f"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-SUITE-tisseuse.md",
+      "sha": "894e220f0a8f6458691c2c06ee19bb1a2faa2cfd"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-anarchitecte.md",
+      "sha": "6a724a88533d7c37747618e51387197d0bd60c3a"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-anarchiviste-catalan.md",
+      "sha": "b761ac93f733a792df27eeb86ce98c727a58cece"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-anarchiviste-communs.md",
+      "sha": "3c39e8457840712eb8bfc1d457e1d67785359318"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-anarchiviste-zapatiste.md",
+      "sha": "5887737a69f72723407e2da673f6825d8192b6be"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-archeologue.md",
+      "sha": "2241780bb5d098fd8c76525b6ad9a286801d2f28"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-assistant-anarchiviste.md",
+      "sha": "44b6f791a52b1e79fa4a1b3ddaa7a90203babdbb"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-biographe.md",
+      "sha": "ccfdbba9ab1bf6d0224fc7293420e5bdc19a2cd6"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-developpeuse.md",
+      "sha": "38f4133849b9b5e25e94c13f56466a7341eccdfb"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-eclaireuse.md",
+      "sha": "bd379348b886243cb8374beec5217cd766bb27b8"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-graphiste.md",
+      "sha": "992ac82de85ba1614db88e0d9878b910016af309"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-juriste.md",
+      "sha": "b3e96719ead6c595329c665eed8ff05df5721ef9"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-lectrice.md",
+      "sha": "8be4147f51b9f6f0dc71680b38543953fa0b7536"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-mediatheque.md",
+      "sha": "d26f1851ac18df23b7d950b4a470c52c959b5bda"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-penseuse.md",
+      "sha": "458872214bef5518cfa5bb83a3b7a938d5acb9c7"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-reseaux-sociaux.md",
+      "sha": "a0b528a8c8e9c1e6a38077780dc1f4781e8bca0c"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261101-tisseuse.md",
+      "sha": "9e0c45de211b70581d448948f69b55675cb481d0"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-ANARCHITECTE.md",
+      "sha": "8d726ded4bf9fd8adf088d1e732654510ce38ccf"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-ARCHEOLOGUE.md",
+      "sha": "fe0caf8679e98f01503a99a18bc77fc30f77c9a4"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-BIOGRAPHE.md",
+      "sha": "234b153a2a690cfc004ee8854b72bc255574e6fa"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-DEVELOPPEUSE.md",
+      "sha": "dbe600e451073bfb8a4009a461fed306c8e710d2"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-GRAPHISTE.md",
+      "sha": "c6cf6993423af840565677e7c7084a74fe51320f"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-JURISTE.md",
+      "sha": "b4e460bb997ae2a97ccdd4cbbbabd8afc368433d"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-LECTRICE.md",
+      "sha": "5e9af838359cbe0f49cc67d3a409ab5cd1844ab3"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-MEDIATHEQUE.md",
+      "sha": "887c3cdc34715a28e8dcad64902fa7c8cb6d8dbc"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-TISSEUSE.md",
+      "sha": "abc2105a8b760d2ab547e1ee2b34e45c4f00f873"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-AXES-VIGIE.md",
+      "sha": "3a47211aae36c2f18692681cdb57ad5bd88fb396"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-PASSAGES-ANARCHITECTE.md",
+      "sha": "879719e9cafaa50eb3f85be053f0857c4f344eaa"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-PASSAGES-DEVELOPPEUSE.md",
+      "sha": "a8b6b01aa4f5d7bce8ef10bba7a1960643d4bb21"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-PASSAGES-GRAPHISTE.md",
+      "sha": "2c13fc429f650ac1463eabcd0f9a9c72cf6d580f"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-PASSAGES-JURISTE.md",
+      "sha": "cd9f274fb427471bfa0eb5ce734baefb89195adc"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-PASSAGES-LECTRICE.md",
+      "sha": "7803b5bd124360a0f74d94495bdbad4f8955f51e"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RECONCILIATION-ANARCHITECTE.md",
+      "sha": "22055ad8e977501c50ed28662ccc854529404043"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RECONCILIATION-BIOGRAPHE.md",
+      "sha": "d4180077b72ea6dcdaa9f2da7d7215596104301b"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RECONCILIATION-LECTRICE.md",
+      "sha": "a3f32c02eccab3ad71ef595cd1b53ae66d89a746"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RECONCILIATION-MEDIATHEQUE.md",
+      "sha": "2b3429ac90ab66f3eca932d335c0a1fd6327dcc1"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-ANARCHITECTE.md",
+      "sha": "3940cb9ffaf4eae64fbb34f38808e2b1084cfbf2"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-BIOGRAPHE.md",
+      "sha": "8ebee09e018675f9ac43c36f321c7b49834625c3"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-DEVELOPPEUSE.md",
+      "sha": "a7f89f8dd9744b02ece60503e9cf44525fdd4157"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-GRAPHISTE.md",
+      "sha": "65b939c5c3f875f7869b75d2a864792e3b0fcef6"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-JURISTE.md",
+      "sha": "e0bbd46d7564be6ab6706482a9cc140a5b663c7d"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-LECTRICE.md",
+      "sha": "5e06aae04bb3bd99e2b03c641743faded0b8acc8"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-MEDIATHEQUE.md",
+      "sha": "efbdd0e7f78ae05c9800708c6372f322f0a2113e"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-ORCHESTRATRICE.md",
+      "sha": "2103c1d6aa18effc0f7faa9b0453bc7042e9d82e"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-REL-20261102-RELANCE-AUDIT-VIGIE.md",
+      "sha": "0d4bdce589b26e9d7cb1f9ca92c6ed6053f7d8fd"
+    },
+    {
+      "path": "coordination/messagerie/courriers/C10-VIG-001.md",
+      "sha": "7f27a301b9870fdaa930708407abb57177872ed0"
+    },
+    {
+      "path": "coordination/messagerie/facteur.py",
+      "sha": "900b489b2e62550d7b8db55851d8f477ccd3aa45"
+    },
+    {
+      "path": "coordination/penseuse/CYCLE8_MATRICE_TRANSITION_ET_TESTS_DE_POUVOIR_2026-11-01.md",
+      "sha": "fbcd031fcbf1971fcb5061fa892b2b02330dc28a"
+    },
+    {
+      "path": "coordination/propositions/2026-11-02_LES_VOIX_DE_L_OMBRE_BIOGRAPHE_P2.md",
+      "sha": "01381f793c3f0feb8baa39aca1cba43a8919f1b1"
+    },
+    {
+      "path": "coordination/propositions/ANARCHITECTE_AUDIT_SOURCES_DEUX_ARTICLES_WIKI_20261030.md",
+      "sha": "68c48fd99b0c263cd58a208d4bcc62f061972ba8"
+    },
+    {
+      "path": "coordination/propositions/ANARCHITECTE_CONTROLE_TECHNIQUE_WIKI_V0_2026-10-30.md",
+      "sha": "7107da29aa654d2166da6401f659cdfba57f5a0d"
+    },
+    {
+      "path": "coordination/propositions/LANCEMENT_COMMUNICATION_TRANSMISSION_009_20261030.md",
+      "sha": "ff355116efd869aa0951db0925e8d288588993f9"
+    },
+    {
+      "path": "coordination/propositions/lecture-mies-illich-federici-20261029.md",
+      "sha": "c264c6be1b9ab6e0c818b204a0816544b00fdc55"
+    },
+    {
+      "path": "coordination/propositions/lecture-pateman-arendt-goldman-federici.md",
+      "sha": "5930c9d649c9065631051e94d31cd0f051018f37"
+    },
+    {
+      "path": "coordination/propositions/lecture-pateman-mills-contrat-domination.md",
+      "sha": "60b3f8729588cb0d4e7893fb4b002bd3be53e786"
+    },
+    {
+      "path": "coordination/reprise-r1/00_METHODE_ET_INVENTAIRE.md",
+      "sha": "5b7ef2fbdaaa88791bed86f00659fd8a76f44dd8"
+    },
+    {
+      "path": "coordination/reprise-r1/01_AXES_ARCHITECTURE_ET_PRIORITES.md",
+      "sha": "a9070cd99b775d169415e3c991074dced1c6ffab"
+    },
+    {
+      "path": "coordination/reprise-r1/02_INDEX_COURRIERS_ET_PROTOCOLE.md",
+      "sha": "4982d1d2501af5665729cc99400c5915e94a6eb0"
+    },
+    {
+      "path": "coordination/reprise-r1/03_ARBITRAGES_ZOUT_2026-11-02.md",
+      "sha": "f61b5b29b1757cf63a4c213ca7aa2524a14a04aa"
+    },
+    {
+      "path": "coordination/reprise-r1/04_PLAN_INTEGRATION_COMMUNE_2026-11-02.md",
+      "sha": "88954ca172d10b5ffbb3fdb5daca0d0b5d91328e"
+    },
+    {
+      "path": "coordination/reprise-r1/05_MANDAT_CYCLE_INTEGRATION_2026-11-02.md",
+      "sha": "57f1f6724d8b4be42b770a48f94e5051ce4f7b23"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-ANA.md",
+      "sha": "1d383a00070a0c13d711239e912e9fa1c2aa7917"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-ARC.md",
+      "sha": "5da4f61b7e9df6bbd513640fcb59f309fc9ce858"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-ASS.md",
+      "sha": "087966e08e774f390c9ba7b93d38cb1710288278"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-BIO.md",
+      "sha": "5ef92d2d6c8386c3cfe9897f4c6a6f8ad172797a"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-CAT.md",
+      "sha": "3da7f2c8e715970ee1b4c13a0d3876c9e69521a9"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-COM.md",
+      "sha": "7409068ef48c53dffa5215897a34548a09305b2e"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-DEV.md",
+      "sha": "0c852387bc1f0428ab85f2b7a1e39d3b7d76a83f"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-ECL.md",
+      "sha": "8b9bd6ac03758dc664fd18c3428517e9f4837541"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-GRA.md",
+      "sha": "79d72c7e8b2bb5fe121c41cd67048938a25fe8a4"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-JUR.md",
+      "sha": "7351b9ee2c9ad3a0c15ec23f2089fbcefc9cdbfd"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-LEC.md",
+      "sha": "4b83eebe8e0b3fab98c56c0c8ba840c8af20c068"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-MED.md",
+      "sha": "67da7dffad72fef7ff6a37406f3c3e69ac488006"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-ORC.md",
+      "sha": "ac39f672820c2e8a68e32ad8197786942923e2e0"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-PEN.md",
+      "sha": "0f00135ce3647ee3055fd13d51a1b8bef3ddda79"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-RES.md",
+      "sha": "491ed9447046f938d6182f29a6f8027a36739390"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-TIS.md",
+      "sha": "7b35c9cbe179d304b081df896e7fe3e027a38e36"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-VIG.md",
+      "sha": "e1475f37f36cbea957bde105f1c1952d2da1bcfd"
+    },
+    {
+      "path": "coordination/reprise-r1/courriers/R1-ZAP.md",
+      "sha": "725d18c8b46bfe27552e2d96f280f762049d24c0"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_ANARCHIVISTE_VERS_RELIEUR_REPRISE_HISTORIQUE_PARTIELLE.md",
+      "sha": "b6cdf98f51b7e43b834144388cd113fb097cfa1a"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_ASSISTANT_ANARCHIVISTE_VERS_ARCHIVISTE_RELIEUSE_TRANSMISSION_015.md",
+      "sha": "5ee3dbffac069726d78a70a77a9e97133ae7ba18"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_JURISTE_VERS_RELIEUR_ETUDES_39_58.md",
+      "sha": "67009c9f9dffc7c114c881d6606973ceb33406c7"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_JURISTE_VERS_RELIEUR_PUBLICATION_WIKI_V0.md",
+      "sha": "e53ebba176d9e53e09a0eef215feaffb8bf096af"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_MEDIATHEQUE_VERS_RELIEUR_TRANSMISSION_013.md",
+      "sha": "f66e7f91c8fa4684b41503ec470468d166b09696"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_PENSEUR_VERS_DEVELOPPEUR.md",
+      "sha": "b78c5993b421f005e0ee06c6f54f886d075d3280"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_PENSEUR_VERS_JURISTE.md",
+      "sha": "41d9ba4bd1344f63dbf1cc1f38e30b260d9b409e"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_PENSEUR_VERS_LECTEUR.md",
+      "sha": "8f31b6ad3b569cc88cf4e2749af78c2fe577ae57"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_PENSEUR_VERS_ORGANISATEUR.md",
+      "sha": "c45eb70a9e9763faf74e5c5fba8334c059bf5c38"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-30_PENSEUR_VERS_RELIEUR.md",
+      "sha": "05457980d53d9ebc21e26e79d2dc0498e100a46f"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_ARCHIVISTE_ARBITRAGE_ICONOGRAPHIE_CLUBS_FEMMES.md",
+      "sha": "aabed6f44c8f9099c7926155b75db831f719a89b"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_ARCHIVISTE_PROPOSITION_HISTOIRE_ECOLOGIE_VEGETARISME_VEGANISME.md",
+      "sha": "1e46f5677fbcebed15dd6fee443287810178702a"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_ASSISTANT_ANARCHIVISTE_ARCHIVES_PRIMAIRES_ECOLOGIE_001.md",
+      "sha": "d0f659cdbda97cb47bc3f01ace6c640fbda4ee8b"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_ASSISTANT_ANARCHIVISTE_ICONOGRAPHIE_CLUBS_FEMMES.md",
+      "sha": "c96fead0080dc38ea36bd1a2559eb63b258f6c7f"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_JURISTE_VERS_RELIEUSE_LECTRICE_DROITS_ECOLOGIQUES.md",
+      "sha": "2df0162aa851a49f930b387ee3910af36c5f9d1f"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_CYCLE2_QUATRE_PASSES_TROIS_PARCOURS_CRITIQUES.md",
+      "sha": "f4c7725d62dd340cf69f7e7f825338c9be323265"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_CYCLE3_EXERCICES_CORRIGES_LECTURE_CONTRADICTOIRE.md",
+      "sha": "abd18e5baf20678cca305669e5c959d0cfcd4584"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_CYCLE4_CONCORDANCE_V26_CHARTES_CIC.md",
+      "sha": "1441e65c3b23a9141b6906d9b35cc0d8b37d7e31"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_CYCLE5_QUATRE_PASSES_CONCORDANCE_ECL.md",
+      "sha": "45b7205be9c7f6e505c6ee862524778a072af291"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_CYCLE6_TRANSITION_FONDATRICE_GOUVERNANCE.md",
+      "sha": "fb359f941caa886b8539c0d670b556039a9dc25f"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_LECTURE_CROISEE_ECOLOGIE_SOCIALE_AUTONOMIE_ANIMALISME.md",
+      "sha": "8450447bd817ac491420af03991443eb1a6c52fc"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_MANIFESTE_V25_ANNOTATIONS_V26_CANDIDATE.html",
+      "sha": "3a555214e3e9a9638ff2ce4e4b7d71aa50c6cbde"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_PRIORITES_COHERENCE_INTELLECTUELLE_WIKI_PRE_SORTIE.md",
+      "sha": "50f9fe1bae88d2c4c2857fa986fb73c57b80e350"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_PROMPT_JURISTE_CHARTES_APRES_MANIFESTE.md",
+      "sha": "05332b3e017e73369adaed29994800ad71e23f33"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_PENSEUSE_QUATRE_PASSES_CORRECTIONS_WIKI.md",
+      "sha": "c53e7f2ea84b75b41c510af72c5523d439feb636"
+    },
+    {
+      "path": "coordination/transmissions/2026-10-31_TISSEUSE_ECO_TIS_001_INITIATIVES_ET_CAS.md",
+      "sha": "6d1ef709cff7f9579b6f19055949ee8a23d603c6"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE7_CRITIQUE_POUVOIR_TRANSITION_COMPARAISONS.md",
+      "sha": "be04130457fd4ae334f10d8a87b6181f7fcc3aab"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_COMPLEMENT_VERIFICATION_V09_ART48.md",
+      "sha": "dc3532551380d792c4f4546797bee7b7bcac4c38"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_CONCORDANCE_POUVOIRS_RECOURS.md",
+      "sha": "3d2086feedbe1b1a6e5204b7d4f5dd5f0671fe11"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-01_PENSEUSE_CYCLE8_RELIEUSE_CONTROLES_EFFECTIFS.md",
+      "sha": "2c85bc526c6bf8984489766917f9afeb11a8a21a"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-01_RELIEUSE_CYCLE7_RECONCILIATION_INITIALE.md",
+      "sha": "6a2f9fac05dbaed5c530897035e156371b267515"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-02_DEVELOPPEUSE_R2_NAVIGATION_FAILLE.md",
+      "sha": "e1e293211df92bd2e2777eb9c97af8dcd3a4cd52"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-02_GRAPHISTE_IDENTITE_ZOOM_BRIEF.md",
+      "sha": "d17dcb83c7c2e3a229274463eabe3415d6b3f101"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-02_GRAPHISTE_INTEGRATION_CANDIDATE.md",
+      "sha": "edbc7d8746842e92c58b58a3838836ee74381d28"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-02_GRAPHISTE_R2_ARBITRAGE_CARTES_AB.md",
+      "sha": "1546bdd648fa9dbafc37dae3550e1abd3b55a526"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-02_GRAPHISTE_R4_AUDIT_IDENTITE.md",
+      "sha": "d159388c390320f5e3a32ea097f407dc3c55bc03"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-03_DEVELOPPEUSE_R6_DEV03_INTEGRATION.md",
+      "sha": "fba0f9764206b67d33f0590e1b633fb63863d47b"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-03_DEVELOPPEUSE_R6_DEV04_CERTIFICATION.md",
+      "sha": "5cbc8a555c6d74daabea5a3c3dc3c41321f5cce6"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-03_DEVELOPPEUSE_R6_INT01_RECONCILIATION_DEPLOIEMENT.md",
+      "sha": "db660a7066780dd9d514b93194f0363ebc460c79"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-03_GRAPHISTE_R6_IDENTITE_REMPLACEMENT_CANDIDAT.md",
+      "sha": "d02e8b042c987a57bf23f2746f319f671b74ff4e"
+    },
+    {
+      "path": "coordination/transmissions/2026-11-03_R6_INT01_PREUVES.json",
+      "sha": "55a990550cf7214a38ec5654b2dff77486d54cf8"
+    },
+    {
+      "path": "coordination/transmissions/GRAPHISTE_BILAN_TRANSMISSION_GENERALE_012_2026-10-30.md",
+      "sha": "d1c9d9cda8a3d653f83b624d82e6e26e4671c9ba"
+    },
+    {
+      "path": "coordination/wiki-review-queue/fn069-penseur-archives-croisees-2026-10-29.json",
+      "sha": "7a459c749c1080ee868b52edbec19504561931e4"
+    },
+    {
+      "path": "design-system/comparaison-identite-r4.html",
+      "sha": "da62eadcf5e31d17da8363d4241249789292b7d8"
+    },
+    {
+      "path": "design-system/comparaison-identite-r6.html",
+      "sha": "c3ce775f1c8ac913047765dc78dd3829ecf00fdb"
+    },
+    {
+      "path": "design-system/comparaison-r6-gra02.html",
+      "sha": "00b2f8969910618f4ff4787dab870674dc485ce4"
+    },
+    {
+      "path": "design-system/entree-faille-candidate.html",
+      "sha": "3cec7c48f899cb3118d45b434b3e2a4e7fe62446"
+    },
+    {
+      "path": "design-system/faille-navigation-interactive.html",
+      "sha": "eb9ba368def07797129d389a468b014fdbf31399"
+    },
+    {
+      "path": "docs/AUDIT_CONTRIBUTIONS_SUPABASE_2026-10-29.md",
+      "sha": "20885cfd5bd149260a85bbe93084e3ac08ba6c9b"
+    },
+    {
+      "path": "docs/AVIS_JURIDIQUE_PUBLICATION_WIKI_DEUX_ARTICLES_2026-10-30.md",
+      "sha": "344ad28c53b52deb9608c17db3f5451117123806"
+    },
+    {
+      "path": "docs/AVIS_JURISTE_CYCLE_39_58_GARANTIES_BLOCAGES_2026-10-30.md",
+      "sha": "1fa831e9d43a51c3db2c2b73af758bc3a5a5218a"
+    },
+    {
+      "path": "docs/CAS_PRATIQUES_PROTECTION_RECOURS_2026-10-29.md",
+      "sha": "bd53085f07fea5937075f3732c802034650ac6f4"
+    },
+    {
+      "path": "docs/ETUDE_JURIDIQUE_CARTOGRAPHIE_INTERSTICE_RISQUES_2026-10-30.md",
+      "sha": "5beb4eae2986e4ab420f860b556b1b04a9600e5a"
+    },
+    {
+      "path": "docs/ETUDE_JURIDIQUE_DROITS_ECOLOGIQUES_ET_COMMUNS_2026-10-31.md",
+      "sha": "6ac691d65bc0b5df6c0c18a88f554cd4077c81e8"
+    },
+    {
+      "path": "docs/NOTE_JURIDIQUE_PROTECTION_RECOURS_2026-10-29.md",
+      "sha": "ece3d859a0720975c8dd6a93a6ed9c7caf8af556"
+    },
+    {
+      "path": "docs/proposals/wiki-document-handoffs-schema.sql",
+      "sha": "91ec688dc024d9c349ee1d8c3c9f983b6bbdb68f"
+    },
+    {
+      "path": "docs/proposals/wiki-github-production-rpc.sql",
+      "sha": "8bfae0f11febf86a7b6c0dd8f6ab71d308a14460"
+    },
+    {
+      "path": "docs/proposals/wiki-github-staging-schema.sql",
+      "sha": "c6a73cdf4e61be5ad8701424f053efef8369771f"
+    },
+    {
+      "path": "docs/wiki-github-synchronisation.md",
+      "sha": "768ef2c7002b5419595cc2469ec284fc866218ee"
+    },
+    {
+      "path": "edition-premiere/R1_FRONTEND_INTEGRATION_RAPPORT.md",
+      "sha": "45557a70fb5798398efa05c4fa7a673d7a7d6ee1"
+    },
+    {
+      "path": "index.html",
+      "sha": "20804d21cee89397c5ab8deb377806d7d645f1e4"
+    },
+    {
+      "path": "integration-graphique/graphiste-integration.css",
+      "sha": "5fa52cc51ae2db3477c91445d6eed2076105e463"
+    },
+    {
+      "path": "integration-graphique/index.html",
+      "sha": "3e76f12cfda3abc901fa7a40ddcf9fb8b506b245"
+    },
+    {
+      "path": "manifeste-v2-5.html",
+      "sha": "56724f54bf6d05434d02ad7fd905509f92402a5d"
+    },
+    {
+      "path": "manifeste.html",
+      "sha": "ca8524fedcc8f45717e3a1a6af906369ce830ab5"
+    },
+    {
+      "path": "moderation.html",
+      "sha": "149f2ededb2cfc376a90e7cb10a0b52d89f86a9f"
+    },
+    {
+      "path": "moderation.js",
+      "sha": "bb6a24e1a49f73ab155feafa17fab5876d28d286"
+    },
+    {
+      "path": "parcours.html",
+      "sha": "7278fc9d9cb22304823230b571fc1ec8892f6b2e"
+    },
+    {
+      "path": "participer.html",
+      "sha": "51bdd0216f23fe0e234bfcafcb5787b1e467e419"
+    },
+    {
+      "path": "proposer-article.html",
+      "sha": "87ed25a91ea1cab4594cd8bb92ca651e5c582d5b"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.1_2026-10-29.md",
+      "sha": "b5d18b140dabd3cc457e3c5c46a3d30a3f719db6"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.2_2026-10-29.md",
+      "sha": "59b91eea144969ac28465b9605fa415543ed527a"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.3_2026-10-29.md",
+      "sha": "89b166658e53a190c73b52e54991d8cb6c3ab6c1"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.4_2026-10-29.md",
+      "sha": "853f78082e1d1dc146f29e4300a0673080e92537"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.5_TITRE_V_2026-10-29.md",
+      "sha": "9a140b1cee50357fea6fb2d2887bfd29abbb6f33"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_IX_2026-10-29.md",
+      "sha": "5ab483465d871215c68a228d2a546d20072c426e"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_IX_SUITE_2026-10-29.md",
+      "sha": "4f26e7a4179a71dd53e730064de828e96b3bf83a"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_VIII_2026-10-29.md",
+      "sha": "0a0199170a8554e97d309c9cc3174604dcc70790"
+    },
+    {
+      "path": "propositions/CHARTE_DES_COMMUNS_V0.6_TITRE_VII_2026-10-29.md",
+      "sha": "5c0e414349989759c0583fa6676645ed49982d3e"
+    },
+    {
+      "path": "propositions/ETAT_V06_JURISTE_20261029.md",
+      "sha": "322cc17095b010c2d7fcc6e35f09891d59465b8b"
+    },
+    {
+      "path": "propositions/REGLES_FICHES_MODERATION_CARTOGRAPHIE_INTERSTICE_2026-10-30.md",
+      "sha": "627a5037826ea0a2126feb2f8ae47edc8c89241d"
+    },
+    {
+      "path": "ressources-data.js",
+      "sha": "727901f17f51348488a211f9173993bec6445bbc"
+    },
+    {
+      "path": "ressources.js",
+      "sha": "e9a2dafd93003c244c357433f14f3a7e421d6c86"
+    },
+    {
+      "path": "revue-articles-wiki.html",
+      "sha": "85f3aaa73e4f451549e5483488e8657d2f6c925a"
+    },
+    {
+      "path": "script.js",
+      "sha": "7cfc5fcf362f7246ca334a1f4bc6287fdedc4207"
+    },
+    {
+      "path": "scripts/coordination-check.mjs",
+      "sha": "904416424d2e33ea0550e8560a563a8b2074b4b0"
+    },
+    {
+      "path": "scripts/inventory-wiki-markdown.mjs",
+      "sha": "bee96056b37d1fe7c9738cc14a1d0a65ecc5d1d6"
+    },
+    {
+      "path": "scripts/prepare-wiki-review-draft.mjs",
+      "sha": "37047e8385f20d5c3eab5a4d527ff5f493b891b8"
+    },
+    {
+      "path": "scripts/r6-inventaire-identite.mjs",
+      "sha": "1ad3c28464c35f8d2f17eeb47652b40a83a7768a"
+    },
+    {
+      "path": "scripts/r6-pages-preflight.py",
+      "sha": "3817028e8f6bb8d28d5905f260082c887ba3eef1"
+    },
+    {
+      "path": "scripts/r6-preservation-check.py",
+      "sha": "95f67da9b697fa975f016f7f8a42a755de0657ec"
+    },
+    {
+      "path": "scripts/r6-wait-production.py",
+      "sha": "444effabb59d34ee1d6ea8bdde5776a9848a8a19"
+    },
+    {
+      "path": "scripts/reconcile-wiki-handoff.mjs",
+      "sha": "debd98f847ee66b98fb60d3e7a85626970533fd1"
+    },
+    {
+      "path": "scripts/submit-wiki-inventory.mjs",
+      "sha": "b95bb8187dc2969d5c5b06ce2a6f3ea356617257"
+    },
+    {
+      "path": "scripts/validate-wiki-review-queue.mjs",
+      "sha": "d70ef5e40d60a3b0a966c8144b0b6881d1994f53"
+    },
+    {
+      "path": "squats-et-lieux-autonomes.html",
+      "sha": "7d74dbce1ceb6dbcce1a769700584d595bb92eab"
+    },
+    {
+      "path": "style.css",
+      "sha": "c309f6a31fe035f0ddc161f60cfa9bc610fef6e4"
+    },
+    {
+      "path": "supabase/functions/github-wiki-ingest/index.ts",
+      "sha": "889b36d18712eff67e028736ec0c06f24a45f51a"
+    },
+    {
+      "path": "tests/entree-faille-candidate.test.mjs",
+      "sha": "3594fb7f575c45a259e52c199237893b642f3b8f"
+    },
+    {
+      "path": "tests/graphiste-dev-accessibilite.test.mjs",
+      "sha": "94773bbacea0f247a62b87fd08a7f04fb3d04852"
+    },
+    {
+      "path": "tests/graphiste-dev-frontend.test.mjs",
+      "sha": "9941b1fbbf68603e834f43c2a2ea6f618c098de1"
+    },
+    {
+      "path": "tests/graphiste-integration-20261102.test.mjs",
+      "sha": "e6af2e752649e1baa549efe4bfb788df7162d088"
+    },
+    {
+      "path": "tests/r1-frontend-navigation.browser.test.mjs",
+      "sha": "c38250cb4e0e49d5d4b59ecc08642c7f8c5fbff4"
+    },
+    {
+      "path": "tests/r1-frontend-navigation.test.mjs",
+      "sha": "4efa69c923c83f8f8250248c764f856b0af6da38"
+    },
+    {
+      "path": "tests/r2-faille-navigation.browser.test.mjs",
+      "sha": "de0b5c8f354c74d50318b55312e74de6af0065c1"
+    },
+    {
+      "path": "tests/r2-faille-navigation.test.mjs",
+      "sha": "44757c413a9d781d306af50a5e8f7c4800d797a5"
+    },
+    {
+      "path": "tests/r4-dev-cloture.browser.test.mjs",
+      "sha": "0324531c502bcd974508a351341dedd4d944c8e5"
+    },
+    {
+      "path": "tests/r4-identite-captures.test.mjs",
+      "sha": "64342739ab28bbf759873346abaea411fec27fed"
+    },
+    {
+      "path": "tests/r4-relieuse-convergence.test.mjs",
+      "sha": "3f18e1c5d0a062553b347769bd428452a8a0eabe"
+    },
+    {
+      "path": "tests/r6-dev02-stabilisation.browser.test.mjs",
+      "sha": "3f91109dea9696964c7f8d1207005b28c8e2e2d3"
+    },
+    {
+      "path": "tests/r6-identite-remplacement.browser.test.mjs",
+      "sha": "3910746d69d76180a412c0a8f25cdb8871ea4522"
+    },
+    {
+      "path": "tests/r6-int01-convergence.browser.test.mjs",
+      "sha": "423b37b1566871552afdb675aab28c5d53908bf4"
+    },
+    {
+      "path": "tests/sql/wiki-handoff-concurrency.sh",
+      "sha": "f9404069c50209fd1d6c56236d80902d214dcbf5"
+    },
+    {
+      "path": "tests/sql/wiki-handoff-integration.sql",
+      "sha": "f336f739ec20236591b91f0ff1d32b408418aa96"
+    },
+    {
+      "path": "tests/wiki-handoff-idempotency.test.mjs",
+      "sha": "568b5abaff4ed87d1c69f41c776b986d086f1944"
+    },
+    {
+      "path": "tests/wiki-handoff-sql-contract.test.mjs",
+      "sha": "c70ead6f553af079a252fa9cfd61810db29b7041"
+    },
+    {
+      "path": "wiki-antifascisme-histoire-et-mecanismes.html",
+      "sha": "6910542c3f29fb32730296e902bf71f77b2330a6"
+    },
+    {
+      "path": "wiki-antiracisme-histoires-droits.html",
+      "sha": "6c1081910a0499e2c9646da1f3d75218dcbc2ee8"
+    },
+    {
+      "path": "wiki-association-collegiale.html",
+      "sha": "1b2a021d31828047846b428c7091dfae31898ab5"
+    },
+    {
+      "path": "wiki-autonomie-materielle-savoir-faire.html",
+      "sha": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1"
+    },
+    {
+      "path": "wiki-capitalisme-classes-travail.html",
+      "sha": "db754eed38c3e02104418800366cae31e90d183c"
+    },
+    {
+      "path": "wiki-culture-creation-acces-art.html",
+      "sha": "4a71182424035d1696cc9d2b948c3b948fb91923"
+    },
+    {
+      "path": "wiki-decision-collective.html",
+      "sha": "e09926e74720a2b89ae78065544805c169cb3776"
+    },
+    {
+      "path": "wiki-ecologie-sociale-environnement.html",
+      "sha": "dd6e149ad8d44b5db5180a800730617b116369f1"
+    },
+    {
+      "path": "wiki-education-enfance-protection.html",
+      "sha": "931fc198127b9073b3ae513f63bf2dcdaaf177e1"
+    },
+    {
+      "path": "wiki-egalite-fiches.html",
+      "sha": "083fbae5c37a87b32fd5c86c3da350c425f64c85"
+    },
+    {
+      "path": "wiki-egalite-genres-inclusivite.html",
+      "sha": "9ca5e5d2e1e83dfeed3669034c48e9ddc86b0646"
+    },
+    {
+      "path": "wiki-feminismes-histoire-egalite.html",
+      "sha": "69789f5f665cdae4d85061293c9ecb2dcb13c919"
+    },
+    {
+      "path": "wiki-financements-culture-spectacle.html",
+      "sha": "030b75d277e09c3bc7e971d90d8ca5f1c18e7329"
+    },
+    {
+      "path": "wiki-frontieres-migrations-colonialisme.html",
+      "sha": "eefa8c327980c6747dca58e14c5b9c9f61e895b9"
+    },
+    {
+      "path": "wiki-handicap-validisme-neurodiversite.html",
+      "sha": "ac20430979cc5d741d00867ca0fcfb4b70ea19ec"
+    },
+    {
+      "path": "wiki-justice-prisons-abolitionnisme.html",
+      "sha": "165d2f325fb98cd6680db3da66e71f2b5068d1f3"
+    },
+    {
+      "path": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "sha": "206f4d999dcfe12bb5d487830ad7cf02edf66780"
+    },
+    {
+      "path": "wiki-liberte-numerique-ia-surveillance.html",
+      "sha": "cc3245d9497fbe6130dd7e5c631ca387e906cdb3"
+    },
+    {
+      "path": "wiki-logement-habitat-droit-ville.html",
+      "sha": "f0ce0e5966da0e5e263358ce397a31acd90ed2c3"
+    },
+    {
+      "path": "wiki-patriarcat-histoire-mecanismes.html",
+      "sha": "0fc8ab4206b930b6100efa085b790e16d4429e45"
+    },
+    {
+      "path": "wiki-police-deces-memoire.html",
+      "sha": "562b8897552216ffcbdb6e968a76aa6e6b1b8e78"
+    },
+    {
+      "path": "wiki-politique-institutions-regimes.html",
+      "sha": "86facb7f05895d8234086d2fcee651d4e08bf486"
+    },
+    {
+      "path": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "sha": "4cf6f1f1cf209c7617bbf7a6e86f0e5c362e57f5"
+    },
+    {
+      "path": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+      "sha": "4aa9dc92b5d864aeee3424d2a77f99abc0690afc"
+    },
+    {
+      "path": "wiki.html",
+      "sha": "ef7b4cbf4540be1157b619107adb6f1c6523aad7"
+    }
+  ],
+  "allowed_new_prefix": "coordination/v2/work-c02-01/",
+  "allowed_new_paths": [
+    ".github/workflows/work-c02-candidate.yml"
+  ]
+}
