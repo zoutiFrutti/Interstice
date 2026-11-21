@@ -24,7 +24,7 @@ Deno.serve(async req=>{
  if(Number(req.headers.get("content-length")||0)>7000)return reply({error:"Message trop long"},413);
  let d;try{d=JSON.parse(await readBoundedBody(req,7000))}catch(e){const message=e instanceof Error?e.message:"";return reply({error:message==="BODY_TOO_LARGE"?"Message trop long":"Format invalide"},message==="BODY_TOO_LARGE"?413:400)}
  if(!d||typeof d!=="object"||Array.isArray(d))return reply({error:"Format invalide"},400);
- if(d.website)return reply({ok:true,message:"Proposition reçue pour examen."},202);
+ if(d.website)return reply({error:"Envoi non enregistré."},400);
  const need=typeof d.need==="string"?d.need.trim():"",offer=typeof d.offer==="string"?d.offer.trim():"",area=typeof d.area==="string"?d.area.trim():"",category=typeof d.category==="string"?d.category.trim():"Idées et projets";
  const cats=["Idées et projets","Lieux et espaces","Entraide","Savoirs et ateliers","Culture et création","Matériel et ressources"];
  if((!need&&!offer)||need.length>1500||offer.length>1500||area.length>100||!cats.includes(category))return reply({error:"Contenu invalide"},400);
@@ -34,12 +34,15 @@ Deno.serve(async req=>{
  if(!ip)return reply({error:"Vérification anti-abus indisponible"},503);
  const url=Deno.env.get("SUPABASE_URL"),key=Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
  if(!url||!key)return reply({error:"Service indisponible"},503);
- const digest=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(key+":"+ip));
+ const secret=Deno.env.get("FAIRE_ENSEMBLE_ABUSE_SECRET");
+ if(!secret||secret.length<32||secret===key)return reply({error:"Vérification anti-abus indisponible"},503);
+ const hmacKey=await crypto.subtle.importKey("raw",new TextEncoder().encode(secret),{name:"HMAC",hash:"SHA-256"},false,["sign"]);
+ const digest=await crypto.subtle.sign("HMAC",hmacKey,new TextEncoder().encode(ip));
  const fingerprint=Array.from(new Uint8Array(digest)).map(x=>x.toString(16).padStart(2,"0")).join("");
  const db=createClient(url,key,{auth:{persistSession:false,autoRefreshToken:false}});
  const {data:allowed,error:throttleError}=await db.rpc("claim_submission_slot",{p_fingerprint:fingerprint});
  if(throttleError)return reply({error:"Service temporairement indisponible"},503);
- if(!allowed)return reply({error:"Une proposition maximum toutes les dix minutes."},429);
+ if(allowed!==true)return reply({error:"Une proposition maximum toutes les dix minutes."},429);
  const {error}=await db.from("proposals").insert({need_text:need||null,offer_text:offer||null,area_text:area||null,category,pilot_cohort:"c08-fe-proposals-v1",status:"pending"});
  if(error)return reply({error:"Enregistrement impossible"},503);
  return reply({ok:true,message:"Proposition reçue. Elle attend une vérification avant publication."},202);

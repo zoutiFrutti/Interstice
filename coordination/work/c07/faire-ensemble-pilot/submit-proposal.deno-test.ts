@@ -6,7 +6,7 @@ Deno.test('closed pilot and actual SDK responses, transport intercepted',async t
  const originalServe=Deno.serve,originalGet=Deno.env.get,originalFetch=globalThis.fetch;
  Deno.serve=((fn: typeof handler)=>{handler=fn;return {};}) as unknown as typeof Deno.serve;
  Deno.env.get=(key:string)=>({FAIRE_ENSEMBLE_PROPOSALS_ENABLED:enabled?'true':'false',
-  SUPABASE_URL:'https://example.test',SUPABASE_SERVICE_ROLE_KEY:'synthetic-key'} as Record<string,string>)[key];
+  SUPABASE_URL:'https://example.test',SUPABASE_SERVICE_ROLE_KEY:'synthetic-key',FAIRE_ENSEMBLE_ABUSE_SECRET:'synthetic-dedicated-secret-32-characters'} as Record<string,string>)[key];
  globalThis.fetch=async(input,init)=>{
   const url=typeof input==='string'?input:input instanceof URL?input.href:input.url;
   if(new URL(url).origin!=='https://example.test')throw new Error('Unexpected transport destination');

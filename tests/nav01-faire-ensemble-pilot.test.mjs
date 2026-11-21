@@ -14,10 +14,11 @@ const endpoint='https://example.test/proposals';
 const origin='https://zoutifrutti.github.io';
 function setup(flag,options={}){
  let handler;const writes=[],calls=[];
- const env={FAIRE_ENSEMBLE_PROPOSALS_ENABLED:flag,SUPABASE_URL:'https://example.test',SUPABASE_SERVICE_ROLE_KEY:'synthetic-test-key'};
+ const env={FAIRE_ENSEMBLE_PROPOSALS_ENABLED:flag,SUPABASE_URL:'https://example.test',SUPABASE_SERVICE_ROLE_KEY:'synthetic-test-key',FAIRE_ENSEMBLE_ABUSE_SECRET:'synthetic-dedicated-secret-32-characters'};
+ if(options.abuseSecret!==undefined)env.FAIRE_ENSEMBLE_ABUSE_SECRET=options.abuseSecret;
  vm.runInNewContext(stripTypeScriptTypes(source.replace(/^import .*;\n/m,'')),{
   Deno:{env:{get:k=>env[k]},serve:h=>handler=h},
-  createClient:()=>({rpc:async(name,args)=>{calls.push(name);return {data:options.allowed!==false,error:options.rateError||null};},
+  createClient:()=>({rpc:async(name,args)=>{calls.push(name);return {data:options.allowed===undefined?true:options.allowed,error:options.rateError||null};},
    from:table=>({insert:async value=>{writes.push({table,value});return {error:options.insertError||null};}})}),
   Response,TextDecoder,TextEncoder,Uint8Array,Error,crypto:webcrypto
  });
@@ -81,3 +82,9 @@ test('patch applicable au seul frontend propositions, confirmé avant reset',asy
   assert.equal(r.posts,1);assert.equal(r.resets,1);
  }finally{rmSync(folder,{recursive:true,force:true});}
 });
+
+for(const secret of ['', 'short', 'synthetic-test-key'])test('dedicated anti-abuse secret required: '+secret.length,async()=>{
+ const a=setup('true',{abuseSecret:secret});assert.equal((await a.handler(a.request())).status,503);assert.deepEqual(a.writes,[]);
+});
+test('honeypot never issues a false receipt',async()=>{const a=setup('true');assert.equal((await a.handler(a.request({need:'test',website:'bot'}))).status,400);assert.deepEqual(a.writes,[]);});
+test('limiter accepts only boolean true',async()=>{const a=setup('true',{allowed:'true'});assert.equal((await a.handler(a.request())).status,429);assert.deepEqual(a.writes,[]);});

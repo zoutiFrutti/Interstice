@@ -1,0 +1,115 @@
+{
+  "observed_date": "2026-11-21",
+  "projects": [
+    {
+      "repository": "decidim/decidim",
+      "url": "https://github.com/decidim/decidim",
+      "default_branch": "develop",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "sha": "4f1760c5884e5bf2beb82a05bf467bf5ffe5d0b2",
+      "date": "2026-11-19T09:46:59Z",
+      "subject": "Fix rack profiler viewport when there are hundreds of partials to render (#18106)"
+    },
+    {
+      "repository": "loomio/loomio",
+      "url": "https://github.com/loomio/loomio",
+      "default_branch": "master",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "sha": "cd27428bae8ec9057b7ab52ce2c41ac44f5b5b9e",
+      "date": "2026-11-21T09:50:03Z",
+      "subject": "Tighten AGENTS.md and move migration rules to code_style.md"
+    },
+    {
+      "repository": "compdemocracy/polis",
+      "url": "https://github.com/compdemocracy/polis",
+      "default_branch": "edge",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "sha": "a4fe4c7a3b2c73c78f12c7fe1e039f8b5794556c",
+      "date": "2026-11-20T00:55:08Z",
+      "subject": "Prepare Polis 2.46.0 (#3458)"
+    },
+    {
+      "repository": "zooniverse/panoptes",
+      "url": "https://github.com/zooniverse/panoptes",
+      "default_branch": "master",
+      "archived": false,
+      "license": "Apache-2.0",
+      "sha": "4f161d9f32767c03111cba8c62b36d3e74bbfb5c",
+      "date": "2026-11-19T22:15:02Z",
+      "subject": "Update production nginx version (#4682)"
+    },
+    {
+      "repository": "wikimedia/mediawiki-extensions-ProofreadPage",
+      "url": "https://github.com/wikimedia/mediawiki-extensions-ProofreadPage",
+      "default_branch": "master",
+      "archived": false,
+      "license": "GPL-2.0",
+      "sha": "be430e2e28f4b990c5fd3a0920f4b4cceb611067",
+      "date": "2026-11-19T17:29:31Z",
+      "subject": "build: Do not lint translated i18n files with ESLint"
+    },
+    {
+      "repository": "openstreetmap/openstreetmap-website",
+      "url": "https://github.com/openstreetmap/openstreetmap-website",
+      "default_branch": "master",
+      "archived": false,
+      "license": "GPL-2.0",
+      "sha": "adcb6d2a12c1f1b96eb2de8847e2c833c58a4bde",
+      "date": "2026-11-20T12:08:20Z",
+      "subject": "Merge pull request #7595 from k-yle/kh/wiki-semi"
+    },
+    {
+      "repository": "GoteoFoundation/goteo",
+      "url": "https://github.com/GoteoFoundation/goteo",
+      "default_branch": "live",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "sha": "782a20d5d1435188dd1c5f040693f3a86ed87aa1",
+      "date": "2026-10-28T17:21:49Z",
+      "subject": "fix: remove memory_limit from getSystemMaxFileSize calculation (#670)"
+    },
+    {
+      "repository": "goteo/v4-api",
+      "url": "https://github.com/goteo/v4-api",
+      "default_branch": "main",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "sha": "71d4901c3b16469250ae94844a59fe90da3320c1",
+      "date": "2026-11-06T09:24:18Z",
+      "subject": "chore: sinc main to develop (#270)"
+    },
+    {
+      "repository": "goteo/v4-web",
+      "url": "https://github.com/goteo/v4-web",
+      "default_branch": "main",
+      "archived": false,
+      "license": null,
+      "sha": "8fba3034d4e0edb84fee2c447f2e14ac34396bbe",
+      "date": "2026-09-29T14:35:50Z",
+      "subject": "chore: sync main to develop (#513)"
+    },
+    {
+      "repository": "omeka/omeka-s",
+      "url": "https://github.com/omeka/omeka-s",
+      "default_branch": "develop",
+      "archived": false,
+      "license": "GPL-3.0",
+      "sha": "5d23aa7949e22fda7187a4df6842800cfa7217f6",
+      "date": "2026-11-13T22:02:49Z",
+      "subject": "Escape displayed value languages"
+    },
+    {
+      "repository": "mysociety/alaveteli",
+      "url": "https://github.com/mysociety/alaveteli",
+      "default_branch": "develop",
+      "archived": false,
+      "license": "NOASSERTION",
+      "sha": "87856daa7d3239d2f8216ad0a009cdbb972e54f8",
+      "date": "2026-11-20T14:39:01Z",
+      "subject": "Merge branch 'robots-txt-user' into develop"
+    }
+  ]
+}

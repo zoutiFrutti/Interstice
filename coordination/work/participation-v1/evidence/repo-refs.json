@@ -1,0 +1,281 @@
+{
+  "observed_date": "2026-11-21",
+  "source": "GitHub connector + git clone",
+  "pull_requests": [
+    {
+      "number": 202,
+      "title": "C25 · Décisions A/A/B : intégration privée et relecture documentaire par lots",
+      "head": "integration/c25-tech-private-editorial-review-20261114",
+      "head_sha": "9dd5fffc0bd9ff20aa1d8501be315e5ba97034ff",
+      "base": "work/c24-r6-regression-candidate-20261114",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-14T21:34:42Z"
+    },
+    {
+      "number": 201,
+      "title": "C24 · Régression R6 complète sur la convergence validée, sans déploiement",
+      "head": "work/c24-r6-regression-candidate-20261114",
+      "head_sha": "e42a32a9f7a5a18d007dbd1413f4ca9f05223a5c",
+      "base": "work/c23-convergence-final-candidate-20261114",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-14T20:21:38Z"
+    },
+    {
+      "number": 200,
+      "title": "C23 · Pré-réception finale de la candidate C07 × NAV7 × C20 × C21",
+      "head": "work/c23-convergence-final-candidate-20261114",
+      "head_sha": "6bb19d4370a919e4f74b95f36cc8e0bf45d79c35",
+      "base": "work/c21-android-visual-reception-20261114",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-14T17:38:08Z"
+    },
+    {
+      "number": 199,
+      "title": "C21/C22 · Réception Android validée et garde-fous avant convergence",
+      "head": "work/c21-android-visual-reception-20261114",
+      "head_sha": "e0e79996a4b7436bf0934a165e7eeeff2780d133",
+      "base": "work/c20-ci-registre-reception-20261113",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-14T12:23:15Z"
+    },
+    {
+      "number": 198,
+      "title": "C20 · Corriger la réception CI C19 sans modifier les décisions",
+      "head": "work/c20-ci-registre-reception-20261113",
+      "head_sha": "586e91067216a1bd96e34c30ffca5f104fda192b",
+      "base": "work/c07-nav7-convergence-candidate-20261113",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-13T20:51:05Z"
+    },
+    {
+      "number": 197,
+      "title": "Convergence C07 × NAV7 : six portes, 31 rubriques et réception Work",
+      "head": "work/c07-nav7-convergence-candidate-20261113",
+      "head_sha": "366a33a5bad58e3c3942ec4e71eec8651a9e365d",
+      "base": "main",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-13T18:26:45Z"
+    },
+    {
+      "number": 196,
+      "title": "Sécurité : masquer le résiduel des journaux et étendre la garde à 64 ressources",
+      "head": "security/main-locators-candidate-20261111",
+      "head_sha": "3782cc4117075ab09f98cc93a2205f9f49337820",
+      "base": "main",
+      "draft": false,
+      "merged": true,
+      "state": "closed",
+      "updated_at": "2026-11-13T06:10:08Z"
+    },
+    {
+      "number": 195,
+      "title": "security: masquer les sources réservées et isoler les exports Pages",
+      "head": "security/main-locators-candidate-20261111",
+      "head_sha": "fb0bb29641f465ab12728359da3057da6500ebce",
+      "base": "main",
+      "draft": false,
+      "merged": true,
+      "state": "closed",
+      "updated_at": "2026-11-12T18:09:56Z"
+    },
+    {
+      "number": 193,
+      "title": "C11-DEV-01 · Raccordement candidat cartes #41 ↔ Atlas ↔ quatre portes",
+      "head": "feature/c11-dev01-cartes-atlas-20261107",
+      "head_sha": "e4f97498df8024e52c3b1b80cd91bed62ea0f390",
+      "base": "work/c07-reunification-20261104",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-07T14:59:05Z"
+    },
+    {
+      "number": 192,
+      "title": "C11-DEV-01 · Raccordement candidat cartes #41 → Atlas → quatre portes",
+      "head": "feature/c11-dev-01-cartes-atlas-20261107",
+      "head_sha": "68830450d3298c12022c1139d1486d56f4e811c1",
+      "base": "work/c07-reunification-20261104",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-07T12:10:29Z"
+    },
+    {
+      "number": 191,
+      "title": "[C11-LEC-01] Clôture documentaire, preuves Commune, statuts et raccords candidats",
+      "head": "review/c11-lectrice-01-cloture-20261107",
+      "head_sha": "8e369a39d0cd06d2007a8c9ba4fc5dd987ae9538",
+      "base": "review/c05-lectrice-01-corrections-20261104",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-07T09:27:40Z"
+    },
+    {
+      "number": 190,
+      "title": "[C11-MED-01] Catalogue FN, doublons et interpros sourcées",
+      "head": "coordination/c11-mediatheque-catalogue-interpros-20261107",
+      "head_sha": "fe66cfad92525def92e5bb884018e90316b4c1ef",
+      "base": "coordination/mediatheque-interpros-luttes-20261105",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-07T09:14:50Z"
+    },
+    {
+      "number": 189,
+      "title": "[Médiathèque] Dossier candidat sur les assemblées interprofessionnelles et les luttes sociales",
+      "head": "coordination/mediatheque-interpros-luttes-20261105",
+      "head_sha": "0a80f7e36ded194f2295158eff6de8143467d456",
+      "base": "main",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-05T14:07:11Z"
+    },
+    {
+      "number": 188,
+      "title": "[C09-ORCH-01] Référentiel vivant, décisions Zout et journaux d'ateliers",
+      "head": "coordination/c09-referentiel-vivant-orchestratrice-20261105",
+      "head_sha": "ed0c18a5332e731095e65ef34bb2ea43defc78b1",
+      "base": "work/c07-reunification-20261104",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-05T12:18:52Z"
+    },
+    {
+      "number": 186,
+      "title": "WORK-C07 · Candidate unique : immersion, lecture R6 et missions sécurisées",
+      "head": "work/c07-reunification-20261104",
+      "head_sha": "b3cca52e46d99f76ad151699818856e006ff7873",
+      "base": "main",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-16T23:26:21Z"
+    },
+    {
+      "number": 185,
+      "title": "[C06-ANA-01] Sept statuts candidats et pont documentaire fermé",
+      "head": "feature/c06-ana-01-status-bridge-20261104",
+      "head_sha": "9d823ec4a74e0bc470a5d2c1f40cc07970998d36",
+      "base": "feature/c04-entry-dive-20261104",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T17:28:28Z"
+    },
+    {
+      "number": 184,
+      "title": "[C05-LEC-01] Corrections documentaires et décision A, sans ouverture de contenus",
+      "head": "review/c05-lectrice-01-corrections-20261104",
+      "head_sha": "223c4a7c696d1b8b04d28b24cd87633399f67b58",
+      "base": "work/c02-v2-reconciliation-20261103",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T19:09:00Z"
+    },
+    {
+      "number": 183,
+      "title": "WORK-CONVERGENCE-01 · Console de coordination sûre, démonstration mobile",
+      "head": "work/coordination-console-demo-01",
+      "head_sha": "80de177d16dd4f0c1860b8dba24ba510b59dc10b",
+      "base": "main",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T16:13:36Z"
+    },
+    {
+      "number": 182,
+      "title": "C04 · Entrée par le logo et plongée caméra dans le centre de la faille",
+      "head": "feature/c04-entry-dive-20261104",
+      "head_sha": "c4f87abf75119d3e1927ece352efcde37d122eb1",
+      "base": "feature/c04-dev01-nav-reconciliation-20261104",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T17:15:30Z"
+    },
+    {
+      "number": 181,
+      "title": "C04-DEV-01 · Réconciliation NAV-02 Graphiste et Développeuse",
+      "head": "feature/c04-dev01-nav-reconciliation-20261104",
+      "head_sha": "45232845463c5303629d3dfc35f461768db50193",
+      "base": "work/nav-immersive-convergence-01",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T17:12:55Z"
+    },
+    {
+      "number": 180,
+      "title": "[FN-ORC] Pilote Observatrice GH-AW — préparation sécurisée, sans exécution",
+      "head": "work/fn-observatrice-gh-aw-pilote-20261104",
+      "head_sha": "b01ad5a27cac4ff3b3d204ec73f92fc9c68808ac",
+      "base": "main",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T15:15:13Z"
+    },
+    {
+      "number": 179,
+      "title": "NAV-02-DEV · corrections visuelles localisées candidates, dépend de #174",
+      "head": "feature/nav02-dev-visual-localized-20261104",
+      "head_sha": "bb1d4e3e5a5e113867edb5482a2b6f833f897517",
+      "base": "work/nav-immersive-convergence-01",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T13:59:55Z"
+    },
+    {
+      "number": 178,
+      "title": "[NAV-02] Pont documentaire candidat des 29 étapes, fermé par défaut",
+      "head": "feature/nav02-resource-bridge-candidate-20261104",
+      "head_sha": "925d8959b02cdcd574727856504e6018dacfaf02",
+      "base": "work/nav-immersive-convergence-01",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T10:43:57Z"
+    },
+    {
+      "number": 177,
+      "title": "[Anarchitecte NAV-02-ANA] Audit portes et Parcours PR174",
+      "head": "audit/nav-02-ana-coherence-20261104",
+      "head_sha": "a0973f444aee3493a04e8eff6fca5b389ce6cd1c",
+      "base": "main",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T16:14:41Z"
+    },
+    {
+      "number": 176,
+      "title": "NAV-02-GRA — revue artistique ciblée de la PR #174",
+      "head": "atelier/nav02-gra-revue-artistique-20261104",
+      "head_sha": "fd879d63d4964d527632c364c2f124cb5dc3af41",
+      "base": "work/nav-immersive-convergence-01",
+      "draft": true,
+      "merged": false,
+      "state": "open",
+      "updated_at": "2026-11-04T13:59:41Z"
+    }
+  ]
+}
