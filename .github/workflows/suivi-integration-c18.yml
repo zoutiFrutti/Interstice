@@ -1,0 +1,43 @@
+name: C18 suivi integration hors ligne
+on:
+  pull_request:
+    paths:
+      - 'coordination/agents/suivi_integration_c18.py'
+      - 'coordination/agents/test_suivi_integration_c18.py'
+      - 'coordination/agents/exemple_suivi_c18.json'
+      - 'coordination/agents/index_collectif_c03.py'
+      - 'coordination/agents/test_index_collectif_c03.py'
+      - 'coordination/c03/orchestratrice/**'
+      - 'coordination/c03/INDEX_TRANSMISSIONS.md'
+      - '.github/workflows/suivi-integration-c18.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Tests C18
+        run: python3 -m unittest discover -s coordination/agents -p 'test_suivi_integration_c18.py' -v
+      - name: Rapport candidat sur donnees exemples
+        run: |
+          python3 coordination/agents/suivi_integration_c18.py --entree coordination/agents/exemple_suivi_c18.json --sortie suivi-c18.json --markdown suivi-c18.md
+      - name: Générer l'index collectif C03 sans réseau
+        run: |
+          python3 coordination/agents/index_collectif_c03.py \
+            --entree coordination/c03/orchestratrice/registre_collectif_c03.json \
+            --sortie index-collectif-c03.md \
+            --json index-collectif-c03.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: suivi-c18-candidat
+          path: |
+            suivi-c18.json
+            suivi-c18.md
+            index-collectif-c03.md
+            index-collectif-c03.json
+          retention-days: 7

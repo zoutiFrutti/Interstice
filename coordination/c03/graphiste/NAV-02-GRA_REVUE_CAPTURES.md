@@ -1,0 +1,21 @@
+# NAV-02-GRA — Complément de revue des captures réelles
+**Date :** 2026-11-04. **Source :** PR #174 HEAD `01811690ae5dbd8bef4db2100395feea77a55431`; PNG de `coordination/work/nav-01/captures/`, SOURCE_HEAD `a69974101d0d8a14bbcda7313915d5dc6f51ec32`. **Inspection visuelle effective** des quatre images ci-dessous, par lecture des PNG renvoyés par GitHub. Ces images précèdent le HEAD final ; le code final n'est pas validé pixel à pixel par elles.
+
+## Captures inspectées
+- `entree-390.png` : logo Faille noire grand, bien cadré et lisible ; Interstice annoncé clairement. L'entrée reste une page de présentation avec un CTA, non une pénétration visuelle dans la fissure. Lien « Entrer sans animation » présent.
+- `exploration-390.png` : symbole Interstice visible avec ses ramifications rouges, quatre gros cercles numérotés, cartouches opaques et un cinquième repère « Manifeste ». Les cartouches masquent des parties du dessin et accentuent la lecture « menu sur une image ». Le panneau de commandes prend deux lignes et une large boîte blanche sous la carte.
+- `porte-390.png` : porte Médiathèque active au bord du symbole tronqué à gauche, puis un grand panneau beige clair sous la carte. La liste des cinq traversées ressemble à une suite de boutons de menu ; la continuité de l'espace n'est plus évidente. La carte reste néanmoins visible, ce qui est un bon point à préserver.
+- `exploration-1280.png` : l'ensemble du logo et ses nœuds sont lisibles ; les quatre portes occupent les quadrants. Le réseau officiel est visuellement très présent mais les portes numérotées et cartouches s'y superposent. La barre de commandes est grande et se lit comme un panneau de logiciel de cartographie.
+
+## Verdict artistique circonstancié
+**Partiellement conforme à l'intention, corrections localisées nécessaires.** L'espace est manipulable et la matière graphique officielle est présente ; la navigation paraît encore une carte avec des boutons et des panneaux. **Aucune validation de Zout présumée.** Pas de défaut de transparence ou de couleur objectivement établi sur ces quatre captures ; ne pas inventer de défaut du SVG.
+
+## Priorités à transmettre à La Développeuse
+1. **P0 — Désencombrer les portes sans perdre leurs noms.** Réduire les cartouches permanents ; préférer un libellé compact ou révélé au focus/sélection, mais garantir le nom accessible et une liste HTML toujours disponible. Ne pas toucher aux SVG. Fichiers : `assets/nav-01/explorer.css` (`.node`, `.orb`, `.node-label`), `explorer.html` (structure si nécessaire), `assets/nav-01/explorer.mjs` (état actif/focus).
+2. **P0 — Raccorder visuellement la lecture à la branche choisie.** Sur mobile, conserver un repère fixe de la porte/branche pendant le panneau ; remplacer l'effet « longue liste de boutons » par une hiérarchie d'étapes et bifurcations plus spatiale, sans perdre les liens HTML. Fichiers : `assets/nav-01/explorer.css` (`.panel`, `.map-wrap`, `.panel-links`), `assets/nav-01/explorer.mjs` (`renderDoor`, `renderPath`, `focusPoint`).
+3. **P1 — Compacter les outils, pas les possibilités.** Sur 320–390 px, alléger la boîte de contrôles et la note « Suivez une ramification », sans retirer zoom, recentrage, mode déplacement, manifeste ni alternative sans animation. Fichiers : `assets/nav-01/explorer.css` (`.map-controls`, `.space-note`, media queries), `explorer.html` et `explorer.mjs` si la commande est réorganisée.
+
+## Critères d'acceptation
+Comparer sur le même HEAD des captures avant/après de l'entrée, de la vue entière, d'une porte ouverte et d'une traversée à 390 et 1280 px. Tester aussi 320 px, zoom navigateur 400 %, clavier, focus, tactile simulé puis physique, lecteur d'écran, sans JS et réduction des mouvements. Les nœuds originaux et la grande fissure restent visibles ; le manifeste reste accessible. Les quatre portes ne doivent pas être confondues avec les sept Parcours.
+
+**Action :** La Développeuse examine les corrections proposées sur sa branche, avec tests de non-régression. Aucun patch CSS/JS, remplacement de logo, fusion ni publication par la Graphiste.

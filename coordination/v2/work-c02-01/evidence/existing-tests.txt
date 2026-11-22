@@ -1,0 +1,19 @@
+✔ navigation commune : pages existantes, routes, labels (4.056508ms)
+✔ prototype Atlas et parcours : pas de faux lieux ni collecte (2.194731ms)
+✔ five real destinations and preserved official SVG (1.490472ms)
+✔ camera and controls preserve access without sensitive writes (0.729764ms)
+✔ R4 : les deux candidats et archives sont présents, liens comparatifs résolus (2.649563ms)
+✔ R4 : base identitaire commune, surcouche Interstice isolée (2.150701ms)
+✔ R4 : navigation et accès textuel restent disponibles (1.917992ms)
+✔ R4 : ancre Entraide, mentions SVG et formulaire honnêtes (3.207622ms)
+✔ FN069: creation puis reprise identique sans doublon (390.334126ms)
+✔ private schema and no publication (1.318646ms)
+✔ idempotency controls (0.186165ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 894.117448

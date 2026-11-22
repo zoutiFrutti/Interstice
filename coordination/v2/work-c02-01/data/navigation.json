@@ -1,0 +1,127 @@
+{
+  "status": "candidate_non_importee_par_le_site",
+  "doors": [
+    {
+      "id": "encyclopedie",
+      "title": "Encyclopédie des communs",
+      "legacy_url": "wiki.html",
+      "subsections": [
+        "histoire_organisations",
+        "pouvoir_travail_communs",
+        "ecologies_territoires",
+        "egalites_soins",
+        "droits_libertes",
+        "cultures_techniques"
+      ]
+    },
+    {
+      "id": "mediatheque",
+      "title": "Médiathèque des communs",
+      "legacy_url": "bibliotheque.html",
+      "subsections": [
+        "oeuvres_et_textes",
+        "fonds_ecologie",
+        "portails_et_catalogues"
+      ]
+    },
+    {
+      "id": "carte",
+      "title": "Carte des communs",
+      "legacy_url": "atlas.html",
+      "subsections": [
+        "territoires_et_usages",
+        "lieux_historiques_a_documenter"
+      ]
+    },
+    {
+      "id": "entraide",
+      "title": "Entraide",
+      "legacy_url": "parcours.html#entraide",
+      "subsections": [
+        "droits_et_orientation",
+        "methodes_et_savoir_faire_a_selectionner"
+      ]
+    }
+  ],
+  "parcours_ids": [
+    "PAR-001",
+    "PAR-002",
+    "PAR-003",
+    "PAR-004",
+    "PAR-005",
+    "PAR-006",
+    "PAR-007"
+  ],
+  "manifesto": {
+    "current": "manifeste-v2-5.html",
+    "archive": "manifeste.html",
+    "role": "projet_fondateur_sans_porte_supplementaire"
+  },
+  "entry": {
+    "logos": [
+      "assets/logo-interstice.svg",
+      "assets/logo-faille-noire.svg"
+    ],
+    "immersive": "design-system/faille-navigation-interactive.html",
+    "transition": "facultative_avec_acces_textuel_permanent"
+  },
+  "historical_routes": [
+    "index.html",
+    "wiki.html",
+    "bibliotheque.html",
+    "atlas.html",
+    "parcours.html",
+    "parcours.html#entraide",
+    "manifeste-v2-5.html",
+    "manifeste.html",
+    "wiki-antifascisme-histoire-et-mecanismes.html",
+    "wiki-antiracisme-histoires-droits.html",
+    "wiki-association-collegiale.html",
+    "wiki-autonomie-materielle-savoir-faire.html",
+    "wiki-capitalisme-classes-travail.html",
+    "wiki-culture-creation-acces-art.html",
+    "wiki-decision-collective.html",
+    "wiki-ecologie-sociale-environnement.html",
+    "wiki-education-enfance-protection.html",
+    "wiki-egalite-fiches.html",
+    "wiki-egalite-genres-inclusivite.html",
+    "wiki-feminismes-histoire-egalite.html",
+    "wiki-financements-culture-spectacle.html",
+    "wiki-frontieres-migrations-colonialisme.html",
+    "wiki-handicap-validisme-neurodiversite.html",
+    "wiki-justice-prisons-abolitionnisme.html",
+    "wiki-lecture-croisee-travail-soin-pouvoir.html",
+    "wiki-liberte-numerique-ia-surveillance.html",
+    "wiki-logement-habitat-droit-ville.html",
+    "wiki-patriarcat-histoire-mecanismes.html",
+    "wiki-police-deces-memoire.html",
+    "wiki-politique-institutions-regimes.html",
+    "wiki-sante-psychiatrie-autonomie-soins.html",
+    "wiki-socialismes-communismes-anarchismes-autogestion.html"
+  ],
+  "historical_fragments": {
+    "wiki": {
+      "kind": "door",
+      "id": "encyclopedie"
+    },
+    "bibliotheque": {
+      "kind": "door",
+      "id": "mediatheque"
+    },
+    "atlas": {
+      "kind": "door",
+      "id": "carte"
+    },
+    "entraide": {
+      "kind": "door",
+      "id": "entraide"
+    },
+    "parcours": {
+      "kind": "parcours_index"
+    },
+    "carte": {
+      "kind": "overview"
+    }
+  },
+  "public_activation": false
+}

@@ -1,0 +1,588 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:interstice:work-c02-01:candidate-1",
+  "title": "Bundle documentaire V2 candidat non publiable",
+  "description": "La validation JSON Schema est complétée par les contrôles de références croisées et de non-perte dans lib/catalogue.mjs. Ce schéma ne produit aucun visa.",
+  "$defs": {
+    "validation": {
+      "type": "object",
+      "properties": {
+        "technical": {
+          "type": "string",
+          "minLength": 1
+        },
+        "documentary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "legal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publication": {
+          "const": "non_autorisee"
+        },
+        "political": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "technical",
+        "documentary",
+        "legal",
+        "publication",
+        "political"
+      ],
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin": {
+          "enum": [
+            "repo_main",
+            "repo_branch",
+            "library",
+            "drive",
+            "mandat",
+            "contexte_resume",
+            "web_primary"
+          ]
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checked_at": {
+          "type": "string",
+          "pattern": "^2026-11-03$"
+        },
+        "consultation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primary_material_consulted": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "origin",
+        "locator",
+        "checked_at",
+        "consultation",
+        "primary_material_consulted"
+      ],
+      "additionalProperties": true
+    },
+    "resource": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "id_origin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primary_door": {
+          "enum": [
+            "encyclopedie",
+            "mediatheque",
+            "carte",
+            "entraide"
+          ]
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "duplicate_candidates": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "canonical_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "availability": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validation": {
+          "$ref": "#/$defs/validation"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "id_origin",
+        "primary_door",
+        "aliases",
+        "duplicate_candidates",
+        "source_refs",
+        "canonical_url",
+        "availability",
+        "validation"
+      ],
+      "additionalProperties": true
+    },
+    "step": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resource_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "next_step_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "return_step_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "resource_ids",
+        "next_step_ids",
+        "return_step_ids"
+      ],
+      "additionalProperties": true
+    },
+    "parcours": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^PAR-00[1-7]$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priority": {
+          "enum": [
+            "prioritaire",
+            "progressif"
+          ]
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/step"
+          }
+        },
+        "bifurcations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "returns": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "objection_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "validation": {
+          "$ref": "#/$defs/validation"
+        },
+        "publication_authorized": {
+          "const": false
+        },
+        "structure_status": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "priority",
+        "question",
+        "steps",
+        "bifurcations",
+        "returns",
+        "source_refs",
+        "objection_ids",
+        "relations",
+        "validation",
+        "publication_authorized",
+        "structure_status"
+      ],
+      "additionalProperties": true
+    },
+    "relation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "from_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "to_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "fait_historique_atteste",
+            "filiation_revendiquee",
+            "comparaison",
+            "lien_conceptuel",
+            "complement_documentaire",
+            "controverse"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "parcours_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "proof": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "const": "candidate"
+        },
+        "publication_authorized": {
+          "const": false
+        }
+      },
+      "required": [
+        "id",
+        "from_id",
+        "to_id",
+        "type",
+        "label",
+        "source_refs",
+        "parcours_ids",
+        "proof",
+        "state",
+        "publication_authorized"
+      ],
+      "additionalProperties": true
+    },
+    "objection": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parcours_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "missing_evidence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owners": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "severity": {
+          "enum": [
+            "P0",
+            "P1"
+          ]
+        },
+        "state": {
+          "enum": [
+            "ouverte",
+            "bloquee"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resolution_condition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publication_blocking": {
+          "const": true
+        }
+      },
+      "required": [
+        "id",
+        "parcours_ids",
+        "question",
+        "missing_evidence",
+        "owners",
+        "source_refs",
+        "severity",
+        "state",
+        "category",
+        "resolution_condition",
+        "publication_blocking"
+      ],
+      "additionalProperties": true
+    },
+    "door": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "enum": [
+            "encyclopedie",
+            "mediatheque",
+            "carte",
+            "entraide"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "legacy_url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subsections": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "legacy_url",
+        "subsections"
+      ],
+      "additionalProperties": true
+    },
+    "navigation": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "candidate_non_importee_par_le_site"
+        },
+        "doors": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/door"
+          }
+        },
+        "parcours_ids": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "type": "string",
+            "pattern": "^PAR-00[1-7]$"
+          }
+        },
+        "historical_routes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "historical_fragments": {
+          "type": "object"
+        },
+        "entry": {
+          "type": "object"
+        },
+        "manifesto": {
+          "type": "object"
+        },
+        "public_activation": {
+          "const": false
+        }
+      },
+      "required": [
+        "status",
+        "doors",
+        "parcours_ids",
+        "historical_routes",
+        "historical_fragments",
+        "entry",
+        "manifesto",
+        "public_activation"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "type": "object",
+  "properties": {
+    "resources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/resource"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relation"
+      }
+    },
+    "objections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/objection"
+      }
+    },
+    "parcours": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "$ref": "#/$defs/parcours"
+      }
+    },
+    "navigation": {
+      "$ref": "#/$defs/navigation"
+    }
+  },
+  "required": [
+    "resources",
+    "sources",
+    "relations",
+    "objections",
+    "parcours",
+    "navigation"
+  ],
+  "additionalProperties": true
+}

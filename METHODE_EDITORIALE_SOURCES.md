@@ -86,3 +86,18 @@ Les dossiers existants sont des **premières couches documentaires**, non des ar
 | 12. Autonomie matérielle | Contrôler sécurité, reproductibilité, normes, risques et sources de plans ; aucun tutoriel réputé certifié de plein droit. |
 
 **Objectif :** ouvrir des connaissances à l'enquête et à la contradiction, pas remplacer une autorité par une autre.
+
+
+## Complément adopté — identité éditoriale des espaces (17 novembre 2026)
+
+**Décision de Zout :** la distinction fonctionnelle ci-dessous complète les règles précédentes. Elle ne modifie pas à elle seule l'architecture de navigation ni les visas de publication.
+
+- **La Vigie de la Faille est une rédaction journalistique autonome.** Elle produit enquêtes, reportages, entretiens, actualités, brèves, analyses, portraits et suivis. Elle choisit ses sujets pour leur intérêt public et journalistique, **sans obligation d'illustrer une thèse sur les communs ou les dominations**. Elle peut couvrir initiatives, événements et faits positifs autant que conflits et abus. Distinguer clairement fait, reportage, analyse, éditorial/opinion ; vérifier, confronter, corriger, protéger les sources, solliciter les personnes mises en cause et garantir le droit de réponse. Son indépendance de vérification vaut aussi vis-à-vis des convictions de La Faille noire.
+- **L'Encyclopédie des communs** produit des références durables : concepts, histoire, biographies, institutions, organisations, expériences, pratiques et controverses. Elle expose limites, échecs, contradictions et désaccords ; elle ne sert pas de catalogue de solutions militantes. Vérifier Wikipédia et l'existant : **RELIER > COMPLÉTER > CRÉER** ; pas de doublon si l'apport original n'est pas démontré.
+- **L'Atlas des communs** situe et documente les lieux, territoires, initiatives et expériences collectives ; il précise dates, activité actuelle, provenance, consentement, confidentialité, degré de vérification, fonctionnement et difficultés. Pas de coordonnées ni d'images approximatives présentées comme authentiques.
+- **Archives** : préserver pièces, fonds, provenance, droits, contextes, versions et conditions de consultation. **Médiathèque** : référencer des œuvres et ressources avec crédits, formats, licences et accès. **Faire Ensemble** : transmettre des ressources pratiques et méthodes vérifiées, avec limites de sécurité, territoire et date.
+- **Relations transversales sans subordination** : un reportage peut renvoyer à une notice encyclopédique ou à une fiche Atlas, et inversement. Ces liens ne valent ni preuve de causalité ni approbation idéologique ; aucun espace ne dicte les conclusions factuelles d'un autre.
+- **Idées de sujets** : consigner les pistes dans `coordination/ateliers/REGISTRE_SUJETS_CANDIDATS_VIGIE_ENCYCLOPEDIE_ATLAS.md` ; distinguer idée, dossier existant à compléter, enquête engagée et publication autorisée. Rapprocher chaque piste des IDs canoniques et du registre éditorial avant toute création.
+- **Exclusion explicite** : l'affaire individuelle dite « contrôle SNCF / Arnaud » a été discutée à titre privé ; **ne pas l'inscrire dans les projets d'articles ni la proposer pour La Vigie ou l'Encyclopédie**.
+
+**Portée :** règle éditoriale de travail décidée ; aucune création automatique d'article, de fiche canonique, de publication, ni changement de navigation.

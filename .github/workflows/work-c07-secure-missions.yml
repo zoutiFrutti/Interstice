@@ -1,0 +1,111 @@
+name: C07 secure deterministic missions - no AI
+on:
+  pull_request:
+    paths:
+      - 'coordination/agents/**'
+      - 'coordination-console/github-observer.mjs'
+      - 'scripts/observe-c07.mjs'
+      - 'tests/c07-github-observer.test.mjs'
+      - 'coordination/c03/orchestratrice/**'
+      - '.github/workflows/work-c07-secure-missions.yml'
+  workflow_dispatch:
+    inputs:
+      authorize:
+        description: Authorize a free deterministic check only
+        type: boolean
+        required: true
+        default: false
+      previous_run:
+        description: Prior run containing c07-checkpoint (empty starts a new mission)
+        type: string
+        default: ''
+      report_hash:
+        description: Exact SHA256 to approve (required for resume)
+        type: string
+        default: ''
+      decision:
+        description: Decision on the technical report only
+        type: choice
+        options: [revoir, reprendre, arreter]
+        default: revoir
+permissions:
+  contents: read
+  actions: read
+  pull-requests: read
+concurrency:
+  group: c07-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+jobs:
+  offline-proof:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - run: python3 -m unittest discover -s coordination/agents -p 'test_*.py' -v
+      - name: Execute synthetic approval and resumption without network or AI
+        run: python3 coordination/agents/demo_c07.py artifacts/c07/demo.json
+      - name: Execute bounded checks on all real candidate catalogue records, awaiting human review
+        env:
+          C07_SOURCE_SHA: ${{ github.event.pull_request.head.sha }}
+        run: python3 coordination/agents/catalogue_c07.py --output artifacts/c07/catalogue
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Observe real candidate HEAD, runs and result artifacts (read-only)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/observe-c07.mjs artifacts/c07/github-observation.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: c07-offline-proof-${{ github.event.pull_request.head.sha }}
+          path: artifacts/c07/
+  authorized-mission:
+    if: github.event_name == 'workflow_dispatch' && inputs.authorize && github.actor == github.repository_owner && vars.ATELIERS_EMERGENCY_STOP != 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify checkpoint source before restoring any data
+        if: inputs.previous_run != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PRIOR_RUN: ${{ inputs.previous_run }}
+        run: |
+          case "$PRIOR_RUN" in ''|*[!0-9]*) echo 'Invalid run ID'; exit 1;; esac
+          mkdir -p checkpoint-source
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$PRIOR_RUN" > checkpoint-source/run.json
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$PRIOR_RUN/artifacts?per_page=100" > checkpoint-source/artifacts.json
+          python3 coordination/agents/verify_checkpoint_c07.py
+      - name: Restore a prior checkpoint, never code from artifacts
+        if: inputs.previous_run != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: c07-checkpoint
+          path: checkpoint
+          run-id: ${{ inputs.previous_run }}
+          github-token: ${{ github.token }}
+      - name: Execute or resume a bounded deterministic mission
+        env:
+          PRIOR_RUN: ${{ inputs.previous_run }}
+          REPORT_HASH: ${{ inputs.report_hash }}
+          DECISION: ${{ inputs.decision }}
+          ACTOR: ${{ github.actor }}
+          ATELIERS_EMERGENCY_STOP: ${{ vars.ATELIERS_EMERGENCY_STOP || 'false' }}
+        run: |
+          if [ -z "$PRIOR_RUN" ]; then
+            python3 coordination/agents/reunification_c07.py start --state checkpoint/state.json --mission coordination/agents/exemple_mission_c14.json
+          else
+            python3 coordination/agents/reunification_c07.py decide --state checkpoint/state.json --decision "$DECISION" --actor "$ACTOR" --report-hash "$REPORT_HASH"
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: c07-checkpoint
+          path: checkpoint/state.json
+          retention-days: 30

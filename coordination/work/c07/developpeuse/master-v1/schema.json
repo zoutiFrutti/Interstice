@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C07 master projection internal contract",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "kind",
+    "identity_origin",
+    "legacy_primary_door",
+    "aliases",
+    "duplicate_candidates",
+    "source_refs",
+    "canonical_source",
+    "versions",
+    "status",
+    "rights",
+    "privacy",
+    "relations_ids",
+    "objection_ids",
+    "presentation",
+    "visas"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "c07-master-projection/1"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "identity_origin": {
+      "type": "string"
+    },
+    "legacy_primary_door": {
+      "enum": [
+        "entraide",
+        "encyclopedie",
+        "mediatheque",
+        "carte"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "duplicate_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "canonical_source": {
+      "type": "object"
+    },
+    "versions": {
+      "type": "object"
+    },
+    "status": {
+      "type": "object"
+    },
+    "rights": {
+      "type": "object"
+    },
+    "privacy": {
+      "type": "object"
+    },
+    "relations_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "objection_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "presentation": {
+      "type": "object"
+    },
+    "visas": {
+      "type": "object"
+    }
+  }
+}
