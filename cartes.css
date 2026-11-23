@@ -1,0 +1,27 @@
+/* Styles complémentaires à l'identité Interstice. Aucun fond ou service externe. */
+.cartes{border-top:1px solid #69767d!important;padding:32px 0!important;margin-top:30px}
+.cartes h2{font-size:clamp(1.6rem,5vw,2.3rem)}
+.cartes h3{font-size:1.35rem}
+.map-readings,.map-display{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.map-readings button,.map-display button{min-height:48px}
+#map-panel{border:1px solid #7b8990;border-radius:14px;padding:14px;background:#1a252b}
+#map-panel[hidden],#list-panel[hidden]{display:none!important}
+.map-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.map-controls>div{display:flex;gap:8px;align-items:center}
+.map-controls button{min-height:44px;min-width:44px;padding:8px 12px}
+#municipality-map{display:block;width:100%;height:auto;aspect-ratio:760/420;max-height:550px;background:#13232d;border-radius:12px;border:1px solid #526a76;margin-top:12px}
+.map-gridline{stroke:#52707f;stroke-opacity:.46;stroke-dasharray:3 9;stroke-width:1}
+.map-region-label{font:bold 20px system-ui,sans-serif;fill:#f0e2ca}
+.map-axis-label{font:14px system-ui,sans-serif;fill:#f0e2ca}
+.map-marker{cursor:pointer;outline:none}
+.map-marker-halo{fill:#e8b5b5;fill-opacity:.16}
+.map-marker-circle{fill:#b83441;stroke:#fff;stroke-width:2.4}
+.map-marker-count{font:bold 17px system-ui,sans-serif;fill:#fff;pointer-events:none}
+.map-marker-label{font:bold 16px system-ui,sans-serif;fill:#fff;paint-order:stroke;stroke:#13232d;stroke-width:4px;stroke-linejoin:round;pointer-events:none}
+.map-marker:hover .map-marker-circle,.map-marker:focus .map-marker-circle,.map-marker.is-selected .map-marker-circle{fill:#e1a655;stroke:#fff;stroke-width:3}
+.map-marker:focus .map-marker-halo{stroke:#fff;stroke-width:3}
+.map-caption,.map-legend{font-size:.96rem;color:#f0e0c7}
+.entry-kind{font-size:.9rem;font-weight:700;color:#ffdaa7!important}
+.map-state{padding:10px;border-left:4px solid #d9b174;background:#252e34}
+@media(max-width:600px){.cartes{padding:18px 0!important}.map-readings button,.map-display button{flex:1 1 140px}.map-controls>span{font-size:.9rem}}
+@media print{#map-panel,.map-readings,.map-display{display:none!important}}

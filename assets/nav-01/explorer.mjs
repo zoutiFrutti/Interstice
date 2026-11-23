@@ -189,13 +189,13 @@ function renderDoor(id, section = null) {
   panelBody.append(element('p',door.description));
   if(id==='encyclopedie'){
     const atlas=element('section',undefined,'atlas-entry');atlas.id='atlas-entry';
-    atlas.append(element('h3','Atlas des communs'),element('p','Explorer les lieux, les initiatives et les réseaux documentés.'),link('Ouvrir l’Atlas existant ↗','atlas.html'));
+    atlas.append(element('h3','Atlas des communs'),element('p','Explorer les lieux, les initiatives et les réseaux documentés.'),link('Ouvrir l’Atlas existant ↗','atlas.html'),link('Explorer les deux cartes fictives ↗','decouvrir-initiatives.html#cartes'));
     panelBody.append(atlas,readingIntroductions());
     if(section==='atlas')panelBody.dataset.section='atlas';else delete panelBody.dataset.section;
   }
   if(id==='entraide'){
     const tools=element('section',undefined,'collective-tools');tools.append(element('h3','Propositions et participation'));
-    tools.append(element('p',COLLECTIVE_TOOLS_NOTICE,'notice'));
+    tools.append(element('p',COLLECTIVE_TOOLS_NOTICE,'notice'));tools.append(link('Explorer les initiatives fictives et les cartes ↗','decouvrir-initiatives.html#cartes'));
     const links=element('ul',undefined,'panel-links collective-tool-list');
     for(const tool of COLLECTIVE_TOOLS){
       const item=element('li'),description=element('p',tool.status+' — '+tool.detail,'tool-status');description.id='collective-tool-'+tool.id;
