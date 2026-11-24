@@ -148,8 +148,23 @@
           },
           "decision_Zout": {
             "date": "2026-11-24",
-            "type": "NON_VALIDATION_PROVISOIRE",
-            "decision": "Je ne valide pas encore le dossier Autonomie matérielle et savoir-faire. Poursuis dix passes réelles de recherches documentaires sur les huit chantiers AUT-R01 à AUT-R08.",
+            "type": "CONSERVATION_VALIDEE",
+            "decision": "Je valide la conservation de la V0.2 du dossier « Reprendre la maîtrise de nos moyens matériels », SHA-256 7bc6234a50cc1c2e8857f05b5a62da4335b2cd9c6d2a106e627f1a03b8dab3f9, sous réserves documentaires, avec maintien des huit recherches AUT-R01 à AUT-R08 et conservation de la version historique. Enregistre ma décision sans publication ni fusion et passe au prochain texte recevable et non tranché du registre.",
+            "version": "V0.2",
+            "sha256": "7bc6234a50cc1c2e8857f05b5a62da4335b2cd9c6d2a106e627f1a03b8dab3f9",
+            "artifact": "Interstice_Reprendre_la_maitrise_de_nos_moyens_materiels_V0.2_candidate.md",
+            "artifact_location": "Conversation La Relieuse, empreinte vérifiée localement, texte non versé au dépôt public",
+            "historical_blob": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1",
+            "open_research": [
+              "AUT-R01",
+              "AUT-R02",
+              "AUT-R03",
+              "AUT-R04",
+              "AUT-R05",
+              "AUT-R06",
+              "AUT-R07",
+              "AUT-R08"
+            ],
             "publication_authorized": false,
             "merge_authorized": false
           },
@@ -755,7 +770,22 @@
             "recommendation": "Corpus comparatif distinguant propriété, droit d’usage, contrôle productif et accès aux outils. Envisager fiches de cas après contrôle anti-doublons et sources indépendantes; aucune création de notice ni intégration sans validation.",
             "publication_authorized": false,
             "merge_authorized": false
-          }
+          },
+          "decision_history": [
+            {
+              "date": "2026-11-24",
+              "type": "NON_VALIDATION_PROVISOIRE",
+              "decision": "Je ne valide pas encore le dossier Autonomie matérielle et savoir-faire. Poursuis dix passes réelles de recherches documentaires sur les huit chantiers AUT-R01 à AUT-R08.",
+              "publication_authorized": false,
+              "merge_authorized": false
+            },
+            {
+              "date": "2026-11-24",
+              "type": "ORIENTATION_REFONTE_VALIDEE",
+              "decision": "Réécriture intégrale en dix chapitres, maintien AUT-R01 à AUT-R08 et version historique, soumission sans publication ni fusion."
+            }
+          ],
+          "editorial_status": "V0_2_CONSERVATION_VALIDEE_SOUS_RESERVES"
         },
         {
           "id": "wiki-capitalisme-classes-travail",
