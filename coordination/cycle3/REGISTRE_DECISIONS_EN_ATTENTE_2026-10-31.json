@@ -200,12 +200,27 @@
       "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-socialismes-communismes-anarchismes-autogestion.html",
       "summary": "Décret du 16 avril ≠ exécution ; autres expériences distinctes.",
       "objection": "Décret du 16 avril ≠ exécution ; autres expériences distinctes.",
-      "status": "VALIDATION_DIFFEREE_RECHERCHES_EN_COURS",
+      "status": "V0_2_CONSERVATION_VALIDEE_SOUS_RESERVES",
       "sources": "Sources et références dans le texte intégral",
       "decision_Zout": {
         "date": "2026-11-24",
-        "decision": "Je ne valide pas encore le dossier Socialismes, communismes, anarchismes et autogestion. Continue les recherches sur les huit chantiers ouverts et soumets-moi une nouvelle décision.",
-        "type": "NON_VALIDATION_PROVISOIRE",
+        "type": "CONSERVATION_VALIDEE",
+        "decision": "Je valide la conservation de la V0.2 du dossier « S'organiser autrement », sous réserves documentaires, avec maintien des huit recherches SOC-R01 à SOC-R08 et conservation de la version historique. Enregistre cette décision sans publication ni fusion et passe au prochain texte recevable et non tranché du registre.",
+        "version": "V0.2",
+        "artifact": "Interstice_Sorganiser_autrement_V0.2_candidate.md",
+        "sha256": "3c0c9276036e9602adaa3c224559b1801d77d8665946b1c238751d01b61fdc7e",
+        "artifact_location": "Conversation La Relieuse uniquement ; texte non versé au dépôt public",
+        "historical_blob": "f67a0deeb060ef4ec6574d9b0d2dd3a6b7e297b0",
+        "open_research": [
+          "SOC-R01",
+          "SOC-R02",
+          "SOC-R03",
+          "SOC-R04",
+          "SOC-R05",
+          "SOC-R06",
+          "SOC-R07",
+          "SOC-R08"
+        ],
         "publication_authorized": false,
         "merge_authorized": false
       },
@@ -290,7 +305,21 @@
             "status": "OPEN_PARTIAL_PROGRESS"
           }
         ]
-      }
+      },
+      "decision_history": [
+        {
+          "date": "2026-11-24",
+          "decision": "Je ne valide pas encore le dossier Socialismes, communismes, anarchismes et autogestion. Continue les recherches sur les huit chantiers ouverts et soumets-moi une nouvelle décision.",
+          "type": "NON_VALIDATION_PROVISOIRE",
+          "publication_authorized": false,
+          "merge_authorized": false
+        },
+        {
+          "date": "2026-11-24",
+          "type": "ORIENTATION_REFONTE_VALIDEE",
+          "decision": "Réécriture intégrale selon la structure proposée, conservation de la version historique et des huit recherches, soumission avant validation ou publication."
+        }
+      ]
     }
   ],
   "approved_prior": [
@@ -407,5 +436,5 @@
       "objection": "Droits de santé et soins non consentis : avis sanitaire/juridique requis."
     }
   ],
-  "new_human_approvals": 1
+  "new_human_approvals": 2
 }
