@@ -206,9 +206,27 @@
       "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-feminismes-histoire-egalite.html",
       "summary": "Archives des ouvrières/Commune et travail invisible correctement référencés.",
       "objection": "Archives des ouvrières/Commune et travail invisible correctement référencés.",
-      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "status": "CONSERVATION_VALIDEE_SOUS_RESERVES",
       "sources": "Sources et références dans le texte intégral",
-      "decision_Zout": null,
+      "decision_Zout": {
+        "date": "2026-11-24",
+        "type": "CONSERVATION_VALIDEE",
+        "decision": "Je valide la conservation de la version candidate « Féminismes : comprendre, transmettre, documenter », SHA fd3fb96439560ba23a990b310d74b1d96e5f3f26, sous réserves documentaires, historiques et juridiques, avec maintien des huit recherches FEM-R01 à FEM-R08, sans publication, fusion ni seconde passe.",
+        "sha": "fd3fb96439560ba23a990b310d74b1d96e5f3f26",
+        "open_research": [
+          "FEM-R01",
+          "FEM-R02",
+          "FEM-R03",
+          "FEM-R04",
+          "FEM-R05",
+          "FEM-R06",
+          "FEM-R07",
+          "FEM-R08"
+        ],
+        "publication_authorized": false,
+        "merge_authorized": false,
+        "second_pass_authorized": false
+      },
       "relieuse_review": {
         "date": "2026-11-24",
         "scope": "Lecture intégrale du candidat HTML et contrôle ciblé de sources web, pas de collation exhaustive ni de tests d'accessibilité. 25 fiches introductives, six familles.",
@@ -600,5 +618,5 @@
       "objection": "Droits de santé et soins non consentis : avis sanitaire/juridique requis."
     }
   ],
-  "new_human_approvals": 3
+  "new_human_approvals": 4
 }
