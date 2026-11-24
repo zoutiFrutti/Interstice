@@ -311,9 +311,31 @@
       "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-lecture-croisee-travail-soin-pouvoir.html",
       "summary": "PR44 et sommaire PR35 ; distinctions entre soin, pouvoir et droit de recours.",
       "objection": "PR44 et sommaire PR35 ; distinctions entre soin, pouvoir et droit de recours.",
-      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "status": "V0_2_CONSERVATION_VALIDEE_SOUS_RESERVES",
       "sources": "Sources et références dans le texte intégral",
-      "decision_Zout": null,
+      "decision_Zout": {
+        "date": "2026-11-24",
+        "type": "CONSERVATION_VALIDEE",
+        "decision": "Je valide la conservation de la V0.2 du dossier « Qui fait vivre les communs ? », SHA-256 73fbed772c1b9f61382216f9b6645c6bfb164c797162cffee91149132c225a8d, sous réserves documentaires, avec maintien des huit recherches SOIN-R01 à SOIN-R08, du blocage R6 et de la version historique. Enregistre ma décision sans publication ni fusion et passe au prochain texte recevable et non tranché du registre.",
+        "version": "V0.2",
+        "sha256": "73fbed772c1b9f61382216f9b6645c6bfb164c797162cffee91149132c225a8d",
+        "artifact": "Interstice_Qui_fait_vivre_les_communs_V0.2_candidate.md",
+        "artifact_location": "Conversation La Relieuse ; empreinte vérifiée sur le fichier local ; texte non versé au dépôt public",
+        "historical_blob": "3b6f80037ed4ec1859c681d89b53d3028c3c2456",
+        "open_research": [
+          "SOIN-R01",
+          "SOIN-R02",
+          "SOIN-R03",
+          "SOIN-R04",
+          "SOIN-R05",
+          "SOIN-R06",
+          "SOIN-R07",
+          "SOIN-R08"
+        ],
+        "r6_block_maintained": true,
+        "publication_authorized": false,
+        "merge_authorized": false
+      },
       "relieuse_review": {
         "date": "2026-11-24",
         "scope": "Lecture intégrale du candidat, comparaison avec début de main et identification du blob PR44 ; lecture du chapitre Kropotkine sur Wikisource, notices bibliographiques et extraits indexés de Berenstain, article OIT, comparaison Wikipédia Travail du care. Pas de lecture intégrale revendiquée des cinq autres œuvres, pas de contrôle du serveur ni d'accessibilité.",
@@ -389,7 +411,14 @@
         "publication_authorized": false,
         "merge_authorized": false,
         "technical_gate": "File C25 exclut wiki-lecture-croisee-travail-soin-pouvoir de la file de réconciliation R6 (blocage documentaire), distinct du candidat Lectrice. Aucun déblocage R6, aucun visa juridique ni fonctionnalité serveur attestés."
-      }
+      },
+      "decision_history": [
+        {
+          "date": "2026-11-24",
+          "type": "ORIENTATION_ENRICHISSEMENT_VALIDEE",
+          "decision": "Enrichir et réécrire le dossier avec les nouvelles recherches et Joan Tronto, soumettre la candidate sans publication."
+        }
+      ]
     },
     {
       "id": "wiki-politique-institutions-regimes",
@@ -694,5 +723,5 @@
       "objection": "Droits de santé et soins non consentis : avis sanitaire/juridique requis."
     }
   ],
-  "new_human_approvals": 4
+  "new_human_approvals": 5
 }
