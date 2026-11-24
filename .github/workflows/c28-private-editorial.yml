@@ -1,0 +1,26 @@
+name: C28 owner-private editorial pipeline tests
+on:
+  pull_request:
+    paths:
+      - scripts/private_editorial.py
+      - scripts/private_editorial_render.py
+      - tests/test_private_editorial.py
+      - coordination/work/c28/**
+      - .github/workflows/c28-private-editorial.yml
+  push:
+    branches: [work/c28-private-editorial-publication-20261125]
+permissions:
+  contents: read
+jobs:
+  synthetic:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m unittest discover -s tests -p test_private_editorial.py -v
+      - run: node scripts/security/public-boundary.mjs source .
