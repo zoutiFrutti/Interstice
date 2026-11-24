@@ -293,6 +293,160 @@
             "recommendation": "Refonte proposée en portail de ressources, enquêtes de terrain, préservation des communs et mutualisation ; aucune certification technique, aucune réécriture autorisée à ce stade.",
             "publication_authorized": false,
             "merge_authorized": false
+          },
+          "research_followup_round2": {
+            "date": "2026-11-24",
+            "scope": "Dix études de cas documentaires distinctes, sources publiques et institutionnelles, pages de présentation et études ; contrôle visuel ciblé du contrat Can Batlló p.4 et archive VilaWeb p.2. Aucun entretien, visite, contrôle foncier exhaustif, audit financier ou test de matériel. Pas de nouveau texte ni visa.",
+            "passes": [
+              {
+                "n": 11,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "Can Batlló",
+                "finding": "Concession municipale de 30 ans prorogeable jusqu’à 50, distincte de la propriété; commission paritaire et retour social. Contrat signé consulté en texte et page 4; annexes et avenants à contrôler.",
+                "sources": [
+                  "https://media-edg.barcelona.cat/wp-content/uploads/2019/03/22163214/contracte-CAN-BATLLO-signat.pdf",
+                  "https://revistas.usc.gal/index.php/ricd/article/view/8018/11459"
+                ]
+              },
+              {
+                "n": 12,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "KONVENT",
+                "finding": "Archive VilaWeb du 5 avril 2016 p.2: cession en septembre 1992, festival en 2005. Statut foncier actuel et financement des travaux inconnus. Raccordement proposé à enquête Vigie, pas de transmission attestée.",
+                "sources": [
+                  "https://archive.acvic.org/images/AC_premsa/2016/05.04.2016_vilaweb.pdf"
+                ]
+              },
+              {
+                "n": 13,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "Friche Belle de Mai",
+                "finding": "Propriété municipale, bail emphytéotique 45 ans à SCIC, quatre collèges au CA selon site; ne pas assimiler à autogestion intégrale; crèche et ateliers, financement public à examiner.",
+                "sources": [
+                  "https://www.lafriche.org/la-friche/histoire/",
+                  "https://www.lafriche.org/la-friche/lequipescic/vuegenerale/"
+                ]
+              },
+              {
+                "n": 14,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "case": "Les Grands Voisins",
+                "finding": "Occupation temporaire 2015-2020; modèle décrit par porteurs : hébergement social, locaux, activités marchandes et subventions. Fermeture attestée; trajectoires des personnes et structures à étudier.",
+                "sources": [
+                  "https://lesgrandsvoisins.org/le-modele-economique/",
+                  "https://www.plateau-urbain.com/tiers-lieux/actualites-des-lieux/le-document-de-cloture-des-grands-voisins-est-disponible/",
+                  "https://fonda.asso.fr/ressources/aurore-et-lexperience-des-grands-voisins"
+                ]
+              },
+              {
+                "n": 15,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "Mains d’Œuvres",
+                "finding": "Bail expiré 31 décembre 2017, expulsion 8 octobre 2019, annulation pour vice de procédure 15 janvier 2020 et retour temporaire. Convention actuelle non vérifiée.",
+                "sources": [
+                  "https://www.mainsdoeuvres.org/le-lieu/histoire",
+                  "https://www.artnewspaper.fr/2020/01/17/lassociation-mains-doeuvres-va-reintegrer-ses-locaux-a-saint-ouen"
+                ]
+              },
+              {
+                "n": 16,
+                "ids": [
+                  "AUT-R01",
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "case": "Ateliers de la Mine",
+                "finding": "Ancienne mine de Lavaveix, commune propriétaire selon association, région décrit 1000 m² rénovés, recyclerie, ateliers, fablab, cuisine et 5 salariés (3 ETP) en mars 2025; convention tripartite et comptes à obtenir.",
+                "sources": [
+                  "https://territoires.nouvelle-aquitaine.fr/actualites/les-ateliers-de-la-mine-un-tiers-lieu-eclectique",
+                  "https://www.helloasso.com/associations/les-ateliers-de-la-mine"
+                ]
+              },
+              {
+                "n": 17,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "L’Usine Genève",
+                "finding": "Association faîtière autogérée depuis 1989, environ vingt associations et collectifs selon site, bâtiment mis à disposition par ville selon tpg; règles de répartition, convention et financement à étudier.",
+                "sources": [
+                  "https://www.usine.ch/",
+                  "https://www.tpg.ch/fr/se-rendre-lusine-geneve",
+                  "https://www.ledauphine.com/culture-loisirs/2026/04/05/l-usine-le-coeur-toujours-battant-de-la-culture-et-la-fete-alternatives"
+                ]
+              },
+              {
+                "n": 18,
+                "ids": [
+                  "AUT-R02",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "case": "Cagibig",
+                "finding": "Modèle mutualisation spectacle : propriété conservée, stockage chez membre ou dépôt, points pour prêt et contribution financière possible; contrôle réel des équipements, responsabilité, assurance et accès non contributeurs à étudier. Pas de recommandation d’implémenter des points sans arbitrage.",
+                "sources": [
+                  "https://www.cagibig.com/modele/",
+                  "https://www.leprogres.fr/economie/2025/09/09/woodstower-biennale-de-la-danse-nuits-sonores-cette-societe-mutualise-le-materiel-pour-organiser-des-spectacles"
+                ]
+              },
+              {
+                "n": 19,
+                "ids": [
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "case": "RFBO et Les Lieux Communs",
+                "finding": "RFBO fondé 2022, association depuis 2025; carte et chiffres provisoires. Lieux Communs expérimente depuis mai 2026 prêt entre adhérents sans frais de location, catalogue CryptPad et formulaire facultatif. Ne pas reproduire publication de coordonnées personnelles ni déduire licence du catalogue.",
+                "sources": [
+                  "https://rfbo.fr/",
+                  "https://leslieuxcommuns.fr/bibobj"
+                ]
+              },
+              {
+                "n": 20,
+                "ids": [
+                  "AUT-R04",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "case": "CUMA",
+                "finding": "FNCuma annonce 182000 adhérents et 250000 matériels en métropole, millésime exact de page à établir; achats collectifs, planning, entretien et emploi partagé. Étudier arbitrages de calendrier et financement sans supposer modèle ouvert à tous.",
+                "sources": [
+                  "https://www.cuma.fr/decouvrir-le-reseau-cuma-et-la-federation-nationale-des-cuma/les-chiffres-cles-du-reseau-cuma/",
+                  "https://www.cuma.fr/chiffres-agreste-la-mutualisation-croissante-des-machines-agricoles-est-un-levier-strategique-pour-lagriculture-francaise/"
+                ]
+              }
+            ],
+            "additional_source": "https://latelierpaysan.org/Faites-vous-connaitre-pour-rejoindre-le-reseau-Soudons-fermes",
+            "open_research": [
+              "AUT-R01",
+              "AUT-R02",
+              "AUT-R03",
+              "AUT-R04",
+              "AUT-R05",
+              "AUT-R06",
+              "AUT-R07",
+              "AUT-R08"
+            ],
+            "recommendation": "Refonte en dossier de comparaison des communs techniques, droits d’usage, pérennité, partage de matériel et retour d’expérience. Fiches de cas candidates et recherches ouvertes, pas de doublon KONVENT ni création de service; privilégier accès libre sans notation individuelle.",
+            "publication_authorized": false,
+            "merge_authorized": false
           }
         },
         {
