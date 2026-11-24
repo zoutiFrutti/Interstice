@@ -1182,6 +1182,344 @@
             "recommendation": "Refonte transversale proposée : Qui produit la richesse et qui en dispose ? Travail, propriété, classes sociales et pouvoir économique. Renvois Wikipédia et dossiers SOC SOIN FEM ANT AUT, outils pédagogiques explicitement fictifs et recherches ouvertes. Aucun visa.",
             "publication_authorized": false,
             "merge_authorized": false
+          },
+          "research_followup_round2": {
+            "date": "2026-11-24",
+            "scope": "20 passes thématiques 21-40, recherches web ciblées et lecture de notices, extraits, résumés et plusieurs pages HTML; fac-similé décret espagnol Gaceta n°94 p42 inspecté. Aucun dépouillement exhaustif de fonds, aucun entretien ni lecture intégrale de tous les ouvrages. Vérification Wikipédia ciblée de syndicalisme révolutionnaire, anarcho-syndicalisme, révolution espagnole, non exhaustive par cas.",
+            "passes": [
+              {
+                "n": 21,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "topic": "Canuts, Lyon 1831-1834",
+                "finding": "1831 revendication tarif soie; 1834 contexte politique et répression distincts, archives de Lyon qualifient de manière impropre l'appellation deuxième révolte des canuts; différencier chefs ateliers, compagnons, fabricants.",
+                "sources": [
+                  "https://www.archives-lyon.fr/expos/les-origines-de-la-revolte-de-1831",
+                  "https://www.archives-lyon.fr/expos/les-origines-de-la-revolte-de-1834",
+                  "https://www.archives-lyon.fr/pages/1831-1834-la-revolte-des-canuts"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 22,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "topic": "Première Internationale 1864-1876/77",
+                "finding": "Solidarité matérielle entre syndicats, financement grèves et soutien réfugiés; dates de fin variables selon branches, pas seulement conflits doctrinaux. Étude des comptes et archives à poursuivre.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/abs/cambridge-history-of-socialism/international-working-mens-association-186418767/2281A0998F3503B74962A4D960FF1D52",
+                  "https://www.jstor.org/stable/10.1163/j.ctvbqs569"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 23,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "topic": "Chicago 1886",
+                "finding": "Mouvement national huit heures et répression; collection primaire Chicago History Museum, contexte international; origine institutionnelle du Premier Mai à approfondir via congrès 1889.",
+                "sources": [
+                  "https://www.chicagohistory.org/haymarket/",
+                  "https://guides.loc.gov/this-month-in-business-history/may/haymarket",
+                  "https://www.cambridge.org/core/journals/international-labor-and-working-class-history/article/abs/worktime-between-haymarket-and-the-popular-front-an-international-perspective/16F2FBFDE9A5E99C2073B75FAD7E9A58"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 24,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Charte d'Amiens 1906",
+                "finding": "Indépendance syndicale, revendications immédiates et transformation économique; IHS CGT distingue évolution pratique et doctrine; texte original congrès à collationner; anarcho-syndicalisme et syndicalisme révolutionnaire non synonymes.",
+                "sources": [
+                  "https://www.ihs.cgt.fr/a-propos-de-la-charte-damiens/",
+                  "https://institutions-professionnelles.fr/reperes/documents/127-1906-la-charte-d-amiens-enterine-la-creation-de-la-premiere-confederation-ouvriere"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 25,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R02",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Grèves de loyers Argentine 1907",
+                "finding": "Buenos Aires et Rosario; article Horacio Tarcus 30 septembre 2026, DOI 10.47195/PM26.1015, résumé ouvert sur Centro Anarquista Femenino et FORA; travail, logement, genre; texte intégral non collationné.",
+                "sources": [
+                  "https://www.ojs.politicasdelamemoria.cedinci.org/index.php/PM/article/view/1015",
+                  "https://ri.conicet.gov.ar/items/8de9d6e3-c9e6-41b8-be2f-daea0da3caf8",
+                  "https://www.sociohistorica.fahce.unlp.edu.ar/article/view/she155"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 26,
+                "ids": [
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "topic": "Lawrence 1912",
+                "finding": "IWW, textile, solidarités multilingues et familles, hausse salaires rapportée; archives UW et source militante IWW; conditions exactes accords et durabilité à vérifier.",
+                "sources": [
+                  "https://depts.washington.edu/iww/yearbook1912.shtml",
+                  "https://archive.iww.org/content/bread-and-roses-hundred-years/",
+                  "https://dp.la/exhibitions/breadandroses/strike/arrested?item=88"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 27,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R04",
+                  "CAP-R07"
+                ],
+                "topic": "Petrograd 1917-1918",
+                "finding": "S. A. Smith, Red Petrograd, chapitres sur comités et contrôle de production; distinguer revendications, approvisionnement, contrôle et gestion directe, rapports État/syndicats; extraits et notices, livre non lu intégralement.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/red-petrograd/076475776FD63ADF1F4AFE2BA346ABDC",
+                  "https://www.cambridge.org/core/books/abs/red-petrograd/theory-and-practice-of-workers-control-of-production/C916D741C9BB3E7B94B61076962B0FD3",
+                  "https://www.cambridge.org/core/books/abs/red-petrograd/economic-crisis-and-the-fate-of-workers-control-october-1917-to-june-1918/9BDD74B2E0AF9A35FBE16D2DEFE39B48"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 28,
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "topic": "La Canadenca 1919",
+                "finding": "Musée Histoire Catalogne et CNT; fac-similé Gaceta Madrid n°94 du 4 avril 1919 p.42 contrôlé visuellement : décret 3 avril, 8h/jour ou 48h/semaine à partir 1 octobre 1919, exceptions prévues art 2-4; application réelle ouverte.",
+                "sources": [
+                  "https://www.mhcat.cat/esmhc/exposiciones/exposiciones_realizadas/la_huelga_de_la_canadiense",
+                  "https://www.cnt.es/noticias/la-conquista-de-las-ocho-horas-de-trabajo-en-espana/",
+                  "https://www.boe.es/diario_gazeta/comun/pdf.php?do=1&p=1919%2F04%2F04%2Fpdfs%2FGMD-1919-94.pdf"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 29,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "ICU Afrique australe 1919-1930",
+                "finding": "ICU fondée au Cap 1919 selon notice spécifique et fonds Rhodes; une chronologie SAHO indique 1917, divergence à vérifier; distingue Industrial Workers of Africa 1917-1921; travail rural, race et foncier.",
+                "sources": [
+                  "https://sahistory.org.za/dated-event/industrial-and-commercial-workers-union-founded-under-clements-kadalie",
+                  "https://digitalarchives.ru.ac.za/s/lrs/item-set/21984",
+                  "https://hipsa.org.za/publication/i-see-you-the-industrial-and-commercial-workers-union-of-africa-1919-1930-new/",
+                  "https://sahistory.org.za/archive/industrial-workers-africa-1917-1921-bikisha-media-collective",
+                  "https://sahistory.org.za/article/timeline-labour-and-trade-union-movement-south-africa-1881-1919"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 30,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R04",
+                  "CAP-R07"
+                ],
+                "topic": "Turin 1919-1920",
+                "finding": "Résumé International Gramsci Journal consulté : gestion collective lors occupation septembre 1920, débat spontanéité/direction, division dirigeants-dirigés; distinguer pratiques locales et bilan italien.",
+                "sources": [
+                  "https://journals.uniurb.it/index.php/igj/article/view/4123",
+                  "https://www.museotorino.it/view/s/7d154dfd891b4b6dad397eff06501a5b"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 31,
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Kobe 1921",
+                "finding": "Contradiction MIT qualifie grève de réussie, institut Ohara Hosei indique reprise inconditionnelle 9 août et déclaration de défaite 12 août, diffusion ultérieure comités d'usine; notice japonaise lue. Définition de réussite et sources japonaises à collationner.",
+                "sources": [
+                  "https://visualizingcultures.mit.edu/protest_interwar_japan/pij1_essay02.html",
+                  "https://oisr-org.ws.hosei.ac.jp/research/dglb/explanation/exp_detail/?exp_id=4-012-9000652",
+                  "https://paperspast.natlib.govt.nz/newspapers/HNS19210711.2.54"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 32,
+                "ids": [
+                  "CAP-R04",
+                  "CAP-R07",
+                  "CAP-R01"
+                ],
+                "topic": "Collectivisations Catalogne et Valence 1936-1939",
+                "finding": "Albert Balcells Catalan Historical Review 2017 pp77-92 (notice et extrait), gestion par comités et coordination publique, tensions guerre/approvisionnement; renvoyer au chantier anarchiviste existant sans prétendre le clore.",
+                "sources": [
+                  "https://dialnet.unirioja.es/servlet/articulo?codigo=6137869",
+                  "https://portalrecerca.uab.cat/ca/publications/collectivisations-in-catalonia-and-the-region-of-valencia-during-/",
+                  "https://publicacions.iec.cat/PopulaFitxa.do?idCatalogacio=28128&moduleName=r&subModuleName="
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 33,
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R07",
+                  "CAP-R08"
+                ],
+                "topic": "Flint 1936-1937",
+                "finding": "Occupation et reconnaissance syndicale UAW à distinguer de gestion durable; fonds entretiens Michigan-Flint et archives Wayne; article sociologique résumé ouvert sur démocratie locale et facteurs de mobilisation.",
+                "sources": [
+                  "https://digitalarchives.umflint.edu/digital/collection/p16210coll3",
+                  "https://archives.wayne.edu/repositories/2/resources/103",
+                  "https://www.journals.uchicago.edu/doi/abs/10.1086/682956",
+                  "https://guides.loc.gov/this-month-in-business-history/february/flint-michigan-sit-down-strike"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 34,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Trinité 1937",
+                "finding": "Grève pétrole juin, extension vers autres secteurs et syndicalisation; NALIS et étude comparative 2025 Hong Kong/Trinidad; lier classe, empire et travail migrant, sans assimiler toutes luttes à syndicalisme révolutionnaire.",
+                "sources": [
+                  "https://www.nalis.gov.tt/resources/tt-content-guide/labour-day/",
+                  "https://doi.org/10.1080/03086534.2025.2479804"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 35,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Cheminots AOF 1947-1948",
+                "finding": "Frederick Cooper, Journal African History 1996, résumé et notes consultés; grève au-delà Dakar-Niger, égalité et politique anticoloniale, différencier mémoire romanesque Sembène et preuves historiques.",
+                "sources": [
+                  "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/our-strike-equality-anticolonial-politics-and-the-194748-railway-strike-in-french-west-africa/2CBFB67E88BF2A150A58897B0961E849",
+                  "https://www.africabib.org/rec.php?DB=p&RID=146779932"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 36,
+                "ids": [
+                  "CAP-R04",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Cordones industriales Chili 1972-1973",
+                "finding": "Coordination territoriale inter-usines; Gaudichaud 2004 notice bibliothèque nationale, Winn 1976 étude Yarur, étude vestiges 2025; distinguer participation et contrôle productif, relations CUT et gouvernement, répression après coup.",
+                "sources": [
+                  "https://www.bibliotecanacional.gob.cl/publicaciones/poder-popular-y-cordones-industriales-testimonios-sobre-el-movimiento-popular-urbano",
+                  "https://journals.sagepub.com/doi/10.1177/0094582X7600300105",
+                  "https://www.scielo.cl/scielo.php?pid=S0717-50512025000200067&script=sci_arttext&tlng=es"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 37,
+                "ids": [
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Portugal 1974-1975",
+                "finding": "Raquel Varela 2019 distinction contrôle ouvrier/autogestion; thèse NOVA Sogantal 2024 sur ouvrières; comparer Setenave et textile, accès aux comptes, statut propriété et issue; textes intégraux non collationnés.",
+                "sources": [
+                  "https://novaresearch.unl.pt/en/publications/workers-control-the-case-of-the-portuguese-revolution/",
+                  "https://journals.sagepub.com/doi/10.1177/0143831X8124002",
+                  "https://run.unl.pt/entities/publication/7f70e62e-19ec-4052-afe4-7b3eafff0595"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 38,
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R07",
+                  "CAP-R08"
+                ],
+                "topic": "Solidarność Pologne 1980",
+                "finding": "21 revendications du comité interentreprises inscrites UNESCO; syndicat indépendant, droit grève, libertés; accords août et syndicat septembre, état de siège 1981; pas assimilation au contrôle de production.",
+                "sources": [
+                  "https://www.unesco.org/en/memory-world/twenty-one-demands-gdansk-august-1980-birth-solidarity-trades-union-massive-social-movement",
+                  "https://polishfreedom.pl/en/demands-of-the-striking-crews-of-factory-workers-and-the-enterprises-represented-by-the-inter-factory-strike-committee/",
+                  "https://eng.ipn.gov.pl/en/news/4490%2C31-August-1980-the-birth-of-quotSolidarityquot.html"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 39,
+                "ids": [
+                  "CAP-R02",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Bombay 1982-1983",
+                "finding": "Article Sumeet Mhaskar du 18 août 2026 consulté : près de 250000 travailleurs, 18 mois, défaite et mémoire des revendications logement/indemnisation; données auteur non recomptées; ne pas imputer toute désindustrialisation à grève.",
+                "sources": [
+                  "https://www.sfu.ca/union-memory/blog/blog5/",
+                  "https://labourfile.com/section-detail.php?aid=417"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 40,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Corée du Sud 1987",
+                "finding": "Histoire universitaire du mouvement de démocratisation économique et syndicats indépendants; Hagen Koo 2001 notice et compte rendu; rôle des ouvrières avant 1987 et rapports aux syndicats officiels à approfondir; pas reprise de propriété.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/abs/past-forward/great-labor-uprising-of-1987/28936F366A3E20CCF9DC77A394693943",
+                  "https://www.jstor.org/stable/10.7591/j.ctvggx3s0",
+                  "https://kci.go.kr/kciportal/landing/article.kci?arti_id=ART002636914"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              }
+            ],
+            "wikipedia": [
+              "https://fr.wikipedia.org/wiki/Syndicalisme_r%C3%A9volutionnaire",
+              "https://fr.wikipedia.org/wiki/Anarcho-syndicalisme",
+              "https://fr.wikipedia.org/wiki/R%C3%A9volution_sociale_espagnole_de_1936"
+            ],
+            "open_research": [
+              "CAP-R01",
+              "CAP-R02",
+              "CAP-R03",
+              "CAP-R04",
+              "CAP-R05",
+              "CAP-R06",
+              "CAP-R07",
+              "CAP-R08"
+            ],
+            "recommendation": "Corpus comparatif pour chapitres 1, 6, 8, 9; différencier syndicalisation, grève, occupation, contrôle, autogestion, propriété. Rattacher dossiers historiques et AUT/SOC/SOIN existants; pas de notices redondantes. Compléments futurs: AIT Berlin 1922, FORA congrès, réseaux syndicalistes transnationaux, Océanie, après 1987; désaccords Kobe et datation ICU maintenus.",
+            "publication_authorized": false,
+            "merge_authorized": false
           }
         },
         {
