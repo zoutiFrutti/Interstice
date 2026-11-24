@@ -16,7 +16,7 @@ STATES = ("DEMANDEE", "ENVOYEE", "RECUE_ATTESTEE", "COMMENCEE",
           "LIVRABLE_CANDIDAT", "VERIFIEE", "VALIDEE_HUMAINEMENT",
           "INTEGREE", "PUBLIEE")
 ROLE_PATTERN = re.compile(r"^\|\s*"+BT+r"([a-z][a-z0-9-]+)"+BT+r"\s*\|", re.M)
-DECISION_PATTERN = re.compile(r"^D-(?:C\d{2}-\d{3}|C\d{2}-RULES-\d{2}|WORK-C\d{2}-(?:Q\d+-\d{2}|[A-Z]+-\d{2}))$")
+DECISION_PATTERN = re.compile(r"^D-(?:C\d{2}-\d{3}|C\d{2}-RULES-\d{2}|C25-(?:INT|PUB|ED)-\d{2}|WORK-C\d{2}-(?:Q\d+-\d{2}|[A-Z]+-\d{2}))$")
 
 
 def decision_rows(text):

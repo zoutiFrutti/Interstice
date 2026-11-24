@@ -1,0 +1,2180 @@
+{
+  "schema": "interstice/c25-private-review-queue/1",
+  "status": "candidate_work_plan_not_review_results",
+  "recorded": "2026-11-14",
+  "decision_id": "D-C25-ED-01",
+  "source": "coordination/work/c07/nav7/received-work/readings.json",
+  "source_git_blob": "46158b68bdbd17b26e1097b6c06314a52615e9bd",
+  "scope": {
+    "existing_r6_texts": 24,
+    "eligible_for_initial_reconciliation": 15,
+    "blocked_documentary": 9,
+    "c07_master_objects_unpublished": 219,
+    "media_notices_candidate": 10
+  },
+  "batches": [
+    {
+      "id": "C25-R6-01",
+      "kind": "initial_source_read_and_targeted_external_spotcheck",
+      "publication_authorized": false,
+      "items": [
+        {
+          "id": "wiki-antifascisme-histoire-et-mecanismes",
+          "title": "Antifascisme, histoire et défense des libertés.",
+          "source": "wiki-antifascisme-histoire-et-mecanismes.html",
+          "source_sha256": "973ef990f7baac36a4eabef59707bd484153c6bfe8b1a69376dc5c0272998889",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ]
+        },
+        {
+          "id": "wiki-antiracisme-histoires-droits",
+          "title": "Comprendre le racisme.Documenter l'égalité.",
+          "source": "wiki-antiracisme-histoires-droits.html",
+          "source_sha256": "696cc81c2ea401984072bf3862d4480411f794a1149e42d163fdd3d4fe6a2b08",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ]
+        },
+        {
+          "id": "wiki-autonomie-materielle-savoir-faire",
+          "title": "Autonomie matérielle et savoir-faire.",
+          "source": "wiki-autonomie-materielle-savoir-faire.html",
+          "source_sha256": "26a843c7d03f96e203c1d7162677f10df4ee021766898f4ab8552140518d2d44",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "relieuse_review": {
+            "date": "2026-11-24",
+            "candidate_git_blob": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1",
+            "scope": "Lecture HTML et rapport C25-R6-01, contrôles web ciblés du 24 novembre, sans validation des techniques ni essai pratique.",
+            "recommendation": "Conserver uniquement comme portail documentaire sous réserves; corriger statut Atelier Paysan avant publication. Ne pas valider comme tutoriels.",
+            "findings": [
+              {
+                "id": "AUT-R01",
+                "finding": "Actualiser indices de réparabilité/durabilité, catégories et dates ; documenter réparation et réemploi.",
+                "sources": [
+                  "https://www.ecologie.gouv.fr/politiques-publiques/indice-durabilite",
+                  "https://www.ecologie.gouv.fr/politiques-publiques/indice-reparabilite"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R02",
+                "finding": "Electricité, batteries, combustion : sources INRS précises et validation qualifiée avant mode opératoire.",
+                "sources": [
+                  "https://www.inrs.fr/risques/electriques/habilitation-electrique-foire-aux-questions",
+                  "https://www.inrs.fr/metiers/Energie/utilisation-batteries-lithium/utilisation-batteries-lithium-FAQ.html"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R03",
+                "finding": "Eau non potable : usages autorisés et interdits, séparation réseaux, cadre France et date de contrôle ; sécurité alimentaire à documenter.",
+                "sources": [
+                  "https://www.service-public.gouv.fr/particuliers/vosdroits/F31481"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R04",
+                "finding": "SCIC Atelier Paysan liquidée 21 avril 2026 selon communiqué et presse ; distinguer continuité du projet via Communs Paysans et Soudons fermes des prestations historiques.",
+                "sources": [
+                  "https://www.latelierpaysan.org/L-Atelier-Paysan-elargit-le-mouvement",
+                  "https://www.ledauphine.com/economie/2026/04/30/isere-renage-la-societe-cooperative-l-atelier-paysan-placee-en-liquidation-judiciaire"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R05",
+                "finding": "Friches, ERP, structure, incendie, habitat : avis technique/juridique ciblé avant tutoriels.",
+                "sources": [],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R06",
+                "finding": "Licences des plans et visuels par objet, wiki Low-tech Lab renvoie 403 lors du contrôle, ne pas qualifier de lien mort.",
+                "sources": [
+                  "https://lowtechlab.org/fr/mentions-legales",
+                  "https://lowtechlab.org/fr/faq"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R07",
+                "finding": "Pilote à faible risque : reprise textile ou inventaire partagé, avec coût, observations, test indépendant et limites ; aucun test réalisé.",
+                "sources": [],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R08",
+                "finding": "Liens Wikipédia Low-tech et Fab lab en priorité pour concepts; raccordement Faire Ensemble/Carte des possibles, revue des liens et accessibilité, ne pas activer de collecte. Lien wiki-mutualiser-materiel.html non retrouvé à cet emplacement sur cette branche (404).",
+                "sources": [
+                  "https://fr.wikipedia.org/wiki/Low-tech",
+                  "https://fr.wikipedia.org/wiki/Fab_lab"
+                ],
+                "status": "OPEN"
+              }
+            ],
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "decision_Zout": {
+            "date": "2026-11-24",
+            "type": "CONSERVATION_VALIDEE",
+            "decision": "Je valide la conservation de la V0.2 du dossier « Reprendre la maîtrise de nos moyens matériels », SHA-256 7bc6234a50cc1c2e8857f05b5a62da4335b2cd9c6d2a106e627f1a03b8dab3f9, sous réserves documentaires, avec maintien des huit recherches AUT-R01 à AUT-R08 et conservation de la version historique. Enregistre ma décision sans publication ni fusion et passe au prochain texte recevable et non tranché du registre.",
+            "version": "V0.2",
+            "sha256": "7bc6234a50cc1c2e8857f05b5a62da4335b2cd9c6d2a106e627f1a03b8dab3f9",
+            "artifact": "Interstice_Reprendre_la_maitrise_de_nos_moyens_materiels_V0.2_candidate.md",
+            "artifact_location": "Conversation La Relieuse, empreinte vérifiée localement, texte non versé au dépôt public",
+            "historical_blob": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1",
+            "open_research": [
+              "AUT-R01",
+              "AUT-R02",
+              "AUT-R03",
+              "AUT-R04",
+              "AUT-R05",
+              "AUT-R06",
+              "AUT-R07",
+              "AUT-R08"
+            ],
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "research_followup": {
+            "date": "2026-11-24",
+            "scope": "Dix axes de contrôle documentaire ciblés, recherches web et consultation de pages, notices et résumés, lecture de la fiche GitHub et contrôle ciblé de chemins internes. Ni essai matériel, ni téléchargement/analyse exhaustive des CSV, ni audit réglementaire intégral.",
+            "passes": [
+              {
+                "n": 1,
+                "ids": [
+                  "AUT-R01"
+                ],
+                "finding": "Indices durabilité TV 8 janvier et lave-linge 8 avril 2025, observatoire ADEME données 2024.",
+                "sources": [
+                  "https://www.ecologie.gouv.fr/politiques-publiques/indice-durabilite",
+                  "https://librairie.ademe.fr/economie-circulaire-et-dechets/9420-reemploi-reutilisation-des-produits-donnees-2024-9791029727184.html"
+                ]
+              },
+              {
+                "n": 2,
+                "ids": [
+                  "AUT-R01",
+                  "AUT-R07"
+                ],
+                "finding": "ORA publication 16 octobre 2026 : 619873 tentatives, 41110 événements, 1728 groupes, 34 pays; page téléchargement 416282 EEE et 203591 non-EEE, total cohérent mais article annonce 416284 EEE, différence de 2 à garder. Étude Leuven 2026 consultée via résumé ; échantillon non représentatif.",
+                "sources": [
+                  "https://openrepair.org/announcements/over-half-a-million-records-of-open-data-on-repair/",
+                  "https://openrepair.org/open-data/downloads/",
+                  "https://www.sciencedirect.com/science/article/pii/S2212827126007031"
+                ]
+              },
+              {
+                "n": 3,
+                "ids": [
+                  "AUT-R02"
+                ],
+                "finding": "INRS : habilitation liée au contexte professionnel et à l'opération ; distinguer risques électriques, thermiques, chimiques et indépendants.",
+                "sources": [
+                  "https://www.inrs.fr/risques/electriques/reglementation-prevention-risque-electrique.html",
+                  "https://www.inrs.fr/metiers/Energie/utilisation-batteries-lithium/utilisation-batteries-lithium-FAQ.html"
+                ]
+              },
+              {
+                "n": 4,
+                "ids": [
+                  "AUT-R03"
+                ],
+                "finding": "Service Public actualisé 12 décembre 2025, usages domestiques eau de pluie, arrêté 12 juillet 2024 ; ANSES botulisme, aucun procédé validé par Interstice.",
+                "sources": [
+                  "https://www.service-public.gouv.fr/particuliers/vosdroits/F31481",
+                  "https://www.anses.fr/fr/article/le-botulisme-comment-se-premunir"
+                ]
+              },
+              {
+                "n": 5,
+                "ids": [
+                  "AUT-R04"
+                ],
+                "finding": "Liquidation SCIC 21 avril 2026 confirmée par communiqué, presse et annonce légale reproduite ; poursuite par deux associations, financement et accès effectif aux ressources à étudier.",
+                "sources": [
+                  "https://latelierpaysan.org/L-Atelier-Paysan-elargit-le-mouvement",
+                  "https://www.pappers.fr/entreprise/latelier-paysan-537740375",
+                  "https://villagemagazine.fr/le-renouveau-de-latelier-paysan/"
+                ]
+              },
+              {
+                "n": 6,
+                "ids": [
+                  "AUT-R05"
+                ],
+                "finding": "Cartofriches près de 20500 sites au bilan 2026 ; CASIAS inventaire historique distinct des SIS, ni aptitude ni absence de pollution déduite ; autorisations ERP et urbanisme selon projet.",
+                "sources": [
+                  "https://www.cerema.fr/fr/presse/dossier/inventaire-national-friches",
+                  "https://www.georisques.gouv.fr/consulter-les-dossiers-thematiques/dossier-expert-sur-les-sites-et-sols-potentiellement-pollues",
+                  "https://entreprendre.service-public.gouv.fr/vosdroits/F31687",
+                  "https://entreprendre.service-public.gouv.fr/vosdroits/F35336"
+                ]
+              },
+              {
+                "n": 7,
+                "ids": [
+                  "AUT-R06"
+                ],
+                "finding": "Licence CC BY du site Low-tech Lab sauf exception, vérifier chaque tutoriel ; ORA données et standard CC BY-SA 4.0 ; CERN OHL v2 trois variantes, distinguer plans, logiciel et documentation.",
+                "sources": [
+                  "https://lowtechlab.org/fr/mentions-legales",
+                  "https://standard.openrepair.org/document.html",
+                  "https://openrepair.org/open-data/downloads/",
+                  "https://cern-ohl.web.cern.ch/",
+                  "https://oshwa.org/resources/open-source-hardware-faq/"
+                ]
+              },
+              {
+                "n": 8,
+                "ids": [
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Bibliothèques d'objets : études 2020 six cas UK et 2023 23 entretiens ; gouvernance, maintenance, accès, coûts et effets rebond à mesurer.",
+                "sources": [
+                  "https://www.mdpi.com/2071-1050/12/17/7180",
+                  "https://doi.org/10.1145/3544548.3581094"
+                ]
+              },
+              {
+                "n": 9,
+                "ids": [
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Low-tech Lab habitat 12 techniques et expérimentation territoriale : pages de présentation repérées, rapports complets non collationnés ; retenir protocole pilote textile ou prêt non dangereux sans prétendre essai.",
+                "sources": [
+                  "https://lowtechlab.org/fr/le-low-tech-lab/les-actions/habitat-low-tech",
+                  "https://lowtechlab.org/fr/actualites-blog/vers-un-territoire-low-tech-les-ressources-sont-disponibles",
+                  "https://openrepair.org/open-data/notes-on-the-inclusion-of-non-eee-items-in-the-open-repair-data-data/"
+                ]
+              },
+              {
+                "n": 10,
+                "ids": [
+                  "AUT-R08",
+                  "AUT-R06"
+                ],
+                "finding": "Contrôle exact candidat 160c5d46fdb7030c05c36e20dd46e3c96746a6b1 ; lien wiki-mutualiser-materiel.html 404 à cet emplacement C25, deux pages connexes présentes ; Wikipédia low-tech et fab lab déjà couvrants ; ne pas inventer destination ou activer service.",
+                "sources": [
+                  "https://fr.wikipedia.org/wiki/Low-tech",
+                  "https://fr.wikipedia.org/wiki/Fab_lab"
+                ]
+              }
+            ],
+            "open_research": [
+              "AUT-R01",
+              "AUT-R02",
+              "AUT-R03",
+              "AUT-R04",
+              "AUT-R05",
+              "AUT-R06",
+              "AUT-R07",
+              "AUT-R08"
+            ],
+            "recommendation": "Refonte proposée en portail de ressources, enquêtes de terrain, préservation des communs et mutualisation ; aucune certification technique, aucune réécriture autorisée à ce stade.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "research_followup_round2": {
+            "date": "2026-11-24",
+            "scope": "Dix études de cas documentaires distinctes, sources publiques et institutionnelles, pages de présentation et études ; contrôle visuel ciblé du contrat Can Batlló p.4 et archive VilaWeb p.2. Aucun entretien, visite, contrôle foncier exhaustif, audit financier ou test de matériel. Pas de nouveau texte ni visa.",
+            "passes": [
+              {
+                "n": 11,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "Can Batlló",
+                "finding": "Concession municipale de 30 ans prorogeable jusqu’à 50, distincte de la propriété; commission paritaire et retour social. Contrat signé consulté en texte et page 4; annexes et avenants à contrôler.",
+                "sources": [
+                  "https://media-edg.barcelona.cat/wp-content/uploads/2019/03/22163214/contracte-CAN-BATLLO-signat.pdf",
+                  "https://revistas.usc.gal/index.php/ricd/article/view/8018/11459"
+                ]
+              },
+              {
+                "n": 12,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "KONVENT",
+                "finding": "Archive VilaWeb du 5 avril 2016 p.2: cession en septembre 1992, festival en 2005. Statut foncier actuel et financement des travaux inconnus. Raccordement proposé à enquête Vigie, pas de transmission attestée.",
+                "sources": [
+                  "https://archive.acvic.org/images/AC_premsa/2016/05.04.2016_vilaweb.pdf"
+                ]
+              },
+              {
+                "n": 13,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "Friche Belle de Mai",
+                "finding": "Propriété municipale, bail emphytéotique 45 ans à SCIC, quatre collèges au CA selon site; ne pas assimiler à autogestion intégrale; crèche et ateliers, financement public à examiner.",
+                "sources": [
+                  "https://www.lafriche.org/la-friche/histoire/",
+                  "https://www.lafriche.org/la-friche/lequipescic/vuegenerale/"
+                ]
+              },
+              {
+                "n": 14,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "case": "Les Grands Voisins",
+                "finding": "Occupation temporaire 2015-2020; modèle décrit par porteurs : hébergement social, locaux, activités marchandes et subventions. Fermeture attestée; trajectoires des personnes et structures à étudier.",
+                "sources": [
+                  "https://lesgrandsvoisins.org/le-modele-economique/",
+                  "https://www.plateau-urbain.com/tiers-lieux/actualites-des-lieux/le-document-de-cloture-des-grands-voisins-est-disponible/",
+                  "https://fonda.asso.fr/ressources/aurore-et-lexperience-des-grands-voisins"
+                ]
+              },
+              {
+                "n": 15,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "Mains d’Œuvres",
+                "finding": "Bail expiré 31 décembre 2017, expulsion 8 octobre 2019, annulation pour vice de procédure 15 janvier 2020 et retour temporaire. Convention actuelle non vérifiée.",
+                "sources": [
+                  "https://www.mainsdoeuvres.org/le-lieu/histoire",
+                  "https://www.artnewspaper.fr/2020/01/17/lassociation-mains-doeuvres-va-reintegrer-ses-locaux-a-saint-ouen"
+                ]
+              },
+              {
+                "n": 16,
+                "ids": [
+                  "AUT-R01",
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "case": "Ateliers de la Mine",
+                "finding": "Ancienne mine de Lavaveix, commune propriétaire selon association, région décrit 1000 m² rénovés, recyclerie, ateliers, fablab, cuisine et 5 salariés (3 ETP) en mars 2025; convention tripartite et comptes à obtenir.",
+                "sources": [
+                  "https://territoires.nouvelle-aquitaine.fr/actualites/les-ateliers-de-la-mine-un-tiers-lieu-eclectique",
+                  "https://www.helloasso.com/associations/les-ateliers-de-la-mine"
+                ]
+              },
+              {
+                "n": 17,
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "case": "L’Usine Genève",
+                "finding": "Association faîtière autogérée depuis 1989, environ vingt associations et collectifs selon site, bâtiment mis à disposition par ville selon tpg; règles de répartition, convention et financement à étudier.",
+                "sources": [
+                  "https://www.usine.ch/",
+                  "https://www.tpg.ch/fr/se-rendre-lusine-geneve",
+                  "https://www.ledauphine.com/culture-loisirs/2026/04/05/l-usine-le-coeur-toujours-battant-de-la-culture-et-la-fete-alternatives"
+                ]
+              },
+              {
+                "n": 18,
+                "ids": [
+                  "AUT-R02",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "case": "Cagibig",
+                "finding": "Modèle mutualisation spectacle : propriété conservée, stockage chez membre ou dépôt, points pour prêt et contribution financière possible; contrôle réel des équipements, responsabilité, assurance et accès non contributeurs à étudier. Pas de recommandation d’implémenter des points sans arbitrage.",
+                "sources": [
+                  "https://www.cagibig.com/modele/",
+                  "https://www.leprogres.fr/economie/2025/09/09/woodstower-biennale-de-la-danse-nuits-sonores-cette-societe-mutualise-le-materiel-pour-organiser-des-spectacles"
+                ]
+              },
+              {
+                "n": 19,
+                "ids": [
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "case": "RFBO et Les Lieux Communs",
+                "finding": "RFBO fondé 2022, association depuis 2025; carte et chiffres provisoires. Lieux Communs expérimente depuis mai 2026 prêt entre adhérents sans frais de location, catalogue CryptPad et formulaire facultatif. Ne pas reproduire publication de coordonnées personnelles ni déduire licence du catalogue.",
+                "sources": [
+                  "https://rfbo.fr/",
+                  "https://leslieuxcommuns.fr/bibobj"
+                ]
+              },
+              {
+                "n": 20,
+                "ids": [
+                  "AUT-R04",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "case": "CUMA",
+                "finding": "FNCuma annonce 182000 adhérents et 250000 matériels en métropole, millésime exact de page à établir; achats collectifs, planning, entretien et emploi partagé. Étudier arbitrages de calendrier et financement sans supposer modèle ouvert à tous.",
+                "sources": [
+                  "https://www.cuma.fr/decouvrir-le-reseau-cuma-et-la-federation-nationale-des-cuma/les-chiffres-cles-du-reseau-cuma/",
+                  "https://www.cuma.fr/chiffres-agreste-la-mutualisation-croissante-des-machines-agricoles-est-un-levier-strategique-pour-lagriculture-francaise/"
+                ]
+              }
+            ],
+            "additional_source": "https://latelierpaysan.org/Faites-vous-connaitre-pour-rejoindre-le-reseau-Soudons-fermes",
+            "open_research": [
+              "AUT-R01",
+              "AUT-R02",
+              "AUT-R03",
+              "AUT-R04",
+              "AUT-R05",
+              "AUT-R06",
+              "AUT-R07",
+              "AUT-R08"
+            ],
+            "recommendation": "Refonte en dossier de comparaison des communs techniques, droits d’usage, pérennité, partage de matériel et retour d’expérience. Fiches de cas candidates et recherches ouvertes, pas de doublon KONVENT ni création de service; privilégier accès libre sans notation individuelle.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "research_followup_round3": {
+            "date": "2026-11-24",
+            "scope": "20 nouveaux cas ou dispositifs comparatifs ; recherches web ciblées, extraits indexés et lecture de quatre pages HTML (ExRotaprint, GKN, Edinburgh, Khon Kaen). Aucun contrat intégral collationné, aucune visite, aucun entretien ni audit comptable. Deux cas non industriels (BAUEN et entrepôts publics) conservés comme comparaison. Aucune nouvelle version du texte.",
+            "passes": [
+              {
+                "n": 21,
+                "case": "ExRotaprint, Allemagne",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancienne usine de machines d'imprimerie, reprise 2007; terrain fondations trias et Edith Maryon, bâtiments gGmbH, droit de superficie 99 ans; vérifier clauses et comptes.",
+                "sources": [
+                  "https://www.exrotaprint.de/en/exrotaprint-ggmbh/",
+                  "https://www.stiftung-trias.de/projekte/projektportraits/berlin-exrotaprint/",
+                  "https://www.frontiersin.org/journals/sustainable-cities/articles/10.3389/frsc.2021.760548/full"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 22,
+                "case": "NDSM Loods, Pays-Bas",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancien chantier naval, fondation propriétaire/gestionnaire du hangar, environ 80 ateliers et 250 personnes selon site; loyers et pression immobilière à documenter.",
+                "sources": [
+                  "https://www.ndsmloods.nl/english/",
+                  "https://www.tandfonline.com/doi/full/10.1080/20507828.2020.1766305"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 23,
+                "case": "Kaapelitehdas, Finlande",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Mobilisation Pro Kaapeli 1990, société immobilière municipale; propriété publique distincte de l'autogestion.",
+                "sources": [
+                  "https://www.kaapeli.com/en/our-story",
+                  "https://op.europa.eu/webpub/eac/high-quality-built-environment/en/grass-roots-intiatives.html"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 24,
+                "case": "Rote Fabrik, Suisse",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Votations 1977 et 1987, mobilisation et espace culturel; étudier convention et autonomie financière.",
+                "sources": [
+                  "https://archiv2025.shedhalle.ch/en/about-en/history/",
+                  "https://repository.avermaete.ethz.ch/commons_register/die-rote-fabrik/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 25,
+                "case": "ufaFabrik, Allemagne",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Réinvestissement studios en juin 1979, premier bail proposé à l'automne; évolution communauté et économie à documenter.",
+                "sources": [
+                  "https://ufafabrik.de/en/15003/how-it-all-began.html",
+                  "https://www.buildingsocialecology.org/projects/ufafabrik/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 26,
+                "case": "Matucana 100, Chili",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Corporation culturelle créée 2001 dans anciens entrepôts publics; contrepoint institutionnel.",
+                "sources": [
+                  "https://www.m100.cl/english/",
+                  "https://www.m100.cl/en/about-us/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 27,
+                "case": "Cattle Depot, Hong Kong",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Anciens abattoirs, relocalisation en 2001 des artistes d'Oil Street; distinguer reconversion et éviction initiale.",
+                "sources": [
+                  "https://www.gohk.gov.hk/en/spots/spot_detail.php?spot=Cattle+Depot+Artist+Village+and+Art+Park",
+                  "https://www.aaa-a.org/collection/oil-street-to-cattle-depot-%E5%BE%9E%E6%B2%B9%E8%A1%97%E5%88%B0%E7%89%9B%E6%A3%9A%EF%BC%89"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 28,
+                "case": "Ellis House, Afrique du Sud",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancienne usine textile, ateliers depuis 2012, programmation par artistes selon opérateur; propriété collective non attestée.",
+                "sources": [
+                  "https://www.ellishouse.co.za/about",
+                  "https://www.lemonde.fr/afrique/article/2026/11/10/le-centre-ville-delaisse-de-johannesburg-terrain-de-jeu-des-artistes-sud-africains_6808765_3212.html"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 29,
+                "case": "401 Richmond, Canada",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancienne usine lithographique, initiative immobilière privée et locataires culturels; fiscalité et protection patrimoniale distinctes du pouvoir collectif.",
+                "sources": [
+                  "https://401richmond.com/about/the-building/",
+                  "https://uwaterloo.ca/heritage-resources-centre/blog/its-bag-tax-class-culture-hubs"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 30,
+                "case": "Centro Perdido, Chili",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancienne usine textile, espace autogéré depuis fin 2022, fermeture annoncée novembre 2025; devenir collectif à rechercher.",
+                "sources": [
+                  "https://www.elmostrador.cl/cultura/2025/11/09/centro-perdido-busca-lugar-espacio-cultural-de-artistas-emergentes-cierra-sus-puertas-en-patronato/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 31,
+                "case": "IMPA, Argentine",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Entreprise déjà coopérative avant reprise ouvrière 1998, centre culturel 2000 et éducation populaire; archives et fonctionnement actuel à contrôler.",
+                "sources": [
+                  "https://integracion-academica.org/16-volumen-3-numero-7-2015/82-la-construccion-colectiva-de-un-sitio-para-la-memoria-de-la-clase-trabajadora",
+                  "https://www.pagina12.com.ar/2001/01-02/01-02-26/pag21.htm"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 32,
+                "case": "Flaskô, Brésil",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Contrôle ouvrier 2003, projet de quartier 2005, étude orale quatre travailleurs; état actuel non vérifié.",
+                "sources": [
+                  "https://www.scielo.br/j/rbso/a/CNNCH5fZ8QpfGJrtYGvWFpM/?lang=pt",
+                  "https://periodicos.uff.br/confluencias/article/view/34466"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 33,
+                "case": "BAUEN, Argentine",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Hôtel repris en 2003, fermeture 2020, cas comparatif non industriel; droits fonciers et trajectoires après fermeture.",
+                "sources": [
+                  "https://cleo.rutgers.edu/articles/the-peoples-hotel-working-for-justice-in-argentina/",
+                  "https://www.tandfonline.com/doi/full/10.1080/14616688.2021.1965202"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 34,
+                "case": "Ex-GKN, Italie",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Mobilisation 2021, projet de reconversion écologique; propriétaire reprend possession octobre 2026, collectif continue mobilisation; audience 25 novembre annoncée, résultat non connu, reprise productive non démontrée.",
+                "sources": [
+                  "https://ricerca.sns.it/handle/11384/167004",
+                  "https://www.novaradio.info/2026/10/20/ex-gkn-il-presidio-ce-e-rimane-continuiamo-la-battaglia-per-la-reindustrializzazione-ascolta/",
+                  "https://www.lanazione.it/firenze/cronaca/ex-gkn-svolta-giudiziaria-agli-a5ab97ae"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 35,
+                "case": "Greslab, Italie",
+                "ids": [
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Coopérative constituée 2010, redémarrage 2011, soutien Coopfond/CFI; distinction date juridique et productive, comptes et droits non-sociétaires à vérifier.",
+                "sources": [
+                  "https://www.cfi.it/cooperative-s.php?id=4119",
+                  "https://www.greslab.it/identita/",
+                  "https://cecop.coop/works/ceramics-the-story-of-a-recovery"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 36,
+                "case": "Toronto Tool Library, Canada",
+                "ids": [
+                  "AUT-R01",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Prêt depuis 2012, organisme non lucratif autonome 2018, adhésion payante et prêt sept jours; accessibilité et coûts à vérifier.",
+                "sources": [
+                  "https://torontotoollibrary.com/about/",
+                  "https://torontotoollibrary.com/search_tools/",
+                  "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpDtls.html?corpId=11025627&lang=eng"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 37,
+                "case": "Edinburgh Tool Library, Royaume-Uni",
+                "ids": [
+                  "AUT-R02",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Prêt et atelier partagé; annonce 2026 sessions atelier payantes 10 GBP standard, 3 GBP réduit, frais réservation et initiation sécurité; distinguer prêt et usage machines.",
+                "sources": [
+                  "https://edinburghtoollibrary.org.uk/2026/important-updates-about-your-new-workshop-new-times-new-space-new-pricing/",
+                  "https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC045162"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 38,
+                "case": "Brisbane Tool Library, Australie",
+                "ids": [
+                  "AUT-R01",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Depuis 2017 prêt outils et équipements sur adhésion, équipe de volontaires selon organisation; charges invisibles et financement à étudier.",
+                "sources": [
+                  "https://www.brisbanetoollibrary.org/about-us/who-we-are",
+                  "https://www.brisbanetoollibrary.org/memberships",
+                  "https://abr.business.gov.au/ABN/View?id=90930173584"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 39,
+                "case": "Custom Hiring Centres, Inde",
+                "ids": [
+                  "AUT-R04",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Accès locatif aux machines agricoles, diversité des gestionnaires, difficultés calendrier, prix, maintenance et opérateurs; ne pas assimiler à propriété coopérative.",
+                "sources": [
+                  "https://agris.fao.org/search/en/providers/124598/records/685178b9aab9439e79fcc4b7",
+                  "https://journaljeai.com/index.php/JEAI/article/view/2853",
+                  "https://link.springer.com/article/10.1007/s43926-025-00250-1"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 40,
+                "case": "Groupes agricoles de Khon Kaen, Thaïlande",
+                "ids": [
+                  "AUT-R04",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Étude 2025 par entretiens/questionnaires/données, prix de certains services machines inférieurs au marché, limites parcelles petites et maintenance; résumé consulté.",
+                "sources": [
+                  "https://www.jstage.jst.go.jp/article/eaef/18/4/18_252/_article/-char/ja"
+                ],
+                "status": "OPEN"
+              }
+            ],
+            "open_research": [
+              "AUT-R01",
+              "AUT-R02",
+              "AUT-R03",
+              "AUT-R04",
+              "AUT-R05",
+              "AUT-R06",
+              "AUT-R07",
+              "AUT-R08"
+            ],
+            "recommendation": "Corpus comparatif distinguant propriété, droit d’usage, contrôle productif et accès aux outils. Envisager fiches de cas après contrôle anti-doublons et sources indépendantes; aucune création de notice ni intégration sans validation.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "decision_history": [
+            {
+              "date": "2026-11-24",
+              "type": "NON_VALIDATION_PROVISOIRE",
+              "decision": "Je ne valide pas encore le dossier Autonomie matérielle et savoir-faire. Poursuis dix passes réelles de recherches documentaires sur les huit chantiers AUT-R01 à AUT-R08.",
+              "publication_authorized": false,
+              "merge_authorized": false
+            },
+            {
+              "date": "2026-11-24",
+              "type": "ORIENTATION_REFONTE_VALIDEE",
+              "decision": "Réécriture intégrale en dix chapitres, maintien AUT-R01 à AUT-R08 et version historique, soumission sans publication ni fusion."
+            }
+          ],
+          "editorial_status": "V0_2_CONSERVATION_VALIDEE_SOUS_RESERVES"
+        },
+        {
+          "id": "wiki-capitalisme-classes-travail",
+          "title": "Capitalisme, classes sociales et monde du travail.",
+          "source": "wiki-capitalisme-classes-travail.html",
+          "source_sha256": "c2d6bb7b866a8cd28a80296073a14aec1ce684ff811670257d600b9797085d81",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "relieuse_review": {
+            "date": "2026-11-24",
+            "candidate_git_blob": "db754eed38c3e02104418800366cae31e90d183c",
+            "scope": "Lecture intégrale HTML, contrôle ciblé pages Insee pauvreté, patrimoine, classes d'emploi, EBE, OIT migrations et soin, Service Public grève, loi ESS version du 3 mai 2026 et Wikipédia Capitalisme / Classe sociale. Pas de revue exhaustive des 32 fiches, ni d'avis juridique, ni de réécriture.",
+            "status": "REFONTE_CIBLEE_RECOMMANDEE",
+            "findings": [
+              {
+                "id": "CAP-R01",
+                "finding": "Distinguer Marx, Weber et classifications statistiques PCS 2020 / classes d'emploi, sans assimiler PCS à classe sociale théorique; histoire mondiale du capitalisme, colonialisme et esclavage à documenter.",
+                "sources": [
+                  "https://www.insee.fr/fr/information/6051714",
+                  "https://fr.wikipedia.org/wiki/Capitalisme",
+                  "https://fr.wikipedia.org/wiki/Classe_sociale"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R02",
+                "finding": "Insee Première 2117, 9 juillet 2026 : 2024 pauvreté 15,4 %, 9,817 millions, seuil 1337 EUR, médiane 2228 EUR par UC; champ France métropolitaine logement ordinaire, revenu déclaré positif/nul et personne de référence non étudiante; limites et ruptures de série.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/9019316"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R03",
+                "finding": "Patrimoine brut début 2024 : 10% ménages les mieux dotés détiennent 47,9%, moitié supérieure 92,8%, moitié inférieure 7,2% par complément; France hors Mayotte logement ordinaire; dette et actifs productifs distincts.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/2502915",
+                  "https://www.insee.fr/fr/statistiques/8672665"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R04",
+                "finding": "Valeur ajoutée, EBE, revenu mixte, résultat, trésorerie et dividendes à distinguer; publication comptes nationaux 2025 disponible, ne pas substituer données sans préciser millésime; atelier fictif à concevoir.",
+                "sources": [
+                  "https://www.insee.fr/fr/metadonnees/definition/c1538",
+                  "https://www.insee.fr/fr/statistiques/8988821"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R05",
+                "finding": "OIT 2022 : 167,7 millions migrants dans population active du pays de destination, dont 155,6 millions en emploi; OIT 2023 : 748 millions hors population active pour soin non rémunéré dont 708 millions femmes; raccordement SOIN/FEM/ANT; ne pas confondre populations, ni mesurer tout travail invisible avec ces chiffres.",
+                "sources": [
+                  "https://www.ilo.org/resource/news/international-migrants-are-vital-force-global-labour-market",
+                  "https://www.ilo.org/resource/news/unpaid-care-work-prevents-708-million-women-participating-labour-market"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R06",
+                "finding": "Droit du travail et protection sociale : grève secteur privé Service Public vérifié 10 août 2026, exceptions sectorielles, CSE, contrat, intermittence et autres droits à sourcer individuellement et faire relire.",
+                "sources": [
+                  "https://www.service-public.gouv.fr/particuliers/vosdroits/F117?lang=fr",
+                  "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R07",
+                "finding": "ESS loi 31 juillet 2014 article 1 : formes et conditions diverses, pas synonyme autogestion; comparer droit de vote, capital, accès sociétariat et résultats réels; rattacher SOC/AUT et reprises d'entreprises.",
+                "sources": [
+                  "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000029313296/2026-05-03"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R08",
+                "finding": "Anti-doublons : Wikipédia pour notions générales; originalité des enquêtes travail, lecture comptes/paie, caisse solidarité et organisation collective; confidentialité, droits, pas de collecte ni conseil juridique individualisé. Aucune expérimentation.",
+                "sources": [
+                  "https://fr.wikipedia.org/wiki/Capitalisme",
+                  "https://fr.wikipedia.org/wiki/Classe_sociale"
+                ],
+                "status": "OPEN"
+              }
+            ],
+            "recommendation": "Conserver sous réserves comme portail ou autoriser refonte transversale sur travail, propriété et pouvoir économique; aucune promotion des versions historiques à corriger ni validation juridique.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "decision_Zout": {
+            "date": "2026-11-24",
+            "type": "NON_VALIDATION_PROVISOIRE",
+            "decision": "Je ne valide pas encore le dossier Capitalisme, classes sociales et monde du travail. Poursuis vingt passes réelles de recherches documentaires sur les huit chantiers CAP-R01 à CAP-R08, en privilégiant les sources historiques, économiques et sociologiques.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "editorial_status": "VALIDATION_DIFFEREE_RECHERCHES_EN_COURS",
+          "research_followup": {
+            "date": "2026-11-24",
+            "scope": "20 contrôles thématiques par recherches web ciblées, consultation de résultats indexés, notices et résumés scientifiques et lecture ciblée de pages HTML Insee, WID et ILOSTAT. Ni lecture intégrale des ouvrages, ni réanalyse des microdonnées, ni entretien, ni revue juridique exhaustive. Accès Normlex et page Dares résultats limité. Aucun texte candidat modifié.",
+            "passes": [
+              {
+                "n": 1,
+                "ids": [
+                  "CAP-R01"
+                ],
+                "topic": "Esclavage et industrialisation",
+                "finding": "Débat Williams, Inikori, Engerman, Hudson : distinguer financement direct, commerce, demande, matières premières et institutions; pas de causalité unique.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/abs/emancipation-and-the-remaking-of-the-british-imperial-world/slavery-the-slave-trade-and-economic-growth-a-contribution-to-the-debate/07CCD96B820B58A4E2D8CD87B62AB6C9",
+                  "https://www.cambridge.org/core/journals/journal-of-global-history/article/slavery-and-the-new-history-of-capitalism/6885E5697E7151B50FDEFC65ED96C79E",
+                  "https://www.cambridge.org/core/books/abs/british-capitalism-and-caribbean-slavery/slavery-and-the-development-of-industrial-capitalism-in-england/074F7E64A046CC0BD1BD2AEC5F2F127A"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 2,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05"
+                ],
+                "topic": "Histoire mondiale du travail",
+                "finding": "Marcel van der Linden 2023, travail contraint et libre, stratégies des ménages et marchés du travail; notice universitaire, ouvrage non lu intégralement.",
+                "sources": [
+                  "https://discovery.ucl.ac.uk/id/eprint/10169174/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 3,
+                "ids": [
+                  "CAP-R01"
+                ],
+                "topic": "Théories de classe",
+                "finding": "Wright 2002, Goldthorpe, Marx et Weber : relations de production, exploitation, relations d'emploi, statut et ressources; résumés, textes intégraux à collationner.",
+                "sources": [
+                  "https://journals.sagepub.com/doi/10.1177/000312240206700603",
+                  "https://www.cambridge.org/core/books/abs/approaches-to-class-analysis/foundations-of-a-neoweberian-class-analysis/779AB8E3AE3FBFC901D7312FCD580C49",
+                  "https://doi.org/10.15407/sociology2019.01.009"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 4,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R08"
+                ],
+                "topic": "PCS et classes d'emploi",
+                "finding": "PCS 2020 et schéma complémentaire : A-D salariés et I indépendants, qualification, statut, nature de l'employeur; pas une preuve d'une théorie de classe.",
+                "sources": [
+                  "https://www.insee.fr/fr/information/6051714",
+                  "https://www.insee.fr/fr/statistiques/6453760"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 5,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R02"
+                ],
+                "topic": "Mobilité sociale",
+                "finding": "FQP 1977-2015, en 2015 71% des femmes françaises 35-59 ans actives occupées ou anciennes actives occupées diffèrent de leur mère, 35% de cette mobilité observée est structurelle; éviter généralisation actuelle.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/3733096",
+                  "https://www.insee.fr/fr/statistiques/4238441"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 6,
+                "ids": [
+                  "CAP-R02"
+                ],
+                "topic": "Pauvreté en emploi",
+                "finding": "Insee 2024 figure 4, 2,324 millions en emploi sous seuil, 8,5%; salariés 6,9%, indépendants 18,4%, chômeurs 36,1%, retraités 10,4%. Champ France métro logement ordinaire, revenu déclaré positif/nul, référence non étudiante. Pauvreté niveau de vie ménage par UC, pas seul salaire.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/9019316"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 7,
+                "ids": [
+                  "CAP-R03"
+                ],
+                "topic": "Patrimoine et revenus",
+                "finding": "Histoire de vie et patrimoine 2023-2024 : patrimoine brut, dettes, immobilier, financier, professionnel; niveau de vie et patrimoine ne coïncident pas.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/8672665",
+                  "https://www.insee.fr/fr/statistiques/8894780"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 8,
+                "ids": [
+                  "CAP-R03"
+                ],
+                "topic": "Héritage",
+                "finding": "CAE note 69 décembre 2021, taxation transmissions cumulées et garantie capital : propositions normatives à distinguer des constats; méthodes et objections à documenter.",
+                "sources": [
+                  "https://cae-eco.fr/repenser-lheritage"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 9,
+                "ids": [
+                  "CAP-R03"
+                ],
+                "topic": "Inégalités mondiales",
+                "finding": "WIR 2026 estimations 2025 : bottom 50% revenu 8%, patrimoine 2%; top 10% revenu 53%, patrimoine 75%; intermédiaires par complément 39/23. Adultes, définitions WID et PPP, non directement comparable patrimoine brut ménages Insee.",
+                "sources": [
+                  "https://wir2026.wid.world/insight/global-economic-inequity/",
+                  "https://wir2026.wid.world/insight/executive-summary/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 10,
+                "ids": [
+                  "CAP-R04",
+                  "CAP-R08"
+                ],
+                "topic": "Partage valeur ajoutée",
+                "finding": "Insee comptes nationaux 2025 figure 5 : taux marge SNF 32,7% en 2024 révisé contre 32,2% dans édition 2025 ; 32,2% en 2025. EBE distinct résultat, dividendes, trésorerie; revenu mixte indépendants. Exercice pédagogique fictif à développer.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/8996855",
+                  "https://www.insee.fr/fr/statistiques/8574058",
+                  "https://www.insee.fr/fr/metadonnees/definition/c1538"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 11,
+                "ids": [
+                  "CAP-R04"
+                ],
+                "topic": "Part mondiale des revenus du travail",
+                "finding": "ILOSTAT 53,0% PIB mondial en 2015, 52,6% en 2025; estimation inclut revenu du travail indépendant, distinct taux marge SNF France; ne pas inférer causalité unique.",
+                "sources": [
+                  "https://ilostat.ilo.org/blog/the-world-of-work-and-the-2030-agenda-a-ten-year-review/",
+                  "https://www.ilo.org/publications/policy-measures-address-inequalities-and-increase-labour-income-share"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 12,
+                "ids": [
+                  "CAP-R05",
+                  "CAP-R02"
+                ],
+                "topic": "Emploi informel",
+                "finding": "ILOSTAT 2025 57,9% des personnes en emploi au monde contre 57,4% en 2015; distinguer emploi informel, illégalité, secteur informel, absence de droits; disparités régionales.",
+                "sources": [
+                  "https://ilostat.ilo.org/blog/the-world-of-work-and-the-2030-agenda-a-ten-year-review/",
+                  "https://www.ilo.org/publications/accelerating-transition-formality-decent-work-and-social-justice"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 13,
+                "ids": [
+                  "CAP-R05"
+                ],
+                "topic": "Migrations du travail",
+                "finding": "OIT estimations 2022 167,7 millions dans population active du pays de destination (4,7% mondial), pas uniquement en emploi; secteurs, droits et statuts à différencier.",
+                "sources": [
+                  "https://www.ilo.org/resource/news/international-migrants-are-vital-force-global-labour-market",
+                  "https://www.ilo.org/publications/major-publications/ilo-global-estimates-international-migrants-labour-force"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 14,
+                "ids": [
+                  "CAP-R05"
+                ],
+                "topic": "Soin non rémunéré",
+                "finding": "OIT 2023 748 millions hors population active pour responsabilité soin dont 708 millions femmes, 40 hommes; ne mesure pas toutes les personnes qui assurent le soin, ni valeur monétaire; renvoi dossier SOIN.",
+                "sources": [
+                  "https://www.ilo.org/resource/news/unpaid-care-work-prevents-708-million-women-participating-labour-market",
+                  "https://www.ilo.org/publications/advancing-decent-work-and-care-economy-essential-component-social"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 15,
+                "ids": [
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Plateformes numériques",
+                "finding": "Convention OIT 193 adoptée 12 juin 2026 : gestion algorithmique, droits du travail; adoption distincte ratification et entrée en vigueur. Notice indexée, accès texte complet Normlex en échec; statut France non établi.",
+                "sources": [
+                  "https://www.ilo.org/resource/record-decisions/convention-concerning-decent-work-platform-economy-2026",
+                  "https://www.ilo.org/resource/other/c193-decent-work-platform-economy-convention-2026"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 16,
+                "ids": [
+                  "CAP-R06"
+                ],
+                "topic": "Grèves et négociation",
+                "finding": "Dares 2024 1,6% entreprises du champ grève, 62 JINT/1000 salariés, 17,2% négociation. Champ entreprises privé non agricole 10+ France hors Mayotte; autres conflits et public exclus. Droit grève secteur privé SP, revue juridique requise.",
+                "sources": [
+                  "https://dares.travail-emploi.gouv.fr/publication/les-greves-en-2024",
+                  "https://dares.travail-emploi.gouv.fr/donnees/la-negociation-collective-dentreprise",
+                  "https://www.service-public.gouv.fr/particuliers/vosdroits/F117?lang=fr"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 17,
+                "ids": [
+                  "CAP-R06"
+                ],
+                "topic": "Protection sociale",
+                "finding": "Rapport OIT 2024-26 52,4% population mondiale bénéficiant d'au moins une prestation de protection sociale; pas couverture complète; écarts et définitions à étudier.",
+                "sources": [
+                  "https://www.ilo.org/resource/article/world-social-protection-report-2024-26-figures",
+                  "https://webapps.ilo.org/static/english/reports/flagship/world_social_protection_report_2024-26/Chapter%2003.html"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 18,
+                "ids": [
+                  "CAP-R07"
+                ],
+                "topic": "Coopératives et résilience",
+                "finding": "Pérotin synthèses comparatives et étude 2022 : ajustement rémunérations plutôt qu'emplois dans cas étudiés; survie comparable selon revue, pas supériorité universelle. Loi ESS distincte autogestion.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/abs/cooperative-business-movement-1950-to-the-present/performance-of-workers-cooperatives1/01A90453AD4FEC762077D65FD8981035",
+                  "https://doi.org/10.1080/00036846.2022.2118963",
+                  "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000029313296/2026-05-03"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 19,
+                "ids": [
+                  "CAP-R07",
+                  "CAP-R04"
+                ],
+                "topic": "Entreprises récupérées Argentine",
+                "finding": "Étude 2020 facteurs consolidation : actifs hérités, propriété, gestion économique, réseaux politiques et sociaux, débouchés; hypothèses et cas, pas causalité universelle; rattachement AUT IMPA/BAUEN et SOC.",
+                "sources": [
+                  "https://doi.org/10.1080/21598282.2020.1783809"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 20,
+                "ids": [
+                  "CAP-R08",
+                  "CAP-R06"
+                ],
+                "topic": "Enquête sur le travail réel",
+                "finding": "Dares CT-RPS 2024-25 : dimensions rythmes, autonomie, coopération, risques, sens. Page résultats accès direct limité, extrait indexé; utiliser méthodologie et séries 1984-2019 sans prétendre réaliser enquête. Protocole volontaire, anonymisation, pas de collecte active.",
+                "sources": [
+                  "https://www.insee.fr/fr/information/7625812",
+                  "https://dares.travail-emploi.gouv.fr/donnees/35-ans-devolutions-des-conditions-de-travail",
+                  "https://dares.travail-emploi.gouv.fr/temps-et-conditions-de-travail/conditions-de-travail"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              }
+            ],
+            "open_research": [
+              "CAP-R01",
+              "CAP-R02",
+              "CAP-R03",
+              "CAP-R04",
+              "CAP-R05",
+              "CAP-R06",
+              "CAP-R07",
+              "CAP-R08"
+            ],
+            "recommendation": "Refonte transversale proposée : Qui produit la richesse et qui en dispose ? Travail, propriété, classes sociales et pouvoir économique. Renvois Wikipédia et dossiers SOC SOIN FEM ANT AUT, outils pédagogiques explicitement fictifs et recherches ouvertes. Aucun visa.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "research_followup_round2": {
+            "date": "2026-11-24",
+            "scope": "20 passes thématiques 21-40, recherches web ciblées et lecture de notices, extraits, résumés et plusieurs pages HTML; fac-similé décret espagnol Gaceta n°94 p42 inspecté. Aucun dépouillement exhaustif de fonds, aucun entretien ni lecture intégrale de tous les ouvrages. Vérification Wikipédia ciblée de syndicalisme révolutionnaire, anarcho-syndicalisme, révolution espagnole, non exhaustive par cas.",
+            "passes": [
+              {
+                "n": 21,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "topic": "Canuts, Lyon 1831-1834",
+                "finding": "1831 revendication tarif soie; 1834 contexte politique et répression distincts, archives de Lyon qualifient de manière impropre l'appellation deuxième révolte des canuts; différencier chefs ateliers, compagnons, fabricants.",
+                "sources": [
+                  "https://www.archives-lyon.fr/expos/les-origines-de-la-revolte-de-1831",
+                  "https://www.archives-lyon.fr/expos/les-origines-de-la-revolte-de-1834",
+                  "https://www.archives-lyon.fr/pages/1831-1834-la-revolte-des-canuts"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 22,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "topic": "Première Internationale 1864-1876/77",
+                "finding": "Solidarité matérielle entre syndicats, financement grèves et soutien réfugiés; dates de fin variables selon branches, pas seulement conflits doctrinaux. Étude des comptes et archives à poursuivre.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/abs/cambridge-history-of-socialism/international-working-mens-association-186418767/2281A0998F3503B74962A4D960FF1D52",
+                  "https://www.jstor.org/stable/10.1163/j.ctvbqs569"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 23,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "topic": "Chicago 1886",
+                "finding": "Mouvement national huit heures et répression; collection primaire Chicago History Museum, contexte international; origine institutionnelle du Premier Mai à approfondir via congrès 1889.",
+                "sources": [
+                  "https://www.chicagohistory.org/haymarket/",
+                  "https://guides.loc.gov/this-month-in-business-history/may/haymarket",
+                  "https://www.cambridge.org/core/journals/international-labor-and-working-class-history/article/abs/worktime-between-haymarket-and-the-popular-front-an-international-perspective/16F2FBFDE9A5E99C2073B75FAD7E9A58"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 24,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Charte d'Amiens 1906",
+                "finding": "Indépendance syndicale, revendications immédiates et transformation économique; IHS CGT distingue évolution pratique et doctrine; texte original congrès à collationner; anarcho-syndicalisme et syndicalisme révolutionnaire non synonymes.",
+                "sources": [
+                  "https://www.ihs.cgt.fr/a-propos-de-la-charte-damiens/",
+                  "https://institutions-professionnelles.fr/reperes/documents/127-1906-la-charte-d-amiens-enterine-la-creation-de-la-premiere-confederation-ouvriere"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 25,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R02",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Grèves de loyers Argentine 1907",
+                "finding": "Buenos Aires et Rosario; article Horacio Tarcus 30 septembre 2026, DOI 10.47195/PM26.1015, résumé ouvert sur Centro Anarquista Femenino et FORA; travail, logement, genre; texte intégral non collationné.",
+                "sources": [
+                  "https://www.ojs.politicasdelamemoria.cedinci.org/index.php/PM/article/view/1015",
+                  "https://ri.conicet.gov.ar/items/8de9d6e3-c9e6-41b8-be2f-daea0da3caf8",
+                  "https://www.sociohistorica.fahce.unlp.edu.ar/article/view/she155"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 26,
+                "ids": [
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "topic": "Lawrence 1912",
+                "finding": "IWW, textile, solidarités multilingues et familles, hausse salaires rapportée; archives UW et source militante IWW; conditions exactes accords et durabilité à vérifier.",
+                "sources": [
+                  "https://depts.washington.edu/iww/yearbook1912.shtml",
+                  "https://archive.iww.org/content/bread-and-roses-hundred-years/",
+                  "https://dp.la/exhibitions/breadandroses/strike/arrested?item=88"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 27,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R04",
+                  "CAP-R07"
+                ],
+                "topic": "Petrograd 1917-1918",
+                "finding": "S. A. Smith, Red Petrograd, chapitres sur comités et contrôle de production; distinguer revendications, approvisionnement, contrôle et gestion directe, rapports État/syndicats; extraits et notices, livre non lu intégralement.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/red-petrograd/076475776FD63ADF1F4AFE2BA346ABDC",
+                  "https://www.cambridge.org/core/books/abs/red-petrograd/theory-and-practice-of-workers-control-of-production/C916D741C9BB3E7B94B61076962B0FD3",
+                  "https://www.cambridge.org/core/books/abs/red-petrograd/economic-crisis-and-the-fate-of-workers-control-october-1917-to-june-1918/9BDD74B2E0AF9A35FBE16D2DEFE39B48"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 28,
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "topic": "La Canadenca 1919",
+                "finding": "Musée Histoire Catalogne et CNT; fac-similé Gaceta Madrid n°94 du 4 avril 1919 p.42 contrôlé visuellement : décret 3 avril, 8h/jour ou 48h/semaine à partir 1 octobre 1919, exceptions prévues art 2-4; application réelle ouverte.",
+                "sources": [
+                  "https://www.mhcat.cat/esmhc/exposiciones/exposiciones_realizadas/la_huelga_de_la_canadiense",
+                  "https://www.cnt.es/noticias/la-conquista-de-las-ocho-horas-de-trabajo-en-espana/",
+                  "https://www.boe.es/diario_gazeta/comun/pdf.php?do=1&p=1919%2F04%2F04%2Fpdfs%2FGMD-1919-94.pdf"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 29,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "ICU Afrique australe 1919-1930",
+                "finding": "ICU fondée au Cap 1919 selon notice spécifique et fonds Rhodes; une chronologie SAHO indique 1917, divergence à vérifier; distingue Industrial Workers of Africa 1917-1921; travail rural, race et foncier.",
+                "sources": [
+                  "https://sahistory.org.za/dated-event/industrial-and-commercial-workers-union-founded-under-clements-kadalie",
+                  "https://digitalarchives.ru.ac.za/s/lrs/item-set/21984",
+                  "https://hipsa.org.za/publication/i-see-you-the-industrial-and-commercial-workers-union-of-africa-1919-1930-new/",
+                  "https://sahistory.org.za/archive/industrial-workers-africa-1917-1921-bikisha-media-collective",
+                  "https://sahistory.org.za/article/timeline-labour-and-trade-union-movement-south-africa-1881-1919"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 30,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R04",
+                  "CAP-R07"
+                ],
+                "topic": "Turin 1919-1920",
+                "finding": "Résumé International Gramsci Journal consulté : gestion collective lors occupation septembre 1920, débat spontanéité/direction, division dirigeants-dirigés; distinguer pratiques locales et bilan italien.",
+                "sources": [
+                  "https://journals.uniurb.it/index.php/igj/article/view/4123",
+                  "https://www.museotorino.it/view/s/7d154dfd891b4b6dad397eff06501a5b"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 31,
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Kobe 1921",
+                "finding": "Contradiction MIT qualifie grève de réussie, institut Ohara Hosei indique reprise inconditionnelle 9 août et déclaration de défaite 12 août, diffusion ultérieure comités d'usine; notice japonaise lue. Définition de réussite et sources japonaises à collationner.",
+                "sources": [
+                  "https://visualizingcultures.mit.edu/protest_interwar_japan/pij1_essay02.html",
+                  "https://oisr-org.ws.hosei.ac.jp/research/dglb/explanation/exp_detail/?exp_id=4-012-9000652",
+                  "https://paperspast.natlib.govt.nz/newspapers/HNS19210711.2.54"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 32,
+                "ids": [
+                  "CAP-R04",
+                  "CAP-R07",
+                  "CAP-R01"
+                ],
+                "topic": "Collectivisations Catalogne et Valence 1936-1939",
+                "finding": "Albert Balcells Catalan Historical Review 2017 pp77-92 (notice et extrait), gestion par comités et coordination publique, tensions guerre/approvisionnement; renvoyer au chantier anarchiviste existant sans prétendre le clore.",
+                "sources": [
+                  "https://dialnet.unirioja.es/servlet/articulo?codigo=6137869",
+                  "https://portalrecerca.uab.cat/ca/publications/collectivisations-in-catalonia-and-the-region-of-valencia-during-/",
+                  "https://publicacions.iec.cat/PopulaFitxa.do?idCatalogacio=28128&moduleName=r&subModuleName="
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 33,
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R07",
+                  "CAP-R08"
+                ],
+                "topic": "Flint 1936-1937",
+                "finding": "Occupation et reconnaissance syndicale UAW à distinguer de gestion durable; fonds entretiens Michigan-Flint et archives Wayne; article sociologique résumé ouvert sur démocratie locale et facteurs de mobilisation.",
+                "sources": [
+                  "https://digitalarchives.umflint.edu/digital/collection/p16210coll3",
+                  "https://archives.wayne.edu/repositories/2/resources/103",
+                  "https://www.journals.uchicago.edu/doi/abs/10.1086/682956",
+                  "https://guides.loc.gov/this-month-in-business-history/february/flint-michigan-sit-down-strike"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 34,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Trinité 1937",
+                "finding": "Grève pétrole juin, extension vers autres secteurs et syndicalisation; NALIS et étude comparative 2025 Hong Kong/Trinidad; lier classe, empire et travail migrant, sans assimiler toutes luttes à syndicalisme révolutionnaire.",
+                "sources": [
+                  "https://www.nalis.gov.tt/resources/tt-content-guide/labour-day/",
+                  "https://doi.org/10.1080/03086534.2025.2479804"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 35,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Cheminots AOF 1947-1948",
+                "finding": "Frederick Cooper, Journal African History 1996, résumé et notes consultés; grève au-delà Dakar-Niger, égalité et politique anticoloniale, différencier mémoire romanesque Sembène et preuves historiques.",
+                "sources": [
+                  "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/our-strike-equality-anticolonial-politics-and-the-194748-railway-strike-in-french-west-africa/2CBFB67E88BF2A150A58897B0961E849",
+                  "https://www.africabib.org/rec.php?DB=p&RID=146779932"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 36,
+                "ids": [
+                  "CAP-R04",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Cordones industriales Chili 1972-1973",
+                "finding": "Coordination territoriale inter-usines; Gaudichaud 2004 notice bibliothèque nationale, Winn 1976 étude Yarur, étude vestiges 2025; distinguer participation et contrôle productif, relations CUT et gouvernement, répression après coup.",
+                "sources": [
+                  "https://www.bibliotecanacional.gob.cl/publicaciones/poder-popular-y-cordones-industriales-testimonios-sobre-el-movimiento-popular-urbano",
+                  "https://journals.sagepub.com/doi/10.1177/0094582X7600300105",
+                  "https://www.scielo.cl/scielo.php?pid=S0717-50512025000200067&script=sci_arttext&tlng=es"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 37,
+                "ids": [
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Portugal 1974-1975",
+                "finding": "Raquel Varela 2019 distinction contrôle ouvrier/autogestion; thèse NOVA Sogantal 2024 sur ouvrières; comparer Setenave et textile, accès aux comptes, statut propriété et issue; textes intégraux non collationnés.",
+                "sources": [
+                  "https://novaresearch.unl.pt/en/publications/workers-control-the-case-of-the-portuguese-revolution/",
+                  "https://journals.sagepub.com/doi/10.1177/0143831X8124002",
+                  "https://run.unl.pt/entities/publication/7f70e62e-19ec-4052-afe4-7b3eafff0595"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 38,
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R07",
+                  "CAP-R08"
+                ],
+                "topic": "Solidarność Pologne 1980",
+                "finding": "21 revendications du comité interentreprises inscrites UNESCO; syndicat indépendant, droit grève, libertés; accords août et syndicat septembre, état de siège 1981; pas assimilation au contrôle de production.",
+                "sources": [
+                  "https://www.unesco.org/en/memory-world/twenty-one-demands-gdansk-august-1980-birth-solidarity-trades-union-massive-social-movement",
+                  "https://polishfreedom.pl/en/demands-of-the-striking-crews-of-factory-workers-and-the-enterprises-represented-by-the-inter-factory-strike-committee/",
+                  "https://eng.ipn.gov.pl/en/news/4490%2C31-August-1980-the-birth-of-quotSolidarityquot.html"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 39,
+                "ids": [
+                  "CAP-R02",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "topic": "Bombay 1982-1983",
+                "finding": "Article Sumeet Mhaskar du 18 août 2026 consulté : près de 250000 travailleurs, 18 mois, défaite et mémoire des revendications logement/indemnisation; données auteur non recomptées; ne pas imputer toute désindustrialisation à grève.",
+                "sources": [
+                  "https://www.sfu.ca/union-memory/blog/blog5/",
+                  "https://labourfile.com/section-detail.php?aid=417"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 40,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Corée du Sud 1987",
+                "finding": "Histoire universitaire du mouvement de démocratisation économique et syndicats indépendants; Hagen Koo 2001 notice et compte rendu; rôle des ouvrières avant 1987 et rapports aux syndicats officiels à approfondir; pas reprise de propriété.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/abs/past-forward/great-labor-uprising-of-1987/28936F366A3E20CCF9DC77A394693943",
+                  "https://www.jstor.org/stable/10.7591/j.ctvggx3s0",
+                  "https://kci.go.kr/kciportal/landing/article.kci?arti_id=ART002636914"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              }
+            ],
+            "wikipedia": [
+              "https://fr.wikipedia.org/wiki/Syndicalisme_r%C3%A9volutionnaire",
+              "https://fr.wikipedia.org/wiki/Anarcho-syndicalisme",
+              "https://fr.wikipedia.org/wiki/R%C3%A9volution_sociale_espagnole_de_1936"
+            ],
+            "open_research": [
+              "CAP-R01",
+              "CAP-R02",
+              "CAP-R03",
+              "CAP-R04",
+              "CAP-R05",
+              "CAP-R06",
+              "CAP-R07",
+              "CAP-R08"
+            ],
+            "recommendation": "Corpus comparatif pour chapitres 1, 6, 8, 9; différencier syndicalisation, grève, occupation, contrôle, autogestion, propriété. Rattacher dossiers historiques et AUT/SOC/SOIN existants; pas de notices redondantes. Compléments futurs: AIT Berlin 1922, FORA congrès, réseaux syndicalistes transnationaux, Océanie, après 1987; désaccords Kobe et datation ICU maintenus.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "research_followup_round3": {
+            "date": "2026-11-24",
+            "scope": "20 passes 41-60, recherches web ciblées, notices, extraits, pages HTML ouvertes AIT et ACAT, abstracts Garner, Belkin et autres; pas de lecture exhaustive des ouvrages ni fac-similés, pas de contrôle des fonds d'archives sur place. Article Mozambique accès direct 403. Comparaison Wikipédia ciblée, non exhaustive par organisation.",
+            "passes": [
+              {
+                "n": 41,
+                "topic": "Londres 1913",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Wayne Westergard-Thorpe, IRSH 23(1), 1978, 33-78, extrait et bibliographie : tentative durable de coordination internationale, divergences stratégiques CGT/autres syndicats; texte intégral à collationner.",
+                "sources": [
+                  "https://doi.org/10.1017/S0020859000005691"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 42,
+                "topic": "Moscou et Berlin 1921-1922",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "finding": "Profintern 1921, conférence Berlin 16-19 juin 1922, refus de subordination; Garner 2006 résumé et extrait en dépôt, Guinchard article; distinguer délégués, communiqués, affiliations.",
+                "sources": [
+                  "https://doi.org/10.1017/S0960777306003341",
+                  "https://www.academia.edu/11180457/Separated_by_an_Ideological_Chasm_The_Spanish_National_Labour_Confederation_and_Bolshevik_Internationalism_1917_1922",
+                  "https://workersoftheworld.net/previous-editions/volume-1-number-4/chapter-8/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 43,
+                "topic": "AIT Berlin 1922-1923",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07",
+                  "CAP-R08"
+                ],
+                "finding": "Page AIT reproduisant Andersson 1959 ouverte : 25 décembre-2 janvier, 10 pays et environ 2 millions revendiqués; Guinchard évoque 15 pays et plus de 2 millions; Zimmer 1,5 million. Wikipédia FR donne 22 décembre. Liste Lehning mélange présence et adhésions écrites, Damier donne délégation chilienne, autre récit arrivée après congrès; ne pas fixer effectif ou composition définitive. Solidarité, presse, fédéralisme et coordination.",
+                "sources": [
+                  "https://www.iwa-ait.org/es/node/86",
+                  "https://cnt-ait.info/2022/12/10/anarchosyndicalism-lehning/",
+                  "https://libcom.org/article/founding-congress-international-workers-association",
+                  "https://workersoftheworld.net/previous-editions/volume-1-number-4/chapter-8/",
+                  "https://en.theanarchistlibrary.org/library/kenyon-zimmer-haymarket-and-the-rise-of-syndicalism",
+                  "https://fr.wikipedia.org/wiki/Association_internationale_des_travailleurs_(anarcho-syndicaliste)"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 44,
+                "topic": "FORA Argentine",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "V congrès 1905 orientation communisme anarchiste; IX avril 1915 retrait de la recommandation et scission. Belkin analyse CORA 1914 et fonctionnement FORA IX, article et notices CONICET; récit militant FORA V à contextualiser.",
+                "sources": [
+                  "https://doi.org/10.35305/ac.v19i27.1685",
+                  "https://doi.org/10.35305/rp.v15i38.777",
+                  "https://organizacion-obrera.fora.com.ar/2024/03/27/9o-congreso-de-la-f-o-r-a/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 45,
+                "topic": "CNT Espagne",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Garner 2006, résumé : relations avec Comintern/Profintern de soutien initial à refus, débat interne non réductible anarchistes/communistes. Raccordement CAP28/32 et dossier anarchiviste.",
+                "sources": [
+                  "https://doi.org/10.1017/S0960777306003341",
+                  "https://www.cambridge.org/core/journals/international-review-of-social-history/article/proletarian-turf-war-the-rise-and-fall-of-barcelonas-sindicatos-libres-19191923/C4B59B10D090D4FCBCD03C48C625A564"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 46,
+                "topic": "USI Italie",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "finding": "Carl Levy 2000 synthèse bibliographique, USI 1912 racines agricoles et industrielles, divisions interventionnisme guerre; rôle Borghi et chronologie scission UIL à approfondir.",
+                "sources": [
+                  "https://doi.org/10.1017/S0020859000000122",
+                  "https://www.cambridge.org/core/journals/international-review-of-social-history/article/revolutionary-syndicalism-in-the-italian-labor-movement-the-agrarian-strikes-of-190708-in-the-province-of-parma/75DC8B75FF6EE5BFDB1086CD0C38F053"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 47,
+                "topic": "IWW Etats-Unis",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Congrès 1905, union industrielle, scission 1908. Index transcription procès-verbaux 600+ pages et chronologie UW consultés, intégralité non lue. Organisation internationale distincte de l'AIT; section chilienne à distinguer.",
+                "sources": [
+                  "https://www.marxists.org/history/usa/unions/iww/1905/convention/index.htm",
+                  "https://depts.washington.edu/iww/yearbook1908.shtml",
+                  "https://depts.washington.edu/iww/index.shtml"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 48,
+                "topic": "FAUD Allemagne",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Fondée 1919; recherche récente crise 1923, archives propres disparues selon auteur, recours Der Syndikalist et Bundesarchiv; fonds à localiser et cotes à vérifier.",
+                "sources": [
+                  "https://journals.rcsi.science/0130-3864/article/view/405850",
+                  "https://theanarchistlibrary.org/library/wild-socialism-workers-councils-in-revolutionary-berlin-1918-21"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 49,
+                "topic": "SAC Suède",
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Fondation 1910; changement principes 1952 et départ 1958 selon Damier, autres récits parlent d'exclusion; différencier processus, votes et décision formelle. Caisses chômage et relations institutions.",
+                "sources": [
+                  "https://doi.org/10.1002/9781405198073.wbierp0074",
+                  "https://libcom.org/book/export/html/34840",
+                  "https://www.selfed.org.uk/a-s-history/unit-21-anarcho-syndicalism-1939-99"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 50,
+                "topic": "CGT Portugal",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Fondation 1919, affiliation AIT, courants concurrents et écoles syndicales. A Batalha piste, archives non dépouillées.",
+                "sources": [
+                  "https://www.sfu.ca/union-memory/issues-themes/collective-action-and-strikes/Portugal.html",
+                  "https://doi.org/10.1080/14701847.2023.2282830",
+                  "https://dspace.uevora.pt/rdpc/handle/10174/29629"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 51,
+                "topic": "ACAT Amérique latine",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Congrès Buenos Aires 11-16 mai 1929, étude Ayer et page HTML sommaire La Continental Obrera juillet 1929 ouverte; fac-similé PDF non dépouillé. Circulation presse, correspondances et campagnes; catégories du site ne prouvent pas affiliation.",
+                "sources": [
+                  "https://www.revistasmarcialpons.es/index.php/revistaayer/article/view/el_proyecto_continental_del_anarquismo_argentino",
+                  "https://www.acat-ait.org/2019/11/12/la-continental-obrera-julio-de-1929-numero-i/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 52,
+                "topic": "CGT Mexique",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "finding": "Congrès fondateur février 1921, étude UNAM sur 1921-1931; secteurs boulangerie, tramway, téléphone, textile selon source académique. Chronologie affiliation AIT 1923-24 à vérifier.",
+                "sources": [
+                  "https://www.acat-ait.org/2023/02/17/congreso-fundacional-cgtm/",
+                  "https://revistas.unam.mx/index.php/rmcpys/article/view/80149",
+                  "https://academic.oup.com/book/43749/chapter/370639447"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 53,
+                "topic": "FORP Pérou",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "finding": "Steven Hirsch 2010, chapitre 1905-1930, notice et extraits; huit heures janvier 1919 selon histoire du travail péruvien; relations ouvriers et mouvements autochtones, pas assimilation des luttes.",
+                "sources": [
+                  "https://profiles.wustl.edu/en/publications/peruvian-anarcho-syndicalism-adapting-transnational-influences-an/",
+                  "https://www.jstor.org/stable/jj.6380609",
+                  "https://www.academia.edu/30116490/PERUVIAN_ANARCHO_SYNDICALISM_ADAPTING_TRANSNATIONAL_INFLUENCES_AND_FORGING_COUNTERHEGEMONIC_PRACTICES_1905_1930"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 54,
+                "topic": "Industrial Workers of Africa",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "finding": "Johannesburg 1917, influence IWW, ISL; thèse Wits notice et SAHO, distinguer ICU et AIT Berlin; autonomie des militants noirs et rapports coloniaux à approfondir.",
+                "sources": [
+                  "https://wiredspace.wits.ac.za/items/7d43b750-5b6d-4501-8e8b-27eea22e3f29",
+                  "https://sahistory.org.za/archive/industrial-workers-africa-1917-1921-bikisha-media-collective",
+                  "https://www.cambridge.org/core/books/abs/cambridge-history-of-socialism/anarchism-and-syndicalism-in-southern-africa/C10B5F566F11C9D2C06E3E931B345950"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 55,
+                "topic": "Mozambique colonial",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "finding": "O Emancipador et syndicat général Lourenço Marques; recommandation affiliation CGT Portugal 14 nov 1921 selon extrait indexé; article direct 403, réalisation et portée à vérifier.",
+                "sources": [
+                  "https://doi.org/10.1080/14701847.2023.2178169"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 56,
+                "topic": "Egypte",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "finding": "Anthony Gorman, anarchisme Alexandrie et Le Caire depuis 1860s, presse et syndicats multinationaux; grève cigarette 1899-1900, CGT Alexandrie 1921 avec Joseph Rosenthal d'après chapitre reproduit; présence majoritairement étrangère CGT à contextualiser; aucune affiliation Berlin établie ici.",
+                "sources": [
+                  "https://doi.org/10.3366/edinburgh/9781474430616.003.0009",
+                  "https://www.research.ed.ac.uk/en/publications/socialisme-en-egypte-avant-la-premi%C3%A8re-guerre-mondiale-la-contrib/",
+                  "https://theanarchistlibrary.org/library/steven-j-hirsch-lucien-van-der-walt-anarchism-and-syndicalism-in-the-colonial-and-postcolonial"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 57,
+                "topic": "Japon Zenkoku Jiren",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Fédération fondée 24 mai 1926 selon John Crump, rupture 1927-28 entre syndicalistes et anarchistes communistes dits purs; Hatta critique centralité organisation industrielle; textes reproduits et notice Oxford, affiliation précise à AIT non démontrée ici.",
+                "sources": [
+                  "https://academic.oup.com/edited-volume/61799/chapter-abstract/546312534",
+                  "https://www.theanarchistlibrary.org/library/john-crump-anarchist-communism-and-leadership",
+                  "https://theanarchistlibrary.org/library/hatta-shuzo-on-syndicalism"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 58,
+                "topic": "Chine Guangzhou",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Arif Dirlik 1989 article et livre 1991, influence anarchiste et concurrence communistes; Krebs extrait indexé successeurs Shifu syndicat maisons de thé 1918 et coiffeurs 1919; nom et archives chinois à retrouver, pas affiliation Berlin déduite.",
+                "sources": [
+                  "https://www.cambridge.org/core/journals/international-review-of-social-history/article/path-not-taken-the-anarchist-alternative-in-chinese-socialism-19211927/CA46BF00539ABBFEB0A7F44E504E4640",
+                  "https://www.ucpress.edu/books/anarchism-in-the-chinese-revolution/paper",
+                  "https://www.theanarchistlibrary.org/library/vadim-damier-the-anarcho-syndicalist-movement-in-china-in-1910s-and-1920s"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 59,
+                "topic": "Corée et diasporas",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Hwang 2007, 2016: réseaux Chine/Japon/Corée, Labor Alliance of Toko (syndicat travailleurs coréens au Japon) éditeur d'un périodique selon article; courants différents, anti-colonialisme sans réduction nationaliste; noms originaux et dates à vérifier.",
+                "sources": [
+                  "https://doi.org/10.1080/10357820701196668",
+                  "https://www.jstor.org/stable/jj.18255497"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 60,
+                "topic": "Océanie IWW Australie et Red Feds Nouvelle-Zélande",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Australie club Sydney octobre 1907 selon musée, IWW antimilitarisme 1916-17, presse Direct Action 1 nov 1914 indexée; Nouvelle-Zélande Federation of Labour 1910, influences syndicalistes et IWW distincts, conflits Waihī 1912 et 1913; pas assimilation Red Feds à section IWW. Genre et exclusion raciale à étudier.",
+                "sources": [
+                  "https://mhnsw.au/stories/ww1/wobblies/",
+                  "https://reasoninrevolt.net.au/bib/PR0001526.htm",
+                  "https://labourhistorymelbourne.org/phillip-deery-and-julie-kimber-eds-fighting-against-war-peace-activism-in-the-twentieth-century-melbourne-leftbank-press-2015/",
+                  "https://teara.govt.nz/en/unions-and-employee-organisations/page-4",
+                  "https://nzhistory.govt.nz/page/class-war-comes-workers-paradise-1890-1913",
+                  "https://archive.iww.org/history/library/misc/Shor1998/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              }
+            ],
+            "open_research": [
+              "CAP-R01",
+              "CAP-R02",
+              "CAP-R03",
+              "CAP-R04",
+              "CAP-R05",
+              "CAP-R06",
+              "CAP-R07",
+              "CAP-R08"
+            ],
+            "wikipedia": [
+              "https://fr.wikipedia.org/wiki/Syndicalisme_r%C3%A9volutionnaire",
+              "https://fr.wikipedia.org/wiki/Anarcho-syndicalisme",
+              "https://fr.wikipedia.org/wiki/Association_internationale_des_travailleurs_(anarcho-syndicaliste)"
+            ],
+            "recommendation": "Réseaux transnationaux, mandats, solidarité et divergences; distinguer dates de congrès, présence, adhésion écrite, influence et affiliation, éviter effectifs non collationnés. Rattacher chapitres 1,6,8,9 et corpus SOC/ANARCHIVISTE. Recherches futures sur Brésil, Uruguay, Chili IWW, Inde, réseaux femmes, après 1936; pas de création de notices définitives.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          }
+        },
+        {
+          "id": "wiki-culture-creation-acces-art",
+          "title": "Culture, création et accès à l’art.",
+          "source": "wiki-culture-creation-acces-art.html",
+          "source_sha256": "78d29fb6aeb34cdae45949cc579e352fe87a00d69377758de6cd287255525692",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "initial_review_done_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ]
+        }
+      ],
+      "review_evidence": "coordination/work/c25/RELECTURE_R6_01_PREMIERE_PASSE_2026-11-14.json",
+      "second_pass_evidence": {
+        "inventory": "coordination/work/c25/RELECTURE_R6_01_INVENTAIRE_LIENS_2026-11-14.json",
+        "report": "coordination/work/c25/RELECTURE_R6_01_SECONDE_PASSE_2026-11-14.md",
+        "scope": "82 URL slots inventoried across 5 documents, 7 targeted URL controls/attempts, not full verification",
+        "key_issue": "CNCDH 2024 figure 9350 old vintage versus 9295 newer comparator; causal explanation pending",
+        "publication_authorized": false
+      }
+    },
+    {
+      "id": "C25-R6-02",
+      "kind": "source_read_and_private_candidate_amendments",
+      "publication_authorized": false,
+      "items": [
+        {
+          "id": "wiki-ecologie-sociale-environnement",
+          "title": "Écologie sociale et crise environnementale.",
+          "source": "wiki-ecologie-sociale-environnement.html",
+          "source_sha256": "65759c6f70ffeb774bf2887ab5b721bef9c789fb14c1b17fdb9ee0e576ec4851",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/01-ecologie-sociale.md"
+        },
+        {
+          "id": "wiki-egalite-fiches",
+          "title": "Égalité, genres et inclusivité.",
+          "source": "wiki-egalite-fiches.html",
+          "source_sha256": "ce4fe8b4400667ac3dcd3e972616d57dbbd7d6338fbac3ef1592908f3c5e121a",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/02-egalite-fiches.md"
+        },
+        {
+          "id": "wiki-egalite-genres-inclusivite",
+          "title": "Égalité, genres et inclusivité.",
+          "source": "wiki-egalite-genres-inclusivite.html",
+          "source_sha256": "d431ee846ad2f3f54aaeeb7734576a15deeb8f562c4c8f5035d1c6c6892e0633",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/03-egalite-portail.md"
+        },
+        {
+          "id": "wiki-feminismes-histoire-egalite",
+          "title": "Féminismes : comprendre, transmettre, documenter.",
+          "source": "wiki-feminismes-histoire-egalite.html",
+          "source_sha256": "0825356a373eb5d2cc8b86d485b3ab0375d32dcc2207cbd54ad54d19bab4f4ec",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/04-feminismes.md"
+        },
+        {
+          "id": "wiki-handicap-validisme-neurodiversite",
+          "title": "Handicap, validisme et neurodiversité.",
+          "source": "wiki-handicap-validisme-neurodiversite.html",
+          "source_sha256": "b4c5da1c366fd1f8f2bd03bee691812a55f357a59b74f6ca694ed15f940adbd7",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/05-handicap.md"
+        }
+      ],
+      "review_status": "first_editorial_pass_completed_no_visa"
+    },
+    {
+      "id": "C25-R6-03",
+      "kind": "source_read_and_private_candidate_amendments",
+      "publication_authorized": false,
+      "items": [
+        {
+          "id": "wiki-justice-prisons-abolitionnisme",
+          "title": "Justice, prisons et abolitionnisme pénal.",
+          "source": "wiki-justice-prisons-abolitionnisme.html",
+          "source_sha256": "c4edd4313cda000254c1b8a0e13641a99d94d19380b643c5360881fed1b6505e",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/06-prisons.md"
+        },
+        {
+          "id": "wiki-liberte-numerique-ia-surveillance",
+          "title": "Libertés numériques, surveillance et intelligence artificielle.",
+          "source": "wiki-liberte-numerique-ia-surveillance.html",
+          "source_sha256": "52c279b50660f42f70615b6ad8046fe4de908c46aa22a14e85d2c9f27e27ecc2",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/07-liberte-numerique.md"
+        },
+        {
+          "id": "wiki-patriarcat-histoire-mecanismes",
+          "title": "Le patriarcat : histoire, pouvoirs et mécanismes.",
+          "source": "wiki-patriarcat-histoire-mecanismes.html",
+          "source_sha256": "9edeee0956c46530b160a9f28dabb5d1edb04ff04f7a3b3ade91640d25e7ac98",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/08-patriarcat.md"
+        },
+        {
+          "id": "wiki-politique-institutions-regimes",
+          "title": "Qui gouverne ? Comment le pouvoir s'organise.",
+          "source": "wiki-politique-institutions-regimes.html",
+          "source_sha256": "7496091d6f4300abad783bbe5d9d08cc4eefcda9303e25203895f882ab411be8",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/09-institutions.md"
+        },
+        {
+          "id": "wiki-socialismes-communismes-anarchismes-autogestion",
+          "title": "Socialismes, communismes, anarchismes et autogestion.",
+          "source": "wiki-socialismes-communismes-anarchismes-autogestion.html",
+          "source_sha256": "ca4507c7bbcd6af005424c4a578169ea1464c4b6e86a29b6c813fc1cc53065ec",
+          "documentary_before": "a_reconcilier",
+          "legal_before": "non_examine",
+          "publication_before": "non_autorisee",
+          "read_status": "draft_correction_prepared_not_approved",
+          "required_checks": [
+            "exact-source-and-date",
+            "wikipedia-non-duplication",
+            "independent-verifiable-sources",
+            "corrections-and-contradictions",
+            "rights-and-personal-data",
+            "human-editorial-decision"
+          ],
+          "draft_correction": "coordination/work/c26/corrections-privees/10-socialismes.md"
+        }
+      ],
+      "review_status": "first_editorial_pass_completed_no_visa"
+    }
+  ],
+  "blocked_not_queued": [
+    {
+      "id": "wiki-association-collegiale",
+      "title": "Créer une association collégiale",
+      "source": "wiki-association-collegiale.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-decision-collective",
+      "title": "Décider ensemble.",
+      "source": "wiki-decision-collective.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-education-enfance-protection",
+      "title": "Éducation, enfance et protection.",
+      "source": "wiki-education-enfance-protection.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-financements-culture-spectacle",
+      "title": "Financer la création, la diffusion et les tournées.",
+      "source": "wiki-financements-culture-spectacle.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-frontieres-migrations-colonialisme",
+      "title": "Frontières, migrations et colonialisme.",
+      "source": "wiki-frontieres-migrations-colonialisme.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-lecture-croisee-travail-soin-pouvoir",
+      "title": "Qui fait vivre les communs ?",
+      "source": "wiki-lecture-croisee-travail-soin-pouvoir.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-logement-habitat-droit-ville",
+      "title": "Logement, habitat et droit à la ville",
+      "source": "wiki-logement-habitat-droit-ville.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-police-deces-memoire",
+      "title": "Police, décès et mémoire.",
+      "source": "wiki-police-deces-memoire.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    },
+    {
+      "id": "wiki-sante-psychiatrie-autonomie-soins",
+      "title": "Santé, psychiatrie et autonomie des soins.",
+      "source": "wiki-sante-psychiatrie-autonomie-soins.html",
+      "documentary_before": "bloquee",
+      "reason": "Documentary blockage from source: no automatic clearance"
+    }
+  ],
+  "reserved_media": {
+    "count": 10,
+    "status": "not_queued_until_source_and_rights_verified"
+  },
+  "required_approval": "specific human visa per item after evidence-based review",
+  "none_published_or_newly_authorized": true,
+  "c26_status": {
+    "completed_passes": 10,
+    "actual_source_html_read": 10,
+    "private_candidate_amendments": 10,
+    "source_documents_modified": 0,
+    "approval_granted": 0,
+    "status": "first_pass_completed_not_editorially_approved"
+  }
+}
