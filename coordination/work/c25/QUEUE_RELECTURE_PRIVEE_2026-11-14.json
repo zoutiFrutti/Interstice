@@ -803,7 +803,89 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "relieuse_review": {
+            "date": "2026-11-24",
+            "candidate_git_blob": "db754eed38c3e02104418800366cae31e90d183c",
+            "scope": "Lecture intégrale HTML, contrôle ciblé pages Insee pauvreté, patrimoine, classes d'emploi, EBE, OIT migrations et soin, Service Public grève, loi ESS version du 3 mai 2026 et Wikipédia Capitalisme / Classe sociale. Pas de revue exhaustive des 32 fiches, ni d'avis juridique, ni de réécriture.",
+            "status": "REFONTE_CIBLEE_RECOMMANDEE",
+            "findings": [
+              {
+                "id": "CAP-R01",
+                "finding": "Distinguer Marx, Weber et classifications statistiques PCS 2020 / classes d'emploi, sans assimiler PCS à classe sociale théorique; histoire mondiale du capitalisme, colonialisme et esclavage à documenter.",
+                "sources": [
+                  "https://www.insee.fr/fr/information/6051714",
+                  "https://fr.wikipedia.org/wiki/Capitalisme",
+                  "https://fr.wikipedia.org/wiki/Classe_sociale"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R02",
+                "finding": "Insee Première 2117, 9 juillet 2026 : 2024 pauvreté 15,4 %, 9,817 millions, seuil 1337 EUR, médiane 2228 EUR par UC; champ France métropolitaine logement ordinaire, revenu déclaré positif/nul et personne de référence non étudiante; limites et ruptures de série.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/9019316"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R03",
+                "finding": "Patrimoine brut début 2024 : 10% ménages les mieux dotés détiennent 47,9%, moitié supérieure 92,8%, moitié inférieure 7,2% par complément; France hors Mayotte logement ordinaire; dette et actifs productifs distincts.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/2502915",
+                  "https://www.insee.fr/fr/statistiques/8672665"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R04",
+                "finding": "Valeur ajoutée, EBE, revenu mixte, résultat, trésorerie et dividendes à distinguer; publication comptes nationaux 2025 disponible, ne pas substituer données sans préciser millésime; atelier fictif à concevoir.",
+                "sources": [
+                  "https://www.insee.fr/fr/metadonnees/definition/c1538",
+                  "https://www.insee.fr/fr/statistiques/8988821"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R05",
+                "finding": "OIT 2022 : 167,7 millions migrants dans population active du pays de destination, dont 155,6 millions en emploi; OIT 2023 : 748 millions hors population active pour soin non rémunéré dont 708 millions femmes; raccordement SOIN/FEM/ANT; ne pas confondre populations, ni mesurer tout travail invisible avec ces chiffres.",
+                "sources": [
+                  "https://www.ilo.org/resource/news/international-migrants-are-vital-force-global-labour-market",
+                  "https://www.ilo.org/resource/news/unpaid-care-work-prevents-708-million-women-participating-labour-market"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R06",
+                "finding": "Droit du travail et protection sociale : grève secteur privé Service Public vérifié 10 août 2026, exceptions sectorielles, CSE, contrat, intermittence et autres droits à sourcer individuellement et faire relire.",
+                "sources": [
+                  "https://www.service-public.gouv.fr/particuliers/vosdroits/F117?lang=fr",
+                  "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R07",
+                "finding": "ESS loi 31 juillet 2014 article 1 : formes et conditions diverses, pas synonyme autogestion; comparer droit de vote, capital, accès sociétariat et résultats réels; rattacher SOC/AUT et reprises d'entreprises.",
+                "sources": [
+                  "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000029313296/2026-05-03"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "CAP-R08",
+                "finding": "Anti-doublons : Wikipédia pour notions générales; originalité des enquêtes travail, lecture comptes/paie, caisse solidarité et organisation collective; confidentialité, droits, pas de collecte ni conseil juridique individualisé. Aucune expérimentation.",
+                "sources": [
+                  "https://fr.wikipedia.org/wiki/Capitalisme",
+                  "https://fr.wikipedia.org/wiki/Classe_sociale"
+                ],
+                "status": "OPEN"
+              }
+            ],
+            "recommendation": "Conserver sous réserves comme portail ou autoriser refonte transversale sur travail, propriété et pouvoir économique; aucune promotion des versions historiques à corriger ni validation juridique.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          }
         },
         {
           "id": "wiki-culture-creation-acces-art",
