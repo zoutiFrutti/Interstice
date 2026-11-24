@@ -140,9 +140,58 @@
       "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-politique-institutions-regimes.html",
       "summary": "V-Dem et régime semi-présidentiel : catégories situées, non accusations.",
       "objection": "V-Dem et régime semi-présidentiel : catégories situées, non accusations.",
-      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "status": "CONSERVATION_VALIDEE_SOUS_RESERVES",
       "sources": "Sources et références dans le texte intégral",
-      "decision_Zout": null
+      "decision_Zout": {
+        "date": "2026-11-24",
+        "source": "Validation explicite dans la conversation La Relieuse",
+        "decision": "Je valide la conservation de la version candidate de « Qui gouverne ? Comment le pouvoir s'organise », SHA 496c862f5c838c15edd370fc33668a34361e16d5, sous réserves documentaires, conceptuelles et fonctionnelles, avec maintien des huit chantiers ouverts, sans publication, fusion ni seconde passe.",
+        "publication_authorized": false,
+        "merge_authorized": false,
+        "second_pass_authorized": false,
+        "open_research": [
+          {
+            "id": "POL-R01",
+            "description": "Référencer précisément les articles de la Constitution.",
+            "status": "OPEN"
+          },
+          {
+            "id": "POL-R02",
+            "description": "Représenter les relations institutionnelles sans suggérer une hiérarchie fictive.",
+            "status": "OPEN"
+          },
+          {
+            "id": "POL-R03",
+            "description": "Documenter le pouvoir économique et la concentration des richesses.",
+            "status": "OPEN"
+          },
+          {
+            "id": "POL-R04",
+            "description": "Étudier la propriété des médias et les mécanismes d'influence.",
+            "status": "OPEN"
+          },
+          {
+            "id": "POL-R05",
+            "description": "Approfondir les pouvoirs policiers, militaires et administratifs.",
+            "status": "OPEN"
+          },
+          {
+            "id": "POL-R06",
+            "description": "Comparer les méthodes de classification démocratique et leurs limites.",
+            "status": "OPEN"
+          },
+          {
+            "id": "POL-R07",
+            "description": "Intégrer les formes non étatiques de gouvernance et d'organisation collective.",
+            "status": "OPEN"
+          },
+          {
+            "id": "POL-R08",
+            "description": "Tester l'accessibilité réelle des organigrammes et compléter la bibliographie.",
+            "status": "OPEN"
+          }
+        ]
+      }
     },
     {
       "id": "wiki-socialismes-communismes-anarchismes-autogestion",
@@ -270,5 +319,5 @@
       "objection": "Droits de santé et soins non consentis : avis sanitaire/juridique requis."
     }
   ],
-  "new_human_approvals": 0
+  "new_human_approvals": 1
 }
