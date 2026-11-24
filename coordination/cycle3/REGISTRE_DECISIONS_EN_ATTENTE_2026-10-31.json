@@ -208,7 +208,83 @@
       "objection": "Archives des ouvrières/Commune et travail invisible correctement référencés.",
       "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
       "sources": "Sources et références dans le texte intégral",
-      "decision_Zout": null
+      "decision_Zout": null,
+      "relieuse_review": {
+        "date": "2026-11-24",
+        "scope": "Lecture intégrale du candidat HTML et contrôle ciblé de sources web, pas de collation exhaustive ni de tests d'accessibilité. 25 fiches introductives, six familles.",
+        "status": "CORRECTIONS_CIBLEES_RECOMMANDEES",
+        "findings": [
+          {
+            "id": "FEM-R01",
+            "finding": "Suffrage 1944/1945 confirmé pour la métropole, préciser exclusions coloniales, notamment femmes de statut civil local en Algérie : droit en principe 1947, exercice 1958.",
+            "sources": [
+              "https://eduscol.education.gouv.fr/6594/le-29-avril-1945-les-francaises-votent",
+              "https://www.senat.fr/rap/r14-672/r14-6724.html"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "FEM-R02",
+            "finding": "Revenu salarial 21,8%, salaire EQTP 14%, volume annuel 9,1% : champ Insee Focus 377 France hors Mayotte, emploi principal privé, exclusions détaillées; pas de mesure directe de discrimination à poste égal.",
+            "sources": [
+              "https://www.insee.fr/fr/statistiques/8743657"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "FEM-R03",
+            "finding": "Compléter chronologie IVG par constitution du 8 mars 2024; accès effectif et droit applicable à vérifier.",
+            "sources": [
+              "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049251463"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "FEM-R04",
+            "finding": "Ajouter loi du 6 novembre 2025 sur définition pénale du viol et agressions sexuelles, revue Juriste, actualisation des dispositifs 17/112/114/3919 et protection des témoignages.",
+            "sources": [
+              "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052533258",
+              "https://www.service-public.gouv.fr/particuliers/vosdroits/F33954?lang=fr"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "FEM-R05",
+            "finding": "Attribuer intersectionnalité à Crenshaw 1989; pluralité des courants et histoires non européennes, sources locales.",
+            "sources": [
+              "https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/",
+              "https://catalogue.bnf.fr/ark:/12148/cb46602585d"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "FEM-R06",
+            "finding": "Documenter travail domestique et charge mentale avec enquêtes datées, ne pas actualiser fictivement les mesures 2010.",
+            "sources": [
+              "https://www.insee.fr/fr/statistiques/2123967",
+              "https://www.insee.fr/fr/statistiques/8996936"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "FEM-R07",
+            "finding": "Compléter sources spécifiques féminismes trans, handicap, écoféminismes et pratiques collectives; respecter auto-identification et protection des données.",
+            "sources": [],
+            "status": "OPEN"
+          },
+          {
+            "id": "FEM-R08",
+            "finding": "Anti-doublons Wikipédia, conserver portail et relier dossiers existants ARCH-002/003/004/008, ASSO-007, BIO-009/010, FN-046 sans supposer publication; droits et accessibilité à contrôler.",
+            "sources": [
+              "https://fr.wikipedia.org/wiki/F%C3%A9minisme",
+              "https://fr.wikipedia.org/wiki/Histoire_du_f%C3%A9minisme"
+            ],
+            "status": "OPEN"
+          }
+        ],
+        "publication_authorized": false,
+        "merge_authorized": false
+      }
     },
     {
       "id": "wiki-lecture-croisee-travail-soin-pouvoir",
