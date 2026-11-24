@@ -885,6 +885,303 @@
             "recommendation": "Conserver sous réserves comme portail ou autoriser refonte transversale sur travail, propriété et pouvoir économique; aucune promotion des versions historiques à corriger ni validation juridique.",
             "publication_authorized": false,
             "merge_authorized": false
+          },
+          "decision_Zout": {
+            "date": "2026-11-24",
+            "type": "NON_VALIDATION_PROVISOIRE",
+            "decision": "Je ne valide pas encore le dossier Capitalisme, classes sociales et monde du travail. Poursuis vingt passes réelles de recherches documentaires sur les huit chantiers CAP-R01 à CAP-R08, en privilégiant les sources historiques, économiques et sociologiques.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "editorial_status": "VALIDATION_DIFFEREE_RECHERCHES_EN_COURS",
+          "research_followup": {
+            "date": "2026-11-24",
+            "scope": "20 contrôles thématiques par recherches web ciblées, consultation de résultats indexés, notices et résumés scientifiques et lecture ciblée de pages HTML Insee, WID et ILOSTAT. Ni lecture intégrale des ouvrages, ni réanalyse des microdonnées, ni entretien, ni revue juridique exhaustive. Accès Normlex et page Dares résultats limité. Aucun texte candidat modifié.",
+            "passes": [
+              {
+                "n": 1,
+                "ids": [
+                  "CAP-R01"
+                ],
+                "topic": "Esclavage et industrialisation",
+                "finding": "Débat Williams, Inikori, Engerman, Hudson : distinguer financement direct, commerce, demande, matières premières et institutions; pas de causalité unique.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/abs/emancipation-and-the-remaking-of-the-british-imperial-world/slavery-the-slave-trade-and-economic-growth-a-contribution-to-the-debate/07CCD96B820B58A4E2D8CD87B62AB6C9",
+                  "https://www.cambridge.org/core/journals/journal-of-global-history/article/slavery-and-the-new-history-of-capitalism/6885E5697E7151B50FDEFC65ED96C79E",
+                  "https://www.cambridge.org/core/books/abs/british-capitalism-and-caribbean-slavery/slavery-and-the-development-of-industrial-capitalism-in-england/074F7E64A046CC0BD1BD2AEC5F2F127A"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 2,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05"
+                ],
+                "topic": "Histoire mondiale du travail",
+                "finding": "Marcel van der Linden 2023, travail contraint et libre, stratégies des ménages et marchés du travail; notice universitaire, ouvrage non lu intégralement.",
+                "sources": [
+                  "https://discovery.ucl.ac.uk/id/eprint/10169174/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 3,
+                "ids": [
+                  "CAP-R01"
+                ],
+                "topic": "Théories de classe",
+                "finding": "Wright 2002, Goldthorpe, Marx et Weber : relations de production, exploitation, relations d'emploi, statut et ressources; résumés, textes intégraux à collationner.",
+                "sources": [
+                  "https://journals.sagepub.com/doi/10.1177/000312240206700603",
+                  "https://www.cambridge.org/core/books/abs/approaches-to-class-analysis/foundations-of-a-neoweberian-class-analysis/779AB8E3AE3FBFC901D7312FCD580C49",
+                  "https://doi.org/10.15407/sociology2019.01.009"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 4,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R08"
+                ],
+                "topic": "PCS et classes d'emploi",
+                "finding": "PCS 2020 et schéma complémentaire : A-D salariés et I indépendants, qualification, statut, nature de l'employeur; pas une preuve d'une théorie de classe.",
+                "sources": [
+                  "https://www.insee.fr/fr/information/6051714",
+                  "https://www.insee.fr/fr/statistiques/6453760"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 5,
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R02"
+                ],
+                "topic": "Mobilité sociale",
+                "finding": "FQP 1977-2015, en 2015 71% des femmes françaises 35-59 ans actives occupées ou anciennes actives occupées diffèrent de leur mère, 35% de cette mobilité observée est structurelle; éviter généralisation actuelle.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/3733096",
+                  "https://www.insee.fr/fr/statistiques/4238441"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 6,
+                "ids": [
+                  "CAP-R02"
+                ],
+                "topic": "Pauvreté en emploi",
+                "finding": "Insee 2024 figure 4, 2,324 millions en emploi sous seuil, 8,5%; salariés 6,9%, indépendants 18,4%, chômeurs 36,1%, retraités 10,4%. Champ France métro logement ordinaire, revenu déclaré positif/nul, référence non étudiante. Pauvreté niveau de vie ménage par UC, pas seul salaire.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/9019316"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 7,
+                "ids": [
+                  "CAP-R03"
+                ],
+                "topic": "Patrimoine et revenus",
+                "finding": "Histoire de vie et patrimoine 2023-2024 : patrimoine brut, dettes, immobilier, financier, professionnel; niveau de vie et patrimoine ne coïncident pas.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/8672665",
+                  "https://www.insee.fr/fr/statistiques/8894780"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 8,
+                "ids": [
+                  "CAP-R03"
+                ],
+                "topic": "Héritage",
+                "finding": "CAE note 69 décembre 2021, taxation transmissions cumulées et garantie capital : propositions normatives à distinguer des constats; méthodes et objections à documenter.",
+                "sources": [
+                  "https://cae-eco.fr/repenser-lheritage"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 9,
+                "ids": [
+                  "CAP-R03"
+                ],
+                "topic": "Inégalités mondiales",
+                "finding": "WIR 2026 estimations 2025 : bottom 50% revenu 8%, patrimoine 2%; top 10% revenu 53%, patrimoine 75%; intermédiaires par complément 39/23. Adultes, définitions WID et PPP, non directement comparable patrimoine brut ménages Insee.",
+                "sources": [
+                  "https://wir2026.wid.world/insight/global-economic-inequity/",
+                  "https://wir2026.wid.world/insight/executive-summary/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 10,
+                "ids": [
+                  "CAP-R04",
+                  "CAP-R08"
+                ],
+                "topic": "Partage valeur ajoutée",
+                "finding": "Insee comptes nationaux 2025 figure 5 : taux marge SNF 32,7% en 2024 révisé contre 32,2% dans édition 2025 ; 32,2% en 2025. EBE distinct résultat, dividendes, trésorerie; revenu mixte indépendants. Exercice pédagogique fictif à développer.",
+                "sources": [
+                  "https://www.insee.fr/fr/statistiques/8996855",
+                  "https://www.insee.fr/fr/statistiques/8574058",
+                  "https://www.insee.fr/fr/metadonnees/definition/c1538"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 11,
+                "ids": [
+                  "CAP-R04"
+                ],
+                "topic": "Part mondiale des revenus du travail",
+                "finding": "ILOSTAT 53,0% PIB mondial en 2015, 52,6% en 2025; estimation inclut revenu du travail indépendant, distinct taux marge SNF France; ne pas inférer causalité unique.",
+                "sources": [
+                  "https://ilostat.ilo.org/blog/the-world-of-work-and-the-2030-agenda-a-ten-year-review/",
+                  "https://www.ilo.org/publications/policy-measures-address-inequalities-and-increase-labour-income-share"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 12,
+                "ids": [
+                  "CAP-R05",
+                  "CAP-R02"
+                ],
+                "topic": "Emploi informel",
+                "finding": "ILOSTAT 2025 57,9% des personnes en emploi au monde contre 57,4% en 2015; distinguer emploi informel, illégalité, secteur informel, absence de droits; disparités régionales.",
+                "sources": [
+                  "https://ilostat.ilo.org/blog/the-world-of-work-and-the-2030-agenda-a-ten-year-review/",
+                  "https://www.ilo.org/publications/accelerating-transition-formality-decent-work-and-social-justice"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 13,
+                "ids": [
+                  "CAP-R05"
+                ],
+                "topic": "Migrations du travail",
+                "finding": "OIT estimations 2022 167,7 millions dans population active du pays de destination (4,7% mondial), pas uniquement en emploi; secteurs, droits et statuts à différencier.",
+                "sources": [
+                  "https://www.ilo.org/resource/news/international-migrants-are-vital-force-global-labour-market",
+                  "https://www.ilo.org/publications/major-publications/ilo-global-estimates-international-migrants-labour-force"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 14,
+                "ids": [
+                  "CAP-R05"
+                ],
+                "topic": "Soin non rémunéré",
+                "finding": "OIT 2023 748 millions hors population active pour responsabilité soin dont 708 millions femmes, 40 hommes; ne mesure pas toutes les personnes qui assurent le soin, ni valeur monétaire; renvoi dossier SOIN.",
+                "sources": [
+                  "https://www.ilo.org/resource/news/unpaid-care-work-prevents-708-million-women-participating-labour-market",
+                  "https://www.ilo.org/publications/advancing-decent-work-and-care-economy-essential-component-social"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 15,
+                "ids": [
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "topic": "Plateformes numériques",
+                "finding": "Convention OIT 193 adoptée 12 juin 2026 : gestion algorithmique, droits du travail; adoption distincte ratification et entrée en vigueur. Notice indexée, accès texte complet Normlex en échec; statut France non établi.",
+                "sources": [
+                  "https://www.ilo.org/resource/record-decisions/convention-concerning-decent-work-platform-economy-2026",
+                  "https://www.ilo.org/resource/other/c193-decent-work-platform-economy-convention-2026"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 16,
+                "ids": [
+                  "CAP-R06"
+                ],
+                "topic": "Grèves et négociation",
+                "finding": "Dares 2024 1,6% entreprises du champ grève, 62 JINT/1000 salariés, 17,2% négociation. Champ entreprises privé non agricole 10+ France hors Mayotte; autres conflits et public exclus. Droit grève secteur privé SP, revue juridique requise.",
+                "sources": [
+                  "https://dares.travail-emploi.gouv.fr/publication/les-greves-en-2024",
+                  "https://dares.travail-emploi.gouv.fr/donnees/la-negociation-collective-dentreprise",
+                  "https://www.service-public.gouv.fr/particuliers/vosdroits/F117?lang=fr"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 17,
+                "ids": [
+                  "CAP-R06"
+                ],
+                "topic": "Protection sociale",
+                "finding": "Rapport OIT 2024-26 52,4% population mondiale bénéficiant d'au moins une prestation de protection sociale; pas couverture complète; écarts et définitions à étudier.",
+                "sources": [
+                  "https://www.ilo.org/resource/article/world-social-protection-report-2024-26-figures",
+                  "https://webapps.ilo.org/static/english/reports/flagship/world_social_protection_report_2024-26/Chapter%2003.html"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 18,
+                "ids": [
+                  "CAP-R07"
+                ],
+                "topic": "Coopératives et résilience",
+                "finding": "Pérotin synthèses comparatives et étude 2022 : ajustement rémunérations plutôt qu'emplois dans cas étudiés; survie comparable selon revue, pas supériorité universelle. Loi ESS distincte autogestion.",
+                "sources": [
+                  "https://www.cambridge.org/core/books/abs/cooperative-business-movement-1950-to-the-present/performance-of-workers-cooperatives1/01A90453AD4FEC762077D65FD8981035",
+                  "https://doi.org/10.1080/00036846.2022.2118963",
+                  "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000029313296/2026-05-03"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 19,
+                "ids": [
+                  "CAP-R07",
+                  "CAP-R04"
+                ],
+                "topic": "Entreprises récupérées Argentine",
+                "finding": "Étude 2020 facteurs consolidation : actifs hérités, propriété, gestion économique, réseaux politiques et sociaux, débouchés; hypothèses et cas, pas causalité universelle; rattachement AUT IMPA/BAUEN et SOC.",
+                "sources": [
+                  "https://doi.org/10.1080/21598282.2020.1783809"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 20,
+                "ids": [
+                  "CAP-R08",
+                  "CAP-R06"
+                ],
+                "topic": "Enquête sur le travail réel",
+                "finding": "Dares CT-RPS 2024-25 : dimensions rythmes, autonomie, coopération, risques, sens. Page résultats accès direct limité, extrait indexé; utiliser méthodologie et séries 1984-2019 sans prétendre réaliser enquête. Protocole volontaire, anonymisation, pas de collecte active.",
+                "sources": [
+                  "https://www.insee.fr/fr/information/7625812",
+                  "https://dares.travail-emploi.gouv.fr/donnees/35-ans-devolutions-des-conditions-de-travail",
+                  "https://dares.travail-emploi.gouv.fr/temps-et-conditions-de-travail/conditions-de-travail"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              }
+            ],
+            "open_research": [
+              "CAP-R01",
+              "CAP-R02",
+              "CAP-R03",
+              "CAP-R04",
+              "CAP-R05",
+              "CAP-R06",
+              "CAP-R07",
+              "CAP-R08"
+            ],
+            "recommendation": "Refonte transversale proposée : Qui produit la richesse et qui en dispose ? Travail, propriété, classes sociales et pouvoir économique. Renvois Wikipédia et dossiers SOC SOIN FEM ANT AUT, outils pédagogiques explicitement fictifs et recherches ouvertes. Aucun visa.",
+            "publication_authorized": false,
+            "merge_authorized": false
           }
         },
         {
