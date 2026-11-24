@@ -96,9 +96,27 @@
       "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-antiracisme-histoires-droits.html",
       "summary": "Voix concernées et liens FN/BIO/COL sans prétendre des fiches publiques.",
       "objection": "Voix concernées et liens FN/BIO/COL sans prétendre des fiches publiques.",
-      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "status": "CONSERVATION_VALIDEE_SOUS_RESERVES",
       "sources": "Sources et références dans le texte intégral",
-      "decision_Zout": null,
+      "decision_Zout": {
+        "date": "2026-11-24",
+        "type": "CONSERVATION_VALIDEE",
+        "decision": "Je valide la conservation de la version candidate « Comprendre le racisme. Documenter l'égalité », SHA 9cc22b6c916baf9b21a737cf1b9139946683f23b, sous réserves documentaires et avec maintien des huit recherches ANT-R01 à ANT-R08, sans publication, fusion ni seconde passe.",
+        "sha": "9cc22b6c916baf9b21a737cf1b9139946683f23b",
+        "open_research": [
+          "ANT-R01",
+          "ANT-R02",
+          "ANT-R03",
+          "ANT-R04",
+          "ANT-R05",
+          "ANT-R06",
+          "ANT-R07",
+          "ANT-R08"
+        ],
+        "publication_authorized": false,
+        "merge_authorized": false,
+        "second_pass_authorized": false
+      },
       "relieuse_review": {
         "date": "2026-11-24",
         "scope": "Lecture du candidat et comparaison partielle avec main, contrôle externe ciblé ; aucune réécriture ni visa.",
@@ -506,5 +524,5 @@
       "objection": "Droits de santé et soins non consentis : avis sanitaire/juridique requis."
     }
   ],
-  "new_human_approvals": 2
+  "new_human_approvals": 3
 }
