@@ -13,6 +13,7 @@ import re
 import shutil
 import tempfile
 import urllib.request
+from private_editorial_render import validate_markdown, render_markdown
 
 REPO = Path(__file__).resolve().parents[1]
 HELD = {"FN-018", "BIO-019", "BIO-021", "DROIT-001", "DROIT-002", "FN-022", "FN-048", "FN-038", "FN-057"}
@@ -48,15 +49,16 @@ def normalize(text):
     require(100 <= len(text) and len(text.encode("utf-8")) <= MAX_BYTES, "Empty, incomplete or oversized text")
     return text + "\n"
 
-def import_google(doc_id):
+def import_google(doc_id, source_format="text"):
     require(re.fullmatch(r"[A-Za-z0-9_-]{10,200}", doc_id), "Invalid document ID")
     token = os.environ.get("INTERSTICE_DOCS_TOKEN")
     require(token, "Provide a short-lived read-only Google access token in INTERSTICE_DOCS_TOKEN")
-    # Drive export is text only. No tokens, document IDs or source content in public logs.
+    # Drive exports text or restricted Markdown. No tokens or source content in public logs.
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, *args, **kwargs):
             return None
-    url = "https://www.googleapis.com/drive/v3/files/" + doc_id + "/export?mimeType=text%2Fplain"
+    mime = "text%2Fmarkdown" if source_format == "markdown" else "text%2Fplain"
+    url = "https://www.googleapis.com/drive/v3/files/" + doc_id + "/export?mimeType=" + mime
     req = urllib.request.Request(url, headers={"Authorization": "Bearer " + token})
     with urllib.request.build_opener(NoRedirect()).open(req, timeout=30) as response:
         data = response.read(MAX_BYTES + 1)
@@ -99,12 +101,16 @@ class Store:
     def check_id(self, item):
         require(ID.fullmatch(item) and item in self.allowed and item not in HELD, "Unknown or held editorial ID")
 
-    def stage(self, item, title, text):
+    def stage(self, item, title, text, source_format="text"):
         self.check_id(item)
         title = title.strip()
         require(1 <= len(title) <= 300, "Title required")
         body = normalize(text)
+        require(source_format in ("text", "markdown"), "Unsupported source format")
         version = {"id": item, "title": title, "body": body}
+        if source_format == "markdown":
+            validate_markdown(body, title)
+            version["format"] = "markdown"
         sha = digest(canonical(version))
         with self.state(True) as data:
             article = data["articles"].setdefault(item, {"versions": {}, "active": None})
@@ -178,8 +184,8 @@ def build(store, base, output):
         manifest = []
         for sha, item in versions:
             name = item["id"] + ".html"
-            # Treat imported text as text, not executable markup.
-            body = "<h1>" + html.escape(item["title"]) + "</h1>" + "".join("<p>" + html.escape(line) + "</p>" for line in item["body"].splitlines() if line.strip())
+            # Restricted Markdown preserves headings and safe source links; plain text remains escaped.
+            body = render_markdown(item["body"], item["title"]) if item.get("format") == "markdown" else "<h1>" + html.escape(item["title"]) + "</h1>" + "".join("<p>" + html.escape(line) + "</p>" for line in item["body"].splitlines() if line.strip())
             (folder / name).write_text(page(item["title"], body), encoding="utf-8")
             listing.append('<li><a href="' + name + '">' + html.escape(item["title"]) + '</a></li>')
             manifest.append({"id": item["id"], "version_sha256": sha, "page_sha256": digest((folder / name).read_bytes())})
@@ -205,7 +211,7 @@ def main():
     p.add_argument("--store", required=True)
     cmd = p.add_subparsers(dest="cmd", required=True)
     s = cmd.add_parser("stage")
-    s.add_argument("id"); s.add_argument("--title", required=True)
+    s.add_argument("id"); s.add_argument("--title", required=True); s.add_argument("--format", choices=("text", "markdown"), default="text")
     src = s.add_mutually_exclusive_group(required=True)
     src.add_argument("--file"); src.add_argument("--google-doc")
     a = cmd.add_parser("approve")
@@ -221,8 +227,8 @@ def main():
     try:
         store = Store(args.store)
         if args.cmd == "stage":
-            data = outside(args.file).read_bytes() if args.file else import_google(args.google_doc)
-            print(store.stage(args.id, args.title, data))
+            data = outside(args.file).read_bytes() if args.file else import_google(args.google_doc, args.format)
+            print(store.stage(args.id, args.title, data, args.format))
         elif args.cmd == "approve":
             store.approve(args.id, args.sha, args.decision, args.rights_reviewed, args.privacy_reviewed, args.second_read)
             print("Private approval recorded")

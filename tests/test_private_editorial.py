@@ -2,8 +2,10 @@ import importlib.util
 import json
 from pathlib import Path
 import tempfile
+import sys
 import unittest
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 spec = importlib.util.spec_from_file_location("private_editorial", Path(__file__).resolve().parents[1] / "scripts/private_editorial.py")
 m = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(m)
@@ -70,6 +72,26 @@ class PrivateEditorial(unittest.TestCase):
             m.build(self.store, self.base, self.root / "out")
         with self.assertRaises(ValueError):
             m.outside(m.REPO / "private")
+    def test_markdown_real_export_shape_and_security(self):
+        body = r"# Fiction" + "\n\n" + r"## BIO-009 \| V2" + "\n\n" + r"# Chapter" + "\n\n" + r"Une phrase en 1871\. [https\://example.org](https://example.org) " + ("More text. " * 8) + "\n\n<script>bad()</script> [evil](javascript:alert(1)) [credentials](https://name:secret@example.org)"
+        sha = self.store.stage("BIO-009", "Fiction", body.encode(), "markdown")
+        self.approve(sha)
+        self.store.activate("BIO-009", sha, None, "test")
+        out = self.root / "out"
+        m.build(self.store, self.base, out)
+        text = (out / "publication-privee/BIO-009.html").read_text()
+        self.assertEqual(text.count("<h1>"), 1)
+        self.assertIn("<h2>Chapter</h2>", text)
+        self.assertIn('class="publication-meta">BIO-009 | V2', text)
+        self.assertIn("1871.", text)
+        self.assertIn('href="https://example.org"', text)
+        self.assertNotIn('href="javascript:', text)
+        self.assertNotIn('href="https://name:secret@', text)
+        self.assertNotIn("<script>", text)
+        with self.assertRaises(ValueError):
+            self.store.stage("BIO-009", "Wrong title", body.encode(), "markdown")
+        with self.assertRaises(ValueError):
+            self.store.stage("BIO-009", "Fiction", (body + "\n![image](https://example.org/image.png)").encode(), "markdown")
     def test_real_catalog_ids(self):
         ids = m.catalog()
         self.assertTrue({"BIO-009", "BIO-010", "BIO-012", "BIO-014", "ASSO-008", "EXP-001"} <= ids)

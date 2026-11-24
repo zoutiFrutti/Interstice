@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - scripts/private_editorial.py
+      - scripts/private_editorial_render.py
       - tests/test_private_editorial.py
       - coordination/work/c28/**
       - .github/workflows/c28-private-editorial.yml

@@ -10,11 +10,11 @@ Créer un répertoire privé **hors de tout dépôt Git**, permissions 0700. Dep
     mkdir -p "$HOME/interstice-prive"
     chmod 700 "$HOME/interstice-prive"
     node scripts/build-nav-preview.mjs "$HOME/interstice-prive/base"
-    python3 scripts/private_editorial.py --store "$HOME/interstice-prive/registre" stage BIO-009 --title "Titre exact" --file "$HOME/interstice-prive/BIO-009.txt"
+    python3 scripts/private_editorial.py --store "$HOME/interstice-prive/registre" stage BIO-009 --title "Titre exact" --format markdown --file "$HOME/interstice-prive/BIO-009.md"
 
-Exporter le Google Doc final en texte UTF-8, dans ce répertoire. Autre possibilité : remplacer --file par --google-doc avec l'identifiant du document, et fournir un jeton Google OAuth de courte durée, lecture seule (drive.readonly), via la variable INTERSTICE_DOCS_TOKEN. Ne jamais copier un jeton dans la ligne de commande ou le dépôt. Le flux OAuth n'est pas implémenté : l'opérateur doit obtenir son jeton selon les règles de son organisation. Révoquer/retirer le jeton après usage.
+Exporter le Google Doc final au format Markdown UTF-8 dans ce répertoire. Le format texte brut reste disponible avec --format text. Autre possibilité : remplacer --file par --google-doc avec l'identifiant du document, et fournir un jeton Google OAuth de courte durée, lecture seule (drive.readonly), via la variable INTERSTICE_DOCS_TOKEN. Ne jamais copier un jeton dans la ligne de commande ou le dépôt. Le flux OAuth n'est pas implémenté : l'opérateur doit obtenir son jeton selon les règles de son organisation. Révoquer/retirer le jeton après usage.
 
-La commande stage retourne l'empreinte SHA-256 du contenu normalisé, titre et identifiant compris. Comparer le texte exporté au document autorisé. Chaque modification exige une nouvelle approbation. Les images, la mise en forme enrichie et les liens actifs ne sont pas importés dans cette première version texte ; le rendu échappe tout HTML. Préserver le document original.
+La commande stage retourne l'empreinte SHA-256 du contenu normalisé, titre et identifiant compris. Comparer le texte exporté au document autorisé. Chaque modification exige une nouvelle approbation. Le mode Markdown préserve les titres, paragraphes et liens HTTPS explicites de l’export Google Docs ; les images sont refusées et le HTML est toujours échappé. Ce sous-ensemble n’est pas un moteur Markdown général (tableaux et mise en forme complexe non pris en charge). Préserver le document original.
 
 Après contrôle de la deuxième lecture, des droits et de la confidentialité, relever l'autorisation de publication individuelle, avec une référence interne réelle, puis :
 
