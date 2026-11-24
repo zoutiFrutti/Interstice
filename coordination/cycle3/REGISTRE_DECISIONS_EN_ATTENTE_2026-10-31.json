@@ -200,9 +200,97 @@
       "url": "https://github.com/zoutiFrutti/Interstice/blob/atelier-lectrice/8-passes-pre-sortie-20261031/wiki-socialismes-communismes-anarchismes-autogestion.html",
       "summary": "Décret du 16 avril ≠ exécution ; autres expériences distinctes.",
       "objection": "Décret du 16 avril ≠ exécution ; autres expériences distinctes.",
-      "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
+      "status": "VALIDATION_DIFFEREE_RECHERCHES_EN_COURS",
       "sources": "Sources et références dans le texte intégral",
-      "decision_Zout": null
+      "decision_Zout": {
+        "date": "2026-11-24",
+        "decision": "Je ne valide pas encore le dossier Socialismes, communismes, anarchismes et autogestion. Continue les recherches sur les huit chantiers ouverts et soumets-moi une nouvelle décision.",
+        "type": "NON_VALIDATION_PROVISOIRE",
+        "publication_authorized": false,
+        "merge_authorized": false
+      },
+      "research_followup": {
+        "date": "2026-11-24",
+        "scope": "Repérage documentaire ciblé et consultation de notices, résumés et textes web ; pas de collation exhaustive des originaux ni réécriture intégrale.",
+        "recommendation": "Refondre en dossier comparatif transversal, garder le blob historique intact et soumettre une nouvelle version au visa.",
+        "items": [
+          {
+            "id": "SOC-R01",
+            "finding": "Clarifier les chevauchements doctrinaux, distinguer libertarianismes de gauche et de droite.",
+            "sources": [
+              "https://plato.stanford.edu/entries/libertarianism/",
+              "https://plato.stanford.edu/archives/spr2022/entries/anarchism/"
+            ],
+            "status": "OPEN_PARTIAL_PROGRESS"
+          },
+          {
+            "id": "SOC-R02",
+            "finding": "Histoire transnationale et anticoloniale; éviter attribution d'une identité anarchiste non revendiquée.",
+            "sources": [
+              "https://academic.oup.com/book/43805/chapter-abstract/369504082",
+              "https://onlinelibrary.wiley.com/doi/10.1111/anti.13068"
+            ],
+            "status": "OPEN_PARTIAL_PROGRESS"
+          },
+          {
+            "id": "SOC-R03",
+            "finding": "Mujeres Libres et rapports de domination internes; études raciales et décoloniales à développer.",
+            "sources": [
+              "https://www.cambridge.org/core/journals/international-review-of-social-history/article/eulalia-vega-pioneras-y-revolucionarias-mujeres-libertarias-durante-la-republica-la-guerra-civil-y-el-franquismo-icaria-barcelona2010-389-pp-2300/884360F0FF2E1EE49E942142E1662956"
+            ],
+            "status": "OPEN_PARTIAL_PROGRESS"
+          },
+          {
+            "id": "SOC-R04",
+            "finding": "Distinguer décret catalan, pratique locale, adhésion et contraintes; original repéré non collationné.",
+            "sources": [
+              "https://mdc.csuc.cat/digital/collection/GenCat3136/id/2860/",
+              "https://dialnet.unirioja.es/servlet/articulo?codigo=6137869",
+              "https://github.com/zoutiFrutti/Interstice/pull/165"
+            ],
+            "status": "OPEN_PARTIAL_PROGRESS"
+          },
+          {
+            "id": "SOC-R05",
+            "finding": "Comparer conseils yougoslaves, autogestion algérienne et entreprises récupérées argentines.",
+            "sources": [
+              "https://eprints.gla.ac.uk/110169/",
+              "https://asjp.cerist.dz/en/article/179702",
+              "https://journals.sagepub.com/doi/10.1177/0160449X09337903"
+            ],
+            "status": "OPEN_PARTIAL_PROGRESS"
+          },
+          {
+            "id": "SOC-R06",
+            "finding": "Étudier répression et dissidences, Kronstadt et conflits espagnols sans causalité simpliste.",
+            "sources": [
+              "https://press.princeton.edu/books/hardcover/9780691630502/kronstadt-1921",
+              "https://journals.sagepub.com/doi/10.1177/026569148701700402"
+            ],
+            "status": "OPEN_PARTIAL_PROGRESS"
+          },
+          {
+            "id": "SOC-R07",
+            "finding": "Comparer stabilité de l'emploi, rémunérations, pouvoir informel et accès au sociétariat.",
+            "sources": [
+              "https://onlinelibrary.wiley.com/doi/10.1111/apce.70046",
+              "https://onlinelibrary.wiley.com/doi/10.1111/joms.13175",
+              "https://crmvet.lib.duke.edu/comm/freemant.html"
+            ],
+            "status": "OPEN_PARTIAL_PROGRESS"
+          },
+          {
+            "id": "SOC-R08",
+            "finding": "Raccorder ARCH-007, ASSO-007/008, EXP-004, PAR-002 et PAR-007 sans nouveau visa sur eux; structure zapatiste annoncée en 2023, pratique indépendante ouverte.",
+            "sources": [
+              "https://www.persee.fr/doc/autog_0005-0970_1968_num_5_1_929",
+              "https://github.com/zoutiFrutti/Interstice/pull/172",
+              "https://www.congresonacionalindigena.org/2023/11/13/novena-parte-la-nueva-estructura-de-la-autonomia-zapatista/"
+            ],
+            "status": "OPEN_PARTIAL_PROGRESS"
+          }
+        ]
+      }
     }
   ],
   "approved_prior": [
