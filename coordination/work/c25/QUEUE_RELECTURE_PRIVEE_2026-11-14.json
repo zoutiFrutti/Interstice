@@ -145,6 +145,154 @@
             ],
             "publication_authorized": false,
             "merge_authorized": false
+          },
+          "decision_Zout": {
+            "date": "2026-11-24",
+            "type": "NON_VALIDATION_PROVISOIRE",
+            "decision": "Je ne valide pas encore le dossier Autonomie matérielle et savoir-faire. Poursuis dix passes réelles de recherches documentaires sur les huit chantiers AUT-R01 à AUT-R08.",
+            "publication_authorized": false,
+            "merge_authorized": false
+          },
+          "research_followup": {
+            "date": "2026-11-24",
+            "scope": "Dix axes de contrôle documentaire ciblés, recherches web et consultation de pages, notices et résumés, lecture de la fiche GitHub et contrôle ciblé de chemins internes. Ni essai matériel, ni téléchargement/analyse exhaustive des CSV, ni audit réglementaire intégral.",
+            "passes": [
+              {
+                "n": 1,
+                "ids": [
+                  "AUT-R01"
+                ],
+                "finding": "Indices durabilité TV 8 janvier et lave-linge 8 avril 2025, observatoire ADEME données 2024.",
+                "sources": [
+                  "https://www.ecologie.gouv.fr/politiques-publiques/indice-durabilite",
+                  "https://librairie.ademe.fr/economie-circulaire-et-dechets/9420-reemploi-reutilisation-des-produits-donnees-2024-9791029727184.html"
+                ]
+              },
+              {
+                "n": 2,
+                "ids": [
+                  "AUT-R01",
+                  "AUT-R07"
+                ],
+                "finding": "ORA publication 16 octobre 2026 : 619873 tentatives, 41110 événements, 1728 groupes, 34 pays; page téléchargement 416282 EEE et 203591 non-EEE, total cohérent mais article annonce 416284 EEE, différence de 2 à garder. Étude Leuven 2026 consultée via résumé ; échantillon non représentatif.",
+                "sources": [
+                  "https://openrepair.org/announcements/over-half-a-million-records-of-open-data-on-repair/",
+                  "https://openrepair.org/open-data/downloads/",
+                  "https://www.sciencedirect.com/science/article/pii/S2212827126007031"
+                ]
+              },
+              {
+                "n": 3,
+                "ids": [
+                  "AUT-R02"
+                ],
+                "finding": "INRS : habilitation liée au contexte professionnel et à l'opération ; distinguer risques électriques, thermiques, chimiques et indépendants.",
+                "sources": [
+                  "https://www.inrs.fr/risques/electriques/reglementation-prevention-risque-electrique.html",
+                  "https://www.inrs.fr/metiers/Energie/utilisation-batteries-lithium/utilisation-batteries-lithium-FAQ.html"
+                ]
+              },
+              {
+                "n": 4,
+                "ids": [
+                  "AUT-R03"
+                ],
+                "finding": "Service Public actualisé 12 décembre 2025, usages domestiques eau de pluie, arrêté 12 juillet 2024 ; ANSES botulisme, aucun procédé validé par Interstice.",
+                "sources": [
+                  "https://www.service-public.gouv.fr/particuliers/vosdroits/F31481",
+                  "https://www.anses.fr/fr/article/le-botulisme-comment-se-premunir"
+                ]
+              },
+              {
+                "n": 5,
+                "ids": [
+                  "AUT-R04"
+                ],
+                "finding": "Liquidation SCIC 21 avril 2026 confirmée par communiqué, presse et annonce légale reproduite ; poursuite par deux associations, financement et accès effectif aux ressources à étudier.",
+                "sources": [
+                  "https://latelierpaysan.org/L-Atelier-Paysan-elargit-le-mouvement",
+                  "https://www.pappers.fr/entreprise/latelier-paysan-537740375",
+                  "https://villagemagazine.fr/le-renouveau-de-latelier-paysan/"
+                ]
+              },
+              {
+                "n": 6,
+                "ids": [
+                  "AUT-R05"
+                ],
+                "finding": "Cartofriches près de 20500 sites au bilan 2026 ; CASIAS inventaire historique distinct des SIS, ni aptitude ni absence de pollution déduite ; autorisations ERP et urbanisme selon projet.",
+                "sources": [
+                  "https://www.cerema.fr/fr/presse/dossier/inventaire-national-friches",
+                  "https://www.georisques.gouv.fr/consulter-les-dossiers-thematiques/dossier-expert-sur-les-sites-et-sols-potentiellement-pollues",
+                  "https://entreprendre.service-public.gouv.fr/vosdroits/F31687",
+                  "https://entreprendre.service-public.gouv.fr/vosdroits/F35336"
+                ]
+              },
+              {
+                "n": 7,
+                "ids": [
+                  "AUT-R06"
+                ],
+                "finding": "Licence CC BY du site Low-tech Lab sauf exception, vérifier chaque tutoriel ; ORA données et standard CC BY-SA 4.0 ; CERN OHL v2 trois variantes, distinguer plans, logiciel et documentation.",
+                "sources": [
+                  "https://lowtechlab.org/fr/mentions-legales",
+                  "https://standard.openrepair.org/document.html",
+                  "https://openrepair.org/open-data/downloads/",
+                  "https://cern-ohl.web.cern.ch/",
+                  "https://oshwa.org/resources/open-source-hardware-faq/"
+                ]
+              },
+              {
+                "n": 8,
+                "ids": [
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Bibliothèques d'objets : études 2020 six cas UK et 2023 23 entretiens ; gouvernance, maintenance, accès, coûts et effets rebond à mesurer.",
+                "sources": [
+                  "https://www.mdpi.com/2071-1050/12/17/7180",
+                  "https://doi.org/10.1145/3544548.3581094"
+                ]
+              },
+              {
+                "n": 9,
+                "ids": [
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Low-tech Lab habitat 12 techniques et expérimentation territoriale : pages de présentation repérées, rapports complets non collationnés ; retenir protocole pilote textile ou prêt non dangereux sans prétendre essai.",
+                "sources": [
+                  "https://lowtechlab.org/fr/le-low-tech-lab/les-actions/habitat-low-tech",
+                  "https://lowtechlab.org/fr/actualites-blog/vers-un-territoire-low-tech-les-ressources-sont-disponibles",
+                  "https://openrepair.org/open-data/notes-on-the-inclusion-of-non-eee-items-in-the-open-repair-data-data/"
+                ]
+              },
+              {
+                "n": 10,
+                "ids": [
+                  "AUT-R08",
+                  "AUT-R06"
+                ],
+                "finding": "Contrôle exact candidat 160c5d46fdb7030c05c36e20dd46e3c96746a6b1 ; lien wiki-mutualiser-materiel.html 404 à cet emplacement C25, deux pages connexes présentes ; Wikipédia low-tech et fab lab déjà couvrants ; ne pas inventer destination ou activer service.",
+                "sources": [
+                  "https://fr.wikipedia.org/wiki/Low-tech",
+                  "https://fr.wikipedia.org/wiki/Fab_lab"
+                ]
+              }
+            ],
+            "open_research": [
+              "AUT-R01",
+              "AUT-R02",
+              "AUT-R03",
+              "AUT-R04",
+              "AUT-R05",
+              "AUT-R06",
+              "AUT-R07",
+              "AUT-R08"
+            ],
+            "recommendation": "Refonte proposée en portail de ressources, enquêtes de terrain, préservation des communs et mutualisation ; aucune certification technique, aucune réécriture autorisée à ce stade.",
+            "publication_authorized": false,
+            "merge_authorized": false
           }
         },
         {
