@@ -1520,6 +1520,347 @@
             "recommendation": "Corpus comparatif pour chapitres 1, 6, 8, 9; différencier syndicalisation, grève, occupation, contrôle, autogestion, propriété. Rattacher dossiers historiques et AUT/SOC/SOIN existants; pas de notices redondantes. Compléments futurs: AIT Berlin 1922, FORA congrès, réseaux syndicalistes transnationaux, Océanie, après 1987; désaccords Kobe et datation ICU maintenus.",
             "publication_authorized": false,
             "merge_authorized": false
+          },
+          "research_followup_round3": {
+            "date": "2026-11-24",
+            "scope": "20 passes 41-60, recherches web ciblées, notices, extraits, pages HTML ouvertes AIT et ACAT, abstracts Garner, Belkin et autres; pas de lecture exhaustive des ouvrages ni fac-similés, pas de contrôle des fonds d'archives sur place. Article Mozambique accès direct 403. Comparaison Wikipédia ciblée, non exhaustive par organisation.",
+            "passes": [
+              {
+                "n": 41,
+                "topic": "Londres 1913",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Wayne Westergard-Thorpe, IRSH 23(1), 1978, 33-78, extrait et bibliographie : tentative durable de coordination internationale, divergences stratégiques CGT/autres syndicats; texte intégral à collationner.",
+                "sources": [
+                  "https://doi.org/10.1017/S0020859000005691"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 42,
+                "topic": "Moscou et Berlin 1921-1922",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "finding": "Profintern 1921, conférence Berlin 16-19 juin 1922, refus de subordination; Garner 2006 résumé et extrait en dépôt, Guinchard article; distinguer délégués, communiqués, affiliations.",
+                "sources": [
+                  "https://doi.org/10.1017/S0960777306003341",
+                  "https://www.academia.edu/11180457/Separated_by_an_Ideological_Chasm_The_Spanish_National_Labour_Confederation_and_Bolshevik_Internationalism_1917_1922",
+                  "https://workersoftheworld.net/previous-editions/volume-1-number-4/chapter-8/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 43,
+                "topic": "AIT Berlin 1922-1923",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07",
+                  "CAP-R08"
+                ],
+                "finding": "Page AIT reproduisant Andersson 1959 ouverte : 25 décembre-2 janvier, 10 pays et environ 2 millions revendiqués; Guinchard évoque 15 pays et plus de 2 millions; Zimmer 1,5 million. Wikipédia FR donne 22 décembre. Liste Lehning mélange présence et adhésions écrites, Damier donne délégation chilienne, autre récit arrivée après congrès; ne pas fixer effectif ou composition définitive. Solidarité, presse, fédéralisme et coordination.",
+                "sources": [
+                  "https://www.iwa-ait.org/es/node/86",
+                  "https://cnt-ait.info/2022/12/10/anarchosyndicalism-lehning/",
+                  "https://libcom.org/article/founding-congress-international-workers-association",
+                  "https://workersoftheworld.net/previous-editions/volume-1-number-4/chapter-8/",
+                  "https://en.theanarchistlibrary.org/library/kenyon-zimmer-haymarket-and-the-rise-of-syndicalism",
+                  "https://fr.wikipedia.org/wiki/Association_internationale_des_travailleurs_(anarcho-syndicaliste)"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 44,
+                "topic": "FORA Argentine",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "V congrès 1905 orientation communisme anarchiste; IX avril 1915 retrait de la recommandation et scission. Belkin analyse CORA 1914 et fonctionnement FORA IX, article et notices CONICET; récit militant FORA V à contextualiser.",
+                "sources": [
+                  "https://doi.org/10.35305/ac.v19i27.1685",
+                  "https://doi.org/10.35305/rp.v15i38.777",
+                  "https://organizacion-obrera.fora.com.ar/2024/03/27/9o-congreso-de-la-f-o-r-a/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 45,
+                "topic": "CNT Espagne",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Garner 2006, résumé : relations avec Comintern/Profintern de soutien initial à refus, débat interne non réductible anarchistes/communistes. Raccordement CAP28/32 et dossier anarchiviste.",
+                "sources": [
+                  "https://doi.org/10.1017/S0960777306003341",
+                  "https://www.cambridge.org/core/journals/international-review-of-social-history/article/proletarian-turf-war-the-rise-and-fall-of-barcelonas-sindicatos-libres-19191923/C4B59B10D090D4FCBCD03C48C625A564"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 46,
+                "topic": "USI Italie",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "finding": "Carl Levy 2000 synthèse bibliographique, USI 1912 racines agricoles et industrielles, divisions interventionnisme guerre; rôle Borghi et chronologie scission UIL à approfondir.",
+                "sources": [
+                  "https://doi.org/10.1017/S0020859000000122",
+                  "https://www.cambridge.org/core/journals/international-review-of-social-history/article/revolutionary-syndicalism-in-the-italian-labor-movement-the-agrarian-strikes-of-190708-in-the-province-of-parma/75DC8B75FF6EE5BFDB1086CD0C38F053"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 47,
+                "topic": "IWW Etats-Unis",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Congrès 1905, union industrielle, scission 1908. Index transcription procès-verbaux 600+ pages et chronologie UW consultés, intégralité non lue. Organisation internationale distincte de l'AIT; section chilienne à distinguer.",
+                "sources": [
+                  "https://www.marxists.org/history/usa/unions/iww/1905/convention/index.htm",
+                  "https://depts.washington.edu/iww/yearbook1908.shtml",
+                  "https://depts.washington.edu/iww/index.shtml"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 48,
+                "topic": "FAUD Allemagne",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Fondée 1919; recherche récente crise 1923, archives propres disparues selon auteur, recours Der Syndikalist et Bundesarchiv; fonds à localiser et cotes à vérifier.",
+                "sources": [
+                  "https://journals.rcsi.science/0130-3864/article/view/405850",
+                  "https://theanarchistlibrary.org/library/wild-socialism-workers-councils-in-revolutionary-berlin-1918-21"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 49,
+                "topic": "SAC Suède",
+                "ids": [
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Fondation 1910; changement principes 1952 et départ 1958 selon Damier, autres récits parlent d'exclusion; différencier processus, votes et décision formelle. Caisses chômage et relations institutions.",
+                "sources": [
+                  "https://doi.org/10.1002/9781405198073.wbierp0074",
+                  "https://libcom.org/book/export/html/34840",
+                  "https://www.selfed.org.uk/a-s-history/unit-21-anarcho-syndicalism-1939-99"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 50,
+                "topic": "CGT Portugal",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Fondation 1919, affiliation AIT, courants concurrents et écoles syndicales. A Batalha piste, archives non dépouillées.",
+                "sources": [
+                  "https://www.sfu.ca/union-memory/issues-themes/collective-action-and-strikes/Portugal.html",
+                  "https://doi.org/10.1080/14701847.2023.2282830",
+                  "https://dspace.uevora.pt/rdpc/handle/10174/29629"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 51,
+                "topic": "ACAT Amérique latine",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Congrès Buenos Aires 11-16 mai 1929, étude Ayer et page HTML sommaire La Continental Obrera juillet 1929 ouverte; fac-similé PDF non dépouillé. Circulation presse, correspondances et campagnes; catégories du site ne prouvent pas affiliation.",
+                "sources": [
+                  "https://www.revistasmarcialpons.es/index.php/revistaayer/article/view/el_proyecto_continental_del_anarquismo_argentino",
+                  "https://www.acat-ait.org/2019/11/12/la-continental-obrera-julio-de-1929-numero-i/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 52,
+                "topic": "CGT Mexique",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06"
+                ],
+                "finding": "Congrès fondateur février 1921, étude UNAM sur 1921-1931; secteurs boulangerie, tramway, téléphone, textile selon source académique. Chronologie affiliation AIT 1923-24 à vérifier.",
+                "sources": [
+                  "https://www.acat-ait.org/2023/02/17/congreso-fundacional-cgtm/",
+                  "https://revistas.unam.mx/index.php/rmcpys/article/view/80149",
+                  "https://academic.oup.com/book/43749/chapter/370639447"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 53,
+                "topic": "FORP Pérou",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "finding": "Steven Hirsch 2010, chapitre 1905-1930, notice et extraits; huit heures janvier 1919 selon histoire du travail péruvien; relations ouvriers et mouvements autochtones, pas assimilation des luttes.",
+                "sources": [
+                  "https://profiles.wustl.edu/en/publications/peruvian-anarcho-syndicalism-adapting-transnational-influences-an/",
+                  "https://www.jstor.org/stable/jj.6380609",
+                  "https://www.academia.edu/30116490/PERUVIAN_ANARCHO_SYNDICALISM_ADAPTING_TRANSNATIONAL_INFLUENCES_AND_FORGING_COUNTERHEGEMONIC_PRACTICES_1905_1930"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 54,
+                "topic": "Industrial Workers of Africa",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "finding": "Johannesburg 1917, influence IWW, ISL; thèse Wits notice et SAHO, distinguer ICU et AIT Berlin; autonomie des militants noirs et rapports coloniaux à approfondir.",
+                "sources": [
+                  "https://wiredspace.wits.ac.za/items/7d43b750-5b6d-4501-8e8b-27eea22e3f29",
+                  "https://sahistory.org.za/archive/industrial-workers-africa-1917-1921-bikisha-media-collective",
+                  "https://www.cambridge.org/core/books/abs/cambridge-history-of-socialism/anarchism-and-syndicalism-in-southern-africa/C10B5F566F11C9D2C06E3E931B345950"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 55,
+                "topic": "Mozambique colonial",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "finding": "O Emancipador et syndicat général Lourenço Marques; recommandation affiliation CGT Portugal 14 nov 1921 selon extrait indexé; article direct 403, réalisation et portée à vérifier.",
+                "sources": [
+                  "https://doi.org/10.1080/14701847.2023.2178169"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 56,
+                "topic": "Egypte",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06"
+                ],
+                "finding": "Anthony Gorman, anarchisme Alexandrie et Le Caire depuis 1860s, presse et syndicats multinationaux; grève cigarette 1899-1900, CGT Alexandrie 1921 avec Joseph Rosenthal d'après chapitre reproduit; présence majoritairement étrangère CGT à contextualiser; aucune affiliation Berlin établie ici.",
+                "sources": [
+                  "https://doi.org/10.3366/edinburgh/9781474430616.003.0009",
+                  "https://www.research.ed.ac.uk/en/publications/socialisme-en-egypte-avant-la-premi%C3%A8re-guerre-mondiale-la-contrib/",
+                  "https://theanarchistlibrary.org/library/steven-j-hirsch-lucien-van-der-walt-anarchism-and-syndicalism-in-the-colonial-and-postcolonial"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 57,
+                "topic": "Japon Zenkoku Jiren",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Fédération fondée 24 mai 1926 selon John Crump, rupture 1927-28 entre syndicalistes et anarchistes communistes dits purs; Hatta critique centralité organisation industrielle; textes reproduits et notice Oxford, affiliation précise à AIT non démontrée ici.",
+                "sources": [
+                  "https://academic.oup.com/edited-volume/61799/chapter-abstract/546312534",
+                  "https://www.theanarchistlibrary.org/library/john-crump-anarchist-communism-and-leadership",
+                  "https://theanarchistlibrary.org/library/hatta-shuzo-on-syndicalism"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 58,
+                "topic": "Chine Guangzhou",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R06",
+                  "CAP-R07"
+                ],
+                "finding": "Arif Dirlik 1989 article et livre 1991, influence anarchiste et concurrence communistes; Krebs extrait indexé successeurs Shifu syndicat maisons de thé 1918 et coiffeurs 1919; nom et archives chinois à retrouver, pas affiliation Berlin déduite.",
+                "sources": [
+                  "https://www.cambridge.org/core/journals/international-review-of-social-history/article/path-not-taken-the-anarchist-alternative-in-chinese-socialism-19211927/CA46BF00539ABBFEB0A7F44E504E4640",
+                  "https://www.ucpress.edu/books/anarchism-in-the-chinese-revolution/paper",
+                  "https://www.theanarchistlibrary.org/library/vadim-damier-the-anarcho-syndicalist-movement-in-china-in-1910s-and-1920s"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 59,
+                "topic": "Corée et diasporas",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Hwang 2007, 2016: réseaux Chine/Japon/Corée, Labor Alliance of Toko (syndicat travailleurs coréens au Japon) éditeur d'un périodique selon article; courants différents, anti-colonialisme sans réduction nationaliste; noms originaux et dates à vérifier.",
+                "sources": [
+                  "https://doi.org/10.1080/10357820701196668",
+                  "https://www.jstor.org/stable/jj.18255497"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              },
+              {
+                "n": 60,
+                "topic": "Océanie IWW Australie et Red Feds Nouvelle-Zélande",
+                "ids": [
+                  "CAP-R01",
+                  "CAP-R05",
+                  "CAP-R06",
+                  "CAP-R08"
+                ],
+                "finding": "Australie club Sydney octobre 1907 selon musée, IWW antimilitarisme 1916-17, presse Direct Action 1 nov 1914 indexée; Nouvelle-Zélande Federation of Labour 1910, influences syndicalistes et IWW distincts, conflits Waihī 1912 et 1913; pas assimilation Red Feds à section IWW. Genre et exclusion raciale à étudier.",
+                "sources": [
+                  "https://mhnsw.au/stories/ww1/wobblies/",
+                  "https://reasoninrevolt.net.au/bib/PR0001526.htm",
+                  "https://labourhistorymelbourne.org/phillip-deery-and-julie-kimber-eds-fighting-against-war-peace-activism-in-the-twentieth-century-melbourne-leftbank-press-2015/",
+                  "https://teara.govt.nz/en/unions-and-employee-organisations/page-4",
+                  "https://nzhistory.govt.nz/page/class-war-comes-workers-paradise-1890-1913",
+                  "https://archive.iww.org/history/library/misc/Shor1998/"
+                ],
+                "status": "OPEN_PARTIAL_PROGRESS"
+              }
+            ],
+            "open_research": [
+              "CAP-R01",
+              "CAP-R02",
+              "CAP-R03",
+              "CAP-R04",
+              "CAP-R05",
+              "CAP-R06",
+              "CAP-R07",
+              "CAP-R08"
+            ],
+            "wikipedia": [
+              "https://fr.wikipedia.org/wiki/Syndicalisme_r%C3%A9volutionnaire",
+              "https://fr.wikipedia.org/wiki/Anarcho-syndicalisme",
+              "https://fr.wikipedia.org/wiki/Association_internationale_des_travailleurs_(anarcho-syndicaliste)"
+            ],
+            "recommendation": "Réseaux transnationaux, mandats, solidarité et divergences; distinguer dates de congrès, présence, adhésion écrite, influence et affiliation, éviter effectifs non collationnés. Rattacher chapitres 1,6,8,9 et corpus SOC/ANARCHIVISTE. Recherches futures sur Brésil, Uruguay, Chili IWW, Inde, réseaux femmes, après 1936; pas de création de notices définitives.",
+            "publication_authorized": false,
+            "merge_authorized": false
           }
         },
         {
