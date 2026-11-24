@@ -1,0 +1,10 @@
+Check file:///workspace/scratch/da397c5d849b/Interstice/coordination/work/c07/faire-ensemble-pilot/submit-proposal.deno-test.ts
+running 1 test from ./coordination/work/c07/faire-ensemble-pilot/submit-proposal.deno-test.ts
+closed pilot and actual SDK responses, transport intercepted ...
+  closed before body or SDK ... ok (2ms)
+  real SDK records only pending with server cohort ... ok (12ms)
+  throttle stops before insert ... ok (2ms)
+  real SDK database error has no successful receipt ... ok (1ms)
+closed pilot and actual SDK responses, transport intercepted ... ok (89ms)
+
+ok | 1 passed (4 steps) | 0 failed (91ms)

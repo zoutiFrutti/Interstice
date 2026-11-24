@@ -1,0 +1,40 @@
+name: Participation candidate - isolated SQL, no deployment
+on:
+  pull_request:
+    paths:
+      - 'coordination/work/participation-v1/**'
+      - 'coordination/work/c07/faire-ensemble-pilot/**'
+      - 'tests/nav01-faire-ensemble-pilot.test.mjs'
+      - '.github/workflows/participation-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  isolated-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install existing pinned dependencies, no lifecycle scripts
+        run: |
+          npm ci --prefix coordination/work/c07/faire-ensemble-pilot --ignore-scripts --no-audit --no-fund
+          npm ci --prefix coordination/work/participation-v1 --ignore-scripts --no-audit --no-fund
+      - name: Candidate behavior, permissions and existing purge
+        run: node --test coordination/work/participation-v1/test.mjs tests/nav01-faire-ensemble-pilot.test.mjs coordination/work/c07/faire-ensemble-pilot/purge.test.mjs coordination/work/c07/developpeuse/master-v1/test.mjs
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.5.6
+      - name: Types and existing SDK transport, network and environment denied
+        run: |
+          deno check --no-config --no-lock --no-remote --node-modules-dir=manual coordination/work/c07/faire-ensemble-pilot/submit-proposal.ts coordination/work/participation-v1/supabase-entry.ts
+          deno test --no-config --no-lock --no-remote --node-modules-dir=manual --deny-net --deny-env coordination/work/c07/faire-ensemble-pilot/submit-proposal.deno-test.ts
+      - name: Preserve reviewed files and public source boundary
+        run: |
+          node coordination/work/c07/relieuse/check-reviewed-preservation.mjs
+          node scripts/security/public-boundary.mjs source .

@@ -1,0 +1,15 @@
+{
+  "name": "interstice-participation-candidate",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs --demo",
+    "test": "node --test test.mjs"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.119.0"
+  }
+}

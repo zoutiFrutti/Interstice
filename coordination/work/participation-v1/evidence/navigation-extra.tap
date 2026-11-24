@@ -1,0 +1,21 @@
+✔ three direct decisions have unique IDs in the decisions register (2.138328ms)
+✔ every queued R6 text is a source-identical item with no new visa (1.072384ms)
+✔ nine blocked source texts remain excluded and 219 master objects not publishable (1.288981ms)
+✔ five real initial reviews have source-matched IDs and no editorial visa (0.711615ms)
+✔ second pass inventories exact external URL occurrences without pretending all were checked (0.921835ms)
+✔ C26: ten unique substantive source-linked private amendments, no publication visa (1.895094ms)
+✔ C27 contains ten nonpublished exact-source HTML candidates with one amendment each (7.301808ms)
+✔ C27 candidate directory stays excluded from GitHub Pages source (1.253248ms)
+✔ The old NAV7 entry uses the canonical implementation and keeps native alternatives (1.72686ms)
+✔ Official R6 logos remain exact and are not replaced by a R7 candidate (2.545233ms)
+✔ Contract follows the received annotated capture, with 4 left, 6 right and 7 beside the centre (9.612871ms)
+✔ All fifteen original shortcut destinations survive without creating extra navigation categories (1.126795ms)
+✔ Received Work inventory is hash-proven, statuses stay separate, no private locator copied (6.733042ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 217.661644
