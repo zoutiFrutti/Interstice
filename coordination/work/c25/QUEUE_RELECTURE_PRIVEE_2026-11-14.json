@@ -70,7 +70,82 @@
             "corrections-and-contradictions",
             "rights-and-personal-data",
             "human-editorial-decision"
-          ]
+          ],
+          "relieuse_review": {
+            "date": "2026-11-24",
+            "candidate_git_blob": "160c5d46fdb7030c05c36e20dd46e3c96746a6b1",
+            "scope": "Lecture HTML et rapport C25-R6-01, contrôles web ciblés du 24 novembre, sans validation des techniques ni essai pratique.",
+            "recommendation": "Conserver uniquement comme portail documentaire sous réserves; corriger statut Atelier Paysan avant publication. Ne pas valider comme tutoriels.",
+            "findings": [
+              {
+                "id": "AUT-R01",
+                "finding": "Actualiser indices de réparabilité/durabilité, catégories et dates ; documenter réparation et réemploi.",
+                "sources": [
+                  "https://www.ecologie.gouv.fr/politiques-publiques/indice-durabilite",
+                  "https://www.ecologie.gouv.fr/politiques-publiques/indice-reparabilite"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R02",
+                "finding": "Electricité, batteries, combustion : sources INRS précises et validation qualifiée avant mode opératoire.",
+                "sources": [
+                  "https://www.inrs.fr/risques/electriques/habilitation-electrique-foire-aux-questions",
+                  "https://www.inrs.fr/metiers/Energie/utilisation-batteries-lithium/utilisation-batteries-lithium-FAQ.html"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R03",
+                "finding": "Eau non potable : usages autorisés et interdits, séparation réseaux, cadre France et date de contrôle ; sécurité alimentaire à documenter.",
+                "sources": [
+                  "https://www.service-public.gouv.fr/particuliers/vosdroits/F31481"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R04",
+                "finding": "SCIC Atelier Paysan liquidée 21 avril 2026 selon communiqué et presse ; distinguer continuité du projet via Communs Paysans et Soudons fermes des prestations historiques.",
+                "sources": [
+                  "https://www.latelierpaysan.org/L-Atelier-Paysan-elargit-le-mouvement",
+                  "https://www.ledauphine.com/economie/2026/04/30/isere-renage-la-societe-cooperative-l-atelier-paysan-placee-en-liquidation-judiciaire"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R05",
+                "finding": "Friches, ERP, structure, incendie, habitat : avis technique/juridique ciblé avant tutoriels.",
+                "sources": [],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R06",
+                "finding": "Licences des plans et visuels par objet, wiki Low-tech Lab renvoie 403 lors du contrôle, ne pas qualifier de lien mort.",
+                "sources": [
+                  "https://lowtechlab.org/fr/mentions-legales",
+                  "https://lowtechlab.org/fr/faq"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R07",
+                "finding": "Pilote à faible risque : reprise textile ou inventaire partagé, avec coût, observations, test indépendant et limites ; aucun test réalisé.",
+                "sources": [],
+                "status": "OPEN"
+              },
+              {
+                "id": "AUT-R08",
+                "finding": "Liens Wikipédia Low-tech et Fab lab en priorité pour concepts; raccordement Faire Ensemble/Carte des possibles, revue des liens et accessibilité, ne pas activer de collecte. Lien wiki-mutualiser-materiel.html non retrouvé à cet emplacement sur cette branche (404).",
+                "sources": [
+                  "https://fr.wikipedia.org/wiki/Low-tech",
+                  "https://fr.wikipedia.org/wiki/Fab_lab"
+                ],
+                "status": "OPEN"
+              }
+            ],
+            "publication_authorized": false,
+            "merge_authorized": false
+          }
         },
         {
           "id": "wiki-capitalisme-classes-travail",
