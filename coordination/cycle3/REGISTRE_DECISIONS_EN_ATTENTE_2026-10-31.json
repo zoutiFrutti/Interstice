@@ -313,7 +313,83 @@
       "objection": "PR44 et sommaire PR35 ; distinctions entre soin, pouvoir et droit de recours.",
       "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
       "sources": "Sources et références dans le texte intégral",
-      "decision_Zout": null
+      "decision_Zout": null,
+      "relieuse_review": {
+        "date": "2026-11-24",
+        "scope": "Lecture intégrale du candidat, comparaison avec début de main et identification du blob PR44 ; lecture du chapitre Kropotkine sur Wikisource, notices bibliographiques et extraits indexés de Berenstain, article OIT, comparaison Wikipédia Travail du care. Pas de lecture intégrale revendiquée des cinq autres œuvres, pas de contrôle du serveur ni d'accessibilité.",
+        "status": "CONSERVATION_SOUS_RESERVES_RECOMMANDEE",
+        "version_main": "206f4d999dcfe12bb5d487830ad7cf02edf66780",
+        "version_pr44": "d52106115de9f1e5207d2df8799644a07faee464",
+        "findings": [
+          {
+            "id": "SOIN-R01",
+            "finding": "Kropotkine, La Conquête du pain, 2e éd. 1892 p.153–164, section II : critique du transfert des corvées entre femmes, mutualisation et liberté de préserver intimité; distinguer ses hypothèses techniques et ses présupposés historiques de résultats empiriques.",
+            "sources": [
+              "https://fr.wikisource.org/wiki/La_Conqu%C3%AAte_du_pain/Le_travail_agr%C3%A9able"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "SOIN-R02",
+            "finding": "Federici 2012 (notice éditeur première édition vérifiée, ISBN 9781604863338), lire chapitres sur reproduction et communs et situer divergences avec Kropotkine; distinguer thèse et rapprochement éditorial.",
+            "sources": [
+              "https://pmpress.org.uk/product/revolution-at-point-zero-housework-reproduction-and-feminist-struggle/"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "SOIN-R03",
+            "finding": "hooks 1994 et Freire édition anglaise Herder and Herder 1970 confirmés sur notices; collationner passages et éditions, préciser les critiques féministes et raciales de la pédagogie et les limites de la transposition aux collectifs.",
+            "sources": [
+              "https://www.routledge.com/Teaching-toTransgress-Education-as-the-Practise-of-Freedom/hooks/p/book/9780415908085",
+              "https://eric.ed.gov/?id=ED045793"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "SOIN-R04",
+            "finding": "Berenstain 2016, retrait note 20 en février 2024 confirmé par extrait indexé du PDF corrigé, avis DOI inaccessible lors de cette passe; ne pas utiliser la note rétractée. Ahmed 2012 notice éditeur vérifiée; étudier passages et distinguer demande libre et travail d'explication contraint.",
+            "sources": [
+              "https://doi.org/10.3998/ergo.12405314.0003.022",
+              "https://doi.org/10.3998/ergo.5640",
+              "https://www.dukeupress.edu/On-Being-Included"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "SOIN-R05",
+            "finding": "Ajouter Tronto Caring Democracy 2013 (notice éditeur) et OIT 29 octobre 2024 : estimation mondiale 2023, personnes 15+ hors population active en raison du soin non rémunéré, 708 millions femmes et 40 millions hommes, données 125 pays; non comparable estimation 2018 selon OIT; ne pas extrapoler aux communs.",
+            "sources": [
+              "https://nyupress.org/9780814782774/caring-democracy/",
+              "https://www.ilo.org/resource/news/unpaid-care-work-prevents-708-million-women-participating-labour-market"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "SOIN-R06",
+            "finding": "Documenter pratiques réelles de soin et formation dans Union des femmes ASSO-007 et Mujeres Libres; distinguer programmes, réalisations, financement et voix des participantes.",
+            "sources": [],
+            "status": "OPEN"
+          },
+          {
+            "id": "SOIN-R07",
+            "finding": "Développer propositions non adoptées : réduction des tâches, libre participation, accessibilité, consentement, absence de score individuel, répartition des responsabilités et distinction contribution libre/emploi/salariat.",
+            "sources": [],
+            "status": "OPEN"
+          },
+          {
+            "id": "SOIN-R08",
+            "finding": "Comparer Wikipédia Travail du care (chevauchement notionnel mais pas même lecture croisée); contrôler statut du formulaire, liens, sommaire, accessibilité, droit d'auteur et protection des personnes; aucune collecte sensible, aucun canal confidentiel réputé opérationnel.",
+            "sources": [
+              "https://fr.wikipedia.org/wiki/Travail_du_care"
+            ],
+            "status": "OPEN"
+          }
+        ],
+        "publication_authorized": false,
+        "merge_authorized": false,
+        "technical_gate": "File C25 exclut wiki-lecture-croisee-travail-soin-pouvoir de la file de réconciliation R6 (blocage documentaire), distinct du candidat Lectrice. Aucun déblocage R6, aucun visa juridique ni fonctionnalité serveur attestés."
+      }
     },
     {
       "id": "wiki-politique-institutions-regimes",
