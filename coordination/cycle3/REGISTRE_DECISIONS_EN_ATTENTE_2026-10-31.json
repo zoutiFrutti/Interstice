@@ -98,7 +98,77 @@
       "objection": "Voix concernées et liens FN/BIO/COL sans prétendre des fiches publiques.",
       "status": "PRET_A_SOUMETTRE_NON_APPROUVE",
       "sources": "Sources et références dans le texte intégral",
-      "decision_Zout": null
+      "decision_Zout": null,
+      "relieuse_review": {
+        "date": "2026-11-24",
+        "scope": "Lecture du candidat et comparaison partielle avec main, contrôle externe ciblé ; aucune réécriture ni visa.",
+        "status": "CORRECTION_CIBLEE_RECOMMANDEE_AVANT_VISA",
+        "findings": [
+          {
+            "id": "ANT-R01",
+            "status": "OPEN_CORRECTION_IDENTIFIED",
+            "finding": "Écart 9350/9295 expliqué par actualisation des bases stabilisées, Interstats n°61 p.2 et figure 1 p.3 : 9295 en 2024, 9737 en 2025 provisoire (extraction janvier 2026), +5%. Le détail des 55 révisions individuelles n'est pas documenté.",
+            "sources": [
+              "https://www.cncdh.fr/publications/rapport-2024-sur-la-lutte-contre-le-racisme-lantisemitisme-et-la-xenophobie",
+              "https://www.dilcrah.gouv.fr/files/2026-03/IR61%20Les%20atteintes%20a%CC%80%20caracte%CC%80re%20raciste%2C%20xe%CC%81nophobe%20ou%20antireligieux%20en%202025.pdf"
+            ]
+          },
+          {
+            "id": "ANT-R02",
+            "status": "OPEN",
+            "finding": "Révision des taux de plainte VRS octobre 2026, ne pas mélanger millésimes.",
+            "sources": [
+              "https://statistiques.interieur.gouv.fr/ssmsi/publications/les-atteintes-caractere-raciste-xenophobe-ou-antireligieux-en-2025"
+            ]
+          },
+          {
+            "id": "ANT-R03",
+            "status": "OPEN",
+            "finding": "Attribuer concepts à des sources spécialisées, notamment Crenshaw 1989 pour intersectionnalité.",
+            "sources": [
+              "https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/"
+            ]
+          },
+          {
+            "id": "ANT-R04",
+            "status": "OPEN",
+            "finding": "Distinguer histoire des racismes et résistances, étayer par sources situées et voix concernées."
+          },
+          {
+            "id": "ANT-R05",
+            "status": "OPEN",
+            "finding": "Documenter discriminations quotidiennes par TeO2, testings et études sectorielles.",
+            "sources": [
+              "https://www.insee.fr/fr/information/4172158",
+              "https://www.defenseurdesdroits.fr/jeunesses-et-discriminations-fondees-sur-lorigine-repondre-limperatif-degalite-1070"
+            ]
+          },
+          {
+            "id": "ANT-R06",
+            "status": "OPEN",
+            "finding": "Préciser droit direct/indirect, justification légitime et proportionnée, recours et limites, revue juriste.",
+            "sources": [
+              "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000018877783/"
+            ]
+          },
+          {
+            "id": "ANT-R07",
+            "status": "OPEN",
+            "finding": "Protection des témoignages : aucun dépôt sensible sur GitHub public, canal confidentiel non garanti."
+          },
+          {
+            "id": "ANT-R08",
+            "status": "OPEN",
+            "finding": "Anti-doublons Wikipédia et raccordement BIO-001 COL-001 FN-031 FN-069, sans prétendre publication.",
+            "sources": [
+              "https://fr.wikipedia.org/wiki/Racisme",
+              "https://fr.wikipedia.org/wiki/Antiracisme"
+            ]
+          }
+        ],
+        "publication_authorized": false,
+        "merge_authorized": false
+      }
     },
     {
       "id": "wiki-decision-collective",
