@@ -447,6 +447,314 @@
             "recommendation": "Refonte en dossier de comparaison des communs techniques, droits d’usage, pérennité, partage de matériel et retour d’expérience. Fiches de cas candidates et recherches ouvertes, pas de doublon KONVENT ni création de service; privilégier accès libre sans notation individuelle.",
             "publication_authorized": false,
             "merge_authorized": false
+          },
+          "research_followup_round3": {
+            "date": "2026-11-24",
+            "scope": "20 nouveaux cas ou dispositifs comparatifs ; recherches web ciblées, extraits indexés et lecture de quatre pages HTML (ExRotaprint, GKN, Edinburgh, Khon Kaen). Aucun contrat intégral collationné, aucune visite, aucun entretien ni audit comptable. Deux cas non industriels (BAUEN et entrepôts publics) conservés comme comparaison. Aucune nouvelle version du texte.",
+            "passes": [
+              {
+                "n": 21,
+                "case": "ExRotaprint, Allemagne",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancienne usine de machines d'imprimerie, reprise 2007; terrain fondations trias et Edith Maryon, bâtiments gGmbH, droit de superficie 99 ans; vérifier clauses et comptes.",
+                "sources": [
+                  "https://www.exrotaprint.de/en/exrotaprint-ggmbh/",
+                  "https://www.stiftung-trias.de/projekte/projektportraits/berlin-exrotaprint/",
+                  "https://www.frontiersin.org/journals/sustainable-cities/articles/10.3389/frsc.2021.760548/full"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 22,
+                "case": "NDSM Loods, Pays-Bas",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancien chantier naval, fondation propriétaire/gestionnaire du hangar, environ 80 ateliers et 250 personnes selon site; loyers et pression immobilière à documenter.",
+                "sources": [
+                  "https://www.ndsmloods.nl/english/",
+                  "https://www.tandfonline.com/doi/full/10.1080/20507828.2020.1766305"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 23,
+                "case": "Kaapelitehdas, Finlande",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Mobilisation Pro Kaapeli 1990, société immobilière municipale; propriété publique distincte de l'autogestion.",
+                "sources": [
+                  "https://www.kaapeli.com/en/our-story",
+                  "https://op.europa.eu/webpub/eac/high-quality-built-environment/en/grass-roots-intiatives.html"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 24,
+                "case": "Rote Fabrik, Suisse",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Votations 1977 et 1987, mobilisation et espace culturel; étudier convention et autonomie financière.",
+                "sources": [
+                  "https://archiv2025.shedhalle.ch/en/about-en/history/",
+                  "https://repository.avermaete.ethz.ch/commons_register/die-rote-fabrik/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 25,
+                "case": "ufaFabrik, Allemagne",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Réinvestissement studios en juin 1979, premier bail proposé à l'automne; évolution communauté et économie à documenter.",
+                "sources": [
+                  "https://ufafabrik.de/en/15003/how-it-all-began.html",
+                  "https://www.buildingsocialecology.org/projects/ufafabrik/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 26,
+                "case": "Matucana 100, Chili",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Corporation culturelle créée 2001 dans anciens entrepôts publics; contrepoint institutionnel.",
+                "sources": [
+                  "https://www.m100.cl/english/",
+                  "https://www.m100.cl/en/about-us/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 27,
+                "case": "Cattle Depot, Hong Kong",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Anciens abattoirs, relocalisation en 2001 des artistes d'Oil Street; distinguer reconversion et éviction initiale.",
+                "sources": [
+                  "https://www.gohk.gov.hk/en/spots/spot_detail.php?spot=Cattle+Depot+Artist+Village+and+Art+Park",
+                  "https://www.aaa-a.org/collection/oil-street-to-cattle-depot-%E5%BE%9E%E6%B2%B9%E8%A1%97%E5%88%B0%E7%89%9B%E6%A3%9A%EF%BC%89"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 28,
+                "case": "Ellis House, Afrique du Sud",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancienne usine textile, ateliers depuis 2012, programmation par artistes selon opérateur; propriété collective non attestée.",
+                "sources": [
+                  "https://www.ellishouse.co.za/about",
+                  "https://www.lemonde.fr/afrique/article/2026/11/10/le-centre-ville-delaisse-de-johannesburg-terrain-de-jeu-des-artistes-sud-africains_6808765_3212.html"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 29,
+                "case": "401 Richmond, Canada",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancienne usine lithographique, initiative immobilière privée et locataires culturels; fiscalité et protection patrimoniale distinctes du pouvoir collectif.",
+                "sources": [
+                  "https://401richmond.com/about/the-building/",
+                  "https://uwaterloo.ca/heritage-resources-centre/blog/its-bag-tax-class-culture-hubs"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 30,
+                "case": "Centro Perdido, Chili",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R08"
+                ],
+                "finding": "Ancienne usine textile, espace autogéré depuis fin 2022, fermeture annoncée novembre 2025; devenir collectif à rechercher.",
+                "sources": [
+                  "https://www.elmostrador.cl/cultura/2025/11/09/centro-perdido-busca-lugar-espacio-cultural-de-artistas-emergentes-cierra-sus-puertas-en-patronato/"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 31,
+                "case": "IMPA, Argentine",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Entreprise déjà coopérative avant reprise ouvrière 1998, centre culturel 2000 et éducation populaire; archives et fonctionnement actuel à contrôler.",
+                "sources": [
+                  "https://integracion-academica.org/16-volumen-3-numero-7-2015/82-la-construccion-colectiva-de-un-sitio-para-la-memoria-de-la-clase-trabajadora",
+                  "https://www.pagina12.com.ar/2001/01-02/01-02-26/pag21.htm"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 32,
+                "case": "Flaskô, Brésil",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Contrôle ouvrier 2003, projet de quartier 2005, étude orale quatre travailleurs; état actuel non vérifié.",
+                "sources": [
+                  "https://www.scielo.br/j/rbso/a/CNNCH5fZ8QpfGJrtYGvWFpM/?lang=pt",
+                  "https://periodicos.uff.br/confluencias/article/view/34466"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 33,
+                "case": "BAUEN, Argentine",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Hôtel repris en 2003, fermeture 2020, cas comparatif non industriel; droits fonciers et trajectoires après fermeture.",
+                "sources": [
+                  "https://cleo.rutgers.edu/articles/the-peoples-hotel-working-for-justice-in-argentina/",
+                  "https://www.tandfonline.com/doi/full/10.1080/14616688.2021.1965202"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 34,
+                "case": "Ex-GKN, Italie",
+                "ids": [
+                  "AUT-R05",
+                  "AUT-R07"
+                ],
+                "finding": "Mobilisation 2021, projet de reconversion écologique; propriétaire reprend possession octobre 2026, collectif continue mobilisation; audience 25 novembre annoncée, résultat non connu, reprise productive non démontrée.",
+                "sources": [
+                  "https://ricerca.sns.it/handle/11384/167004",
+                  "https://www.novaradio.info/2026/10/20/ex-gkn-il-presidio-ce-e-rimane-continuiamo-la-battaglia-per-la-reindustrializzazione-ascolta/",
+                  "https://www.lanazione.it/firenze/cronaca/ex-gkn-svolta-giudiziaria-agli-a5ab97ae"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 35,
+                "case": "Greslab, Italie",
+                "ids": [
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Coopérative constituée 2010, redémarrage 2011, soutien Coopfond/CFI; distinction date juridique et productive, comptes et droits non-sociétaires à vérifier.",
+                "sources": [
+                  "https://www.cfi.it/cooperative-s.php?id=4119",
+                  "https://www.greslab.it/identita/",
+                  "https://cecop.coop/works/ceramics-the-story-of-a-recovery"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 36,
+                "case": "Toronto Tool Library, Canada",
+                "ids": [
+                  "AUT-R01",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Prêt depuis 2012, organisme non lucratif autonome 2018, adhésion payante et prêt sept jours; accessibilité et coûts à vérifier.",
+                "sources": [
+                  "https://torontotoollibrary.com/about/",
+                  "https://torontotoollibrary.com/search_tools/",
+                  "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpDtls.html?corpId=11025627&lang=eng"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 37,
+                "case": "Edinburgh Tool Library, Royaume-Uni",
+                "ids": [
+                  "AUT-R02",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Prêt et atelier partagé; annonce 2026 sessions atelier payantes 10 GBP standard, 3 GBP réduit, frais réservation et initiation sécurité; distinguer prêt et usage machines.",
+                "sources": [
+                  "https://edinburghtoollibrary.org.uk/2026/important-updates-about-your-new-workshop-new-times-new-space-new-pricing/",
+                  "https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC045162"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 38,
+                "case": "Brisbane Tool Library, Australie",
+                "ids": [
+                  "AUT-R01",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Depuis 2017 prêt outils et équipements sur adhésion, équipe de volontaires selon organisation; charges invisibles et financement à étudier.",
+                "sources": [
+                  "https://www.brisbanetoollibrary.org/about-us/who-we-are",
+                  "https://www.brisbanetoollibrary.org/memberships",
+                  "https://abr.business.gov.au/ABN/View?id=90930173584"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 39,
+                "case": "Custom Hiring Centres, Inde",
+                "ids": [
+                  "AUT-R04",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Accès locatif aux machines agricoles, diversité des gestionnaires, difficultés calendrier, prix, maintenance et opérateurs; ne pas assimiler à propriété coopérative.",
+                "sources": [
+                  "https://agris.fao.org/search/en/providers/124598/records/685178b9aab9439e79fcc4b7",
+                  "https://journaljeai.com/index.php/JEAI/article/view/2853",
+                  "https://link.springer.com/article/10.1007/s43926-025-00250-1"
+                ],
+                "status": "OPEN"
+              },
+              {
+                "n": 40,
+                "case": "Groupes agricoles de Khon Kaen, Thaïlande",
+                "ids": [
+                  "AUT-R04",
+                  "AUT-R07",
+                  "AUT-R08"
+                ],
+                "finding": "Étude 2025 par entretiens/questionnaires/données, prix de certains services machines inférieurs au marché, limites parcelles petites et maintenance; résumé consulté.",
+                "sources": [
+                  "https://www.jstage.jst.go.jp/article/eaef/18/4/18_252/_article/-char/ja"
+                ],
+                "status": "OPEN"
+              }
+            ],
+            "open_research": [
+              "AUT-R01",
+              "AUT-R02",
+              "AUT-R03",
+              "AUT-R04",
+              "AUT-R05",
+              "AUT-R06",
+              "AUT-R07",
+              "AUT-R08"
+            ],
+            "recommendation": "Corpus comparatif distinguant propriété, droit d’usage, contrôle productif et accès aux outils. Envisager fiches de cas après contrôle anti-doublons et sources indépendantes; aucune création de notice ni intégration sans validation.",
+            "publication_authorized": false,
+            "merge_authorized": false
           }
         },
         {
